@@ -79,10 +79,14 @@ pop
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
-home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
-percentile .5 VALUE
-X WWWinfo .FORMinfo .map .X .plotvalue VALUE
-Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
+  dup
+   T (Jan 1979) (Dec 1995) RANGE
+   T 12 splitstreamgrid
+   [T2]0.5 0.5 replacebypercentile
+%home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
+%percentile .5 VALUE
+%X WWWinfo .FORMinfo .map .X .plotvalue VALUE
+%Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 sub
  T (days since 1960-01-01) streamgridunitconvert
   T differential_mul
@@ -122,15 +126,18 @@ pop
 <center>
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
-%%  dup
-%%   T (Jan 1979) (Dec 1995) RANGE
-%%   T 12 splitstreamgrid
-%%   [T2]0.0 0.33 0.5 0.67 1. 0.5 replacebypercentile
-home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
+X WWWinfo .FORMinfo .map .X .plotvalue VALUE
+Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
+  dup
+   T (Jan 1979) (Dec 1995) RANGE
+   T 12 splitstreamgrid
+   [T2]0.0 0.33 0.5 0.67 1. 0.5 replacebypercentile
+%home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
+%X WWWinfo .FORMinfo .map .X .plotvalue VALUE
+%Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
    [percentile]CofA=B-bounded
 (%) unitconvert
 /long_name (precip. percentile) def
-%home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .percentile .prcppercent
 T /pointwidth 3. def pop
 T
 WWWinfo .FORMinfo .map .F .plotvalue readunits
