@@ -77,8 +77,12 @@ pop
 <center>
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
+X WWWinfo .FORMinfo .map .X .plotvalue VALUE
+Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
 percentile .5 VALUE
+X WWWinfo .FORMinfo .map .X .plotvalue VALUE
+Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 sub
  T (days since 1960-01-01) streamgridunitconvert
   T differential_mul
@@ -163,6 +167,9 @@ T (Jan 1979) (Dec 1995) RANGE
 T 3 runningAverage 
 3 mul
 DATA 0 AUTO RANGE
+X WWWinfo .FORMinfo .map .X .plotvalue VALUE
+Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
+
 T 12 splitstreamgrid
 [T2]0.33 0.5 0.67 0.5 replacebypercentile
 
@@ -180,6 +187,8 @@ a: percentile .67 VALUE
 
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
 T (Jan 1979) (Dec 1995) RANGE
+X WWWinfo .FORMinfo .map .X .plotvalue VALUE
+Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 T (days since 1960-01-01) streamgridunitconvert
 T differential_mul
 T (months since 1960-01-01) streamgridunitconvert
@@ -191,8 +200,6 @@ T
 WWWinfo .FORMinfo .map .F .plotvalue readunits
 dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
-X WWWinfo .FORMinfo .map .X .plotvalue VALUE
-Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 
 a: percentile .50 VALUE :a: 0 mul :a
 
