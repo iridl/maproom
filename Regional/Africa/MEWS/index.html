@@ -32,7 +32,7 @@ pop
 figdefs
 </INGRID>
 </head>
-<body bgcolor="#FFFFFF" link="#0000FF" vlink="#0060FF" alink="#FF0000" onLoad='document.mapform.reset();'>
+<body bgcolor="#FFFFFF" link="#0000FF" vlink="#0060FF" alink="#FF0000" onLoad='initdrag();document.mapform.reset();'>
 <INGRID>
 %leftmenuinfo:
 %{ X Y T} setleftmenugrids
@@ -88,17 +88,17 @@ nip
 {
 (<br><input type=checkbox name=coasts) print 
 /coasts FORMknown {( checked)print} if
-(>Coasts\n)print
+( onChange="changedtext(this);">Coasts\n)print
 
 (<br><input type=checkbox name=countries) print
 /countries FORMknown {( checked)print} if
- (>Countries\n) print
+ ( onChange="changedtext(this);">Countries\n) print
 (<br><input type=checkbox name=states)print 
 /states FORMknown {( checked)print} if
-(>States\n)print
+( onChange="changedtext(this);">States\n)print
 (<br><input type=checkbox name=districts)print 
 /districts FORMknown {( checked)print} if
-(>Districts\n)print
+( onChange="changedtext(this);">Districts\n)print
 } 
 {
 (<br><input type=checkbox name=coasts>Coasts\n) print
@@ -111,7 +111,7 @@ nip
 <font point-size=12pt>Epidemiological
 <br><input type=checkbox name=mask<INGRID>
 /mask FORMknown {( checked)print} if
-</INGRID>>Mask
+</INGRID> onChange="changedtext(this)">Mask
 </font>
 </td>
 </tr>

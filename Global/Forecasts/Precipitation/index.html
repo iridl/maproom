@@ -87,6 +87,8 @@ link:
 /href (javascript:setXY('90W','30W','60S','15N'))def
 :link
 %/leftmenusub? { leftmenulevel 0 get 2 le } def
+WWWinfo /onload (initdrag();) put
+WWWinfo /onunload (window.setTimeout('resetdrag',5000);) put
 leftmenuHeader
 </INGRID>
 <FORM name=mapform action=index.html>
