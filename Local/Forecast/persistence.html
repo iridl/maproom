@@ -25,14 +25,15 @@ def
 } if
 pop
 </INGRID>
-<head>
-<title>Forecast terciles and precipitation persistence</title>
+<head><title>Forecast terciles and precipitation persistence</title>
 <link REL=stylesheet TYPE="text/css" HREF="/site.html">
 </head>
-<body bgcolor="#FFFFFF" link="#0000FF" vlink="#0060FF" alink="#FF0000">
+<body link="#0000aa" vlink="#0066aa" bgcolor="#ffffff">
 <INGRID>leftmenu</INGRID>
 <form action=terciles.html>
-<table bgcolor=f0f0f0 cellpadding=4><tr align=center valign=center><td rowspan=3>
+<center><table width="700"><tbody><tr valign="top"><td align="left">
+
+<table cellpadding="6" cellspacing="4" bgcolor="#ffffff"><tbody><tr bgcolor="#f0f0f0"><td>
 <INGRID>
 SOURCES .WORLDBATH .bath
 WWWinfo .FORMinfo .map a: .X .plotvalue :a: .Y .plotvalue :a
@@ -45,42 +46,32 @@ X Y fig: lightgrey mask red smallpushpins :fig /plotaxislength 120 psdef /plotbo
 /plotborderbottom 8 psdef
 /antialias true psdef
 /map imagelink
-</INGRID></td><td>Observation for</td><td>Forecast for</td></tr>
-<tr>
-<td rowspan=2><b><INGRID>
+</INGRID></td><td align="left">
+Observations for:<br> 
+<b><INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
 WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
 ( - ) print
 WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub printunits
 pop
-</INGRID></b></td>
-<td><b><INGRID>WWWinfo .FORMinfo .map .T .plotvalue print</INGRID></b></td>
-</tr>
-<tr><td>made <b><INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID></b></td>
-</tr></table>
+</INGRID></b>
+</td><td align="left">
+Forecast for: &nbsp<b><INGRID>WWWinfo .FORMinfo .map .T .plotvalue print</INGRID></b><br>
+made <b><INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID></b>
+</td></tr></tbody></table>
 
-<! SOURCES .UEA .CRU .New .CRU05 .percentiles .c6190 .monthly .prcp
-  percentile 0.33 0.5 0.67 VALUES
-  percentile T fig: lines :fig
-  /map imagelink
---->
-<table><tr><td>
-<INGRID>
-SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob
-a: :a: 0 mul 
-%:a: :a: 0 mul 33 add
-:a C fig- 
-grey deltabars
-black dashed 40 15 55 horizontallines
--fig /XOVY 1 psdef
-/plotaxislength 200 psdef
-/map imagelink
-</INGRID>
-<br>Precipitation
-</td><td>
+<table cellpadding="6" cellspacing="4" bgcolor="#ffffff"><tbody><tr valign="top"><td width="50%" bgcolor="#f0ffff">
+<b>Precip <INGRID>
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
+WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
+( - ) print
+WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub printunits
+pop
+</INGRID></b><br>
+
+&nbsp; &nbsp;
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
-  /long_name (Precipitation (mm)) def
 T /pointwidth 3. def pop
 T -12 -1 shiftdata
 T /F renameGRID
@@ -95,8 +86,109 @@ DATA AUTO AUTO RANGE
      /T_lag -12 0 plotrange
 /map imagelink
 </INGRID>
-<br>Precipitation relative to <INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID>
-</td></tr></table>
-</form>
-</body>
-</html>
+<br>Precipitation relative to <INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID> <br>
+[Pcp in mm/month<br>
+color bar here if colored histogram]
+
+</td><td height="200" bgcolor="#f0ffff" width="50%">
+<b>Precip percentile, <INGRID>
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
+WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
+( - ) print
+WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub printunits
+pop
+</INGRID></b><br>
+
+&nbsp; &nbsp; 
+<INGRID>
+SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
+  dup
+   T (Jan 1979) (Dec 1995) RANGE
+   T 12 splitstreamgrid
+   [T2]0.0 0.33 0.5 0.67 1. 0.5 replacebypercentile
+   [percentile]CofA=B-bounded
+T /pointwidth 3. def pop
+T -12 -1 shiftdata
+T /F renameGRID
+DATA AUTO AUTO RANGE
+  dup
+   0 mul
+   T_lag fig- grey deltabars black dotted -30
+              10 30 horizontallines
+              -fig
+     /XOVY 1.2 psdef
+     /plotaxislength 250 psdef
+     /T_lag -12 0 plotrange
+/map imagelink
+</INGRID>
+<br>
+[horizontal dash line draw at 33.3 and 66.7]
+
+</td></tr><tr valign="top"><td width="50%" bgcolor="#f0ffff">
+<b>Precipitation Climatology</b><br>
+
+&nbsp; &nbsp; 
+<INGRID>
+SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
+T (Jan 1979) (Dec 1995) RANGE
+T 12 splitstreamgrid
+[T2]0. 0.33 0.5 0.67 1. 0.5 replacebypercentile
+  a:
+    percentile 0.67 VALUE
+     :a:
+      percentile 0.5 VALUE dup
+      :a:
+       percentile 0.33 VALUE
+       :a
+     T fig: green deltabars brown deltabars :fig
+     /XOVY 1.8 psdef
+     /plotaxislength 250 psdef
+/map imagelink
+</INGRID>
+<INGRID>
+SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
+T (Jan 1979) (Dec 1995) RANGE
+T 12 splitstreamgrid
+[T2]0.33 0.5 0.67 0.5 replacebypercentile
+  a:
+    percentile 0.67 VALUE
+/fullname () def
+     :a:
+      percentile 0.5 VALUE 
+/fullname () def
+      :a:
+       percentile 0.33 VALUE
+/fullname () def
+       :a
+     T fig: thin dashed line medium solid line thin dashed line :fig
+     /XOVY 1.8 psdef
+     /plotaxislength 250 psdef
+/map imagelink
+</INGRID>
+
+</td><td bgcolor="#f0ffff" width="50%">
+<b>Forecast Tercile Probability</b><br>
+
+&nbsp; &nbsp; 
+<INGRID>
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob
+a: :a: 0 mul 
+%:a: :a: 0 mul 33 add
+:a C fig- 
+grey deltabars
+black dashed 40 5 45 horizontallines
+33.3 1 33.3 horizontallines
+-fig /XOVY 1.6 psdef
+/plotaxislength 200 psdef
+/plotborder 50 psdef
+/map imagelink
+</INGRID>
+</td></tr><tr valign="top"><td colspan="2" bgcolor="#f0ffff">
+<b>Note</b><br>
+- Precip anomaly: difference between observation and climotology(median)<br>
+- Precip anomaly percentile: observation ranked into 0 - 100, with 100 the wettest, 0 the driest<br>
+- Data: NCEP, base period 1979 - 1995
+</td></tr></tbody></table>
+
+</td></tr></tbody></table><center>
+</center></center></body></html>
