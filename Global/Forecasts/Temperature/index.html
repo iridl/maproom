@@ -25,11 +25,14 @@ setleftmenuvar
 :leftmenuinfo
 onClickforInfo?
 {
+/clicktopage FORMgetknown 
+not {
 WWWinfo .currenturldir 
 (/) rsearch { pop pop} if
 (/) rsearch { pop pop} if
 (/) rsearch { pop pop} if
 (/Local/Forecast/terciles.html) append
+} if
 %redirecttowithleftmenuinfo
 (toolbar=no,scrollbars=no,width=800,height=460) openinpopupwithleftmenuinfo
 (<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print
