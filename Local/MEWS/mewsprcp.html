@@ -60,7 +60,7 @@ SOURCES .WORLDBATH .bath
  :a: .X first pointwidth .5 mul add nip 
 :a: .Y first pointwidth .5 mul add nip :a
 georect
-WWWinfo .FORMinfo .map a: .X .plotvalue :a: .Y .plotvalue :a
+2 index a: .X .first :a: .Y .first :a
 togeopoint 
 a: .lon :a: .lat :a 
 X Y fig: lightgrey mask grey states_gaz black countries_gaz red fill  red smallpushpins :fig /plotaxislength 120 psdef /plotborder 0 psdef
