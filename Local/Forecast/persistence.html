@@ -88,8 +88,8 @@ T /pointwidth 3. def pop
 %T -12 -1 shiftdatashort
 /long_name (precip. anomaly) def
 T
-WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub 
-WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub 
+WWWinfo .FORMinfo .map .F .plotvalue readunits 
+dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
 %T /F renameGRID
 DATA AUTO AUTO RANGE
@@ -129,8 +129,8 @@ home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
 %home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .percentile .prcppercent
 T /pointwidth 3. def pop
 T
-WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub 
-WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub 
+WWWinfo .FORMinfo .map .F .plotvalue readunits
+dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
 %T -12 -1 shiftdatashort
 %T /F renameGRID
@@ -167,7 +167,8 @@ T 12 splitstreamgrid
 [T2]0.33 0.5 0.67 0.5 replacebypercentile
 
 T
-WWWinfo .FORMinfo .map .F .plotvalue readunits dup 12 sub exch 1 sub
+WWWinfo .FORMinfo .map .F .plotvalue readunits 
+dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
@@ -187,7 +188,8 @@ DATA 0 AUTO RANGE
 T 12 splitstreamgrid
 [T2]0.5 0.5 replacebypercentile
 T
-WWWinfo .FORMinfo .map .F .plotvalue readunits dup 12 sub exch 1 sub
+WWWinfo .FORMinfo .map .F .plotvalue readunits
+dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
