@@ -80,20 +80,23 @@ sub
   T (months since 1960-01-01) streamgridunitconvert
   T differential_div
 T /pointwidth 3. def pop
-T -12 -1 shiftdatashort
-T /F renameGRID
+%T -12 -1 shiftdatashort
+T
+WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub 
+WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub 
+RANGE
+%T /F renameGRID
 DATA AUTO AUTO RANGE
   dup
    0 mul
-   T_lag fig- grey deltabars 
+   T fig- grey deltabars 
 %black dotted -30 10 30 horizontallines
               -fig
      /XOVY 1.2 psdef
      /plotaxislength 250 psdef
-     /T_lag -12 0 plotrange
 /map imagelink
 </INGRID>
-<br>Precipitation Anomaly from 1979-1995 Median relative to <INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID>
+<br>Precipitation Anomaly from 1979-1995 median
 
 </td><td height="200" bgcolor="#f0ffff" width="50%">
 <b>b) Precip percentile, <INGRID>
@@ -117,17 +120,20 @@ home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
 /long_name (precipitation percentile) def
 %home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .percentile .prcppercent
 T /pointwidth 3. def pop
-T -12 -1 shiftdatashort
-T /F renameGRID
+T
+WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub 
+WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub 
+RANGE
+%T -12 -1 shiftdatashort
+%T /F renameGRID
 DATA 0. 100.  RANGE
   dup
    0 mul
-   T_lag fig- grey deltabars black dotted 33.3
+   T fig- grey deltabars black dotted 33.3
               33.4 66.8 horizontallines
               -fig
      /XOVY 1.6 psdef
      /plotaxislength 250 psdef
-     /T_lag -12 0 plotrange
 /map imagelink
 </INGRID>
 </td></tr><tr valign="top"><td width="50%" bgcolor="#f0ffff">
