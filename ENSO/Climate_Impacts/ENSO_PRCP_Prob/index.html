@@ -1,11 +1,55 @@
 <html>
 <head>
 <title>Historical Probability of Seasonal PRCP Tercile </title>
+<INGRID>
+figdefs
+</INGRID>
 </head>
 <link REL=stylesheet TYPE="text/css" HREF="/site.html">
 </head>
-<INGRID>leftmenuHeader</INGRID>
-<FORM name=mapform action=ENSO_PRCP_Prob.html>
+<INGRID>
+datasetdefs:
+:datasetdefs
+link:
+/name (Global) def
+/href (javascript:setlonlat(-180,180,-90,90)) def
+:link
+link:
+/name (North America) def
+/href (javascript:setlonlat(-170,-60,15,75)) def
+:link
+link:
+/name (Africa) def
+/href (javascript:setlonlat(-20,55,-40,40)) def
+:link
+link:
+/name (Asia Indonesia) def
+/href (javascript:setlonlat(40,170,-10,75)) def
+:link
+link:
+/name (Australia) def
+/href (javascript:setlonlat(100,180,-55,0 )) def
+:link
+link:
+/name (Central America) def
+/href (javascript:setlonlat(-100,-70,0,25)) def
+:link
+link:
+/name (Europe) def
+/href (javascript:setlonlat(-20,40,35,75)) def
+:link
+link:
+/name (Middle East) def
+/href (javascript:setlonlat(10,75,15,45')) def
+:link
+link:
+/name (South America) def
+/href (javascript:setlonlat(-90,-30,-60,15))def
+:link
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+</INGRID>
+<FORM name=mapform action=index.html>
 <center>
 <font size=+1>Historical Probability of Seasonal Precipitation Tercile Conditioned on ENSO</font><br>
 
@@ -60,6 +104,7 @@ imagelink
 </td></tr>
 </table>
 </center>
+<INGRID>hiddenplotoptionline0</INGRID>
 </FORM>
 <! --
  original color map
