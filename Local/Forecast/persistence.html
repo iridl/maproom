@@ -72,6 +72,10 @@ pop
 &nbsp; &nbsp;
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
+ T (days since 1960-01-01) streamgridunitconvert
+  T differential_mul
+  T (months since 1960-01-01) streamgridunitconvert
+  T differential_div
 T /pointwidth 3. def pop
 T -12 -1 shiftdata
 T /F renameGRID
@@ -86,9 +90,7 @@ DATA AUTO AUTO RANGE
      /T_lag -12 0 plotrange
 /map imagelink
 </INGRID>
-<br>Precipitation relative to <INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID> <br>
-[Pcp in mm/month<br>
-color bar here if colored histogram]
+<br>Precipitation relative to <INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID>
 
 </td><td height="200" bgcolor="#f0ffff" width="50%">
 <b>Precip percentile, <INGRID>
@@ -132,6 +134,10 @@ DATA 0. 100.  RANGE
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
 T (Jan 1979) (Dec 1995) RANGE
+ T (days since 1960-01-01) streamgridunitconvert
+  T differential_mul
+  T (months since 1960-01-01) streamgridunitconvert
+  T differential_div
 T 12 splitstreamgrid
 [T2]0. 0.33 0.5 0.67 1. 0.5 replacebypercentile
   a:
@@ -150,6 +156,10 @@ T 12 splitstreamgrid
 &nbsp; &nbsp;<INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
 T (Jan 1979) (Dec 1995) RANGE
+ T (days since 1960-01-01) streamgridunitconvert
+  T differential_mul
+  T (months since 1960-01-01) streamgridunitconvert
+  T differential_div
 T 12 splitstreamgrid
 [T2]0.33 0.5 0.67 0.5 replacebypercentile
 /long_name (precipitation) def
