@@ -4,8 +4,7 @@
 </head>
 <link REL=stylesheet TYPE="text/css" HREF="/site.html">
 </head>
-<body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000">
-<INGRID>leftmenu</INGRID>
+<INGRID>leftmenuHeader</INGRID>
 <FORM name=mapform action=ENSO_PRCP_Prob.html>
 <center>
 <table><tr><td align=center>
@@ -31,8 +30,9 @@
 dominanttercileprcpscale
  DATA 0 1 RANGE
     fig: scattercolor coasts :fig
-/map 
-inputimagelinkwithlimitcontrols
+showmenu?
+{/map inputimagelinkwithlimitcontrols}
+{figdup /map imagelink}ifelse
 </INGRID>
 </td></tr><tr><td align=center>
 <INGRID>
