@@ -55,6 +55,9 @@ leftmenuHeader
 
 <table><tr><td align=center>
 <INGRID>
+datasetdefs:
+/enso_prcp_prob_scale {startcolormap DATA 0 1 RANGE white LightBlue LightBlue 0 VALUE LightBlue LightBlue 0.1 bandmax DodgerBlue DodgerBlue 0.2 bandmax LightYellow LightYellow 0.4 bandmax yellow yellow 0.5 bandmax gold gold 0.6 bandmax orange orange 0.7 bandmax red red 0.8 bandmax 218 69 32 RGB RGBdup 0.9 bandmax HotPink HotPink 1. bandmax HotPink endcolormap}def
+:datasetdefs
  SOURCES .NOAA .NCDC .GCPS .MONTHLY .STATION.cuf
   T (Jan 1901) (Dec 1990) RANGE
   a: .lon
@@ -73,31 +76,7 @@ leftmenuHeader
      T 12 splitstreamgrid
      mul
     [T2]average
-startcolormap DATA
-      0 1 RANGE
-      white LightBlue LightBlue
-         0 VALUE
-         LightBlue LightBlue
-           0.1 bandmax
-           DarkTurquoise DarkTurquoise
-             0.2 bandmax
-             LightYellow LightYellow
-               0.4 bandmax
-               yellow yellow
-                 0.5 bandmax
-                 gold gold
-                   0.6 bandmax
-                   orange orange 0.7
-                     bandmax
-                     red red 0.8
-                     bandmax
-                     218 69 32
-                     RGB
-                     RGBdup 0.9
-                     bandmax
-                     HotPink HotPink 1.
-                     bandmax
-                     HotPink endcolormap
+enso_prcp_prob_scale 
 %dominanttercileprcpscale
  DATA 0 1 RANGE
     fig: scattercolor coasts :fig
