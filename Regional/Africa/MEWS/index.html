@@ -79,7 +79,9 @@ Optional Overlay<br> Maps
 </td></tr><tr><td>
 Boundaries
 <INGRID>
-WWWinfo /map FORMknown nip 
+WWWinfo /map FORMknown 
+[/mask /districts /states /countries /coasts] {FORMknown or} forall
+nip 
 {
 (<br><input type=checkbox name=coasts) print 
 /coasts FORMknown {( checked)print} if
@@ -119,7 +121,9 @@ SOURCES .NOAA .NCEP .CPC .FEWS .TEN-DAY .RFEv2 .est_prcp MEWSprcp_colors
 IRIDB (select epiz_new2_geom as geom from epiz_new2) openquery .geom
 } if
 X Y fig: colors 
-WWWinfo /map FORMknown nip 
+WWWinfo /map FORMknown 
+[/mask /districts /states /countries /coasts] {FORMknown or} forall
+nip
 {
 %/mask FORMknown {blue thin  epiz} if
 /mask FORMknown { red fill } if
