@@ -77,11 +77,10 @@ pop
 <center>
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
-SOURCES .IRI .FD .Seasonal_Forecast .Observations .monthly .prcp
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
-%  dup
-   T (Jan 1969) (Dec 1998) RANGE
+  dup
+   T (Jan 1979) (Dec 1995) RANGE
    T 12 splitstreamgrid
    [T2]0.5 0.5 replacebypercentile
 %home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
@@ -89,11 +88,11 @@ Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 %X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 %Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 sub
-  T (days since 1960-01-01) streamgridunitconvert
+ T (days since 1960-01-01) streamgridunitconvert
   T differential_mul
   T (months since 1960-01-01) streamgridunitconvert
   T differential_div
-  T /pointwidth 3. def pop
+T /pointwidth 3. def pop
 %T -12 -1 shiftdatashort
 /long_name (precip. anomaly) def
 T
@@ -127,11 +126,10 @@ pop
 <center>
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
-SOURCES .IRI .FD .Seasonal_Forecast .Observations .monthly .prcp
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
-%  dup
-   T (Jan 1969) (Dec 1998) RANGE
+  dup
+   T (Jan 1979) (Dec 1995) RANGE
    T 12 splitstreamgrid
    [T2]0.0 0.33 0.5 0.67 1. 0.5 replacebypercentile
 %home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
@@ -167,9 +165,8 @@ DATA 0. 100.  RANGE
 
 <center>
 <INGRID>
-SOURCES .IRI .FD .Seasonal_Forecast .Observations .monthly .prcp
-%SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
-T (Jan 1969) (Dec 1998) RANGE
+SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
+T (Jan 1979) (Dec 1995) RANGE
  T (days since 1960-01-01) streamgridunitconvert
   T differential_mul
   T (months since 1960-01-01) streamgridunitconvert

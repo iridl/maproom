@@ -77,22 +77,15 @@ pop
 <center>
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
+SOURCES .IRI .FD .Seasonal_Forecast .Climatologies .c6998 .monthly .prcp
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
-  dup
-   T (Jan 1979) (Dec 1995) RANGE
-   T 12 splitstreamgrid
-   [T2]0.5 0.5 replacebypercentile
-%home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
-%percentile .5 VALUE
-%X WWWinfo .FORMinfo .map .X .plotvalue VALUE
-%Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 sub
- T (days since 1960-01-01) streamgridunitconvert
+  T (days since 1960-01-01) streamgridunitconvert
   T differential_mul
   T (months since 1960-01-01) streamgridunitconvert
   T differential_div
-T /pointwidth 3. def pop
+  T /pointwidth 3. def pop
 %T -12 -1 shiftdatashort
 /long_name (precip. anomaly) def
 T
@@ -126,15 +119,12 @@ pop
 <center>
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
+SOURCES .IRI .FD .Seasonal_Forecast .Observations .monthly .prcp
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
-  dup
-   T (Jan 1979) (Dec 1995) RANGE
+   T (Jan 1969) (Dec 1998) RANGE
    T 12 splitstreamgrid
    [T2]0.0 0.33 0.5 0.67 1. 0.5 replacebypercentile
-%home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
-%X WWWinfo .FORMinfo .map .X .plotvalue VALUE
-%Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
    [percentile]CofA=B-bounded
 (%) unitconvert
 /long_name (precip. percentile) def
@@ -160,19 +150,19 @@ DATA 0. 100.  RANGE
 </td></tr><tr valign="top"><td width="50%" bgcolor="#f0ffff">
 
 <font face="Helvetical,Arial" point-size=9pt size=-1>
-<b>c) Precipitation median and tercile climatology</b><br>
+<b>c) Precipitation mean and tercile climatology</b><br>
 </font>
 
 <center>
 <INGRID>
-SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
-T (Jan 1979) (Dec 1995) RANGE
+SOURCES .IRI .FD .Seasonal_Forecast .Observations .monthly .prcp
+ T (Jan 1969) (Dec 1998) RANGE
  T (days since 1960-01-01) streamgridunitconvert
-  T differential_mul
-  T (months since 1960-01-01) streamgridunitconvert
-%  T differential_div
-T 3 runningAverage 
-3 mul
+ T differential_mul
+ T (months since 1960-01-01) streamgridunitconvert
+ T differential_div
+ T 3 runningAverage 
+ 3 mul
 DATA 0 AUTO RANGE
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
@@ -180,7 +170,6 @@ Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 T 12 splitstreamgrid
 [T2]0.33 0.5 0.67 0.5 replacebypercentile
 /long_name (precipitation) def
-
 
 T
 WWWinfo .FORMinfo .map .F .plotvalue readunits 
@@ -194,27 +183,28 @@ a: percentile .67 VALUE
 :a: percentile .33 VALUE
 :a
 
-SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
-T (Jan 1979) (Dec 1995) RANGE
+SOURCES .IRI .FD .Seasonal_Forecast .Climatologies .c6998 .monthly .prcp
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
-T (days since 1960-01-01) streamgridunitconvert
-T differential_mul
-T (months since 1960-01-01) streamgridunitconvert
-T differential_div
+
 DATA 0 AUTO RANGE
-T 12 splitstreamgrid
-[T2]0.5 0.5 replacebypercentile
 T
 WWWinfo .FORMinfo .map .F .plotvalue readunits
 dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
-a: percentile .50 VALUE :a: 0 mul :a
+
+T (days since 1960-01-01) streamgridunitconvert
+T differential_mul
+T (months since 1960-01-01) streamgridunitconvert
+
+a:  :a: 0 mul :a
 
 T /pointwidth 1. def pop
 T fig: 
 %green medium dotted linenokey black medium solid linenokey darkgoldenrod medium dotted linenokey 
-green medium linenokey black medium solid linenokey darkgoldenrod medium linenokey 
+green medium linenokey 
+black medium solid linenokey 
+darkgoldenrod medium linenokey 
 gray deltabars
 %|
 %green medium linenokey black medium solid linenokey darkgoldenrod medium linenokey
