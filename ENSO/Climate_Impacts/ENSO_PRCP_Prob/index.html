@@ -73,7 +73,32 @@ leftmenuHeader
      T 12 splitstreamgrid
      mul
     [T2]average
-dominanttercileprcpscale
+startcolormap DATA
+      0 1 RANGE
+      white LightBlue LightBlue
+         0 VALUE
+         LightBlue LightBlue
+           0.1 bandmax
+           DarkTurquoise DarkTurquoise
+             0.2 bandmax
+             LightYellow LightYellow
+               0.4 bandmax
+               yellow yellow
+                 0.5 bandmax
+                 gold gold
+                   0.6 bandmax
+                   orange orange 0.7
+                     bandmax
+                     red red 0.8
+                     bandmax
+                     218 69 32
+                     RGB
+                     RGBdup 0.9
+                     bandmax
+                     HotPink HotPink 1.
+                     bandmax
+                     HotPink endcolormap
+%dominanttercileprcpscale
  DATA 0 1 RANGE
     fig: scattercolor coasts :fig
 showmenu?
