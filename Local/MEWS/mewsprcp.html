@@ -28,7 +28,7 @@ WWWinfo .FORMinfo .map .Y /step getknown
 dup (district) eq
 { 
 IRIDB
-  (select gid,afr_adm01_3_geom as geom,name1,name2,name3,name4,centroid(afr_adm01_3_geom) as center,distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) from afr_adm01_3 where afr_adm01_3_geom  &&  GeometryFromText( 'POINT(XXXX)',4326 ) ORDER BY distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) LIMIT 1)
+  (select gid,afr_adm01_3_geom as geom,country_na,name1,name2,name3,name4,centroid(afr_adm01_3_geom) as center,distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) from afr_adm01_3 where afr_adm01_3_geom  &&  GeometryFromText( 'POINT(XXXX)',4326 ) ORDER BY distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) LIMIT 1)
 (XXXX) rsearch pop nip
  X WWWinfo .FORMinfo .map .X .plotvalue readunits  s== nip
 ( )
@@ -128,13 +128,14 @@ Observations for:<br>
 WWWinfo .FORMinfo .map .Y .step (district) eq
 {
 WWWinfo .districtinfo
-[ name1 name2 name3 name4 ] {reserverealization} forall
+[ country_na name1 name2 name3 name4 ] {reserverealization} forall
 ()
 [
 name4 getrealization 
 name3 getrealization 
 name2 getrealization 
 name1 getrealization 
+country_na getrealization
 ] { dup (N.A.) eq {pop}{exch print print (, )}ifelse} forall
 pop
 pop
