@@ -1,0 +1,99 @@
+<html>
+<head>
+<INGRID>
+figdefs
+</INGRID>
+</head>
+<INGRID>
+datasetdefs:
+:datasetdefs
+link:
+/name (Global) def
+/href (javascript:setXY('180W','180E','90S','90N')) def
+:link
+link:
+/name (North America) def
+/href (javascript:setXY('170W','60W','15N','75N')) def
+:link
+link:
+/name (Africa) def
+/href (javascript:setXY('20W','55E','40S','40N')) def
+:link
+link:
+/name (Asia Indonesia) def
+/href (javascript:setXY('40E','170E','10S','75N')) def
+:link
+link:
+/name (Australia) def
+/href (javascript:setXY('100E','180','55S','0N' )) def
+:link
+link:
+/name (Central America) def
+/href (javascript:setXY('100W','70W','0','25N')) def
+:link
+link:
+/name (Europe) def
+/href (javascript:setXY('20W','40E','35N','75N')) def
+:link
+link:
+/name (Middle East) def
+/href (javascript:setXY('10E','75E','15N','45N')) def
+:link
+link:
+/name (South America) def
+/href (javascript:setXY('90W','30W','60S','15N'))def
+:link
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+</INGRID>
+<FORM name=mapform action=index.html>
+<center>
+<font size=+1>Wind Climatology</font><br>
+
+<table><tr><td align=center>
+<INGRID>
+ ds:
+home .mbell .IRI .calculations .wind_vector .speed
+home .mbell .IRI .calculations .wind_vector .u
+home .mbell .IRI .calculations .wind_vector .v
+ :ds
+a: .speed windspeed_anomaly_colors :a: .speed :a: .u :a: .v :a
+X Y fig: colors grey nozero contours vectors black thin solid countries_gaz :fig
+showmenu?
+{/map inputimagelinkwithlimitcontrols}
+{figdup /map imagelink}ifelse
+</INGRID>
+</td></tr><tr><td align=center>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+</td></tr>
+<tr>
+<td align=center>
+<table border cols=1 width="75%" nosave>
+<tr>
+<td>
+<font size=-1><b>Data Source</b>: NCEP Reanalysis monthly wind components on a 2.5 x 2.5 deg. lat/lon grid.</font>
+<br>
+<font size=-1><b>Base Period of Climatology: </b>1971-2000</font>
+<p>
+<font size=-1><b>Description:</b></font>
+<br><font size=-1>
+The map above displays the monthly average wind climatology for the indicated month and 
+pressure level.  Climatological wind vectors are plotted over shading and contours
+indicating the wind speed (in m/s).  The shading and contour interval is 3 m/s.
+Use the controls on the page to change the month, pressure level,
+and geographic domain.  Quick links to continental geographic domains are listed in the
+blue menu bar on the left.  NCEP is an acronym for the National Centers for Environmental
+Prediction, US.
+</font></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</center>
+<INGRID>hiddenplotoptionline0</INGRID>
+</FORM>
+</body>
+</html>
