@@ -1,0 +1,234 @@
+<html><head>
+    <title>IRI Seasonal Precipitation Forecast</title>
+<INGRID>
+figdefs
+</INGRID>
+</head>
+<INGRID>
+/map getimageinput 
+{
+click? zoom (Click for Info) eq and
+{ .clickpoint /pageclickpoint exch def
+leftmenuinfo:
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .dominant
+pageclickpoint 
+{dup null eq
+{
+(Please click on the map) print
+stop
+} if
+ value VALUE  } forall
+a: .X first cvsunits nip :a: .Y first cvsunits nip 
+/map FORMgetknown {
+/domainrestrict get
+:a: .F 1 index 4 get cvsunits nip exch
+:a: .L 1 index 1 get cvsunits nip exch
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .target_date
+ 1 index dup 1 get exch 4 get add 1 add cvsunits nip exch
+pop
+:a
+/map.T.plotvalue exch def
+/map.L.plotvalue exch def
+/map.F.plotvalue exch def
+} 
+{
+:a}
+ifelse
+/map.Y.plotvalue exch def
+/map.X.plotvalue exch def
+GRIDParent exch
+/map FORMgetknown {
+a: .X plotfirst readunits nip
+:a: .X plotlast readunits nip
+:a: .Y plotfirst readunits nip
+:a: .Y plotlast readunits nip
+:a
+/map.Y.plotlast exch def
+/map.Y.plotfirst exch def
+/map.X.plotlast exch def
+/map.X.plotfirst exch def
+}if
+nip
+:leftmenuinfo
+WWWinfo .currenturldir 
+(/) rsearch { pop pop} if
+(/) rsearch { pop pop} if
+(/) rsearch { pop pop} if
+(/Local/Forecast/terciles.html) append
+%redirecttowithleftmenuinfo
+(toolbar=no,scrollbars=no,width=800,height=460) openinpopupwithleftmenuinfo
+(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print
+stop
+}
+{
+pop
+leftmenuinfo:
+GRIDParent exch
+/map FORMgetknown{
+a: .X plotfirst readunits nip
+:a: .X plotlast readunits nip
+:a: .Y plotfirst readunits nip
+:a: .Y plotlast readunits nip
+:a
+/map.Y.plotlast exch def
+/map.Y.plotfirst exch def
+/map.X.plotlast exch def
+/map.X.plotfirst exch def
+} if
+nip
+:leftmenuinfo
+} ifelse
+} if
+</INGRID>
+<INGRID>
+datasetdefs:
+:datasetdefs
+link:
+/name (Global) def
+/href (javascript:setXY('180W','180E','90S','90N')) def
+:link
+link:
+/name (North America) def
+/href (javascript:setXY('170W','60W','15N','75N')) def
+:link
+link:
+/name (Africa) def
+/href (javascript:setXY('20W','55E','40S','40N')) def
+:link
+link:
+/name (Asia Indonesia) def
+/href (javascript:setXY('40E','170E','10S','75N')) def
+:link
+link:
+/name (Australia) def
+/href (javascript:setXY('100E','180','55S','0N' )) def
+:link
+link:
+/name (Central America) def
+/href (javascript:setXY('100W','70W','0','25N')) def
+:link
+link:
+/name (Europe) def
+/href (javascript:setXY('20W','40E','35N','75N')) def
+:link
+link:
+/name (Middle East) def
+/href (javascript:setXY('10E','75E','15N','45N')) def
+:link
+link:
+/name (South America) def
+/href (javascript:setXY('90W','30W','60S','15N'))def
+:link
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+</INGRID>
+<FORM name=mapform action=index.html>
+<INGRID>
+/helpnow FORMknown not {stopprint} if
+</INGRID>
+<h3>Obtaining Terciles</h3>
+
+<p>To obtain a histogram of the tercile probabilities for  precipitation
+and temperature, move your cursor over any land area location on the world
+map and click.</p>
+<br>
+
+<p>You may <b>ZOOM</b> in on a desired region of the world <b> by
+changing the latitude and longitude settings</b> of the display.
+LATITUDE settings are located to the left of the world map, LONGITUDE
+settings are located below the map. To specify a new latitude range,
+edit the values in the boxes to the left of the map. Use "N" to 
+indicate degrees north, "S" to indicate degrees south. Similary, to
+specify new longitude settings, edit the values in the boxes below the
+plot. Use "W" to indicate degrees west and "E" to indicate degees 
+east.</p> 
+
+<p>The forecast is expressed in terms of the probabilities of
+each of  three categories, above&#173;normal, is defined to be
+within the wettest third of historically recorded precipitation
+total or the warmest third of historically recorded mean temperature
+for a given region; below&#173;normal is defined to be the driest third
+of precipitation total or the coldest third of mean temperature; normal,
+is the third centered on the climatological median.</p>
+<br>
+
+<p>It is anticipated that each rectangular region identified will have 
+distinct interior climate variability, especially in area having terrain
+features or near large bodies of water. The forecast should be interpreted
+as a mean condition over the entire region.</p>
+
+<br>
+<h3>The Climatology Plots</h3>
+<br>
+
+<p>The monthly climatologies of precipitation and temperature for a
+selected point are displayed in mm/day. Horizontal lines are drawn at
+1mm/day intervals. The monthly climatologies of temperature are also
+displayed. The mean temperature is plotted with a solid line, the
+range is indicated by bars, where the top (bottom) of each bar indicates
+the average maximum (minimum)temperature.Horizontal lines are drawn at
+intervals of 5 degrees C. 
+<br>
+<br>
+<center>Select the <b>Redraw</b> button (to the lower-left of map) to hide HELP </center><br>
+<br>
+<INGRID>startprint</INGRID>
+<center>
+<INGRID>
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation 
+.dominant
+Y -85 85 RANGE
+X Y fig: colors black thin coasts thin countries :fig
+/plotaxislength 590 psdef
+%/XOVY 1.7 psdef
+%/plotborderleft 35 psdef
+%/plotborderright 25 psdef
+%/plotborderbottom 90 psdef
+%/plotbordertop 55 psdef
+figdup
+/map 
+showmenu? 
+{inputimagelinkwithlimitcontrolsclickforinfo}
+{imagelink } ifelse
+</INGRID>
+<br>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+</center>
+<br>
+<center><b>
+<INGRID>
+figlimits 
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .target_date
+exch
+{ exch cvx exec exch 0 get VALUE} forall
+CopyStream
+(Seasonal Precipitation Forecast for )print printstreamunits
+</INGRID></b>
+</center>
+<INGRID>
+startprint
+</INGRID>
+</FORM>
+  </body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Maproom: Physical Climate: Local: Climatology</title>
+<link REL=stylesheet TYPE="text/css" HREF="/site.html">
+</head>
+<body bgcolor="#FFFFFF" link="#0000FF" vlink="#0060FF" alink="#FF0000">
+<INGRID>leftmenu</INGRID>
+<h2>Climatology</h2>
+<table bgcolor=f0f0f0><tr align=center valign=center><td rowspan=2>
+<INGRID>
+SOURCES .WORLDBATH .bath
+WWWinfo .FORMinfo .map a: .X .plotvalue :a: .Y .plotvalue :a
+togeopoint 
+a: .lon :a: .lat :a 
+X Y fig: lightgrey mask red smallpushpins :fig /plotaxislength 120 psdef /plotborder 0 psdef
+/plotbordertop 8 psdef
+/plotborderright 8 psdef
+/plotborderleft 8 psdef
+/plotborderbottom 8 psdef
+/antialias true psdef
+/map imagelink
+</INGRID></td><td>Target time</td></tr>
+<tr>
+<th><INGRID>WWWinfo .FORMinfo .map 
+/T getknown {.plotvalue print} if</INGRID></th>
+</tr></table>
+</body>
+</html>

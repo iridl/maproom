@@ -1,0 +1,130 @@
+\begin{ingrid}
+/index.html {(figureset) htmlprint} def
+/description (Anomalies, including surface land and sea surface temperature, precipitation, pressure) def
+/T 
+/monthtime
+0
+16 Jan 1983 ensotime
+1
+SOURCES .NOAA .NCEP .EMC .CMB .GLOBAL .monthly .ssta .T .last
+SOURCES .NOAA .NCEP-NCAR .CDAS-1 .MONTHLY .T .last
+max
+SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v9906 .anomaly .prcp .T .last
+max
+NewEvenGRID
+/defaultvalue last def
+name exch def
+figview:
+/viewname /view01 def
+/viewdata SOURCES .NOAA .NCEP .EMC .CMB .GLOBAL .monthly .ssta 
+-5 5 bluered20colorscale
+def
+/viewfigureurl (X Y fig: colors | nozero unlabelledcontours white land black coasts :fig) def
+options:
+/X null 2 object
+/plotfirst (30) def
+/plotlast (390) def
+def
+/title (NOAA NCEP EMC SST Anomaly) def
+:options
+:figview
+%figview:
+%/viewname /view02 def
+%/viewdata SOURCES .NOAA .NCEP .EMC .CMB .GLOBAL .monthly .sst def
+%/viewfigureurl (X Y fig: colors white land black coasts :fig) def
+%options:
+%/X null 2 object
+%/plotfirst (30) def
+%/plotlast (390) def
+%def
+%:options
+%:figview
+figview:
+/viewname /view02 def
+/viewdata 
+%SOURCES .NOAA .NCEP-NCAR .CDAS-1 .MONTHLY .Diagnostic .surface .prate
+%a: :a: T (Jan 1961) (Dec 1990) RANGE yearly-climatology :a sub
+%(1g/cm3 mm/day) unitconvert
+SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v9906 .anomaly .prcp
+% (mm/day) unitconvert
+%-10 10 bluered20colorscale
+%DATA -10 2 10 { dup 0 eq {pop} if } for VALUES
+-10 10 bluered20colorscale
+  def
+/viewfigureurl (X Y fig: colors coasts | nozero unlabelledcontours :fig) def
+options:
+/title (NOAA NCEP CPC Precipitation Anomaly) def
+/X null 2 object
+/plotfirst (30) def
+/plotlast (390) def
+def
+:options
+:figview
+figview:
+/viewname /view03 def
+/viewdata  SOURCES .NOAA .NCEP-NCAR .CDAS-1 .MONTHLY .Intrinsic .PressureLevel
+  P (200) VALUES
+  def
+/viewfigureurl (a: .u X Y 2 REORDER SOURCES .NOAA .NCEP-NCAR .CDAS-1 .mc6190 .Intrinsic .PressureLevel .u sub :a: .v X Y 2 REORDER )
+(SOURCES .NOAA .NCEP-NCAR .CDAS-1 .mc6190 .Intrinsic .PressureLevel .v sub :a 2 copy  mag 0 40 brown16colorscale 3 1 roll X Y fig: colors vectors coasts :fig) append def
+options:
+/title (NOAA NCEP CDAS-1 200 mb wind anomaly) def
+/X null 2 object
+/plotfirst (30) def
+/plotlast (390) def
+def
+:options
+:figview
+figview:
+/viewname /view04 def
+/viewdata  SOURCES .NOAA .NCEP-NCAR .CDAS-1 .MONTHLY .Intrinsic .PressureLevel
+  P (925) VALUES
+  def
+/viewfigureurl (a: .u X Y 2 REORDER SOURCES .NOAA .NCEP-NCAR .CDAS-1 .mc6190 .Intrinsic .PressureLevel .u sub :a: .v )
+(X Y 2 REORDER SOURCES .NOAA .NCEP-NCAR .CDAS-1 .mc6190 .Intrinsic .PressureLevel .v sub :a 2 copy  mag 0 20 brown16colorscale 3 1 roll X Y fig: colors vectors coasts :fig) append def
+options:
+/title (NOAA NCEP CDAS-1 925 mb wind anomaly) def
+/X null 2 object
+/plotfirst (30) def
+/plotlast (390) def
+def
+:options
+:figview
+figview:
+/viewname /view05 def
+/viewdata  
+ SOURCES .NOAA .NCEP-NCAR .CDAS-1
+  a: .MONTHLY .Intrinsic .MSL .pressure
+    :a: .mc6190 .Intrinsic .MSL .pressure :a
+   sub 
+(hPa) unitconvert
+-40 40 bluered20colorscale
+ def
+/viewfigureurl (X Y fig: colors coasts | nozero unlabelledcontours :fig) def
+options:
+/title (NOAA NCEP CDAS-1 Sea Level Pressure Anomaly) def
+/X null 2 object
+/plotfirst (30) def
+/plotlast (390) def
+def
+/CI 2.5 def
+:options
+:figview
+figview:
+/viewname /view06 def
+/viewdata   
+%SOURCES .NOAA .NCEP-NCAR .CDAS-1 .MONTHLY .Diagnostic .surface .temp 
+%a: :a: T (Jan 1961) (Dec 1990) RANGE yearly-climatology :a sub
+SOURCES .NOAA .NCEP .CPC .CAMS .anomaly .temp
+-10 10 bluered20colorscale
+    def
+/viewfigureurl (X Y fig: colors coasts | nozero unlabelledcontours :fig) def
+options:
+/title (NOAA NCEP CPC CAMS Temperature Anomaly) def
+/X null 2 object
+/plotfirst (30) def
+/plotlast (390) def
+def
+:options
+:figview
+\end{ingrid}

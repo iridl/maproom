@@ -1,0 +1,151 @@
+<html><head>
+    <title>Europe Temperature and Precipitation Climatologies</title>
+</head>
+
+<INGRID>
+/map getimageinput { .click? }{false}  ifelse
+{  (<body bgcolor=white>\n)print}
+{leftmenuHeader} ifelse
+(<FORM action=Select_a_Point.html>\n)print
+/helpnow FORMknown not {stopprint} if
+</INGRID>
+<h3>Obtaining Climatologies</h3> 
+
+<p>To obtain a local climatogy of precipitation and temperature,
+simply move your cursor over any land area location on the world map
+and click.  NOTE: No data is available over water or Antarctica. </p>
+<br>
+
+<p>You may <b>ZOOM</b> in on a desired region of the world <b> by
+changing the latitude and longitude settings</b> of the display.
+LATITUDE settings are located to the left of the world map, LONGITUDE
+settings are located below the map.  To specify a new latitude range,
+edit the values in the boxes to the left of the map.  Use "N" to
+indicate degrees north, "S" to indicate degrees south.  Similarly, to
+specify new longitude settings, edit the values in the boxes below the
+plot.  Use "W" to indicate degrees west and "E" to indicate degrees
+east.</p>
+
+<br>
+<h3>The Climatology Plots</h3>
+The base period for all of these plots is 1961 - 1990. <br>
+The data is in gridded format on a 0.5 by 0.5 degree grid.  <br>
+<br>
+
+<p>The monthly climatologies of precipitation and temperature for a
+selected point are displayed in four plots: <ul> <li> Average monthly
+<b>Precipitation</b> is displayed in the upper-left plot in mm/day.
+Horizontal lines are drawn at 1mm/day intervals.</li> <li> The
+<b>Wet-Day Frequency</b> is plotted directly below the monthly
+precipitation.  This indicates the average number of days in a given
+month with observed precipitation. Horizontal lines are drawn at
+intervals of 5 days. </li> <li><b>Average Temperature</b> is displayed
+in the upper-right plot.  The average diurnal (daily) range in
+temperature is also indicated.  The mean temperature is plotted with a
+solid line, the diurnal range is indicated by bars; the top (bottom)
+of each bar indicates the average maximum (minimum) temperature.
+Horizontal lines are drawn at intervals of 5 degrees C.</li>
+<li>A <b>Ground-Frost Frequency</b> plot is displayed directly below the mean temperature. This plot indicates
+the average number of days in a given month where the minimum temperature is below 0 degrees C. 
+Horizontal lines are drawn at intervals of 5 days.</li></ul>
+<br>
+<center>Select the <b>Redraw</b> button (to the lower-left of map) to hide HELP </center><br>
+<br>
+<INGRID>startprint
+(<center>) print
+/map getimageinput {
+click? 
+{ .clickpoint /pageclickpoint exch def
+SOURCES .UEA .CRU .New .CRU05 .climatology .c6190 
+pageclickpoint { value VALUE } forall
+a: 
+(<center><b>Point Selected:</b>  )print
+Y first printunits pop (, ) print
+X first printunits pop (</center><br>) print
+
+pop
+:a: .prcp dataflag [T] average getrealization 0 get 0 eq
+{ (<br>) print
+(<center><b>NO DATA</b> - Data only available over land.</center><br>) print } 
+{ 
+
+(<br>) print
+(<table>) print 
+(<tr><th>PRECIPITATION</th><th>TEMPERATURE</th></tr>)print
+(<tr><td>) print
+:a: .prcp
+dup 0 mul T fig: grey deltabars  black dotted 0 1 30 horizontallines :fig
+/plotaxislength 250 psdef
+/XOVY 1.2 psdef 
+imagelink
+(</td>) print
+
+(<td>)print
+:a: .maximum .temp
+:a: .minimum .temp
+:a:
+.mean .temp 
+
+T fig:  grey deltabars medium black line thin dotted -60 5 50 horizontallines :fig
+/plotaxislength 250 psdef
+/XOVY 1.2 psdef 
+imagelink
+(</td></tr></table>) print
+(<br>) print
+(<br>) print
+(<table>) print
+(<tr><th>WET-DAY FREQUENCY<br>Number of days/mo with Precipitation</th><th>
+GROUND-FROST FREQUENCY<br>Number of days/mo with Min. Temp. < 0 deg. C</th>
+</tr>) print
+(<tr><td>) print
+:a: .wet
+dup 0 mul T fig: grey deltabars black dotted 0 5 30 horizontallines :fig
+/plotaxislength 250 psdef
+/XOVY 1.2 psdef
+imagelink
+(</td>) print
+(<td>) print
+:a: .frs
+dup 0 mul T fig: grey deltabars black dotted 0 5 30 horizontallines :fig
+/plotaxislength 250 psdef
+/XOVY 1.2 psdef 
+imagelink
+(</td></tr></table>) print
+(<br>) print
+(<center><b>Base Period</b> (all plots) 1961-1990</center><br>) print
+:a
+} ifelse 
+false} 
+{true}ifelse
+} {true}ifelse
+{
+SOURCES .WORLDBATH .bath X -20 50  RANGE Y 35 75 RANGE
+X Y fig: colors whiteocean black thin coasts thin countries :fig /plotaxislength 600 psdef
+/XOVY auto psdef
+/map inputimagelinkwithlimitcontrolsnozoom
+( <br>) print
+(<b>CLICK</b> anywhere <b>OVER LAND</b> for a local monthly climatology of PRECIPITATION and 
+TEMPERATURE.<br>)print
+(<br>)print
+(<br>)print
+(<br>)print
+(Choose <b>HELP</b> for more information on obtaining and interpreting plots.<br>) print
+(<br>)print
+(DATA SOURCE:  <i>University of East Anglia </i>(0.5 x 0.5 degree 1961-1990 Monthly
+Climatology) 
+<br>)print
+
+} if
+</INGRID>
+
+</FORM>
+  </body></html>
+
+
+
+
+
+
+
+
+
