@@ -156,16 +156,16 @@ DATA 0. 100.  RANGE
 <center>
 <INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Observations .monthly .prcp
+X WWWinfo .FORMinfo .map .X .plotvalue VALUE
+Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
  T (Jan 1969) (Dec 1998) RANGE
  T (days since 1960-01-01) streamgridunitconvert
  T differential_mul
  T (months since 1960-01-01) streamgridunitconvert
- T differential_div
+% T differential_div
  T 3 runningAverage 
  3 mul
 DATA 0 AUTO RANGE
-X WWWinfo .FORMinfo .map .X .plotvalue VALUE
-Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 
 T 12 splitstreamgrid
 [T2]0.33 0.5 0.67 0.5 replacebypercentile
