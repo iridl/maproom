@@ -129,13 +129,14 @@ WWWinfo .FORMinfo .map .Y .step (district) eq
 {
 WWWinfo .districtinfo
 [ name1 name2 name3 name4 ] {reserverealization} forall
+()
 [
-
-name1 getrealization 
-name2 getrealization 
-name3 getrealization 
 name4 getrealization 
-] { dup (N.A.) eq {pop}{print ( ) print}ifelse} forall
+name3 getrealization 
+name2 getrealization 
+name1 getrealization 
+] { dup (N.A.) eq {pop}{exch print print (, )}ifelse} forall
+pop
 pop
 }
 {
