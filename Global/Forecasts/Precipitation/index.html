@@ -5,51 +5,14 @@ figdefs
 </INGRID>
 </head>
 <INGRID>
-/map getimageinput 
-{
-click? zoom (Click for Info) eq and
-{ .clickpoint /pageclickpoint exch def
 leftmenuinfo:
-SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .dominant
-pageclickpoint 
-{dup null eq
-{
-(Please click on the map) print
-stop
-} if
- value VALUE  } forall
-a: .X first cvsunits nip :a: .Y first cvsunits nip 
-/map FORMgetknown {
-/domainrestrict get
-:a: .F 1 index 4 get cvsunits nip exch
-:a: .L 1 index 1 get cvsunits nip exch
+{ X Y L F} setleftmenugrids
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .target_date
- 1 index dup 1 get exch 4 get add 1 add cvsunits nip exch
-pop
-:a
-/map.T.plotvalue exch def
-/map.L.plotvalue exch def
-/map.F.plotvalue exch def
-} 
-{
-:a}
-ifelse
-/map.Y.plotvalue exch def
-/map.X.plotvalue exch def
-GRIDParent exch
-/map FORMgetknown {
-a: .X plotfirst readunits nip
-:a: .X plotlast readunits nip
-:a: .Y plotfirst readunits nip
-:a: .Y plotlast readunits nip
-:a
-/map.Y.plotlast exch def
-/map.Y.plotfirst exch def
-/map.X.plotlast exch def
-/map.X.plotfirst exch def
-}if
-nip
+/name /T def
+setleftmenuvar
 :leftmenuinfo
+onClickforInfo?
+{
 WWWinfo .currenturldir 
 (/) rsearch { pop pop} if
 (/) rsearch { pop pop} if
@@ -59,26 +22,7 @@ WWWinfo .currenturldir
 (toolbar=no,scrollbars=no,width=800,height=460) openinpopupwithleftmenuinfo
 (<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print
 stop
-}
-{
-pop
-leftmenuinfo:
-GRIDParent exch
-/map FORMgetknown{
-a: .X plotfirst readunits nip
-:a: .X plotlast readunits nip
-:a: .Y plotfirst readunits nip
-:a: .Y plotlast readunits nip
-:a
-/map.Y.plotlast exch def
-/map.Y.plotfirst exch def
-/map.X.plotlast exch def
-/map.X.plotfirst exch def
-} if
-nip
-:leftmenuinfo
-} ifelse
-} if
+}if
 </INGRID>
 <INGRID>
 datasetdefs:
@@ -119,7 +63,7 @@ link:
 /name (South America) def
 /href (javascript:setXY('90W','30W','60S','15N'))def
 :link
-/leftmenusub? { leftmenulevel 0 get 2 le } def
+%/leftmenusub? { leftmenulevel 0 get 2 le } def
 leftmenuHeader
 </INGRID>
 <FORM name=mapform action=index.html>
