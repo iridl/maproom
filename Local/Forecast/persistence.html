@@ -1,0 +1,86 @@
+<html>
+<INGRID>
+WWWinfo .FORMinfo .map 
+dup /F known not 
+{
+/L null 1 object 
+/plotvalue
+ SOURCES .IRI .FD .Seasonal_Forecast .Precipitation
+ .L last cvsunits nip
+def
+def
+/F null 1 object 
+/plotvalue
+ SOURCES .IRI .FD .Seasonal_Forecast .Precipitation
+.F last cvsunits nip
+def
+def
+/T null 1 object 
+/plotvalue
+ SOURCES .IRI .FD .Seasonal_Forecast .Precipitation
+.target_date F last VALUE L last VALUE CopyStream
+dup getrealization 0 get cvsunits nip
+def
+def
+} if
+pop
+</INGRID>
+<head>
+<title>Forecast terciles and precipitation persistence</title>
+<link REL=stylesheet TYPE="text/css" HREF="/site.html">
+</head>
+<body bgcolor="#FFFFFF" link="#0000FF" vlink="#0060FF" alink="#FF0000">
+<INGRID>leftmenu</INGRID>
+<form action=terciles.html>
+<table bgcolor=f0f0f0><tr align=center valign=center><td rowspan=2>
+<INGRID>
+SOURCES .WORLDBATH .bath
+WWWinfo .FORMinfo .map a: .X .plotvalue :a: .Y .plotvalue :a
+togeopoint 
+a: .lon :a: .lat :a 
+X Y fig: lightgrey mask red smallpushpins :fig /plotaxislength 120 psdef /plotborder 0 psdef
+/plotbordertop 8 psdef
+/plotborderright 8 psdef
+/plotborderleft 8 psdef
+/plotborderbottom 8 psdef
+/antialias true psdef
+/map imagelink
+</INGRID></td><td>Forecast made</td><td>Lead time</td><td>Target time</td></tr>
+<tr><th><INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID></th>
+<th><INGRID>WWWinfo .FORMinfo .map .L .plotvalue print</INGRID></th>
+<th><INGRID>WWWinfo .FORMinfo .map .T .plotvalue print</INGRID></th>
+</tr></table>
+<table><tr><td>
+<INGRID>
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob
+a: :a: 0 mul 
+%:a: :a: 0 mul 33 add
+:a C fig- 
+grey deltabars
+black dashed 33 1 33 horizontallines
+-fig /XOVY 1 psdef
+/plotaxislength 200 psdef
+/map imagelink
+</INGRID>
+<br>Precipitation
+</td><td>
+<INGRID>
+SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .anomaly .prcp
+  /long_name (Precipitation Anomaly (mm)) def
+T /pointwidth 3. def pop
+T -12 12 shiftdata
+T /F renameGRID
+  dup
+   0 mul
+   T_lag fig- grey deltabars black dotted -30
+              10 30 horizontallines
+              -fig
+     /XOVY 1.2 psdef
+     /plotaxislength 250 psdef
+/map imagelink
+</INGRID>
+<br>Precipitation relative to <INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID>
+</td></tr></table>
+</form>
+</body>
+</html>
