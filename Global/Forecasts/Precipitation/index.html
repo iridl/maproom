@@ -6,6 +6,18 @@ figdefs
 </head>
 <INGRID>
 leftmenuinfo:
+% handle buggy calls from forecast pages
+/map FORMgetknown {
+/domain getknown {interp
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .dominant
+ .F 1 index 4 get cvsunits nip exch
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .dominant
+.L 1 index 1 get cvsunits nip 
+nip
+/map.L.plotvalue exch def
+/map.F.plotvalue exch def
+} if
+} if
 { X Y L F} setleftmenugrids
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .target_date
 /name /T def
