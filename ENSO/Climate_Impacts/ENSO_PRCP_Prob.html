@@ -1,0 +1,33 @@
+ expert
+ SOURCES .NOAA .NCDC .GCPS .MONTHLY .STATION.cuf
+  T (Jan 1901) (Dec 1990) RANGE
+  a: .lon
+    :a: .lat
+     :a: .mean .prcp :a
+    T 3. boxAverage
+    T 12 splitstreamgrid
+    [T2]0.75 percentileover
+    {dry 0.33333 normal 0.66667 wet}classify
+    SOURCES .KAPLAN .Indices .NINO3 .avOS
+     T (Jan 1901) (Dec 1990) RANGE
+     T 3 boxAverage
+     [T]percentileover
+     {LaNina 0.2 Neutral 0.8 ElNino}classify
+     1 masklt
+     T 12 splitstreamgrid
+     mul
+    [T2]average
+    startcolormap DATA
+      0 1 RANGE
+      white black brown
+         0 VALUE
+         orange
+          0.167 bandmax
+          peru bisque
+            0.333 bandmax
+            PaleGoldenrod yellow
+              0.66667 bandmax
+              green DarkOliveGreen
+                1 VALUE
+                black endcolormap
+    fig: scattercolor coasts :fig
