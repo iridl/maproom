@@ -50,9 +50,9 @@ X Y fig: lightgrey mask grey verythin states thin countries red smallpushpins :f
 Observations for:<br> 
 <b><INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
-WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
+WWWinfo .FORMinfo .map .F .plotvalue readunits array? { 0 get} if 12 sub printunits
 ( - ) print
-WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub printunits
+WWWinfo .FORMinfo .map .F .plotvalue readunits array? {0 get} if 1 sub printunits
 pop
 </INGRID></b></font>
 </td><td align="left">
@@ -102,9 +102,9 @@ value="<INGRID>WWWinfo FORMinfo .map .Y .plotvalue print</INGRID>">
 <font face="Helvetical,Arial" point-size=9pt size=-1>
 <b>a) Monthly precip. anomaly <INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
-WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
+WWWinfo .FORMinfo .map .F .plotvalue readunits array? {0 get} if 12 sub printunits
 ( - ) print
-WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub printunits
+WWWinfo .FORMinfo .map .F .plotvalue readunits array? {0 get} if 1 sub printunits
 pop
 </INGRID></b><br>
 </font>
@@ -125,7 +125,7 @@ sub
 %T -12 -1 shiftdatashort
 /long_name (precip. anomaly) def
 T
-WWWinfo .FORMinfo .map .F .plotvalue readunits 
+WWWinfo .FORMinfo .map .F .plotvalue readunits array? {0 get} if 
 dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
 %T /F renameGRID
@@ -145,9 +145,9 @@ DATA AUTO AUTO RANGE
 <font face="Helvetical,Arial" point-size=9pt size=-1>
 <b>b) Monthly precip. percentile <INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
-WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
+WWWinfo .FORMinfo .map .F .plotvalue readunits array? {0 get} if 12 sub printunits
 ( - ) print
-WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub printunits
+WWWinfo .FORMinfo .map .F .plotvalue readunits array? {0 get} if 1 sub printunits
 pop
 </INGRID></b><br>
 </font>
@@ -166,7 +166,7 @@ Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 /long_name (precip. percentile) def
 T /pointwidth 3. def pop
 T
-WWWinfo .FORMinfo .map .F .plotvalue readunits
+WWWinfo .FORMinfo .map .F .plotvalue readunits array? {0 get} if
 dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
 %T -12 -1 shiftdatashort
@@ -208,7 +208,7 @@ T 12 splitstreamgrid
 /long_name (precipitation) def
 
 T
-WWWinfo .FORMinfo .map .F .plotvalue readunits 
+WWWinfo .FORMinfo .map .F .plotvalue readunits array? {0 get} if 
 dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
@@ -225,7 +225,7 @@ Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 
 DATA 0 AUTO RANGE
 T
-WWWinfo .FORMinfo .map .F .plotvalue readunits
+WWWinfo .FORMinfo .map .F .plotvalue readunits array? {0 get} if
 dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
 
