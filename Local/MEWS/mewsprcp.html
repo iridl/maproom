@@ -55,10 +55,15 @@ exch
 <table cellpadding="4" cellspacing="4" bgcolor="#ffffff"><tbody><tr bgcolor="#f0f0f0"><td>
 <INGRID>
 SOURCES .WORLDBATH .bath
+1 index a: .X first pointwidth .5 mul sub nip 
+:a: .Y first pointwidth .5 mul sub nip
+ :a: .X first pointwidth .5 mul add nip 
+:a: .Y first pointwidth .5 mul add nip :a
+georect
 WWWinfo .FORMinfo .map a: .X .plotvalue :a: .Y .plotvalue :a
 togeopoint 
 a: .lon :a: .lat :a 
-X Y fig: lightgrey mask grey states_gaz black countries_gaz   red smallpushpins :fig /plotaxislength 120 psdef /plotborder 0 psdef
+X Y fig: lightgrey mask grey states_gaz black countries_gaz red fill  red smallpushpins :fig /plotaxislength 120 psdef /plotborder 0 psdef
 /plotbordertop 8 psdef
 /plotborderright 8 psdef
 /plotborderleft 8 psdef
