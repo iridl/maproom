@@ -137,37 +137,39 @@ T 12 splitstreamgrid
 [T2]0. 0.33 0.5 0.67 1. 0.5 replacebypercentile
   a:
     percentile 0.67 VALUE
-     :a:
+        :a:
       percentile 0.5 VALUE dup
       :a:
-       percentile 0.33 VALUE
+       percentile 0.33 VALUE 
        :a
      T fig: green deltabars brown deltabars :fig
-     /XOVY 1.8 psdef
+     /XOVY 1.9 psdef
      /plotaxislength 250 psdef
+     /plotborder 72 psdef
 /map imagelink
-</INGRID>
-<INGRID>
+</INGRID><br>
+&nbsp; &nbsp;<INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
 T (Jan 1979) (Dec 1995) RANGE
 T 12 splitstreamgrid
 [T2]0.33 0.5 0.67 0.5 replacebypercentile
+/long_name (precipitation) def
   a:
     percentile 0.67 VALUE
-/fullname () def
+/fullname (prcp) def
      :a:
       percentile 0.5 VALUE 
-/fullname () def
+/fullname (prcp) def
       :a:
        percentile 0.33 VALUE
-/fullname () def
+/fullname (prcp) def
        :a
      T fig: thin dashed line medium solid line thin dashed line :fig
-     /XOVY 1.8 psdef
+     /XOVY 1.9 psdef
      /plotaxislength 250 psdef
+     /plotborder 50 psdef
 /map imagelink
 </INGRID>
-
 </td><td bgcolor="#f0ffff" width="50%">
 <b>Forecast Tercile Probability</b><br>
 
