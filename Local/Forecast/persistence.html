@@ -134,11 +134,13 @@ DATA 0. 100.  RANGE
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
 T (Jan 1979) (Dec 1995) RANGE
-% T (days since 1960-01-01) streamgridunitconvert
-%  T differential_mul
-%  T (months since 1960-01-01) streamgridunitconvert
-%  T differential_div
+ T (days since 1960-01-01) streamgridunitconvert
+  T differential_mul
+  T (months since 1960-01-01) streamgridunitconvert
+  T differential_div
+DATA 0 AUTO  RANGE
 T 12 splitstreamgrid
+T /T_avg renameGRID
 [T2]0. 0.33 0.5 0.67 1. 0.5 replacebypercentile
   a:
     percentile 0.67 VALUE
@@ -147,7 +149,7 @@ T 12 splitstreamgrid
       :a:
        percentile 0.33 VALUE 
        :a
-     T fig: green deltabars brown deltabars :fig
+     T_avg fig: green deltabars brown deltabars :fig
      /XOVY 1.9 psdef
      /plotaxislength 250 psdef
      /plotborder 72 psdef
@@ -156,11 +158,13 @@ T 12 splitstreamgrid
 &nbsp; &nbsp;<INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
 T (Jan 1979) (Dec 1995) RANGE
-% T (days since 1960-01-01) streamgridunitconvert
-%  T differential_mul
-%  T (months since 1960-01-01) streamgridunitconvert
-%  T differential_div
+ T (days since 1960-01-01) streamgridunitconvert
+  T differential_mul
+  T (months since 1960-01-01) streamgridunitconvert
+  T differential_div
+DATA 0 AUTO RANGE
 T 12 splitstreamgrid
+T /T_avg renameGRID
 [T2]0.33 0.5 0.67 0.5 replacebypercentile
 /long_name (precipitation) def
   a:
@@ -173,7 +177,7 @@ T 12 splitstreamgrid
        percentile 0.33 VALUE
 /fullname (prcp) def
        :a
-     T fig: thin dashed line medium solid line thin dashed line :fig
+     T_avg fig: thin dashed line medium solid line thin dashed line :fig
      /XOVY 1.9 psdef
      /plotaxislength 250 psdef
      /plotborder 50 psdef
