@@ -61,7 +61,7 @@ made <b><INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID></b>
 </td></tr></tbody></table>
 
 <table cellpadding="6" cellspacing="4" bgcolor="#ffffff"><tbody><tr valign="top"><td width="50%" bgcolor="#f0ffff">
-<b>Precip <INGRID>
+<b>a) Precip Anomaly<INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
 WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
 ( - ) print
@@ -72,6 +72,9 @@ pop
 &nbsp; &nbsp;
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
+home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
+percentile .5 VALUE
+sub
  T (days since 1960-01-01) streamgridunitconvert
   T differential_mul
   T (months since 1960-01-01) streamgridunitconvert
@@ -90,10 +93,10 @@ DATA AUTO AUTO RANGE
      /T_lag -12 0 plotrange
 /map imagelink
 </INGRID>
-<br>Precipitation relative to <INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID>
+<br>Precipitation Anomaly from 1979-1995 Median relative to <INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID>
 
 </td><td height="200" bgcolor="#f0ffff" width="50%">
-<b>Precip percentile, <INGRID>
+<b>b) Precip percentile, <INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
 WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
 ( - ) print
@@ -128,38 +131,7 @@ DATA 0. 100.  RANGE
 /map imagelink
 </INGRID>
 </td></tr><tr valign="top"><td width="50%" bgcolor="#f0ffff">
-<b>Precipitation Median Climatology 1979-1995</b><br>
-
-&nbsp; &nbsp; 
-<INGRID>
-SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
-T (Jan 1979) (Dec 1995) RANGE
- T (days since 1960-01-01) streamgridunitconvert
-  T differential_mul
-  T (months since 1960-01-01) streamgridunitconvert
-  T differential_div
-DATA 0 AUTO  RANGE
-T 12 splitstreamgrid
-T /T_avg renameGRID
-[T2]0. 0.33 0.5 0.67 1. 0.5 replacebypercentile
-  a:
-    percentile 0.67 VALUE
-/fullname (.67) def
-        :a:
-      percentile 0.5 VALUE 
-/fullname (.5) def dup
-
-      :a:
-       percentile 0.33 VALUE 
-/fullname (.33) def
-       :a
-     T_avg fig: green deltabars brown deltabars
-:fig
-     /XOVY 1.6 psdef
-     /plotaxislength 250 psdef
-     /plotborder 72 psdef
-/map imagelink
-</INGRID><br>
+<b>Precipitation Median and Tercile Climatology 1979-1995</b><br>
 &nbsp; &nbsp;<INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
 T (Jan 1979) (Dec 1995) RANGE
@@ -167,49 +139,28 @@ T (Jan 1979) (Dec 1995) RANGE
   T differential_mul
   T (months since 1960-01-01) streamgridunitconvert
   T differential_div
-DATA 0 600 RANGE
+%DATA 0 600 RANGE
+DATA 0 AUTO RANGE
 T 12 splitstreamgrid
-T /T_avg renameGRID
+%T /T_avg renameGRID
 [T2]0.33 0.5 0.67 0.5 replacebypercentile
 /long_name (precipitation) def
-  a:
-    percentile 0.67 VALUE
-/fullname (prcp) def
-     :a:
-      percentile 0.5 VALUE 
-/fullname (prcp) def
-      :a:
-       percentile 0.33 VALUE
-/fullname (prcp) def
-       :a
-     T_avg fig: black thin dashed line medium solid line thin dashed line :fig
-     /XOVY 1.9 psdef
-     /plotaxislength 250 psdef
-     /plotborder 50 psdef
-/map imagelink
-</INGRID>
-<br>
-&nbsp; &nbsp;<INGRID>
-SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
-T (Jan 1979) (Dec 1995) RANGE
- T (days since 1960-01-01) streamgridunitconvert
-  T differential_mul
-  T (months since 1960-01-01) streamgridunitconvert
-  T differential_div
-DATA 0 600 RANGE
-T 12 splitstreamgrid
-T /T_avg renameGRID
-[T2]0.33 0.5 0.67 0.5 replacebypercentile
-/long_name (precipitation) def
+T
+WWWinfo .FORMinfo .map .F .plotvalue readunits dup 12 sub exch 1 sub
+RANGE
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
-a: percentile .5 VALUE
+a: percentile .67 VALUE
+:a: percentile .5 VALUE
 dup 0 mul
 :a: percentile .5 VALUE
+/fullname (prcp) def
 :a: percentile .67 VALUE
+/fullname (prcp) def
 :a: percentile .33 VALUE
+/fullname (prcp) def
 :a
-     T_avg fig: grey deltabars black medium solid linenokey thin dashed line line :fig
+     T fig: thin dashed linenokey grey deltabars black medium solid linenokey thin dashed line line :fig
      /XOVY 1.9 psdef
      /plotaxislength 250 psdef
      /plotborder 50 psdef
