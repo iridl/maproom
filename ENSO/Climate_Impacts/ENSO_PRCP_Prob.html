@@ -1,4 +1,15 @@
- expert
+<html>
+<head>
+<title>Historical Probability of Seasonal PRCP Tercile </title>
+</head>
+<link REL=stylesheet TYPE="text/css" HREF="/site.html">
+</head>
+<body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000">
+<INGRID>leftmenu</INGRID>
+<FORM name=mapform action=ENSO_PRCP_Prob.html>
+<center>
+<table><tr><td align=center>
+<INGRID>
  SOURCES .NOAA .NCDC .GCPS .MONTHLY .STATION.cuf
   T (Jan 1901) (Dec 1990) RANGE
   a: .lon
@@ -17,6 +28,22 @@
      T 12 splitstreamgrid
      mul
     [T2]average
+dominanttercileprcpscale
+ DATA 0 1 RANGE
+    fig: scattercolor coasts :fig
+/map 
+inputimagelinkwithlimitcontrols
+</INGRID>
+</td></tr><tr><td align=center>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+</td></tr></table>
+</center>
+</FORM>
+<! --
+ original color map
     startcolormap DATA
       0 1 RANGE
       white black brown
@@ -30,4 +57,10 @@
               green DarkOliveGreen
                 1 VALUE
                 black endcolormap
-    fig: scattercolor coasts :fig
+-- >
+</body>
+</html>
+
+
+
+
