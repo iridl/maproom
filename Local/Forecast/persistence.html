@@ -114,11 +114,11 @@ home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
 T /pointwidth 3. def pop
 T -12 -1 shiftdata
 T /F renameGRID
-DATA AUTO AUTO RANGE
+DATA 0. 1.  RANGE
   dup
    0 mul
-   T_lag fig- grey deltabars black dotted -30
-              10 30 horizontallines
+   T_lag fig- grey deltabars black dotted 33.3
+              33.4 66.7 horizontallines
               -fig
      /XOVY 1.2 psdef
      /plotaxislength 250 psdef
