@@ -170,7 +170,7 @@ T (Jan 1979) (Dec 1995) RANGE
  T (days since 1960-01-01) streamgridunitconvert
   T differential_mul
   T (months since 1960-01-01) streamgridunitconvert
-  T differential_div
+%  T differential_div
 T 3 runningAverage 
 3 mul
 DATA 0 AUTO RANGE
@@ -179,6 +179,8 @@ Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 
 T 12 splitstreamgrid
 [T2]0.33 0.5 0.67 0.5 replacebypercentile
+/long_name (precipitation) def
+
 
 T
 WWWinfo .FORMinfo .map .F .plotvalue readunits 
@@ -207,12 +209,9 @@ T
 WWWinfo .FORMinfo .map .F .plotvalue readunits
 dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
-
 a: percentile .50 VALUE :a: 0 mul :a
 
 T /pointwidth 1. def pop
-/long_name (probability tercile) def
-
 T fig: 
 %green medium dotted linenokey black medium solid linenokey darkgoldenrod medium dotted linenokey 
 green medium linenokey black medium solid linenokey darkgoldenrod medium linenokey 
@@ -223,7 +222,7 @@ gray deltabars
 
      /XOVY 1.6 psdef
      /plotaxislength 250 psdef
-     /plotborder 50 psdef
+%     /plotborder 50 psdef
 imagelink
 </INGRID>
 </center>
