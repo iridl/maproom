@@ -47,27 +47,27 @@ X Y fig: lightgrey mask red smallpushpins :fig /plotaxislength 120 psdef /plotbo
 /antialias true psdef
 /map imagelink
 </INGRID></td><td align="left">
-Observations for:<br> 
+<font face="helvetical">Observations for:<br> 
 <b><INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
 WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
 ( - ) print
 WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub printunits
 pop
-</INGRID></b>
+</INGRID></b></font>
 </td><td align="left">
 Forecast for: &nbsp<b><INGRID>WWWinfo .FORMinfo .map .T .plotvalue print</INGRID></b><br>
 made: <b><INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID></b>
 </td></tr></tbody></table>
 
 <table cellpadding="6" cellspacing="4" bgcolor="#ffffff"><tbody><tr valign="top"><td width="50%" bgcolor="#f0ffff">
-<b>a)</b> Precipitation anomaly <INGRID>
+<b>a) Precipitation anomaly <INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
 WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
 ( - ) print
 WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub printunits
 pop
-</INGRID><br>
+</INGRID></b><br>
 
 &nbsp; &nbsp;
 <INGRID>
@@ -81,6 +81,7 @@ sub
   T differential_div
 T /pointwidth 3. def pop
 %T -12 -1 shiftdatashort
+/long_name (precipitation anomaly) def
 T
 WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub 
 WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub 
@@ -95,17 +96,16 @@ DATA AUTO AUTO RANGE
      /XOVY 1.6 psdef
      /plotaxislength 250 psdef
 /map imagelink
-/long_name (precipitation anomaly) def
 </INGRID>
 
 </td><td height="200" bgcolor="#f0ffff" width="50%">
-<b>b)</b> Precipitation percentile <INGRID>
+<b>b) Precipitation percentile <INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
 WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
 ( - ) print
 WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub printunits
 pop
-</INGRID><br>
+</INGRID></b><br>
 
 &nbsp; &nbsp; 
 <INGRID>
@@ -130,15 +130,15 @@ DATA 0. 100.  RANGE
   dup
    0 mul
    T fig- grey deltabars black dotted 33.3
-              33.4 50 66.8 horizontallines
-	      dashed .5 1 .5 horizontallines
+              33.4 66.8 horizontallines
+	      dashed 50 1 50 horizontallines
               -fig
      /XOVY 1.6 psdef
      /plotaxislength 250 psdef
 /map imagelink
 </INGRID>
 </td></tr><tr valign="top"><td width="50%" bgcolor="#f0ffff">
-<b>c)</b> Precip. median and tercile climatology<br><br>
+<b>c) Precipitation median and tercile climatology</b><br><br>
 &nbsp; &nbsp;<INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
 T (Jan 1979) (Dec 1995) RANGE
@@ -158,14 +158,19 @@ RANGE
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 a: percentile .67 VALUE
+%/long_name (probability tercile) def
 :a: percentile .5 VALUE
 dup 0 mul
+%/long_name (probability tercile) def
 :a: percentile .5 VALUE
-/fullname (prcp) def
+%/fullname (prcp) def
+%/long_name (probability tercile) def
 :a: percentile .67 VALUE
-/fullname (prcp) def
+%/fullname (prcp) def
+%/long_name (probability tercile) def
 :a: percentile .33 VALUE
-/fullname (prcp) def
+%/fullname (prcp) def
+%/long_name (probability tercile) def
 :a
      T fig: thin dashed linenokey grey deltabars black medium solid linenokey thin dashed line line :fig
      /XOVY 1.9 psdef
@@ -174,12 +179,13 @@ dup 0 mul
 imagelink
 </INGRID>
 </td><td bgcolor="#f0ffff" width="50%">
-<b>d)</b> Forecast tercile probability<br><br>
+<b>d) Forecast tercile probability</b><br><br>
 
 &nbsp; &nbsp; 
 <INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob
-a: :a: 0 mul 
+/long_name (probability tercile) def
+a: /long_name (probability tercile) def :a: 0 mul /long_name (probability tercile) def
 %:a: :a: 0 mul 33 add
 :a C fig- 
 grey deltabars
@@ -192,7 +198,7 @@ black dashed 40 15 55 horizontallines
 </INGRID>
 </td></tr><tr valign="top"><td colspan="2" bgcolor="#f0ffff">
 <b>Note</b><br>
-- Precip anomaly: difference between observation and climotology(median)<br>
+- Precipitation anomaly: difference between observation and climotology(median)<br>
 - Precip anomaly percentile: observation ranked into 0 - 100, with 100 the wettest, 0 the driest<br>
 - Data: NCEP, base period 1979 - 1995
 </td></tr></tbody></table>
