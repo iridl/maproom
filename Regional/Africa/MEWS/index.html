@@ -66,8 +66,8 @@ the resulting tiny red dot.
 <td align=center>
 <table BORDER COLS=1>
 <tr>
-<td align=center>
-Optional Overlay<br> Maps
+<td align=center width=130>
+<b>Optional <br>Overlay Maps</b>
 </td></tr><tr><td>
 Boundaries
 <INGRID>
@@ -148,15 +148,17 @@ imagelink
 </INGRID>
 </td>
 <td>
-<table BORDER COLS=1>
+<table BORDER COLS=1 width=160>
 <tr>
 <td>
-Time Series Region
+<center><b>Time Series Region</b></center>
 </td></tr><tr><td>
 Spatially average data over the following region:
-<P><input type=radio name="map.Y.step" value=".3">33x33 km box 
+<P><input type=radio name="map.Y.step" value="district">district boundary
+<br><input type=radio name="map.Y.step" value=".1">11x11 km box 
+<br><input type=radio name="map.Y.step" value=".3">33x33 km box 
 <br><input type=radio name="map.Y.step" value=".5" checked>55x55 km box 
-<br><input type=radio name="map.Y.step" value="district">district boundary
+<br><input type=radio name="map.Y.step" value="1.">111x111 km box 
 </td>
 </tr>
 </table>
@@ -182,6 +184,7 @@ startprint
 </INGRID>
 </FORM>
   </body></html>
+
 
 
 
