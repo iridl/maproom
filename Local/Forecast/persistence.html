@@ -77,7 +77,7 @@ SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
   T (months since 1960-01-01) streamgridunitconvert
   T differential_div
 T /pointwidth 3. def pop
-T -12 -1 shiftdata
+T -12 -1 shiftdatashort
 T /F renameGRID
 DATA AUTO AUTO RANGE
   dup
@@ -104,17 +104,17 @@ pop
 &nbsp; &nbsp; 
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
-%  dup
-%   T (Jan 1979) (Dec 1995) RANGE
-%   T 12 splitstreamgrid
-%   [T2]0.0 0.33 0.5 0.67 1. 0.5 replacebypercentile
-%   [percentile]CofA=B-bounded
+%%  dup
+%%   T (Jan 1979) (Dec 1995) RANGE
+%%   T 12 splitstreamgrid
+%%   [T2]0.0 0.33 0.5 0.67 1. 0.5 replacebypercentile
 home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .c7995 .percentile .prcp
    [percentile]CofA=B-bounded
 (%) unitconvert
 /long_name (precipitation percentile) def
+%home .benno .NOAA .NCEP .CPC .CAMS_OPI .v0208 .percentile .prcppercent
 T /pointwidth 3. def pop
-T -12 -1 shiftdata
+T -12 -1 shiftdatashort
 T /F renameGRID
 DATA 0. 100.  RANGE
   dup
