@@ -61,13 +61,13 @@ made <b><INGRID>WWWinfo .FORMinfo .map .F .plotvalue print</INGRID></b>
 </td></tr></tbody></table>
 
 <table cellpadding="6" cellspacing="4" bgcolor="#ffffff"><tbody><tr valign="top"><td width="50%" bgcolor="#f0ffff">
-<b>a) Precip Anomaly<INGRID>
+<b>a)</b> Precipitation anomaly <INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
 WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
 ( - ) print
 WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub printunits
 pop
-</INGRID></b><br>
+</INGRID><br>
 
 &nbsp; &nbsp;
 <INGRID>
@@ -96,16 +96,15 @@ DATA AUTO AUTO RANGE
      /plotaxislength 250 psdef
 /map imagelink
 </INGRID>
-<br>Precipitation Anomaly from 1979-1995 median
 
 </td><td height="200" bgcolor="#f0ffff" width="50%">
-<b>b) Precip percentile, <INGRID>
+<b>b)</b> Precipitation percentile <INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob .F
 WWWinfo .FORMinfo .map .F .plotvalue readunits 12 sub printunits
 ( - ) print
 WWWinfo .FORMinfo .map .F .plotvalue readunits 1 sub printunits
 pop
-</INGRID></b><br>
+</INGRID><br>
 
 &nbsp; &nbsp; 
 <INGRID>
@@ -138,7 +137,7 @@ DATA 0. 100.  RANGE
 /map imagelink
 </INGRID>
 </td></tr><tr valign="top"><td width="50%" bgcolor="#f0ffff">
-<b>Precipitation Median and Tercile Climatology 1979-1995</b><br>
+<b>c)</b> Precip. median and tercile climatology<br><br>
 &nbsp; &nbsp;<INGRID>
 SOURCES .NOAA .NCEP .CPC .CAMS_OPI .v0208 .mean .prcp
 T (Jan 1979) (Dec 1995) RANGE
@@ -174,7 +173,7 @@ dup 0 mul
 imagelink
 </INGRID>
 </td><td bgcolor="#f0ffff" width="50%">
-<b>Forecast Tercile Probability</b><br>
+<b>d)</b> Forecast tercile probability<br><br>
 
 &nbsp; &nbsp; 
 <INGRID>
@@ -185,8 +184,8 @@ a: :a: 0 mul
 grey deltabars
 black dashed 40 15 55 horizontallines
 33.3 1 33.3 horizontallines
--fig /XOVY 1.6 psdef
-/plotaxislength 200 psdef
+-fig /XOVY 1.9 psdef
+/plotaxislength 250 psdef
 /plotborder 50 psdef
 /map imagelink
 </INGRID>
