@@ -1,0 +1,201 @@
+<INGRID>
+SOURCES .NOAA .NCEP .CPC .FEWS .TEN-DAY .RFEv2 .est_prcp
+mimeheader
+pop
+</INGRID>
+<html><head>
+    <title>MEWS clickable ten-day precipitation</title>
+<INGRID>
+figdefs
+</INGRID>
+</head>
+<body bgcolor=white>
+<INGRID>
+leftmenuinfo:
+{ X Y T} setleftmenugrids
+WWWinfo /map FORMgetknown {.Y .step
+nip
+/map.Y.step
+exch def} 
+{pop}ifelse
+
+:leftmenuinfo
+onClickforInfo?
+{
+WWWinfo .currenturldir 
+(/) rsearch { pop pop} if
+(/) rsearch { pop pop} if
+(/) rsearch { pop pop} if
+(/Local/MEWS/mewsprcp.html) append
+%redirecttowithleftmenuinfo
+(toolbar=no,scrollbars=no,width=900,height=800) openinpopupwithleftmenuinfo
+(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print
+stop
+}if
+</INGRID>
+<INGRID>
+datasetdefs:
+:datasetdefs
+link:
+/name (Africa) def
+/href (javascript:setXY('20W','55E','40S','40N')) def
+:link
+%/leftmenusub? { leftmenulevel 0 get 2 le } def
+%leftmenuHeader
+</INGRID>
+<FORM name=mapform action=index.html>
+<H2 align=center>Clickable Map for Rainfall Summaries</h2>
+<INGRID>
+/helpnow FORMknown not {stopprint} if
+</INGRID>
+<h3>Some comments</h3>
+A number of potential features
+<ol>
+<li>to get animations, enter a time range for the <b>TIme:</b>,
+e.g. <i>Aug 2004</i> or <i>Jun-Sep 2004</i>.
+<li> could change the zoom interface to appear more sophisticated (<a href="samplezoom.html">example</a>).
+</ol>
+Several Flaws in what we have so far
+<ol>
+<li> rethink the spatial basis set:  wouldn't we be better off with countries or states or districts instead of this somewhat arbitrary box?
+<li> baseline comparisons: perhaps compare station data to what we are presenting.
+<li>In general, the averaging time span and the area to average over should depend on
+both the use and the data.
+</ol>
+The data are <a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.est_prcp/">here</a>.
+Note that there are more pixels in the data than on the image below:
+i.e. some pixels cannot be chosen at a resolution of 11km unless one
+zooms in first.  That is the 11 km option only shows up on the time
+series page.
+<p>
+<INGRID>startprint</INGRID>
+<center>
+<table border=0><tr valign=center>
+<td align=center>
+<table BORDER COLS=1>
+<tr>
+<td align=center>
+Optional Overlay<br> Maps
+</td></tr><tr><td>
+Boundaries
+<INGRID>
+WWWinfo /map FORMknown nip 
+{
+(<br><input type=checkbox name=coasts) print 
+/coasts FORMknown {( checked)print} if
+(>Coasts\n)print
+
+(<br><input type=checkbox name=countries) print
+/countries FORMknown {( checked)print} if
+ (>Countries\n) print
+(<br><input type=checkbox name=states)print 
+/states FORMknown {( checked)print} if
+(>States\n)print
+(<br><input type=checkbox name=districts)print 
+/districts FORMknown {( checked)print} if
+(>Districts\n)print
+} 
+{
+(<br><input type=checkbox name=coasts>Coasts\n) print
+(<br><input type=checkbox name=countries checked>Countries\n) print
+(<br><input type=checkbox name=states checked>States\n) print
+(<br><input type=checkbox name=districts>Districts\n) print
+} ifelse
+</INGRID>
+</td></tr><tr><td>
+Epidemological
+<br><input type=checkbox name=mask OnClick="alert('Implementation pending'); return false">Mask
+</td>
+</tr>
+</table>
+</td>
+<td align=center>
+<INGRID>
+SOURCES .NOAA .NCEP .CPC .FEWS .TEN-DAY .RFEv2 .est_prcp MEWSprcp_colors
+X Y fig: colors 
+WWWinfo /map FORMknown nip 
+{
+/districts FORMknown{grey verythin districts_gaz} if
+/states FORMknown{
+/districts FORMknown {black}{grey}ifelse verythin states_gaz} if
+/countries FORMknown{black thin countries_gaz} if
+/coasts FORMknown{ black thinnish coasts_gaz} if
+} 
+{
+grey verythin states_gaz black thin countries_gaz 
+}ifelse
+:fig
+/antialias true psdef
+%/XOVY 1.7 psdef
+%/plotborderleft 35 psdef
+%/plotborderright 25 psdef
+%/plotborderbottom 90 psdef
+%/plotbordertop 55 psdef
+figdup
+/map 
+showmenu? 
+{inputimagelinkwithlimitcontrolsclickforinfo}
+{imagelink } ifelse
+</INGRID>
+<br>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+</td>
+<td>
+<table BORDER COLS=1>
+<tr>
+<td>
+Obtaining Timeseries
+</td></tr><tr><td>
+Process data according to the following region:
+<P><input type=radio name="map.Y.step" value=".3">30x30 km box at point clicked
+<br><input type=radio name="map.Y.step" value=".5" checked>50x50 km box at point clicked
+<br><input type=radio name="map.Y.step" value="district" 
+OnClick="alert('Implementation pending'); return false">district
+surrounding point clicked
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table BORDER COLS=1 WIDTH="75%" NOSAVE >
+<tr>
+<td>
+<b>Rainfall Estimates</b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp;ten-day precipitation on a 0.1 x 0.1 deg. lat/lon grid</font>
+<br><font size=-1><b>Data Source</b>:&nbsp; FEWS</font>
+<p>
+<b>Rainfall Climatology</b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp;Monthly precipitation climatology on a 0.5 x 0.5 deg. lat/lon grid</font>
+<br><font size=-1><b>Base Period for Climatology:&nbsp; </b>1961-1990</font>
+<br><font size=-1><b>Data Source</b>:&nbsp; University of East Anglia</font>
+</td>
+</tr>
+</table>
+</center>
+<INGRID>
+startprint
+</INGRID>
+</FORM>
+  </body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
