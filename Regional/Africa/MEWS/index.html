@@ -104,7 +104,9 @@ WWWinfo /map FORMknown nip
 </INGRID>
 </td></tr><tr><td>
 Epidemological
-<br><input type=checkbox name=mask OnClick="alert('Implementation pending'); return false">Mask
+<br><input type=checkbox name=mask<INGRID>
+/mask FORMknown {( checked)print} if
+</INGRID>>Mask
 </td>
 </tr>
 </table>
@@ -115,6 +117,7 @@ SOURCES .NOAA .NCEP .CPC .FEWS .TEN-DAY .RFEv2 .est_prcp MEWSprcp_colors
 X Y fig: colors 
 WWWinfo /map FORMknown nip 
 {
+/mask FORMknown {red thin  epiz} if
 /districts FORMknown{grey verythin districts_gaz} if
 /states FORMknown{
 /districts FORMknown {black}{grey}ifelse verythin states_gaz} if
