@@ -34,7 +34,10 @@ WWWinfo .currenturldir
 (/Local/Forecast/terciles.html) append
 } if
 %redirecttowithleftmenuinfo
-(toolbar=no,scrollbars=no,width=800,height=460) openinpopupwithleftmenuinfo
+/popupparameters FORMgetknown not
+{(toolbar=no,scrollbars=no,width=800,height=800,resizable=yes) 
+} if
+openinpopupwithleftmenuinfo
 (<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print
 stop
 }if
