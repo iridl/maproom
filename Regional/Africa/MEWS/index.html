@@ -1,16 +1,6 @@
 <INGRID>
 SOURCES .NOAA .NCEP .CPC .FEWS .TEN-DAY .RFEv2 .est_prcp
-mimeheader
-pop
-</INGRID>
-<html><head>
-    <title>MEWS Clickable Dekadal Precipitation</title>
-<INGRID>
-figdefs
-</INGRID>
-</head>
-<body bgcolor=white>
-<INGRID>
+/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Maproom/.Regional/.Africa/.MEWS/instructions.html)redirectto stop} if
 leftmenuinfo:
 { X Y T} setleftmenugrids
 WWWinfo /map FORMgetknown {.Y .step
@@ -27,49 +17,70 @@ WWWinfo .currenturldir
 (/) rsearch { pop pop} if
 (/) rsearch { pop pop} if
 (/Local/MEWS/mewsprcp.html) append
-%redirecttowithleftmenuinfo
-(toolbar=yes,scrollbars=yes,width=900,height=800) openinpopupwithleftmenuinfo
-(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print
-stop
+redirecttowithleftmenuinfo
+%(toolbar=yes,scrollbars=yes,width=900,height=800) openinpopupwithleftmenuinfo
+%(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print stop
 }if
+
+mimeheader
+pop
 </INGRID>
+<html><head>
+    <title>MEWS - Dekadal Precipitation on an Interactive Map</title>
 <INGRID>
-datasetdefs:
-:datasetdefs
-link:
-/name (Africa) def
-/href (javascript:setXY('20W','55E','40S','40N')) def
-:link
-%/leftmenusub? { leftmenulevel 0 get 2 le } def
-%leftmenuHeader
+
+figdefs
+</INGRID>
+</head>
+<body bgcolor="#FFFFFF" link="#0000FF" vlink="#0060FF" alink="#FF0000" onLoad='document.mapform.reset();'>
+<INGRID>
+%leftmenuinfo:
+%{ X Y T} setleftmenugrids
+%WWWinfo /map FORMgetknown {.Y .step
+%nip
+%/map.Y.step
+%exch def} 
+%{pop}ifelse
+
+%:leftmenuinfo
+%onClickforInfo?
+%{
+%WWWinfo .currenturldir 
+%(/) rsearch { pop pop} if
+%(/) rsearch { pop pop} if
+%(/) rsearch { pop pop} if
+%(/Local/MEWS/mewsprcp.html) append
+%redirecttowithleftmenuinfo
+%(toolbar=yes,scrollbars=yes,width=900,height=800) openinpopupwithleftmenuinfo
+%(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print stop
+%}if
+
+%/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Maproom/.Regional/.Africa/.MEWS/instructions.html)redirectto stop} if
+
+%link:
+%/name (Africa) def
+%/href (javascript:setXY('20W','55E','40S','40N')) def
+%:link
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
 </INGRID>
 <FORM name=mapform action=index.html>
-<H3 align=center>Malaria Early Warning System (MEWS)<br>Clickable Map for Rainfall Summaries</h3>
-<INGRID>
-/helpnow FORMknown not {stopprint} if
-</INGRID>
-<ol>
-<li>to get animations, enter a time range for the <b>Time:</b>,
-e.g. <i>Aug 2004</i> or <i>Jun-Sep 2004</i>.
-<li>The data are <a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.est_prcp/">here</a>.
-<li>Note that there are more pixels in the data than on the image below:
-i.e. some pixels cannot be chosen at a resolution of 11km unless one
-zooms in first. 
-<li>
-Note also that the footprint chosen appears on the page with the
-time series plots, but, if you do not zoom in first, you will not be able to see
-the resulting tiny red dot.
-</ol>
-<INGRID>startprint</INGRID>
+<h3 align=center><u>Malaria Early Warning System (MEWS)</u></h3>
+<table align=center><tr><td width=600>
+<font point-size=12pt>The MEWS interface provides a contextual perspective
+of recent precipitation by comparing it to previous seasons and climatological averages.
+More information about how to use the interface is available <a href="instructions.html">here</a>.</font> 
+</td></tr></table>
+<br><H3 align=center>Clickable Map for Rainfall Summaries</h3>
 <center>
 <table border=0><tr valign=center>
 <td align=center>
 <table BORDER COLS=1>
 <tr>
 <td align=center width=130>
-<b>Optional <br>Overlay Maps</b>
+<b><font point-size=12pt>Optional <br>Overlay Maps</font></b>
 </td></tr><tr><td>
-Boundaries
+<font point-size=12pt>Boundaries
 <INGRID>
 WWWinfo /map FORMknown 
 [/mask /districts /states /countries /coasts] {FORMknown or} forall
@@ -96,11 +107,12 @@ nip
 (<br><input type=checkbox name=districts>Districts\n) print
 } ifelse
 </INGRID>
-</td></tr><tr><td>
-Epidemiological
+</font></td></tr><tr><td>
+<font point-size=12pt>Epidemiological
 <br><input type=checkbox name=mask<INGRID>
 /mask FORMknown {( checked)print} if
 </INGRID>>Mask
+</font>
 </td>
 </tr>
 </table>
@@ -148,33 +160,38 @@ imagelink
 </INGRID>
 </td>
 <td>
-<table BORDER COLS=1 width=160>
+<table BORDER COLS=1 width=150>
 <tr>
 <td>
-<center><b>Time Series Region</b></center>
-</td></tr><tr><td>
+<center><b><font point-size=12pt>Time Series Region</font></b></center>
+</td></tr><tr><td><font point-size=12pt>
 Spatially average data over the following region:
-<P><input type=radio name="map.Y.step" value="district">district boundary
+<br><input type=radio name="map.Y.step" value="district">district boundary
 <br><input type=radio name="map.Y.step" value=".1">11x11 km box 
 <br><input type=radio name="map.Y.step" value=".3">33x33 km box 
 <br><input type=radio name="map.Y.step" value=".5" checked>55x55 km box 
 <br><input type=radio name="map.Y.step" value="1.">111x111 km box 
-</td>
+</font></td>
 </tr>
 </table>
 </td>
 </tr></table>
-<table BORDER COLS=1 WIDTH="75%" NOSAVE >
+<table align=center BORDER COLS=1 WIDTH="75%" NOSAVE >
 <tr>
 <td>
 <b>Precipitation Estimates</b><br>
 <font size=-1><b>Data</b>:&nbsp;&nbsp;Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid</font>
-<br><font size=-1><b>Data Source</b>:&nbsp; Climate Prediction Center/Famine Early Warning System (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>) </font>
+<br><font size=-1><b>Data Source</b>:&nbsp; Climate Prediction Center/Famine Early Warning System 
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>)* </font>
 <p>
 <b>Precipitation Climatology</b><br>
 <font size=-1><b>Data</b>:&nbsp;&nbsp;Monthly precipitation climatology over land areas on a 0.5 x 0.5 deg. lat/lon grid</font>
 <br><font size=-1><b>Base Period for Climatology:&nbsp; </b>1961-1990</font>
 <br><font size=-1><b>Data Source</b>:&nbsp; University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.New/.CRU05/.climatology/.c6190/.dataset_documentation.html">UEA CRU New</a>)</font>
+<p>
+<font size=-1>*More dekadal and daily data from FEWS is available from the 
+<a href="http://igskmncnwb015.cr.usgs.gov/adds/">Africa Data Dissemination Service</a>.</font>
+
 </td>
 </tr>
 </table>
@@ -184,6 +201,7 @@ startprint
 </INGRID>
 </FORM>
   </body></html>
+
 
 
 
