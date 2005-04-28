@@ -71,41 +71,43 @@ datasetdefs:
 :datasetdefs
 link:
 /name (Global) def
-/href (javascript:setXY('180W','180E','90S','90N')) def
+/href (javascript:setXYsubmit('180W','180E','90S','90N')) def
 :link
 link:
 /name (North America) def
-/href (javascript:setXY('170W','60W','15N','75N')) def
+/href (javascript:setXYsubmit('170W','60W','15N','75N')) def
 :link
 link:
 /name (Africa) def
-/href (javascript:setXY('20W','55E','40S','40N')) def
+/href (javascript:setXYsubmit('20W','55E','40S','40N')) def
 :link
 link:
 /name (Asia Indonesia) def
-/href (javascript:setXY('40E','170E','10S','75N')) def
+/href (javascript:setXYsubmit('40E','170E','10S','75N')) def
 :link
 link:
 /name (Australia) def
-/href (javascript:setXY('100E','180','55S','0N' )) def
+/href (javascript:setXYsubmit('100E','180','55S','0N' )) def
 :link
 link:
 /name (Central America) def
-/href (javascript:setXY('100W','70W','0','25N')) def
+/href (javascript:setXYsubmit('100W','70W','0','25N')) def
 :link
 link:
 /name (Europe) def
-/href (javascript:setXY('20W','40E','35N','75N')) def
+/href (javascript:setXYsubmit('20W','40E','35N','75N')) def
 :link
 link:
 /name (Middle East) def
-/href (javascript:setXY('10E','75E','15N','45N')) def
+/href (javascript:setXYsubmit('10E','75E','15N','45N')) def
 :link
 link:
 /name (South America) def
-/href (javascript:setXY('90W','30W','60S','15N'))def
+/href (javascript:setXYsubmit('90W','30W','60S','15N'))def
 :link
 /leftmenusub? { leftmenulevel 0 get 2 le } def
+WWWinfo /onload (initdrag();) put
+WWWinfo /onunload (window.setTimeout('resetdrag',5000);) put
 leftmenuHeader
 (<FORM name=mapform  action=index.html>\n)print
 /helpnow FORMknown not {stopprint} if
