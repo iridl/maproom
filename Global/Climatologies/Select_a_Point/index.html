@@ -51,10 +51,10 @@ pop
 leftmenuinfo:
 GRIDParent exch
 /map FORMgetknown{
-a: .X plotfirst readunits nip
-:a: .X plotlast readunits nip
-:a: .Y plotfirst readunits nip
-:a: .Y plotlast readunits nip
+a: .X plotfirst dup null eq {pop 0} {readunits}ifelse nip
+:a: .X plotlast dup null eq {pop 360} {readunits}ifelse nip
+:a: .Y plotfirst dup null eq {pop -90} {readunits}ifelse nip
+:a: .Y plotlast dup null eq {pop 90} {readunits}ifelse nip
 :a
 /map.Y.plotlast exch def
 /map.Y.plotfirst exch def
