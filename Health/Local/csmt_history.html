@@ -1,0 +1,291 @@
+<INGRID>
+
+SOURCES .IRI .Analyses .CSMT .AllCondProb
+
+
+mimeheader
+pop
+</INGRID>
+<html>
+<head><title>Climatological Suitabilty for Malaria Transmission - Local Analysis</title>
+<link REL=stylesheet TYPE="text/css" HREF="/site.html">
+</head>
+<body  link="#993333" vlink="#993333" alink="#FF0000">
+<INGRID>leftmenu</INGRID>
+<form action=csmt_history.html>
+<INGRID>
+
+/onebox {2 index 1 index {.name cvx exec first pointwidth 2 copy sub 3 1 roll add 3 -1 roll pop}forall counttoobject 1 add -1 roll pop {mystream mygrids xlo xhi ylo yhi}inputs mystream mygrids 0 get xlo xhi RANGE
+dup 0 replaceNaN exch
+ mygrids 1 get ylo yhi RANGE mygrids 0 get xlo xhi definite-integral mygrids 1 get ylo yhi definite-integral 
+exch dataflag
+ mygrids 1 get ylo yhi RANGE mygrids 0 get xlo xhi definite-integral mygrids 1 get ylo yhi definite-integral 
+.5	normalize
+1output}def
+/onebox {2 index 1 index {.name cvx exec first pointwidth 2 copy sub 3 1 roll add 3 -1 roll pop}forall counttoobject 1 add -1 roll pop {mystream mygrids xlo xhi ylo yhi}inputs mystream 
+mygrids 0 get xlo xhi add 2. div VALUE
+ mygrids 1 get ylo yhi add 2. div VALUE
+1output}def
+
+
+SOURCES .IRI .Analyses .CSMT .AllCondProb
+
+WWWinfo .FORMinfo .map .Y /step getknown
+{ 
+dup (district) eq
+{ 
+IRIDB
+(select gid,afr_adm01_3_geom as geom,country_na,name1,name2,name3,name4,centroid(afr_adm01_3_geom) as center,distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) from afr_adm01_3 where afr_adm01_3_geom  &&  GeometryFromText( 'POINT(XXXX)',4326 ) ORDER BY distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) LIMIT 1)
+(XXXX) rsearch pop nip
+ X WWWinfo .FORMinfo .map .X .plotvalue readunits  s== nip
+( )
+ Y WWWinfo .FORMinfo .map .Y .plotvalue readunits  s== nip
+3array astore concat
+%dup (,) exch 3array astore concat
+exch
+3array astore concat 
+2 {
+(YYYY) rsearch pop nip
+ X WWWinfo .FORMinfo .map .X .plotvalue readunits  s== nip
+( )
+ Y WWWinfo .FORMinfo .map .Y .plotvalue readunits  s== nip
+3array astore concat
+exch
+3array astore concat 
+} repeat
+openquery
+%mark gid name1 name2 name3 name4
+%name1 reserverealization
+%name2 reserverealization
+%name3 reserverealization
+%name4 reserverealization
+%table: mark :table .html-count pop
+/districtinfo WWWinfo !
+pop
+WWWinfo .districtinfo .geom [X Y] weighted-average
+} 
+{
+interp 
+dup
+Y .step gt
+{
+exch
+  Y 2 index splitstreamgrid
+  X 2 index splitstreamgrid
+  [X Y]0.5 average
+  X2 /X renameGRID
+  Y2 /Y renameGRID
+ nip
+}
+{pop
+} ifelse
+Y /step WWWinfo .FORMinfo .map .Y .step interp def pop
+} ifelse
+} 
+{
+Y .step /step WWWinfo .FORMinfo .map .Y !
+}
+ifelse
+dup /Y known {Y /step step def pop
+X WWWinfo .FORMinfo .map .X .plotvalue VALUE
+Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
+} if
+
+SOURCES .IRI .Analyses .CSMT .RHCondProb
+WWWinfo .FORMinfo .map .Y .step (district) eq
+{
+X -20 60 RANGE
+Y -40 40 RANGE
+WWWinfo .districtinfo .geom [X Y] weighted-average
+}
+{[X Y] onebox} ifelse
+exch
+
+SOURCES .IRI .Analyses .CSMT .TempCondProb
+WWWinfo .FORMinfo .map .Y .step (district) eq
+{
+X -20 60 RANGE
+Y -40 40 RANGE
+WWWinfo .districtinfo .geom [X Y] weighted-average
+}
+{[X Y] onebox} ifelse
+exch
+
+SOURCES .IRI .Analyses .CSMT .PcpnCondProb
+WWWinfo .FORMinfo .map .Y .step (district) eq
+{
+X -20 60 RANGE
+Y -40 40 RANGE
+WWWinfo .districtinfo .geom [X Y] weighted-average
+}
+{[X Y] onebox} ifelse
+exch
+
+</INGRID>
+<center><table><tbody><tr valign="top"><td align="left">
+
+<table border bgcolor=#F0F8FF>
+<tr><td rowspan=4 align=left>
+
+<center>
+<table cellpadding="4" cellspacing="4" bgcolor="#ffffff"><tbody><tr bgcolor="#f0f0f0"><td>
+<INGRID>
+SOURCES .WORLDBATH .bath
+WWWinfo .FORMinfo .map .Y .step (district) eq
+{WWWinfo .districtinfo a: .geom :a: .center :a 
+X Y fig: lightgrey mask grey states_gaz black countries_gaz red fill  red geometrysmallpushpins :fig
+}
+{
+1 index a: .X first pointwidth .5 mul sub nip 
+:a: .Y first pointwidth .5 mul sub nip
+ :a: .X first pointwidth .5 mul add nip 
+:a: .Y first pointwidth .5 mul add nip :a
+georect
+2 index a: .X .first :a: .Y .first :a
+togeopoint 
+a: .lon :a: .lat :a 
+X Y fig: lightgrey mask grey states_gaz black countries_gaz red fill  red smallpushpins :fig
+} ifelse
+
+ /plotaxislength 120 psdef /plotborder 0 psdef
+/plotbordertop 8 psdef
+/plotborderright 8 psdef
+/plotborderleft 8 psdef
+/plotborderbottom 8 psdef
+/antialias true psdef
+/map imagelink
+</INGRID></td><td align="left">
+<font face="Helvetical,Arial" point-size=10pt size=-1>
+Climatology for:<br> 
+<b><INGRID>
+WWWinfo .FORMinfo .map .Y .step (district) eq
+{
+WWWinfo .districtinfo
+[ country_na name1 name2 name3 name4 ] {reserverealization} forall
+()
+[
+name4 getrealization 
+name3 getrealization 
+name2 getrealization 
+name1 getrealization 
+country_na getrealization
+] { dup (N.A.) eq {pop}{exch print print (, )}ifelse} forall
+pop
+pop
+}
+{
+X first printunits pop
+(, ) print
+Y first printunits pop
+(<br> ~ )print
+ Y .step
+10000 90. div mul floor cvi dup ==ns (x) print ==ns ( km) print
+} ifelse
+</INGRID></b></font>
+</td>
+<INGRID>
+showmenu? {
+(<td bgcolor=white cellpadding=12>) print
+(<input name="map.X.plotvalue" size=8 value=")print
+WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
+(<input name="map.Y.plotvalue" size=8 value=")print WWWinfo .FORMinfo .map .Y .plotvalue print(">\n)print
+(<input type="hidden" name="map.X.units" value=")print WWWinfo .FORMinfo .map .X .units print(">\n)print
+(<input type="hidden" name="map.Y.units" value=")print WWWinfo .FORMinfo .map .Y .units print(">\n)print
+(<input type="hidden" name="map.X.plotfirst" value=")print WWWinfo .FORMinfo .map .X .plotfirst print(">\n)print
+(<input type="hidden" name="map.Y.plotfirst" value=")print WWWinfo .FORMinfo .map .Y .plotfirst print(">\n)print
+(<input type="hidden" name="map.X.plotlast" value=")print WWWinfo .FORMinfo .map .X .plotlast print(">\n)print
+(<input type="hidden" name="map.Y.plotlast" value=")print WWWinfo .FORMinfo .map .Y .plotlast print(">\n)print
+(<br>)print
+(<input type=submit value="View Climatology">) print
+(</td>)print
+} if
+</INGRID>
+</tr></tbody></table>
+
+
+<br>
+<b><h3>Percent Occurrence of Climate Conditions <br>Suitable for Malaria Transmission</h3></b></center>
+<img src="/<INGRID> dup dataseturl</INGRID>/startcolormap/0.0/100/RANGE/white/white/white/0.0/VALUE/DarkSalmon/DarkSalmon/100./bandmax/white/endcolormap//long_name%20%28Percent%20Occurrence%20in%20Historical%20Record%29%20def/dup+T+fig-+colorbars2+-fig+T/-3.3527613E-08/12./plotrange//XOVY+null+psdef//plotborder+72+psdef//plotaxislength+380+psdef+.gif" NOSAVE border=0 ALT="All condition time series" title="All condition time series"></a>
+<br><font size=-1><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.CSMT/.AllCondProb/0.1/sub//long_name/%28Percent%20Occurrence%20of%20Climate%20Conditions%20Suitable%20for%20Transmission%29def//units/unitless/def/figviewer.html?my.help=more+options&map.T.plotvalue=Jan-Dec&map.Y.units=degree_north&map.Y.plotlast=40.5N&map.url=X+Y+fig-+colors+%7C+grey+contours+black+thinnish+countries+-fig&map.domain=+%7B+%2FT+0.5+11.5+plotrange+%7D&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=40.5S&map.X.plotfirst=20.5W&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=55.5E&map.AllCondProb.plotfirst=0.0&map.AllCondProb.units=unitless&map.AllCondProb.plotlast=100.&map.newurl.grid0=X&map.newurl.grid1=Y&map.newurl.land=countries&map.newurl.plot=colors+%7C+grey+contours+black&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=100&map.mftime=100&map.fftime=200&my.help=plain+page">View animation</a></font>
+</td></tr>
+
+<tr><td align=left><center><b>Precipitation<br><font size=-2>(P > 80mm)</font></b><br>
+<img src="/<INGRID> 1 index dataseturl</INGRID>/startcolormap/0.0/100/RANGE/white/white/white/0.0/VALUE/LightSteelBlue/LightSteelBlue/100./bandmax/white/endcolormap//long_name%20%28Percent%20Occurrence%29%20def/dup+T+fig-+colorbars2+-fig//plotborder+60+psdef//plotaxislength+160+psdef+.gif"><br>
+</center>
+<font size=-1><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.CSMT/.PcpnCondProb/0.1/sub//long_name/%28Percent%20Occurrence%20of%20Precipitation%20Conditions%20Suitable%20for%20Transmission%29def/figviewer.html?my.help=more+options&map.T.plotvalue=Jan-Dec&map.Y.units=degree_north&map.Y.plotlast=40.5N&map.url=X+Y+fig-+colors+%7C+grey+contours+black+thinnish+countries+-fig&map.domain=+%7B+%2FT+0.5+11.5+plotrange+%7D&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=40.5S&map.X.plotfirst=20.5W&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=55.5E&map.PcpnCondProb.plotfirst=0.0&map.PcpnCondProb.units=unitless&map.PcpnCondProb.plotlast=100.&map.newurl.grid0=X&map.newurl.grid1=Y&map.newurl.land=countries&map.newurl.plot=colors+%7C+grey+contours+black&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=100&map.mftime=100&map.fftime=200&my.help=plain+page">View animation</font>
+</td></tr>
+<tr><td align=left><center><b>Temperature<br><font size=-2>(18&deg;C < T < 32&deg;C)</font></b><br>
+<img src="<INGRID> 2 index dataseturl</INGRID>/startcolormap/0.0/100/RANGE/white/white/white/0.0/VALUE/LightGoldenrod/LightGoldenrod/100./bandmax/white/endcolormap//long_name%20%28Percent%20Occurrence%29%20def/dup+T+fig-+colorbars2+-fig//plotborder+60+psdef//plotaxislength+160+psdef+.gif">
+</center>
+<font size=-1><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.CSMT/.TempCondProb/0.1/sub//long_name/%28Percent%20Occurrence%20of%20Temperature%20Conditions%20Suitable%20for%20Transmission%29def/figviewer.html?my.help=more+options&map.T.plotvalue=Jan-Dec&map.Y.units=degree_north&map.Y.plotlast=40.5N&map.url=X+Y+fig-+colors+%7C+grey+contours+black+thinnish+countries+-fig&map.domain=+%7B+%2FT+0.5+11.5+plotrange+%7D&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=40.5S&map.X.plotfirst=20.5W&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=55.5E&map.TempCondProb.plotfirst=0.0&map.TempCondProb.units=unitless&map.TempCondProb.plotlast=100.&map.newurl.grid0=X&map.newurl.grid1=Y&map.newurl.land=countries&map.newurl.plot=colors+%7C+grey+contours+black&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=100&map.mftime=100&map.fftime=200&my.help=plain+page
+">View animation</a></font>
+</td></tr>
+<tr><td align=left><center><b>Relative Humidity<br><font size=-2>(RH > 60%)</font></b><br>
+<img src="<INGRID> 3 index dataseturl</INGRID>/startcolormap/0.0/100/RANGE/white/white/white/0.0/VALUE/LightSeaGreen/LightSeaGreen/100./bandmax/white/endcolormap//long_name%20%28Percent%20Occurrence%29%20def/dup+T+fig-+colorbars2+-fig//plotborder+60+psdef//plotaxislength+160+psdef+.gif">
+</center>
+<font size=-1><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.TS2p0/.climatology/.c7100/.mean/temp/0/flaggt/0/maskle/SOURCES/.IRI/.Analyses/.CSMT/.RHCondProb/mul/0.1/sub//long_name/%28Percent%20Occurrence%20of%20Relative%20Humidity%20Conditions%20Suitable%20for%20Transmission%29def//units/unitless/def/startcolormap/0.0/100./RANGE/white/LightGrey/LightGrey/0.0/VALUE/white/white/25/bandmax/LightCyan/LightCyan/50/bandmax/MediumAquamarine/MediumAquamarine/75/bandmax/LightSeaGreen/LightSeaGreen/100./bandmax/LightGrey/endcolormap/figviewer.html?my.help=more+options&map.T.plotvalue=Jan-Dec&map.Y.units=degree_north&map.Y.plotlast=40.5N&map.url=X+Y+fig-+colors+%7C+grey+contours+black+thinnish+countries+-fig&map.domain=+%7B+%2FT+0.5+11.5+plotrange+%7D&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=40.5S&map.X.plotfirst=20.5W&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=55.5E&map.aprod.plotfirst=0.0&map.aprod.units=unitless&map.aprod.plotlast=100.&map.newurl.grid0=X&map.newurl.grid1=Y&map.newurl.land=countries&map.newurl.plot=colors+%7C+grey+contours+black&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=100&map.mftime=100&map.fftime=200&my.help=plain+page">View animation</a></font>
+</td></tr></table>
+
+<br>
+<center>
+<table cellpadding="6" cellspacing="4"  width="600"  bgcolor=#F0F8FF>
+<tr valign="top"><td>
+<font point-size=12pt size=-1>
+<b><u>Description</u></b>
+</font>
+<font point-size=9pt size=-1>
+<br>The dominant species of malaria in Africa is Plasmodium falciparum. Its development rate is temperature 
+dependent.  The climatic conditions considered suitable for its development and transmission through the 
+mosquito stage of its life cycle are temperatures within the range 18&deg;C to 32&deg;C.  Below 18&deg;C parasite 
+development decreases significantly. Above 32&deg;C the survival of the mosquito is compromised. Relative humidity greater than 
+60% is also considered as a requirement for the mosquito to survive long enough for the parasite to develop 
+sufficiently to be transmitted to its human host stage.  Rainfall and surface water is required for the egg 
+laying and larval stages of the mosquito life cycle and monthly rainfall above 80mm is considered as a 
+requirement.
+<p>
+The climate variables used here are derived on a macro-scale from historical records. We may use these variables to 
+provide an illustration of where and when this combination of climatic conditions exist.  However, we should 
+also remember that mosquitoes will actively seek out micro-climatic conditions to maximize their chances of 
+survival and this will have a significant bearing on actual transmission. 
+<p>
+The main graph above shows how often all three conditions have concurrently been met at the point of enquiry for each month of the year, based on a 50-year historical record.
+The three graphs to the right show the percent occurrence of the rainfall, temperature and relative humidity 
+conditions for each month.
+The buttons below the graphs show an animation of these percentages for that particular variable, or set of variables, 
+through the year. 
+</font>
+<p>
+<font point-size=12pt size=-1>
+<b><u>Data Sources</u></b></font>
+<font point-size=9pt size=-1>
+<br><b>Precipitation</b><br>
+<u>Data:</u> Monthly precipitation over land areas on a 0.5&deg; x 0.5&deg; lat/lon grid
+<br><u>Historical Base Period:</u> 1951-2000
+<br><u>Data Source</u>: University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p0/.dataset_documentation.html">UEA CRU TS 2.0</a>)
+<p><b>Temperature</b><br>
+<u>Data:</u> Monthly mean temperature over land areas on a 0.5&deg; x 0.5&deg; lat/lon grid
+<br><u>Historical Base Period:</u> 1951-2000
+<br><u>Data Source</u>: University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p0/.dataset_documentation.html">UEA CRU TS 2.0</a>)
+<p><b>Relative Humidity Climatology</b><br>
+<u>Data:</u> Monthly specific humidity data (converted to rh) on a 2.5&deg; x 2.5&deg; lat/lon grid
+<br><u>Historical Base Period:</u> 1951-2000
+<br><u>Data Source:</u> National Centers for Environmental Prediction/National Center for Atmospheric Research (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.dataset_documentation.html">NCEP/NCAR CDAS/Reanalysis</a>)
+</font>
+
+<p>
+<b><u>References</u></b>
+<font point-size=9pt size=-1>
+<br>Gilles, H. M., and D. A. Warrell (eds), 1993: <i>Bruce-Chwatt's Essential Malariology</i>. Arnold Publishing, 340 pp.
+<p>Craig, M. H., R. W. Snow and D. le Sueur, 1999: A climate based distribution model of malaria transmission in sub-Saharan 
+Africa. <i>Parasitology Today</i>, 15(3) 105-111.</font>
+</font>
+</td></tr></tbody></table></center>
+
+</td></tr></tbody></table>
+</center></body></html>
+
+
+
+
+
+
