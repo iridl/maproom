@@ -13,6 +13,8 @@ datasetdefs:
 { Global (North America) Africa (Asia Indonesia) (Central America) (Europe)
 (Middle East) (South America) } { currentobject 1 index get def } forall
 /leftmenusub? { leftmenulevel 0 get 2 le } def
+WWWinfo /onload (initdrag();) put
+WWWinfo /onunload (window.setTimeout('resetdrag',5000);) put
 leftmenuHeader
 </INGRID>
 <FORM name=mapform action=index.html>
