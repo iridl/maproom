@@ -1,0 +1,264 @@
+<INGRID>
+/name (Seasonal Transmission Suitability) def
+/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/maproom/.Health/.Regional/.Africa/.Malaria/.CSMT/instructions.html)redirectto stop} if
+SOURCES .IRI .Analyses .CSMT .Annual_Sum
+leftmenuinfo:
+{ X Y T} setleftmenugrids
+WWWinfo /map FORMgetknown {.Y .step
+nip
+/map.Y.step
+exch def}
+{pop}ifelse
+[/mask /districts /states /countries /coasts] {dup FORMknown {dup (on) def}if pop} forall
+
+
+:leftmenuinfo
+WWWinfo /map.Y.step 0.5 put
+onClickforInfo?
+{
+WWWinfo .currenturldir 
+(/) rsearch { pop pop} if
+(/) rsearch { pop pop} if
+(/) rsearch { pop pop} if
+
+(/Local/csmt_history.html) append
+
+redirecttowithleftmenuinfo
+%(toolbar=yes,scrollbars=yes,width=900,height=800) openinpopupwithleftmenuinfo
+%(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print stop
+}if
+mimeheader
+pop
+</INGRID>
+<html><head>
+    <title>Seasonal Climatic Suitability for Malaria Transmission Interactive Map</title>
+<INGRID>
+figdefs
+</INGRID>
+</head>
+<body bgcolor="#FFFFFF"  link="#CC3320" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();'>
+<INGRID>
+%leftmenuinfo:
+%{ X Y T} setleftmenugrids
+%WWWinfo /map FORMgetknown {.Y .step
+%nip
+%/map.Y.step
+%exch def} 
+%{pop}ifelse
+
+%:leftmenuinfo
+%onClickforInfo?
+%{
+%WWWinfo .currenturldir 
+%(/) rsearch { pop pop} if
+%(/) rsearch { pop pop} if
+%(/) rsearch { pop pop} if
+%(/Local/csmt_history.html) append
+%redirecttowithleftmenuinfo
+%(toolbar=yes,scrollbars=yes,width=900,height=800) openinpopupwithleftmenuinfo
+%(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print stop
+%}if
+
+%link:
+%/name (Africa) def
+%/href (javascript:setXY('19.75W','54.75E','39.75S','39.75N')) def
+%:link
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+</INGRID>
+<FORM name=mapform action=index.html>
+<input type=hidden name=map.Y.step value=0.5>
+<h3 align=center><u>Seasonal Climatological Suitability for Malaria Transmission</u></h3>
+<table align=center><tr><td width=600>
+<font point-size=12pt>
+Where malaria is not adequately controlled, the seasonality of climate 
+greatly influences the seasonality of malaria transmission.  Specifically, rainfall plays an important role in the distribution and maintenance of breeding sites for the mosquito vector (Anopheline species). Temperature regulates the development rate of both the mosquito larvae and the malaria parasite (Plasmodium species) within the mosquito host. Relative humidity and temperature play an 
+important role in the survival and longevity of the mosquito vector.
+
+<p>Here we present 
+a clickable map interface that describes where, when and for how long the combination 
+of climatic conditions may be suitable for malaria transmission in the Africa continent.
+</font> 
+</td></tr></table>
+<center>
+<table border=0><tr valign=center>
+<td align=center>
+<table BORDER COLS=1>
+<tr>
+<td align=center width=130>
+<b><font point-size=12pt>Optional <br>Overlay Maps</font></b>
+</td></tr><tr><td>
+<font point-size=12pt>Boundaries
+<INGRID>
+WWWinfo /map FORMknown 
+[/mask /districts /states /countries /coasts] {FORMknown or} forall
+nip 
+{
+(<br><input type=checkbox name=coasts) print 
+/coasts FORMknown {( checked)print} if
+(>Coasts\n)print
+
+(<br><input type=checkbox name=countries) print
+/countries FORMknown {( checked)print} if
+ (>Countries\n) print
+(<br><input type=checkbox name=states)print 
+/states FORMknown {( checked)print} if
+(>States\n)print
+(<br><input type=checkbox name=districts)print 
+/districts FORMknown {( checked)print} if
+(>Districts\n)print
+} 
+{
+(<br><input type=checkbox name=coasts onChange="changedtext(this);">Coasts\n) print
+(<br><input type=checkbox name=countries checked onChange="changedtext(this);">Countries\n) print
+(<br><input type=checkbox name=states checked onChange="changedtext(this);">States\n) print
+(<br><input type=checkbox name=districts onChange="changedtext(this);">Districts\n) print
+} ifelse
+</INGRID>
+</font></td></tr><tr><td>
+<font point-size=12pt>Epidemiological
+<br><input type=checkbox name=mask<INGRID>
+/mask FORMknown {( checked)print} if
+</INGRID>>Mask
+</font>
+</td>
+</tr>
+</table>
+</td>
+<td align=center>
+<INGRID>
+
+SOURCES .IRI .Analyses .CSMT .Annual_Sum
+/mask FORMknown
+{
+IRIDB (select epiz_new2_geom as geom from epiz_new2) openquery .geom
+} if
+X Y fig: colors 
+WWWinfo /map FORMknown 
+[/mask /districts /states /countries /coasts] {FORMknown or} forall
+nip
+{
+%/mask FORMknown {blue thin  epiz} if
+/mask FORMknown { red stroke } if
+/districts FORMknown{grey verythin districts_gaz} if
+/states FORMknown{
+/districts FORMknown {black}{grey}ifelse verythin states_gaz} if
+/countries FORMknown{black thin countries_gaz} if
+/coasts FORMknown{ black thinnish coasts_gaz} if
+} 
+{
+grey verythin states_gaz black thin countries_gaz 
+}ifelse
+:fig
+/antialias true psdef
+%/XOVY 1.7 psdef
+%/plotborderleft 35 psdef
+%/plotborderright 25 psdef
+%/plotborderbottom 90 psdef
+%/plotbordertop 55 psdef
+figdup
+/map 
+showmenu? 
+{inputimagelinkwithlimitcontrolsclickforinfo}
+{imagelink } ifelse
+</INGRID>
+<br>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+</td>
+</tr></table>
+
+
+<table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE >
+
+<tr><td align=center bgcolor=#DCDCDC><b>Map Description</b></td></tr>
+<tr><td><font size=-1>Please note that the above map is based on a theoretical model of climate data and is not based on actual malaria data. Therefore, it may not accurately resemble actual malaria transmission status on a local scale.
+<p>
+The map displays the number of months during the year that are suitable for malaria transmission, based on monthly climatological averages*. Suitability is defined as the coincidence of precipitation accumulation greater than 80 mm, mean temperature between 18&deg;C and 32&deg;C, and relative humidity greater than 60 percent. These are rough thresholds that are intended to describe conditions that are suitable for both the development of the falciparum parasite and the life cycle of the mosquito vector. <p>*Additional analyses that display how often these conditions have actually occurred in the historical record may be accessed by clicking on the map at the location of interest.</font></td></tr>
+
+<tr><td align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
+<tr>
+<td>
+<b>Precipitation Climatology</b><br>
+<font size=-1><b>Data:</b> Monthly precipitation over land areas on a 0.5&deg; x 0.5&deg; lat/lon grid</font>
+<br><font size=-1><b>Base Period for Climatology:</b> 1951-2000</font>
+<br><font size=-1><b>Data Source</b>: University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p0/.dataset_documentation.html">UEA CRU TS 2.0</a>)</font>
+<p><b>Temperature Climatology</b><br>
+<font size=-1><b>Data:</b> Monthly temperature over land areas on a 0.5&deg; x 0.5&deg; lat/lon grid</font>
+<br><font size=-1><b>Base Period for Climatology:</b> 1951-2000</font>
+<br><font size=-1><b>Data Source</b>: University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p0/.dataset_documentation.html">UEA CRU TS 2.0</a>)</font>
+<p><b>Relative Humidity Climatology</b><br>
+<font size=-1><b>Data:</b> Monthly specific humidity data (converted to rh) on a 2.5&deg; x 2.5&deg; lat/lon grid</font>
+<br><font size=-1><b>Base Period for Climatology:</b> 1951-2000</font>
+<br><font size=-1><b>Data Source:</b> National Centers for Environmental Prediction/National Center for Atmospheric Research (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.dataset_documentation.html">NCEP/NCAR CDAS/Reanalysis</a>)</font>
+<p>
+<b>Epidemiological Mask</b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp;Mask illustrating areas where malaria is considered to be epidemic.  Areas where malaria transmission is considered absent or endemic are therefore excluded. This mask is based purely on climatic constraints to malaria transmission, and does not yet account for areas in the northern and southern margins of the continent where control has eliminated malaria risk.</font>
+<br><font size=-1><b>Reference</b>:&nbsp; WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.  </font>
+</td>
+</tr>
+</table>
+
+
+<table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
+<tr><td colspan=2 width=60% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
+<td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
+<tr>
+<INGRID>
+imagelinkstart
+(<td width=20 align=center>)print
+(Figure as PDF) (.pdf) linktoimageformat
+(</td><td align=center>) print
+(Figure as JPEG) (.jpg) linktoimageformat
+(</td>) print
+</INGRID>
+<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/<INGRID>datarestrictionasurl print </INGRID>?help+datafiles#GIS">Data for GIS</a>
+</td>
+</tr>
+<tr>
+<INGRID>
+pop
+.auxfig
+imagelinkstart
+(<td width=20 align=center>)print
+(Colorscale as PDF) (.pdf) linktoimageformat
+(</td><td align=center>) print
+(Colorscale as JPEG) (.jpg) linktoimageformat
+(</td>) print
+pop
+</INGRID>
+</tr>
+</table>
+
+</center>
+<INGRID>
+startprint
+</INGRID>
+</FORM>
+  </body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
