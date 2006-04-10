@@ -1,5 +1,4 @@
 <INGRID>
-/name (Rainfall Percentages) def
 home .grover .EMILY .Analyses .RFEDiff .rfe_vs_meanrfe
 
 /helpnow FORMknown {(http://iridl.ldeo.columbia.edu/maproom/.Health/.Regional/.Africa/.Malaria/.REP/instructions.html)redirectto stop} if
@@ -110,12 +109,12 @@ nip
 /mask FORMknown { blue stroke } if
 /districts FORMknown{lightgrey verythin districts_gaz} if
 /states FORMknown{
-/districts FORMknown {black}{lightgrey}ifelse lightgrey verythin states_gaz} if
+/districts FORMknown {black}{lightgrey}ifelse black verythin states_gaz} if
 /countries FORMknown{black thin countries_gaz} if
-/coasts FORMknown{ black thin coasts_gaz} if
+/coasts FORMknown{ black thin coasts_gaz lakes} if
 } 
 {
-grey verythin states_gaz black thin countries_gaz 
+lightgrey verythin states_gaz black thin countries_gaz lakes
 }ifelse
 :fig
 /antialias true psdef
