@@ -161,23 +161,34 @@ imagelink
 </tr>
 </table>
 
-
+<INGRID>showmenu? not {stopprint} if</INGRID>
 <table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
-<tr><td colspan=2 width=60% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
+<tr>
+<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
+<td colspan=1 align=center bgcolor=#DCDCDC><b>Download Layer</b></td>
 <td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
 <tr>
 <INGRID>
+showmenu? {
 imagelinkstart
 (<td width=20 align=center>)print
 (Figure as PDF) (.pdf) linktoimageformat
 (</td><td align=center>) print
 (Figure as JPEG) (.jpg) linktoimageformat
 (</td>) print
+} if
 </INGRID>
-<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/home/.grover/.EMILY/.Analyses/.RFEv2Avg/.avg/7/maskle/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID/div/100/mul/-1000/replaceNaN/SOURCES/.WORLDBATH/.bath%5BX/Y%5DregridAverage/0/masklt/0/flagge/mul/startcolormap/0/300/RANGE/DimGray/white/SaddleBrown/0/VALUE/SaddleBrown/SaddleBrown/25/bandmax/peru/peru/50/bandmax/burlywood/burlywood/75/bandmax/wheat/wheat/100/bandmax/LightCyan/LightCyan/120/bandmax/aquamarine/aquamarine/140/bandmax/MediumAquamarine/MediumAquamarine/160/bandmax/MediumSeaGreen/MediumSeaGreen/180/bandmax/SeaGreen/SeaGreen/200/bandmax/DarkSeaGreen/DarkSeaGreen/300/bandmax/DarkSeaGreen/endcolormap//long_name/%28Rainfall%20Estimates%20Expressed%20as%20Percentages%20of%20the%20Short-Term%20Average%29def//fullname/%28Rainfall%20Estimates%20Expressed%20as%20Percentages%20of%20the%20Short-Term%20Average%29def/<INGRID>datarestrictionasurl print </INGRID>?help+datafiles#GIS">Data for GIS</a></td>
+<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/rfe_vs_meanrfe/<INGRID>
+showmenu?{datarestrictionasurl print } if
+</INGRID>rfepercent_colors/palettecolor.tiff">GeoTiff for GIS</a>
+</td>
+<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/rfe_vs_meanrfe/<INGRID>
+showmenu?{datarestrictionasurl print } if
+</INGRID>?help+datafiles#GIS">Data for GIS</a></td>
 </tr>
 <tr>
 <INGRID>
+showmenu? {
 pop
 .auxfig
 imagelinkstart
@@ -187,6 +198,7 @@ imagelinkstart
 (Colorscale as JPEG) (.jpg) linktoimageformat
 (</td>) print
 pop
+} if
 </INGRID>
 </tr>
 </table>
