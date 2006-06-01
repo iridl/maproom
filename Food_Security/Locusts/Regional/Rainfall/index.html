@@ -1,0 +1,222 @@
+<INGRID>
+SOURCES .NOAA .NCEP .CPC .CMORPH .daily_calculated .mean .morphed .cmorph 24 mul /units (mm) def
+  X -20. 95. RANGEEDGES
+  Y -4. 40. RANGEEDGES
+
+/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Food_Security/.Locusts/.Regional/.Rainfall/instructions.html)redirectto stop} if
+leftmenuinfo:
+{ X Y T} setleftmenugrids
+WWWinfo /map FORMgetknown {.Y .step
+nip
+/map.Y.step
+exch def} 
+{pop}ifelse
+[/mask /districts /states /countries /coasts] {dup FORMknown {dup (on) def}if pop} forall
+
+
+:leftmenuinfo
+onClickforInfo?
+{
+WWWinfo .currenturldir 
+(/) rsearch { pop pop} if
+(/) rsearch { pop pop} if
+(/) rsearch { pop pop} if
+(/Locusts/Local/locustprcp.html) append
+redirecttowithleftmenuinfo
+}if
+
+mimeheader
+pop
+</INGRID>
+<html><head>
+    <title>Rainfall Analysis Tool for Desert Locust Monitoring</title>
+<INGRID>
+
+figdefs
+</INGRID>
+</head>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();'>
+<INGRID>
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+</INGRID>
+<FORM name=mapform action=index.html>
+
+<center>
+<table border=0>
+<tr valign=center>
+<td></td>
+<td align=center>
+<h3><u>Rainfall Analysis Tool for Desert Locust Monitoring</u></h3>
+<br>
+<INGRID>
+SOURCES .NOAA .NCEP .CPC .CMORPH .daily_calculated .mean .morphed .cmorph 24 mul /units (mm) def
+  X -20. 95. RANGEEDGES
+  Y -4. 40. RANGEEDGES
+ cmorph_tool_colors
+
+X Y fig: colors 
+WWWinfo /map FORMknown 
+[/mask /districts /states /countries /coasts] {FORMknown or} forall
+nip
+{
+/districts FORMknown{grey verythin districts_gaz} if
+/states FORMknown{
+/districts FORMknown {black}{grey}ifelse verythin states_gaz} if
+/countries FORMknown{black thin countries_gaz} if
+/coasts FORMknown{ black thinnish coasts_gaz} if
+} 
+{
+grey verythin states_gaz black thin countries_gaz 
+}ifelse
+:fig
+/plotaxislength 600 psdef
+/antialias true psdef
+figdup
+/map 
+showmenu? 
+{inputimagelinkwithlimitcontrolsclickforinfo}
+{imagelink } ifelse
+</INGRID>
+<br>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+</td>
+<td align=center>
+<table BORDER COLS=1  width=100>
+<tr>
+<td align=center>
+<b><font point-size=12pt>Optional Overlay Maps</font></b>
+</td></tr><tr><td><font size=-1>
+<INGRID>
+WWWinfo /map FORMknown 
+[/mask /districts /states /countries /coasts] {FORMknown or} forall
+nip 
+{
+(<input type=checkbox name=coasts) print 
+/coasts FORMknown {( checked)print} if
+(>Coasts\n)print
+(<br><input type=checkbox name=countries) print
+/countries FORMknown {( checked)print} if
+ (>Countries\n) print
+(<br><input type=checkbox name=states)print 
+/states FORMknown {( checked)print} if
+(>States\n)print
+(<br><input type=checkbox name=districts)print 
+/districts FORMknown {( checked)print} if
+(>Districts\n)print
+} 
+{
+(<input type=checkbox name=coasts>Coasts\n) print
+(<br><input type=checkbox name=countries checked>Countries\n) print
+(<br><input type=checkbox name=states checked>States\n) print
+(<br><input type=checkbox name=districts>Districts\n) print
+} ifelse
+</INGRID>
+</font></td></tr>
+</table>
+<br>
+<table BORDER COLS=1 width=150>
+<tr>
+<td>
+<center><b><font point-size=12pt>Time Series Region</font></b></center>
+</td></tr><tr><td><font point-size=12pt>
+<font size=-1>Spatially average data over the following region:
+<br><input type=radio name="map.Y.step" value=".25" checked>27x27 km box 
+<br><input type=radio name="map.Y.step" value=".75">83x83 km box 
+</font></td>
+</tr>
+</table>
+</td>
+</tr></table>
+<p><br>
+
+<table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE >
+<tr><td align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
+<tr>
+<td>
+<b>Precipitation Estimates</b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp;Daily precipitation estimates on a 0.25 x 0.25 deg. lat/lon grid</font>
+<br><font size=-1><b>Data Source</b>:&nbsp; Climate Prediction Center Morphing Technique
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a>) </font>
+<br><font size=-1><b>Reference</b>:&nbsp; Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that Produces Global Precipitation Estimates from Passive Microwave and Infrared Data at High Spatial and Temporal Resolution. <i>J. Hydrometeorology</i>, <b>5</b>, 487-503.
+</font>
+</td>
+</tr>
+</table>
+
+<INGRID>showmenu? not {stopprint} if</INGRID>
+<table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
+<tr>
+<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
+<td colspan=1 align=center bgcolor=#DCDCDC><b>Download Layer</b></td>
+<td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
+<tr>
+<INGRID>
+showmenu? {
+imagelinkstart
+(<td width=20 align=center>)print
+(Figure as PDF) (.pdf) linktoimageformat
+(</td><td align=center>) print
+(Figure as JPEG) (.jpg) linktoimageformat
+(</td>) print
+} if
+</INGRID>
+<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20./95./RANGEEDGES/Y/-4./40./RANGEEDGES/<INGRID>
+showmenu?{datarestrictionasurl print } if
+</INGRID>cmorph_tool_colors/palettecolor.tiff">GeoTiff for GIS</a>
+</td>
+<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/<INGRID>
+showmenu?{datarestrictionasurl print } if
+</INGRID>?help+datafiles#GIS">Data for GIS</a>
+</td>
+</tr>
+<tr>
+<INGRID>
+showmenu? {
+pop
+.auxfig
+imagelinkstart
+(<td width=20 align=center>)print
+(Colorscale as PDF) (.pdf) linktoimageformat
+(</td><td align=center>) print
+(Colorscale as JPEG) (.jpg) linktoimageformat
+(</td>) print
+pop
+} if
+</INGRID>
+</tr>
+</table>
+</center>
+
+<INGRID>
+startprint
+</INGRID>
+</FORM>
+  </body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
