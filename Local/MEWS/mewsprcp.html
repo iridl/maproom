@@ -28,7 +28,7 @@ WWWinfo .FORMinfo .map .Y /step getknown
 dup (district) eq
 { 
 IRIDB
-  (select gid,afr_adm01_3_geom as geom,country_na,name1,name2,name3,name4,centroid(afr_adm01_3_geom) as center,distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) from afr_adm01_3 where afr_adm01_3_geom  &&  GeometryFromText( 'POINT(XXXX)',4326 ) ORDER BY distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) LIMIT 1)
+(select gid,the_geom as geom,country_na,prov_na as name1,dist_na as name2,centroid(the_geom) as center,distance(centroid(the_geom),GeometryFromText( 'POINT(YYYY)',4326 )) from mews_dist where the_geom  &&  GeometryFromText( 'POINT(XXXX)',4326 ) ORDER BY distance(centroid(the_geom),GeometryFromText( 'POINT(YYYY)',4326 )) LIMIT 1)
 (XXXX) rsearch pop nip
  X WWWinfo .FORMinfo .map .X .plotvalue readunits  s== nip
 ( )
@@ -100,7 +100,7 @@ exch
 SOURCES .WORLDBATH .bath
 WWWinfo .FORMinfo .map .Y .step (district) eq
 {WWWinfo .districtinfo a: .geom :a: .center :a 
-X Y fig: lightgrey mask grey states_gaz black countries_gaz red fill  red geometrysmallpushpins :fig
+X Y fig: lightgrey mask grey afr_fao_prov black countries_gaz red fill  red geometrysmallpushpins :fig
 }
 {
 1 index a: .X first pointwidth .5 mul sub nip 
@@ -111,7 +111,7 @@ georect
 2 index a: .X .first :a: .Y .first :a
 togeopoint 
 a: .lon :a: .lat :a 
-X Y fig: lightgrey mask grey states_gaz black countries_gaz red fill  red smallpushpins :fig
+X Y fig: lightgrey mask grey afr_fao_prov black countries_gaz red fill  red smallpushpins :fig
 } ifelse
 
  /plotaxislength 120 psdef /plotborder 0 psdef
