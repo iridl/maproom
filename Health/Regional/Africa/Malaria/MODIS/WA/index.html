@@ -95,14 +95,14 @@ WWWinfo /map FORMknown
 [/districts /states /countries /coasts] {FORMknown or} forall
 nip
 {
-/districts FORMknown{lightgrey verythin districts_gaz} if
+/districts FORMknown{lightgrey verythin mews_dist} if
 /states FORMknown{
-/districts FORMknown {black}{lightgrey}ifelse verythin states_gaz} if
+/districts FORMknown {black}{lightgrey}ifelse verythin mews_prov} if
 /countries FORMknown{black thinnish countries_gaz} if
 /coasts FORMknown{ black thinnish coasts_gaz} if
 } 
 {
-lightgrey verythin states_gaz black thinnish countries_gaz 
+lightgrey verythin mews_prov black thinnish countries_gaz 
 }ifelse
 :fig
 /antialias true psdef
