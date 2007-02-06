@@ -2,6 +2,7 @@
 SOURCES .NOAA .NCEP .CPC .CMORPH .daily_calculated .mean .morphed .cmorph 24 mul /units (mm) def
   X -20. 95. RANGEEDGES
   Y -4. 40. RANGEEDGES
+  T /defaultvalue {last} def pop
 
 /helpnow FORMknown {(http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Food_Security/.Locusts/.Regional/.Rainfall/instructions.html)redirectto stop} if
 leftmenuinfo:
@@ -53,6 +54,7 @@ leftmenuHeader
 SOURCES .NOAA .NCEP .CPC .CMORPH .daily_calculated .mean .morphed .cmorph 24 mul /units (mm) def
   X -20. 95. RANGEEDGES
   Y -4. 40. RANGEEDGES
+  T /defaultvalue {last} def pop
  cmorph_tool_colors
 
 X Y fig: colors 
