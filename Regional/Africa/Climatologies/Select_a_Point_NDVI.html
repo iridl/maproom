@@ -68,6 +68,8 @@ figdefs
 <html><head>
     <title>Clickable Map for NDVI Monthly Climatology and Standard Deviation in Africa</title>
 </head>
+<body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000">
+<INGRID>leftmenu</INGRID>
 <H3 align=center>Clickable Map for NDVI Monthly Climatology and Standard Deviation in Africa</H3>
 <INGRID>
 datasetdefs:
@@ -77,7 +79,7 @@ datasetdefs:
 %/leftmenusub? { leftmenulevel 0 get 2 le } def
 WWWinfo /onload (initdrag();) put
 WWWinfo /onunload (window.setTimeout('resetdrag',5000);) put
-leftmenuHeader
+%leftmenuHeader
 (<FORM name=mapform  action=Select_a_Point_NDVI.html>\n)print
 /helpnow FORMknown not {stopprint} if
 </INGRID>
@@ -154,7 +156,7 @@ Choose <b>HELP</b> for more information on obtaining and interpreting plots.<br>
 <center>
 <table BORDER COLS=1 WIDTH=650 NOSAVE>
 <tr>
-<td><font size=-1><b>Data</b>: <a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.ADDS/.NDVI/.NDVIg/.dekadal/.maximum/.NDVI/">USGS dekadal NDVIg</a> data averaged to monthly and gridded to
+<td><font size=-1><b>Data</b>: Monthly maximum <a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.ADDS/.NDVI/.NDVIg/.dekadal/.maximum/.NDVI/">USGS dekadal NDVIg</a> data gridded to
  0.1&deg; x 0.1&deg; lat/lon resolution</font>
 <br><font size=-1><b>Base Period for Climatology:&nbsp; </b>1982-2004
 </font>
