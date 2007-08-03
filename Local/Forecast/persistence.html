@@ -1,5 +1,6 @@
 <html>
 <INGRID>
+
 WWWinfo .FORMinfo .map 
 dup /F known not 
 {
@@ -22,8 +23,25 @@ def
 dup getrealization 0 get cvsunits nip
 def
 def
-} if
+}
+{
+/L null 1 object
+/plotvalue
+ SOURCES .IRI .FD .Seasonal_Forecast .Precipitation
+ .L first cvsunits nip
+def
+def
+
+/T null 1 object
+/plotvalue
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .target_date 
+F WWWinfo .FORMinfo .map .F .plotvalue VALUE
+L WWWinfo .FORMinfo .map .L .plotvalue VALUE
+CopyStream dup getrealization 0 get cvsunits nip def def
+}
+ifelse
 pop
+
 </INGRID>
 <head><title>Forecast terciles and precipitation persistence</title>
 <link REL=stylesheet TYPE="text/css" HREF="/site.html">
