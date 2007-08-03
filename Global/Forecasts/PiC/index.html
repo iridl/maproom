@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Maproom: Physical Climate: Global: Forecasts: Predictions in Context</title>
+<link REL=stylesheet TYPE="text/css" HREF="/site.html">
+</head>
+<body bgcolor="#FFFFFF" link="#0000FF" vlink="#0060FF" alink="#FF0000">
+<INGRID>leftmenu</INGRID>
+<h2>Predictions in Context (PiC)</h2>
+
+<p>
+We provide a climate perspective for regions of the world by displaying
+a combination of observed and predicted precipitation. Shaded areas on
+these maps are regions where the observed seasonal precipitation was in
+the below-normal or above-normal range and forecasts indicate an enhanced
+likelihood for the next season's precipitation to be below normal or
+above-normal based on the <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Pre
+cipitation/">IRI multi-model ensembles</a>.
+</p>
+
+<p>
+Two sets of maps are presented. One set shows areas where the forecasts
+indicate an enhanced likelihood for observed conditions to continue
+(labeled "Same") and another set of maps to indicate an enhanced likelihood
+that conditions will change (labeled "Reversed").  The forecasts are always
+for the next 3-month period (season).  The observations are for either the
+past 3 month or past 12-month period to provide a shorter-term and longer-term
+context for the forecasts.  These maps are updated every month.
+</p>
+
+<h3>How the maps of precipitation persistence are generated</h3>
+
+<p>These maps are generated each month based on the past few months' observed precipitation and the IRI
+forecast for the next season.  Shaded areas are regions where rainfall observations fall into
+below- or above-normal terciles and also have an enhanced porbability for below- or above-normal
+precipitation forecast.
+</p>
+
+<p>NCEP gridded monthly precipitation data for 30 years (1969 to 1998) are used as the <a href="http://iri
+dl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Climatologies/.c6998/.monthly/.prcp/">observatio
+nal data reference</a>.
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/">CAMS-OPI m
+onthly gridded precipitation</a> is used for the observations for the past 3 and 12 months.
+First, the rainfall observation for a chosen time period (most recent 3 months and 12 months in our case)
+at any gridpoint is ranked into a 0 - 1 scale, with the 0 as the driest event in 30 years
+for the same 3- or 12-month period, and 1.0 the wettest event.  A value of 0.333 and
+less is considered dry (below-normal), and a  value of 0.667 and greater is considered wet (above-normal).
+
+Secondly, the forecast for the next season for the same location is examined.  A forecast with a 40% or
+greater probability for the below-normal category is considered an enhanced likelihood of dry forecast, an
+d a forecast of
+40% or greater for the above-normal category is considered an enhanced likelihood of wet forecast.
+</p>
+
+<p>
+Based on the observation and forecast, two sets of maps are plotted.
+One represents areas with enhanced likelihood of continued wetter or drier than average.
+The maps' relative likelihoods of persistence are indicated for either wet or dry, depending on
+whether the forecast probaility is 40-50% (lower intensity; labled "Enhanced"),
+or 55% and higher (high intensity; labled "Greatly enhanced").
+</p>
+
+<p>
+The second set of maps represents areas with enhanced likelihood of reversed tendency
+regarding the most recent precipitation observation.  Such regions have either a below-normal
+observed rainfall and an above-normal forecast for next season, or vice versa.
+</p>
+
+</body>
+</html>
