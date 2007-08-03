@@ -121,7 +121,7 @@ sub
   T differential_mul
   T (months since 1960-01-01) streamgridunitconvert
   T differential_div
-  T /pointwidth 3. def pop
+% T /pointwidth 3. def pop
 %T -12 -1 shiftdatashort
 /long_name (precip. anomaly) def
 T
@@ -165,7 +165,7 @@ Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
    [percentile]CofA=B-bounded
 (%) unitconvert
 /long_name (precip. percentile) def
-T /pointwidth 3. def pop
+%T /pointwidth 3. def pop
 T
 WWWinfo .FORMinfo .map .F .plotvalue readunits
 array? {dup length 1 eq {0 get} if} if 
