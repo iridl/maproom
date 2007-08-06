@@ -68,8 +68,10 @@ figdefs
 <html><head>
     <title>Clickable Map for NDVI Monthly Climatology and Standard Deviation in Africa</title>
 </head>
-<body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000">
+<body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);"> 
+
 <INGRID>leftmenuHeader</INGRID>
+
 <H3 align=center>Clickable Map for NDVI Monthly Climatology and Standard Deviation in Africa</H3>
 <INGRID>
 datasetdefs:
