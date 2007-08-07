@@ -1,5 +1,28 @@
 <INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .PiC 
+
+leftmenuinfo:
+{ X Y F } setleftmenugrids
+:leftmenuinfo
+onClickforInfo?
+{
+%/clicktopage FORMgetknown not 
+%{
+WWWinfo .currenturldir 
+(/) rsearch { pop pop} if
+(/) rsearch { pop pop} if
+(/) rsearch { pop pop} if
+(/) rsearch { pop pop} if
+(/Local/Forecast/persistence.html) append
+%} if
+%/popupparameters FORMgetknown not
+%{(toolbar=no,scrollbars=no,width=800,height=460,resizable=yes) 
+%} if
+%openinpopupwithleftmenuinfo
+redirecttowithleftmenuinfo
+%(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print
+%stop
+}if
 mimeheader
 pop
 </INGRID>
@@ -8,34 +31,9 @@ pop
 figdefs
 </INGRID>
 <html><head>
-    <title>PiC:  Reversed Tendency in Forecast and 3-Month Precipitation Observation</title>
+    <title>Predictions in Context:  Reversed Tendency in Forecast and 3-Month Precipitation Observation</title>
 </head>
-
-<INGRID>
-leftmenuinfo:
-{ X Y F } setleftmenugrids
-:leftmenuinfo
-onClickforInfo?
-{
-/clicktopage FORMgetknown not 
-{
-WWWinfo .currenturldir 
-(/) rsearch { pop pop} if
-(/) rsearch { pop pop} if
-(/) rsearch { pop pop} if
-(/) rsearch { pop pop} if
-(/Local/Forecast/persistence.html) append
-} if
-/popupparameters FORMgetknown not
-{(toolbar=no,scrollbars=no,width=800,height=460,resizable=yes) 
-} if
-openinpopupwithleftmenuinfo
-%redirecttowithleftmenuinfo
-(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print
-stop
-}if
-</INGRID>
-
+<body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);"> 
 
 <INGRID>
 datasetdefs:
@@ -48,9 +46,14 @@ WWWinfo /onunload (window.setTimeout('resetdrag',5000);) put
 leftmenuHeader
 </INGRID>
 <FORM name=mapform action=index.html>
+
+<center><font size=+1>Predictions in Context:  Reversed Tendency in Forecast and 3-Month Precipitation Observation</font></center>
+<p>
+
 <INGRID>
 /helpnow FORMknown not {stopprint} if
 </INGRID>
+
 <h3>Obtaining Predictions in Context Precipitation Information for a Selected Point</h3>
 
 <p>To obtain bar graphs of monthly precipitation anomaly and percentile for the past 12 months, plots of climatological monthly and seasonal precipitation and tercile boundaries, and a histogram of the tercile probabilities for forecast precipitation for the next 3-month season,
@@ -137,7 +140,7 @@ as a mean condition over the entire region.</p>
 <INGRID>
 SOURCES .IRI .FD .Seasonal_Forecast .PiC .pic3mo_reversed 
 Y -85 85 RANGE
-X -180 180 RANGE
+X -180 180 RANGEEDGES
 X Y fig: colors black thin coasts thin countries :fig
 /plotaxislength 590 psdef
 %/XOVY 1.7 psdef
