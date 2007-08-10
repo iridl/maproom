@@ -35,7 +35,7 @@ pop
 figdefs
 </INGRID>
 </head>
-<body bgcolor="#FFFFFF"  link="#CC3320" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();'>
+<body bgcolor="#FFFFFF"  link="#CC3320" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
 <INGRID>
 %leftmenuinfo:
 %{ X Y T} setleftmenugrids
