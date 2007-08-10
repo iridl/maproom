@@ -4,7 +4,7 @@ SOURCES .NOAA .NCEP .CPC .CMORPH .daily_calculated .mean .morphed .cmorph 24 mul
   Y -4. 40. RANGEEDGES
   T /defaultvalue {last} def pop
 
-/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Food_Security/.Locusts/.Regional/.Rainfall/instructions.html)redirectto stop} if
+/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/maproom/.Food_Security/.Locusts/.Regional/.Rainfall/instructions.html)redirectto stop} if
 leftmenuinfo:
 { X Y T} setleftmenugrids
 WWWinfo /map FORMgetknown {.Y .step
@@ -36,7 +36,7 @@ pop
 figdefs
 </INGRID>
 </head>
-<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();'>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
 <INGRID>
 /leftmenusub? { leftmenulevel 0 get 2 le } def
 leftmenuHeader
@@ -154,7 +154,7 @@ nip
 <tr>
 <td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
 <td colspan=1 align=center bgcolor=#DCDCDC><b>Download Layer</b></td>
-<td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
+<td align=center bgcolor=#DCDCDC><b>Download Raw Data</b></td></tr>
 <tr>
 <INGRID>
 showmenu? {
@@ -192,6 +192,8 @@ pop
 </tr>
 </table>
 </center>
+
+<span class=lttxt><font size=+0>For any feedback or comments, please <a href="mailto:pceccato@iri.columbia.edu,mbell@iri.columbia.edu?subject=Climate and Desert Locust Products">Contact Us</a></font></span>
 
 <INGRID>
 startprint
