@@ -34,7 +34,7 @@ pop
 figdefs
 </INGRID>
 </head>
-<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();'>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
 <INGRID>
 
 /leftmenusub? { leftmenulevel 0 get 2 le } def
