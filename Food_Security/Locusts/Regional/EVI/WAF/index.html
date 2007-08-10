@@ -34,7 +34,7 @@ pop
 figdefs
 </INGRID>
 </head>
-<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();'>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
 <INGRID>
 
 /leftmenusub? { leftmenulevel 0 get 2 le } def
@@ -162,7 +162,7 @@ Moderate Resolution Imaging Spectroradiometer
 <tr>
 <td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
 <td colspan=1 align=center bgcolor=#DCDCDC><b>Download Layer</b></td>
-<td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
+<td align=center bgcolor=#DCDCDC><b>Download Raw Data</b></td></tr>
 
 <tr>
 
@@ -205,6 +205,8 @@ pop
 </tr>
 </table>
 </center>
+
+<span class=lttxt><font size=+0>For any feedback or comments, please <a href="mailto:pceccato@iri.columbia.edu,mbell@iri.columbia.edu?subject=Climate and Desert Locust Products">Contact Us</a></font></span>
 
 <INGRID>
 startprint
