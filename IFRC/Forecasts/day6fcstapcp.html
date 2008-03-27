@@ -1,0 +1,144 @@
+<INGRID>
+SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day .apcppctle
+leftmenuinfo:
+{ T} setleftmenugrids
+WWWinfo /map FORMgetknown {.Y .step
+nip
+/map.Y.step
+exch def}
+{pop}ifelse
+:leftmenuinfo
+mimeheader
+pop
+</INGRID>
+
+<html>
+<head>
+<title>Day 6 MRF/GFS Precipitation Forecasts in Context</title>
+<INGRID>
+figdefs
+</INGRID>
+</head>
+
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
+<INGRID>
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+</INGRID>
+
+<FORM name=mapform action=day6fcstapcp.html>
+
+<center><h2>Day 6 MRF/GFS Precipitation Forecasts in Context</h2></center>
+<table border=1>
+<tr>
+<td><center>Day 6 Forecast Preciptation<br>
+
+<INGRID>
+
+home .mbell .IRI .MD .IFRC .ESRL .PSD .refcst .day6 a: .apcp :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef 
+/plotaxislength 550 psdef
+/XOVY auto psdef
+/antialias true psdef
+figdup
+/map
+showmenu?
+%{inputimagelinkwithlimitcontrolsclickforinfo}
+{inputimagelinkwithnocontrols}
+%{imagelink } ifelse
+{UsedFormNames /map.S.plotvalue dup put inputimagelinkwithnocontrols } ifelse
+</INGRID>
+<br>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+
+</center>
+
+
+</td>
+<td><center>Day 6 Forecast Precipitation Anomaly<br>
+
+<INGRID>
+
+home .mbell .IRI .MD .IFRC .ESRL .PSD .refcst .day6 a: .apcpanom :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef 
+/plotaxislength 550 psdef
+/XOVY auto psdef
+/antialias true psdef
+figdup
+/map
+showmenu?
+%{inputimagelinkwithlimitcontrolsclickforinfo}
+{inputimagelinkwithnocontrols}
+%{imagelink } ifelse
+{UsedFormNames /map.S.plotvalue dup put inputimagelinkwithnocontrols } ifelse
+</INGRID>
+<br>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+
+</center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center>Day 6 Forecast Precipitation as Percent of Mean Monthly Total<br>
+
+<INGRID>
+
+home .mbell .IRI .MD .IFRC .ESRL .PSD .refcst .day6 a: .apcppctmonthlyclim :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef 
+/plotaxislength 550 psdef
+/XOVY auto psdef
+/antialias true psdef
+figdup
+/map
+showmenu?
+%{inputimagelinkwithlimitcontrolsclickforinfo}
+{inputimagelinkwithnocontrols}
+%{imagelink } ifelse
+{UsedFormNames /map.S.plotvalue dup put inputimagelinkwithnocontrols } ifelse
+</INGRID>
+<br>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+
+</center>
+</td>
+<td><center>Day 6 Forecast Precipitation Percentile<br>
+
+<INGRID>
+
+home .mbell .IRI .MD .IFRC .ESRL .PSD .refcst .day6 a: .apcppctle :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef 
+/plotaxislength 550 psdef
+/XOVY auto psdef
+/antialias true psdef
+figdup
+/map
+showmenu?
+%{inputimagelinkwithlimitcontrolsclickforinfo}
+{inputimagelinkwithnocontrols}
+%{imagelink } ifelse
+{UsedFormNames /map.S.plotvalue dup put inputimagelinkwithnocontrols } ifelse
+</INGRID>
+<br>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+
+</center>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<input type=hidden name="map.Y.step" value=".5">
+
+</body>
+</html>
