@@ -1,0 +1,383 @@
+<INGRID>
+ SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day .apcppctle
+
+/helpnow FORMknown {(http://ingrid.ldeo.columbia.edu/expert/home/.mbell/.IRI/.MD/.maproom/.IFRC/.Forecasts/instructions.html)redirectto stop} if
+leftmenuinfo:
+{ T} setleftmenugrids
+WWWinfo /map FORMgetknown {.Y .step
+nip
+/map.Y.step
+exch def} 
+{pop}ifelse
+[/mask /districts /states /countries /coasts] {dup FORMknown {dup (on) def}if pop} forall
+
+:leftmenuinfo
+
+mimeheader
+pop
+</INGRID>
+<html><head>
+    <title>Precipitation Forecast in Context Map Tool</title>
+    <STYLE TYPE="text/css">
+    <!--
+    P.indented
+       {
+       padding-left: 25pt;
+       padding-right: 25pt;
+       text-align: justify;
+       }
+    -->
+    </STYLE>
+
+<INGRID>
+
+figdefs
+</INGRID>
+</head>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
+<INGRID>
+
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+</INGRID>
+<FORM name=mapform action=index.html>
+
+<table width=100% align="center">
+<tr>
+<td><img src="logoFED_UK_220px.jpg" align="left"></td>
+<td><h3 align=center><u>Precipitation Forecast in Context Map Tool</u></h3></td>
+<td><img src="IRI_blue_and_white_logo_195x28.jpg" align="right"></td>
+</tr>
+</table>
+
+<!--
+<img src="logoFED_UK_220px.jpg" align="left">  <img src="IRI_blue_and_white_logo_195x28.jpg" align="right"> 
+<br>
+
+<h3 align=center><u>Precipitation Forecast in Context Map Tool</u></h3>
+-->
+
+<center> 
+
+<table border=0>
+<tr valign=center>
+<td align=center>
+
+<table>
+<tr><td>
+
+<INGRID>showmenu? not {stopprint} if</INGRID>
+
+<table BORDER COLS=1 width=275>
+<tr>
+<td align=center width=100>
+<b><font point-size=12pt>Map Selection</font></b>
+</td></tr><tr><td>
+<font point-size=10pt>
+
+
+<INGRID>
+WWWinfo 
+
+/layerlist null 11 object 
+/tot6dayapcp { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcp :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def 
+
+/tot6dayapcpanom { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcpanom :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def 
+
+/tot6dayapcppctle { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcppctle :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def
+
+/tot6dayapcppctmonthlyclim { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcppctmonthlyclim :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def
+
+/prcp_fcst { SOURCES .IRI .MD .IFRC .IRI .Seasonal_Forecast a: .prcp_fcst :a: .forecasttime :a  X Y fig: colors plotlabel black thin countries_gaz :fig /framelabel (Forecast for %=[forecasttime], Forecast Issued %=[F]) psdef } def
+
+/pic3mo_same { SOURCES .IRI .MD .IFRC .IRI .Seasonal_Forecast a: .pic3mo_same :a: .forecasttime :a: .observationtime :a X Y fig: colors plotlabel plotlabel black thin countries_gaz :fig /framelabel (%=[forecasttime] Forecast Precipitation Tendency same as Observed %=[observationtime], issued %=[F]) psdef } def
+
+/pic3mo_reversed { SOURCES .IRI .MD .IFRC .IRI .Seasonal_Forecast a: .pic3mo_reversed :a: .forecasttime :a: .observationtime :a X Y fig: colors plotlabel plotlabel black thin countries_gaz :fig /framelabel (%=[forecasttime] Forecast Precipitation Tendency reversed from Observed %=[observationtime], issued %=[F]) psdef } def
+
+/CMAP_climo { SOURCES .IRI .MD .IFRC .CPC .Merged_Analysis .monthly .v0703 .prcp_est X Y fig: colors black thin countries_gaz :fig /color_smoothing auto psdef } def
+
+/count { SOURCES .IRI .MD .IFRC .CIESIN .GPWv3 .count X Y fig: colors black thin countries_gaz :fig } def
+
+/imr { SOURCES .IRI .MD .IFRC .CIESIN .Poverty .imr X Y fig: colors black thin countries_gaz :fig } def
+
+/defaultlayer currentobject /tot6dayapcp get def
+
+ def 
+
+/layernames null 11 object
+ /tot6dayapcp (Six-Day Total Forecast Precipitation (ESRL)) def
+ /tot6dayapcpanom (Six-Day Total Forecast Precipitation Anomaly (ESRL)) def
+ /tot6dayapcppctle (Six-Day Total Forecast Precipitation Percentile (ESRL)) def
+ /tot6dayapcppctmonthlyclim (Six-Day Total Forecast Precipitation as Percent of Mean Monthly Total (ESRL)) def
+ /prcp_fcst (Seasonal Precipitation Forecast (IRI)) def
+ /pic3mo_same (PiC:  Same Tendency in Seasonal Forecast and 3-Month Precipitation Observation (IRI)) def
+ /pic3mo_reversed (PiC:  Reversed Tendency Between Seasonal Forecast and 3-Month Precipitation Observation (IRI)) def
+ /CMAP_climo (Monthly Precipitation Climatology (CPC)) def
+ /count (GPWv3 Year 2005 Projected U.N.-Adjusted Population Count (CIESIN/SEDAC)) def
+ /imr (Global Distribution of Poverty, Infant Mortality Rate, Year 2000 (CIESIN/SEDAC)) def
+def
+
+  /descprintcondition {stopprint /mapsel FORMgetknown {cvn eq} {pop false} ifelse {startprint} if} def 
+
+
+[/tot6dayapcp /tot6dayapcpanom /tot6dayapcppctle /tot6dayapcppctmonthlyclim /prcp_fcst /pic3mo_same /pic3mo_reversed /CMAP_climo /count /imr ] 
+
+showmenu?
+{
+{
+(<input type=radio name=mapsel onChange="changedtext(this)" value=) print
+dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( checked)print} if } { dup /tot6dayapcp eq {( checked) print} if }ifelse
+(><a href="instructions.html#)print 
+dup cvntos print(">)print
+layernames 1 index getknown {print}{dup cvntos print} ifelse (</a><br><br>\n) print
+pop } forall
+} {} ifelse
+
+%{
+%(<input type=radio name=mapsel value=tot6dayapcp ) print
+%/tot6dayapcp FORMknown {( checked)print} if
+% (><a href="instructions.html">Six-Day Total Precipitation Forecast</a>\n) print
+%(<br><br><input type=radio name=mapsel value=tot6dayapcpanom ) print
+%/tot6dayapcpanom FORMknown {( checked)print} if
+% (>Six-Day Total Precipitation Anomaly Forecast\n) print
+%(<br><br><input type=radio name=mapsel value=tot6dayapcppctle )print 
+%/tot6dayapcppctle FORMknown {( checked)print} if
+%(>Six-Day Total Precipitation Percentile Forecast\n)print
+%(<br><br><input type=radio name=mapsel value=tot6dayapcppctmedian )print 
+%/tot6dayapcppctmedian FORMknown {( checked)print} if
+%(>Six-Day Total Precipitation Percent of Median Forecast\n)print
+%(<br><br><input type=radio name=mapsel value=prcp_fcst )print 
+%/prcp_fcst FORMknown {( checked)print} if
+%(>IRI Seasonal Precipitation Forecast\n)print
+%(<br><br><input type=radio name=mapsel value=pic3mo_same )print 
+%/pic3mo_same FORMknown {( checked)print} if
+%(>IRI PiC:  Same Tendency in Seasonal Forecast and 3-Month Precipitation Observation\n)print
+%(<br><br><input type=radio name=mapsel value=pic3mo_reversed )print 
+%/pic3mo_reversed FORMknown {( checked)print} if
+%(>IRI PiC:  Reversed Tendency Between Seasonal Forecast and 3-Month Precipitation Observation\n)print
+%(<br><br><input type=radio name=mapsel value=count )print 
+%/count FORMknown {( checked)print} if
+%(>Year 2005 Projected U.N.-Adjusted Population Count (CIESIN GPWv3)\n)print
+%(<br><br><input type=radio name=mapsel value=imr )print 
+%/imr FORMknown {( checked)print} if
+%(>Infant Mortality Rate, Year 2000 (CIESIN Global Distribution of Poverty)\n)print
+%} 
+%{
+%(<input type=radio name=mapsel value=tot6dayapcp checked><a href="instructions.html">Six-Day Total Precipitation Forecast</a>\n) print
+%(<br><br><input type=radio name=mapsel value=tot6dayapcpanom >Six-Day Total Precipitation Anomaly Forecast\n) print
+%(<br><br><input type=radio name=mapsel value=tot6dayapcppctle >Six-Day Total Precipitation Percentile Forecast\n) print
+%(<br><br><input type=radio name=mapsel value=tot6dayapcppctmedian >Six-Day Total Precipitation Percent of Median Forecast\n) print
+%(<br><br><input type=radio name=mapsel value=prcp_fcst >IRI Seasonal Precipitation Forecast\n) print
+%(<br><br><input type=radio name=mapsel value=pic3mo_same >IRI PiC:  Same Tendency in Seasonal Forecast and 3-Month Precipitation Observation\n) print
+%(<br><br><input type=radio name=mapsel value=pic3mo_reversed >IRI PiC:  Reversed Tendency Between Seasonal Forecast and 3-Month Precipitation Observation\n) print
+%(<br><br><input type=radio name=mapsel value=count >Year 2005 Projected U.N.-Adjusted Population Count (CIESIN GPWv3)\n) print
+%(<br><br><input type=radio name=mapsel value=imr >Infant Mortality Rate, Year 2000 (CIESIN Global Distribution of Poverty)\n) print
+%} ifelse
+
+
+</INGRID>
+</font></td></tr>
+</table>
+
+<INGRID>
+startprint
+</INGRID>
+
+
+</td></tr>
+<tr><td><br><br></td></tr>
+<tr><td width=150 align=center>
+
+<a href=""><font color=#861A1A></font></a>
+
+</td></tr>
+</table>
+</td>
+
+<td align=center valign=top>
+<INGRID>
+
+
+WWWinfo 
+
+%/map FORMknown 
+
+/mapsel FORMgetknown not { /defaultlayer } if
+
+layerlist exch getknown {exec}
+{layerlist /defaultlayer get exec} ifelse
+
+
+/plotaxislength 550 psdef
+/XOVY auto psdef
+/antialias true psdef
+figdup
+/map 
+%Ingrid: /mystring getknown { } if
+showmenu? 
+{inputimagelinkwithlimitcontrolsclickforinfo}
+{imagelink } ifelse
+</INGRID>
+<br>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+
+<p class="indented">
+
+
+<INGRID> /tot6dayapcp stopprint /mapsel FORMgetknown {cvn eq} { pop true} ifelse {startprint} if  </INGRID>
+  This map displays six-day total forecast large-scale precipitation (in millimeters) for the period displayed on the map, using the forecast issued at the indicated forecast time.
+
+<INGRID> /tot6dayapcpanom descprintcondition </INGRID>
+  This map displays the difference (in millimeters) between the current six-day total forecast precipitation value and the long-term (1979-2004) mean six-day total precipitation value in the model climatology for the same time of year.  Although the precipitation anomaly expresses how much the currently forecast precipitation value differs from the long-term "normal" in terms of a precipitation amount, it does not clearly specify how unusual that difference is for that particular location or time of year.  For instance, while an anomaly of 30 mm may be significant in North Africa, it might not be significant in Indonesia.
+
+<INGRID> /tot6dayapcppctle descprintcondition </INGRID>
+  This map displays the percentile of six-day total forecast precipitation with respect to the six-day forecast precipitation values for the same time of the year in the 1979-2004 model climatology.  To emphasize the largest forecast precipitation values with respect to the model history, only percentile values above 0.8 are displayed.  Locations in the lightest green are forecast to receive precipitation in the highest 15% to 20% of the model climatological distribution, while areas in the darkest green are forecast to receive precipitation in the highest 5% of the distribution.  Percentile values provide a good sense of how the current forecast precipitation total compares to the historical record for a given location and time of year. 
+
+<INGRID> /tot6dayapcppctmonthlyclim descprintcondition </INGRID>
+
+  This map shows the forecast six-day total precipitation value expressed as a percentage of the 1979-2004 mean monthly precipitation total from the model climatology.  This measure highlights locations of forecast extreme six-day total precipitation since it compares six-day totals against the precipitation amount that would normally be received over the course of a full month.  A value of 100% would indicate that the six-day precipitation total is forecast to be as large as the mean monthly total normally received at that time of year in the model climatology.  A value of 25% would indicate that the six-day precipitation total is forecast to be 1/4 of the mean monthly total normally received at that time of year in the model climatology.
+
+<INGRID> /prcp_fcst descprintcondition </INGRID>
+
+  This map shows the IRI probabilistic seasonal precipitation forecast for the next three-month season.  The forecast indicates the probability that the precipitation total for the upcoming season will be in the lowest one-third of the climatological distribution (lowest tercile), the middle one-third (middle tercile), or the highest one-third (upper tercile).  In order to show the probabilities using only one map, the probability of the category having the greatest probability (33.3% or greater) is shown by color shading; variations in the shading in the lower (brown) and upper (green) terciles indicate the strength of the probability.  Areas in grey indicate that the near-normal category is most likely.  Areas in white indicate the climatology forecast (33.3% for each tercile), in which case no tercile is dominant. 
+
+<INGRID> /pic3mo_same descprintcondition </INGRID>
+
+  Shaded areas on this map indicate locations where the IRI probabilistic seasonal precipitation forecast for the next three-month season shows an enhanced likelihood of above-normal (below-normal) precipitation AND where precipitation received in the three-month season before the forecast was issued was also above normal (below normal) -- in other words, where the seasonal forecast indicates an enhanced likelihood for previously observed precipitation conditions to continue.  The relative likelihoods of persistence are indicated for either wet or dry, depending upon whether the forecast probability is 40-50% (labeled "Enhanced"), or 55% and higher (labeled "Greatly Enhanced").  Therefore, areas in light yellow (light green) indicate locations where precipitation in the past season was below normal (above normal) and the forecast indicates an enhanced likelihood of continued below-normal (above-normal) precipitation in the next three-month season.  Areas in dark yellow (dark green) indicate areas with a greatly enhanced likelihood of continued below-normal (above-normal) precipitation.  
+
+<INGRID> /pic3mo_reversed descprintcondition </INGRID>
+
+  Shaded areas on this map indicate locations where the IRI probabilistic seasonal precipitation forecast for the next three-month season shows an enhanced likelihood of above-normal (below-normal) precipitation AND where precipitation received in the three-month season before the forecast was issued was below normal (above normal) -- in other words, where the seasonal forecast indicates a tendency opposite to previously observed seasonal precipitation.  Areas in yellow indicate locations with observed above-normal precipitation in the previous three-month season, but with an enhanced likelihood of below-normal precipitation in the coming season.  Areas in green indicate locations with observed below-normal precipitation in the previous season, but with an enhanced likelihood of above-normal precipitation in the coming season.
+
+<INGRID> /CMAP_climo descprintcondition </INGRID>
+
+  1979-2004 mean monthly precipitation values are shown on this map to provide background on "normal" monthly precipitation totals during the course of the year.  The data are from the NOAA Climate Prediction Center's Merged Analysis of Precipitation data set, available at 2.5&deg; lat/lon resolution.  CMAP precipitation values provided here are derived from a combination of surface gauge data and infrared and microwave satellite estimates.
+
+<INGRID> /count descprintcondition </INGRID>
+
+  This map displays an estimate of the projected number of people living in each 2.5 arc-minute grid box on the map in the year 2005.  The data shown are from the CIESIN Gridded Population of the World, Version 3 (GPWv3) data set.  Values are derived from national statistical office estimates of population and adjusted according to U. N. national population estimates.
+
+<INGRID> /imr descprintcondition </INGRID>
+
+  The CIESIN/SEDAC Global Distribution of Poverty data set includes infant mortality rate as one proxy for poverty.  This map displays the infant mortality rate (number of infant deaths per 10,000 live births) for every 0.25&deg; lat/lon grid box on the map, for the year 2000.
+
+<INGRID> startprint </INGRID>
+
+</p>
+</td>
+</tr>
+</table>
+<input type=hidden name="map.Y.step" value=".5">
+
+<p>
+
+<INGRID>showmenu? not {stopprint} if</INGRID>
+
+<table BORDER WIDTH=800 >
+<tr><td colspan=6 align=center <b>Single-Day (24-Hour) Total Precipitation Forecast Maps</b></td></tr>
+
+<tr>
+<td align=center><a href="day1fcstapcp.html">Day 1 Precipitation Forecast Maps</a></td>
+<td align=center><a href="day2fcstapcp.html">Day 2 Precipitation Forecast Maps</a></td>
+<td align=center><a href="day3fcstapcp.html">Day 3 Precipitation Forecast Maps</a></td>
+<td align=center><a href="day4fcstapcp.html">Day 4 Precipitation Forecast Maps</a></td>
+<td align=center><a href="day5fcstapcp.html">Day 5 Precipitation Forecast Maps</a></td>
+<td align=center><a href="day6fcstapcp.html">Day 6 Precipitation Forecast Maps</a></td>
+</tr>
+</table>
+
+<br>
+
+<table BORDER COLS=1 WIDTH=800 bgcolor="#F5F5F5" NOSAVE >
+<tr><td colspan=4 align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
+<tr><td colspan=4>
+<b>Description:</b><br>
+1.  This tool provides various measures of the relative severity of forecast precipitation events for the globe for 1 to 6 days in advance by comparing the current forecast amounts with those made over a 25 year period (1979 to 2004).
+<br>
+2.  The tool also provides probabilistic seasonal forecasts of precipitation for the globe, including "predictions in context" (PiC) maps which show regions of the globe which have experienced unusually wet or dry conditions, and where the seasonal forecast indicates an enhanced probability for the continuation or reversal of these conditions in the coming season.
+<br>
+3.  A map of climatological monthly precipitation is provided as a reference indicating "normal" precipitation totals for each month of the year. 
+<br>
+4.  Population and poverty maps are also provided to allow for the examination of the relative exposure to weather events and seasonal precipitation fluctuations.
+<p>
+<b><a href="instructions.html">How to Use this Map Tool</a></b>
+<p>
+<b>Datasets:</b><br>
+<b><a href="instructions.html#esrlgfs">ESRL GFS Six-Day and Daily Precipitation Forecast Maps</a></b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp;Daily ensemble-mean forecast precipitation totals at 2.5&deg; lat/lon resolution from the Medium-Range Forecast (MRF/GFS) model run daily at 00 UTC by the NOAA ESRL PSD Reforecast project</font>
+<br><font size=-1><b>Data Source</b>:&nbsp; U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://www.cdc.noaa.gov/people/jeffrey.s.whitaker/refcst/">ESRL GFS Reforecast Project</a> </font>
+<br><font size=-1><b>Analyses</b>: &nbsp;Analyses shown here include forecast daily (days 1-6) and six-day precipitation totals, forecast daily and six-day total precipitation anomalies from the 1979-2004 mean, forecast daily and six-day total precipitation as percent of mean monthly total precipitation (1979-2004 base period), and forecast daily and six-day total precipitation percentiles (1979-2004 base period).
+</font>
+<br>
+<b><a href="instructions.html#prcp_fcst">IRI Seasonal Precipitation Forecast</a></b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp; Dominant tercile probabilities for seasonal (3-month) precipitation for the first lead time from the IRI Net Assessment Forecast, issued every month at 2.5&deg; lat/lon resolution</font>
+<br><font size=-1><b>Data Source</b>:&nbsp; International Research Institute for Climate and Society, <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&objID=944&parentname=CommunityPage&parentid=1&mode=2&in_hi_userid=2&cached=true">Net Assessment Forecasts</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.Precipitation/">Map Room Forecast page</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library entry</a></font>
+<br>
+
+<b><a href="instructions.html#pic3mo_same">IRI Predictions in Context (PiC)</a></b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp; Forecast data:  Dominant tercile probabilities for seasonal (3-month) precipitation for the first lead time from the IRI Net Assessment Forecast, issued every month at 2.5&deg; lat/lon resolution; Observational data:  CAMS-OPI monthly observed precipitation gridded at 2.5&deg; lat/lon resolution </font>
+<br>
+<font size=-1><b>Data Source</b>:&nbsp;  Analysis data:  International Research Institute for Climate and Society, <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&objID=944&PageID=0&cached=true&mode=2#pic">Predictions in Context</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.PiC/">Map Room PiC page</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.PiC/">Data Library entry</a>; Forecast data:  International Research Institute for Climate and Society, <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&objID=944&parentname=CommunityPage&parentid=1&mode=2&in_hi_userid=2&cached=true">Net Assessment Forecasts</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.Precipitation/">Map Room Forecast page</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library entry</a>; Observational data:  NOAA, Climate Prediction Center, <a href="http://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cams_opi.html">CAMS-OPI Precipitation</a></font><br>
+<font size=-1><b>Analysis</b>:&nbsp;Shaded areas on the "Same Tendency" map indicate locations where the IRI Net Assessment seasonal precipitation forecast for the next 3-month season shows an enhanced likelihood of above-normal (below-normal) precipitation AND where precipitation received in the 3-month season before the forecast was issued was also above-normal (below-normal), i.e., the forecast has the same tendency as the previously observed precipitation.  The "Reversed Tendency" map shows locations where the IRI Net Assessment seasonal precipitation forecast for the next 3-month season indicates an enhanced likelihood of above-normal (below-normal) precipitation AND where precipitation  received in the 3-month season before the forecast was issued was below-normal (above-normal), i.e., the forecast has the opposite tendency from the previously observed precipitation.</font><br>
+
+<b><a href="instructions.html#CMAP_climo">CPC Merged Analysis of Precipitation Monthly Climatology</a></b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp; CPC Merged Analysis of Precipitation (CMAP) v0703 (March 2007 release) version 2 (merged gauge and satellite estimates) monthly precipitation values at 2.5&deg; lat/lon resolution</font>
+<br>
+<font size=-1><b>Analysis</b>:&nbsp;&nbsp; Monthly precipitation climatology using 1979-2004 base period.</font>
+<br>
+<font size=-1><b>Data Source</b>:&nbsp;&nbsp;NOAA, Climate Prediction Center, <a href="http://www.cpc.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a></font>
+<br>
+
+<b><a href="instructions.html#count">CIESIN/SEDAC GPWv3 Year 2005 Projected U.N.-Adjusted Population Counts</a></b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp; Number of persons per 2.5 arc-minute grid box, projected for the year 2005, based upon national statistical office estimates of population and adjusted according to U.N. national population estimates, from the CIESIN Gridded Population of the World, Version 3 (GPWv3) data set </font></br>
+<font size=-1><b>Data Source</b>:&nbsp; Center for International Earth Science Information Network (CIESIN), Socio-Economic Data Center (SEDAC), <a href="http://sedac.ciesin.org/gpw/documentation.jsp">Gridded Population of the World, Version 3</a></font>
+<br>
+
+<b><a href="instructions.html#imr">CIESIN/SEDAC Global Distribution of Poverty, Infant Mortality Rate, Year 2000</a></b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp;Infant mortality rate (number of infant deaths per 10,000 live births) per 0.25&deg; lat/lon grid box, for the year 2000, from the SEDAC Global Distribution of Poverty data set </font><br>
+<font size=-1><b>Data Source</b>:&nbsp; Center for International Earth Science Information Network (CIESIN), Socio-Economic Data Center (SEDAC), <a href="http://sedac.ciesin.columbia.edu/povmap/">Global Distribution of Poverty</a></font>
+<p>
+</td>
+</tr>
+
+
+</table>
+</center>
+
+<br>
+
+<span class=lttxt><font size=+0>For any feedback or comments, please <a href="mailto:mbell@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">Contact Us</a></font></span>
+
+<INGRID>
+startprint
+</INGRID>
+</FORM>
+
+  </body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
