@@ -30,7 +30,7 @@ mimeheader
 pop
 </INGRID>
 <html><head>
-    <title>Dekadal Rainfall Analysis Tool</title>
+    <title>Indonesia Rainfall Analysis Tool</title>
 <INGRID>
 
 figdefs
@@ -48,7 +48,7 @@ leftmenuHeader
 <tr valign=center>
 <td></td>
 <td align=center>
-<h3><u>Dekadal Rainfall Analysis Tool</u></h3>
+<h3><u>Indonesia Rainfall Analysis Tool</u></h3>
 <br>
 <INGRID>
 home .grover .EMILY .Analyses .Locust .CMORPH .dekadsum
@@ -122,14 +122,14 @@ nip
 <table BORDER COLS=1 width=150>
 <tr>
 <td>
-<center><b><font point-size=12pt>Time Series Region</font></b></center>
+<center><b><font point-size=12pt>Generate Time Series Spatially Averaged over the Following Regions</font></b></center>
 </td></tr><tr><td><font point-size=12pt>
-<font size=-1>Spatially average data over the following region:
-<br><input type=radio name="map.Y.step" value=".25" checked>27x27 km box 
+<font size=-1>
+<br><input type=radio name="map.Y.step" value=".25">27x27 km box 
 <br><input type=radio name="map.Y.step" value=".50">55x55 km box
 <br><input type=radio name="map.Y.step" value=".75">83x83 km box 
 <br><input type=radio name="map.Y.step" value="1.0">111x111 km box
-<br><input type=radio name="map.Y.step" value="district">district boundary
+<br><input type=radio name="map.Y.step" value="district" checked>district boundary
 </font></td>
 </tr>
 </table>
@@ -142,10 +142,13 @@ nip
 <tr>
 <td>
 <b>Precipitation Estimates</b><br>
-<font size=-1><b>Data</b>:&nbsp;&nbsp;Daily precipitation estimates on a 0.25 x 0.25 deg. lat/lon grid</font>
+<font size=-1><b>Data</b>:&nbsp;&nbsp;Daily precipitation estimates, aggregated by dekad (approximately 10 days) on a 0.25&deg; x 0.25&deg; latitude/lonitude grid</font>
 <br><font size=-1><b>Data Source</b>:&nbsp; Climate Prediction Center Morphing Technique
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a>) </font>
-<br><font size=-1><b>Reference</b>:&nbsp; Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that Produces Global Precipitation Estimates from Passive Microwave and Infrared Data at High Spatial and Temporal Resolution. <i>J. Hydrometeorology</i>, <b>5</b>, 487-503.
+<br><font size=-1><b>Reference</b>:&nbsp; Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that Produces Global Precipitation Estimates from Passive Microwave and Infrared Data at High Spatial and Temporal Resolution. <i>J. Hydrometeorology</i>, <b>5</b>, 487-503.</font>
+<p>
+<font size=-1><b>Description</b>:&nbsp;  These data are presented in "dekads".  Every month has three dekads, such that the first two dekads have 10 days (i.e., 1-10, 11-20), and the third is comprised of the remaining days of the month.  Therefore, the length of the third dekad of each month is not consistent and varies from 8-11 days, depending on the length of the month.  In order to view data in this interface, dates must be entered as dekads.
+
 </font>
 </td>
 </tr>
