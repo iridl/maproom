@@ -1,5 +1,5 @@
 <html><head>
-    <title>Rainfall Analysis Tool - Instructions</title>
+    <title>Indonesia Rainfall Analysis Tool - Instructions</title>
 </head>
 <body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000">
 <INGRID>
@@ -7,13 +7,40 @@
 leftmenuHeader
 %standardHeader
 </INGRID>
-<h3 align=center><u>How to Use the Dekadal Rainfall Analysis Tool</u></h3>
+<h3 align=center><u>How to Use the Indonesia Rainfall Analysis Tool</u></h3>
 <p>
 <table align=center>
 <tr><td width=650>
 <font point-size=12pt>
+
+<p>
+<a name="about"><u><b>About the Tool</b></u>
+<br>This tool enables users to view satellite rainfall data and rainfall anomalies over Indonesia.  The tool uses Climate Prediction Center Morphing Technique (CMORPH) data, from 2003 to the present.  The data are updated every dekad (approximately every 10 days).  This tool enables users to:
+<br>
+<ul>
+ <li>view maps of these data for customized time periods, and with overlays of district and provincial boundaries;
+ <li>download time series data for specific locations, and produce graphs of these data that illustrate when rainfall has been above or below normal
+</ul>
+<p>
+This tool can be helpful in understanding recent local rainfall conditions in particular locations in Indonesia.
+<p>
+
+<a name="activity"><u><b>Rainfall and Fire Activity in Indonesia</b></u>
+<br>While this information about rainfall in Indonesia can serve a variety of purposes, this tool was originally designed to assist stakeholders in Central Kalimantan, Indonesia, and neighboring provinces to assess the likelihood of high or low fire activity in an upcoming season.  Research conducted by IRI in partnership with CARE Indonesia and Bogor Agriculture University suggests that there is a close correlation between satellite rainfall data and fire hotspot activity in the peatland areas of the Kalimantan region.  In particular, rainfall during the dry season from June to October is critical in determining fire activity, whether rainfall conditions in a particular location suggest a more- or less-intense-than-average fire season.
+<p>
+Therefore, if a user wishes to assess the likelihood of severe fires in a particular district, this tool can be used to create a graph of rainfall patterns in that district from 2003 to the present.  The tool automatically calculates periods of anomalies (when rainfall is above or below average), and illustrates these through graphs.
+<p>
+For further information about the relationship between fire activity and satellite rainfall data, or if you have questions about how to interpret the data in this tool, please contact Pietro Ceccato (<a href="mailto:pceccato@iri.columbia.edu?subject=Indonesia Rainfall Analysis Tool">pceccato@iri.columbia.edu</a>).
+<p>
+
+<a name="using"><u><b>How to Use this Tool</b></u>
+<br>The instructions below explain how to produce maps and create specific time series.
+
+<p>
+
 <a href="#map">Interacting with the map</a>
 <br><a href="#timeseries">Creating time series analyses</a>
+
 <p><a name="map"><u><b>Interacting with the map</b></u>
 <br>The map first displays precipitation estimates from the most recent dekad, but it is also meant to be a dynamic tool. Users may use the map viewer to:
 <ul><li>Display precipitation estimates from 11-20 Dec 2002 to the most recently available dekad (near-present)</li>
@@ -23,33 +50,32 @@ country, state/province, and district</li>
 <li>Zoom in to a more specific region of interest</li>
 </ul>
 <u><i>Display data for a different date</i></u>
-<br>The dekad for which the displayed precipitation data is valid is shown to the lower left 
+<br>The dekad for which data are currently displayed on the map is shown to the lower left 
 of the map.  To display data from a different time period:
 <ol><li>Change the date in the text box above the map using the same format as the date
-already shown.</li>
+already shown.  You must enter date ranges as dekads.  For each month, there are three dekads:  days 1-10, days 11-20, and day 21 to the last day of the month.  For example, in April the dekads would be entered as: 1-10 April 2008, 11-20 April 2008, and 21-30 April 2008.</li>
 <li>Click the Redraw button to the left of the map (top of the three buttons).</li>
 </ol>
-Note that the buttons to the right of the date text box allow you to go directly to the dekads
-immediately before and after the one currently displayed.
+Note that to the right of the date text box, there is a button that allows you to display the dekad immediately  prior to the one currently being viewed (and if you are not viewing the most recent dekad, it will also display a button for the dekad after).
 <p>
 <u><i>Animate data from multiple dekads</i></u>
-<br>Any number of time steps may be animated, but the time necessary to load the animation will 
+<br>The map will display any number of dekads in animation.  However, the time necessary to load the animation will 
 increase with the number of time steps included in the selection.
 <br><ol><li>In the date text box above the map, enter the starting and ending dekads of the time period 
 over which you would like to animate the data, separated by "to" (e.g., "11-20 Dec 2002 to 21-31 Dec 
-2003").</li>
+2003").  Or, if you enter "Sep 2004", for example, you will see an animation of the three dekads in that month.  If you enter "Sep 2004 to Aug 2005", you will see an animation of all the dekads from the beginning of September 2004 through the end of August 2005.</li>
 <li>Click the "Redraw" button to the left of the map (top of the three buttons).</li>
 </ol>
 <p>
 <u><i>Overlay adminstrative boundaries</i></u>
 <br>Any combination of the available overlay maps may be displayed.
 <ol><li>Using the "Optional Overlay Maps" table located on the right side of the map, select the 
-overlays that you would like to display.</li> 
+overlays that you would like to display.  For example, if you select "districts" you will see district boundaries on the map.</li> 
 <li>Click the Redraw button to the left of the map (top of the three buttons).</li>
 </ol>
 <p>
 <u><i>Zoom map in/out</i></u>
-<br>There are two ways to zoom the map to different regions; a click-and-drag zoom window and the latitude/longitude text boxes. Note that the map can not display areas outside of the region first shown on the interface 
+<br>There are two ways to zoom the map to different regions; a click-and-drag zoom window and the latitude/longitude text boxes. Note that the map cannot display areas outside of the region first shown on the interface 
 (i.e., 12.5&deg;S - 9.5&deg;N, 90&deg;E - 155&deg;E).
 <br><ul><li><i>Click-and-drag zoom window</i>
 <br><ol><li>Click and drag a window on the map over the region of interest.  The map will automatically zoom to that region when the mouse button is released.
@@ -66,7 +92,7 @@ like to display using the text format already shown.</li>
 <br>Users may generate time series analyses of precipitation at any location on the map.
 <p><u><i>Generate time series analysis</i></u>
 <ol><li>Using the "Time Series Region" table to the right of the map, select the size of 
-the region over which you want the precipitation to be spatially averaged.</li>
+the region over which you want the precipitation to be spatially averaged.  For example, if you wish to view precipitation data that are spatially averaged over a district, click on "district boundary".</li>
 <li>Click on the map at the point of interest.  The analysis will be based on the average of the data within 
 the grid box of the size indicated in Step 1 closest to this point.</li>
 </ol>
