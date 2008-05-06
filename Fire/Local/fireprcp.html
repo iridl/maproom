@@ -192,6 +192,10 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 </INGRID>
 </tr></tbody></table>
 
+<p>
+<font face="Helvetical,Arial" point-size=9pt size=-1><b>Click on a graph to enlarge it and access display options</b></font>
+<p>
+
 <table border cellpadding="6" cellspacing="4" bgcolor="#ffffff"><tbody><tr valign="top"><td width="50%"  bgcolor=#F0F8FF>
 <font face="Helvetical,Arial" point-size=9pt size=-1>
 
@@ -211,9 +215,9 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 <b>b) Dekadal observed vs. long-term average precipitation</b><br>
 </font>
 <center>
-<a href="/<INGRID> dup dataseturl</INGRID>/DATA/null/null/RANGE//plotlast/200/def//fullname(CMORPH%20precipitation)def/<INGRID> 1 index dataseturl</INGRID>%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname(CMORPH%202003-07%20average)def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig/figviewer.html?my.help=more+options&map.dekadsum.units=mm&map.dekadsum.plotlast=300&map.domain=+%7B+/dekadsum+0+300+plotrange+/dekadsum+0+300+plotrange+/T+first+last+plotrange+%7D&map.domainparam=+/plotaxislength+250+psdef+/plotborder+72+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.dekadsum.plotfirst=0&map.plotaxislength=432" OnMouseOver="self.status='Click here to explore the data';return true">
+<a href="/<INGRID> dup dataseturl</INGRID>/DATA/null/null/RANGE//plotlast/200/def//fullname(CMORPH%20precipitation, 2003-present)def/<INGRID> 1 index dataseturl</INGRID>%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname(CMORPH%202003-07%20average)def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig/figviewer.html?my.help=more+options&map.dekadsum.units=mm&map.dekadsum.plotlast=300&map.domain=+%7B+/dekadsum+0+300+plotrange+/dekadsum+0+300+plotrange+/T+first+last+plotrange+%7D&map.domainparam=+/plotaxislength+250+psdef+/plotborder+72+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.dekadsum.plotfirst=0&map.plotaxislength=432" OnMouseOver="self.status='Click here to explore the data';return true">
 
-<img src="/<INGRID> dup dataseturl</INGRID>/DATA/null/null/RANGE//plotlast/200/def//fullname(CMORPH%20precipitation)def/<INGRID> 1 index dataseturl</INGRID>%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname(CMORPH%202003-07%20average)def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig/+//dekadsum/0/300/plotrange//dekadsum/0/300/plotrange/T/first/last/plotrange+//plotborder+72+psdef//plotbordertop+20+psdef//plotborderbottom+62+psdef//plotaxislength+250+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Multi-year observed vs. short-term average precipitation" title="Multi-year observed vs. short-term average precipitation" width=322 height=197></a>
+<img src="/<INGRID> dup dataseturl</INGRID>/DATA/null/null/RANGE//plotlast/200/def//fullname(CMORPH%20precipitation, 2003-present)def/<INGRID> 1 index dataseturl</INGRID>%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname(CMORPH%202003-07%20average)def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig/+//dekadsum/0/300/plotrange//dekadsum/0/300/plotrange/T/first/last/plotrange+//plotborder+72+psdef//plotbordertop+20+psdef//plotborderbottom+62+psdef//plotaxislength+250+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Multi-year observed vs. short-term average precipitation" title="Multi-year observed vs. short-term average precipitation" width=322 height=197></a>
 </center>
 <font size=-1><br><a href="/<INGRID> dup dataseturl</INGRID>/DATA/null/null/RANGE//plotlast/200/def/<INGRID> 1 index dataseturl</INGRID>%5BT%5D2/SM121/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname(CMORPH%202003-07%20average)def//long_name/%282003-07%20Average%20Precipitation%29def/T/3/1/roll/3+ncoltable.html?tabopt.N=4&tabopt.1=text&tabopt.2=text&tabopt.3=text&tabopt.4=markNaN&NaNmarker=NaN&tabtype=html&eol=LF+%28unix%29">Data in this graph</a></font>
 </td></tr>
@@ -247,11 +251,11 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 <br>
 a) Dekadal* precipitation estimates for 1 Jan 2003 to the present in the selected region.  
 <p>
-b) Same as (a) (solid black line) with the addition of the recent short-term average precipitation for the same region (grey dotted line).  The blue (red) bars are indicative of estimates that are above (below) the short-term average.  Note that the short-term average precipitation data have been smoothed. 
+b) Dekadal precipitation estimates for 1 Jan 2003 to the present (solid black line) with the addition of the short-term (2003-2007) average precipitation for the same region (grey dotted line).  The blue (red) bars are indicative of precipitation estimates that are above (below) the short-term average.  Note that the short-term average estimated precipitation data have been smoothed. 
 <p>
-c) Same as (b) for the current calendar year (thick black line), as indicated by the axis labels. Precipitation estimates from previous years are also shown (blue: -1 yr from present; magenta: -2 yrs from present; grey: -3 yrs from present). 
+c) Dekadal precipitation estimates for the current calendar year (thick black line). Precipitation estimates from previous years are also shown (blue: -1 yr from present; magenta: -2 yrs from present; grey: -3 yrs from present). 
 <p>
-d) Cumulative dekadal satellite-derived precipitation estimates (solid black line) and the cumulative recent short-term average precipitation (grey dotted line) for the most recent 12-month period in the selected region.  The blue (red) bars are indicative of estimates that are above (below) the short-term average.  
+d) Cumulative dekadal precipitation estimates (solid black line) and the cumulative short-term (2003-2007) average precipitation estimates (grey dotted line) for the most recent 12-month period in the selected region.  The blue (red) bars are indicative of estimates that are above (below) the short-term average.  
 </font>
 <p>
 <font face="Helvetical,Arial" point-size=12pt size=-1>
@@ -259,7 +263,7 @@ d) Cumulative dekadal satellite-derived precipitation estimates (solid black lin
 <br></font>
 <font face="Helvetical,Arial" point-size=9pt size=-1>
 <b>Precipitation Estimates</b><br>
-<font size=-1><b>Data</b>:&nbsp;&nbsp;Daily precipitation estimates on a 0.25 x 0.25 deg. lat/lon grid</font>
+<font size=-1><b>Data</b>:&nbsp;&nbsp;Daily precipitation estimates, aggregated by dekad (approximately 10 days), on a 0.25 x 0.25 deg. lat/lon grid</font>
 <br><font size=-1><b>Data Source</b>:&nbsp; Climate Prediction Center Morphing Technique
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a>) </font>
 <br><font size=-1><b>Reference</b>:&nbsp; Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that Produces Global Precipitation Estimates from Passive Microwave and Infrared Data at High Spatial and Temporal Resolution. <i>J. Hydrometeorology</i>, <b>5</b>, 487-503.
