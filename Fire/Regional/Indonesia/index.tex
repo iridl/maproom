@@ -1,0 +1,24 @@
+\begin{ingrid}
+continuedataset:
+datasetdefs:
+/index.en.html currentobject /index.html get def
+/NINO4.en.html currentobject /NINO4.html get def
+:datasetdefs
+
+/Dekadal_Rainfall currentobject 1 index get def
+
+/index.html {
+PickLanguage:
+/en /index.en.html
+/id /index.id.html
+:PickLanguage
+} def
+
+/NINO4.html {
+PickLanguage:
+/en /NINO4.en.html
+/id /NINO4.id.html
+:PickLanguage
+} def
+:dataset
+\end{ingrid}
