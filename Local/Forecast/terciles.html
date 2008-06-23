@@ -52,25 +52,30 @@ X Y fig: lightgrey mask grey verythin states_gaz thin countries_gaz red smallpus
 </tr></table>
 <table><tr><td>
 <INGRID>
-SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .prob
-a: :a: 0 mul 
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation
+a: .prob :a: .prob 0 mul 
 %:a: :a: 0 mul 33 add
+:a: .target_date
 :a C fig- 
-grey deltabars
+grey deltabars plotlabel
 black dashed 33 1 33 horizontallines
 -fig /XOVY 1 psdef
 /plotaxislength 200 psdef
+/framelabel ( (%=[X],%=[Y]) %=[target_date] issued %=[F]) psdef
 /map imagelink
 </INGRID>
 <br>Precipitation
 </td><td>
 <INGRID>
-SOURCES .IRI .FD .Seasonal_Forecast .Temperature .prob
-dup 0 mul C fig- 
-grey deltabars
+SOURCES .IRI .FD .Seasonal_Forecast .Temperature
+a: .prob :a: .prob 0 mul 
+:a: .target_date
+:a C fig- 
+grey deltabars plotlabel
 black dashed 33 1 33 horizontallines
  -fig /XOVY 1 psdef
 /plotaxislength 200 psdef
+/framelabel ( (%=[X],%=[Y]) %=[target_date] issued %=[F]) psdef
 /map imagelink
 </INGRID>
 <br>Temperature
