@@ -127,9 +127,13 @@ showmenu?
 {
 (<input type=radio name=mapsel onChange="changedtext(this)" value=) print
 dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( checked)print} if } { dup /tot6dayapcp eq {( checked) print} if }ifelse
-(><a href="instructions.html#)print 
-dup cvntos print(">)print
-layernames 1 index getknown {print}{dup cvntos print} ifelse (</a><br><br>\n) print
+%(><a href="instructions.html#)print 
+%dup cvntos print(">)print
+%layernames 1 index getknown {print}{dup cvntos print} ifelse (</a><br><br>\n) print
+%pop } forall
+
+(>)print 
+layernames 1 index getknown {print}{dup cvntos print} ifelse (<br><br>\n) print
 pop } forall
 } {} ifelse
 
