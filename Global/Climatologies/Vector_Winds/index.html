@@ -21,9 +21,20 @@ leftmenuHeader
 <table><tr><td align=center>
 <INGRID>
  ds:
-home .mbell .IRI .calculations .wind_vector .speed
-home .mbell .IRI .calculations .wind_vector .u
-home .mbell .IRI .calculations .wind_vector .v
+ SOURCES .NOAA .NCEP-NCAR .CDAS-1 .mc7100 .Intrinsic .PressureLevel .u decompress
+    dup mul
+    SOURCES .NOAA .NCEP-NCAR .CDAS-1 .mc7100 .Intrinsic .PressureLevel .v decompress
+     dup mul
+     add
+    sqrt
+    /long_name (speed[m/s]) def
+    windspeed_anomaly_colors
+    DATA 0 3 6 9 12 15 18 21 24 27 30 VALUES
+    /name (speed) def
+ SOURCES .NOAA .NCEP-NCAR .CDAS-1 .mc7100 .Intrinsic .PressureLevel .u
+ /name (u) def
+ SOURCES .NOAA .NCEP-NCAR .CDAS-1 .mc7100 .Intrinsic .PressureLevel .v
+ /name (v) def
  :ds
 a: .speed windspeed_anomaly_colors :a: .speed :a: .u :a: .v :a
 X Y fig: colors grey nozero contours vectors black thin solid countries_gaz :fig
