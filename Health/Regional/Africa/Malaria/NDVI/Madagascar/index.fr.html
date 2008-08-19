@@ -1,6 +1,6 @@
 <INGRID>
-SOURCES .USGS .LandDAAC .MODIS .Madagascar .EVI
-/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/maproom/.Health/.Regional/.Africa/.Malaria/.EVI/.Madagascar/instructions.html)redirectto stop} if
+SOURCES .USGS .LandDAAC .MODIS .Madagascar .NDVI
+/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/maproom/.Health/.Regional/.Africa/.Malaria/.NDVI/.Madagascar/instructions.html)redirectto stop} if
 leftmenuinfo:
 { X Y T} setleftmenugrids
 WWWinfo /map FORMgetknown {.Y .step
@@ -18,7 +18,7 @@ WWWinfo .currenturldir
 (/) rsearch { pop pop} if
 (/) rsearch { pop pop} if
 (/) rsearch { pop pop} if
-(/../../Local/evi.html) append
+(/../../Local/ndvi.html) append
 redirecttowithleftmenuinfo
 %(toolbar=yes,scrollbars=yes,width=900,height=800) openinpopupwithleftmenuinfo
 %(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print stop
@@ -28,7 +28,8 @@ mimeheader
 pop
 </INGRID>
 <html><head>
-    <title>EVI Analysis Tool: Madagascar</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <title>Analyses du NDVI : Madagascar</title>
 <INGRID>
 
 figdefs
@@ -42,14 +43,14 @@ leftmenuHeader
 </INGRID>
 <FORM name=mapform action=index.html>
 <INGRID>saveLanguage</INGRID>
-<h3 align=center><u>EVI Analysis Tool: Madagascar</u></h3>
+<h3 align=center><u>Analyses du NDVI : Madagascar</u></h3>
 <center>
 <table border=0><tr valign=center>
 <td align=center>
 <table BORDER COLS=1 width=110>
 <tr>
 <td align=center width=110>
-<b><font point-size=12pt>Optional <br>Overlay Maps</font></b>
+<b><font point-size=12pt>Options<br>Calques Superposables</font></b>
 </td></tr><tr><td>
 <font point-size=12pt>
 <INGRID>
@@ -59,22 +60,22 @@ nip
 {
 (<input type=checkbox name=coasts) print 
 /coasts FORMknown {( checked)print} if
-(>Coasts\n)print
+(>Côtes\n)print
 
 (<br><input type=checkbox name=countries) print
 /countries FORMknown {( checked)print} if
- (>Countries\n) print
+ (>Pays\n) print
 (<br><input type=checkbox name=states)print 
 /states FORMknown {( checked)print} if
-(>States\n)print
+(>Etats\n)print
 (<br><input type=checkbox name=districts)print 
 /districts FORMknown {( checked)print} if
 (>Districts\n)print
 } 
 {
-(<br><input type=checkbox name=coasts>Coasts\n) print
-(<br><input type=checkbox name=countries checked>Countries\n) print
-(<br><input type=checkbox name=states checked>States\n) print
+(<br><input type=checkbox name=coasts>Côtes\n) print
+(<br><input type=checkbox name=countries checked>Pays\n) print
+(<br><input type=checkbox name=states checked>Etats\n) print
 (<br><input type=checkbox name=districts>Districts\n) print
 } ifelse
 </INGRID>
@@ -83,7 +84,7 @@ nip
 </td>
 <td align=center>
 <INGRID>
-SOURCES .USGS .LandDAAC .MODIS .Madagascar .EVI
+SOURCES .USGS .LandDAAC .MODIS .Madagascar .NDVI
 
 /mask FORMknown
 {
@@ -96,14 +97,14 @@ nip
 {
 %/mask FORMknown {blue thin  epiz} if
 /mask FORMknown { yellow stroke } if
-/districts FORMknown{black verythin mews_dist} if
+/districts FORMknown{lightgrey thin mews_dist} if
 /states FORMknown{
-/districts FORMknown {black}{black}ifelse verythin mews_prov} if
+/districts FORMknown {black}{lightgrey}ifelse thin mews_prov} if
 /countries FORMknown{black thin countries_gaz} if
 /coasts FORMknown{ black thinnish coasts_gaz} if
 } 
 {
-black verythin mews_prov black thin countries_gaz 
+lightgrey verythin mews_prov black thin countries_gaz 
 }ifelse
 :fig
 /antialias true psdef
@@ -128,11 +129,11 @@ imagelink
 <table BORDER COLS=1 width=150>
 <tr>
 <td>
-<center><b><font point-size=12pt>Time Series Region</font></b></center>
+<center><b><font point-size=12pt>Séries Temporelles Régionales</font></b></center>
 </td></tr><tr><td><font point-size=12pt>
-Spatially average data over the following region:
-<br><input type=radio name="map.Y.step" value="district" checked>district boundary
-<br><input type=radio name="map.Y.step" value=".1">11x11 km box 
+Moyennes spatiales par :
+<br><input type=radio name="map.Y.step" value="district" checked>Districts
+<br><input type=radio name="map.Y.step" value=".1">11x11 km boîte 
 </font></td>
 </tr>
 </table>
@@ -141,15 +142,15 @@ Spatially average data over the following region:
 
 
 <table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE >
-<tr><td align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
+<tr><td align=center bgcolor=#DCDCDC><b>Documentation</b></td></tr>
 <tr>
 <td>
-<font size=-1><b>Data</b>:&nbsp;&nbsp;Enhanced Vegetation Index at a spatial resolution of 250m</font>
-<br><font size=-1><b>Data Source</b>:&nbsp; United States Geological Survey, Land Processes Distributed Active Archive Center, 
+<font size=-1><b>Données</b> :&nbsp;&nbsp; Index de Végétation Normalisé à 250m de résolution spatiale</font>
+<br><font size=-1><b>Source</b> :&nbsp; United States Geological Survey, Land Processes Distributed Active Archive Center, 
 Moderate Resolution Imaging Spectroradiometer 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.dataset_documentation.html">USGS LandDAAC MODIS</a>)</font>
 <br>
-<font size=-1><b>Note</b>:&nbsp;&nbsp;There is typically a 12- to 16-day delay between the end of the observation period for the latest data and the date when those data are received and displayed on this page.</font>
+<font size=-1><b>N.B.</b> :&nbsp;&nbsp; Typiquement, il y a 12 à 16 jours de décalage entre la fin de la dernière période d'observation et la date à laquelle ces données sont reçues et publiées sur cette page.</font>
 </td>
 </tr>
 </table>
@@ -157,28 +158,28 @@ Moderate Resolution Imaging Spectroradiometer
 <INGRID>showmenu? not {stopprint} if</INGRID>
 <table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
 <tr>
-<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
-<td colspan=1 align=center bgcolor=#DCDCDC><b>Download Layer</b></td>
-<td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
+<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Télécharger la Carte</b></td>
+<td colspan=1 align=center bgcolor=#DCDCDC><b>Télécharger le Calque</b></td>
+<td align=center bgcolor=#DCDCDC><b>Télécharger les Données</b></td></tr>
 <tr>
 
 <INGRID>
 showmenu? {
 imagelinkstart
 (<td width=20 align=center>)print
-(Figure as PDF) (.pdf) linktoimageformat
+(Figure en PDF) (.pdf) linktoimageformat
 (</td><td align=center>) print
-(Figure as JPEG) (.jpg) linktoimageformat
+(Figure en JPEG) (.jpg) linktoimageformat
 (</td>) print
 } if
 </INGRID>
-<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.Madagascar/.EVI/<INGRID>
+<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.Madagascar/.NDVI/<INGRID>
 showmenu?{datarestrictionasurl print } if
-</INGRID>palettecolor.tiff">GeoTiff for GIS</a>
+</INGRID>palettecolor.tiff">GeoTiff pour SIG</a>
 </td>
-<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.Madagascar/.EVI/<INGRID>
+<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.Madagascar/.NDVI/<INGRID>
 showmenu?{datarestrictionasurl print } if
-</INGRID>?help+datafiles#GIS">Data for GIS</a></td>
+</INGRID>?help+datafiles#GIS">Données pour SIG</a></td>
 
 </tr>
 <tr>
@@ -188,9 +189,9 @@ pop
 .auxfig
 imagelinkstart
 (<td width=20 align=center>)print
-(Colorscale as PDF) (.pdf) linktoimageformat
+(Légende en PDF) (.pdf) linktoimageformat
 (</td><td align=center>) print
-(Colorscale as JPEG) (.jpg) linktoimageformat
+(Légende en JPEG) (.jpg) linktoimageformat
 (</td>) print
 pop
 } if

@@ -28,7 +28,8 @@ mimeheader
 pop
 </INGRID>
 <html><head>
-    <title>MEWS - Dekadal Precipitation on an Interactive Map</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <title>MEWS - Carte Interactive des Précipitations Décadaires (10 jours)</title>
 <INGRID>
 
 figdefs
@@ -68,22 +69,21 @@ leftmenuHeader
 </INGRID>
 <FORM name=mapform action=index.html>
 <INGRID>saveLanguage</INGRID>
-<h3 align=center><u>Malaria Early Warning System (MEWS)</u></h3>
-<table align=center><tr><td width=600>
-<font point-size=12pt>The MEWS interface provides a contextual perspective
-of recent precipitation by comparing it to previous seasons and recent short-term averages.
-More information about how to use the interface is available <a href="instructions.html">here</a>.</font> 
+<h3 align=center><u>Système de Pré-Alerte pour le Paludisme (MEWS)</u></h3>
+<table align=center><tr><td width=600 align=justify>
+<font point-size=12pt>L'interface MEWS fournit des données récentes de précipitations et les met en perspective dans un contexte actuel en les comparant aux saisons précédentes et aux moyennes de court terme récentes.
+Plus d'informations sur l'utilisation de cette interface sont disponibles <a href="instructions.html">ici</a>.</font>
 </td></tr></table>
-<br><H3 align=center>Clickable Map for Rainfall Summaries</h3>
+<br><H3 align=center>Cliquez sur la Carte pour un Bulletin de Précipitations Locales</h3>
 <center>
 <table border=0><tr valign=center>
 <td align=center>
 <table BORDER COLS=1>
 <tr>
 <td align=center width=130>
-<b><font point-size=12pt>Optional <br>Overlay Maps</font></b>
+<b><font point-size=12pt>Options <br>Calques Superposables</font></b>
 </td></tr><tr><td>
-<font point-size=12pt>Boundaries
+<font point-size=12pt>Côtes et Frontières
 <INGRID>
 WWWinfo /map FORMknown 
 [/mask /districts /states /countries /coasts] {FORMknown or} forall
@@ -91,30 +91,30 @@ nip
 {
 (<br><input type=checkbox name=coasts) print 
 /coasts FORMknown {( checked)print} if
-(>Coasts\n)print
+(>Côtes\n)print
 
 (<br><input type=checkbox name=countries) print
 /countries FORMknown {( checked)print} if
- (>Countries\n) print
+ (>Pays\n) print
 (<br><input type=checkbox name=states)print 
 /states FORMknown {( checked)print} if
-(>States\n)print
+(>Etats\n)print
 (<br><input type=checkbox name=districts)print 
 /districts FORMknown {( checked)print} if
 (>Districts\n)print
 } 
 {
-(<br><input type=checkbox name=coasts>Coasts\n) print
-(<br><input type=checkbox name=countries checked>Countries\n) print
-(<br><input type=checkbox name=states checked>States\n) print
+(<br><input type=checkbox name=coasts>Côtes\n) print
+(<br><input type=checkbox name=countries checked>Pays\n) print
+(<br><input type=checkbox name=states checked>Etats\n) print
 (<br><input type=checkbox name=districts>Districts\n) print
 } ifelse
 </INGRID>
 </font></td></tr><tr><td>
-<font point-size=12pt>Epidemiological
+<font point-size=12pt>Epidémiologique
 <br><input type=checkbox name=mask<INGRID>
 /mask FORMknown {( checked)print} if
-</INGRID>>Mask
+</INGRID>>Masque
 </font>
 </td>
 </tr>
@@ -166,14 +166,14 @@ imagelink
 <table BORDER COLS=1 width=150>
 <tr>
 <td>
-<center><b><font point-size=12pt>Time Series Region</font></b></center>
+<center><b><font point-size=12pt>Séries Temporelles Régionales</font></b></center>
 </td></tr><tr><td><font point-size=12pt>
-Spatially average data over the following region:
-<br><input type=radio name="map.Y.step" value="district" checked>district boundary
-<br><input type=radio name="map.Y.step" value=".1">11x11 km box 
-<br><input type=radio name="map.Y.step" value=".3">33x33 km box 
-<br><input type=radio name="map.Y.step" value=".5">55x55 km box 
-<br><input type=radio name="map.Y.step" value="1.">111x111 km box 
+Moyennes spatiales par :
+<br><input type=radio name="map.Y.step" value="district" checked>Districts
+<br><input type=radio name="map.Y.step" value=".1">11x11 km boîte
+<br><input type=radio name="map.Y.step" value=".3">33x33 km boîte
+<br><input type=radio name="map.Y.step" value=".5">55x55 km boîte
+<br><input type=radio name="map.Y.step" value="1.">111x111 km boîte 
 </font></td>
 </tr>
 </table>
@@ -182,19 +182,19 @@ Spatially average data over the following region:
 
 
 <table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE >
-<tr><td align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
+<tr><td align=center bgcolor=#DCDCDC><b>Documentation</b></td></tr>
 <tr>
 <td>
-<b>Precipitation Estimates</b><br>
-<font size=-1><b>Data</b>:&nbsp;&nbsp;Dekadal precipitation estimates on a 0.1 x 0.1 deg. lat/lon grid</font>
-<br><font size=-1><b>Data Source</b>:&nbsp; Climate Prediction Center/Famine Early Warning System 
+<b>Précipitations Estimées</b><br>
+<font size=-1><b>Données</b> :&nbsp;&nbsp; Précipitations estimées décadaires sur une grille lat/lon 0.1 x 0.1 deg.</font>
+<br><font size=-1><b>Source</b> :&nbsp; Climate Prediction Center/Famine Early Warning System 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>)* </font>
 <p>
-<b>Epidemiological Mask</b><br>
-<font size=-1><b>Data</b>:&nbsp;&nbsp;Mask illustrating areas where malaria is considered to be epidemic.  Areas where malaria transmission is considered absent or endemic are therefore excluded. This mask is based purely on climatic constraints to malaria transmission, and does not yet account for areas in the northern and southern margins of the continent where control has eliminated malaria risk.</font>
-<br><font size=-1><b>Reference</b>:&nbsp; WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.  </font>
+<b>Masque Epidémiologique</b><br>
+<font size=-1><b>Données</b> :&nbsp;&nbsp;Masque délimitant les zones où le paludisme est considéré épidémique. Les zones où la transmission du paludisme est considérée inexistante ou endémique sont donc masquées. Ce masque est purement déduit des contraintes climatiques sur la transmission du paludisme, et ne tient pour l'instant pas compte des effets du controle de la maladie qui a éradiqué le risque de paludisme dans le extrémités nord et sud du continent.</font>
+<br><font size=-1><b>Référence</b> :&nbsp; WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.  </font>
 <p>
-<font size=-1>*More dekadal and daily data from FEWS is available from the 
+<font size=-1>*Plus de données décadaires et quotidiennes du FEWS sont disponibles à partir du  
 <a href="http://igskmncnwb015.cr.usgs.gov/adds/">Africa Data Dissemination Service</a>.</font>
 </td>
 </tr>
@@ -203,27 +203,27 @@ Spatially average data over the following region:
 <INGRID>showmenu? not {stopprint} if</INGRID>
 <table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
 <tr>
-<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
-<td colspan=1 align=center bgcolor=#DCDCDC><b>Download Layer</b></td>
-<td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
+<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Télécharger la Carte</b></td>
+<td colspan=1 align=center bgcolor=#DCDCDC><b>Télécharger le Calque</b></td>
+<td align=center bgcolor=#DCDCDC><b>Télécharger les Données</b></td></tr>
 <tr>
 <INGRID>
 showmenu? {
 imagelinkstart
 (<td width=20 align=center>)print
-(Figure as PDF) (.pdf) linktoimageformat
+(Figure en PDF) (.pdf) linktoimageformat
 (</td><td align=center>) print
-(Figure as JPEG) (.jpg) linktoimageformat
+(Figure en JPEG) (.jpg) linktoimageformat
 (</td>) print
 } if
 </INGRID>
 <td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/<INGRID>
 showmenu?{datarestrictionasurl print } if
-</INGRID>MEWSprcp_colors/palettecolor.tiff">GeoTiff for GIS</a>
+</INGRID>MEWSprcp_colors/palettecolor.tiff">GeoTiff pour SIG</a>
 </td>
 <td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/<INGRID>
 showmenu?{datarestrictionasurl print } if
-</INGRID>?help+datafiles#GIS">Data for GIS</a></td>
+</INGRID>?help+datafiles#GIS">Données pour SIG</a></td>
 </tr>
 <tr>
 <INGRID>
@@ -232,9 +232,9 @@ pop
 .auxfig
 imagelinkstart
 (<td width=20 align=center>)print
-(Colorscale as PDF) (.pdf) linktoimageformat
+(Légende en PDF) (.pdf) linktoimageformat
 (</td><td align=center>) print
-(Colorscale as JPEG) (.jpg) linktoimageformat
+(Légende en JPEG) (.jpg) linktoimageformat
 (</td>) print
 pop
 } if

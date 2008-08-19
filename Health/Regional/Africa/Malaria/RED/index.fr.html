@@ -17,7 +17,8 @@ mimeheader
 pop
 </INGRID>
 <html><head>
-    <title>Dekadal Rainfall Estimate Differences</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <title>Différences des Précipitations Décadaires Estimées (RED)</title>
 <INGRID>
 
 figdefs
@@ -31,7 +32,7 @@ leftmenuHeader
 </INGRID>
 <FORM name=mapform action=index.html>
 <INGRID>saveLanguage</INGRID>
-<h3 align=center><u>Rainfall Estimate Differences</u></h3>
+<h3 align=center><u>Différences des Précipitations Estimées</u></h3>
 <center>
 
 <table border=0>
@@ -44,9 +45,9 @@ leftmenuHeader
 <table BORDER COLS=1>
 <tr>
 <td align=center width=130>
-<b><font point-size=12pt>Optional <br>Overlay Maps</font></b>
+<b><font point-size=12pt>Options <br>Calques Superposables</font></b>
 </td></tr><tr><td>
-<font point-size=12pt>Boundaries
+<font point-size=12pt>Côtes et Frontières
 <INGRID>
 WWWinfo /map FORMknown 
 [/mask /districts /states /countries /coasts] {FORMknown or} forall
@@ -54,30 +55,30 @@ nip
 {
 (<br><input type=checkbox name=coasts) print 
 /coasts FORMknown {( checked)print} if
-(>Coasts\n)print
+(>Côtes\n)print
 
 (<br><input type=checkbox name=countries) print
 /countries FORMknown {( checked)print} if
- (>Countries\n) print
+ (>Pays\n) print
 (<br><input type=checkbox name=states)print 
 /states FORMknown {( checked)print} if
-(>States\n)print
+(>Etats\n)print
 (<br><input type=checkbox name=districts)print 
 /districts FORMknown {( checked)print} if
 (>Districts\n)print
 } 
 {
-(<br><input type=checkbox name=coasts checked>Coasts\n) print
-(<br><input type=checkbox name=countries checked>Countries\n) print
-(<br><input type=checkbox name=states checked>States\n) print
+(<br><input type=checkbox name=coasts checked>Côtes\n) print
+(<br><input type=checkbox name=countries checked>Pays\n) print
+(<br><input type=checkbox name=states checked>Etats\n) print
 (<br><input type=checkbox name=districts>Districts\n) print
 } ifelse
 </INGRID>
 </font></td></tr><tr><td>
-<font point-size=12pt>Epidemiological
+<font point-size=12pt>Epidémiologique
 <br><input type=checkbox name=mask<INGRID>
 /mask FORMknown {( checked)print} if
-</INGRID>>Mask
+</INGRID>>Masque
 </font>
 </td>
 </tr>
@@ -136,27 +137,29 @@ imagelink
 <input type=hidden name="map.Y.step" value=".5">
 
 <table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE >
-<tr><td align=center bgcolor=#DCDCDC><b>Map Description</b></td></tr>
-<tr><td><font size=-1>The map above displays the difference between the most recent dekadal rainfall estimates and the short term average (from 2000 to the last recent complete year). Positive (negative) values indicate dekadal estimates that are above (below) the short term average. These differences should not be confused with conventional rainfall anomalies, which are based on the difference between observed data and a long-term (e.g., 30-year) average.  The length of the referenced short-term average will increase over time as more data becomes available. Despite the limitations that the short-term average imposes, it may provide insight into changes in malaria risk in areas where precipitation anomalies are the principal cause of malaria epidemics by providing a recent historical reference. Rainfall estimates expressed as percentages of the short-term average can be viewed on the Rainfall Estimate Percentages (<a href="http://iridl.ldeo.columbia.edu/maproom/.Health/.Regional/.Africa/.Malaria/.REP/index.html">REP</a>) map page.</font></td></tr><tr><td colspan=6 align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
+<tr><td align=center bgcolor=#DCDCDC><b>Description</b></td></tr>
+<tr><td align=justify><font size=-1>La carte ci-dessus montre la différence entre les plus récentes précipitations estimées décadaires et la moyenne à court terme (de 2000 à la dernière année complète). Les différences positives (négatives) indiquent des estimations décadaires supérieures (inférieures) à la moyenne à court terme. Ces différences ne doivent pas être amalgamées avec des anomalies de précipitations conventionnelles, qui sont basées sur des différences entre des observations et une moyenne à long terme (ex : 30 ans). La durée de la moyenne à court terme de référence augmentera avec le temps, comme plus d'observations deviendront disponibles. Malgré les limitations d'une moyenne à court terme, cela peut cependant indiquer des changements dans le risque de paludisme dans des zones où les anomalies de précipitations sont la principale cause d'épidémies de paludisme en fournissant une référence historique récente. Les précipitations estimées exprimées en tant que pourcentages de la moyenne à court terme peuvent être consultées sur la page des Pourcentages des Précipitations Estimées (<a href="http://iridl.ldeo.columbia.edu/maproom/.Health/.Regional/.Africa/.Malaria/.REP/index.html">REP</a>).</font></td></tr>
+
+<tr><td colspan=6 align=center bgcolor=#DCDCDC><b>Documentation</b></td></tr>
 
 <tr>
 <td>
-<b>Rainfall Estimates</b><br>
-<font size=-1><b>Data</b>:&nbsp;&nbsp;Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid</font>
-<br><font size=-1><b>Data Source</b>:&nbsp; Climate Prediction Center/Famine Early Warning System 
+<b>Précipitations Estimées</b><br>
+<font size=-1><b>Données</b> :&nbsp;&nbsp; Précipitations estimées décadaires sur une grille lat/lon 0.1 x 0.1 deg</font>
+<br><font size=-1><b>Source</b> :&nbsp; Climate Prediction Center/Famine Early Warning System 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>)* </font>
 <p>
-<b>Rainfall Estimate Short-Term Average</b><br>
-<font size=-1><b>Data</b>: Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid</font>
-<br><font size=-1><b>Base Period</b>: 1 Jan 2000 to 31 Dec of last year</font>
-<br><font size=-1><b>Data Source</b>: Climate Prediction Center/Famine Early Warning System 
+<b>Moyenne à Court Terme des Précipitations Estimées</b><br>
+<font size=-1><b>Données</b> : Précipitations estimées décadaires sur une grille lat/lon 0.1 x 0.1 deg</font>
+<br><font size=-1><b>Période de Référence</b> : 1 Jan 2000 au 31 Dec de l'année dernière</font>
+<br><font size=-1><b>Source</b> : Climate Prediction Center/Famine Early Warning System 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>)* </font>
 <p>
-<b>Epidemiological Mask</b><br>
-<font size=-1><b>Data</b>:&nbsp;&nbsp;Mask illustrating areas where malaria is considered to be epidemic.  Areas where malaria transmission is considered absent or endemic are therefore excluded. This mask is based purely on climatic constraints to malaria transmission, and does not yet account for areas in the northern and southern margins of the continent where control has eliminated malaria risk.</font>
-<br><font size=-1><b>Reference</b>:&nbsp; WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.  </font>
+<b>Masque Epidémiologique</b><br>
+<font size=-1><b>Données</b> :&nbsp;&nbsp; Masque délimitant les zones où le paludisme est considéré épidémique. Les zones où la transmission du paludisme est considérée inexistante ou endémique sont donc masquées. Ce masque est purement déduit des contraintes climatiques sur la transmission du paludisme, et ne tient pour l'instant pas compte des effets du controle de la maladie qui a éradiqué le risque de paludisme dans le extrémités nord et sud du continent.</font>
+<br><font size=-1><b>Référence</b> :&nbsp; WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.  </font>
 <p>
-<font size=-1>*More dekadal and daily data from FEWS is available from the 
+<font size=-1>*Plus de données décadaires et quotidiennes du FEWS sont disponibles à partir du 
 <a href="http://igskmncnwb015.cr.usgs.gov/adds/">Africa Data Dissemination Service</a>.</font>
 </td>
 </tr>
@@ -165,27 +168,27 @@ imagelink
 <INGRID>showmenu? not {stopprint} if</INGRID>
 <table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
 <tr>
-<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
-<td colspan=1 align=center bgcolor=#DCDCDC><b>Download Layer</b></td>
-<td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
+<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Télécharger la Carte</b></td>
+<td colspan=1 align=center bgcolor=#DCDCDC><b>Télécharger le Calque</b></td>
+<td align=center bgcolor=#DCDCDC><b>Télécharger les Données</b></td></tr>
 <tr>
 <INGRID>
 showmenu? {
 imagelinkstart
 (<td width=20 align=center>)print
-(Figure as PDF) (.pdf) linktoimageformat
+(Figure en PDF) (.pdf) linktoimageformat
 (</td><td align=center>) print
-(Figure as JPEG) (.jpg) linktoimageformat
+(Figure en JPEG) (.jpg) linktoimageformat
 (</td>) print
 } if
 </INGRID>
 <td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfediffmask/<INGRID>
 showmenu?{datarestrictionasurl print } if
-</INGRID>rfediff_colors/palettecolor.tiff">GeoTiff for GIS</a>
+</INGRID>rfediff_colors/palettecolor.tiff">GeoTiff pour SIG</a>
 </td>
 <td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfediffmask/<INGRID>
 showmenu?{datarestrictionasurl print } if
-</INGRID>?help+datafiles#GIS">Data for GIS</a></td>
+</INGRID>?help+datafiles#GIS">Données pour SIG</a></td>
 </tr>
 <tr>
 <INGRID>
@@ -194,9 +197,9 @@ pop
 .auxfig
 imagelinkstart
 (<td width=20 align=center>)print
-(Colorscale as PDF) (.pdf) linktoimageformat
+(Légende en PDF) (.pdf) linktoimageformat
 (</td><td align=center>) print
-(Colorscale as JPEG) (.jpg) linktoimageformat
+(Légende en JPEG) (.jpg) linktoimageformat
 (</td>) print
 pop
 } if
