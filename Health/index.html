@@ -39,10 +39,10 @@
 
   function checkdisease() {
 	if (getCheckedValue(document.forms['radiobuttons'].elements['disease']) == 1) {
-		location.href=".Regional/.Africa/.Malaria/";
+		location.href=".Regional/.Africa/.Malaria/<INGRID>addleftmenuinfodir</INGRID>";
 	}
 	if (getCheckedValue(document.forms['radiobuttons'].elements['disease']) == 2) {
-		location.href=".Regional/.Africa/.Meningitis/"; 
+		location.href=".Regional/.Africa/.Meningitis/<INGRID>addleftmenuinfodir</INGRID>"; 
 	}
   }
 
@@ -62,7 +62,7 @@
 <INGRID>leftmenu</INGRID>
 <center><h2>Climate and Health Resource Room</h1>
 <p> 
-<table width=700><tr><td><span class=lttxt>Climate affects health in a number of ways. These effects may be direct, as with heat stress, or indirect, as with infectious diseases such as malaria and meningitis.
+<table width=700><tr><td align="justify"><span class=lttxt>Climate affects health in a number of ways. These effects may be direct, as with heat stress, or indirect, as with infectious diseases such as malaria and meningitis.
 This facility aims to explore and inform users about the climate-health relationship with an emphasis 
 on the seasonal nature of that relationship, where appropriate. This "Climate and Health Resource Room" will 
 begin with a focus on malaria and meningitis in Africa. It is our intention to increase the content of the 
@@ -71,6 +71,7 @@ other institutions.
 <br><br>
 <b>Please select the disease of interest:</b>
 <form name="radiobuttons" method="get" action="" onsubmit="return false;">
+<INGRID>saveLanguage</INGRID>
 <input type=radio name=disease value="1" checked>Malaria
 <br><input type=radio name=disease value="2">Meningitis
 </form>
@@ -99,7 +100,7 @@ other institutions.
 </center>
 
 <br><br>
-<span class=lttxt><font size=+0>For any feedback or comments, please <a href="mailto:sjconnor@iri.columbia.edu,mbell@iri.columbia.edu?subject=Climate and Health Resource Room">Contact Us</a></font></span>
+<span class=lttxt><font size=+0>For any feedback or comments, please <a href="mailto:sjconnor@iri.columbia.edu?subject=Climate and Health Resource Room">Contact Us</a></font></span>
 
 </body>
 </html>

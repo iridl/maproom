@@ -1,29 +1,106 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <meta http-equiv="content-type"
- content="text/html; charset=ISO-8859-1">
-  <title>Climate and Health in Africa</title>
+  <meta name="author" content="Lulin Song">
+  <meta name="revised" content="Lulin Song,10/10/05">
+  <meta name="keywords" content="health climate malaria meningitis world map clickable africa">
+  <script language="JavaScript">
+  <!-- Hide from older browsers
+  var worldImage_Off = new Image();
+  worldImage_Off.src ="http://iri.columbia.edu/~grover/images/worldmap.gif";
+  var worldImage_On = new Image();
+  worldImage_On.src ="http://iri.columbia.edu/~grover/images/worldmapOn.gif";
+
+  function activate() {
+    	document.images["worldImage0"].src=worldImage_On.src;
+  }
+  function deactivate() {
+    	document.images["worldImage0"].src=worldImage_Off.src;
+  }
+
+  //function returns value of radio buttons below
+  //modified from example (http://www.somacon.com/p143.php)
+  function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "0";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "0";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "0";
+  }
+
+  function checkdisease() {
+	if (getCheckedValue(document.forms['radiobuttons'].elements['disease']) == 1) {
+		location.href=".Africa/.Malaria/<INGRID>addleftmenuinfodir</INGRID>";
+	}
+	if (getCheckedValue(document.forms['radiobuttons'].elements['disease']) == 2) {
+		location.href=".Africa/.Meningitis/<INGRID>addleftmenuinfodir</INGRID>"; 
+	}
+  }
+
+  //End script hiding -->
+  </script>
+  <title>Climate and Health Resource Room</title>
 <link REL=stylesheet TYPE="text/css" HREF="/site.html">
   <style type="text/css">
-         h2		{font: 20pt; color: #191970; }
-	.drktxt 	{font: 12pt; color: #191970; }
-	.lttxt		{font: 12pt; color: #000080; }
-	.tmptxt		{font: 12pt; color: gray; }
-
+      p    {margin-left: 20px}
+      h2   {margin-left: 20px; align:center; font: 20pt; color: #191970; }
+      .lttxt		{font: 12pt; color: #191970; }
   </style>
 
 </head>
+
 <body bgcolor="#FFFFFF" link="#993333" vlink="#993333" alink="#FF0000">
 <INGRID>leftmenu</INGRID>
+<center><h2>Climate and Health Resource Room</h1>
+<p> 
+<table width=700><tr align="justify"><td><span class=lttxt>Climate affects health in a number of ways. These effects may be direct, as with heat stress, or indirect, as with infectious diseases such as malaria and meningitis.
+This facility aims to explore and inform users about the climate-health relationship with an emphasis 
+on the seasonal nature of that relationship, where appropriate. This "Climate and Health Resource Room" will 
+begin with a focus on malaria and meningitis in Africa. It is our intention to increase the content of the 
+resource room by including analyses that focus on other diseases and regions, as well those developed at 
+other institutions.
+<br><br>
+<b>Please select the disease of interest:</b>
+<form name="radiobuttons" method="get" action="" onsubmit="return false;">
+<INGRID>saveLanguage</INGRID>
+<input type=radio name=disease value="1" checked>Malaria
+<br><input type=radio name=disease value="2">Meningitis
+</form>
 
-<center>
-<h2> Climate and Health in Africa </h2></center>
-<p>
-<table align=center width=700>
-<tr><td align=center><span class=drktxt>The Climate and Malaria Resource Room has moved! 
-<p>
-Please click <a href=".Malaria/">here</a> to be redirected to its new location.</span></td></tr>
+<b>Click on Africa to view available resources:</b>
+</span>
+</td></tr></table>
+
+
+<table>
+<tr><td>
+<img src="http://iri.columbia.edu/~grover/images/worldmap.gif" width="490"
+     height="240" border="0" alt="World Map" usemap="#worldmaplinks_Map" 
+     name="worldImage0" id="worldImage0" ismap />
+
+    <map name="worldmaplinks_Map" id="worldmaplinks_Map"  />
+        <area shape="poly" alt="Africa"
+              coords="223,83,244,78,244,84,257,88,257,86,278,89,293,120,303,118,299,130,288,144,288,153,300,159,301,163,293,179,289,179,276,179,267,194,255,194,247,163,248,149,230,131,212,132,206,115,207,100,222,81"
+              onMouseOver="activate()" onMouseOut="deactivate()"
+              href="javascript:checkdisease()"
+        >
+    </map>
+
+</td></tr>
 </table>
+</center>
+
+<br><br>
+<span class=lttxt><font size=+0>For any feedback or comments, please <a href="mailto:sjconnor@iri.columbia.edu?subject=Climate and Health Resource Room">Contac us</a></font></span>
+
 </body>
 </html>

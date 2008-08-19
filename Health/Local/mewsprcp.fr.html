@@ -4,14 +4,17 @@ mimeheader
 pop
 </INGRID>
 <html>
-<head><title>MEWS local precipitation</title>
+<head><title>Précipitations locales du MEWS</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
 <link REL=stylesheet TYPE="text/css" HREF="/site.html">
 </head>
 <body bgcolor="#ffffff" link="#993333" vlink="#993333" alink="#FF0000">
 <INGRID>leftmenu</INGRID>
 <form action=mewsprcp.html>
+
 <INGRID>
 saveLanguage
+
 /onebox {2 index 1 index {.name cvx exec first pointwidth 2 copy sub 3 1 roll add 3 -1 roll pop}forall counttoobject 1 add -1 roll pop {mystream mygrids xlo xhi ylo yhi}inputs mystream mygrids 0 get xlo xhi RANGE
 dup 0 replaceNaN exch
  mygrids 1 get ylo yhi RANGE mygrids 0 get xlo xhi definite-integral mygrids 1 get ylo yhi definite-integral 
@@ -93,7 +96,7 @@ WWWinfo .districtinfo .geom [X Y] weighted-average
 exch  
 </INGRID>
 
-<table align=right><tr><td><a href="http://iri.columbia.edu/~grover/Malaria/mewsnotice.html">Notice of Changes<br>to Analyses Below</a></td></tr></table>
+<table align=right><tr><td><a href="http://iri.columbia.edu/~grover/Malaria/mewsnotice.html">Derniers Changements<br>des Analyses Ci-dessous</a></td></tr></table>
 
 <center><table width="580"><tbody><tr valign="top"><td align="left">
 
@@ -125,7 +128,7 @@ X Y fig: lightgrey mask grey mews_prov black countries_gaz red fill  red smallpu
 /map imagelink
 </INGRID></td><td align="left">
 <font face="Helvetical,Arial" point-size=10pt size=-1>
-Observations for:<br> 
+Observations à :<br> 
 <b><INGRID>
 WWWinfo .FORMinfo .map .Y .step (district) eq
 {
@@ -170,7 +173,7 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 (<input type="hidden" name="map.Y.plotfirst" value=")print WWWinfo .FORMinfo .map .Y .plotfirst print(">\n)print
 (<input type="hidden" name="map.X.plotlast" value=")print WWWinfo .FORMinfo .map .X .plotlast print(">\n)print
 (<input type="hidden" name="map.Y.plotlast" value=")print WWWinfo .FORMinfo .map .Y .plotlast print(">\n)print
-(<input type=submit value="Generate new time series">) print
+(<input type=submit value="Générer de nouvelles séries temporelles">) print
 (</td>)print
 } if
 </INGRID>
@@ -184,7 +187,7 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 <a href="/<INGRID> dup dataseturl</INGRID>/DATA/0/200/RANGE%5BT%5DREORDER/dup/0/mul/T/fig:/deltabars/:fig/figviewer.html?my.help=more+options&map.est_prcp.units=mm&map.est_prcp.plotlast=200&map.url=&map.domain=+%7B+/est_prcp+1.372685+200+plotrange+/est_prcp+1.372685+200+plotrange+T+14579.+last+plotrange+%7D&map.domainparam=+/plotaxislength+250+psdef+/plotborder+72+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.est_prcp.plotfirst=1.372685&map.T.plotfirst=1+Dec+1999&map.T.units=days+since+1960-01-01&map.T.plotlast=&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to explore the data';return true">
 <img src="/<INGRID> dup dataseturl</INGRID>/DATA/0/200/RANGE/toNaN/%5BT%5DREORDER/dup/0/mul/T/fig:/deltabars/:fig/+//est_prcp/0/200/plotrange/T/14579./last/plotrange+//plotborder+72+psdef//plotbordertop+15+psdef//plotborderbottom+62+psdef//plotaxislength+250+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Multi-year precipitation time series" title="Multi-year precipitation time series" width=322 height=197</a>
 </center>
-<font size=-1><br><a href="/<INGRID> dup dataseturl</INGRID>/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data in this graph</a></font>
+<font size=-1><br><a href="/<INGRID> dup dataseturl</INGRID>/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Données du graphe</a></font>
 
 </td><td height="200" bgcolor="#F0F8FF" width="50%">
 <font face="Helvetical,Arial" point-size=9pt size=-1>
@@ -196,7 +199,7 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 
 <img src="/<INGRID> dup dataseturl</INGRID>/DATA/null/null/RANGE//plotlast/200/def//fullname/%28RFEv2%20precipitation%29def/<INGRID> 1 index dataseturl </INGRID>%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname/%28RFEv2%202000-07%20average%29def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig/+//est_prcp/0/200/plotrange//est_prcp/0/200/plotrange/T/14579./last/plotrange+//plotborder+72+psdef//plotbordertop+20+psdef//plotborderbottom+62+psdef//plotaxislength+250+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Multi-year observed vs. short-term average precipitation" title="Multi-year observed vs. short-term average precipitation" width=322 height=197></a>
 </center>
-<font size=-1><br><a href="/<INGRID> dup dataseturl</INGRID>/DATA/null/null/RANGE//plotlast/200/def/<INGRID> 1 index dataseturl </INGRID>%5BT%5D2/SM121/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname(RFEv2%202000-06%20average)def//long_name/%282000-07%20Average%20Precipitation%29def/T/3/1/roll/3+ncoltable.html?tabopt.N=4&tabopt.1=text&tabopt.2=text&tabopt.3=text&tabopt.4=markNaN&NaNmarker=NaN&tabtype=html&eol=LF+%28unix%29">Data in this graph</a></font>
+<font size=-1><br><a href="/<INGRID> dup dataseturl</INGRID>/DATA/null/null/RANGE//plotlast/200/def/<INGRID> 1 index dataseturl </INGRID>%5BT%5D2/SM121/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname(RFEv2%202000-06%20average)def//long_name/%282000-07%20Average%20Precipitation%29def/T/3/1/roll/3+ncoltable.html?tabopt.N=4&tabopt.1=text&tabopt.2=text&tabopt.3=text&tabopt.4=markNaN&NaNmarker=NaN&tabtype=html&eol=LF+%28unix%29">Données du graphe</a></font>
 </td></tr><tr valign="top"><td width="50%" bgcolor="#F0F8FF">
 
 <font face="Helvetical,Arial" point-size=9pt size=-1>
@@ -221,41 +224,38 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 <img src="/<INGRID> dup dataseturl</INGRID>/<INGRID> 1 index dataseturl </INGRID>/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20RFEv2%2000-07%20avg%29def/2/1/roll/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20RFEv2%20precipitation%29def/2/1/roll/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/medium/line/grey/line/:fig//plotborder+72+psdef//plotbordertop+20+psdef//plotborderbottom+62+psdef//plotaxislength+250+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Cumulative observed vs. short-term average precipitation" title="Cumulative observed vs. short-term average precipitation" width=322 height=197></a>
 </center>
 
-</td></tr><tr valign="top"><td colspan="2" bgcolor="#F0F8FF">
+</td></tr><tr valign="top"><td colspan="2" bgcolor="#F0F8FF" align=justify>
 <font face="Helvetical,Arial" point-size=12pt size=-1>
 <b><u>Description</u></b>
 </font>
 <font face="Helvetical,Arial" point-size=9pt size=-1>
 <br>
-a) Dekadal (i.e., ~10-daily) precipitation estimates for the selected region from Dec 1999 to the present.  
+a) Estimations des précipitations décadaires (ie sur 10 jours) pour la région sélectionnée de Déc 1999 à aujourd'hui.
 <p>
-b) Same as (a) (solid black line) with the addition of the recent short-term average precipitation for the same region (grey dotted line).  The blue (red) bars are indicative of estimates that are above (below) the short-term average. Note that the short-term average precipitation data has been smoothed.
+b) Identique à (a) (courbe grasse noire) mais avec l'ajout des précipitations moyennes à court terme récentes pour la même région (pointillés gris). Les barres bleues (rouges) indiquent des estimations qui sont au-dessus (en-dessous) de la moyenne à court terme. Notez que les données de précipitations moyennes à court terme ont été lissées.
 <p>
-c) Same as (a) for the current year (thick black line), as indicated by the axis labels. 
-Precipitation estimates from previous years are also shown (blue-1 yr from present; magenta-
-2 yrs from present; grey-3 yrs from present). 
+c) Identique à (a) mais pour l'année courante (courbe grasse noire), comme indiqué par les légendes. Des estimations des précipitations des années précédentes sont aussi dispensées (bleue : -1 an ; magenta : -2 ans ; grey : -3 ans du présent).
 <p>
-d) Cumulative dekadal satellite-derived precipitation estimates (solid black line) and the cumulative recent short-term average precipitation (grey dotted line) for the most 
-recent 12-month period in the selected region.  The blue (red) bars are indicative of estimates that are above (below) the short-term average.
+d) Estimations des précipitations décadaires dérivées des données satellitaires cumulées (courbe grasse noire) et les moyennes à court terme des précipitations récentes cumulées (pointillés gris) pour les 12 derniers mois dans la région sélectionnée. Les barres bleues (rouges) indiquent des estimations qui sont au-dessus (en-dessous) de la moyenne à court terme.
 <p>
-<b>NOTE:</b> <u>The recent short-term average (from 2000 to the last recent complete year) of precipitation should not be interpreted as a climatological normal</u>, which is typically based on a long-term (e.g., 30-year) time series. The length of this short-term average will increase over time as more data becomes available. (An additional year of data will be included in the average during January of each year.)  Despite the limitations that the short-term average imposes, it may provide insight into changes in malaria risk in areas where precipitation anomalies are the principal cause of malaria epidemics by providing a recent historical reference.</font>
+<b>NB:</b> <u>La moyenne à court terme (de 2000 à la dernière année complète) des précipitations ne devrait pas être interprétée en tant que normale climatologique</u>, qui est typiquement basée sur des séries temporelles à long terme (par exemple : 30 ans). La durée de cette moyenne à court terme augmentera au fur et à mesure que plus de données deviennent disponibles. (Une année supplémentaire de données sera inclue dans la moyenne tous les mois de Janvier.) Malgré les limitations que cette moyenne à court terme impose, elle peut indiquer des changements dans le risque de paludisme dans des zones où les anomalies de précipitations sont la principale cause d'épidémie de paludisme, en fournissant un référence historique récente.</font>
 <p>
 <font face="Helvetical,Arial" point-size=12pt size=-1>
-<b><u>Data Sources</u></b>
+<b><u>Sources</u></b>
 <br></font>
 <font face="Helvetical,Arial" point-size=9pt size=-1>
-<b>Rainfall Estimates</b><br>
-<font size=-1><b>Data</b>:&nbsp;&nbsp;Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid</font>
-<br><font size=-1><b>Data Source</b>:&nbsp; Climate Prediction Center/Famine Early Warning System 
+<b>Estimations des Précipitations</b><br>
+<font size=-1><b>Données </b>:&nbsp;&nbsp;Précipitations estimées décadaires sur une grille lat/lon 0.1 x 0.1 deg.</font>
+<br><font size=-1><b>Source </b>:&nbsp; Climate Prediction Center/Famine Early Warning System 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>)* </font>
 <p>
-<b>Rainfall Estimate Short-Term Average</b><br>
-<font size=-1><b>Data</b>: Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid</font>
-<br><font size=-1><b>Base Period</b>: 1 Jan 2000 to 31 Dec of last year</font>
-<br><font size=-1><b>Data Source</b>: Climate Prediction Center/Famine Early Warning System 
+<b>Moyenne à Court Terme des Estimations de Précipitations</b><br>
+<font size=-1><b>Données </b>: Précipitations décadaires sur une grille lat/lon 0.1 x 0.1 deg.</font>
+<br><font size=-1><b>Période de Référence </b>: 1 Jan 2000 au 31 Dec de l'année dernière</font>
+<br><font size=-1><b>Source</b>: Climate Prediction Center/Famine Early Warning System 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>)* </font>
 <p>
-<font size=-1>*More dekadal and daily data from FEWS is available from the 
+<font size=-1>*Plus de données décadaires et quotidiennes du FEWS sont disponibles à partir du 
 <a href="http://igskmncnwb015.cr.usgs.gov/adds/">Africa Data Dissemination Service</a>.</font>
 
 </td></tr></tbody></table>

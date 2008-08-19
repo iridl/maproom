@@ -7,7 +7,9 @@ mimeheader
 pop
 </INGRID>
 <html>
-<head><title>Climatological Suitabilty for Malaria Transmission - Local Analysis</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<head><title>Conditions Climatiques Saisonnières Favorables à la Transmission du Paludisme - Analyses Locales</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
 <link REL=stylesheet TYPE="text/css" HREF="/site.html">
 </head>
 <body  link="#993333" vlink="#993333" alink="#FF0000">
@@ -15,6 +17,7 @@ pop
 <form action=csmt_history.html>
 <INGRID>
 saveLanguage
+
 /onebox {2 index 1 index {.name cvx exec first pointwidth 2 copy sub 3 1 roll add 3 -1 roll pop}forall counttoobject 1 add -1 roll pop {mystream mygrids xlo xhi ylo yhi}inputs mystream mygrids 0 get xlo xhi RANGE
 dup 0 replaceNaN exch
  mygrids 1 get ylo yhi RANGE mygrids 0 get xlo xhi definite-integral mygrids 1 get ylo yhi definite-integral 
@@ -154,7 +157,7 @@ X Y fig: lightgrey mask grey mews_prov black countries_gaz red fill  red smallpu
 /map imagelink
 </INGRID></td><td align="left">
 <font face="Helvetical,Arial" point-size=10pt size=-1>
-Climatology for:<br> 
+Climatologie à :<br> 
 <b><INGRID>
 WWWinfo .FORMinfo .map .Y .step (district) eq
 {
@@ -192,7 +195,7 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 (<input type="hidden" name="map.X.plotlast" value=")print WWWinfo .FORMinfo .map .X .plotlast print(">\n)print
 (<input type="hidden" name="map.Y.plotlast" value=")print WWWinfo .FORMinfo .map .Y .plotlast print(">\n)print
 (<br>)print
-(<input type=submit value="View Climatology">) print
+(<input type=submit value="Voir la Climatologie">) print
 (</td>)print
 } if
 </INGRID>
@@ -200,26 +203,26 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 
 
 <br>
-<b><h3>Percent Occurrence of Climate Conditions <br>Suitable for Malaria Transmission</h3></b></center>
+<b><h3>Pourcentage de l'Occurence des Conditions Climatiques <br>Favorables à la Transmission du Paludisme</h3></b></center>
 <img src="/<INGRID> dup dataseturl</INGRID>/startcolormap/0.0/100/RANGE/white/white/white/0.0/VALUE/DarkSalmon/DarkSalmon/100./bandmax/white/endcolormap//long_name%20%28Percent%20Occurrence%20in%20Historical%20Record%29%20def/dup+T+fig-+colorbars2+-fig+T/-3.3527613E-08/12./plotrange//XOVY+null+psdef//plotborder+72+psdef//plotaxislength+380+psdef+.gif" NOSAVE border=0 ALT="All condition time series" title="All condition time series"></a>
-<br><font size=-1><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.CSMT/.AllCondProb/0.1/sub//long_name/%28Percent%20Occurrence%20of%20Climate%20Conditions%20Suitable%20for%20Transmission%29def//units/unitless/def/figviewer.html?my.help=more+options&map.T.plotvalue=Jan-Dec&map.Y.units=degree_north&map.Y.plotlast=40.5N&map.url=X+Y+fig-+colors+%7C+grey+contours+black+thinnish+countries+-fig&map.domain=+%7B+%2FT+0.5+11.5+plotrange+%7D&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=40.5S&map.X.plotfirst=20.5W&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=55.5E&map.AllCondProb.plotfirst=0.0&map.AllCondProb.units=unitless&map.AllCondProb.plotlast=100.&map.newurl.grid0=X&map.newurl.grid1=Y&map.newurl.land=countries&map.newurl.plot=colors+%7C+grey+contours+black&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=100&map.mftime=100&map.fftime=200&my.help=plain+page">View animation</a></font>
+<br><font size=-1><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.CSMT/.AllCondProb/0.1/sub//long_name/%28Percent%20Occurrence%20of%20Climate%20Conditions%20Suitable%20for%20Transmission%29def//units/unitless/def/figviewer.html?my.help=more+options&map.T.plotvalue=Jan-Dec&map.Y.units=degree_north&map.Y.plotlast=40.5N&map.url=X+Y+fig-+colors+%7C+grey+contours+black+thinnish+countries+-fig&map.domain=+%7B+%2FT+0.5+11.5+plotrange+%7D&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=40.5S&map.X.plotfirst=20.5W&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=55.5E&map.AllCondProb.plotfirst=0.0&map.AllCondProb.units=unitless&map.AllCondProb.plotlast=100.&map.newurl.grid0=X&map.newurl.grid1=Y&map.newurl.land=countries&map.newurl.plot=colors+%7C+grey+contours+black&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=100&map.mftime=100&map.fftime=200&my.help=plain+page">Voir l'animation</a></font>
 </td></tr>
 
-<tr><td align=left><center><b>Precipitation<br><font size=-2>(P > 80mm)</font></b><br>
+<tr><td align=left><center><b>Précipitations<br><font size=-2>(P > 80mm)</font></b><br>
 <img src="/<INGRID> 1 index dataseturl</INGRID>/startcolormap/0.0/100/RANGE/white/white/white/0.0/VALUE/LightSteelBlue/LightSteelBlue/100./bandmax/white/endcolormap//long_name%20%28Percent%20Occurrence%29%20def/dup+T+fig-+colorbars2+-fig//plotborder+60+psdef//plotaxislength+160+psdef+.gif"><br>
 </center>
-<font size=-1><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.CSMT/.PcpnCondProb/0.1/sub//long_name/%28Percent%20Occurrence%20of%20Precipitation%20Conditions%20Suitable%20for%20Transmission%29def/figviewer.html?my.help=more+options&map.T.plotvalue=Jan-Dec&map.Y.units=degree_north&map.Y.plotlast=40.5N&map.url=X+Y+fig-+colors+%7C+grey+contours+black+thinnish+countries+-fig&map.domain=+%7B+%2FT+0.5+11.5+plotrange+%7D&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=40.5S&map.X.plotfirst=20.5W&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=55.5E&map.PcpnCondProb.plotfirst=0.0&map.PcpnCondProb.units=unitless&map.PcpnCondProb.plotlast=100.&map.newurl.grid0=X&map.newurl.grid1=Y&map.newurl.land=countries&map.newurl.plot=colors+%7C+grey+contours+black&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=100&map.mftime=100&map.fftime=200&my.help=plain+page">View animation</font>
+<font size=-1><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.CSMT/.PcpnCondProb/0.1/sub//long_name/%28Percent%20Occurrence%20of%20Precipitation%20Conditions%20Suitable%20for%20Transmission%29def/figviewer.html?my.help=more+options&map.T.plotvalue=Jan-Dec&map.Y.units=degree_north&map.Y.plotlast=40.5N&map.url=X+Y+fig-+colors+%7C+grey+contours+black+thinnish+countries+-fig&map.domain=+%7B+%2FT+0.5+11.5+plotrange+%7D&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=40.5S&map.X.plotfirst=20.5W&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=55.5E&map.PcpnCondProb.plotfirst=0.0&map.PcpnCondProb.units=unitless&map.PcpnCondProb.plotlast=100.&map.newurl.grid0=X&map.newurl.grid1=Y&map.newurl.land=countries&map.newurl.plot=colors+%7C+grey+contours+black&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=100&map.mftime=100&map.fftime=200&my.help=plain+page">Voir l'animation</font>
 </td></tr>
-<tr><td align=left><center><b>Temperature<br><font size=-2>(18&deg;C < T < 32&deg;C)</font></b><br>
+<tr><td align=left><center><b>Température<br><font size=-2>(18&deg;C < T < 32&deg;C)</font></b><br>
 <img src="<INGRID> 2 index dataseturl</INGRID>/startcolormap/0.0/100/RANGE/white/white/white/0.0/VALUE/LightGoldenrod/LightGoldenrod/100./bandmax/white/endcolormap//long_name%20%28Percent%20Occurrence%29%20def/dup+T+fig-+colorbars2+-fig//plotborder+60+psdef//plotaxislength+160+psdef+.gif">
 </center>
 <font size=-1><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.CSMT/.TempCondProb/0.1/sub//long_name/%28Percent%20Occurrence%20of%20Temperature%20Conditions%20Suitable%20for%20Transmission%29def/figviewer.html?my.help=more+options&map.T.plotvalue=Jan-Dec&map.Y.units=degree_north&map.Y.plotlast=40.5N&map.url=X+Y+fig-+colors+%7C+grey+contours+black+thinnish+countries+-fig&map.domain=+%7B+%2FT+0.5+11.5+plotrange+%7D&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=40.5S&map.X.plotfirst=20.5W&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=55.5E&map.TempCondProb.plotfirst=0.0&map.TempCondProb.units=unitless&map.TempCondProb.plotlast=100.&map.newurl.grid0=X&map.newurl.grid1=Y&map.newurl.land=countries&map.newurl.plot=colors+%7C+grey+contours+black&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=100&map.mftime=100&map.fftime=200&my.help=plain+page
-">View animation</a></font>
+">Voir l'animation</a></font>
 </td></tr>
-<tr><td align=left><center><b>Relative Humidity<br><font size=-2>(RH > 60%)</font></b><br>
+<tr><td align=left><center><b>Humidité Relative<br><font size=-2>(RH > 60%)</font></b><br>
 <img src="<INGRID> 3 index dataseturl</INGRID>/startcolormap/0.0/100/RANGE/white/white/white/0.0/VALUE/LightSeaGreen/LightSeaGreen/100./bandmax/white/endcolormap//long_name%20%28Percent%20Occurrence%29%20def/dup+T+fig-+colorbars2+-fig//plotborder+60+psdef//plotaxislength+160+psdef+.gif">
 </center>
-<font size=-1><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.TS2p0/.climatology/.c7100/.mean/temp/0/flaggt/0/maskle/SOURCES/.IRI/.Analyses/.CSMT/.RHCondProb/mul/0.1/sub//long_name/%28Percent%20Occurrence%20of%20Relative%20Humidity%20Conditions%20Suitable%20for%20Transmission%29def//units/unitless/def/startcolormap/0.0/100./RANGE/white/LightGrey/LightGrey/0.0/VALUE/white/white/25/bandmax/LightCyan/LightCyan/50/bandmax/MediumAquamarine/MediumAquamarine/75/bandmax/LightSeaGreen/LightSeaGreen/100./bandmax/LightGrey/endcolormap/figviewer.html?my.help=more+options&map.T.plotvalue=Jan-Dec&map.Y.units=degree_north&map.Y.plotlast=40.5N&map.url=X+Y+fig-+colors+%7C+grey+contours+black+thinnish+countries+-fig&map.domain=+%7B+%2FT+0.5+11.5+plotrange+%7D&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=40.5S&map.X.plotfirst=20.5W&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=55.5E&map.aprod.plotfirst=0.0&map.aprod.units=unitless&map.aprod.plotlast=100.&map.newurl.grid0=X&map.newurl.grid1=Y&map.newurl.land=countries&map.newurl.plot=colors+%7C+grey+contours+black&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=100&map.mftime=100&map.fftime=200&my.help=plain+page">View animation</a></font>
+<font size=-1><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.TS2p0/.climatology/.c7100/.mean/temp/0/flaggt/0/maskle/SOURCES/.IRI/.Analyses/.CSMT/.RHCondProb/mul/0.1/sub//long_name/%28Percent%20Occurrence%20of%20Relative%20Humidity%20Conditions%20Suitable%20for%20Transmission%29def//units/unitless/def/startcolormap/0.0/100./RANGE/white/LightGrey/LightGrey/0.0/VALUE/white/white/25/bandmax/LightCyan/LightCyan/50/bandmax/MediumAquamarine/MediumAquamarine/75/bandmax/LightSeaGreen/LightSeaGreen/100./bandmax/LightGrey/endcolormap/figviewer.html?my.help=more+options&map.T.plotvalue=Jan-Dec&map.Y.units=degree_north&map.Y.plotlast=40.5N&map.url=X+Y+fig-+colors+%7C+grey+contours+black+thinnish+countries+-fig&map.domain=+%7B+%2FT+0.5+11.5+plotrange+%7D&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=40.5S&map.X.plotfirst=20.5W&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=55.5E&map.aprod.plotfirst=0.0&map.aprod.units=unitless&map.aprod.plotlast=100.&map.newurl.grid0=X&map.newurl.grid1=Y&map.newurl.land=countries&map.newurl.plot=colors+%7C+grey+contours+black&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.iftime=100&map.mftime=100&map.fftime=200&my.help=plain+page">Voir l'animation</a></font>
 </td></tr></table>
 
 <br>
@@ -230,46 +233,34 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 <b><u>Description</u></b>
 </font>
 <font point-size=9pt size=-1>
-<br>The dominant species of malaria in Africa is Plasmodium falciparum. Its development rate is temperature 
-dependent.  The climatic conditions considered suitable for its development and transmission through the 
-mosquito stage of its life cycle are temperatures within the range 18&deg;C to 32&deg;C.  Below 18&deg;C parasite 
-development decreases significantly. Above 32&deg;C the survival of the mosquito is compromised. Relative humidity greater than 
-60% is also considered as a requirement for the mosquito to survive long enough for the parasite to develop 
-sufficiently to be transmitted to its human host stage.  Rainfall and surface water is required for the egg 
-laying and larval stages of the mosquito life cycle and monthly rainfall above 80mm is considered as a 
-requirement.
+<br>L'espèce dominante du paludisme en Afrique est le Plasmodium falciparum. Son taux de développement dépend de la température. Les conditions climatiques considérées favorables pour les stades de son cycle de vie de développement et de transmission par le moustique, sont des températures comprises entre 18&deg;C et 32&deg;C. En-dessous de 18&deg;C, le développement du parasite décroît significativement. Au-dessus de 32&deg;C, la survie du moustique est compromise. Une humidité relative supérieure à 60% est aussi considérée nécessaire à une survie suffisamment longue du moustique pour que le parasite se développe au point d'atteindre le stade où l'homme peut être hôte. Précipitations et étendues d'eau sont nécessaires à la ponte des oeufs et aux stades larvaires du cycle de vie du moustique. Des précipirations supérieures à 80mm sont considérées nécessaires.
 <p>
-The climate variables used here are derived on a macro-scale from historical records. We may use these variables to 
-provide an illustration of where and when this combination of climatic conditions exist.  However, we should 
-also remember that mosquitoes will actively seek out micro-climatic conditions to maximize their chances of 
-survival and this will have a significant bearing on actual transmission. 
+Les variables climatiques utilisées ici sont déclinées sur une macro-échelle depuis des données historiques. Ces variables peuvent être utilisées pour illustrer où et quand cette combinaison de conditions climatiques existe. Cependant, n'oublions pas que les moustiques rechercheront activement des conditions micro-climatiques pour maximiser leur chance de survie, ce qui aura un poids significatif sur la transmission véritable.
 <p>
-The main graph above shows how often all three conditions have concurrently been met at the point of enquiry for each month of the year, based on a 50-year historical record.
-The three graphs to the right show the percent occurrence of the rainfall, temperature and relative humidity 
-conditions for each month.
-The buttons below the graphs show an animation of these percentages for that particular variable, or set of variables, 
-through the year. 
+Le principal graphe ci-dessus montre la fréquence de la réunion de ces trois conditions au point d'intérêt pour chaque mois de l'année, basée sur 50 ans de données historiques.
+Les trois graphes sur la droite montrent le pourcentage d'occurence de ces conditions de précipitations, température et humidité relative pour chaque mois.
+Les boutons sous les graphes déclenchent une animation de ces pourcentages pour une variable particulière, ou un groupement de ces variables, dans l'année.
 </font>
 <p>
 <font point-size=12pt size=-1>
-<b><u>Data Sources</u></b></font>
+<b><u>Sources</u></b></font>
 <font point-size=9pt size=-1>
-<br><b>Precipitation</b><br>
-<u>Data:</u> Monthly precipitation over land areas on a 0.5&deg; x 0.5&deg; lat/lon grid
-<br><u>Historical Base Period:</u> 1951-2000
-<br><u>Data Source</u>: University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p0/.dataset_documentation.html">UEA CRU TS 2.0</a>)
-<p><b>Temperature</b><br>
-<u>Data:</u> Monthly mean temperature over land areas on a 0.5&deg; x 0.5&deg; lat/lon grid
-<br><u>Historical Base Period:</u> 1951-2000
-<br><u>Data Source</u>: University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p0/.dataset_documentation.html">UEA CRU TS 2.0</a>)
-<p><b>Relative Humidity</b><br>
-<u>Data:</u> Monthly specific humidity data (converted to rh) on a 2.5&deg; x 2.5&deg; lat/lon grid
-<br><u>Historical Base Period:</u> 1951-2000
-<br><u>Data Source:</u> National Centers for Environmental Prediction/National Center for Atmospheric Research (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.dataset_documentation.html">NCEP/NCAR CDAS/Reanalysis</a>)
+<br><b>Précipitations</b><br>
+<u>Données :</u> Précipitations mensuelles sur une grille lat/lon 0.5&deg; x 0.5&deg;
+<br><u>Période de Référence :</u> 1951-2000
+<br><u>Source</u>: University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p0/.dataset_documentation.html">UEA CRU TS 2.0</a>)
+<p><b>Température</b><br>
+<u>Données :</u> Température mensuelle moyenne sur une grille lat/lon 0.5&deg; x 0.5&deg;
+<br><u>Période de Référence :</u> 1951-2000
+<br><u>Source</u>: University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p0/.dataset_documentation.html">UEA CRU TS 2.0</a>)
+<p><b>Humidité Relative</b><br>
+<u>Données :</u> Données d'humidité spécifique mensuelle (convertie en rh) sur une grille lat/lon 2.5&deg; x 2.5&deg;
+<br><u>Période de Référence :</u> 1951-2000
+<br><u>Source:</u> National Centers for Environmental Prediction/National Center for Atmospheric Research (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.dataset_documentation.html">NCEP/NCAR CDAS/Reanalysis</a>)
 </font>
 
 <p>
-<b><u>References</u></b>
+<b><u>Références</u></b>
 <font point-size=9pt size=-1>
 <br>Gilles, H. M., and D. A. Warrell (eds), 1993: <i>Bruce-Chwatt's Essential Malariology</i>. Arnold Publishing, 340 pp.
 <p>Craig, M. H., R. W. Snow and D. le Sueur, 1999: A climate based distribution model of malaria transmission in sub-Saharan 

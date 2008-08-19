@@ -1,15 +1,16 @@
 <INGRID>
-home .grover .EMILY .Analyses .MODIS .ndvi_coarse
+home .grover .EMILY .Analyses .MODIS .evi_coarse
 mimeheader
 pop
 </INGRID>
 <html>
-<head><title>Local NDVI Analysis</title>
+<head><title>Analyses Locales du EVI</title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
 <link REL=stylesheet TYPE="text/css" HREF="/site.html">
 </head>
 <body bgcolor="#ffffff" link="#993333" vlink="#993333" alink="#FF0000">
 <INGRID>leftmenu</INGRID>
-<form action=ndvi.html>
+<form action=evi.html>
 <INGRID>
 saveLanguage
 /onebox {2 index 1 index {.name cvx exec first pointwidth 2 copy sub 3 1 roll add 3 -1 roll pop}forall counttoobject 1 add -1 roll pop {mystream mygrids xlo xhi ylo yhi}inputs mystream mygrids 0 get xlo xhi RANGE
@@ -23,7 +24,7 @@ exch dataflag
 mygrids 0 get xlo xhi add 2. div VALUE
  mygrids 1 get ylo yhi add 2. div VALUE
 1output}def
-home .grover .EMILY .Analyses .MODIS .ndvi_coarse
+home .grover .EMILY .Analyses .MODIS .evi_coarse
 WWWinfo .FORMinfo .map .Y /step getknown
 { 
 dup (district) eq
@@ -84,7 +85,7 @@ dup /Y known {Y /step step def pop
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 } if
-SOURCES .USGS .LandDAAC .MODIS .Madagascar .NDVI 
+SOURCES .USGS .LandDAAC .MODIS .Madagascar .EVI 
 WWWinfo .FORMinfo .map .Y .step (district) eq
 {
 WWWinfo .districtinfo .geom [X Y] weighted-average
@@ -123,7 +124,7 @@ X Y fig: lightgrey mask grey mews_prov black countries_gaz red fill  red smallpu
 /map imagelink
 </INGRID></td><td align="left">
 <font face="Helvetical,Arial" point-size=10pt size=-1>
-Observations for:<br> 
+Observations à :<br> 
 <b><INGRID>
 WWWinfo .FORMinfo .map .Y .step (district) eq
 {
@@ -165,7 +166,7 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 (<input type="hidden" name="map.Y.plotfirst" value=")print WWWinfo .FORMinfo .map .Y .plotfirst print(">\n)print
 (<input type="hidden" name="map.X.plotlast" value=")print WWWinfo .FORMinfo .map .X .plotlast print(">\n)print
 (<input type="hidden" name="map.Y.plotlast" value=")print WWWinfo .FORMinfo .map .Y .plotlast print(">\n)print
-(<input type=submit value="Generate new time series">) print
+(<input type=submit value="Générer de nouvelles séries temporelles">) print
 (</td>)print
 } if
 </INGRID>
@@ -173,25 +174,25 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 <table border cellpadding="6" cellspacing="4" bgcolor="#ffffff"><tbody>
 <tr valign="top"><td width="50%"  bgcolor=#F0F8FF>
 <font face="Helvetical,Arial" point-size=9pt size=-1>
-<b>a) NDVI from most recent 12-month period</b><br>
+<b>a) EVI de la plus récente période de 12 mois</b><br>
 </font>
 
 <center>
-<a href="/<INGRID> dup dataseturl</INGRID>/T/last/365/sub/last/RANGE//long_name/%28NDVI%29def/DATA/-0.2/1/RANGE/figviewer.html?my.help=&map.NDVI.units=unitless&map.NDVI.plotlast=1.&map.url=T+fig-+line+-fig&map.domainparam=+/plotaxislength+432+psdef+/plotborder+72+psdef&map.zoom=Zoom&map.NDVI.plotfirst=-0.2&map.T.plotlast=first&map.T.units=days+since+2003-01-01&map.T.plotlast=last&map.newurl.grid0=T&map.newurl.plot=line&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.color_smoothing=1&map.XOVY=auto&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to explore the data';return true">
-<img src="/<INGRID> dup dataseturl</INGRID>/T/last/365/sub/last/RANGE//long_name/%28NDVI%29def/DATA/-0.2/1/RANGE/T+fig-+line+-fig+//NDVI/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef+.gif" NOSAVE border=0 ALT="NDVI Time Series" title="NDVI Time Series" width=322 height=197</a>
+<a href="/<INGRID> dup dataseturl</INGRID>/T/last/365/sub/last/RANGE//long_name/%28EVI%29def/DATA/-0.2/1/RANGE/figviewer.html?my.help=&map.EVI.units=unitless&map.EVI.plotlast=1.&map.url=T+fig-+line+-fig&map.domainparam=+/plotaxislength+432+psdef+/plotborder+72+psdef&map.zoom=Zoom&map.EVI.plotfirst=-0.2&map.T.plotlast=first&map.T.units=days+since+2003-01-01&map.T.plotlast=last&map.newurl.grid0=T&map.newurl.plot=line&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.color_smoothing=1&map.XOVY=auto&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to explore the data';return true">
+<img src="/<INGRID> dup dataseturl</INGRID>/T/last/365/sub/last/RANGE//long_name/%28EVI%29def/DATA/-0.2/1/RANGE/T+fig-+line+-fig+//EVI/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef+.gif" NOSAVE border=0 ALT="EVI Time Series" title="EVI Time Series" width=322 height=197</a>
 </center>
-<font size=-1><br><a href="/<INGRID> dup dataseturl</INGRID>/T/last/365/sub/last/RANGE/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data in this graph</a>
-<br><a href="/<INGRID> dup dataseturl</INGRID>/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data from Feb 2005 to present</a>
+<font size=-1><br><a href="/<INGRID> dup dataseturl</INGRID>/T/last/365/sub/last/RANGE/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Données du graphe</a>
+<br><a href="/<INGRID> dup dataseturl</INGRID>/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Données depuis Fév 2005 à aujourd'hui</a>
 </font>
 </td><td height="200" bgcolor="#F0F8FF" width="50%">
 
 <font face="Helvetical,Arial" point-size=9pt size=-1>
-<b>b) Multi-year NDVI comparison</b><br>
+<b>b) Comparaison inter-annuelle du EVI</b><br>
 </font>
 <center>
-<a href="/<INGRID> dup dataseturl</INGRID>//long_name/%28NDVI%29def/DATA/-0.2/1/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202006-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282005%29VALUES//fullname/%282005%29def/3/index/3/index/T/%282006%29VALUES//fullname/%282006%29def/5/index/5/index/T/%282007%29VALUES//fullname/%282007%29def/7/index/7/index/T/%282008%29VALUES//fullname/%282008%29def/fig:/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/figviewer.html?my.help=more+options&map.NDVI.units=unitless&map.NDVI.plotlast=1.&map.url=&map.domain=+%7B+/doy+9.+359.+plotrange+/NDVI+-0.2+1.+plotrange+/doy+9.+359.+plotrange+/NDVI+-0.2+1.+plotrange+%7D&map.domainparam=+/plotaxislength+432+psdef+/plotborder+80+psdef+/XOVY+null+psdef&map.NDVI.plotfirst=-0.2&map.doy.plotfirst=0000+10+Jan+2006&map.doy.units=days+since+2006-01-01&map.doy.plotlast=2400+25+Dec+2006&map.plotaxislength=432&map.plotborder=80&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1" OnMouseOver="self.status='Click here to explore the data';return true">
+<a href="/<INGRID> dup dataseturl</INGRID>//long_name/%28EVI%29def/DATA/-0.2/1/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202006-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282005%29VALUES//fullname/%282005%29def/3/index/3/index/T/%282006%29VALUES//fullname/%282006%29def/5/index/5/index/T/%282007%29VALUES//fullname/%282007%29def/7/index/7/index/T/%282008%29VALUES//fullname/%282008%29def/fig:/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/figviewer.html?my.help=more+options&map.EVI.units=unitless&map.EVI.plotlast=1.&map.url=&map.domain=+%7B+/doy+9.+359.+plotrange+/EVI+-0.2+1.+plotrange+/doy+9.+359.+plotrange+/EVI+-0.2+1.+plotrange+%7D&map.domainparam=+/plotaxislength+432+psdef+/plotborder+80+psdef+/XOVY+null+psdef&map.EVI.plotfirst=-0.2&map.doy.plotfirst=0000+10+Jan+2006&map.doy.units=days+since+2006-01-01&map.doy.plotlast=2400+25+Dec+2006&map.plotaxislength=432&map.plotborder=80&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1" OnMouseOver="self.status='Click here to explore the data';return true">
 
-<img src="/<INGRID> dup dataseturl</INGRID>//long_name/%28NDVI%29def/DATA/-0.2/1/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202006-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282005%29VALUES//fullname/%282005%29def/3/index/3/index/T/%282006%29VALUES//fullname/%282006%29def/5/index/5/index/T/%282007%29VALUES//fullname/%282007%29def/7/index/7/index/T/%282008%29VALUES//fullname/%282008%29def/fig:/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/+//doy/9./359./plotrange//NDVI/-0.2/1./plotrange//doy/9./359./plotrange//NDVI/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef+.gif" NOSAVE border=0 ALT="Multi-year NDVI comparison" title="Multi-year NDVI comparison" width=322 height=197></a>
+<img src="/<INGRID> dup dataseturl</INGRID>//long_name/%28EVI%29def/DATA/-0.2/1/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202006-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282005%29VALUES//fullname/%282005%29def/3/index/3/index/T/%282006%29VALUES//fullname/%282006%29def/5/index/5/index/T/%282007%29VALUES//fullname/%282007%29def/7/index/7/index/T/%282008%29VALUES//fullname/%282008%29def/fig:/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/+//doy/9./359./plotrange//EVI/-0.2/1./plotrange//doy/9./359./plotrange//EVI/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef+.gif" NOSAVE border=0 ALT="Multi-year EVI comparison" title="Multi-year EVI comparison" width=322 height=197></a>
 
 </center>
 </td></tr>
@@ -202,18 +203,17 @@ WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
 </font>
 <font face="Helvetical,Arial" point-size=9pt size=-1>
 <br>
-a) 16-day Normalized Difference Vegetation Index (NDVI) for the selected region during the most recent 12 month period.  
+a) Index de Végétation Amélioré (EVI) par 16 jours pour la région sélectionnée, durant les 12 derniers mois.
 <p>
-b) Same as (a) for the current calendar year (thick black line), as indicated by the axis labels. 
-NDVI estimates from previous years are also shown (blue: -1 yr from present; magenta: -2 yr from present). 
+b) Identique à (a) mais pour l'année calendaire en cours (ligne grasse noire), comme indiqué par la légende. Des estimations de l'EVI pour les années précédentes sont également dispensées (bleue : -1 an; magenta : -2 ans du présent).
 <p>
 <font face="Helvetical,Arial" point-size=12pt size=-1>
-<b><u>Data Sources</u></b>
+<b><u>Sources</u></b>
 <br></font>
 <font face="Helvetical,Arial" point-size=9pt size=-1>
-<b>Normalized Difference Vegetation Index</b><br>
-<font size=-1><b>Data</b>: 16-day NDVI at a resolution of 250m</font>
-<br><font size=-1><b>Data Source</b>: United States Geological Survey, Land Processes Distributed Active Archive Center, 
+<b>Index de Végétation Amélioré (EVI)</b><br>
+<font size=-1><b>Données </b>: EVI par 16aine de jours à250m de résolution</font>
+<br><font size=-1><b>Source</b>: United States Geological Survey, Land Processes Distributed Active Archive Center, 
 Moderate Resolution Imaging Spectroradiometer 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.dataset_documentation.html">USGS LandDAAC MODIS</a>)</font>
 </font>

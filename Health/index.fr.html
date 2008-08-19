@@ -1,9 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//FR">
 <html>
 <head>
   <meta name="author" content="Lulin Song">
   <meta name="revised" content="Lulin Song,10/10/05">
   <meta name="keywords" content="health climate malaria meningitis world map clickable africa">
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
   <script language="JavaScript">
   <!-- Hide from older browsers
   var worldImage_Off = new Image();
@@ -39,10 +40,10 @@
 
   function checkdisease() {
 	if (getCheckedValue(document.forms['radiobuttons'].elements['disease']) == 1) {
-		location.href=".Africa/.Malaria/<INGRID>addleftmenuinfodir</INGRID>";
+		location.href=".Regional/.Africa/.Malaria/<INGRID>addleftmenuinfodir</INGRID>";
 	}
 	if (getCheckedValue(document.forms['radiobuttons'].elements['disease']) == 2) {
-		location.href=".Africa/.Meningitis/<INGRID>addleftmenuinfodir</INGRID>"; 
+		location.href=".Regional/.Africa/.Meningitis/<INGRID>addleftmenuinfodir</INGRID>"; 
 	}
   }
 
@@ -60,23 +61,21 @@
 
 <body bgcolor="#FFFFFF" link="#993333" vlink="#993333" alink="#FF0000">
 <INGRID>leftmenu</INGRID>
-<center><h2>Climate and Health Resource Room</h1>
+<center><h2>Site Climat et Santé</h1>
 <p> 
-<table width=700><tr><td align="justify"><span class=lttxt>Climate affects health in a number of ways. These effects may be direct, as with heat stress, or indirect, as with infectious diseases such as malaria and meningitis.
-This facility aims to explore and inform users about the climate-health relationship with an emphasis 
-on the seasonal nature of that relationship, where appropriate. This "Climate and Health Resource Room" will 
-begin with a focus on malaria and meningitis in Africa. It is our intention to increase the content of the 
-resource room by including analyses that focus on other diseases and regions, as well those developed at 
-other institutions.
+<table width=700><tr><td align="justify"><span class=lttxt>Le climat affecte la santé humaine de différentes façons. Ses effets peuvent être directs, comme dans le cas d'une vague de chaleur ou
+indirects, comme dans le cas des maladies infectieuses telles que le paludisme et la dengue. Ce site a pour but d'explorer le lien climat-santé et d'informer les utilisateurs
+sur l'utilité de cette information avec une attention particulière sur la nature saisonnière de la relation. Ce site débute avec une attention particulière sur le paludisme, une
+maladie transmise par les moustiques d'importance majeure dans la plupart des pays en voie de développement, et en particulier l'Afrique sub-saharienne. Notre intention est d'augmenter le contenu de ce site en incluant des analyses qui se concentreront sur d'autres maladies et régions, ainsi que d'inclure dans le futur des produits développés par d'autres institutions.
 <br><br>
-<b>Please select the disease of interest:</b>
+<b>Selectionnez la maladie de votre choix :</b>
 <form name="radiobuttons" method="get" action="" onsubmit="return false;">
 <INGRID>saveLanguage</INGRID>
-<input type=radio name=disease value="1" checked>Malaria
-<br><input type=radio name=disease value="2">Meningitis
+<input type=radio name=disease value="1" checked>Paludisme (Malaria)
+<br><input type=radio name=disease value="2">Méningite
 </form>
 
-<b>Click on Africa to view available resources:</b>
+<b>Cliquer sur le continent africain pour accéder aux ressources disponibles pour l'Afrique:</b>
 </span>
 </td></tr></table>
 
@@ -100,7 +99,8 @@ other institutions.
 </center>
 
 <br><br>
-<span class=lttxt><font size=+0>For any feedback or comments, please <a href="mailto:sjconnor@iri.columbia.edu?subject=Climate and Health Resource Room">Contact Us</a></font></span>
+<span class=lttxt><font size=+0><a href="mailto:sjconnor@iri.columbia.edu?subject=Climate and Health Resource
+Room">Contactez-nous</a> pour tout commentaire</font></span>
 
 </body>
 </html>
