@@ -1,0 +1,268 @@
+<INGRID>
+ home .mbell .IRI .MD .maproom .Analyses .CMORPH .Locust .dekadalsum
+  X (-20) (95) RANGEEDGES
+  Y (-4) (40) RANGEEDGES
+mimeheader
+pop
+</INGRID>
+<html>
+<head><title>Rainfall Analysis Tool for Desert Locust Monitoring - Local Dekadal Analyses</title>
+<link REL=stylesheet TYPE="text/css" HREF="/site.html">
+</head>
+<body bgcolor="#ffffff" link="#993333" vlink="#993333" alink="#FF0000">
+<INGRID>leftmenu</INGRID>
+<form action=dekadalprcp.html>
+
+
+<INGRID>
+/onebox {2 index 1 index {.name cvx exec first pointwidth 2 copy sub 3 1 roll add 3 -1 roll pop}forall counttoobject 1 add -1 roll pop {mystream mygrids xlo xhi ylo yhi}inputs mystream mygrids 0 get xlo xhi RANGE
+dup 0 replaceNaN exch
+ mygrids 1 get ylo yhi RANGE mygrids 0 get xlo xhi definite-integral mygrids 1 get ylo yhi definite-integral 
+exch dataflag
+ mygrids 1 get ylo yhi RANGE mygrids 0 get xlo xhi definite-integral mygrids 1 get ylo yhi definite-integral 
+.5	normalize
+1output}def
+/onebox {2 index 1 index {.name cvx exec first pointwidth 2 copy sub 3 1 roll add 3 -1 roll pop}forall counttoobject 1 add -1 roll pop {mystream mygrids xlo xhi ylo yhi}inputs mystream 
+mygrids 0 get xlo xhi add 2. div VALUE
+ mygrids 1 get ylo yhi add 2. div VALUE
+1output}def
+
+ home .mbell .IRI .MD .maproom .Analyses .CMORPH .Locust .dekadalsum
+  X (-20) (95) RANGEEDGES
+  Y (-4) (40) RANGEEDGES
+
+ home .mbell .IRI .MD .maproom .Analyses .CMORPH .Locust .dekadalclim
+  X (-20) (95) RANGEEDGES
+  Y (-4) (40) RANGEEDGES
+
+% checks and does spatial average if map .Y .step is bigger than grid step
+2 { exch
+WWWinfo .FORMinfo .map .Y /step getknown
+{ 
+dup (district) eq
+{ 
+IRIDB
+  (select gid,afr_adm01_3_geom as geom,country_na,name1,name2,name3,name4,centroid(afr_adm01_3_geom) as center,distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) from afr_adm01_3 where afr_adm01_3_geom  &&  GeometryFromText( 'POINT(XXXX)',4326 ) ORDER BY distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) LIMIT 1)
+(XXXX) rsearch pop nip
+ X WWWinfo .FORMinfo .map .X .plotvalue readunits  s== nip
+( )
+ Y WWWinfo .FORMinfo .map .Y .plotvalue readunits  s== nip
+3array astore concat
+%dup (,) exch 3array astore concat
+exch
+3array astore concat 
+2 {
+(YYYY) rsearch pop nip
+ X WWWinfo .FORMinfo .map .X .plotvalue readunits  s== nip
+( )
+ Y WWWinfo .FORMinfo .map .Y .plotvalue readunits  s== nip
+3array astore concat
+exch
+3array astore concat 
+} repeat
+openquery
+%mark gid name1 name2 name3 name4
+%name1 reserverealization
+%name2 reserverealization
+%name3 reserverealization
+%name4 reserverealization
+%table: mark :table .html-count pop
+/districtinfo WWWinfo !
+pop
+WWWinfo .districtinfo .geom [X Y] weighted-average
+} 
+{
+interp 
+dup
+Y .step gt
+{
+exch
+  Y 2 index splitstreamgrid
+  X 2 index splitstreamgrid
+  [X Y]0.5 average
+  X2 /X renameGRID
+  Y2 /Y renameGRID
+ nip
+}
+{pop
+} ifelse
+Y /step WWWinfo .FORMinfo .map .Y .step interp def pop
+} ifelse
+} 
+{
+Y .step /step WWWinfo .FORMinfo .map .Y !
+}
+ifelse
+dup /Y known {Y /step step def pop
+X WWWinfo .FORMinfo .map .X .plotvalue VALUE
+Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
+} if
+} repeat % end of spatial average
+
+exch  
+</INGRID>
+
+
+<center><table width="580"><tbody><tr valign="top"><td align="left">
+<table cellpadding="4" cellspacing="4" bgcolor="#ffffff"><tbody><tr bgcolor="#f0f0f0"><td>
+<INGRID>
+SOURCES .WORLDBATH .bath
+WWWinfo .FORMinfo .map .Y .step (district) eq
+{WWWinfo .districtinfo a: .geom :a: .center :a 
+X Y fig: lightgrey mask grey states_gaz black countries_gaz red fill  red geometrysmallpushpins :fig
+}
+{
+1 index a: .X first pointwidth .5 mul sub nip 
+:a: .Y first pointwidth .5 mul sub nip
+ :a: .X first pointwidth .5 mul add nip 
+:a: .Y first pointwidth .5 mul add nip :a
+georect
+2 index a: .X .first :a: .Y .first :a
+togeopoint 
+a: .lon :a: .lat :a 
+X Y fig: lightgrey mask grey states_gaz black countries_gaz red fill  red smallpushpins :fig
+} ifelse
+
+ /plotaxislength 120 psdef /plotborder 0 psdef
+/plotbordertop 8 psdef
+/plotborderright 8 psdef
+/plotborderleft 8 psdef
+/plotborderbottom 8 psdef
+/antialias true psdef
+/map imagelink
+</INGRID></td><td align="left">
+<font face="Helvetical,Arial" point-size=10pt size=-1>
+Observations for box<br> centered on:<br> 
+<b><INGRID>
+WWWinfo .FORMinfo .map .Y .step (district) eq
+{
+WWWinfo .districtinfo
+[ country_na name1 name2 name3 name4 ] {reserverealization} forall
+()
+[
+name4 getrealization 
+name3 getrealization 
+name2 getrealization 
+name1 getrealization 
+country_na getrealization
+] { dup (N.A.) eq {pop}{exch print print (, )}ifelse} forall
+pop
+pop
+}
+{
+X first printunits pop
+(, ) print
+Y first printunits pop
+(<br> ~ )print
+ Y .step
+10000 90. div mul floor cvi dup ==ns (x) print ==ns ( km) print
+} ifelse
+</INGRID></b></font>
+</td>
+<INGRID>
+showmenu? {
+(<td bgcolor=white cellpadding=12>)print
+(map.Y.step) WWWinfo .FORMinfo .map .Y .step 
+dup (district) ne {interp} if startselect
+.25 (27km) valueoption
+.75 (83km) valueoption
+endselect
+(<input name="map.X.plotvalue" size=8 value=")print
+WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
+(<input name="map.Y.plotvalue" size=8 value=")print WWWinfo .FORMinfo .map .Y .plotvalue print(">\n)print
+(<input type="hidden" name="map.X.units" value=")print WWWinfo .FORMinfo .map .X .units print(">\n)print
+(<input type="hidden" name="map.Y.units" value=")print WWWinfo .FORMinfo .map .Y .units print(">\n)print
+(<input type="hidden" name="map.X.plotfirst" value=")print WWWinfo .FORMinfo .map .X .plotfirst print(">\n)print
+(<input type="hidden" name="map.Y.plotfirst" value=")print WWWinfo .FORMinfo .map .Y .plotfirst print(">\n)print
+(<input type="hidden" name="map.X.plotlast" value=")print WWWinfo .FORMinfo .map .X .plotlast print(">\n)print
+(<input type="hidden" name="map.Y.plotlast" value=")print WWWinfo .FORMinfo .map .Y .plotlast print(">\n)print
+(<input type=submit value="Generate new time series">) print
+(</td>)print
+} if
+</INGRID>
+</tr></tbody></table>
+<table border cellpadding="6" cellspacing="4" bgcolor="#ffffff"><tbody><tr valign="top"><td width="50%"  bgcolor=#F0F8FF>
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+<b>a) Dekadal precipitation Dec 2002 to present</b><br>
+</font>
+<center>
+<a href="/<INGRID>dup dataseturl</INGRID>/DATA/null/null/RANGE%5BT%5DREORDER/dup/0/mul/T/fig:/deltabars/:fig/figviewer.html?my.help=more+options&map.dekadalsum.units=mm&map.dekadalsum.plotlast=400&map.url=&map.domain=+%7B+T+first+last+plotrange+%7D&map.domainparam=+/plotaxislength+250+psdef+/plotborder+72+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.dekadalsum.plotfirst=0&map.T.plotfirst=first&map.T.units=days+since+2002-12-07+00:00:00&map.T.plotlast=last&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to modify graph';return true">
+
+<img src="/<INGRID> dup dataseturl</INGRID>/dup/0/mul/T/fig:/deltabars/:fig/+//dekadalsum/0/400/plotrange//dekadalsum/0/400/plotrange/T/first/last/plotrange+//plotborder+72+psdef//plotaxislength+250+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Dekadal precipitation time series for Dec 2002 to present" title="Dekadal precipitation for Dec 2002 to present" width=322 height=197</a>
+</center>
+<font size=-1><br><a href="/<INGRID> dup dataseturl</INGRID>/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data in this graph</a></font>
+
+
+</td><td height="200" bgcolor="#F0F8FF" width="50%">
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+<b>b) Multi-year observed vs. short-term avg. precipitation</b><br>
+</font>
+<center>
+<a href="/<INGRID> dup dataseturl</INGRID>/DATA/null/null/RANGE//plotlast/200/def//fullname/%28CMORPH%20precipitation%29def/<INGRID> 1 index dataseturl </INGRID>%5BT%5D2/SM121/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname/%28CMORPH%202003-07%20average%29def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig/figviewer.html?my.help=more+options&map.dekadalsum.units=mm&map.dekadalsum.plotlast=400&map.url=&map.domain=+%7B+/dekadalsum+0.0+400+plotrange+/dekadalsum+0.0+400+plotrange+%7D&map.domainparam=+/plotaxislength+432+psdef+/plotborder+72+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.dekadalsum.plotfirst=0.0&map.T.plotfirst=first&map.T.units=days+since+2002-12-07+00:00:00&map.T.plotlast=last&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to modify graph';return true">
+
+<img src="/<INGRID> dup dataseturl</INGRID>/DATA/null/null/RANGE//plotlast/200/def//fullname/%28CMORPH%20precipitation%29def/<INGRID> 1 index dataseturl </INGRID>%5BT%5D2/SM121/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname/%28CMORPH%202003-07%20average%29def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig/+//dekadalsum/0.0/400/plotrange//dekadalsum/0.0/400/plotrange+//plotborder+72+psdef//plotaxislength+250+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Multi-year observed vs. short-term average precipitation" title="Multi-year observed vs. short-term average precipitation" width=322 height=197></a>
+</center>
+<font size=-1><br><a href="/<INGRID> dup dataseturl</INGRID>/DATA/null/null/RANGE//plotlast/200/def/<INGRID> 1 index dataseturl </INGRID>%5BT%5D2/SM121/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname/%28CMORPH%202003-07%20average%29def//long_name/%28CMORPH%202003-07%20average%29def/T/3/1/roll/3+ncoltable.html?tabopt.N=4&tabopt.1=text&tabopt.2=text&tabopt.3=text&tabopt.4=markNaN&NaNmarker=NaN&tabtype=html&eol=LF+%28unix%29">Data in this graph</a></font>
+</td></tr><tr valign="top"><td width="50%" bgcolor="#F0F8FF">
+
+
+
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+<b>c) Multi-year precipitation comparison</b><br>
+</font>
+<center>
+<a href="/<INGRID> dup dataseturl</INGRID>/T/2/copy//pointwidth/0/def/%286%20Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%281/3%20months%20since%202005-01-01%29def/replaceGRID/DATA/0/400/RANGE/dup/T/1/108/RANGE/T/0/36/72/shiftdata/T//modulus/36/def/pop/exch/T/-108/shiftGRID/T/1/last/RANGE/T//modulus/36/def/pop//fullname/%282008%29def/exch/a:/T_lag/72/VALUE/T_lag/removeGRID//fullname/%282007%29def/:a:/T_lag/36/VALUE/T_lag/removeGRID//fullname/%282006%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID//fullname/%282005%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig/figviewer.html?my.help=more+options" OnMouseOver="self.status='Click here to modify graph';return true">
+
+<img src="/<INGRID> dup dataseturl</INGRID>/T/2/copy//pointwidth/0/def/%286%20Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%281/3%20months%20since%202005-01-01%29def/replaceGRID/DATA/0/400/RANGE/dup/T/1/108/RANGE/T/0/36/72/shiftdata/T//modulus/36/def/pop/exch/T/-108/shiftGRID/T/1/last/RANGE/T//modulus/36/def/pop//fullname/%282008%29def/exch/a:/T_lag/72/VALUE/T_lag/removeGRID//fullname/%282007%29def/:a:/T_lag/36/VALUE/T_lag/removeGRID//fullname/%282006%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID//fullname/%282005%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig/T/0.5/36.5/plotrange+//plotborder+72+psdef//plotbordertop+15+psdef//plotborderbottom+62+psdef//plotaxislength+250+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Multi-year dekadal precipitation comparison" title="Multi-year dekadal precipitation comparison" width=322 height=197></a>
+</center>
+
+</td><td bgcolor="#F0F8FF" width="50%">
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+<b>d) 12-month cumulative precipitation</b><br>
+</font>
+<center>
+<a href="/<INGRID> dup dataseturl</INGRID>/<INGRID> 1 index dataseturl </INGRID>/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20CMORPH%202003-07%20Avg%29def/2/1/roll/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20MODIS%20Precipitation%29def/2/1/roll/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/medium/line/grey/line/:fig/figviewer.html?my.help=more+options&map.url=&map.domainparam=+/plotaxislength+250+psdef+/plotborder+72+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.int_dT.plotfirst=0.0&map.T.units=days+since+1960-01-01&map.T.plotlast=&map.plotaxislength=432" OnMouseOver="self.status='Click here to modify graph';return true">
+
+<img src="/<INGRID> dup dataseturl</INGRID>/<INGRID> 1 index dataseturl </INGRID>/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20CMORPH%202003-07%20Avg%29def/2/1/roll/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20CMORPH%20Precipitation%29def/2/1/roll/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/medium/line/grey/line/:fig//plotborder+72+psdef//plotbordertop+20+psdef//plotborderbottom+62+psdef//plotaxislength+250+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Cumulative observed vs. short-term average precipitation" title="Cumulative observed vs. short-term average precipitation" width=322 height=197></a>
+</center>
+
+</td></tr><tr valign="top"><td colspan="2" bgcolor="#F0F8FF">
+<font face="Helvetical,Arial" point-size=12pt size=-1>
+<b><u>Description</u></b>
+</font>
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+<br>
+a) Dekadal (i.e., ~10-daily) precipitation estimates for the selected region from Dec 2002 to the present.  
+<p>
+b) Same as (a) (solid black line) with the addition of the recent short-term average precipitation for the same region (grey dotted line).  The blue (red) bars are indicative of estimates that are above (below) the short-term average.  Note that the short-term average precipitation data has been smoothed. 
+<p>
+c) Same as (a) for the current calendar year (thick black line), as indicated by the axis labels. Precipitation estimates from previous years are also shown (blue-1 yr from present; magenta-2 yrs from present; grey-3 yrs from present). 
+<p>
+d) Cumulative dekadal precipitation estimates (solid black line) and the cumulative recent short-term average precipitation (grey dotted line) for the most recent 12-month period in the selected region.  The blue (red) bars are indicative of estimates that are above (below) the short-term average.
+<p>
+<b>NOTE:</b> <u>The recent short-term average (from 2003 to the most recent complete year) of precipitation should not be interpreted as a climatological normal</u>, which is typically based on a long-term (e.g., 30-year) time series.  The length of this short-term average will increase over time as more data become available.  (An additional year of data will be included in the average during January of each year.)  
+</font>
+<p>
+<font face="Helvetical,Arial" point-size=12pt size=-1>
+<b><u>Data Sources</u></b>
+<br></font>
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+<b>Precipitation Estimates</b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp;Daily precipitation estimates on a 0.25 x 0.25 deg. lat/lon grid</font>
+<br><font size=-1><b>Data Source</b>:&nbsp; Climate Prediction Center Morphing Technique
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a>) </font>
+<br><font size=-1><b>Reference</b>:&nbsp; Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that Produces Global Precipitation Estimates from Passive Microwave and Infrared Data at High Spatial and Temporal Resolution. <i>J. Hydrometeorology</i>, <b>5</b>, 487-503.
+
+</font>
+<p>
+<font size=-1>*The dekadal precipitation estimates have been aggregated from the daily data. Every month has three dekads, such that the first two dekads have 10 days (i.e., 1-10, 11-20), and the third is comprised of the remaining days of the month.  Therefore, the length of the third dekad of each month is not consistent and varies from 8-11 days, depending on the length of the month.</font>
+
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</center></body></html>
+
+
+
+
+
+
