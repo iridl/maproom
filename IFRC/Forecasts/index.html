@@ -87,9 +87,9 @@ leftmenuHeader
 WWWinfo 
 
 /layerlist null 11 object 
-/tot6dayapcp { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcp :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def 
-
 /tot6dayapcpanom { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcpanom :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def 
+
+/tot6dayapcp { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcp :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def 
 
 /tot6dayapcppctle { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcppctle :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def
 
@@ -107,13 +107,13 @@ WWWinfo
 
 /imr { SOURCES .IRI .MD .IFRC .CIESIN .Poverty .imr X Y fig: colors black thin countries_gaz :fig } def
 
-/defaultlayer currentobject /tot6dayapcp get def
+/defaultlayer currentobject /tot6dayapcpanom get def
 
  def 
 
 /layernames null 11 object
- /tot6dayapcp (Six-Day Total Forecast Precipitation (ESRL)) def
  /tot6dayapcpanom (Six-Day Total Forecast Precipitation Anomaly (ESRL)) def
+ /tot6dayapcp (Six-Day Total Forecast Precipitation (ESRL)) def
  /tot6dayapcppctle (Six-Day Total Forecast Precipitation Percentile (ESRL)) def
  /tot6dayapcppctmonthlyclim (Six-Day Total Forecast Precipitation as Percent of Mean Monthly Total (ESRL)) def
  /prcp_fcst (Seasonal Precipitation Forecast (IRI)) def
@@ -127,13 +127,13 @@ def
   /descprintcondition {stopprint /mapsel FORMgetknown {cvn eq} {pop false} ifelse {startprint} if} def 
 
 
-[/tot6dayapcp /tot6dayapcpanom /tot6dayapcppctle /tot6dayapcppctmonthlyclim /prcp_fcst /pic3mo_same /pic3mo_reversed /CMAP_climo /count /imr ] 
+[/tot6dayapcpanom /tot6dayapcp /tot6dayapcppctle /tot6dayapcppctmonthlyclim /prcp_fcst /pic3mo_same /pic3mo_reversed /CMAP_climo /count /imr ] 
 
 showmenu?
 {
 {
 (<input type=radio name=mapsel onChange="changedtext(this)" value=) print
-dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( checked)print} if } { dup /tot6dayapcp eq {( checked) print} if }ifelse
+dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( checked)print} if } { dup /tot6dayapcpanom eq {( checked) print} if }ifelse
 %(><a href="instructions.html#)print 
 %dup cvntos print(">)print
 %layernames 1 index getknown {print}{dup cvntos print} ifelse (</a><br><br>\n) print
@@ -238,11 +238,11 @@ imagelink
 <p class="indented">
 
 
-<INGRID> /tot6dayapcp stopprint /mapsel FORMgetknown {cvn eq} { pop true} ifelse {startprint} if  </INGRID>
-  This map displays six-day total forecast large-scale precipitation (in millimeters) for the period displayed on the map, using the forecast issued at the indicated forecast time.  The grid spacing of this forecast is 2.5&deg; latitude/longitude; it represents a forecast of large-scale precipitation.  DO NOT USE THIS TOOL TO FORECAST CYCLONE TRACKS OR THE INTENSITY OR LOCATION OF FINE-SCALE OR HIGHLY LOCALIZED PRECIPITATION.  The forecast data are courtesy of the NOAA ESRL Reforecast project.
-
-<INGRID> /tot6dayapcpanom descprintcondition </INGRID>
+<INGRID> /tot6dayapcpanom stopprint /mapsel FORMgetknown {cvn eq} { pop true} ifelse {startprint} if </INGRID>
   This map displays the difference (in millimeters) between the current six-day total forecast precipitation value and the long-term (1979-2004) mean six-day total precipitation value in the model climatology for the same time of year.  Although the precipitation anomaly expresses how much the currently forecast precipitation value differs from the long-term "normal" in terms of a precipitation amount, it does not clearly specify how unusual that difference is for that particular location or time of year.  For instance, while an anomaly of 30 mm may be significant in North Africa, it might not be significant in Indonesia.  The grid spacing of this forecast is 2.5&deg; latitude/longitude; it represents a forecast of large-scale precipitation.  DO NOT USE THIS TOOL TO FORECAST CYCLONE TRACKS OR THE INTENSITY OR LOCATION OF FINE-SCALE OR HIGHLY LOCALIZED PRECIPITATION.  The forecast data are courtesy of the NOAA ESRL Reforecast project.
+
+<INGRID> /tot6dayapcp descprintcondition  </INGRID>
+  This map displays six-day total forecast large-scale precipitation (in millimeters) for the period displayed on the map, using the forecast issued at the indicated forecast time.  The grid spacing of this forecast is 2.5&deg; latitude/longitude; it represents a forecast of large-scale precipitation.  DO NOT USE THIS TOOL TO FORECAST CYCLONE TRACKS OR THE INTENSITY OR LOCATION OF FINE-SCALE OR HIGHLY LOCALIZED PRECIPITATION.  The forecast data are courtesy of the NOAA ESRL Reforecast project.
 
 <INGRID> /tot6dayapcppctle descprintcondition </INGRID>
   This map displays the percentile of six-day total forecast precipitation with respect to the six-day forecast precipitation values for the same time of the year in the 1979-2004 model climatology.  To emphasize the largest forecast precipitation values with respect to the model history, only percentile values above 0.8 are displayed.  Locations in the lightest green are forecast to receive precipitation in the highest 15% to 20% of the model climatological distribution, while areas in the darkest green are forecast to receive precipitation in the highest 5% of the distribution.  Percentile values provide a good sense of how the current forecast precipitation total ranks in comparison to previous forecast values for a given location and time of year.  The grid spacing of this forecast is 2.5&deg; latitude/longitude; it represents a forecast of large-scale precipitation.  DO NOT USE THIS TOOL TO FORECAST CYCLONE TRACKS OR THE INTENSITY OR LOCATION OF FINE-SCALE OR HIGHLY LOCALIZED PRECIPITATION.  The forecast data are courtesy of the NOAA ESRL Reforecast project. 
