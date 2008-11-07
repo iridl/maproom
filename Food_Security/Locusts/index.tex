@@ -1,13 +1,11 @@
 \begin{ingrid}
-/mytype /mappagetype def
-/menu_name (Dekadal Rainfall) def
-
 continuedataset:
 
 datasetdefs:
 /index.en.html currentobject /index.html get def
 :datasetdefs
 
+{ Local Regional } { currentobject 1 index get def } forall
 /index.html {
 PickLanguage:
 /en /index.en.html
@@ -20,7 +18,5 @@ PickLanguage:
 /fr-ch /index.fr.html
 :PickLanguage
 } def
-
 :dataset
-
 \end{ingrid}

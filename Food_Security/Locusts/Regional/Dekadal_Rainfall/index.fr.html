@@ -1,0 +1,231 @@
+<INGRID>
+home .grover .EMILY .Analyses .Locust .CMORPH .dekadsum
+X (-20) (95) RANGE
+Y (-4) (40) RANGE
+/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/maproom/.Food_Security/.Locusts/.Regional/.Dekadal_Rainfall/instructions.html)redirectto stop} if
+leftmenuinfo:
+{ X Y T} setleftmenugrids
+WWWinfo /map FORMgetknown {.Y .step
+nip
+/map.Y.step
+exch def} 
+{pop}ifelse
+[/mask /districts /states /countries /coasts] {dup FORMknown {dup (on) def}if pop} forall
+
+:leftmenuinfo
+
+mimeheader
+pop
+</INGRID>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <title>Précipitations Estimées Décadaires</title>
+<INGRID>
+
+figdefs
+</INGRID>
+</head>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
+<INGRID>
+
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+</INGRID>
+<FORM name=mapform action=index.html>
+<h3 align=center><u>Précipitations Estimées Décadaires</u></h3>
+<center>
+
+<table border=0>
+<tr valign=center>
+<td align=center>
+
+<table>
+<tr>
+
+<td align=center>
+<INGRID>
+
+home .grover .EMILY .Analyses .Locust .CMORPH .dekadsum
+X (-20) (95) RANGE
+Y (-4) (40) RANGE
+
+/mask FORMknown
+{
+IRIDB (select epiz_new2_geom as geom from epiz_new2) openquery .geom
+} if
+X Y fig: colors 
+WWWinfo /map FORMknown 
+[/mask /districts /states /countries /coasts] {FORMknown or} forall
+nip
+{
+/mask FORMknown { blue stroke } if
+/districts FORMknown{grey verythin districts_gaz india_dist} if
+/states FORMknown{
+/districts FORMknown {black}{grey}ifelse verythin states_gaz} if
+/countries FORMknown{black thin countries_gaz} if
+/coasts FORMknown{ black thin coasts_gaz} if
+} 
+{
+black thin countries_gaz 
+}ifelse
+:fig
+/plotaxislength 600 psdef
+/antialias true psdef
+figdup
+/map 
+showmenu? 
+{inputimagelinkwithlimitcontrolsclickforinfo}
+{imagelink } ifelse
+</INGRID>
+<br>
+<INGRID>
+figdup .auxfig
+imagelink
+</INGRID>
+</td>
+
+<td>
+
+<table BORDER COLS=1>
+<tr>
+<td align=center>
+<b><font point-size=12pt>Options<br>Calques Superposables</font></b>
+</td></tr><tr><td><font size=-1>
+<INGRID>
+WWWinfo /map FORMknown 
+[/mask /districts /states /countries /coasts] {FORMknown or} forall
+nip 
+{
+(<input type=checkbox name=coasts) print 
+/coasts FORMknown {( checked)print} if
+(>Côtes\n)print
+(<br><input type=checkbox name=countries) print
+/countries FORMknown {( checked)print} if
+ (>Pays\n) print
+(<br><input type=checkbox name=states)print 
+/states FORMknown {( checked)print} if
+(>Etats\n)print
+(<br><input type=checkbox name=districts)print 
+/districts FORMknown {( checked)print} if
+(>Districts\n)print
+} 
+{
+(<input type=checkbox name=coasts checked>Côtes\n) print
+(<br><input type=checkbox name=countries checked>Pays\n) print
+(<br><input type=checkbox name=states>Etats\n) print
+(<br><input type=checkbox name=districts>Districts\n) print
+} ifelse
+</INGRID>
+</font></td></tr>
+</table>
+
+</td></tr>
+<tr><td><br><br></td></tr>
+<tr><td width=150 align=center>
+
+<a href=""><font color=#861A1A></font></a>
+
+</td></tr>
+</table>
+</td>
+
+</tr>
+</table>
+<input type=hidden name="map.Y.step" value=".5">
+
+<table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE >
+<tr><td align=center bgcolor=#DCDCDC><b>Description</b></td></tr>
+<tr>
+<td>
+<font size=-1>La carte ci-dessus présente les précipitations accumulées pendant la plus récente dernière décade, qui ont été calculées à partir d'estimations quotidiennes. Chaque mois comprend trois décades, de telle sorte que les deux premières aient 10 jours (soit 1-10, 11-20), et que la troisième contienne les jours restants dans le mois. Ainsi, la longueur de la troisièmes décade de chaque mois n'est pas constante et peut s'étendre de 8 à 10 jours, en fonction de la longueur du mois.</font>
+</td>
+</tr>
+<tr><td align=center bgcolor=#DCDCDC><b>Documentation</b></td></tr>
+<tr>
+<td>
+<b>Précipitations Estimées</b><br>
+<font size=-1><b>Données </b>:&nbsp;&nbsp;Précipitations estimées sur une grille lat/lon 0.25 x 0.25 deg.</font>
+<br><font size=-1><b>Source </b>:&nbsp; Climate Prediction Center Morphing Technique
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a>) </font>
+<br><font size=-1><b>Référence </b>:&nbsp; Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that Produces Global Precipitation Estimates from Passive Microwave and Infrared Data at High Spatial and Temporal Resolution. <i>J. Hydrometeorology</i>, <b>5</b>, 487-503.
+</font>
+</td>
+</tr>
+</table>
+
+<INGRID>showmenu? not {stopprint} if</INGRID>
+<table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
+<tr>
+<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Télécharger la Carte</b></td>
+<td colspan=1 align=center bgcolor=#DCDCDC><b>Télécharger le Calque</b></td>
+<td align=center bgcolor=#DCDCDC><b>Télécharger les Données</b></td></tr>
+<tr>
+<INGRID>
+showmenu? {
+imagelinkstart
+(<td width=20 align=center>)print
+(Figure en PDF) (.pdf) linktoimageformat
+(</td><td align=center>) print
+(Figure en JPEG) (.jpg) linktoimageformat
+(</td>) print
+} if
+</INGRID>
+<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/X/-20./95./RANGEEDGES/Y/-4./40./RANGEEDGES/<INGRID>
+showmenu?{datarestrictionasurl print } if
+</INGRID>cmorph_dekad_colors/palettecolor.tiff">GeoTiff pour SIG</a>
+</td>
+<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/<INGRID>
+showmenu?{datarestrictionasurl print } if
+</INGRID>?help+datafiles#GIS">Données pour SIG</a>
+</td>
+</tr>
+<tr>
+<INGRID>
+showmenu? {
+pop
+.auxfig
+imagelinkstart
+(<td width=20 align=center>)print
+(Légende en PDF) (.pdf) linktoimageformat
+(</td><td align=center>) print
+(Légende en JPEG) (.jpg) linktoimageformat
+(</td>) print
+pop
+} if
+</INGRID>
+</tr>
+</table>
+</center>
+
+<span class=lttxt><font size=+0>Merci de <a href="mailto:pceccato@iri.columbia.edu,mbell@iri.columbia.edu?subject=Climate and Desert Locust Products">nous contacter</a> pour tout commentaire</font></span>
+
+<INGRID>
+startprint
+</INGRID>
+</FORM>
+
+  </body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
