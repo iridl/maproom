@@ -17,7 +17,8 @@ mimeheader
 pop
 </INGRID>
 <html><head>
-    <title>MODIS Image Download Tool: South Asia</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <title>Images MODIS : Asie du Sud</title>
 <INGRID>
 
 figdefs
@@ -30,7 +31,7 @@ figdefs
 leftmenuHeader
 </INGRID>
 <FORM name=mapform action=index.html>
-<h3 align=center><u>MODIS Image Download Tool: South Asia</u></h3>
+<h3 align=center><u>Images MODIS : Asie du Sud</u></h3>
 <center>
 
 <table border=0>
@@ -43,7 +44,7 @@ leftmenuHeader
 <table BORDER COLS=1>
 <tr>
 <td align=center width=100>
-<b><font point-size=12pt>Optional <br>Overlay Maps</font></b>
+<b><font point-size=12pt>Options <br>Calques Superposables</font></b>
 </td></tr><tr><td>
 <font point-size=12pt>
 <INGRID>
@@ -66,9 +67,9 @@ nip
 (>Districts\n)print
 } 
 {
-(<input type=checkbox name=coasts checked>Coasts\n) print
-(<br><input type=checkbox name=countries checked>Countries\n) print
-(<br><input type=checkbox name=states checked>States\n) print
+(<input type=checkbox name=coasts checked>Côtes\n) print
+(<br><input type=checkbox name=countries checked>Pays\n) print
+(<br><input type=checkbox name=states checked>Etats\n) print
 (<br><input type=checkbox name=districts>Districts\n) print
 } ifelse
 </INGRID>
@@ -120,14 +121,14 @@ showmenu?
 <input type=hidden name="map.Y.step" value=".5">
 
 <table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE >
-<tr ><td colspan=4 align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
+<tr ><td colspan=4 align=center bgcolor=#DCDCDC><b>Documentation</b></td></tr>
 <tr><td colspan=4>
-<font size=-1><b>Data</b>:&nbsp;&nbsp;MODIS image constructed from the middle infrared, near infrared and red channels at 250m spatial resolution</font>
-<br><font size=-1><b>Data Source</b>:&nbsp; United States Geological Survey, Land Processes Distributed Active Archive Center, 
+<font size=-1><b>Données</b> :&nbsp;&nbsp; Images MODIS construites à partir des bandes rouge, proche-infrarouge et moyen infrarouge avec une résolution spatiale de 250m</font>
+<br><font size=-1><b>Source</b> :&nbsp; United States Geological Survey, Land Processes Distributed Active Archive Center, 
 Moderate Resolution Imaging Spectroradiometer 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.dataset_documentation.html">USGS LandDAAC MODIS</a>)</font>
 <br>
-<font size=-1><b>Note</b>:&nbsp;&nbsp;There is typically a 12- to 16-day delay between the end of the observation period for the latest data and the date when those data are received and displayed on this page.
+<font size=-1><b>Note</b> :&nbsp;&nbsp; Typiquement, il y a 12 à 16 jours de décalage entre la fin de la dernière période d'observation et la date à laquelle ces données sont reçues et publiées sur cette page.
 </font>
 <p>
 </td>
@@ -135,9 +136,9 @@ Moderate Resolution Imaging Spectroradiometer
 
 <INGRID>showmenu? not {stopprint} if</INGRID>
 <tr>
-<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
-<td colspan=1 align=center bgcolor=#DCDCDC><b>Download Layer</b></td>
-<td align=center bgcolor=#DCDCDC><b>Download Raw Data</b></td></tr>
+<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Télécharger la Carte</b></td>
+<td colspan=1 align=center bgcolor=#DCDCDC><b>Télécharger le Calque</b></td>
+<td align=center bgcolor=#DCDCDC><b>Télécharger les Données</b></td></tr>
 
 <tr>
 
@@ -145,19 +146,19 @@ Moderate Resolution Imaging Spectroradiometer
 showmenu? {
 imagelinkstart
 (<td width=150 align=center>)print
-(Figure as PDF) (.pdf) linktoimageformat
+(Figure en PDF) (.pdf) linktoimageformat
 (</td><td align=center>) print
-(Figure as JPEG) (.jpg) linktoimageformat
+(Figure en JPEG) (.jpg) linktoimageformat
 (</td>) print
 (<td rowspan=2 align=center>) print
 (<a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.SWAS/.reflectance/) print
 datarestrictionasurl print
 (band/%28MIR%29%28NIR%29%28red%29VALUES%5Bband/X/Y%5D/data.tiff?filename=modisSWAS) print
-T plotlast /filenamedate printusing pop (.tiff">GeoTiff for GIS</a>)print
+T plotlast /filenamedate printusing pop (.tiff">GeoTiff pour SIG</a>)print
 (</td>\n) print
 (<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.SWAS/.reflectance/)print
 datarestrictionasurl print
-(?help+datafiles#GIS">Data for GIS</a></td>\n) print
+(?help+datafiles#GIS">Données pour SIG</a></td>\n) print
  } if
 </INGRID>
 
@@ -166,7 +167,7 @@ datarestrictionasurl print
 </table>
 </center>
 
-<span class=lttxt><font size=+0>For any feedback or comments, please <a href="mailto:pceccato@iri.columbia.edu,mbell@iri.columbia.edu?subject=Climate and Desert Locust Products">Contact Us</a></font></span>
+<span class=lttxt><font size=+0>Merci de nous <a href="mailto:pceccato@iri.columbia.edu,mbell@iri.columbia.edu?subject=Climate and Desert Locust Products">contacter</a> pour tout commentaire</font></span>
 
 <INGRID>
 startprint
