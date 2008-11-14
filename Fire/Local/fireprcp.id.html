@@ -38,7 +38,7 @@ WWWinfo .FORMinfo .map .Y /step getknown
 dup (district) eq
 { 
 IRIDB
-  (select gid,the_geom as geom,name1,name2,centroid(the_geom) as center,distance(centroid(the_geom),GeometryFromText( 'POINT(YYYY)',4326 )) from indonesia_dist where is_current='true' && the_geom  &&  GeometryFromText( 'POINT(XXXX)',4326 ) ORDER BY distance(centroid(the_geom),GeometryFromText( 'POINT(YYYY)',4326 )) LIMIT 1)
+  (select gid,the_geom as geom,name1,name2,centroid(the_geom) as center,distance(centroid(the_geom),GeometryFromText( 'POINT(YYYY)',4326 )) from indonesia_dist where is_current='true' and the_geom  &&  GeometryFromText( 'POINT(XXXX)',4326 ) ORDER BY distance(centroid(the_geom),GeometryFromText( 'POINT(YYYY)',4326 )) LIMIT 1)
 
 
 %  (select gid,afr_adm01_3_geom as geom,country_na,name1,name2,name3,name4,centroid(afr_adm01_3_geom) as center,distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) from afr_adm01_3 where afr_adm01_3_geom  &&  GeometryFromText( 'POINT(XXXX)',4326 ) ORDER BY distance(centroid(afr_adm01_3_geom),GeometryFromText( 'POINT(YYYY)',4326 )) LIMIT 1)
