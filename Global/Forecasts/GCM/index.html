@@ -1,0 +1,532 @@
+<INGRID>
+SOURCES .IRI .FD
+mimeheader
+pop
+</INGRID>
+
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <title>GCM Maproom</title>
+    <STYLE TYPE="text/css">
+    <!--
+    P.indented
+       {
+       padding-left: 25pt;
+       padding-right: 25pt;
+       text-align: justify;
+       }
+    -->
+    </STYLE>
+
+<script type="text/javascript">
+<!--
+
+
+//-->
+</script>
+
+<INGRID>
+figdefs
+</INGRID>
+
+</head>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
+
+<INGRID>
+leftmenuHeader
+</INGRID>
+
+<FORM name=mapform action=index.html>
+<table width=100% align="center">
+<tr>
+<td><h3 align=center><u>GCM Maproom</u></h3></td>
+</tr>
+</table>
+
+<table align=center>
+<tr align=center><td>
+<table>
+<tr valign=top>
+<td align=left width=25% bgcolor=#000066>
+<b><font point-size=9pt color=#FFFFFF>Variable:</font></b>
+<INGRID>
+(<select name="Variable" id="Variable" onChange="changedtext(this)">) print
+[(Temperature) (Precipitation)] {
+  (<option value=) print
+  dup print /Variable FORMgetknown {
+    1 index eq {( selected=selected) print} if}{
+    dup (Temperature) eq {( selected=selected) print} if (Temperature) /Variable FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+
+</td>
+<td align=left width=22% bgcolor=#FFFFCC>
+<b><font point-size=9pt>Model:</font></b>
+<INGRID>
+(<select name="Model" id="Model" onChange="document.mapform.submit();">) print
+[(ECHAM4p5) (CCM3v6) (NCEP) (NSIPP-1) (COLA) (ECPC) (GFDL)] {
+  (<option value=) print
+  dup print /Model FORMgetknown {
+    1 index eq {( selected="selected") print} if}{
+    dup (NCEP) eq {( selected="selected") print} if (NCEP) /Model FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+
+</td>
+<td align=left width=53% bgcolor=#000066>
+<b><font point-size=9pt color=#FFFFFF>Forecast issued:</font></b>
+<INGRID>
+% Default month is last realization of S
+(<select name="Start" id="Start" onChange="document.mapform.submit();">) print
+/months [(January) (February) (March) (April) (May) (June) (July) (August) (September) (October) (November) (December)] def
+months {
+  (<option value=) print
+  dup print /Start FORMgetknown {
+    1 index eq {( selected="selected") print} if}{
+    months IRIONLY SOURCES .IRI .FD .NCEP .Forecast .ssst .ensemble .monthly .S .last rm19602ymd pop exch pop 1 sub get dup 2 index eq {( selected="selected")print}if /Start FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+
+
+<INGRID>
+%Defining an input menu to choose the year
+(<input name=year onkeypress="changedtext(this)" type=text id=year value=) print
+/year FORMgetknown {
+  /year FORMget print
+}{
+  IRIONLY SOURCES .IRI .FD .NCEP .Forecast .ssst .ensemble .monthly .S .last rm19602ymd pop pop s== dup print /year FORM!}ifelse
+( size=4 maxlength=4/>) print
+pop
+</INGRID>
+
+</td>
+</tr>
+<tr valign=top>
+<td align=left bgcolor=#000066>
+<b><font point-size=9pt color=#FFFFFF>Field:</font></b>
+
+<INGRID>
+(<select name="Field" id="Field" onChange="changedtext(this)">) print
+/Variable FORMgetknown {(Precipitation) eq}{false}ifelse {[(Total) (Anomaly) (PercentOfMedian)]}{[(Total) (Anomaly)]}ifelse {
+  (<option value=) print
+  dup print /Field FORMgetknown {
+    1 index eq {( selected=selected) print} if}{
+    dup (Total) eq {( selected=selected) print} if (Total) /Field FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+
+</td>
+<td align=left bgcolor=#FFFFCC>
+<b><font point-size=9pt>Forcing:</font></b>
+
+<INGRID>
+%Some models don't have psst forcing, in which case ssst is checked and psst disabled
+[(ssst) (psst)] {
+  (<input type=radio name=Ocean onChange="document.mapform.submit();" value=) print
+  dup print /Ocean FORMgetknown {
+    /Model FORMget dup (NCEP) eq {
+      pop pop dup (ssst) eq {( checked)print}if (ssst) /Ocean FORM!}{
+      dup (NSIPP-1) eq {
+        pop pop dup (ssst) eq {( checked)print}if (ssst) /Ocean FORM!}{
+        dup (COLA) eq {
+          pop pop dup (ssst) eq {( checked)print}if (ssst) /Ocean FORM!}{
+          pop 1 index eq {( checked)print}if
+        }ifelse
+      }ifelse
+    }ifelse}{
+    dup (ssst) eq {( checked)print}if (ssst) /Ocean FORM!
+  }ifelse
+  dup (psst) eq {
+    /Model FORMget dup (NCEP) eq {
+      ( disabled="disabled")print (ssst) /Ocean FORM!}{
+      dup (NSIPP-1) eq {
+        ( disabled="disabled")print (ssst) /Ocean FORM!}{
+        dup (COLA) eq {( disabled="disabled")print (ssst) /Ocean FORM!}if
+      }ifelse
+    }ifelse
+    pop
+  }if
+  ( ><font point-size=9pt>)print print (</font>\n) print
+}forall
+(</select>)print
+</INGRID>
+
+</td>
+<td align=left bgcolor=#000066>
+<b><font point-size=9pt color=#FFFFFF>Target Season:</font></b>
+
+<INGRID>
+% leadTime varies according to start time
+/leadTime
+/Start FORMget dup (January) eq {pop [(JFM) (FMA) (MAM) (AMJ) (MJJ)] def}if
+ dup (February) eq {pop [(FMA) (MAM) (AMJ) (MJJ) (JJA)] def}if
+ dup (March) eq {pop [(MAM) (AMJ) (MJJ) (JJA) (JAS)] def}if
+ dup (April) eq {pop [(AMJ) (MJJ) (JJA) (JAS) (ASO)] def}if
+ dup (May) eq {pop [(MJJ) (JJA) (JAS) (ASO) (SON)] def}if
+ dup (June) eq {pop [(JJA) (JAS) (ASO) (SON) (OND)] def}if
+ dup (July) eq {pop [(JAS) (ASO) (SON) (OND) (NDJ)] def}if
+ dup (August) eq {pop [(ASO) (SON) (OND) (NDJ) (DJF)] def}if
+ dup (September) eq {pop [(SON) (OND) (NDJ) (DJF) (JFM)] def}if
+ dup (October) eq {pop [(OND) (NDJ) (DJF) (JFM) (FMA)] def}if
+ dup (November) eq {pop [(NDJ) (DJF) (JFM) (FMA) (MAM)] def}if
+ dup (December) eq {pop [(DJF) (JFM) (FMA) (MAM) (AMJ)] def}if
+
+% Models forced by psst have only 4 months lead time, therefore only the 2 first 3-month averages can be computed
+/Lead FORMgetknown {
+  false /Ocean FORMget (psst) eq {
+    leadTime 0 2 getinterval}{
+    leadTime
+  }ifelse{
+    2 index eq {not}if
+  }forall
+}if
+/Ocean FORMget (psst) eq {
+  leadTime 0 2 getinterval}{
+  leadTime
+}ifelse
+% Then here is the loop on selected elements of leadTime,
+% checking the same element if /Lead known AND if that element is still in the list, otherwise checking the first element
+{
+  (<input type=radio name=Lead onChange="changedtext(this)" value=) print
+  dup print /Lead FORMgetknown {
+    3 -1 roll not {
+      ( checked) print pop dup /Lead FORM! true}{
+      1 index eq {( checked)print}if true}
+    ifelse}{
+    ( checked) print dup /Lead FORM! true
+  }ifelse
+  ( color=#FFFFFF><font point-size=9pt color=#FFFFFF>)print exch print (</font>\n) print
+}forall
+(</select>)print
+</INGRID>
+
+</td></tr>
+
+<tr>
+<td></td>
+<td align=left bgcolor=#FFFFCC>
+<b><font point-size=9pt>Skill Mask:</font></b>
+<INGRID>
+(<select name="Skill" id="Skill" onChange="changedtext(this)">) print
+[(none)] {
+% (-0.9) (-0.8) (-0.7) (-0.6) (-0.5) (-0.4) (-0.3) (-0.2) (-0.1) (0) (0.1) (0.2) (0.3) (0.4) (0.5) (0.6) (0.7) (0.8) (0.9) (1)] {
+  (<option value=) print
+  dup print /Skill FORMgetknown {
+    1 index eq {( selected="selected") print} if}{
+    dup (none) eq {( selected="selected") print} if (none) /Skill FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+</td></tr>
+
+</table>
+</td></tr>
+<tr><td align=center valign=top>
+
+<INGRID>
+
+%Another stupid variable I can't imagine how not to have to use it
+/Lead2
+/Lead FORMget dup (JFM) eq {pop (Jan-Mar) def}if
+              dup (FMA) eq {pop (Feb-Apr) def}if
+              dup (MAM) eq {pop (Mar-May) def}if
+              dup (AMJ) eq {pop (Apr-Jun) def}if
+              dup (MJJ) eq {pop (May-Jul) def}if
+              dup (JJA) eq {pop (Jun-Aug) def}if
+              dup (JAS) eq {pop (Jul-Sep) def}if
+              dup (ASO) eq {pop (Aug-Oct) def}if
+              dup (SON) eq {pop (Sep-Nov) def}if
+              dup (OND) eq {pop (Oct-Dec) def}if
+              dup (NDJ) eq {pop (Nov-Jan) def}if
+              dup (DJF) eq {pop (Dec-Feb) def}if
+
+/linkTag
+% COLA and GFDL don't have standard directory tree
+/Model FORMget dup (COLA) eq {
+  ( .T63 )}{
+  dup (GFDL) eq {
+    ( .AM2p12b )}{
+    ()
+  }ifelse
+}ifelse
+exch pop
+def
+
+/ensembleTag
+% ECHAM4p5 doesn't have standard directory tree
+/Model FORMget (ECHAM4p5) eq {
+  /Ocean FORMget (psst) eq {
+    ( .ensemble24 ) def}{
+    ( .ensemble ) def}
+  ifelse}{
+  ( .ensemble ) def
+}ifelse
+
+/leadIndex null 2 object def
+% This is some sort of while loop to increment and get the right L RANGEEDGES according to selected leadTime
+0.5
+leadTime {
+  /Lead FORMget eq {
+    dup 2 add leadIndex exch 1 exch s== put dup leadIndex exch 0 exch s== put}{
+    1 add
+  }ifelse
+}forall
+
+/domaininit
+% If the FORM is not yet ready, I need to force the correct global map setting
+/map FORMgetknown {
+  pop ( )}{
+  ( X -20 (180) -20 RANGE
+  Y -60 80 RANGE)
+}ifelse
+def
+
+/prcpUnitTag
+% Precipitation can be shown as mm/day or total mm in season. I need 2 different piece of code to compute those 2.
+/PrcpUnits FORMgetknown {
+  dup (mm/day) eq {( [L] average )}if
+  dup (mm) eq {
+    ( L (days since 1960-01-01) streamgridunitconvert
+    L differential_mul
+    /pointwidth 1. def
+    [L]sum )
+  }if
+  exch pop def}{
+  (mm/day) /PrcpUnits FORM!
+  ( [L] average ) def
+}ifelse
+
+/varTags null 4 object
+% Here I store different tags to set the variable, its units, its colorbar, its range, according to different choices
+/Variable FORMget (Temperature) eq {
+  /varName ( .t2m ) def
+  /varUnit ( (Celsius_scale) unitconvert ) def
+  /varColor /Field FORMget (Total) eq {( temp_colors ) def}if
+            /Field FORMget (Anomaly) eq {( temp_anomaly_colors_gcm ) def}if
+  /varRange /Field FORMget (Total) eq {( ) def}if
+            /Field FORMget (Anomaly) eq {( ) def}if
+}if
+/Variable FORMget (Precipitation) eq {
+  /varName ( .prcp ) def
+  /varUnit ( (mm/day) unitconvert ) def
+  /varColor /Field FORMget (Total) eq {( precip_colors ) def}if
+            /Field FORMget (Anomaly) eq {( prcp_anomaly_25max500_colors2_nan ) def}if
+            /Field FORMget (PercentOfMedian) eq {( prcp_anomaly_25max500_colors2_percentmedian ) def}if
+  /varRange /Field FORMget (Total) eq {
+              /PrcpUnits FORMget (mm/day) eq {( ) def}if
+              /PrcpUnits FORMget (mm) eq {( DATA 0 2000 RANGE ) def}if
+            }if
+            /Field FORMget (Anomaly) eq {
+              /PrcpUnits FORMget (mm/day) eq {( DATA -10 10 RANGE ) def}if
+              /PrcpUnits FORMget (mm) eq {( ) def}if
+            }if
+            /Field FORMget (PercentOfMedian) eq {( DATA 0 400 RANGE ) def}if
+}if
+def
+
+/skillMask
+/Skill FORMget (none) eq {
+  ( 1. ) def
+}{
+  [(IRIONLY
+  SOURCES .IRI .FD .) /Model FORMget ( .History 
+  a: .ensemble_mean .monthly ) varTags /varName get
+    ( T ) lpar Lead2 ( 1971-2000) rpar ( VALUES
+    [T] 3 boxAverage
+  :a:
+    .climatology .c7100 ) varTags /varName get
+    ( T ) lpar Lead2 rpar ( VALUES
+    [T]average
+  :a
+  sub
+  SOURCES .UEA .CRU .TS2p1
+  a:
+    .monthly )
+    /Variable FORMget (Precipitation) eq {
+      varTags /varName get
+    }{
+      ( .mean .temp )
+    }ifelse
+    ( T ) lpar Lead2 ( 1971-2000) rpar ( VALUES
+    [T] 3 boxAverage
+  :a:
+    .climatology .c7100 )
+    /Variable FORMget (Precipitation) eq {
+      varTags /varName get
+    }{
+     ( .mean .temp )
+    }ifelse
+    ( T ) lpar Lead2 rpar ( VALUES
+    [T]average
+  :a
+  sub
+  1 index gridtomatch
+  [T]correlate )
+  /Skill FORMget ( flagge 0 maskle )] concat def
+}ifelse
+ 
+ 
+
+/fieldTag
+% Here I put everything together whether it is Total, Anomaly or Percent Median field
+% I need to add T in the stack because I am so uncomfortable with plotlabel
+/Field FORMget (Total) eq {
+  [( .Forecast )  /Ocean FORMget ensembleTag ( .monthly ) 
+  domaininit
+  ( S ) lpar (0000 1 ) /Start FORMget ( ) /year FORMget rpar ( VALUE
+  L ) lpar leadIndex 0 get rpar ( ) lpar leadIndex 1 get rpar ( RANGEEDGES
+  a: ) varTags /varName get
+  ( [M]average ) varTags /varUnit get ( ) prcpUnitTag
+  skillMask ( mul )
+  ( ) varTags /varColor get ( ) varTags /varRange get
+  ( dup :a: .T :a )] concat def
+}if
+/Field FORMget (Anomaly) eq {
+  [( a: .History .climatology .c7100 ) varTags /varName get
+  domaininit
+  ( T ) lpar /Start FORMget rpar ( 0 3 getinterval interp 0.5 sub dup ) leadIndex 0 get s== ( add exch ) leadIndex 1 get s== ( add RANGEEDGES
+  [T]average ) varTags /varUnit get
+  ( :a: .Forecast )  /Ocean FORMget ensembleTag ( .monthly )
+  domaininit
+  ( S ) lpar (0000 1 ) /Start FORMget ( ) /year FORMget rpar ( VALUE
+  L ) lpar leadIndex 0 get s== rpar ( ) lpar leadIndex 1 get s== rpar ( RANGEEDGES
+  a: ) varTags /varName get
+  ( [M]average ) varTags /varUnit get ( 5 -1 roll ) varTags /varUnit get ( sub )
+  prcpUnitTag
+  skillMask ( mul )
+  ( ) varTags /varColor get ( ) varTags /varRange get
+  ( dup :a: .T :a :a )] concat def
+}if
+/Field FORMget (PercentOfMedian) eq { 
+  [( a: .History .ensemble_mean .monthly .prcp )
+  domaininit
+  ( T ) lpar Lead2 ( 1971-2000) rpar ( VALUES
+  [T] 3 boxAverage
+  [T]medianover ) varTags /varUnit get
+  ( :a: .Forecast )  /Ocean FORMget ensembleTag ( .monthly )
+  domaininit
+  ( S ) lpar (0000 1 ) /Start FORMget ( ) /year FORMget rpar ( VALUE
+  L ) lpar leadIndex 0 get s== rpar ( ) lpar leadIndex 1 get s== rpar ( RANGEEDGES
+  [L]average
+  a: ) varTags /varName get
+  ( [M]average ) varTags /varUnit get ( 5 -1 roll ) varTags /varUnit get ( div )
+  lpar (%) rpar ( unitconvert )
+  skillMask ( mul )
+  varTags /varColor get ( ) varTags /varRange get
+  ( dup DATA 10 25 50 75 90 100 120 150 200 250 300 400 VALUES :a: .T :a :a )] concat def
+}if
+
+/mapsel
+% I suppose I don't reaaly need that step. Let's say it is for readability
+[(IRIONLY
+ SOURCES .IRI .FD .) /Model FORMget linkTag fieldTag] concat def
+
+</INGRID>
+
+<INGRID>
+%Plot map
+WWWinfo
+[mapsel ( X Y fig- colors thinnish grey coasts lakes black nozero contours plotlabel -fig
+(plotaxislength) 600 psdef
+(antialias) true psdef
+(framelabel) ) lpar /Lead FORMget ( ) /year FORMget ( ) /Model FORMget ( Ensemble Mean Forecast issued in ) /Start FORMget ( ) /year FORMget rpar ( psdef)
+] concat interp
+/map
+[mapsel ( X Y fig- colors thinnish grey coasts lakes black nozero contours plotlabel -fig
+(plotaxislength) 600 psdef
+(antialias) true psdef
+(framelabel) ) lpar /Lead FORMget ( ) /year FORMget ( ) /Model FORMget ( Ensemble Mean Forecast issued in ) /Start FORMget ( ) /year FORMget rpar (  psdef)
+] concat
+inputimagelinkwithlimitcontrolsclickforinfo
+</INGRID>
+
+<br>
+
+<INGRID>
+%Plot colorbar
+WWWinfo
+[mapsel ( X Y fig- colors thinnish grey coasts lakes black nozero contours plotlabel -fig) ( .auxfig)] concat interp
+/fntsze 12 psdef
+/map
+[mapsel ( X Y fig- colors thinnish grey coasts lakes black nozero contours plotlabel -fig) ( .auxfig)] concat
+imagelink
+</INGRID>
+
+</td></tr>
+<tr><td align=center valign=top>
+
+<INGRID>
+%Defining a button to switch precip units
+varTags /Variable FORMget (Precipitation) eq {/Field FORMget (PercentOfMedian) ne}{false}ifelse {
+  [(mm/day) (mm)] {
+    (<input type=radio name=PrcpUnits onChange="document.mapform.submit();" value=) print
+    dup print /PrcpUnits FORMgetknown {
+      1 index eq {( checked)print}if}{
+      dup (mm/day) eq {( checked)print}if (mm/day) /PrcpUnits FORM!
+    }ifelse
+    (>)print print (\n) print
+  }forall
+  (</select>)print
+}if
+</INGRID>
+
+</table>
+
+<table align=center>
+<tr><td>
+<INGRID>
+[/Model FORMget ( ) /Lead FORMget ( mean forecast of ) /Variable FORMget ( ) /Field FORMget (, forced by ) /Ocean FORMget ( SST conditions, issued on ) /Start FORMget ( ) /year FORMget (.)
+/Skill FORMget (none) ne {
+  ( The locations where the correlation between 30 years (1971-2000) of the model outputs anomalies and UEA CRU database of monthly anomalies are not at least ) /Skill FORMget ( are masked.)
+}if
+] concat print
+</INGRID>
+</td></tr>
+</table>
+
+<p>
+
+<table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE align=center>
+<tr><td align=center bgcolor=#DCDCDC><b>Map Description</b></td></tr>
+<tr><td align=justify><font size=-1>
+The map displays mean seasonal forecast according to user's settings. The forecasts of different models can be viewed, with different SST forcing. They actually are a mean of an ensemble of forecasts by the given model. The user is able to choose the variable which can be temperature at 2m or precipitation. Different analysis of those variables are available: the total field or an anomaly relative to 1971-2000 seasonal ensemble model mean. For precipitation, the relative percentage of the 1971-2000 seasonal ensemble model median is also available. The default forecasts available are the latest ones, but the user can navigate through different issue times and their associate lead times. Eventually, the user can apply a skill mask which will allow the display of the forecast where the model is skillfull enough only. The user chooses the minimum correlation between 30 years (from 1971 to 2000) of the mean seasonal ensemble model anomalies and University of East Anglia Climate Research Unit database of monthly anomalies. The locations where this minimum correlation is not reached are masked.</font></td></tr>
+
+<tr><td colspan=6 align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
+
+<tr>
+<td>
+<b>Model Outputs</b>
+<br><font size=-1><b>Data Source</b>:&nbsp; 
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/">Forecast Division from IRI</a>)</font>
+<br><font size=-1><b>Base Period</b>: Jan 1971 to Dec 2000</font>
+<p>
+<b>Observations</b>
+<br><font size=-1><b>Data Source</b>:&nbsp; 
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p1/">UEA CRU TS2p1: Mean surface climate data over global land areas</a>)</font>
+<br><font size=-1><b>Base Period</b>: Jan 1971 to Dec 2000</font>
+<p>
+<b>Skill Mask</b><br>
+<font size=-1><b>Data</b>:&nbsp;
+Mask illustrating areas where the skill of the model is not sufficient. The skill is defined as the correlation of the model outputs with the UEA observations database over 30 years, from 1971 to 2000. The correlations are computed over the ensemble mean of the model anomalies relative to the same time line and are seasonal wise.</font>
+</td>
+</tr>
+</table>
+
+
+</FORM>
+</body></html>
+
