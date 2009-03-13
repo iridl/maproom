@@ -37,6 +37,7 @@ leftmenuHeader
 </INGRID>
 
 <FORM name=mapform action=index.html>
+<center>
 <table width=100% align="center">
 <tr>
 <td><h3 align=center><u>GCM Maproom</u></h3></td>
@@ -89,7 +90,7 @@ months {
   (<option value=) print
   dup print /Start FORMgetknown {
     1 index eq {( selected="selected") print} if}{
-    months IRIONLY SOURCES .IRI .FD .NCEP .Forecast .ssst .ensemble .monthly .S .last rm19602ymd pop exch pop 1 sub get dup 2 index eq {( selected="selected")print}if /Start FORM!
+    months SOURCES .IRI .FD .NCEP .Forecast .ssst .ensemble .monthly .S .last rm19602ymd pop exch pop 1 sub get dup 2 index eq {( selected="selected")print}if /Start FORM!
   }ifelse
   (>) print print (</option>) print
 }forall
@@ -103,7 +104,7 @@ months {
 /year FORMgetknown {
   /year FORMget print
 }{
-  IRIONLY SOURCES .IRI .FD .NCEP .Forecast .ssst .ensemble .monthly .S .last rm19602ymd pop pop s== dup print /year FORM!}ifelse
+  SOURCES .IRI .FD .NCEP .Forecast .ssst .ensemble .monthly .S .last rm19602ymd pop pop s== dup print /year FORM!}ifelse
 ( size=4 maxlength=4/>) print
 pop
 </INGRID>
@@ -119,7 +120,16 @@ pop
 /Variable FORMgetknown {(Precipitation) eq}{false}ifelse {[(Total) (Anomaly) (PercentOfMedian)]}{[(Total) (Anomaly)]}ifelse {
   (<option value=) print
   dup print /Field FORMgetknown {
-    1 index eq {( selected=selected) print} if}{
+    dup (PercentOfMedian) eq {
+      /Variable FORMget (Temperature) eq {
+        pop dup (Total) eq {( selected=selected) print}if (Total) /Field FORM!
+      }{
+        1 index eq {( selected=selected) print} if
+      }ifelse
+    }{
+      1 index eq {( selected=selected) print} if
+    }ifelse
+  }{
     dup (Total) eq {( selected=selected) print} if (Total) /Field FORM!
   }ifelse
   (>) print print (</option>) print
@@ -132,28 +142,53 @@ pop
 <b><font point-size=9pt>Forcing:</font></b>
 
 <INGRID>
-%Some models don't have psst forcing, in which case ssst is checked and psst disabled
-[(ssst) (psst)] {
+%The forcings are asst before Jun 2004
+/theforcing
+/year FORMget interp 2004 le {
+  /year FORMget interp 2004 eq {
+    /Start FORMget 0 3 getinterval interp 4.5 le {
+      [(asst) (psst)]
+    }{
+      [(ssst) (psst)]
+    }ifelse
+  }{
+    [(asst) (psst)]
+  }ifelse
+}{
+  [(ssst) (psst)]
+}ifelse
+def
+theforcing
+%Some models don't have psst forcing, in which case ssst/asst is checked and psst disabled
+ {
   (<input type=radio name=Ocean onChange="document.mapform.submit();" value=) print
   dup print /Ocean FORMgetknown {
     /Model FORMget dup (NCEP) eq {
-      pop pop dup (ssst) eq {( checked)print}if (ssst) /Ocean FORM!}{
+      pop pop dup theforcing 0 get eq {( checked)print}if theforcing 0 get /Ocean FORM!
+    }{
       dup (NSIPP-1) eq {
-        pop pop dup (ssst) eq {( checked)print}if (ssst) /Ocean FORM!}{
+        pop pop dup theforcing 0 get eq {( checked)print}if theforcing 0 get /Ocean FORM!
+      }{
         dup (COLA) eq {
-          pop pop dup (ssst) eq {( checked)print}if (ssst) /Ocean FORM!}{
-          pop 1 index eq {( checked)print}if
+          pop pop dup theforcing 0 get eq {( checked)print}if theforcing 0 get /Ocean FORM!
+        }{
+          pop dup 2 index eq {
+            pop ( checked)print
+          }{
+            (psst) eq not {dup (psst) eq not {( checked)print theforcing 0 get /Ocean FORM!}if}if
+          }ifelse
         }ifelse
       }ifelse
-    }ifelse}{
-    dup (ssst) eq {( checked)print}if (ssst) /Ocean FORM!
+    }ifelse
+  }{
+    dup theforcing 0 get eq {( checked)print}if theforcing 0 get /Ocean FORM!
   }ifelse
   dup (psst) eq {
     /Model FORMget dup (NCEP) eq {
-      ( disabled="disabled")print (ssst) /Ocean FORM!}{
+      ( disabled="disabled")print theforcing 0 get /Ocean FORM!}{
       dup (NSIPP-1) eq {
-        ( disabled="disabled")print (ssst) /Ocean FORM!}{
-        dup (COLA) eq {( disabled="disabled")print (ssst) /Ocean FORM!}if
+        ( disabled="disabled")print theforcing 0 get/Ocean FORM!}{
+        dup (COLA) eq {( disabled="disabled")print theforcing 0 get /Ocean FORM!}if
       }ifelse
     }ifelse
     pop
@@ -342,7 +377,7 @@ def
 /Skill FORMget (none) eq {
   ( 1. ) def
 }{
-  [(IRIONLY
+  [(
   SOURCES .IRI .FD .) /Model FORMget ( .History 
   a: .ensemble_mean .monthly ) varTags /varName get
     ( T ) lpar Lead2 ( 1971-2000) rpar ( VALUES
@@ -379,13 +414,40 @@ def
   /Skill FORMget ( flagge 0 maskle )] concat def
 }ifelse
  
- 
+[( SOURCES .IRI .FD .) /Model FORMget linkTag ( .Forecast ) 
+/Model FORMget dup (GFDL) eq {
+  pop ( .psst )
+}{
+  (CCM3v6) eq {
+    ( .psst )
+  }{
+    ( .asst )
+  }ifelse
+}ifelse
+ensembleTag ( .monthly .T 
+ S first VALUE
+ L 0.5 VALUE
+dup getrealization
+   0 get
+dup )
+/year FORMget ( ) /Start FORMget 0 3 getinterval interp 1 add s== ( 1 ymd2rm1960 gt)  
+] concat interp
 
+{
+
+(<font point-size=19pt>)print
+/Model FORMget print
+( first forecast was issued in </font><font point-size=19pt color=#FF0000>)print
+cvsunits print ( </font>)print pop
+
+}{
+
+pop pop
 /fieldTag
 % Here I put everything together whether it is Total, Anomaly or Percent Median field
 % I need to add T in the stack because I am so uncomfortable with plotlabel
 /Field FORMget (Total) eq {
-  [( .Forecast )  /Ocean FORMget ensembleTag ( .monthly ) 
+  [( .Forecast ) /Ocean FORMget ensembleTag ( .monthly ) 
   domaininit
   ( S ) lpar (0000 1 ) /Start FORMget ( ) /year FORMget rpar ( VALUE
   L ) lpar leadIndex 0 get rpar ( ) lpar leadIndex 1 get rpar ( RANGEEDGES
@@ -400,7 +462,7 @@ def
   domaininit
   ( T ) lpar /Start FORMget rpar ( 0 3 getinterval interp 0.5 sub dup ) leadIndex 0 get s== ( add exch ) leadIndex 1 get s== ( add RANGEEDGES
   [T]average ) varTags /varUnit get
-  ( :a: .Forecast )  /Ocean FORMget ensembleTag ( .monthly )
+  ( :a: .Forecast ) /Ocean FORMget ensembleTag ( .monthly )
   domaininit
   ( S ) lpar (0000 1 ) /Start FORMget ( ) /year FORMget rpar ( VALUE
   L ) lpar leadIndex 0 get s== rpar ( ) lpar leadIndex 1 get s== rpar ( RANGEEDGES
@@ -417,14 +479,14 @@ def
   ( T ) lpar Lead2 ( 1971-2000) rpar ( VALUES
   [T] 3 boxAverage
   [T]medianover ) varTags /varUnit get
-  ( :a: .Forecast )  /Ocean FORMget ensembleTag ( .monthly )
+  ( :a: .Forecast .) /Ocean FORMget ensembleTag ( .monthly )
   domaininit
   ( S ) lpar (0000 1 ) /Start FORMget ( ) /year FORMget rpar ( VALUE
   L ) lpar leadIndex 0 get s== rpar ( ) lpar leadIndex 1 get s== rpar ( RANGEEDGES
   [L]average
   a: ) varTags /varName get
-  ( [M]average ) varTags /varUnit get ( 5 -1 roll ) varTags /varUnit get ( div )
-  lpar (%) rpar ( unitconvert )
+  ( [M]average ) varTags /varUnit get ( 4 -1 roll ) varTags /varUnit get ( div )
+  lpar (%) rpar ( unitconvert Infinity maskge )
   skillMask ( mul )
   varTags /varColor get ( ) varTags /varRange get
   ( dup DATA 10 25 50 75 90 100 120 150 200 250 300 400 VALUES :a: .T :a :a )] concat def
@@ -432,12 +494,9 @@ def
 
 /mapsel
 % I suppose I don't reaaly need that step. Let's say it is for readability
-[(IRIONLY
+[(
  SOURCES .IRI .FD .) /Model FORMget linkTag fieldTag] concat def
 
-</INGRID>
-
-<INGRID>
 %Plot map
 WWWinfo
 [mapsel ( X Y fig- colors thinnish grey coasts lakes black nozero contours plotlabel -fig
@@ -451,12 +510,11 @@ WWWinfo
 (antialias) true psdef
 (framelabel) ) lpar /Lead FORMget ( ) /Model FORMget ( Ensemble Mean Forecast issued in ) /Start FORMget ( ) /year FORMget rpar (  psdef)
 ] concat
+%inputimagelink
 inputimagelinkwithlimitcontrolsclickforinfo
-</INGRID>
 
-<br>
+( <br> )print
 
-<INGRID>
 %Plot colorbar
 WWWinfo
 [mapsel ( X Y fig- colors thinnish grey coasts lakes black nozero contours plotlabel -fig) ( .auxfig)] concat interp
@@ -464,12 +522,10 @@ WWWinfo
 /map
 [mapsel ( X Y fig- colors thinnish grey coasts lakes black nozero contours plotlabel -fig) ( .auxfig)] concat
 imagelink
-</INGRID>
 
-</td></tr>
-<tr><td align=center valign=top>
+( </td></tr>
+<tr><td align=center valign=top> )print
 
-<INGRID>
 %Defining a button to switch precip units
 varTags /Variable FORMget (Precipitation) eq {/Field FORMget (PercentOfMedian) ne}{false}ifelse {
   [(mm/day) (mm)] {
@@ -482,24 +538,27 @@ varTags /Variable FORMget (Precipitation) eq {/Field FORMget (PercentOfMedian) n
   }forall
   (</select>)print
 }if
-</INGRID>
 
-</table>
+( </table>
 
 <table align=center>
-<tr><td>
-<INGRID>
-[/Model FORMget ( ) /Lead FORMget ( mean forecast of ) /Variable FORMget ( ) /Field FORMget (, forced by ) /Ocean FORMget ( SST conditions, issued on ) /Start FORMget ( ) /year FORMget (.)
+<tr><td> )print
+
+[/Model FORMget ( ) /Lead FORMget ( mean forecast of ) /Variable FORMget ( ) /Field FORMget (, forced by ) /Ocean FORMget ( SST conditions, issued in ) /Start FORMget ( ) /year FORMget (.)
 /Skill FORMget (none) ne {
   ( The locations where the correlation between 30 years (1971-2000) of the model outputs anomalies and UEA CRU database of monthly anomalies are not at least ) /Skill FORMget ( are masked.)
 }if
 ] concat print
+
+}ifelse
+
 </INGRID>
 </td></tr>
 </table>
 
 <p>
-
+<table>
+<table align=center>
 <table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE align=center>
 <tr><td align=center bgcolor=#DCDCDC><b>Map Description</b></td></tr>
 <tr><td align=justify><font size=-1>
@@ -515,8 +574,8 @@ The map displays mean seasonal forecast according to user's settings. The foreca
 <br><font size=-1><b>Base Period</b>: Jan 1971 to Dec 2000</font>
 <p>
 <b>Observations</b>
-<br><font size=-1><b>Data Source</b>:&nbsp; 
-(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p1/">UEA CRU TS2p1: Mean surface climate data over global land areas</a>)</font>
+<br><font size=-1><b>Data Source</b>:&nbsp;
+to be defined 
 <br><font size=-1><b>Base Period</b>: Jan 1971 to Dec 2000</font>
 <p>
 <b>Skill Mask</b><br>
@@ -526,6 +585,44 @@ Mask illustrating areas where the skill of the model is not sufficient. The skil
 </tr>
 </table>
 
+<table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
+<tr>
+<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
+<td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
+<tr>
+<INGRID>
+showmenu? {
+pop pop pop imagelinkstart  
+(<td align=center>)print
+(Figure as PDF) (.pdf) linktoimageformat
+(</td><td align=center>) print
+(Figure as JPEG) (.jpg) linktoimageformat
+(</td>) print
+} if
+
+(<td rowspan=2 align=center><a href=http://iridl.ldeo.columbia.edu/expert/)print
+[({) mapsel ( pop pop exch pop})] concat interp dataseturl print  
+</INGRID>?help+datafiles#GIS">Data for GIS</a><font color=green>(restricted)</font></td>
+</tr>
+
+<tr>
+<INGRID>
+showmenu? {
+[ mapsel ( X Y fig- colors thinnish grey coasts lakes black nozero contours plotlabel -fig) ( .auxfig)] concat interp
+imagelinkstart
+(<td align=center>)print
+(Colorscale as PDF) (.pdf) linktoimageformat
+(</td><td align=center>) print
+(Colorscale as JPEG) (.jpg) linktoimageformat
+(</td>) print
+pop
+} if
+</INGRID>
+</tr>
+</table>
+</table>
+</table>
+</center>
 
 </FORM>
 </body></html>
