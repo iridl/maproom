@@ -21,7 +21,6 @@ pop
 <script type="text/javascript">
 <!--
 
-
 //-->
 </script>
 
@@ -32,6 +31,7 @@ figdefs
 </head>
 <body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
 
+
 <INGRID>
 leftmenuHeader
 </INGRID>
@@ -40,13 +40,15 @@ leftmenuHeader
 <center>
 <table width=100% align="center">
 <tr>
-<td><h3 align=center><u>GCM Maproom</u></h3></td>
+<td><h3 align=center><u>Individual AGCM Predictions</u></h3></td>
 </tr>
 </table>
 
 <table align=center>
 <tr align=center><td>
 <table>
+<tr><td><table>
+
 <tr valign=top>
 <td align=left bgcolor=#000066>
 <b><font point-size=9pt color=#FFFFFF>Variable:</font></b>
@@ -64,6 +66,7 @@ leftmenuHeader
 </INGRID>
 
 </td>
+
 <td align=left bgcolor=#FFFFCC>
 <b><font point-size=9pt>Model:</font></b>
 <INGRID>
@@ -80,6 +83,8 @@ leftmenuHeader
 </INGRID>
 
 </td>
+
+
 <td align=left bgcolor=#000066>
 <b><font point-size=9pt color=#FFFFFF>Forecast issued:</font></b>
 <INGRID>
@@ -108,9 +113,13 @@ months {
 ( size=4 maxlength=4/>) print
 pop
 </INGRID>
-
 </td>
 </tr>
+</table>
+</td></tr>
+
+<td><tr><table>
+
 <tr valign=top>
 <td align=left bgcolor=#000066>
 <b><font point-size=9pt color=#FFFFFF>Field:</font></b>
@@ -136,8 +145,60 @@ pop
 }forall
 (</select>)print
 </INGRID>
-
 </td>
+
+<td align=left bgcolor=#000066>
+<b><font point-size=9pt color=#FFFFFF>Target Season:</font></b>
+
+<INGRID>
+% leadTime varies according to start time
+/leadTime
+/Start FORMget dup (January) eq {pop [(JFM) (FMA) (MAM) (AMJ) (MJJ)] def}if
+ dup (February) eq {pop [(FMA) (MAM) (AMJ) (MJJ) (JJA)] def}if
+ dup (March) eq {pop [(MAM) (AMJ) (MJJ) (JJA) (JAS)] def}if
+ dup (April) eq {pop [(AMJ) (MJJ) (JJA) (JAS) (ASO)] def}if
+ dup (May) eq {pop [(MJJ) (JJA) (JAS) (ASO) (SON)] def}if
+ dup (June) eq {pop [(JJA) (JAS) (ASO) (SON) (OND)] def}if
+ dup (July) eq {pop [(JAS) (ASO) (SON) (OND) (NDJ)] def}if
+ dup (August) eq {pop [(ASO) (SON) (OND) (NDJ) (DJF)] def}if
+ dup (September) eq {pop [(SON) (OND) (NDJ) (DJF) (JFM)] def}if
+ dup (October) eq {pop [(OND) (NDJ) (DJF) (JFM) (FMA)] def}if
+ dup (November) eq {pop [(NDJ) (DJF) (JFM) (FMA) (MAM)] def}if
+ dup (December) eq {pop [(DJF) (JFM) (FMA) (MAM) (AMJ)] def}if
+
+% Models forced by psst have only 4 months lead time, therefore only the 2 first 3-month averages can be computed
+/Lead FORMgetknown {
+  false /Ocean FORMget (psst) eq {
+    leadTime 0 2 getinterval}{
+    leadTime
+  }ifelse{
+    2 index eq {not}if
+  }forall
+}if
+/Ocean FORMget (psst) eq {
+  leadTime 0 2 getinterval}{
+  leadTime
+}ifelse
+% Then here is the loop on selected elements of leadTime,
+% checking the same element if /Lead known AND if that element is still in the list, otherwise checking the first element
+{
+  (<input type=radio name=Lead onChange="changedtext(this)" value=) print
+  dup print /Lead FORMgetknown {
+    3 -1 roll not {
+      ( checked) print pop dup /Lead FORM! true}{
+      1 index eq {( checked)print}if true}
+    ifelse}{
+    ( checked) print dup /Lead FORM! true
+  }ifelse
+  ( color=#FFFFFF><font point-size=9pt color=#FFFFFF>)print exch print (</font>\n) print
+}forall
+(</select>)print
+</INGRID>
+</td>
+
+</tr>
+<tr>
+
 <td align=left bgcolor=#FFFFCC>
 <b><font point-size=9pt>Forcing:</font></b>
 
@@ -197,61 +258,9 @@ theforcing
 }forall
 (</select>)print
 </INGRID>
-
 </td>
-<td align=left bgcolor=#000066>
-<b><font point-size=9pt color=#FFFFFF>Target Season:</font></b>
 
-<INGRID>
-% leadTime varies according to start time
-/leadTime
-/Start FORMget dup (January) eq {pop [(JFM) (FMA) (MAM) (AMJ) (MJJ)] def}if
- dup (February) eq {pop [(FMA) (MAM) (AMJ) (MJJ) (JJA)] def}if
- dup (March) eq {pop [(MAM) (AMJ) (MJJ) (JJA) (JAS)] def}if
- dup (April) eq {pop [(AMJ) (MJJ) (JJA) (JAS) (ASO)] def}if
- dup (May) eq {pop [(MJJ) (JJA) (JAS) (ASO) (SON)] def}if
- dup (June) eq {pop [(JJA) (JAS) (ASO) (SON) (OND)] def}if
- dup (July) eq {pop [(JAS) (ASO) (SON) (OND) (NDJ)] def}if
- dup (August) eq {pop [(ASO) (SON) (OND) (NDJ) (DJF)] def}if
- dup (September) eq {pop [(SON) (OND) (NDJ) (DJF) (JFM)] def}if
- dup (October) eq {pop [(OND) (NDJ) (DJF) (JFM) (FMA)] def}if
- dup (November) eq {pop [(NDJ) (DJF) (JFM) (FMA) (MAM)] def}if
- dup (December) eq {pop [(DJF) (JFM) (FMA) (MAM) (AMJ)] def}if
-
-% Models forced by psst have only 4 months lead time, therefore only the 2 first 3-month averages can be computed
-/Lead FORMgetknown {
-  false /Ocean FORMget (psst) eq {
-    leadTime 0 2 getinterval}{
-    leadTime
-  }ifelse{
-    2 index eq {not}if
-  }forall
-}if
-/Ocean FORMget (psst) eq {
-  leadTime 0 2 getinterval}{
-  leadTime
-}ifelse
-% Then here is the loop on selected elements of leadTime,
-% checking the same element if /Lead known AND if that element is still in the list, otherwise checking the first element
-{
-  (<input type=radio name=Lead onChange="changedtext(this)" value=) print
-  dup print /Lead FORMgetknown {
-    3 -1 roll not {
-      ( checked) print pop dup /Lead FORM! true}{
-      1 index eq {( checked)print}if true}
-    ifelse}{
-    ( checked) print dup /Lead FORM! true
-  }ifelse
-  ( color=#FFFFFF><font point-size=9pt color=#FFFFFF>)print exch print (</font>\n) print
-}forall
-(</select>)print
-</INGRID>
-
-</td></tr>
-
-<tr>
-<td></td>
-<td align=left bgcolor=#FFFFCC>
+<td align=right bgcolor=#FFFFCC>
 <b><font point-size=9pt>Skill Mask:</font></b>
 <INGRID>
 (<select name="Skill" id="Skill" onChange="changedtext(this)">) print
@@ -267,6 +276,8 @@ theforcing
 (</select>)print
 </INGRID>
 </td></tr>
+
+</table></td></tr>
 
 </table>
 </td></tr>
@@ -500,13 +511,13 @@ pop pop
 %Plot map
 WWWinfo
 [mapsel ( X Y fig- colors thinnish grey coasts lakes black nozero contours plotlabel -fig
-(plotaxislength) 600 psdef
+(plotaxislength) 590 psdef
 (antialias) true psdef
 (framelabel) ) lpar /Lead FORMget ( ) /Model FORMget ( Ensemble Mean Forecast issued in ) /Start FORMget ( ) /year FORMget rpar ( psdef)
 ] concat interp
 /map
 [mapsel ( X Y fig- colors thinnish grey coasts lakes black nozero contours plotlabel -fig
-(plotaxislength) 600 psdef
+(plotaxislength) 590 psdef
 (antialias) true psdef
 (framelabel) ) lpar /Lead FORMget ( ) /Model FORMget ( Ensemble Mean Forecast issued in ) /Start FORMget ( ) /year FORMget rpar (  psdef)
 ] concat
@@ -541,20 +552,17 @@ varTags /Variable FORMget (Precipitation) eq {/Field FORMget (PercentOfMedian) n
 
 ( </table>
 
-<table align=center>
-<tr><td> )print
+)print
 
-[/Model FORMget ( ) /Lead FORMget ( mean forecast of ) /Variable FORMget ( ) /Field FORMget (, forced by ) /Ocean FORMget ( SST conditions, issued in ) /Start FORMget ( ) /year FORMget (.)
-/Skill FORMget (none) ne {
-  ( The locations where the correlation between 30 years (1971-2000) of the model outputs anomalies and UEA CRU database of monthly anomalies are not at least ) /Skill FORMget ( are masked.)
-}if
-] concat print
+%[/Model FORMget ( ) /Lead FORMget ( mean forecast of ) /Variable FORMget ( ) /Field FORMget (,<p> forced by ) /Ocean FORMget ( SST conditions, issued in ) /Start FORMget ( ) /year FORMget (.)
+%/Skill FORMget (none) ne {
+%  ( The locations where the correlation between 30 years (1971-2000) of the model outputs anomalies and UEA CRU database of monthly anomalies are not at least ) /Skill FORMget ( are masked.)
+%}if
+%] concat print
 
 }ifelse
 
 </INGRID>
-</td></tr>
-</table>
 
 <p>
 <table>
@@ -570,7 +578,7 @@ The map displays mean seasonal forecast according to user's settings. The foreca
 <td>
 <b>Model Outputs</b>
 <br><font size=-1><b>Data Source</b>:&nbsp; 
-(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/">Forecast Division from IRI</a>)</font>
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/" target="_blank">Forecast Division from IRI</a>)</font>
 <br><font size=-1><b>Base Period</b>: Jan 1971 to Dec 2000</font>
 <p>
 <b>Observations</b>
