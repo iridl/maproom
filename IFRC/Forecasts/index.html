@@ -82,10 +82,12 @@ leftmenuHeader
 <table BORDER COLS=1 width=275>
 <tr>
 <td align=center width=100>
-<b><font point-size=12pt>Map Selection</font></b>
+<b><font point-size=12pt>What Would You Like to Know?</font></b>
 </td></tr><tr><td>
 <font point-size=10pt>
 
+<p>
+<b>Forecasts for the Next 6 Days</b><br><br>
 
 <INGRID>
 WWWinfo 
@@ -111,33 +113,36 @@ WWWinfo
 
 /imr { SOURCES .IRI .MD .IFRC .CIESIN .Poverty .imr X Y fig: colors black thin countries_gaz :fig } def
 
-/defaultlayer currentobject /tot6dayapcpanom get def
+/defaultlayer currentobject /tot6dayapcppctle get def
 
  def 
 
 /layernames null 11 object
- /tot6dayapcpanom (Six-Day Total Forecast Precipitation Anomaly (ESRL)) def
- /tot6dayapcp (Six-Day Total Forecast Precipitation (ESRL)) def
- /tot6dayapcppctle (Six-Day Total Forecast Precipitation Percentile (ESRL)) def
- /tot6dayapcppctmonthlyclim (Six-Day Total Forecast Precipitation as Percent of Mean Monthly Total (ESRL)) def
- /prcp_fcst (Seasonal Precipitation Forecast (IRI)) def
- /pic3mo_same (PiC:  Same Tendency in Seasonal Forecast and 3-Month Precipitation Observation (IRI)) def
- /pic3mo_reversed (PiC:  Reversed Tendency Between Seasonal Forecast and 3-Month Precipitation Observation (IRI)) def
- /CMAP_climo (Monthly Precipitation Climatology (CPC)) def
- /count (GPWv3 Year 2005 Projected U.N.-Adjusted Population Count (CIESIN/SEDAC)) def
- /imr (Global Distribution of Poverty, Infant Mortality Rate, Year 2000 (CIESIN/SEDAC)) def
+ /tot6dayapcp (How much rain is expected cumulatively?) def
+ /tot6dayapcpanom (Where is it expected to be wetter than average?) def
+ /tot6dayapcppctle (Where is unusually heavy rainfall expected?) def
+ /tot6dayapcppctmonthlyclim (How heavy is the rainfall expected to be?) def
+ /prcp_fcst (Are the next 3 months likely to be unusually wet or dry?) def
+ /pic3mo_same (Is it likely that unusually wet or dry conditions will continue?) def
+ /pic3mo_reversed (Is it likely that unusually wet or dry conditions will end?) def
+ /CMAP_climo (How much rain normally falls at this time of year?) def
+ /count (Are the areas at risk of heavy rainfall densely populated?) def
+ /imr (Are the areas at risk of heavy rainfall inhabited by vulnerable populations?) def
 def
 
   /descprintcondition {stopprint /mapsel FORMgetknown {cvn eq} {pop false} ifelse {startprint} if} def 
 
 
-[/tot6dayapcpanom /tot6dayapcp /tot6dayapcppctle /tot6dayapcppctmonthlyclim /prcp_fcst /pic3mo_same /pic3mo_reversed /CMAP_climo /count /imr ] 
+%[/tot6dayapcp /tot6dayapcpanom /tot6dayapcppctle /tot6dayapcppctmonthlyclim /prcp_fcst /pic3mo_same /pic3mo_reversed /CMAP_climo /count /imr ] 
+
+[/tot6dayapcp /tot6dayapcpanom /tot6dayapcppctle /tot6dayapcppctmonthlyclim ] 
 
 showmenu?
 {
 {
-(<input type=radio name=mapsel onChange="changedtext(this)" value=) print
-dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( checked)print} if } { dup /tot6dayapcpanom eq {( checked) print} if }ifelse
+%(<input type=radio name=mapsel onChange="changedtext(this)" value=) print
+(<input type=radio name=mapsel onChange="document.mapform.submit();" value=) print
+dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( checked)print} if } { dup /tot6dayapcppctle eq {( checked) print} if }ifelse
 %(><a href="instructions.html#)print 
 %dup cvntos print(">)print
 %layernames 1 index getknown {print}{dup cvntos print} ifelse (</a><br><br>\n) print
@@ -147,6 +152,58 @@ dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( checked)print} if } { 
 layernames 1 index getknown {print}{dup cvntos print} ifelse (<br><br>\n) print
 pop } forall
 } {} ifelse
+
+
+
+
+
+
+(<b>Forecasts for the Next 3 Months</b><br><br>\n) print
+[ /prcp_fcst /pic3mo_same /pic3mo_reversed ]
+
+showmenu?
+{
+{
+%(<input type=radio name=mapsel onChange="changedtext(this)" value=) print
+(<input type=radio name=mapsel onChange="document.mapform.submit();" value=) print
+dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( checked)print} if } { dup /tot6dayapcppctle eq {( checked) print} if }ifelse
+(>)print 
+layernames 1 index getknown {print}{dup cvntos print} ifelse (<br><br>\n) print
+pop } forall
+} {} ifelse
+
+(<b>Historical Conditions</b><br><br>\n) print
+[ /CMAP_climo ]
+
+showmenu?
+{
+{
+%(<input type=radio name=mapsel onChange="changedtext(this)" value=) print
+(<input type=radio name=mapsel onChange="document.mapform.submit();" value=) print
+dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( checked)print} if } { dup /tot6dayapcppctle eq {( checked) print} if }ifelse
+(>)print 
+layernames 1 index getknown {print}{dup cvntos print} ifelse (<br><br>\n) print
+pop } forall
+} {} ifelse
+
+(<b>Vulnerability Indicators</b><br><br>\n) print
+[ /count /imr ]
+
+showmenu?
+{
+{
+%(<input type=radio name=mapsel onChange="changedtext(this)" value=) print
+(<input type=radio name=mapsel onChange="document.mapform.submit();" value=) print
+dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( checked)print} if } { dup /tot6dayapcppctle eq {( checked) print} if }ifelse
+(>)print 
+layernames 1 index getknown {print}{dup cvntos print} ifelse (<br><br>\n) print
+pop } forall
+} {} ifelse
+
+
+
+
+
 
 %{
 %(<input type=radio name=mapsel value=tot6dayapcp ) print
@@ -242,42 +299,71 @@ imagelink
 <p class="indented">
 
 
-<INGRID> /tot6dayapcpanom stopprint /mapsel FORMgetknown {cvn eq} { pop true} ifelse {startprint} if </INGRID>
-  This map displays the difference (in millimeters) between the current six-day total forecast precipitation value and the long-term (1979-2004) mean six-day total precipitation value in the model climatology for the same time of year.  Although the precipitation anomaly expresses how much the currently forecast precipitation value differs from the long-term "normal" in terms of a precipitation amount, it does not clearly specify how unusual that difference is for that particular location or time of year.  For instance, while an anomaly of 30 mm may be significant in North Africa, it might not be significant in Indonesia.  The grid spacing of this forecast is 2.5&deg; latitude/longitude; it represents a forecast of large-scale precipitation.  DO NOT USE THIS TOOL TO FORECAST CYCLONE TRACKS OR THE INTENSITY OR LOCATION OF FINE-SCALE OR HIGHLY LOCALIZED PRECIPITATION.  The forecast data are courtesy of the NOAA ESRL Reforecast project.
+<INGRID> /tot6dayapcppctle stopprint /mapsel FORMgetknown {cvn eq} { pop true} ifelse {startprint} if </INGRID>
+<center><b>Where is unusually heavy rainfall expected?</b></center>
+<p align=left>This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be unusually heavy for this time of year.
+<p align=left>The blue areas are where the total 6-day rainfall for this time of year is expected to be unusually heavy.  The darkest blue shading indicates areas expected to be exceptionally wet for this place and time of year.
+<p align=left><i>This forecast shows rain over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i>  The map does not distinguish areas where rainfall is expected from areas where snow is expected.  Forecasts for the amount of snow are indicated in terms of the equivalent amount of rainfall, so the actual depth of snow would be considerably more than indicated.  The forecast data are courtesy of the NOAA ESRL Reforecast project.  (<a href="instructions.html#tot6dayapcppctle">more information</a>)
+
 
 <INGRID> /tot6dayapcp descprintcondition  </INGRID>
-  This map displays six-day total forecast large-scale precipitation (in millimeters) for the period displayed on the map, using the forecast issued at the indicated forecast time.  The grid spacing of this forecast is 2.5&deg; latitude/longitude; it represents a forecast of large-scale precipitation.  DO NOT USE THIS TOOL TO FORECAST CYCLONE TRACKS OR THE INTENSITY OR LOCATION OF FINE-SCALE OR HIGHLY LOCALIZED PRECIPITATION.  The forecast data are courtesy of the NOAA ESRL Reforecast project.
+<center><b>How much rain is expected cumulatively?</b></center>
+<p align=left>This map shows how much rain (or snow) is expected cumulatively over the next six days.
+<p align=left>The blue areas indicate the cumulative amount of rain forecast for the 6-day period.  The darker the blue, the more rain is expected.  The start date for the 6-day period is located above the map.  The map indicates onle the cumulative amount of rainfall expected over the next six days, but does not indicate whether this amount is normal for the place and time of year.
+<p align=left><i>This forecast shows rain over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i>  The map does not distinguish areas where rainfall is expected from areas where snow is expected.  Forecasts for the amount of snow are indicated in terms of the equivalent amount of rainfall, so the actual depth of snow would be considerably more than indicated.  The forecast data are courtesy of the NOAA ESRL Reforecast project. (<a href="instructions.html#tot6dayapcp">more information</a>)
 
-<INGRID> /tot6dayapcppctle descprintcondition </INGRID>
-  This map displays the percentile of six-day total forecast precipitation with respect to the six-day forecast precipitation values for the same time of the year in the 1979-2004 model climatology.  To emphasize the largest forecast precipitation values with respect to the model history, only percentile values above 0.9 are displayed.  Locations in the lightest blue are forecast to receive precipitation in the highest 5% to 10% of the model climatological distribution, while areas in the darkest blue are forecast to receive precipitation in the highest 1% of the distribution.  Percentile values provide a good sense of how the current forecast precipitation total ranks in comparison to previous forecast values for a given location and time of year.  The grid spacing of this forecast is 2.5&deg; latitude/longitude; it represents a forecast of large-scale precipitation.  DO NOT USE THIS TOOL TO FORECAST CYCLONE TRACKS OR THE INTENSITY OR LOCATION OF FINE-SCALE OR HIGHLY LOCALIZED PRECIPITATION.  The forecast data are courtesy of the NOAA ESRL Reforecast project. 
+<INGRID> /tot6dayapcpanom descprintcondition </INGRID>
+<center><b>Where is it expected to be wetter than average?</b></center> 
+<p align=left>This map shows if the cumulative rain expected over the next six days is more or less than average for a given place and time of year.
+<p align=left>The blue areas are where total 6-day rainfall is forecast to be wetter compared to this same place and time in previous years (1979-2004).  The brown areas are where the total 6-day rainfall is forecast to be dryer compared to this place and time in previous years.  However, the map does not indicate the degree to which this variation is unusual for this particular location or time of year.
+<p align=left><i>This forecast shows rain over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i>  The map does not distinguish areas where rainfall is expected from areas where snow is expected.  Forecasts for the amount of snow are indicated in terms of the equivalent amount of rainfall, so the actual depth of snow would be considerably more than indicated.  The forecast data are courtesy of the NOAA ESRL Reforecast project.  (<a href="instructions.html#tot6dayapcpanom">more information</a>)
+
 
 <INGRID> /tot6dayapcppctmonthlyclim descprintcondition </INGRID>
+<center><b>How heavy is the rainfall expected to be?</b></center>
+<p align=left>This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be unusually heavy for this time of the year.
+<p align=left>The map shows how much of the rainfall that normally falls over an entire month is expected to fall in only the next six days.  Areas that are expected to receive large proportions of a normal month's accumulated rainfall over the next 6 days are forecast to experience heavy rain.  The darker the blue, the heavier the expected 6-day rain.  The darkest blue indicates where the cumulative rainfall expected over the next 6 days is likely to be 2 to 3 times (200%-300%) the average monthly rainfall for that location and time of year (compared to 1979-2004).  Medium blue indicates where the total 6-day rain is expected to be 1 to 1-1/2 times (100%-150%) the average monthly rainfall for that location and time of year.  Normal or less than normal rain is shown in white.
+<p align=left><i>This forecast shows rain over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i>  The map does not distinguish areas where rainfall is expected from areas where snow is expected.  Forecasts for the amount of snow are indicated in terms of the equivalent amount of rainfall, so the actual depth of snow would be considerably more than indicated.  The forecast data are courtesy of the NOAA ESRL Reforecast project.  (<a href="instructions.html#tot6dayapcppctmonthlyclim">more information</a>)
 
-  This map shows the forecast six-day total precipitation value expressed as a percentage of the 1979-2004 mean monthly precipitation total from the model climatology.  This measure highlights locations of forecast extreme six-day total precipitation since it compares six-day totals against the precipitation amount that would normally be received over the course of a full month.  A value of 100% would indicate that the six-day precipitation total is forecast to be as large as the mean monthly total normally received at that time of year in the model climatology.  A value of 25% would indicate that the six-day precipitation total is forecast to be 1/4 of the mean monthly total normally received at that time of year in the model climatology.  The grid spacing of this forecast is 2.5&deg; latitude/longitude; it represents a forecast of large-scale precipitation.  DO NOT USE THIS TOOL TO FORECAST CYCLONE TRACKS OR THE INTENSITY OR LOCATION OF FINE-SCALE OR HIGHLY LOCALIZED PRECIPITATION.  The forecast data are courtesy of the NOAA ESRL Reforecast project.
 
 <INGRID> /prcp_fcst descprintcondition </INGRID>
-
-  This map shows the IRI probabilistic seasonal precipitation forecast for the next three-month season.  The forecast indicates the probability that the precipitation total for the upcoming season will be in the lowest one-third of the climatological distribution (lowest tercile), the middle one-third (middle tercile), or the highest one-third (upper tercile).  In order to show the probabilities using only one map, the probability of the category having the greatest probability (33.3% or greater) is shown by color shading; variations in the shading in the lower (brown) and upper (green) terciles indicate the strength of the probability.  Areas in grey indicate that the near-normal category is most likely.  Areas in white indicate the climatology forecast (33.3% for each tercile), in which case no tercile is dominant. 
+<center><b>Are the next 3 months likely to be unusually wet or dry?</b></center>
+<p align=left>The map shows where and how likely it is to be unusually wet or dry over the next three months.
+<p align=left>Green areas show where unusually wet conditions over the next three months are the most likely outcome.  Darker green indicates a higher likelihood of unusually wet conditions.  Brown areas show where unusually dry conditions over the next three months are the most likely outcome.  The darker brown indicates a higher likelihood of unusually dry conditions.  This map does NOT indicate how extreme the wet or dry conditions are expected to be.
+<p align=left><i>This forecast shows only the likelihood of 3-month accumulated rainfall (or snow) being unusually high or low, and does not indicate chances of individual heavy rainfall events.  The forecasts apply over large areas only, and should not be used to forecast local conditions, or as a flood forecast.</i> (<a href="instructions.html#prcp_fcst">more information</a>)
+ 
 
 <INGRID> /pic3mo_same descprintcondition </INGRID>
+<center><b>Is it likely that unusually wet or dry conditions will continue?</b></center>
+<p align=left>This map shows where and how likely recent wet or dry conditions will continue over the next 3 months.
+<p align=left>Green areas indicate where the last 3 months have been unusually wet and where the coming 3 months are likely to continue to be unusually wet.  Lighter green indicates a slightly enhanced chance and dark green indicates a greatly enhanced chance of unusually wet conditions continuing.  Yellow and orange areas indicate where the last 3 months have been unusually dry and where the coming 3 months are likely to continue to be unusually dry.  Yellow indicates where currently dry conditions have a slightly enhanced chance of continuing, and orange indicates where dry conditions have a greatly enhanced chance of continuing over the next 3 months.
+<p align=left><i>This forecast shows only the likelihood of 3-month accumulated rainfall (or snow) being unusually high or low, and does not indicate chances of individual heavy rainfall events.  The forecasts apply over large areas only, and should not be used to forecast local conditions, or as a flood forecast.</i>  (<a href="instructions.html#pic3mo_same">more information</a>)
 
-  Shaded areas on this map indicate locations where the IRI probabilistic seasonal precipitation forecast for the next three-month season shows an enhanced likelihood of above-normal (below-normal) precipitation AND where precipitation received in the three-month season before the forecast was issued was also above normal (below normal) -- in other words, where the seasonal forecast indicates an enhanced likelihood for previously observed precipitation conditions to continue.  The relative likelihoods of persistence are indicated for either wet or dry, depending upon whether the forecast probability is 40-50% (labeled "Enhanced"), or 55% and higher (labeled "Greatly Enhanced").  Therefore, areas in light yellow (light green) indicate locations where precipitation in the past season was below normal (above normal) and the forecast indicates an enhanced likelihood of continued below-normal (above-normal) precipitation in the next three-month season.  Areas in dark yellow (dark green) indicate areas with a greatly enhanced likelihood of continued below-normal (above-normal) precipitation.  
 
 <INGRID> /pic3mo_reversed descprintcondition </INGRID>
+<center><b>Is it likely that unusually wet or dry conditions will end?</b></center>
+<p align=left>This map shows where current wet or dry conditions will likely end over the next 3 months.
+<p align=left>Green areas indicate where it has been unusually dry over the last 3 months, and where unusually wet conditions are the most likely outcome over the coming 3 months.  Yellow shows the reverse, where it has been unusually wet, and where unusually dry conditions are the most likely outcome over the coming 3 months.
+<p align=left><i>This forecast shows only the likelihood of 3-month accumulated rainfall (or snow) being unusually high or low, and does not indicate chances of individual heavy rainfall events.  The forecasts apply over large areas only, and should not be used to forecast local conditions, or as a flood forecast.</i> (<a href="instructions.html#pic3mo_reversed">more information</a>)
 
-  Shaded areas on this map indicate locations where the IRI probabilistic seasonal precipitation forecast for the next three-month season shows an enhanced likelihood of above-normal (below-normal) precipitation AND where precipitation received in the three-month season before the forecast was issued was below normal (above normal) -- in other words, where the seasonal forecast indicates a tendency opposite to previously observed seasonal precipitation.  Areas in yellow indicate locations with observed above-normal precipitation in the previous three-month season, but with an enhanced likelihood of below-normal precipitation in the coming season.  Areas in green indicate locations with observed below-normal precipitation in the previous season, but with an enhanced likelihood of above-normal precipitation in the coming season.
 
 <INGRID> /CMAP_climo descprintcondition </INGRID>
-
-  1979-2004 mean monthly precipitation values are shown on this map to provide background on "normal" monthly precipitation totals during the course of the year.  The data are from the NOAA Climate Prediction Center's Merged Analysis of Precipitation data set, available at 2.5&deg; lat/lon resolution.  CMAP precipitation values provided here are derived from a combination of surface gauge data and infrared and microwave satellite estimates.
+<center><b>How much rain normally falls at this time of year?</b></center>
+<p align=left>This map shows how much rain normally falls this time of year.
+<p align=left>This map shows hom much rain usually falls during this month in past years (1979-2004).  The darker the green, the heavier the rain.  This map does not indicate how much rain is expected this year.
+<p align=left>The data are from the NOAA Climate Prediction Center's Merged Analysis of Precipitation (CMAP) data set. (<a href="instructions.html#CMAP_climo">more information</a>)
 
 <INGRID> /count descprintcondition </INGRID>
-
-  This map displays an estimate of the projected number of people living in each 2.5 arc-minute grid box on the map in the year 2005.  The data shown are from the CIESIN Gridded Population of the World, Version 3 (GPWv3) data set.  Values are derived from national statistical office estimates of population and adjusted according to U. N. national population estimates.
+<center><b>Are the areas at risk of heavy rainfall densely populated?</b></center>
+<p align=left>This map shows human population density.
+<p align=left>Although this map does not include any rainfall information, it may be useful for assessing if areas at risk of heavy rainfall are densely populated.
+<p align=left>The data are courtesy of the Center for International Earth Science Information Network (CIESIN), Socio-Economic Data Center (SEDAC). (<a href="instructions.html#count">more information</a>)
 
 <INGRID> /imr descprintcondition </INGRID>
-
-  The CIESIN/SEDAC Global Distribution of Poverty data set includes infant mortality rate as one proxy for poverty.  This map displays the infant mortality rate (number of infant deaths per 10,000 live births) for every 0.25&deg; lat/lon grid box on the map, for the year 2000.
+<center><b>Are the areas at risk of heavy rainfall inhabited by vulnerable populations?</b></center>
+<p align=left>This map shows the infant mortality rate, an indicator of poverty.
+<p align=left>Although this map does not include any rainfall information, it may be useful for assessing if areas at risk of heavy rainfall are inhabited by vulnerable populations.
+<p align=left>The data are courtesy of the Center for International Earth Science Information Network (CIESIN), Socio-Economic Data Center (SEDAC). (<a href="instructions.html#imr">more information</a>)
 
 <INGRID> startprint </INGRID>
 
