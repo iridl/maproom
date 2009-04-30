@@ -1,7 +1,6 @@
 <html>
 <INGRID>
-
-WWWinfo .FORMinfo .map 
+WWWinfo .FORMinfo .map
 dup /F known not 
 {
 /L null 1 object 
@@ -34,7 +33,7 @@ def
 
 /T null 1 object
 /plotvalue
-SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .target_date 
+SOURCES .IRI .FD .Seasonal_Forecast .Precipitation .target_date
 F WWWinfo .FORMinfo .map .F .plotvalue VALUE
 L WWWinfo .FORMinfo .map .L .plotvalue VALUE
 CopyStream dup getrealization 0 get cvsunits nip def def
@@ -143,8 +142,9 @@ sub
 %T -12 -1 shiftdatashort
 /long_name (precip. anomaly) def
 T
-WWWinfo .FORMinfo .map .F .plotvalue readunits 
+WWWinfo .FORMinfo .map .F .plotvalue readunits
 array? {dup length 1 eq {0 get} if} if 
+array? {dup length 2 eq {1 get} if} if 
 dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
 %T /F renameGRID
@@ -230,6 +230,7 @@ T 12 splitstreamgrid
 T
 WWWinfo .FORMinfo .map .F .plotvalue readunits
 array? {dup length 1 eq {0 get} if} if 
+array? {dup length 2 eq {1 get} if} if 
 dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
 X WWWinfo .FORMinfo .map .X .plotvalue VALUE
@@ -248,6 +249,7 @@ DATA 0 AUTO RANGE
 T
 WWWinfo .FORMinfo .map .F .plotvalue readunits
 array? {dup length 1 eq {0 get} if} if 
+array? {dup length 2 eq {1 get} if} if 
 dup type /realarraytype eq {pop last 11 sub last}{dup 12 sub exch 1 sub}ifelse
 RANGE
 
