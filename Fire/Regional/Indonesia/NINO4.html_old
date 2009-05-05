@@ -1,0 +1,144 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.75 [en] (X11; U; Linux 2.2.16-3 i686) [Netscape]">
+   <title>Exploratory Predictive Tool for Fire Activity in the Kalimantan Region, Indonesia</title>
+<INGRID>mappageLinks</INGRID>
+</head>
+<body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000">
+<INGRID>leftmenu</INGRID>
+<center>
+<table align=center width=700>
+<tr><td>
+<center><h3>Exploratory Predictive Tool for Fire Activity in the Kalimantan Region, Indonesia</h3></center>
+
+This page presents experimental forecasts of the likelihood of high or low fire activity in the provinces of South, Central, West, and East Kalimantan in Indonesia.  This experimental research was conducted by IRI through a partnership with Bogor Agriculture University with support from CARE Indonesia.  IRI is currently working with the Indonesian Meteorological Service (BMG) to compare methodologies for forecasting relevant to fires.
+<p>
+By monitoring the NINO4 index of the Sea Surface Temperature (SST) from April to September, it is possible to estimate the fire activity one to two months in advance.  This analysis is based on data from 1998-2006 on fire hotspots (derived from NOAA-AVHRR) and on the <a href="http://iri.columbia.edu/climate/ENSO/background/monitoring.html#sst">NINO4 index</a>.  The four graphs that appear further down on this page show the results of this analysis for each of the four Kalimantan provinces in Indonesia.
+<p>
+The time series of the NINO4 index (shown in the graph below) is updated every month.  Based on its relationship to fire activity, users may view the NINO4 data and forecast 1-2 months ahead whether fire activity is likely to be above or below median levels.
+</td></tr></table>
+<p>
+
+<center><h4>Monthly NINO4 Index, November 1998 to Present</h4></center>
+<table>
+<tr>
+<td><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T/466./last/RANGEEDGES/T+exch+table-+text+text+skipanyNaN+-table+.html"><b>Access to Data</b></a></td>
+
+
+<td ALIGN=CENTER>
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/figviewer.html?my.help=more+options&map.NINO4.units=degree_Celsius&map.NINO4.plotlast=2&map.url=T+fig-+medium+line+-fig&map.domain=+%7B+/NINO4+-2+2+plotrange+T+466.+last+plotrange+%7D&map.domainparam=+/plotaxislength+432+psdef+/plotborder+72+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.NINO4.plotfirst=-2&map.T.plotfirst=0000+1+Nov+1998&map.T.units=months+since+1960-01-01&map.T.calendar=360&map.T.plotlast=last&map.newurl.grid0=T&map.newurl.plot=line&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=" OnMouseOver="self.status='Click here to explore the data';return true"><img src="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T+fig-+medium+line+-fig+//NINO4/-2/2/plotrange/T/466./last/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" title="Click for options and more information" width=504 height=288></a>
+</td>
+</tr>
+
+</table>
+
+<table BORDER COLS=1 WIDTH="90%" NOSAVE >
+<tr>
+<td>
+<font size=-1><b>Data:&nbsp; </b>Monthly NINO4 index based upon Reynolds and Smith OIv2 sea surface temperature anomalies 
+</font>
+<br><b><font size=-1>Data Period:&nbsp; </font></b><font size=-1>November 1998 - present</font>
+<br><b><font size=-1>Base Period for Climatology:&nbsp; </font></b><font size=-1>January 1971 - December 2000</font>
+<br><font size=-1><b>Data Source</b>:&nbsp; NCEP Environmental Modeling Center  </font> 
+<p><font size=-1><b>Description:&nbsp;&nbsp; </b>The time series above gives the value of the NINO4 sea surface temperature anomaly index in the central equatorial Pacific Ocean (<a href="http://iri.columbia.edu/climate/ENSO/background/monitoring.html#sst">description of NINO4 index</a>) based upon sea surface temperature anomalies in the Reynolds and Smith OIv2 data set (<a href="http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/">description</a>), with 1971-2000 as the climatological base period.
+&nbsp; NCEP is
+an acronym for the US&nbsp;National Centers for Environmental Prediction.</font></td>
+</tr>
+</table>
+
+<p>
+<hr width="80%">
+<p>
+
+<center><h4>Predicting Fire Activity 1 Month in Advance</h4></center>
+<table border=1>
+<tr>
+<td ALIGN=CENTER width=80%>
+<img src="http://iri.columbia.edu/~mbell/images/maproom/fire/indonesia/nino4_1month_prior.png" alt="Predicting Fire Activity 1 Month in Advance" BORDER=0>
+<br>
+
+<table border=1>
+<tr align=center><th><th>n (NINO4 Below Median)<th>N (NINO4 Above Median) </tr>
+<tr align=center><th>F (Fires Above Median)<td>7 (16%)</td><td>15 (33%)</td></tr>
+<tr align=center><th>f (Fires Below Median)<td>16 (35%)</td><td>7 (16%)</td></tr>
+</table>
+
+</td>
+<td>
+<h4><u>Predicting Fire Activity 1 Month in Advance:</u></h4>
+<br>
+These graphs show the relationship between the number of fires and the NINO4 index in the previous month for the four Kalimantan provinces.  The dashed lines mark the median values both for NINO4 and the number of fires.  To determine the risk of fire activity in the following month, use the value of the NINO4 index in May, June, July, August, or September, and find the estimated number of fires corresponding to that NINO4 level.  Past and current values for the NINO4 index can be found through the graph above.
+<p>
+The contingency table (numbers related to n, N, f, and F in the graphs) represents the number of points in each of the four quadrants delineated by the dashed lines.  The contingency table can be used to identify the probability of having above- or below-median fire values respective to the NINO4 index.
+</td>
+</tr>
+</table>
+
+
+<p>
+<center><h4>Predicting Fire Activity 2 Months in Advance</h4></center>
+<table border=1>
+<tr>
+<td ALIGN=CENTER width=80%>
+<img src="http://iri.columbia.edu/~mbell/images/maproom/fire/indonesia/nino4_2month_prior.png" alt="Predicting Fire Activity 2 Months in Advance" BORDER=0>
+
+<br>
+<table>
+<tr>
+<td>
+<table border=1>
+<tr align=center><th>Barat<th>n (NINO4 Below Median)<th>N (NINO4 Above Median) </tr>
+<tr align=center><th>F (Fires Above Median)<td>9 (20%)</td><td>13 (29%)</td></tr>
+<tr align=center><th>f (Fires Below Median)<td>14 (31%)</td><td>9 (20%)</td></tr>
+</table>
+</td>
+
+<td>
+<table border=1>
+<tr align=center><th>Tengah<th>n (NINO4 Below Median)<th>N (NINO4 Above Median) </tr>
+<tr align=center><th>F (Fires Above Median)<td>5 (11%)</td><td>17 (38%)</td></tr>
+<tr align=center><th>f (Fires Below Median)<td>18 (40%)</td><td>5 (11%)</td></tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<table border=1>
+<tr align=center><th>Selatan<th>n (NINO4 Below Median)<th>N (NINO4 Above Median) </tr>
+<tr align=center><th>F (Fires Above Median)<td>5 (11%)</td><td>16 (36%)</td></tr>
+<tr align=center><th>f (Fires Below Median)<td>18 (40%)</td><td>6 (13%)</td></tr>
+</table>
+</td>
+
+<td>
+<table border=1>
+<tr align=center><th>Timur<th>n (NINO4 Below Median)<th>N (NINO4 Above Median) </tr>
+<tr align=center><th>F (Fires Above Median)<td>4 (9%)</td><td>17 (38%)</td></tr>
+<tr align=center><th>f (Fires Below Median)<td>19 (42%)</td><td>5 (11%)</td></tr>
+</table>
+</td>
+</tr>
+</table>
+
+</td>
+
+<td>
+<h4><u>Predicting Fire Activity 2 Months in Advance:</u></h4>
+<br>
+These graphs show the relationship between the number of fires and the NINO4 index in the previous month for the four Kalimantan provinces.  The dashed lines mark the median values both for NINO4 and the number of fires.  To determine the risk of fire activity two months later, use the value of the NINO4 index in April, May, June, July, or August, and find the estimated number of fires corresponding to that NINO4 level.  Past and current values for the NINO4 index can be found through the graph at the top of the page.
+<p>
+The contingency table (numbers related to n, N, f, and F in the graphs) represents the number of points in each of the four quadrants delineated by the dashed lines.  The contingency table can be used to identify the probability of having above- or below-median fire values respective to the NINO4 index.
+</td>
+</tr>
+</table>
+
+</center>
+<p>
+
+<span class=lttxt><font size=+0>For any feedback or comments, please <a href="mailto:pceccato@iri.columbia.edu,mbell@iri.columbia.edu?subject=Indonesia Fire NINO4 Exploratory Predictive Tool">Contact Us</a></font></span>
+
+</body>
+</html>

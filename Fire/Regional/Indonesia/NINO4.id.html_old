@@ -1,0 +1,143 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//id">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.75 [en] (X11; U; Linux 2.2.16-3 i686) [Netscape]">
+   <title>Explorasi Tool Prakiraan untuk Aktivitas Kebakaran di Wilayah Kalimantan, Indonesia</title>
+<INGRID>mappageLinks</INGRID>
+</head>
+<body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000">
+<INGRID>leftmenu</INGRID>
+<center>
+<table align=center width=700>
+<tr><td>
+<center><h3>Explorasi Tool Prakiraan untuk Aktivitas Kebakaran di Wilayah Kalimantan, Indonesia</h3></center>
+
+Bagian ini menjelaskan prakiraan kemungkinan tinggi atau rendahnya aktivitas kebakaran hutan di Selatan, Tengah, Barat dan Timur  Propinsi Kalimantan Indonesia. Penelitian ini telah dilakukan oleh IRI bekerjasama dengan CCROM SEAP Institut Pertanian Bogor (IPB)  didukung oleh CARE Indonesia. Saat ini IRI dan Badan Meteorologi dan Geofisika (BMG) sedang membandingkan metode yang cocok untuk pendugaan kebakaran hutan.
+<p>
+Berdasarkan hasil monitoring indeks suhu muka laut (SST) di wilayah NINO4 dari bulan April sampai September, memungkinkan untuk melakukan pendugaan atau estimasi aktivitas kebakaran 1-2 bulan ke depan. Analisis ini berdasarkan data hotspot dari tahun 1998-2006 (Sumber dari NOAA-AVHRR) dan pada <a href="http://iri.columbia.edu/climate/ENSO/background/monitoring.html#sst">NINO4 index</a>.  Keempat grafik di bawah ini memperlihatkan hasil analisis untuk masing-masing provinsi di wilayah Kalimantan, Indonesia.
+<p>
+Indeks NINO4 dalam bentuk deret waktu (ditunjukkan oleh grafik) yang diperbaharui setiap bulan. Berdasarkan keterkaitan antara indeks NINO4 dengan aktivitas api (kebakaran), pengguna dapat memperoleh gambaran dan memprediksi aktivitas api 1-2 bulan kedepan, apakah akan mengalami peningkatan atau penurunan dari nilai rata-rata.
+</td></tr></table>
+<p>
+
+<center><h4>Indeks NINO4 Bulanan, November 1998 sampai sekarang</h4></center>
+<table>
+<tr>
+<td><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T/466./last/RANGEEDGES/T+exch+table-+text+text+skipanyNaN+-table+.html"><b>Mengakses Data</b></a></td>
+
+
+<td ALIGN=CENTER>
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/figviewer.html?my.help=more+options&map.NINO4.units=degree_Celsius&map.NINO4.plotlast=2&map.url=T+fig-+medium+line+-fig&map.domain=+%7B+/NINO4+-2+2+plotrange+T+466.+last+plotrange+%7D&map.domainparam=+/plotaxislength+432+psdef+/plotborder+72+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.NINO4.plotfirst=-2&map.T.plotfirst=0000+1+Nov+1998&map.T.units=months+since+1960-01-01&map.T.calendar=360&map.T.plotlast=last&map.newurl.grid0=T&map.newurl.plot=line&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=" OnMouseOver="self.status='Click here to explore the data';return true"><img src="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T+fig-+medium+line+-fig+//NINO4/-2/2/plotrange/T/466./last/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" title="Click for options and more information" width=504 height=288></a>
+</td>
+</tr>
+
+</table>
+
+<table BORDER COLS=1 WIDTH="90%" NOSAVE >
+<tr>
+<td>
+<font size=-1><b>Data:&nbsp; </b>Anomali indeks suhu permukaan laut bulanan NINO4 menurut Reynolds dan Smith OIv2 
+</font>
+<br><b><font size=-1>Periode Data:&nbsp; </font></b><font size=-1>November 1998 - sekarang</font>
+<br><b><font size=-1>Periode Data Iklim:&nbsp; </font></b><font size=-1>Januari 1971 - Desember 2000</font>
+<br><font size=-1><b>Sumber Data</b>:&nbsp; NCEP Environmental Modeling Center  </font> 
+<p><font size=-1><b>Deskripsi:&nbsp;&nbsp; </b>Data deret waktu di atas memberikan nilai indeks anomali suhu muka laut di NINO4 pada wilayah Samudera Pasifik tengah (<a href="http://iri.columbia.edu/climate/ENSO/background/monitoring.html#sst">deskripsi indeks NINO4</a>) berdasarkan anomali suhu permukaan laut  yang diambil dari set data Reynolds dan Smith OIv2 (<a href="http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/">deskripsi</a>), dengan basis periode waktu klimatologi tahun 1971-2000. 
+&nbsp; NCEP merupakan singkatan dari US National Centers for Environmental Prediction (Lembaga Amerika Serikat untuk Prediksi Lingkungan). </font></td>
+</tr>
+</table>
+
+<p>
+<hr width="80%">
+<p>
+
+<center><h4>Menduga Aktivitas Api 1 bulan lebih awal</h4></center>
+<table border=1>
+<tr>
+<td ALIGN=CENTER width=80%>
+<img src="http://iri.columbia.edu/~mbell/images/maproom/fire/indonesia/nino4_1month_prior_id.png" alt="Menduga Aktivitas Api 1 bulan lebih awal" BORDER=0>
+<br>
+
+<table border=1>
+<tr align=center><th><th>n (NINO4 Bawah Median)<th>N (NINO4 Atas Median) </tr>
+<tr align=center><th>F (Api Atas Median)<td>7 (16%)</td><td>15 (33%)</td></tr>
+<tr align=center><th>f (Api Bawah Median)<td>16 (35%)</td><td>7 (16%)</td></tr>
+</table>
+
+</td>
+<td>
+<h4><u>Pendugaan Aktivitas Api 1 bulan lebih awal:</u></h4>
+<br>
+Grafik-grafik ini menunjukan hubungan antara jumlah kebakaran (titik panas) dengan indeks NINO4 bulan lalu untuk empat provinsi di Kalimantan. Garis putus-putus menunjukan nilai rata-rata indeks NINO4 dan angka kebakaran. Resiko terjadinya kebakaran pada bulan mendatang dapat ditentukan dengan menggunakan nilai indeks NINO4 pada bulan Mei, Juni, Agustus dan akan diperoleh dugaan atau estimasi angka kebakaran (titik panas) yang terkait dengan nilai indeks tersebut. Nilai indeks NINO4 bulan lalu dan sekarang dapat diperoleh dari grafik di atas.
+<p>
+Tabel  Kontigensi (angka-angka yang terkait dengan n, N, f dan F pada tabel) menunjukkan jumlah titik untuk masing-masing kuadran yang dideliniasi oleh garis putus-putus.  Tabel Kontigensi dapat digunakan untuk mengidentifikasi peluang untuk mendapatkan jumlah titik api di atas atau di bawah nilai rata-rata sesuai dengan indkes NINO4.
+</td>
+</tr>
+</table>
+
+
+<p>
+<center><h4>Menduga aktivitas api dua bulan lebih awal</h4></center>
+<table border=1>
+<tr>
+<td ALIGN=CENTER width=80%>
+<img src="http://iri.columbia.edu/~mbell/images/maproom/fire/indonesia/nino4_2month_prior_id.png" alt="Menduga aktivitas api dua bulan lebih awal" BORDER=0>
+
+<br>
+<table>
+<tr>
+<td>
+<table border=1>
+<tr align=center><th>Barat<th>n (NINO4 Bawah Median)<th>N (NINO4 Atas Median) </tr>
+<tr align=center><th>F (Fires Atas Median)<td>9 (20%)</td><td>13 (29%)</td></tr>
+<tr align=center><th>f (Fires Bawah Median)<td>14 (31%)</td><td>9 (20%)</td></tr>
+</table>
+</td>
+
+<td>
+<table border=1>
+<tr align=center><th>Tengah<th>n (NINO4 Bawah Median)<th>N (NINO4 Atas Median) </tr>
+<tr align=center><th>F (Fires Atas Median)<td>5 (11%)</td><td>17 (38%)</td></tr>
+<tr align=center><th>f (Fires Bawah Median)<td>18 (40%)</td><td>5 (11%)</td></tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<table border=1>
+<tr align=center><th>Selatan<th>n (NINO4 Bawah Median)<th>N (NINO4 Atas Median) </tr>
+<tr align=center><th>F (Fires Atas Median)<td>5 (11%)</td><td>16 (36%)</td></tr>
+<tr align=center><th>f (Fires Bawah Median)<td>18 (40%)</td><td>6 (13%)</td></tr>
+</table>
+</td>
+
+<td>
+<table border=1>
+<tr align=center><th>Timur<th>n (NINO4 Bawah Median)<th>N (NINO4 Atas Median) </tr>
+<tr align=center><th>F (Fires Atas Median)<td>4 (9%)</td><td>17 (38%)</td></tr>
+<tr align=center><th>f (Fires Bawah Median)<td>19 (42%)</td><td>5 (11%)</td></tr>
+</table>
+</td>
+</tr>
+</table>
+
+</td>
+
+<td>
+<h4><u>Menduga aktivitas api dua bulan lebih awal:</u></h4>
+<br>
+Grafik-grafik ini menunjukan hubungan antara jumlah kebakaran (titik panas) dengan indeks NINO4 dua bulan sebelumnya untuk empat provinsi di Kalimantan.  Garis putus-putus menandai nilai median untuk NINO4 dan jumlah api (titik panas).  Untuk menentukan tingkat risiko api dua bulan yang akan datang, gunakan nilai indek NINO4 bulan April, Mei, Juni, Juli atau Agustus, dan dapatkan jumlah titik api dugaan sesuai dengan nilai NINO4 terkait.  Nilai-nilai indeks NINO4 yang lalu dan sekarang dapat ditemukan dari grafik di halaman atas.
+<p>
+Tabel kontigensi (angka-angka yang terkait dengan n, N, f, dan F pada garfik) menunjukkan banyaknya titik api di ke empat kuadran yang dideliniasi oleh garis putus-putus.
+Kontigensi dapat digunakan untuk mengidentifikasi peluang untuk mendapatkan jumlah titik api di atas atau di bawah nilai rata-rata sesuai dengan indeks NINO4 terkait.
+</td>
+</tr>
+</table>
+
+</center>
+<p>
+<span class=lttxt><font size=+0>Kalau ada komentar atau masukan, silahkan <a href="mailto:pceccato@iri.columbia.edu,mbell@iri.columbia.edu?subject=Indonesia Fire NINO4 Exploratory Predictive Tool">kontak kami</a></font></span>
+
+</body>
+</html>

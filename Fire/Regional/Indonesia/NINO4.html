@@ -8,6 +8,8 @@
 </head>
 <body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000">
 <INGRID>leftmenu</INGRID>
+<FORM name=mapform action=NINO4.html>
+<INGRID>saveLanguage</INGRID>
 <center>
 <table align=center width=700>
 <tr><td>
@@ -28,7 +30,7 @@ The time series of the NINO4 index (shown in the graph below) is updated every m
 
 
 <td ALIGN=CENTER>
-<a href="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/figviewer.html?my.help=more+options&map.NINO4.units=degree_Celsius&map.NINO4.plotlast=2&map.url=T+fig-+medium+line+-fig&map.domain=+%7B+/NINO4+-2+2+plotrange+T+466.+last+plotrange+%7D&map.domainparam=+/plotaxislength+432+psdef+/plotborder+72+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.NINO4.plotfirst=-2&map.T.plotfirst=0000+1+Nov+1998&map.T.units=months+since+1960-01-01&map.T.calendar=360&map.T.plotlast=last&map.newurl.grid0=T&map.newurl.plot=line&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=" OnMouseOver="self.status='Click here to explore the data';return true"><img src="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T+fig-+medium+line+-fig+//NINO4/-2/2/plotrange/T/466./last/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" title="Click for options and more information" width=504 height=288></a>
+<a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/correlationcolorscale/DATA/-2/2/RANGE/figviewer.html?my.help=more+options&map.NINO4.units=degree_Celsius&map.NINO4.plotlast=2&map.here.x=0&map.here.y=0&map.url=dup+T+fig-+colorbars2+-fig&map.domainparam=+%2Fplotaxislength+432+psdef+%2Fplotborder+72+psdef&map.zoom=Zoom&map.NINO4.plotfirst=-2&map.T.plotfirst=0000+1+Nov+1998&map.T.units=months+since+1960-01-01&map.T.calendar=360&map.T.plotlast=2400+30+Feb+2009&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=" OnMouseOver="self.status='Click here to explore the data';return true"><img src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/correlationcolorscale/DATA/-2/2/RANGE/dup+T+fig-+colorbars2+-fig+T/466./last/plotrange//plotaxislength+432+psdef//XOVY+null+psdef//plotborder+72+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" title="Click for options and more information" width=504 height=288></a>
 </td>
 </tr>
 
@@ -52,93 +54,254 @@ an acronym for the US&nbsp;National Centers for Environmental Prediction.</font>
 <hr width="80%">
 <p>
 
-<center><h4>Predicting Fire Activity 1 Month in Advance</h4></center>
-<table border=1>
-<tr>
-<td ALIGN=CENTER width=80%>
-<img src="http://iri.columbia.edu/~mbell/images/maproom/fire/indonesia/nino4_1month_prior.png" alt="Predicting Fire Activity 1 Month in Advance" BORDER=0>
-<br>
-
-<table border=1>
-<tr align=center><th><th>n (NINO4 Below Median)<th>N (NINO4 Above Median) </tr>
-<tr align=center><th>F (Fires Above Median)<td>7 (16%)</td><td>15 (33%)</td></tr>
-<tr align=center><th>f (Fires Below Median)<td>16 (35%)</td><td>7 (16%)</td></tr>
-</table>
-
+<center><h4>Predicting Fire Activity</h4></center>
+<table  width="580">
+<tr><td align=center>
+<table BORDER COLS=1  bordercolor=#808080>
+<tr><td align=center bgcolor=#FFFFCC>
+<b><font point-size=12pt>Province:</font></b>
+<INGRID>
+(<select name="province" id="province" onChange="document.mapform.submit();">) print
+[(Barat) (Selatan) (Tengah) (Timur)] {
+  (<option value=) print
+  dup print /province FORMgetknown { 
+    1 index eq {( selected="selected") print} if
+  }{ 
+    (Tengah) dup 2 index eq {( selected="selected")print}if /province FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
 </td>
 <td>
-<h4><u>Predicting Fire Activity 1 Month in Advance:</u></h4>
-<br>
-These graphs show the relationship between the number of fires and the NINO4 index in the previous month for the four Kalimantan provinces.  The dashed lines mark the median values both for NINO4 and the number of fires.  To determine the risk of fire activity in the following month, use the value of the NINO4 index in May, June, July, August, or September, and find the estimated number of fires corresponding to that NINO4 level.  Past and current values for the NINO4 index can be found through the graph above.
-<p>
-The contingency table (numbers related to n, N, f, and F in the graphs) represents the number of points in each of the four quadrants delineated by the dashed lines.  The contingency table can be used to identify the probability of having above- or below-median fire values respective to the NINO4 index.
+<INGRID>
+ SOURCES .WORLDBATH .bath
+  X 90. 155. RANGEEDGES
+  Y -12.5 9.5 RANGEEDGES
+  SOURCES .Features .Political .Indonesia .Provinces .the_geom
+   gid 
+   /province FORMget (Barat) eq {10}if
+   /province FORMget (Selatan) eq {11}if
+   /province FORMget (Tengah) eq {12}if
+   /province FORMget (Timur) eq {13}if
+   VALUE
+   X Y fig- lightgrey mask grey indonesia_prov black countries_gaz red fill -fig
+   /plotbordertop 8 psdef
+   /plotborderbottom 8 psdef
+   /plotaxislength 240 psdef
+   /plotborder 0 psdef
+   /plotborderright 8 psdef
+   /plotborderleft 8 psdef
+   /antialias true psdef
+figdup
+/map
+imagelink
+</INGRID>
+</td>
+</tr>
+<tr><td align=center bgcolor=#FFFFCC>
+<b><font point-size=12pt>Number of fires threshold:</font></b>
+<INGRID>
+(<select name="threshold1" id="threshold1" onChange="document.mapform.submit();">) print
+[(median) (mean)] {
+  (<option value=) print
+  dup print /threshold1 FORMgetknown { 
+    1 index eq {( selected="selected") print} if
+  }{ 
+    (median) dup 2 index eq {( selected="selected")print}if /threshold1 FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+</td>
+<td align=center bgcolor=#FFFFCC>
+<b><font point-size=12pt>NINO4 threshold:</font></b>
+<INGRID>
+(<select name="threshold2" id="threshold2" onChange="document.mapform.submit();">) print
+[(median) (mean)] {
+  (<option value=) print
+  dup print /threshold2 FORMgetknown { 
+    1 index eq {( selected="selected") print} if
+  }{ 
+    (median) dup 2 index eq {( selected="selected")print}if /threshold2 FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+</td>
+</tr>
+<tr><td align=center bgcolor=#FFFFCC>
+<b><font point-size=12pt>Month lag:</font></b>
+<INGRID>
+(<select name="lag" id="lag" onChange="document.mapform.submit();">) print
+[(1) (2)] {
+  (<option value=) print
+  dup print /lag FORMgetknown { 
+    1 index eq {( selected="selected") print} if
+  }{ 
+    (1) dup 2 index eq {( selected="selected")print}if /lag FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
 </td>
 </tr>
 </table>
-
-
-<p>
-<center><h4>Predicting Fire Activity 2 Months in Advance</h4></center>
-<table border=1>
-<tr>
-<td ALIGN=CENTER width=80%>
-<img src="http://iri.columbia.edu/~mbell/images/maproom/fire/indonesia/nino4_2month_prior.png" alt="Predicting Fire Activity 2 Months in Advance" BORDER=0>
-
-<br>
+</td></tr>
+<tr><td align=center>
 <table>
-<tr>
-<td>
-<table border=1>
-<tr align=center><th>Barat<th>n (NINO4 Below Median)<th>N (NINO4 Above Median) </tr>
-<tr align=center><th>F (Fires Above Median)<td>9 (20%)</td><td>13 (29%)</td></tr>
-<tr align=center><th>f (Fires Below Median)<td>14 (31%)</td><td>9 (20%)</td></tr>
-</table>
-</td>
+<tr><td align=center>
+<INGRID>
 
-<td>
-<table border=1>
-<tr align=center><th>Tengah<th>n (NINO4 Below Median)<th>N (NINO4 Above Median) </tr>
-<tr align=center><th>F (Fires Above Median)<td>5 (11%)</td><td>17 (38%)</td></tr>
-<tr align=center><th>f (Fires Below Median)<td>18 (40%)</td><td>5 (11%)</td></tr>
+/mapsel [(
+ SOURCES .Indices .nino .NCEP_OIv2 .NINO4
+  T  )
+  /lag FORMget
+  ( -1 mul
+    shiftdata
+  home .remic .Fire .numberOfFires
+   [gid]average
+   0 mul
+   add
+  dup dup
+    [T] )
+    /threshold2 FORMget (median) eq ( medianover ) if
+    /threshold2 FORMget (mean) eq ( average ) if
+    ( dup getrealization
+     0 get
+     100 mul
+     round
+     100 div
+     s==
+     3 -1 roll
+     3 -1 roll
+     flaglt
+    2 mul
+    home .remic .Fire .numberOfFires
+     gid )
+    /province FORMget (Barat) eq {(10)}if
+    /province FORMget (Selatan) eq {(11)}if
+    /province FORMget (Tengah) eq {(12)}if
+    /province FORMget (Timur) eq {(13)}if 
+    ( VALUE
+     dup dup
+       [T] )
+    /threshold1 FORMget (median) eq ( medianover ) if
+    /threshold1 FORMget (mean) eq ( average ) if
+    ( dup getrealization
+        0 get round cvi
+        s==
+        3 -1 roll
+        3 -1 roll
+        flaglt
+       4 -1 roll
+       add
+      (Fires > ) 2 index
+        ( & NINO4 > ) 6 index
+          4 array astore
+       concat
+       (Fires < ) 3 index
+         ( & NINO4 > ) 7 index
+           4 array astore
+        concat
+        (Fires > ) 4 index
+          ( & NINO4 < ) 8 index
+            4 array astore
+         concat
+         (Fires < )
+          6 -1 roll
+          ( & NINO4 < )
+           9 -1 roll
+           4 array astore
+        concat
+        4 array astore
+     (CLIST) exch def
+    startcolormap
+      (maxncolor) 8 def
+      DATA
+      0 3 RANGE
+      white red red LimeGreen DeepSkyBlue gold gold endcolormap
+      (units) (ids) def (long_name) () def
+    3 -1 roll
+    3 -1 roll
+    2 index
+)] concat def
+
+[mapsel (fig: scattercolor :fig (XOVY) 1 psdef (fnt) (Palatino-Roman) psdef (fntsze) 20 psdef )]concat interp
+/map
+[mapsel (fig: scattercolor :fig (XOVY) 1 psdef (fnt) (Palatino-Roman) psdef (fntsze) 20 psdef )]concat
+imagelink
+(</td></tr>
+<tr><td align=center>)print
+[mapsel (fig: scattercolor :fig .auxfig)]concat interp
+(fnt) (Palatino-Roman) psdef (fntsze) 16 psdef (plotaxislength) 770 psdef
+/map
+[mapsel (fig: scattercolor :fig .auxfig )]concat
+imagelink
+</INGRID>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr><td align=center>
+<table border=1 style=font-family:Palatino-Roman>
+<tr><td><b>Decision Matrix</b></td>
+<td>NINO4 below <INGRID> /threshold2 FORMget print </INGRID> </td>
+<td>NINO4 above <INGRID> /threshold2 FORMget print </INGRID> </td></tr>
+<tr><td>Fires above <INGRID> /threshold1 FORMget print </INGRID> </td>
+<td align=center bgcolor=DeepSkyBlue><b><INGRID>pop DATA 0 3 1 RANGESTEP distrib1D getrealization
+dup 2 get dup dup 3 index 3 get add div 100 mul round
+exch cvi s== print ( )print lpar print cvi s== print (%) print rpar print (</b></td>
+<td align=center bgcolor=red><b>)print
+dup 0 get dup dup 3 index 1 get add div 100 mul round
+exch cvi s== print ( )print lpar print cvi s== print (%) print rpar print (</b></td></tr>
+<tr><td>Fires below )print /threshold1 FORMget print (</td>
+<td align=center bgcolor=gold><b>)print
+dup 3 get dup dup 3 index 2 get add div 100 mul round
+exch cvi s== print ( )print lpar print cvi s== print (%) print rpar print (</b></td>
+<td align=center bgcolor=LimeGreen><b>)print
+dup 1 get dup dup 4 -1 roll 0 get add div 100 mul round
+exch cvi s== print ( )print lpar print cvi s== print (%) print rpar print </INGRID></b></td></tr>
 </table>
 </td>
 </tr>
-
-<tr>
-<td>
+<tr><td>
 <table border=1>
-<tr align=center><th>Selatan<th>n (NINO4 Below Median)<th>N (NINO4 Above Median) </tr>
-<tr align=center><th>F (Fires Above Median)<td>5 (11%)</td><td>16 (36%)</td></tr>
-<tr align=center><th>f (Fires Below Median)<td>18 (40%)</td><td>6 (13%)</td></tr>
-</table>
-</td>
-
-<td>
-<table border=1>
-<tr align=center><th>Timur<th>n (NINO4 Below Median)<th>N (NINO4 Above Median) </tr>
-<tr align=center><th>F (Fires Above Median)<td>4 (9%)</td><td>17 (38%)</td></tr>
-<tr align=center><th>f (Fires Below Median)<td>19 (42%)</td><td>5 (11%)</td></tr>
-</table>
-</td>
-</tr>
-</table>
-
-</td>
-
-<td>
-<h4><u>Predicting Fire Activity 2 Months in Advance:</u></h4>
+<tr valign="top"><td colspan="2" bgcolor="#F0F8FF">
+<font face="Helvetical,Arial" point-size=12pt size=-1>
+<b><u>Description</u></b>
+</font>
+<font face="Helvetical,Arial" point-size=9pt size=-1>
 <br>
-These graphs show the relationship between the number of fires and the NINO4 index in the previous month for the four Kalimantan provinces.  The dashed lines mark the median values both for NINO4 and the number of fires.  To determine the risk of fire activity two months later, use the value of the NINO4 index in April, May, June, July, or August, and find the estimated number of fires corresponding to that NINO4 level.  Past and current values for the NINO4 index can be found through the graph at the top of the page.
+<div align=justify>This graph shows the relationship between the number of fires and the NINO4 index in the previous month(s) for the <INGRID> /province FORMget print </INGRID> Kalimantan province. The four colors mark the thresholds of interest chosen for NINO4 and the number of fires. To determine the risk of fire activity <INGRID> /lag FORMget print </INGRID> month(s) later, use the value of the NINO4 index in May, June, July, August, or September, and find the estimated number of fires corresponding to that NINO4 level. Past and current values for the NINO4 index can be found through the graph above.
 <p>
-The contingency table (numbers related to n, N, f, and F in the graphs) represents the number of points in each of the four quadrants delineated by the dashed lines.  The contingency table can be used to identify the probability of having above- or below-median fire values respective to the NINO4 index.
-</td>
-</tr>
+The decision matrix represents the number of points in each of the four quadrants defined by the color code. The decision matrix can be used to identify the probability of having above- or below- <INGRID> /threshold1 FORMget print </INGRID> fire values respective to the NINO4 index.</div>
+ 
+</font>
+<p>
+<font face="Helvetical,Arial" point-size=12pt size=-1>
+<b><u>Data Sources</u></b>
+<br></font>
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+<b>NINO4</b><br>
+<font size=-1><b>Data</b>: Monthly indices representative of the NINO 4 region</font>
+<br><font size=-1><b>Data Source</b>: National Centers for Environmental Prediction, Environmental Modeling Center, Climate Modeling Branch
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/">NINO4</a>) </font>
+<br><font size=-1><b>Reference</b>: Reynolds, R.W., N.A. Rayner, T.M. Smith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite SST Analysis for Climate. J. Climate, 15, 1609-1625
+</font>
+<p>
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+<b>Fires</b><br>
+<font size=-1><b>Data</b>: Monthly number of fires in Kalimantan provinces, province-wide</font>
+<br><font size=-1><b>Data Source</b>: The data were acquired by the South Sumatra Forest Fire Management Project (SSFFMP) and the Japanese International Cooperation Agency (JICA)-in collaboration with the Ministry of Forestry of the Republic of Indonesia and collected by the Bogor Agricultural University National Centers for Environmental Prediction, Environmental Modeling Center, Climate Modeling Branch</font>
+</td></tr>
 </table>
-
-</center>
-<p>
-
-<span class=lttxt><font size=+0>For any feedback or comments, please <a href="mailto:pceccato@iri.columbia.edu,mbell@iri.columbia.edu?subject=Indonesia Fire NINO4 Exploratory Predictive Tool">Contact Us</a></font></span>
-
+</td></tr>
+</table>
+</FORM>
 </body>
 </html>
