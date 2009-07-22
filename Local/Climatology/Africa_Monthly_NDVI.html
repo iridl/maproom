@@ -63,7 +63,8 @@ value="<INGRID>WWWinfo FORMinfo .map .Y .plotvalue print</INGRID>">
 <tr><th>NDVI Monthly Climatology</th><th>NDVI Monthly Standard Deviation</th></tr>
 <tr><td>
 <INGRID>
- home .mbell .USGS .NDVIG .monthly .c8204 .avgNDVImonmax 
+SOURCES .USGS .ADDS .NDVI .NDVIg .monthly .c8204 .avgNDVImonmax
+%home .mbell .USGS .NDVIG .monthly .c8204 .avgNDVImonmax 
    dup
     0 mul
     T fig: grey deltabars black dotted 0
@@ -75,7 +76,8 @@ value="<INGRID>WWWinfo FORMinfo .map .Y .plotvalue print</INGRID>">
 </INGRID>
 </td><td>
 <INGRID>
- home .mbell .USGS .NDVIG .monthly .sd8204 .sdNDVImonmax 
+SOURCES .USGS .ADDS .NDVI .NDVIg .monthly .sd8204 .sdNDVImonmax
+%home .mbell .USGS .NDVIG .monthly .sd8204 .sdNDVImonmax 
   dup
    0 mul
    T fig: grey deltabars black dotted 0 0.05 1 horizontallines :fig
