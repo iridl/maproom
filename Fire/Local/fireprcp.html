@@ -1,5 +1,6 @@
 <INGRID>
-home .grover .EMILY .Analyses .Locust .CMORPH .dekadsum
+%home .grover .EMILY .Analyses .Locust .CMORPH .dekadsum
+SOURCES .IRI .Analyses .Locust .CMORPH .dekadsum
 mimeheader
 pop
 </INGRID>
@@ -26,7 +27,9 @@ mygrids 0 get xlo xhi add 2. div VALUE
  mygrids 1 get ylo yhi add 2. div VALUE
 1output}def
 
-home .grover .EMILY .Analyses .Locust .CMORPH .dekadsum /fullname (Estimated Precipitation) def
+%home .grover .EMILY .Analyses .Locust .CMORPH .dekadsum /fullname (Estimated Precipitation) def
+
+SOURCES .IRI .Analyses .Locust .CMORPH .dekadsum /fullname (Estimated Precipitation) def
 
 %SOURCES .NOAA .NCEP .CPC .CMORPH .daily .mean .morphed .cmorph 24 mul /units (mm) def 
 % checks and does spatial average if map .Y .step is bigger than grid step
@@ -99,7 +102,8 @@ X WWWinfo .FORMinfo .map .X .plotvalue VALUE
 Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
 } if
 
-home .mbell .IRI .MD .maproom .Analyses .CMORPH .Indonesia .avg
+%home .mbell .IRI .MD .maproom .Analyses .CMORPH .Indonesia .avg
+SOURCES .IRI .Analyses .Fire .CMORPH .dekadal .avg
 WWWinfo .FORMinfo .map .Y .step (district) eq
 {
 X 90 155 RANGEEDGES
