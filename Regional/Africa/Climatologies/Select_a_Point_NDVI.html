@@ -4,7 +4,8 @@
 click? zoom (Click for Info) eq and
 { .clickpoint /pageclickpoint exch def
 leftmenuinfo:
-home .mbell .USGS .NDVIG .monthly .c8204 .avgNDVImonmax
+SOURCES .USGS .ADDS .NDVI .NDVIg .monthly .c8204 .avgNDVImonmax
+%home .mbell .USGS .NDVIG .monthly .c8204 .avgNDVImonmax
 DATA 0 1 RANGE
 pageclickpoint
 {dup null eq
@@ -132,7 +133,8 @@ intervals of 0.5 standard deviation. </li> </ul>
 %       false setweave
 %       :weaver
 
-home .mbell .USGS .NDVIG .monthly .c8204 .avgNDVImonmax
+SOURCES .USGS .ADDS .NDVI .NDVIg .monthly .c8204 .avgNDVImonmax
+%home .mbell .USGS .NDVIG .monthly .c8204 .avgNDVImonmax
 DATA 0 1 RANGE
 X Y fig: colors whiteocean grey thin coasts thin countries :fig /plotaxislength 450 psdef
 /XOVY auto psdef
