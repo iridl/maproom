@@ -1,0 +1,36 @@
+\begin{ingrid}
+/mytype /mappagetype def
+continuedataset:
+datasetdefs:
+/index.en.html currentobject /index.html get def
+/Historical_Precipitation.en.html currentobject /Historical_Precipitation.html get def
+%/Forecast_Precipitation.en.html currentobject /Forecast_Precipitation.html get def
+%/Historical_Temperature.en.html currentobject /Historical_Temperature.html get def
+:datasetdefs
+
+/index.html {
+PickLanguage:
+/en /index.en.html
+:PickLanguage
+} def
+
+/Historical_Precipitation.html {
+PickLanguage:
+/en /Historical_Precipitation.en.html
+:PickLanguage
+} def
+
+%/Forecast_Precipitation.html {
+%PickLanguage:
+%/en /Forecast_Precipitation.en.html
+%:PickLanguage
+%} def
+
+%/Historical_Temperature.html {
+%PickLanguage:
+%/en /Historical_Temperature.en.html
+%:PickLanguage
+%} def
+
+:dataset
+\end{ingrid}
