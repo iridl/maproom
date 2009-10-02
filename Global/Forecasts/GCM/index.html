@@ -545,7 +545,6 @@ Options /varUnit get interp
   mul
 }ifelse
 
-nip
 Options /varColor get interp
 Options /varRange get interp
 
@@ -553,9 +552,20 @@ Options /varRange get interp
   DATA 10 25 50 75 90 100 120 150 200 250 300 400 VALUES
 }if
 
-X Y fig- colors thinnish grey coasts lakes | black nozero contours -fig
+exch
+L 3 runningAverage
+/pointwidth 3 def
+S /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+  1 index .S .last
+}ifelse VALUE
+L /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+  1.5
+}ifelse VALUE
+
+X Y fig- colors thinnish grey coasts lakes | black nozero contours plotlabel -fig
 /plotaxislength 590 psdef
 /antialias true psdef
+/framelabel [(IRI seasonal Forecast Start time %=[S] Target time %=[T] from ) /Model FORMget ]concat psdef
 
 figdup
 
