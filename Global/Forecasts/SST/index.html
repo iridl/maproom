@@ -123,7 +123,7 @@ dup .L CopyStream getrealization {
 }forall
 (</select>)print pop
 
-.sst
+sst
 L 3 runningAverage
 /pointwidth 3 def
 L /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
@@ -138,12 +138,29 @@ L /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false
 
 <INGRID>
 
-%sstawhitebandcolorscale
 temp_anomaly_colors_gcm
-X Y fig- colors | thinzero contours thinnish grey land -fig
+
+/persisted FORMgetknown {interp}{false}ifelse {
+  dup
+}{
+  exch .T
+  L 3 runningAverage
+  /pointwidth 3 def
+L /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+  1.5
+}ifelse VALUE
+}ifelse
+
+X Y fig- colors | thinzero contours thinnish grey land plotlabel -fig
 X 30. 390. plotrange
 /plotaxislength 600 psdef
 /antialias true psdef
+/framelabel
+  /persisted FORMgetknown {interp}{false}ifelse {
+    ( %=[T] persisted SSTA) psdef
+  }{
+    (IRI seasonal Forecast SSTA Start time %=[S] Target time %=[T]) psdef
+  }ifelse
 
 figdup
 /map
