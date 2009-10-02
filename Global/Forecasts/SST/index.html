@@ -159,7 +159,7 @@ X 30. 390. plotrange
   /persisted FORMgetknown {interp}{false}ifelse {
     ( %=[T] persisted SSTA) psdef
   }{
-    (IRI seasonal Forecast SSTA Start time %=[S] Target time %=[T]) psdef
+    (%=[T] IRI seasonal Forecast SSTA issued %=[S]) psdef
   }ifelse
 
 figdup
