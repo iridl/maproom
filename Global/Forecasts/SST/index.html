@@ -1,0 +1,254 @@
+<INGRID>
+SOURCES .IRI 
+mimeheader
+pop
+</INGRID>
+
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <title>SSTA Forecasts Maproom</title>
+    <STYLE TYPE="text/css">
+    <!--
+    P.indented
+       {
+       padding-left: 25pt;
+       padding-right: 25pt;
+       text-align: justify;
+       }
+    -->
+    </STYLE>
+
+<script type="text/javascript">
+<!--
+
+
+//-->
+</script>
+
+<INGRID>
+figdefs
+</INGRID>
+
+</head>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
+
+<INGRID>
+leftmenuHeader
+</INGRID>
+
+<FORM name=mapform action=index.html>
+<table width=100% align="center">
+<tr>
+<td><h3 align=center><u>SSTA Forecasts Maproom</u></h3></td>
+</tr>
+</table>
+
+<table align=center>
+<tr><td><table align=left>
+<tr >
+<td  bgcolor=#000066>
+<b><font color=#FFFFFF>Forecast issued:</font></b>
+<INGRID>
+
+SOURCES .IRI .FD .SSTA_FCST
+  ASST
+    a: .version02 .sst .S dup CopyStream getrealization
+   :a: .version01 .sst .S CopyStream getrealization :a
+   exch append 
+  (<select name="map.S.plotvalue" onChange='dovaluebutton(this,"map.S.plotvalue")'>) print
+{
+  (<option value=) print
+  dup 2 index exch cvsunits (")print print (")print pop /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{
+    2 index 2 index cvsunits nip eq {( selected="selected") print} if
+  }{
+    dup 2 index .last eq {( selected="selected")print}if 
+  }ifelse
+  (>) print cvsunits 7 8 getinterval print (</option>) print
+}forall
+(</select>)print
+pop
+
+ASST .version02
+  S /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+    1 index .S .last
+  }ifelse VALUE
+dup null eq {
+  pop
+  ASST .version01
+    S /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+      1 index .S .last
+    }ifelse VALUE
+}if
+
+</INGRID> 
+</td>
+
+<INGRID>
+(<td align=left  bgcolor=#FFFFCC>
+<input type=checkbox name="persisted" onChange='dovaluebutton(this,"persisted")' value="true" )print
+/persisted FORMgetknown {interp}{false}ifelse { ( checked) print (true) /persisted FORM! }if
+(><b><font>Persisted observed SSTA: </font></b></select>)print
+
+/persisted FORMgetknown {interp}{false}ifelse {
+  PSST .ssta T
+    /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{
+      3 index .T S 3 -1 roll VALUE .S getrealization 0 get 1 sub
+    }{
+      1 index .T last
+    }ifelse dup 3 -1 roll exch cvsunits 7 8 getinterval print exch VALUE
+(</td></tr></table>)print
+
+}{
+
+(</td></tr></table>
+</tr></td><tr><td><table>
+<tr>
+<td align=center bgcolor=#000066>
+<b><font color=#FFFFFF>Target Season:</font></b>) print
+% leadTime varies according to start time
+%S /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+%  1 index .S .last
+%}ifelse VALUE
+T
+  L 3 runningAverage
+  /pointwidth 3 def
+dup .L CopyStream getrealization {
+  (<input type=radio name="map.L.plotvalue" onChange='dovaluebutton(this,"map.L.plotvalue")' value=) print
+  dup s== print /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse {
+    interp 1 index eq {( checked) print }if  
+  }{
+    1.5 1 index eq {( checked) print}if
+  }ifelse
+  ( color=#FFFFFF><font color=#FFFFFF>)print 1 index exch L exch VALUE getrealization 0 get cvsunits print (</font>\n) print
+}forall
+(</select>)print pop
+
+.sst
+L 3 runningAverage
+/pointwidth 3 def
+L /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+  1.5
+}ifelse VALUE
+
+}ifelse
+</INGRID>
+</td>
+</tr></table></td></tr>
+<tr><td><table align=center><tr align=center><td>
+
+<INGRID>
+
+%sstawhitebandcolorscale
+temp_anomaly_colors_gcm
+X Y fig- colors | thinzero contours thinnish grey land -fig
+X 30. 390. plotrange
+/plotaxislength 600 psdef
+/antialias true psdef
+
+figdup
+/map
+inputimagelinkwithlimitcontrolsclickforinfo
+</INGRID>
+
+<br>
+
+<INGRID>
+%Plot colorbar
+.auxfig imagelink
+</INGRID>
+
+</td></tr>
+</table>
+
+<p>
+
+<table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE align=center>
+<tr><td align=center bgcolor=#DCDCDC><b>Map Description</b></td></tr>
+<tr><td align=justify><font size=-1>
+</font></td></tr>
+
+<tr><td colspan=6 align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
+
+<tr>
+<td>
+<b>Model Outputs</b>
+<br><font size=-1><b>Data Source</b>:&nbsp; 
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.SSTA_FCST/">Forecast Division from IRI</a>)</font>
+
+<INGRID>
+3 index
+.S dup CopyStream getrealization
+    0 get
+    cvsunits
+    interp dup 2003 ge {
+      pop pop pop pop pop
+(<br><font size=-1><b>Base Period</b>: Jan 1971 to Dec 2000</font><p>
+<b>Observations</b>
+<br><font size=-1><b>Data Source</b>:&nbsp;
+to be defined
+<br><font size=-1><b>Base Period</b>: Jan 1971 to Dec 2000</font>)print
+    }{
+      dup 2002 ge {pop pop pop pop pop true}{2001 ge {6.5 ge {pop pop pop true}{pop pop pop false}ifelse}{pop pop pop pop false}ifelse}ifelse {
+(<br><font size=-1><b>Base Period</b>: Jan 1969 to Dec 1998</font><p>
+<b>Observations</b>
+<br><font size=-1><b>Data Source</b>:&nbsp;
+to be defined
+<br><font size=-1><b>Base Period</b>: Jan 1969 to Dec 1998</font>)print
+      }{
+(<br><font size=-1><b>Base Period</b>: Jan 1961 to Dec 1990</font><p>
+<b>Observations</b>
+<br><font size=-1><b>Data Source</b>:&nbsp;
+to be defined
+<br><font size=-1><b>Base Period</b>: Jan 1961 to Dec 1990</font>)print
+      }ifelse
+    }ifelse
+</INGRID>
+
+</td>
+</tr>
+</table>
+<table align=center BORDER COLS=1 width=650 bgcolor="#F5F5F5">
+<tr>
+<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
+<td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
+<tr>
+<INGRID>
+figdup
+showmenu? {
+  imagelinkstart
+  (<td align=center>)print
+  (Figure as PDF) (.pdf) linktoimageformat
+  (</td><td align=center>) print
+  (Figure as JPEG) (.jpg) linktoimageformat
+   (</td>) print
+} if
+
+(<td rowspan=2 align=center><a href=http://iridl.ldeo.columbia.edu/expert/)print
+pop 3 index dup dataseturl print 
+</INGRID>?help+datafiles#GIS">Data for GIS</a><font color=green>(restricted)</font></td>
+</tr>
+
+<tr>
+<INGRID>
+showmenu? {
+  .auxfig
+imagelinkstart
+(<td align=center>)print
+(Colorscale as PDF) (.pdf) linktoimageformat
+(</td><td align=center>) print
+(Colorscale as JPEG) (.jpg) linktoimageformat
+(</td>) print
+pop
+} if pop
+</INGRID>
+</tr>
+</table>
+
+
+
+</table>
+
+
+</FORM>
+</body></html>
+
