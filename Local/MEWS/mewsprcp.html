@@ -30,18 +30,18 @@ dup (district) eq
 IRIDB
 (select gid,the_geom as geom,country_na,prov_na as name1,dist_na as name2,centroid(the_geom) as center,distance(centroid(the_geom),GeometryFromText( 'POINT(YYYY)',4326 )) from mews_dist where the_geom  &&  GeometryFromText( 'POINT(XXXX)',4326 ) ORDER BY distance(centroid(the_geom),GeometryFromText( 'POINT(YYYY)',4326 )) LIMIT 1)
 (XXXX) rsearch pop nip
- X WWWinfo .FORMinfo .map .X .plotvalue readunits  s== nip
+ X WWWinfo .FORMinfo .map .X .plotvalue readunits  s== nip (0) append
 ( )
- Y WWWinfo .FORMinfo .map .Y .plotvalue readunits  s== nip
+ Y WWWinfo .FORMinfo .map .Y .plotvalue readunits  s== nip (0) append
 3array astore concat
 %dup (,) exch 3array astore concat
 exch
 3array astore concat 
 2 {
 (YYYY) rsearch pop nip
- X WWWinfo .FORMinfo .map .X .plotvalue readunits  s== nip
+ X WWWinfo .FORMinfo .map .X .plotvalue readunits  s== nip (0) append
 ( )
- Y WWWinfo .FORMinfo .map .Y .plotvalue readunits  s== nip
+ Y WWWinfo .FORMinfo .map .Y .plotvalue readunits  s== nip (0) append
 3array astore concat
 exch
 3array astore concat 
