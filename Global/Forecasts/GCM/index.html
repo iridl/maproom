@@ -101,7 +101,7 @@ leftmenuHeader
   (<option value=) print
   dup print /Model FORMgetknown {
     1 index eq {( selected="selected") print} if}{
-    dup (NCEP) eq {( selected="selected") print} if (NCEP) /Model FORM!
+    dup (ECHAM4p5) eq {( selected="selected") print} if (ECHAM4p5) /Model FORM!
   }ifelse
   (>) print print (</option>) print
 }forall
@@ -561,6 +561,10 @@ S /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false
 L /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
   1.5
 }ifelse VALUE
+
+1 index [X Y]average getrealization 0 get NaN eq {
+(<tr><td><font color=#FF0000 point-size=18pt><b><BLINK>DATA NOT AVAILABLE</BLINK></b></font></td></tr></div>)print
+}if
 
 X Y fig- colors thinnish grey coasts lakes | black nozero contours plotlabel -fig
 /plotaxislength 590 psdef
