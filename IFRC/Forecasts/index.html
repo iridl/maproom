@@ -92,7 +92,7 @@ leftmenuHeader
 <INGRID>
 WWWinfo 
 
-/layerlist null 11 object 
+/layerlist null 12 object 
 /tot6dayapcpanom { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcpanom :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def 
 
 /tot6dayapcp { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcp :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def 
@@ -102,6 +102,8 @@ WWWinfo
 /tot6dayapcppctmonthlyclim { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcppctmonthlyclim :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def
 
 /prcp_fcst { SOURCES .IRI .MD .IFRC .IRI .Seasonal_Forecast a: .prcp_fcst :a: .forecasttime :a  X Y fig: colors plotlabel black thin countries_gaz :fig /framelabel (Forecast for %=[forecasttime], Forecast Issued %=[F]) psdef } def
+
+/extreme_prcp_fcst { SOURCES .IRI .MD .IFRC .IRI .Seasonal_Forecast a: .extreme_prcp_fcst :a: .forecasttime :a  X Y fig: colors plotlabel black thin countries_gaz :fig /framelabel (Forecast for %=[forecasttime], Forecast Issued %=[F]) psdef } def
 
 /pic3mo_same { SOURCES .IRI .MD .IFRC .IRI .Seasonal_Forecast a: .pic3mo_same :a: .forecasttime :a: .observationtime :a X Y fig: colors plotlabel plotlabel black thin countries_gaz :fig /framelabel (%=[forecasttime] Forecast Precipitation Tendency same as Observed %=[observationtime], issued %=[F]) psdef } def
 
@@ -123,6 +125,7 @@ WWWinfo
  /tot6dayapcppctle (Where is unusually heavy rainfall expected?) def
  /tot6dayapcppctmonthlyclim (How heavy is the rainfall expected to be?) def
  /prcp_fcst (Are the next 3 months likely to be unusually wet or dry?) def
+ /extreme_prcp_fcst (Are the next 3 months likely to be exceptionally wet or dry?) def
  /pic3mo_same (Is it likely that unusually wet or dry conditions will continue?) def
  /pic3mo_reversed (Is it likely that unusually wet or dry conditions will end?) def
  /CMAP_climo (How much rain normally falls at this time of year?) def
@@ -159,7 +162,7 @@ pop } forall
 
 
 (<b>Forecasts for the Next 3 Months</b><br><br>\n) print
-[ /prcp_fcst /pic3mo_same /pic3mo_reversed ]
+[ /prcp_fcst /extreme_prcp_fcst /pic3mo_same /pic3mo_reversed ]
 
 showmenu?
 {
@@ -292,8 +295,12 @@ showmenu?
 </INGRID>
 <br>
 <INGRID>
+/mapsel FORMget (tot6dayapcppctle) eq
+{(<img src="IFRCpctlecolorscale2.gif">) print }
+{
 figdup .auxfig
 imagelink
+} ifelse
 </INGRID>
 
 <p class="indented">
@@ -331,7 +338,13 @@ imagelink
 <p align=left>The map shows where and how likely it is to be unusually wet or dry over the next three months.
 <p align=left>Green areas show where unusually wet conditions over the next three months are the most likely outcome.  Darker green indicates a higher likelihood of unusually wet conditions.  Brown areas show where unusually dry conditions over the next three months are the most likely outcome.  The darker brown indicates a higher likelihood of unusually dry conditions.  This map does NOT indicate how extreme the wet or dry conditions are expected to be.
 <p align=left><i>This forecast shows only the likelihood of 3-month accumulated rainfall (or snow) being unusually high or low, and does not indicate chances of individual heavy rainfall events.  The forecasts apply over large areas only, and should not be used to forecast local conditions, or as a flood forecast.</i> (<a href="instructions.html#prcp_fcst">more information</a>)
- 
+
+<INGRID> /extreme_prcp_fcst descprintcondition </INGRID>
+<center><b>Are the next 3 months likely to be exceptionally wet or dry?</b></center> 
+<p align=left>The map shows where and how likely it is to be extremely wet or dry over the next three months.
+<p align=left>Green areas show where there is an enhanced likelihood of extremely wet conditions over the next three months.  Darker green indicates a higher likelihood of extremely wet conditions.  Brown areas show where there is an enhanced likelihood of extremely dry conditions over the next three months.  The darker brown indicates a higher likelihood of extremely dry conditions.
+<p align=left><i>This forecast shows only the likelihood of 3-month accumulated rainfall (or snow) being unusually high or low, and does not indicate chances of individual heavy rainfall events.  The forecasts apply over large areas only, and should not be used to forecast local conditions, or as a flood forecast.</i> (<a href="instructions.html#extreme_prcp_fcst">more information</a>)
+
 
 <INGRID> /pic3mo_same descprintcondition </INGRID>
 <center><b>Is it likely that unusually wet or dry conditions will continue?</b></center>
