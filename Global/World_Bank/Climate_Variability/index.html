@@ -1,0 +1,998 @@
+<INGRID>
+%  SOURCES .NOAA .NCDC .GHCN .v2beta
+%SOURCES .WORLDBATH .bath
+SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon /X renameGRID lat /Y renameGRID
+/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/maproom/.Global/.World_Bank/.Climate_Variability/instructions.html)redirectto stop} if
+mimeheader
+pop
+</INGRID>
+
+<html><head>
+ <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+ <title>World Bank Climate Change Data Portal GHCN Station Temperature & Precipitation Variability Tool</title>
+ <STYLE TYPE="text/css">
+ <!--
+ body
+    {
+    font-family:arial,sans-serif
+    }
+ P.indented
+    {
+    padding-left: 25pt;
+    padding-right: 25pt;
+    text-align: justify;
+    }
+  #leftcol {
+    float: left;
+    width: 505px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #rightcol {
+    float: left;
+    width: 505px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #coltext {
+    float: left;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #footer {
+    width: 700px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F0F8FF;
+    layer-background-color: #F0F8FF;
+    border: 3px black ridge;
+    font-size: 0.65em 
+    font-family: Helvetica,Arial
+  }
+ -->
+ </STYLE>
+
+<script language="JavaScript">
+<!--
+  function printtext() {
+  document.getElementById("content").innerHTML = "The Data Completeness Threshold is used to specify which stations appear on the map based upon how much data each station has during the season and year range you have chosen.  If you set a low Data Completeness Threshold such as 65%, for example, you will be able to choose from a larger number of stations, but some of those stations will have as little as 65% of the data that a fully complete station record would have.  Therefore, the stations with less complete records will display time series with many gaps that make it more difficult to compute a good estimate of the long-term linear trend, for example.  If you set a high Data Completeness Threshold such as 100%, for example, you will have fewer stations from which to choose, but their time series will have few or no gaps and will provide a better estimate of the long-term linear trend. <p>"
+  }
+
+  function ReverseContentDisplay(d) {
+if(d.length < 1) { return; }
+if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+else { document.getElementById(d).style.display = "none"; }
+}
+  
+<!-- END script -->
+</script>
+
+ <INGRID>
+ figdefs
+ </INGRID>
+ 
+ </head>
+
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
+
+<INGRID>
+
+%leftmenuinfo:
+%{ X Y T} setleftmenugrids
+%WWWinfo /map FORMgetknown {.Y .plotvalue
+%nip
+%/map.Y.plotvalue
+%exch def}
+%{pop}ifelse
+%WWWinfo /map FORMgetknown {.X .plotvalue
+%nip
+%/map.X.plotvalue
+%exch def}
+%{pop}ifelse
+%:leftmenuinfo
+
+
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+
+% set default values for the forms
+
+WWWinfo
+.FORMinfo null eq
+{
+null 8 object
+/mapsel (Precip) def
+/startmon (Jan) def
+/endmon (Mar) def
+/startyr (1901) def
+/threshold (0.85) def 
+/menu (on) def
+/stnmap (on) def
+/locinfo (on) def
+/desc (on) def
+/FORMinfo WWWinfo !
+} if
+
+</INGRID>
+<FORM name=mapform action=index.html>
+
+
+<center>
+
+<table border=0 cols=2>
+<CAPTION align=top> 
+<h2 align=center>World Bank Climate Change Data Portal GHCN Station Temperature & Precipitation Variability Tool</h2>
+</CAPTION>
+<tr valign=top>
+<td align=center rowspan=2>
+
+<INGRID>showmenu? not {stopprint} if</INGRID>
+
+<INGRID>
+
+
+WWWinfo
+
+/datlist null 2 object
+ /Precip ( SOURCES .NOAA .NCDC .GHCN .v2beta ) def
+ /Temp ( SOURCES .NOAA .NCDC .GHCN .v2 ) def
+%/defaultdat currentobject /Precip get def
+def
+
+/varlist null 2 object
+ /Precip ( SOURCES .NOAA .NCDC .GHCN .v2beta a: :a: .prcp (units) (mm/month) def ) def
+ /Temp ( SOURCES .NOAA .NCDC .GHCN .v2 a: :a: .adjusted .mean .temp VER 0 VALUE ) def
+%/default currentobject /Precip get def
+def
+
+/varlistplotting null 2 object
+ /Precip ( SOURCES .NOAA .NCDC .GHCN .v2beta a: .lon DATA -180 180 RANGE :a: .lat DATA -90 90 RANGE :a: .prcp (units) (mm/month) def ) def
+ /Temp ( SOURCES .NOAA .NCDC .GHCN .v2 a: .lon DATA -180 180 RANGE :a: .lat DATA -90 90 RANGE :a: .adjusted .mean .temp VER 0 VALUE VER removeGRID ) def
+%/defaultvarplot currentobject /Precip get def
+def
+
+%/varlistplotting2 null 2 object
+% /Precip ( SOURCES .NOAA .NCDC .GHCN .v2beta a: .lon DATA -180 180 RANGE :a: .lat DATA -90 90 RANGE :a: prcp (units) (mm/month) def T (Jan 1901) (Dec 2000) RANGE ) def
+% /Temp ( SOURCES .NOAA .NCDC .GHCN .v2 a: .lon DATA -180 180 RANGE :a: .lat DATA -90 90 RANGE :a: adjusted .mean .temp T (Jan 1901) (Dec 2000) RANGE VER 0 VALUE VER removeGRID ) def
+%/defaultvarplot2 currentobject /Precip get def
+%def
+
+/varnames null 2 object
+ /Precip ( prcp (units) (mm/month) def (long_name) (GHCN Precipitation) def ) def
+ /Temp ( adjusted .mean .temp VER 0 VALUE (long_name) (GHCN Temperature) def ) def
+%/defaultname currentobject /Precip get def
+def
+
+/varnamesglobalgridded null 2 object
+ /Precip ( SOURCES .UEA .CRU .Hulme .Global .prcp (long_name) (Hulme Precipitation) def ) def
+ /Temp ( SOURCES .UEA .CRU .Jones .CRUTEM3v .varadjtanom (degree_Celsius) unitconvert SOURCES .UEA .CRU .Jones .climatology .c6190 .temp add (long_name) (Jones Temperature) def ) def
+def
+
+%/varnamesTS2p1numstn null 2 object
+% /Precip ( SOURCES .UEA .CRU .TS2p1 .monthly .stations .prcp ) def
+% /Temp ( SOURCES .UEA .CRU .TS2p1 .monthly .stations .temp ) def
+%def
+
+/varnamesdot null 2 object
+ /Precip ( .prcp (units) (mm/month) def ) def
+ /Temp ( .adjusted .mean .temp VER 0 VALUE ) def
+%/defaultname currentobject /Precip get def
+def
+
+/varlongnames null 2 object
+ /Precip (GHCN Precipitation) def
+ /Temp (GHCN Temperature) def
+%/defaultlongname currentobject /Precip get def
+def
+
+/varshortnames null 2 object
+ /Precip ( precipitation) def
+ /Temp ( temperature) def
+def
+
+/varshortnamescap null 2 object
+ /Precip ( Precipitation) def
+ /Temp ( Temperature) def
+def
+
+/startyrnames null 6 object
+ /1901 (1901 to 2000) def
+%/1911 (1911 to 2000) def
+%/1921 (1921 to 2000) def
+%/1931 (1931 to 2000) def
+%/1941 (1941 to 2000) def
+ /1951 (1951 to 2000) def
+def
+
+/ensotimestartyr null 2 object
+ /1901 (-708.) def
+ /1951 (-108.) def
+def
+
+/thresholdpct null 8 object
+ (1.0) (100%) def
+ (0.95) (95%) def
+ (0.9) (90%) def
+ (0.85) (85%) def
+ (0.8) (80%) def
+ (0.75) (75%) def
+ (0.7) (70%) def
+ (0.65) (65%) def
+def
+
+% decide whether to display menu
+/menu FORMget (on) eq {
+
+(<table CELLPADDING=5 BORDER COLS=1>) print
+(<tr>) print
+(<td align=left width=100 title="Choose to view either GHCN monthly station temperature or precipitation data.">) print
+(<b><font point-size=10pt">Select Precipitation or Temperature Data: </b>) print
+
+%/descprintcondition {stopprint /mapsel FORMgetknown {cvn eq} {pop false} ifelse {startprint} if} def
+%[ /Precip /Temp ]
+
+showmenu?
+{
+
+(<select name="mapsel" id="mapsel" size=1 >) print
+[ /Precip /Temp ]
+{
+  (<option value=) print
+   dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( selected="selected") print} if} { dup /Precip eq {( selected="selected")print} if }ifelse
+ (>)print
+ varlongnames 1 index getknown {print}{dup cvntos print} ifelse pop (</option>) print } forall
+
+(</select>) print
+} {} ifelse
+
+(</font></td></tr>) print
+
+(<tr><td title="Select the starting and ending months of the season for which you would like to calculate the seasonal-average precipitation or temperature for each year.">) print
+
+(<b><font point-size=10pt>Select Season: </b>) print
+
+(<select name=startmon id=startmon onChange="changedtext(this)">) print
+[(Jan) (Feb) (Mar) (Apr) (May) (Jun) (Jul) (Aug) (Sep) (Oct) (Nov) (Dec)] {
+ (<option value=) print
+ dup print /startmon FORMgetknown {
+   1 index eq {( selected="selected") print} if
+ }{
+   (Jan) dup 2 index eq {( selected="selected")print} if /startmon FORM!
+ } ifelse
+ (>) print print (</option>) print
+}forall 
+(</select>) print
+
+( to ) print
+
+(<select name=endmon id=endmon onChange="changedtext(this)">) print
+[(Jan) (Feb) (Mar) (Apr) (May) (Jun) (Jul) (Aug) (Sep) (Oct) (Nov) (Dec)] {
+ (<option value=) print
+ dup print /endmon FORMgetknown {
+   1 index eq {( selected="selected") print} if
+ }{
+   (Mar) dup 2 index eq {( selected="selected")print} if /endmon FORM!
+ } ifelse
+ (>) print print (</option>) print
+}forall 
+(</select>) print
+
+(</font></td></tr>) print
+
+(<tr><td title="Choose a range of years in the 20th century to select stations with adequate data and the length of the time series of seasonal-average temperature or precipitation values.">) print
+(<b><font point-size=10pt>Select Year Range for Station Filtering: </font></b>) print
+
+%(<select name="startyr" id="startyr" onChange="changedtext(this);">) print
+%[(1901) (1911) (1921) (1931) (1941) (1951) ] {
+% (<option value=) print
+% dup print /startyr FORMgetknown {
+%  1 index eq {( selected="selected") print} if
+% }{
+%   (1901) dup 2 index eq {( selected="selected")print} if /startyr FORM!
+% } ifelse
+% (>) print print (</option>) print
+%}forall
+%(</select> to 2000) print
+
+(<select name="startyr" id="startyr" onChange="changedtext(this);">) print
+[(1901) (1951) ] {
+ (<option value=) print
+ dup cvntos print /startyr FORMgetknown {
+  1 index eq {( selected="selected") print} if
+ }{
+   (1901) dup 2 index eq {( selected="selected")print} if 
+ } ifelse
+ (>) print startyrnames 1 index getknown {print}{dup cvntos print} ifelse pop (</option>) print
+}forall
+(</select>) print
+
+(</td></tr>) print
+
+(<tr><td title="The Data Completeness Threshold is used to specify which stations appear on the map, based upon how much data each station has during the season and year range you have chosen.  If you set a low Data Completeness Threshold such as 65%, for example, you will be able to choose from a larger number of stations, but some of them will have as little as 65% of the data that a fully complete station record would have.  Stations with less complete records will have time series with many gaps that make it difficult to compute a good estimate of the long-term linear trend, for example.">) print
+
+(<font point-size=10pt><b>Select Data Completeness Threshold: </b>) print
+
+%(<select name="threshold" id="threshold" onChange="document.mapform.submit();">) print
+%[(1.0) (0.95) (0.9) (0.85) (0.8) (0.75) (0.7) (0.65) ] {
+% (<option value=) print
+% dup print /threshold FORMgetknown {
+%   1 index eq {( selected="selected") print} if
+% }{
+%   (0.85) dup 2 index eq {( selected="selected")print} if /threshold FORM!
+% } ifelse
+% (>) print print (</option>) print
+%}forall
+%(</select>) print
+
+(<select name="threshold" id="threshold" onChange="changedtext(this);">) print
+[(1.0) (0.95) (0.9) (0.85) (0.8) (0.75) (0.7) (0.65) ] {
+ (<option value=) print
+ dup cvntos print /threshold FORMgetknown {
+   1 index eq {( selected="selected") print} if
+ }{
+   (0.85) dup 2 index eq {( selected="selected")print} if 
+ } ifelse
+ (>) print thresholdpct 1 index getknown {print}{dup cvntos print} ifelse pop (</option>) print
+}forall
+(</select></font>) print
+
+(</td></tr>) print
+
+(<tr><td>) print
+(<font face="Helvetical,Arial" point-size=10pt size=-1>) print
+%(Click on the map to show graphs of the seasonal average ) print varshortnames /mapsel FORMget get print (, its interannual variability, decadal variability, and trend during 1901 to 2000 for the nearest available station with at least ) print thresholdpct /threshold FORMget get print ( complete monthly data for all ) print /startmon FORMget print ( to ) print /endmon FORMget print ( months over the years ) print startyrnames /startyr FORMget get print (.) print
+
+(Click on the map to show graphs of the seasonal average ) print varshortnames /mapsel FORMget get print (, its interannual variability, decadal variability, and trend for the nearest available station with monthly data that are at least ) print thresholdpct /threshold FORMget get print ( complete for all ) print /startmon FORMget print ( to ) print /endmon FORMget print ( months over the years ) print /startyr FORMget s== print ( - 2000.) print
+
+(</font>) print
+(</td></tr>) print
+
+(</table>) print
+
+
+
+
+
+
+(</td>) print
+
+(<td align=center valign=top>) print
+
+(<div id="footer" align="left">) print
+(<font face="Helvetical,Arial" point-size=9pt size=-1>) print
+( This tool allows a user to investigate the historical variability of precipitation and temperature at various time scales (interannual, decadal, and long-term linear trend) over the 20th century near a user-selected location. ) print 
+(<a href="javascript:ReverseContentDisplay('topinstructions')">Show/Hide Additional Instructions</a>) print
+(<div id="topinstructions" style="display:none;") print
+(<ol> ) print
+( <li>Use the menus at left to specify temperature or precipitation station data, season of interest, range of years within the 20th Century (1901-2000 or 1951-2000), and Data Completeness Threshold. ) print 
+(<br><a href="javascript:ReverseContentDisplay('numberstationstable')">Show/Hide Summary of Available Stations and Completeness Criteria</a>) print
+
+(<div id="numberstationstable" style="display:none; border: 3px black ridge; padding-top: 10px; padding-bottom: 10px;">) print
+(<table CELLPADDING=5 BORDER cols=10 rows=6 align=center><font point-size=9pt>) print 
+(<CAPTION><b>Number of Available Stations to Choose From if the Jan-Dec "Season" is Chosen, by Variable, Year Range, and Completeness Threshold</b></CAPTION>) print
+(<tr> <td><td><td align=center colspan=8>Data Completeness Threshold ) print
+(<tr align=right> <td>Variable<td>Year Range<td>100%<td>95%<td>90%<td>85%<td>80%<td>75%<td>70%<td>65% ) print
+(<tr align=right> <td rowspan=2>GHCN Precipitation<td>1901-2000<td>92<td>2086<td>2927<td>3565<td>4089<td>4602<td>5100<td>6455</td> ) print
+(<tr align=right> <td>1951-2000<td>217<td>2862<td>3670<td>4287<td>5224<td>6417<td>7204<td>8064</td> ) print
+(<tr align=right> <td rowspan=2>GHCN Temperature<td>1901-2000<td>36<td>681<td>1035<td>1343<td>1525<td>1706<td>1836<td>1987</td> ) print
+(<tr align=right> <td>1951-2000<td>122<td>1038<td>1167<td>1236<td>1739<td>2548<td>2838<td>3072 ) print
+(</font></table> ) print
+(</div>) print
+
+(</li>) print
+
+( <li>Click the Redraw (circular arrow) button to refresh the map and show the available stations based upon the selections you have made. </li>) print
+( <li>Click and drag on the map to zoom in, if you wish.  Click a location on the map (which will be marked by a green pushpin) to display time series graphs of seasonal mean temperature or precipitation (and its interannual, decadal, and linear trend components) for the closest available station (black pushpin).  For comparison you may also use the "Plots a. to d. are for station data; click here to show/hide these charts for gridded information" link to display the same analyses for the grid box containing the location you clicked based upon coarsely-gridded precipitation (2.5&deg; lat. x 3.75&deg; lon.) and temperature (5&deg; lat. x 5&deg; lon.) data derived from a combination of multiple nearby stations.</li>) print
+(</ol>) print
+(<p>Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> and <a href="instructions.html">instructions page</a> for this tool for more information on interpreting these graphs. ) print
+(</div>) print
+(</font>) print
+(</div>) print
+
+(</td>) print
+
+
+
+
+} if
+
+(<input type="hidden" name="menu" value="on" checked>) print
+(<input type="hidden" name="stnmap" value="on" checked><br>) print
+(<input type="hidden" name="locinfo" value="on" checked><br>) print
+(<input type="hidden" name="desc" value="on" checked><br>) print
+
+
+% end of decision whether to display menu
+
+</INGRID>
+
+<INGRID>
+startprint
+</INGRID>
+
+<INGRID>
+WWWinfo
+
+
+% use stnfilter to construct Ingrid code that selects the dataset (GHCN Precip or Temp),
+% specifies the season selected by the user, and specifies the completeness threshold
+% specified by the user to then filter and select the stations that meet these criteria
+
+%/stnfilter [varlist /mapsel FORMget get ( T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt SELECT )] concat def
+
+%/stnfilter2 [varlist /mapsel FORMget get ( T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle )] concat def
+
+/stnfilter2 [varlist /mapsel FORMget get ( T ) lpar (Jan ) /startyr FORMget rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle )] concat def
+
+/stnfiltplot [varlistplotting /mapsel FORMget get ( T ) lpar (Jan ) /startyr FORMget rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle :a startcolormap DATA 0 1 RANGE black black black 0 VALUE black black 1 bandmax black endcolormap )] concat def
+
+/stnfiltplot2 [varlistplotting /mapsel FORMget get ( T ) lpar (Jan ) /startyr FORMget rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle )] concat def
+
+%/stnfiltplotwms [(SOURCES .WORLDBATH .bath X -180 180 RANGE Y -90 90 RANGE ) varlistplotting /mapsel FORMget get ( T ) lpar (Jan ) /startyr FORMget rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle :a startcolormap DATA 0 1 RANGE black black black 0 VALUE black black 1 bandmax black endcolormap )] concat def
+
+/stnfiltplotwms [(SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon (X) renameGRID lat (Y) renameGRID X -180 180 RANGE Y -90 90 RANGE ) varlistplotting /mapsel FORMget get ( T ) lpar (Jan ) /startyr FORMget rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle :a startcolormap DATA 0 1 RANGE black black black 0 VALUE black black 1 bandmax black endcolormap )] concat def
+
+%stnfiltplot2 pstack
+
+/getplots (off) def
+
+onClickforInfo?
+{/map FORMget
+
+/mylon clickpoint 0 get .value s== def
+
+/mylat clickpoint 1 get .value s== def
+
+% mylat /map.Y.plotvalue exch def 
+% mylon /map.X.plotvalue exch def
+% /FORMinfo WWWinfo !
+
+clickpoint 1 get .value -90 lt clickpoint 1 get .value 90 gt or {(Please choose a latitude value within the range -90 to 90) print stop } if
+clickpoint 0 get .value -360 lt clickpoint 0 get .value 360 gt or {(Please choose a longitude value within the range -360 to 360) print stop } if
+
+}
+% if no onclickforinfo, check for lonpoint and latpoint form entries
+{
+  /lonpoint FORMknown /latpoint FORMknown and 
+ {
+  /lonpoint FORMget /mylon exch def
+  /latpoint FORMget /mylat exch def 
+ } if
+
+% Check for valid longitude and latitude values
+
+/latpoint FORMget cvi -90 lt /latpoint FORMget cvi 60 gt or {(Please choose a latitude value within the range -90 to 90) print stop } if
+/lonpoint FORMget cvi -360 lt /lonpoint FORMget cvi 360 gt or {(Please choose a longitude value within the range -360 to 360) print stop } if
+
+} ifelse  
+
+% ifelse is for onclickforinfo vs lonpoint latpoint
+
+
+/lonpoint FORMknown /latpoint FORMknown and onClickforInfo? or 
+
+% if there is a click on the map, or if lonpoint and latpoint are defined, define graphs
+
+{
+
+%/pointelev [( SOURCES .WORLDBATH .bath X ) mylon ( VALUE Y ) mylat ( VALUE )] concat def
+%pointelev interp reserverealization
+
+/pointelev [( SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon (X) renameGRID lat (Y) renameGRID  X ) mylon ( VALUE Y ) mylat ( VALUE )] concat def
+pointelev interp reserverealization
+
+/clickpin ( green pushpins ) def
+
+/clickpinfct [mylon ( ) mylat ( togeopoint a: .lon :a: .lat :a )] concat def
+
+/stnpin ( red pushpinsmaskby ) def
+
+/stnpinfct [stnfiltplot2 ( ) mylon ( lon sub cosd lat cosd ) mylat ( cosd mul mul lat sind ) mylat ( sind mul add acosd pi 180 div mul 6366.707 mul mul -1 mul [IWMO]datarank 1 1 masknotrange :a )] concat def
+
+
+/localstuff
+[stnfilter2 mylon ( lon sub cosd lat cosd ) mylat ( cosd mul mul lat sind ) mylat ( sind
+mul add acosd pi 180 div mul 6366.707 mul mul -1 mul [IWMO]datarank 1 1 masknotrange :a SELECT )] concat interp def
+/localname localstuff .Name def
+/locallon localstuff .lon def
+/locallat localstuff .lat def
+/localelev localstuff .elev def
+/localID localstuff .IWMO def
+
+
+/dist [stnfilter2 mylon ( lon sub cosd lat cosd ) mylat ( cosd mul mul lat sind ) mylat ( sind mul add acosd pi 180 div mul 6366.707 mul mul [IWMO]minover (units) (kilometers) def nip :a )] concat def
+
+
+% if a 12-month period is chosen, use numeric season length version of seasonalAverage to do the calculation, otherwise use seasonalAverage with 3-letter month names to designate the season
+
+ /startmon FORMget (Jan) eq /endmon FORMget (Dec) eq and 
+ /startmon FORMget (Feb) eq /endmon FORMget (Jan) eq and or
+ /startmon FORMget (Mar) eq /endmon FORMget (Feb) eq and or
+ /startmon FORMget (Apr) eq /endmon FORMget (Mar) eq and or
+ /startmon FORMget (May) eq /endmon FORMget (Apr) eq and or
+ /startmon FORMget (Jun) eq /endmon FORMget (May) eq and or
+ /startmon FORMget (Jul) eq /endmon FORMget (Jun) eq and or
+ /startmon FORMget (Aug) eq /endmon FORMget (Jul) eq and or
+ /startmon FORMget (Sep) eq /endmon FORMget (Aug) eq and or
+ /startmon FORMget (Oct) eq /endmon FORMget (Sep) eq and or
+ /startmon FORMget (Nov) eq /endmon FORMget (Oct) eq and or
+ /startmon FORMget (Dec) eq /endmon FORMget (Nov) eq and or 
+
+ {
+
+/seasavgplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def 1 index T 132 0.9 runningAverage (fullname) (11-Year Running Average (Trend Included)) def lon lat Name 4 index T differences [T] medianover 100 mul (name) (lineartrend) def T fig: solid black line thinnish red line thinnish blue line plotlabel plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]; Trend: %=[lineartrend] per century) psdef T -708. 492. plotrange )] concat def
+
+
+
+/seasavgplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def 1 index T 132 0.9 runningAverage (fullname) (11-Year Running Average (Trend Included)) def 1 index T differences [T] medianover 100 mul (name) (lineartrend) def T fig: solid black line thinnish red line thinnish blue line plotlabel :fig (framelabelstart) (Trend: %=[lineartrend] per century; ) psdef T -708. 492. plotrange )] concat def
+
+
+
+/seasavgtable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage )] concat def
+
+
+
+/seasavgtableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage )] concat def
+
+
+/seasavgplotGridStn [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Station Data) def lon lat Name ) varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Gridded Data) def 4 1 roll T fig: twolines plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange (plotborder) 95 psdef )] concat def
+
+
+/interannplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def lon lat Name T fig: line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
+
+
+
+/interannplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def T fig: line :fig T -708. 492. plotrange )] concat def
+
+
+/interanntable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def )] concat def
+
+
+
+/interanntableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def )] concat def
+
+
+
+/runavg10plot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage (fullname) (11-Year Running Average) def lon lat Name T fig: lightgrey solid line black thinnish solid line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
+
+
+
+/runavg10plotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage (fullname) (11-Year Running Average) def T fig: lightgrey solid line black thinnish solid line :fig T -708. 492. plotrange )] concat def
+
+
+
+/runavg10table [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage T (pointwidth) 0 def pop (fullname) (11-Year Running Average) def )] concat def
+
+
+
+/runavg10tableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage T (pointwidth) 0 def pop (fullname) (11-Year Running Average) def )] concat def
+
+
+
+/trendplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def lon lat Name T fig: lightgrey solid line black thinnish solid line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
+
+
+
+/trendplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T fig: lightgrey solid line black thinnish solid line :fig T -708. 492. plotrange )] concat def
+
+
+
+/trendtable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def )] concat def
+
+
+
+/trendtableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def )] concat def
+
+
+
+/trendvalue [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T differences [T] medianover 100 mul )] concat def
+
+
+
+/trendvalueGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T differences [T] medianover 100 mul )] concat def
+
+
+ } {
+
+%/seasavgplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T (Jan 1901) (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage lon lat Name T fig: line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
+
+/seasavgplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def 1 index T 132 0.9 runningAverage (fullname) (11-Year Running Average (Trend Included)) def lon lat Name 4 index T differences [T] medianover 100 mul (name) (lineartrend) def T fig: solid black line thinnish red line thinnish blue line plotlabel plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]; Trend: %=[lineartrend] per century) psdef T -708. 492. plotrange )] concat def
+
+
+
+/seasavgplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def 1 index T 132 0.9 runningAverage (fullname) (11-Year Running Average (Trend Included)) def 1 index T differences [T] medianover 100 mul (name) (lineartrend) def T fig: solid black line thinnish red line thinnish blue line plotlabel :fig (framelabelstart) (Trend: %=[lineartrend] per century; ) psdef T -708. 492. plotrange )] concat def
+
+
+
+/seasavgtable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage )] concat def
+
+
+
+/seasavgtableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage )] concat def
+
+
+
+/seasavgplotGridStn [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Station Data) def lon lat Name ) varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Gridded Data) def 4 1 roll T fig: twolines plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange (plotborder) 95 psdef )] concat def
+
+
+
+/interannplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def lon lat Name T fig: line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
+
+
+
+/interannplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def T fig: line :fig T -708. 492. plotrange )] concat def
+
+
+
+/interanntable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def )] concat def
+
+
+
+/interanntableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def )] concat def
+
+
+
+/runavg10plot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage (fullname) (11-Year Running Average) def lon lat Name T fig: lightgrey solid line black thinnish solid line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
+
+
+
+/runavg10plotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage (fullname) (11-Year Running Average) def T fig: lightgrey solid line black thinnish solid line :fig T -708. 492. plotrange )] concat def
+
+
+
+/runavg10table [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage T (pointwidth) 0 def pop (fullname) (11-Year Running Average) def )] concat def
+
+
+
+/runavg10tableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage T (pointwidth) 0 def pop (fullname) (11-Year Running Average) def )] concat def
+
+
+
+/trendplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def lon lat Name T fig: lightgrey solid line black thinnish solid line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
+
+
+
+/trendplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T fig: lightgrey solid line black thinnish solid line :fig T -708. 492. plotrange )] concat def
+
+
+
+/trendtable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def )] concat def
+
+
+
+/trendtableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def )] concat def
+
+
+
+/trendvalue [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T differences [T] medianover 100 mul )] concat def
+
+
+
+/trendvalueGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T differences [T] medianover 100 mul )] concat def
+
+ } ifelse
+
+% end of check on the nature of the seasonalAverage calculation
+
+}
+% middle of check on if getplots = true (if there was a map click or lonpoint and latpoint defined
+{
+  /clickpin ( ) def
+  /clickpinfct ( ) def
+  /stnpin ( ) def
+  /stnpinfct ( ) def
+} ifelse
+
+</INGRID>
+
+
+
+<INGRID>
+% decide whether to display the map
+
+/stnmap FORMget (on) eq {
+
+(<tr>) print
+(<td align=center valign=top>) print
+
+WWWinfo
+
+%SOURCES .WORLDBATH .bath X -180 180 RANGE Y -90 90 RANGE
+%X Y fig: colors black countries_gaz coasts_gaz :fig (plotaxislength) 550 psdef (fntsze) 14 psdef
+
+%[( SOURCES .WORLDBATH .bath X -180 180 RANGE Y -90 90 RANGE )
+%( startcolormap DATA 0 7833 RANGE white white LightGoldenrodYellow 0 VALUE LightGoldenrod 500 VALUE goldenrod 1500 VALUE DarkGoldenrod 3000 VALUE sienna 7833 VALUE sienna endcolormap )
+
+[( SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon (X) renameGRID lat (Y) renameGRID X -180 180 RANGE Y -90 90 RANGE )
+( startcolormap DATA 0 8224 RANGE white white LightGoldenrodYellow 0 VALUE LightGoldenrod 500 VALUE goldenrod 1500 VALUE DarkGoldenrod 3000 VALUE sienna 8224 VALUE sienna endcolormap )
+clickpinfct  
+stnfiltplot  
+stnpinfct  
+( X Y fig: colors ) clickpin ( scattercolor ) stnpin ( black thin countries_gaz coasts_gaz :fig (plotaxislength) 550 psdef (fntsze) 14 psdef )] concat interp 
+
+%figdup 
+
+/map
+
+%[( SOURCES .WORLDBATH .bath X -180 180 RANGE Y -90 90 RANGE )
+%( startcolormap DATA 0 7833 RANGE white white LightGoldenrodYellow 0 VALUE LightGoldenrod 500 VALUE goldenrod 1500 VALUE DarkGoldenrod 3000 VALUE sienna 7833 VALUE sienna endcolormap )
+
+[( SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon (X) renameGRID lat (Y) renameGRID X -180 180 RANGE Y -90 90 RANGE )
+( startcolormap DATA 0 8752 RANGE white white LightGoldenrodYellow 0 VALUE LightGoldenrod 500 VALUE goldenrod 1500 VALUE DarkGoldenrod 3000 VALUE sienna 8224 VALUE sienna endcolormap )
+clickpinfct  
+stnfiltplot  
+stnpinfct  
+( X Y fig: colors ) clickpin ( scattercolor ) stnpin ( black thin countries_gaz coasts_gaz :fig (plotaxislength) 550 psdef (fntsze) 14 psdef )] concat 
+
+showmenu?
+{inputimagelinkwithlimitcontrolsclickforinfo}
+{imagelink } ifelse
+
+(</td>) print
+
+} if   
+
+% end of condition statement for displaying the map
+
+
+</INGRID>
+
+</tr>
+</table>
+
+<INGRID>
+%plot local data
+WWWinfo
+
+
+
+onClickforInfo?
+{
+
+% decide whether to display location information
+ /locinfo FORMget (on) eq {
+
+(<div id="coltext" align="left"><font point-size=10pt>) print
+
+(<b>Selected Location:</b><img src="greenpushpin2.gif">) print
+(<br>Longitude: ) print mylon print 
+(<br>Latitude: ) print mylat print 
+(<br>Approximate Elevation: ) print pointelev interp dup getrealization 0 get printunits pop
+
+%(<font size=-1><br><a href=") print stnfiltplotwms interp dataseturl (/X/Y/fig-/white/mask/scattercolor/-fig//transparent/true/psdef//plotaxislength/600/psdef//plotborder/72/psdef//XOVY/null/psdef/wms.xml">Station Map WMS Layer</a></font>) print
+
+
+(</font></div>) print
+
+(<div id="coltext" align="left"><font point-size=10pt>) print
+
+(<b>Nearest Station:</b><img src="blackpushpin2.gif">) print
+(<br>Name: ) print localname interp getrealization print 
+(<br>ID: ) print localID interp dup getrealization 0 get printunits pop
+(<br>Longitude: ) print locallon interp dup getrealization 0 get printunits pop  
+(<br>Latitude: ) print locallat interp dup getrealization 0 get printunits pop 
+(<br>Elevation: ) print localelev interp dup getrealization 0 get printunits pop 
+(<br>Distance from Selected Location: ) print dist interp dup getrealization 0 get printunits pop
+
+(</font></div>) print
+
+ } if
+% end of decision to display location information
+
+} {         
+% if no onClickforInfo?, check for defined /lonpoint and /latpoint
+
+  /lonpoint FORMknown /latpoint FORMknown and
+ {
+
+  % decide whether to display location information
+  /locinfo FORMget (on) eq {
+
+  (<div id="coltext" align="left"><font point-size=10pt>) print
+
+  (<b>Selected Location:</b><img src="greenpushpin2.gif">) print
+  (<br>Longitude: ) print mylon print 
+  (<br>Latitude: ) print mylat print 
+  (<br>Approximate Elevation: ) print pointelev interp dup getrealization 0 get printunits pop
+
+
+  (</font></div>) print
+
+  (<div id="coltext" align="left"><font point-size=10pt>) print
+
+  (<b>Nearest Station:</b><img src="blackpushpin2.gif">) print
+  (<br>Name: ) print localname interp getrealization print 
+  (<br>ID: ) print localID interp dup getrealization 0 get printunits pop
+  (<br>Longitude: ) print locallon interp dup getrealization 0 get printunits pop  
+  (<br>Latitude: ) print locallat interp dup getrealization 0 get printunits pop 
+  (<br>Elevation: ) print localelev interp dup getrealization 0 get printunits pop 
+  (<br>Distance from Selected Location: ) print dist interp dup getrealization 0 get printunits pop
+
+  (</font></div>) print
+
+  } if
+  % end of decision to display location information
+
+ } if  % end of check whether /lonpoint and /latpoint defined
+
+} ifelse
+% end of check for onClickforInfo?
+
+
+
+/lonpoint FORMknown /latpoint FORMknown and onClickforInfo? or 
+
+{
+
+(<div><font point-size=10pt>) print
+% this div is start of container for all plot displays
+
+(<div id="rightcol"><center><b>a. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, & Linear Trend</b></center>) print
+
+seasavgplot interp
+/map
+seasavgplot
+imagelink
+
+(<font size=-1><br><a href=") print seasavgtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+
+
+(</div>) print
+
+(<div id="rightcol"><center><b>b. Interannual Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
+
+interannplot interp
+/map
+interannplot
+imagelink
+
+(<font size=-1><br><a href=") print interanntable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data in this graph</a> | ) print interannplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+
+(</div>) print
+
+(<div id="rightcol"><center><b>c. Decadal Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
+
+runavg10plot interp
+/map
+runavg10plot
+imagelink
+
+(<font size=-1><br><a href=") print runavg10table interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+
+(</div>) print
+
+(<div id="rightcol"><center><b>d. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center></td></tr>) print
+
+trendplot interp
+/map
+trendplot
+imagelink
+
+(<font size=-1><br><a href=") print trendtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data for the linear trend in this graph</a> | ) print trendplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+
+(<br>Linear Trend: &nbsp;&nbsp; ) print trendvalue interp dup getrealization 0 get 100 mul round 0.01 mul printunits pop ( per century) print
+
+(</div>) print
+
+   (<div id="griddedplot" style="display:none; float: left; background-color: white; padding-top: 10px; padding-bottom: 10px;">) print
+
+(<div id="rightcol"><center><b>e. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, & Linear Trend</b></center>) print
+
+%(<div id="rightcol"><center><b>e. Seasonal Average Values (Gridded Data)</b></center>) print
+
+seasavgplotGG interp
+/map
+seasavgplotGG
+imagelink
+
+(<font size=-1><br><a href=") print seasavgtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+
+(</div>) print
+
+(<div id="rightcol"><center><b>f. Interannual Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
+
+%(<div id="rightcol"><center><b>f. Interannual Component of Variability (Gridded Data)</b></center>) print
+
+interannplotGG interp
+/map
+interannplotGG
+imagelink
+
+(<font size=-1><br><a href=") print interanntableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data in this graph</a> | ) print interannplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+
+(</div>) print
+
+(<div id="rightcol"><center><b>g. Decadal Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
+
+%(<div id="rightcol"><center><b>g. Decadal Component of Variability (Gridded Data)</b></center>) print
+
+runavg10plotGG interp
+/map
+runavg10plotGG
+imagelink
+
+(<font size=-1><br><a href=") print runavg10tableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+
+(</div>) print
+
+(<div id="rightcol"><center><b>h. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center></td></tr>) print
+
+%(<div id="rightcol"><center><b>h. Linear Trend (Gridded Data)</b></center></td></tr>) print
+
+trendplotGG interp
+/map
+trendplotGG
+imagelink
+
+(<font size=-1><br><a href=") print trendtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data for the linear trend in this graph</a> | ) print trendplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+
+(<br>Linear Trend: &nbsp;&nbsp; ) print trendvalueGG interp dup getrealization 0 get 100 mul round 0.01 mul printunits pop ( per century) print
+
+(</div>) print
+
+(<div id="rightcol"><center><b>i. Comparison of Seasonal Average Values (Station vs. Gridded)</b></center>) print
+
+seasavgplotGridStn interp
+/map
+seasavgplotGridStn
+imagelink
+
+(<font size=-1><br>) print seasavgplotGridStn interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+
+(</div>) print
+
+  (</div>) print  %div container for gridded data plot displays
+
+(<div id="leftcol" align="left">) print
+(<a href="javascript:ReverseContentDisplay('griddedplot')">Plots a. to d. are for station data; click here to show/hide the same charts using gridded information</a>) print
+(</div>) print
+
+    (</font></div>) print  %end of div container for all plots
+
+
+} 
+
+ { } ifelse
+
+% ifelse for onclickfor info or lonpoint/latpoint
+
+
+/desc FORMget (on) eq {
+(<div style="clear: both;"> </div>) print
+
+
+(<div id="footer" align="left">) print
+(
+<font face="Helvetical,Arial" point-size=10pt size=-1>
+<b><u>Description</u></b>
+</font>
+<p>
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+The station time series data used in this interface are from the Global Historical Climatology Network (GHCN) beta version 2 monthly station precipitation data set and the GHCN version 2 station monthly mean temperature data set.  The gridded temperature and precipitation data are from the Hulme Global Gridded Precipitation Version 1.0 data set and the CRUTEM3v Variance-Adjusted Global (Land-Only) Gridded Air Temperature data set.  For more detailed information about these data and each time series graph, please see the <a href="instructions.html#datadescription">Description of the Data Used in this Interface</a> section of the <a href="instructions.html">instructions</a> page. 
+<p>
+Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> for this tool for more information on interpreting these graphs.
+</font>
+) print
+
+(</div>) print
+
+} if
+% condition for displaying dataset description currently tied to desc display condition
+
+
+% == in place of print to see what kind of object you're dealing with 
+</INGRID>
+
+
+</center>
+
+<INGRID>
+startprint
+</INGRID>
+</FORM>
+
+</body>
+</html>
