@@ -1,0 +1,146 @@
+<html><head>
+    <title>World Bank Climate Change Data Portal Station Temperature & Precipitation Variability Tool</title>
+
+<script language="JavaScript">
+<!--
+
+  function ReverseContentDisplay(d) {
+if(d.length < 1) { return; }
+if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+else { document.getElementById(d).style.display = "none"; }
+}
+<!-- END script -->
+</script>
+
+</head>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000">
+<INGRID>
+%/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+%standardHeader
+</INGRID>
+<h3 align=center><u>How to Use this Interface</u></h3>
+<p>
+<table align=center>
+<tr><td width=550>
+<font point-size=10pt>
+<a href="#map">Interacting with the map</a>
+<br><a href="#timeseries">Creating time series analyses</a>
+<br><a href="#datadescription">Description of the Data Used in this Interface</a>
+<p><a name="map"><u><b>Interacting with the map</b></u>
+<br> 
+This interface allows a user to display on a map the locations of GHCN (Global Historical Climatology Network) monthly precipitation or temperature stations that meet a user-defined threshold of data completeness for a defined season and range of years and view time series of seasonal-average precipitation or temperature and its variability on various time scales over the 20th century from one of these user-selected stations.
+<p>
+The menu on the left side of the page presents options for selecting: 
+<ul>
+<li>The GHCN monthly station precipitation or temperature data set </li>
+<li>The starting and ending months of a season of interest</li>
+<li>A range of years over which to evaluate the completeness of the temperature or precipitation data and to specify the length of the time series</li>
+<li>A Data Completeness Threshold for specifying what percentage of months, for the selected season and range of years, must contain non-missing data in order for stations to be displayed on the map and considered for selection.  If a low Data Completeness Threshold such as 65% is selected, for example, you will be able to choose from a larger number of stations, but some of them will have as little as 65% of the data that a fully complete station record would have.  Stations with less complete records will have time series with many gaps that make it difficult to compute a good estimate of the long-term linear trend, for example.</li>
+</ul>
+<p>
+Once the selections in the menu have been made, the user should click the "Redraw" (circular arrow) button to the left of the map to apply the menu selections and display on the map the stations that meet the criteria.
+<p>
+Once the map has been updated, the map viewer may be used to:
+<ul>
+<li>Zoom in to a more specific region of interest (or zoom out)</li>
+<li>Click on the map to select the nearest station and display its time series
+</ul>
+<p>
+<u><i>Zoom map in/out</i></u>
+<br>There are two ways to zoom the map to different regions; a click-and-drag zoom window and the latitude/longitude text boxes. 
+<br><ul><li><i>Click-and-drag zoom window</i>
+<br><ol><li>Click and drag a window on the map over the region of interest.  The map will automatically zoom to that region when the mouse button is released.
+<li>You can return to the full domain of the map at any time by clicking the Zoom Out button to the left of the map (middle of the three buttons).
+</ol></li>
+<li><i>Specific lat/lon selection</i>
+<br>There are four lat/lon text boxes underneath and to the left of the map.
+<br><ol><li>Change the values in the lat/lon text boxes to the limits of the region you would 
+like to display using the text format already shown.</li>
+<li>Click the Redraw button to the left of the map (top of the three buttons).</li>
+</ol>
+</ul>
+<a name="timeseries"><u><b>Generate time series analyses</b></u>
+<br>Users may generate time series analyses of seasonal-average precipitation or temperature for the station that meets the selected data completeness criteria and is closest to the location clicked on the map.
+<p>
+Click on the map at the point of interest.  Once the map is clicked, the page will refresh, and several items will be displayed.  
+<ul>
+ <li>A green pushpin on the map indicates the location clicked by the user.</li>
+ <li>A black pushpin on the map indicates the location of the nearest station that meets the user-defined data completeness criteria.</li>
+ <li>Under the "Selected Location:" heading, the longitude, latitude, and approximate elevation of the location clicked by the user are displayed.</li>
+ <li>Under the "Nearest Station:" heading, the name, IWMO identification number, longitude, latitude, and elevation of the station, and the distance from the station to the selected location are displayed.</li>
+ <li>Four graphs display time series from the user-selected starting year to 2000 of the seasonal-average GHCN station precipitation or temperature, the interannual component of variability, the dekadal component of variability (11-year running average), and the linear trend of the seasonal average values.  For comparison you may also use the "Plots a. to d. are for station data; click here to show/hide these charts for gridded information" link to display the same analyses for the grid box containing the location you clicked based upon coarsely-gridded precipitation (2.5&deg; lat. x 3.75&deg; lon.) and temperature (5&deg; lat. x 5&deg; lon.) data derived from a combination of multiple nearby stations.   Links to data in each graph are also available.</li>
+</ul>
+<p>
+<a name=datadescription><b><u>Description of the Data Used in this Interface</u></b></a>
+<p>
+
+Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> for this tool for more information on interpreting these graphs.
+<p>
+<b>Graphs Based Upon GHCN Station Data:</b>
+<p>
+a. Time series of seasonal-average (black line) temperature (in &deg;C) or precipitation (in mean mm/month) at the closest GHCN station, its decadal component with the linear trend retained (blue line), and its linear trend (red line) for the selected season over the selected year range.  The seasonal average for a given year is calculated and displayed only if non-missing data from all months in the selected season are available.
+<p>
+b. Time series of the interannual component of variablility of the seasonal-average GHCN station temperature (in &deg; C) or precipitation (in mean mm/month) time series, given as the anomaly from the long-term mean over the selected range of years. <div id="captionB" style="display:none;"><p> This time series is constructed by first calculating the seasonal-average temperature or precipitation values, and then calculating the anomaly from the long-term mean of the same (using all non-missing seasons available during the selected year range).  Next, the linear best fit to the anomalies (as shown in plot d.) is subtracted, and, finally, the 11-year running average of the detrended anomalies (as shown in plot c.) is subtracted.  Since a simple 11-year running average is used in the calculation, five years of data will be lost from each end of the time series.</p></div><a href="javascript:ReverseContentDisplay('captionB')">Show/hide additional information</a>
+<p>
+c. Time series of the decadal component of variability of the seasonal-average GHCN station temperature (in &deg; C) or precipitation (in mean mm/month), given as the anomaly from the long-term monthly mean (black line), and time series of the seasonal-average temperature or precipitation anomaly from the long-term monthly mean (in light grey). <div id="captionC" style="display:none;"><p> The decadal component time series is constructed by first calculating the seasonal-average temperature or precipitation values, then calculating the anomaly from the long-term mean of the same (using all non-missing seasons available during the range of selected years).  Next, the linear best fit to the anomalies (as shown in plot d.) is subtracted, and an un-weighted 11-year running average is applied to the result.  For any given year the 11-year running average is calculated and displayed only if at least 90% of the 11 values in the moving window are non-missing, otherwise the 11-year running average is considered missing and not shown for that year.  Since a simple 11-year running average is used, five years of data will be lost from each end of the time series.</p></div><a href="javascript:ReverseContentDisplay('captionC')">Show/hide additional information</a> 
+<p>
+d. Time series of the linear trend of the seasonal-average GHCN station temperature (in &deg; C) or precipitation (in mean mm/month), given as the anomaly from the long-term mean (black line), and time series of the seasonal-average temperature or precipitation anomaly from the long-term mean (in light grey).  The linear trend line is calculated as the linear best fit to the seasonal-average temperature or precipitation anomalies from the long-term mean.
+<p>
+<b>Graphs Based Upon Hulme Gridded Precipitation or CRUTEM3v Gridded Temperature Data:</b>
+<p>
+e. Time series of seasonal-average (black line) CRUTEM3v gridded temperature (in &deg;C) or Hulme gridded precipitation (in mean mm/month) at the closest grid point, its decadal component with the linear trend retained (blue line), and its linear trend (red line) for the selected season over the selected year range.  The seasonal average for a given year is calculated and displayed only if non-missing data from all months in the selected season are available.
+<p>
+f. Time series of the interannual component of variablility of the seasonal-average CRUTEM3v gridded temperature (in &deg; C) or Hulme gridded precipitation (in mean mm/month) time series, given as the anomaly from the long-term mean over the selected range of years. <div id="captionF" style="display:none;"><p> This time series is constructed by first calculating the seasonal-average temperature or precipitation values, and then calculating the anomaly from the long-term mean of the same (using all non-missing seasons available during the selected year range).  Next, the linear best fit to the anomalies (as shown in plot h.) is subtracted, and, finally, the 11-year running average of the detrended anomalies (as shown in plot g.) is subtracted.  Since a simple 11-year running average is used in the calculation, five years of data will be lost from each end of the time series.</p></div><a href="javascript:ReverseContentDisplay('captionF')">Show/hide additional information</a>
+<p>
+g. Time series of the decadal component of variability of the seasonal-average CRUTEM3v gridded temperature (in &deg; C) or Hulme gridded precipitation (in mean mm/month), given as the anomaly from the long-term monthly mean (black line), and time series of the seasonal-average temperature or precipitation anomaly from the long-term monthly mean (in light grey). <div id="captionG" style="display:none;"><p> The decadal component time series is constructed by first calculating the seasonal-average temperature or precipitation values, then calculating the anomaly from the long-term mean of the same (using all non-missing seasons available during the range of selected years).  Next, the linear best fit to the anomalies (as shown in plot h.) is subtracted, and an un-weighted 11-year running average is applied to the result.  For any given year the 11-year running average is calculated and displayed only if at least 90% of the 11 values in the moving window are non-missing, otherwise the 11-year running average is considered missing and not shown for that year.  Since a simple 11-year running average is used, five years of data will be lost from each end of the time series.</p></div><a href="javascript:ReverseContentDisplay('captionG')">Show/hide additional information</a> 
+<p>
+h. Time series of the linear trend of the seasonal-average CRUTEM3v gridded temperature (in &deg; C) or Hulme gridded precipitation (in mean mm/month), given as the anomaly from the long-term mean (black line), and time series of the seasonal-average temperature or precipitation anomaly from the long-term mean (in light grey).  The linear trend line is calculated as the linear best fit to the seasonal-average temperature or precipitation anomalies from the long-term mean.
+<p>
+<b>Graph Comparing Seasonal-Average GHCN Station Values to Gridded Values:</b>
+<p>
+i. Time series of seasonal-average temperature (in &deg; C) or precipitation (in mean mm/month) values at the nearest available GHCN station (solid line) and seasonal-average CRUTEM3v gridded temperature (in &deg; C) or Hulme gridded precipitation (in mean mm/month) values at the nearest grid point (dashed line).
+<p>
+<b><u>Data Sources</u></b>
+</font>
+<p>
+<b>Station Precipitation Data</b> <br>
+<b>Data:</b> Global Historical Climatology Network (GHCN) beta version 2 monthly station precipitation and station metadata (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/">Location in Data Library</a>)<br>
+<b>Data Source:</b> U. S. National Climatic Data Center (NCDC) <br>
+<b>Description:</b> Quality-controlled raw monthly station precipitation values in units of mm/month.  While quality control procedures have been applied to these data to remove values that are likely erroneous, no adjustments for inhomogeneities have been applied to correct for other possible non-climatic influences such as station moves, raingauge changes, changes in the observation period, etc.<p>
+<b>Station Temperature Data</b> <br>
+<b>Data:</b> Global Historical Climatology Network (GHCN) version 2 station monthly mean temperatures and station metadata (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GHCN/.v2/">Location in Data Library</a>)<br>
+<b>Data Source:</b> U. S. National Climatic Data Center (NCDC) <br>
+<b>Description:</b> Quality-controlled, adjusted monthly mean station temperature values in units of &deg;C.  The temperature data used here have been subjected to quality control procedures to remove values that are likely erroneous, and have been adjusted to correct for inhomogeneities resulting from non-climatic influences such as station moves, sensor changes, environmental changes around the station, etc.  In cases where stations have duplicate temperature records from different sources, the longest duplicate record was used here. <br>
+<p>
+<b>Gridded Precipitation Data</b> <br>
+<b>Data:</b> Hulme Global Gridded Precipitation (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.Hulme/.Global/">Location in Data Library</a>)<br>
+<b>Data Source:</b> 'gu23wld0098.dat' (Version 1.0) constructed and supplied by Dr Mike Hulme at the Climatic Research Unit, University of East Anglia, Norwich, UK<br>
+<b>Description:</b> An historical monthly precipitation dataset for global land areas from 1900 to 1998, gridded at 2.5&deg; latitude by 3.75&deg; longitude resolution
+<p>
+<b>Gridded Temperature Data</b> <br>
+<b>Data:</b> CRUTEM3v Variance-Adjusted Global (Land-Only) Gridded Air Temperature (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.Jones/">Location in Data Library</a>)<br>
+<b>Data Source:</b> Climatic Research Unit, University of East Anglia, Norwich, UK<br>
+<b>Description:</b> CRUTEM3v variance-adjusted monthly land air temperature anomalies from January 1850 to present on a 5&deg; latitude by 5&deg; longitude grid, derived from monthly station temperature time series
+<p>
+<b>Gridded Elevation Data</b> <br>
+<b>Data:</b> ETOPO1 grid registered 1 arc-minute global relief model for topography (land and ice surfaces) and bathymetry (<a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/">Location in Data Library</a>)<br>
+<b>Data Source:</b> National Oceanic and Atmospheric Administration (NOAA), National Geophysical Data Center (NGDC)<br>
+<b>Description:</b> The elevation/bathymetry data used as the map background and to indicate the "approximate elevation" of the location the user selected is from the ETOPO1 1 arc-minute resolution gridded bathymetry/topography data set.  The station elevations come from the GHCN station data sets.
+<p>
+<b>References:</b><br>
+Peterson, T. C., and R. S. Vose, 1997:  An overview of the Global Historical Climatology Network temperature database. <i>Bull. Amer. Met. Soc.</i>, <b>78</b>, 2837-2849. <p>
+Peterson, T. C., R. Vose, R. Schmoyer, and V. Razuvaev, 1998:  Global Historical Climatology Network (GHCN) quality control of monthly temperature data. <i>Int. J. Climatol.</i>, <b>18</b>, 1169-1179.<p>
+Hulme, M. (1992) A 1951-80 global land precipitation climatology for the evaluation of General Circulation Models. <i>Climate Dynamics</i>, <b>7</b>, 57-72.<p>
+Hulme, M. (1994) Validation of large-scale precipitation fields in General Circulation Models.  pp. 387-406, in <i>Global Precipitations and Climate Change</i>, (eds.) Desbois, M. and Desalmand, F., NATO ASI Series, Springer-Verlag, Berlin, 466pp.<p>
+Hulme, M., T. J. Osborn, and T. C. Johns (1998) Precipitation sensitivity to global warming:  Comparison of observations with HadCM2 simulations. <i>Geophys. Res. Letts.</i>, <b>25</b>, 3379-3382.<p>
+Brohan, P., J. J. Kennedy, I. Harris, S. F. B. Tett and P. D. Jones, 2006: Uncertainty estimates in regional and global observed temperature changes: a new dataset from 1850. <i>J. Geophysical Research</i>, <b>111</b>, D12106, doi:10.1029/2005JD006548.<p>
+Jones, P. D., New, M., Parker, D. E., Martin, S. and Rigor, I. G., 1999: Surface air temperature and its variations over the last 150 years. <i>Reviews of Geophysics</i>, <b>37</b>, 173-199.
+<p>
+Amante, C. and B. W. Eakins, ETOPO1 1 Arc-Minute Global Relief Model:  Procedures, Data Sources, and Analysis., NOAA Technical Memorandum NESDIS NGDC-24, National Geophysical Data Center, NESDIS, NOAA, U. S. Department of Commerce, Boulder, CO, March 2009.
+
+<p>
+Please feel free to <a href="mailto:mbell@iri.columbia.edu">email us</a> with any questions or comments.  
+</font></td></tr></table>
+</body>
+
