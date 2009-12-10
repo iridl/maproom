@@ -197,25 +197,27 @@ La carte représente le nombre de mois dans l'année qui sont propices à la transm
 </td>
 </tr>
 </table>
-
-
+<INGRID>showmenu? not { stopprint} if</INGRID>
 <table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
 <tr><td colspan=2 width=60% align=center bgcolor=#DCDCDC><b>Télécharger la Carte</b></td>
 <td align=center bgcolor=#DCDCDC><b>Télécharger les Données</b></td></tr>
 <tr>
 <INGRID>
+printflag {
 imagelinkstart
 (<td width=20 align=center>)print
 (Figure en PDF) (.pdf) linktoimageformat
 (</td><td align=center>) print
 (Figure en JPEG) (.jpg) linktoimageformat
 (</td>) print
+} if
 </INGRID>
 <td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/<INGRID>datarestrictionasurl print </INGRID>?help+datafiles#GIS">Données pour SIG</a>
 </td>
 </tr>
 <tr>
 <INGRID>
+printflag {
 pop
 .auxfig
 imagelinkstart
@@ -225,6 +227,7 @@ imagelinkstart
 (Légende en JPEG) (.jpg) linktoimageformat
 (</td>) print
 pop
+} if
 </INGRID>
 </tr>
 </table>
@@ -235,27 +238,3 @@ startprint
 </INGRID>
 </FORM>
   </body></html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
