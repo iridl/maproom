@@ -200,25 +200,28 @@ The map displays the number of months during the year that are suitable for mala
 </td>
 </tr>
 </table>
-
+<INGRID>showmenu? not { stopprint} if</INGRID>
 
 <table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
 <tr><td colspan=2 width=60% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
 <td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
 <tr>
 <INGRID>
+printflag {
 imagelinkstart
 (<td width=20 align=center>)print
 (Figure as PDF) (.pdf) linktoimageformat
 (</td><td align=center>) print
 (Figure as JPEG) (.jpg) linktoimageformat
 (</td>) print
+} if
 </INGRID>
 <td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/<INGRID>datarestrictionasurl print </INGRID>?help+datafiles#GIS">Data for GIS</a>
 </td>
 </tr>
 <tr>
 <INGRID>
+printflag {
 pop
 .auxfig
 imagelinkstart
@@ -228,6 +231,7 @@ imagelinkstart
 (Colorscale as JPEG) (.jpg) linktoimageformat
 (</td>) print
 pop
+|if
 </INGRID>
 </tr>
 </table>
