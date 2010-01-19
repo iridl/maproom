@@ -97,8 +97,7 @@ leftmenuHeader
 <b><font point-size=9pt color=#FFFFFF>Model:</font></b>
 <INGRID>
 (<select name="Model" id="Model" onChange="document.mapform.submit();">) print
-[(ECHAM4p5) (CCM3v6) (NCEP) (NSIPP-1) (COLA) (ECPC) (GFDL)] {
-% (ECHAM4p5-MOM3)] {
+[(ECHAM4p5) (CCM3v6) (NCEP) (NSIPP-1) (COLA) (ECPC) (GFDL) (ECHAM4p5-MOM3)] {
   (<option value=) print
   dup print /Model FORMgetknown {
     1 index eq {( selected="selected") print} if}{
