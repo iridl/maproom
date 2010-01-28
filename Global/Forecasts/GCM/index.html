@@ -50,48 +50,6 @@ leftmenuHeader
 <tr><td><table  align=center>
 
 <tr valign=top>
-<td align=left bgcolor=#000066>
-<b><font point-size=9pt color=#FFFFFF>Variable:</font></b>
-<INGRID>
-(<select name="Variable" id="Variable" onChange="changedtext(this)">) print
-[(Temperature) (Precipitation)] {
-  (<option value=) print
-  dup print /Variable FORMgetknown {
-    1 index eq {( selected=selected) print} if}{
-    dup (Temperature) eq {( selected=selected) print} if (Temperature) /Variable FORM!
-  }ifelse
-  (>) print print (</option>) print
-}forall
-(</select>)print
-</INGRID>
-
-</td>
-<td align=left bgcolor=#FFFFCC>
-<b><font point-size=9pt>Field:</font></b>
-<INGRID>
-%PercentOfMedian is for percipitation only
-(<select name="Field" id="Field" onChange="changedtext(this)">) print
-/Variable FORMgetknown {(Precipitation) eq}{false}ifelse {[(Total) (Anomaly) (PercentOfMedian)]}{[(Total) (Anomaly)]}ifelse {
-  (<option value=) print
-  dup print /Field FORMgetknown {
-    dup (PercentOfMedian) eq {
-      /Variable FORMget (Temperature) eq {
-        pop dup (Total) eq {( selected=selected) print}if (Total) /Field FORM!
-      }{
-        1 index eq {( selected=selected) print} if
-      }ifelse
-    }{
-      1 index eq {( selected=selected) print} if
-    }ifelse
-  }{
-    dup (Total) eq {( selected=selected) print} if (Total) /Field FORM!
-  }ifelse
-  (>) print print (</option>) print
-}forall
-(</select>)print
-</INGRID>
-</td>
-
 
 <td align=left bgcolor=#000066>
 <b><font point-size=9pt color=#FFFFFF>Model:</font></b>
@@ -135,7 +93,7 @@ Options
 % ECHAM4p5 doesn't have standard directory tree
 /Model FORMget (ECHAM4p5) eq {
   /Ocean FORMgetknown {}{(ssst) dup /Ocean FORM!}ifelse (psst) eq {
-    ( .ensemble24 ) put 
+    ( .ensemble24 ) put
   }{
     ( .ensemble ) put
   }ifelse
@@ -162,7 +120,7 @@ Options
 /Model FORMget (ECHAM4p5-MOM3) eq {
 (<font color=#FF0000>This is a COUPLED model</font>)print
 }{
-%here I get all the kinds of sst forcing for the chose model
+%here I get all the kinds of sst forcing for the chosen model
 [currentobject {
   exec totype /datasettype eq {
     cvntos dup (asst) eq not {dup (ssst) eq not {dup (psst) eq not {pop}if}if}if
@@ -199,6 +157,68 @@ Options /isthereSST get not { (ssst) /Ocean FORM! }if
 }ifelse
 </INGRID>
 </td>
+
+<td align=left bgcolor=#000066>
+<b><font point-size=9pt color=#FFFFFF>Variable:</font></b>
+<INGRID> 
+(<select name="Variable" id="Variable" onChange="changedtext(this)">) print
+/Model FORMgetknown {
+  dup (COLA) eq 1 index (ECPC) eq or exch (GFDL) eq or {
+    [(Temperature) (Precipitation)]
+  }{
+    [(Temperature) (Precipitation) (500mbHeight)]
+  }ifelse
+}{
+  [(Temperature) (Precipitation) (500mbHeight)]
+}ifelse {
+  (<option value=) print
+  dup print /Variable FORMgetknown {
+    dup (500mbHeight) eq /Model FORMget dup (COLA) eq 1 index (ECPC) eq or exch (GFDL) eq or and {
+      pop dup (Temperature) eq {( selected=selected) print} if (Temperature) /Variable FORM!
+    }{
+      1 index eq {( selected=selected) print} if
+    }ifelse
+  }{
+    dup (Temperature) eq {( selected=selected) print} if (Temperature) /Variable FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+
+</td>
+<td align=left bgcolor=#FFFFCC>
+<b><font point-size=9pt>Field:</font></b>
+<INGRID>
+%PercentOfMedian is for percipitation only
+%ZonalAnomaly is for 500mbHeight only
+(<select name="Field" id="Field" onChange="changedtext(this)">) print
+/Variable FORMgetknown {(Temperature) eq not}{false}ifelse {
+  /Variable FORMget (Precipitation) eq {
+    [(Total) (Anomaly) (PercentOfMedian)]
+  }{
+    [(Total) (Anomaly) (ZonalAnomaly)]
+  }ifelse
+}{
+  [(Total) (Anomaly)]
+}ifelse {
+  (<option value=) print
+  dup print /Field FORMgetknown {
+    dup (PercentOfMedian) eq /Variable FORMget (Precipitation) eq not and
+    1 index (ZonalAnomaly) eq /Variable FORMget (500mbHeight) eq not and
+    or {
+      pop dup (Total) eq {( selected=selected) print}if (Total) /Field FORM!
+    }{
+      1 index eq {( selected=selected) print} if
+    }ifelse
+  }{
+    dup (Total) eq {( selected=selected) print} if (Total) /Field FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+</td>
 </tr>
 </table>
 </td>
@@ -207,9 +227,11 @@ Options /isthereSST get not { (ssst) /Ocean FORM! }if
 <INGRID>
 
 %moving on with the stack
-/Model FORMget (ECHAM4p5-MOM3) eq not{
+/Model FORMget (ECHAM4p5-MOM3) eq {
+  M (1) (12) RANGEEDGES
+}{
   /Ocean FORMget interp nip Options /ensembleTag get interp .monthly
-}if
+}ifelse
 [M]average
 
 </INGRID>
@@ -327,9 +349,24 @@ dup .L CopyStream getrealization {
             /Field FORMget (PercentOfMedian) eq {( prcp_anomaly_25max500_colors2_percentmedian ) put}if
 }if
 
+/Variable FORMget (500mbHeight) eq {
+  Options /varName ( .zg ) put
+  Options /varUnit ( ) put
+  Options /varColor /Field FORMget (Total) eq {( ) put}if
+            /Field FORMget (Anomaly) eq {( correlationcolorscale ) put}if
+            /Field FORMget (ZonalAnomaly) eq {( correlationcolorscale ) put}if
+  Options /varRange /Field FORMget (Total) eq {( ) put}if
+            /Field FORMget (Anomaly) eq {( DATA -100 100 RANGE ) put}if
+            /Field FORMget (ZonalAnomaly) eq {( DATA -100 100 RANGE ) put}if
+}if
+
 %keep moving with my stack
 /Model FORMget (ECHAM4p5-MOM3) eq{
-  .Surface
+  /Variable FORMget (500mbHeight) eq{
+    .PressureLevel
+  }{
+    .Surface
+ }ifelse
 }if 
 Options /varName get interp 
 Options /varUnit get interp
@@ -377,11 +414,18 @@ Options /varUnit get interp
 }ifelse
 
 %here are the options for the analysis (if Mean I don't need to do anything)
-/Field FORMget (Anomaly) eq {
+
+/Field FORMget (Anomaly) search {
+  pop pop pop
   /Model FORMget (ECHAM4p5-MOM3) eq {
-    2 index .ATM .Surface
-     Options /varName get interp
-     Options /varUnit get interp
+    /Variable FORMget (500mbHeight) eq {
+      2 index .ATM .PressureLevel
+    }{
+      2 index .ATM .Surface
+    }ifelse
+    Options /varName get interp
+    Options /varUnit get interp
+    M (1) (12) RANGEEDGES
     [M]average
     S (0000 1 Jan 1982) (0000 1 Dec 2008) RANGE
     S 12 splitstreamgrid
@@ -397,17 +441,9 @@ Options /varUnit get interp
       Options /varUnit get interp
     }{
       dup 2002 ge {pop pop pop pop pop true}{2001 ge {6.5 ge {pop pop pop true}{pop pop pop false}ifelse}{pop pop pop pop false}ifelse}ifelse {
-        /Model FORMget (ECHAM4p5) eq {
-          2 index /Model FORMget interp nip .History .ensemble_mean .monthly
-          Options /varName get interp
-          Options /varUnit get interp
-          T (1969) (1999) RANGE
-          yearly-climatology
-        }{
-          2 index /Model FORMget interp nip .History .climatology .c6998
-          Options /varName get interp
-          Options /varUnit get interp
-        }ifelse
+        2 index /Model FORMget interp nip .History .climatology .c6998
+        Options /varName get interp
+        Options /varUnit get interp
       }{
         2 index /Model FORMget interp nip .History .ensemble_mean .monthly
         Options /varName get interp
@@ -421,14 +457,18 @@ Options /varUnit get interp
   }ifelse
     L 3 runningAverage
       /pointwidth 3 def
-  sub
-}if
+   sub  
+  /Field FORMget (ZonalAnomaly) eq {dup [X]average sub}if
+}{
+  pop
+}ifelse
 
 /Field FORMget (PercentOfMedian) eq {
   /Model FORMget (ECHAM4p5-MOM3) eq {
     2 index .ATM .Surface
      Options /varName get interp
      Options /varUnit get interp
+    M (1) (12) RANGEEDGES
     [M]average
     S (0000 1 Jan 1982) (0000 1 Dec 2008) RANGE
     S 12 splitstreamgrid
@@ -450,7 +490,7 @@ Options /varUnit get interp
         2 index /Model FORMget interp nip .History .ensemble_mean .monthly
         Options /varName get interp
         Options /varUnit get interp
-        T (1969) (1999) RANGE
+        T (1969) (1998) RANGE
         T 12 splitstreamgrid
         [T2]medianover
       }{
@@ -552,6 +592,10 @@ Options /varRange get interp
   DATA 10 25 50 75 90 100 120 150 200 250 300 400 VALUES
 }if
 
+/Variable FORMget (500mbHeight) eq {
+  P 500 VALUES
+}if
+
 exch
 L 3 runningAverage
 /pointwidth 3 def
@@ -565,11 +609,11 @@ L /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false
 1 index [X Y]average getrealization 0 get NaN eq {
 (<tr><td><font color=#FF0000 point-size=18pt><b><BLINK>DATA NOT AVAILABLE</BLINK></b></font></td></tr></div>)print
 }if
-
+pstack
 X Y fig- colors thinnish grey coasts lakes | black nozero contours plotlabel -fig
 /plotaxislength 590 psdef
 /antialias true psdef
-/framelabel [(%=[T] IRI seasonal Forecast Temperature issued %=[S] from ) /Model FORMget ]concat psdef
+/framelabel [(%=[T] IRI seasonal Forecast ) /Variable FORMget ( issued %=[S] from ) /Model FORMget ]concat psdef
 
 figdup
 
