@@ -703,18 +703,18 @@ Mask illustrating areas where the skill of the model is not sufficient. The skil
 <td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
 <td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
 <tr>
-<INGRID>
-showmenu? {
+<INGRID> 
+showmenu? { 
   imagelinkstart 
   (<td align=center>)print
-  (Figure as PDF) (.pdf) linktoimageformat
+  (Figure as PDF) (.pdf) linktoimageformat 
   (</td><td align=center>) print
   (Figure as JPEG) (.jpg) linktoimageformat
    (</td>) print
 } if
 
 (<td rowspan=2 align=center><a href=http://iridl.ldeo.columbia.edu/expert/)print
-pop 3 index dup dataseturl print 
+pop 4 index dup dataseturl print 
 </INGRID>?help+datafiles#GIS">Data for GIS</a><font color=green>(restricted)</font></td>
 </tr>
 
