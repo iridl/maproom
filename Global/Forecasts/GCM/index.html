@@ -55,7 +55,7 @@ leftmenuHeader
 <b><font point-size=9pt color=#FFFFFF>Model:</font></b>
 <INGRID>
 (<select name="Model" id="Model" onChange="document.mapform.submit();">) print
-[(ECHAM4p5) (CCM3v6) (NCEP) (NSIPP-1) (COLA) (ECPC) (GFDL) (ECHAM4p5-MOM3)] {
+[(ECHAM4p5) (CCM3v6) (NCEP) (NSIPP-1) (COLA) (ECPC) (GFDL) (ECHAM4p5-MOM3-AC1) (ECHAM4p5-MOM3-DC2) (ECHAM4p5-GML-cfsSST)] {
   (<option value=) print
   dup print /Model FORMgetknown {
     1 index eq {( selected="selected") print} if}{
@@ -102,9 +102,16 @@ Options
 }ifelse
 
 %here I can start my stack
-/Model FORMget (ECHAM4p5-MOM3) eq {
-  SOURCES .IRI .MP .RESEARCH .COUPLED .GLOBAL .ECHAM4p5-MOM3-realtime ATM
+/Model FORMget (ECHAM4p5-) rsearch {
+  SOURCES .IRI .MP .RESEARCH .COUPLED .GLOBAL
+  3 -2 roll
+  2 array astore concat interp nip
+  /Model FORMget (ECHAM4p5-GML-cfsSST) eq {
+    .CFS_sst .ensemble12 .MONTHLY
+  }if
+  ATM
 }{
+  pop
   SOURCES .IRI .FD /Model FORMget interp Options /linkTag get interp .Forecast
 }ifelse
 </INGRID>
@@ -117,9 +124,11 @@ Options
 Options
 /isthereSST false put
 
-/Model FORMget (ECHAM4p5-MOM3) eq {
+/Model FORMget (ECHAM4p5-) rsearch {
+pop pop pop
 (<font color=#FF0000>This is a COUPLED model</font>)print
 }{
+pop
 %here I get all the kinds of sst forcing for the chosen model
 [currentobject {
   exec totype /datasettype eq {
@@ -150,7 +159,11 @@ Options /isthereSST get not { (ssst) /Ocean FORM! }if
   }{
     (ssst) 1 index eq {( checked) print}if
   }ifelse
-  /Model FORMget (ECHAM4p5-MOM3) eq {( disabled="disabled")print}if
+  /Model FORMget (ECHAM4p5-) rsearch {
+    pop pop pop(disabled="disabled")print
+  }{
+    pop
+  }ifelse
 (><font point-size=9pt>)print print (</font>\n) print
 }forall
 (</select>)print
@@ -227,9 +240,11 @@ Options /isthereSST get not { (ssst) /Ocean FORM! }if
 <INGRID>
 
 %moving on with the stack
-/Model FORMget (ECHAM4p5-MOM3) eq {
+/Model FORMget (ECHAM4p5-) rsearch {
+  pop pop pop
   M (1) (12) RANGEEDGES
 }{
+  pop
   /Ocean FORMget interp nip Options /ensembleTag get interp .monthly
 }ifelse
 [M]average
@@ -338,9 +353,11 @@ dup .L CopyStream getrealization {
 }if
 
 /Variable FORMget (Precipitation) eq {
-  Options /varName /Model FORMget (ECHAM4p5-MOM3) eq {
+  Options /varName /Model FORMget (ECHAM4p5-) rsearch {
+    pop pop pop
     ( .prec ) put
   }{
+    pop
     ( .prcp ) put
   }ifelse
   Options /varUnit ( (mm/day) unitconvert ) put
@@ -350,7 +367,13 @@ dup .L CopyStream getrealization {
 }if
 
 /Variable FORMget (500mbHeight) eq {
-  Options /varName ( .zg ) put
+  Options /varName /Model FORMget (ECHAM4p5-) rsearch {
+    pop pop pop
+    ( .gz ) put
+  }{
+    pop
+    ( .zg ) put
+  }ifelse
   Options /varUnit ( ) put
   Options /varColor /Field FORMget (Total) eq {( ) put}if
             /Field FORMget (Anomaly) eq {( correlationcolorscale ) put}if
@@ -361,13 +384,16 @@ dup .L CopyStream getrealization {
 }if
 
 %keep moving with my stack
-/Model FORMget (ECHAM4p5-MOM3) eq{
+/Model FORMget (ECHAM4p5-) rsearch {
+  pop pop pop
   /Variable FORMget (500mbHeight) eq{
     .PressureLevel
   }{
     .Surface
  }ifelse
-}if 
+}{
+  pop
+}ifelse 
 Options /varName get interp 
 Options /varUnit get interp
   L 3 runningAverage
@@ -417,7 +443,8 @@ Options /varUnit get interp
 
 /Field FORMget (Anomaly) search {
   pop pop pop
-  /Model FORMget (ECHAM4p5-MOM3) eq {
+  /Model FORMget (ECHAM4p5-) rsearch {
+    pop pop pop
     /Variable FORMget (500mbHeight) eq {
       2 index .ATM .PressureLevel
     }{
@@ -430,7 +457,8 @@ Options /varUnit get interp
     S (0000 1 Jan 1982) (0000 1 Dec 2008) RANGE
     S 12 splitstreamgrid
     [S2]average
-  }{ 
+  }{
+    pop 
     S dup CopyStream getrealization
     0 get
     cvsunits
@@ -464,7 +492,8 @@ Options /varUnit get interp
 }ifelse
 
 /Field FORMget (PercentOfMedian) eq {
-  /Model FORMget (ECHAM4p5-MOM3) eq {
+  /Model FORMget (ECHAM4p5-) rsearch {
+    pop pop pop
     2 index .ATM .Surface
      Options /varName get interp
      Options /varUnit get interp
@@ -474,6 +503,7 @@ Options /varUnit get interp
     S 12 splitstreamgrid
     [S2]medianover
   }{
+    pop
     S dup CopyStream getrealization
     0 get
     cvsunits
@@ -664,6 +694,15 @@ The map displays mean seasonal forecast according to user's settings. The foreca
 <br><font size=-1><b>Data Source</b>:&nbsp;
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/" target="_blank">Forecast Division from IRI</a>)</font>
 <INGRID>
+/Model FORMget (ECHAM4p5-) rsearch {
+pop pop pop
+(<br><font size=-1><b>Base Period</b>: Jan 1982 to Dec 2008</font><p>
+<b>Observations</b>
+<br><font size=-1><b>Data Source</b>:&nbsp;
+to be defined
+<br><font size=-1><b>Base Period</b>: Jan 1982 to Dec 2008</font>)print
+}{
+pop
 7 index
 .S dup CopyStream getrealization
     0 get
@@ -690,6 +729,7 @@ to be defined
 <br><font size=-1><b>Base Period</b>: Jan 1961 to Dec 1990</font>)print
       }ifelse
     }ifelse
+}ifelse
 </INGRID>
 <p>
 <b>Skill Mask</b><br>
