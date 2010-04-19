@@ -97,7 +97,9 @@ WWWinfo
 
 /tot6dayapcp { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcp :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def 
 
-/tot6dayapcppctle { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcppctle :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def
+/tot6dayapcppctle { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcppctlenoseasonal :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def
+
+%/tot6dayapcppctle { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcppctle :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def
 
 /tot6dayapcppctmonthlyclim { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcppctmonthlyclim :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def
 
@@ -316,8 +318,8 @@ showmenu?
 
 <INGRID> /tot6dayapcppctle stopprint /mapsel FORMgetknown {cvn eq} { pop true} ifelse {startprint} if </INGRID>
 <center><b>Where is unusually heavy rainfall expected?</b></center>
-<p align=left>This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be unusually heavy for this time of year.
-<p align=left>The blue areas are where the total 6-day rainfall for this time of year is expected to be unusually heavy.  The darkest blue shading indicates areas expected to be exceptionally wet for this place and time of year.
+<p align=left>This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be unusually heavy.
+<p align=left>The blue areas are where the total 6-day rainfall is expected to be unusually heavy.  The darkest blue shading indicates areas expected to be exceptionally wet for this location.
 <p align=left><i>This forecast shows rain over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i>  The map does not distinguish areas where rainfall is expected from areas where snow is expected.  Forecasts for the amount of snow are indicated in terms of the equivalent amount of rainfall, so the actual depth of snow would be considerably more than indicated.  The forecast data are courtesy of the NOAA ESRL Reforecast project.  (<a href="instructions.html#tot6dayapcppctle">more information</a>)
 
 
