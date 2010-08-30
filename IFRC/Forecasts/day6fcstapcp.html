@@ -37,10 +37,18 @@ figdefs
 </head>
 
 <body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
+
+<table border=0>
+<tr valign=top>
+<td>
+
 <INGRID>
 /leftmenusub? { leftmenulevel 0 get 2 le } def
 leftmenuHeader
 </INGRID>
+
+</td>
+<td>
 
 <FORM name=mapform action=day6fcstapcp.html>
 
@@ -164,6 +172,10 @@ imagelink
 Forecast data courtesy of the NOAA ESRL Reforecast project.
 
 <input type=hidden name="map.Y.step" value=".5">
+
+</td>
+</tr>
+</table>
 
 </body>
 </html>
