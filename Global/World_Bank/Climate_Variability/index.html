@@ -7,11 +7,22 @@ SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon /X renameGRID lat /Y renameGRID
 mimeheader
 pop
 </INGRID>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#">
+<head>
+ <title>World Bank Climate Change Data Portal GHCN Station Temperature &amp; Precipitation Variability Tool</title>
+<link rel="stylesheet" type="text/css" href="/site.css" />
+  <style type="text/css">
+         h2		{font: 20pt; color: #191970; }
+	.drktxt 	{font: 12pt; color: #191970; }
+	.lttxt		{font: 12pt; color: #000080; }
+	.tmptxt		{font: 12pt; color: gray; }
 
-<html><head>
- <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
- <title>World Bank Climate Change Data Portal GHCN Station Temperature & Precipitation Variability Tool</title>
- <STYLE TYPE="text/css">
+  </style>
+
  <!--
  body
     {
@@ -54,12 +65,11 @@ pop
     font-family: Helvetica,Arial
   }
  -->
- </STYLE>
 
 <script language="JavaScript">
 <!--
   function printtext() {
-  document.getElementById("content").innerHTML = "The Data Completeness Threshold is used to specify which stations appear on the map based upon how much data each station has during the season and year range you have chosen.  If you set a low Data Completeness Threshold such as 65%, for example, you will be able to choose from a larger number of stations, but some of those stations will have as little as 65% of the data that a fully complete station record would have.  Therefore, the stations with less complete records will display time series with many gaps that make it more difficult to compute a good estimate of the long-term linear trend, for example.  If you set a high Data Completeness Threshold such as 100%, for example, you will have fewer stations from which to choose, but their time series will have few or no gaps and will provide a better estimate of the long-term linear trend. <p>"
+  document.getElementById("content").innerHTML = "<p>The Data Completeness Threshold is used to specify which stations appear on the map based upon how much data each station has during the season and year range you have chosen.  If you set a low Data Completeness Threshold such as 65%, for example, you will be able to choose from a larger number of stations, but some of those stations will have as little as 65% of the data that a fully complete station record would have.  Therefore, the stations with less complete records will display time series with many gaps that make it more difficult to compute a good estimate of the long-term linear trend, for example.  If you set a high Data Completeness Threshold such as 100%, for example, you will have fewer stations from which to choose, but their time series will have few or no gaps and will provide a better estimate of the long-term linear trend. </p>"
   }
 
   function ReverseContentDisplay(d) {
@@ -67,7 +77,7 @@ if(d.length < 1) { return; }
 if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
 else { document.getElementById(d).style.display = "none"; }
 }
-  
+ -->  
 <!-- END script -->
 </script>
 
@@ -77,12 +87,12 @@ else { document.getElementById(d).style.display = "none"; }
  
  </head>
 
-<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onload="initdrag();document.mapform.reset();" onunload="window.setTimeout('resetdrag',5000);">
 
 <INGRID>
 
-%leftmenuinfo:
-%{ X Y T} setleftmenugrids
+leftmenuinfo:
+{ } setleftmenugrids
 %WWWinfo /map FORMgetknown {.Y .plotvalue
 %nip
 %/map.Y.plotvalue
@@ -93,7 +103,7 @@ else { document.getElementById(d).style.display = "none"; }
 %/map.X.plotvalue
 %exch def}
 %{pop}ifelse
-%:leftmenuinfo
+:leftmenuinfo
 
 
 /leftmenusub? { leftmenulevel 0 get 2 le } def
@@ -118,17 +128,17 @@ null 8 object
 } if
 
 </INGRID>
-<FORM name=mapform action=index.html>
+<form name="mapform" action="index.html">
 
 
 <center>
 
-<table border=0 cols=2>
-<CAPTION align=top> 
-<h2 align=center>World Bank Climate Change Data Portal GHCN Station Temperature & Precipitation Variability Tool</h2>
-</CAPTION>
-<tr valign=top>
-<td align=center rowspan=2>
+<table border="0" cols="2">
+<caption align="top"> 
+<h2 align="center">World Bank Climate Change Data Portal GHCN Station Temperature &amp; Precipitation Variability Tool</h2>
+</caption>
+<tr valign="top">
+<td align="center" rowspan="2">
 
 <INGRID>showmenu? not {stopprint} if</INGRID>
 
@@ -227,10 +237,10 @@ def
 % decide whether to display menu
 /menu FORMget (on) eq {
 
-(<table CELLPADDING=5 BORDER COLS=1>) print
+(<table cellpadding="5" border="2" cols="1">) print
 (<tr>) print
-(<td align=left width=100 title="Choose to view either GHCN monthly station temperature or precipitation data.">) print
-(<b><font point-size=10pt">Select Precipitation or Temperature Data: </b>) print
+(<td align="left" width="100" title="Choose to view either GHCN monthly station temperature or precipitation data.">) print
+(<font point-size="10pt"><b>Select Precipitation or Temperature Data: </b>) print
 
 %/descprintcondition {stopprint /mapsel FORMgetknown {cvn eq} {pop false} ifelse {startprint} if} def
 %[ /Precip /Temp ]
@@ -238,12 +248,12 @@ def
 showmenu?
 {
 
-(<select name="mapsel" id="mapsel" size=1 >) print
+(<select name="mapsel" id="mapsel" size="1" >) print
 [ /Precip /Temp ]
 {
-  (<option value=) print
-   dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( selected="selected") print} if} { dup /Precip eq {( selected="selected")print} if }ifelse
- (>)print
+  (<option value=") print
+   dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {(" selected="selected) print} if} { dup /Precip eq {(" selected="selected)print} if }ifelse
+ (">)print
  varlongnames 1 index getknown {print}{dup cvntos print} ifelse pop (</option>) print } forall
 
 (</select>) print
@@ -253,38 +263,38 @@ showmenu?
 
 (<tr><td title="Select the starting and ending months of the season for which you would like to calculate the seasonal-average precipitation or temperature for each year.">) print
 
-(<b><font point-size=10pt>Select Season: </b>) print
+(<font point-size="10pt"><b>Select Season: </b>) print
 
-(<select name=startmon id=startmon onChange="changedtext(this)">) print
+(<select name="startmon" id="startmon" onChange="changedtext(this)">) print
 [(Jan) (Feb) (Mar) (Apr) (May) (Jun) (Jul) (Aug) (Sep) (Oct) (Nov) (Dec)] {
- (<option value=) print
+ (<option value=") print
  dup print /startmon FORMgetknown {
-   1 index eq {( selected="selected") print} if
+   1 index eq {(" selected="selected) print} if
  }{
-   (Jan) dup 2 index eq {( selected="selected")print} if /startmon FORM!
+   (Jan) dup 2 index eq {(" selected="selected)print} if /startmon FORM!
  } ifelse
- (>) print print (</option>) print
+ (">) print print (</option>) print
 }forall 
 (</select>) print
 
 ( to ) print
 
-(<select name=endmon id=endmon onChange="changedtext(this)">) print
+(<select name="endmon" id="endmon" onChange="changedtext(this)">) print
 [(Jan) (Feb) (Mar) (Apr) (May) (Jun) (Jul) (Aug) (Sep) (Oct) (Nov) (Dec)] {
- (<option value=) print
+ (<option value=") print
  dup print /endmon FORMgetknown {
-   1 index eq {( selected="selected") print} if
+   1 index eq {(" selected="selected) print} if
  }{
-   (Mar) dup 2 index eq {( selected="selected")print} if /endmon FORM!
+   (Mar) dup 2 index eq {(" selected="selected)print} if /endmon FORM!
  } ifelse
- (>) print print (</option>) print
+ (">) print print (</option>) print
 }forall 
 (</select>) print
 
 (</font></td></tr>) print
 
 (<tr><td title="Choose a range of years in the 20th century to select stations with adequate data and the length of the time series of seasonal-average temperature or precipitation values.">) print
-(<b><font point-size=10pt>Select Year Range for Station Filtering: </font></b>) print
+(<b><font point-size="10pt">Select Year Range for Station Filtering: </font></b>) print
 
 %(<select name="startyr" id="startyr" onChange="changedtext(this);">) print
 %[(1901) (1911) (1921) (1931) (1941) (1951) ] {
@@ -300,13 +310,13 @@ showmenu?
 
 (<select name="startyr" id="startyr" onChange="changedtext(this);">) print
 [(1901) (1951) ] {
- (<option value=) print
+ (<option value=") print
  dup cvntos print /startyr FORMgetknown {
-  1 index eq {( selected="selected") print} if
+  1 index eq {(" selected="selected) print} if
  }{
-   (1901) dup 2 index eq {( selected="selected")print} if 
+   (1901) dup 2 index eq {(" selected="selected)print} if 
  } ifelse
- (>) print startyrnames 1 index getknown {print}{dup cvntos print} ifelse pop (</option>) print
+ (">) print startyrnames 1 index getknown {print}{dup cvntos print} ifelse pop (</option>) print
 }forall
 (</select>) print
 
@@ -314,7 +324,7 @@ showmenu?
 
 (<tr><td title="The Data Completeness Threshold is used to specify which stations appear on the map, based upon how much data each station has during the season and year range you have chosen.  If you set a low Data Completeness Threshold such as 65%, for example, you will be able to choose from a larger number of stations, but some of them will have as little as 65% of the data that a fully complete station record would have.  Stations with less complete records will have time series with many gaps that make it difficult to compute a good estimate of the long-term linear trend, for example.">) print
 
-(<font point-size=10pt><b>Select Data Completeness Threshold: </b>) print
+(<font point-size="10pt"><b>Select Data Completeness Threshold: </b>) print
 
 %(<select name="threshold" id="threshold" onChange="document.mapform.submit();">) print
 %[(1.0) (0.95) (0.9) (0.85) (0.8) (0.75) (0.7) (0.65) ] {
@@ -330,20 +340,20 @@ showmenu?
 
 (<select name="threshold" id="threshold" onChange="changedtext(this);">) print
 [(1.0) (0.95) (0.9) (0.85) (0.8) (0.75) (0.7) (0.65) ] {
- (<option value=) print
+ (<option value=") print
  dup cvntos print /threshold FORMgetknown {
-   1 index eq {( selected="selected") print} if
+   1 index eq {(" selected="selected) print} if
  }{
-   (0.85) dup 2 index eq {( selected="selected")print} if 
+   (0.85) dup 2 index eq {(" selected="selected")print} if 
  } ifelse
- (>) print thresholdpct 1 index getknown {print}{dup cvntos print} ifelse pop (</option>) print
+ (">) print thresholdpct 1 index getknown {print}{dup cvntos print} ifelse pop (</option>) print
 }forall
 (</select></font>) print
 
 (</td></tr>) print
 
 (<tr><td>) print
-(<font face="Helvetical,Arial" point-size=10pt size=-1>) print
+(<font face="Helvetical,Arial" point-size="10pt" size="-1">) print
 %(Click on the map to show graphs of the seasonal average ) print varshortnames /mapsel FORMget get print (, its interannual variability, decadal variability, and trend during 1901 to 2000 for the nearest available station with at least ) print thresholdpct /threshold FORMget get print ( complete monthly data for all ) print /startmon FORMget print ( to ) print /endmon FORMget print ( months over the years ) print startyrnames /startyr FORMget get print (.) print
 
 (Click on the map to show graphs of the seasonal average ) print varshortnames /mapsel FORMget get print (, its interannual variability, decadal variability, and trend for the nearest available station with monthly data that are at least ) print thresholdpct /threshold FORMget get print ( complete for all ) print /startmon FORMget print ( to ) print /endmon FORMget print ( months over the years ) print /startyr FORMget s== print ( - 2000.) print
@@ -360,50 +370,50 @@ showmenu?
 
 (</td>) print
 
-(<td align=center valign=top>) print
+(<td align="center" valign="top">) print
 
 (<div id="footer" align="left">) print
-(<font face="Helvetical,Arial" point-size=9pt size=-1>) print
+(<font face="Helvetical,Arial" point-size="9pt" size="-1">) print
 ( This tool allows a user to investigate the historical variability of precipitation and temperature at various time scales (interannual, decadal, and long-term linear trend) over the 20th century near a user-selected location. ) print 
 (<a href="javascript:ReverseContentDisplay('topinstructions')">Show/Hide Additional Instructions</a>) print
-(<div id="topinstructions" style="display:none;") print
+(<div id="topinstructions" style="display:none;">) print
 (<ol> ) print
 ( <li>Use the menus at left to specify temperature or precipitation station data, season of interest, range of years within the 20th Century (1901-2000 or 1951-2000), and Data Completeness Threshold. ) print 
-(<br><a href="javascript:ReverseContentDisplay('numberstationstable')">Show/Hide Summary of Available Stations and Completeness Criteria</a>) print
+(<br /><a href="javascript:ReverseContentDisplay('numberstationstable')">Show/Hide Summary of Available Stations and Completeness Criteria</a>) print
 
 (<div id="numberstationstable" style="display:none; border: 3px black ridge; padding-top: 10px; padding-bottom: 10px;">) print
-(<table CELLPADDING=5 BORDER cols=10 rows=6 align=center><font point-size=9pt>) print 
-(<CAPTION><b>Number of Available Stations to Choose From if the Jan-Dec "Season" is Chosen, by Variable, Year Range, and Completeness Threshold</b></CAPTION>) print
-(<tr> <td><td><td align=center colspan=8>Data Completeness Threshold ) print
-(<tr align=right> <td>Variable<td>Year Range<td>100%<td>95%<td>90%<td>85%<td>80%<td>75%<td>70%<td>65% ) print
-(<tr align=right> <td rowspan=2>GHCN Precipitation<td>1901-2000<td>92<td>2086<td>2927<td>3565<td>4089<td>4602<td>5100<td>6455</td> ) print
-(<tr align=right> <td>1951-2000<td>217<td>2862<td>3670<td>4287<td>5224<td>6417<td>7204<td>8064</td> ) print
-(<tr align=right> <td rowspan=2>GHCN Temperature<td>1901-2000<td>36<td>681<td>1035<td>1343<td>1525<td>1706<td>1836<td>1987</td> ) print
-(<tr align=right> <td>1951-2000<td>122<td>1038<td>1167<td>1236<td>1739<td>2548<td>2838<td>3072 ) print
+(<table cellpadding="5" border="2" cols="10" rows="6" align="center"><font point-size="9pt">) print 
+(<caption><b>Number of Available Stations to Choose From if the Jan-Dec "Season" is Chosen, by Variable, Year Range, and Completeness Threshold</b></caption>) print
+(<tr> <td></td><td></td><td align="center" colspan="8">Data Completeness Threshold</td></tr> ) print
+(<tr align="right"> <td>Variable</td><td>Year Range</td><td>100%</td><td>95%</td><td>90%</td><td>85%</td><td>80%</td><td>75%</td><td>70%</td><td>65%</td></tr> ) print
+(<tr align="right"> <td rowspan="2">GHCN Precipitation</td><td>1901-2000</td><td>92</td><td>2086</td><td>2927</td><td>3565</td><td>4089</td><td>4602</td><td>5100</td><td>6455</td></tr> ) print
+(<tr align="right"> <td>1951-2000</td><td>217</td><td>2862</td><td>3670</td><td>4287</td><td>5224</td><td>6417</td><td>7204</td><td>8064</td></tr> ) print
+(<tr align="right"> <td rowspan="2">GHCN Temperature</td><td>1901-2000</td><td>36</td><td>681</td><td>1035</td><td>1343</td><td>1525</td><td>1706</td><td>1836</td><td>1987</td></tr> ) print
+(<tr align="right"> <td>1951-2000</td><td>122</td><td>1038</td><td>1167</td><td>1236</td><td>1739</td><td>2548</td><td>2838</td><td>3072</td></tr> ) print
 (</font></table> ) print
 (</div>) print
 
 (</li>) print
 
 ( <li>Click the Redraw (circular arrow) button to refresh the map and show the available stations based upon the selections you have made. </li>) print
-( <li>Click and drag on the map to zoom in, if you wish.  Click a location on the map (which will be marked by a green pushpin) to display time series graphs of seasonal mean temperature or precipitation (and its interannual, decadal, and linear trend components) for the closest available station (black pushpin).  For comparison you may also use the "Plots a. to d. are for station data; click here to show/hide these charts for gridded information" link to display the same analyses for the grid box containing the location you clicked based upon coarsely-gridded precipitation (2.5&deg; lat. x 3.75&deg; lon.) and temperature (5&deg; lat. x 5&deg; lon.) data derived from a combination of multiple nearby stations.</li>) print
+( <li>Click and drag on the map to zoom in, if you wish.  Click a location on the map (which will be marked by a green pushpin) to display time series graphs of seasonal mean temperature or precipitation (and its interannual, decadal, and linear trend components) for the closest available station (black pushpin).  For comparison you may also use the "Plots a. to d. are for station data; click here to show/hide these charts for gridded information" link to display the same analyses for the grid box containing the location you clicked based upon coarsely-gridded precipitation (2.5&amp;deg; lat. x 3.75&amp;deg; lon.) and temperature (5&amp;deg; lat. x 5&amp;deg; lon.) data derived from a combination of multiple nearby stations.</li>) print
 (</ol>) print
-(<p>Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> and <a href="instructions.html">instructions page</a> for this tool for more information on interpreting these graphs. ) print
+(<p>Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> and <a href="instructions.html">instructions page</a> for this tool for more information on interpreting these graphs.</p> ) print
 (</div>) print
 (</font>) print
 (</div>) print
 
-(</td>) print
+%(</td>) print
 
 
 
 
 } if
 
-(<input type="hidden" name="menu" value="on" checked>) print
-(<input type="hidden" name="stnmap" value="on" checked><br>) print
-(<input type="hidden" name="locinfo" value="on" checked><br>) print
-(<input type="hidden" name="desc" value="on" checked><br>) print
+(<input type="hidden" name="menu" value="on" checked="checked" />) print
+(<input type="hidden" name="stnmap" value="on" checked="checked" /><br />) print
+(<input type="hidden" name="locinfo" value="on" checked="checked" /><br />) print
+(<input type="hidden" name="desc" value="on" checked="checked" /><br />) print
 
 
 % end of decision whether to display menu
@@ -697,7 +707,7 @@ mul add acosd pi 180 div mul 6366.707 mul mul -1 mul [IWMO]datarank 1 1 masknotr
 /stnmap FORMget (on) eq {
 
 (<tr>) print
-(<td align=center valign=top>) print
+(<td align="center" valign="top">) print
 
 WWWinfo
 
@@ -741,7 +751,7 @@ showmenu?
 
 </INGRID>
 
-</tr>
+</tr></td></tr>
 </table>
 
 <INGRID>
@@ -756,27 +766,27 @@ onClickforInfo?
 % decide whether to display location information
  /locinfo FORMget (on) eq {
 
-(<div id="coltext" align="left"><font point-size=10pt>) print
+(<div id="coltext" align="left"><font point-size="10pt">) print
 
-(<b>Selected Location:</b><img src="greenpushpin2.gif">) print
-(<br>Longitude: ) print mylon print 
-(<br>Latitude: ) print mylat print 
-(<br>Approximate Elevation: ) print pointelev interp dup getrealization 0 get printunits pop
+(<b>Selected Location:</b><img src="greenpushpin2.gif" />) print
+(<br />Longitude: ) print mylon print 
+(<br />Latitude: ) print mylat print 
+(<br />Approximate Elevation: ) print pointelev interp dup getrealization 0 get printunits pop
 
-%(<font size=-1><br><a href=") print stnfiltplotwms interp dataseturl (/X/Y/fig-/white/mask/scattercolor/-fig//transparent/true/psdef//plotaxislength/600/psdef//plotborder/72/psdef//XOVY/null/psdef/wms.xml">Station Map WMS Layer</a></font>) print
+%(<font size="-1"><br /><a href=") print stnfiltplotwms interp dataseturl (/X/Y/fig-/white/mask/scattercolor/-fig//transparent/true/psdef//plotaxislength/600/psdef//plotborder/72/psdef//XOVY/null/psdef/wms.xml">Station Map WMS Layer</a></font>) print
 
 
 (</font></div>) print
 
-(<div id="coltext" align="left"><font point-size=10pt>) print
+(<div id="coltext" align="left"><font point-size="10pt">) print
 
-(<b>Nearest Station:</b><img src="blackpushpin2.gif">) print
-(<br>Name: ) print localname interp getrealization print 
-(<br>ID: ) print localID interp dup getrealization 0 get printunits pop
-(<br>Longitude: ) print locallon interp dup getrealization 0 get printunits pop  
-(<br>Latitude: ) print locallat interp dup getrealization 0 get printunits pop 
-(<br>Elevation: ) print localelev interp dup getrealization 0 get printunits pop 
-(<br>Distance from Selected Location: ) print dist interp dup getrealization 0 get printunits pop
+(<b>Nearest Station:</b><img src="blackpushpin2.gif" />) print
+(<br />Name: ) print localname interp getrealization print 
+(<br />ID: ) print localID interp dup getrealization 0 get printunits pop
+(<br />Longitude: ) print locallon interp dup getrealization 0 get printunits pop  
+(<br />Latitude: ) print locallat interp dup getrealization 0 get printunits pop 
+(<br />Elevation: ) print localelev interp dup getrealization 0 get printunits pop 
+(<br />Distance from Selected Location: ) print dist interp dup getrealization 0 get printunits pop
 
 (</font></div>) print
 
@@ -792,25 +802,25 @@ onClickforInfo?
   % decide whether to display location information
   /locinfo FORMget (on) eq {
 
-  (<div id="coltext" align="left"><font point-size=10pt>) print
+  (<div id="coltext" align="left"><font point-size="10pt">) print
 
-  (<b>Selected Location:</b><img src="greenpushpin2.gif">) print
-  (<br>Longitude: ) print mylon print 
-  (<br>Latitude: ) print mylat print 
-  (<br>Approximate Elevation: ) print pointelev interp dup getrealization 0 get printunits pop
+  (<b>Selected Location:</b><img src="greenpushpin2.gif" />) print
+  (<br />Longitude: ) print mylon print 
+  (<br />Latitude: ) print mylat print 
+  (<br />Approximate Elevation: ) print pointelev interp dup getrealization 0 get printunits pop
 
 
   (</font></div>) print
 
-  (<div id="coltext" align="left"><font point-size=10pt>) print
+  (<div id="coltext" align="left"><font point-size="10pt">) print
 
-  (<b>Nearest Station:</b><img src="blackpushpin2.gif">) print
-  (<br>Name: ) print localname interp getrealization print 
-  (<br>ID: ) print localID interp dup getrealization 0 get printunits pop
-  (<br>Longitude: ) print locallon interp dup getrealization 0 get printunits pop  
-  (<br>Latitude: ) print locallat interp dup getrealization 0 get printunits pop 
-  (<br>Elevation: ) print localelev interp dup getrealization 0 get printunits pop 
-  (<br>Distance from Selected Location: ) print dist interp dup getrealization 0 get printunits pop
+  (<b>Nearest Station:</b><img src="blackpushpin2.gif" />) print
+  (<br />Name: ) print localname interp getrealization print 
+  (<br />ID: ) print localID interp dup getrealization 0 get printunits pop
+  (<br />Longitude: ) print locallon interp dup getrealization 0 get printunits pop  
+  (<br />Latitude: ) print locallat interp dup getrealization 0 get printunits pop 
+  (<br />Elevation: ) print localelev interp dup getrealization 0 get printunits pop 
+  (<br />Distance from Selected Location: ) print dist interp dup getrealization 0 get printunits pop
 
   (</font></div>) print
 
@@ -828,17 +838,17 @@ onClickforInfo?
 
 {
 
-(<div><font point-size=10pt>) print
+(<div><font point-size="10pt">) print
 % this div is start of container for all plot displays
 
-(<div id="rightcol"><center><b>a. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, & Linear Trend</b></center>) print
+(<div id="rightcol"><center><b>a. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, &amp; Linear Trend</b></center>) print
 
 seasavgplot interp
 /map
 seasavgplot
 imagelink
 
-(<font size=-1><br><a href=") print seasavgtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print seasavgtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
 
 
 (</div>) print
@@ -850,7 +860,7 @@ interannplot interp
 interannplot
 imagelink
 
-(<font size=-1><br><a href=") print interanntable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data in this graph</a> | ) print interannplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print interanntable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data in this graph</a> | ) print interannplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
 
 (</div>) print
 
@@ -861,26 +871,26 @@ runavg10plot interp
 runavg10plot
 imagelink
 
-(<font size=-1><br><a href=") print runavg10table interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print runavg10table interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
 
 (</div>) print
 
-(<div id="rightcol"><center><b>d. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center></td></tr>) print
+(<div id="rightcol"><center><b>d. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
 
 trendplot interp
 /map
 trendplot
 imagelink
 
-(<font size=-1><br><a href=") print trendtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data for the linear trend in this graph</a> | ) print trendplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print trendtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the linear trend in this graph</a> | ) print trendplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
 
-(<br>Linear Trend: &nbsp;&nbsp; ) print trendvalue interp dup getrealization 0 get 100 mul round 0.01 mul printunits pop ( per century) print
+(<br />Linear Trend: &amp;nbsp;&amp;nbsp; ) print trendvalue interp dup getrealization 0 get 100 mul round 0.01 mul printunits pop ( per century) print
 
 (</div>) print
 
    (<div id="griddedplot" style="display:none; float: left; background-color: white; padding-top: 10px; padding-bottom: 10px;">) print
 
-(<div id="rightcol"><center><b>e. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, & Linear Trend</b></center>) print
+(<div id="rightcol"><center><b>e. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, &amp; Linear Trend</b></center>) print
 
 %(<div id="rightcol"><center><b>e. Seasonal Average Values (Gridded Data)</b></center>) print
 
@@ -889,7 +899,7 @@ seasavgplotGG interp
 seasavgplotGG
 imagelink
 
-(<font size=-1><br><a href=") print seasavgtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print seasavgtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
 
 (</div>) print
 
@@ -902,7 +912,7 @@ interannplotGG interp
 interannplotGG
 imagelink
 
-(<font size=-1><br><a href=") print interanntableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data in this graph</a> | ) print interannplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print interanntableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data in this graph</a> | ) print interannplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
 
 (</div>) print
 
@@ -915,11 +925,11 @@ runavg10plotGG interp
 runavg10plotGG
 imagelink
 
-(<font size=-1><br><a href=") print runavg10tableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print runavg10tableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
 
 (</div>) print
 
-(<div id="rightcol"><center><b>h. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center></td></tr>) print
+(<div id="rightcol"><center><b>h. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
 
 %(<div id="rightcol"><center><b>h. Linear Trend (Gridded Data)</b></center></td></tr>) print
 
@@ -928,9 +938,9 @@ trendplotGG interp
 trendplotGG
 imagelink
 
-(<font size=-1><br><a href=") print trendtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data for the linear trend in this graph</a> | ) print trendplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print trendtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the linear trend in this graph</a> | ) print trendplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
 
-(<br>Linear Trend: &nbsp;&nbsp; ) print trendvalueGG interp dup getrealization 0 get 100 mul round 0.01 mul printunits pop ( per century) print
+(<br />Linear Trend: &amp;nbsp;&amp;nbsp; ) print trendvalueGG interp dup getrealization 0 get 100 mul round 0.01 mul printunits pop ( per century) print
 
 (</div>) print
 
@@ -941,7 +951,7 @@ seasavgplotGridStn interp
 seasavgplotGridStn
 imagelink
 
-(<font size=-1><br>) print seasavgplotGridStn interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br />) print seasavgplotGridStn interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
 
 (</div>) print
 
@@ -967,15 +977,14 @@ imagelink
 
 (<div id="footer" align="left">) print
 (
-<font face="Helvetical,Arial" point-size=10pt size=-1>
+<font face="Helvetical,Arial" point-size="10pt" size="-1">
 <b><u>Description</u></b>
 </font>
 <p>
-<font face="Helvetical,Arial" point-size=9pt size=-1>
+<font face="Helvetical,Arial" point-size="9pt" size="-1">
 The station time series data used in this interface are from the Global Historical Climatology Network (GHCN) beta version 2 monthly station precipitation data set and the GHCN version 2 station monthly mean temperature data set.  The gridded temperature and precipitation data are from the Hulme Global Gridded Precipitation Version 1.0 data set and the CRUTEM3v Variance-Adjusted Global (Land-Only) Gridded Air Temperature data set.  For more detailed information about these data and each time series graph, please see the <a href="instructions.html#datadescription">Description of the Data Used in this Interface</a> section of the <a href="instructions.html">instructions</a> page. 
-<p>
-Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> for this tool for more information on interpreting these graphs.
-</font>
+</font></p><p><font face="Helvetical,Arial" point-size="9pt" size="-1">
+Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> for this tool for more information on interpreting these graphs.</font></p>
 ) print
 
 (</div>) print
@@ -993,7 +1002,7 @@ Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/Cl
 <INGRID>
 startprint
 </INGRID>
-</FORM>
+</form>
 
-</body>
+</body></body>
 </html>
