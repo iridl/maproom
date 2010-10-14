@@ -6,12 +6,12 @@ SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon /X renameGRID lat /Y renameGRID
 /helpnow FORMknown {(http://iridl.ldeo.columbia.edu/maproom/.Global/.World_Bank/.Climate_Variability/instructions.html)redirectto stop} if
 mimeheader
 pop
-</INGRID>
-<?xml version="1.0" encoding="UTF-8"?>
+</INGRID><?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
-      xmlns:xs="http://www.w3.org/2001/XMLSchema#">
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      xmlns:wb="http://www.worldbank.org#">
 <head>
  <title>World Bank Climate Change Data Portal GHCN Station Temperature &amp; Precipitation Variability Tool</title>
 <link rel="stylesheet" type="text/css" href="/site.css" />
@@ -20,6 +20,10 @@ pop
 	.drktxt 	{font: 12pt; color: #191970; }
 	.lttxt		{font: 12pt; color: #000080; }
 	.tmptxt		{font: 12pt; color: gray; }
+        .rightcol	{float: left; width: 505px; padding-top: 10px; padding-bottom: 10px;}
+	.leftcol        {float: left; width: 505px; padding-top: 10px; padding-bottom: 10px;}
+        .coltext        {float: left; width: 350px; padding-top: 10px; padding-bottom: 10px;}
+        .footer         {width: 700px; padding-top: 10px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px; background-color: #F0F8FF; layer-background-color: #F0F8FF; border: 3px black ridge; font-size: 0.65em; font-family: Helvetica,Arial;}
 
   </style>
 
@@ -34,36 +38,6 @@ pop
     padding-right: 25pt;
     text-align: justify;
     }
-  #leftcol {
-    float: left;
-    width: 505px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  #rightcol {
-    float: left;
-    width: 505px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  #coltext {
-    float: left;
-    width: 350px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  #footer {
-    width: 700px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #F0F8FF;
-    layer-background-color: #F0F8FF;
-    border: 3px black ridge;
-    font-size: 0.65em 
-    font-family: Helvetica,Arial
-  }
  -->
 
 <script language="JavaScript">
@@ -372,7 +346,7 @@ showmenu?
 
 (<td align="center" valign="top">) print
 
-(<div id="footer" align="left">) print
+(<div class="footer" align="left">) print
 (<font face="Helvetical,Arial" point-size="9pt" size="-1">) print
 ( This tool allows a user to investigate the historical variability of precipitation and temperature at various time scales (interannual, decadal, and long-term linear trend) over the 20th century near a user-selected location. ) print 
 (<a href="javascript:ReverseContentDisplay('topinstructions')">Show/Hide Additional Instructions</a>) print
@@ -396,7 +370,7 @@ showmenu?
 (</li>) print
 
 ( <li>Click the Redraw (circular arrow) button to refresh the map and show the available stations based upon the selections you have made. </li>) print
-( <li>Click and drag on the map to zoom in, if you wish.  Click a location on the map (which will be marked by a green pushpin) to display time series graphs of seasonal mean temperature or precipitation (and its interannual, decadal, and linear trend components) for the closest available station (black pushpin).  For comparison you may also use the "Plots a. to d. are for station data; click here to show/hide these charts for gridded information" link to display the same analyses for the grid box containing the location you clicked based upon coarsely-gridded precipitation (2.5&amp;deg; lat. x 3.75&amp;deg; lon.) and temperature (5&amp;deg; lat. x 5&amp;deg; lon.) data derived from a combination of multiple nearby stations.</li>) print
+( <li>Click and drag on the map to zoom in, if you wish.  Click a location on the map (which will be marked by a green pushpin) to display time series graphs of seasonal mean temperature or precipitation (and its interannual, decadal, and linear trend components) for the closest available station (black pushpin).  For comparison you may also use the "Plots a. to d. are for station data; click here to show/hide these charts for gridded information" link to display the same analyses for the grid box containing the location you clicked based upon coarsely-gridded precipitation (2.5&#176; lat. x 3.75&#176; lon.) and temperature (5&#176; lat. x 5&#176; lon.) data derived from a combination of multiple nearby stations.</li>) print
 (</ol>) print
 (<p>Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> and <a href="instructions.html">instructions page</a> for this tool for more information on interpreting these graphs.</p> ) print
 (</div>) print
@@ -766,29 +740,29 @@ onClickforInfo?
 % decide whether to display location information
  /locinfo FORMget (on) eq {
 
-(<div id="coltext" align="left"><font point-size="10pt">) print
+(<div class="coltext" align="left"><font point-size="10pt">) print
 
 (<b>Selected Location:</b><img src="greenpushpin2.gif" />) print
-(<br />Longitude: ) print mylon print 
-(<br />Latitude: ) print mylat print 
-(<br />Approximate Elevation: ) print pointelev interp dup getrealization 0 get printunits pop
+(<br />Longitude: <span property="wb:longitude">) print mylon print
+(</span><br />Latitude: <span property="wb:latitude">) print mylat print
+(</span><br />Approximate Elevation: <span property="wb:elevation">) print pointelev interp dup getrealization 0 get printunits pop
 
 %(<font size="-1"><br /><a href=") print stnfiltplotwms interp dataseturl (/X/Y/fig-/white/mask/scattercolor/-fig//transparent/true/psdef//plotaxislength/600/psdef//plotborder/72/psdef//XOVY/null/psdef/wms.xml">Station Map WMS Layer</a></font>) print
 
 
-(</font></div>) print
+(</span></font></div>) print
 
-(<div id="coltext" align="left"><font point-size="10pt">) print
+(<div class="coltext" align="left"><font point-size="10pt">) print
 
 (<b>Nearest Station:</b><img src="blackpushpin2.gif" />) print
-(<br />Name: ) print localname interp getrealization print 
-(<br />ID: ) print localID interp dup getrealization 0 get printunits pop
-(<br />Longitude: ) print locallon interp dup getrealization 0 get printunits pop  
-(<br />Latitude: ) print locallat interp dup getrealization 0 get printunits pop 
-(<br />Elevation: ) print localelev interp dup getrealization 0 get printunits pop 
-(<br />Distance from Selected Location: ) print dist interp dup getrealization 0 get printunits pop
+(<br />Name:  <span property="wb:station_name">) print localname interp getrealization print
+(</span><br />ID: <span property="wb:station_id">) print localID interp dup getrealization 0 get printunits pop
+(</span><br />Longitude: <span property="wb:station_longitude">) print locallon interp dup getrealization 0 get printunits pop  
+(</span><br />Latitude: <span property="wb:station_latitude">) print locallat interp dup getrealization 0 get printunits pop 
+(</span><br />Elevation: <span property="wb:station_elevation">) print localelev interp dup getrealization 0 get printunits pop 
+(</span><br />Distance from Selected Location: <span property="wb:station_distance">) print dist interp dup getrealization 0 get printunits pop
 
-(</font></div>) print
+(</span></font></div>) print
 
  } if
 % end of decision to display location information
@@ -802,7 +776,7 @@ onClickforInfo?
   % decide whether to display location information
   /locinfo FORMget (on) eq {
 
-  (<div id="coltext" align="left"><font point-size="10pt">) print
+  (<div class="coltext" align="left"><font point-size="10pt">) print
 
   (<b>Selected Location:</b><img src="greenpushpin2.gif" />) print
   (<br />Longitude: ) print mylon print 
@@ -812,7 +786,7 @@ onClickforInfo?
 
   (</font></div>) print
 
-  (<div id="coltext" align="left"><font point-size="10pt">) print
+  (<div class="coltext" align="left"><font point-size="10pt">) print
 
   (<b>Nearest Station:</b><img src="blackpushpin2.gif" />) print
   (<br />Name: ) print localname interp getrealization print 
@@ -841,48 +815,48 @@ onClickforInfo?
 (<div><font point-size="10pt">) print
 % this div is start of container for all plot displays
 
-(<div id="rightcol"><center><b>a. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, &amp; Linear Trend</b></center>) print
+(<div class="rightcol"><center><b>a. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, &amp; Linear Trend</b></center>) print
 
 seasavgplot interp
 /map
 seasavgplot
 imagelink
 
-(<font size="-1"><br /><a href=") print seasavgtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print seasavgtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplot interp imagelinkstart (GIF image of this graph) (.gif) (wb:figa) linktoimageformatwithrel (</font>) print
 
 
 (</div>) print
 
-(<div id="rightcol"><center><b>b. Interannual Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
+(<div class="rightcol"><center><b>b. Interannual Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
 
 interannplot interp
 /map
 interannplot
 imagelink
 
-(<font size="-1"><br /><a href=") print interanntable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data in this graph</a> | ) print interannplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print interanntable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data in this graph</a> | ) print interannplot interp imagelinkstart (GIF image of this graph) (.gif) (wb:figb) linktoimageformatwithrel (</font>) print
 
 (</div>) print
 
-(<div id="rightcol"><center><b>c. Decadal Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
+(<div class="rightcol"><center><b>c. Decadal Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
 
 runavg10plot interp
 /map
 runavg10plot
 imagelink
 
-(<font size="-1"><br /><a href=") print runavg10table interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print runavg10table interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plot interp imagelinkstart (GIF image of this graph) (.gif) (wb:figc) linktoimageformatwithrel (</font>) print
 
 (</div>) print
 
-(<div id="rightcol"><center><b>d. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
+(<div class="rightcol"><center><b>d. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
 
 trendplot interp
 /map
 trendplot
 imagelink
 
-(<font size="-1"><br /><a href=") print trendtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the linear trend in this graph</a> | ) print trendplot interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print trendtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the linear trend in this graph</a> | ) print trendplot interp imagelinkstart (GIF image of this graph) (.gif) (wb:figd) linktoimageformatwithrel (</font>) print
 
 (<br />Linear Trend: &amp;nbsp;&amp;nbsp; ) print trendvalue interp dup getrealization 0 get 100 mul round 0.01 mul printunits pop ( per century) print
 
@@ -890,61 +864,61 @@ imagelink
 
    (<div id="griddedplot" style="display:none; float: left; background-color: white; padding-top: 10px; padding-bottom: 10px;">) print
 
-(<div id="rightcol"><center><b>e. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, &amp; Linear Trend</b></center>) print
+(<div class="rightcol"><center><b>e. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, &amp; Linear Trend</b></center>) print
 
-%(<div id="rightcol"><center><b>e. Seasonal Average Values (Gridded Data)</b></center>) print
+%(<div class="rightcol"><center><b>e. Seasonal Average Values (Gridded Data)</b></center>) print
 
 seasavgplotGG interp
 /map
 seasavgplotGG
 imagelink
 
-(<font size="-1"><br /><a href=") print seasavgtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print seasavgtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplotGG interp imagelinkstart (GIF image of this graph) (.gif) (wb:fige) linktoimageformatwithrel (</font>) print
 
 (</div>) print
 
-(<div id="rightcol"><center><b>f. Interannual Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
+(<div class="rightcol"><center><b>f. Interannual Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
 
-%(<div id="rightcol"><center><b>f. Interannual Component of Variability (Gridded Data)</b></center>) print
+%(<div class="rightcol"><center><b>f. Interannual Component of Variability (Gridded Data)</b></center>) print
 
 interannplotGG interp
 /map
 interannplotGG
 imagelink
 
-(<font size="-1"><br /><a href=") print interanntableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data in this graph</a> | ) print interannplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print interanntableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data in this graph</a> | ) print interannplotGG interp imagelinkstart (GIF image of this graph) (.gif) (wb:figf) linktoimageformatwithrel (</font>) print
 
 (</div>) print
 
-(<div id="rightcol"><center><b>g. Decadal Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
+(<div class="rightcol"><center><b>g. Decadal Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
 
-%(<div id="rightcol"><center><b>g. Decadal Component of Variability (Gridded Data)</b></center>) print
+%(<div class="rightcol"><center><b>g. Decadal Component of Variability (Gridded Data)</b></center>) print
 
 runavg10plotGG interp
 /map
 runavg10plotGG
 imagelink
 
-(<font size="-1"><br /><a href=") print runavg10tableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print runavg10tableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plotGG interp imagelinkstart (GIF image of this graph) (.gif) (wb:figg) linktoimageformatwithrel (</font>) print
 
 (</div>) print
 
-(<div id="rightcol"><center><b>h. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
+(<div class="rightcol"><center><b>h. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
 
-%(<div id="rightcol"><center><b>h. Linear Trend (Gridded Data)</b></center></td></tr>) print
+%(<div class="rightcol"><center><b>h. Linear Trend (Gridded Data)</b></center></td></tr>) print
 
 trendplotGG interp
 /map
 trendplotGG
 imagelink
 
-(<font size="-1"><br /><a href=") print trendtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the linear trend in this graph</a> | ) print trendplotGG interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
+(<font size="-1"><br /><a href=") print trendtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the linear trend in this graph</a> | ) print trendplotGG interp imagelinkstart (GIF image of this graph) (.gif) (wb:figh) linktoimageformatwithrel (</font>) print
 
 (<br />Linear Trend: &amp;nbsp;&amp;nbsp; ) print trendvalueGG interp dup getrealization 0 get 100 mul round 0.01 mul printunits pop ( per century) print
 
 (</div>) print
 
-(<div id="rightcol"><center><b>i. Comparison of Seasonal Average Values (Station vs. Gridded)</b></center>) print
+(<div class="rightcol"><center><b>i. Comparison of Seasonal Average Values (Station vs. Gridded)</b></center>) print
 
 seasavgplotGridStn interp
 /map
@@ -975,7 +949,7 @@ imagelink
 (<div style="clear: both;"> </div>) print
 
 
-(<div id="footer" align="left">) print
+(<div class="footer" align="left">) print
 (
 <font face="Helvetical,Arial" point-size="10pt" size="-1">
 <b><u>Description</u></b>
