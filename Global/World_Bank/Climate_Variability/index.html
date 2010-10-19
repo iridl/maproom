@@ -14,6 +14,7 @@ pop
       xmlns:wb="http://www.worldbank.org#">
 <head>
  <title>World Bank Climate Change Data Portal GHCN Station Temperature &amp; Precipitation Variability Tool</title>
+<link rel="stylesheet" type="text/css" href="/site.css" />
   <style type="text/css">
          h2		{font: 20pt; color: #191970; }
 	.drktxt 	{font: 12pt; color: #191970; }
@@ -787,15 +788,15 @@ onClickforInfo?
 
   (<div class="coltext" align="left"><font point-size="10pt">) print
 
-  (<b>Nearest Station:</b><img src="blackpushpin2.gif" />) print
-  (<br />Name: ) print localname interp getrealization print 
-  (<br />ID: ) print localID interp dup getrealization 0 get printunits pop
-  (<br />Longitude: ) print locallon interp dup getrealization 0 get printunits pop  
-  (<br />Latitude: ) print locallat interp dup getrealization 0 get printunits pop 
-  (<br />Elevation: ) print localelev interp dup getrealization 0 get printunits pop 
-  (<br />Distance from Selected Location: ) print dist interp dup getrealization 0 get printunits pop
-
-  (</font></div>) print
+(<b>Nearest Station:</b><img src="blackpushpin2.gif" />) print
+(<br />Name:  <span property="wb:station_name">) print localname interp getrealization print
+(</span><br />ID: <span property="wb:station_id">) print localID interp dup getrealization 0 get printunits pop
+(</span><br />Longitude: <span property="wb:station_longitude">) print locallon interp dup getrealization 0 get printunits pop  
+(</span><br />Latitude: <span property="wb:station_latitude">) print locallat interp dup getrealization 0 get printunits pop 
+(</span><br />Elevation: <span property="wb:station_elevation">) print localelev interp dup getrealization 0 get printunits pop 
+(</span><br />Distance from Selected Location: <span property="wb:station_distance">) print dist interp dup getrealization 0 get printunits pop
+  
+  (</span></font></div>) print
 
   } if
   % end of decision to display location information
