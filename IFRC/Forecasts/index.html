@@ -314,8 +314,13 @@ showmenu?
  /mapsel FORMget (prcp_fcst) eq
  {(<img src="IFRCnetassesscolorscale08312010.gif">) print }
  {
- figdup .auxfig
- imagelink
+
+  /mapsel FORMget (extreme_prcp_fcst) eq
+  {(<img src="IFRCfcstextremecolorscale11032010.gif">) print }
+  {
+  figdup .auxfig
+  imagelink
+  } ifelse
  } ifelse
 
 } ifelse
@@ -354,8 +359,8 @@ showmenu?
 
 <INGRID> /prcp_fcst descprintcondition </INGRID>
 <center><b>Are the next 3 months likely to be unusually wet or dry?</b></center>
-<p align=left>The map shows where and how likely it is to be unusually wet or dry over the next three months.
-<p align=left>Green areas show where unusually wet conditions over the next three months are the most likely outcome.  Darker green indicates a higher likelihood of unusually wet conditions.  Brown areas show where unusually dry conditions over the next three months are the most likely outcome.  The darker brown indicates a higher likelihood of unusually dry conditions.  This map does NOT indicate how extreme the wet or dry conditions are expected to be.
+<p align=left><b>How to read this forecast map: </b> Colors over the map correspond to how confident we can be in the forecast that the total amount of rainfall over the three-month forecast period will be either below normal (i.e., unusually dry, indicated by shades of yellow) or above normal (i.e., unusually wet, indicated by shades of green) for the given area and time of year.  Below-normal and above-normal rainfall typically each occur about once every three years (i.e., with a probability of 33%), and so shaded areas indicate increased risks of an unusually wet or dry season.  Areas with higher confidence levels have darker shades (see color bar above).
+
 <p align=left><i>This forecast shows only the likelihood of 3-month accumulated rainfall (or snow) being unusually high or low, and does not indicate chances of individual heavy rainfall events.  The forecasts apply over large areas only, and should not be used to forecast local conditions, or as a flood forecast.</i> (<a href="instructions.html#prcp_fcst">more information</a>)
 
 <INGRID> /extreme_prcp_fcst descprintcondition </INGRID>
