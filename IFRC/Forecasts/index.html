@@ -331,8 +331,15 @@ showmenu?
   /mapsel FORMget (extreme_prcp_fcst) eq
   {(<img src="IFRCfcstextremecolorscale11192010.gif">) print }
   {
+
+   /mapsel FORMget (pic3mo_same) eq
+   {(<img src="IFRCpic3mo_same_scale.gif">) print }
+   {
+
   figdup .auxfig
   imagelink
+
+   } ifelse
   } ifelse
  } ifelse
 
