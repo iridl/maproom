@@ -71,6 +71,12 @@ leftmenu
 <td>
 
 <FORM name=mapform action=index.html>
+<INGRID>saveLanguage</INGRID>
+
+<div id="lang" align="right">
+<a href="index.html?Set-Language=en">English</a> | <a href="index.html?Set-Language=es">Espa&ntilde;ol
+</a>
+</div>
 
 <table width=100% align="center">
 <tr>
@@ -101,7 +107,7 @@ leftmenu
 <table border=0 cols=1 width=275>
 <tr>
 <td align=center width=100>
-<a href="instructions.html"><b><font point-size=12pt>Instructions for Use of this Tool</font></b></a>
+<a href="instructions.html?Set-Language=en"><b><font point-size=12pt>Instructions for Use of this Tool</font></b></a>
 </td></tr>
 </table>
 
@@ -325,15 +331,15 @@ showmenu?
 
 <INGRID>
 /mapsel FORMknown not /mapsel FORMget (tot6dayapcppctle) eq /mapsel FORMget (defaultlayer) eq or or
-{(<img src="IFRCpctlecolorscale08312010.gif">) print }
+{(<img src="IFRCpctlecolorscale.gif">) print }
 {
 
  /mapsel FORMget (prcp_fcst) eq
- {(<img src="IFRCnetassesscolorscale11192010.gif">) print }
+ {(<img src="IFRCnetassesscolorscale.gif">) print }
  {
 
   /mapsel FORMget (extreme_prcp_fcst) eq
-  {(<img src="IFRCfcstextremecolorscale11192010.gif">) print }
+  {(<img src="IFRCfcstextremecolorscale.gif">) print }
   {
 
    /mapsel FORMget (pic3mo_same) eq
