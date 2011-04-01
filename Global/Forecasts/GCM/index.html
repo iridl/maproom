@@ -6,6 +6,7 @@ pop
 
 <html><head>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
     <title>GCM Maproom</title>
     <STYLE TYPE="text/css">
     <!--
@@ -556,7 +557,7 @@ Options /varUnit get interp
 
 /Field FORMget (PercentOfMedian) eq not {
 /PrcpUnits FORMgetknown {
-  (mm) eq {
+  (mm) eq {L S
     a:
     L (days since 1960-01-01) streamgridunitconvert
     L differential_mul
@@ -758,7 +759,6 @@ showmenu? {
   (Figure as JPEG) (.jpg) linktoimageformat
    (</td>) print
 } if
-
 (<td rowspan=2 align=center><a href=http://iridl.ldeo.columbia.edu/expert/)print
 pop 4 index dup dataseturl print 
 </INGRID>?help+datafiles#GIS">Data for GIS</a><font color=green>(restricted)</font></td>
