@@ -1,0 +1,563 @@
+<INGRID>
+SOURCES .WCRP .GCOS .GPCC .FDP .version5 .2p5
+mimeheader
+pop
+</INGRID>
+
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <title>Time Scales Maproom</title>
+    <STYLE TYPE="text/css">
+    <!--
+    body
+       {
+       font-family:arial,sans-serif
+       }
+    P.indented
+       {
+       padding-left: 25pt;
+       padding-right: 25pt;
+       text-align: justify;
+       }
+    -->
+    </STYLE>
+    <link rel="stylesheet" type="text/css" href="/site.css">
+
+<INGRID>
+figdefs
+</INGRID>
+</head>
+
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
+
+<INGRID>
+leftmenuHeader
+</INGRID>
+
+<FORM name="mapform" action="index.html" method="get">
+
+<center>
+
+<div align="center"><h3><u>Time Scales Maproom</u></h3></div>
+
+
+
+<div align="left" style="background-color:#000066;point-size:9pt;color:#FFFFFF;">
+
+<b>Time Scale:</b>
+<INGRID>
+(<select name="TimeScale" id="TimeScale"  onChange="changedtext(this)">) print
+[(Trend) (Decadal) (InterAnnual)] {
+  (<option value=) print
+  dup print /TimeScale FORMgetknown {
+    1 index eq {( selected="selected") print} if}{
+    dup (Decadal) eq {( selected="selected") print} if (Decadal) /TimeScale FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+
+<b>Variability:</b>
+<INGRID>
+(<select name="Variability" id="Variability"  onChange="changedtext(this)">) print
+[(Percent_of_variance_explained) (Standard_deviation)] {
+  (<option value=) print
+  dup print /Variability FORMgetknown {
+    1 index eq {( selected="selected") print} if}{
+    dup (Percent_of_variance_explained) eq {( selected="selected") print} if (Percent_of_variance_explained) /Variability FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+
+<b>Over</b>
+<INGRID>
+(<select name="SeasonStart" id="SeasonStart"  onChange="changedtext(this)">) print
+[(January) (February) (March) (April) (May) (June) (July) (August) (September) (October) (November) (December)] {
+  (<option value=) print
+  dup print /SeasonStart FORMgetknown {
+    1 index eq {( selected="selected") print} if}{
+    dup (June) eq {( selected="selected") print} if (June) /SeasonStart FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+
+<b>to</b>
+<INGRID>
+(<select name="SeasonEnd" id="SeasonEnd"  onChange="changedtext(this)">) print 
+[(January) (February) (March) (April) (May) (June) (July) (August) (September) (October) (November) (December)] {
+  (<option value=) print
+  dup print /SeasonEnd FORMgetknown {
+    1 index eq {( selected="selected") print} if}{
+    dup (August) eq {( selected="selected") print} if (August) /SeasonEnd FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+
+<b>Season</b>
+</div>
+<p>
+<div align="center">
+<INGRID>
+
+[(SOURCES .WCRP .GCOS .GPCC .FDP .version5 .2p5
+a: .anom )
+  /SeasonEnd FORMget 0 3 getinterval interp
+  /SeasonStart FORMget 0 3 getinterval interp sub
+  dup -1 eq exch 11 eq or {
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 boxAverage )
+  }{
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2009) rpar (  seasonalAverage )
+  }ifelse
+( :a: .cnts )
+  /SeasonEnd FORMget 0 3 getinterval interp
+  /SeasonStart FORMget 0 3 getinterval interp sub
+  dup -1 eq exch 11 eq or {
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 boxAverage )
+  }{
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2009) rpar (  seasonalAverage )
+  }ifelse
+( 0 maskle [T]0.5 average 0 mul add
+:a: .prcp )
+  /SeasonEnd FORMget 0 3 getinterval interp
+  /SeasonStart FORMget 0 3 getinterval interp sub
+  dup -1 eq exch 11 eq or {
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 boxAverage )
+  }{
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2009) rpar (  seasonalAverage )
+  }ifelse
+  lpar /SeasonEnd FORMget 0 3 getinterval rpar ( interp )
+  lpar /SeasonStart FORMget 0 3 getinterval rpar ( interp sub
+  dup 0 ge {1 add}{13 add}ifelse mul [T]average 30 masklt 0 mul
+:a
+  add )
+/map FORMgetknown {
+  pop
+}{
+  ( X -20 180 -20 RANGE
+  Y -60 80 RANGE )
+}ifelse
+
+( home .remic .AR4 .tas [T] 1. 0. regridLinear
+  dup [T]standardize
+  exch 2 index [T]correlate
+  mul 1 index [T]rmsaover
+  mul 1 index [T]average
+  add
+1 index 1 index sub
+  T 1 1. 10 div butt_filter: 5. store ford :butt_filter .butt
+2 index 2 index sub 1 index sub )]concat
+
+/tssel exch def
+
+[ tssel
+/TimeScale FORMgetknown {
+  dup (Trend) eq {
+     ( pop pop ) exch
+  }if
+  dup (Decadal) eq {
+     ( pop nip ) exch
+  }if
+  (InterAnnual) eq {
+     ( nip nip )
+  }if
+}{
+  ( pop nip )
+}ifelse
+
+( [T]rmsaover 0 maskle
+  (units) ) lpar
+SOURCES .WCRP .GCOS .GPCC .FDP .version5 .2p5 .anom .units
+rpar ( def
+  (long_name) (standard deviation) def
+  startcolormap DATA 0 256 RANGE
+  white white white 0 VALUE
+  white white 2 bandmax
+  210 250 210 RGB 160 240 165 RGB 4 VALUE
+  130 210 135 RGB 8 VALUE
+  90 190 95 RGB 16 VALUE
+  yellow 51 VALUE
+  orange 102 VALUE
+  red 128 VALUE
+  magenta 162 VALUE
+  purple 196 VALUE
+  MidnightBlue 230 VALUE
+  MidnightBlue MidnightBlue 256 bandmax
+  MidnightBlue endcolormap
+  DATA 0 AUTO RANGE )
+
+/Variability FORMgetknown {(Percent_of_variance_explained) eq}{true}ifelse {
+
+( dup mul exch [T]rmsaover dup mul div
+ (long_name) (variance explained) def
+ (units) unitless def 
+ (percent) unitconvert
+ DATA 0 100 RANGE )
+
+}if
+
+]concat
+/mapsel exch def
+
+/Regional FORMknown onClickforInfo? or {
+/Regional FORMknown {
+  [mapsel ( X Y fig- colors countries_gaz -fig
+  (plotaxislength) 590 psdef
+  (antialias) true psdef ) ]concat interp
+  /map
+  [mapsel ( X Y fig- colors countries_gaz -fig
+  (plotaxislength) 590 psdef
+  (antialias) true psdef ) ]concat
+  inputimagelinkwithlimitcontrols
+  (<br>)print
+  [mapsel ( X Y fig- colors countries_gaz -fig .auxfig)] concat interp
+  /map
+  [mapsel ( X Y fig- colors countries_gaz -fig .auxfig)] concat
+  imagelink
+  4{pop}repeat
+}{
+  /map FORMget
+  /mylon clickpoint 0 get .value s== def
+  /mylat clickpoint 1 get .value s== def
+  [mapsel ( ) mylon ( ) mylat (
+  togeopoint
+  a: .lon :a: .lat :a
+  X Y fig- colors countries_gaz red pushpins -fig
+  (plotaxislength) 590 psdef
+  (antialias) true psdef ) ]concat interp
+  /map
+  [mapsel ( ) mylon ( ) mylat (
+  togeopoint 
+  a: .lon :a: .lat :a
+  X Y fig- colors countries_gaz red pushpins -fig
+  (plotaxislength) 590 psdef
+  (antialias) true psdef ) ]concat
+  inputimagelinkwithlimitcontrolsclickforinfo
+  (<br>)print
+  [mapsel ( X Y fig- colors countries_gaz -fig .auxfig)] concat interp
+  /map
+  [mapsel ( X Y fig- colors countries_gaz -fig .auxfig)] concat
+  imagelink
+  6{pop}repeat
+}ifelse
+}{
+  [mapsel ( X Y fig- colors countries_gaz -fig
+  (plotaxislength) 590 psdef
+  (antialias) true psdef ) ]concat interp
+  /map
+  [mapsel ( X Y fig- colors countries_gaz -fig
+  (plotaxislength) 590 psdef
+  (antialias) true psdef ) ]concat
+  inputimagelinkwithlimitcontrolsclickforinfo
+  (<br>)print
+  [mapsel ( X Y fig- colors countries_gaz -fig .auxfig)] concat interp
+  /map
+  [mapsel ( X Y fig- colors countries_gaz -fig .auxfig)] concat
+  imagelink
+  4{pop}repeat
+}ifelse
+
+</INGRID>
+</div>
+<INGRID>
+
+/Regional FORMknown onClickforInfo? or {
+
+  /Regional FORMknown {
+    [tssel ( 4 { 4 -1 roll )
+    /map FORMget /X get /plotfirst get null eq not {
+      ( X ) lpar /map FORMget /X get dup /plotfirst get exch /plotlast get rpar exch ( ) exch lpar exch rpar ( RANGEEDGES
+      Y ) lpar /map FORMget /Y get dup /plotfirst get exch /plotlast get rpar exch ( ) exch lpar exch rpar ( RANGEEDGES )
+    }if
+    ( [X Y]average }repeat )]concat /locsel exch def
+  }{ 
+    [tssel ( 4 { 4 -1 roll X ) mylon ( VALUE Y ) mylat ( VALUE }repeat )]concat /locsel exch def
+  }ifelse
+[locsel ( pop pop pop [T]average getrealization 0 get NaN eq )]concat interp {
+  (<div align="center" style="point-size:12pt;color:#FF0000;"><b>No data at this location, please try again. Zoom for a detailed view.</b></div>)print
+}{
+(
+<div align="center"><b>Time Scale Decomposition</b>
+<input type="checkbox" name="Regional" onChange="document.mapform.submit();")print
+/Regional FORMknown {( checked)print}if
+(>Area-average over map in view\n
+</div><br>
+<div style="margin:0 auto">
+<div style="float:left;border-style:solid;border-width:thin;border-color:grey;">
+<div align="center">
+)print
+[locsel ( pop pop
+[T]rmsaover dup mul
+exch
+[T]rmsaover dup mul
+div /percent unitconvert 0.5 add toi4
+(long_name) (Trend) def
+(<font color="red">%2.0f%%</font>)sprintf
+)]concat
+(table: terse boldData 1 :table .html) append toproc (<object data=") print procasurl (" type="text/html">----</object>) print
+(</div><div align="center">)print
+[locsel ( pop pop
+  (scale_symmetric) (true) def
+  (fullname) (trend) def
+  DATA AUTO AUTO RANGE
+exch
+  (scale_symmetric) (true) def
+  (fullname) (raw) def
+  DATA AUTO AUTO RANGE
+exch
+T fig- line black zeroline thick solid red line -fig
+(plotaxislength) 300 psdef )]concat interp
+/map
+[locsel ( pop pop
+  (scale_symmetric) (true) def
+  (fullname) (trend) def
+  DATA AUTO AUTO RANGE
+exch
+  (scale_symmetric) (true) def
+  (fullname) (raw) def
+  DATA AUTO AUTO RANGE
+exch
+T fig- line black zeroline thick solid red line -fig 
+(plotaxislength) 300 psdef )]concat
+imagelink
+
+(</div><div align="center">download <a href="http://iridl.ldeo.columbia.edu/expert/)print
+dup [ ({) locsel ( pop pop pop dup /X getknown {removeGRID}if dup /Y getknown {removeGRID}if (name) (raw) def (long_name) (original raw data) def (fullname) (raw) def ) (}) ]concat interp procasurl print 
+(/?help+datafiles#GIS">raw data</a>)print
+
+( and  <a href="http://iridl.ldeo.columbia.edu/expert/)print
+dup [ ({) locsel ( pop pop nip dup /X getknown {removeGRID}if dup /Y getknown {removeGRID}if (name) (trend) def (long_name) (trend component) def (fullname) (trend) def ) (}) ]concat interp procasurl print 
+(/?help+datafiles#GIS">trend component</a>)print
+
+(</div></div><div style="float:left;border-style:solid;border-width:thin;border-color:grey;">
+<div align="center">)print
+[locsel ( pop nip
+[T]rmsaover dup mul
+exch
+[T]rmsaover dup mul
+div /percent unitconvert 0.5 add toi4
+(long_name) (Decadal) def
+(<font color="green">%2.0f%%</font>)sprintf
+)]concat
+(table: terse boldData 1 :table .html) append toproc (<object data=") print procasurl (" type="text/html">----</object>) print
+(</div><div align="center">)print
+[locsel ( pop nip 
+  (scale_symmetric) (true) def
+  (fullname) (decadal) def
+  DATA AUTO AUTO RANGE
+exch
+  (scale_symmetric) (true) def
+  (fullname) (raw) def
+  DATA AUTO AUTO RANGE
+exch
+T fig- white line black zeroline thick solid green line -fig
+(plotaxislength) 300 psdef )]concat interp
+/map
+[locsel ( pop nip
+  (scale_symmetric) (true) def
+  (fullname) (decadal) def
+  DATA AUTO AUTO RANGE
+exch
+  (scale_symmetric) (true) def
+  (fullname) (raw) def
+  DATA AUTO AUTO RANGE
+exch
+T fig- white line black zeroline thick solid green line -fig
+(plotaxislength) 300 psdef )]concat
+imagelink
+
+(</div><div align="center">download <a href="http://iridl.ldeo.columbia.edu/expert/)print
+dup [ ({) locsel ( pop nip nip dup /X getknown {removeGRID}if dup /Y getknown {removeGRID}if (name) (decadal) def (long_name) (decadal component) def (fullname) (decadal) def ) (}) ]concat interp procasurl print 
+(/?help+datafiles#GIS">decadal component</a>)print
+
+(</div></div><div style="float:left;border-style:solid;border-width:thin;border-color:grey;">
+<div align="center">)print
+[locsel ( nip nip
+[T]rmsaover dup mul
+exch
+[T]rmsaover dup mul
+div /percent unitconvert 0.5 add toi4
+(long_name) (Interannual) def
+(<font color="blue">%2.0f%%</font>)sprintf
+)]concat
+(table: terse boldData 1 :table .html) append toproc (<object data=") print procasurl (" type="text/html">----</object>) print
+(</div><div align="center">)print
+[locsel ( nip nip
+  (scale_symmetric) (true) def
+  (fullname) (interannual) def
+  DATA AUTO AUTO RANGE
+exch
+  (scale_symmetric) (true) def
+  (fullname) (raw) def
+  DATA AUTO AUTO RANGE
+exch
+T fig- white line black zeroline blue line -fig
+(plotaxislength) 300 psdef )]concat interp
+/map
+[locsel ( nip nip
+  (scale_symmetric) (true) def
+  (fullname) (interannual) def
+  DATA AUTO AUTO RANGE
+exch
+  (scale_symmetric) (true) def
+  (fullname) (raw) def
+  DATA AUTO AUTO RANGE
+exch
+T fig- white line black zeroline solid blue line -fig
+(plotaxislength) 300 psdef )]concat
+imagelink
+
+(</div><div align="center">download <a href="http://iridl.ldeo.columbia.edu/expert/)print
+dup [ ({) locsel ( nip nip nip dup /X getknown {removeGRID}if dup /Y getknown {removeGRID}if (name) (interannual) def (long_name) (interannual component) def (fullname) (interannual) def ) (}) ]concat interp procasurl print 
+(/?help+datafiles#GIS">interannual component</a>)print
+
+(</div></div><div style="clear:both"></div></div>
+<div align="center">)print
+[locsel (
+dup [T]rmsaover
+2 index [T]rmsaover
+mul
+3 -2 roll [T]correlate
+mul nip
+exch [T]rmsaover dup mul
+div /percent unitconvert 0.5 add toi4
+(long_name) (Decadal/Interannual covariance) def
+(<font color="purple">%2.0f%%</font>)sprintf
+)]concat
+(table: terse boldData 1 :table .html) append toproc (<object data=") print procasurl (" type="text/html">----</object>) print
+(</div>
+<br>
+<div style="float:left;border-style:solid;border-width:thin;border-color:grey;">
+<div align="center">Zoom on Trend and Decadal scales</div>
+<div align="center">)print
+[locsel ( pop 3 -1 roll pop
+  (scale_symmetric) (true) def
+  (fullname) (decadal) def
+  DATA AUTO AUTO RANGE
+exch
+  (scale_symmetric) (true) def
+  (fullname) (trend) def
+  DATA AUTO AUTO RANGE
+T fig- thick green line solid red line thinnish black zeroline -fig
+(plotaxislength) 300 psdef )]concat interp
+/map
+[locsel ( pop 3 -1 roll pop
+  (scale_symmetric) (true) def
+  (fullname) (decadal) def
+  DATA AUTO AUTO RANGE
+exch
+  (scale_symmetric) (true) def
+  (fullname) (trend) def
+  DATA AUTO AUTO RANGE
+T fig- thick green line solid red line thinnish black zeroline -fig
+(plotaxislength) 300 psdef )]concat
+imagelink
+(</div><div style="clear:both"></div></div>
+<br>)print
+}ifelse
+}{
+(
+<div align="center" style="point-size:12pt;color:#FF0000;">
+Click on the map to decompose time scales locally
+</div>
+<div align="center" style="point-size:12pt;color:#FF0000;">
+OR
+</div>
+<div align="center" style="point-size:12pt;color:#FF0000;">
+Check box to perform the analysis on an average over the map in view
+</div>
+<div align="center" style="point-size:12pt;">
+<input type="checkbox" name="Regional" onChange="document.mapform.submit();") print
+/Regional FORMknown {( checked)print}if
+(>Area-average over map in view\n
+</div>
+</div>
+)print
+}ifelse
+</INGRID>
+<p>
+<div align="center">
+<table align=center>
+<table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE align=center>
+<tr><td align=center bgcolor=#DCDCDC><b>Maproom Description</b></td></tr>
+<tr><td align=justify><font size=-1>
+This maproom presents an approximate decomposition by time scale of twentieth-century precipitation variations. Three scales are defined, denoted trend, decadal  and interannual. These correspond loosely to secular variation due to anthropogenic influence and the low- and high-frequency components of natural variability (variability intrinsic to the climate system), respectively.
+<p>
+The user may define a season of interest, in which case the decomposition will be performed on the corresponding seasonally-averaged data. Results may be displayed either as a map, or as time series, in the latter case at an individual gridpoint or averaged over a user-selected area. If a map is selected, users may display, either the standard deviation or the percent of variance in the raw data explained by variability on the selected time scale
+<p>
+<a href="../notes.html">more details</a>
+</font></td></tr>
+
+<tr><td colspan=6 align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
+
+<tr>
+<td>
+<b>Global climate change signal</b>
+<br><font size=-1><b>Data Source</b>:&nbsp;
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.WCRP/.CMIP3/" target="_blank">CMIP3 multi-model ensemble mean</a>
+</font>
+<p>
+<b>Observations</b>
+<br><font size=-1><b>Data Source</b>:&nbsp;
+monthly mean temperature from <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.TS2p1/.monthly/" target="_blank">UEA CRU TS2p1</a> and
+monthly mean precipitation from <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WCRP/.GCOS/.GPCC/.FDP/.version5/.2p5/" target="_blank">WCRP GPCC</a>
+</font>
+</td>
+</tr>
+</table>
+<table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
+<tr>
+<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
+<td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
+<tr>
+<INGRID>
+ [mapsel ( X Y fig- colors countries_gaz -fig
+  (plotaxislength) 590 psdef
+  (antialias) true psdef ) ]concat interp 
+/map
+ [mapsel ( X Y fig- colors countries_gaz -fig
+  (plotaxislength) 590 psdef
+  (antialias) true psdef ) ]concat
+showmenu? {
+imagelinkstart
+(<td align=center>)print
+(Figure as PDF) (.pdf) linktoimageformat
+(</td><td align=center>) print
+(Figure as JPEG) (.jpg) linktoimageformat
+(</td>) print
+}if
+(<td rowspan=2 align=center><a href=http://iridl.ldeo.columbia.edu/expert/)print
+dup [({) mapsel (})] concat interp procasurl print 
+</INGRID>/?help+datafiles#GIS">Data for GIS</a></td>
+</tr>
+<tr>
+<INGRID>
+ [mapsel ( X Y fig- colors countries_gaz -fig .auxfig)] concat interp
+/map
+ [mapsel ( X Y fig- colors countries_gaz -fig .auxfig)] concat
+showmenu? {
+imagelinkstart
+(<td align=center>)print
+(Colorscale as PDF) (.pdf) linktoimageformat
+(</td><td align=center>) print
+(Colorscale as JPEG) (.jpg) linktoimageformat
+(</td>) print
+} if
+</INGRID>
+
+</tr>
+</table>
+</table>
+
+</div>
+
+</center>
+</FORM>
+</body></html>
+

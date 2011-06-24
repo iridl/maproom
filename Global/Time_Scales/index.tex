@@ -1,0 +1,17 @@
+\begin{ingrid}
+/mytype /mappagetype def
+continuedataset:
+datasetdefs:
+/index.en.html currentobject /index.html get def
+:datasetdefs
+
+{Precipitation Temperature} { currentobject 1 index get def } forall
+
+/index.html {
+PickLanguage:
+/en /index.en.html
+:PickLanguage
+} def
+
+:dataset
+\end{ingrid}
