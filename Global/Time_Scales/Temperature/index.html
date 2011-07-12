@@ -40,8 +40,6 @@ leftmenuHeader
 
 <div align="center"><h3><u>Time Scales Maproom</u></h3></div>
 
-
-
 <div align="left" style="background-color:#000066;point-size:9pt;color:#FFFFFF;">
 
 <b>Time Scale:</b>
@@ -102,28 +100,38 @@ leftmenuHeader
 
 <b>Season</b>
 </div>
-<p>
+
+<br>
 <div align="center">
 <INGRID>
 
 [(SOURCES .UEA .CRU .TS2p1 .monthly
-X 2.5 STEP Y 2.5 STEP
-a: .mean .temp yearly-anomalies )
+a: .mean .temp
+  X 2.5 splitstreamgrid
+  Y 2.5 splitstreamgrid
+  {Y cosd}[X Y]weighted-average
+  X2 (X) renameGRID
+  Y2 (Y) renameGRID
+ yearly-anomalies )
   /SeasonEnd FORMget 0 3 getinterval interp
   /SeasonStart FORMget 0 3 getinterval interp sub
   dup -1 eq exch 11 eq or {
     ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 boxAverage )
   }{
-    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar (  seasonalAverage )
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar ( seasonalAverage )
   }ifelse
-( :a: .stations .temp )
+( :a: .stations .temp
+  X 2.5 boxAverage
+  Y 2.5 boxAverage
+  25 mul
+  0 maskle )
   /SeasonEnd FORMget 0 3 getinterval interp
   /SeasonStart FORMget 0 3 getinterval interp sub
   dup -1 eq exch 11 eq or {
-    ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 boxAverage )
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 splitstreamgrid [T]0.66 average T2 (T) renameGRID )
   }{
-    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar (  seasonalAverage )
-  }ifelse
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar ( 0.66 seasonalAverage )
+ }ifelse
 ( 0 maskle [T]1. average 0 mul
 :a
   add )
@@ -167,8 +175,7 @@ SOURCES .UEA .CRU .TS2p1 .monthly .mean .temp .units cvntos
 rpar ( def
   (long_name) (standard deviation) def
   startcolormap DATA 0 256 RANGE
-  white white white 0 VALUE
-  white white 2 bandmax
+  white white 210 250 210 RGB 0 VALUE
   210 250 210 RGB 160 240 165 RGB 4 VALUE
   130 210 135 RGB 8 VALUE
   90 190 95 RGB 16 VALUE
@@ -264,7 +271,7 @@ rpar ( def
       ( X ) lpar /map FORMget /X get dup /plotfirst get exch /plotlast get rpar exch ( ) exch lpar exch rpar ( RANGEEDGES
       Y ) lpar /map FORMget /Y get dup /plotfirst get exch /plotlast get rpar exch ( ) exch lpar exch rpar ( RANGEEDGES )
     }if
-    ( [X Y]average }repeat )]concat /locsel exch def
+    ( {Y cosd} [X Y] weighted-average }repeat )]concat /locsel exch def
   }{ 
     [tssel ( 4 { 4 -1 roll X ) mylon ( VALUE Y ) mylat ( VALUE }repeat )]concat /locsel exch def
   }ifelse
@@ -495,8 +502,7 @@ The user may define a season of interest, in which case the decomposition will b
 <p>
 <b>Observations</b>
 <br><font size=-1><b>Data Source</b>:&nbsp;
-monthly mean temperature from <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.TS2p1/.monthly/" target="_blank">UEA CRU TS2p1</a> and
-monthly mean precipitation from <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WCRP/.GCOS/.GPCC/.FDP/.version4/.2p5/" target="_blank">WCRP GPCC</a>
+monthly mean temperature from <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.TS2p1/.monthly/" target="_blank">CRU TS 2.1</a>
 </font>
 </td>
 </tr>

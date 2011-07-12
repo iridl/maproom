@@ -1,5 +1,5 @@
 <INGRID>
-SOURCES .WCRP .GCOS .GPCC .FDP .version5 .2p5
+SOURCES .UEA .CRU .TS2p1 .monthly
 mimeheader
 pop
 </INGRID>
@@ -40,9 +40,7 @@ leftmenuHeader
 
 <div align="center"><h3><u>Time Scales Maproom</u></h3></div>
 
-
-
-<div align="left" style="background-color:#000066;point-size:9pt;color:#FFFFFF;">
+<div style="float:left;background-color:#000066;point-size:9pt;color:#FFFFFF;">
 
 <b>Time Scale:</b>
 <INGRID>
@@ -100,37 +98,88 @@ leftmenuHeader
 (</select>)print
 </INGRID>
 
-<b>Season</b>
+<b>Season</b>&nbsp;
 </div>
-<p>
+
+<div align="left" style="background-color:#FFFFCC;point-size:9pt;">
+&nbsp;<b>Data screening:</b>
+<INGRID>
+(<select name="DataScreening" id="DataScreening"  onChange="changedtext(this)">) print
+[(strict) (intermediate) (none)] {
+  (<option value=) print
+  dup print /DataScreening FORMgetknown {
+    1 index eq {( selected="selected") print} if}{
+    dup (intermediate) eq {( selected="selected") print} if (intermediate) /DataScreening FORM!
+  }ifelse
+  dup (strict) eq {( title="high temporal coverage")print}if
+  dup (intermediate) eq {( title="intermediate temporal and spatial coverage")print}if
+  dup (none) eq {( title="high spatial coverage")print}if
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+</div>
+
+<br>
 <div align="center">
 <INGRID>
 
-[(SOURCES .WCRP .GCOS .GPCC .FDP .version5 .2p5
-a: .anom )
+[(SOURCES .UEA .CRU .TS2p1 .monthly
+a: .prcp
+  X 2.5 splitstreamgrid
+  Y 2.5 splitstreamgrid
+  {Y cosd}[X Y]weighted-average
+  X2 (X) renameGRID
+  Y2 (Y) renameGRID
+ yearly-anomalies )
   /SeasonEnd FORMget 0 3 getinterval interp
   /SeasonStart FORMget 0 3 getinterval interp sub
   dup -1 eq exch 11 eq or {
     ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 boxAverage )
   }{
-    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2009) rpar (  seasonalAverage )
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar ( seasonalAverage )
   }ifelse
-( :a: .cnts )
+( :a: .stations .prcp
+  X 2.5 boxAverage
+  Y 2.5 boxAverage
+  25 mul
+  0 maskle )
+  /SeasonEnd FORMget 0 3 getinterval interp
+  /SeasonStart FORMget 0 3 getinterval interp sub
+  dup -1 eq exch 11 eq or {
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 splitstreamgrid [T]0.66 average T2 (T) renameGRID )
+  }{
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar ( 0.66 seasonalAverage )
+ }ifelse 
+/DataScreening FORMget (strict) eq {
+  ( 0 replaceNaN 0 flaggt
+  T 10. 2. div floor 12 mul pad1
+  T 10. 12 mul runningAverage
+  1. masklt
+  [T] 1. average 0 mul add )
+}if
+/DataScreening FORMget (intermediate) eq {
+  ( 0 replaceNaN 0 flaggt
+  T 10. 2. div floor 12 mul pad1
+  T 10. 12 mul runningAverage
+  0.5 masklt
+  [T] 1. average 0 mul add )
+}if
+/DataScreening FORMget (none) eq {
+( 0 mul add )
+}if
+( :a: .prcp
+  X 2.5 splitstreamgrid
+  Y 2.5 splitstreamgrid
+  {Y cosd}[X Y]weighted-average
+  X2 (X) renameGRID 
+  Y2 (Y) renameGRID )
   /SeasonEnd FORMget 0 3 getinterval interp
   /SeasonStart FORMget 0 3 getinterval interp sub
   dup -1 eq exch 11 eq or {
     ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 boxAverage )
   }{
-    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2009) rpar (  seasonalAverage )
-  }ifelse
-( 0 maskle [T]0.5 average 0 mul add
-:a: .prcp )
-  /SeasonEnd FORMget 0 3 getinterval interp
-  /SeasonStart FORMget 0 3 getinterval interp sub
-  dup -1 eq exch 11 eq or {
-    ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 boxAverage )
-  }{
-    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2009) rpar (  seasonalAverage )
+    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar (  seasonalAverage )
   }ifelse
   lpar /SeasonEnd FORMget 0 3 getinterval rpar ( interp )
   lpar /SeasonStart FORMget 0 3 getinterval rpar ( interp sub
@@ -152,7 +201,7 @@ a: .anom )
   add
 1 index 1 index sub
   T 1 1. 10 div butt_filter: 5. store ford :butt_filter .butt
-2 index 2 index sub 1 index sub )]concat
+2 index 2 index sub 1 index sub )]concat 
 
 /tssel exch def
 
@@ -173,12 +222,11 @@ a: .anom )
 
 ( [T]rmsaover 0 maskle
   (units) ) lpar
-SOURCES .WCRP .GCOS .GPCC .FDP .version5 .2p5 .anom .units
+SOURCES .UEA .CRU .TS2p1 .monthly .prcp .units cvntos
 rpar ( def
   (long_name) (standard deviation) def
   startcolormap DATA 0 256 RANGE
-  white white white 0 VALUE
-  white white 2 bandmax
+  white white 210 250 210 RGB 0 VALUE
   210 250 210 RGB 160 240 165 RGB 4 VALUE
   130 210 135 RGB 8 VALUE
   90 190 95 RGB 16 VALUE
@@ -253,7 +301,7 @@ rpar ( def
   /map
   [mapsel ( X Y fig- colors countries_gaz -fig
   (plotaxislength) 590 psdef
-  (antialias) true psdef ) ]concat
+  (antialias) true psdef ) ]concat 
   inputimagelinkwithlimitcontrolsclickforinfo
   (<br>)print
   [mapsel ( X Y fig- colors countries_gaz -fig .auxfig)] concat interp
@@ -275,7 +323,7 @@ rpar ( def
       ( X ) lpar /map FORMget /X get dup /plotfirst get exch /plotlast get rpar exch ( ) exch lpar exch rpar ( RANGEEDGES
       Y ) lpar /map FORMget /Y get dup /plotfirst get exch /plotlast get rpar exch ( ) exch lpar exch rpar ( RANGEEDGES )
     }if
-    ( [X Y]average }repeat )]concat /locsel exch def
+    ( {Y cosd} [X Y]weighted-average }repeat )]concat /locsel exch def
   }{ 
     [tssel ( 4 { 4 -1 roll X ) mylon ( VALUE Y ) mylat ( VALUE }repeat )]concat /locsel exch def
   }ifelse
@@ -505,8 +553,7 @@ The user may define a season of interest, in which case the decomposition will b
 <p>
 <b>Observations</b>
 <br><font size=-1><b>Data Source</b>:&nbsp;
-monthly mean temperature from <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.TS2p1/.monthly/" target="_blank">UEA CRU TS2p1</a> and
-monthly mean precipitation from <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WCRP/.GCOS/.GPCC/.FDP/.version5/.2p5/" target="_blank">WCRP GPCC</a>
+monthly mean precipitation from <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.TS2p1/.monthly/" target="_blank">CRU TS 2.1</a>
 </font>
 </td>
 </tr>
