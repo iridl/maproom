@@ -135,7 +135,7 @@ WWWinfo
 
 /tot6dayapcppctmonthlyclim { SOURCES .IRI .MD .IFRC .ESRL .PSD .reforecast .ensemble_mean .analyses .tot6day a: .apcppctmonthlyclim :a: .forecasttime :a X Y fig: colors plotlabel black thin countries_gaz :fig /color_smoothing auto psdef /framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef } def
 
-/prcp_fcst { SOURCES .IRI .MD .IFRC .IRI .Seasonal_Forecast a: .prcp_fcst :a: .forecasttime :a  X Y fig: colors plotlabel black thin countries_gaz :fig /framelabel (Forecast for %=[forecasttime], Forecast Issued %=[F]) psdef } def
+/prcp_fcst { SOURCES .IRI .MD .IFRC .IRI .Seasonal_Forecast a: .prcp_fcst :a: .forecasttime :a  X Y fig: colors plotlabel black thin countries_gaz :fig /L 1. plotvalue /framelabel (Forecast for %=[forecasttime], Forecast Issued %=[F]) psdef } def
 
 /extreme_prcp_fcst { SOURCES .IRI .MD .IFRC .IRI .Seasonal_Forecast a: .extreme_prcp_fcst :a: .forecasttime :a  X Y fig: colors plotlabel black thin countries_gaz :fig /framelabel (Forecast for %=[forecasttime], Forecast Issued %=[F]) psdef } def
 
