@@ -57,7 +57,7 @@ leftmenuHeader
 (</select>)print
 </INGRID>
 
-<b>Variability:</b>
+<b>Map:</b>
 <INGRID>
 (<select name="Variability" id="Variability"  onChange="changedtext(this)">) print
 [(Percent_of_variance_explained) (Standard_deviation)] {
@@ -71,7 +71,7 @@ leftmenuHeader
 (</select>)print
 </INGRID>
 
-<b>Over</b>
+<b>Screening:</b>
 <INGRID>
 (<select name="SeasonStart" id="SeasonStart"  onChange="changedtext(this)">) print
 [(January) (February) (March) (April) (May) (June) (July) (August) (September) (October) (November) (December)] {
@@ -99,7 +99,6 @@ leftmenuHeader
 (</select>)print
 </INGRID>
 
-<b>Season</b>
 </div>
 
 <br>
@@ -124,14 +123,13 @@ a: .mean .temp
 ( :a: .stations .temp
   X 2.5 boxAverage
   Y 2.5 boxAverage
-  25 mul
-  0 maskle )
+  25 mul )
   /SeasonEnd FORMget 0 3 getinterval interp
   /SeasonStart FORMget 0 3 getinterval interp sub
   dup -1 eq exch 11 eq or {
-    ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 splitstreamgrid [T]0.66 average T2 (T) renameGRID )
+    ( 0 flaggt T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 splitstreamgrid T 3 runningAverage 0.66 masklt [T]1 average T2 (T) renameGRID )
   }{
-    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar ( 0.66 seasonalAverage )
+    ( 0 maskle T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar ( 0.66 seasonalAverage )
  }ifelse
 ( 0 maskle [T]1. average 0 mul
 :a
@@ -284,7 +282,7 @@ rpar ( def
 <div align="center"><b>Time Scale Decomposition</b>
 <input type="checkbox" name="Regional" onChange="document.mapform.submit();")print
 /Regional FORMknown {( checked)print}if
-(>Area-average over map in view\n
+(>Area-average over visible points\n
 </div><br>
 <div style="margin:0 auto">
 <div style="float:left;border-style:solid;border-width:thin;border-color:grey;">
@@ -462,18 +460,10 @@ imagelink
 }{
 (
 <div align="center" style="point-size:12pt;color:#FF0000;">
-Click on the map to decompose time scales locally
-</div>
-<div align="center" style="point-size:12pt;color:#FF0000;">
-OR
-</div>
-<div align="center" style="point-size:12pt;color:#FF0000;">
-Check box to perform the analysis on an average over the map in view
-</div>
-<div align="center" style="point-size:12pt;">
+Click at a point, draw a box to zoom, check the box
 <input type="checkbox" name="Regional" onChange="document.mapform.submit();") print
 /Regional FORMknown {( checked)print}if
-(>Area-average over map in view\n
+(> to area-average over visible points\n
 </div>
 </div>
 )print
@@ -483,20 +473,24 @@ Check box to perform the analysis on an average over the map in view
 <div align="center">
 <table align=center>
 <table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE align=center>
-<tr><td align=center bgcolor=#DCDCDC><b>Maproom Description</b></td></tr>
+<tr><td align=center bgcolor=#DCDCDC><b>Maproom Documentation</b></td></tr>
 <tr><td align=justify><font size=-1>
 This maproom presents an approximate decomposition by time scale of twentieth-century temperature variations. Three scales are defined, denoted trend, decadal  and interannual. These correspond loosely to secular variation due to anthropogenic influence and the low- and high-frequency components of natural variability (variability intrinsic to the climate system), respectively.
 <p>
 The user may define a season of interest, in which case the decomposition will be performed on the corresponding seasonally-averaged data. Results may be displayed either as a map, or as time series, in the latter case at an individual gridpoint or averaged over a user-selected area. If a map is selected, users may display, either the standard deviation or the percent of variance in the raw data explained by variability on the selected time scale
 <p>
-<a href="../notes.html">more details</a>
+<a href="../notes.html">Maproom reference documentation</a>
+<p>
+<br><font size=-1><b>Reference</b>:&nbsp;
+Greene, A.M, L. Goddard and R. Cousin, <a href="http://iri.columbia.edu/~remic/files/Greene2011.pdf">Interactive "Maproom" Provides Perspective on 20th-Century Climate Variability and Change</a>, EOS (submitted) 2011
+
 </font></td></tr>
 
 <tr><td colspan=6 align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
 
 <tr>
 <td>
-<b>Global climate change signal</b>
+<b>Global-mean multimodel-mean temperature record</b>
 <br><font size=-1><b>Data Source</b>:&nbsp;
 <a href="http://iridl.ldeo.columbia.edu/SOURCES/.WCRP/.CMIP3/" target="_blank">CMIP3 multi-model ensemble mean</a>
 </font>

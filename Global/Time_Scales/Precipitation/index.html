@@ -41,7 +41,24 @@ leftmenuHeader
 
 <div align="center"><h3><u>Time Scales Maproom</u></h3></div>
 
-<div style="float:left;background-color:#000066;point-size:9pt;color:#FFFFFF;">
+<div align="left" style="background-color:#000066;point-size:9pt;color:#FFFFFF;">
+
+<b>Screening:</b>
+<INGRID>
+(<select name="DataScreening" id="DataScreening"  onChange="changedtext(this)">) print
+[(high_temporal_coverage) (intermediate_coverage) (high_spatial_coverage)] {
+  (<option value=) print
+  dup print /DataScreening FORMgetknown {
+    1 index eq {( selected="selected") print} if}{
+    dup (high_temporal_coverage) eq {( selected="selected") print} if (high_temporal_coverage) /DataScreening FORM!
+  }ifelse
+  dup (high_temporal_coverage) eq {( title="strict")print}if
+  dup (intermediate_coverage) eq {( title="intermediate")print}if
+  dup (high_spatial_coverage) eq {( title="none")print}if
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
 
 <b>Time Scale:</b>
 <INGRID>
@@ -57,7 +74,7 @@ leftmenuHeader
 (</select>)print
 </INGRID>
 
-<b>Variability:</b>
+<b>Map:</b>
 <INGRID>
 (<select name="Variability" id="Variability"  onChange="changedtext(this)">) print
 [(Percent_of_variance_explained) (Standard_deviation)] {
@@ -71,7 +88,7 @@ leftmenuHeader
 (</select>)print
 </INGRID>
 
-<b>Over</b>
+<b>Season:</b>
 <INGRID>
 (<select name="SeasonStart" id="SeasonStart"  onChange="changedtext(this)">) print
 [(January) (February) (March) (April) (May) (June) (July) (August) (September) (October) (November) (December)] {
@@ -94,27 +111,6 @@ leftmenuHeader
     1 index eq {( selected="selected") print} if}{
     dup (August) eq {( selected="selected") print} if (August) /SeasonEnd FORM!
   }ifelse
-  (>) print print (</option>) print
-}forall
-(</select>)print
-</INGRID>
-
-<b>Season</b>&nbsp;
-</div>
-
-<div align="left" style="background-color:#FFFFCC;point-size:9pt;">
-&nbsp;<b>Data screening:</b>
-<INGRID>
-(<select name="DataScreening" id="DataScreening"  onChange="changedtext(this)">) print
-[(strict) (intermediate) (none)] {
-  (<option value=) print
-  dup print /DataScreening FORMgetknown {
-    1 index eq {( selected="selected") print} if}{
-    dup (intermediate) eq {( selected="selected") print} if (intermediate) /DataScreening FORM!
-  }ifelse
-  dup (strict) eq {( title="high temporal coverage")print}if
-  dup (intermediate) eq {( title="intermediate temporal and spatial coverage")print}if
-  dup (none) eq {( title="high spatial coverage")print}if
   (>) print print (</option>) print
 }forall
 (</select>)print
@@ -143,31 +139,30 @@ a: .prcp
 ( :a: .stations .prcp
   X 2.5 boxAverage
   Y 2.5 boxAverage
-  25 mul
-  0 maskle )
+  25 mul )
   /SeasonEnd FORMget 0 3 getinterval interp
   /SeasonStart FORMget 0 3 getinterval interp sub
   dup -1 eq exch 11 eq or {
-    ( T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 splitstreamgrid [T]0.66 average T2 (T) renameGRID )
+    ( 0 flaggt T ) lpar /SeasonStart FORMget 0 3 getinterval ( 1901) rpar ( last RANGEEDGES T 12 splitstreamgrid T 3 runningAverage 0.66 masklt [T]1 average T2 (T) renameGRID )
   }{
-    ( T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar ( 0.66 seasonalAverage )
+    ( 0 maskle T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar ( 0.66 seasonalAverage )
  }ifelse 
-/DataScreening FORMget (strict) eq {
+/DataScreening FORMget (high_temporal_coverage) eq {
   ( 0 replaceNaN 0 flaggt
   T 10. 2. div floor 12 mul pad1
   T 10. 12 mul runningAverage
   1. masklt
   [T] 1. average 0 mul add )
 }if
-/DataScreening FORMget (intermediate) eq {
-  ( 0 replaceNaN 0 flaggt
+/DataScreening FORMget (intermediate_coverage) eq {
+  ( 0 replaceNaN 0 flaggt 
   T 10. 2. div floor 12 mul pad1
   T 10. 12 mul runningAverage
   0.5 masklt
   [T] 1. average 0 mul add )
 }if
-/DataScreening FORMget (none) eq {
-( 0 mul add )
+/DataScreening FORMget (high_spatial_coverage) eq {
+( [T]0. average 0 mul add )
 }if
 ( :a: .prcp
   X 2.5 splitstreamgrid
@@ -335,7 +330,7 @@ rpar ( def
 <div align="center"><b>Time Scale Decomposition</b>
 <input type="checkbox" name="Regional" onChange="document.mapform.submit();")print
 /Regional FORMknown {( checked)print}if
-(>Area-average over map in view\n
+(>Area-average over visible points\n
 </div><br>
 <div style="margin:0 auto">
 <div style="float:left;border-style:solid;border-width:thin;border-color:grey;">
@@ -513,18 +508,10 @@ imagelink
 }{
 (
 <div align="center" style="point-size:12pt;color:#FF0000;">
-Click on the map to decompose time scales locally
-</div>
-<div align="center" style="point-size:12pt;color:#FF0000;">
-OR
-</div>
-<div align="center" style="point-size:12pt;color:#FF0000;">
-Check box to perform the analysis on an average over the map in view
-</div>
-<div align="center" style="point-size:12pt;">
+Click at a point, draw a box to zoom, check the box 
 <input type="checkbox" name="Regional" onChange="document.mapform.submit();") print
 /Regional FORMknown {( checked)print}if
-(>Area-average over map in view\n
+(> to area-average over visible points\n
 </div>
 </div>
 )print
@@ -534,20 +521,24 @@ Check box to perform the analysis on an average over the map in view
 <div align="center">
 <table align=center>
 <table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE align=center>
-<tr><td align=center bgcolor=#DCDCDC><b>Maproom Description</b></td></tr>
+<tr><td align=center bgcolor=#DCDCDC><b>Maproom Documentation</b></td></tr>
 <tr><td align=justify><font size=-1>
 This maproom presents an approximate decomposition by time scale of twentieth-century precipitation variations. Three scales are defined, denoted trend, decadal  and interannual. These correspond loosely to secular variation due to anthropogenic influence and the low- and high-frequency components of natural variability (variability intrinsic to the climate system), respectively.
 <p>
 The user may define a season of interest, in which case the decomposition will be performed on the corresponding seasonally-averaged data. Results may be displayed either as a map, or as time series, in the latter case at an individual gridpoint or averaged over a user-selected area. If a map is selected, users may display, either the standard deviation or the percent of variance in the raw data explained by variability on the selected time scale
 <p>
-<a href="../notes.html">more details</a>
+<a href="../notes.html">Maproom reference documentation</a>
+<p>
+<br><font size=-1><b>Reference</b>:&nbsp;
+Greene, A.M, L. Goddard and R. Cousin, <a href="http://iri.columbia.edu/~remic/files/Greene2011.pdf">Interactive "Maproom" Provides Perspective on 20th-Century Climate Variability and Change</a>, EOS (submitted) 2011
+
 </font></td></tr>
 
 <tr><td colspan=6 align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
 
 <tr>
 <td>
-<b>Global climate change signal</b>
+<b>Global-mean multimodel-mean temperature record</b>
 <br><font size=-1><b>Data Source</b>:&nbsp;
 <a href="http://iridl.ldeo.columbia.edu/SOURCES/.WCRP/.CMIP3/" target="_blank">CMIP3 multi-model ensemble mean</a>
 </font>
