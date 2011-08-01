@@ -1,0 +1,443 @@
+<INGRID>
+WWWinfo
+/firstyearspan FORMknown {
+  currenturldir (/Forecast_Precipitation.html) append redirectto
+}if
+pop
+
+home .remic .CPT .PAGASA
+mimeheader
+pop
+</INGRID>
+
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <title>PAGASA/IRI Climate Monitoring - Forecast</title>
+    <STYLE TYPE="text/css">
+    <!--
+    P.indented
+       {
+       padding-left: 25pt;
+       padding-right: 25pt;
+       text-align: justify;
+       }
+    -->
+    </STYLE>
+
+<script type="text/javascript">
+<!--
+
+
+//-->
+</script>
+
+<INGRID>
+figdefs
+</INGRID>
+
+</head>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
+
+<INGRID>
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+</INGRID>
+
+<FORM name=mapform action=Forecast_Precipitation.html>
+<table width=100% align="center">
+<tr>
+<td align=left>
+<img src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/95/150/RANGEEDGES/Y/-10/30/RANGEEDGES/0/mul/1/add/SOURCES/.Features/.Political/.World/.Countries/.the_geom/dup/objectid/(185)VALUES/X/Y/fig:/blue/mask/lightgrey/fill/red/fill/black/verythin/coasts_gaz/countries_gaz/:fig//plotborder/0/psdef//plotaxislength/75/psdef//XOVY/null/psdef/++X/94.95834/150.0417/plotrange/Y/-10.04167/30.04167/plotrange//plotaxislength+75+psdef//XOVY+null+psdef//plotborder+0+psdef+.jpg">
+</td>
+<td><h3 align=center><u>PAGASA/IRI Climate Monitoring - Forecast</u></h3></td>
+<td align=right>
+</td>
+</tr>
+</table>
+
+<center>
+<table border=0 width=90%>
+<tr valign=top>
+<td align=left>
+<table bordercolor=#808080>
+<tr><td>
+
+<table BORDER COLS=1  bordercolor=#808080>
+
+<tr><td><table>
+<tr><td align=center bgcolor=#FFFFCC>
+<b><font point-size=12pt>Forecast issued:</font></b>
+<INGRID>
+home .remic .CPT .PAGASA .Forecast .S
+(<select name="map.S.plotvalue" onChange='dovaluebutton(this,"map.S.plotvalue")'>) print
+dup CopyStream getrealization {
+  (<option value=) print
+  dup 2 index exch cvsunits (")print print (")print pop /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{
+    2 index 2 index cvsunits nip eq {( selected="selected") print} if
+  }{
+    dup 2 index .last eq {( selected="selected")print}if 
+  }ifelse
+  (>) print cvsunits print (</option>) print
+}forall
+(</select>)print
+pop
+</INGRID>
+</td>
+
+<td align=center bgcolor=#000066>
+<b><font point-size=12pt color=#FFFFFF>Target Season:</font></b>
+
+<INGRID>
+home .remic .CPT .PAGASA .target_date S /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+  last}ifelse
+VALUE dup .L CopyStream getrealization {
+  (<input type=radio name="map.L.plotvalue" onChange='dovaluebutton(this,"map.L.plotvalue")' value=) print
+  dup s== print /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse {
+    interp 1 index eq {( checked) print }if  
+  }{
+    1. 1 index eq {( checked) print}if
+  }ifelse
+  ( color=#FFFFFF><font color=#FFFFFF>)print 1 index exch L exch VALUE getrealization 0 get cvsunits print (</font>\n) print
+}forall
+(</select>)print
+</INGRID>
+</td>
+</tr>
+</table></td></tr>
+
+
+<tr>
+<td align=left bgcolor=#FFFFCC>
+<b><font point-size=12pt>Field:</font></b>
+
+<INGRID>
+(<select name="Field" id="Field" onChange="document.mapform.submit();">) print
+[(Rainfall) (Anomaly) (%ofMedian) (ProbaOfExceeding) (ProbaOfNonExceeding)] {
+  (<option value=) print
+  dup print /Field FORMgetknown {
+    1 index eq {( selected=selected) print} if}{
+    dup (Rainfall) eq {( selected=selected) print} if (Rainfall) /Field FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+pop
+
+/Field FORMgetknown {
+  (Proba) search {
+    pop pop pop
+    (<select name="Variable" id="Variable" onChange="document.mapform.submit();">) print
+    /variables [(Percentile) (Rainfall)] def
+    variables {
+      (<option value=) print
+      dup print /Variable FORMgetknown {
+        1 index eq {( selected="selected") print} if
+      }{
+        dup (Rainfall) eq {( selected="selected")print}if (Rainfall) /Variable FORM!
+      }ifelse
+      (>) print print (</option>) print
+    }forall
+    (</select>)print
+
+(<b><font point-size=10pt>threshold:</font></b>)print
+
+/Variable FORMget (Percentile) eq {
+(<select name=threshold id=threshold onChange="changedtext(this)" type=text>) print
+/thresholds [(10) (15) (20) (25) (30) (35) (40) (45) (50) (55) (60) (65) (70) (75) (80) (85) (90)] def
+thresholds {
+(<option value=) print
+dup print /threshold FORMgetknown {
+1 index eq {( selected="selected") print} if
+}{
+dup (50) eq {( selected="selected")print}if (50) /threshold FORM!
+}ifelse
+(>) print print (</option>) print
+}forall
+(</select>)print
+( <font>%-ile</font>) print
+}{
+(<input name=threshold2 id=threshold2 onChange="changedtext(this)" type=text value=) print
+/threshold2 FORMgetknown {
+  print
+}{
+(10) dup print /threshold2 FORM!
+}ifelse
+( size=3 maxlength=3/>) print
+}ifelse
+
+  }{
+    pop
+  }ifelse
+}if
+
+</INGRID>
+
+</td></tr>
+</table>
+
+<table>
+<tr>
+<td align=center valign=top>
+
+<INGRID>
+
+home .remic .CPT .PAGASA  
+
+ S /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+   last
+ }ifelse VALUE
+
+ L /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+    1.}ifelse VALUE
+
+ T /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{
+   0 3 getinterval
+ }{
+   S .last
+ }ifelse VALUE
+
+SOURCES .WORLDBATH .bath
+  X 118 127 RANGEEDGES
+  Y 5 21 RANGEEDGES
+  -1 maskgt
+SOURCES .Features .Political .World .Countries .the_geom
+
+2 index
+
+  a: .lon :a: .lat :a: .Forecast
+
+  /Field FORMget (Rainfall) eq {
+    precip_colors DATA null null RANGE :a
+  }if
+  /Field FORMget (Anomaly) eq {
+    :a: .CrossValHind [T2]average :a sub
+    prcp_anomaly DATA AUTO AUTO RANGE
+  }if
+  /Field FORMget (%ofMedian) eq {
+    :a: .CrossValHind [T2]medianover :a div
+    (%) unitconvert Infinity maskge 
+    prcp_anomaly_25max500_colors2_percentmedian 
+    DATA 0 400 RANGE
+  }if
+  /Field FORMget (Proba) search {
+    pop pop /Variable FORMget (Rainfall) eq {
+      :a: .PredErrorVars sqrt :a 3 -1 roll
+      -1 mul /threshold2 FORMget interp add
+      exch div
+      27 1 sub 5 sub poestudnt
+      exch (Non) search {
+        pop pop pop -1 mul 1 add
+        (long_name) (probability of non exceedance) def
+      }{
+        pop
+        (long_name) (probability of exceedance) def
+      }ifelse
+    correlationcolorscale
+    DATA 0 1 RANGE
+    }{
+      
+    }ifelse
+  }{
+    pop
+  }ifelse 
+
+%Plot map 
+onClickforInfo? {
+  /map FORMget 
+  /mylon clickpoint 0 get .value s== def
+  /mylat clickpoint 1 get .value s== def
+  6 index 
+  lon -1 mul mylon interp add cosd
+  lat cosd mylat interp cosd mul mul
+  lat sind mylat interp sind mul
+  add acosd pi 180 div mul 6366.707 mul
+  -1 mul
+  [STNID] sort_by 
+  rank first VALUE
+  a: .lon :a: .lat :a
+  3 -1 roll pop
+  X Y fig- white mask lightgrey fill black verythin states_gaz scattercolor red pushpins -fig
+  /plotaxislength 520 psdef
+  /antialias true psdef
+  /fntsze 20 psdef
+  /map
+  inputimagelinkwithlimitcontrolsclickforinfo
+  (<br>)print
+  pop pop pop pop pop fig- scattercolor -fig .auxfig
+  /map
+  imagelink
+}{
+  X Y fig- white mask lightgrey fill black verythin states_gaz scattercolor -fig
+  /plotaxislength 520 psdef
+  /antialias true psdef
+  /fntsze 20 psdef
+  /map
+  inputimagelinkwithlimitcontrolsclickforinfo
+  (<br>)print
+  pop pop pop fig- scattercolor -fig .auxfig
+  /map
+  imagelink
+}ifelse
+</INGRID>
+
+</td>
+
+<td align=center valign=top>
+
+<INGRID>
+
+2 index
+a: .lon :a: .lat :a: .PearsonR :a
+
+%Plot map
+onClickforInfo? {
+  /map FORMget
+  /mylon clickpoint 0 get .value s== def
+  /mylat clickpoint 1 get .value s== def
+  6 index
+  lon -1 mul mylon interp add cosd
+  lat cosd mylat interp cosd mul mul
+  lat sind mylat interp sind mul
+  add acosd pi 180 div mul 6366.707 mul
+  -1 mul
+  [STNID] sort_by
+  rank first VALUE
+  a: .lon :a: .lat :a
+  3 -1 roll pop
+  X Y fig- white mask lightgrey fill black verythin states_gaz scattercolor red pushpins -fig
+  /plotaxislength 520 psdef
+  /antialias true psdef
+  /fntsze 20 psdef
+  figdup
+  /map
+  imagelink
+  (<br>)print
+  pop pop pop pop pop fig- scattercolor -fig .auxfig
+  /map
+  imagelink
+}{
+  X Y fig- white mask lightgrey fill black verythin states_gaz scattercolor -fig
+  /plotaxislength 520 psdef
+  /antialias true psdef
+  /fntsze 20 psdef
+  figdup
+  /map
+  imagelink
+  (<br>)print
+  pop pop pop fig- scattercolor -fig .auxfig
+  /map
+  imagelink
+}ifelse
+
+pop pop
+
+</INGRID>
+
+</td></tr>
+<tr><td align=center>
+
+<INGRID>
+%Plot local information
+onClickforInfo? {
+(Probability of exceedance</td><td align=center>Precipitation [mm/day]</td></tr><tr><td>)print
+  /map FORMget
+  /mylon clickpoint 0 get .value s== def
+  /mylat clickpoint 1 get .value s== def
+  /mycode
+[(  home .remic .CPT .PAGASA
+   S ) /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{
+   lpar exch rpar
+ }{
+   ( last )
+ }ifelse ( VALUE
+
+ L ) /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+   ( 1. )}ifelse ( VALUE
+
+ T ) /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{
+   lpar exch 0 3 getinterval rpar
+ }{
+   ( S .last )
+ }ifelse ( VALUE
+
+  lon -1 mul ) mylon ( add cosd
+  lat cosd ) mylat ( cosd mul mul
+  lat sind ) mylat ( sind mul
+  add acosd pi 180 div mul 6366.707 mul
+  -1 mul
+  [STNID] sort_by
+  rank first VALUE )]concat def
+
+[ mycode
+ ( InputObs
+    dup
+    DATA 0 50 0.1 RANGESTEP integrateddistrib1D
+  InputObs
+    (prcp) renameGRID
+    -1 mul 1 add
+    (long_name) (probability of exceedance) def
+    (fullname) () def
+  exch
+    dup [T2]rmsaover
+    exch [T2]average
+    -1 mul prcp add exch div
+    27 1 sub poestudnt
+    (long_name) (probability of exceedance) def
+    (fullname) (obs) def
+  PredErrorVars
+    sqrt
+  Forecast
+    -1 mul
+    prcp add exch div
+    27 1 sub 5 sub poestudnt
+    (long_name) (probability of exceedance) def
+    (fullname) (forecast) def
+  prcp fig- medium solid blue line blue line red line black thin 0.1 0.1 0.9 horizontallines -fig
+    (plotaxislength) 500 psdef
+    (antialias) true psdef
+    (fntsze) 16 psdef
+    (XOVY) 2 psdef )]concat
+  dup interp
+  /map
+  8 -1 roll
+  imagelink
+pop
+(</td><td>)print
+[ mycode
+    ( hindcast_date
+    (L) removeGRID
+    (T) removeGRID
+    (time) use_as_grid 
+  InputObs
+    (long_name) (prcp) def
+    (fullname) (obs) def
+    DATA 0 AUTO RANGE
+  CrossValHind
+    (long_name) (prcp) def
+    (fullname) (hindcast) def
+    DATA 0 AUTO RANGE
+  time fig- medium solid blue line red line black thin 2.5 2.5 50 horizontallines -fig
+    (plotaxislength) 500 psdef
+    (antialias) true psdef
+    (fntsze) 16 psdef
+    (XOVY) 2 psdef )]concat
+  dup interp
+  /map
+  7 -1 roll
+  imagelink
+pop pop
+}{
+  (<BLINK><font point-size=12pt color=#FF0000>Click on left map to get local information</font></BLINK>)print
+}ifelse
+
+</INGRID>
+
+</td></tr>
+</table>
+</table>
+</table>
+
+</FORM>
+
+  </body></html>
+
