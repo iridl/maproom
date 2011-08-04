@@ -330,7 +330,7 @@ T
 dup .L CopyStream getrealization {
   (<input type=radio name="map.L.plotvalue" onChange='dovaluebutton(this,"map.L.plotvalue")' value=) print
   dup s== print /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse {
-    interp 1 index eq {( checked) print }if  
+    interp 1 index eq {( checked) print}if  
   }{
     1.5 1 index eq {( checked) print}if
   }ifelse
@@ -555,23 +555,43 @@ Options /varUnit get interp
             /Field FORMget (PercentOfMedian) eq {( DATA 0 400 RANGE ) put}if
 }if
 
+  L /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
+    1.5
+  }ifelse VALUE
+
 /Field FORMget (PercentOfMedian) eq not {
 /PrcpUnits FORMgetknown {
-  (mm) eq {L S
-    a:
-    L (days since 1960-01-01) streamgridunitconvert
-    L differential_mul
-    L :a: .L :a
-    replaceGRID
+  (mm) eq {
+    L
+     S add
+     dup getrealization
+      0 get
+      cvsunits
+      (-) search pop
+        dup length
+         3 eq
+         {2 index 3 5 getinterval append}if
+        nip 2 {exch (1 ) exch append}repeat
+       exch
+       interp
+         3 -2 roll
+         round
+         dup
+          12 eq
+          {11 sub 3 -1 roll 1 add 3 -1 roll}{1 add}ifelse
+         exch ymd2rjt
+       exch
+       interp
+         3 -2 roll
+         round exch ymd2rjt
+       sub
+      nip mul
+    /units (mm) def
   }if
 }{
   (mm/day) /PrcpUnits FORM!
 }ifelse
 }if
-
-  L /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
-    1.5
-  }ifelse VALUE
 
 /Skill FORMget dup (none) eq {
   pop
@@ -747,7 +767,7 @@ Mask illustrating areas where the skill of the model is not sufficient. The skil
 </table>
 <table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
 <tr>
-<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
+<td colspan=3 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
 <td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
 <tr>
 <INGRID> 
@@ -757,9 +777,11 @@ showmenu? {
   (Figure as PDF) (.pdf) linktoimageformat 
   (</td><td align=center>) print
   (Figure as JPEG) (.jpg) linktoimageformat
+  (</td><td align=center>) print
+  (Figure as PS) (pream+.ps) linktoimageformat
    (</td>) print
 } if
-(<td rowspan=2 align=center><a href=http://iridl.ldeo.columbia.edu/expert/)print
+(<td rowspan=3 align=center><a href=http://iridl.ldeo.columbia.edu/expert/)print
 pop 4 index dup dataseturl print 
 </INGRID>?help+datafiles#GIS">Data for GIS</a><font color=green>(restricted)</font></td>
 </tr>
@@ -773,6 +795,8 @@ imagelinkstart
 (Colorscale as PDF) (.pdf) linktoimageformat
 (</td><td align=center>) print
 (Colorscale as JPEG) (.jpg) linktoimageformat
+(</td><td align=center>) print
+(Colorscale as PS) (pream+.ps) linktoimageformat
 (</td>) print
 pop
 } if pop
