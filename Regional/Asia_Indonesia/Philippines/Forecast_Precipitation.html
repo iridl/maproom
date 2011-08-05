@@ -95,7 +95,7 @@ VALUE dup .L CopyStream getrealization {
   dup s== print /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse {
     interp 1 index eq {( checked) print }if  
   }{
-    1. 1 index eq {( checked) print}if
+    2.5 1 index eq {( checked) print}if
   }ifelse
   ( color=#FFFFFF><font color=#FFFFFF>)print 1 index exch L exch VALUE getrealization 0 get cvsunits print (</font>\n) print
 }forall
@@ -188,7 +188,7 @@ home .remic .CPT .PAGASA
  }ifelse VALUE
 
  L /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
-    1.}ifelse VALUE
+    2.5}ifelse VALUE
 
  T /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{
    0 3 getinterval
@@ -352,7 +352,7 @@ onClickforInfo? {
  }ifelse ( VALUE
 
  L ) /map FORMgetknown {/L getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{}{
-   ( 1. )}ifelse ( VALUE
+   ( 2.5 )}ifelse ( VALUE
 
  T ) /map FORMgetknown {/S getknown {/plotvalue getknown {true}{false}ifelse}{false}ifelse}{false}ifelse{
    lpar exch 0 3 getinterval rpar
