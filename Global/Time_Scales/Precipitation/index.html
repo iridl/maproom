@@ -46,15 +46,15 @@ leftmenuHeader
 <b>Screening:</b>
 <INGRID>
 (<select name="DataScreening" id="DataScreening"  onChange="changedtext(this)">) print
-[(high_temporal_coverage) (intermediate_coverage) (high_spatial_coverage)] {
+[(High_temporal_coverage) (Intermediate_coverage) (High_spatial_coverage)] {
   (<option value=) print
   dup print /DataScreening FORMgetknown {
     1 index eq {( selected="selected") print} if}{
-    dup (high_temporal_coverage) eq {( selected="selected") print} if (high_temporal_coverage) /DataScreening FORM!
+    dup (High_temporal_coverage) eq {( selected="selected") print} if (High_temporal_coverage) /DataScreening FORM!
   }ifelse
-  dup (high_temporal_coverage) eq {( title="strict")print}if
-  dup (intermediate_coverage) eq {( title="intermediate")print}if
-  dup (high_spatial_coverage) eq {( title="none")print}if
+  dup (High_temporal_coverage) eq {( title="strict")print}if
+  dup (Intermediate_coverage) eq {( title="intermediate")print}if
+  dup (High_spatial_coverage) eq {( title="none")print}if
   (>) print print (</option>) print
 }forall
 (</select>)print
@@ -147,21 +147,21 @@ a: .prcp
   }{
     ( 0 maskle T ) lpar /SeasonStart FORMget 0 3 getinterval (-) /SeasonEnd FORMget 0 3 getinterval ( 1901-2002) rpar ( 0.66 seasonalAverage )
  }ifelse 
-/DataScreening FORMget (high_temporal_coverage) eq {
+/DataScreening FORMget (High_temporal_coverage) eq {
   ( 0 replaceNaN 0 flaggt
   T 10. 2. div floor 12 mul pad1
   T 10. 12 mul runningAverage
   1. masklt
   [T] 1. average 0 mul add )
 }if
-/DataScreening FORMget (intermediate_coverage) eq {
+/DataScreening FORMget (Intermediate_coverage) eq {
   ( 0 replaceNaN 0 flaggt 
   T 10. 2. div floor 12 mul pad1
   T 10. 12 mul runningAverage
   0.5 masklt
   [T] 1. average 0 mul add )
 }if
-/DataScreening FORMget (high_spatial_coverage) eq {
+/DataScreening FORMget (High_spatial_coverage) eq {
 ( [T]0. average 0 mul add )
 }if
 ( :a: .prcp
