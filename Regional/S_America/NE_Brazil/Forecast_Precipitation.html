@@ -217,7 +217,7 @@ home .remic .CPT .NEBrazil
       PredErrorVars sqrt 3 -1 roll 
       -1 mul /threshold2 FORMget interp add
       exch div
-      29 1 sub 5 sub poestudnt
+      29 5 sub poestudnt
       exch (Non) search {
         pop pop pop -1 mul 1 add
         (long_name) (probability of non exceedance) def
@@ -338,7 +338,7 @@ onClickforInfo? {
     (long_name) (probability of exceedance) def
     (fullname) () def
   exch
-    dup [T2]rmsaover
+    dup [T2]rmsaover 29. 29. 1. sub div sqrt mul
     exch [T2]average
     -1 mul prcp add exch div
     29 1 sub poestudnt
@@ -349,7 +349,7 @@ onClickforInfo? {
   Forecast
     -1 mul
     prcp add exch div
-    29 1 sub 5 sub poestudnt
+    29 5 sub poestudnt
     (long_name) (probability of exceedance) def
     (fullname) (forecast) def
   prcp fig- medium solid blue line blue line red line black thin 0.1 0.1 0.9 horizontallines -fig
