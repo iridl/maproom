@@ -224,7 +224,7 @@ SOURCES .Features .Political .World .Countries .the_geom
       :a: .PredErrorVars sqrt :a 3 -1 roll
       -1 mul /threshold2 FORMget interp add
       exch div
-      27 1 sub 5 sub poestudnt
+      27 5 sub poestudnt
       exch (Non) search {
         pop pop pop -1 mul 1 add
         (long_name) (probability of non exceedance) def
@@ -252,7 +252,7 @@ onClickforInfo? {
   lat sind mylat interp sind mul
   add acosd pi 180 div mul 6366.707 mul
   -1 mul
-  [STNID] sort_by 
+  [STNID] sort_by  
   rank first VALUE
   a: .lon :a: .lat :a
   3 -1 roll pop
@@ -300,7 +300,7 @@ onClickforInfo? {
   lat sind mylat interp sind mul
   add acosd pi 180 div mul 6366.707 mul
   -1 mul
-  [STNID] sort_by
+  [STNID] sort_by pstack
   rank first VALUE
   a: .lon :a: .lat :a
   3 -1 roll pop
@@ -378,7 +378,7 @@ onClickforInfo? {
     (long_name) (probability of exceedance) def
     (fullname) () def
   exch
-    dup [T2]rmsaover
+    dup [T2]rmsaover 27. 27. 1. sub div sqrt mul
     exch [T2]average
     -1 mul prcp add exch div
     27 1 sub poestudnt
@@ -389,7 +389,7 @@ onClickforInfo? {
   Forecast
     -1 mul
     prcp add exch div
-    27 1 sub 5 sub poestudnt
+    27 5 sub poestudnt
     (long_name) (probability of exceedance) def
     (fullname) (forecast) def
   prcp fig- medium solid blue line blue line red line black thin 0.1 0.1 0.9 horizontallines -fig
