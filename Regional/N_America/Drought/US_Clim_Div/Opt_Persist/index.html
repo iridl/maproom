@@ -343,14 +343,14 @@ WWWinfo
 
 /maptype FORMget (bestestmap) eq {
 
-/mapplot [ sigmavalue /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE 2. sqrt mul 2. ) /margprob FORMget s== ( mul 1 sub erfinv mul ) fcstmean /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE add startcolormap DATA -2.5 2.5 RANGE white 100 50 40 RGB 100 50 40 RGB -2.5 VALUE 100  50  40 RGB RGBdup -2.0 bandmax 130  90  80 RGB RGBdup -1.5 bandmax 170 130 120 RGB RGBdup -1.0 bandmax 190 150 140 RGB RGBdup -0.5 bandmax white white 0.5  bandmax 110 210 115 RGB RGBdup 1.0 bandmax 20 170 25 RGB RGBdup 1.5 bandmax 0 130   5 RGB RGBdup 2.0 bandmax 0 100   0 RGB RGBdup 2.5 bandmax 0 100 0 RGB endcolormap (plotlast) 2.5 def (plotfirst) -2.5 def ) fcsttimelist /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE ) ] concat def
+/mapplot [ sigmavalue /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE 2. sqrt mul 2. ) /margprob FORMget s== ( mul 1 sub erfinv mul ) fcstmean /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE add startcolormap DATA -2.5 2.5 RANGE white 100 50 40 RGB 100 50 40 RGB -2.5 VALUE 100  50  40 RGB RGBdup -2.0 bandmax 130  90  80 RGB RGBdup -1.5 bandmax 170 130 120 RGB RGBdup -1.0 bandmax 190 150 140 RGB RGBdup -0.5 bandmax white white 0.5  bandmax 110 210 115 RGB RGBdup 1.0 bandmax 20 170 25 RGB RGBdup 1.5 bandmax 0 130   5 RGB RGBdup 2.0 bandmax 0 100   0 RGB RGBdup 2.5 bandmax 0 100 0 RGB endcolormap (plotlast) 2.5 def (plotfirst) -2.5 def S /defaultvalue {last} def pop ) fcsttimelist /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE ) ] concat def
 
 /labelstuff [( (framelabel) (SPI Forecast for a Selected Marginal Probability for %=[forecasttime] Issued %=[S]) psdef )] concat def
 
 }
 {
 
-/mapplot [ sigmavalue /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE dup mul 2 mul sqrt ) /threshold FORMget s== fcstmean /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE sub exch div erf 1 add 0.5 mul (long_name) (Probability) def (plotlast) 1. def (plotfirst) 0.0 def windspeed_colors ) fcsttimelist /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE )] concat def
+/mapplot [ sigmavalue /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE dup mul 2 mul sqrt ) /threshold FORMget s== fcstmean /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE sub exch div erf 1 add 0.5 mul (long_name) (Probability) def (plotlast) 1. def (plotfirst) 0.0 def windspeed_colors S /defaultvalue {last} def pop ) fcsttimelist /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE )] concat def
 
 /labelstuff [( (framelabel) (Forecast for %=[forecasttime] Issued %=[S]) psdef (percentile) 0. 1. plotrange )] concat def
 
