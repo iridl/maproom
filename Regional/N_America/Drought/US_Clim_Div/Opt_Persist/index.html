@@ -1,0 +1,836 @@
+<INGRID>
+
+ home .mbell .IRI .Analyses .SPI .SPI-US_ClimDiv_1-Month
+
+%/helpnow FORMknown {(http://ingrid.ldeo.columbia.edu/expert/home/.mbell/.IRI/.MD/.maproom/.IFRC/.Forecasts/instructions.html)redirectto stop} if
+
+leftmenuinfo:
+{ X Y T} setleftmenugrids
+WWWinfo /map FORMgetknown {.Y .step
+nip
+/map.Y.step
+exch def}
+{pop}ifelse
+[ /UScounties /states /countries /coasts] {dup FORMknown {dup (on) def}if pop} forall
+
+:leftmenuinfo
+
+%onClickforInfo?
+%{
+%WWWinfo .currenturldir
+%(/) rsearch { pop pop} if
+%(/../Local/droughttoolclimdiv.html) append
+%redirecttowithleftmenuinfo
+%} if
+
+mimeheader
+pop
+</INGRID>
+<html><head>
+    <title>U. S. Climate Divisions Drought Prediction Tool: Optimal Persistence Forecast</title>
+    <STYLE TYPE="text/css">
+    <!--
+    body
+       {
+       font-family:arial,sans-serif
+       }
+    P.indented
+       {
+       padding-left: 25pt;
+       padding-right: 25pt;
+       text-align: justify;
+       }
+    -->
+    </STYLE>
+
+<INGRID>
+
+figdefs
+</INGRID>
+</head>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
+<INGRID>
+
+/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenuHeader
+
+%set default values for the forms
+
+WWWinfo .FORMinfo null eq
+{
+null 5 object
+/mapsel (SPI-US_ClimDiv_3-Month) def
+/maptype (probmap) def
+/threshold (0.0) def
+/lead (0.5) def
+/margprob (0.5) def
+/FORMinfo WWWinfo !
+} if
+
+</INGRID>
+<FORM name=mapform action=index.html>
+
+<h3 align=center>U. S. Climate Divisions Drought Prediction Tool: Optimal Persistence Forecast</h3>
+<h3 align=center>Forecast of SPI for Selected Marginal Probability and Probability of SPI Falling Below a Selected Value in a Future Month</h3>
+
+<center>
+
+<table border=0>
+<tr valign=top>
+<td align=center>
+
+<INGRID>showmenu? not {stopprint} if</INGRID>
+
+<table BORDER COLS=1>
+<tr>
+<td align=left width=100>
+<b><font point-size=12pt>Drought Index Selection</font></b>
+</td></tr>
+<tr><td>
+<font point-size=10pt>
+
+<INGRID>
+WWWinfo
+
+% forecast mean is SPI(S)*autocorr(S + L) -- this calculation is saved as a dataset
+/fcstmean null 2 object
+ /SPI-US_ClimDiv_3-Month (  home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi3 .mean ) def
+ /SPI-US_ClimDiv_6-Month (  home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi6 .mean ) def
+ /SPI-US_ClimDiv_9-Month (  home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi9 .mean ) def
+ /SPI-US_ClimDiv_12-Month (  home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi12 .mean ) def
+%/defaultlayer currentobject /SPI-US_ClimDiv_3-Month get def
+ def
+
+
+% forecasttime is saved as a dataset variable
+ /fcsttimelist null 3 object
+ /SPI-US_ClimDiv_3-Month ( home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi3 .forecasttime ) def
+ /SPI-US_ClimDiv_6-Month ( home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi6 .forecasttime ) def
+ /SPI-US_ClimDiv_9-Month ( home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi9 .forecasttime ) def
+ /SPI-US_ClimDiv_12-Month ( home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi12 .forecasttime ) def
+ /defaultfcsttime currentobject /SPI-US_ClimDiv_3-Month get def
+ def
+
+
+% need to define the following US-Mexico datasets in the DL
+ /sigmavalue null 3 object
+ /SPI-US_ClimDiv_3-Month (  home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi3 .sigma ) def
+ /SPI-US_ClimDiv_6-Month (  home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi6 .sigma ) def
+ /SPI-US_ClimDiv_9-Month (  home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi9 .sigma ) def
+ /SPI-US_ClimDiv_12-Month (  home .mbell .NCDC .ClimateDivisionCTB .resampled .seasonality_retained .forecast .spi12 .sigma ) def
+ /defaultoriglayer currentobject /SPI-US_ClimDiv_3-Month get def
+ def
+
+
+% need to specify the following "SPIentry" values for US-ClimDiv
+/SPIentry null 3 object
+ /SPI-US_ClimDiv_3-Month { home .mbell .IRI .Analyses .SPI .SPI-US_ClimDiv_3-Month } def
+ /SPI-US_ClimDiv_6-Month { home .mbell .IRI .Analyses .SPI .SPI-US_ClimDiv_6-Month } def
+ /SPI-US_ClimDiv_9-Month { home .mbell .IRI .Analyses .SPI .SPI-US_ClimDiv_9-Month } def
+ /SPI-US_ClimDiv_12-Month { home .mbell .IRI .Analyses .SPI .SPI-US_ClimDiv_12-Month } def
+ /defaultentry currentobject /SPI-US_ClimDiv_3-Month get def
+ def
+
+%add a list of URL codes for SPI shifted such that time point is at end point of period
+
+/SPItimeshift null 3 object
+ /SPI-US_ClimDiv_3-Month { T 1 shiftGRID T /pointwidth 1 def pop } def
+ /SPI-US_ClimDiv_6-Month { T 2.5 shiftGRID T /pointwidth 1 def pop } def
+%/SPI-US_ClimDiv_9-Month { T 4 shiftGRID T /pointwidth 1 def pop } def
+ /defaulttimeshift currentobject /SPI-US_ClimDiv_3-Month get def
+def
+
+/SPItimeshifttxt null 3 object
+ /SPI-US_ClimDiv_3-Month (T/1/shiftGRID/T//pointwidth/1/def/pop) def
+ /SPI-US_ClimDiv_6-Month (T/2.5/shiftGRID/T//pointwidth/1/def/pop) def
+%/SPI-US_ClimDiv_9-Month (T/4/shiftGRID/T//pointwidth/1/def/pop) def
+ /defaulttimeshifttxt currentobject /SPI-US_ClimDiv_3-Month get def
+def
+
+% layer names
+
+/layernames null 3 object
+ /SPI-US_ClimDiv_3-Month (3-Month SPI) def
+ /SPI-US_ClimDiv_6-Month (6-Month SPI) def
+ /SPI-US_ClimDiv_9-Month (9-Month SPI) def
+ /SPI-US_ClimDiv_12-Month (12-Month SPI) def
+ /defaultname currentobject /SPI-US_ClimDiv_3-Month get def
+def
+
+/maptypenames null 3 object
+ /probmap (Probability) def
+ /bestestmap (SPI | Pm) def
+ /defaultmaptypename currentobject /probmap get def
+def
+
+
+/descprintcondition {stopprint /mapsel FORMgetknown {cvn eq} {pop false} ifelse {startprint} if} def
+
+%showmenu?
+%{
+(<select name="mapsel" id="mapsel" onChange="changedtext(this)" >) print
+
+[ (SPI-US_ClimDiv_3-Month) (SPI-US_ClimDiv_6-Month) (SPI-US_ClimDiv_9-Month) (SPI-US_ClimDiv_12-Month) ]
+ {
+  (<option value=) print
+%   dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {( selected="selected") print} if} { dup /SPI-US_ClimDiv_3-Month eq {( selected="selected")print} if }ifelse
+% (>)print
+% layernames 1 index getknown {print}{dup cvntos print} ifelse pop } forall
+
+ dup print /mapsel FORMgetknown {
+    1 index eq {( selected="selected") print} if
+  }{
+    (SPI-US_ClimDiv_3-Month) dup 2 index eq {( selected="selected")print}if /mapsel FORM!
+  }ifelse
+  (>) print layernames 1 index getknown {print} {dup cvntos print} ifelse pop (</option>) print
+}forall
+
+(</select>) print 
+%} {} ifelse
+
+</INGRID>
+</font></td></tr>
+
+<tr><td>
+<b><font point-size=12pt>Map Type</b>
+</td></tr>
+<tr><td>
+<INGRID>
+(<select name="maptype" id="maptype" onChange="changedtext(this)" >) print
+[(probmap) (bestestmap)] {
+ (<option value=) print
+  dup print /maptype FORMgetknown {
+    1 index eq {( selected="selected") print} if
+  }{
+    (probmap) dup 2 index eq {( selected="selected")print}if /maptype FORM!
+  }ifelse
+  (>) print maptypenames 1 index getknown {print} {dup cvntos print} ifelse pop (</option>) print
+}forall
+(</select>)print
+</INGRID>
+</font></td></tr>
+
+
+<tr><td>
+<b><font point-size=12pt>Optional <br>Overlay Maps</font></b>
+</td></tr>
+<tr><td>
+<font point-size=12pt>Boundaries
+<INGRID>
+WWWinfo /map FORMknown
+[ /UScounties /states /countries /coasts] {FORMknown or} forall
+nip
+{
+(<br><input type=checkbox name=coasts) print
+/coasts FORMknown {( checked)print} if
+(>Coasts\n)print
+
+(<br><input type=checkbox name=countries) print
+/countries FORMknown {( checked)print } if
+(>Countries\n) print
+
+(<br><input type=checkbox name=states) print
+/states FORMknown {( checked)print} if
+(>States\n)print
+
+(<br><input type=checkbox name=UScounties) print
+/UScounties FORMknown {( checked)print } if
+(>U.S. Counties\n)print
+}
+{
+(<br><input type=checkbox name=coasts checked>Coasts\n) print
+(<br><input type=checkbox name=countries checked>Countries\n) print
+(<br><input type=checkbox name=states>States\n) print
+(<br><input type=checkbox name=UScounties>U.S. Counties\n) print
+} ifelse
+</INGRID>
+</font></td></tr>
+
+
+<tr><td>
+<b><font point-size=12pt>Select SPI Threshold = </font></b>
+<INGRID>
+(<select name="threshold" id="threshold" onChange="document.mapform.submit();">) print
+[(2.5) (2.0) (1.5) (1.0) (0.5) (0.0) (-0.5) (-1.0) (-1.5) (-2.0) (-2.5)] {
+ (<option value=) print
+  dup print /threshold FORMgetknown {
+    1 index eq {( selected="selected") print} if
+  }{
+    (0.0) dup 2 index eq {( selected="selected")print}if /threshold FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+</td></tr>
+
+
+<tr><td>
+<b><font point-size=12pt>Select Marginal Probability = </font></b>
+<INGRID>
+(<select name="margprob" id="margprob" onChange="document.mapform.submit();">) print
+[(0.95) (0.9) (0.85) (0.8) (0.75) (0.7) (0.65) (0.6) (0.55) (0.5) (0.45) (0.4) (0.35) (0.3) (0.25) (0.2) (0.15) (0.1) (0.05)] {
+ (<option value=) print
+  dup print /margprob FORMgetknown {
+    1 index eq {( selected="selected") print} if
+  }{
+    (0.5) dup 2 index eq {( selected="selected")print}if /margprob FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select>)print
+</INGRID>
+</td></tr>
+
+
+<tr><td>
+<b><font point-size=12pt>Lead Time = </font></b>
+<INGRID>
+
+(<select name="lead" id="lead" onChange="document.mapform.submit();">) print
+[(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11)] {
+ (<option value=) print
+  dup print /lead FORMgetknown {
+    1 index eq {( selected="selected") print} if
+  }{
+    (1) dup 2 index eq {( selected="selected")print}if /lead FORM!
+  }ifelse
+  (>) print print (</option>) print
+}forall
+(</select> <b><font point-size=12pt> Month(s)</font></b>)print
+
+</INGRID>
+</td></tr>
+
+<!-- 
+
+<tr><td>
+<b><font point-size=12pt>Time Series Region</font></b>
+</td></tr>
+<tr><td>
+<font point-size=12pt>
+View data for the following region:
+<br><input type=radio name="map.Y.step" value="1." checked>1&deg;x1&deg; box
+<br><input type=radio name="map.Y.step" value="2.">2&deg;x2&deg; box
+</font></td></tr>
+
+-->
+
+<input type=hidden name="map.Y.step" value="1." >
+
+</table>
+
+<INGRID>
+startprint
+</INGRID>
+
+
+<td align=center valign=top>
+
+
+<INGRID>
+WWWinfo
+
+
+
+
+%% ***********************Continue editing from here*********************************
+
+
+
+
+
+
+/maptype FORMget (bestestmap) eq {
+
+/mapplot [ sigmavalue /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE 2. sqrt mul 2. ) /margprob FORMget s== ( mul 1 sub erfinv mul ) fcstmean /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE add startcolormap DATA -2.5 2.5 RANGE white 100 50 40 RGB 100 50 40 RGB -2.5 VALUE 100  50  40 RGB RGBdup -2.0 bandmax 130  90  80 RGB RGBdup -1.5 bandmax 170 130 120 RGB RGBdup -1.0 bandmax 190 150 140 RGB RGBdup -0.5 bandmax white white 0.5  bandmax 110 210 115 RGB RGBdup 1.0 bandmax 20 170 25 RGB RGBdup 1.5 bandmax 0 130   5 RGB RGBdup 2.0 bandmax 0 100   0 RGB RGBdup 2.5 bandmax 0 100 0 RGB endcolormap (plotlast) 2.5 def (plotfirst) -2.5 def ) fcsttimelist /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE ) ] concat def
+
+/labelstuff [( (framelabel) (SPI Forecast for a Selected Marginal Probability for %=[forecasttime] Issued %=[S]) psdef )] concat def
+
+}
+{
+
+/mapplot [ sigmavalue /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE dup mul 2 mul sqrt ) /threshold FORMget s== fcstmean /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE sub exch div erf 1 add 0.5 mul (long_name) (Probability) def (plotlast) 1. def (plotfirst) 0.0 def windspeed_colors ) fcsttimelist /mapsel FORMget get ( L ) /lead FORMget s== ( VALUE )] concat def
+
+/labelstuff [( (framelabel) (Forecast for %=[forecasttime] Issued %=[S]) psdef (percentile) 0. 1. plotrange )] concat def
+
+} ifelse
+
+WWWinfo
+
+[( SOURCES .WORLDBATH .bath X -129.5 -62.5 RANGE Y 23.5 50.5 RANGE SOURCES .NOAA .NCDC .CIRS .ClimateDivision .location ) mapplot ( SOURCES .Features .Climatological .US_climate .Divisions .the_geom X Y fig: white mask fillby plotlabel black thin solid stroke blue lakes black thin coasts_gaz black thin countries_gaz :fig (plotaxislength) 550 psdef ) labelstuff ( (XOVY) auto psdef (antialias) true psdef) ] concat interp
+
+/map
+
+WWWinfo /map FORMknown
+[/UScounties /states /countries /coasts] {FORMknown or} forall
+nip
+{
+/UScounties FORMknown{/boundaries3 ( grey verythin us_counties ) def}{/boundaries3 () def} ifelse
+/states FORMknown{/boundaries2 ( black thin states_gaz ) def}{/boundaries2 () def} ifelse
+/countries FORMknown{/boundaries1 ( black thin countries_gaz ) def}{/boundaries1 () def} ifelse
+/coasts FORMknown{/boundaries0 ( black thinnish coasts_gaz ) def}{/boundaries0 () def} ifelse
+}
+{
+/boundaries3 () def
+/boundaries2 () def
+/boundaries1 ( black thin countries_gaz ) def
+/boundaries0 ( black thinnish coasts_gaz ) def
+} ifelse
+
+
+
+[( SOURCES .WORLDBATH .bath X -129.5 -62.5 RANGE Y 23.5 50.5 RANGE SOURCES .NOAA .NCDC .CIRS .ClimateDivision .location ) mapplot ( SOURCES .Features .Climatological .US_climate .Divisions .the_geom X Y fig: white mask fillby plotlabel black thin solid stroke blue lakes ) boundaries3 boundaries2 boundaries1 boundaries0 ( :fig (plotaxislength) 550 psdef ) labelstuff ( (XOVY) auto psdef (antialias) true psdef) ] concat
+
+
+%X Y fig: colors plotlabel blue lakes 
+%WWWinfo /map FORMknown
+%[/UScounties /states /countries /coasts] {FORMknown or} forall
+%nip
+%{
+%/UScounties FORMknown{grey verythin us_counties} if
+%/states FORMknown{black verythin states_gaz} if
+%/countries FORMknown{black thin countries_gaz} if
+%/coasts FORMknown{ black thinnish coasts_gaz} if
+%}
+%{
+%black thin coasts_gaz black thin countries_gaz
+%} ifelse
+%:fig
+
+%/plotaxislength 550 psdef
+%/framelabel (Forecast for %=[forecasttime] Issued %=[S]) psdef
+%/percentile 0 1. plotrange
+%/XOVY auto psdef
+
+showmenu?
+{inputimagelinkwithlimitcontrolsclickforinfo}
+{imagelink } ifelse
+%imagelink
+</INGRID>
+<br>
+<INGRID>
+%figdup .auxfig
+%imagelink
+
+/maptype FORMget (probmap) eq {
+
+ (<img src="http://iridl.ldeo.columbia.edu/SOURCES/a:/.WORLDBATH/.bath/X/-129.5/-62.5/RANGE/Y/12.5/50.5/RANGE/:a:/.NOAA/.NCDC/.CIRS/.ClimateDivision/.location/home/.mbell/.CTBdrought/.Analyses/.ESP/.ClimateDivision/.SPI/.pctlereplace/.SPI_3-Month_uncached/percentile/1./VALUE/T/604.5/VALUE/percentile/removeGRID/T/removeGRID/0/mul/0.0/add/home/.mbell/.CTBdrought/.Analyses/.ESP/.ClimateDivision/.SPI/.pctlereplace/.SPI_3-Month_uncached%5Bpercentile%5Dboundedtablefunction/-1/mul/1/add/-1/mul/1/add/T/592.5/604.5/RANGE//long_name/(Probability)def/windspeed_colors//plotlast/1./def//plotfirst/0/def/:a/X/Y/fig-/white/mask/fillby/-fig/.auxfig//nplotstream/3/def//T/593.5/plotvalue/X/-85.38863/-77.46059/plotrange/Y/22.22329/28.9367/plotrange//plotaxislength/550/psdef//XOVY/null/psdef/.gif/"> ) print
+
+}
+{
+
+(<img src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.CTBdrought/.Regional/.ProbBelowUSMex/home/.mbell/.CTBdrought/.Analyses/.ESP/.USMexico/.SPI/.pctlereplace2/.spi3/.SPI_3-Month/X/-129.5/-62.5/RANGE/Y/12.5/50.5/RANGE/L/1/VALUE/percentile/0.5/VALUE/startcolormap/DATA/-2.5/2.5/RANGE/white/100/50/40/RGB/100/50/40/RGB/-2.5/VALUE/100/50/40/RGB/RGBdup/-2./bandmax/130/90/80/RGB/RGBdup/-1.5/bandmax/170/130/120/RGB/RGBdup/-1./bandmax/190/150/140/RGB/RGBdup/-0.5/bandmax/white/white/0.5/bandmax/110/210/115/RGB/RGBdup/1./bandmax/20/170/25/RGB/RGBdup/1.5/bandmax/0/130/5/RGB/RGBdup/2./bandmax/0/100/0/RGB/RGBdup/2.5/bandmax/0/100/0/RGB/endcolormap/%28plotlast%292.5/def/%28plotfirst%29-2.5/def/%28long_name%29%28Standardized%20Precipitation%20Index%29def/dup/SOURCES/.Features/.Political/.World/.Countries/.the_geom/objectid/135/137/VALUES/rasterize/0.05/flaggt/0.05/masklt%5Bobjectid%5Dsum/dataflag/0/maskle/mul/home/.mbell/.CTBdrought/.Analyses/.ESP/.USMexico/.SPI/.pctlereplace2/.spi3/.forecasttime/L/1/VALUE/X/Y/fig:/colors/plotlabel/blue/lakes/WWWinfo/%28map%29FORMknown%5B%28UScounties%29%28states%29%28countries%29%28coasts%29%5D%7BFORMknown/or%7Dforall/nip/%7B%28UScounties%29FORMknown/%7Bgrey/verythin/us_counties%7Dif/%28states%29FORMknown/%7Bblack/verythin/states_gaz%7Dif/%28countries%29FORMknown/%7Bblack/thin/countries_gaz%7Dif/%28coasts%29FORMknown/%7Bblack/thinnish/coasts_gaz%7Dif%7D%7Bblack/thin/coasts_gaz/black/thin/countries_gaz%7Difelse/:fig/%28plotaxislength%29550/psdef/%28XOVY%29auto/psdef//S/601.5/plotvalue//plotborder/72/psdef//plotaxislength/550/psdef//XOVY/null/psdef/.auxfig+//S/601.5/plotvalue+//plotborder+72+psdef//plotaxislength+550+psdef//XOVY+null+psdef+.gif"> ) print
+
+} ifelse % end of maptype test
+
+
+
+</INGRID>
+<!--
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/a:/.WORLDBATH/.bath/X/-129.5/-62.5/RANGE/Y/12.5/50.5/RANGE/:a:/.NOAA/.NCDC/.CIRS/.ClimateDivision/.location/home/.mbell/.CTBdrought/.Analyses/.ESP/.ClimateDivision/.SPI/.pctlereplace/.SPI_3-Month_uncached/percentile/1./VALUE/T/604.5/VALUE/percentile/removeGRID/T/removeGRID/0/mul/0.0/add/home/.mbell/.CTBdrought/.Analyses/.ESP/.ClimateDivision/.SPI/.pctlereplace/.SPI_3-Month_uncached%5Bpercentile%5Dboundedtablefunction/-1/mul/1/add/-1/mul/1/add/T/592.5/604.5/RANGE//long_name/(Probability)def/windspeed_colors//plotlast/1./def//plotfirst/0/def/:a/X/Y/fig-/white/mask/fillby/-fig/.auxfig//nplotstream/3/def//T/593.5/plotvalue/X/-85.38863/-77.46059/plotrange/Y/22.22329/28.9367/plotrange//plotaxislength/550/psdef//XOVY/null/psdef/.gif/">
+-->
+
+</p>
+</td>
+</tr>
+</table>
+
+
+<INGRID>
+onClickforInfo? {
+
+/onebox {2 index 1 index {.name cvx exec first pointwidth 2 copy sub 3 1 roll add 3 -1 roll pop}forall counttoobject 1 add -1 roll pop {mystream mygrids xlo xhi ylo yhi}inputs mystream mygrids 0 get xlo xhi RANGE
+dup 0 replaceNaN exch
+mygrids 1 get ylo yhi RANGE mygrids 0 get xlo xhi definite-integral mygrids 1 get ylo yhi definite-integral
+exch dataflag
+mygrids 1 get ylo yhi RANGE mygrids 0 get xlo xhi definite-integral mygrids 1 get ylo yhi definite-integral
+.5 normalize
+1output} def
+
+/onebox {2 index 1 index {.name cvx exec first pointwidth 2 copy sub 3 1 roll add 3 -1 roll pop}forall counttoobject 1 add -1 roll pop {mystream mygrids xlo xhi ylo yhi}inputs mystream
+mygrids 0 get xlo xhi add 2. div VALUE
+ mygrids 1 get ylo yhi add 2. div VALUE
+1output} def
+
+ home .mbell .IRI .Analyses .SPI .SPI-CPC_USMex_9-Month
+
+%/mapsel FORMgetknown not { /defaultlayer } if
+%layerlist exch getknown {exec}
+%{layerlist /defaultlayer get exec} ifelse
+
+%WWWinfo .FORMinfo .map .Y /step getknown
+
+/avgbyentity null 2 object def
+
+avgbyentity /climdiv
+  {
+IRIDB
+(select division_i,the_geom as geom,st as name2,name as name1,centroid(the_geom) as center,distance(centroid(the_geom),GeometryFromText( 'POINT(YYYY)',4326 )) from divisions1 where the_geom && GeometryFromText( 'POINT(XXXX)',4326 ) ORDER BY distance(centroid(the_geom),GeometryFromText( 'POINT(YYYY)',4326 )) LIMIT 1)
+
+(XXXX) rsearch pop nip
+%X WWWinfo .FORMinfo .map .X .plotvalue readunits s== nip
+ clickpoint 0 get .value readunits s== 
+( )
+%Y WWWinfo .FORMinfo .map .Y .plotvalue readunits s== nip
+ clickpoint 1 get .value readunits s==
+3array astore concat
+exch
+3array astore concat
+2 {
+(YYYY) rsearch pop nip
+%X WWWinfo .FORMinfo .map .X .plotvalue readunits s== nip
+ clickpoint 0 get .value readunits s== 
+( )
+%Y WWWinfo .FORMinfo .map .Y .plotvalue readunits s== nip
+ clickpoint 1 get .value readunits s==
+3array astore concat
+exch
+3array astore concat
+} repeat
+openquery
+/districtinfo WWWinfo !
+%WWWinfo .districtinfo [division_i name1 name2 ] {reserverealization} forall pop
+pop
+WWWinfo .districtinfo .geom [X Y] weighted-average
+} put
+
+
+WWWinfo .FORMinfo .map .Y /step getknown
+
+{ % +
+
+avgbyentity 1 index getknown
+
+{ % -
+  exec
+} % -.
+{ % *
+interp
+dup
+Y .step gt
+{
+exch
+Y 2 index splitstreamgrid
+X 2 index splitstreamgrid
+[X Y]0.5 average
+X2 /X renameGRID
+Y2 /Y renameGRID
+nip
+}
+{pop
+} ifelse
+Y /step WWWinfo .FORMinfo .map .Y .step interp def pop
+} ifelse % *.
+} % +.
+
+{
+Y .step /step WWWinfo .FORMinfo .map .Y !
+}
+ifelse
+
+dup /Y known {Y /step step def pop
+/mylon clickpoint 0 get .value def
+/mylat clickpoint 1 get .value def
+%X WWWinfo .FORMinfo .map .X .plotvalue VALUE
+%Y WWWinfo .FORMinfo .map .Y .plotvalue VALUE
+X mylon VALUE
+Y mylat VALUE
+} if
+
+
+ home .mbell .IRI .Analyses .SPI .SPI-CPC_USMex_9-Month
+
+% /mapsel FORMgetknown not { /defaultlayer } if
+% origlayers exch getknown { exec } if
+
+%/mapsel FORMgetknown not { /defaultlayer } if
+%layerlist exch getknown {exec}
+%{layerlist /defaultlayer get exec} ifelse
+
+WWWinfo .FORMinfo .map .Y .step (climdiv) eq
+
+{
+WWWinfo .districtinfo .geom [X Y] weighted-average
+}
+{[X Y] onebox} ifelse
+exch
+
+(<table width="580"><tbody><tr valign="top"><td align="center"><table cellpadding="4" cellspacing="4" bgcolor="#ffffff"><tbody><tr bgcolor="#f0f0f0"><td>)print
+
+SOURCES .WORLDBATH .bath
+
+WWWinfo .FORMinfo .map .Y .step (climdiv) eq
+
+{WWWinfo .districtinfo a: .geom :a: .center :a
+X Y fig: lightgrey mask grey states_gaz black countries_gaz red fill red geometrysmallpushpins :fig
+}
+{
+1 index a: .X first pointwidth .5 mul sub nip
+:a: .Y first pointwidth .5 mul sub nip
+ :a: .X first pointwidth .5 mul add nip
+:a: .Y first pointwidth .5 mul add nip :a
+georect
+2 index a: .X .first :a: .Y .first :a
+togeopoint
+a: .lon :a: .lat :a
+X Y fig: lightgrey mask grey states_gaz black countries_gaz red fill red smallpushpins :fig
+}ifelse
+
+
+/plotaxislength 120 psdef /plotborder 0 psdef
+/plotbordertop 8 psdef
+/plotborderright 8 psdef
+/plotborderleft 8 psdef
+/plotborderbottom 8 psdef
+/antialias true psdef
+/map imagelink
+
+(</td><td align="left"><font face="Helvetical,Arial" point-size=10pt size=-1>Data for:<br><b>)print
+
+WWWinfo .FORMinfo .map .Y .step (climdiv) eq
+{
+WWWinfo .districtinfo
+[ name1 name2 ] {reserverealization} forall
+()
+[
+name1 getrealization
+name2 getrealization
+] { dup (N.A.) eq {pop}{exch print print (, )}ifelse} forall
+pop
+pop
+}
+{
+X first printunits pop
+(, ) print
+Y first printunits pop
+(<br> )print
+ Y .step
+dup ==ns ( x ) print ==ns ( deg.) print
+} ifelse
+(</td>) print
+
+%showmenu? {
+%(<td bgcolor=white cellpadding=12>)print
+%(map.Y.step) WWWinfo .FORMinfo .map .Y .step
+
+%dup (climdiv) ne {interp} if startselect
+%1. (1 deg.) valueoption
+%2. (2 deg.) valueoption
+%% (climdiv) (Climate Division) valueoption
+%endselect
+%(<input name="map.X.plotvalue" size=8 value=")print
+%WWWinfo .FORMinfo .map .X .plotvalue print(">\n) print
+%(<input name="map.Y.plotvalue" size=8 value=")print WWWinfo .FORMinfo .map .Y .plotvalue print(">\n)print
+%(<input type="hidden" name="map.X.units" value=")print WWWinfo .FORMinfo .map .X .units print(">\n)print
+%(<input type="hidden" name="map.Y.units" value=")print WWWinfo .FORMinfo .map .Y .units print(">\n)print
+%(<input type="hidden" name="map.X.plotfirst" value=")print WWWinfo .FORMinfo .map .X .plotfirst print(">\n)print
+%(<input type="hidden" name="map.Y.plotfirst" value=")print WWWinfo .FORMinfo .map .Y .plotfirst print(">\n)print
+%(<input type="hidden" name="map.X.plotlast" value=")print WWWinfo .FORMinfo .map .X .plotlast print(">\n)print
+%(<input type="hidden" name="map.Y.plotlast" value=")print WWWinfo .FORMinfo .map .Y .plotlast print(">\n)print
+%(<input type=submit value="Generate new time series">) print
+%(</td>)print
+%} if
+
+
+(</tr></tbody></table>
+
+<table border cellpadding="6" cellspacing="4" bgcolor="#ffffff"><tbody><tr valign="top"><td width="50%" bgcolor=#F0F8FF>
+<font face="Helvetical,Arial" point-size=9pt size=-1> ) print
+
+
+/mapsel FORMgetknown not { /defaultlayer } if
+SPIentry exch getknown { exec } if
+[X Y] onebox
+
+ /mapsel FORMgetknown not { /defaultlayer } if
+ SPItimeshift exch getknown { exec } if
+
+
+(<b>a. </b><br>
+</font>
+
+<center>
+<a href="/) print
+dup dataseturl
+(/figviewer.html?my.help=more+options&map.)print /mapsel FORMget print (.units=unitless&map.SPI-CPC_USMex_9-Month.plotlast=3.1&map.url=T+fig-+blue+thinnish+line+black+thin+zeroline+thin+dotted+red%5B-2.05375+-1.64486+-1.28155+-0.84162+-0.5244%5Dhorizontallines+green%5B0.5244+0.84162+1.28155+1.64486+2.05375%5Dhorizontallines+-fig&map.domain=%7B+/SPI-CPC_USMex_9-Month+-3.1+3.1+plotrange+T+last+120+sub+last+plotrange+%7D&map.domainparam=+/plotaxislength+250+psdef+/plotborder+72+psdef+/antialias+true+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.SPI-CPC_USMex_9-Month.plotfirst=-3.1&map.T.plotfirst=last+120+sub&map.T.units=months+since+1960-01-01&map.T.calendar=360&map.T.plotlast=last&map.newurl.grid0=T&map.newurl.plot=line&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to explore the data';return true"><img src="/) print
+dup dataseturl
+(/T+fig-+blue+thinnish+line+black+thin+zeroline+thin+dotted+red%5B-2.05375+-1.64486+-1.28155+-0.84162+-0.5244%5Dhorizontallines+green%5B0.5244+0.84162+1.28155+1.64486+2.05375%5Dhorizontallines+-fig+//)print /mapsel FORMget print (/-3.1/3.1/plotrange/T/last+120+sub/last/plotrange+//plotborder+72+psdef//plotaxislength+250+psdef//antialias+true+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" title="Click for options and more information" width=322 height=197></a>
+
+</center>
+<font size=-1><br><a href="/)print
+dup dataseturl
+(/T+exch/2+ncoltable.html?tabopt.N=3&tabopt.1=text&tabopt.2=text&tabopt.3=markNaN&NaNmarker=NaN&tabtype=html">Data in this graph</a></font>
+
+</td>
+<td height="200" bgcolor="#F0F8FF" width="50%">
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+
+<b>b. </b><br>
+</font>
+<center>
+<a href="/)print
+dup dataseturl
+(/T/2/copy//pointwidth/0/def/%28Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%28months%20since%2001-Jan%29def/replaceGRID/dup/T/0.5/35.5/RANGE/T/0/12/24/shiftdata/T//modulus/12/def/pop/exch/T/-36/shiftGRID/T/0.5/last/RANGE/T//modulus/12/def/pop/T/-0.5/shiftGRID//fullname/%282010%29def/exch/a:/T_lag/24/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282009%29def/:a:/T_lag/12/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282008%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282007%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig//plotaxislength/432/psdef/figviewer.html?my.help=more+options&map.SPI-CPC_USMex_9-Month.units=unitless&map.SPI-CPC_USMex_9-Month.plotlast=3.1&map.url=+&map.domain=+%7B+/SPI-CPC_USMex_9-Month+-3.1+3.1+plotrange+/T+0.+12.+plotrange+%7D&map.domainparam=+/plotaxislength+432+psdef+/plotborder+72+psdef+/antialias+true+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.SPI-CPC_USMex_9-Month.plotfirst=-3.1&map.T.units=months+since+01-Jan&map.T.calendar=360&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to explore the data';return true"><img src="/)print
+ dup dataseturl
+(/T/2/copy//pointwidth/0/def/%28Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%28months%20since%2001-Jan%29def/replaceGRID/dup/T/0.5/35.5/RANGE/T/0/12/24/shiftdata/T//modulus/12/def/pop/exch/T/-36/shiftGRID/T/0.5/last/RANGE/T//modulus/12/def/pop/T/-0.5/shiftGRID//fullname/%282010%29def/exch/a:/T_lag/24/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282009%29def/:a:/T_lag/12/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282008%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282007%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig//plotaxislength/250/psdef//T/0/12/plotrange//plotborder/72/psdef//plotaxislength/250/psdef//XOVY/null/psdef/++//SPI-CPC_USMex_9-Month/-3.1/3.1/plotrange//T/0./12./plotrange+//antialias+true+psdef//plotborder+72+psdef//plotaxislength+250+psdef//XOVY+null+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" title="Click for options and more information" width=322 height=197></a>
+</center>
+
+</td></tr>
+
+<tr>
+<td height="200" bgcolor="#F0F8FF" width="50%">
+<font face="Helvetical,Arial" point-size=9pt size=-1> ) print
+
+ home .mbell .CPC .US_Mexico .daily .gridded .archive_realtime_merged .monthly_total .prcp
+[X Y] onebox
+
+%SOURCES .NOAA .NCDC .CIRS .ClimateDivision .pcp
+%WWWinfo .districtinfo .division_i getrealization IDIV exch VALUE
+
+% T /GT units ordered first 1 last 12 add NewEvenGRID dup last 12 sub flaggt /DT /months ordered -12 -12 7 index npts nip dup 12 mod sub -1 mul NewEvenGRID mul add nip T sample-along GT /T renameGRID 
+%/mapsel FORMgetknown { SPIcalc exch get exec } if
+%T (Jan 2008) last RANGE
+%[DT]0.1 0.25 0.5 0.75 0.9 0.0 replacebypercentile
+%/mapsel FORMgetknown { SPItimeshift exch get exec } if
+
+(<b>c. </b><br>
+</font>
+<center>
+<a href="/)print
+
+% use "percentile T fig: lines :fig to display plume
+dup dataseturl
+(/T//GT/units/ordered/first/1/16/) print WWWinfo .FORMinfo .map .S .plotvalue print (/ensotime/12/add/NewEvenGRID/dup/last/12/sub/flaggt//DT/(months)ordered/-12/-12/7/index/npts/nip/dup/12/mod/sub/-1/mul/NewEvenGRID/mul/add/nip/T/sample-along/GT//T/renameGRID/) print /mapsel FORMgetknown { SPIcalctxt exch get print } if (/[DT]0.1/0.25/0.5/0.75/0.9/0.0/replacebypercentile/) print /mapsel FORMgetknown { SPItimeshifttxt exch get print } if (/figviewer.html?my.help=more+options&map.spi.units=unitless&map.spi.plotlast=3.1&map.url=percentile+T+fig-+blue+thinnish+lines+black+thin+zeroline+thin+dotted+red%5B-2.05375+-1.64486+-1.28155+-0.84162+-0.5244%5Dhorizontallines+green%5B0.5244+0.84162+1.28155+1.64486+2.05375%5Dhorizontallines+-fig&map.domainparam=+/plotaxislength+250+psdef+/plotborder+72+psdef+/antialias+true+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.spi.plotfirst=-3.1&map.T.units=months+since+1960-01-01&map.T.calendar=360&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to explore the data';return true"><img src="/) print
+
+dup dataseturl
+(/T//GT/units/ordered/first/1/16/) print WWWinfo .FORMinfo .map .S .plotvalue print (/ensotime/12/add/NewEvenGRID/dup/last/12/sub/flaggt//DT/(months)ordered/-12/-12/7/index/npts/nip/dup/12/mod/sub/-1/mul/NewEvenGRID/mul/add/nip/T/sample-along/GT//T/renameGRID/) print /mapsel FORMgetknown { SPIcalctxt exch get print } if (/[DT]0.1/0.25/0.5/0.75/0.9/0.0/replacebypercentile/) print /mapsel FORMgetknown { SPItimeshifttxt exch get print } if (/percentile+T+fig-+blue+thinnish+lines+black+thin+zeroline+thin+dotted+red%5B-2.05375+-1.64486+-1.28155+-0.84162+-0.5244%5Dhorizontallines+green%5B0.5244+0.84162+1.28155+1.64486+2.05375%5Dhorizontallines+-fig//XOVY+null+psdef//antialias+true+psdef//plotborder+72+psdef//plotaxislength+250+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" title="Click for options and more information" width=322 height=197></a>) print
+
+(
+</td>
+<td height="200" bgcolor="#F0F8FF" width="50%">
+<font face="Helvetical,Arial" point-size=9pt size=-1> ) print
+
+
+ home .mbell .CPC .US_Mexico .daily .gridded .archive_realtime_merged .monthly_total .prcp
+[X Y] onebox
+
+%SOURCES .NOAA .NCDC .CIRS .ClimateDivision .pcp
+%WWWinfo .districtinfo .division_i getrealization IDIV exch VALUE
+
+(<b>d. </b><br>
+</font>
+<center>
+<a href="/)print
+
+dup dataseturl
+(/T//GT/units/ordered/first/1/16/) print WWWinfo .FORMinfo .map .S .plotvalue print (/ensotime/12/add/NewEvenGRID/dup/last/12/sub/flaggt//DT/(months)ordered/-12/-12/7/index/npts/nip/dup/12/mod/sub/-1/mul/NewEvenGRID/mul/add/nip/T/sample-along/GT//T/renameGRID/) print /mapsel FORMgetknown { SPIcalctxt exch get print } if (/) print ERSSTv3bENSOclasstxt print (/) print NINOflag print (/[DT]0.1/0.25/0.5/0.75/0.9/0.0/replacebypercentile/) print /mapsel FORMgetknown { SPItimeshifttxt exch get print } if (/figviewer.html?my.help=more+options&map.aprod.units=unitless&map.aprod.plotlast=3.1&map.url=percentile+T+fig-+blue+thinnish+lines+black+thin+zeroline+thin+dotted+red%5B-2.05375+-1.64486+-1.28155+-0.84162+-0.5244%5Dhorizontallines+green%5B0.5244+0.84162+1.28155+1.64486+2.05375%5Dhorizontallines+-fig&map.domainparam=+/plotaxislength+250+psdef+/plotborder+72+psdef+/antialias+true+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.aprod.plotfirst=-3.1&map.T.units=months+since+1960-01-01&map.T.calendar=360&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to explore the data';return true"><img src="/) print
+
+dup dataseturl
+(/T//GT/units/ordered/first/1/16/) print WWWinfo .FORMinfo .map .S .plotvalue print (/ensotime/12/add/NewEvenGRID/dup/last/12/sub/flaggt//DT/(months)ordered/-12/-12/7/index/npts/nip/dup/12/mod/sub/-1/mul/NewEvenGRID/mul/add/nip/T/sample-along/GT//T/renameGRID/) print /mapsel FORMgetknown { SPIcalctxt exch get print } if (/) print ERSSTv3bENSOclasstxt print (/) print NINOflag print (/[DT]0.1/0.25/0.5/0.75/0.9/0.0/replacebypercentile/) print /mapsel FORMgetknown { SPItimeshifttxt exch get print } if (/percentile+T+fig-+blue+thinnish+lines+black+thin+zeroline+thin+dotted+red%5B-2.05375+-1.64486+-1.28155+-0.84162+-0.5244%5Dhorizontallines+green%5B0.5244+0.84162+1.28155+1.64486+2.05375%5Dhorizontallines+-fig//aprod+-3.1+3.1+plotrange//antialias+true+psdef//XOVY+null+psdef//plotborder+72+psdef//plotaxislength+250+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" title="Click for options and more information" width=322 height=197></a>) print
+
+(</td></tr>
+
+<tr>
+<td height="200" bgcolor="#F0F8FF" width="50%">
+<font face="Helvetical,Arial" point-size=9pt size=-1> ) print
+
+ home .mbell .CPC .US_Mexico .daily .gridded .archive_realtime_merged .monthly_total .prcp
+[X Y] onebox
+
+%SOURCES .NOAA .NCDC .CIRS .ClimateDivision .pcp
+%WWWinfo .districtinfo .division_i getrealization IDIV exch VALUE
+
+(<b>e. </b><br>
+</font>
+<center>
+<a href="/)print
+
+dup dataseturl
+(/T//GT/units/ordered/first/1/16/) print WWWinfo .FORMinfo .map .S .plotvalue print (/ensotime/12/add/NewEvenGRID/dup/last/12/sub/flaggt//DT/(months)ordered/-12/-12/7/index/npts/nip/dup/12/mod/sub/-1/mul/NewEvenGRID/mul/add/nip/T/sample-along/GT//T/renameGRID/) print /mapsel FORMgetknown { SPIcalctxt exch get print } if (/) print ERSSTv3bENSOclasstxt print (/) print Neutralflag print (/[DT]0.1/0.25/0.5/0.75/0.9/0.0/replacebypercentile/) print /mapsel FORMgetknown { SPItimeshifttxt exch get print } if (/figviewer.html?my.help=more+options&map.aprod.units=unitless&map.aprod.plotlast=3.1&map.url=percentile+T+fig-+blue+thinnish+lines+black+thin+zeroline+thin+dotted+red%5B-2.05375+-1.64486+-1.28155+-0.84162+-0.5244%5Dhorizontallines+green%5B0.5244+0.84162+1.28155+1.64486+2.05375%5Dhorizontallines+-fig&map.domainparam=+/plotaxislength+250+psdef+/plotborder+72+psdef+/antialias+true+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.aprod.plotfirst=-3.1&map.T.units=months+since+1960-01-01&map.T.calendar=360&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to explore the data';return true"><img src="/) print
+
+dup dataseturl
+(/T//GT/units/ordered/first/1/16/) print WWWinfo .FORMinfo .map .S .plotvalue print (/ensotime/12/add/NewEvenGRID/dup/last/12/sub/flaggt//DT/(months)ordered/-12/-12/7/index/npts/nip/dup/12/mod/sub/-1/mul/NewEvenGRID/mul/add/nip/T/sample-along/GT//T/renameGRID/) print /mapsel FORMgetknown { SPIcalctxt exch get print } if (/) print ERSSTv3bENSOclasstxt print (/) print Neutralflag print (/[DT]0.1/0.25/0.5/0.75/0.9/0.0/replacebypercentile/) print /mapsel FORMgetknown { SPItimeshifttxt exch get print } if (/percentile+T+fig-+blue+thinnish+lines+black+thin+zeroline+thin+dotted+red%5B-2.05375+-1.64486+-1.28155+-0.84162+-0.5244%5Dhorizontallines+green%5B0.5244+0.84162+1.28155+1.64486+2.05375%5Dhorizontallines+-fig//aprod+-3.1+3.1+plotrange//XOVY+null+psdef//antialias+true+psdef//plotborder+72+psdef//plotaxislength+250+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" title="Click for options and more information" width=322 height=197></a>) print
+
+(</td>
+<td height="200" bgcolor="#F0F8FF" width="50%">
+<font face="Helvetical,Arial" point-size=9pt size=-1> ) print
+
+ home .mbell .CPC .US_Mexico .daily .gridded .archive_realtime_merged .monthly_total .prcp
+[X Y] onebox
+
+%SOURCES .NOAA .NCDC .CIRS .ClimateDivision .pcp
+%WWWinfo .districtinfo .division_i getrealization IDIV exch VALUE
+
+(<b>f. </b><br>
+</font>
+<center>
+<a href="/)print
+
+dup dataseturl
+(/T//GT/units/ordered/first/1/16/) print WWWinfo .FORMinfo .map .S .plotvalue print (/ensotime/12/add/NewEvenGRID/dup/last/12/sub/flaggt//DT/(months)ordered/-12/-12/7/index/npts/nip/dup/12/mod/sub/-1/mul/NewEvenGRID/mul/add/nip/T/sample-along/GT//T/renameGRID/) print /mapsel FORMgetknown { SPIcalctxt exch get print } if (/) print ERSSTv3bENSOclasstxt print (/) print NINAflag print (/[DT]0.1/0.25/0.5/0.75/0.9/0.0/replacebypercentile/) print /mapsel FORMgetknown { SPItimeshifttxt exch get print } if (/figviewer.html?my.help=more+options&map.aprod.units=unitless&map.aprod.plotlast=3.1&map.url=percentile+T+fig-+blue+thinnish+lines+black+thin+zeroline+thin+dotted+red%5B-2.05375+-1.64486+-1.28155+-0.84162+-0.5244%5Dhorizontallines+green%5B0.5244+0.84162+1.28155+1.64486+2.05375%5Dhorizontallines+-fig&map.domainparam=+/plotaxislength+250+psdef+/antialias+true+psdef+/plotborder+72+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.aprod.plotfirst=-3.1&map.T.units=months+since+1960-01-01&map.T.calendar=360&map.plotaxislength=432&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=1&map.framelbl=framelabelstart&map.framelabeltext=&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to explore the data';return true"><img src="/) print
+
+dup dataseturl
+(/T//GT/units/ordered/first/1/16/) print WWWinfo .FORMinfo .map .S .plotvalue print (/ensotime/12/add/NewEvenGRID/dup/last/12/sub/flaggt//DT/(months)ordered/-12/-12/7/index/npts/nip/dup/12/mod/sub/-1/mul/NewEvenGRID/mul/add/nip/T/sample-along/GT//T/renameGRID/) print /mapsel FORMgetknown { SPIcalctxt exch get print } if (/) print ERSSTv3bENSOclasstxt print (/) print NINAflag print (/[DT]0.1/0.25/0.5/0.75/0.9/0.0/replacebypercentile/) print /mapsel FORMgetknown { SPItimeshifttxt exch get print } if (/percentile+T+fig-+blue+thinnish+lines+black+thin+zeroline+thin+dotted+red%5B-2.05375+-1.64486+-1.28155+-0.84162+-0.5244%5Dhorizontallines+green%5B0.5244+0.84162+1.28155+1.64486+2.05375%5Dhorizontallines+-fig//aprod+-3.1+3.1+plotrange//antialias+true+psdef//XOVY+null+psdef//plotborder+72+psdef//plotaxislength+250+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" title="Click for options and more information" width=322 height=197></a>) print
+
+%/S.plotval WWWinfo .FORMinfo .map .S .plotvalue def
+%16 S.plotval exec print
+
+(</td>
+</tr>
+
+<tr valign="top"><td colspan="2" bgcolor"#F0F8FF">
+<font face="Helvetical,Arial" point-size=12pt size=-1>
+<b><u>Description</u></b>
+</font>
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+<br>
+a. Time series of Standardized Precipitation Index values for the selected region for the past 10
+years.
+<p>
+b. Time series of Standardized Precipitation Index values for the current year [thick black line],
+ and for the three previous years [blue: 1 calendar year ago; magenta: 2 calendar years ago; grey:
+ 3 calendar years ago].
+<p>
+c. Plume showing possible range of SPI values for future months based upon SPI calculated using a combination of recently-observed precipitation values and precipitation in coming calendar months sampled from the set of all previous years in the data set.  Lines in the plume indicate the 0.1, 0.25, 0.5, 0.75, and 0.9 percentiles of possible future SPI in the coming months based upon precipitation data from all previous years.
+<p>
+d. Plume showing possible range of SPI values for future months based upon SPI calculated using a combination of recently-observed precipitation values and precipitation in coming calendar months sampled from the set of previous El Ni&ntilde;o years in the data set.  Lines in the plume indicate the 0.1, 0.25, 0.5, 0.75, and 0.9 percentiles of possible future SPI in the coming months based upon precipitation from previous El Ni&ntilde;o years.
+<p>
+e. Plume showing possible range of SPI values for future months based upon SPI calculated using a combination of recently-observed precipitation values and precipitation in coming calendar months sampled from the set of previous Neutral ENSO years in the data set.  Lines in the plume indicate the 0.1, 0.25, 0.5, 0.75, and 0.9 percentiles of possible future SPI in the coming months based upon precipitation from previous Neutral ENSO years.
+<p>
+f. Plume showing possible range of SPI values for future months based upon SPI calculated using a combination of recently-observed precipitation values and precipitation in coming calendar months sampled from the set of previous La Ni&ntilde;a years in the data set.  Lines in the plume indicate the 0.1, 0.25, 0.5, 0.75, and 0.9 percentiles of possible future SPI in the coming months based upon precipitation from previous La Ni&ntilde;a years.
+<p>
+Red dashed lines on the plots indicate the SPI thresholds corresponding to the percentiles associated with the D0 (30%tile) to D4 (2%tile) drought intensity categories in the U. S. Drought Monitor, and green dashed lines indicate the SPI thresholds corresponding to the W0 to W4 "wetness" categories.
+<p>
+<font face="Helvetical,Arial" point-size=12pt size=-1>
+<b><u>Data Sources</u></b>
+<br></font>
+<font face="Helvetical,Arial" point-size=9pt size=-1>
+<b>Standardized Precipitation Index</b><br>
+<font size=-1><b>Data</b>:&nbsp;&nbsp;The Standardized Precipitation Index series shown on this page are calculated using monthly precipitation totals at 1 deg. lat/lon resolution calculated from a dataset that combines the archived and real-time CPC U. S./Mexico daily precipitation datasets.</font>
+<br><font size=-1><b>Data Source</b>:&nbsp; U. S. Climate Prediction Center 
+[<a href="http://www.cpc.ncep.noaa.gov/products/precip/realtime/index.shtml">U. S. Climate Prediction Center Daily Precipitation Analyses</a
+>]</font>
+</td></tr>
+</table>
+
+</td></tr></table>
+)print
+
+
+} if
+
+</INGRID>
+
+<p>
+
+<INGRID>showmenu? not {stopprint} if</INGRID>
+
+<span class=lttxt><font size=+0>For any feedback or comments, please <a href="mailto:blyon@iri.columbia.edu,mbell@iri.columbia.edu?subject=Drought Tool">Contact Us</a></font></span>
+
+<INGRID>
+startprint
+</INGRID>
+</FORM>
+
+</body></html>
