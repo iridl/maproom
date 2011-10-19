@@ -358,7 +358,7 @@ WWWinfo
 
 WWWinfo
 
-[ mapplot ( X Y fig: colors plotlabel white ocean blue lakes black thin coasts_gaz black thin countries_gaz :fig ) labelstuff ( (plotaxislength) 550 psdef (XOVY) auto psdef ) ] concat interp
+[ mapplot ( X Y fig: colors plotlabel white ocean blue lakes black thin coasts_gaz black thin countries_gaz :fig ) labelstuff ( (plotaxislength) 550 psdef (antialias) true psdef (color_smoothing) null psdef (XOVY) auto psdef ) ] concat interp
 
 /map
 
@@ -381,7 +381,7 @@ nip
 
 %[ mapplot ( X Y fig: colors plotlabel blue lakes black thin coasts_gaz black thin countries_gaz :fig ) labelstuff ( (plotaxislength) 550 psdef (XOVY) auto psdef ) ] concat 
 
-[ mapplot ( X Y fig: colors plotlabel white ocean blue lakes ) boundaries3 boundaries2 boundaries1 boundaries0 ( :fig ) labelstuff ( (plotaxislength) 550 psdef (antialias) true psdef (XOVY) auto psdef ) ] concat 
+[ mapplot ( X Y fig: colors plotlabel white ocean blue lakes ) boundaries3 boundaries2 boundaries1 boundaries0 ( :fig ) labelstuff ( (plotaxislength) 550 psdef (antialias) true psdef (color_smoothing) null psdef (XOVY) auto psdef ) ] concat 
 
 
 %X Y fig: colors plotlabel blue lakes 
