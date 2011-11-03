@@ -352,7 +352,7 @@ div /percent unitconvert 0.5 add toi4
   DATA AUTO AUTO RANGE
 exch
   (scale_symmetric) (true) def
-  (fullname) (raw) def
+  (fullname) (raw (mm/month)) def
   DATA AUTO AUTO RANGE
 exch
 T fig- line black zeroline thick solid red line -fig
@@ -364,7 +364,7 @@ T fig- line black zeroline thick solid red line -fig
   DATA AUTO AUTO RANGE
 exch
   (scale_symmetric) (true) def
-  (fullname) (raw) def
+  (fullname) (raw (mm/month)) def
   DATA AUTO AUTO RANGE
 exch
 T fig- line black zeroline thick solid red line -fig 
@@ -393,7 +393,7 @@ div /percent unitconvert 0.5 add toi4
 (</div><div align="center">)print
 [locsel ( pop nip 
   (scale_symmetric) (true) def
-  (fullname) (decadal) def
+  (fullname) (decadal (mm/month)) def
   DATA AUTO AUTO RANGE
 exch
   (scale_symmetric) (true) def
@@ -405,7 +405,7 @@ T fig- white line black zeroline thick solid green line -fig
 /map
 [locsel ( pop nip
   (scale_symmetric) (true) def
-  (fullname) (decadal) def
+  (fullname)  (decadal (mm/month)) def
   DATA AUTO AUTO RANGE
 exch
   (scale_symmetric) (true) def
@@ -434,7 +434,7 @@ div /percent unitconvert 0.5 add toi4
 (</div><div align="center">)print
 [locsel ( nip nip
   (scale_symmetric) (true) def
-  (fullname) (interannual) def
+  (fullname) (interannual (mm/month)) def
   DATA AUTO AUTO RANGE
 exch
   (scale_symmetric) (true) def
@@ -446,7 +446,7 @@ T fig- white line black zeroline blue line -fig
 /map
 [locsel ( nip nip
   (scale_symmetric) (true) def
-  (fullname) (interannual) def
+  (fullname) (interannual (mm/month)) def
   DATA AUTO AUTO RANGE
 exch
   (scale_symmetric) (true) def
@@ -482,7 +482,7 @@ div /percent unitconvert 0.5 add toi4
 <div align="center">)print
 [locsel ( pop 3 -1 roll pop
   (scale_symmetric) (true) def
-  (fullname) (decadal) def
+  (fullname) (decadal (mm/month)) def
   DATA AUTO AUTO RANGE
 exch
   (scale_symmetric) (true) def
@@ -493,7 +493,7 @@ T fig- thick green line solid red line thinnish black zeroline -fig
 /map
 [locsel ( pop 3 -1 roll pop
   (scale_symmetric) (true) def
-  (fullname) (decadal) def
+  (fullname) (decadal (mm/month)) def
   DATA AUTO AUTO RANGE
 exch
   (scale_symmetric) (true) def
@@ -576,9 +576,9 @@ imagelinkstart
 (</td><td align=center>) print
 (Figure as JPEG) (.jpg) linktoimageformat
 (</td>) print
-}if
+}if 
 (<td rowspan=2 align=center><a href=http://iridl.ldeo.columbia.edu/expert/)print
-dup [({) mapsel (})] concat interp procasurl print 
+ [({) mapsel (})] concat interp procasurl print 
 </INGRID>/?help+datafiles#GIS">Data for GIS</a></td>
 </tr>
 <tr>
