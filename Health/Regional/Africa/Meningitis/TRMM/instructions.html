@@ -1,5 +1,5 @@
 <html><head>
-    <title>MEWS - Dekadal Precipitation on an Interactive Map</title>
+    <title>TRMM Rainfall - Daily Precipitation on an Interactive Map</title>
 </head>
 <body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000">
 <INGRID>
@@ -7,7 +7,7 @@
 leftmenuHeader
 %standardHeader
 </INGRID>
-<h3 align=center><u>How to Use the MEWS Interface</u></h3>
+<h3 align=center><u>How to Use the TRMM Rainfall Interface</u></h3>
 <p>
 <table align=center>
 <tr><td width=550>
@@ -15,30 +15,29 @@ leftmenuHeader
 <a href="#map">Interacting with the map</a>
 <br><a href="#timeseries">Creating time series analyses</a>
 <p><a name="map"><u><b>Interacting with the map</b></u>
-<br>The map first displays the most recent dekadal precipitation estimates for 
+<br>The map first displays the most recent daily precipitation estimates for 
 Africa, but it is also meant to be a dynamic tool. Users may use the map viewer to:
-<ul><li>Display precipitation estimates from any dekad from 6 Dec 1999 to the present</li>
-<li>Animate precipitation estimates for any number of dekads</li>
+<ul><li>Display precipitation estimates from any day from Jan 1998 to the present</li>
+<li>Animate precipitation estimates for any number of days</li>
 <li>Overlay any combination of the following levels of administrative boundaries: coast, 
 country, state/province, and district</li>
-<li>Overlay a map of epidemic malaria risk zones</li>
 <li>Zoom in to a more specific region of interest</li>
 </ul>
-<u><i>Display data from a different dekad</i></u>
+<u><i>Display data from a different day</i></u>
 <br>The date for which the displayed precipitation data is valid is shown to the lower left 
 of the map.  To display data from a different time period:
 <ol><li>Change the date in the text box above the map using the same format as the date
 already shown.</li>
 <li>Click the Redraw button to the left of the map (top of the three buttons).</li>
 </ol>
-Note that the buttons to the right of the date text box allow you to go directly to the dekads
+Note that the buttons to the right of the date text box allow you to go directly to the days
 immediately before and after the one currently displayed.
 <p>
-<u><i>Animate data from multiple dekads</i></u>
+<u><i>Animate data from multiple days</i></u>
 <br>Any number of time steps may be animated, but the time necessary to load the animation will 
 increase with the number of time steps included in the selection.
 <br><ol><li>In the date text box above the map, enter the start and end dates of the time period 
-over which you would like to animate the data, separated by "to" (e.g., "21-30 Nov 2004 to 21-31 Dec 
+over which you would like to animate the data, separated by "to" (e.g., "30 Nov 2004 to 31 Dec 
 2004").</li>
 <li>Click the Redraw button to the left of the map (top of the three buttons).</li>
 </ol>
@@ -69,7 +68,7 @@ like to display using the text format already shown.</li>
 <p><u><i>Generate time series analysis</i></u>
 <ol><li>Using the "Time Series Region" table to the right of the map, select the size of 
 the region over which you want the precipitation to be spatially averaged.
-<p>The CPC/FEWS RFE2.0 dataset has a very fine resolution (i.e., 0.1&deg;x0.1&deg;). It is 
+<p>The NASA TRMM dataset has a medium resolution (i.e., 0.25&deg;x0.25&deg;, approximately 25km X 25km). It is 
 therefore prudent to base this type of analysis on an average of multiple grid points.</li>
 <li>Click on the map at the point of interest.  If you
 chose a box region in Step 1, then the analysis will be based on the average of the data within 
