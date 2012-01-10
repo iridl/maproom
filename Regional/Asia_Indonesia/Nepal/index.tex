@@ -1,0 +1,17 @@
+\begin{ingrid}
+continuedataset:
+datasetdefs:
+/index.en.html currentobject /index.html get def
+:datasetdefs
+
+{ Historical_Precipitation } { currentobject 1 index get def } forall
+
+/index.html {
+PickLanguage:
+/en /index.en.html
+/es /index.es.html
+:PickLanguage
+} def
+
+:dataset
+\end{ingrid}
