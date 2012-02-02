@@ -167,7 +167,7 @@ def
 
 %showmenu?
 %{
-(<select name="mapsel" id="mapsel" onChange="changedtext(this)" >) print
+(<select name="mapsel" id="mapsel" onChange="document.mapform.submit();" >) print
 
 [ (SPI-US_Mex_3-Month) (SPI-US_Mex_6-Month) (SPI-US_Mex_9-Month) (SPI-US_Mex_12-Month) ]
  {
@@ -195,7 +195,7 @@ def
 </td></tr>
 <tr><td>
 <INGRID>
-(<select name="maptype" id="maptype" onChange="changedtext(this)" >) print
+(<select name="maptype" id="maptype" onChange="document.mapform.submit();" >) print
 [(probmap) (bestestmap)] {
  (<option value=) print
   dup print /maptype FORMgetknown {
@@ -247,8 +247,13 @@ nip
 
 
 <tr><td>
-<b><font point-size=12pt>Select SPI Threshold = </font></b>
+
+
 <INGRID>
+/maptype FORMget (probmap) eq {
+
+
+(<b><font point-size=12pt>Select SPI Threshold = </font></b>) print
 (<select name="threshold" id="threshold" onChange="document.mapform.submit();">) print
 [(2.5) (2.0) (1.5) (1.0) (0.5) (0.0) (-0.5) (-1.0) (-1.5) (-2.0) (-2.5)] {
  (<option value=) print
@@ -260,13 +265,11 @@ nip
   (>) print print (</option>) print
 }forall
 (</select>)print
-</INGRID>
-</td></tr>
 
+}
+{
 
-<tr><td>
-<b><font point-size=12pt>Select Probability of Non-Exceedance = </font></b>
-<INGRID>
+(<b><font point-size=12pt>Select Probability of Non-Exceedance = </font></b>) print
 (<select name="margprob" id="margprob" onChange="document.mapform.submit();">) print
 [(0.95) (0.9) (0.85) (0.8) (0.75) (0.7) (0.65) (0.6) (0.55) (0.5) (0.45) (0.4) (0.35) (0.3) (0.25) (0.2) (0.15) (0.1) (0.05)] {
  (<option value=) print
@@ -278,6 +281,8 @@ nip
   (>) print print (</option>) print
 }forall
 (</select>)print
+
+} ifelse
 </INGRID>
 </td></tr>
 
@@ -287,7 +292,21 @@ nip
 <INGRID>
 
 (<select name="lead" id="lead" onChange="document.mapform.submit();">) print
-[(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11)] {
+
+/mapsel FORMget (SPI-US_Mex_12-Month) eq {
+[(1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11)] 
+} if
+/mapsel FORMget (SPI-US_Mex_9-Month) eq {
+[(1) (2) (3) (4) (5) (6) (7) (8) ] 
+} if
+/mapsel FORMget (SPI-US_Mex_6-Month) eq {
+[(1) (2) (3) (4) (5) ] 
+} if
+/mapsel FORMget (SPI-US_Mex_3-Month) eq {
+[(1) (2) ] 
+} if
+
+{
  (<option value=) print
   dup print /lead FORMgetknown {
     1 index eq {( selected="selected") print} if
