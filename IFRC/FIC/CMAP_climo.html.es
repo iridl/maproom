@@ -11,16 +11,16 @@ lang="es"
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>IFRC PIC: &#191;Cu&#225;nta lluvia cae normalmente en esta parte del a&#241;o?</title>
-<link rel="stylesheet" type="text/css" href="maproom.css" />
-<link rel="stylesheet" type="text/css" href="ifrc.css" />
-<link rev="section" href="fic.html" />
+<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<link rel="stylesheet" type="text/css" href="../ifrc.css" />
+<link rev="section" href="../index.html" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="CMAP_climo.html?Set-Language=en" />
 <link rel="canonical" href="CMAP_climo.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
-<script type="text/javascript" src="maproom.js"></script>
+<script type="text/javascript" src="../../maproom.js"></script>
 </head>
 <body>
 <form name="pageform" id="pageform" class="carryup carry">
@@ -30,7 +30,7 @@ lang="es"
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Federaci&#243;n Internacional</legend> 
-                      <a class="navlink carryup" href="fic.html">Predicciones en Contexto</a>
+                      <a class="navlink carryup" href="../index.html">Predicciones en Contexto</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend>Condiciones Hist&#243;ricas</legend>

@@ -11,16 +11,16 @@ lang="es"
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>IFRC PIC: &#191;Qu&#233; tan abundante se espera que sea la lluvia?</title>
-<link rel="stylesheet" type="text/css" href="maproom.css" />
-<link rel="stylesheet" type="text/css" href="ifrc.css" />
-<link rev="section" href="fic.html" />
+<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<link rel="stylesheet" type="text/css" href="../ifrc.css" />
+<link rev="section" href="../index.html" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="heavyrain.html?Set-Language=en" />
 <link rel="canonical" href="heavyrain.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
-<script type="text/javascript" src="maproom.js"></script>
+<script type="text/javascript" src="../../maproom.js"></script>
 </head>
 <body>
 <form name="pageform" id="pageform" class="carryup carry">
@@ -30,7 +30,7 @@ lang="es"
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Federaci&#243;n Internacional</legend> 
-                      <a class="navlink carryup" href="fic.html">Predicciones en Contexto</a>
+                      <a class="navlink carryup" href="../index.html">Predicciones en Contexto</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend>Pron&#243;sticos 6 D&#237;as</legend>

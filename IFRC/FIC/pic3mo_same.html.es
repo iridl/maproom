@@ -11,16 +11,16 @@ lang="es"
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>IFRC PIC: &#191;Es probable que las condiciones inusuales h&#250;medas o secas contin&#250;en?</title>
-<link rel="stylesheet" type="text/css" href="maproom.css" />
-<link rel="stylesheet" type="text/css" href="ifrc.css" />
-<link rev="section" href="fic.html" />
+<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<link rel="stylesheet" type="text/css" href="../ifrc.css" />
+<link rev="section" href="../index.html" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="pic3mo_same.html?Set-Language=en" />
 <link rel="canonical" href="pic3mo_same.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/:a:/.forecasttime/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+//F/622.5/plotvalue/Y/-66.25/76.25/plotrange+//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
-<script type="text/javascript" src="maproom.js"></script>
+<script type="text/javascript" src="../../maproom.js"></script>
 </head>
 <body>
 <form name="pageform" id="pageform" class="carryup carry">
@@ -30,7 +30,7 @@ lang="es"
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Federaci&#243;n Internacional</legend> 
-                      <a class="navlink carryup" href="fic.html">Predicciones en Contexto</a>
+                      <a class="navlink carryup" href="../index.html">Predicciones en Contexto</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend>Pron&#243;stico para los Pr&#243;ximos 3 Meses</legend>
