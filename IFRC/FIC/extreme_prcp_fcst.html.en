@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="en"
+lang="en"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>IFRC PIC: Are the next 3 months likely to be exceptionally wet or dry?</title>
+<link rel="stylesheet" type="text/css" href="maproom.css" />
+<link rel="stylesheet" type="text/css" href="ifrc.css" />
+<link rev="section" href="fic.html" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="extreme_prcp_fcst.html?Set-Language=es" />
+<link rel="canonical" href="extreme_prcp_fcst.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1/plotvalue//F/622.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
+<script type="text/javascript" src="maproom.js"></script>
+</head>
+<body>
+<form name="pageform" id="pageform" class="carryup carry">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carry" name="Region" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>International Federation</legend> 
+                      <a class="navlink carryup" href="fic.html">Forecasts in Context</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend>Six Day Precipitation Forecasts</legend>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseRegion"> 
+                <legend>Region</legend> 
+            </fieldset>
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+<div id="ifrcdiv">
+<img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/instructions.html">Instructions</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1/plotvalue//F/623.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef/" />
+<div class="dlcontrol"><b>Month Forecast Issued:  </b><input name="map.F.plotvalue" value="Dec 2011" size="16" onChange="changedtext(this)" /><input value="Nov 2011" type="button" onclick="dovaluebutton(this,'map.F.plotvalue')" /></div>
+<h3 class="dlimagelegend"> Forecast for Jan-Mar 2012, Forecast Issued Dec 2011</h3><img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1/plotvalue//F/623.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlimg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCfcstextremecolorscale.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >Are the next 3 months likely to be exceptionally wet or dry?</h2>
+<p align="left" property="term:description"> The map shows where and how likely it is to be extremely wet or dry over the next three months.  Extreme refers to the lowest or highest 15% of the historical record. </p>
+<p align="left"> Blue areas show where there is an enhanced likelihood of extremely wet conditions over the next three months.  Darker blue indicates a higher likelihood of extremely wet conditions.  Orange and brown areas show where there is an enhanced likelihood of extremely dry conditions over the next three months.  The darker brown indicates a higher likelihood of extremely dry conditions.</p>
+<p align="left"><i>This forecast shows only the likelihood of 3-month accumulated rainfall (or snow) being unusually high or low, and does not indicate chances of individual heavy rainfall events.  The forecasts apply over large areas only, and should not be used to forecast local conditions, or as a flood forecast.</i> 
+</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p><b><a href="instructions.html#extreme_prcp_fcst">IRI Extreme Seasonal Precipitation Forecast</a></b><br /> 
+<b>Data</b> Probabilities that seasonal (3-month) precipitation will be within the upper 15% or lower 15% of the historical (30-year) distribution for the first lead time from the IRI Net Assessment Forecast, issued every month at 2.5&#176; lat/lon resolution
+<br /><b>Data Source</b> International Research Institute for Climate and Society, <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&objID=944&parentname=CommunityPage&parentid=1&mode=2&in_hi_userid=2&cached=true">Net Assessment Forecasts</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library entry</a>
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ <!-- hhmts start -->Last modified: Fri Nov 18 17:31:34 EST 2011 <!-- hhmts end -->
+ </body>
+ </html>

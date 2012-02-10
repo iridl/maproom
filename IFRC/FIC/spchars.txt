@@ -1,0 +1,8 @@
+
+aacute    &#225;
+eacute    &#233;
+iacute    &#237;
+ntilde    &#241;
+oacute    &#243;
+uacute    &#250;
+iquest    &#191;

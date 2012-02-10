@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="en"
+lang="en"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>IFRC PIC: How much rain normally falls at this time of year?</title>
+<link rel="stylesheet" type="text/css" href="maproom.css" />
+<link rel="stylesheet" type="text/css" href="ifrc.css" />
+<link rev="section" href="fic.html" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="CMAP_climo.html?Set-Language=es" />
+<link rel="canonical" href="CMAP_climo.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
+<script type="text/javascript" src="maproom.js"></script>
+</head>
+<body>
+<form name="pageform" id="pageform" class="carryup carry">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carry" name="Region" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>International Federation</legend> 
+                      <a class="navlink carryup" href="fic.html">Forecasts in Context</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend>Six Day Precipitation Forecasts</legend>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseRegion"> 
+                <legend>Region</legend> 
+            </fieldset>
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+<div id="ifrcdiv">
+<img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/instructions.html">Instructions</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef/" />
+<div class="dlcontrol"><b>Time:  </b><input name="map.T.plotvalue" value="Jan" size="16" onChange="changedtext(this)" /><input value="Feb" type="button" onclick="dovaluebutton(this,'map.T.plotvalue')" /></div>
+<h3 class="dlimagelegend"> Jan</h3><img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colorscale2+-fig//nplotstream+1+def+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef+.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >How much rain normally falls at this time of year?</h2>
+<p align="left" property="term:description">This map shows how much rain normally falls this time of year.</p>
+<p align="left"> This map shows how much rain usually falls during this month in past years (1979-2004).  The darker the blue, the heavier the rain.  This map does not indicate how much rain is expected this year.</p>
+<p align="left">These data are from the NOAA Climate Prediction Center's Merged Analysis of Precipitation (CMAP) data set.
+</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p><b><a href="instructions.html#CMAP_climo">CPC Merged Analysis of Precipitation Monthly Climatology</a></b><br /> 
+<b>Data</b>  CPC Merged Analysis of Precipitation (CMAP) v0703 (March 2007 release) version 2 (merged gauge and satellite estimates) monthly precipitation values at 2.5&#176; lat/lon resolution
+<br /><b>Data Source</b> NOAA, Climate Prediction Center, <a href="http://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
+<br /><b>Analysis</b> Monthly precipitation climatology using 1979-2004 base period.
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ <!-- hhmts start -->Last modified: Fri Nov 18 17:31:34 EST 2011 <!-- hhmts end -->
+ </body>
+ </html>

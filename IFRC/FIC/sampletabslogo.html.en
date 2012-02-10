@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="en"
+lang="en"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>IFRC PIC: Where is unusually heavy rainfall expected?</title>
+<link rel="stylesheet" type="text/css" href="maproom.css" />
+<link rel="stylesheet" type="text/css" href="ifrc.css" />
+<link rev="section" href="fic.html" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="sampletabslogo.html?Set-Language=es" />
+<link rel="canonical" href="sampletabslogo.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/300/plotrange//S/216./plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.jpg" />
+<script type="text/javascript" src="maproom.js"></script>
+</head>
+<body>
+<form name="pageform" id="pageform" class="carryup carry">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carry" name="Region" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>International Federation</legend> 
+                      <a class="navlink carryup" href="fic.html">Forecasts in Context</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend>Six Day Precipitation Forecasts</legend>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseRegion"> 
+                <legend>Region</legend> 
+            </fieldset>
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+<div id="ifrcdiv">
+<img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-3" >Single-Day Precipitation Maps</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/instructions.html">Instructions</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//S/1369./plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+550+psdef//color_smoothing+null+psdef//antialias+true+psdef/" />
+<div class="dlcontrol"><b>Forecast Start Time:  </b><input name="map.S.plotvalue" value="0000 24 May 2011" size="16" onChange="changedtext(this)" /><input value="0000 23 May 2011" type="button" onclick="dovaluebutton(this,'map.S.plotvalue')" /></div>
+<h3 class="dlimagelegend"> Forecast for 24-29 May 2011 Issued 0000 24 May 2011</h3><img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//S/1369./plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+550+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlimg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCpctlecolorscale.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >Where is unusually heavy rainfall expected?</h2>
+<p align="left" property="term:description">This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be unusually heavy.</p>
+<p align="left">The blue areas are where the total 6-day rainfall is expected to be unusually heavy.  The darkest blue shading indicates areas expected to be exceptionally wet for this location. </p>
+<p align="left"><i>This forecast shows rain over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i>  The map does not distinguish areas where rainfall is expected from areas where snow is expected.  Forecasts for the amount of snow are indicated in terms of the equivalent amount of rainfall, so the actual depth of snow would be considerably more than indicated.  The forecast data are courtesy of the NOAA ESRL Reforecast project.
+</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p><b><a href="instructions.html#esrlgfs">ESRL GFS Six-Day and Daily Precipitation Forecast Maps</a></b><br /> 
+<b>Data</b>  Daily ensemble-mean forecast precipitation totals at 2.5&#176; lat/lon resolution from the Medium-Range Forecast (MRF/GFS) model run daily at 00 UTC by the NOAA ESRL PSD Reforecast project 
+<br /><b>Data Source</b> U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://www.cdc.noaa.gov/people/jeffrey.s.whitaker/refcst/">ESRL GFS Reforecast Project</a>
+<br /><b>Analyses</b>: Analyses shown here include forecast daily (days 1-6) and six-day precipitation totals, forecast daily and six-day total precipitation anomalies from the 1979-2004 mean, forecast daily and six-day total precipitation as percent of mean monthly total precipitation (1979-2004 base period), and forecast daily and six-day total precipitation percentiles (1979-2004 base period).
+</p>
+</div>
+<div id="tabs-3" class="ui-tabs-panel">
+<h2  align="center">Single-Day (24-Hour) Total Precipitation Forecast Maps</h2>
+<table BORDER="2" >
+<tr>
+<td align="center"><a href="day1fcstapcp.html">Day 1 Precipitation Forecast Maps</a></td>
+
+<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day2fcstapcp.html">Day 2 Precipitation Forecast Maps</a></td>
+<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day3fcstapcp.html">Day 3 Precipitation Forecast Maps</a></td>
+</tr>
+<tr><td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day4fcstapcp.html">Day 4 Precipitation Forecast Maps</a></td>
+<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day5fcstapcp.html">Day 5 Precipitation Forecast Maps</a></td>
+<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day6fcstapcp.html">Day 6 Precipitation Forecast Maps</a></td>
+</tr>
+</table>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ <!-- hhmts start -->Last modified: Fri Nov 18 17:31:34 EST 2011 <!-- hhmts end -->
+ </body>
+ </html>

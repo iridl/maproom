@@ -1,0 +1,243 @@
+<html><head>
+    <title>Precipitation Forecast in Context Map Tool Instructions</title>
+    <link rel="stylesheet" type="text/css" href="/site.css">
+    <STYLE TYPE="text/css">
+    <!--
+    .indented
+       {
+       padding-left: 75pt;
+       padding-right: 25pt;
+       }
+    .anchorlinks {font-size: 9pt;}
+    .rightbox	{float: right; padding-left: 10px; padding-right: 10px;}
+    p {clear: right}
+    -->
+    </STYLE>
+</head>
+<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000">
+<INGRID>
+%/leftmenusub? { leftmenulevel 0 get 2 le } def
+leftmenu
+%standardHeader
+</INGRID>
+<INGRID>saveLanguage</INGRID>
+<h3 align=center><u>How to Use the Precipitation Forecast in Context Map Tool</u></h3>
+<p>
+
+<div class="anchorlinks">
+ <ul>
+ <li><a href="#visual">Visual features of the map interface</a><br></li>
+ <li><a href="#interp">Interpreting the maps</a><br></li>
+ <div class="indented">
+  <li><a href="#esrlgfs">ESRL GFS Six-Day and Daily Precipitation Forecast Maps</a><br></li>
+  <li><a href="#prcp_fcst">IRI Seasonal Precipitation Forecast</a><br></li>
+  <li><a href="#extreme_prcp_fcst">IRI Seasonal Extreme Precipitation Forecast</a><br></li>
+  <li><a href="#pic3mo_same">IRI Predictions in Context (PiC)</a><br></li>
+  <li><a href="#CMAP_climo">CPC Merged Analysis of Precipitation (CMAP) Monthly Climatology</a><br></li>
+  <li><a href="#count">CIESIN/SEDAC Year 2005 Projected U. N.-Adjusted Population Count</a><br></li>
+  <li><a href="#imr">CIESIN/SEDAC Global Distribution of Poverty, Infant Mortality Rate, Year 2000</a><br></li>
+ </div>
+ </ul>
+</div>
+<p>
+<p><a name="visual"><u><b>Visual features of the map interface</b></u>
+<br>The map first displays the most recent six-day total precipitation percentile forecast. Users may also use the map viewer to:
+<ul>
+<li>Select a map of interest</li>
+<li>Zoom in to a more specific region of interest</li>
+<li>Select the forecast start time on the six-day total precipitation forecast maps and the IRI seasonal precipitation forecast and Prediction in Context (PiC) maps</li> 
+</ul>
+
+<p>
+<u><i>Select the map of interest</i></u>
+<br>There are radio buttons on the left side of the page under "Map Selection".
+<br>
+<ol>
+<li>Select the radio button corresponding to the map you want to see</li>
+<li>Click the "Redraw" button (blue button with circular arrow), which will have turned red, to display the map you have chosen</li>
+</ol>
+
+<p>
+<u><i>Zoom map in/out</i></u>
+<br>There are two ways to zoom the map to different regions; the click-and-drag option and the latitude/longitude 
+text boxes. Note that the map can not display areas outside of the latitudes initially shown on the interface 
+(~66.25&deg;S - 76.25&deg;N).
+<br>
+<ul>
+ <li><i>Click-and-drag</i>
+ </li>
+  <ol>
+   <li>Click the left mouse button at the upper-left corner of the region to which you would like 
+to zoom.</li>
+   <li>While holding down the button, drag the mouse to the lower-right corner of the region to which you 
+would like to zoom.</li>
+   <li>Release the left mouse button. The map will redraw automatically.<p></li>
+  </ol></li>
+ <li><i>Specific lat/lon selection</i>
+  <br>There are four lat/lon text boxes underneath and to the left of the map.
+  <br>
+  <ol>
+   <li>Change the values in the lat/lon text boxes to the limits of the region you would 
+like to display using the text format already shown.</li>
+   <li>Click the "Redraw" button.</li>
+  </ol>
+</ul>
+<p>
+<u><i>Select Forecast Start Time</i></u>
+<br>When the six-day total forecast maps or the IRI seasonal forecast or PiC maps are chosen, a text box and
+buttons will appear above the map that allow the Forecast Start Time (or Month Forecast Issued) to be selected.  
+The Forecast Start Time for the map currently being displayed appears in the text box.  
+<p>To step forward or back by one time
+step (by one day for the Six-Day maps and one month for the IRI forecast maps), click the corresponding buttons next to the text box.  
+<p>One may also modify the date in the text box, using the appropriate format (e.g. "0000 16 Jan 2008", for the six-day maps; "Jan 2008" for the IRI forecast maps), and then click the "Redraw" button to go to the forecast issued on that date.
+<p>To produce an animation of these maps over a series of dates, in the "Forecast Start Time" text box include a beginning date for the animation followed by "to", followed by the ending date, and click the "Redraw" button.  For example to see an animation of six-day forecasts from the 0000 1 Jan 2008 to the 0000 15 Jan 2008 starting dates, type in "0000 1 Jan 2008 to 0000 15 Jan 2008" and then click "Redraw".
+<p>
+<hr width="80%"> </hr>
+<p><a name="interp"><u><b>Interpreting the maps</b></u>
+<br>The following sections provide some explanation regarding the correct interpretation of each of the maps available in the interface.
+<p>
+   <a name="esrlgfs"><b>ESRL GFS Six-Day and Daily Precipitation Forecast Maps</b><br>
+<p>
+The Earth System Research Laboratory (ESRL) Physical Sciences Division (PSD) has undertaken a "reforecasting" effort using an older, but unchanging version of the Medium-Range Forecast model (MRF, a precursor to the Global Forecast System model currenly run operationally by NCEP) to produce 15-member ensemble numerical weather forecasts on a daily basis, run from 1979 to the present at 2.5&deg; lat/lon spatial resolution.  The model uses initial conditions from the NCEP/NCAR Reanalysis and is updated on a daily basis at 00 UTC.  The result is a stable model climatology of forecast variables from 1979 to the present, including accumulated precipitation.  You can find more information on the ESRL Reforecast project at the following website: <a href="http://www.cdc.noaa.gov/people/jeffrey.s.whitaker/refcst/">ESRL Reforecast Project</a> 
+<p>
+<b>Reference:</b>  Hamill, T. M., J. S. Whitaker, and S. L. Mullen, 2006:  Reforecasts:  An important dataset for improving weather predictions. <i>Bull. Amer. Meteor. Soc.</i>, <b>87</b>, 33-46.
+<p>
+In the current application of these forecast data, no adjustments have been made to account for model biases with respect to the real atmosphere.  However, using this fixed climatology, self-consistent forecast precipitation statistics, including daily anomalies, percent of mean monthly total precipitation, and precipitation percentiles, have been computed to put the daily and six-day forecast precipitation totals into historical context.  All the precipitation forecast maps shown are derived from daily ensemble mean precipitation values.  Maps based on the forecast of six-day total precipitation may be selected and displayed in the main window of the interface.  Maps of forecast single-day precipitation for days 1-6 are available via hyperlinks in the table entitled "Single-Day (24-Hour) Total Precipitation Forecast Maps" found below the main interface window. 
+<p>
+Since the spatial resolution of the forecast precipitation values from the forecast model is 2.5&deg; lat/lon, the forecast totals and statistics represent values for large-scale precipitation.  Although these maps should, in general, be able to identify regions of large-scale heavy cumulative rainfall associated with tropical cyclones, for instance, they should not be used for forecasting cyclone tracks or the intensity or location of intense fine-scale or localized precipitation (associated with orography, for example). 
+
+<p><a name="tot6dayapcp"><b>ESRL GFS Six-Day Total Forecast Precipitation</b>
+<p>
+<div class="rightbox">
+<a href="index.html?mapsel=tot6dayapcp">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
+</a>
+</div>
+This map displays six-day total forecast large-scale precipitation (in millimeters) for the period displayed on the map, using the forecast issued at the indicated forecast start time.
+
+<p><a name="tot6dayapcpanom"><b>ESRL GFS Six-Day Total Forecast Precipitation Anomaly</b>
+<p>
+<div class="rightbox">
+<a href="index.html?mapsel=tot6dayapcpanom">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcpanom/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
+</a>
+</div>
+This map displays the difference (in millimeters) between the current six-day total forecast precipitation value and the long-term 1979-2004 mean six-day total precipitation value in the model climatology for the same time of year.  The 1979-2004 mean value is calculated based upon a pentad set of six-day total values from each year in the model climatology; therefore, the long-term mean will usually be calculated using 130 values.  Although the precipitation anomaly expresses how much the currently forecast precipitation value differs from the long-term "normal" in terms of a precipitation amount, it does not clearly specify how unusual that difference is for that particular location or time of year.  For instance, while an anomaly of 30 mm may be significant in North Africa, it might not be significant in Indonesia.
+
+<p><a name="tot6dayapcppctle"><b>ESRL GFS Six-Day Total Forecast Precipitation Percentile</b>
+<p>
+<div class="rightbox">
+<a href="index.html?mapsel=tot6dayapcppctle">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctle/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
+</a>
+</div>
+This map displays the percentile of six-day total forecast precipitation with respect to all six-day forecast precipitation values in the 1979-2004 model climatology.  To determine the percentile value to be assigned to the current six-day total forecast precipitation amount, six-day total forecast precipitation values were chosen from the years 1979 to 2004 and ranked from lowest to highest.  Of these, the lowest value is assigned a value of 0, and the highest a value of 1.  The current forecast precipitation value is compared to this climatological set of paired precipitation and percentile values and assigned its percentile ranking within that set.  To emphasize the largest forecast precipitation values with respect to the model history, only percentile values above 0.9 are displayed.  Percentile values provide a good sense of how the current forecast precipitation total compares to the historical record for a given location. 
+
+<p><a name="tot6dayapcppctmonthlyclim"><b>ESRL GFS Six-Day Total Forecast Precipitation as Percent of Mean Monthly Total</b>
+<p>
+<div class="rightbox">
+<a href="index.html?mapsel=tot6dayapcppctmonthlyclim">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
+</a>
+</div>
+This map shows the current forecast six-day total precipitation value expressed as a percentage of the 1979-2004 mean monthly precipitation total from the model climatology.  This measure highlights locations of forecast extreme daily or 6-day total precipitation since it compares single-day or 6-day totals against what would normally be received over the course of a full month.  A value of 100% would indicate that the daily or six-day precipitation total is forecast to be as large as the mean monthly total normally received at that time of year in the model climatology.  A value of 25% would indicate that the daily or six-day precipitation total is forecast to be 1/4 of the mean monthly total normally received at that time of year in the model climatology.
+
+<p><a name="prcp_fcst"><b>IRI Seasonal Precipitation Forecast</b>
+<p>
+<div class="rightbox">
+<a href="index.html?mapsel=prcp_fcst">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+250+psdef+.gif">
+</a>
+</div>
+The IRI's probabilistic forecasts of seasonal precipitation are issued near the middle of each month for the full globe.  These forecasts are for the four overlapping 3-month periods, extending out to six months in advance.  The map shown in this interface is the precipitation forecast for the first 3-month season.  For a forecast issued in January, for example, the forecast displayed here is valid for the February-March-April season.
+<p>
+The forecasts provide probabilities that the seasonal precipitation will be in the lowest one-third of the climatological distribution (lowest tercile), the middle one-third (middle tercile), or the highest one-third (upper tercile).  In order to show the probabilities using only one map, the probability of the category having the greatest probability (33.3% or greater) is shown by color shading; variations in the shading in the lower and upper terciles indicate the strength of the probability.  Areas in grey indicate that the near-normal category is most likely.  Areas in white indicate the climatology forecast (33.3% for each tercile), in which case no tercile is dominant.  The climatological distribution is determined by the observations for the season in question over a recent 30-year history.  The forecasts represent a distillation of information from a number of inputs, the most important being the predictions of several dynamical atmospheric prediction models that respond to the expected patterns in sea surface temperature (SST).
+<p>
+You can find more information about the IRI seasonal forecasts at the following pages: <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&objID=944&parentname=CommunityPage&parentid=1&mode=2&in_hi_userid=2&cached=true">IRI Net Assessment Forecasts</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.Precipitation/">Map Room Forecast page</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library entry</a>.
+<p><b>Reference:</b>  Barnston, A. G., S. J. Mason, L. Goddard, D. G. Dewitt, and S. E. Zebiak, 2003:  Multimodel ensembling in seasonal climate forecasting at IRI. <i>Bull. Amer. Meteor. Soc.</i>, <b>84</b>, 1783-1796.
+
+<p><a name="extreme_prcp_fcst"><b>IRI Seasonal Extreme Precipitation Forecast</b>
+<p>
+<div class="rightbox">
+<a href="index.html?mapsel=extreme_prcp_fcst">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//plotaxislength+250+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef+.gif">
+</a>
+</div>
+The IRI's probabilistic forecast of seasonal extreme precipitation is issued near the middle of each month for the full globe.  The forecast is for the next 3-month season.  For a forecast issued in January, for example, the forecast displayed here is valid for the February-March-April season.
+<p>
+The forecast provides probabilities that the seasonal precipitation will be in the lowest fifteen percent (15%) or the highest fifteen percent of the climatological distribution.  In order to show the probabilities using only one map, the probability of the category having the greatest probability is shown by color shading; variations in the shading indicate the strength of the probability.  Light/medium/dark blue colors indicate a slightly enhanced/enhanced/highly enhanced probability (25%-40%/40%-50%/over 50%) of seasonal precipitation in the highest 15% of the climatological distribution.  Gold/brown/dark brown colors indicate a slightly enhanced/enhanced/highly enhanced probability (25%-40%/40%-50%/over 50%) of seasonal precipitation in the lowest 15% of the climatological distribution.  The climatological distribution is determined by the observations for the season in question over a recent 30-year history.  The forecasts represent a distillation of information from a number of inputs, the most important being the predictions of several dynamical atmospheric prediction models that respond to the expected patterns in sea surface temperature (SST).
+<p>
+You can find more information about the IRI seasonal forecasts at the following pages: <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&objID=944&parentname=CommunityPage&parentid=1&mode=2&in_hi_userid=2&cached=true">IRI Net Assessment Forecasts</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library entry</a>.
+<p><b>Reference:</b>  Barnston, A. G., S. J. Mason, L. Goddard, D. G. Dewitt, and S. E. Zebiak, 2003:  Multimodel ensembling in seasonal climate forecasting at IRI. <i>Bull. Amer. Meteor. Soc.</i>, <b>84</b>, 1783-1796.
+
+<p><a name="pic3mo_same"><b>IRI Predictions in Context (PiC):  Same Tendency in Seasonal Forecast and 3-Month Precipitation Observation</b>
+<p>
+<div class="rightbox">
+<a href="index.html?mapsel=pic3mo_same">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/:a:/.forecasttime/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+250+psdef+.gif">
+</a>
+</div>
+We provide a climate perspective for regions of the world by displaying a combination of observed and predicted precipitation.  Shaded areas on the "Same Tendency" map indicate locations where the IRI Net Assessment probabilistic seasonal precipitation forecast for the next 3-month season shows an enhanced likelihood of above-normal (below normal) precipitation AND where precipitation received in the 3-month season before the forecast was issued was also above normal (below normal) -- in other words, where the seasonal forecast indicates an enhanced likelihood for observed conditions to continue.  This map is updated every month.
+<p>
+NCEP gridded monthly precipitation data for 30 years (1969 to 1998) are used as the observational data reference.  CAMS-OPI monthly gridded precipitation is used for the observations for the past 3 months.  First, the rainfall observation for the most recent 3 months at each gridpoint is ranked on a 0 to 1 scale, with 0 as the driest event in 30 years for the same 3-month period, and 1.0 as the wettest event.  A value of 0.333 and less is considered dry (below-normal), and a value of 0.667 and greater is considered wet (above-normal).  Secondly, the forecast for the next season for the same location is examined.  A forecast with a 40% or greater probability for the below-normal category is considered an enhanced likelihood of dry forecast, and a forecast of 40% or greater for the above-normal category is considered an enhanced likelihood of wet forecast.
+<p>
+Based on the observation and forecast, a map is produced representing areas with enhanced likelihood of continued wetter- or drier-than-average conditions.  The maps' relative likelihoods of persistence are indicated for either wet or dry, depending upon whether the forecast probability is 40-50% (labeled "Enhanced"), or 55% and higher (labeled "Greatly Enhanced").  Therefore, areas in light yellow (light green) indicate locations where precipitation in the past season was below normal (above normal) and the forecast indicates an enhanced likelihood of continued below-normal (above-normal) precipitation in the next 3-month season.  Areas in dark yellow (dark green) indicate locations where precipitation in the past season was below normal (above normal) and the forecast indicates a greatly enhanced likelihood of continued below-normal (above-normal) precipitation in the next 3-month season.
+<p>
+For more information on this analysis, see the following pages:  <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&objID=944&PageID=0&cached=true&mode=2#pic">Predictions in Context</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.PiC/">Map Room PiC page</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.PiC/">Data Library entry</a>.
+<p>
+<p><a name="pic3mo_reversed"><b>IRI Predictions in Context (PiC):  Reversed Tendency Between Seasonal Forecast and 3-Month Precipitation Observation</b>
+<p>
+<div class="rightbox">
+<a href="index.html?mapsel=pic3mo_reversed">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_reversed/:a:/.forecasttime/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20reversed%20from%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+250+psdef+.gif">
+</a>
+</div>
+We provide a climate perspective for regions of the world by displaying a combination of observed and predicted precipitation.  Shaded areas on the "Reversed Tendency" map indicate locations where the seasonal precipitation forecast for the next 3-month season shows an enhanced likelihood of above-normal (below-normal) precipitation AND where precipitation received in the 3-month season before the forecast was issued was below normal (above normal) -- in other words, where the seasonal forecast indicates a tendency opposite to previously-observed seasonal precipitation.  This map is updated every month.
+<p>
+NCEP gridded monthly precipitation data for 30 years (1969 to 1998) are used as the observational data reference.  CAMS-OPI monthly gridded precipitation is used for the observations for the past 3 months.  First, the rainfall observation for the most recent 3 months at each gridpoint is ranked on a 0 to 1 scale, with 0 as the driest event in 30 years for the same 3-month period, and 1.0 as the wettest event.  A value of 0.333 and less is considered dry (below-normal), and a value of 0.667 and greater is considered wet (above-normal).  Secondly, the forecast for the next season for the same location is examined.  A forecast with a 40% or greater probability for the below-normal category is considered an enhanced likelihood of dry forecast, and a forecast of 40% or greater for the above-normal category is considered an enhanced likelihood of wet forecast.
+<p>
+Based on the observation and forecast, a map is produced representing areas with enhanced likelihood of reversed precipitation tendency in comparison to the previously-observed 3-month precipitation.  Areas in yellow indicate locations with observed above-normal precipitation, but with an enhanced likelihood of below-normal precipitation in the coming season.  Areas in green indicate locations with observed below-normal precipitation in the previous season, but with an enhanced likelihood of above-normal precipitation in the coming season.
+<p>
+For more information on this analysis, see the following pages:  <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&objID=944&PageID=0&cached=true&mode=2#pic">Predictions in Context</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.PiC/">Map Room PiC page</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.PiC/">Data Library entry</a>.
+<p>
+<a name="CMAP_climo"><b>CPC Merged Analysis of Precipitation (CMAP) Monthly Climatology</b>
+<p>
+<div class="rightbox">
+<a href="index.html?mapsel=CMAP_climo">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//color_smoothing+null+psdef//plotaxislength+250+psdef+.gif">
+</a>
+</div>
+1979-2004 mean monthly precipitation values are shown to provide background on "normal" monthly precipitation totals during the course of the year.  The data are from the NOAA Climate Prediction Center's Merged Analysis of Precipitation data set, available at 2.5&deg; lat/lon resolution.  CMAP precipitation values provided here are derived from a combination of surface gauge data and infrared and microwave satellite estimates.  You can find more information on this data set at the following site: <a href="http://www.cpc.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
+<p>
+<b>Reference:</b>  Xie, P. and P. A. Arkin, 1997:  Global precipitation:  A 17-year monthly analysis based on gauge observations, satellite estimates, and numerical model outputs. <i>Bull. Amer. Met. Soc.</i>, <b>78</b>, 2539-2558. 
+
+<p><a name="count"><b>CIESIN/SEDAC GPWv3 Year 2005 Projected U.N.-Adjusted Population Counts</b>
+<p>
+<div class="rightbox">
+<a href="index.html?mapsel=count">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.GPWv3/.count/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/546./plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+250+psdef+.gif">
+</a>
+</div>
+This map displays an estimate of the projected number of people living in each 2.5 arc-minute grid box in the year 2005.  The data shown are from the CIESIN Gridded Population of the World, Version 3 (<a href="http://sedac.ciesin.org/gpw/index.jsp">GPWv3</a>) data set.  Values are derived from national statistical office estimates of population and adjusted according to U.N. national population estimates.  You can find more information on this data set at the following site:  <a href="http://sedac.ciesin.org/gpw/documentation.jsp">Gridded Population of the World, Version 3</a>.
+<p>
+<b>Citation:</b>  Center for International Earth Science Information Network (CIESIN), Columbia University; United Nations Food and Agriculture Programme (FAO); and Centro Internacional de Agricultura Tropical (CIAT). 2005. Gridded Population of the World: Future Estimates (GPWFE). Palisades, NY: Socioeconomic Data and Applications Center (SEDAC), Columbia University. Available at <a href="http://sedac.ciesin.columbia.edu/gpw/">http://sedac.ciesin.columbia.edu/gpw/</a>.
+
+<p><a name="imr"><b>CIESIN/SEDAC Global Distribution of Poverty, Infant Mortality Rate, Year 2000</b>
+<p>
+<div class="rightbox">
+<a href="index.html?mapsel=imr">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+250+psdef+.gif">
+</a>
+</div>
+The CIESIN/SEDAC Global Distribution of Poverty data set includes infant mortality rate as one proxy for poverty.  This map displays the infant mortality rate (number of infant deaths per 10,000 live births) for every 0.25&deg; lat/lon grid box, for the year 2000.
+<p>
+More information on this poverty indicator and the full data set can be found at the following site:  <a href="http://sedac.ciesin.columbia.edu/povmap/">Global Distribution of Poverty</a>.
+<p>
+<b>Citation:</b>  Center for International Earth Science Information Network (CIESIN), Columbia University; 2005 Global subnational infant mortality rates [dataset].  CIESIN, Palisades, NY, USA. Available at: <a href="http://www.ciesin.columbia.edu/povmap/ds_global.html">http://www.ciesin.columbia.edu/povmap/ds_global.html</a>
+<p>
+
+Please feel free to <a href="mailto:mbell@iri.columbia.edu">email us</a> with any questions or comments.  
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+#ifrcdiv {
+float: right; position: relative; top: -7px; width: 225px; height: 21px
+} 
+#ifrcicon {
+position: absolute; left: 0px; top: 0px;
+	border: 1px;
+        border-style: outset;
+	border-color: LightGrey;
+        padding-right: 2px;
+        padding-bottom: 1px;
+        background: white;
+}
+@media only all and (max-width: 850px) {
+#ifrcdiv {
+top: -7px;
+width: 40px;
+} 
+#ifrcicon {
+clip: rect(0px,36px,21px,0px);
+position: absolute; left: 0px; top: 0px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        background: white;
+}
+}
+
