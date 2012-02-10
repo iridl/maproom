@@ -17,8 +17,8 @@ function domapsel(){
 it=document.getElementById('mapselect');
 it.parentNode.getElementsByTagName('legend')[0].innerHTML=it.options[it.selectedIndex].parentNode.label;
 var opt=it.options[it.selectedIndex];
-var hold=document.location.href.lastIndexOf('/');
-if (opt.value != document.location.href.substr(hold+1)){
+var hold=document.location.pathname.lastIndexOf('/');
+if (opt.value != document.location.pathname.substr(hold+1)){
 callPageForm(opt.value,"carry");
 }
 }
@@ -196,8 +196,8 @@ item.firstChild.firstChild.innerHTML,
 item.firstChild.firstChild.getAttribute('href'),false,
 false
 );
-var hold=document.location.href.lastIndexOf('/');
-if (opt.value == document.location.href.substr(hold+1)){
+var hold=document.location.pathname.lastIndexOf('/');
+if (opt.value == document.location.pathname.substr(hold+1)){
 opt.selected=true;
 }
 og.appendChild(opt);
