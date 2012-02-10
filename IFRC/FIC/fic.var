@@ -1,9 +1,0 @@
- URI: fic
-
-  URI: fic.en.html
-  Content-type: text/html
-  Content-language: en
-
-  URI: fic.es.html
-  Content-type: text/html
-  Content-language: es
