@@ -83,7 +83,7 @@ padding-bottom: 2px;
 padding-right: 2px;
             }
 .optionsBar:after {
-content: url(iri.png);
+content: url(icons/iri.png);
 float: right;
 height: 54px;
 width: 54px;
@@ -421,7 +421,7 @@ margin-bottom: 0px;
 min-height: 32px;
 }
 .optionsBar:after {
-content: url(iri32.png);
+content: url(icons/iri32.png);
 float: right;
 height: 32px;
 width: 32px;
