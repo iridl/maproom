@@ -5,7 +5,7 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="en"
+ xml:lang="es"
 lang="es"
       >
 <head>
