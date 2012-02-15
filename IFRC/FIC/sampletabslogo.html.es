@@ -59,7 +59,7 @@ lang="es"
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;D&#243;nde se esperan lluvias inusualmente abundantes?</h2>
 <p align="left" property="term:description">Este mapa muestra las &#225;reas donde se predice que la lluvia (o nieve) acumulada dentro de los pr&#243;ximos seis d&#237;as sea excepcionalmente abundante.</p>
-<p align="left">Las &#225;reas azules son las &#225;reas donde se espera que la lluvia total en el per&#237;odo de seis d&#237;as ser&#225; extraordinariamente abundante.  El tono de azul m&#225;s oscuro indica las &#225reas donde se espera que est&#233; excepcionalmente lluvioso. </p>
+<p align="left">Las &#225;reas azules son las &#225;reas donde se espera que la lluvia total en el per&#237;odo de seis d&#237;as ser&#225; extraordinariamente abundante.  El tono de azul m&#225;s oscuro indica las &#225;reas donde se espera que est&#233; excepcionalmente lluvioso. </p>
 <p align="left"><i>Este pron&#243;stico solamente muestra lluvias sobre &#225;reas grandes, y no debe ser utilizado para predecir la trayectoria de ciclones, lluvias locales, o como una previsi&#243;n de inundaciones.</i>  El mapa no distingue &#225;reas donde se espera lluvia, de donde se espera nieve.  Los pron&#243;sticos para la cantidad de nieve est&#225;n indicados en t&#233;rminos equivalentes a cantidad de lluvia, por lo que la profundidad real de la nieve ser&#237;a considerablemente m&#225;s que lo indicado.  Los datos de pron&#243;stico son cortes&#237;a del proyecto NOAA ESRL Reforecast.
 </p>
 </div>
@@ -69,7 +69,7 @@ lang="es"
 cipitaciones Diarias y de Seis D&#237;as</a></b><br /> 
 <b>Datos</b>  Promedios de lluvia diaria total pronosticada a 2.5&#176; lat/lon con ensambles del modelo Medium-Range Forecast (MRF/GFS) corrido diariamente a las 00 UTC por el NOAA ESRL PSD Reforecast project 
 <br /><b>Fuente de Datos</b> U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://www.cdc.noaa.gov/people/jeffrey.s.whitaker/refcst/">Proyecto de ESRL GFS Reforecast</a>
-<br /><b>An&#225lisis</b>: Los an&#225;lisis presentados aqu&#237; incluyen pron&#243;sticos de las precipitaciones diarias (dias 1 a 6) y de las precipitaciones totales en seis d&#237;as, pron&#243;sticos de las anomal&#237;as de las precipitaciones diarias y de las anomal&#237;as de la precipitaci&#243;n total en seis d&#237;as (con respecto a 1979-2004), pron&#243;stico de la precipitaci&#243;n diaria y total de seis d&#237;as como porcentaje de la precipitaci&#243;n total mensual (periodo base 1979-2004), y pron&#243;stico de la precipitaci&#243;n diaria y del total de seis d&#237;as como percentiles del per&#237;odo base 1979-2004.
+<br /><b>An&#225;lisis</b>: Los an&#225;lisis presentados aqu&#237; incluyen pron&#243;sticos de las precipitaciones diarias (dias 1 a 6) y de las precipitaciones totales en seis d&#237;as, pron&#243;sticos de las anomal&#237;as de las precipitaciones diarias y de las anomal&#237;as de la precipitaci&#243;n total en seis d&#237;as (con respecto a 1979-2004), pron&#243;stico de la precipitaci&#243;n diaria y total de seis d&#237;as como porcentaje de la precipitaci&#243;n total mensual (periodo base 1979-2004), y pron&#243;stico de la precipitaci&#243;n diaria y del total de seis d&#237;as como percentiles del per&#237;odo base 1979-2004.
 </p>
 </div>
 <div id="tabs-3" class="ui-tabs-panel">
