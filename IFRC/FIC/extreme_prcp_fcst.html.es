@@ -58,14 +58,14 @@
 <h2 align="center"  property="term:title" >&#191;Es probable que los pr&#243;ximos 3 meses sean excepcionalmente h&#250;medos o secos?</h2>
 <p align="left" property="term:description"> El mapa muestra d&#243;nde y cu&#225;n probable es que los pr&#243;ximos tres meses sean extremadamente h&#250;medos o secos.  Extremo se refiere a los valores que estan entre los 15% mas altos y mas bajos en los registros historicos. </p>
 <p align="left"> Las &#225;reas azules muestran &#225;reas en donde hay una probabilidad mayor de que existan condiciones extremadamente h&#250;medas durante los pr&#243;ximos tres meses.  El azul m&#225;s oscuro indica probabilidades m&#225;s altas de condiciones extremadamente h&#250;medas.  Las &#225;reas naranjas y marrones muestran &#225;reas donde hay una probabilidad m&#225;s grande de que existan condiciones extremadamente secas durante los pr&#243;ximos tres meses.  El marr&#243;n m&#225;s oscuro indica probabilidades m&#225;s altas de condiciones extremadamente secas.</p>
-<p align="left"><i>Este pron&#243;stico solo muestra la probabilidad de que la lluvia (o nieve) acumulada en 3 meses sea inusualmente alta o baja, y no indica posibilidades de eventos individuales de lluvias abundantes.  Los pron&#243;sticos se aplican solamente a &#225reas grandes, y no deberia ser usado para predecir condiciones locales, o como un pron&#243;stico de inundaciones.</i> 
+<p align="left"><i>Este pron&#243;stico solo muestra la probabilidad de que la lluvia (o nieve) acumulada en 3 meses sea inusualmente alta o baja, y no indica posibilidades de eventos individuales de lluvias abundantes.  Los pron&#243;sticos se aplican solamente a &#225;reas grandes, y no deberia ser usado para predecir condiciones locales, o como un pron&#243;stico de inundaciones.</i> 
 </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
 <p><b><a href="instructions.html.es#extreme_prcp_fcst">Pron&#243;stico de la Precipitaci&#243;n Extrema del IRI</a></b><br /> 
 <b>Datos</b> El pron&#243;stico provee probabilidades de que la precipitaci&#243;n estacional (3 meses) estar&#225; en el 15% m&#225;s bajo o en el 15% m&#225;s alto de la distribuci&#243;n climatol&#243;gica (30 a&#241;os) para el tiempo de entrega de la primera IRI Net Assessment Forecast, emitido cada mes a una resoluci&#243;n 2.5&#176; lat/lon.
-<br /><b>Fuente de Datos</b> International Research Institute for Climate and Society, <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&objID=944&parentname=CommunityPage&parentid=1&mode=2&in_hi_userid=2&cached=true">Pron&#243;stico de Net Assessment</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library</a>
+<br /><b>Fuente de Datos</b> International Research Institute for Climate and Society, <a href="http://iri.columbia.edu/climate/forecast/net">Pron&#243;stico de Net Assessment</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library</a>
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
