@@ -309,7 +309,7 @@ var sel=document.createElement('select');
 sel.name="Set-Language";
 sel.onchange=languageChange;
 var opt=document.createElement('option');
-opt.value=document.getElementsByTagName('html')[0].lang;
+opt.value=document.getElementsByTagName('html')[0].getAttribute("xml:lang");
 opt.innerHTML=Languages[opt.value];
 opt.value="";
 sel.appendChild(opt);
