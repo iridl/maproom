@@ -13,7 +13,18 @@ $.ready = function(fn) {
   else
       window.onload = fn;
 }
+var maproomurl = "http://iridl.ldeo.columbia.edu/maproom/";
 var maproomroot = document.location.href.substr(0,document.location.href.indexOf('/maproom/')+9);
+function localHrefOf(ghref){
+var lhref;
+if(maproomurl == ghref.substr(0,maproomurl.length)){
+lhref = maproomroot + ghref.substr(maproomurl.length);
+}
+else {
+lhref= ghref;
+}
+return lhref;
+}
 function domapsel(){
 it=document.getElementById('mapselect');
 it.parentNode.getElementsByTagName('legend')[0].innerHTML=it.options[it.selectedIndex].parentNode.label;
@@ -172,7 +183,7 @@ sel.name="mapsel";
 sel.onchange=domapsel;
 sel.id='mapselect';
 var slhref=sl.getElementsByTagName('a')[0].href;
-slhref=addLanguageVar(slhref);
+slhref=addLanguageVar(localHrefOf(slhref));
 s.appendChild(sel);
 if(slhref){
 var lin = slhref.lastIndexOf('/');
@@ -412,6 +423,7 @@ callPageForm(it.href,it.className);
 return false;
 }
 function callPageForm(href,classes){
+var localhref=localHrefOf(href);
 var myform=document.getElementById('pageform');
 if(myform){
 var inputs=myform.elements;
@@ -430,15 +442,15 @@ alldisabled=false;
 }
 }
 if(alldisabled){
-document.location.href=href;
+document.location.href=localhref;
 }
 else {
-myform.action=href;
+myform.action=localhref;
 myform.submit();
 }
 }
 else {
-document.location.href=href;
+document.location.href=localhref;
 }
 }
 $.ready(

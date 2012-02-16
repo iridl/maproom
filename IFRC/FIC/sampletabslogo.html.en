@@ -12,7 +12,7 @@
 <title>IFRC PIC: Where is unusually heavy rainfall expected?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link rev="section" href="../index.html" />
+<link rev="section" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/index.html" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="sampletabslogo.html?Set-Language=es" />
 <link rel="canonical" href="sampletabslogo.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
@@ -29,7 +29,7 @@
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>International Federation</legend> 
-                      <a class="navlink carryup" href="../index.html">Forecasts in Context</a>
+                      <a class="navlink carryup" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/index.html">Forecasts in Context</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend>Six Day Precipitation Forecasts</legend>
