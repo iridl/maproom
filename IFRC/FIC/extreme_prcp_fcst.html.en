@@ -65,7 +65,7 @@
 <h2  align="center">Dataset Documentation</h2>
 <p><b><a href="instructions.html#extreme_prcp_fcst">IRI Extreme Seasonal Precipitation Forecast</a></b><br /> 
 <b>Data</b> Probabilities that seasonal (3-month) precipitation will be within the upper 15% or lower 15% of the historical (30-year) distribution for the first lead time from the IRI Net Assessment Forecast, issued every month at 2.5&#176; lat/lon resolution
-<br /><b>Data Source</b> International Research Institute for Climate and Society, <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&objID=944&parentname=CommunityPage&parentid=1&mode=2&in_hi_userid=2&cached=true">Net Assessment Forecasts</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library entry</a>
+<br /><b>Data Source</b> International Research Institute for Climate and Society, <a href="http://iri.columbia.edu/climate/forecast/net">Net Assessment Forecasts</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library entry</a>
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
