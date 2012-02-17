@@ -12,7 +12,6 @@
 <title>IFRC PIC: &#191;Es probable que los pr&#243;ximos 3 meses sean excepcionalmente h&#250;medos o secos?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link rev="section" href="../index.html" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="extreme_prcp_fcst.html?Set-Language=en" />
 <link rel="canonical" href="extreme_prcp_fcst.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
@@ -29,7 +28,7 @@
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Federaci&#243;n Internacional</legend> 
-                      <a class="navlink carryup" href="../index.html">Predicciones en Contexto</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/IFRC/">Predicciones en Contexto</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend>Pron&#243;stico para los Pr&#243;ximos 3 Meses</legend>

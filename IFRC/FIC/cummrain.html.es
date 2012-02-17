@@ -12,7 +12,6 @@
 <title>&#191;IFRC PIC: Cu&#225;nta lluvia acumulada se espera?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link rev="section" href="../index.html" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="cummrain.html?Set-Language=en" />
 <link rel="canonical" href="cummrain.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
@@ -29,7 +28,7 @@
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Federaci&#243;n Internacional</legend> 
-                      <a class="navlink carryup" href="../index.html">Predicciones en Contexto</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/IFRC/">Predicciones en Contexto</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend>Pron&#243;sticos 6 D&#237;as</legend>

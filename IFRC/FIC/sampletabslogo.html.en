@@ -4,7 +4,7 @@
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
-      version="XHTML+RDFa 1.0"
+      version="XHTML+RDFa 1.1"
  xml:lang="en"
       >
 <head>
@@ -12,7 +12,6 @@
 <title>IFRC PIC: Where is unusually heavy rainfall expected?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link rev="section" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/index.html" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="sampletabslogo.html?Set-Language=es" />
 <link rel="canonical" href="sampletabslogo.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
@@ -29,7 +28,7 @@
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>International Federation</legend> 
-                      <a class="navlink carryup" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/index.html">Forecasts in Context</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/IFRC/">Forecasts in Context</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend>Six Day Precipitation Forecasts</legend>

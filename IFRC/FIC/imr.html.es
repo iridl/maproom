@@ -12,7 +12,6 @@
 <title>IFRC PIC: &#191;Las zonas de riesgo con lluvias abundantes, contienen poblaciones vulnerables?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link rev="section" href="../index.html" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="imr.html?Set-Language=en" />
 <link rel="canonical" href="imr.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
@@ -29,7 +28,7 @@
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Federaci&#243;n Internacional</legend> 
-                      <a class="navlink carryup" href="../index.html">Predicciones en Contexto</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/IFRC/">Predicciones en Contexto</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend>Indicadores de Vulnerabilidad</legend>
