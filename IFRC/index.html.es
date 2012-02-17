@@ -13,7 +13,6 @@
 <link rel="stylesheet" type="text/css" href="../maproom.css" />
 <link rel="stylesheet" type="text/css" href="ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
-<link rev="section" href="../index.html" />
 <link rel="canonical" href="index.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
@@ -27,7 +26,7 @@
 <div class="controlBar">
            <fieldset class="navitem"> 
                 <legend>Data Library</legend> 
-                      <a class="navlink" href="http://iridl.ldeo.columbia.edu/maproom/">Maproom</a>
+                      <a rev="section" class="navlink" href="/maproom/">Maproom</a>
             </fieldset> 
            <fieldset class="navitem"> 
                 <legend>Federaci&#243;n Internacional</legend> 

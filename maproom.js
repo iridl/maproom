@@ -13,11 +13,12 @@ $.ready = function(fn) {
   else
       window.onload = fn;
 }
-var maproomurl = "http://iridl.ldeo.columbia.edu/maproom/";
 var maproomroot = document.location.href.substr(0,document.location.href.indexOf('/maproom/')+9);
 function localHrefOf(ghref){
 var lhref;
-if(maproomurl == ghref.substr(0,maproomurl.length)){
+var ifmap  = ghref.indexOf('/maproom/');
+if(ifmap > -1){
+var maproomurl = ghref.substr(0,ifmap+9);
 lhref = maproomroot + ghref.substr(maproomurl.length);
 }
 else {
