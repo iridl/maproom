@@ -119,8 +119,8 @@ border-radius: 10px;
        min-height: 36px;
 }
 .navitem {
-         padding-left: 6px;
-         padding-right: 6px;
+         padding-left: 4px;
+         padding-right: 4px;
          padding-top: 2px;
          padding-bottom: 6px;
          display: inline;
@@ -138,6 +138,8 @@ border-radius: 10px;
 	margin-top: 0px;
 	margin-bottom: 0px;
         margin-right: 2px;
+         padding-left: 4px;
+         padding-right: 4px;
          padding-top: 2px;
          padding-bottom: 6px;
         -moz-border-radius: 8px;
