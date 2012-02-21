@@ -241,7 +241,7 @@ og.appendChild(opt);
 }
 if(typeof(sel.selectedIndex) === 'number'){
 sel.parentNode.getElementsByTagName('legend')[0].innerHTML=sel.options[sel.selectedIndex].parentNode.label;
-sel.previousSibling.innerHTML=sel.options[sel.selectedIndex].label;
+sel.previousSibling.innerHTML=sel.options[sel.selectedIndex].innerHTML;
 }
 
 }
