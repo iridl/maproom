@@ -29,7 +29,7 @@ return lhref;
 function domapsel(){
 it=document.getElementById('mapselect');
 it.parentNode.getElementsByTagName('legend')[0].innerHTML=it.options[it.selectedIndex].parentNode.label;
-it.previousSibling.innerHTML=it.options[it.selectedIndex].label;
+it.previousSibling.innerHTML=it.options[it.selectedIndex].innerHTML;
 
 var opt=it.options[it.selectedIndex];
 var fullpathname = document.location.href;
