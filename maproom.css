@@ -118,6 +118,9 @@ margin-bottom: 0px;
 border-radius: 10px;
        min-height: 36px;
 }
+.selectvalue {
+display: none;
+}
 .navitem {
          padding-left: 4px;
          padding-right: 4px;
@@ -695,6 +698,12 @@ display: block;
 .ui-tabs ul li {font-size: 8pt;}
 #share {display: none;}
 #chooseLanguage {display: none;}
+.selectvalue {
+display: inline;
+}
+.selectvalue + select {
+display: none;
+}
 }
 #displayText {
 	color: #000033;

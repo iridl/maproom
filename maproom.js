@@ -29,6 +29,8 @@ return lhref;
 function domapsel(){
 it=document.getElementById('mapselect');
 it.parentNode.getElementsByTagName('legend')[0].innerHTML=it.options[it.selectedIndex].parentNode.label;
+it.previousSibling.innerHTML=it.options[it.selectedIndex].label;
+
 var opt=it.options[it.selectedIndex];
 var fullpathname = document.location.href;
 if(fullpathname.indexOf("?")>= 0){
@@ -179,7 +181,11 @@ var sl=document.getElementById('toSectionList');
 if (s && sl){
 var sels=s.getElementsByTagName('select');
 if(sels.length < 1){
-var sel=document.createElement('select');
+var sel=document.createElement('span');
+sel.className='selectvalue';
+sel.innerHTML='Global';
+s.appendChild(sel);
+sel=document.createElement('select');
 sel.name="mapsel";
 sel.onchange=domapsel;
 sel.id='mapselect';
@@ -235,6 +241,7 @@ og.appendChild(opt);
 }
 if(typeof(sel.selectedIndex) === 'number'){
 sel.parentNode.getElementsByTagName('legend')[0].innerHTML=sel.options[sel.selectedIndex].parentNode.label;
+sel.previousSibling.innerHTML=sel.options[sel.selectedIndex].label;
 }
 
 }
@@ -245,6 +252,10 @@ function insertRegion(){
 if(theregion){
 var sel=theregion.getElementsByTagName('select');
 if (sel.length == 0){
+sel=document.createElement('span');
+sel.className='selectvalue';
+sel.innerHTML='Global';
+theregion.appendChild(sel);
 sel=document.createElement('select');
 sel.size=1;
 sel.name="forecastRegion";
