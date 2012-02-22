@@ -59,7 +59,7 @@ border-radius: 12px;
 padding-bottom: 2px;
 padding-right: 2px;
             }
-.controlBar:after {
+.controlBar::after, .controlBar:after {
 content: ".";
 display: block;
 clear: both;
@@ -82,7 +82,7 @@ border-radius: 12px;
 padding-bottom: 2px;
 padding-right: 2px;
             }
-.optionsBar:after {
+.optionsBar::after, .optionsBar:after {
 content: url(icons/iri.png);
 float: right;
 height: 54px;
@@ -102,6 +102,7 @@ margin-bottom: 0px;
          font-size: 16pt;
          text-decoration: none;
          color: navy;
+	 line-height: 1.1;
          }
 .navtext {
          font-size: 16pt;
@@ -119,13 +120,36 @@ border-radius: 10px;
        min-height: 36px;
 }
 .selectvalue {
+background-color: WhiteSmoke;
+padding: 0px;
+padding-left: 2px;
+padding-right: 0px;
+margin: 0px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+line-height: 1.5;
+display: inline;
+}
+.selectvalue::after, .selectvalue:after {
+padding-left: 4px;
+padding-right: 4px;
+content: "\2023";
+}
+.selectvalue + select {
 display: none;
 }
+.controlBar:hover .navitem select,.controlBar:active .navitem select, .navitem:active select {
+display: inline;
+}
+.controlBar:hover .navitem .selectvalue,.controlBar:active .navitem .selectvalue {
+display: none;
+}
+
 .navitem {
          padding-left: 4px;
          padding-right: 4px;
          padding-top: 2px;
-         padding-bottom: 6px;
+         padding-bottom: 4px;
          display: inline;
 	margin: 2px;
 	margin-top: 0px;
@@ -445,7 +469,7 @@ margin-bottom: 0px;
 .optionsBar {
 min-height: 32px;
 }
-.optionsBar:after {
+.optionsBar::after, .optionsBar:after {
 content: url(icons/iri32.png);
 float: right;
 height: 32px;
@@ -524,11 +548,18 @@ display: inline;
        min-width: 60%;
 }
 }
-@media only all and (min-width: 1000px) {
+@media only all and (min-width: 1050px) {
 .dlimage {
        max-width: 65%;
        min-width: 65%;
 }
+.selectvalue {
+display: none;
+}
+.selectvalue + select {
+display: inline;
+}
+
 }
 .ui-widget-header .ui-state-default {
         background: #ECECEC;
@@ -661,7 +692,7 @@ display: inline;
         -moz-border-radius-bottomleft: 10px;
         -moz-border-radius-bottomright: 10px;
 }
-.ui-tabs-panel:after, .ui-tabs-panel-active:after, .ui-tabs-panel-hidden:after {
+.ui-tabs-panel::after, .ui-tabs-panel-active::after, .ui-tabs-panel-hidden::after, .ui-tabs-panel:after, .ui-tabs-panel-active:after, .ui-tabs-panel-hidden:after  {
 content: ".";
 height: 0px;
 display: block;
