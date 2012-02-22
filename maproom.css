@@ -135,6 +135,8 @@ padding-left: 4px;
 content: "\2023";
 }
 .selectvalue + select {
+padding-left: 0px;
+padding-right: 0px;
 display: none;
 }
 .controlBar:hover .navitem select,.controlBar:active .navitem select, .navitem:active select {
@@ -547,7 +549,7 @@ display: inline;
        min-width: 60%;
 }
 }
-@media only all and (min-width: 1050px) {
+@media only all and (min-width: 1024px) {
 .dlimage {
        max-width: 65%;
        min-width: 65%;
