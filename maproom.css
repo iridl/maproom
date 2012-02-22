@@ -316,10 +316,16 @@ margin: 0px;
 }
 .navitem select {
 font-size: 8pt;
-display: none;
 }
 .lang select {
 font-size: 8pt;
+display: none;
+}
+.selectvalue {
+font-size: 8pt;
+display: inline;
+}
+.selectvalue + select {
 display: none;
 }
 .navmore {
@@ -332,6 +338,10 @@ display: none;
 .navitem:hover select {
 display: inline;
 }
+.navitem:hover .selectvalue {
+display: none;
+}
+
 .lang:hover select {
 display: inline;
 }
@@ -363,6 +373,9 @@ margin-bottom: 0px;
 	font-size: 7pt;
 display: inline;
 }
+.controlBar:hover .navitem .selectvalue {
+display: none;
+}
 .controlBar:hover .lang select {
 	font-size: 7pt;
 	display: inline;
@@ -376,6 +389,9 @@ display: inline;
 }
 .controlBar:active .navitem select {
 display: inline;
+}
+.controlBar:active.navitem .selectvalue {
+display: none;
 }
 .controlBar:active .lang select {
 display: inline;
@@ -440,6 +456,11 @@ margin: 1px;
 border: 0px;
 margin-bottom: 0px;
 }
+.selectvalue {
+display: inline;
+font-size: 6pt;
+}
+
 .navitem > legend {
        font-size: 3pt;
 }
