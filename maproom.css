@@ -549,6 +549,7 @@ display: inline;
        min-width: 60%;
 }
 }
+/* ipad is 1024 -- this 1024 and above */
 @media only all and (min-width: 1024px) {
 .dlimage {
        max-width: 65%;
