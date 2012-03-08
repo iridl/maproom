@@ -297,8 +297,8 @@ var jsontxt = xmlhttp.responseText;
 xmlhttp.mylink.info=JSON.parse(jsontxt);
 /* info now has figure information */
 /*for (x in xmlhttp.mylink.info){
-alert(x);
-} */
+alert(x + " is " + JSON.stringify(xmlhttp.mylink.info[x]));
+}*/
 }
 };
 xmlhttp.open("GET",infourl,true);
