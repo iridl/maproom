@@ -171,14 +171,20 @@ return xmlhttp;
 }
 function readwithxmlhttp(slhref,sel){
 var xmlhttp=getXMLhttp();
-xmlhttp.open("GET",slhref,false);
-xmlhttp.send();
+xmlhttp.mysel=sel;
+xmlhttp.onreadystatechange = function() {
+if(xmlhttp.readyState == 4){
 var xmlDoc=xmlhttp.responseXML;
+var sel=xmlhttp.mysel;
 if(!xmlDoc){
 parser= new DOMParser();
 xmlDoc=parser.parseFromString(xmlhttp.responseText,"text/xml");
 }
 dofinishchooseSection(sel,xmlDoc);
+}
+};
+xmlhttp.open("GET",slhref,true);
+xmlhttp.send();
 }
 function insertchooseSection(){
 var s=document.getElementById('chooseSection');
