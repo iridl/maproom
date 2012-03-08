@@ -157,7 +157,8 @@ s.appendChild(iframe);
 }
 iframe.src=slhref;
 }
-function readwithxmlhttp(slhref,sel){
+function getXMLhttp(){
+var xmlhttp;
 if (window.XMLHttpRequest)
   {// code for IE7+, Firefox, Chrome, Opera, Safari
   xmlhttp=new XMLHttpRequest();
@@ -166,6 +167,10 @@ else
   {// code for IE6, IE5
   xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
   }
+return xmlhttp;
+}
+function readwithxmlhttp(slhref,sel){
+var xmlhttp=getXMLhttp();
 xmlhttp.open("GET",slhref,false);
 xmlhttp.send();
 var xmlDoc=xmlhttp.responseXML;
@@ -277,6 +282,37 @@ s.insertBefore(leg,s.firstChild);
 }
 else {
 leg=sl[0];
+}
+var sfigs=s.getElementsByTagName('link');
+if(sfigs.length && sfigs[0].rel=='iridl:hasFigure'){
+if(!sfigs[0].info){
+sfigs[0].info="seeking";
+var figurl=sfigs[0].href;
+var infourl=figurl + 'info.json';
+var xmlhttp= getXMLhttp();
+xmlhttp.mylink=sfigs[0];
+xmlhttp.onreadystatechange = function() {
+if(xmlhttp.readyState == 4){
+var jsontxt = xmlhttp.responseText;
+var myjson=JSON.parse(jsontxt);
+for (x in myjson){
+if(x != xmlhttp.mylink.href){
+alert("got " + x  +" vs " + xmlhttp.mylink.href);
+xmlhttp.mylink.info="failed";
+}
+else {
+xmlhttp.mylink.info=myjson[x];
+}
+}
+/* info now has figure information */
+/* for (x in xmlhttp.mylink.info){
+alert(x);
+} */
+}
+};
+xmlhttp.open("GET",infourl,true);
+xmlhttp.send();
+}
 }
 }
 }
