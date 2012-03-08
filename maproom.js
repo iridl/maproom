@@ -294,18 +294,9 @@ xmlhttp.mylink=sfigs[0];
 xmlhttp.onreadystatechange = function() {
 if(xmlhttp.readyState == 4){
 var jsontxt = xmlhttp.responseText;
-var myjson=JSON.parse(jsontxt);
-for (x in myjson){
-if(x != xmlhttp.mylink.href){
-alert("got " + x  +" vs " + xmlhttp.mylink.href);
-xmlhttp.mylink.info="failed";
-}
-else {
-xmlhttp.mylink.info=myjson[x];
-}
-}
+xmlhttp.mylink.info=JSON.parse(jsontxt);
 /* info now has figure information */
-/* for (x in xmlhttp.mylink.info){
+/*for (x in xmlhttp.mylink.info){
 alert(x);
 } */
 }
