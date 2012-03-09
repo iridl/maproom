@@ -48,9 +48,8 @@
       <li><a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/instructions.es.html">Instrucciones</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef/" />
-<div class="dlcontrol"><b>Time:  </b><input name="map.T.plotvalue" value="Jan" size="16" onChange="changedtext(this)" /><input value="Feb" type="button" onclick="dovaluebutton(this,'map.T.plotvalue')" /></div>
-<h3 class="dlimagelegend"> Jan</h3><img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef+.gif" border="0" alt="image" />
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef+.gif" border="0" alt="image" />
   <br />
   <img class="dlimg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRC_CMAP_climo_es.gif" />
 </fieldset>

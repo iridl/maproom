@@ -313,6 +313,13 @@ var figurl=sfigs[0].href;
 var infourl=figurl + 'info.json';
 var xmlhttp= getXMLhttp();
 xmlhttp.mylink=sfigs[0];
+var imglist=s.getElementsByTagName('img');
+for (var i = 0; i<imglist.length; i++){
+if(imglist[i].className == 'dlimg'){
+xmlhttp.mylink.figureimage=imglist[i];
+break;
+}
+}
 xmlhttp.onreadystatechange = function() {
 if(xmlhttp.readyState == 4){
 var jsontxt = xmlhttp.responseText;
@@ -321,10 +328,63 @@ xmlhttp.mylink.info=JSON.parse(jsontxt);
 /* for (x in xmlhttp.mylink.info){
 alert(x + " is " + JSON.stringify(xmlhttp.mylink.info[x]));
 } */
+DLimageBuildControls(xmlhttp.mylink);
 }
 };
 xmlhttp.open("GET",infourl,true);
 xmlhttp.send();
+DLimageResizeImage(xmlhttp.mylink);
+}
+}
+}
+}
+function DLimageResizeImage(mylink){
+var imagesrc=mylink.figureimage.src;
+var patt = new RegExp('//plotaxislength.([0-9]*).psdef');
+var csize = imagesrc.match(patt);
+if (csize.length<2){
+	csize=432;
+}
+else {
+	csize=csize[1];
+}
+if(mylink.figureimage.width > csize){
+newsize = mylink.figureimage.width - 72;
+imagesrc2 = imagesrc.replace(patt,"//plotaxislength+" + newsize + "+psdef");
+mylink.figureimage.src=imagesrc2;
+}
+}
+function DLimageBuildControls(mylink){
+if(mylink.nextSibling.className != 'dlcontrol'){
+var dimlist=mylink.info["iridl:hasDimensions"];
+var currentObj=mylink;
+for (var i = 0; i<dimlist.length; i++) {
+var glist=dimlist[i]['iridl:gridvalues'];
+if(glist && (glist.length > 1)){
+var ctl = document.createElement('div');
+ctl.className='dlcontrol';
+var ipt = document.createElement('span');
+ipt.className='controlLabel';
+ipt.innerHTML=dimlist[i]['cfatt:long_name'] + '  ';
+ctl.appendChild(ipt);
+var iptset = document.createElement('span');
+iptset.className='controlSet';
+ctl.appendChild(iptset);
+ipt = document.createElement('span');
+ipt.className='lowerLimit';
+ipt.innerHTML=glist[0];
+iptset.appendChild(ipt);
+ipt = document.createElement('input');
+ipt.name=dimlist[i]['iridl:name'] + '.plotvalue';
+ipt.value=dimlist[i]['iridl:defaultvalue'];
+ipt.size=16;
+iptset.appendChild(ipt);
+ipt = document.createElement('span');
+ipt.className='upperLimit';
+ipt.innerHTML=glist[glist.length-1];
+iptset.appendChild(ipt);
+currentObj.parentNode.insertBefore(ctl,currentObj.nextSibling);
+currentObj=ctl;
 }
 }
 }
