@@ -185,6 +185,23 @@ dofinishchooseSection(xmlhttp.mysel,xmlDoc);
 xmlhttp.open("GET",slhref,true);
 xmlhttp.send();
 }
+      function getElementsByAttribute(oElm, strTagName, strAttributeName, strAttributeValue){
+      var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+      var arrReturnElements = new Array();
+      var oAttributeValue = (typeof strAttributeValue != "undefined")? new RegExp("(^|\\s)" + strAttributeValue + "(\\s|$)", "i") : null;
+      var oCurrent;
+      var oAttribute;
+      for(var i=0; i<arrElements.length; i++){
+      oCurrent = arrElements[i];
+      oAttribute = oCurrent.getAttribute && oCurrent.getAttribute(strAttributeName);
+      if(typeof oAttribute == "string" && oAttribute.length > 0){
+      if(typeof strAttributeValue == "undefined" || (oAttributeValue && oAttributeValue.test(oAttribute))){
+      arrReturnElements.push(oCurrent);
+      }
+      }
+      }
+      return arrReturnElements;
+      }
 function insertchooseSection(){
 var s=document.getElementById('chooseSection');
 var sl=document.getElementById('toSectionList');
@@ -193,7 +210,7 @@ var sels=s.getElementsByTagName('select');
 if(sels.length < 1){
 var sel=document.createElement('span');
 sel.className='selectvalue';
-sel.innerHTML='Global';
+sel.innerHTML=getElementsByAttribute(document,'*','property','term:title')[0].innerHTML;
 s.appendChild(sel);
 sel=document.createElement('select');
 sel.name="mapsel";
@@ -301,9 +318,9 @@ if(xmlhttp.readyState == 4){
 var jsontxt = xmlhttp.responseText;
 xmlhttp.mylink.info=JSON.parse(jsontxt);
 /* info now has figure information */
-/*for (x in xmlhttp.mylink.info){
+/* for (x in xmlhttp.mylink.info){
 alert(x + " is " + JSON.stringify(xmlhttp.mylink.info[x]));
-}*/
+} */
 }
 };
 xmlhttp.open("GET",infourl,true);
