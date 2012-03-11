@@ -22,10 +22,16 @@ background-color: WhiteSmoke;
 display: inline-block;
 margin-right: 14pt;
 font-size: 14pt;
-color: DarkSlateGrey;
 }
 .controlSet {
 display: inline-block;
+font-size: 8pt;
+color: SlateGrey;
+}
+.controlSet:active, .controlSet:hover {
+display: inline-block;
+font-size: 8pt;
+color: black;
 }
 .upperLimit {
 display: inline-block;
