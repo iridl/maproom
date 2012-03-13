@@ -7,7 +7,7 @@ font-size: 12pt;
 display: inline;
 margin: 2pt;
 }
-.lowerLimit {
+.lowerLimit, .lowerLimit-disabled {
 display: inline-block;
 padding-left: 5px;
 padding-right: 2px;
@@ -15,6 +15,19 @@ padding-right: 2px;
 -moz-border-radius-bottomleft: 10px;
 border-top-left-radius: 10pt;
 border-bottom-left-radius: 10pt;
+border: 2px;
+background-color: WhiteSmoke;
+}
+.oneStep, .oneStep-disabled {
+display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+margin-left: 5px;
+margin-right: 5px;
+-moz-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10pt;
+border-radius: 10pt;
 border: 2px;
 background-color: WhiteSmoke;
 }
@@ -33,7 +46,7 @@ display: inline-block;
 font-size: 8pt;
 color: black;
 }
-.upperLimit {
+.upperLimit, .upperLimit-disabled {
 display: inline-block;
 padding-left: 2px;
 padding-right: 5px;
