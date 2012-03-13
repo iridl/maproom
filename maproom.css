@@ -17,9 +17,11 @@ border-top-left-radius: 10pt;
 border-bottom-left-radius: 10pt;
 border: 2px;
 background-color: WhiteSmoke;
+cursor: pointer;
 }
 .oneStep, .oneStep-disabled {
 display: inline-block;
+cursor: pointer;
 padding-left: 5px;
 padding-right: 5px;
 margin-left: 1px;
@@ -68,6 +70,7 @@ border-top-right-radius: 10pt;
 border-bottom-right-radius: 10pt;
 border: 2px;
 background-color: WhiteSmoke;
+cursor: pointer;
 }
 .iriicon {
 float: left;
