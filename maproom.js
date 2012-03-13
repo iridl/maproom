@@ -55,6 +55,30 @@ function tabclick(it){
         document.getElementById(sid).className="ui-tabs-panel";
     return false;
 }
+function limitclickevent(evt){
+   var evt = (evt) ? evt : ((event) ? event : null );
+   var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+   var myinput = it.parentNode.getElementsByTagName('input')[0];
+	myinput.value=it.innerHTML;
+ }
+function stepupclickevent(evt){
+   var evt = (evt) ? evt : ((event) ? event : null );
+   var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+   var myinput = it.parentNode.getElementsByTagName('input')[0];
+	var cin = it.parentNode.info['iridl:gridvalues'].indexOf(myinput.value);
+	if(cin < it.parentNode.info['iridl:gridvalues'].length-1) {
+	myinput.value = it.parentNode.info['iridl:gridvalues'][cin+1];
+	}
+ }
+function stepdownclickevent(evt){
+   var evt = (evt) ? evt : ((event) ? event : null );
+   var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+   var myinput = it.parentNode.getElementsByTagName('input')[0];
+	var cin = it.parentNode.info['iridl:gridvalues'].indexOf(myinput.value);
+	if(cin >0) {
+	myinput.value = it.parentNode.info['iridl:gridvalues'][cin-1];
+	}
+ }
 function tabclickevent(evt){
     evt = (evt) ? evt : ((event) ? event : null );
     it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
@@ -369,13 +393,16 @@ ipt.innerHTML=dimlist[i]['cfatt:long_name'] + '  ';
 ctl.appendChild(ipt);
 var iptset = document.createElement('span');
 iptset.className='controlSet';
+iptset.info=dimlist[i];
 ctl.appendChild(iptset);
 ipt = document.createElement('span');
 ipt.className='lowerLimit';
+ipt.onclick=limitclickevent;
 ipt.innerHTML=glist[0];
 iptset.appendChild(ipt);
 ipt = document.createElement('span');
 ipt.className='oneStep';
+ipt.onclick=stepdownclickevent;
 ipt.innerHTML='<';
 iptset.appendChild(ipt);
 ipt = document.createElement('input');
@@ -384,11 +411,13 @@ ipt.value=dimlist[i]['iridl:defaultvalue'];
 ipt.size=16;
 iptset.appendChild(ipt);
 ipt = document.createElement('span');
+ipt.onclick=stepupclickevent;
 ipt.className='oneStep';
 ipt.innerHTML='>';
 iptset.appendChild(ipt);
 ipt = document.createElement('span');
 ipt.className='upperLimit';
+ipt.onclick=limitclickevent;
 ipt.innerHTML=glist[glist.length-1];
 iptset.appendChild(ipt);
 currentObj.parentNode.insertBefore(ctl,currentObj.nextSibling);
