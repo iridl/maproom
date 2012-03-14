@@ -372,7 +372,7 @@ if (csize.length<2){
 else {
 	csize=csize[1];
 }
-var targetsize = 10*Math.round((mylink.parentNode.clientWidth - 20 - 72)/10,0);
+var targetsize = 10*Math.round((mylink.parentNode.clientWidth - 20 - 72 + 9)/10,0);
 if(targetsize > csize){
 imagesrc2 = imagesrc.replace(patt,"//plotaxislength+" + targetsize + "+psdef");
 mylink.figureimage.src=imagesrc2;
