@@ -372,9 +372,9 @@ if (csize.length<2){
 else {
 	csize=csize[1];
 }
-if(mylink.figureimage.width > csize){
-newsize = mylink.figureimage.width - 72;
-imagesrc2 = imagesrc.replace(patt,"//plotaxislength+" + newsize + "+psdef");
+var targetsize = 10*Math.round((mylink.parentNode.clientWidth - 20 - 72)/10,0);
+if(targetsize > csize){
+imagesrc2 = imagesrc.replace(patt,"//plotaxislength+" + targetsize + "+psdef");
 mylink.figureimage.src=imagesrc2;
 }
 }
