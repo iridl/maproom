@@ -66,7 +66,7 @@ function stepupclickevent(evt){
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
    var myinput = it.parentNode.getElementsByTagName('input')[0];
 	var cin = it.parentNode.info['iridl:gridvalues'].indexOf(myinput.value);
-	if(cin < it.parentNode.info['iridl:gridvalues'].length-1) {
+	if(cin > -1 && cin < it.parentNode.info['iridl:gridvalues'].length-1) {
 	myinput.value = it.parentNode.info['iridl:gridvalues'][cin+1];
 	}
  }
