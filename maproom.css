@@ -18,8 +18,11 @@ border-bottom-left-radius: 10pt;
 border: 2px;
 background-color: WhiteSmoke;
 cursor: pointer;
+-webkit-touch-callout: none;
 -webkit-user-select: none;
+-khtml-user-select: none;
 -moz-user-select: none;
+-ms-user-select: none;
 user-select: none;
 }
 .oneStep, .oneStep-disabled {
@@ -35,8 +38,11 @@ border-top-right-radius: 10pt;
 border-bottom-right-radius: 10pt;
 border: 2px;
 background-color: WhiteSmoke;
+-webkit-touch-callout: none;
 -webkit-user-select: none;
+-khtml-user-select: none;
 -moz-user-select: none;
+-ms-user-select: none;
 user-select: none;
 }
 .lowerLimit + .oneStep {
@@ -77,8 +83,11 @@ border-bottom-right-radius: 10pt;
 border: 2px;
 background-color: WhiteSmoke;
 cursor: pointer;
+-webkit-touch-callout: none;
 -webkit-user-select: none;
+-khtml-user-select: none;
 -moz-user-select: none;
+-ms-user-select: none;
 user-select: none;
 }
 .iriicon {
