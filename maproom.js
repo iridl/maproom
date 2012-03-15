@@ -403,7 +403,7 @@ iptset.appendChild(ipt);
 ipt = document.createElement('span');
 ipt.className='oneStep';
 ipt.onclick=stepdownclickevent;
-ipt.innerHTML='<';
+ipt.innerHTML='&lt;';
 iptset.appendChild(ipt);
 ipt = document.createElement('input');
 ipt.name=dimlist[i]['iridl:name'] + '.plotvalue';
