@@ -60,6 +60,7 @@ function limitclickevent(evt){
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
    var myinput = it.parentNode.getElementsByTagName('input')[0];
 	myinput.value=it.innerHTML;
+	imageinputvaluechange(evt);
  }
 function stepupclickevent(evt){
    var evt = (evt) ? evt : ((event) ? event : null );
@@ -68,6 +69,7 @@ function stepupclickevent(evt){
 	var cin = it.parentNode.info['iridl:gridvalues'].indexOf(myinput.value);
 	if(cin > -1 && cin < it.parentNode.info['iridl:gridvalues'].length-1) {
 	myinput.value = it.parentNode.info['iridl:gridvalues'][cin+1];
+	imageinputvaluechange(evt);
 	}
  }
 function stepdownclickevent(evt){
@@ -77,7 +79,15 @@ function stepdownclickevent(evt){
 	var cin = it.parentNode.info['iridl:gridvalues'].indexOf(myinput.value);
 	if(cin >0) {
 	myinput.value = it.parentNode.info['iridl:gridvalues'][cin-1];
+	imageinputvaluechange(evt);
 	}
+ }
+function imageinputvaluechange(evt){
+   var evt = (evt) ? evt : ((event) ? event : null );
+   var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+ var myinput = it.parentNode.getElementsByTagName('input')[0];
+ var myimage =  it.parentNode.mylink.figureimage;
+  myimage.src = myimage.src.replace(/[?].*/,'') + '?' + myinput.name + '=' + encodeURIComponent(myinput.value);
  }
 function tabclickevent(evt){
     evt = (evt) ? evt : ((event) ? event : null );
@@ -394,6 +404,7 @@ ctl.appendChild(ipt);
 var iptset = document.createElement('span');
 iptset.className='controlSet';
 iptset.info=dimlist[i];
+iptset.mylink=mylink;
 ctl.appendChild(iptset);
 ipt = document.createElement('span');
 ipt.className='lowerLimit';
@@ -406,8 +417,9 @@ ipt.onclick=stepdownclickevent;
 ipt.innerHTML='&lt;';
 iptset.appendChild(ipt);
 ipt = document.createElement('input');
-ipt.name=dimlist[i]['iridl:name'] + '.plotvalue';
+ipt.name=dimlist[i]['iridl:name'];
 ipt.value=dimlist[i]['iridl:defaultvalue'];
+ipt.onchange=imageinputvaluechange;
 ipt.size=16;
 iptset.appendChild(ipt);
 ipt = document.createElement('span');
