@@ -66,9 +66,12 @@ function stepupclickevent(evt){
    var evt = (evt) ? evt : ((event) ? event : null );
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
    var myinput = it.parentNode.getElementsByTagName('input')[0];
-	var cin = it.parentNode.info['iridl:gridvalues'].indexOf(myinput.value);
-	if(cin > -1 && cin < it.parentNode.info['iridl:gridvalues'].length-1) {
-	myinput.value = it.parentNode.info['iridl:gridvalues'][cin+1];
+	var cin = it.parentNode.info['iridl:gridvalues']['iridl:valuelist'].indexOf(myinput.value);
+	if(cin > -1 && cin < it.parentNode.info['iridl:gridvalues']['iridl:valuelist'].length-1) {
+	myinput.value = it.parentNode.info['iridl:gridvalues']['iridl:valuelist'][cin+1];
+	if(cin < it.parentNode.info['iridl:gridvalues']['iridl:valuelist'].length-2) {
+	myinput.guessvalue = it.parentNode.info['iridl:gridvalues']['iridl:valuelist'][cin+2];
+	}
 	imageinputvaluechange(evt);
 	}
  }
@@ -76,9 +79,12 @@ function stepdownclickevent(evt){
    var evt = (evt) ? evt : ((event) ? event : null );
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
    var myinput = it.parentNode.getElementsByTagName('input')[0];
-	var cin = it.parentNode.info['iridl:gridvalues'].indexOf(myinput.value);
+	var cin = it.parentNode.info['iridl:gridvalues']['iridl:valuelist'].indexOf(myinput.value);
 	if(cin >0) {
-	myinput.value = it.parentNode.info['iridl:gridvalues'][cin-1];
+	myinput.value = it.parentNode.info['iridl:gridvalues']['iridl:valuelist'][cin-1];
+	if(cin > 1) {
+	myinput.guessvalue = it.parentNode.info['iridl:gridvalues']['iridl:valuelist'][cin-2];
+	}
 	imageinputvaluechange(evt);
 	}
  }
@@ -88,6 +94,10 @@ function imageinputvaluechange(evt){
  var myinput = it.parentNode.getElementsByTagName('input')[0];
  var myimage =  it.parentNode.mylink.figureimage;
   myimage.src = myimage.src.replace(/[?].*/,'') + '?' + myinput.name + '=' + encodeURIComponent(myinput.value);
+	if(myinput.guessvalue){
+        preload(myimage.src.replace(/[?].*/,'') + '?' + myinput.name + '=' + encodeURIComponent(myinput.guessvalue));
+	myinput.guessvalue='';
+	}
  }
 function tabclickevent(evt){
     evt = (evt) ? evt : ((event) ? event : null );
@@ -202,6 +212,15 @@ else
   xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
   }
 return xmlhttp;
+}
+function preload(href){
+var xmlhttp=getXMLhttp();
+xmlhttp.onreadystatechange=function() {
+if (xmlhttp.readyState==4) {
+  }
+} 
+xmlhttp.open("GET",href,true);
+xmlhttp.send();
 }
 function readwithxmlhttp(slhref,sel){
 var xmlhttp=getXMLhttp();
@@ -393,7 +412,7 @@ if(mylink.nextSibling.className != 'dlcontrol'){
 var dimlist=mylink.info["iridl:hasDimensions"];
 var currentObj=mylink;
 for (var i = 0; i<dimlist.length; i++) {
-var glist=dimlist[i]['iridl:gridvalues'];
+var glist=dimlist[i]['iridl:gridvalues']['iridl:valuelist'];
 if(glist && (glist.length > 1)){
 var ctl = document.createElement('div');
 ctl.className='dlcontrol';
