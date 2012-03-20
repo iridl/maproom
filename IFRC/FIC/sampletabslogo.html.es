@@ -32,7 +32,7 @@
                       <a rev="section" class="navlink carryup" href="/maproom/IFRC/">Predicciones en Contexto</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend>Pron&#243;sticos 6 D&#237;as</legend>
+                <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#SixDayForecasts"><span property="term:label">Pron&#243;sticos 6 D&#237;as</span></legend>
             </fieldset> 
             <fieldset class="navitem" id="chooseRegion"> 
                 <legend>Regi&#243;n</legend> 
