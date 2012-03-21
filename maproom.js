@@ -59,7 +59,15 @@ function limitclickevent(evt){
    var evt = (evt) ? evt : ((event) ? event : null );
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
    var myinput = it.parentNode.getElementsByTagName('input')[0];
+	var last = it.parentNode.info['iridl:gridvalues']['iridl:valuelist'].length-1;
 	myinput.value=it.innerHTML;
+	var c0 = it.parentNode.info['iridl:gridvalues']['iridl:valuelist'].indexOf(myinput.value);
+	if(c0 == 0){
+	myinput.guessvalue=it.parentNode.info['iridl:gridvalues']['iridl:valuelist'][1];
+}
+	if(c0 == last){
+	myinput.guessvalue=it.parentNode.info['iridl:gridvalues']['iridl:valuelist'][last-1];
+}
 	imageinputvaluechange(evt);
  }
 function stepupclickevent(evt){
