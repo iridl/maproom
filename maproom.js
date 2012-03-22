@@ -1,4 +1,9 @@
+/*
+MBB 2012 -- maproom implementation in javascript
 
+$.ready runs a function at DOMContentLoaded if possible, otherwise onload
+runs immediately if already loaded.  It is invoked at the end of this file.
+*/
 window.$ = {};
 $.ready = function(fn) {
   if (document.readyState == "complete")
@@ -13,6 +18,15 @@ $.ready = function(fn) {
   else
       window.onload = fn;
 }
+/*
+To simplify writing maproom documents, and accessing them locally,
+from test locations, and from the server, urls that start /maproom/
+are prepending with the document root, as long as the urls are processed
+by the maproom javascript code.
+
+maproomroot: holds the document root
+localHrefOf: converts a /maproom/ reference to be relative to the current document
+*/
 var maproomroot = document.location.href.substr(0,document.location.href.indexOf('/maproom/')+9);
 function localHrefOf(ghref){
 var lhref;
@@ -650,9 +664,13 @@ else {
 document.location.href=localhref;
 }
 }
+// loadmaproom is run once (at DOMContentLoaded if possible, or onload).
+var loadmaproomneeded=true;
 $.ready(
 function loadmaproom(){
-setPageForm()
+if(loadmaproomneeded){
+loadmaproomneeded=false;
+setPageForm();
 tabsSetup();
 insertcontrolBar();
 initializeDLimage();
@@ -660,5 +678,6 @@ insertchooseSection();
 insertRegion();
 insertshare();
 setupPageFormLinks();
+}
 }
 );
