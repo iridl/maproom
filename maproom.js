@@ -440,10 +440,11 @@ ipt.name = 'plotaxislength';
 ipt.type='hidden';
 pform.appendChild(ipt);
 }
-var targetsize = 50*Math.round((mylink.parentNode.clientWidth - 20 - 72 + 9)/50,0);
+var targetsize = 10*Math.round((mylink.parentNode.clientWidth - 20 - 72 + 9)/10,0);
 if(targetsize > csize){
 ipt.value=targetsize;
-mylink.figureimage.src=appendPageForm(mylink.figureimage.src,mylink.figureimage.className);
+var newsrc=appendPageForm(mylink.figureimage.src,mylink.figureimage.className);
+mylink.figureimage.src=newsrc;
 }
 }
 function DLimageBuildControls(mylink){
