@@ -431,10 +431,19 @@ if (csize.length<2){
 else {
 	csize=csize[1];
 }
-var targetsize = 10*Math.round((mylink.parentNode.clientWidth - 20 - 72 + 9)/10,0);
+var pform=document.getElementById('pageform');
+var ipt=pform.elements['plotaxislength'];
+if(!ipt){
+ipt= document.createElement('input');
+ipt.className = mylink.figureimage.className;
+ipt.name = 'plotaxislength';
+ipt.type='hidden';
+pform.appendChild(ipt);
+}
+var targetsize = 50*Math.round((mylink.parentNode.clientWidth - 20 - 72 + 9)/50,0);
 if(targetsize > csize){
-imagesrc2 = imagesrc.replace(patt,"//plotaxislength+" + targetsize + "+psdef");
-mylink.figureimage.src=imagesrc2;
+ipt.value=targetsize;
+mylink.figureimage.src=appendPageForm(mylink.figureimage.src,mylink.figureimage.className);
 }
 }
 function DLimageBuildControls(mylink){
