@@ -54,7 +54,7 @@ if(fullpathname.indexOf("#")>= 0){
 fullpathname = fullpathname.substring(0,fullpathname.indexOf("#"));
 }
 if (it.hrefroot + opt.value != fullpathname){
-callPageForm(it.hrefroot + opt.value,"carry");
+submitPageForm(it.hrefroot + opt.value,"carry");
 }
 }
 function tabclick(it){
@@ -115,10 +115,18 @@ function imageinputvaluechange(evt){
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
  var myinput = it.parentNode.getElementsByTagName('input')[0];
  var myimage =  it.parentNode.mylink.figureimage;
-  myimage.src = myimage.src.replace(/[?].*/,'') + '?' + myinput.name + '=' + encodeURIComponent(myinput.value);
-	if(myinput.guessvalue){
-        preload(myimage.src.replace(/[?].*/,'') + '?' + myinput.name + '=' + encodeURIComponent(myinput.guessvalue));
+// copy value(s) to page form and get url
+var pform=document.getElementById('pageform');
+var guess='';
+  if(myinput.guessvalue){
+  pform.elements[myinput.name].value = myinput.guessvalue;
+  guess = appendPageForm(myimage.src.replace(/[?].*/,''),myimage.className);
 	myinput.guessvalue='';
+}
+  pform.elements[myinput.name].value = myinput.value;
+  myimage.src = appendPageForm(myimage.src.replace(/[?].*/,''),myimage.className);
+	if(guess){
+        preload(guess);
 	}
  }
 function tabclickevent(evt){
@@ -458,11 +466,23 @@ ipt.onclick=stepdownclickevent;
 ipt.innerHTML='&lt;';
 iptset.appendChild(ipt);
 ipt = document.createElement('input');
+ipt.className=mylink.figureimage.className;
 ipt.name=dimlist[i]['iridl:name'];
 ipt.value=dimlist[i]['iridl:defaultvalue'];
 ipt.onchange=imageinputvaluechange;
 ipt.size=16;
 iptset.appendChild(ipt);
+if(document.getElementById('pageform')){
+var pform=document.getElementById('pageform');
+if(!pform.elements[ipt.name]){
+var iptcpy= document.createElement('input');
+iptcpy.className = ipt.className;
+iptcpy.name = ipt.name;
+iptcpy.value=ipt.value;
+iptcpy.type='hidden';
+pform.appendChild(iptcpy);
+}
+}
 ipt = document.createElement('span');
 ipt.onclick=stepupclickevent;
 ipt.className='oneStep';
@@ -630,10 +650,13 @@ function onClickPageForm(evt){
     evt = (evt) ? evt : ((event) ? event : null );
 var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement;
 
-callPageForm(it.href,it.className);
+submitPageForm(it.href,it.className);
 return false;
 }
-function callPageForm(href,classes){
+/*
+submitPageForm -- submits pageform to href, appending inputs corresponding to class.
+*/
+function submitPageForm(href,classes){
 var localhref=localHrefOf(href);
 var myform=document.getElementById('pageform');
 if(myform){
@@ -662,6 +685,48 @@ myform.submit();
 }
 else {
 document.location.href=localhref;
+}
+}
+/*
+appendPageForm -- appends to href, appending pageform inputs corresponding to class.
+*/
+function appendPageForm(href,classes){
+var localhref=localHrefOf(href);
+var myform=document.getElementById('pageform');
+if(myform){
+var inputs=myform.elements;
+        for (var i = 0; i < inputs.length; i++) {
+inputs[i].disabled=true;
+}
+var alldisabled=true;
+var clist = classes.split(' ');
+for ( var ic = 0; ic < clist.length; ic++ ){
+var cclass=clist[ic];
+var members = document.getElementsByClassName(cclass);
+for ( var j = 0; j < members.length; j++ )
+if(members[j].disabled && members[j].value){
+members[j].disabled=false;
+alldisabled=false;
+}
+}
+if(alldisabled){
+return localhref;
+}
+else {
+var action = localhref;
+delim= '?';
+        for (var i = 0; i < inputs.length; i++) {
+var myinput=inputs[i];
+	if(!myinput.disabled){
+	action = action + delim + myinput.name + '=' + encodeURIComponent(myinput.value);
+	delim='&'
+	}
+	}
+return action;
+}
+}
+else {
+return localhref;
 }
 }
 // loadmaproom is run once (at DOMContentLoaded if possible, or onload).
