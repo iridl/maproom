@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="pic3mo_reversed.html?Set-Language=en" />
 <link rel="maproom:canonical" href="pic3mo_reversed.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
@@ -32,7 +33,7 @@
                       <a rev="section" class="navlink carryup" href="/maproom/IFRC/">Predicciones en Contexto</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend>Pron&#243;stico para los Pr&#243;ximos 3 Meses</legend>
+                <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts"><span property="term:label">Pron&#243;stico para los Pr&#243;ximos 3 Meses</span></legend>
             </fieldset> 
             <fieldset class="navitem" id="chooseRegion"> 
                 <legend>Regi&#243;n</legend> 
