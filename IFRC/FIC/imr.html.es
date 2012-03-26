@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="imr.html?Set-Language=en" />
 <link rel="maproom:canonical" href="imr.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#VulnerabilityIndicators" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
@@ -32,7 +33,7 @@
                       <a rev="section" class="navlink carryup" href="/maproom/IFRC/">Predicciones en Contexto</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend>Indicadores de Vulnerabilidad</legend>
+                <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#VulnerabilityIndicators"><span property="term:label">Indicadores de Vulnerabilidad</span></legend>
             </fieldset> 
             <fieldset class="navitem" id="chooseRegion"> 
                 <legend>Regi&#243;n</legend> 
