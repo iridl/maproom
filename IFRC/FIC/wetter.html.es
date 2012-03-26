@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="wetter.html?Set-Language=en" />
 <link rel="maproom:canonical" href="wetter.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#SixDayForecasts" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
@@ -32,7 +33,7 @@
                       <a rev="section" class="navlink carryup" href="/maproom/IFRC/">Predicciones en Contexto</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend>Pron&#243;sticos 6 D&#237;as</legend>
+                <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#SixDayForecasts"><span property="term:label">Pron&#243;sticos para los pr&#243;ximos 6 d&#237;as</span></legend>
             </fieldset> 
             <fieldset class="navitem" id="chooseRegion"> 
                 <legend>Regi&#243;n</legend> 
