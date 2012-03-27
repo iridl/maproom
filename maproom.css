@@ -537,7 +537,7 @@ display: inline;
 }
 }
 
-img.dlimg {
+img.dlimg, img.dlauximg {
          width: 100%;
 }
 .ui-widget {

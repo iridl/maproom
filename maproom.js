@@ -368,9 +368,22 @@ sel.innerHTML='Global';
 theregion.appendChild(sel);
 sel=document.createElement('select');
 sel.size=1;
-sel.name="forecastRegion";
+sel.name="Region";
+sel.className='pageformcopy';
+sel.onchange=regiononchange;
 sel.innerHTML='<optgroup label="Region"><option value="Afr">Africa</option><option value="Asi">Asia</option><option value="Aus">Australia</option><option value="Eur">Europe</option><option value="MEa">Middle East</option><option value="NAm">North America</option><option value="Pac">Pacific Islands</option><option value="SAm">South America</option><option value="World" selected="selected">Global</option></optgroup>';
 theregion.appendChild(sel);
+}
+}
+}
+function regiononchange(evt){
+   var evt = (evt) ? evt : ((event) ? event : null );
+   var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+var pform=document.getElementById('pageform');
+if(pform){
+if(pform.elements[it.name]){
+pform.elements[it.name].value=it.options[it.selectedIndex].value;
+updatePageForm(pform.elements[it.name]);
 }
 }
 }
@@ -435,7 +448,8 @@ var pform=document.getElementById('pageform');
 var ipt=pform.elements['plotaxislength'];
 if(!ipt){
 ipt= document.createElement('input');
-ipt.className = mylink.figureimage.className;
+ipt.className = mylink.figureimage.className.split(' ')[0];
+appendMissingClass(pform,ipt.className);
 ipt.name = 'plotaxislength';
 ipt.type='hidden';
 pform.appendChild(ipt);
@@ -476,7 +490,7 @@ ipt.onclick=stepdownclickevent;
 ipt.innerHTML='&lt;';
 iptset.appendChild(ipt);
 ipt = document.createElement('input');
-ipt.className=mylink.figureimage.className;
+ipt.className=mylink.figureimage.className.split(' ')[0];
 ipt.name=dimlist[i]['iridl:name'];
 ipt.value=dimlist[i]['iridl:defaultvalue'];
 ipt.onchange=imageinputvaluechange;
@@ -487,6 +501,7 @@ var pform=document.getElementById('pageform');
 if(!pform.elements[ipt.name]){
 var iptcpy= document.createElement('input');
 iptcpy.className = ipt.className;
+appendMissingClass(pform,ipt.className);
 iptcpy.name = ipt.name;
 iptcpy.value=ipt.value;
 iptcpy.type='hidden';
@@ -606,6 +621,7 @@ function getQueryVariable(variable) {
 function setPageForm(){
 var myform=document.getElementById('pageform');
 if(myform){
+var achange=false;
 var inputs=myform.elements;
         var query = window.location.search.substring(1);
         var vars = query.split("&");
@@ -613,6 +629,7 @@ var inputs=myform.elements;
         for (var i = 0; i < vars.length; i++) {
             pair = vars[i].split("=");
             if (inputs[pair[0]]) {
+	        achange=true;
 		inputs[pair[0]].value=unescape(pair[1]);
             }
         }
@@ -644,7 +661,6 @@ function setupPageFormLinks(){
 var myform=document.getElementById('pageform');
 if(myform){
 var clist = myform.className.split(' ');
-var atags = document.getElementsByTagName('a');
 for ( var i = 0; i < clist.length; i++ )
          {
 var cclass=clist[i];
@@ -654,8 +670,82 @@ if(members[j].href){
 members[j].onclick=onClickPageForm;
 }
 }
+updatePageForm();
 }
 }
+
+/*
+function to indicate an update to the pageform
+updates all image urls that have classes that match the pageform
+updates elements in class pageformcopy with corresponding name.
+
+If supplied with the input element that changed,
+1) only checks the classes that correspond, and
+2) uses guessvalue to do readahead, resetting when done. 
+*/
+function updatePageForm(changedInput, guessvalue){
+var myform=document.getElementById('pageform');
+if(myform){
+var clist;
+if(changedInput){
+clist = changedInput.className.split(' ');
+}
+else {
+clist = myform.className.split(' ');
+}
+for ( var i = 0; i < clist.length; i++ )
+         {
+var cclass=clist[i];
+var members = document.getElementsByClassName(cclass);
+for ( var j = 0; j < members.length; j++ ) {
+var cmem=members[j];
+if(cmem.src){
+var newsrc = appendPageForm(cmem.src.replace(/[?].*/,''),cmem.className);
+if(newsrc != cmem.src){
+    cmem.src = newsrc;
+}
+}
+}
+}
+var stag = document.getElementsByClassName('pageformcopy');
+for (var i=0; i< stag.length ; i++){
+var sel=stag[i];
+var cval = myform.elements[sel.name].value;
+if((typeof(sel.value) != 'undefined') && cval && sel.value != cval){
+sel.value=cval;
+}
+if(typeof(sel.selectedIndex) === 'number'){
+var options=sel.options;
+var cval = myform.elements[sel.name].value;
+if(cval){
+for (var j=0; j < options.length ; j++){
+if(options[j].value == cval){
+sel.selectedIndex=j;
+break;
+}
+}
+}
+}
+}
+}
+}
+/* if none of the classes in srcclass are in element.className,
+appends the first class in srclass
+*/
+function appendMissingClass(element,srcclass){
+var targetclass=element.className;
+var slist = srcclass.split(' ');
+var match = false;
+for (var i = 0 ; i < slist.length; i++){
+if(targetclass.indexOf(slist[i]) >=0){
+match = true;
+}
+}
+if(!match){
+element.className = targetclass + ' ' + slist[0];
+}
+}
+
 function onClickPageForm(evt){
     evt = (evt) ? evt : ((event) ? event : null );
 var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement;
