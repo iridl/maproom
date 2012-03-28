@@ -371,7 +371,7 @@ sel.size=1;
 sel.name="Region";
 sel.className='pageformcopy';
 sel.onchange=regiononchange;
-sel.innerHTML='<optgroup label="Region"><option value="Afr">Africa</option><option value="Asi">Asia</option><option value="Aus">Australia</option><option value="Eur">Europe</option><option value="MEa">Middle East</option><option value="NAm">North America</option><option value="Pac">Pacific Islands</option><option value="SAm">South America</option><option value="World" selected="selected">Global</option></optgroup>';
+sel.innerHTML='<optgroup label="Region"><option value="bb:[-20,-40,55,40]">Africa</option><option value="bb:[40,-10,170,75]">Asia</option><option value="bb:[100,-55,180,0]">Australia</option><option value="bb:[-20,35,40,75]">Europe</option><option value="bb:[10,15,75,45]">Middle East</option><option value="bb:[-170,15,-60,75]">North America</option><option value="bb:[-100,0,-70,35]">Central America</option><option value="bb:[-90,-60,-30,15]">South America</option><option value="" selected="selected">Global</option></optgroup>';
 theregion.appendChild(sel);
 }
 }
