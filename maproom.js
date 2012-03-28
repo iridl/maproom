@@ -379,6 +379,8 @@ theregion.appendChild(sel);
 function regiononchange(evt){
    var evt = (evt) ? evt : ((event) ? event : null );
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+/* updates selectvalue element*/
+it.previousSibling.innerHTML=it.options[it.selectedIndex].innerHTML;
 var pform=document.getElementById('pageform');
 if(pform){
 if(pform.elements[it.name]){
@@ -721,6 +723,9 @@ if(cval){
 for (var j=0; j < options.length ; j++){
 if(options[j].value == cval){
 sel.selectedIndex=j;
+if(sel.previousSibling.className='selectvalue'){
+sel.previousSibling.innerHTML=sel.options[sel.selectedIndex].innerHTML;
+}
 break;
 }
 }
