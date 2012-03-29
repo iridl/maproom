@@ -750,9 +750,16 @@ if(it.height<it.width && it.parentNode.className.indexOf('tall')>0){
 it.parentNode.className = it.parentNode.className.replace(' tall','');
 }
 var pform=document.getElementById('pageform');
-if(pform && pform.elements['plotaxislength']){
-if(it.height>it.width && pform.elements['plotaxislength'].value && it.height  < pform.elements['plotaxislength'].value){
-var targetsize = 10*Math.round((it.height - 20 - 72 + 9)/10,0);
+if(pform && pform.elements['plotaxislength'] && pform.elements['plotaxislength'].value){
+var clientsize = Math.max(it.width,it.height); 
+var plen = pform.elements['plotaxislength'].value;
+if(it.height>it.width && ((it.height  < plen ) || (it.height > 1.4*plen))){
+var targetsize = 10*Math.round((clientsize - 20 - 72 + 9)/10,0);
+pform.elements['plotaxislength'].value = targetsize;
+updatePageForm(pform.elements['plotaxislength']);
+}
+if(it.height<it.width && ((it.width  < plen ) || (it.width > 1.4*plen))){
+var targetsize = 10*Math.round((clientsize - 20 - 72 + 9)/10,0);
 pform.elements['plotaxislength'].value = targetsize;
 updatePageForm(pform.elements['plotaxislength']);
 }
