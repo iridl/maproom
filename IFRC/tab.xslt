@@ -3,20 +3,27 @@
             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	    xmlns:maproomregistry="http://iri.columbia.edu/~jdcorral/ingrid/maproom/maproomregistry.owl#"
 	    xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
-	    xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
-            exclude-result-prefixes="rdf vocab iriterms maproomregistry">
+	    xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#">
 <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 <xsl:strip-space elements="*"/>
 
-<xsl:variable name="root" select="substring-after(rdf:RDF/rdf:Description/@rdf:about[1],'maproom/')"/>
-<xsl:variable name="language" select="document('IFRCstub.xhtml')//@xml:lang"/>
-<xsl:key name="tablabels" match="rdf:RDF/rdf:Description/maproomregistry:tablabel[@xml:lang=document('IFRCstub.xhtml')//@xml:lang]" use="."/>
+<xsl:variable name="language" select="//@xml:lang"/>
+<xsl:variable name="tabs" select="document('tabs.xml')"/>
+<xsl:key name="tablabels" match="rdf:RDF/rdf:Description/maproomregistry:tablabel[$language=@xml:lang]" use="."/>
 
-    <xsl:template match="/">
+
+    <xsl:template match="@*|node()">
+      <xsl:copy>
+           <xsl:apply-templates select="@*|node()"/>
+      </xsl:copy>
+    </xsl:template>
+
+    <xsl:template match="*[@class='rightcol tabbedentries']">
+      <xsl:variable name="root" select="substring-after($tabs/rdf:RDF/rdf:Description/@rdf:about[1],'maproom/')"/>
       <div class="rightcol">
       <div class="ui-tabs">
          <ul class="ui-tabs-nav">
-            <xsl:for-each select="//rdf:RDF/rdf:Description/maproomregistry:tablabel[generate-id() = generate-id(key('tablabels',.)[1])]">
+            <xsl:for-each select="$tabs/rdf:RDF/rdf:Description/maproomregistry:tablabel[generate-id() = generate-id(key('tablabels',.)[1])]">
             <xsl:sort select="."/>
                  <li><a href="#tabs-{position()}">
                      <xsl:value-of select="."/>
@@ -24,7 +31,7 @@
             </xsl:for-each>
          </ul>
 
-         <xsl:for-each select="//rdf:RDF/rdf:Description/maproomregistry:tablabel[generate-id() = generate-id(key('tablabels',.)[1])]">
+         <xsl:for-each select="$tabs//rdf:RDF/rdf:Description/maproomregistry:tablabel[generate-id() = generate-id(key('tablabels',.)[1])]">
             <xsl:sort select="."/>
             <div id="tabs-{position()}" class="ui-tabs-panel">
             <xsl:variable name="group" select="."/>
