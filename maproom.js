@@ -668,9 +668,13 @@ for ( var i = 0; i < clist.length; i++ )
          {
 var cclass=clist[i];
 var members = document.getElementsByClassName(cclass);
-for ( var j = 0; j < members.length; j++ )
+for ( var j = 0; j < members.length; j++ ) {
 if(members[j].href){
 members[j].onclick=onClickPageForm;
+}
+if(members[j].src){
+members[j].onload=imageloadedevent;
+}
 }
 }
 updatePageForm();
@@ -732,6 +736,18 @@ break;
 }
 }
 }
+}
+}
+}
+function imageloadedevent(evt){
+    evt = (evt) ? evt : ((event) ? event : null );
+var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement;
+if(it.className == 'dlimg'){
+if(it.height>it.width && it.parentNode.className.indexOf('tall')<0){
+it.parentNode.className = it.parentNode.className + ' tall';
+}
+if(it.height<it.width && it.parentNode.className.indexOf('tall')>0){
+it.parentNode.className = it.parentNode.className.replace(' tall','');
 }
 }
 }
