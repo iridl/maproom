@@ -23,9 +23,10 @@
 <script type="text/javascript" src="../../maproom.js"></script>
 </head>
 <body>
-<form name="pageform" id="pageform" class="carryup carry">
+<form name="pageform" id="pageform" class="carryup carry dlimg dlauximg">
 <input class="carryup carry" name="Set-Language" type="hidden" />
-<input class="carry" name="Region" type="hidden" />
+<input class="carry dlimg" name="bbox" type="hidden" />
+<input class="dlimg" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -49,10 +50,10 @@
       <li><a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/instructions.es.html">Instrucciones</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1./plotvalue/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1./plotvalue/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1./plotvalue/F/last/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1./plotvalue/F/last/plotvalue/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
   <br />
-  <img class="dlimg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCnetassesscolorscale_es.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCnetassesscolorscale_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;Es probable que los pr&#243;ximos 3 meses sean inusualmente h&#250;medos o secos?</h2>

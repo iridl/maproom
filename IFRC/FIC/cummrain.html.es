@@ -23,9 +23,10 @@
 <script type="text/javascript" src="../../maproom.js"></script>
 </head>
 <body>
-<form name="pageform" id="pageform" class="carryup carry">
+<form name="pageform" id="pageform" class="carryup carry dlimg dlauximg">
 <input class="carryup carry" name="Set-Language" type="hidden" />
-<input class="carry" name="Region" type="hidden" />
+<input class="carry dlimg" name="bbox" type="hidden" />
+<input class="dlimg" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -53,7 +54,7 @@
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
   <br />
-  <img class="dlimg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCprcp_accum_scale_es.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCprcp_accum_scale_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;Cu&#225;nta lluvia acumulada se espera?</h2>

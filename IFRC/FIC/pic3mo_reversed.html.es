@@ -25,7 +25,8 @@
 <body>
 <form name="pageform" id="pageform" class="carryup carry">
 <input class="carryup carry" name="Set-Language" type="hidden" />
-<input class="carry" name="Region" type="hidden" />
+<input class="carry dlimg" name="bbox" type="hidden" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -49,10 +50,10 @@
       <li><a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/instructions.es.html">Instrucciones</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_reversed/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20reversed%20from%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/60/psdef//plotborderbottom/40/psdef/" />
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_reversed/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20reversed%20from%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/60/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_reversed/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20reversed%20from%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/60/psdef//plotborderbottom/40/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_reversed/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20reversed%20from%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/60/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
   <br />
-  <img class="dlimg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCpic3mo_reversed_scale_es.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCpic3mo_reversed_scale_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;Es probable que las condiciones inusuales h&#250;medas o secas terminen?</h2>

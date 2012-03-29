@@ -368,10 +368,10 @@ sel.innerHTML='Global';
 theregion.appendChild(sel);
 sel=document.createElement('select');
 sel.size=1;
-sel.name="Region";
+sel.name="bbox";
 sel.className='pageformcopy';
 sel.onchange=regiononchange;
-sel.innerHTML='<optgroup label="Region"><option value="bb:[-20,-40,55,40]">Africa</option><option value="bb:[40,-10,170,75]">Asia</option><option value="bb:[100,-55,180,0]">Australia</option><option value="bb:[-20,35,40,75]">Europe</option><option value="bb:[10,15,75,45]">Middle East</option><option value="bb:[-170,15,-60,75]">North America</option><option value="bb:[-100,0,-70,35]">Central America</option><option value="bb:[-90,-60,-30,15]">South America</option><option value="" selected="selected">Global</option></optgroup>';
+sel.innerHTML='<optgroup label="Region"><option value="[-20,-40,55,40]">Africa</option><option value="[40,-10,170,75]">Asia</option><option value="[100,-55,180,0]">Australia</option><option value="[-20,35,40,75]">Europe</option><option value="[10,15,75,45]">Middle East</option><option value="[-170,15,-60,75]">North America</option><option value="[-100,0,-70,35]">Central America</option><option value="[-90,-60,-30,15]">South America</option><option value="" selected="selected">Global</option></optgroup>';
 theregion.appendChild(sel);
 }
 }
@@ -456,7 +456,8 @@ ipt.name = 'plotaxislength';
 ipt.type='hidden';
 pform.appendChild(ipt);
 }
-var targetsize = 10*Math.round((mylink.parentNode.clientWidth - 20 - 72 + 9)/10,0);
+var clientsize = Math.max(mylink.parentNode.clientWidth,mylink.parentNode.clientHeight); 
+var targetsize = 10*Math.round((clientsize - 20 - 72 + 9)/10,0);
 if(targetsize > csize){
 ipt.value=targetsize;
 var newsrc=appendPageForm(mylink.figureimage.src,mylink.figureimage.className);

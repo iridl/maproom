@@ -23,9 +23,10 @@
 <script type="text/javascript" src="../../maproom.js"></script>
 </head>
 <body>
-<form name="pageform" id="pageform" class="carryup carry">
+<form name="pageform" id="pageform" class="carryup carry dlimg dlauximg">
 <input class="carryup carry" name="Set-Language" type="hidden" />
-<input class="carry" name="Region" type="hidden" />
+<input class="carry dlimg" name="bbox" type="hidden" />
+<input class="dlimg" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -52,7 +53,7 @@
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.GPWv3/.count/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/546./plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef/" />
 <h3 class="dlimagelegend"> U.N.-Adjusted Population Count Projected for 2005</h3><img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.GPWv3/.count/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/546./plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef+.gif" border="0" alt="image" />
   <br />
-  <img class="dlimg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRC_pop_count_es.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRC_pop_count_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;Las zonas de riesgo con lluvias abundantes, est&#225;n densamente pobladas?</h2>
