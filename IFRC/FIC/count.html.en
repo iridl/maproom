@@ -35,7 +35,6 @@
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend>Six Day Precipitation Forecasts</legend>
-                <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#VulnerabilityIndicators"><span property="term:label">Vulnerability Indicators</span></legend>
             </fieldset> 
             <fieldset class="navitem" id="chooseRegion"> 
                 <legend>Region</legend> 
