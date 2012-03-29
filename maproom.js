@@ -749,6 +749,14 @@ it.parentNode.className = it.parentNode.className + ' tall';
 if(it.height<it.width && it.parentNode.className.indexOf('tall')>0){
 it.parentNode.className = it.parentNode.className.replace(' tall','');
 }
+var pform=document.getElementById('pageform');
+if(pform && pform.elements['plotaxislength']){
+if(it.height>it.width && pform.elements['plotaxislength'].value && it.height  < pform.elements['plotaxislength'].value){
+var targetsize = 10*Math.round((it.height - 20 - 72 + 9)/10,0);
+pform.elements['plotaxislength'].value = targetsize;
+updatePageForm(pform.elements['plotaxislength']);
+}
+}
 }
 }
 /* if none of the classes in srcclass are in element.className,
