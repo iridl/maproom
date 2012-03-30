@@ -216,9 +216,15 @@ s.appendChild(ga);
 var gb= document.createElement('div');
 gb.className='sharebutton';
 gb.id='evernote';
-gb.innerHTML='<a href="#" onclick="Evernote.doClip({contentId:' + "'content'" + '}); return false;"><img src="http://static.evernote.com/site-mem-22.png" alt="Clip to Evernote" border="0"/></a>';
+gb.innerHTML='<a href="#" onclick="javascript:doEvernoteClip(); return false;"><img src="http://static.evernote.com/site-mem-22.png" alt="Clip to Evernote" border="0"/></a>';
 s.appendChild(gb);
 }
+}
+function doEvernoteClip(){
+var clipargs = {};
+clipargs.contentId = 'content';
+clipargs.url = appendPageForm(location.href.replace(/[?].*/,''),'share');
+Evernote.doClip(clipargs);
 }
 function readwithiframe(slhref,s,readfn){
 var iframe=document.getElementById('sectioniframe');
@@ -509,6 +515,11 @@ iptcpy.name = ipt.name;
 iptcpy.value=ipt.value;
 iptcpy.type='hidden';
 pform.appendChild(iptcpy);
+}
+else {
+if(pform.elements[ipt.name].value != ''){
+ipt.value=pform.elements[ipt.name].value;
+}
 }
 }
 ipt = document.createElement('span');

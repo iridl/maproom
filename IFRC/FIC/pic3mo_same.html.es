@@ -23,9 +23,10 @@
 <script type="text/javascript" src="../../maproom.js"></script>
 </head>
 <body>
-<form name="pageform" id="pageform" class="carryup carrydlimg dlauximg">
+<form name="pageform" id="pageform" class="carryup carrydlimg dlauximg share">
 <input class="carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg" name="bbox" type="hidden" />
+<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="dlimg share" name="F" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">
