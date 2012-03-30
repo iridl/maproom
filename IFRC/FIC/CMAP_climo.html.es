@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="CMAP_climo.html?Set-Language=en" />
 <link rel="maproom:canonical" href="CMAP_climo.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
