@@ -216,7 +216,8 @@ s.appendChild(ga);
 var gb= document.createElement('div');
 gb.className='sharebutton';
 gb.id='evernote';
-gb.innerHTML='<a href="#" onclick="javascript:doEvernoteClip(); return false;"><img src="http://static.evernote.com/site-mem-22.png" alt="Clip to Evernote" border="0"/></a>';
+gb.onclick=doEvernoteClip;
+gb.innerHTML='<img src="http://static.evernote.com/site-mem-22.png" alt="Clip to Evernote" border="0"/>';
 s.appendChild(gb);
 }
 }
