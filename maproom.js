@@ -225,6 +225,11 @@ function doEvernoteClip(){
 var clipargs = {};
 clipargs.contentId = 'content';
 clipargs.url = appendPageForm(location.href.replace(/[?].*/,''),'share');
+clipargs.filter= function (arg){
+if(!(arg.className == 'imagecontrols')){
+return arg;
+}
+};
 Evernote.doClip(clipargs);
 }
 function readwithiframe(slhref,s,readfn){
@@ -404,6 +409,7 @@ var sl = s.getElementsByTagName('legend');
 var leg;
 if(!sl.length){
 leg=document.createElement('legend');
+leg.className='imagecontrols';
 leg.innerHTML='<object class="dlimageswitch" data="' + maproomroot + 'icons/onoff.svg" type="image/svg+xml" width="13" height="13"><img class="dlimageswitch" src="'+ maproomroot + 'icons/onoff.png" width="13" height="13" border="0" hspace="2" vspace="2" /></object><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/RedrawButton.jpg" title="Redraw" width="13" height="13" border="0" hspace="2" vspace="2" /><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/ZoomButton.jpg" title="Zoom Out" width="13" height="13" border="0" hspace="2" vspace="2" /><img  class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/HelpButton.jpg" title="Help" width="13" height="13" border="0" hspace="2" vspace="2" />'
 s.insertBefore(leg,s.firstChild);
 }
