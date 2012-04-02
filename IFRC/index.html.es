@@ -13,7 +13,7 @@
 <title>IFRC Forecasts in Context</title>
 <link rel="stylesheet" type="text/css" href="../maproom.css" />
 <link rel="stylesheet" type="text/css" href="ifrc.css" />
-<link rel="maproom:canonical" href="index.html"/>
+<link rel="canonical" href="index.html"/>
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
