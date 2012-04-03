@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="en"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>IFRC Forecasts in Context</title>
+<link rel="stylesheet" type="text/css" href="../maproom.css" />
+<link rel="stylesheet" type="text/css" href="ifrc.css" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
+<link rel="canonical" href="index.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<script type="text/javascript" src="../maproom.js"></script>
+</head>
+<body>
+
+<form name="pageform" id="pageform" class="titleLink">
+<input class="titleLink" name="Set-Language" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem"> 
+                <legend>Data Library</legend> 
+                      <a rev="section" class="navlink" href="/maproom/">Maproom</a>
+            </fieldset> 
+           <fieldset class="navitem"> 
+                <legend>International Federation</legend> 
+                     <span class="navtext">Forecasts in Context</span>
+
+            </fieldset> 
+ </div>
+<div>
+ <div id="content" class="searchDescription">
+<div><img src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
+<h2 property="term:title">International Federation of Red Cross and Red Crescent Societies:  Forecasts in Context</h2>
+<p>
+Working in collaboration with the International Federation of Red Cross and Red Crescent Societies, IRI has developed a map tool to provide context for global precipitation forecast information. The tool displays maps of various measures of the relative severity of forecast precipitation events for the globe for 1 to 6 days in advance by comparing the current forecast amounts with a 25-year forecast model climatology. The tool also displays probabilistic seasonal precipitation forecasts for the globe, including "predictions in context" maps that show where the seasonal forecast indicates an enhanced probability for the continuation or reversal of previously-observed above-normal or below-normal seasonal precipitation. Maps of monthly precipitation climatology, and population and poverty maps are also provided to allow for the examination of the relative exposure to weather events and seasonal precipitation fluctuations.
+</p>
+</div>
+
+<div class="rightcol tabbedentries">
+
+</div>
+
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend>
+
+</fieldset>
+</div>
+ <!-- hhmts start -->Last modified: Fri Nov 18 17:31:34 EST 2011 <!-- hhmts end -->
+ </body>
+
+ </html>
