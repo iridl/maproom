@@ -4,8 +4,7 @@
 	    xmlns:maproomregistry="http://iri.columbia.edu/~jdcorral/ingrid/maproom/maproomregistry.owl#"
 	    xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
 	    xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#">
-<xsl:output method="html" encoding="UTF-8" indent="yes"/>
-<xsl:strip-space elements="*"/>
+<xsl:output method="html" indent="yes" encoding="utf-8"/>
 
 <xsl:variable name="language" select="//@xml:lang"/>
 <xsl:variable name="tabs" select="document('tabs.xml')"/>
@@ -35,16 +34,16 @@
             <xsl:sort select="."/>
             <div id="tabs-{position()}" class="ui-tabs-panel">
             <xsl:variable name="group" select="."/>
-            <div class="itemGroup"><xsl:value-of select="$group"/></div>
+            <div class="itemGroup"><xsl:value-of select="$group" disable-output-escaping="no" /></div>
                     <xsl:for-each select="/rdf:RDF/rdf:Description">
                     <xsl:sort select="@rdf:about"/>
                       <xsl:if test="./maproomregistry:tablabel = $group">
-                        <div class="item"><div class="itemTitle"><a class="titleLink" href="{substring-after(@rdf:about,$root)}">
+                        <div class="item"><div class="itemTitle"><a class="titleLink" href="{substring-before(substring-after(@rdf:about,$root),concat('.',$language))}">
                         <xsl:value-of select="iriterms:title"/>
                         </a></div>
-                        <div class="itemIcon"><a href="{substring-after(@rdf:about,$root)}"><img class="itemImage" src="{iriterms:icon/@rdf:resource}"/></a></div>
+                        <div class="itemIcon"><a href="{substring-before(substring-after(@rdf:about,$root),concat('.',$language))}"><img class="itemImage" src="{iriterms:icon/@rdf:resource}"/></a></div>
                         <div class="itemDescription">
-                        <xsl:value-of select="iriterms:description"/></div>
+                        <xsl:value-of select="iriterms:description" disable-output-escaping="no"/></div>
                         <div class="itemFooter"></div>
                         </div>
                       </xsl:if>
