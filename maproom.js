@@ -724,10 +724,16 @@ var cclass=clist[i];
 var members = document.getElementsByClassName(cclass);
 for ( var j = 0; j < members.length; j++ ) {
 var cmem=members[j];
-if(cmem.src){
+if(cmem.tagName == 'IMG'){
 var newsrc = appendPageForm(cmem.src.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.src){
     cmem.src = newsrc;
+}
+}
+if(cmem.tagName == 'LINK'){
+var newsrc = appendPageForm(cmem.href.replace(/[?].*/,''),cmem.className);
+if(newsrc != cmem.href){
+    cmem.href = newsrc;
 }
 }
 }
