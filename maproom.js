@@ -215,6 +215,13 @@ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async
 s.appendChild(ga);
 var gb= document.createElement('div');
 gb.className='sharebutton';
+gb.id='custom-tweet-button';
+var gba = document.createElement('a');
+gba.onclick=doTwitter;
+gb.appendChild(gba);
+s.appendChild(gb);
+var gb= document.createElement('div');
+gb.className='sharebutton';
 gb.id='evernote';
 gb.onclick=doEvernoteClip;
 gb.innerHTML='<img src="http://static.evernote.com/site-mem-22.png" alt="Clip to Evernote" border="0"/>';
@@ -236,6 +243,18 @@ s.appendChild(gb);
     document.getElementById("tumblr_button_abc123").appendChild(tumblr_button);
 }
 }
+function doTwitter(){
+ var url = appendPageForm(location.href.replace(/[?].*/,''),'share');
+    var tpar = getElementsByAttribute(document,'h2','property','term:title');
+    var dpar = getElementsByAttribute(document,'p','property','term:description');
+    var title="";
+	if(tpar.length>0){
+	title=tpar[0].innerHTML;
+	}
+	if(!title)title=document.title;
+var twitter_url = "https://twitter.com/share?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(title);
+window.open(twitter_url);
+}
 function doTumblrClip(){
     var content = document.getElementById("content");
     var tpar = getElementsByAttribute(document,'h2','property','term:title');
@@ -249,7 +268,7 @@ function doTumblrClip(){
 	if(dpar.length>0){
 	description=dpar[0].innerHTML;
 	}
-      
+      var tumblr_url;
     var tumblr_photo_source = "";
     var tumblr_photo_caption = "";
 	if(description){
@@ -265,14 +284,15 @@ function doTumblrClip(){
 	}
     var tumblr_photo_click_thru = appendPageForm(location.href.replace(/[?].*/,''),'share');
 	if(tumblr_photo_source){
-location.href = "http://www.tumblr.com/share/photo?source=" + encodeURIComponent(tumblr_photo_source) + "&caption=" + encodeURIComponent(tumblr_photo_caption) + "&clickthru=" + encodeURIComponent(tumblr_photo_click_thru);
+tumblr_url = "http://www.tumblr.com/share/photo?source=" + encodeURIComponent(tumblr_photo_source) + "&caption=" + encodeURIComponent(tumblr_photo_caption) + "&clickthru=" + encodeURIComponent(tumblr_photo_click_thru);
 }
 else {
  var tumblr_link_url = appendPageForm(location.href.replace(/[?].*/,''),'share');
     var tumblr_link_name = title;
     var tumblr_link_description = description;
-location.href = "http://www.tumblr.com/share/link?url=" + encodeURIComponent(tumblr_link_url) + "&name=" + encodeURIComponent(tumblr_link_name) + "&description=" + encodeURIComponent(tumblr_link_description);
+tumblr_url = "http://www.tumblr.com/share/link?url=" + encodeURIComponent(tumblr_link_url) + "&name=" + encodeURIComponent(tumblr_link_name) + "&description=" + encodeURIComponent(tumblr_link_description);
 }
+window.open(tumblr_url);
 }
 
 function doEvernoteClip(){
