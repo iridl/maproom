@@ -219,8 +219,79 @@ gb.id='evernote';
 gb.onclick=doEvernoteClip;
 gb.innerHTML='<img src="http://static.evernote.com/site-mem-22.png" alt="Clip to Evernote" border="0"/>';
 s.appendChild(gb);
+var gb= document.createElement('div');
+gb.className='sharebutton';
+gb.id='tumblr';
+gb.innerHTML='<span id="tumblr_button_abc123"></span>';
+s.appendChild(gb);
+<!-- tumbler button code -->
+     var tumblr_photo_source = "";
+    var tumblr_photo_caption = "TBD";
+    var tumblr_photo_click_thru = appendPageForm(location.href.replace(/[?].*/,''),'share');
+    var tumblr_button = document.createElement("a");
+	tumblr_button.onclick=doTumblrClip;
+    tumblr_button.setAttribute("title", "Share on Tumblr");
+    tumblr_button.setAttribute("style", "display:inline-block; text-indent:-9999px; overflow:hidden; width:20px; height:20px; background:url('http://platform.tumblr.com/v1/share_4.png') top left no-repeat transparent;");
+    tumblr_button.innerHTML = "Share on Tumblr";
+    document.getElementById("tumblr_button_abc123").appendChild(tumblr_button);
 }
 }
+function doTumblrClip(){
+    var content = document.getElementById("content");
+    var tpar = getElementsByAttribute(document,'h2','property','term:title');
+    var dpar = getElementsByAttribute(document,'p','property','term:description');
+    var title="";
+	if(tpar.length>0){
+	title=tpar[0].innerHTML;
+	}
+	if(!title)title=document.title;
+    var description="";
+	if(dpar.length>0){
+	description=dpar[0].innerHTML;
+	}
+      
+    var tumblr_photo_source = "";
+    var tumblr_photo_caption = "";
+	if(description){
+	tumblr_photo_caption = description;
+	}
+	else {
+	tumblr_photo_caption = title;
+	}
+	if(content){
+	if(content.getElementsByTagName('link').length>0){
+	tumblr_photo_source = content.getElementsByTagName('link')[0].figureimage.src;
+	}
+	}
+    var tumblr_photo_click_thru = appendPageForm(location.href.replace(/[?].*/,''),'share');
+	if(tumblr_photo_source){
+location.href = "http://www.tumblr.com/share/photo?source=" + encodeURIComponent(tumblr_photo_source) + "&caption=" + encodeURIComponent(tumblr_photo_caption) + "&clickthru=" + encodeURIComponent(tumblr_photo_click_thru);
+}
+else {
+ var tumblr_link_url = appendPageForm(location.href.replace(/[?].*/,''),'share');
+    var tumblr_link_name = title;
+    var tumblr_link_description = description;
+location.href = "http://www.tumblr.com/share/link?url=" + encodeURIComponent(tumblr_link_url) + "&name=" + encodeURIComponent(tumblr_link_name) + "&description=" + encodeURIComponent(tumblr_link_description);
+}
+}
+
+      function getElementsByAttribute(oElm, strTagName, strAttributeName, strAttributeValue){
+      var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+      var arrReturnElements = new Array();
+      var oAttributeValue = (typeof strAttributeValue != "undefined")? new RegExp("(^|\\s)" + strAttributeValue + "(\\s|$)", "i") : null;
+      var oCurrent;
+      var oAttribute;
+      for(var i=0; i<arrElements.length; i++){
+      oCurrent = arrElements[i];
+      oAttribute = oCurrent.getAttribute && oCurrent.getAttribute(strAttributeName);
+      if(typeof oAttribute == "string" && oAttribute.length > 0){
+      if(typeof strAttributeValue == "undefined" || (oAttributeValue && oAttributeValue.test(oAttribute))){
+      arrReturnElements.push(oCurrent);
+      }
+      }
+      }
+      return arrReturnElements;
+      }
 function doEvernoteClip(){
 var clipargs = {};
 clipargs.contentId = 'content';
