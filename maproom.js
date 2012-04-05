@@ -237,8 +237,8 @@ s.appendChild(gb);
     var tumblr_photo_click_thru = appendPageForm(location.href.replace(/[?].*/,''),'share');
     var tumblr_button = document.createElement("a");
 	tumblr_button.onclick=doTumblrClip;
+	tumblr_button.className="tumblrButton";
     tumblr_button.setAttribute("title", "Share on Tumblr");
-    tumblr_button.setAttribute("style", "display:inline-block; text-indent:-9999px; overflow:hidden; width:20px; height:20px; background:url('http://platform.tumblr.com/v1/share_4.png') top left no-repeat transparent;");
     tumblr_button.innerHTML = "Share on Tumblr";
     document.getElementById("tumblr_button_abc123").appendChild(tumblr_button);
 }

@@ -5,7 +5,16 @@ font-size: 12pt;
 }
 .sharebutton{
 display: inline;
-margin: 2pt;
+margin: 3px;
+}
+.tumblrButton {
+display:inline-block; 
+text-indent:-9999px; overflow:hidden; 
+width:20px; height:20px; 
+background:url('http://platform.tumblr.com/v1/share_4.png') top left no-repeat transparent;
+}
+.tumblrButton:hover {
+background-color: white;
 }
 .lowerLimit, .lowerLimit-disabled {
 display: inline-block;
@@ -947,12 +956,15 @@ A.titleLink:active, A.titleLink:hover {color: blue;}
     display: inline-block;
     background: WhiteSmoke;
   }
+  #custom-tweet-button:hover{
+    background: white;
+  }
   #custom-tweet-button a {
     cursor: pointer;
     height: 18px;
     display: inline-block;
     padding: 2px 5px 2px 15px;
-    background: url('http://a4.twimg.com/images/favicon.ico') 1px center no-repeat;
+    background: url('http://a4.twimg.com/images/favicon.ico') center no-repeat;
     border: 1px solid #ccc;
 
 
