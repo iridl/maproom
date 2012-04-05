@@ -6,6 +6,7 @@ font-size: 12pt;
 .sharebutton{
 display: inline;
 margin: 3px;
+padding: 0px;
 }
 .tumblrButton {
 display:inline-block; 
