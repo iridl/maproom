@@ -2,6 +2,7 @@
             xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	    xmlns:maproomregistry="http://iri.columbia.edu/~jdcorral/ingrid/maproom/maproomregistry.owl#"
+            xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
 	    xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
 	    xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#">
 <xsl:output method="html" indent="yes" encoding="utf-8"/>
@@ -22,20 +23,20 @@
       <div class="rightcol">
       <div class="ui-tabs">
          <ul class="ui-tabs-nav">
-            <xsl:for-each select="$tabs/rdf:RDF/rdf:Description/maproomregistry:tablabel[generate-id() = generate-id(key('tablabels',.)[1])]">
-            <xsl:sort select="."/>
+            <xsl:for-each select="*[attribute::rel]">
+                 <xsl:variable name="hr" select="@href"/>
                  <li><a href="#tabs-{position()}">
-                     <xsl:value-of select="."/>
+                     <xsl:value-of select="$tabs//rdf:RDF/rdf:Description[@rdf:about=$hr]/rdf:label[@xml:lang=$language]"/>
                  </a></li>
             </xsl:for-each>
          </ul>
 
-         <xsl:for-each select="$tabs//rdf:RDF/rdf:Description/maproomregistry:tablabel[generate-id() = generate-id(key('tablabels',.)[1])]">
-            <xsl:sort select="."/>
+         <xsl:for-each select="*[attribute::rel]">
+            <xsl:variable name="hr" select="@href"/>
             <div id="tabs-{position()}" class="ui-tabs-panel">
-            <xsl:variable name="group" select="."/>
-            <div class="itemGroup"><xsl:value-of select="$group" disable-output-escaping="no" /></div>
-                    <xsl:for-each select="/rdf:RDF/rdf:Description">
+            <xsl:variable name="group" select="$tabs//rdf:RDF/rdf:Description[@rdf:about=$hr]/rdf:label[@xml:lang=$language]"/>
+            <div class="itemGroup"><xsl:value-of select="$group"/></div>
+                    <xsl:for-each select="$tabs/rdf:RDF/rdf:Description">
                     <xsl:sort select="@rdf:about"/>
                       <xsl:if test="./maproomregistry:tablabel = $group">
                         <div class="item"><div class="itemTitle"><a class="titleLink" href="{substring-before(substring-after(@rdf:about,$root),concat('.',$language))}">
