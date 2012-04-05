@@ -8,15 +8,6 @@ display: inline;
 margin: 3px;
 padding: 0px;
 }
-.tumblrButton {
-display:inline-block; 
-text-indent:-9999px; overflow:hidden; 
-width:20px; height:20px; 
-background:url('http://platform.tumblr.com/v1/share_4.png') top left no-repeat transparent;
-}
-.tumblrButton:hover {
-background-color: white;
-}
 .lowerLimit, .lowerLimit-disabled {
 display: inline-block;
 padding-left: 5px;
@@ -967,7 +958,27 @@ A.titleLink:active, A.titleLink:hover {color: blue;}
     padding: 2px 5px 2px 15px;
     background: url('http://a4.twimg.com/images/favicon.ico') center no-repeat;
     border: 1px solid #ccc;
-
-
+text-indent:-9999px; overflow:hidden; 
   }
+  #evernote a {
+    cursor: pointer;
+    height: 18px;
+    display: inline-block;
+    padding: 2px 5px 2px 15px;
+    background: url('http://static.evernote.com/site-mem-22.png') center no-repeat;
+    border: 1px solid #ccc;
+text-indent:-9999px; overflow:hidden; 
+  }
+#tumblr a {
+display:inline-block; 
+    cursor: pointer;
+    height: 18px;
+    padding: 2px 2px 2px 2px;
+text-indent:-9999px; overflow:hidden; 
+width:18px;
+background:url('http://platform.tumblr.com/v1/share_4.png') center no-repeat transparent;
+}
+#tumblr a:hover {
+background-color: white;
+}
 
