@@ -483,8 +483,14 @@ var leg;
 if(!sl.length){
 leg=document.createElement('legend');
 leg.className='imagecontrols';
-leg.innerHTML='<object class="dlimageswitch" data="' + maproomroot + 'icons/onoff.svg" type="image/svg+xml" width="13" height="13"><img class="dlimageswitch" src="'+ maproomroot + 'icons/onoff.png" width="13" height="13" border="0" hspace="2" vspace="2" /></object><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/RedrawButton.jpg" title="Redraw" width="13" height="13" border="0" hspace="2" vspace="2" /><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/ZoomButton.jpg" title="Zoom Out" width="13" height="13" border="0" hspace="2" vspace="2" /><img  class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/HelpButton.jpg" title="Help" width="13" height="13" border="0" hspace="2" vspace="2" />'
+leg.innerHTML='<object class="dlimageswitch" data="' + maproomroot + 'icons/onoff.svg" type="image/svg+xml" width="13" height="13"><img class="dlimageswitch" src="'+ maproomroot + 'icons/onoff.png" width="13" height="13" border="0" hspace="2" vspace="2" /></object><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/RedrawButton.jpg" id="redrawbutton" title="Redraw" width="13" height="13" border="0" hspace="2" vspace="2" /><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/ZoomButton.jpg" id="zoomout" title="Zoom Out" width="13" height="13" border="0" hspace="2" vspace="2" /><img  class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/HelpButton.jpg" id="infobutton" title="More Information" width="13" height="13" border="0" hspace="2" vspace="2" />'
 s.insertBefore(leg,s.firstChild);
+leg = document.getElementById('zoomout');
+leg.onclick=dozoomout;
+leg = document.getElementById('infobutton');
+leg.onclick=doinfobutton;
+leg = document.getElementById('redrawbutton');
+leg.onclick=doredrawbutton;
 }
 else {
 leg=sl[0];
@@ -521,6 +527,29 @@ DLimageResizeImage(xmlhttp.mylink);
 }
 }
 }
+}
+function dozoomout () {
+var myform=document.getElementById('pageform');
+if(myform){
+var myin = myform.elements['bbox'];
+if(myin){
+myin.value='';
+updatePageForm();
+}
+}
+}
+function doredrawbutton () {
+var myform=document.getElementById('pageform');
+if(myform){
+updatePageForm();
+}
+}
+function doinfobutton (evt) {
+   var evt = (evt) ? evt : ((event) ? event : null );
+   var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+var mylink = getElementsByAttribute(it.parentNode.parentNode,'link','rel','iridl:hasFigure');
+// location.href=appendPageForm(mylink[0].href+'index.html',mylink[0].figureimage.className);
+location.href=mylink[0].href;
 }
 function DLimageResizeImage(mylink){
 var imagesrc=mylink.figureimage.src;
@@ -821,7 +850,6 @@ sel.value=cval;
 if(typeof(sel.selectedIndex) === 'number'){
 var options=sel.options;
 var cval = myform.elements[sel.name].value;
-if(cval){
 for (var j=0; j < options.length ; j++){
 if(options[j].value == cval){
 sel.selectedIndex=j;
@@ -829,7 +857,6 @@ if(sel.previousSibling.className='selectvalue'){
 sel.previousSibling.innerHTML=sel.options[sel.selectedIndex].innerHTML;
 }
 break;
-}
 }
 }
 }
