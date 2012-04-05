@@ -229,8 +229,6 @@ s.appendChild(gb);
 var gb= document.createElement('div');
 gb.className='sharebutton';
 gb.id='tumblr';
-gb.innerHTML='<span id="tumblr_button_abc123"></span>';
-s.appendChild(gb);
 <!-- tumbler button code -->
      var tumblr_photo_source = "";
     var tumblr_photo_caption = "TBD";
@@ -240,7 +238,8 @@ s.appendChild(gb);
 	tumblr_button.className="tumblrButton";
     tumblr_button.setAttribute("title", "Share on Tumblr");
     tumblr_button.innerHTML = "Share on Tumblr";
-    document.getElementById("tumblr_button_abc123").appendChild(tumblr_button);
+    gb.appendChild(tumblr_button);
+s.appendChild(gb);
 }
 }
 function doTwitter(){
