@@ -203,15 +203,9 @@ sl = document.getElementById('googleplus');
 if(!sl){
 var gb= document.createElement('div');
 gb.className='sharebutton';
-gb.id='googleplus';
+gb.id='googleplusbutton';
 gb.innerHTML='<div class="g-plusone" data-count="false" ></div>';
 s.appendChild(gb);
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-s.appendChild(po);
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = "http://static.evernote.com/noteit.js";
-s.appendChild(ga);
 gb= document.createElement('div');
 gb.className='sharebutton';
 gb.id='custom-tweet-button';
@@ -237,6 +231,13 @@ gb.id='tumblr';
     gb.appendChild(tumblr_button);
 s.appendChild(gb);
 }
+// adds scripts to share to activate buttons
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+s.appendChild(po);
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = "http://static.evernote.com/noteit.js";
+s.appendChild(ga);
 }
 function doTwitter(){
  var url = appendPageForm(location.href.replace(/[?].*/,''),'share');
