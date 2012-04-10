@@ -1,5 +1,24 @@
-<html><head>
-    <title>Como Usar el Pron&oacute;stico de Precipitaci&oacute;n en la Herramienta de Mapa de Contexto</title>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="en"
+lang="es"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+    <title>IFRC PIC: Como Usar el Pron&oacute;stico de Precipitaci&oacute;n en la Herramienta de Mapa de Contexto</title>
+<link rel="stylesheet" type="text/css" href="maproom.css" />
+<link rel="stylesheet" type="text/css" href="ifrc.css" />
+<link rev="section" href="fic.html" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="instructions.html?Set-Language=en" />
+<link rel="canonical" href="instructions.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
     <link rel="stylesheet" type="text/css" href="/site.css">
     <STYLE TYPE="text/css">
     <!--
@@ -13,14 +32,20 @@
     p {clear: right}
     -->
     </STYLE>
+<script type="text/javascript" src="maproom.js"></script>
 </head>
 <body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000">
-<INGRID>
-%/leftmenusub? { leftmenulevel 0 get 2 le } def
-leftmenu
-%standardHeader
-</INGRID>
-<INGRID>saveLanguage</INGRID>
+<form name="pageform" id="pageform" class="carryup carry">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carry" name="Region" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Federaci&#243;n Internacional</legend> 
+                      <a class="navlink carryup" href="fic.html">Predicciones en Contexto</a>
+            </fieldset>
+ </div>
+
 <h3 align=center><u>Como Usar el Pron&oacute;stico de Precipitaci&oacute;n en la Herramienta de Mapa de Contexto</u></h3>
 <p>
 
@@ -105,7 +130,7 @@ Dado que la resoluci&oacute;n espacial de los valores de pron&oacute;stico de pr
 <p><a name="tot6dayapcp"><b>Pron&oacute;stico de la Precipitaci&oacute;n Total de Seis D&iacute;as del ESRL GFS</b>
 <p>
 <div class="rightbox">
-<a href="index.html?mapsel=tot6dayapcp">
+<a href="cummrain.html.es">
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
 </a>
 </div>
@@ -113,7 +138,7 @@ Este mapa muestra el pron&oacute;stico de precipitaci&oacute;n de gran escala (e
 <p><a name="tot6dayapcpanom"><b>Pron&oacute;stico de la Anomal&iacute;a de la Precipitaci&oacute;n Total de Seis D&iacute;as del ESRL GFS</b>
 <p>
 <div class="rightbox">
-<a href="index.html?mapsel=tot6dayapcpanom">
+<a href="wetter.html.es">
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcpanom/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
 </a>
 </div>
@@ -121,7 +146,7 @@ Este mapa muestra la diferencia (en mil&iacute;metros) entre el valor del pron&o
 <p><a name="tot6dayapcppctle"><b>Percentil del Pron&oacute;stico de Precipitaci&oacute;n Total de Seis D&iacute;as del ESRL GFS</b>
 <p>
 <div class="rightbox">
-<a href="index.html?mapsel=tot6dayapcppctle">
+<a href="sampletabslogo.html.es">
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctle/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
 </a>
 </div>
@@ -130,7 +155,7 @@ Este mapa muestra el pron&oacute;stico de percentil de la precipitaci&oacute;n t
 <p><a name="tot6dayapcppctmonthlyclim"><b>Pron&oacute;stico de Precipitaci&oacute;n Total de Seis D&iacute;as como Porcentaje del Total Mensual Promedio</b>
 <p>
 <div class="rightbox">
-<a href="index.html?mapsel=tot6dayapcppctmonthlyclim">
+<a href="heavyrain.html.es">
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
 </a>
 </div>
@@ -139,8 +164,8 @@ Este mapa muestra el valor de pron&oacute;stico de precipitaci&oacute;n de seis 
 <p><a name="prcp_fcst"><b>Pron&oacute;stico de Precipitaci&oacute;n Estacional del IRI</b>
 <p>
 <div class="rightbox">
-<a href="index.html?mapsel=prcp_fcst">
-<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+250+psdef+.gif">
+<a href="prcp_fcst.html.es">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/L/1/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+250+psdef+.gif">
 </a>
 </div>
 Los pron&oacute;sticos probabil&iacute;sticos de precipitaci&oacute;n estacional del IRI para el mundo completo se publican a mediados de cada mes. Estos pron&oacute;sticos son para los cuatro trimestres superpuestos, extendi&eacute;ndose hasta seis meses en adelante. El mapa que se muestra en esta interfase es el pron&oacute;stico de precipitaci&oacute;n para el primer trimestre. Para el pron&oacute;stico publicado en Enero, por ejemplo, el pron&oacute;stico mostrado es v&aacute;lido para el trimestre de Febrero-Marzo-Abril.
@@ -153,7 +178,7 @@ Puede encontrar m&aacute;s informaci&oacute;n sobre los pron&oacute;sticos estac
 <p><a name="extreme_prcp_fcst"><b>Pron&oacute;stico de Precipitaci&oacute;n Extrema del IRI</b>
 <p>
 <div class="rightbox">
-<a href="index.html?mapsel=extreme_prcp_fcst">
+<a href="extreme_prcp_fcst.html.es">
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//plotaxislength+250+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef+.gif">
 </a>
 </div>
@@ -167,7 +192,7 @@ Puede encontrar m&aacute;s informaci&oacute;n sobre los pron&oacute;sticos estac
 <p><a name="pic3mo_same"><b>Predicciones en Contexto (PiC) del IRI: Observaci&oacute;n de la misma tendencia en el Pron&oacute;stico Estacional y la Precipitaci&oacute;n observada en los &uacute;ltimos 3 meses</b>
 <p>
 <div class="rightbox">
-<a href="index.html?mapsel=pic3mo_same">
+<a href="pic3mo_same.html.es">
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/:a:/.forecasttime/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+250+psdef+.gif">
 </a>
 </div>
@@ -182,7 +207,7 @@ Para ver m&aacute;s informaci&oacute;n sobre este an&aacute;lisis, v&eacute;ase 
 <p><a name="pic3mo_reversed"><b>Predicciones en Contexto (PiC) del IRI: Tendencia Revertida Entre el Pron&oacute;stico Estacional y las Observaciones de Precipitaci&oacute;n Trimestral</b>
 <p>
 <div class="rightbox">
-<a href="index.html?mapsel=pic3mo_reversed">
+<a href="pic3mo_reversed.html.es">
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_reversed/:a:/.forecasttime/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20reversed%20from%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+250+psdef+.gif">
 </a>
 </div>
@@ -197,7 +222,7 @@ Para ver m&aacute;s informaci&oacute;n sobre este an&aacute;lisis, v&eacute;ase 
 <a name="CMAP_climo"><b>Climatolog&iacute;a Mensual del CPC Merged Analysis of Precipitaci&oacute;n (CMAP)</b>
 <p>
 <div class="rightbox">
-<a href="index.html?mapsel=CMAP_climo">
+<a href="CMAP_climo.html.es">
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//color_smoothing+null+psdef//plotaxislength+250+psdef+.gif">
 </a>
 </div>
@@ -208,7 +233,7 @@ Se presentan los valores de precipitaci&oacute;n media mensual de 1979-2004 para
 <p><a name="count"><b>Poblaci&oacute;n Proyectada para el A&ntilde;o 2005 Ajustada por las Naciones Unidas, del CIESIN/SEDAC GPWv3</b>
 <p>
 <div class="rightbox">
-<a href="index.html?mapsel=count">
+<a href="count.html.es">
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.GPWv3/.count/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/546./plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+250+psdef+.gif">
 </a>
 </div>
@@ -220,7 +245,7 @@ Puede encontrar m&aacute;s informaci&oacute;n sobre este set de datos en la sigu
 <p><a name="imr"><b>Tasa de Mortalidad Infantil del CIESIN/SEDAC Global Distribution of Poverty, a&ntilde;o 2000</b>
 <p>
 <div class="rightbox">
-<a href="index.html?mapsel=imr">
+<a href="imr.html.es">
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+250+psdef+.gif">
 </a>
 </div>
@@ -233,5 +258,9 @@ Puede encontrar m&aacute;s informaci&oacute;n sobre este indicador de pobreza y 
 
 Por favor, no dude en <a href="mailto:mbell@iri.columbia.edu">enviarnos un correo electr&oacute;nico</a> con sus preguntas o comentarios.  
 
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ <!-- hhmts start -->Last modified: Wed Feb 29 11:30:34 EST 2011 <!-- hhmts end -->
 </body>
 </html>
