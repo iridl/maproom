@@ -248,7 +248,7 @@ function doTwitter(){
 	title=tpar[0].innerHTML;
 	}
 	if(!title)title=document.title;
-var twitter_url = "https://twitter.com/share?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(title);
+var twitter_url = "https://twitter.com/share?via=iridl&hashtags=dataviz&url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(title);
 window.open(twitter_url);
 }
 function doTumblrClip(){
