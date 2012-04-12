@@ -953,7 +953,7 @@ A.titleLink:active, A.titleLink:hover {color: blue;}
   }
   #custom-tweet-button a {
     cursor: pointer;
-    height: 18px;
+    height: 20px;
     display: inline-block;
     padding: 2px 5px 2px 15px;
     background: url('http://a4.twimg.com/images/favicon.ico') center no-repeat;
@@ -962,7 +962,7 @@ text-indent:-9999px; overflow:hidden;
   }
   #evernote a {
     cursor: pointer;
-    height: 18px;
+    height: 20px;
     display: inline-block;
     padding: 2px 5px 2px 15px;
     background: url('http://static.evernote.com/site-mem-22.png') center no-repeat;
@@ -972,13 +972,24 @@ text-indent:-9999px; overflow:hidden;
 #tumblr a {
 display:inline-block; 
     cursor: pointer;
-    height: 18px;
+    height: 20px;
     padding: 2px 2px 2px 2px;
 text-indent:-9999px; overflow:hidden; 
-width:18px;
+width:20px;
 background:url('http://platform.tumblr.com/v1/share_4.png') center no-repeat transparent;
+background-size: 95%;
 }
 #tumblr a:hover {
 background-color: white;
+}
+#gmailbutton a {
+display:inline-block; 
+    cursor: pointer;
+    height: 20px;
+    padding: 2px 2px 2px 2px;
+text-indent:-9999px; overflow:hidden; 
+width:22px;
+background:url('http://mail.google.com/mail/images/2/mail_icon_32.png') center no-repeat transparent;
+background-size: 95%;
 }
 

@@ -230,6 +230,16 @@ gb.id='tumblr';
     tumblr_button.setAttribute("title", "Share on Tumblr");
     gb.appendChild(tumblr_button);
 s.appendChild(gb);
+/* code to add GMail buttons
+gb= document.createElement('div');
+gb.className='sharebutton';
+gb.id='gmailbutton';
+    tumblr_button = document.createElement("a");
+	tumblr_button.onclick=doGMail;
+    tumblr_button.setAttribute("title", "Share on GMail");
+    gb.appendChild(tumblr_button);
+s.appendChild(gb);
+*/
 }
 // adds scripts to share to activate buttons
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -250,6 +260,16 @@ function doTwitter(){
 	if(!title)title=document.title;
 var twitter_url = "https://twitter.com/share?via=iridl&hashtags=dataviz&url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(title);
 window.open(twitter_url);
+}
+function doGMail(){
+ var url = appendPageForm(location.href.replace(/[?].*/,''),'share');
+    var tpar = getElementsByAttribute(document,'*','property','term:title');
+	if(tpar.length>0){
+	title=tpar[0].innerHTML;
+	}
+	if(!title)title=document.title;
+var m='http://mail.google.com/mail/?ui=1&view=cm&fs=1&tf=1&to=&su='+encodeURIComponent(title)+'&body='+encodeURIComponent(url);
+window.open(m);
 }
 function doTumblrClip(){
     var content = document.getElementById("content");
@@ -576,7 +596,12 @@ var newsrc=appendPageForm(mylink.figureimage.src,mylink.figureimage.className);
 mylink.figureimage.src=newsrc;
 }
 }
+/* handles building of image controls from info.json information
+invoked when load of info.json completes
+*/
 function DLimageBuildControls(mylink){
+/* builds image controls and places them immediately after the hasFigure link 
+*/
 if(mylink.nextSibling.className != 'dlcontrol'){
 var dimlist=mylink.info["iridl:hasDimensions"];
 var currentObj=mylink;
@@ -642,7 +667,7 @@ currentObj.parentNode.insertBefore(ctl,currentObj.nextSibling);
 currentObj=ctl;
 }
 }
-}
+} // end of image (dimension) control builds
 }
 function insertcontrolBar(){
 var s=document.getElementById('irilink');
