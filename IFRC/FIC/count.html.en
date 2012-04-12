@@ -47,7 +47,7 @@
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
-      <li><a href="instructions.html">Instructions</a></li>
+      <li><a class="carry" href="instructions.html">Instructions</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.GPWv3/.count/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/546./plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef/" />
@@ -64,7 +64,7 @@
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<p><b><a href="instructions.html#count">CIESIN/SEDAC GPWv3 Year 2005 Projected U.N.-Adjusted Population Counts</a></b><br /> 
+<p><b><a class="carry" href="instructions.html#count">CIESIN/SEDAC GPWv3 Year 2005 Projected U.N.-Adjusted Population Counts</a></b><br /> 
 <b>Data</b>  Number of persons per 2.5 arc-minute grid box, projected for the year 2005, based upon national statistical office estimates of population and adjusted according to U.N. national population estimates, from the CIESIN Gridded Population of the World, Version 3 (GPWv3) data set 
 <br /><b>Data Source</b> Center for International Earth Science Information Network (CIESIN), Socio-Economic Data Center (SEDAC), <a href="http://sedac.ciesin.org/gpw/documentation.jsp">Gridded Population of the World, Version 3</a>
 </p>

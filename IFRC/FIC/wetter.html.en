@@ -49,7 +49,7 @@
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="#tabs-3" >Single-Day Precipitation Maps</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
-      <li><a class="carry" href="instructions.html">Instructions</a></li>
+      <li><a class="carry" class="carry" href="instructions.html">Instructions</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcpanom/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
@@ -66,7 +66,7 @@
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<p><b><a class="carry" href="instructions.html#esrlgfs">ESRL GFS Six-Day and Daily Precipitation Forecast Maps</a></b><br /> 
+<p><b><a class="carry" class="carry" href="instructions.html#esrlgfs">ESRL GFS Six-Day and Daily Precipitation Forecast Maps</a></b><br /> 
 <b>Data</b>  Daily ensemble-mean forecast precipitation totals at 2.5&#176; lat/lon resolution from the Medium-Range Forecast (MRF/GFS) model run daily at 00 UTC by the NOAA ESRL PSD Reforecast project 
 <br /><b>Data Source</b> U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://www.cdc.noaa.gov/people/jeffrey.s.whitaker/refcst/">ESRL GFS Reforecast Project</a>
 <br /><b>Analyses</b>: Analyses shown here include forecast daily (days 1-6) and six-day precipitation totals, forecast daily and six-day total precipitation anomalies from the 1979-2004 mean, forecast daily and six-day total precipitation as percent of mean monthly total precipitation (1979-2004 base period), and forecast daily and six-day total precipitation percentiles (1979-2004 base period).

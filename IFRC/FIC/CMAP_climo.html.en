@@ -48,7 +48,7 @@
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
-      <li><a href="instructions.html">Instructions</a></li>
+      <li><a class="carry" href="instructions.html">Instructions</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/-180./180./plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
@@ -65,7 +65,7 @@
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<p><b><a href="instructions.html#CMAP_climo">CPC Merged Analysis of Precipitation Monthly Climatology</a></b><br /> 
+<p><b><a class="carry" href="instructions.html#CMAP_climo">CPC Merged Analysis of Precipitation Monthly Climatology</a></b><br /> 
 <b>Data</b>  CPC Merged Analysis of Precipitation (CMAP) v0703 (March 2007 release) version 2 (merged gauge and satellite estimates) monthly precipitation values at 2.5&#176; lat/lon resolution
 <br /><b>Data Source</b> NOAA, Climate Prediction Center, <a href="http://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
 <br /><b>Analysis</b> Monthly precipitation climatology using 1979-2004 base period.

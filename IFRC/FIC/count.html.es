@@ -63,7 +63,7 @@
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
-<p><b><a href="instructions.html.es#count">CIESIN/SEDAC GPWv3 Poblaci&#243;n Ajustada para el A&#241;o 2005 Proyectada por Naciones Unidas</a></b><br /> 
+<p><b><a class="carry" href="instructions.html.es#count">CIESIN/SEDAC GPWv3 Poblaci&#243;n Ajustada para el A&#241;o 2005 Proyectada por Naciones Unidas</a></b><br /> 
 <b>Datos</b>  N&#250;mero de personas por cuadr&#237;cula de 2.5 minutos de arco, proyectado para el a&#241;o 2005, basado en estimaciones de poblaci&#243;n de oficinas nacionales de estad&#237;sticas y ajustado de acuerdo con estimaciones nacionales de poblaci&#243;n de las Naciones Unidas, del dataset del CIESIN Gridded Population of the World, Version 3 (GPWv3).
 <br /><b>Fuente de Datos</b> Center for International Earth Science Information Network (CIESIN), Socio-Economic Data Center (SEDAC), <a href="http://sedac.ciesin.org/gpw/documentation.jsp">Gridded Population of the World, Version 3</a>
 </p>

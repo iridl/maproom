@@ -65,7 +65,7 @@
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
-<p><b><a href="instructions.html.es#extreme_prcp_fcst">Pron&#243;stico de la Precipitaci&#243;n Extrema del IRI</a></b><br /> 
+<p><b><a class="carry" href="instructions.html.es#extreme_prcp_fcst">Pron&#243;stico de la Precipitaci&#243;n Extrema del IRI</a></b><br /> 
 <b>Datos</b> El pron&#243;stico provee probabilidades de que la precipitaci&#243;n estacional (3 meses) estar&#225; en el 15% m&#225;s bajo o en el 15% m&#225;s alto de la distribuci&#243;n climatol&#243;gica (30 a&#241;os) para el tiempo de entrega de la primera IRI Net Assessment Forecast, emitido cada mes a una resoluci&#243;n 2.5&#176; lat/lon.
 <br /><b>Fuente de Datos</b> International Research Institute for Climate and Society, <a href="http://iri.columbia.edu/climate/forecast/net">Pron&#243;stico de Net Assessment</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library</a>
 </p>

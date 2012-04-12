@@ -64,7 +64,7 @@
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
-<p><b><a href="instructions.html.es#imr">CIESIN/SEDAC Global Distribution of Poverty, Tasa de Mortalidad Infantil, a&#241;o 2000</a></b><br /> 
+<p><b><a class="carry" href="instructions.html.es#imr">CIESIN/SEDAC Global Distribution of Poverty, Tasa de Mortalidad Infantil, a&#241;o 2000</a></b><br /> 
 <b>Datos</b>  Tasa de Mortalidad Infantil (numero de muertes infantiles por cada 10,000 nacidos vivos) por grilla de 0.25&#176; lat/lon, para el a&#241;o 2000, del conjunto de datos del SEDAC Global Distribution of Poverty 
 <br /><b>Fuente de Datos</b> Center for International Earth Science Information Network (CIESIN), Socio-Economic Data Center (SEDAC), <a href="http://sedac.ciesin.columbia.edu/povmap/">Global Distribution of Poverty</a>
 </p>

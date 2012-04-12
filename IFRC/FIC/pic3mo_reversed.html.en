@@ -48,7 +48,7 @@
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
-      <li><a href="instructions.html">Instructions</a></li>
+      <li><a class="carry" href="instructions.html">Instructions</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_reversed/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20reversed%20from%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/60/psdef//plotborderbottom/40/psdef/" />
@@ -65,7 +65,7 @@
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<p><b><a href="instructions.html#pic3mo_reversed">IRI Predictions in Context (PiC)</a></b><br /> 
+<p><b><a class="carry" href="instructions.html#pic3mo_reversed">IRI Predictions in Context (PiC)</a></b><br /> 
 <b>Data</b>  Forecast data:  Dominant tercile probabilities for seasonal (3-month) precipitation for the first lead time from the IRI Net Assessment Forecast, issued every month at 2.5&#176; lat/lon resolution; Observational data:  CAMS-OPI monthly observed precipitation gridded at 2.5&#176; lat/lon resolution
 <br /><b>Data Source</b> Analysis data:  International Research Institute for Climate and Society, <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&#38;objID=944&#38;PageID=7613&#38;cached=true&#38;mode=2#pic">Predictions in Context</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.PiC/">Map Room PiC page</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.PiC/">Data Library entry</a>; Forecast data:  International Research Institute for Climate and Society, <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&#38;objID=944&#38;parentname=CommunityPage&#38;parentid=1&#38;mode=2&#38;in_hi_userid=2&#38;cached=true">Net Assessment Forecasts</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.Precipitation/">Map Room Forecast page</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library entry</a>; Observational data:  NOAA, Climate Prediction Center, <a href="http://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cams_opi.html">CAMS-OPI Precipitation</a>
 <br /><b>Analysis</b> Shaded areas on the "Reversed Tendency" map show where the IRI Net Assessment seasonal precipitation forecast for the next 3-month season indicates an enhanced likelihood of above-normal (below-normal) precipitation AND where precipitation received in the 3-month season before the forecast was issued was below normal (above normal), i.e., the forecast has the opposite tendency from the previously observed precipitation.

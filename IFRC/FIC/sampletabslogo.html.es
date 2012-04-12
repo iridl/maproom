@@ -66,7 +66,7 @@
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
-<p><b><a href="instructions.html.es#esrlgfs">ESRL GFS Mapas de Pron&#243;stico de Pre
+<p><b><a class="carry" href="instructions.html.es#esrlgfs">ESRL GFS Mapas de Pron&#243;stico de Pre
 cipitaciones Diarias y de Seis D&#237;as</a></b><br /> 
 <b>Datos</b>  Promedios de lluvia diaria total pronosticada a 2.5&#176; lat/lon con ensambles del modelo Medium-Range Forecast (MRF/GFS) corrido diariamente a las 00 UTC por el NOAA ESRL PSD Reforecast project 
 <br /><b>Fuente de Datos</b> U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://www.cdc.noaa.gov/people/jeffrey.s.whitaker/refcst/">Proyecto de ESRL GFS Reforecast</a>

@@ -65,7 +65,7 @@
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
-<p><b><a href="instructions.html.es#CMAP_climo">Climatologia Mensual del CPC Merged Analysis of Precipitation</a></b><br /> 
+<p><b><a class="carry" href="instructions.html.es#CMAP_climo">Climatologia Mensual del CPC Merged Analysis of Precipitation</a></b><br /> 
 <b>Datos</b>  Valores de precipitaci&#243;n mensual en resoluci&#243;n 2.5&#176; lat/lon del CPC Merged Analysis of Precipitation (CMAP) v0703 (publicado Marzo 2007) version 2 (combinaci&#243;n de observaciones y estimaciones por sat&#233;lite).
 <br /><b>Fuente de Datos</b> NOAA, Climate Prediction Center, <a href="http://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
 <br /><b>An&#225;lisis</b> Climatolog&#237;a de precipitaci&#243;n mensual usando 1979-2004 como per&#237;odo base.

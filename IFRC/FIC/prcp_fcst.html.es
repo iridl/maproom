@@ -66,7 +66,7 @@
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
-<p><b><a href="instructions.html.es#prcp_fcst">Pron&#243;stico de Precipitaci&#243;n Estacional del IRI </a></b><br /> 
+<p><b><a class="carry" href="instructions.html.es#prcp_fcst">Pron&#243;stico de Precipitaci&#243;n Estacional del IRI </a></b><br /> 
 <b>Datos</b>   Probabilidad del tercil dominante para la precipitaci&#243;n de los pr&#243;ximos 3 meses del pron&#243;stico del IRI Net Assessment, publicado todos los meses en resoluci&#243;n 2.5&#176; lat/lon.
 <br /><b>Fuente de Datos</b> International Research Institute for Climate and Society, <a href="http://iri.columbia.edu/climate/forecast/net">Pron&#243;stico del Net Assessment</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.Precipitation/">p&#225;gina de Pron&#243;stico del Map Room</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library </a>
 </p>
