@@ -524,6 +524,7 @@ var imglist=s.getElementsByTagName('img');
 for (var i = 0; i<imglist.length; i++){
 if(imglist[i].className == 'dlimg'){
 xmlhttp.mylink.figureimage=imglist[i];
+xmlhttp.mylink.figureimage.mylink=xmlhttp.mylink;
 break;
 }
 }
@@ -589,7 +590,7 @@ ipt.type='hidden';
 pform.appendChild(ipt);
 }
 var clientsize = Math.max(mylink.parentNode.clientWidth,mylink.parentNode.clientHeight); 
-var targetsize = 10*Math.round((clientsize - 20 - 72 + 9)/10,0);
+var targetsize = 20*Math.round((clientsize - 20 - 72 + 9)/20,0);
 if(targetsize > csize){
 ipt.value=targetsize;
 var newsrc=appendPageForm(mylink.figureimage.src,mylink.figureimage.className);
@@ -600,7 +601,7 @@ mylink.figureimage.src=newsrc;
 invoked when load of info.json completes
 */
 function DLimageBuildControls(mylink){
-/* builds image controls and places them immediately after the hasFigure link 
+/* builds image choice controls and places them immediately after the hasFigure link 
 */
 if(mylink.nextSibling.className != 'dlcontrol'){
 var dimlist=mylink.info["iridl:hasDimensions"];
@@ -668,6 +669,74 @@ currentObj=ctl;
 }
 }
 } // end of image (dimension) control builds
+var myfigure = mylink.figureimage;
+if(!myfigure.myoverlay){
+//if(false){
+var myimgdiv = document.createElement('div');
+myfigure.myoverlay=myimgdiv;
+myimgdiv.className="imageOverlayDiv";
+myimgdiv.style.position='absolute';
+// myimgdiv.style.width=myfigure.width + 'px';
+// myimgdiv.style.height=myfigure.height + 'px';
+myimgdiv.style.width='100%';
+myimgdiv.style.height='100%';
+//myimgdiv.onmousedown=startdrag;
+//myimgdiv.onmouseup=stopdrag;
+//myimgdiv.onmousemove=followdrag;
+myimgdiv.onmouseover=hello;
+myimgdiv.onmouseout=goodbye;
+myimgdiv.mycontainer=myfigure.parentNode;
+myimgdiv.zoomstatus=document.createElement('div');
+myimgdiv.zoomstatus.style.visibility='hidden';
+myimgdiv.zoomstatus.style.position='absolute';
+myimgdiv.zoomstatus.style.width='160px';
+myimgdiv.zoomstatus.style.height='40px';
+myimgdiv.zoomstatus.style.left='-110px';
+myimgdiv.zoomstatus.style.top='18px';
+myimgdiv.zoomstatus.style.zindex='10';
+myimgdiv.zoomstatus.style.backgroundcolor='#000099';
+myimgdiv.zoomstatus.style.color='#ffff99';
+myimgdiv.outline=document.createElement('span');
+myimgdiv.outline.style.visibility='hidden';
+myimgdiv.outline.style.position='absolute';
+myimgdiv.outline.style.width='85px';
+myimgdiv.outline.style.height='54px';
+myimgdiv.outline.style.left='102px';
+myimgdiv.outline.style.top='50px';
+myimgdiv.outline.style.zindex='5';
+myimgdiv.outline.style.backgroundcolor='#E00000';
+myimgdiv.outline.style.color='#ffff99';
+myimgdiv.outlineimage=document.createElement('span');
+myimgdiv.outlineimage.style.position='absolute';
+myimgdiv.outlineimage.style.left='-102px';
+myimgdiv.outlineimage.style.top='-50px';
+myimgdiv.outlineimage.style.clip='rect(52px 184px 102px 104px)';
+myimgdiv.outline.appendChild(myimgdiv.outlineimage);
+myimgdiv.inputimage=myfigure;
+var newimg=document.createElement("img");
+newimg.width=myimgdiv.inputimage.width;
+newimg.height=myimgdiv.inputimage.height;
+newimg.src=myimgdiv.inputimage.src;
+myimgdiv.outlineimage.appendChild(newimg);
+myfigure.parentNode.insertBefore(myimgdiv,myfigure);
+// myimgdiv.appendChild(myfigure);
+}
+}
+function resetImageOverlay(myfigure){
+if(myfigure.myoverlay){
+var myimgdiv = myfigure.myoverlay;
+myimgdiv.style.width=myfigure.width + 'px';
+myimgdiv.style.height=myfigure.height + 'px';
+myimgdiv.outlineimage.children[0].width=myfigure.width;
+myimgdiv.outlineimage.children[0].height=myfigure.height;
+myimgdiv.outlineimage.children[0].src=myfigure.src;
+}
+}
+function hello(){
+window.status='hello';
+}
+function goodbye(){
+window.status='goodbye';
 }
 function insertcontrolBar(){
 var s=document.getElementById('irilink');
@@ -889,23 +958,23 @@ function imageloadedevent(evt){
     evt = (evt) ? evt : ((event) ? event : null );
 var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement;
 if(it.className == 'dlimg'){
-if(it.height>it.width && it.parentNode.className.indexOf('tall')<0){
-it.parentNode.className = it.parentNode.className + ' tall';
+if(it.mylink){
+var mynode = it.mylink.parentNode;
+if(it.height>it.width && mynode.className.indexOf('tall')<0){
+mynode.className = mynode.className + ' tall';
 }
-if(it.height<it.width && it.parentNode.className.indexOf('tall')>0){
-it.parentNode.className = it.parentNode.className.replace(' tall','');
+if(it.height<it.width && mynode.className.indexOf('tall')>0){
+mynode.className = mynode.className.replace(' tall','');
 }
+}
+/* makes sure the image overlay is the right size if it exists */
+resetImageOverlay(it);
 var pform=document.getElementById('pageform');
 if(pform && pform.elements['plotaxislength'] && pform.elements['plotaxislength'].value){
 var clientsize = Math.max(it.width,it.height); 
+var targetsize = 20*Math.round((clientsize - 20 - 72 + 9)/20,0);
 var plen = pform.elements['plotaxislength'].value;
-if(it.height>it.width && ((it.height  < plen ) || (it.height > 1.4*plen))){
-var targetsize = 10*Math.round((clientsize - 20 - 72 + 9)/10,0);
-pform.elements['plotaxislength'].value = targetsize;
-updatePageForm(pform.elements['plotaxislength']);
-}
-if(it.height<it.width && ((it.width  < plen ) || (it.width > 1.4*plen))){
-var targetsize = 10*Math.round((clientsize - 20 - 72 + 9)/10,0);
+if(targetsize!=plen){
 pform.elements['plotaxislength'].value = targetsize;
 updatePageForm(pform.elements['plotaxislength']);
 }
