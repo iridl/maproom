@@ -690,15 +690,10 @@ myimgdiv.onmouseover=hello;
 myimgdiv.onmouseout=goodbye;
 myimgdiv.mycontainer=myfigure.parentNode;
 myimgdiv.zoomstatus=document.createElement('div');
-myimgdiv.zoomstatus.style.visibility='hidden';
+myimgdiv.zoomstatus.className='zoomStatus';
 myimgdiv.zoomstatus.style.position='absolute';
-myimgdiv.zoomstatus.style.width='160px';
-myimgdiv.zoomstatus.style.height='40px';
-myimgdiv.zoomstatus.style.left='-110px';
-myimgdiv.zoomstatus.style.top='18px';
-myimgdiv.zoomstatus.style.zindex='10';
-myimgdiv.zoomstatus.style.backgroundcolor='#000099';
-myimgdiv.zoomstatus.style.color='#ffff99';
+myimgdiv.zoomstatus.style.visibility='hidden';
+myimgdiv.appendChild(myimgdiv.zoomstatus);
 myimgdiv.outline=document.createElement('span');
 myimgdiv.outline.style.visibility='hidden';
 myimgdiv.outline.style.position='absolute';
@@ -707,8 +702,9 @@ myimgdiv.outline.style.height='54px';
 myimgdiv.outline.style.left='102px';
 myimgdiv.outline.style.top='50px';
 myimgdiv.outline.style.zindex='5';
-myimgdiv.outline.style.backgroundcolor='#E00000';
+myimgdiv.outline.style.backgroundColor='#E00000';
 myimgdiv.outline.style.color='#ffff99';
+myimgdiv.appendChild(myimgdiv.outline);
 myimgdiv.outlineimage=document.createElement('span');
 myimgdiv.outlineimage.style.position='absolute';
 myimgdiv.outlineimage.style.left='-102px';
@@ -735,11 +731,45 @@ myimgdiv.outlineimage.children[0].height=myfigure.height;
 myimgdiv.outlineimage.children[0].src=myfigure.src;
 }
 }
-function hello(){
-window.status='hello';
+function getcurrentTarget(evt) {
+evt = (evt) ? evt : event;
+if(evt){
+var elem = (evt.currentTarget) ? evt.currentTarget : ((evt.srcElement.parentNode) ? evt.srcElement.parentNode : null);
+if(elem){
+return elem;
 }
-function goodbye(){
-window.status='goodbye';
+}
+return null;
+}
+function hello(evt){
+var myimgdiv=getcurrentTarget(evt);
+if(myimgdiv){
+var checkobj;
+checkobj=document.getElementById("clickzoom");
+var mypar=myimgdiv.zoomstatus;
+if(mypar){
+if(checkobj){
+mypar.innerHTML="click for information; click & drag to zoom";
+}
+else {
+mypar.innerHTML="click & drag to zoom";
+}
+mypar.style.visibility="visible";
+mypar.timeoutId=setTimeout(function () {mypar.style.visibility='hidden'},3000);
+}
+}
+return true;
+}
+function goodbye(evt){
+var myimgdiv=getcurrentTarget(evt);
+if(myimgdiv){
+myimgdiv.zoomstatus.style.visibility="hidden";
+if(myimgdiv.zoomstatus.timeoutId){
+clearTimeout(myimgdiv.zoomstatus.timeoutId);
+myimgdiv.zoomstatus.timeoutID=null;
+}
+}
+return true;
 }
 function insertcontrolBar(){
 var s=document.getElementById('irilink');
