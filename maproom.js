@@ -752,11 +752,11 @@ var checkobj;
 checkobj=document.getElementById("clickzoom");
 var mypar=myimgdiv.zoomstatus;
 if(mypar){
-if(checkobj){
-mypar.innerHTML="click for information; click & drag to zoom";
+if(true){
+mypar.innerHTML="click for information;<br /> click & drag down-and-right to zoom in";
 }
 else {
-mypar.innerHTML="click & drag to zoom";
+mypar.innerHTML="click & drag down-and-right to zoom in";
 }
 mypar.style.visibility="visible";
 mypar.timeoutId=setTimeout(function () {mypar.style.visibility='hidden'},3000);
@@ -797,7 +797,7 @@ if(myobj != null && myobj.style.visibility == 'visible'){
 evt.cancelBubble = true;
 myobj=null;
 mypar=myimgdiv.zoomstatus;
-mypar.innerHTML="Reloading ...";
+mypar.innerHTML="Not Yet Implemented ...";
 mypar.style.visibility="visible";
 myit=myimgdiv.inputimage;
 myit.style.visibility="hidden";
