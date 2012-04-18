@@ -606,6 +606,7 @@ function DLimageBuildControls(mylink){
 if(mylink.nextSibling.className != 'dlcontrol'){
 var dimlist=mylink.info["iridl:hasDimensions"];
 var currentObj=mylink;
+if(dimlist){
 for (var i = 0; i<dimlist.length; i++) {
 var glist=dimlist[i]['iridl:gridvalues']['iridl:valuelist'];
 if(glist && (glist.length > 1)){
@@ -668,6 +669,7 @@ currentObj.parentNode.insertBefore(ctl,currentObj.nextSibling);
 currentObj=ctl;
 }
 }
+}
 } // end of image (dimension) control builds
 var myfigure = mylink.figureimage;
 if(!myfigure.myoverlay){
@@ -678,6 +680,7 @@ myimgdiv.className="imageOverlayDiv";
 myimgdiv.style.position='absolute';
 // myimgdiv.style.width=myfigure.width + 'px';
 // myimgdiv.style.height=myfigure.height + 'px';
+// image is not necessarily loaded yet, so cannot be sure of the image size.
 myimgdiv.style.width='100%';
 myimgdiv.style.height='100%';
 //myimgdiv.onmousedown=startdrag;
