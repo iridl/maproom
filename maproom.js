@@ -752,7 +752,7 @@ var checkobj;
 checkobj=document.getElementById("clickzoom");
 var mypar=myimgdiv.zoomstatus;
 if(mypar){
-if(true){
+if(checkobj){
 mypar.innerHTML="click for information;<br /> click & drag down-and-right to zoom in";
 }
 else {
