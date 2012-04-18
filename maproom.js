@@ -683,9 +683,9 @@ myimgdiv.style.position='absolute';
 // image is not necessarily loaded yet, so cannot be sure of the image size.
 myimgdiv.style.width='100%';
 myimgdiv.style.height='100%';
-//myimgdiv.onmousedown=startdrag;
-//myimgdiv.onmouseup=stopdrag;
-//myimgdiv.onmousemove=followdrag;
+myimgdiv.onmousedown=startdrag;
+myimgdiv.onmouseup=stopdrag;
+myimgdiv.onmousemove=followdrag;
 myimgdiv.onmouseover=hello;
 myimgdiv.onmouseout=goodbye;
 myimgdiv.mycontainer=myfigure.parentNode;
@@ -704,6 +704,8 @@ myimgdiv.outline.style.top='50px';
 myimgdiv.outline.style.zindex='5';
 myimgdiv.outline.style.backgroundColor='#E00000';
 myimgdiv.outline.style.color='#ffff99';
+myimgdiv.outline.onclick=skipme;
+myimgdiv.outline.onmousemove=skipme;
 myimgdiv.appendChild(myimgdiv.outline);
 myimgdiv.outlineimage=document.createElement('span');
 myimgdiv.outlineimage.style.position='absolute';
@@ -711,6 +713,8 @@ myimgdiv.outlineimage.style.left='-102px';
 myimgdiv.outlineimage.style.top='-50px';
 myimgdiv.outlineimage.style.clip='rect(52px 184px 102px 104px)';
 myimgdiv.outline.appendChild(myimgdiv.outlineimage);
+myimgdiv.outlineimage.onclick=skipme;
+myimgdiv.outlineimage.onmousemove=skipme;
 myimgdiv.inputimage=myfigure;
 var newimg=document.createElement("img");
 newimg.width=myimgdiv.inputimage.width;
@@ -771,6 +775,210 @@ myimgdiv.zoomstatus.timeoutID=null;
 }
 return true;
 }
+/* drag zoom routines */
+var myobj=null;
+var myx,myy;
+function doit(state){
+myit=document.getElementById("outline");
+myit.style.visibility=state;
+return false;
+}
+function stopdrag(evt){
+evt = (evt) ? evt : event;
+var myimgdiv=getcurrentTarget(evt);
+var myinfo = myimgdiv.inputimage.mylink.info;
+if(myobj != null && myinfo){
+if(myobj.style.visibility == 'visible'){
+myvals=lonlat(myinfo,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
+//setXY(Xvalues[myvals[0]],Xvalues[myvals[1]],Yvalues[myvals[2]],Yvalues[myvals[3]]);
+}
+}
+if(myobj != null && myobj.style.visibility == 'visible'){
+evt.cancelBubble = true;
+myobj=null;
+mypar=myimgdiv.zoomstatus;
+mypar.innerHTML="Reloading ...";
+mypar.style.visibility="visible";
+myit=myimgdiv.inputimage;
+myit.style.visibility="hidden";
+//myit.form.submit();
+return false;
+}
+else {
+myobj=null;
+return true;
+}
+}
+function absLeft(obj){
+if(obj.offsetParent){
+myval=obj.offsetLeft + absLeft(obj.offsetParent);
+}
+else {
+myval=obj.offsetLeft;
+}
+return myval;
+}
+function absTop(obj){
+if(obj.offsetParent){
+myval=obj.offsetTop + absTop(obj.offsetParent);
+}
+else {
+myval=obj.offsetTop;
+}
+return myval;}
+function startdrag(evt){
+evt = (evt) ? evt : event;
+var myimgdiv=getcurrentTarget(evt);
+var myworld = myimgdiv.mycontainer;
+var myinfo = myimgdiv.inputimage.mylink.info;
+var plotborderleft = myinfo["iridl:plotborderleft"];
+var plotbordertop = myinfo["iridl:plotbordertop"];
+var plotborderright = myinfo["iridl:plotborderright"];
+var plotborderbottom = myinfo["iridl:plotborderbottom"];
+var Xaxislength = myinfo["iridl:Xaxislength"];
+var Yaxislength = myinfo["iridl:Yaxislength"];
+if(typeof(evt.layerX) !='undefined'){
+myx=evt.layerX;
+myy=evt.layerY;
+}
+else {
+if(typeof(evt.x) !='undefined'){
+myx=evt.x;
+myy=evt.y;
+}
+else {
+myx=evt.clientX-absLeft(myworld);
+myy=evt.clientY-absTop(myworld);
+}
+}
+if(myobj == null && myx>plotborderleft && myy>plotbordertop && myx<Xaxislength+plotborderleft && myy < Yaxislength+plotbordertop){
+myobj = myimgdiv.outline;
+sizeto(myobj,0,0);
+return false;
+}else
+{return true;
+}}
+function followdrag(evt){
+evt = (evt) ? evt : event;
+var myimgdiv=getcurrentTarget(evt);
+var myworld = myimgdiv.mycontainer;
+if(myworld){
+var myinfo = myimgdiv.inputimage.mylink.info;
+var plotborderleft = myinfo["iridl:plotborderleft"];
+var plotbordertop = myinfo["iridl:plotbordertop"];
+var plotborderright = myinfo["iridl:plotborderright"];
+var plotborderbottom = myinfo["iridl:plotborderbottom"];
+var Xaxislength = myinfo["iridl:Xaxislength"];
+var Yaxislength = myinfo["iridl:Yaxislength"];
+if(myobj != null){
+if(typeof(evt.layerX) !='undefined'){
+dx=evt.layerX;
+dy=evt.layerY;
+}
+else {
+if(typeof(evt.x) !='undefined'){
+dx=evt.x;
+dy=evt.y;
+}
+else {
+dx=evt.clientX-absLeft(myworld);
+dy=evt.clientY-absTop(myworld);
+}
+}
+cw=parseInt(myobj.style.width);
+ch=parseInt(myobj.style.height);
+newx=Math.min(dx,myx);
+newy=Math.min(dy,myy);
+neww=Math.max(dx,myx)-newx;
+newh=Math.max(dy,myy)-newy;
+//if(newx >plotborderleft && newy>plotborderright&& newx+neww<Xaxislength+plotborderleft && newy+newh < Yaxislength+plotbordertop)
+if(true){
+sizeto(myimgdiv.outline,neww,newh);
+if(cw*ch > 0){
+myit=myimgdiv.outline;
+myit.style.visibility='visible';
+iimg=myimgdiv.inputimage;
+//myvals=lonlat(myinfo,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
+//setXY(Xvalues[myvals[0]],Xvalues[myvals[1]],Yvalues[myvals[2]],Yvalues[myvals[3]]);
+}
+shiftto(myimgdiv.outline,newx,newy);
+}
+evt.cancelBubble = true;
+}
+}
+return false;
+}
+function skipme(evt){
+return false;
+}
+lonlatA=new Array();
+function lonlat(myinfo,left,top,width,height){
+myA=lonlatA;
+var plotborderleft = myinfo["iridl:plotborderleft"];
+var plotbordertop = myinfo["iridl:plotbordertop"];
+var plotborderright = myinfo["iridl:plotborderright"];
+var plotborderbottom = myinfo["iridl:plotborderbottom"];
+var Xaxislength = myinfo["iridl:Xaxislength"];
+var Yaxislength = myinfo["iridl:Yaxislength"];
+var Xare = myinfo["iridl:hasAbscissa"]["@type"];
+var Yare = myinfo["iridl:hasOrdinate"]["@type"];
+if(Xare = 'iridl:EvenGridEdges'){
+nxl1 = (myinfo["iridl:hasOrdinate"]["iridl:last"] - myinfo["iridl:hasOrdinate"]["iridl:first"])/myinfo["iridl:hasOrdinate"]["iridl:step"];
+nxl = Math.floor((nxl1)*(left-plotborderleft)/Xaxislength);
+nxr = Math.ceil((nxl1)*(left+width-plotborderleft)/Xaxislength);
+}
+else {
+nxl = Math.round((Xvalues.length-1)*(left-plotborderleft)/Xaxislength);
+nxr = Math.round((Xvalues.length-1)*(left+width-plotborderleft)/Xaxislength);
+}
+if(Yare = 'iridl:EvenGridEdges'){
+nyl1 = (myinfo["iridl:hasAbscissa"]["iridl:last"] - myinfo["iridl:hasAbscissa"]["iridl:first"])/myinfo["iridl:hasAbscissa"]["iridl:step"];
+nyt = Math.ceil(nyl1-(nyl1)*(top-plotbordertop)/Yaxislength);
+nyb = Math.floor(nyl1-(nyl1)*(top+height-plotbordertop)/Yaxislength);
+}
+else {
+nyt = Math.round(Yvalues.length-1-(Yvalues.length-1)*(top-plotbordertop)/Yaxislength);
+nyb = Math.round(Yvalues.length-1-(Yvalues.length-1)*(top+height-plotbordertop)/Yaxislength);
+}
+myA[0]=nxl;
+myA[1]=nxr;
+myA[2]=nyb;
+myA[3]=nyt;
+return myA;
+}
+function grow(myit,dx,dy){
+myit.style.width=parseInt(myit.style.width)+dx+'px';
+myit.style.height=parseInt(myit.style.height)+dy+'px';
+myitt=myit.childNodes[0];
+var re=/(\d+)px,?\s+(\d+)px,?\s+(\d+)px,?\s+(\d+)px/;
+var results = re.exec(myitt.style.clip);
+myitt.style.clip="rect(" + results[1] + "px " + (parseInt(results[2])+dx) + "px " +
+(parseInt(results[3])+dy) + "px " + results[4] + "px)";
+return false;
+}
+function sizeto(myit,dx,dy){
+cw=parseInt(myit.style.width);
+ch=parseInt(myit.style.height);
+grow(myit,dx-cw,dy-ch);
+}
+function shiftby(myit,dx,dy){
+myit.style.left=parseInt(myit.style.left)+dx+'px';
+myit.style.top=parseInt(myit.style.top)+dy+'px';
+myitt=myit.childNodes[0];
+var re=/(\d+)px,?\s+(\d+)px,?\s+(\d+)px,?\s+(\d+)px/;
+var results = re.exec(myitt.style.clip);
+myitt.style.clip="rect(" + (parseInt(results[1])+dy) + "px " + (parseInt(results[2])+dx) + "px " +
+(parseInt(results[3])+dy) + "px " + (parseInt(results[4])+dx) + "px)";
+myitt.style.left=parseInt(myitt.style.left)-dx+'px';
+myitt.style.top=parseInt(myitt.style.top)-dy+'px';
+return false;
+}
+function shiftto(myit,newx,newy){
+cleft=parseInt(myit.style.left);
+ctop=parseInt(myit.style.top);
+shiftby(myit,newx-cleft,newy-ctop);
+}
+/* end of drag zoom routines */
 function insertcontrolBar(){
 var s=document.getElementById('irilink');
 if(!s){
