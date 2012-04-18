@@ -334,6 +334,24 @@ border-width: 2px; border-style: outset; border-color: Grey;
        font-size: 10pt;
 	text-align: center;
 }
+.zoomStatus{
+background-color: WhiteSmoke;
+color: DarkSlateGrey;
+fontsize: 16pt;
+text-align: center;
+border-style: inset;
+border-color: LightGrey;
+border-width: 3px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+padding: 4px;
+width: 160px;
+height: 20px;
+left: 0px;
+top: 0px;
+zindex: 10;
+}
+
 .dlimage > .dlcontrol input {
 	text-align: center;
 }
@@ -943,6 +961,7 @@ margin-bottom: 2pt;
 A.titleLink:link, A.titleLink:visited, A.titleLink:active {text-decoration: none;
 color: navy;}
 A.titleLink:active, A.titleLink:hover {color: blue;}
+
 
   #custom-tweet-button{
     display: inline-block;
