@@ -316,7 +316,7 @@ var clipargs = {};
 clipargs.contentId = 'content';
 clipargs.url = appendPageForm(location.href.replace(/[?].*/,''),'share');
 clipargs.filter= function (arg){
-if(!(arg.className == 'imagecontrols')){
+if(!(arg.className == 'imagecontrols' || arg.style.visibility=='hidden')){
 return arg;
 }
 };
