@@ -27,6 +27,16 @@ by the maproom javascript code.
 maproomroot: holds the document root
 localHrefOf: converts a /maproom/ reference to be relative to the current document
 */
+var slist=document.getElementsByTagName('script');
+var scriptsrc='';
+for (var i=0; i<slist.length; i++){
+var shref=slist[i].src;
+if(shref.substr(shref.length-10,10) == 'maproom.js'){
+scriptsrc=shref;
+break;
+}
+}
+var scriptroot = scriptsrc.substr(0,document.location.href.indexOf('/maproom/')+9);
 var maproomroot = document.location.href.substr(0,document.location.href.indexOf('/maproom/')+9);
 function localHrefOf(ghref){
 var lhref;
@@ -500,7 +510,7 @@ var leg;
 if(!sl.length){
 leg=document.createElement('legend');
 leg.className='imagecontrols';
-leg.innerHTML='<object class="dlimageswitch" data="' + maproomroot + 'icons/onoff.svg" type="image/svg+xml" width="13" height="13"><img class="dlimageswitch" src="'+ maproomroot + 'icons/onoff.png" width="13" height="13" border="0" hspace="2" vspace="2" /></object><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/RedrawButton.jpg" id="redrawbutton" title="Redraw" width="13" height="13" border="0" hspace="2" vspace="2" /><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/ZoomButton.jpg" id="zoomout" title="Zoom Out" width="13" height="13" border="0" hspace="2" vspace="2" /><img  class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/HelpButton.jpg" id="infobutton" title="More Information" width="13" height="13" border="0" hspace="2" vspace="2" />'
+leg.innerHTML='<object class="dlimageswitch" data="' + scriptroot + 'icons/onoff.svg" type="image/svg+xml" width="13" height="13"><img class="dlimageswitch" src="'+ scriptroot + 'icons/onoff.png" width="13" height="13" border="0" hspace="2" vspace="2" /></object><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/RedrawButton.jpg" id="redrawbutton" title="Redraw" width="13" height="13" border="0" hspace="2" vspace="2" /><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/ZoomButton.jpg" id="zoomout" title="Zoom Out" width="13" height="13" border="0" hspace="2" vspace="2" /><img  class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/HelpButton.jpg" id="infobutton" title="More Information" width="13" height="13" border="0" hspace="2" vspace="2" />'
 s.insertBefore(leg,s.firstChild);
 leg = document.getElementById('zoomout');
 leg.onclick=dozoomout;
@@ -989,14 +999,14 @@ var gb= document.createElement('a');
 gb.id='irilink';
 gb.href="http://iri.columbia.edu/";
 var ob= document.createElement('object');
-ob.data=maproomroot + "icons/iri.svg";
+ob.data=scriptroot + "icons/iri.svg";
 ob.type="image/svg+xml";
 ob.className="iriicon";
         if(document.width < 750){
-ob.innerHTML='<img class="iriicon" src="'+ maproomroot + 'icons/iri32.png" />';
+ob.innerHTML='<img class="iriicon" src="'+ scriptroot + 'icons/iri32.png" />';
 }
 else {
-ob.innerHTML='<img class="iriicon" src="' + maproomroot + 'icons/iri.png" />';
+ob.innerHTML='<img class="iriicon" src="' + scriptroot + 'icons/iri.png" />';
 }
 gb.appendChild(ob);
 cont.insertBefore(gb,cont.firstChild);
