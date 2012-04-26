@@ -36,7 +36,7 @@ scriptsrc=shref;
 break;
 }
 }
-var scriptroot = scriptsrc.substr(0,document.location.href.indexOf('/maproom/')+9);
+var scriptroot = scriptsrc.substr(0,scriptsrc.indexOf('/maproom/')+9);
 var maproomroot = document.location.href.substr(0,document.location.href.indexOf('/maproom/')+9);
 function localHrefOf(ghref){
 var lhref;
