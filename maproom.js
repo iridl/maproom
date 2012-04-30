@@ -566,6 +566,41 @@ updatePageForm();
 }
 }
 }
+function setbbox (newbbox) {
+var myform=document.getElementById('pageform');
+if(myform){
+var myin = myform.elements['bbox'];
+if(myin){
+myin.value=JSON.stringify(newbbox);
+updatePageForm();
+}
+}
+}
+function getbbox (myinfo) {
+var mybbox;
+var myform=document.getElementById('pageform');
+if(myform){
+var myin = myform.elements['bbox'];
+if(myin && myin.value){
+mybbox=JSON.parse(myin.value);
+}
+}
+if(!mybbox){
+var Xare = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["@type"];
+var Yare = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["@type"];
+var X0,X1,Y0,Y1;
+if(Xare = 'iridl:EvenGridEdges'){
+X0 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:first"];
+X1 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:last"];
+}
+if(Yare = 'iridl:EvenGridEdges'){
+var Y0 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:first"];
+var Y1 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:last"];
+}
+mybbox=[X0,Y0,X1,Y1];
+}
+return mybbox;
+}
 function doredrawbutton () {
 var myform=document.getElementById('pageform');
 if(myform){
@@ -735,6 +770,12 @@ myfigure.parentNode.insertBefore(myimgdiv,myfigure);
 // myimgdiv.appendChild(myfigure);
 }
 }
+function hideImageOverlay(myfigure){
+if(myfigure.myoverlay){
+var myimgdiv=myfigure.myoverlay;
+myimgdiv.outline.style.visibility='hidden';
+}
+}
 function resetImageOverlay(myfigure){
 if(myfigure.myoverlay){
 var myimgdiv = myfigure.myoverlay;
@@ -800,14 +841,14 @@ var myinfo = myimgdiv.inputimage.mylink.info;
 if(myobj != null && myinfo){
 if(myobj.style.visibility == 'visible'){
 myvals=lonlat(myinfo,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
-//setXY(Xvalues[myvals[0]],Xvalues[myvals[1]],Yvalues[myvals[2]],Yvalues[myvals[3]]);
+setbbox(myvals);
 }
 }
 if(myobj != null && myobj.style.visibility == 'visible'){
 evt.cancelBubble = true;
 myobj=null;
 mypar=myimgdiv.zoomstatus;
-mypar.innerHTML="Not Yet Implemented ...";
+mypar.innerHTML="got " + JSON.stringify(myvals);
 mypar.style.visibility="visible";
 myit=myimgdiv.inputimage;
 myit.style.visibility="hidden";
@@ -840,13 +881,12 @@ function startdrag(evt){
 evt = (evt) ? evt : event;
 var myimgdiv=getcurrentTarget(evt);
 var myworld = myimgdiv.mycontainer;
+if(myworld){
 var myinfo = myimgdiv.inputimage.mylink.info;
 var plotborderleft = myinfo["iridl:plotborderleft"];
 var plotbordertop = myinfo["iridl:plotbordertop"];
 var plotborderright = myinfo["iridl:plotborderright"];
 var plotborderbottom = myinfo["iridl:plotborderbottom"];
-var Xaxislength = myinfo["iridl:Xaxislength"];
-var Yaxislength = myinfo["iridl:Yaxislength"];
 if(typeof(evt.layerX) !='undefined'){
 myx=evt.layerX;
 myy=evt.layerY;
@@ -861,13 +901,15 @@ myx=evt.clientX-absLeft(myworld);
 myy=evt.clientY-absTop(myworld);
 }
 }
-if(myobj == null && myx>plotborderleft && myy>plotbordertop && myx<Xaxislength+plotborderleft && myy < Yaxislength+plotbordertop){
+if(myobj == null){
 myobj = myimgdiv.outline;
 sizeto(myobj,0,0);
 return false;
 }else
 {return true;
-}}
+}
+}
+}
 function followdrag(evt){
 evt = (evt) ? evt : event;
 var myimgdiv=getcurrentTarget(evt);
@@ -921,6 +963,24 @@ return false;
 function skipme(evt){
 return false;
 }
+function plotaxislengthfn(myinfo){
+var plotaxislength;
+var Xaxislength = myinfo["iridl:Xaxislength"];
+var Yaxislength = myinfo["iridl:Yaxislength"];
+var pform=document.getElementById('pageform');
+if(pform && pform.elements['plotaxislength'] && pform.elements['plotaxislength'].value){
+	plotaxislength = pform.elements['plotaxislength'].value;
+}
+else {
+	if(Xaxislength >= Yaxislength){
+	plotaxislength = Xaxislength;
+	}
+	else {
+	plotaxislength = Yaxislength;
+	}
+}
+return(plotaxislength);
+}
 lonlatA=new Array();
 function lonlat(myinfo,left,top,width,height){
 myA=lonlatA;
@@ -928,31 +988,32 @@ var plotborderleft = myinfo["iridl:plotborderleft"];
 var plotbordertop = myinfo["iridl:plotbordertop"];
 var plotborderright = myinfo["iridl:plotborderright"];
 var plotborderbottom = myinfo["iridl:plotborderbottom"];
+var plotaxislength = plotaxislengthfn(myinfo);
 var Xaxislength = myinfo["iridl:Xaxislength"];
 var Yaxislength = myinfo["iridl:Yaxislength"];
-var Xare = myinfo["iridl:hasAbscissa"]["@type"];
-var Yare = myinfo["iridl:hasOrdinate"]["@type"];
-if(Xare = 'iridl:EvenGridEdges'){
-nxl1 = (myinfo["iridl:hasOrdinate"]["iridl:last"] - myinfo["iridl:hasOrdinate"]["iridl:first"])/myinfo["iridl:hasOrdinate"]["iridl:step"];
-nxl = Math.floor((nxl1)*(left-plotborderleft)/Xaxislength);
-nxr = Math.ceil((nxl1)*(left+width-plotborderleft)/Xaxislength);
+var Xare = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["@type"];
+var Yare = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["@type"];
+myA = getbbox(myinfo);
+var X0,X1,Y0,Y1;
+X0 = myA[0];
+Y0 = myA[1];
+X1 = myA[2];
+Y1 = myA[3];
+if(X1-X0 >= Y1-Y0) {
+Yaxislength = Math.round((plotaxislength * (Y1-Y0))/(X1-X0));
+Xaxislength = plotaxislength;
 }
 else {
-nxl = Math.round((Xvalues.length-1)*(left-plotborderleft)/Xaxislength);
-nxr = Math.round((Xvalues.length-1)*(left+width-plotborderleft)/Xaxislength);
+Xaxislength = Math.round((plotaxislength * (X1-X0))/(Y1-Y0));
+Yaxislength = plotaxislength;
 }
-if(Yare = 'iridl:EvenGridEdges'){
-nyl1 = (myinfo["iridl:hasAbscissa"]["iridl:last"] - myinfo["iridl:hasAbscissa"]["iridl:first"])/myinfo["iridl:hasAbscissa"]["iridl:step"];
-nyt = Math.ceil(nyl1-(nyl1)*(top-plotbordertop)/Yaxislength);
-nyb = Math.floor(nyl1-(nyl1)*(top+height-plotbordertop)/Yaxislength);
-}
-else {
-nyt = Math.round(Yvalues.length-1-(Yvalues.length-1)*(top-plotbordertop)/Yaxislength);
-nyb = Math.round(Yvalues.length-1-(Yvalues.length-1)*(top+height-plotbordertop)/Yaxislength);
-}
+nxl =  Math.round(X0 + (X1-X0)*(left-plotborderleft)/Xaxislength);
+nxr =  Math.round(X0 + (X1-X0)*(left+width-plotborderleft)/Xaxislength);
+nyt =  Math.round(Y1 - (Y1-Y0)*(top-plotbordertop)/Yaxislength);
+nyb =  Math.round(Y1 - (Y1-Y0)*(top+height-plotbordertop)/Yaxislength);
 myA[0]=nxl;
-myA[1]=nxr;
-myA[2]=nyb;
+myA[1]=nyb;
+myA[2]=nxr;
 myA[3]=nyt;
 return myA;
 }
@@ -1172,6 +1233,7 @@ if(cmem.tagName == 'IMG'){
 var newsrc = appendPageForm(cmem.src.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.src){
     cmem.src = newsrc;
+hideImageOverlay(cmem);
 }
 }
 if(cmem.tagName == 'LINK'){
