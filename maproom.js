@@ -779,8 +779,8 @@ myimgdiv.outline.style.visibility='hidden';
 function resetImageOverlay(myfigure){
 if(myfigure.myoverlay){
 var myimgdiv = myfigure.myoverlay;
-myimgdiv.style.width=myfigure.width + 'px';
-myimgdiv.style.height=myfigure.height + 'px';
+//myimgdiv.style.width=myfigure.width + 'px';
+//myimgdiv.style.height=myfigure.height + 'px';
 myimgdiv.outlineimage.children[0].width=myfigure.width;
 myimgdiv.outlineimage.children[0].height=myfigure.height;
 myimgdiv.outlineimage.children[0].src=myfigure.src;
@@ -887,6 +887,7 @@ var plotborderleft = myinfo["iridl:plotborderleft"];
 var plotbordertop = myinfo["iridl:plotbordertop"];
 var plotborderright = myinfo["iridl:plotborderright"];
 var plotborderbottom = myinfo["iridl:plotborderbottom"];
+//alert(evt.layerX + ' ' + evt.x + ' ' + evt.clientX + ' ' + absLeft(myimgdiv));
 if(typeof(evt.layerX) !='undefined'){
 myx=evt.layerX;
 myy=evt.layerY;
@@ -896,9 +897,9 @@ if(typeof(evt.x) !='undefined'){
 myx=evt.x;
 myy=evt.y;
 }
-else {
-myx=evt.clientX-absLeft(myworld);
-myy=evt.clientY-absTop(myworld);
+else { 
+myx=evt.clientX-absLeft(myimgdiv);
+myy=evt.clientY-absTop(myimgdiv);
 }
 }
 if(myobj == null){
@@ -933,8 +934,8 @@ dx=evt.x;
 dy=evt.y;
 }
 else {
-dx=evt.clientX-absLeft(myworld);
-dy=evt.clientY-absTop(myworld);
+dx=evt.clientX-absLeft(myimgdiv);
+dy=evt.clientY-absTop(myimgdiv);
 }
 }
 cw=parseInt(myobj.style.width);
