@@ -774,6 +774,7 @@ function hideImageOverlay(myfigure){
 if(myfigure.myoverlay){
 var myimgdiv=myfigure.myoverlay;
 myimgdiv.outline.style.visibility='hidden';
+myimgdiv.inputimage.style.visibility='visible';
 }
 }
 function resetImageOverlay(myfigure){
@@ -848,8 +849,9 @@ if(myobj != null && myobj.style.visibility == 'visible'){
 evt.cancelBubble = true;
 myobj=null;
 mypar=myimgdiv.zoomstatus;
-mypar.innerHTML="got " + JSON.stringify(myvals);
-mypar.style.visibility="visible";
+// mypar.innerHTML="zooming " + JSON.stringify(myvals);
+mypar.innerHTML="zooming... ";
+// mypar.style.visibility="visible";
 myit=myimgdiv.inputimage;
 myit.style.visibility="hidden";
 //myit.form.submit();
@@ -1234,7 +1236,7 @@ if(cmem.tagName == 'IMG'){
 var newsrc = appendPageForm(cmem.src.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.src){
     cmem.src = newsrc;
-hideImageOverlay(cmem);
+// hideImageOverlay(cmem);
 }
 }
 if(cmem.tagName == 'LINK'){
@@ -1281,6 +1283,7 @@ if(it.height<it.width && mynode.className.indexOf('tall')>0){
 mynode.className = mynode.className.replace(' tall','');
 }
 }
+hideImageOverlay(it);
 /* makes sure the image overlay is the right size if it exists */
 resetImageOverlay(it);
 var pform=document.getElementById('pageform');
@@ -1294,6 +1297,7 @@ updatePageForm(pform.elements['plotaxislength']);
 }
 }
 }
+return true;
 }
 /* if none of the classes in srcclass are in element.className,
 appends the first class in srclass
