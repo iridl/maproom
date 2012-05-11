@@ -501,6 +501,22 @@ updatePageForm(pform.elements[it.name]);
 }
 }
 }
+function pageformcopyonchange(evt){
+   var evt = (evt) ? evt : ((event) ? event : null );
+   var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+var pform=document.getElementById('pageform');
+if(pform){
+if(pform.elements[it.name]){
+if(it.option){
+pform.elements[it.name].value=it.options[it.selectedIndex].value;
+}
+else {
+pform.elements[it.name].value=it.value;
+}
+updatePageForm(pform.elements[it.name]);
+}
+}
+}
 function initializeDLimage(){
     var mylist=document.getElementsByClassName("dlimage");
 for( var i=0 ; i < mylist.length ; i++){
@@ -1179,6 +1195,13 @@ members[j].onload=imageloadedevent;
 }
 }
 }
+var stag = document.getElementsByClassName('pageformcopy');
+for (var i=0; i< stag.length ; i++){
+var sel=stag[i];
+if(!sel.onchange){
+sel.onchange=pageformcopyonchange;
+}
+}
 updatePageForm();
 }
 }
@@ -1236,7 +1259,7 @@ var cval = myform.elements[sel.name].value;
 for (var j=0; j < options.length ; j++){
 if(options[j].value == cval){
 sel.selectedIndex=j;
-if(sel.previousSibling.className='selectvalue'){
+if(sel.previousSibling.className == 'selectvalue'){
 sel.previousSibling.innerHTML=sel.options[sel.selectedIndex].innerHTML;
 }
 break;

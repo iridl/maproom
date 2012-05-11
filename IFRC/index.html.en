@@ -49,6 +49,7 @@ Working in collaboration with the International Federation of Red Cross and Red 
       <li><a href="#tabs-2" >Three-Month Forcasts</a></li>
       <li><a href="#tabs-3" >Historical</a></li>
       <li><a href="#tabs-4" >Vulnerability</a></li>
+      <li><a href="#tabs-5" >Time Scales</a></li>
     </ul>
 <div id="tabs-1" class="ui-tabs-panel">
 <div class="itemGroup">Six Day Precipitation Forecasts</div>
@@ -104,6 +105,13 @@ Working in collaboration with the International Federation of Red Cross and Red 
 <div class="item"><div class="itemTitle"><a class="titleLink" href="FIC/imr.html">Are the areas at risk of heavy rainfall inhabited by vulnerable populations?</a></div>
 <div class="itemIcon"><a href="FIC/imr.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
 <div class="itemDescription">This map shows the infant mortality rate, an indicator of poverty.</div>
+<div class="itemFooter"></div></div>
+</div>
+<div id="tabs-5" class="ui-tabs-panel">
+<div class="itemGroup">Time Scales</div>
+<div class="item"><div class="itemTitle"><a class="titleLink" href="TD/ClimateChange.html">How important are century-long shifts in climate?</a></div>
+<div class="itemIcon"><a href="TD/ClimateChange.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS3p1/.monthly/a:/%28.pre%29//var/parameter/interp/X/2.5/splitstreamgrid/Y/2.5/splitstreamgrid/%7BY/cosd%7D%5BX/Y%5Dweighted-average/X2/%28X%29renameGRID/Y2/%28Y%29renameGRID/yearly-anomalies/T/%28Jan-Dec%201901-2009%29//season/parameter/seasonalAverage/:a:/.stn/%28.pre%29//var/parameter/interp/X/2.5/boxAverage/Y/2.5/boxAverage/0/maskle/T/%28Jan-Dec%201901-2009%290.66/seasonalAverage/0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage/0.5/masklt%5BT%5D0.5/average/0/mul/add/:a:/%28.pre%29//var/parameter/interp/X/2.5/splitstreamgrid/Y/2.5/splitstreamgrid/%7BY/cosd%7D%5BX/Y%5Dweighted-average/X2/%28X%29renameGRID/Y2/%28Y%29renameGRID/T/%28Jan-Dec%201901-2009%29//season/parameter/seasonalAverage/T/differential_mul%5BT%5Daverage/30/masklt/0/mul/:a/add/X/-20/180/-20/RANGE/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/:butt_filter/.butt%5BX/Y%5DREORDER/2/index/2/index/sub/1/index/sub/pop/pop%5BT%5Drmsaover/0/maskle/%28units%29%28mm/month%29def/dup/mul/exch%5BT%5Drmsaover/dup/mul/div/%7BLow/0.15/Medium/0.25/High/0.45/%28Extremely%20High%29%7D%28DoI%29classify%5BDoI%5Ddominant_class/%28long_name%29%28Degree%20of%20Importance%29def/startcolormap/white/white/90/190/95/RGB/yellow/orange/red/white/endcolormap/X/Y/fig-/colors/countries_gaz/-fig/%28plotaxislength%29590/psdef/%28antialias%29true/psdef//plotborder/0/psdef//plotaxislength/200/psdef+.gif" /></a></div>
+<div class="itemDescription">This map shows areas where shift in climate over a century are likely to be important.</div>
 <div class="itemFooter"></div></div>
 </div>
 </div>
