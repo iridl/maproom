@@ -889,21 +889,9 @@ var plotborderleft = myinfo["iridl:plotborderleft"];
 var plotbordertop = myinfo["iridl:plotbordertop"];
 var plotborderright = myinfo["iridl:plotborderright"];
 var plotborderbottom = myinfo["iridl:plotborderbottom"];
-//alert(evt.layerX + ' ' + evt.x + ' ' + evt.clientX + ' ' + absLeft(myimgdiv));
-if(typeof(evt.layerX) !='undefined'){
-myx=evt.layerX;
-myy=evt.layerY;
-}
-else {
-if(typeof(evt.x) !='undefined'){
-myx=evt.x;
-myy=evt.y;
-}
-else { 
-myx=evt.clientX-absLeft(myimgdiv);
-myy=evt.clientY-absTop(myimgdiv);
-}
-}
+// alert(evt.layerX + ' ' + evt.x + ' ' + evt.pageX + ' ' + absLeft(myimgdiv));
+myx=evt.pageX-absLeft(myimgdiv);
+myy=evt.pageY-absTop(myimgdiv);
 if(myobj == null){
 myobj = myimgdiv.outline;
 sizeto(myobj,0,0);
@@ -926,20 +914,8 @@ var plotborderbottom = myinfo["iridl:plotborderbottom"];
 var Xaxislength = myinfo["iridl:Xaxislength"];
 var Yaxislength = myinfo["iridl:Yaxislength"];
 if(myobj != null){
-if(typeof(evt.layerX) !='undefined'){
-dx=evt.layerX;
-dy=evt.layerY;
-}
-else {
-if(typeof(evt.x) !='undefined'){
-dx=evt.x;
-dy=evt.y;
-}
-else {
-dx=evt.clientX-absLeft(myimgdiv);
-dy=evt.clientY-absTop(myimgdiv);
-}
-}
+dx=evt.pageX-absLeft(myimgdiv);
+dy=evt.pageY-absTop(myimgdiv);
 cw=parseInt(myobj.style.width);
 ch=parseInt(myobj.style.height);
 newx=Math.min(dx,myx);
