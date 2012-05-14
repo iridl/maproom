@@ -46,7 +46,10 @@ Working in collaboration with the International Federation of Red Cross and Red 
 </div>
 
 <div class="rightcol tabbedentries">
-
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#SixDayForecasts" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#VulnerabilityIndicators" />
 </div>
 
 </div>

@@ -47,7 +47,10 @@ En colaboraci&#243;n con la Federaci&#243;n Internacional de Sociedades de la Cr
 </div>
 
 <div class="rightcol tabbedentries" />
-
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#SixDayForecasts" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#VulnerabilityIndicators" />
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Compartir</legend>
