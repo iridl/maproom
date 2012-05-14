@@ -49,7 +49,7 @@
       <li><a href="#tabs-2" >Dataset de Documentaci&#243;n</a></li>
       <li><a href="#tabs-3" >Mapas de Precipitaci&#243;n de un D&#237;a</a></li>
       <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>
-      <li><a class="carry" class="carry" href="instructions.html">Instrucciones</a></li>
+      <li><a class="carry" href="instructions.html">Instrucciones</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcpanom/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
