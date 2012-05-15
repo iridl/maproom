@@ -4,7 +4,7 @@
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
-      version="XHTML+RDFa 1.0"
+      version="HTML 4.01"
  xml:lang="es"
       >
 <head>
