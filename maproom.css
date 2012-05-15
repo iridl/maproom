@@ -215,8 +215,11 @@ line-height: 1.5;
 display: inline;
 }
 .selectvalue::after, .selectvalue:after {
-padding-left: 4px;
-content: "\2023";
+padding-left: 6px;
+padding-right: 3px;
+font-size: 50%;
+vertical-align: middle;
+content: "\25BC";
 }
 .selectvalue + select {
 padding-left: 0px;
