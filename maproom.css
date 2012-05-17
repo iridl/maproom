@@ -301,7 +301,10 @@ display: none;
        max-width: 55%;
        min-width: 50%;
 }
-.dlimage:hover {border-width: 4px; margin: 3px; border-style: outset; border-color: #AAAAAA;}
+.dlimage:hover {border-width: 4px; 
+margin: 3px; 
+border-style: outset; 
+border-color: #AAAAAA;}
 
 .dlimagelegend {
 	margin: 0px;
@@ -327,6 +330,7 @@ border-width: 2px; border-style: outset; border-color: Grey;
 }
 .dlimage > .dlcontrol {
         display: none;
+	height: 0pt;
         padding: 4px;
         background-color: LightGrey;
 	border-color: LightGrey;
@@ -383,6 +387,9 @@ display: inline;
 }
 .dlimage:hover > .dlcontrol {
         display: block;
+height: auto;
+transition: 5s linear;
+-webkit-transition: 5s linear;
 }
 
 @media only all and (max-width: 750px) {
