@@ -1,7 +1,7 @@
 <xsl:stylesheet version="1.0"
             xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	    xmlns:maproomregistry="http://iri.columbia.edu/~jdcorral/ingrid/maproom/maproomregistry.owl#"
+	    xmlns:maproomregistry="file:///data/jdcorral/git_projects/ingrid/maproom/maproomregistry.owl#"
             xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
 	    xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
 	    xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#">
