@@ -53,6 +53,10 @@
             </fieldset>
  </div>
 <style>
+.dlimage > .dlcontrol {
+display: block;
+height: auto;
+}
 .dlimage{
 float: none;
 width: 45%;
@@ -60,7 +64,7 @@ max-width: 45%;
 min-width: 45%;
 display: inline-block;
 }
-@media only all and (max-width: 479px) {
+@media only all and (max-width: 800px) {
 .dlimage {
 width: 90%;
 max-width: 90%;
