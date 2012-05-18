@@ -47,8 +47,8 @@ En colaboración con la Federación Internacional de Sociedades de la Cruz Roja 
 <div id="tabs-1" class="ui-tabs-panel">
 <div class="itemGroup">Condiciones Históricas</div>
 <div class="item">
-<div class="itemTitle"><a class="titleLink" href="FIC/CMAP_climo.html">¿Cuánta lluvia cae normalmente en esta parte del año?</a></div>
-<div class="itemIcon"><a href="FIC/CMAP_climo.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
+<div class="itemTitle"><a class="titleLink" href="">¿Cuánta lluvia cae normalmente en esta parte del año?</a></div>
+<div class="itemIcon"><a href=""><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
 <div class="itemDescription">Este mapa muestra cuanta lluvia cae normalmente en esta época del año.</div>
 <div class="itemFooter"></div>
 </div>
@@ -56,14 +56,14 @@ En colaboración con la Federación Internacional de Sociedades de la Cruz Roja 
 <div id="tabs-2" class="ui-tabs-panel">
 <div class="itemGroup">Indicadores de Vulnerabilidad</div>
 <div class="item">
-<div class="itemTitle"><a class="titleLink" href="FIC/count.html">¿Las zonas de riesgo con lluvias abundantes, están densamente pobladas?</a></div>
-<div class="itemIcon"><a href="FIC/count.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.GPWv3/.count/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/546./plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
+<div class="itemTitle"><a class="titleLink" href="">¿Las zonas de riesgo con lluvias abundantes, están densamente pobladas?</a></div>
+<div class="itemIcon"><a href=""><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.GPWv3/.count/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/546./plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
 <div class="itemDescription">Este mapa muestra la densidad de la población humana.</div>
 <div class="itemFooter"></div>
 </div>
 <div class="item">
-<div class="itemTitle"><a class="titleLink" href="FIC/imr.html">¿Las zonas de riesgo con lluvias abundantes, contienen poblaciones vulnerables?</a></div>
-<div class="itemIcon"><a href="FIC/imr.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
+<div class="itemTitle"><a class="titleLink" href="">¿Las zonas de riesgo con lluvias abundantes, contienen poblaciones vulnerables?</a></div>
+<div class="itemIcon"><a href=""><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
 <div class="itemDescription">Este mapa muestra la tase de mortalidad infantil, un indicador de pobreza.</div>
 <div class="itemFooter"></div>
 </div>
@@ -71,26 +71,26 @@ En colaboración con la Federación Internacional de Sociedades de la Cruz Roja 
 <div id="tabs-3" class="ui-tabs-panel">
 <div class="itemGroup">Pronóstico para los Próximos 3 Meses</div>
 <div class="item">
-<div class="itemTitle"><a class="titleLink" href="FIC/extreme_prcp_fcst.html">¿Es probable que los próximos 3 meses sean excepcionalmente húmedos o secos?</a></div>
-<div class="itemIcon"><a href="FIC/extreme_prcp_fcst.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1/plotvalue//F/622.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
+<div class="itemTitle"><a class="titleLink" href="">¿Es probable que los próximos 3 meses sean excepcionalmente húmedos o secos?</a></div>
+<div class="itemIcon"><a href=""><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1/plotvalue//F/622.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
 <div class="itemDescription">El mapa muestra dónde y cuán probable es que los próximos tres meses sean extremadamente húmedos o secos. Extremo se refiere a los valores que estan entre los 15% mas altos y mas bajos en los registros historicos.</div>
 <div class="itemFooter"></div>
 </div>
 <div class="item">
-<div class="itemTitle"><a class="titleLink" href="FIC/pic3mo_reversed.html">¿Es probable que las condiciones inusuales húmedas o secas terminen?</a></div>
-<div class="itemIcon"><a href="FIC/pic3mo_reversed.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_reversed/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+//F/622.5/plotvalue/Y/-66.25/76.25/plotrange+//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20reversed%20from%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
+<div class="itemTitle"><a class="titleLink" href="">¿Es probable que las condiciones inusuales húmedas o secas terminen?</a></div>
+<div class="itemIcon"><a href=""><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_reversed/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+//F/622.5/plotvalue/Y/-66.25/76.25/plotrange+//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20reversed%20from%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
 <div class="itemDescription">Este mapa muestra lugares donde es probable que las condiciones húmedas o secas terminen durante los próximos 3 meses.</div>
 <div class="itemFooter"></div>
 </div>
 <div class="item">
-<div class="itemTitle"><a class="titleLink" href="FIC/pic3mo_same.html">¿Es probable que las condiciones inusuales húmedas o secas continúen?</a></div>
-<div class="itemIcon"><a href="FIC/pic3mo_same.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+//F/622.5/plotvalue/Y/-66.25/76.25/plotrange+//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime/L/first/VALUE%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
+<div class="itemTitle"><a class="titleLink" href="">¿Es probable que las condiciones inusuales húmedas o secas continúen?</a></div>
+<div class="itemIcon"><a href=""><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+//F/622.5/plotvalue/Y/-66.25/76.25/plotrange+//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime/L/first/VALUE%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
 <div class="itemDescription">Este mapa muestra dónde y cuán probable es que las condiciones húmedas o secas recientes continúen durante los próximos tres meses.</div>
 <div class="itemFooter"></div>
 </div>
 <div class="item">
-<div class="itemTitle"><a class="titleLink" href="FIC/prcp_fcst.html">¿Es probable que los próximos 3 meses sean inusualmente húmedos o secos?</a></div>
-<div class="itemIcon"><a href="FIC/prcp_fcst.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1./plotvalue/F/last/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
+<div class="itemTitle"><a class="titleLink" href="">¿Es probable que los próximos 3 meses sean inusualmente húmedos o secos?</a></div>
+<div class="itemIcon"><a href=""><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1./plotvalue/F/last/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
 <div class="itemDescription">Este mapa muestra la probabilidad de que un total de 3 meses de precipitación en una temporada futura será más alta o más baja.</div>
 <div class="itemFooter"></div>
 </div>
@@ -98,26 +98,26 @@ En colaboración con la Federación Internacional de Sociedades de la Cruz Roja 
 <div id="tabs-4" class="ui-tabs-panel">
 <div class="itemGroup">Pronósticos para los próximos 6 días</div>
 <div class="item">
-<div class="itemTitle"><a class="titleLink" href="FIC/cummrain.html">¿Cuánta lluvia acumulada se espera?</a></div>
-<div class="itemIcon"><a href="FIC/cummrain.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
+<div class="itemTitle"><a class="titleLink" href="">¿Cuánta lluvia acumulada se espera?</a></div>
+<div class="itemIcon"><a href=""><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
 <div class="itemDescription">Este mapa muestra cuánta lluvia (o nieve) acumulada se espera en los próximos seis días.</div>
 <div class="itemFooter"></div>
 </div>
 <div class="item">
-<div class="itemTitle"><a class="titleLink" href="FIC/heavyrain.html">¿Qué tan abundante se espera que sea la lluvia?</a></div>
-<div class="itemIcon"><a href="FIC/heavyrain.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
+<div class="itemTitle"><a class="titleLink" href="">¿Qué tan abundante se espera que sea la lluvia?</a></div>
+<div class="itemIcon"><a href=""><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
 <div class="itemDescription">Este mapa muestra áreas en donde se espera que la lluvia (o nieve) acumulada en los próximos seis días será inusualmente abundante para la época del año.</div>
 <div class="itemFooter"></div>
 </div>
 <div class="item">
-<div class="itemTitle"><a class="titleLink" href="FIC/sampletabslogo.html">¿Dónde se esperan lluvias inusualmente abundantes?</a></div>
-<div class="itemIcon"><a href="FIC/sampletabslogo.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/300/plotrange//S/216./plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.jpg"></a></div>
+<div class="itemTitle"><a class="titleLink" href="">¿Dónde se esperan lluvias inusualmente abundantes?</a></div>
+<div class="itemIcon"><a href=""><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/300/plotrange//S/216./plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.jpg"></a></div>
 <div class="itemDescription">Este mapa muestra las áreas donde se predice que la lluvia (o nieve) acumulada dentro de los próximos seis días sea excepcionalmente abundante.</div>
 <div class="itemFooter"></div>
 </div>
 <div class="item">
-<div class="itemTitle"><a class="titleLink" href="FIC/wetter.html">¿Dónde se esperan lluvias superiores al promedio?</a></div>
-<div class="itemIcon"><a href="FIC/wetter.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcpanom/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
+<div class="itemTitle"><a class="titleLink" href="">¿Dónde se esperan lluvias superiores al promedio?</a></div>
+<div class="itemIcon"><a href=""><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcpanom/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif"></a></div>
 <div class="itemDescription">El mapa muestra si la lluvia acumulada esperada en los próximos seis días es mayor o menor que promedio dado al lugar y época del año.</div>
 <div class="itemFooter"></div>
 </div>
