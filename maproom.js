@@ -776,8 +776,9 @@ myimgdiv.style.position='absolute';
 // myimgdiv.style.width=myfigure.width + 'px';
 // myimgdiv.style.height=myfigure.height + 'px';
 // image is not necessarily loaded yet, so cannot be sure of the image size.
-myimgdiv.style.width='100%';
-myimgdiv.style.height='100%';
+myimgdiv.style.width=myfigure.clientWidth + 'px';
+myimgdiv.style.height=myfigure.clientHeight + 'px';
+myimgdiv.style.padding='0px';
 myimgdiv.onmousedown=startdrag;
 myimgdiv.onmouseup=stopdrag;
 myimgdiv.onmousemove=followdrag;
@@ -830,8 +831,8 @@ myimgdiv.inputimage.style.visibility='visible';
 function resetImageOverlay(myfigure){
 if(myfigure.myoverlay){
 var myimgdiv = myfigure.myoverlay;
-//myimgdiv.style.width=myfigure.width + 'px';
-//myimgdiv.style.height=myfigure.height + 'px';
+myimgdiv.style.width=myfigure.clientWidth + 'px';
+myimgdiv.style.height=myfigure.clientHeight + 'px';
 myimgdiv.outlineimage.children[0].width=myfigure.width;
 myimgdiv.outlineimage.children[0].height=myfigure.height;
 myimgdiv.outlineimage.children[0].src=myfigure.src;
@@ -891,7 +892,7 @@ var myimgdiv=getcurrentTarget(evt);
 var myinfo = myimgdiv.inputimage.mylink.info;
 if(myobj != null && myinfo){
 if(myobj.style.visibility == 'visible'){
-myvals=lonlat(myinfo,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
+myvals=lonlat(myinfo,myimgdiv.inputimage.clientWidth,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
 setbbox(myvals);
 }
 }
@@ -979,8 +980,6 @@ if(cw*ch > 0){
 myit=myimgdiv.outline;
 myit.style.visibility='visible';
 iimg=myimgdiv.inputimage;
-//myvals=lonlat(myinfo,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
-//setXY(Xvalues[myvals[0]],Xvalues[myvals[1]],Yvalues[myvals[2]],Yvalues[myvals[3]]);
 }
 shiftto(myimgdiv.outline,newx,newy);
 }
@@ -1011,7 +1010,7 @@ else {
 return(plotaxislength);
 }
 lonlatA=new Array();
-function lonlat(myinfo,left,top,width,height){
+function lonlat(myinfo,imagewidth,left,top,width,height){
 myA=lonlatA;
 var plotborderleft = myinfo["iridl:plotborderleft"];
 var plotbordertop = myinfo["iridl:plotbordertop"];
@@ -1036,10 +1035,11 @@ else {
 Xaxislength = Math.round((plotaxislength * (X1-X0))/(Y1-Y0));
 Yaxislength = plotaxislength;
 }
-nxl =  Math.round(X0 + (X1-X0)*(left-plotborderleft)/Xaxislength);
-nxr =  Math.round(X0 + (X1-X0)*(left+width-plotborderleft)/Xaxislength);
-nyt =  Math.round(Y1 - (Y1-Y0)*(top-plotbordertop)/Yaxislength);
-nyb =  Math.round(Y1 - (Y1-Y0)*(top+height-plotbordertop)/Yaxislength);
+frac = imagewidth/(parseFloat(plotborderleft) + parseFloat(Xaxislength) + parseFloat(plotborderright));
+nxl =  Math.round(X0 + (X1-X0)*(left-plotborderleft)/(frac*Xaxislength));
+nxr =  Math.round(X0 + (X1-X0)*(left+width-plotborderleft)/(frac*Xaxislength));
+nyt =  Math.round(Y1 - (Y1-Y0)*(top-plotbordertop)/(frac*Yaxislength));
+nyb =  Math.round(Y1 - (Y1-Y0)*(top+height-plotbordertop)/(frac*Yaxislength));
 myA[0]=nxl;
 myA[1]=nyb;
 myA[2]=nxr;
