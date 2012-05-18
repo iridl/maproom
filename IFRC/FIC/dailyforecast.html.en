@@ -20,6 +20,22 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <script type="text/javascript" src="../../maproom.js"></script>
+<style>
+.dlimage{
+float: none;
+width: 45%;
+max-width: 45%;
+min-width: 45%;
+display: inline;
+}
+@media only all and (max-width: 800px) {
+.dlimage {
+width: 90%;
+max-width: 90%;
+min-width: 90%;
+}
+}
+</style>
 </head>
 <body>
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
@@ -52,26 +68,6 @@
                 <legend>Region</legend> 
             </fieldset>
  </div>
-<style>
-.dlimage > .dlcontrol {
-display: block;
-height: auto;
-}
-.dlimage{
-float: none;
-width: 45%;
-max-width: 45%;
-min-width: 45%;
-display: inline-block;
-}
-@media only all and (max-width: 800px) {
-.dlimage {
-width: 90%;
-max-width: 90%;
-min-width: 90%;
-}
-}
-</style>
 <div class="images" id="content">
 <fieldset class="dlimage"  about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/X/-130.0/230.0/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef/" />
@@ -101,6 +97,5 @@ min-width: 90%;
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
 </div>
- <!-- hhmts start -->Last modified: Fri Nov 18 17:31:34 EST 2011 <!-- hhmts end -->
  </body>
  </html>

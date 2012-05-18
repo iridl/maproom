@@ -260,6 +260,5 @@ Por favor, no dude en <a href="mailto:mbell@iri.columbia.edu">enviarnos un corre
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
 </div>
- <!-- hhmts start -->Last modified: Wed Feb 29 11:30:34 EST 2011 <!-- hhmts end -->
 </body>
 </html>
