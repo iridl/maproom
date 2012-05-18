@@ -329,17 +329,20 @@ border-width: 2px; border-style: outset; border-color: Grey;
        border-radius: 2px;
 }
 .dlimage > .dlcontrol {
-        display: none;
-	height: 0pt;
-        padding: 4px;
-        background-color: LightGrey;
+        display: block;
+	height: 0px;
+        padding: 0px;
+	border-width: 0px; 
+        background-color: WhiteSmoke;
 	border-color: LightGrey;
-	border-width: 3px; 
 	border-style: inset; 
        -moz-border-radius: 8px;
        border-radius: 8px;
        font-size: 10pt;
 	text-align: center;
+// transition: height 1s linear,background-color 1s,border 1s,padding 1s;
+// -webkit-transition: height 1s linear, background-color 1s,border 1s,padding 1s;
+// -moz-transition: height 1s linear,background-color 1s,border 1s,padding 1s;
 }
 .zoomStatus{
 background-color: WhiteSmoke;
@@ -386,10 +389,10 @@ display: inline;
         top: 1px;
 }
 .dlimage:hover > .dlcontrol {
-        display: block;
 height: auto;
-transition: 5s linear;
--webkit-transition: 5s linear;
+background-color: LightGrey;
+        padding: 4px;
+	border-width: 3px; 
 }
 
 @media only all and (max-width: 750px) {
