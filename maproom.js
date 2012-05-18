@@ -1036,10 +1036,10 @@ Xaxislength = Math.round((plotaxislength * (X1-X0))/(Y1-Y0));
 Yaxislength = plotaxislength;
 }
 frac = imagewidth/(parseFloat(plotborderleft) + parseFloat(Xaxislength) + parseFloat(plotborderright));
-nxl =  Math.round(X0 + (X1-X0)*(left-plotborderleft)/(frac*Xaxislength));
-nxr =  Math.round(X0 + (X1-X0)*(left+width-plotborderleft)/(frac*Xaxislength));
-nyt =  Math.round(Y1 - (Y1-Y0)*(top-plotbordertop)/(frac*Yaxislength));
-nyb =  Math.round(Y1 - (Y1-Y0)*(top+height-plotbordertop)/(frac*Yaxislength));
+nxl =  Math.round(X0 + (X1-X0)*(left-frac*plotborderleft)/(frac*Xaxislength));
+nxr =  Math.round(X0 + (X1-X0)*(left+width-frac*plotborderleft)/(frac*Xaxislength));
+nyt =  Math.round(Y1 - (Y1-Y0)*(top-frac*plotbordertop)/(frac*Yaxislength));
+nyb =  Math.round(Y1 - (Y1-Y0)*(top+height-frac*plotbordertop)/(frac*Yaxislength));
 myA[0]=nxl;
 myA[1]=nyb;
 myA[2]=nxr;
