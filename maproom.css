@@ -329,7 +329,8 @@ border-width: 2px; border-style: outset; border-color: Grey;
        border-radius: 2px;
 }
 .dlimage > .dlcontrol {
-        display: block;
+//        display:block ;
+	display: none;
 	height: 0px;
         padding: 0px;
 	border-width: 0px; 
@@ -389,6 +390,7 @@ display: inline;
         top: 1px;
 }
 .dlimage:hover > .dlcontrol {
+        display:block ;
 height: auto;
 background-color: LightGrey;
         padding: 4px;
