@@ -130,14 +130,16 @@ var pform=document.getElementById('pageform');
 var guess='';
   if(myinput.guessvalue){
   pform.elements[myinput.name].value = myinput.guessvalue;
-  guess = appendPageForm(myimage.src.replace(/[?].*/,''),myimage.className);
+//  guess = appendPageForm(myimage.src.replace(/[?].*/,''),myimage.className);
+    guess = myinput.guessvalue;
 	myinput.guessvalue='';
 }
-  pform.elements[myinput.name].value = myinput.value;
-  myimage.src = appendPageForm(myimage.src.replace(/[?].*/,''),myimage.className);
-	if(guess){
-        preload(guess);
-	}
+  updatePageForm(pform.elements[myinput.name],myinput.value,guess);
+//  pform.elements[myinput.name].value = myinput.value;
+//  myimage.src = appendPageForm(myimage.src.replace(/[?].*/,''),myimage.className);
+//	if(guess){
+//        preload(guess);
+//	}
  }
 function tabclickevent(evt){
     evt = (evt) ? evt : ((event) ? event : null );
@@ -357,8 +359,10 @@ return xmlhttp;
 }
 function preload(href){
 var xmlhttp=getXMLhttp();
-xmlhttp.onreadystatechange=function() {
-if (xmlhttp.readyState==4) {
+xmlhttp.onreadystatechange=function(evt) {
+   var evt = (evt) ? evt : ((event) ? event : null );
+   var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+if (it.readyState==4) {
   }
 } 
 xmlhttp.open("GET",href,true);
@@ -519,27 +523,55 @@ updatePageForm(pform.elements[it.name]);
 }
 function initializeDLimage(){
     var mylist=document.getElementsByClassName("dlimage");
-for( var i=0 ; i < mylist.length ; i++){
-var s = mylist[0];
+for( var idlimage=0 ; idlimage < mylist.length ; idlimage++){
+var s = mylist[idlimage];
 var sl = s.getElementsByTagName('legend');
 var leg;
-if(!sl.length){
+var sfigs=getElementsByAttribute(s,'link','rel','iridl:hasFigure');
+if(!sl.length && sfigs.length){
 leg=document.createElement('legend');
 leg.className='imagecontrols';
-leg.innerHTML='<object class="dlimageswitch" data="' + scriptroot + 'icons/onoff.svg" type="image/svg+xml" width="13" height="13"><img class="dlimageswitch" src="'+ scriptroot + 'icons/onoff.png" width="13" height="13" border="0" hspace="2" vspace="2" /></object><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/RedrawButton.jpg" id="redrawbutton" title="Redraw" width="13" height="13" border="0" hspace="2" vspace="2" /><img class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/ZoomButton.jpg" id="zoomout" title="Zoom Out" width="13" height="13" border="0" hspace="2" vspace="2" /><img  class="dlimagecontrol" src="http://iridl.ldeo.columbia.edu/icons/HelpButton.jpg" id="infobutton" title="More Information" width="13" height="13" border="0" hspace="2" vspace="2" />'
+leg.innerHTML='<object class="dlimageswitch" data="' + scriptroot + 'icons/onoff.svg" type="image/svg+xml" width="13" height="13"><img class="dlimageswitch" src="'+ scriptroot + 'icons/onoff.png" width="13" height="13" border="0" hspace="2" vspace="2" /></object>';
+var ctl=document.createElement('img');
+ctl.className="dlimagecontrol";
+ctl.width="13";
+ctl.height="13";
+ctl.border="0";
+ctl.hspace="2";
+ctl.vspace="2";
+ctl.src="http://iridl.ldeo.columbia.edu/icons/RedrawButton.jpg";
+ctl.title="Redraw";
+ctl.onclick=doredrawbutton;
+leg.appendChild(ctl);
+ctl=document.createElement('img');
+ctl.className="dlimagecontrol";
+ctl.width="13";
+ctl.height="13";
+ctl.border="0";
+ctl.hspace="2";
+ctl.vspace="2";
+ctl.src="http://iridl.ldeo.columbia.edu/icons/ZoomButton.jpg";
+ctl.title="Zoom Out";
+ctl.onclick=dozoomout;
+leg.appendChild(ctl);
+ ctl=document.createElement('img');
+ctl.className="dlimagecontrol";
+ctl.width="13";
+ctl.height="13";
+ctl.border="0";
+ctl.hspace="2";
+ctl.vspace="2";
+ctl.src="http://iridl.ldeo.columbia.edu/icons/HelpButton.jpg";
+ctl.title="More Information";
+ctl.onclick=doinfobutton;
+leg.appendChild(ctl);
 s.insertBefore(leg,s.firstChild);
-leg = document.getElementById('zoomout');
-leg.onclick=dozoomout;
-leg = document.getElementById('infobutton');
-leg.onclick=doinfobutton;
-leg = document.getElementById('redrawbutton');
-leg.onclick=doredrawbutton;
 }
 else {
 leg=sl[0];
 }
-var sfigs=s.getElementsByTagName('link');
-if(sfigs.length && sfigs[0].rel=='iridl:hasFigure'){
+var sfigs=getElementsByAttribute(s,'link','rel','iridl:hasFigure');
+if(sfigs.length){
 if(!sfigs[0].info){
 sfigs[0].info="seeking";
 var figurl=sfigs[0].href;
@@ -554,15 +586,17 @@ xmlhttp.mylink.figureimage.mylink=xmlhttp.mylink;
 break;
 }
 }
-xmlhttp.onreadystatechange = function() {
-if(xmlhttp.readyState == 4){
-var jsontxt = xmlhttp.responseText;
-xmlhttp.mylink.info=JSON.parse(jsontxt);
+xmlhttp.onreadystatechange = function(evt) {
+   var evt = (evt) ? evt : ((event) ? event : null );
+   var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+if(it.readyState == 4){
+var jsontxt = it.responseText;
+it.mylink.info=JSON.parse(jsontxt);
 /* info now has figure information */
-/* for (x in xmlhttp.mylink.info){
-alert(x + " is " + JSON.stringify(xmlhttp.mylink.info[x]));
+/* for (x in it.mylink.info){
+alert(x + " is " + JSON.stringify(it.mylink.info[x]));
 } */
-DLimageBuildControls(xmlhttp.mylink);
+DLimageBuildControls(it.mylink);
 }
 };
 xmlhttp.open("GET",infourl,true);
@@ -693,7 +727,7 @@ ipt.onclick=stepdownclickevent;
 ipt.innerHTML='&lt;';
 iptset.appendChild(ipt);
 ipt = document.createElement('input');
-ipt.className=mylink.figureimage.className.split(' ')[0];
+ipt.className=mylink.figureimage.className.split(' ')[0] + ' pageformcopy';
 ipt.name=dimlist[i]['iridl:name'];
 ipt.value=dimlist[i]['iridl:defaultvalue'];
 ipt.onchange=imageinputvaluechange;
@@ -742,8 +776,9 @@ myimgdiv.style.position='absolute';
 // myimgdiv.style.width=myfigure.width + 'px';
 // myimgdiv.style.height=myfigure.height + 'px';
 // image is not necessarily loaded yet, so cannot be sure of the image size.
-myimgdiv.style.width='100%';
-myimgdiv.style.height='100%';
+myimgdiv.style.width=myfigure.clientWidth + 'px';
+myimgdiv.style.height=myfigure.clientHeight + 'px';
+myimgdiv.style.padding='0px';
 myimgdiv.onmousedown=startdrag;
 myimgdiv.onmouseup=stopdrag;
 myimgdiv.onmousemove=followdrag;
@@ -796,8 +831,8 @@ myimgdiv.inputimage.style.visibility='visible';
 function resetImageOverlay(myfigure){
 if(myfigure.myoverlay){
 var myimgdiv = myfigure.myoverlay;
-//myimgdiv.style.width=myfigure.width + 'px';
-//myimgdiv.style.height=myfigure.height + 'px';
+myimgdiv.style.width=myfigure.clientWidth + 'px';
+myimgdiv.style.height=myfigure.clientHeight + 'px';
 myimgdiv.outlineimage.children[0].width=myfigure.width;
 myimgdiv.outlineimage.children[0].height=myfigure.height;
 myimgdiv.outlineimage.children[0].src=myfigure.src;
@@ -857,7 +892,7 @@ var myimgdiv=getcurrentTarget(evt);
 var myinfo = myimgdiv.inputimage.mylink.info;
 if(myobj != null && myinfo){
 if(myobj.style.visibility == 'visible'){
-myvals=lonlat(myinfo,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
+myvals=lonlat(myinfo,myimgdiv.inputimage.clientWidth,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
 setbbox(myvals);
 }
 }
@@ -945,8 +980,6 @@ if(cw*ch > 0){
 myit=myimgdiv.outline;
 myit.style.visibility='visible';
 iimg=myimgdiv.inputimage;
-//myvals=lonlat(myinfo,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
-//setXY(Xvalues[myvals[0]],Xvalues[myvals[1]],Yvalues[myvals[2]],Yvalues[myvals[3]]);
 }
 shiftto(myimgdiv.outline,newx,newy);
 }
@@ -977,7 +1010,7 @@ else {
 return(plotaxislength);
 }
 lonlatA=new Array();
-function lonlat(myinfo,left,top,width,height){
+function lonlat(myinfo,imagewidth,left,top,width,height){
 myA=lonlatA;
 var plotborderleft = myinfo["iridl:plotborderleft"];
 var plotbordertop = myinfo["iridl:plotbordertop"];
@@ -1002,10 +1035,11 @@ else {
 Xaxislength = Math.round((plotaxislength * (X1-X0))/(Y1-Y0));
 Yaxislength = plotaxislength;
 }
-nxl =  Math.round(X0 + (X1-X0)*(left-plotborderleft)/Xaxislength);
-nxr =  Math.round(X0 + (X1-X0)*(left+width-plotborderleft)/Xaxislength);
-nyt =  Math.round(Y1 - (Y1-Y0)*(top-plotbordertop)/Yaxislength);
-nyb =  Math.round(Y1 - (Y1-Y0)*(top+height-plotbordertop)/Yaxislength);
+frac = imagewidth/(parseFloat(plotborderleft) + parseFloat(Xaxislength) + parseFloat(plotborderright));
+nxl =  Math.round(X0 + (X1-X0)*(left-frac*plotborderleft)/(frac*Xaxislength));
+nxr =  Math.round(X0 + (X1-X0)*(left+width-frac*plotborderleft)/(frac*Xaxislength));
+nyt =  Math.round(Y1 - (Y1-Y0)*(top-frac*plotbordertop)/(frac*Yaxislength));
+nyb =  Math.round(Y1 - (Y1-Y0)*(top+height-frac*plotbordertop)/(frac*Yaxislength));
 myA[0]=nxl;
 myA[1]=nyb;
 myA[2]=nxr;
@@ -1151,7 +1185,9 @@ var inputs=myform.elements;
             pair = vars[i].split("=");
             if (inputs[pair[0]]) {
 	        achange=true;
-		inputs[pair[0]].value=unescape(pair[1]);
+// decode and encode do not properly invert each other w.r.t. space to + conversion
+	        var hold = pair[1].replace(/[+]/g," ");
+		inputs[pair[0]].value=decodeURIComponent(hold);
             }
         }
 }
@@ -1215,12 +1251,15 @@ If supplied with the input element that changed,
 1) only checks the classes that correspond, and
 2) uses guessvalue to do readahead, resetting when done. 
 */
-function updatePageForm(changedInput, guessvalue){
+function updatePageForm(changedInput, newvalue, guessvalue){
 var myform=document.getElementById('pageform');
 if(myform){
 var clist;
 if(changedInput){
 clist = changedInput.className.split(' ');
+if(newvalue){
+changedInput.value=newvalue;
+}
 }
 else {
 clist = myform.className.split(' ');
@@ -1235,7 +1274,6 @@ if(cmem.tagName == 'IMG'){
 var newsrc = appendPageForm(cmem.src.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.src){
     cmem.src = newsrc;
-// hideImageOverlay(cmem);
 }
 }
 if(cmem.tagName == 'LINK'){
@@ -1245,6 +1283,24 @@ if(newsrc != cmem.href){
 }
 }
 }
+}
+if(guessvalue){
+changedInput.value=guessvalue;
+for ( var i = 0; i < clist.length; i++ )
+         {
+var cclass=clist[i];
+var members = document.getElementsByClassName(cclass);
+for ( var j = 0; j < members.length; j++ ) {
+var cmem=members[j];
+if(cmem.tagName == 'IMG'){
+var newsrc = appendPageForm(cmem.src.replace(/[?].*/,''),cmem.className);
+if(newsrc != cmem.src){
+	preload(newsrc);
+}
+}
+}
+}
+changedInput.value=newvalue;
 }
 var stag = document.getElementsByClassName('pageformcopy');
 for (var i=0; i< stag.length ; i++){

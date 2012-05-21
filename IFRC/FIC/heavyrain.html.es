@@ -99,6 +99,5 @@ En contacto con <a href="mailto:help@iri.columbia.edu?subject=Precipitation Fore
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Compartir</legend></fieldset>
 </div>
- <!-- hhmts start -->Last modified: Fri Nov 18 17:31:34 EST 2011 <!-- hhmts end -->
  </body>
  </html>

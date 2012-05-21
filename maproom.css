@@ -298,10 +298,12 @@ display: none;
        -moz-border-radius: 10px;
        border-radius: 10px;
        border-width: 2px;
-       max-width: 55%;
-       min-width: 50%;
+	width: 50%;
 }
-.dlimage:hover {border-width: 4px; margin: 3px; border-style: outset; border-color: #AAAAAA;}
+.dlimage:hover {border-width: 4px; 
+margin: 3px; 
+border-style: outset; 
+border-color: #AAAAAA;}
 
 .dlimagelegend {
 	margin: 0px;
@@ -326,16 +328,21 @@ border-width: 2px; border-style: outset; border-color: Grey;
        border-radius: 2px;
 }
 .dlimage > .dlcontrol {
-        display: none;
-        padding: 4px;
-        background-color: LightGrey;
+//        display:block ;
+	display: none;
+	height: 0px;
+        padding: 0px;
+	border-width: 0px; 
+        background-color: WhiteSmoke;
 	border-color: LightGrey;
-	border-width: 3px; 
 	border-style: inset; 
        -moz-border-radius: 8px;
        border-radius: 8px;
        font-size: 10pt;
 	text-align: center;
+// transition: height 1s linear,background-color 1s,border 1s,padding 1s;
+// -webkit-transition: height 1s linear, background-color 1s,border 1s,padding 1s;
+// -moz-transition: height 1s linear,background-color 1s,border 1s,padding 1s;
 }
 .zoomStatus{
 background-color: WhiteSmoke;
@@ -382,13 +389,16 @@ display: inline;
         top: 1px;
 }
 .dlimage:hover > .dlcontrol {
-        display: block;
+        display:block ;
+height: auto;
+background-color: LightGrey;
+        padding: 4px;
+	border-width: 3px; 
 }
 
 @media only all and (max-width: 750px) {
 .dlimage {
-         max-width: 100%;
-         min-width: 90%;
+	width: 95%;
 }
 .navitem + .navitem > legend {
        font-size: 8pt;
@@ -660,15 +670,13 @@ display: inline;
 
 @media only all and (min-width: 800px) {
 .dlimage {
-       max-width: 60%;
-       min-width: 60%;
+	width: 95%;
 }
 }
 /* ipad is 1024 -- this 1024 and above */
 @media only all and (min-width: 1024px) {
 .dlimage {
-       max-width: 65%;
-       min-width: 65%;
+	width: 65%;
 }
 .selectvalue {
 display: none;
@@ -680,8 +688,7 @@ display: inline;
 }
 @media only all and (min-width: 800px) and (orientation: landscape){
 .dlimage.tall {
-       max-width: 40%;
-       min-width: 40%;
+	width: 40%;
 }
 }
 .ui-widget-header .ui-state-default {

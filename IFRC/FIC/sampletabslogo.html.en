@@ -76,14 +76,14 @@
 <h2  align="center">Single-Day (24-Hour) Total Precipitation Forecast Maps</h2>
 <table BORDER="2" >
 <tr>
-<td align="center"><a href="day1fcstapcp.html">Day 1 Precipitation Forecast Maps</a></td>
+<td align="center"><a class="share" href="dailyforecast.html">Day 1 Precipitation Forecast Maps</a></td>
 
-<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day2fcstapcp.html">Day 2 Precipitation Forecast Maps</a></td>
-<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day3fcstapcp.html">Day 3 Precipitation Forecast Maps</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day2">Day 2 Precipitation Forecast Maps</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day3">Day 3 Precipitation Forecast Maps</a></td>
 </tr>
-<tr><td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day4fcstapcp.html">Day 4 Precipitation Forecast Maps</a></td>
-<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day5fcstapcp.html">Day 5 Precipitation Forecast Maps</a></td>
-<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day6fcstapcp.html">Day 6 Precipitation Forecast Maps</a></td>
+<tr><td align="center"><a class="share" href="dailyforecast.html?day=.day4">Day 4 Precipitation Forecast Maps</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day5">Day 5 Precipitation Forecast Maps</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day6">Day 6 Precipitation Forecast Maps</a></td>
 </tr>
 </table>
 </div>
@@ -99,6 +99,5 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in 
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
 </div>
- <!-- hhmts start -->Last modified: Fri Nov 18 17:31:34 EST 2011 <!-- hhmts end -->
  </body>
  </html>
