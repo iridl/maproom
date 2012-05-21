@@ -23,16 +23,12 @@
 <style>
 .dlimage{
 float: none;
-width: 45%;
-max-width: 45%;
-min-width: 45%;
+width: 46%;
 display: inline;
 }
 @media only all and (max-width: 800px) {
 .dlimage {
-width: 90%;
-max-width: 90%;
-min-width: 90%;
+width: 95%;
 }
 }
 </style>
