@@ -37,7 +37,7 @@ En colaboración con la Federación Internacional de Sociedades de la Cruz Roja 
 </p>
 </div>
 
-<div xmlns="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:maproomregistry="file:///data/jdcorral/git_projects/ingrid/maproom/maproomregistry.owl#" xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#" xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#" class="rightcol"><div class="ui-tabs">
+<div xmlns="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:maproomregistry="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#" xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#" xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#" class="rightcol"><div class="ui-tabs">
 <ul class="ui-tabs-nav">
 <li><a href="#tabs-1">Condiciones Históricas</a></li>
 <li><a href="#tabs-2">Indicadores de Vulnerabilidad</a></li>

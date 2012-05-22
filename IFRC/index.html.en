@@ -36,7 +36,7 @@ Working in collaboration with the International Federation of Red Cross and Red 
 </p>
 </div>
 
-<div xmlns="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:maproomregistry="file:///data/jdcorral/git_projects/ingrid/maproom/maproomregistry.owl#" xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#" xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#" class="rightcol"><div class="ui-tabs">
+<div xmlns="" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:maproomregistry="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#" xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#" xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#" class="rightcol"><div class="ui-tabs">
 <ul class="ui-tabs-nav">
 <li><a href="#tabs-1">Six Day Precipitation Forecasts</a></li>
 <li><a href="#tabs-2">Forecasts for the Next Three Months</a></li>
