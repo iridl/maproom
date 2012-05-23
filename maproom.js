@@ -425,7 +425,10 @@ sel.hrefroot=slhref.substr(0,lin+1);
 }else {
 sel.hrefroot=slhref;
 }
+if(slhref.substring(0,4) == "http"){
 readwithxmlhttp(slhref,sel);
+}
+// otherwise permissions prevent us from reading the file
 }
 }
 }
