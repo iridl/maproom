@@ -433,6 +433,14 @@ readwithxmlhttp(slhref,sel);
 }
 }
 }
+function previousElement(mynode){
+if(mynode.previousSibling && mynode.previousSibling.nodeType == 3){
+return previousElement(mynode.previousSibling);
+}
+else {
+return mynode.previousSibling;
+}
+}
 function finishchooseSectioniframe(){
 var iframe=document.getElementById('sectioniframe');
 var sel=document.getElementById('mapselect');
@@ -444,18 +452,16 @@ function dofinishchooseSection(sel,xmlDoc){
 if(xmlDoc){
 var itemlist=xmlDoc.getElementsByClassName('item');
 var og=sel;
+if(itemlist.length>0){
 for (var i = 0; i<itemlist.length ; i++){
 var item=itemlist[i];
-if(item.previousSibling.previousSibling.className == 'itemGroup'){
+if(previousElement(item).className == 'itemGroup'){
 og=document.createElement('optgroup');
-og.label=item.previousSibling.previousSibling.innerHTML;
+og.label=previousElement(item).innerHTML;
 sel.appendChild(og);
 }
-var opt= new Option(
-item.firstChild.firstChild.innerHTML,
-item.firstChild.firstChild.getAttribute('href'),false,
-false
-);
+var anc =item.getElementsByTagName('div')[0].getElementsByTagName('a')[0];
+var opt= new Option(anc.innerHTML,anc.getAttribute('href'),false,false);
 var fullpathname = document.location.href;
 if(fullpathname.indexOf("?") >=0){
 fullpathname = fullpathname.substring(0,fullpathname.indexOf("?"));
@@ -472,7 +478,7 @@ if(typeof(sel.selectedIndex) === 'number'){
 sel.parentNode.getElementsByTagName('legend')[0].innerHTML=sel.options[sel.selectedIndex].parentNode.label;
 sel.previousSibling.innerHTML=sel.options[sel.selectedIndex].innerHTML;
 }
-
+}
 }
 else alert("cannot parse")
 }
