@@ -501,6 +501,14 @@ theregion.appendChild(sel);
 }
 }
 }
+function regionwithinbbox(mydisplay){
+var mylist=document.getElementsByClassName('regionwithinbbox');
+if(mylist.length>0){
+for(var i=0; i < mylist.length ; i++){
+mylist[0].style.display=mydisplay;
+}
+}
+}
 function regiononchange(evt){
    var evt = (evt) ? evt : ((event) ? event : null );
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
@@ -508,9 +516,21 @@ function regiononchange(evt){
 it.previousSibling.innerHTML=it.options[it.selectedIndex].innerHTML;
 var pform=document.getElementById('pageform');
 if(pform){
+if(it.name == 'bbox'){
+var myin = pform.elements['region'];
+if(myin){
+if(it.options[it.selectedIndex].value){
+myin.value = "bb:" + it.options[it.selectedIndex].value;
+}
+else {
+myin.value="";
+}
+regionwithinbbox('none');
+}
+}
 if(pform.elements[it.name]){
 pform.elements[it.name].value=it.options[it.selectedIndex].value;
-updatePageForm(pform.elements[it.name]);
+updatePageForm();
 }
 }
 }
@@ -618,7 +638,12 @@ DLimageResizeImage(xmlhttp.mylink);
 function dozoomout () {
 var myform=document.getElementById('pageform');
 if(myform){
-var myin = myform.elements['bbox'];
+var myin = myform.elements['region'];
+if(myin){
+myin.value='';
+regionwithinbbox('none');
+}
+myin = myform.elements['bbox'];
 if(myin){
 myin.value='';
 updatePageForm();
@@ -626,12 +651,52 @@ updatePageForm();
 }
 }
 function setbbox (newbbox) {
+var update=false;
+var within=false;
 var myform=document.getElementById('pageform');
 if(myform){
+if(newbbox[0] != newbbox[2]){
 var myin = myform.elements['bbox'];
 if(myin){
 myin.value=JSON.stringify(newbbox);
+update=true;
+}
+}
+var myin = myform.elements['region'];
+var res = myform.elements['resolution'];
+if(myin){
+if(newbbox[0] == newbbox[2] && newbbox[1] == newbbox[3]){
+// click -- return depends on resolution res
+within=true;
+// none -- return pt:[x,y]
+// number -- return bbox of that size bb:[x,y,x+res,y+res]
+// uri -- returns geoobject of that class/type 
+if(typeof(res) != 'undefined' && parseFloat(res.value) != 'NaN'){
+var x,y,delta;
+delta = parseFloat(res.value);
+x = delta*Math.floor(parseFloat(newbbox[0])/delta);
+y = delta*Math.floor(parseFloat(newbbox[1])/delta);
+var roundbox=new Array();
+roundbox[0]=x;
+roundbox[1]=y;
+roundbox[2]=x+delta;
+roundbox[3]=y+delta;
+myin.value="bb:" + JSON.stringify(roundbox);
+}
+else {
+myin.value="pt:" + JSON.stringify(newbbox.slice(0,2));
+}
+}
+else {
+myin.value="bb:" + JSON.stringify(newbbox);
+}
+update=true;
+}
+if(update){
 updatePageForm();
+}
+if(within){
+regionwithinbbox('inline');
 }
 }
 }
@@ -860,12 +925,20 @@ return null;
 function hello(evt){
 var myimgdiv=getcurrentTarget(evt);
 if(myimgdiv){
-var checkobj;
-checkobj=document.getElementById("clickzoom");
+var myform=document.getElementById('pageform');
+var checkobject;
+if(myform){
+checkobj = myform.elements['region'];
+}
 var mypar=myimgdiv.zoomstatus;
 if(mypar){
 if(checkobj){
-mypar.innerHTML="click for information;<br /> click & drag down-and-right to zoom in";
+var res = myform.elements['resolution'];
+var resclass="point";
+if(parseFloat(res.value) != 'NaN'){
+resclass = res.value + "&deg; box";
+}
+mypar.innerHTML="click for " + resclass +"<br /> click & drag down-and-right for larger or to zoom in";
 }
 else {
 mypar.innerHTML="click & drag down-and-right to zoom in";
@@ -902,6 +975,13 @@ var myinfo = myimgdiv.inputimage.mylink.info;
 if(myobj != null && myinfo){
 if(myobj.style.visibility == 'visible'){
 myvals=lonlat(myinfo,myimgdiv.inputimage.clientWidth,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
+setbbox(myvals);
+}
+else {
+var dx,dy;
+dx=evt.pageX-absLeft(myimgdiv);
+dy=evt.pageY-absTop(myimgdiv);
+var myvals=lonlat(myinfo,myimgdiv.inputimage.clientWidth,dx,dy,0,0);
 setbbox(myvals);
 }
 }
@@ -986,9 +1066,7 @@ newh=Math.max(dy,myy)-newy;
 if(true){
 sizeto(myimgdiv.outline,neww,newh);
 if(cw*ch > 0){
-myit=myimgdiv.outline;
-myit.style.visibility='visible';
-iimg=myimgdiv.inputimage;
+myimgdiv.outline.style.visibility='visible';
 }
 shiftto(myimgdiv.outline,newx,newy);
 }
