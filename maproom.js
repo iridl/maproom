@@ -1338,7 +1338,13 @@ If supplied with the input element that changed,
 1) only checks the classes that correspond, and
 2) uses guessvalue to do readahead, resetting when done. 
 */
+function updatePageFormQuietly(changedInput, newvalue, guessvalue){
+updatePageFormSub(true,changedInput, newvalue, guessvalue);
+}
 function updatePageForm(changedInput, newvalue, guessvalue){
+updatePageFormSub(false,changedInput, newvalue, guessvalue);
+}
+function updatePageFormSub(quietflag,changedInput, newvalue, guessvalue){
 var myform=document.getElementById('pageform');
 if(myform){
 var clist;
@@ -1361,6 +1367,9 @@ if(cmem.tagName == 'IMG'){
 var newsrc = appendPageForm(cmem.src.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.src){
     cmem.src = newsrc;
+if(!quietflag) {
+appendMissingClass(cmem,'invalid');
+}
 }
 }
 if(cmem.tagName == 'LINK'){
@@ -1415,6 +1424,7 @@ break;
 function imageloadedevent(evt){
     evt = (evt) ? evt : ((event) ? event : null );
 var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement;
+removeClass(it,'invalid');
 if(it.className == 'dlimg'){
 if(it.mylink){
 var mynode = it.mylink.parentNode;
@@ -1435,7 +1445,7 @@ var targetsize = 20*Math.round((clientsize - 20 - 72 + 9)/20,0);
 var plen = pform.elements['plotaxislength'].value;
 if(targetsize!=plen){
 pform.elements['plotaxislength'].value = targetsize;
-updatePageForm(pform.elements['plotaxislength']);
+updatePageFormQuietly(pform.elements['plotaxislength']);
 }
 }
 }
@@ -1455,6 +1465,22 @@ match = true;
 }
 if(!match){
 element.className = targetclass + ' ' + slist[0];
+}
+}
+function removeClass(element,srcclass){
+var targetclass=element.className;
+var slist = srcclass.split(' ');
+var match = false;
+for (var i = 0 ; i < slist.length; i++){
+var ind =targetclass.indexOf(slist[i]);
+if( ind>=0){
+if(ind==0){
+element.className=element.className.replace(slist[i],"");
+}
+else {
+element.className=element.className.replace(" "+slist[i],"");
+}
+}
 }
 }
 

@@ -11,6 +11,18 @@ padding: 0px;
 .regionwithinbbox {
 display: none;
 }
+img {
+opacity: 1.0;
+ transition: opacity 1s linear 0s;
+ -webkit-transition: opacity 1s linear 0s;
+ -moz-transition: opacity 1s linear 0s;
+}
+.invalid {
+opacity: 0.3;
+ transition: opacity 1s linear 1s;
+ -webkit-transition: opacity 1s linear 1s;
+ -moz-transition: opacity 1s linear 1s;
+}
 .lowerLimit, .lowerLimit-disabled {
 display: inline-block;
 padding-left: 5px;
