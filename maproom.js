@@ -505,7 +505,7 @@ function regionwithinbbox(mydisplay){
 var mylist=document.getElementsByClassName('regionwithinbbox');
 if(mylist.length>0){
 for(var i=0; i < mylist.length ; i++){
-mylist[0].style.display=mydisplay;
+mylist[i].style.display=mydisplay;
 }
 }
 }
@@ -697,6 +697,9 @@ updatePageForm();
 }
 if(within){
 regionwithinbbox('inline');
+}
+else {
+regionwithinbbox('none');
 }
 }
 }
