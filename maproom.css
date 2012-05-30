@@ -18,7 +18,7 @@ opacity: 1.0;
  -moz-transition: opacity 1s linear 0s;
 }
 .invalid {
-opacity: 0.3;
+opacity: 0.4;
  transition: opacity 1s linear 1s;
  -webkit-transition: opacity 1s linear 1s;
  -moz-transition: opacity 1s linear 1s;
