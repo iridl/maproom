@@ -13,12 +13,21 @@ display: none;
 }
 img {
 opacity: 1.0;
+}
+.valid {
+opacity: 1.0;
  transition: opacity 1s linear 0s;
  -webkit-transition: opacity 1s linear 0s;
  -moz-transition: opacity 1s linear 0s;
 }
+.invalid-zooming {
+opacity: 0.3;
+ transition: opacity 0.1s linear 0s;
+ -webkit-transition: opacity 0.1s linear 0s;
+ -moz-transition: opacity 0.1s linear 0s;
+}
 .invalid {
-opacity: 0.4;
+opacity: 0.3;
  transition: opacity 1s linear 1s;
  -webkit-transition: opacity 1s linear 1s;
  -moz-transition: opacity 1s linear 1s;

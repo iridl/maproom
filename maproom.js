@@ -975,18 +975,19 @@ function stopdrag(evt){
 evt = (evt) ? evt : event;
 var myimgdiv=getcurrentTarget(evt);
 var myinfo = myimgdiv.inputimage.mylink.info;
+var myvals;
 if(myobj != null && myinfo){
 if(myobj.style.visibility == 'visible'){
 myvals=lonlat(myinfo,myimgdiv.inputimage.clientWidth,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
-setbbox(myvals);
+changeClass(myimgdiv.inputimage,'valid','invalid-zooming');
 }
 else {
 var dx,dy;
 dx=evt.pageX-absLeft(myimgdiv);
 dy=evt.pageY-absTop(myimgdiv);
-var myvals=lonlat(myinfo,myimgdiv.inputimage.clientWidth,dx,dy,0,0);
-setbbox(myvals);
+myvals=lonlat(myinfo,myimgdiv.inputimage.clientWidth,dx,dy,0,0);
 }
+setbbox(myvals);
 }
 if(myobj != null && myobj.style.visibility == 'visible'){
 evt.cancelBubble = true;
@@ -995,9 +996,6 @@ mypar=myimgdiv.zoomstatus;
 // mypar.innerHTML="zooming " + JSON.stringify(myvals);
 mypar.innerHTML="zooming... ";
 // mypar.style.visibility="visible";
-myit=myimgdiv.inputimage;
-myit.style.visibility="hidden";
-//myit.form.submit();
 return false;
 }
 else {
@@ -1318,6 +1316,7 @@ members[j].onclick=onClickPageForm;
 }
 if(members[j].src){
 members[j].onload=imageloadedevent;
+appendMissingClass(members[j],'valid');
 }
 }
 }
@@ -1371,7 +1370,7 @@ var newsrc = appendPageForm(cmem.src.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.src){
     cmem.src = newsrc;
 if(!quietflag) {
-appendMissingClass(cmem,'invalid');
+changeClass(cmem,'valid','invalid');
 }
 }
 }
@@ -1427,8 +1426,9 @@ break;
 function imageloadedevent(evt){
     evt = (evt) ? evt : ((event) ? event : null );
 var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement;
-removeClass(it,'invalid');
-if(it.className == 'dlimg'){
+changeClass(it,'invalid','valid');
+changeClass(it,'invalid-zooming','valid');
+if(it.className.indexOf('dlimg') >=0){
 if(it.mylink){
 var mynode = it.mylink.parentNode;
 if(it.height>it.width && mynode.className.indexOf('tall')<0){
@@ -1483,6 +1483,24 @@ element.className=element.className.replace(slist[i],"");
 else {
 element.className=element.className.replace(" "+slist[i],"");
 }
+}
+}
+}
+// changes class of all sublements within an element
+// traverses list in reverse order because the list updates as it executes
+function changeClassWithin(pelement,fromclass,toclass){
+var targetlist=pelement.getElementsByClassName(fromclass);
+for (var i = targetlist.length-1 ; i >= 0; i--){
+var ind=targetlist[i];
+ind.className=ind.className.replace(fromclass,toclass);
+}
+}
+function changeClass(pelement,fromclass,toclass){
+var targetlist=pelement.parentNode.getElementsByClassName(fromclass);
+for (var i = targetlist.length-1 ; i >= 0; i--){
+var ind=targetlist[i];
+if(ind == pelement){
+ind.className=ind.className.replace(fromclass,toclass);
 }
 }
 }
