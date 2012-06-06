@@ -22,13 +22,13 @@
 </head>
 <body>
 
-<form name="pageform" id="pageform" class="titleLink">
-<input class="titleLink" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform" class="carryup titleLink">
+<input class="carryup titleLink" name="Set-Language" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
                 <legend>Data Library</legend> 
-                      <a rev="section" class="navlink" href="/maproom/">Maproom</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/">Maproom</a>
             </fieldset> 
            <fieldset class="navitem"> 
                 <legend>Federaci&#243;n Internacional</legend> 
@@ -36,17 +36,17 @@
 
             </fieldset> 
  </div>
-<div>
+
  <div id="content" class="searchDescription">
 <div><img src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
 <h2 property="term:title">La Federaci&#243;n Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja:  Predicciones en Contexto</h2>
-<p>
-En colaboraci&#243;n con la Federaci&#243;n Internacional de Sociedades de la Cruz Roja y la Media Luna Roja, el IRI ha desarrollado una herramienta en base a mapas para proporcionar informaci&#243;n de contexto sobre pron&#243;sticos de la precipitaci&#243;n global.  La herramienta muestra mapas de varias medidas de la severidad relativa del pron&#243;stico de eventos de precipitaci&#243;n en el mundo para 1 a 6 d&#237;as antes del evento, comparando los valores del pron&#243;stico actual con la climatolog&#237;a de 25 a&#241;os del modelo de pron&#243;stico.  La herramienta tambi&#233;n muestra el pron&#243;stico probabil&#237;stico estacional de precipitaci&#243;n a nivel mundial, incluyendo "predicciones en contexto", mapas que muestran donde el pron&#243;stico estacional indica un aumento de la probabilidad de continuaci&#243;n o reversi&#243;n de la precipitaci&#243;n estacional sobre lo normal o por debajo de lo normal observada previamente.  Tambi&#233;n se proporcionan mapas de climatolog&#237;a (es decir promedios de largo plazo) de la precipitaci&#243;n mensual, y mapas de poblaci&#243;n y pobreza, para poder analizar la exposici&#243;n relativa a fen&#243;menos meteorol&#243;gicos y fluctuaciones estacionales de precipitaci&#243;n.
+<span align="left" property="term:description">En colaboraci&#243;n con la Federaci&#243;n Internacional de Sociedades de la Cruz Roja y la Media Luna Roja, el IRI ha desarrollado una herramienta en base a mapas para proporcionar informaci&#243;n de contexto sobre pron&#243;sticos de la precipitaci&#243;n global.</span> 
+<p>La herramienta muestra mapas de varias medidas de la severidad relativa del pron&#243;stico de eventos de precipitaci&#243;n en el mundo para 1 a 6 d&#237;as antes del evento, comparando los valores del pron&#243;stico actual con la climatolog&#237;a de 25 a&#241;os del modelo de pron&#243;stico.  La herramienta tambi&#233;n muestra el pron&#243;stico probabil&#237;stico estacional de precipitaci&#243;n a nivel mundial, incluyendo "predicciones en contexto", mapas que muestran donde el pron&#243;stico estacional indica un aumento de la probabilidad de continuaci&#243;n o reversi&#243;n de la precipitaci&#243;n estacional sobre lo normal o por debajo de lo normal observada previamente.  Tambi&#233;n se proporcionan mapas de climatolog&#237;a (es decir promedios de largo plazo) de la precipitaci&#243;n mensual, y mapas de poblaci&#243;n y pobreza, para poder analizar la exposici&#243;n relativa a fen&#243;menos meteorol&#243;gicos y fluctuaciones estacionales de precipitaci&#243;n.
 
 </p>
 </div>
 
-<div class="rightcol tabbedentries" />
+<div class="rightcol tabbedentries" about="/maproom/IFRC/" >
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#SixDayForecasts" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions" />
@@ -56,7 +56,6 @@ En colaboraci&#243;n con la Federaci&#243;n Internacional de Sociedades de la Cr
             <fieldset class="navitem" id="share"><legend>Compartir</legend>
 </fieldset>
 </div>
- <!-- hhmts start -->Last modified: Fri Nov 18 17:31:34 EST 2011 <!-- hhmts end -->
  </body>
 
  </html>
