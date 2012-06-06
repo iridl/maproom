@@ -22,13 +22,13 @@
 </head>
 <body>
 
-<form name="pageform" id="pageform" class="titleLink">
-<input class="titleLink" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform" class="carryup titleLink">
+<input class="carryup titleLink" name="Set-Language" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
                 <legend>Data Library</legend> 
-                      <a rev="section" class="navlink" href="/maproom/">Maproom</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/">Maproom</a>
             </fieldset> 
            <fieldset class="navitem"> 
                 <legend>Federaci&#243;n Internacional</legend> 
