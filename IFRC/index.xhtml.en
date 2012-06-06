@@ -40,12 +40,13 @@
  <div id="content" class="searchDescription">
 <div><img src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
 <h2 property="term:title">International Federation of Red Cross and Red Crescent Societies:  Forecasts in Context</h2>
-<p>
-Working in collaboration with the International Federation of Red Cross and Red Crescent Societies, IRI has developed a map tool to provide context for global precipitation forecast information. The tool displays maps of various measures of the relative severity of forecast precipitation events for the globe for 1 to 6 days in advance by comparing the current forecast amounts with a 25-year forecast model climatology. The tool also displays probabilistic seasonal precipitation forecasts for the globe, including "predictions in context" maps that show where the seasonal forecast indicates an enhanced probability for the continuation or reversal of previously-observed above-normal or below-normal seasonal precipitation. Maps of monthly precipitation climatology, and population and poverty maps are also provided to allow for the examination of the relative exposure to weather events and seasonal precipitation fluctuations.
+<span align="left" property="term:description">
+Working in collaboration with the International Federation of Red Cross and Red Crescent Societies, IRI has developed a map tool to provide context for global precipitation forecast information.</span> 
+<p>The tool displays maps of various measures of the relative severity of forecast precipitation events for the globe for 1 to 6 days in advance by comparing the current forecast amounts with a 25-year forecast model climatology. The tool also displays probabilistic seasonal precipitation forecasts for the globe, including "predictions in context" maps that show where the seasonal forecast indicates an enhanced probability for the continuation or reversal of previously-observed above-normal or below-normal seasonal precipitation. Maps of monthly precipitation climatology, and population and poverty maps are also provided to allow for the examination of the relative exposure to weather events and seasonal precipitation fluctuations.
 </p>
 </div>
 
-<div class="rightcol tabbedentries">
+<div class="rightcol tabbedentries" about="/maproom/IFRC/" >
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#SixDayForecasts" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions" />
@@ -59,7 +60,6 @@ Working in collaboration with the International Federation of Red Cross and Red 
 
 </fieldset>
 </div>
- <!-- hhmts start -->Last modified: Fri Nov 18 17:31:34 EST 2011 <!-- hhmts end -->
  </body>
 
  </html>
