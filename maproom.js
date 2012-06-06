@@ -50,6 +50,33 @@ lhref= ghref;
 }
 return lhref;
 }
+/* replacement for getElementsByClassName when missing */
+if (typeof document.getElementsByClassName!='function') {
+    document.getElementsByClassName = function() {
+        var elms = document.getElementsByTagName('*');
+        var ei = new Array();
+        for (i=0;i<elms.length;i++) {
+            if (elms[i].getAttribute('class')) {
+                ecl = elms[i].getAttribute('class').split(' ');
+                for (j=0;j<ecl.length;j++) {
+                    if (ecl[j].toLowerCase() == arguments[0].toLowerCase()) {
+                        ei.push(elms[i]);
+                    }
+                }
+            } else if (elms[i].className) {
+                ecl = elms[i].className.split(' ');
+                for (j=0;j<ecl.length;j++) {
+                    if (ecl[j].toLowerCase() == arguments[0].toLowerCase()) {
+                        ei.push(elms[i]);
+                    }
+                }
+            }
+        }
+        return ei;
+    }
+}
+
+
 function domapsel(){
 it=document.getElementById('mapselect');
 it.parentNode.getElementsByTagName('legend')[0].innerHTML=it.options[it.selectedIndex].parentNode.label;
@@ -1508,7 +1535,6 @@ ind.className=ind.className.replace(fromclass,toclass);
 function onClickPageForm(evt){
     evt = (evt) ? evt : ((event) ? event : null );
 var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement;
-
 submitPageForm(it.href,it.className);
 return false;
 }
