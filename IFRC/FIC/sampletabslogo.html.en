@@ -58,9 +58,9 @@
   <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCpctlecolorscale.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >Where is unusually heavy rainfall expected?</h2>
-<p align="left" property="term:description">This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be unusually heavy.</p>
-<p align="left">The blue areas are where the total 6-day rainfall is expected to be unusually heavy.  The darkest blue shading indicates areas expected to be exceptionally wet for this location. </p>
+<h2 align="center"  property="term:title" >Where is exceptionally heavy rainfall expected?</h2>
+<p align="left" property="term:description">This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be exceptionally heavy.</p>
+<p align="left">The blue areas are where the total 6-day rainfall is expected to be exceptionally heavy.  The darkest blue shading indicates areas expected to be exceptionally wet for this location. </p>
 <p align="left"><i>This forecast shows rain over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i>  The map does not distinguish areas where rainfall is expected from areas where snow is expected.  Forecasts for the amount of snow are indicated in terms of the equivalent amount of rainfall, so the actual depth of snow would be considerably more than indicated.  The forecast data are courtesy of the NOAA ESRL Reforecast project.
 </p>
 </div>
