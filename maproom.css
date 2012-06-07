@@ -721,7 +721,7 @@ display: inline;
 .ui-helper-reset {
 	line-height: 1.0;
 }
-.ui-tabs ul {
+.ui-tabs-nav {
 	background: LightGrey;
         border-width: 4px;
         border-bottom-width: 2px;
@@ -744,7 +744,7 @@ display: inline;
         font-size: 9pt;
 	font-family: Helvetica, Arial, "Lucida Sans Unicode", Verdana, sans-serif;
 }
-.ui-tabs ul li{
+.ui-tabs-nav li{
         line-height: 1.8;
         background: #ECECEC;
         display: inline;
@@ -766,15 +766,15 @@ display: inline;
         border-style: outset;
 	border-color: #E2E2E2;
 }
-.ui-tabs ul li a { text-decoration: none;
+.ui-tabs-nav li a { text-decoration: none;
  }
-.ui-tabs ul .ui-state-default a:visited,
-.ui-tabs ul .ui-state-default a:link
+.ui-tabs-nav .ui-state-default a:visited,
+.ui-tabs-nav .ui-state-default a:link
 {color: #2E6E9E; }
-.ui-tabs ul .ui-state-active a:visited,
-.ui-tabs ul .ui-state-active a:link
+.ui-tabs-nav .ui-state-active a:visited,
+.ui-tabs-nav .ui-state-active a:link
 {color: #E17009; }
-.ui-tabs ul .ui-state-default{
+.ui-tabs-nav .ui-state-default{
         position:relative;
 	border-style: outset;
 	border-bottom: 1px;
@@ -782,7 +782,7 @@ display: inline;
         left: 0px;
         top: 0px;
 }
-.ui-tabs ul .ui-state-active{
+.ui-tabs-nav .ui-state-active{
         background: white;
 	border-width: 3px;
         border-bottom: 0px none !important;
@@ -794,8 +794,8 @@ display: inline;
         padding-top: 3px;
         padding-bottom: 6px;
 }
-.ui-tabs ul .ui-state-active:active,
-.ui-tabs ul .ui-state-default:active{
+.ui-tabs-nav .ui-state-active:active,
+.ui-tabs-nav .ui-state-default:active{
 	border-color: LightGrey;
 	border: 4px;
         margin-top: 2px;
@@ -860,10 +860,10 @@ visibility: hidden;
 .ui-widget-header {
 	background: LightGrey;
 }
-.ui-tabs ul {
+.ui-tabs-nav {
 display: block;
 }
-.ui-tabs ul li{
+.ui-tabs-nav li{
         background: white;
         padding-bottom: 4px;
         padding-top: 2pt;
@@ -873,19 +873,19 @@ display: block;
 	margin-left: 2px;
 	margin-right: 2px;
 }
-.ui-tabs ul .ui-state-default{
+.ui-tabs-nav .ui-state-default{
         position:relative;
         left: 0px;
         top: 0px;
 }
-.ui-tabs ul .ui-state-active{
+.ui-tabs-nav .ui-state-active{
 	border: 2px;
         border-style: outset;
         margin-left: 1px;
         margin-right: 1px;
 }
-.ui-tabs ul .ui-state-active:active,
-.ui-tabs ul .ui-state-default:active{
+.ui-tabs-nav .ui-state-active:active,
+.ui-tabs-nav .ui-state-default:active{
         margin-left: 1px;
         margin-right: 1px;
         left: 3px;
@@ -899,7 +899,7 @@ display: block;
 .ui-tabs .ui-tabs-panel-hidden {display: block;}
 .navlink {font-size: 14pt;}
 .navitem select { font-size: 10pt;}
-.ui-tabs ul li {font-size: 8pt;}
+.ui-tabs-nav li {font-size: 8pt;}
 #share {display: none;}
 #chooseLanguage {display: none;}
 .selectvalue {
