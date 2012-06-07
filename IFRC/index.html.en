@@ -23,9 +23,9 @@
    <body>
       
       
-      <form name="pageform" id="pageform" class="carryup titleLink" method="get"
+      <form name="pageform" id="pageform" class="carry carryup titleLink" method="get"
             enctype="application/x-www-form-urlencoded">
-         <input class="carryup titleLink" name="Set-Language" type="hidden" />
+         <input class="carryup carry" name="Set-Language" type="hidden" />
          
       </form>
       
@@ -87,15 +87,22 @@
                <div id="tabs-1" class="ui-tabs-panel">
                   <div class="itemGroup">Six Day Precipitation Forecasts</div>
                   <div class="item">
-                     <div class="itemTitle"><a class="titleLink" href="FIC/cummrain.html">How much rain is expected cumulatively?</a></div>
-                     <div class="itemIcon"><a class="titleLink" href="FIC/cummrain.html"><img class="itemImage"
+                     <div class="itemTitle"><a class="carry titleLink" href="FIC/cummrain.html">How much rain is expected cumulatively?</a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/cummrain.html"><img class="itemImage"
                                 src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
                      <div class="itemDescription">This map shows how much rain (or snow) is expected cumulatively over the next six days.</div>
                      <div class="itemFooter"></div>
                   </div>
                   <div class="item">
-                     <div class="itemTitle"><a class="titleLink" href="FIC/heavyrain.html">How heavy is the rainfall expected to be?</a></div>
-                     <div class="itemIcon"><a class="titleLink" href="FIC/heavyrain.html"><img class="itemImage"
+                     <div class="itemTitle"><a class="carry titleLink" href="FIC/dayexceptional.html">Where is exceptionally heavy rainfall expected?</a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/dayexceptional.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/300/plotrange//S/216./plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.jpg" /></a></div>
+                     <div class="itemDescription">This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be exceptionally heavy.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carry titleLink" href="FIC/heavyrain.html">How heavy is the rainfall expected to be?</a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/heavyrain.html"><img class="itemImage"
                                 src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
                      <div class="itemDescription">This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be unusually heavy for this
                         time of the year.
@@ -103,15 +110,8 @@
                      <div class="itemFooter"></div>
                   </div>
                   <div class="item">
-                     <div class="itemTitle"><a class="titleLink" href="FIC/sampletabslogo.html">Where is unusually heavy rainfall expected?</a></div>
-                     <div class="itemIcon"><a class="titleLink" href="FIC/sampletabslogo.html"><img class="itemImage"
-                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/300/plotrange//S/216./plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.jpg" /></a></div>
-                     <div class="itemDescription">This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be unusually heavy.</div>
-                     <div class="itemFooter"></div>
-                  </div>
-                  <div class="item">
-                     <div class="itemTitle"><a class="titleLink" href="FIC/wetter.html">Where is it expected to be wetter than average?</a></div>
-                     <div class="itemIcon"><a class="titleLink" href="FIC/wetter.html"><img class="itemImage"
+                     <div class="itemTitle"><a class="carry titleLink" href="FIC/wetter.html">Where is it expected to be wetter than average?</a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/wetter.html"><img class="itemImage"
                                 src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcpanom/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
                      <div class="itemDescription">This map shows if the cumulative rain expected over the next six days is more or less than average for a given place and time
                         of year.
@@ -122,8 +122,8 @@
                <div id="tabs-2" class="ui-tabs-panel">
                   <div class="itemGroup">Forecasts for the Next Three Months</div>
                   <div class="item">
-                     <div class="itemTitle"><a class="titleLink" href="FIC/extreme_prcp_fcst.html">Are the next 3 months likely to be exceptionally wet or dry?</a></div>
-                     <div class="itemIcon"><a class="titleLink" href="FIC/extreme_prcp_fcst.html"><img class="itemImage"
+                     <div class="itemTitle"><a class="carry titleLink" href="FIC/extreme_prcp_fcst.html">Are the next 3 months likely to be exceptionally wet or dry?</a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/extreme_prcp_fcst.html"><img class="itemImage"
                                 src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1/plotvalue//F/622.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
                      <div class="itemDescription">The map shows where and how likely it is to be extremely wet or dry over the next three months. Extreme refers to the lowest
                         or highest 15% of the historical record.
@@ -131,22 +131,22 @@
                      <div class="itemFooter"></div>
                   </div>
                   <div class="item">
-                     <div class="itemTitle"><a class="titleLink" href="FIC/pic3mo_reversed.html">Is it likely that unusually wet or dry conditions will end?</a></div>
-                     <div class="itemIcon"><a class="titleLink" href="FIC/pic3mo_reversed.html"><img class="itemImage"
+                     <div class="itemTitle"><a class="carry titleLink" href="FIC/pic3mo_reversed.html">Is it likely that unusually wet or dry conditions will end?</a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/pic3mo_reversed.html"><img class="itemImage"
                                 src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_reversed/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+//F/622.5/plotvalue/Y/-66.25/76.25/plotrange+//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20reversed%20from%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
                      <div class="itemDescription">This map shows where current wet or dry conditions will likely end over the next 3 months.</div>
                      <div class="itemFooter"></div>
                   </div>
                   <div class="item">
-                     <div class="itemTitle"><a class="titleLink" href="FIC/pic3mo_same.html">Is it likely that unusually wet or dry conditions will continue?</a></div>
-                     <div class="itemIcon"><a class="titleLink" href="FIC/pic3mo_same.html"><img class="itemImage"
+                     <div class="itemTitle"><a class="carry titleLink" href="FIC/pic3mo_same.html">Is it likely that unusually wet or dry conditions will continue?</a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/pic3mo_same.html"><img class="itemImage"
                                 src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+//F/622.5/plotvalue/Y/-66.25/76.25/plotrange+//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
                      <div class="itemDescription">This map shows where and how likely recent wet or dry conditions will continue over the next 3 months.</div>
                      <div class="itemFooter"></div>
                   </div>
                   <div class="item">
-                     <div class="itemTitle"><a class="titleLink" href="FIC/prcp_fcst.html">Are the next 3 months likely to be unusually wet or dry?</a></div>
-                     <div class="itemIcon"><a class="titleLink" href="FIC/prcp_fcst.html"><img class="itemImage"
+                     <div class="itemTitle"><a class="carry titleLink" href="FIC/prcp_fcst.html">Are the next 3 months likely to be unusually wet or dry?</a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/prcp_fcst.html"><img class="itemImage"
                                 src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1./plotvalue/F/last/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
                      <div class="itemDescription">This map shows the likelihood that total 3-month precipitation in a future season will be unusually high or low.</div>
                      <div class="itemFooter"></div>
@@ -155,8 +155,8 @@
                <div id="tabs-3" class="ui-tabs-panel">
                   <div class="itemGroup">Historical Conditions</div>
                   <div class="item">
-                     <div class="itemTitle"><a class="titleLink" href="FIC/CMAP_climo.html">How much rain normally falls at this time of year?</a></div>
-                     <div class="itemIcon"><a class="titleLink" href="FIC/CMAP_climo.html"><img class="itemImage"
+                     <div class="itemTitle"><a class="carry titleLink" href="FIC/CMAP_climo.html">How much rain normally falls at this time of year?</a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/CMAP_climo.html"><img class="itemImage"
                                 src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
                      <div class="itemDescription">This map shows how much rain normally falls this time of year.</div>
                      <div class="itemFooter"></div>
@@ -165,15 +165,15 @@
                <div id="tabs-4" class="ui-tabs-panel">
                   <div class="itemGroup">Vulnerability Indicators</div>
                   <div class="item">
-                     <div class="itemTitle"><a class="titleLink" href="FIC/count.html">Are the areas at risk of heavy rainfall densely populated?</a></div>
-                     <div class="itemIcon"><a class="titleLink" href="FIC/count.html"><img class="itemImage"
+                     <div class="itemTitle"><a class="carry titleLink" href="FIC/count.html">Are the areas at risk of heavy rainfall densely populated?</a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/count.html"><img class="itemImage"
                                 src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.GPWv3/.count/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/546./plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
                      <div class="itemDescription">This map shows human population density.</div>
                      <div class="itemFooter"></div>
                   </div>
                   <div class="item">
-                     <div class="itemTitle"><a class="titleLink" href="FIC/imr.html">Are the areas at risk of heavy rainfall inhabited by vulnerable populations?</a></div>
-                     <div class="itemIcon"><a class="titleLink" href="FIC/imr.html"><img class="itemImage"
+                     <div class="itemTitle"><a class="carry titleLink" href="FIC/imr.html">Are the areas at risk of heavy rainfall inhabited by vulnerable populations?</a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/imr.html"><img class="itemImage"
                                 src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
                      <div class="itemDescription">This map shows the infant mortality rate, an indicator of poverty.</div>
                      <div class="itemFooter"></div>

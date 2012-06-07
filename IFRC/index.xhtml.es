@@ -22,8 +22,8 @@
 </head>
 <body>
 
-<form name="pageform" id="pageform" class="carryup titleLink">
-<input class="carryup titleLink" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform" class="carry carryup titleLink">
+<input class="carryup carry" name="Set-Language" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
@@ -51,6 +51,7 @@
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#VulnerabilityIndicators" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#TimeScales" />
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Compartir</legend>

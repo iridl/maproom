@@ -13,8 +13,8 @@
 <title>IFRC PIC: &#191;D&#243;nde se esperan lluvias inusualmente abundantes?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link class="altLanguage" rel="alternate" hreflang="en" href="sampletabslogo.html?Set-Language=en" />
-<link rel="canonical" href="sampletabslogo.html" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="dayexceptional.html?Set-Language=en" />
+<link rel="canonical" href="dayexceptional.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#SixDayForecasts" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />

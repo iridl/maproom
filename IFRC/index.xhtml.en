@@ -22,8 +22,8 @@
 </head>
 <body>
 
-<form name="pageform" id="pageform" class="carryup titleLink">
-<input class="carryup titleLink" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform" class="carry carryup titleLink">
+<input class="carryup carry" name="Set-Language" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
