@@ -10,7 +10,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>IFRC PIC: Where is unusually heavy rainfall expected?</title>
+<title>IFRC PIC: Where is exceptionally heavy rainfall expected?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="dayexceptional.html?Set-Language=es" />
@@ -46,10 +46,11 @@
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
       <li><a href="#tabs-1" >Description</a></li>
-      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-6" >Instructions</a></li>
+      <li><a href="#tabs-5" >More Information</a></li>
       <li><a href="#tabs-3" >Single-Day Precipitation Maps</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
-      <li><a class="carry" href="instructions.html">Instructions</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
@@ -60,7 +61,11 @@
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Where is exceptionally heavy rainfall expected?</h2>
 <p align="left" property="term:description">This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be exceptionally heavy.</p>
-<p align="left">The blue areas are where the total 6-day rainfall is expected to be exceptionally heavy.  The darkest blue shading indicates areas expected to be exceptionally wet for this location. </p>
+<ul>
+<li> The darkest blue shows where the total 6-day rainfall is expected to be exceptionally heavy, meaning in the top 1% of rainfall experienced at this location at any time of year in the past. </li>
+<li> The medium blue shows expected rainfall in the top 5% </li>
+<li> Light blue shows expected rainfall in the top 10% of rainfall experienced in this location in the past. </li>
+</ul>
 <p align="left"><i>This forecast shows rain over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i>  The map does not distinguish areas where rainfall is expected from areas where snow is expected.  Forecasts for the amount of snow are indicated in terms of the equivalent amount of rainfall, so the actual depth of snow would be considerably more than indicated.  The forecast data are courtesy of the NOAA ESRL Reforecast project.
 </p>
 </div>
@@ -94,6 +99,44 @@ Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you 
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
+<h2  align="center">Definition of "Heavy"</h2>
+<p>The "Heavy Rainfall" (light blue) category designates percentiles from 0.9 to 0.95, the "Very Heavy Rainfall" (medium blue) category designates percentiles from 0.95 to 0.99, and the "Extremely Heavy Rainfall" (dark blue) category designates percentiles from 0.99 to 1.  The percentiles are calculated without respect to the time of the season -- e.g., forecast rainfall for the next six days is ranked with respect to all six-day rainfalls in the 30-year forecast climatology, not just six-day rainfalls in the middle of January.</p>
+</div>
+<div id="tabs-6"  class="ui-tabs-panel">
+<h2  align="center">How to use this interactive map</h2>
+<p><i>Switch to another map:</i>
+Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
+<p><i>Return to the menu page:</i>
+Click the blue link called “Forecasts in Context” at the top left corner of the page.</p>
+<p><i>Zoom in to a region:</i><br>
+Method 1: Pick a region from the list:
+<ol>
+<li>Select the dropdown menu at the top of the page, titled “Region”</li>
+<li>Click on the region of interest, and the map will automatically refresh.</li>
+</ol>
+</p>
+<p>Method 2: Click-and-drag:</p>
+<ol>
+<li>Click the left mouse button at the upper-left corner of the region to which you would like to zoom.</li>
+<li>While holding down the button, drag the mouse to the lower-right corner of the region to which you would like to zoom.</li>
+<li>Release the left mouse button. The map will redraw automatically.</li>
+</ol>
+<p><i>Zoom out to the global map:</i></p>
+<ol>
+<li>Move your mouse over the map, until you see three icons appear in the upper left corner.</li>
+<li>Click the icon of the magnifying glass.</li>
+<li>The map will redraw automatically. Note that the map cannot display areas outside of the latitudes initially shown on the interface (about 66.25S – 76.25N).</li>
+</ol>
+<p><i>Change the date of the forecast:</i>
+Forecasts are labeled by the day they were issued. You can find this label by moving your mouse over the map until you see a text box appear at the top with the date inside.
+<ol>
+<li>To step forward or back by one day, click the corresponding buttons to the left or right of the text box, and the map will automatically refresh.</li>
+<li>To manually change the forecast issue date, type your date of interest into the text box. This must follow the format: “0000 16 Jan 2008”. Then, press “enter” or click the “refresh” icon in the top left corner of the map.</li>
+<li>To produce an animation of these maps over a series of dates, type the date range into the text box. This must follow the format: “start date” followed by “to” followed by “end date”. For example “0000 1 Jan 2008 to 0000 15 Jan 2008”.</li>
+</ol>
+</p>
 </div>
 </div>
 <div class="optionsBar">
