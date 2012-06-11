@@ -82,13 +82,13 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in 
 <div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">How to use this interactive map</h2>
 <p><i>Switch to another map:</i>
-Select the dropdown menu at the top of the page, to the right of the blue Â“Forecasts in ContextÂ” heading.</p>
+Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
 <p><i>Return to the menu page:</i>
-Click the blue link called Â“Forecasts in ContextÂ” at the top left corner of the page.</p>
+Click the blue link called “Forecasts in Context” at the top left corner of the page.</p>
 <p><i>Zoom in to a region:</i><br>
 Method 1: Pick a region from the list:
 <ol>
-<li>Select the dropdown menu at the top of the page, titled Â“RegionÂ”</li>
+<li>Select the dropdown menu at the top of the page, titled “Region”</li>
 <li>Click on the region of interest, and the map will automatically refresh.</li>
 </ol>
 </p>
@@ -102,14 +102,14 @@ Method 1: Pick a region from the list:
 <ol>
 <li>Move your mouse over the map, until you see three icons appear in the upper left corner.</li>
 <li>Click the icon of the magnifying glass.</li>
-<li>The map will redraw automatically. Note that the map cannot display areas outside of the latitudes initially shown on the interface (about 66.25S Â– 76.25N).</li>
+<li>The map will redraw automatically. Note that the map cannot display areas outside of the latitudes initially shown on the interface (about 66.25S – 76.25N).</li>
 </ol>
 <p><i>Change the date of the forecast:</i>
 Forecasts are labeled by the month they were issued. You can find this label by moving your mouse over the map until you see a text box appear at the top with the date inside.
 <ol>
 <li>To step forward or back by one month, click the corresponding buttons to the left or right of the text box, and the map will automatically refresh.</li>
-<li>To manually change the forecast issue date, type your date of interest into the text box. This must follow the format: Â“Jan 2008Â”. Then, press Â“enterÂ” or click the Â“refreshÂ” icon in the top left corner of the map.</li>
-<li>To produce an animation of these maps over a series of dates, type the date range into the text box. This must follow the format: Â“start dateÂ” followed by Â“toÂ” followed by Â“end dateÂ”. For example Â“Jan 2008 to Dec 2008Â”.</li>
+<li>To manually change the forecast issue date, type your date of interest into the text box. This must follow the format: “Jan 2008”. Then, press “enter” or click the “refresh” icon in the top left corner of the map.</li>
+<li>To produce an animation of these maps over a series of dates, type the date range into the text box. This must follow the format: “start date” followed by “to” followed by “end date”. For example “Jan 2008 to Dec 2008”.</li>
 </ol>
 </p>
 </div>

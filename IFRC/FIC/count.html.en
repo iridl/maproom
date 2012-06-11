@@ -80,13 +80,13 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in 
 <div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">How to use this interactive map</h2>
 <p><i>Switch to another map:</i>
-Select the dropdown menu at the top of the page, to the right of the blue Â“Forecasts in ContextÂ” heading.</p>
+Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
 <p><i>Return to the menu page:</i>
-Click the blue link called Â“Forecasts in ContextÂ” at the top left corner of the page.</p>
+Click the blue link called “Forecasts in Context” at the top left corner of the page.</p>
 <p><i>Zoom in to a region:</i><br>
 Method 1: Pick a region from the list:
 <ol>
-<li>Select the dropdown menu at the top of the page, titled Â“RegionÂ”</li>
+<li>Select the dropdown menu at the top of the page, titled “Region”</li>
 <li>Click on the region of interest, and the map will automatically refresh.</li>
 </ol>
 </p>
@@ -100,7 +100,7 @@ Method 1: Pick a region from the list:
 <ol>
 <li>Move your mouse over the map, until you see three icons appear in the upper left corner.</li>
 <li>Click the icon of the magnifying glass.</li>
-<li>The map will redraw automatically. Note that the map cannot display areas outside of the latitudes initially shown on the interface (about 66.25S Â– 76.25N).</li>
+<li>The map will redraw automatically. Note that the map cannot display areas outside of the latitudes initially shown on the interface (about 66.25S – 76.25N).</li>
 </ol>
 </div>
 </div>
