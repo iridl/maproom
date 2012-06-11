@@ -73,20 +73,20 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in 
 <div id="tabs-6"  class="ui-tabs-panel">
 <h2  align="center">Explanation</h2>
 <p> The map categories are calculated as follows: </p>
-<p>Assume a simple model, in which you will break even over many years if you ignore the forecast and prepare evenly for below-normal, normal, and above-normal rainfall. If you donít ignore the forecast and instead invest preparedness resources according to the forecast probabilities of each category, based on this simplified model, you would</p>
+<p>Assume a simple model, in which you will break even over many years if you ignore the forecast and prepare evenly for below-normal, normal, and above-normal rainfall. If you don‚Äôt ignore the forecast and instead invest preparedness resources according to the forecast probabilities of each category, based on this simplified model, you would</p>
 <ul>
-<li>Have a return of 10% in ìgood skillî areas.</li>
-<li>Have a return of 5-10% in ìsome skillî areas.</li>
-<li>Have a return of less than 5% in ìlittle or no skillî areas.</li>
+<li>Have a return of 10% in ‚Äúgood skill‚Äù areas.</li>
+<li>Have a return of 5-10% in ‚Äúsome skill‚Äù areas.</li>
+<li>Have a return of less than 5% in ‚Äúlittle or no skill‚Äù areas.</li>
 </ul>
-<p>These categories are based on the Effective Interest Rate which is derived from the Likelihood Score.  Detailed information on these skill scores is available on IRIís Seasonal Forecast Verification <a href="http://iri.columbia.edu/climate/forecast/verification">Webpages</a>.</p>
+<p>These categories are based on the Effective Interest Rate which is derived from the Likelihood Score.  Detailed information on these skill scores is available on IRI‚Äôs Seasonal Forecast Verification <a href="http://iri.columbia.edu/climate/forecast/verification">Webpages</a>.</p>
 </div>
 <div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">How to navigate between maps</h2>
 <p><i>Switch to another map:</i>
-Select the dropdown menu at the top of the page, to the right of the blue ìForecasts in Contextî heading.</p>
+Select the dropdown menu at the top of the page, to the right of the blue ‚ÄúForecasts in Context‚Äù heading.</p>
 <p><i>Return to the menu page:</i>
-Click the blue link called ìForecasts in Contextî at the top left corner of the page.</p>
+Click the blue link called ‚ÄúForecasts in Context‚Äù at the top left corner of the page.</p>
 </div>
 </div>
 <div class="optionsBar">
