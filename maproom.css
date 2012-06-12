@@ -767,6 +767,7 @@ display: inline;
 	border-color: #E2E2E2;
 }
 .ui-tabs-nav li a { text-decoration: none;
+display: inline-block;
  }
 .ui-tabs-nav .ui-state-default a:visited,
 .ui-tabs-nav .ui-state-default a:link
