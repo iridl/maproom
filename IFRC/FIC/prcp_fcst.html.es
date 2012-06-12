@@ -10,6 +10,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <title>IFRC PIC: &#191;Es probable que los pr&#243;ximos 3 meses sean inusualmente h&#250;medos o secos?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
