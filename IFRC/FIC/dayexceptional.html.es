@@ -56,7 +56,7 @@
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
   <br />
-  <img class="dauxlimg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCpctlecolorscale_es.gif" />
+  <img class="dlauximg" src="../Forecasts/IFRCpctlecolorscale_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;D&#243;nde se esperan lluvias inusualmente abundantes?</h2>
