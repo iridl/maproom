@@ -26,12 +26,12 @@
 </form>
 <div class="controlBar">
            <fieldset class="navitem">
-                <legend>Data Library</legend> 
+                <legend>IRI/LDEO</legend> 
                       <a rev="section" class="navlink carryup" href="http://iridl.ldeo.columbia.edu/">IRI Climate Data Library</a>
             </fieldset> 
            <fieldset class="navitem"> 
-                <legend>Map Room</legend> 
-                     <span class="navtext">IRI Map Room</span>
+                <legend>Data Library</legend> 
+                     <span class="navtext">Maproom</span>
 
             </fieldset> 
 </div>
