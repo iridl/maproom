@@ -18,6 +18,15 @@ $.ready = function(fn) {
   else
       window.onload = fn;
 }
+    function jsDependsOn(srcfile){
+	var s=document.getElementsByTagName('script')[0];
+
+    var po = document.createElement('script');
+    po.type = 'text/javascript';
+    po.src = srcfile;
+    s.parentNode.insertBefore(po,s);
+    }
+
 /*
 To simplify writing maproom documents, and accessing them locally,
 from test locations, and from the server, urls that start /maproom/
@@ -38,6 +47,14 @@ break;
 }
 var scriptroot = scriptsrc.substr(0,scriptsrc.indexOf('/maproom/')+9);
 var maproomroot = document.location.href.substr(0,document.location.href.indexOf('/maproom/')+9);
+/* loads pure javascript */
+var puredir = scriptroot.substr(0,scriptroot.length-8) + 'pure/libs/';
+jsDependsOn(puredir + 'pure.js');
+/* var pureloaded = false;
+if(typeof $p != 'undefined'){
+    pureloaded = true;
+}
+*/
 function localHrefOf(ghref){
 var lhref;
 var ifmap  = ghref.indexOf('/maproom/');
@@ -576,6 +593,37 @@ pform.elements[it.name].value=it.value;
 updatePageForm(pform.elements[it.name]);
 }
 }
+}
+function loadHasJSON(){
+var sfigs=getElementsByAttribute(document,'link','rel','iridl:hasJSON');
+for (var i=0 ; i<sfigs.length ; i++){
+    updateHasJSON(sfigs[i]);
+}
+}
+function updateHasJSON(myLink){
+    infourl = myLink.href;
+var xmlhttp= getXMLhttp();
+xmlhttp.myContext = myLink.parentNode;
+changeClassWithin(myLink.parentNode,'valid','invalid');
+xmlhttp.onreadystatechange = function(evt) {
+   var evt = (evt) ? evt : ((event) ? event : null );
+   var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+if(it.readyState == 4){
+var jsontxt = it.responseText;
+it.myContext.parsedJSON=JSON.parse(jsontxt);
+/* info now has figure information */
+/* for (x in it.mylink.info){
+alert(x + " is " + JSON.stringify(it.mylink.info[x]));
+} */
+runPureOnContext(xmlhttp.myContext);
+}
+};
+xmlhttp.open("GET",infourl,true);
+xmlhttp.send();
+}
+function runPureOnContext(myContext){
+    $p(myContext).autoRender(myContext.parsedJSON);
+changeClassWithin(document.getElementById('mytemplate'),'invalid','valid');
 }
 function initializeDLimage(){
     var mylist=document.getElementsByClassName("dlimage");
@@ -1405,6 +1453,9 @@ if(cmem.tagName == 'LINK'){
 var newsrc = appendPageForm(cmem.href.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.href){
     cmem.href = newsrc;
+    if(cmem.rel == 'iridl:hasJSON'){
+	updateHasJSON(cmem);
+    }
 }
 }
 }
@@ -1628,6 +1679,7 @@ insertchooseSection();
 insertRegion();
 insertshare();
 setupPageFormLinks();
+loadHasJSON();
 }
 }
 );
