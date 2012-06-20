@@ -595,35 +595,50 @@ updatePageForm(pform.elements[it.name]);
 }
 }
 function loadHasJSON(){
-var sfigs=getElementsByAttribute(document,'link','rel','iridl:hasJSON');
+var sfigs=getElementsByAttribute(document,'*','rel','iridl:hasJSON');
 for (var i=0 ; i<sfigs.length ; i++){
     updateHasJSON(sfigs[i]);
 }
 }
+/* reads JSON file referred to by a link object
+The parent of the link object we call the Context.
+when file is returned, if the url retrieved is still the url that the
+link object points to, stores parsedJSON in the Context,
+and calls runPureOnContext.
+ */
 function updateHasJSON(myLink){
-    infourl = myLink.href;
 var xmlhttp= getXMLhttp();
+xmlhttp.infourl = myLink.href;
 xmlhttp.myContext = myLink.parentNode;
+xmlhttp.myLink=myLink;
 changeClassWithin(myLink.parentNode,'valid','invalid');
 xmlhttp.onreadystatechange = function(evt) {
    var evt = (evt) ? evt : ((event) ? event : null );
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
 if(it.readyState == 4){
 var jsontxt = it.responseText;
+if(it.myLink.href == it.infourl){
 it.myContext.parsedJSON=JSON.parse(jsontxt);
-/* info now has figure information */
-/* for (x in it.mylink.info){
-alert(x + " is " + JSON.stringify(it.mylink.info[x]));
-} */
-runPureOnContext(xmlhttp.myContext);
+runPureOnContext(it.myContext);
+}
 }
 };
-xmlhttp.open("GET",infourl,true);
+xmlhttp.open("GET",xmlhttp.infourl,true);
 xmlhttp.send();
 }
+/*
+runs pure on what I am calling a context.  It only runs on elements
+within the context which have class "template".
+
+Because this can be called more than once, I use the compile/render
+form of pure.
+ */
 function runPureOnContext(myContext){
-    $p(myContext).autoRender(myContext.parsedJSON);
-changeClassWithin(document.getElementById('mytemplate'),'invalid','valid');
+    if(!myContext.pureTemplateFunction){
+	myContext.pureTemplateFunction= $p(myContext.getElementsByClassName("template")).compile(false,myContext.parsedJSON);
+    }
+    $p(myContext.getElementsByClassName("template")).render(myContext.parsedJSON,myContext.pureTemplateFunction);
+changeClassWithin(myContext,'invalid','valid');
 }
 function initializeDLimage(){
     var mylist=document.getElementsByClassName("dlimage");
@@ -631,7 +646,7 @@ for( var idlimage=0 ; idlimage < mylist.length ; idlimage++){
 var s = mylist[idlimage];
 var sl = s.getElementsByTagName('legend');
 var leg;
-var sfigs=getElementsByAttribute(s,'link','rel','iridl:hasFigure');
+var sfigs=getElementsByAttribute(s,'*','rel','iridl:hasFigure');
 if(!sl.length && sfigs.length){
 leg=document.createElement('legend');
 leg.className='imagecontrols';
@@ -674,7 +689,7 @@ s.insertBefore(leg,s.firstChild);
 else {
 leg=sl[0];
 }
-var sfigs=getElementsByAttribute(s,'link','rel','iridl:hasFigure');
+var sfigs=getElementsByAttribute(s,'*','rel','iridl:hasFigure');
 if(sfigs.length){
 if(!sfigs[0].info){
 sfigs[0].info="seeking";
@@ -812,7 +827,7 @@ updatePageForm();
 function doinfobutton (evt) {
    var evt = (evt) ? evt : ((event) ? event : null );
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
-var mylink = getElementsByAttribute(it.parentNode.parentNode,'link','rel','iridl:hasFigure');
+var mylink = getElementsByAttribute(it.parentNode.parentNode,'*','rel','iridl:hasFigure');
 // location.href=appendPageForm(mylink[0].href+'index.html',mylink[0].figureimage.className);
 location.href=mylink[0].href;
 }
