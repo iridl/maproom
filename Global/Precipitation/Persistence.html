@@ -10,7 +10,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Global: Monthly Precipitation Persistence</title>
+<title>Monthly Precipitation Persistence</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <!--
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
@@ -63,7 +63,7 @@
   <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/T/12/splitstreamgrid%5BT2%5D0.0/0.1/0.2/0.3/0.33/0.4/0.5/0.6/0.67/0.7/0.8/0.9/1.0/1.0/replacebypercentile/percentile/0.67/VALUE/flagge/T/-2/0/shiftdatashort%5BT_lag%5Daverage/3/mul/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/T/12/splitstreamgrid%5BT2%5D0.0/0.1/0.2/0.3/0.33/0.4/0.5/0.6/0.67/0.7/0.8/0.9/1.0/1.0/replacebypercentile/percentile/0.33/VALUE/flagle/T/-2/0/shiftdatashort%5BT_lag%5Daverage/-3/mul/add//name//persistence/def/prcp_persistence_colors//long_name/%28Number%20of%20past%203%20months%20PRCP%20was%20in%20bottom%20tercile%20%28brown%29%20or%20top%20tercile%20%28green%29%29def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/T/%28Jan%201981%29%28Dec%202010%29RANGE/T/%28days%20since%201960-01-01%29streamgridunitconvert/T/differential_mul/T/%28months%20since%201960-01-01%29streamgridunitconvert//units/%28mm/month%29def/yearly-climatology%5BT%5DregridLinear/T/-2/0/shiftdatashort%5BT_lag%5Dsum/30/flaglt//name//dry_mask/def/:ds/a-/.persistence/prcp_persistence_colors/-a-/.dry_mask/-a/X/Y/fig:/colors/grey/mask/white/ocean/black/thin/solid/coasts/countries/:fig//persistence/-3.5/3.5/plotrange/X/-180/180/plotrange/Y/-65/75/plotrange/++.auxfig+/T/last/plotvalue//plotborder+72+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >Global Monthly Precipitation Persistence</h2>
+<h2 align="center"  property="term:title" >Monthly Precipitation Persistence</h2>
 <p align="left" property="term:description">This map shows, over the course of the three previous months, the number of months in which monthly precipitation was in the bottom or top tercile of the climatological distribution.</p>
 <p align="left"> For each of the previous three months (the last month is shown on the plot) monthly precipitation is first ranked by percentiles with respect to the 1981-2010 climatology for each calendar month of the year (the 0th percentile represents the driest value in the climatological base period, while the 100th percentile indicates the wettest).  Next, for each gridpoint, a count is made of the number of months in the previous three months that the precipitation was in the bottom or the top tercile of the climatological distribution.  The bottom tercile is the lowest one-third of the climatological distribution (below the 33.33rd percentile), and the top tercile is the highest one-third of the climatological distribution (above the 66.67th percentile).  In the count, months with precipitation in the middle tercile are ignored. </p>
 <p align="left"> On the map, light and dark brown shading indicates that 2 of the previous 3, and 3 of the previous 3 months had precipitation in the bottom tercile, respectively.  Light and dark green shading on the plot indicates where precipitation was in the top tercile for 2 of the previous 3 months, and 3 of the previous 3 months, respectively.  Regions shaded with the grey dry mask receive an average of less than 30 mm of precipitation over the course of the previous 3 months, based upon the 1981-2010 monthly precipitation climatology.</p>
@@ -72,7 +72,7 @@
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<p><b><a class="carry">Global Monthly Precipitation Persistence</a></b><br /> 
+<p><b><a class="carry">Monthly Precipitation Persistence</a></b><br /> 
 <b>Data</b> CAMS_OPI monthly precipitation on a 2.5&#176; lat/lon grid 
 <br /><b>Data Source</b> NOAA NCEP Climate Prediction Center, <a href="http://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cams_opi.html">CAMS_OPI</a>
 <br /><b>Analysis</b> Counts of months with precipitation in the highest and lowest monthly precipitation terciles based upon the 1981-2010 base period.
