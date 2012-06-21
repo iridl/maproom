@@ -803,17 +803,25 @@ mybbox=JSON.parse(myin.value);
 }
 }
 if(!mybbox){
+var X0,X1,Y0,Y1;
+if(typeof(myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]) != 'undefined'){
 var Xare = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["@type"];
 var Yare = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["@type"];
-var X0,X1,Y0,Y1;
 if(Xare = 'iridl:EvenGridEdges'){
 X0 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:first"];
 X1 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:last"];
 }
 if(Yare = 'iridl:EvenGridEdges'){
-var Y0 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:first"];
-var Y1 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:last"];
+Y0 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:first"];
+Y1 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:last"];
 }
+    }
+    else {
+X0 = myinfo["iridl:hasAbscissa"]["iridl:plotfirst"];
+X1 = myinfo["iridl:hasAbscissa"]["iridl:plotlast"];
+Y0 = myinfo["iridl:hasOrdinate"]["iridl:plotfirst"];
+Y1 = myinfo["iridl:hasOrdinate"]["iridl:plotlast"];
+    }
 mybbox=[X0,Y0,X1,Y1];
 }
 return mybbox;
@@ -1197,8 +1205,6 @@ var plotborderbottom = myinfo["iridl:plotborderbottom"];
 var plotaxislength = plotaxislengthfn(myinfo);
 var Xaxislength = myinfo["iridl:Xaxislength"];
 var Yaxislength = myinfo["iridl:Yaxislength"];
-var Xare = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["@type"];
-var Yare = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["@type"];
 myA = getbbox(myinfo);
 var X0,X1,Y0,Y1;
 X0 = myA[0];
