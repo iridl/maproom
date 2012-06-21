@@ -10,6 +10,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <title>IFRC PIC: How well can we predict seasonal climate?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
@@ -19,7 +20,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
-<link rel="term:icon" href="http://iri.columbia.edu/~benno/proto/ingrid/maproom/icons/iri.png" />
+<link rel="term:icon" href="skillmap-small.jpg" />
 <script type="text/javascript" src="../../maproom.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
-<img class="dlimg" src="http://iri.columbia.edu/~benno/proto/ingrid/maproom/icons/iri.png" border="0" alt="image" />
+<img class="dlimg" src="skillmap.jpg" border="0" alt="image" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >How Well Can We Predict Seasonal Climate?</h2>

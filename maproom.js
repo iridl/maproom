@@ -18,6 +18,15 @@ $.ready = function(fn) {
   else
       window.onload = fn;
 }
+    function jsDependsOn(srcfile){
+	var s=document.getElementsByTagName('script')[0];
+
+    var po = document.createElement('script');
+    po.type = 'text/javascript';
+    po.src = srcfile;
+    s.parentNode.insertBefore(po,s);
+    }
+
 /*
 To simplify writing maproom documents, and accessing them locally,
 from test locations, and from the server, urls that start /maproom/
@@ -38,6 +47,14 @@ break;
 }
 var scriptroot = scriptsrc.substr(0,scriptsrc.indexOf('/maproom/')+9);
 var maproomroot = document.location.href.substr(0,document.location.href.indexOf('/maproom/')+9);
+/* loads pure javascript */
+var puredir = scriptroot.substr(0,scriptroot.length-8) + 'pure/libs/';
+jsDependsOn(puredir + 'pure.js');
+/* var pureloaded = false;
+if(typeof $p != 'undefined'){
+    pureloaded = true;
+}
+*/
 function localHrefOf(ghref){
 var lhref;
 var ifmap  = ghref.indexOf('/maproom/');
@@ -577,13 +594,59 @@ updatePageForm(pform.elements[it.name]);
 }
 }
 }
+function loadHasJSON(){
+var sfigs=getElementsByAttribute(document,'*','rel','iridl:hasJSON');
+for (var i=0 ; i<sfigs.length ; i++){
+    updateHasJSON(sfigs[i]);
+}
+}
+/* reads JSON file referred to by a link object
+The parent of the link object we call the Context.
+when file is returned, if the url retrieved is still the url that the
+link object points to, stores parsedJSON in the Context,
+and calls runPureOnContext.
+ */
+function updateHasJSON(myLink){
+var xmlhttp= getXMLhttp();
+xmlhttp.infourl = myLink.href;
+xmlhttp.myContext = myLink.parentNode;
+xmlhttp.myLink=myLink;
+changeClassWithin(myLink.parentNode,'valid','invalid');
+xmlhttp.onreadystatechange = function(evt) {
+   var evt = (evt) ? evt : ((event) ? event : null );
+   var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
+if(it.readyState == 4){
+var jsontxt = it.responseText;
+if(it.myLink.href == it.infourl){
+it.myContext.parsedJSON=JSON.parse(jsontxt);
+runPureOnContext(it.myContext);
+}
+}
+};
+xmlhttp.open("GET",xmlhttp.infourl,true);
+xmlhttp.send();
+}
+/*
+runs pure on what I am calling a context.  It only runs on elements
+within the context which have class "template".
+
+Because this can be called more than once, I use the compile/render
+form of pure.
+ */
+function runPureOnContext(myContext){
+    if(!myContext.pureTemplateFunction){
+	myContext.pureTemplateFunction= $p(myContext.getElementsByClassName("template")).compile(false,myContext.parsedJSON);
+    }
+    $p(myContext.getElementsByClassName("template")).render(myContext.parsedJSON,myContext.pureTemplateFunction);
+changeClassWithin(myContext,'invalid','valid');
+}
 function initializeDLimage(){
     var mylist=document.getElementsByClassName("dlimage");
 for( var idlimage=0 ; idlimage < mylist.length ; idlimage++){
 var s = mylist[idlimage];
 var sl = s.getElementsByTagName('legend');
 var leg;
-var sfigs=getElementsByAttribute(s,'link','rel','iridl:hasFigure');
+var sfigs=getElementsByAttribute(s,'*','rel','iridl:hasFigure');
 if(!sl.length && sfigs.length){
 leg=document.createElement('legend');
 leg.className='imagecontrols';
@@ -626,7 +689,7 @@ s.insertBefore(leg,s.firstChild);
 else {
 leg=sl[0];
 }
-var sfigs=getElementsByAttribute(s,'link','rel','iridl:hasFigure');
+var sfigs=getElementsByAttribute(s,'*','rel','iridl:hasFigure');
 if(sfigs.length){
 if(!sfigs[0].info){
 sfigs[0].info="seeking";
@@ -764,7 +827,7 @@ updatePageForm();
 function doinfobutton (evt) {
    var evt = (evt) ? evt : ((event) ? event : null );
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
-var mylink = getElementsByAttribute(it.parentNode.parentNode,'link','rel','iridl:hasFigure');
+var mylink = getElementsByAttribute(it.parentNode.parentNode,'*','rel','iridl:hasFigure');
 // location.href=appendPageForm(mylink[0].href+'index.html',mylink[0].figureimage.className);
 location.href=mylink[0].href;
 }
@@ -1405,6 +1468,9 @@ if(cmem.tagName == 'LINK'){
 var newsrc = appendPageForm(cmem.href.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.href){
     cmem.href = newsrc;
+    if(cmem.rel == 'iridl:hasJSON'){
+	updateHasJSON(cmem);
+    }
 }
 }
 }
@@ -1628,6 +1694,7 @@ insertchooseSection();
 insertRegion();
 insertshare();
 setupPageFormLinks();
+loadHasJSON();
 }
 }
 );

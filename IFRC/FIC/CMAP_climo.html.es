@@ -10,6 +10,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <title>IFRC PIC: &#191;Cu&#225;nta lluvia cae normalmente en esta parte del a&#241;o?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
