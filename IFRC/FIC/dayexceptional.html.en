@@ -46,8 +46,8 @@
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
       <li><a href="#tabs-1" >Description</a></li>
-      <li><a href="#tabs-6" >Instructions</a></li>
       <li><a href="#tabs-5" >More Information</a></li>
+      <li><a href="#tabs-6" >Instructions</a></li>
       <li><a href="#tabs-3" >Single-Day Precipitation Maps</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
