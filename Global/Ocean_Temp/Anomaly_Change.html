@@ -1,45 +1,94 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="en"
+      >
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-   <meta name="GENERATOR" content="Mozilla/4.75 [en] (X11; U; Linux 2.2.16-3 i686) [Netscape]">
-   <title>Global Monthly Sea Surface Temperature Anomaly Change from Previous Month</title>
-<link REL=stylesheet TYPE="text/css" HREF="/site.html">
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Change in Sea Surface Temperature Anomaly from Previous Month</title>
+<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<!--
+<link rel="stylesheet" type="text/css" href="../ifrc.css" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="Anomaly_Change.html?Set-Language=fr" />
+-->
+<link class="share" rel="canonical" href="Anomaly_Change.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_term" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Surface"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#PlanetarySurface"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#WaterSurface"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Global"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_Ocean_Temp_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#temperature"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#monthly"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#difference"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomaly"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#SeaSurface"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#SeaSurfaceTemperatureAnomaly"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GLOBAL/.Reyn_SmithOIv2/.monthly/.ssta/T/differences/startcolormap/DATA/-5./5./RANGE/black/navy/blue/-5./VALUE/cyan/-0.5/VALUE/white/white/0.5/bandmax/yellow/0.5/VALUE/red/5./VALUE/firebrick/endcolormap/DATA/0.5/STEP/a-+++-a-++-a+X+Y+fig:+colors+nozero+unlabelledcontours+land+:fig+//T/last/plotvalue/X/20/380/plotrange/Y/-60/70/plotrange//plotaxislength+220+psdef//plotborder+0+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" />
+<script type="text/javascript" src="../../maproom.js"></script>
 </head>
-<body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000">
-<INGRID>leftmenu</INGRID>
-<blockquote>
-<table>
-<blockquote>
-<tr><td align=center><font size=+1>Change in Sea Surface Temperature (SST) Anomaly from
-Previous Month (deg. C)</font>
-</td></tr>
-</blockquote>
-
-<tr><td align=center><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GLOBAL/.Reyn_SmithOIv2/.monthly/.ssta/T/differences/startcolormap/DATA/-5./5./RANGE/black/navy/blue/-5./VALUE/cyan/-0.5/VALUE/white/white/0.5/bandmax/yellow/0.5/VALUE/red/5./VALUE/firebrick/endcolormap/DATA/0.5/STEP/figviewer.html?my.help=more+options&map.T.plotvalue=last&map.Y.units=degree_north&map.Y.plotlast=70N&map.url=a-+++-a-++-a+X+Y+fig:+colors+nozero+contours+land+:fig&map.domain=+%7B+T+last+plotvalue+X+20.+380.+plotrange+Y+-60+70+plotrange+%7D&map.domainparam=+/plotaxislength+600+psdef+/plotborder+72+psdef+/XOVY+null+psdef&map.zoom=Zoom&map.Y.plotfirst=60S&map.X.plotfirst=20E&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=20E&map.ssta.plotfirst=-5.&map.ssta.units=degree_Celsius&map.ssta.plotlast=5.&map.plotaxislength=600&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=auto&map.color_smoothing=auto&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to explore the data';return true"><img src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GLOBAL/.Reyn_SmithOIv2/.monthly/.ssta/T/differences/startcolormap/DATA/-5./5./RANGE/black/navy/blue/-5./VALUE/cyan/-0.5/VALUE/white/white/0.5/bandmax/yellow/0.5/VALUE/red/5./VALUE/firebrick/endcolormap/DATA/0.5/STEP/a-+++-a-++-a+X+Y+fig:+colors+nozero+contours+land+:fig+/T/last/plotvalue/X/20./380./plotrange/Y/-60/70/plotrange+//plotborder+72+psdef//color_smoothing+null+psdef//XOVY+null+psdef//plotaxislength+600+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" width=672 height=289></a>
-<br><img src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GLOBAL/.Reyn_SmithOIv2/.monthly/.ssta/T/differences/startcolormap/DATA/-5./5./RANGE/black/navy/blue/-5./VALUE/cyan/-0.5/VALUE/white/white/0.5/bandmax/yellow/0.5/VALUE/red/5./VALUE/firebrick/endcolormap/DATA/0.5/STEP/a-+++-a-++-a+X+Y+fig:+colors+nozero+contours+land+:fig+.auxfig+/T/last/plotvalue/X/20./380./plotrange/Y/-60/70/plotrange+//plotborder+72+psdef//color_smoothing+null+psdef//XOVY+null+psdef//plotaxislength+600+psdef+.gif" NOSAVE border=0 width=622 height=56>
-<br></td></tr>
-
-<tr>
-<td ALIGN=CENTER>
-<table BORDER COLS=1 WIDTH="75%" NOSAVE >
-<tr>
-<td><font size=-1><b>Data</b>:&nbsp;&nbsp; Reynolds and Smith Version 2 monthly sea surface temperature
-anomaly (deg. C) on a 1.0 x 1.0 deg. lat/lon grid</font>
-<br><font size=-1><b>Base Period for Climatology:&nbsp; </b>1971-2000</font>
-<br><font size=-1><b>Data Source</b>:&nbsp; NCEP, Environmental Monitoring
-Center</font>
-<p><font size=-1><b>Description:&nbsp; </b>Change in sea surface
-temperature anomaly from the previous month contoured at 0.5 deg. C intervals.&nbsp;
-Shading starts at +/- 0.5 deg. C.&nbsp;</font>
-<p><font size=-1>NCEP is an acronym for the US National Centers for Environmental
-Prediction.</font></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</blockquote>
-
-</body>
-</html>
+<body>
+<form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
+<input class="carryup carry " name="Set-Language" type="hidden" />
+<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="dlimg share" name="T" type="hidden" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Maproom</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Global/">Climate Monitoring</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_Ocean_Temp_term"><span property="term:label">Ocean Temperature</span></legend>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseRegion"> 
+                <legend>Region</legend> 
+            </fieldset>
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-3" >Contact Us</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GLOBAL/.Reyn_SmithOIv2/.monthly/.ssta/T/differences/startcolormap/DATA/-5./5./RANGE/black/navy/blue/-5./VALUE/cyan/-0.5/VALUE/white/white/0.5/bandmax/yellow/0.5/VALUE/red/5./VALUE/firebrick/endcolormap/DATA/0.5/STEP/a-+++-a-++-a+X+Y+fig:+colors+nozero+contours+land+:fig+//T/last/plotvalue/X/20/380/plotrange/Y/-60/70/plotrange//plotaxislength+600+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GLOBAL/.Reyn_SmithOIv2/.monthly/.ssta/T/differences/startcolormap/DATA/-5./5./RANGE/black/navy/blue/-5./VALUE/cyan/-0.5/VALUE/white/white/0.5/bandmax/yellow/0.5/VALUE/red/5./VALUE/firebrick/endcolormap/DATA/0.5/STEP/a-+++-a-++-a+X+Y+fig:+colors+nozero+contours+land+:fig+//T/last/plotvalue/X/20/380/plotrange/Y/-60/70/plotrange//plotaxislength+600+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GLOBAL/.Reyn_SmithOIv2/.monthly/.ssta/T/differences/startcolormap/DATA/-5./5./RANGE/black/navy/blue/-5./VALUE/cyan/-0.5/VALUE/white/white/0.5/bandmax/yellow/0.5/VALUE/red/5./VALUE/firebrick/endcolormap/DATA/0.5/STEP/a-+++-a-++-a+X+Y+fig:+colors+nozero+contours+land+:fig+.auxfig+//T/last/plotvalue/X/20/380/plotrange/Y/-60/70/plotrange//plotaxislength+600+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >Change in Sea Surface Temperature Anomaly from Previous Month</h2>
+<p align="left" property="term:description"> This map displays the difference in sea surface temperature anomaly from the previous month.</p>
+<p align="left"> Monthly changes in sea surface temperature anomalies are shown in units of &#176;C.  Yellow to red colors on the map indicate an increase in the monthly sea surface temperature anomaly from the previous month, and shades of blue indicate a decrease in the anomaly from the previous month.  Contours are drawn at an interval of 0.5&#176;C, and shading starts at +/- 0.5&#176;C.  Monthly sea surface temperature anomalies are calculated with respect to the 1971-2000 climatology.  The time label displays the middle dates of the two months over which the difference is calculated; the difference is calculated as the temperature anomaly in the later month minus the temperature anomaly in the previous month.</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p><b><a class="carry">Change in Sea Surface Temperature Anomaly from Previous Month</a></b><br /> 
+<b>Data</b> Reynolds and Smith OISST Version 2 monthly sea surface temperature (in &#176;C) on a 1.0&#176; lat/lon grid 
+<br /><b>Data Source</b> NCEP 
+<br /><b>Analysis</b> Month-to-month difference in monthly sea surface temperature anomalies with respect to the 1971-2000 monthly climatology.
+</p>
+</div>
+<div id="tabs-3"  class="ui-tabs-panel">
+<h2  align="center">Helpdesk</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Change in Sea Surface Temperature Anomaly from Previous Month">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ <!-- hhmts start -->Last modified: Sat Jun 16 20:49:08 EDT 2012 <!-- hhmts end -->
+ </body>
+ </html>
