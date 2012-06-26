@@ -342,14 +342,17 @@ border-color: #AAAAAA;}
 .dlimage > legend > .dlimagecontrol {
 display: none;
 border-width: 2px; border-style: outset; border-color: Grey;
-	width: 13pt;
-	height: 13pt;
+	width: 10pt;
+	height: 10pt;
+	padding: 2pt;
         margin-top: 0px;
         margin-bottom: 0px;
         margin-left: 2px;
         margin-right: 2px;
-       -moz-border-radius: 4px;
-       border-radius: 2px;
+       -moz-border-radius: 7px;
+       border-radius: 7px;
+        background-color: WhiteSmoke;
+	opacity: 0.6;
 }
 .dlimage > .dlcontrol {
 //        display:block ;
@@ -404,6 +407,9 @@ display: none;
 }
 .dlimage:hover > legend > .dlimagecontrol {
 display: inline;
+}
+.dlimage:hover > legend > .dlimagecontrol:hover {
+opacity: 1.0;
 }
 .dlimage > legend > .dlimagecontrol:active {
 	border-style: inset;
