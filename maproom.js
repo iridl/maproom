@@ -302,7 +302,7 @@ gb.className='sharebutton';
 gb.id='mailbutton';
     tumblr_button = document.createElement("a");
 	tumblr_button.onclick=doMail;
-    tumblr_button.setAttribute("title", "Mail link");
+    tumblr_button.setAttribute("title", "Share with e-mail");
     gb.appendChild(tumblr_button);
 s.appendChild(gb);
 }
