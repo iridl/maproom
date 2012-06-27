@@ -14,7 +14,7 @@
 <title>IFRC PIC: What Changes in Rainfall are Typical during El Niño and La Niña?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="ensorain.html?Set-Language=es" />
+<!--<link class="altLanguage" rel="alternate" hreflang="es" href="ensorain.html?Set-Language=es" />-->
 <link rel="canonical" href="ensorain.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />

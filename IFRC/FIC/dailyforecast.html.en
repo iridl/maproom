@@ -14,7 +14,7 @@
 <title>IFRC PIC: Daily Forecasts</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="dailforecast.html?Set-Language=es" />
+<!--<link class="altLanguage" rel="alternate" hreflang="es" href="dailforecast.html?Set-Language=es" />-->
 <link rel="canonical" href="dailyforecast.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#SixDayForecasts" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />

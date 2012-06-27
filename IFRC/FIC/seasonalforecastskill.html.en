@@ -14,7 +14,7 @@
 <title>IFRC PIC: How well can we predict seasonal climate?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="seasonalforecastskill.html?Set-Language=es" />
+<!--<link class="altLanguage" rel="alternate" hreflang="es" href="seasonalforecastskill.html?Set-Language=es" />-->
 <link rel="canonical" href="seasonalforecastskill.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
