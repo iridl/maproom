@@ -1008,6 +1008,8 @@ A.titleLink:active, A.titleLink:hover {color: blue;}
   #custom-tweet-button{
     display: inline-block;
     background: WhiteSmoke;
+-moz-border-radius: 7px;
+border-radius: 7px;
   }
   #custom-tweet-button:hover{
     background: white;
@@ -1029,7 +1031,13 @@ text-indent:-9999px; overflow:hidden;
     background: url('http://static.evernote.com/site-mem-22.png') center no-repeat;
     border: 1px solid #ccc;
 text-indent:-9999px; overflow:hidden; 
+-moz-border-radius: 7px;
+border-radius: 7px;
+opacity: 0.8;
   }
+#evernote a:hover {
+opacity: 1.0;
+}
 #tumblr a {
 display:inline-block; 
     cursor: pointer;
@@ -1039,9 +1047,13 @@ text-indent:-9999px; overflow:hidden;
 width:20px;
 background:url('http://platform.tumblr.com/v1/share_4.png') center no-repeat transparent;
 background-size: 95%;
+-moz-border-radius: 7px;
+border-radius: 7px;
+opacity: 0.8;
 }
 #tumblr a:hover {
 background-color: white;
+opacity: 1.0;
 }
 #gmailbutton a {
 display:inline-block; 
@@ -1053,4 +1065,21 @@ width:22px;
 background:url('http://mail.google.com/mail/images/2/mail_icon_32.png') center no-repeat transparent;
 background-size: 95%;
 }
-
+#mailbutton a {
+display:inline-block; 
+    cursor: pointer;
+    height: 20px;
+    padding: 2px 2px 2px 2px;
+text-indent:-9999px; overflow:hidden; 
+width:22px;
+background:url('icons/mail_32.png') center no-repeat transparent;
+background-color: WhiteSmoke;
+background-size: 80%;
+opacity: 0.8;
+-moz-border-radius: 7px;
+border-radius: 7px;
+}
+#mailbutton a:hover {
+opacity: 1.0;
+background-color: white;
+}

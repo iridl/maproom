@@ -296,6 +296,15 @@ gb.id='gmailbutton';
     gb.appendChild(tumblr_button);
 s.appendChild(gb);
 */
+/* code to add Mail buttons */
+gb= document.createElement('div');
+gb.className='sharebutton';
+gb.id='mailbutton';
+    tumblr_button = document.createElement("a");
+	tumblr_button.onclick=doMail;
+    tumblr_button.setAttribute("title", "Mail link");
+    gb.appendChild(tumblr_button);
+s.appendChild(gb);
 }
 // adds scripts to share to activate buttons
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -325,6 +334,16 @@ function doGMail(){
 	}
 	if(!title)title=document.title;
 var m='http://mail.google.com/mail/?ui=1&view=cm&fs=1&tf=1&to=&su='+encodeURIComponent(title)+'&body='+encodeURIComponent(url);
+window.open(m);
+}
+function doMail(){
+ var url = appendPageForm(location.href.replace(/[?].*/,''),'share');
+    var tpar = getElementsByAttribute(document,'*','property','term:title');
+	if(tpar.length>0){
+	title=tpar[0].innerHTML;
+	}
+	if(!title)title=document.title;
+var m='mailto:?subject='+encodeURIComponent(title)+'&body='+encodeURIComponent(url);
 window.open(m);
 }
 function doTumblrClip(){
