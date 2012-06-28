@@ -1336,6 +1336,9 @@ sel.name="Set-Language";
 sel.onchange=languageChange;
 var opt=document.createElement('option');
 opt.value=document.getElementsByTagName('html')[0].getAttribute("xml:lang");
+if(!opt.value){
+opt.value=document.getElementsByTagName('body')[0].getAttribute("xml:lang");
+}
 opt.innerHTML=Languages[opt.value];
 opt.value="";
 sel.appendChild(opt);
