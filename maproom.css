@@ -316,18 +316,18 @@ display: none;
         padding-right: 2px;
 }
 .dlimage {
-       border-color: black;
+border-color: #AAAAAA;
        float: right;
        margin: 5px;
        -moz-border-radius: 10px;
        border-radius: 10px;
-       border-width: 2px;
+       border-width: 3px;
 	width: 50%;
 }
-.dlimage:hover {border-width: 4px; 
-margin: 3px; 
+.dlimage:hover {
+border-color: black;
 border-style: outset; 
-border-color: #AAAAAA;}
+}
 
 .dlimagelegend {
 	margin: 0px;
