@@ -61,7 +61,7 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >How heavy is the rainfall expected to be?</h2>
-<p><b>What does this map tell me?</b></p/>
+<p><b>What does this map tell me?</b></p>
 <p align="left" property="term:description">This map shows areas where total rainfall (or snow) over the next six days is expected to be unusually heavy, and how much that rainfall will be.</p>
 
 <p><b>What do I do next?</b></p>
