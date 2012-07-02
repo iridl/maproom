@@ -47,10 +47,11 @@
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
       <li><a href="#tabs-1" >Description</a></li>
-      <li><a href="#tabs-5" >Instructions</a></li>
-      <li><a href="#tabs-3" >Single-Day Precipitation Maps</a></li>
-      <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-2" >More Information</a></li>
+      <li><a href="#tabs-3" >Instructions</a></li>
+      <li><a href="#tabs-4" >Single-Day Precipitation Maps</a></li>
+      <li><a href="#tabs-5" >Dataset Documentation</a></li>
+      <li><a href="#tabs-6" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
@@ -60,43 +61,26 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >How much rain is expected cumulatively?</h2>
-<p align="left" property="term:description">This map shows how much rain (or snow) is expected cumulatively over the next six days.</p>
-<p align="left">The blue areas indicate the cumulative amount of rain forecast for the 6-day period.  The heaviest rainfall amounts are expected in areas that are colored in increasingly darker shades of blue, then red and violet.  The start date for the 6-day period is located above the map.  The map indicates only the cumulative amount of rainfall expected over the next six days, but does not indicate whether this amount is normal for the place and time of year. </p>
-<p align="left"><i>This forecast shows rain over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i>  The map does not distinguish areas where rainfall is expected from areas where snow is expected.  Forecasts for the amount of snow are indicated in terms of the equivalent amount of rainfall, so the actual depth of snow would be considerably more than indicated.  The forecast data are courtesy of the NOAA ESRL Reforecast project.
+<p><b>What does this map tell me?</b></p/>
+<p align="left" property="term:description">This map shows the total amount of rain or snow that is expected to fall in the next 6 days.</p>
+<p><b>What do I do next?</b></p>
+<p>If you see dark colours over your region, possible responses include:
+<ul>
+<li>Consider how much rainfall is "normal" for this time of year, and whether this forecast indicates something unusually high or low.</li>
+<li>Contact your local/regional meterological department and monitor their forecasts for the next six days.</li>
+<li>Consider who may be most affected by the rainfall forecast.</li>
+<li>Review your contingency plans and update as necessary.</li>
+</ul>
 </p>
+<p>See the "More Information" tab for details.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
-<h2  align="center">Dataset Documentation</h2>
-<p><b><a class="carry" href="instructions.html#esrlgfs">ESRL GFS Six-Day and Daily Precipitation Forecast Maps</a></b><br /> 
-<b>Data</b>  Daily ensemble-mean forecast precipitation totals at 2.5&#176; lat/lon resolution from the Medium-Range Forecast (MRF/GFS) model run daily at 00 UTC by the NOAA ESRL PSD Reforecast project 
-<br /><b>Data Source</b> U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://www.cdc.noaa.gov/people/jeffrey.s.whitaker/refcst/">ESRL GFS Reforecast Project</a>
-<br /><b>Analyses</b>: Analyses shown here include forecast daily (days 1-6) and six-day precipitation totals, forecast daily and six-day total precipitation anomalies from the 1979-2004 mean, forecast daily and six-day total precipitation as percent of mean monthly total precipitation (1979-2004 base period), and forecast daily and six-day total precipitation percentiles (1979-2004 base period).
+<h2 align="center">What do the colours mean?</h2>
+<p align="left">The blue areas indicate the cumulative, or total, amount of rain/snow forecast for the 6-day period.  The heaviest rainfall amounts are expected in areas that are colored in increasingly darker shades of blue, then red and violet.  The map indicates only the cumulative amount of rainfall expected over the next six days, but does not indicate whether this amount is normal for the place and time of year. </p>
+<p align="left"><i>This forecast shows rain over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i>  The map does not distinguish areas where rainfall is expected from areas where snow is expected.  Forecasts for the amount of snow are indicated in terms of the equivalent amount of rainfall, so the actual depth of snow would be considerably more than indicated.
 </p>
 </div>
 <div id="tabs-3" class="ui-tabs-panel">
-<h2  align="center">Single-Day (24-Hour) Total Precipitation Forecast Maps</h2>
-<table BORDER="2" >
-<tr>
-<td align="center"><a class="share" href="dailyforecast.html">Day 1 Precipitation Forecast Maps</a></td>
-
-<td align="center"><a class="share" href="dailyforecast.html?day=.day2">Day 2 Precipitation Forecast Maps</a></td>
-<td align="center"><a class="share" href="dailyforecast.html?day=.day3">Day 3 Precipitation Forecast Maps</a></td>
-</tr>
-<tr><td align="center"><a class="share" href="dailyforecast.html?day=.day4">Day 4 Precipitation Forecast Maps</a></td>
-<td align="center"><a class="share" href="dailyforecast.html?day=.day5">Day 5 Precipitation Forecast Maps</a></td>
-<td align="center"><a class="share" href="dailyforecast.html?day=.day6">Day 6 Precipitation Forecast Maps</a></td>
-</tr>
-</table>
-</div>
-<div id="tabs-4"  class="ui-tabs-panel">
-<h2  align="center">Helpdesks</h2>
-<p>
-Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
-<p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
- </p>
-</div>
-<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">How to use this interactive map</h2>
 <p><i>Switch to another map:</i>
 Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
@@ -129,6 +113,37 @@ Forecasts are labeled by the day they were issued. You can find this label by mo
 <li>To produce an animation of these maps over a series of dates, type the date range into the text box. This must follow the format: “start date” followed by “to” followed by “end date”. For example “0000 1 Jan 2008 to 0000 15 Jan 2008”.</li>
 </ol>
 </p>
+</div>
+<div id="tabs-4" class="ui-tabs-panel">
+<h2  align="center">Single-Day (24-Hour) Total Precipitation Forecast Maps</h2>
+<table BORDER="2" >
+<tr>
+<td align="center"><a class="share" href="dailyforecast.html">Day 1 Precipitation Forecast Maps</a></td>
+
+<td align="center"><a class="share" href="dailyforecast.html?day=.day2">Day 2 Precipitation Forecast Maps</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day3">Day 3 Precipitation Forecast Maps</a></td>
+</tr>
+<tr><td align="center"><a class="share" href="dailyforecast.html?day=.day4">Day 4 Precipitation Forecast Maps</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day5">Day 5 Precipitation Forecast Maps</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day6">Day 6 Precipitation Forecast Maps</a></td>
+</tr>
+</table>
+</div>
+<div id="tabs-5" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p><b><a class="carry" href="instructions.html#esrlgfs">ESRL GFS Six-Day and Daily Precipitation Forecast Maps</a></b><br /> 
+<b>Data</b>  Daily ensemble-mean forecast precipitation totals at 2.5&#176; lat/lon resolution from the Medium-Range Forecast (MRF/GFS) model run daily at 00 UTC by the NOAA ESRL PSD Reforecast project 
+<br /><b>Data Source</b> U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://www.cdc.noaa.gov/people/jeffrey.s.whitaker/refcst/">ESRL GFS Reforecast Project</a>
+<br /><b>Analyses</b>: Analyses shown here include forecast daily (days 1-6) and six-day precipitation totals, forecast daily and six-day total precipitation anomalies from the 1979-2004 mean, forecast daily and six-day total precipitation as percent of mean monthly total precipitation (1979-2004 base period), and forecast daily and six-day total precipitation percentiles (1979-2004 base period).
+</p>
+</div>
+<div id="tabs-6"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
 </div>
 </div>
 <div class="optionsBar">

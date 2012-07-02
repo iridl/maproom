@@ -47,8 +47,8 @@
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
       <li><a href="#tabs-1" >Description</a></li>
-      <li><a href="#tabs-5" >Instructions</a></li>
-      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-2" >Instructions</a></li>
+      <li><a href="#tabs-3" >Dataset Documentation</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
@@ -59,28 +59,17 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >How much rain normally falls at this time of year?</h2>
-<p align="left" property="term:description">This map shows how much rain normally falls this time of year.</p>
-<p align="left"> This map shows how much rain usually falls during this month in past years (1979-2004).  The darker the blue, the heavier the rain.  This map does not indicate how much rain is expected this year.</p>
-<p align="left">These data are from the NOAA Climate Prediction Center's Merged Analysis of Precipitation (CMAP) data set.
+<p align="left" property="term:description">This map shows how much rain normally falls in each month of the year.
+You can see:
+<ul>
+<li>Which places tend to be wetter or dryer than others.</li>
+<li>Which are the rainiest months for different locations.</li>
+</ul>
+</p>
+<p align="left"> These monthly maps are based on rainfall in past years (1979-2004).  The darker the blue, the heavier the rain.  This map does not indicate how much rain is expected this year.</p>
 </p>
 </div>
-<div id="tabs-2" class="ui-tabs-panel">
-<h2  align="center">Dataset Documentation</h2>
-<p><b><a class="carry" href="instructions.html#CMAP_climo">CPC Merged Analysis of Precipitation Monthly Climatology</a></b><br /> 
-<b>Data</b>  CPC Merged Analysis of Precipitation (CMAP) v0703 (March 2007 release) version 2 (merged gauge and satellite estimates) monthly precipitation values at 2.5&#176; lat/lon resolution
-<br /><b>Data Source</b> NOAA, Climate Prediction Center, <a href="http://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
-<br /><b>Analysis</b> Monthly precipitation climatology using 1979-2004 base period.
-</p>
-</div>
-<div id="tabs-4"  class="ui-tabs-panel">
-<h2  align="center">Helpdesks</h2>
-<p>
-Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
-<p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
- </p>
-</div>
-<div id="tabs-5"  class="ui-tabs-panel">
+<div id="tabs-2"  class="ui-tabs-panel">
 <h2  align="center">How to use this interactive map</h2>
 <p><i>Switch to another map:</i>
 Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
@@ -112,6 +101,22 @@ This map shows the normal rainfall for one month of the year. You edit this by m
 <li>To manually change the month, type the first three letters of the month of interest into the tex box. For example, type “Apr”. Then, press “enter” or click the “refresh” icon in the top left corner of the map.</li>
 <li>To produce an animation of these maps over a series of dates, type the range of months into the text box. This must follow the format: “start date” followed by “to” followed by “end date”. For example “Jan to Dec”.</li>
 </ol>
+</div>
+<div id="tabs-3" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p><b><a class="carry" href="instructions.html#CMAP_climo">CPC Merged Analysis of Precipitation Monthly Climatology</a></b><br /> 
+<b>Data</b>  CPC Merged Analysis of Precipitation (CMAP) v0703 (March 2007 release) version 2 (merged gauge and satellite estimates) monthly precipitation values at 2.5&#176; lat/lon resolution
+<br /><b>Data Source</b> NOAA, Climate Prediction Center, <a href="http://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
+<br /><b>Analysis</b> Monthly precipitation climatology using 1979-2004 base period.
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
 </div>
 </div>
 <div class="optionsBar">

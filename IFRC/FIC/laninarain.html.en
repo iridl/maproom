@@ -14,8 +14,8 @@
 <title>IFRC PIC: What Changes in Rainfall are Typical during El Niño and La Niña?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="ensorain.html?Set-Language=es" />
-<link rel="canonical" href="ensorain.html" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="laninarain.html?Set-Language=es" />
+<link rel="canonical" href="laninarain.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
@@ -41,24 +41,29 @@
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
       <li><a href="#tabs-1" >Description</a></li>
-      <li><a href="#tabs-5" >Instructions</a></li>
-      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-2" >Instructions</a></li>
+      <li><a href="#tabs-3" >Dataset Documentation</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
-<img class="dlimg" src="ElNinoandRainfall.png" border="0" alt="image" />
 <img class="dlimg" src="LaNinaandRainfall.png" border="0" alt="image" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >What Changes in Rainfall are Typical during El Niño and La Niña?</h2>
-<p align="left" property="term:description">During an El Niño episode, areas in green or yellow
+<h2 align="center"  property="term:title" >What Changes in Rainfall are Typical during La Niña?</h2>
+<p align="left" property="term:description">During a La Niña episode, areas in green or yellow
 are likely to become wetter or dryer than normal during the indicated months.</p>
 </p>
 <p align="left">To see if we are currently experiencing  El Niño, La Niña, or neutral conditions, click <a href="http://iri.columbia.edu/climate/ENSO/currentinfo/QuickLook.html">here</a>.</p>
-<p align="left">Consult the latest <a href="prcp_fcst.html">seasonal forecast</a> to see exactly where and when unusual rainfall is expected in the next few months.
-Seasonal forecasts take into account many other factors as well.</p>
+<p align="left">Seasonal forecasts take into account many other factors; consult the latest <a href="prcp_fcst.html">seasonal forecast</a> to see exactly where and when unusual rainfall is expected in the next few months.</p>
 </div>
-<div id="tabs-2" class="ui-tabs-panel">
+<div id="tabs-2"  class="ui-tabs-panel">
+<h2  align="center">How to navigate between maps</h2>
+<p><i>Switch to another map:</i>
+Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
+<p><i>Return to the menu page:</i>
+Click the blue link called “Forecasts in Context” at the top left corner of the page.</p>
+</div>
+<div id="tabs-3" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <p></p>
 </div>
@@ -69,14 +74,7 @@ Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you 
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
-</div>
-<div id="tabs-5"  class="ui-tabs-panel">
-<h2  align="center">How to navigate between maps</h2>
-<p><i>Switch to another map:</i>
-Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
-<p><i>Return to the menu page:</i>
-Click the blue link called “Forecasts in Context” at the top left corner of the page.</p>
-</div>
+ </div>
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>

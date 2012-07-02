@@ -41,38 +41,27 @@
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
       <li><a href="#tabs-1" >Description</a></li>
-      <li><a href="#tabs-6" >More Information</a></li>
-      <li><a href="#tabs-5" >Instructions</a></li>
-      <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-2" >More Information</a></li>
+      <li><a href="#tabs-3" >Instructions</a></li>
+      <li><a href="#tabs-4" >Dataset Documentation</a></li>
+      <li><a href="#tabs-5" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <img class="dlimg" src="skillmap.jpg" border="0" alt="image" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >How Well Can We Predict Seasonal Climate?</h2>
-<p align="left" property="term:description">This map shows where forecasts are consistently good at predicting seasonal rainfall for at least one season of the year.</p>
+<p align="left" property="term:description">This map shows where IRI 3-month forecasts are consistently good at predicting seasonal rainfall for at least one season of the year.</p>
+<p align="left">Specific patterns of rainfall that enable us to consistently predict climate 3 months in advance are strongest in the tropical regions, which you can see on this map.
+If you are in a red or yellow area, we recommend monitoring seasonal forecasts all year long for current confidence levels in predicted rainfall.</p>
+</div>
+<div id="tabs-2"  class="ui-tabs-panel">
+<h2  align="center">Explanation</h2>
 <ul>
 <li> Red areas show where forecasts can be generally skillful, and so it is possible for us to indicate high confidence for forecasts of unusually wet or dry seasons in these locations.  Seasonal forecasts in red areas may be most useful for early warning. </li>
 <li> Yellow areas indicate where forecasts have some skill.  These are also areas worth monitoring, although we will only occasionally indicate high confidence for these forecasts. </li>
 <li> Grey locations are places with little or no skill.  Any forecasts of unusual rainfall in these locations will usually only show low confidence and early warning opportunities would likely be limited. </li>
 </ul>
-<p align="left">Within any of these locations, we can often predict certain seasons with more confidence than other seasons, so we recommend year-long monitoring of the latest seasonal forecast for current confidence levels in predicted rainfall.</p>
-</div>
-<div id="tabs-2" class="ui-tabs-panel">
-<h2  align="center">Dataset Documentation</h2>
-<p></p>
-</div>
-<div id="tabs-4"  class="ui-tabs-panel">
-<h2  align="center">Helpdesks</h2>
-<p>
-Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
-<p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
- </p>
-</div>
-<div id="tabs-6"  class="ui-tabs-panel">
-<h2  align="center">Explanation</h2>
 <p> The map categories are calculated as follows: </p>
 <p>Assume a simple model, in which you will break even over many years if you ignore the forecast and prepare evenly for below-normal, normal, and above-normal rainfall. If you don’t ignore the forecast and instead invest preparedness resources according to the forecast probabilities of each category, based on this simplified model, you would</p>
 <ul>
@@ -82,12 +71,24 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in 
 </ul>
 <p>These categories are based on the Effective Interest Rate which is derived from the Likelihood Score.  Detailed information on these skill scores is available on IRI’s Seasonal Forecast Verification <a href="http://iri.columbia.edu/climate/forecast/verification">Webpages</a>.</p>
 </div>
-<div id="tabs-5"  class="ui-tabs-panel">
+<div id="tabs-3"  class="ui-tabs-panel">
 <h2  align="center">How to navigate between maps</h2>
 <p><i>Switch to another map:</i>
 Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
 <p><i>Return to the menu page:</i>
 Click the blue link called “Forecasts in Context” at the top left corner of the page.</p>
+</div>
+<div id="tabs-4" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p></p>
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
 </div>
 </div>
 <div class="optionsBar">
