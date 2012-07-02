@@ -19,7 +19,9 @@
       <link rel="term:isDescribedBy"
             href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
       <link rel="term:isDescribedBy"
-            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" /><script type="text/javascript" src="../maproom.js" xml:space="preserve"></script></head>
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+      <link rel="term:icon"
+            href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/300/plotrange//S/216./plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.jpg" /><script type="text/javascript" src="../maproom.js" xml:space="preserve"></script></head>
    <body>
       
       
@@ -154,8 +156,7 @@
                   </div>
                   <div class="item">
                      <div class="itemTitle"><a class="carry titleLink" href="FIC/seasonalforecastskill.html">How Well Can We Predict Seasonal Climate?</a></div>
-                     <div class="itemIcon"><a class="carry titleLink" href="FIC/seasonalforecastskill.html"><img class="itemImage"
-                                src="http://iri.columbia.edu/~benno/proto/ingrid/maproom/icons/iri.png" /></a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/seasonalforecastskill.html"><img class="itemImage" src="FIC/skillmap-small.jpg" /></a></div>
                      <div class="itemDescription">This map shows where forecasts are consistently good at predicting seasonal rainfall for at least one season of the year.</div>
                      <div class="itemFooter"></div>
                   </div>
@@ -171,8 +172,7 @@
                   </div>
                   <div class="item">
                      <div class="itemTitle"><a class="carry titleLink" href="FIC/ensorain.html">What Changes in Rainfall are Typical during El Niño and La Niña?</a></div>
-                     <div class="itemIcon"><a class="carry titleLink" href="FIC/ensorain.html"><img class="itemImage"
-                                src="http://iri.columbia.edu/~benno/proto/ingrid/maproom/icons/iri.png" /></a></div>
+                     <div class="itemIcon"><a class="carry titleLink" href="FIC/ensorain.html"><img class="itemImage" src="FIC/ElNinoandRainfall220.png" /></a></div>
                      <div class="itemDescription">El Niño and La Niña conditions in the tropical Pacific are known to shift rainfall patterns in many different parts of the
                         world. Although varying somewhat from one El Niño (or La Niña) to the next, the strongest shifts are fairly consistent in
                         the regions and seasons shown on these maps.

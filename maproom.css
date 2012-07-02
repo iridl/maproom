@@ -316,18 +316,18 @@ display: none;
         padding-right: 2px;
 }
 .dlimage {
-       border-color: black;
+border-color: #AAAAAA;
        float: right;
        margin: 5px;
        -moz-border-radius: 10px;
        border-radius: 10px;
-       border-width: 2px;
+       border-width: 3px;
 	width: 50%;
 }
-.dlimage:hover {border-width: 4px; 
-margin: 3px; 
+.dlimage:hover {
+border-color: black;
 border-style: outset; 
-border-color: #AAAAAA;}
+}
 
 .dlimagelegend {
 	margin: 0px;
@@ -342,14 +342,17 @@ border-color: #AAAAAA;}
 .dlimage > legend > .dlimagecontrol {
 display: none;
 border-width: 2px; border-style: outset; border-color: Grey;
-	width: 13pt;
-	height: 13pt;
+	width: 10pt;
+	height: 10pt;
+	padding: 2pt;
         margin-top: 0px;
         margin-bottom: 0px;
         margin-left: 2px;
         margin-right: 2px;
-       -moz-border-radius: 4px;
-       border-radius: 2px;
+       -moz-border-radius: 7px;
+       border-radius: 7px;
+        background-color: WhiteSmoke;
+	opacity: 0.6;
 }
 .dlimage > .dlcontrol {
 //        display:block ;
@@ -404,6 +407,9 @@ display: none;
 }
 .dlimage:hover > legend > .dlimagecontrol {
 display: inline;
+}
+.dlimage:hover > legend > .dlimagecontrol:hover {
+opacity: 1.0;
 }
 .dlimage > legend > .dlimagecontrol:active {
 	border-style: inset;
@@ -1002,6 +1008,8 @@ A.titleLink:active, A.titleLink:hover {color: blue;}
   #custom-tweet-button{
     display: inline-block;
     background: WhiteSmoke;
+-moz-border-radius: 7px;
+border-radius: 7px;
   }
   #custom-tweet-button:hover{
     background: white;
@@ -1023,7 +1031,13 @@ text-indent:-9999px; overflow:hidden;
     background: url('http://static.evernote.com/site-mem-22.png') center no-repeat;
     border: 1px solid #ccc;
 text-indent:-9999px; overflow:hidden; 
+-moz-border-radius: 7px;
+border-radius: 7px;
+opacity: 0.8;
   }
+#evernote a:hover {
+opacity: 1.0;
+}
 #tumblr a {
 display:inline-block; 
     cursor: pointer;
@@ -1033,9 +1047,13 @@ text-indent:-9999px; overflow:hidden;
 width:20px;
 background:url('http://platform.tumblr.com/v1/share_4.png') center no-repeat transparent;
 background-size: 95%;
+-moz-border-radius: 7px;
+border-radius: 7px;
+opacity: 0.8;
 }
 #tumblr a:hover {
 background-color: white;
+opacity: 1.0;
 }
 #gmailbutton a {
 display:inline-block; 
@@ -1047,4 +1065,21 @@ width:22px;
 background:url('http://mail.google.com/mail/images/2/mail_icon_32.png') center no-repeat transparent;
 background-size: 95%;
 }
-
+#mailbutton a {
+display:inline-block; 
+    cursor: pointer;
+    height: 20px;
+    padding: 2px 2px 2px 2px;
+text-indent:-9999px; overflow:hidden; 
+width:22px;
+background:url('icons/mail_32.png') center no-repeat transparent;
+background-color: WhiteSmoke;
+background-size: 80%;
+opacity: 0.8;
+-moz-border-radius: 7px;
+border-radius: 7px;
+}
+#mailbutton a:hover {
+opacity: 1.0;
+background-color: white;
+}

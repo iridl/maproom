@@ -10,7 +10,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Global: Seasonal Standardized Streamfunction Anomaly</title>
+<title>Seasonal Standardized Streamfunction Anomaly</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <!--
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
@@ -34,13 +34,14 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#SPL250mb" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere" />
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28500%29VALUE/T/3/runningAverage/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/sub/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28500%29VALUE/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/dup/yearly-climatology/sub/T/12/splitstreamgrid%5BT2%5Drmsover/div//long_name/%28Standardized%20Streamfunction%20Anomaly%29def//name/%28psianom%29def/std_anomaly_colors2/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28500%29VALUE/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/1000000/div/DATA/10/STEP//name//psiclim/def/:ds/a-+.psianom+-a-+.psiclim+-a+X+Y+fig:+colors+grey+unlabelledcontours+black+thin+solid+coasts+countries+:fig+/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotaxislength+220+psdef//plotborder+0+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28500%29VALUE/T/3/runningAverage/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/sub/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28500%29VALUE/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/dup/yearly-climatology/sub/T/12/splitstreamgrid%5BT2%5Drmsover/div//long_name/%28Standardized%20Streamfunction%20Anomaly%29def//name/%28psianom%29def/std_anomaly_colors2/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28500%29VALUE/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/1000000/div/DATA/10/STEP//name//psiclim/def/:ds/a-+.psianom+-a-+.psiclim+-a+X+Y+fig:+colors+grey+unlabelledcontours+black+thin+solid+coasts+countries+:fig//T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotaxislength+220+psdef//plotborder+0+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" />
 <script type="text/javascript" src="../../maproom.js"></script>
 </head>
 <body>
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
 <input class="carryup carry " name="Set-Language" type="hidden" />
 <input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="dlimg share" name="P" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
 </form>
@@ -55,6 +56,14 @@
             <fieldset class="navitem" id="chooseRegion"> 
                 <legend>Region</legend> 
             </fieldset>
+            <fieldset class="navitem"> 
+                <legend>Pressure</legend> 
+		<select class="pageformcopy" name="P">
+		<option value="250">250mb</option>
+		<option value="500">500mb</option>
+		<option value="925">925mb</option>
+		</select>
+            </fieldset>
  </div>
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
@@ -63,19 +72,19 @@
       <li><a href="#tabs-3" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/sub/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/dup/yearly-climatology/sub/T/12/splitstreamgrid%5BT2%5Drmsover/div//long_name/%28Standardized%20Streamfunction%20Anomaly%29def//name/%28psianom%29def/std_anomaly_colors2/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/1000000/div/DATA/10/STEP//name//psiclim/def/:ds/a-+.psianom+-a-+.psiclim+-a+X+Y+fig:+colors+grey+unlabelledcontours+black+thin+solid+coasts+countries+:fig+/T/last/plotvalue/P/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotaxislength+650+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef/" />
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/sub/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/dup/yearly-climatology/sub/T/12/splitstreamgrid%5BT2%5Drmsover/div//long_name/%28Standardized%20Streamfunction%20Anomaly%29def//name/%28psianom%29def/std_anomaly_colors2/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/1000000/div/DATA/10/STEP//name//psiclim/def/:ds/a-+.psianom+-a-+.psiclim+-a+X+Y+fig:+colors+grey+unlabelledcontours+black+thin+solid+coasts+countries+:fig+/T/last/plotvalue/P/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotaxislength+650+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" border="0" alt="image" />
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/sub/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/dup/yearly-climatology/sub/T/12/splitstreamgrid%5BT2%5Drmsover/div//long_name/%28Standardized%20Streamfunction%20Anomaly%29def//name/%28psianom%29def/std_anomaly_colors2/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/1000000/div/DATA/10/STEP//name//psiclim/def/:ds/a-+.psianom+-a-+.psiclim+-a+X+Y+fig:+colors+grey+unlabelledcontours+black+thin+solid+coasts+countries+:fig//T/last/plotvalue/P/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotaxislength+650+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/sub/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/dup/yearly-climatology/sub/T/12/splitstreamgrid%5BT2%5Drmsover/div//long_name/%28Standardized%20Streamfunction%20Anomaly%29def//name/%28psianom%29def/std_anomaly_colors2/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/1000000/div/DATA/10/STEP//name//psiclim/def/:ds/a-+.psianom+-a-+.psiclim+-a+X+Y+fig:+colors+grey+unlabelledcontours+black+thin+solid+coasts+countries+:fig//T/last/plotvalue/P/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotaxislength+650+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" border="0" alt="image" />
   <br />
-  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/sub/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/dup/yearly-climatology/sub/T/12/splitstreamgrid%5BT2%5Drmsover/div//long_name/%28Standardized%20Streamfunction%20Anomaly%29def//name/%28psianom%29def/std_anomaly_colors2/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/1000000/div/DATA/10/STEP//name//psiclim/def/:ds/a-+.psianom+-a-+.psiclim+-a+X+Y+fig:+colors+grey+unlabelledcontours+black+thin+solid+coasts+countries+:fig+.auxfig+/T/last/plotvalue/P/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotaxislength+650+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/sub/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/dup/yearly-climatology/sub/T/12/splitstreamgrid%5BT2%5Drmsover/div//long_name/%28Standardized%20Streamfunction%20Anomaly%29def//name/%28psianom%29def/std_anomaly_colors2/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.psi/P/%28925%29/%28500%29/%28250%29/VALUES/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/1000000/div/DATA/10/STEP//name//psiclim/def/:ds/a-+.psianom+-a-+.psiclim+-a+X+Y+fig:+colors+grey+unlabelledcontours+black+thin+solid+coasts+countries+:fig+.auxfig//T/last/plotvalue/P/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotaxislength+650+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >Global Seasonal Standardized Streamfunction Anomaly</h2>
+<h2 align="center"  property="term:title" >Seasonal Standardized Streamfunction Anomaly</h2>
 <p align="left" property="term:description">This map shows the seasonal (3-month average) streamfunction climatology and standardized anomalies at the 250, 500, and 925 hPa pressure levels in the atmosphere using the 1981-2010 base period for the season shown.</p>
 <p align="left"> Seasonal streamfunction climatology values are shown as grey contours with a contour interval of 10E+06 m2/s; dashed contours represent negative values and solid contours represent positive values.  Positive standardized streamfunction anomalies are shown in yellow and orange, and negative anomalies are shown in shades of blue, with shading starting at +/-1 standard deviations and a contour interval of 0.5 standard deviations.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<p><b><a class="carry">Global Seasonal Standardized Streamfunction Anomaly</a></b><br /> 
+<p><b><a class="carry">Seasonal Standardized Streamfunction Anomaly</a></b><br /> 
 <b>Data</b> NCEP-NCAR Reanalysis monthly streamfunction at 250, 500, and 925 hPa on a 2.5&#176; lat/lon grid 
 <br /><b>Data Source</b> NOAA National Centers for Environmental Prediction (NCEP) 
 <br /><b>Analysis</b> Seasonal (3-month average) streamfunction climatology and standardized anomalies using the 1981-2010 base period.
@@ -84,7 +93,7 @@
 <div id="tabs-3"  class="ui-tabs-panel">
 <h2  align="center">Helpdesk</h2>
 <p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Global Seasonal Standardized Streamfunction Anomaly">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+Contact <a href="mailto:help@iri.columbia.edu?subject=Seasonal Standardized Streamfunction Anomaly">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
  </p>
 </div>
 </div>

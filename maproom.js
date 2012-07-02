@@ -296,6 +296,15 @@ gb.id='gmailbutton';
     gb.appendChild(tumblr_button);
 s.appendChild(gb);
 */
+/* code to add Mail buttons */
+gb= document.createElement('div');
+gb.className='sharebutton';
+gb.id='mailbutton';
+    tumblr_button = document.createElement("a");
+	tumblr_button.onclick=doMail;
+    tumblr_button.setAttribute("title", "Share with e-mail");
+    gb.appendChild(tumblr_button);
+s.appendChild(gb);
 }
 // adds scripts to share to activate buttons
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -325,6 +334,16 @@ function doGMail(){
 	}
 	if(!title)title=document.title;
 var m='http://mail.google.com/mail/?ui=1&view=cm&fs=1&tf=1&to=&su='+encodeURIComponent(title)+'&body='+encodeURIComponent(url);
+window.open(m);
+}
+function doMail(){
+ var url = appendPageForm(location.href.replace(/[?].*/,''),'share');
+    var tpar = getElementsByAttribute(document,'*','property','term:title');
+	if(tpar.length>0){
+	title=tpar[0].innerHTML;
+	}
+	if(!title)title=document.title;
+var m='mailto:?subject='+encodeURIComponent(title)+'&body='+encodeURIComponent(url);
 window.open(m);
 }
 function doTumblrClip(){
@@ -651,7 +670,7 @@ if(!sl.length && sfigs.length){
 leg=document.createElement('legend');
 leg.className='imagecontrols';
 leg.innerHTML='<object class="dlimageswitch" data="' + scriptroot + 'icons/onoff.svg" type="image/svg+xml" width="13" height="13"><img class="dlimageswitch" src="'+ scriptroot + 'icons/onoff.png" width="13" height="13" border="0" hspace="2" vspace="2" /></object>';
-var ctl=document.createElement('img');
+/* var ctl=document.createElement('img');
 ctl.className="dlimagecontrol";
 ctl.width="13";
 ctl.height="13";
@@ -662,6 +681,7 @@ ctl.src="http://iridl.ldeo.columbia.edu/icons/RedrawButton.jpg";
 ctl.title="Redraw";
 ctl.onclick=doredrawbutton;
 leg.appendChild(ctl);
+*/
 ctl=document.createElement('img');
 ctl.className="dlimagecontrol";
 ctl.width="13";
@@ -669,7 +689,7 @@ ctl.height="13";
 ctl.border="0";
 ctl.hspace="2";
 ctl.vspace="2";
-ctl.src="http://iridl.ldeo.columbia.edu/icons/ZoomButton.jpg";
+ctl.src=scriptroot + "icons/Zoom-out-32.png";
 ctl.title="Zoom Out";
 ctl.onclick=dozoomout;
 leg.appendChild(ctl);
@@ -680,7 +700,7 @@ ctl.height="13";
 ctl.border="0";
 ctl.hspace="2";
 ctl.vspace="2";
-ctl.src="http://iridl.ldeo.columbia.edu/icons/HelpButton.jpg";
+ctl.src=scriptroot + "icons/Information-32.png";
 ctl.title="More Information";
 ctl.onclick=doinfobutton;
 leg.appendChild(ctl);
@@ -803,17 +823,25 @@ mybbox=JSON.parse(myin.value);
 }
 }
 if(!mybbox){
+var X0,X1,Y0,Y1;
+if(typeof(myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]) != 'undefined'){
 var Xare = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["@type"];
 var Yare = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["@type"];
-var X0,X1,Y0,Y1;
 if(Xare = 'iridl:EvenGridEdges'){
 X0 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:first"];
 X1 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:last"];
 }
 if(Yare = 'iridl:EvenGridEdges'){
-var Y0 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:first"];
-var Y1 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:last"];
+Y0 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:first"];
+Y1 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:last"];
 }
+    }
+    else {
+X0 = myinfo["iridl:hasAbscissa"]["iridl:plotfirst"];
+X1 = myinfo["iridl:hasAbscissa"]["iridl:plotlast"];
+Y0 = myinfo["iridl:hasOrdinate"]["iridl:plotfirst"];
+Y1 = myinfo["iridl:hasOrdinate"]["iridl:plotlast"];
+    }
 mybbox=[X0,Y0,X1,Y1];
 }
 return mybbox;
@@ -1197,8 +1225,6 @@ var plotborderbottom = myinfo["iridl:plotborderbottom"];
 var plotaxislength = plotaxislengthfn(myinfo);
 var Xaxislength = myinfo["iridl:Xaxislength"];
 var Yaxislength = myinfo["iridl:Yaxislength"];
-var Xare = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["@type"];
-var Yare = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["@type"];
 myA = getbbox(myinfo);
 var X0,X1,Y0,Y1;
 X0 = myA[0];
@@ -1310,6 +1336,9 @@ sel.name="Set-Language";
 sel.onchange=languageChange;
 var opt=document.createElement('option');
 opt.value=document.getElementsByTagName('html')[0].getAttribute("xml:lang");
+if(!opt.value){
+opt.value=document.getElementsByTagName('body')[0].getAttribute("xml:lang");
+}
 opt.innerHTML=Languages[opt.value];
 opt.value="";
 sel.appendChild(opt);
