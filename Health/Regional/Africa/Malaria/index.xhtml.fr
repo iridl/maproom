@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="fr"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Climat et Paludisme en Afrique</title>
+<link rel="stylesheet" type="text/css" href="../../../../maproom.css" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
+<link rel="canonical" href="index.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:icon"
+href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+220+psdef+.gif" />
+<script type="text/javascript" src="../../../../maproom.js"></script>
+</head>
+<body>
+
+<form name="pageform" id="pageform" class="carry carryup titleLink">
+<input class="carry carryup" name="Set-Language" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem"> 
+                <legend>Data Library</legend> 
+                    <a rev="section" class="navlink carryup" href="/maproom/Health/">Climate and Health</a>
+            </fieldset> 
+           <fieldset class="navitem"> 
+                <legend>Climate and Health</legend> 
+                     <span class="navtext">Malaria</span>
+            </fieldset> 
+</div>
+<div>
+ <div id="content" class="searchDescription">
+<h2 property="term:title">Climat et Paludisme en Afrique</h2>
+<p align="left" property="term:description">
+Le développement économique a joué un rôle important dans la distribution actuelle du paludisme dans le monde. Là où
+le paludisme n'est pas suffisamment contrôlé, sa distribution et son caractère saisonnier sont étroitement liés aux caractéristiques saisonnières du climat.</p>
+<p>Le paludisme peut être rencontré partout où les conditions climatiques sont favorables à une transmission entre le moustique (vecteur) et l'être humain (hôte). Le paludisme est endémique dans la majorité des pays de l'Afrique sub-saharienne et affecte régulièrement les populations. A l'intérieur de la zone endémique, la maladie peut varier d'un extrême à l'autre (maladie stable durant toute l'année ou présente durant certaines périodes seulement).</p> <p> En bordure des zones de paludisme endémique, se trouvent les zones géographiques où la transmission du paludisme est instable ou épidémique. Le paludisme dans ces régions est aussi fortement lié au climat, mais dans ce cas, au moins une des variables essentielles (soit les précipitations, la température ou l'humidité), est un facteur limitant la transmission.  La forte variabilité inter-annuelle du climat dans ces régions permet cependant, certaines années, de réunir les conditions climatiques favorables à la transmission du paludisme et au déclenchement d'épidémies.
+</p>
+<p> Ainsi, les produits cartographiques ci-dessous ont pour but d'illustrer des modèles définissant les conditions climatiques favorables au développement du
+paludisme endémique saisonnier, accompagnés de conditions climatiques récentes, telles que les anomalies de précipitations, qui peuvent être responsables du paludisme épidémique dans
+certaines régions telles que les zones semi-arides de l'Afrique. D'autres modèles, comme celui développé par l'initiative ARMA, sont inclus. Nous sommes intéressés par un
+échange d'information et d'idées sur le contenu des cartes proposées et sommes ouverts à toute collaboration qui pourrait aboutir au développement de ces produits.
+</p>
+<p><b>Références:</b> Grover-Kopec E. K., Blumenthal M. B., Ceccato P., Dinku T., Omumbo J. A., Connor S. J. <a href="http://www.ncbi.nlm.nih.gov/pubmed/16689992">Web-based climate information resources for malaria control in Africa</a>. <i>Malaria Journal</i>. 2006, <b>5</b>:38.
+</p>
+</div>
+<div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/" >
+</div>
+
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend>
+
+</fieldset>
+</div>
+ </body>
+
+ </html>
