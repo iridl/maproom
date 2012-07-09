@@ -559,7 +559,7 @@ sel.size=1;
 sel.name="bbox";
 sel.className='pageformcopy';
 sel.onchange=regiononchange;
-sel.innerHTML='<optgroup label="Region"><option value="[-20,-40,55,40]">Africa</option><option value="[40,-10,170,75]">Asia</option><option value="[100,-55,180,0]">Australia</option><option value="[-20,35,40,75]">Europe</option><option value="[10,15,75,45]">Middle East</option><option value="[-170,15,-60,75]">North America</option><option value="[-100,0,-70,35]">Central America</option><option value="[-90,-60,-30,15]">South America</option><option value="" selected="selected">Global</option></optgroup>';
+sel.innerHTML='<optgroup label="Region"><option value="[-20,-40,55,40]">Africa</option><option value="[40,-10,170,75]">Asia</option><option value="[100,-55,180,0]">Australia</option><option value="[-20,35,40,75]">Europe</option><option value="[10,15,75,45]">Middle East</option><option value="[-170,15,-60,75]">North America</option><option value="[-100,0,-70,35]">Central America</option><option value="[-90,-60,-30,15]">South America</option><option value="[100,-60,300,60]">Pacific</option><option value="" selected="selected">Global</option></optgroup>';
 theregion.appendChild(sel);
 }
 }
@@ -1638,6 +1638,11 @@ submitPageForm -- submits pageform to href, appending inputs corresponding to cl
 */
 function submitPageForm(href,classes){
 var localhref=localHrefOf(href);
+/* our rewrite rules do not handle Set-Language for a directory, so we avoid doing it
+ */
+if(href.charAt(href.length-1) == '/'){
+    localhref=localhref+'index.html';
+}
 var myform=document.getElementById('pageform');
 if(myform){
 var inputs=myform.elements;
