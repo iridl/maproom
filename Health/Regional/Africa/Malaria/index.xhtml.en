@@ -52,6 +52,8 @@ opportunity to work with others on the further development of these products.
 </p>
 </div>
 <div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/" >
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
 <a rel="section" href="http://www.map.ox.ac.uk/data/"></a>
 <div about="http://www.map.ox.ac.uk/data/">
 <p property="term:title">Malaria Atlas Project (MAP) Maps of Malaria Transmission and Endemicity</p>
