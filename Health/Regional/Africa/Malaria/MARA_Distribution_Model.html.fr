@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Modèle ARMA de Distribution des Conditions Climatiques Favorables à la Transmission du Paludisme</title>
+<script type="text/javascript" src="../../../../maproom.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../maproom.css" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="MARA_Distribution_Model.html?Set-Language=en" />
+<link rel="canonical" href="MARA_Distribution_Model.html" />
+<meta property="term:Entry_Id" content="Health_Regional_Africa_Malaria_MARA_Distribution_Model" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Rate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#temperature"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#precipitation_rate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#monthly"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climatology"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/X+Y+fig:+colors+grey+verythin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+lakes+:fig//plotaxislength+432+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotborder+72+psdef+//plotaxislength+150+psdef//plotborder+0+psdef//color_smoothing+1+psdef+.gif" />
+</head>
+<body  xml:lang="fr">
+<form name="pageform" id="pageform" class="carryup carry share dlimg dlauximg">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="dlimg" name="bbox" type="hidden" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Climate and Health</legend> 
+                      <a rev="section" class="navlink carryup" href="/">Malaria</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Endemic Malaria</span></legend>
+            </fieldset> 
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a class="carry" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/">Dataset</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/X+Y+fig:+colors+grey+verythin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+lakes+:fig//plotaxislength+432+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotborder+72+psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/X+Y+fig:+colors+grey+verythin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+lakes+:fig//plotaxislength+432+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotborder+72+psdef+.gif" border="0" alt="image" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/X+Y+fig:+colors+grey+verythin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+lakes+:fig+.auxfig//plotaxislength+432+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotborder+72+psdef+.gif" border="0" width="454" height="56" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+  <h2 align="center" property="term:title">Modèle ARMA de Distribution des Conditions Climatiques Favorables à la Transmission du Paludisme</h2>
+  <p align="left" property="term:description">The MARA distribution model is a static map illustrating climatic suitability for malaria transmission. Climatological averages of precipitation and temperature are utilized in a fuzzy logic model developed by scientists associated with the Mapping Malaria Risk in Africa (MARA) group (after Craig et al. 1999).</p>
+<p align="left">
+Cette carte est issue d'un modèle <i><u>théorique</u></i> basé sur des données climatiques disponibles de longue date. Bien que ce soit raisonablement précis, ce <i><u>n'est pas basé sur des données de paludisme propres</u></i> et peut ne pas refléter le véritable status du paludisme. La carte montre l'adéquation théorique des conditions climatiques locales, et par conséquent la distribution potentielle d'une transmission stable du paludisme pour une année type. N.B. : les conditions climatiques, et donc la transmission du paludisme, varient substentiellement d'une année sur l'autre. Les activités de contrôle du paludisme peuvent aussi altérer grandement les conditions de transmission du paludisme.</p>
+<p>
+Là où le climat est "favorable" (rouge = 1), le paludisme est le plus probablement endémique (hypo-, meso-, hyper- ou holoendémique). Certaines zones "favorables" peuvent avoir peu voir pas du tout de paludisme grâce au contrôle. Là où le climat est "non-favorable" (blanc = 0), le paludisme est plus probablement épidémique ou absent. Certaines zones "non-favorables" peuvent cependant connaître un paludisme endémique à cause de la présence d'étendues d'eau sans pour autant qu'il y ait beaucoup de précipitations. Dans les zones propices marginales (0.1-0.9), la transmission peut se passer à niveau constant mais faible (par exmple en Afrique orientale), ou à travers de forts cycles saisonniers avec d'importantes variations inter-annuelles (par exemple l'Afirque occidentale et méridionale). [Avec la permission de <a href="http://www.mara.org.za/">l'Atlas du Risque de la Malaria en Afrique</a> (ARMA)]</p>
+<p>Référence: Craig, M. H., R. W. Snow, and D. le Seur, 1999: A climate-based distribution model of malaria transmission in Sub-Saharan Africa. Parasitology Today, 15(3), 105-111.</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Documentation</h2>
+<h4>Climatologie des Précipitations</h4>
+<dl class="datasetdocumentation">
+<dt>Data</dt><dd>Précipitations mensuelles sur une grille lat/lon 0.5° x 0.5°</dd>
+<dt>Référence de Base pour la Climatologie</dt><dd>1971-2000</dd>
+<dt>Source</dt><dd>University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p0/.dataset_documentation.html">UEA CRU TS 2.0</a>)</dd>
+</dl>
+<h4>Climatologie de la Température</h4>
+<dl class="datasetdocumentation">
+<dt>Données</dt><dd>Température mensuelle sur une grille lat/lon 0.5° x 0.5°</dd>
+<dt>Référence de Base pour la Climatologie</dt><dd>1971-2000</dd>
+<dt>Source</dt><dd>University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p0/.dataset_documentation.html">UEA CRU TS 2.0</a>)</dd>
+</dl>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
