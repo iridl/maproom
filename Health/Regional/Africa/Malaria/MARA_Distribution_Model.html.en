@@ -91,7 +91,7 @@ Where climate is "suitable" (red = 1), malaria is likely endemic (hypo-, meso-, 
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
 <p>
-<a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/"">Access the dataset used to create this map.</a>
+<a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/">Access the dataset used to create this map.</a>
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
