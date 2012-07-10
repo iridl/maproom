@@ -45,7 +45,7 @@
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
-                <legend>Climate and Health</legend> 
+                <legend>Climat et Santé</legend> 
                       <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Paludisme</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
