@@ -1417,7 +1417,11 @@ var myform=document.getElementById('pageform');
 if(myform){
 var lang=myform.elements['Set-Language'];
 if(lang && lang.value){
-var newurl= url + "?Set-Language=" + lang.value;
+    var newurl = url;
+if(newurl.charAt(newurl.length-1) == '/'){
+   newurl=newurl+'index.html';
+}
+newurl= newurl + "?Set-Language=" + lang.value;
 return newurl;
 }
 }
