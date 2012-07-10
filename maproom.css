@@ -1083,8 +1083,7 @@ border-radius: 7px;
 opacity: 1.0;
 background-color: white;
 }
-.datasetdocumentation dd {display: inline; margin: 0;}
-.datasetdocumentation dt {display: inline; font-weight: bold; margin-top: .8em}
-.datasetdocumentation dt::before {display: block; content: ""}
-.datasetdocumentation dt::after {content: ":  "}
+.datasetdocumentation dd {margin: 0;}
+.datasetdocumentation dt {float: left; clear: left; font-weight: bold; padding-right: .8em;}
+.datasetdocumentation dt::after {content: ":"}
 
