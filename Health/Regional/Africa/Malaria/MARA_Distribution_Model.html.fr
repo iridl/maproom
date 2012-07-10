@@ -46,10 +46,10 @@
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climate and Health</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Paludisme</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Endemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Paludisme Endémique</span></legend>
             </fieldset> 
  </div>
 <div class="ui-tabs">
@@ -66,7 +66,8 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">Modèle ARMA de Distribution des Conditions Climatiques Favorables à la Transmission du Paludisme</h2>
-  <p align="left" property="term:description">The MARA distribution model is a static map illustrating climatic suitability for malaria transmission. Climatological averages of precipitation and temperature are utilized in a fuzzy logic model developed by scientists associated with the Mapping Malaria Risk in Africa (MARA) group (after Craig et al. 1999).</p>
+  <p align="left" property="term:description">
+Le modèle de distribution ARMA est une carte statique montrant les conditions favorables à la transmission du paludisme. Les moyennes climatologiques de précipitations et de température sont untilisés par un modèle développé par des scientifiques de l'Atlas du Risque de la Malaria en Afrique (ARMA) (Craig <i>et al.</i> 1999).</p>
 <p align="left">
 Cette carte est issue d'un modèle <i><u>théorique</u></i> basé sur des données climatiques disponibles de longue date. Bien que ce soit raisonablement précis, ce <i><u>n'est pas basé sur des données de paludisme propres</u></i> et peut ne pas refléter le véritable status du paludisme. La carte montre l'adéquation théorique des conditions climatiques locales, et par conséquent la distribution potentielle d'une transmission stable du paludisme pour une année type. N.B. : les conditions climatiques, et donc la transmission du paludisme, varient substentiellement d'une année sur l'autre. Les activités de contrôle du paludisme peuvent aussi altérer grandement les conditions de transmission du paludisme.</p>
 <p>
