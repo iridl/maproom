@@ -1638,11 +1638,6 @@ submitPageForm -- submits pageform to href, appending inputs corresponding to cl
 */
 function submitPageForm(href,classes){
 var localhref=localHrefOf(href);
-/* our rewrite rules do not handle Set-Language for a directory, so we avoid doing it
- */
-if(href.charAt(href.length-1) == '/'){
-    localhref=localhref+'index.html';
-}
 var myform=document.getElementById('pageform');
 if(myform){
 var inputs=myform.elements;
@@ -1664,6 +1659,11 @@ if(alldisabled){
 document.location.href=localhref;
 }
 else {
+/* our rewrite rules do not handle Set-Language for a directory, so we avoid doing it
+ */
+if(href.charAt(href.length-1) == '/'){
+    localhref=localhref+'index.html';
+}
 myform.action=localhref;
 myform.submit();
 }
