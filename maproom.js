@@ -1335,8 +1335,10 @@ var sel=document.createElement('select');
 sel.name="Set-Language";
 sel.onchange=languageChange;
 var opt=document.createElement('option');
+if(document.getElementsByTagName('html')[0].hasAttribute("xml:lang")){
 opt.value=document.getElementsByTagName('html')[0].getAttribute("xml:lang");
-if(!opt.value){
+}
+else {
 opt.value=document.getElementsByTagName('body')[0].getAttribute("xml:lang");
 }
 opt.innerHTML=Languages[opt.value];
