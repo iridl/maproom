@@ -51,6 +51,8 @@ certaines régions telles que les zones semi-arides de l'Afrique. D'autres modè
 </p>
 </div>
 <div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/" >
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
 </div>
 
 </div>
