@@ -37,7 +37,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/X+Y+fig:+colors+grey+verythin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+lakes+:fig//plotaxislength+432+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotborder+72+psdef+//plotaxislength+150+psdef//plotborder+0+psdef//color_smoothing+1+psdef+.gif" />
 </head>
-<body  xml:lang="en">
+<body xml:lang="en">
 <form name="pageform" id="pageform" class="carryup carry share dlimg dlauximg">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="dlimg" name="bbox" type="hidden" />
@@ -87,6 +87,12 @@ Where climate is "suitable" (red = 1), malaria is likely endemic (hypo-, meso-, 
 <dt>Base Period for Climatology</dt><dd>1971-2000</dd>
 <dt>Data Source</dt><dd>University of East Anglia (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p0/.dataset_documentation.html">UEA CRU TS 2.0</a>)</dd>
 </dl>
+</div>
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/"">Access the dataset used to create this map.</a>
+</p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Helpdesks</h2>

@@ -30,8 +30,8 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/
                     <a rev="section" class="navlink carryup" href="/maproom/Health/">Climate and Health</a>
             </fieldset> 
            <fieldset class="navitem"> 
-                <legend>Climate and Health</legend> 
-                     <span class="navtext">Malaria</span>
+                <legend>Climat et Santé</legend> 
+                     <span class="navtext">Paludisme</span>
             </fieldset> 
 </div>
 <div>
