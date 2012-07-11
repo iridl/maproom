@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Anomalie Pondérée des Précipitations (CMAP) Standardisées (WASP) en Afrique, avec choix de la référence</title>
+<script type="text/javascript" src="../../../../../maproom.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../../maproom.css" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
+<link rel="canonical" href="index.html" />
+<link rel="term:icon" href="http://iri.columbia.edu/~mbell/icons/Health-Regional-Africa-MDG-icon.jpg" />
+<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_MDG" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#spatial_average_resolution"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomaly"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#standardized"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#spatial_average"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#monthly"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#WASP"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+</head>
+<body xml:lang="fr">
+<form name="pageform" id="pageform" class="carryup carry share dlimg dlauximg">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="dlimg" name="plotaxislength" type="hidden" />
+<input class="dlimg share" name="country" type="hidden" />
+<input class="dlimg share" name="Baseline" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Climat et Santé</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Paludisme</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Paludisme Endemique</span></legend>
+            </fieldset> 
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a class="carry" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/caCMAP-latest_WASP12//fullname/%2812-Mois%20WASP%29def/tag://fullname/%2812-Mois%20WASP%29:tag//long_name/%2812-Mois%20WASP%29def/cabaseline//fullname/%28Reference%29def/tag://fullname/%28Reference%29:tag//long_name/%28Reference%29def/%7BWASP/Reference%7Dds/nip/">Dataset</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/caCMAP-latest_WASP12/country/%28pays%29renameGRID//fullname/%2812-Mois%20WASP%29def/tag://fullname/%2812-Mois%20WASP%29:tag//long_name/%2812-Mois%20WASP%29def/cabaseline/country/%28pays%29renameGRID/Baseline/%28Reference%29renameGRID//fullname/%28Reference%29def/tag://fullname/%28Reference%29:tag//long_name/%28Reference%29def/2/copy/maskgt/1/index/T//pointwidth/0/def/pop/T/fig:/green/deltabars/brown/deltabars/|/black/thin/line/black/medium/line/:fig//framelabel/%28%25s%5Bpays%5D%20precipitation%20reference%20%25=%5BReference%5D%29psdef//pays//Algeria/plotvalue//Reference/234.0/plotvalue//plotaxislength/432/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//XOVY/null/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/caCMAP-latest_WASP12/country/%28pays%29renameGRID//fullname/%2812-Mois%20WASP%29def/tag://fullname/%2812-Mois%20WASP%29:tag//long_name/%2812-Mois%20WASP%29def/cabaseline/country/%28pays%29renameGRID/Baseline/%28Reference%29renameGRID//fullname/%28Reference%29def/tag://fullname/%28Reference%29:tag//long_name/%28Reference%29def/2/copy/maskgt/1/index/T//pointwidth/0/def/pop/T/fig:/green/deltabars/brown/deltabars/|/black/thin/line/black/medium/line/:fig//framelabel/%28%25s%5Bpays%5D%20precipitation%20reference%20%25=%5BReference%5D%29psdef//pays//Algeria/plotvalue//Reference/234.0/plotvalue//plotaxislength/432/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//XOVY/null/psdef/++//pays//Algeria/plotvalue//Reference/234.0/plotvalue+//plotborder+72+psdef//XOVY+null+psdef//plotaxislength+432+psdef+.gif" border="0" alt="image" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+  <h2 align="center" property="term:title">Anomalie Pondérée des Précipitations (CMAP) Standardisées (WASP) en Afrique, avec choix de la référence</h2>
+  <p align="left" property="term:description">
+Ce graphe montre une série temporelle de la valeur moyenne par pays de l'indice d'Anomalie Pondérée des Précipitations Standardisées (WASP), calculé avec la dernière version des données de précipitations du CMAP, et pour un pays d'Afrique choisi par l'utilisateur.
+</p>
+<p align="left">
+Pour calculer l'indice WASP, les écarts des précipitations mensuelles à la moyenne à long terme sont standardisés en les divisant par l'écart type des précipitations mensuelles. Les anomalies mensuelles standardisées sont alors pondérées par la fraction de la part du mois en question à la précipitation annuelle moyenne. Ces anomalies pondérées sont enfin sommées sur une période de 12 mois puis à nouveau standardisées.</p>
+<p>
+L'utilisateur a aussi la possibilité de choisir une annnée de référence, en traçant une ligne de référence correspondant la valeur de l'indice WASP pour le centre de l'année selectionnée. Pour des valeurs de l'indice WASP supérieures à la référence, la zone comprise entre l'indice et la référence est colorée en vert.  Pour des valeurs de l'indice WASP inférieures à la référence, la zone comprise entre l'indice et la référence est colorée en marron.
+</p>
+<p>
+L'objectif est de visualiser simplement les précipitations moyennées sur un pays par rapport à une année de référence de son choix.
+</p>
+<h4>Réfeéences</h4>
+<b>Lyon</b>, B., and A. G. Barnston, 2005:  ENSO and the spatial extent of interannual precipitation extremes in tropical land areas. <i>Journal of Climate</i>, <b>18</b>, 5095-5109.
+<p>
+<b>Lyon</b>, B., 2004:  The strength of El Niño and the spatial extent of tropical drought. <i>Geophys. Res. Lett.</i>, <b>31</b>, L21204.
+</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<dl class="datasetdocumentation">
+<dt>Source</dt>
+<dd>Dernière publication disponible des Analyses Combinées mensuelles des Précipitations du CPC (CMAP, version 2, estimations combinées de satellites et de pluviomètres) sur une grille lat/lon 2,5°x2,5°.</dd>
+<dt>Référence pour les Anomalies</dt>
+<dd> de 1979 à la dernière année calendaire complète</dd>
+</dl>
+</div>
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/caCMAP-latest_WASP12//fullname/%2812-Mois%20WASP%29def/tag://fullname/%2812-Mois%20WASP%29:tag//long_name/%2812-Mois%20WASP%29def/cabaseline//fullname/%28Reference%29def/tag://fullname/%28Reference%29:tag//long_name/%28Reference%29def/%7BWASP/Reference%7Dds/nip/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
