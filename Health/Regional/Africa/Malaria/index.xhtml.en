@@ -56,9 +56,21 @@ opportunity to work with others on the further development of these products.
   <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
 <a rel="section" href="http://www.map.ox.ac.uk/data/"></a>
 <div about="http://www.map.ox.ac.uk/data/">
+<a rel="canonical"  href="http://www.map.ox.ac.uk/data/"></a>
 <p property="term:title">Malaria Atlas Project (MAP) Maps of Malaria Transmission and Endemicity</p>
+<p property="term:description">The Malaria Atlas Project (MAP) has constructed a global database and atlas of maps that show the spatial limits of Plasmodium falciparum transmission based upon parasite rate surveys, the predicted spatial distribution of Plasmodium falciparum malaria endemicity, and the model uncertainty for the predicted endemicity.</p>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <a rel="term:icon" href="http://iri.columbia.edu/~mbell/icons/MAP-Africa-Pf-endemicity-icon.jpg"></a>
-<p rel="term:description">The Malaria Atlas Project (MAP) has constructed a global database and atlas of maps that show the spatial limits of <i>Plasmodium falciparum</i> transmission based upon parasite rate surveys, the predicted spatial distribution of <i>Plasmodium falciparum</i> malaria endemicity, and the model uncertainty for the predicted endemicity.</p>
 </div>
 </div>
 </div>
