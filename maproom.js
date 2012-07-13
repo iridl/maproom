@@ -831,11 +831,19 @@ if(Xare = 'iridl:EvenGridEdges'){
 X0 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:first"];
 X1 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:last"];
 }
+if(Xare = 'iridl:CenterValues'){
+X0 = myinfo["iridl:hasAbscissa"]["iridl:plotfirst"];
+X1 = myinfo["iridl:hasAbscissa"]["iridl:plotlast"];
+}
 if(Yare = 'iridl:EvenGridEdges'){
 Y0 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:first"];
 Y1 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:last"];
 }
-    }
+if(Yare = 'iridl:CenterValues'){
+Y0 = myinfo["iridl:hasOrdinate"]["iridl:plotfirst"];
+Y1 = myinfo["iridl:hasOrdinate"]["iridl:plotlast"];
+}
+}
     else {
 X0 = myinfo["iridl:hasAbscissa"]["iridl:plotfirst"];
 X1 = myinfo["iridl:hasAbscissa"]["iridl:plotlast"];
@@ -1226,17 +1234,27 @@ var plotaxislength = plotaxislengthfn(myinfo);
 var Xaxislength = myinfo["iridl:Xaxislength"];
 var Yaxislength = myinfo["iridl:Yaxislength"];
 myA = getbbox(myinfo);
-var X0,X1,Y0,Y1;
+var X0,X1,Y0,Y1,DX,DY;
 X0 = myA[0];
 Y0 = myA[1];
 X1 = myA[2];
 Y1 = myA[3];
-if(X1-X0 >= Y1-Y0) {
-Yaxislength = Math.round((plotaxislength * (Y1-Y0))/(X1-X0));
+if(X1>X0) {
+    DX = X1-X0;
+} else {
+    DX = X0 - X1;
+}
+if(Y1>Y0) {
+    DY = Y1-Y0;
+} else {
+    DY = Y0 - Y1;
+}
+if(DX >= DY) {
+Yaxislength = Math.round((plotaxislength * DY)/DX);
 Xaxislength = plotaxislength;
 }
 else {
-Xaxislength = Math.round((plotaxislength * (X1-X0))/(Y1-Y0));
+    Xaxislength = Math.round((plotaxislength * DX)/DY);
 Yaxislength = plotaxislength;
 }
 frac = imagewidth/(parseFloat(plotborderleft) + parseFloat(Xaxislength) + parseFloat(plotborderright));
