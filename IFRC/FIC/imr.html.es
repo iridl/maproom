@@ -6,11 +6,11 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="es"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta property="maproom:Entry_Id" content="IFRC_FIC_imr" />
 <title>IFRC PIC: &#191;Las zonas de riesgo con lluvias abundantes, contienen poblaciones vulnerables?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
@@ -23,7 +23,7 @@
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
 <script type="text/javascript" src="../../maproom.js"></script>
 </head>
-<body>
+<body  xml:lang="es">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg share" name="bbox" type="hidden" />
