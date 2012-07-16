@@ -101,6 +101,7 @@ it.previousSibling.innerHTML=it.options[it.selectedIndex].innerHTML;
 
 var opt=it.options[it.selectedIndex];
 var fullpathname = document.location.href;
+if(opt.value.substring(0,5)!='http:'){
 if(fullpathname.indexOf("?")>= 0){
 fullpathname = fullpathname.substring(0,fullpathname.indexOf("?"));
 }
@@ -109,6 +110,9 @@ fullpathname = fullpathname.substring(0,fullpathname.indexOf("#"));
 }
 if (it.hrefroot + opt.value != fullpathname){
 submitPageForm(it.hrefroot + opt.value,"carry");
+}
+} else {
+submitPageForm(opt.value,"carry");
 }
 }
 function tabclick(it){
