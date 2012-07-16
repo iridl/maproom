@@ -827,19 +827,19 @@ var X0,X1,Y0,Y1;
 if(typeof(myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]) != 'undefined'){
 var Xare = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["@type"];
 var Yare = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["@type"];
-if(Xare = 'iridl:EvenGridEdges'){
+if(Xare == 'iridl:EvenGridEdges'){
 X0 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:first"];
 X1 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:last"];
 }
-if(Xare = 'iridl:CenterValues'){
+if(Xare == 'iridl:CenterValues'){
 X0 = myinfo["iridl:hasAbscissa"]["iridl:plotfirst"];
 X1 = myinfo["iridl:hasAbscissa"]["iridl:plotlast"];
 }
-if(Yare = 'iridl:EvenGridEdges'){
+if(Yare == 'iridl:EvenGridEdges'){
 Y0 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:first"];
 Y1 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:last"];
 }
-if(Yare = 'iridl:CenterValues'){
+if(Yare == 'iridl:CenterValues'){
 Y0 = myinfo["iridl:hasOrdinate"]["iridl:plotfirst"];
 Y1 = myinfo["iridl:hasOrdinate"]["iridl:plotlast"];
 }
