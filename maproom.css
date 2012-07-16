@@ -228,7 +228,7 @@ border-radius: 10px;
        min-height: 36px;
 }
 .selectvalue {
-background-color: WhiteSmoke;
+background-color: #EDEDED;
 padding: 0px;
 padding-left: 2px;
 padding-right: 2px;
@@ -239,8 +239,6 @@ line-height: 1.5;
 display: inline;
 }
 .navitem + .navitem + .navitem .selectvalue {
-padding-top: 1pt;
-padding-bottom: 2pt;
 font-size: 8pt;
 }
 .selectvalue::after, .selectvalue:after {
@@ -435,11 +433,14 @@ background-color: LightGrey;
 .dlimage {
 	width: 95%;
 }
+.navitem > legend {
+       font-size: 8pt;
+}
 .navitem + .navitem > legend {
        font-size: 8pt;
 }
-.navitem > legend {
-       font-size: 8pt;
+.navitem + .navitem + .navitem > legend {
+       font-size: 7pt;
 }
 .lang > legend {
        font-size: 8pt;
@@ -509,8 +510,6 @@ font-size: 10pt;
 display: inline;
 }
 .navitem + .navitem + .navitem .selectvalue {
-padding-top: 1pt;
-padding-bottom: 2pt;
 font-size: 8pt;
 }
 .selectvalue + select {
@@ -592,6 +591,9 @@ display: inline;
 display: inline;
 }
 .navitem + .navitem > legend {
+       font-size: 7pt;
+}
+.navitem + .navitem + .navitem > legend {
        font-size: 6pt;
 }
 .navitem > legend {
@@ -657,6 +659,9 @@ font-size: 6pt;
        font-size: 3pt;
 }
 .navitem + .navitem > legend {
+       font-size: 3pt;
+}
+.navitem + .navitem + .navitem > legend {
        font-size: 3pt;
 }
 .lang > legend {
