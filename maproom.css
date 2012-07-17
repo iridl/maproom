@@ -578,7 +578,7 @@ display: none;
 .controlBar:active .navitem select {
 display: inline;
 }
-.controlBar:active.navitem .selectvalue {
+.controlBar:active .navitem .selectvalue {
 display: none;
 }
 .controlBar:active .lang select {
