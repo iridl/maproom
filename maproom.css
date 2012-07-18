@@ -228,7 +228,6 @@ border-radius: 10px;
        min-height: 36px;
 }
 .selectvalue {
-background-color: #EDEDED;
 padding: 0px;
 padding-left: 2px;
 padding-right: 2px;
@@ -242,7 +241,9 @@ display: inline;
 font-size: 8pt;
 }
 .selectvalue::after, .selectvalue:after {
-padding-left: 6px;
+background-color: #EDEDED;
+padding-left: 3px;
+margin-left: 3px;
 padding-right: 3px;
 font-size: 50%;
 vertical-align: middle;
