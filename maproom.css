@@ -326,8 +326,12 @@ border-color: #AAAAAA;
        -moz-border-radius: 10px;
        border-radius: 10px;
        border-width: 3px;
-	width: 50%;
+	width: 40%;
 }
+.dlimage wide {
+width: 50%;
+}
+
 .dlimage:hover {
 border-color: black;
 border-style: outset; 
@@ -723,6 +727,9 @@ display: inline;
 /* ipad is 1024 -- this 1024 and above */
 @media only all and (min-width: 1024px) {
 .dlimage {
+	width: 50%;
+}
+.dlimage.wide {
 	width: 65%;
 }
 .selectvalue {
