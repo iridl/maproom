@@ -875,7 +875,7 @@ function DLimageResizeImage(mylink){
 var imagesrc=mylink.figureimage.src;
 var patt = new RegExp('//plotaxislength.([0-9]*).psdef');
 var csize = imagesrc.match(patt);
-if (csize.length<2){
+if (!csize || csize.length<2){
 	csize=432;
 }
 else {
@@ -1108,14 +1108,14 @@ var myinfo = myimgdiv.inputimage.mylink.info;
 var myvals;
 if(myobj != null && myinfo){
 if(myobj.style.visibility == 'visible'){
-myvals=lonlat(myinfo,myimgdiv.inputimage.clientWidth,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
+    myvals=lonlat(myinfo,myimgdiv.inputimage.className,myimgdiv.inputimage.clientWidth,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
 changeClass(myimgdiv.inputimage,'valid','invalid-zooming');
 }
 else {
 var dx,dy;
 dx=evt.pageX-absLeft(myimgdiv);
 dy=evt.pageY-absTop(myimgdiv);
-myvals=lonlat(myinfo,myimgdiv.inputimage.clientWidth,dx,dy,0,0);
+myvals=lonlat(myinfo,myimgdiv.inputimage.className,myimgdiv.inputimage.clientWidth,dx,dy,0,0);
 }
 setbbox(myvals);
 }
@@ -1209,12 +1209,25 @@ return false;
 function skipme(evt){
 return false;
 }
-function plotaxislengthfn(myinfo){
+function classMatch (clists, clists2){
+var clist = clists.split(' ');
+var clist2 = clists2.split(' ');
+for ( var i = 0; i < clist.length; i++ ){
+    for (var j = 0 ; j < clist2.length; j++){
+	if(clist[i] == clist2[j]){
+	    return true;
+	}
+    }
+}
+return false;
+}
+function plotaxislengthfn(myinfo,imageclass){
 var plotaxislength;
 var Xaxislength = myinfo["iridl:Xaxislength"];
 var Yaxislength = myinfo["iridl:Yaxislength"];
 var pform=document.getElementById('pageform');
-if(pform && pform.elements['plotaxislength'] && pform.elements['plotaxislength'].value){
+
+if(pform && pform.elements['plotaxislength'] && classMatch(imageclass,pform.elements['plotaxislength'].className) && pform.elements['plotaxislength'].value){
 	plotaxislength = pform.elements['plotaxislength'].value;
 }
 else {
@@ -1228,13 +1241,13 @@ else {
 return(plotaxislength);
 }
 lonlatA=new Array();
-function lonlat(myinfo,imagewidth,left,top,width,height){
+function lonlat(myinfo,myclass,imagewidth,left,top,width,height){
 myA=lonlatA;
 var plotborderleft = myinfo["iridl:plotborderleft"];
 var plotbordertop = myinfo["iridl:plotbordertop"];
 var plotborderright = myinfo["iridl:plotborderright"];
 var plotborderbottom = myinfo["iridl:plotborderbottom"];
-var plotaxislength = plotaxislengthfn(myinfo);
+var plotaxislength = plotaxislengthfn(myinfo,myclass);
 var Xaxislength = myinfo["iridl:Xaxislength"];
 var Yaxislength = myinfo["iridl:Yaxislength"];
 myA = getbbox(myinfo);
@@ -1586,6 +1599,12 @@ mynode.className = mynode.className + ' tall';
 }
 if(it.height<it.width && mynode.className.indexOf('tall')>0){
 mynode.className = mynode.className.replace(' tall','');
+}
+if(it.height*2<it.width && mynode.className.indexOf('wide')<0){
+mynode.className = mynode.className + ' wide';
+}
+if(it.height*2>it.width && mynode.className.indexOf('wide')>0){
+mynode.className = mynode.className.replace(' wide','');
 }
 }
 hideImageOverlay(it);
