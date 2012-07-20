@@ -235,9 +235,10 @@ margin: 0px;
 -moz-border-radius: 4px;
 border-radius: 4px;
 display: inline;
+font-size: 120%;
 }
 .navitem + .navitem + .navitem .selectvalue {
-font-size: 8pt;
+font-size: 12pt;
 }
 .selectvalue::after, .selectvalue:after {
 background-color: #EDEDED;
@@ -437,6 +438,9 @@ background-color: LightGrey;
 .dlimage {
 	width: 95%;
 }
+.navitem {
+font-size: 10pt;
+}
 .navitem > legend {
        font-size: 8pt;
 }
@@ -489,7 +493,6 @@ margin: 0px;
          font-weight: bold;
          }
 .navitem {
-        line-height: .9;
 	min-height: 10px;
 }
 .navitem + .navitem {
@@ -509,8 +512,11 @@ font-size: 8pt;
 font-size: 8pt;
 display: none;
 }
-.selectvalue {
+.navitem {
 font-size: 10pt;
+}
+.selectvalue {
+font-size: 100%;
 display: inline;
 }
 .navitem + .navitem + .navitem .selectvalue {
@@ -671,10 +677,10 @@ font-size: 6pt;
        font-size: 3pt;
 }
 .navitem{
-       font-size: 3pt;
+       font-size: 10pt;
 }
 .navitem + .navitem{
-       font-size: 3pt;
+       font-size: 10pt;
 }
 .lang {
        font-size: 3pt;
