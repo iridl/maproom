@@ -84,7 +84,8 @@ width: 30%
 .rightpart {width: 95%}
 }
 .plotheading {
-text-align: center
+text-align: center;
+margin: 0px;
 }
 </style>
 <div class="ui-tabs">
