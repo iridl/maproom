@@ -31,7 +31,7 @@ opacity: 0.3;
  transition: opacity 1s linear 1s;
  -webkit-transition: opacity 1s linear 1s;
  -moz-transition: opacity 1s linear 1s;
-background:url('icons/wait30.gif') center no-repeat transparent;
+background: url('icons/wait30.gif') center no-repeat transparent;
 }
 .lowerLimit, .lowerLimit-disabled {
 display: inline-block;
