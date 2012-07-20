@@ -435,7 +435,7 @@ background-color: LightGrey;
 }
 
 @media only all and (max-width: 750px) {
-.dlimage {
+.dlimage, .dlimage.wide, .dlimage.tall {
 	width: 95%;
 }
 .navitem {
@@ -623,7 +623,7 @@ display: inline;
 }
 }
 
-img.dlimg, img.dlauximg {
+img.dlimg, img.dlauximg, img.dlimgts {
          width: 100%;
 }
 .ui-widget {
