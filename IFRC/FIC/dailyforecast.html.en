@@ -22,13 +22,13 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <script type="text/javascript" src="../../maproom.js"></script>
 <style>
-.dlimage{
+.dlimage, .dlimage.wide{
 float: none;
 width: 46%;
 display: inline;
 }
 @media only all and (max-width: 800px) {
-.dlimage {
+.dlimage, .dlimage.wide {
 width: 95%;
 }
 }
