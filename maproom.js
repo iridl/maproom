@@ -1105,6 +1105,7 @@ function stopdrag(evt){
 evt = (evt) ? evt : event;
 var myimgdiv=getcurrentTarget(evt);
 var myinfo = myimgdiv.inputimage.mylink.info;
+myimgdiv.style.cursor='auto';
 var myvals;
 if(myobj != null && myinfo){
 if(myobj.style.visibility == 'visible'){
@@ -1166,6 +1167,7 @@ myy=evt.pageY-absTop(myimgdiv);
 if(myobj == null){
 myobj = myimgdiv.outline;
 sizeto(myobj,0,0);
+myimgdiv.style.cursor='se-resize';
 return false;
 }else
 {return true;
