@@ -1164,7 +1164,6 @@ var plotborderbottom = myinfo["iridl:plotborderbottom"];
 // alert(evt.layerX + ' ' + evt.x + ' ' + evt.pageX + ' ' + absLeft(myimgdiv));
 myx=evt.pageX-absLeft(myimgdiv);
 myy=evt.pageY-absTop(myimgdiv);
-myimgdiv.style.cursor='se-resize';
 if(myobj == null){
 myobj = myimgdiv.outline;
 sizeto(myobj,0,0);
