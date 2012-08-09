@@ -173,6 +173,14 @@ function imageinputvaluechange(evt){
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
  var myinput = it.parentNode.getElementsByTagName('input')[0];
  var myimage =  it.parentNode.mylink.figureimage;
+ // change class of parent whether single (value in list) or multi (value not in list)
+ var cin = it.parentNode.info['iridl:gridvalues']['iridl:valuelist'].indexOf(myinput.value);
+ if(cin > -1){
+     changeClass(it.parentNode,'multiValue','singleValue');
+ }
+ else {
+     changeClass(it.parentNode,'singleValue','multiValue');
+ }
 // copy value(s) to page form and get url
 var pform=document.getElementById('pageform');
 var guess='';
@@ -940,6 +948,19 @@ ipt.value=dimlist[i]['iridl:defaultvalue'];
 ipt.onchange=imageinputvaluechange;
 ipt.size=16;
 iptset.appendChild(ipt);
+/* resets class of iptset to reflect whether the defaultvalue
+ corresponds to singleValue (in list of values) or multiValue (not
+ in list of values and presumably a range) */
+
+var cin = dimlist[i]['iridl:gridvalues']['iridl:valuelist'].indexOf(ipt.value);
+var controlClass;
+if(cin > -1){
+    controlClass="singleValue";
+}
+else {
+    controlClass="multiValue";
+}
+appendMissingClass(iptset,controlClass);
 if(document.getElementById('pageform')){
 var pform=document.getElementById('pageform');
 if(!pform.elements[ipt.name]){

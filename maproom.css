@@ -83,6 +83,10 @@ border-bottom-left-radius: 10pt;
 .oneStep + .upperLimit {
 margin-left: 5pt;
 }
+.multiValue .oneStep { 
+visibility: hidden;
+                       }
+
 .controlLabel {
 display: inline-block;
 margin-right: 14pt;
