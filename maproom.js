@@ -45,7 +45,10 @@ scriptsrc=shref;
 break;
 }
 }
-var scriptroot = scriptsrc.substr(0,scriptsrc.indexOf('/maproom/')+9);
+var scriptroot;
+if(scriptsrc){
+scriptroot = scriptsrc.substr(0,scriptsrc.indexOf('maproom.js'));
+}
 var maproomroot = document.location.href.substr(0,document.location.href.indexOf('/maproom/')+9);
 /* loads pure javascript */
 var puredir = scriptroot.substr(0,scriptroot.length-8) + 'pure/libs/';
@@ -69,7 +72,7 @@ return lhref;
 }
 /* replacement for getElementsByClassName when missing */
 if (typeof document.getElementsByClassName!='function') {
-    document.getElementsByClassName = function() {
+document.getElementsByClassName = function() {
         var elms = document.getElementsByTagName('*');
         var ei = new Array();
         for (i=0;i<elms.length;i++) {
@@ -449,9 +452,17 @@ xmlhttp.mysel=sel;
 xmlhttp.onreadystatechange = function() {
 if(xmlhttp.readyState == 4){
 var xmlDoc=xmlhttp.responseXML;
-if(!xmlDoc){
+// used to test on xmlDoc, but explorer did not work, so now I parse
+if(true){
+    if(window.DOMParser){
 parser= new DOMParser();
 xmlDoc=parser.parseFromString(xmlhttp.responseText,"text/xml");
+    }
+    else {
+	xmlDoc= new ActiveXObject("Microsoft.XMLDOM");
+	xmlDoc.async=false;
+	xmlDoc.loadXML(xmlhttp.responseText);
+    }
 }
 dofinishchooseSection(xmlhttp.mysel,xmlDoc);
 }
@@ -525,7 +536,13 @@ dofinishchooseSection(sel,xmlDoc);
 }
 function dofinishchooseSection(sel,xmlDoc){
 if(xmlDoc){
-var itemlist=xmlDoc.getElementsByClassName('item');
+    var itemlist;
+    if(xmlDoc.getElementsByClassName){
+itemlist=xmlDoc.getElementsByClassName('item');
+    }
+    else {
+	itemlist=getElementsByAttribute(xmlDoc,'*','class','item');
+    }
 var og=sel;
 if(itemlist.length>0){
 for (var i = 0; i<itemlist.length ; i++){
@@ -571,7 +588,50 @@ sel.size=1;
 sel.name="bbox";
 sel.className='pageformcopy';
 sel.onchange=regiononchange;
-sel.innerHTML='<optgroup label="Region"><option value="[-20,-40,55,40]">Africa</option><option value="[40,-10,170,75]">Asia</option><option value="[100,-55,180,0]">Australia</option><option value="[-20,35,40,75]">Europe</option><option value="[10,15,75,45]">Middle East</option><option value="[-170,15,-60,75]">North America</option><option value="[-100,0,-70,35]">Central America</option><option value="[-90,-60,-30,15]">South America</option><option value="[100,-60,300,60]">Pacific</option><option value="" selected="selected">Global</option></optgroup>';
+var optgrp=document.createElement('optgroup');
+optgrp.label="Region";
+var opt = document.createElement('option');
+opt.value="[-20,-40,55,40]";
+opt.innerHTML="Africa";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[40,-10,170,75]";
+opt.innerHTML="Asia";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[100,-55,180,0]";
+opt.innerHTML="Australia";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[-20,35,40,75]";
+opt.innerHTML="Europe";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[10,15,75,45]";
+opt.innerHTML="Middle East";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[-170,15,-60,75]";
+opt.innerHTML="North America";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[-100,0,-70,35]";
+opt.innerHTML="Central America";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[-90,-60,-30,15]";
+opt.innerHTML="South America";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[100,-60,300,60]";
+opt.innerHTML="Pacific";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="";
+opt.selected="selected";
+opt.innerHTML="Global";
+optgrp.appendChild(opt);
+sel.appendChild(optgrp);
 theregion.appendChild(sel);
 }
 }
@@ -1354,12 +1414,15 @@ var ob= document.createElement('object');
 ob.data=scriptroot + "icons/iri.svg";
 ob.type="image/svg+xml";
 ob.className="iriicon";
+var obim = document.createElement('img');
+obim.className="iriicon";
         if(document.width < 750){
-ob.innerHTML='<img class="iriicon" src="'+ scriptroot + 'icons/iri32.png" />';
+	    obim.src = scriptroot + 'icons/iri32.png';
 }
 else {
-ob.innerHTML='<img class="iriicon" src="' + scriptroot + 'icons/iri.png" />';
+	    obim.src = scriptroot + 'icons/iri.png';
 }
+ob.appendChild(obim);
 gb.appendChild(ob);
 cont.insertBefore(gb,cont.firstChild);
 }
@@ -1617,10 +1680,10 @@ changeClass(it,'invalid-zooming','valid');
 if(it.className.indexOf('dlimg') >=0){
 if(it.mylink){
 var mynode = it.mylink.parentNode;
-if(it.height>it.width && mynode.className.indexOf('tall')<0){
+if(it.height>1.5*it.width && mynode.className.indexOf('tall')<0){
 mynode.className = mynode.className + ' tall';
 }
-if(it.height<it.width && mynode.className.indexOf('tall')>0){
+if(it.height<1.5*it.width && mynode.className.indexOf('tall')>0){
 mynode.className = mynode.className.replace(' tall','');
 }
 if(it.height*2<it.width && mynode.className.indexOf('wide')<0){
