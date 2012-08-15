@@ -737,7 +737,7 @@ display: inline;
 /* ipad is 1024 -- this 1024 and above */
 @media only all and (min-width: 1024px) {
 .dlimage {
-	width: 50%;
+	width: 45%;
 }
 .dlimage.wide {
 	width: 65%;
@@ -752,7 +752,7 @@ display: inline;
 }
 @media only all and (min-width: 800px) and (orientation: landscape){
 .dlimage.tall {
-	width: 40%;
+	width: 30%;
 }
 }
 .ui-widget-header .ui-state-default {
