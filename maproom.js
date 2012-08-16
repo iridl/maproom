@@ -1419,10 +1419,15 @@ var cont=mylist[0];
 var gb= document.createElement('a');
 gb.id='irilink';
 gb.href="http://iri.columbia.edu/";
+var hasSVG = document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Shape", "1.1");
+if(hasSVG){
 var ob= document.createElement('object');
 ob.data=scriptroot + "icons/iri.svg";
 ob.type="image/svg+xml";
 ob.className="iriicon";
+gb.appendChild(ob);
+}
+else {
 var obim = document.createElement('img');
 obim.className="iriicon";
         if(document.width < 750){
@@ -1431,8 +1436,8 @@ obim.className="iriicon";
 else {
 	    obim.src = scriptroot + 'icons/iri.png';
 }
-ob.appendChild(obim);
-gb.appendChild(ob);
+gb.appendChild(obim);
+}
 cont.insertBefore(gb,cont.firstChild);
 }
 }
