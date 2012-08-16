@@ -408,11 +408,13 @@ margin-top: 5px;
 }
 .dlimage > legend > .dlimageswitch {
 display: inline;
+padding: 2px;
+-moz-border-radius: 7px; border-radius: 7px;
 margin: 2px;
-	width: 13pt;
-	height: 13pt;
-        margin-left: 2px;
-        margin-right: 2px;
+	width: 12pt;
+	height: 12pt;
+        background-color: WhiteSmoke;
+	opacity: 0.6;
 }
 
 .dlimage:hover > legend > .dlimageswitch {

@@ -737,11 +737,17 @@ for( var idlimage=0 ; idlimage < mylist.length ; idlimage++){
 var s = mylist[idlimage];
 var sl = s.getElementsByTagName('legend');
 var leg;
+var ctl;
 var sfigs=getElementsByAttribute(s,'*','rel','iridl:hasFigure');
 if(!sl.length && sfigs.length){
 leg=document.createElement('legend');
 leg.className='imagecontrols';
-leg.innerHTML='<object class="dlimageswitch" data="' + scriptroot + 'icons/onoff.svg" type="image/svg+xml" width="13" height="13"><img class="dlimageswitch" src="'+ scriptroot + 'icons/onoff.png" width="13" height="13" border="0" hspace="2" vspace="2" /></object>';
+ctl=document.createElement('img');
+ctl.className="dlimageswitch";
+ctl.border="0";
+ctl.src=scriptroot + "icons/onoff.png";
+ctl.title="Settings";
+leg.appendChild(ctl);
 /* var ctl=document.createElement('img');
 ctl.className="dlimagecontrol";
 ctl.width="13";
