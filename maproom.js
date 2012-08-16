@@ -816,8 +816,11 @@ alert(x + " is " + JSON.stringify(it.mylink.info[x]));
 DLimageBuildControls(it.mylink);
 }
 };
+try {
 xmlhttp.open("GET",infourl,true);
 xmlhttp.send();
+}
+catch(err) {}
 DLimageResizeImage(xmlhttp.mylink);
 }
 }
