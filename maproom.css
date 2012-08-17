@@ -1075,7 +1075,7 @@ border-radius: 7px;
     height: 20px;
     display: inline-block;
     padding: 2px 5px 2px 15px;
-    background: url('http://a4.twimg.com/images/favicon.ico') center no-repeat;
+    background: url('icons/tweet.png') center no-repeat;
     border: 1px solid #ccc;
 text-indent:-9999px; overflow:hidden; 
   }
