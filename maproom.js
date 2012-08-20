@@ -6,27 +6,56 @@ runs immediately if already loaded.  It is invoked at the end of this file.
 */
 window.$ = {};
 $.ready = function(fn) {
-  if (document.readyState == "complete")
+  if (jsAllLoaded())
       return fn();
-
+      jsAllLoadedFn = fn;
+  if (!(document.readyState == "complete" )){
   if (window.addEventListener) {
-      window.addEventListener("DOMContentLoaded", fn, false);
-      window.addEventListener("load", fn, false);
+      window.addEventListener("DOMContentLoaded", jsAllLoadedRun, false);
+      window.addEventListener("load", jsAllLoadedRun, false);
 }
   else if (window.attachEvent)
-      window.attachEvent("onload", fn);
+      window.attachEvent("onload", jsAllLoadedRun);
   else
-      window.onload = fn;
+      window.onload = jsAllLoadedRun;
 }
+}
+var jsDependsOnList = new Array();
+var jsAllLoadedFn;
+jsDependsOnList.push(document);
+
     function jsDependsOn(srcfile){
 	var s=document.getElementsByTagName('script')[0];
 
     var po = document.createElement('script');
     po.type = 'text/javascript';
     po.src = srcfile;
+    po.onloan = jsLoaded;
+    po.readyState = "loading";
+    jsDependsOnList.push(po);
     s.parentNode.insertBefore(po,s);
     }
-
+function jsAllLoaded() {
+var ans = true;
+for (var i=0; i<jsDependsOnList.length; i++){
+if(!jsDependsOnList[i].loaded){ans=false;}
+}
+return ans;
+}
+function jsLoaded (evt) {
+   var evt = (evt) ? evt : ((event) ? event : null );
+if(evt.currentTarget.readState == 'loading'){
+evt.currentTarget.readyState="complete";
+}
+jsAllLoadedRun();
+}
+function jsAllLoadedRun(){
+if(jsAllLoaded){
+if(jsAllLoadedFn){
+jsAllLoadedFn();
+}
+}
+}
 /*
 To simplify writing maproom documents, and accessing them locally,
 from test locations, and from the server, urls that start /maproom/
@@ -53,11 +82,7 @@ var maproomroot = document.location.href.substr(0,document.location.href.indexOf
 /* loads pure javascript */
 var puredir = scriptroot.substr(0,scriptroot.length-8) + 'pure/libs/';
 jsDependsOn(puredir + 'pure.js');
-/* var pureloaded = false;
-if(typeof $p != 'undefined'){
-    pureloaded = true;
-}
-*/
+
 function localHrefOf(ghref){
 var lhref;
 var ifmap  = ghref.indexOf('/maproom/');
