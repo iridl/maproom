@@ -1007,7 +1007,7 @@ invoked when load of info.json completes
 function DLimageBuildControls(mylink){
 /* builds image choice controls and places them immediately after the hasFigure link 
 */
-if(mylink.nextSibling.className != 'dlcontrol'){
+    if(!mylink.nextSibling.classname || mylink.nextSibling.className.indexOf('dlcontrol') < 0){
 var dimlist=mylink.info["iridl:hasDimensions"];
 var currentObj=mylink;
 if(dimlist){
@@ -1015,7 +1015,7 @@ for (var i = 0; i<dimlist.length; i++) {
 var glist=dimlist[i]['iridl:gridvalues']['iridl:valuelist'];
 if(glist && (glist.length > 1)){
 var ctl = document.createElement('div');
-ctl.className='dlcontrol';
+ctl.className='dlcontrol ' + dimlist[i]['iridl:name'];
 var ipt = document.createElement('span');
 ipt.className='controlLabel';
 ipt.innerHTML=dimlist[i]['cfatt:long_name'] + '  ';
