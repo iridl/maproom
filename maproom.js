@@ -680,7 +680,8 @@ if(it.name == 'bbox'){
 var myin = pform.elements['region'];
 if(myin){
 if(it.options[it.selectedIndex].value){
-myin.value = "bb:" + it.options[it.selectedIndex].value;
+    var mybbox = JSON.parse(it.options[it.selectedIndex].value);
+    myin.value = "bb:" + mybbox.join(':') + ":bb";
 }
 else {
 myin.value="";
@@ -866,7 +867,7 @@ updatePageForm();
 }
 }
 }
-function setbbox (newbbox) {
+function setbbox (newbbox,crs) {
 var update=false;
 var within=false;
 var myform=document.getElementById('pageform');
@@ -877,6 +878,10 @@ if(myin){
 myin.value=JSON.stringify(newbbox);
 update=true;
 }
+}
+var ifCRS = "";
+if(crs && crs != "EPSG:4326"){
+    ifCRS = ":" + crs;
 }
 var myin = myform.elements['region'];
 var res = myform.elements['resolution'];
@@ -897,14 +902,14 @@ roundbox[0]=x;
 roundbox[1]=y;
 roundbox[2]=x+delta;
 roundbox[3]=y+delta;
-myin.value="bb:" + JSON.stringify(roundbox);
+myin.value="bb:" + roundbox.join(':') + ifCRS + ":bb";
 }
 else {
-myin.value="pt:" + JSON.stringify(newbbox.slice(0,2));
+    myin.value="pt:" + newbbox.slice(0,2).join(':') + ifCRS + ":pt";
 }
 }
 else {
-myin.value="bb:" + JSON.stringify(newbbox);
+    myin.value="bb:" + newbbox.join(':') + ifCRS + ":bb";
 }
 update=true;
 }
@@ -1233,7 +1238,7 @@ dx=evt.pageX-absLeft(myimgdiv);
 dy=evt.pageY-absTop(myimgdiv);
 myvals=lonlat(myinfo,myimgdiv.inputimage.className,myimgdiv.inputimage.clientWidth,dx,dy,0,0);
 }
-setbbox(myvals);
+setbbox(myvals,myinfo["wms:CRS"]);
 }
 if(myobj != null && myobj.style.visibility == 'visible'){
 evt.cancelBubble = true;
