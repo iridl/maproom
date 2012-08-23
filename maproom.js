@@ -737,6 +737,7 @@ var jsontxt = it.responseText;
 if(it.myLink.href == it.infourl){
 it.myContext.parsedJSON=JSON.parse(jsontxt);
 runPureOnContext(it.myContext);
+updatePageFormCopies(it.myContext);
 }
 }
 };
@@ -1564,6 +1565,7 @@ var inputs=myform.elements;
 		inputs[pair[0]].value=decodeURIComponent(hold);
             }
         }
+	updatePageFormCopies(document);
 }
 }
 function disableNullInputs(){
@@ -1693,7 +1695,19 @@ if(newsrc != cmem.src){
 }
 changedInput.value=newvalue;
 }
-var stag = document.getElementsByClassName('pageformcopy');
+updatePageFormCopies(document);
+}
+}
+/* updates class pageformcopy selects to match pageform
+ */
+function updatePageFormCopies(context){
+    var mycontext=context;
+    if(!mycontext || !mycontext.getElementsByClassName){
+	mycontext=document;
+    }
+var myform=document.getElementById('pageform');
+if(myform){
+var stag = mycontext.getElementsByClassName('pageformcopy');
 for (var i=0; i< stag.length ; i++){
 var sel=stag[i];
 var cval = myform.elements[sel.name].value;
@@ -1904,8 +1918,8 @@ initializeDLimage();
 insertchooseSection();
 insertRegion();
 insertshare();
-setupPageFormLinks();
 loadHasJSON();
+setupPageFormLinks();
 }
 }
 );
