@@ -1470,6 +1470,16 @@ else {
 gb.appendChild(obim);
 }
 cont.insertBefore(gb,cont.firstChild);
+var slist = cont.getElementsByTagName('select');
+for (var i=0; i<slist.length ; i++){
+    var mysel = slist[i];
+    if(mysel.previousSibling.className != "selectvalue"){
+	var sv = document.createElement('span');
+	sv.className='selectvalue';
+	sv.innerHTML=mysel.options[mysel.selectedIndex].innerHTML;
+	mysel.parentNode.insertBefore(sv,mysel);
+    }
+}
 }
 }
 insertlang();
