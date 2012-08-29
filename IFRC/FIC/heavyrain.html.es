@@ -6,11 +6,12 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="es"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta property="maproom:Entry_Id" content="IFRC_FIC_heavyrain" />
+<meta property="maproom:Sort_Id" content="a03" />
 <title>IFRC PIC: &#191;Qu&#233; tan abundante se espera que sea la lluvia?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
@@ -23,7 +24,7 @@
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
 <script type="text/javascript" src="../../maproom.js"></script>
 </head>
-<body>
+<body  xml:lang="es"> 
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg share" name="bbox" type="hidden" />

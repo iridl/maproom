@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="fr"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>IRI Map Room</title>
+<link rel="stylesheet" type="text/css" href="../maproom.css" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
+<link rel="canonical" href="index.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
+<script type="text/javascript" src="../maproom.js"></script>
+</head>
+<body>
+
+<form name="pageform" id="pageform" class="carry carryup titleLink">
+<input class="carry carryup" name="Set-Language" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem"> 
+                <legend>Data Library</legend> 
+                    <a rev="section" class="navlink carryup" href="/maproom/">Maproom</a>
+
+            </fieldset> 
+           <fieldset class="navitem"> 
+                <legend>Maproom</legend> 
+                     <span class="navtext">Climat et Santé</span>
+            </fieldset> 
+</div>
+<div>
+ <div id="content" class="searchDescription">
+<h2 property="term:title">Site Climat et Santé</h2>
+<p align="left" property="term:description">
+Le climat affecte la santé humaine de différentes façons. Ses effets peuvent être directs, comme dans le cas d'une vague de chaleur ou
+indirects, comme dans le cas des maladies infectieuses telles que le paludisme et la dengue.</p><p>Ce site a pour but d'explorer le lien climat-santé et d'informer les utilisateurs
+sur l'utilité de cette information avec une attention particulière sur la nature saisonnière de la relation. Ce site débute avec une attention particulière sur le paludisme, une
+maladie transmise par les moustiques d'importance majeure dans la plupart des pays en voie de développement, et en particulier l'Afrique sub-saharienne. Notre intention est d'augmenter le contenu de ce site en incluant des analyses qui se concentreront sur d'autres maladies et régions, ainsi que d'inclure dans le futur des produits développés par d'autres institutions.
+</p>
+</div>
+<div class="rightcol tabbedentries" about="/maproom/Health/" >
+</div>
+
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend>
+
+</fieldset>
+</div>
+ </body>
+
+ </html>

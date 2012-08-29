@@ -1,47 +1,102 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
 <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>Equatorial Pacific/Indian Ocean Five-Day Running Average 925 hPa Zonal Wind Anomaly Hovmoller</title>
-   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-   <meta name="GENERATOR" content="Mozilla/4.75 [en] (X11; U; Linux 2.2.16-3 i686) [Netscape]">
-<link REL=stylesheet TYPE="text/css" HREF="/site.html">
+<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<!--
+<link rel="stylesheet" type="text/css" href="../ifrc.css" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="925hPa_Zonal_Wind.html?Set-Language=fr" />
+-->
+<link class="share" rel="canonical" href="925hPa_Zonal_Wind.html" />
+<meta xml:lang="" property="maproom:Entry_Id" content="ENSO_Long_x_Time_925hPa_Zonal_Wind" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#spatial_average_resolution"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Wind"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#zonal_velocity"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#eastward"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Velocity"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#StandardPressureLevels"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#enso"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Long_x_Time_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#spatial_average"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#eastward_wind"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomaly"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#SPL925mb"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.u/P/925/VALUE/T/%281%20Jan%201948%29last/RANGE/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.pc8110/.Intrinsic/.PressureLevel/.u/P/925/VALUE%5BT%5DregridLinear/sub/Y/%285S%29%285N%29RANGE%5BY%5Daverage/T/5/runningAverage/X/%2850E%29%28170E%29%2880W%29RANGE//long_name/%28Zonal%20Wind%20Anomaly%29def/DATA/1/STEP/a:/startcolormap/DATA/-10.0/10.0/RANGE/white/0/0/110/RGB/0/0/110/RGB/-10.0/VALUE/0/0/110/RGB/0/0/110/RGB/-9.0/bandmax/0/0/130/RGB/RGBdup/-8.0/bandmax/10/10/150/RGB/RGBdup/-7.0/bandmax/20/20/170/RGB/RGBdup/-6.0/bandmax/45/45/180/RGB/RGBdup/-5.0/bandmax/70/70/190/RGB/RGBdup/-4.0/bandmax/110/110/210/RGB/RGBdup/-3.0/bandmax/150/150/230/RGB/RGBdup/-2.0/bandmax/170/170/242/RGB/RGBdup/-1.0/bandmax/white/white/1.0/bandmax/242/170/170/RGB/RGBdup/2.0/bandmax/230/150/150/RGB/RGBdup/3.0/bandmax/210/110/110/RGB/RGBdup/4.0/bandmax/190/70/70/RGB/RGBdup/5.0/bandmax/180/45/45/RGB/RGBdup/6.0/bandmax/170/20/20/RGB/RGBdup/7.0/bandmax/150/10/10/RGB/RGBdup/8.0/bandmax/130/0/0/RGB/RGBdup/9.0/bandmax/110/0/0/RGB/RGBdup/10.0/bandmax/110/0/0/RGB/endcolormap/dup/:a:/dataflag/X/180/180/flagrange/mul/DATA/1/STEP/:a/X+T+fig:+colors+nozero+unlabelledcontours+unlabelledcontours+:fig+X/50.0/280.0/plotrange/T/last/120./sub/last/plotrange//plotaxislength+220+psdef//plotborder+0+psdef//XOVY+1+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" />
+<script type="text/javascript" src="../../maproom.js"></script>
 </head>
-<body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000">
-<INGRID>leftmenu</INGRID>
-<blockquote>
-<blockquote>
-<center><font size=+1>Equatorial Pacific/Indian Ocean Five-Day Running Average 925 hPa Zonal Wind Anomaly Hovmoller (m/s)
-</font></center>
-</blockquote>
-
-
-<table>
-<tr><td align=center>
-<a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.u/P/925/VALUE/T/%281%20Jan%201948%29last/RANGE/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.pc7100/.Intrinsic/.PressureLevel/.u/P/925/VALUE%5BT%5DregridLinear/sub/Y/%285S%29%285N%29RANGE%5BY%5Daverage/T/5/runningAverage/X/%2850E%29%28170E%29%2880W%29RANGE//long_name/%28Zonal%20Wind%20Anomaly%29def/DATA/1/STEP/a:/startcolormap/DATA/-10./10./RANGE/white/0/0/110/RGB/0/0/110/RGB/-10./VALUE/0/0/110/RGB/0/0/110/RGB/-9./bandmax/0/0/130/RGB/RGBdup/-8./bandmax/10/10/150/RGB/RGBdup/-7./bandmax/20/20/170/RGB/RGBdup/-6./bandmax/45/45/180/RGB/RGBdup/-5./bandmax/70/70/190/RGB/RGBdup/-4./bandmax/110/110/210/RGB/RGBdup/-3./bandmax/150/150/230/RGB/RGBdup/-2./bandmax/170/170/242/RGB/RGBdup/-1./bandmax/white/white/1./bandmax/242/170/170/RGB/RGBdup/2./bandmax/230/150/150/RGB/RGBdup/3./bandmax/210/110/110/RGB/RGBdup/4./bandmax/190/70/70/RGB/RGBdup/5./bandmax/180/45/45/RGB/RGBdup/6./bandmax/170/20/20/RGB/RGBdup/7./bandmax/150/10/10/RGB/RGBdup/8./bandmax/130/0/0/RGB/RGBdup/9./bandmax/110/0/0/RGB/RGBdup/10./bandmax/110/0/0/RGB/endcolormap/dup/:a:/dataflag/X/180/180/flagrange/mul/DATA/1/STEP/:a/figviewer.html?my.help=more+options&map.T.units=days+since+1948-01-01+12:00:00&map.T.plotlast=last&map.url=X+T+fig:+colors+nozero+contours+unlabelledcontours+:fig&map.domain=+%7B+X+50.+280.+plotrange+T+last+120+sub+last+plotrange+%7D&map.domainparam=+/plotaxislength+500+psdef+/plotborder+72+psdef+/XOVY+1+psdef&map.zoom=Zoom&map.T.plotfirst=last+120+sub&map.X.plotfirst=50E&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=80W&map.u.plotfirst=-10.&map.u.units=m/s&map.u.plotlast=10.&map.plotaxislength=500&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=1&map.color_smoothing=auto&map.framelbl=framelabelstart&map.framelabeltext=&map.iftime=25&map.mftime=25&map.fftime=200" OnMouseOver="self.status='Click here to explore the data';return true"><img src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.u/P/925/VALUE/T/%281%20Jan%201948%29last/RANGE/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.pc7100/.Intrinsic/.PressureLevel/.u/P/925/VALUE%5BT%5DregridLinear/sub/Y/%285S%29%285N%29RANGE%5BY%5Daverage/T/5/runningAverage/X/%2850E%29%28170E%29%2880W%29RANGE//long_name/%28Zonal%20Wind%20Anomaly%29def/DATA/1/STEP/a:/startcolormap/DATA/-10./10./RANGE/white/0/0/110/RGB/0/0/110/RGB/-10./VALUE/0/0/110/RGB/0/0/110/RGB/-9./bandmax/0/0/130/RGB/RGBdup/-8./bandmax/10/10/150/RGB/RGBdup/-7./bandmax/20/20/170/RGB/RGBdup/-6./bandmax/45/45/180/RGB/RGBdup/-5./bandmax/70/70/190/RGB/RGBdup/-4./bandmax/110/110/210/RGB/RGBdup/-3./bandmax/150/150/230/RGB/RGBdup/-2./bandmax/170/170/242/RGB/RGBdup/-1./bandmax/white/white/1./bandmax/242/170/170/RGB/RGBdup/2./bandmax/230/150/150/RGB/RGBdup/3./bandmax/210/110/110/RGB/RGBdup/4./bandmax/190/70/70/RGB/RGBdup/5./bandmax/180/45/45/RGB/RGBdup/6./bandmax/170/20/20/RGB/RGBdup/7./bandmax/150/10/10/RGB/RGBdup/8./bandmax/130/0/0/RGB/RGBdup/9./bandmax/110/0/0/RGB/RGBdup/10./bandmax/110/0/0/RGB/endcolormap/dup/:a:/dataflag/X/180/180/flagrange/mul/DATA/1/STEP/:a/X+T+fig:+colors+nozero+contours+unlabelledcontours+:fig+X/50./280./plotrange/T/last+120+sub/last/plotrange+//color_smoothing+null+psdef//plotaxislength+500+psdef//XOVY+1+psdef//plotborder+72+psdef+.gif" NOSAVE border=0 ALT="Click for options and more information" title="Click for options and more information" width=572 height=572></a>
-<br><img src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.u/P/925/VALUE/T/%281%20Jan%201948%29last/RANGE/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.pc7100/.Intrinsic/.PressureLevel/.u/P/925/VALUE%5BT%5DregridLinear/sub/Y/%285S%29%285N%29RANGE%5BY%5Daverage/T/5/runningAverage/X/%2850E%29%28170E%29%2880W%29RANGE//long_name/%28Zonal%20Wind%20Anomaly%29def/DATA/1/STEP/a:/startcolormap/DATA/-10./10./RANGE/white/0/0/110/RGB/0/0/110/RGB/-10./VALUE/0/0/110/RGB/0/0/110/RGB/-9./bandmax/0/0/130/RGB/RGBdup/-8./bandmax/10/10/150/RGB/RGBdup/-7./bandmax/20/20/170/RGB/RGBdup/-6./bandmax/45/45/180/RGB/RGBdup/-5./bandmax/70/70/190/RGB/RGBdup/-4./bandmax/110/110/210/RGB/RGBdup/-3./bandmax/150/150/230/RGB/RGBdup/-2./bandmax/170/170/242/RGB/RGBdup/-1./bandmax/white/white/1./bandmax/242/170/170/RGB/RGBdup/2./bandmax/230/150/150/RGB/RGBdup/3./bandmax/210/110/110/RGB/RGBdup/4./bandmax/190/70/70/RGB/RGBdup/5./bandmax/180/45/45/RGB/RGBdup/6./bandmax/170/20/20/RGB/RGBdup/7./bandmax/150/10/10/RGB/RGBdup/8./bandmax/130/0/0/RGB/RGBdup/9./bandmax/110/0/0/RGB/RGBdup/10./bandmax/110/0/0/RGB/endcolormap/dup/:a:/dataflag/X/180/180/flagrange/mul/DATA/1/STEP/:a/X+T+fig:+colors+nozero+contours+unlabelledcontours+:fig+.auxfig+X/50./280./plotrange/T/last+120+sub/last/plotrange+//color_smoothing+null+psdef//plotaxislength+500+psdef//XOVY+1+psdef//plotborder+72+psdef+.gif" NOSAVE border=0 width=522 height=56>
-<br></td></tr>
-
-
-
-<tr>
-<td ALIGN=CENTER>
-<table BORDER COLS=1 WIDTH="75%" NOSAVE >
-<tr>
-<td><font size=-1><b>Data</b>:&nbsp;&nbsp;NCEP/NCAR Reanalysis 925 hPa daily zonal wind 
-(m/s) </font>
-<br><font size=-1><b>Base Period for Climatology:&nbsp; </b>1971-2000</font>
-<br><font size=-1><b>Data Source</b>:&nbsp;NCEP/NCAR Reanalysis</font>
-<p><font size=-1><b>Description:&nbsp; </b>Five-day running average zonal wind
-anomalies averaged over 5&deg;S to 5&deg;N, contoured at 1.0 m/s.&nbsp; Shading starts at +/-
-1.0 m/s.&nbsp;&nbsp;Positive anomalies (anomalous westerlies) are in red, negative anomalies (anomalous easterlies) are in blue.&nbsp;&nbsp;Longitude domain is 50&deg;E to 80&deg;W.&nbsp;  On this chart the last 120 days are shown, and time increases
-vertically.  The vertical black line denotes 180&deg; longitude.&nbsp;</font><br><p>
-<font size=-1>NCEP is the acronym for the National Centers for Environmental Prediction; NCAR is the acronym for the National Center for Atmospheric Research</font>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</blockquote>
-
-</body>
-</html>
+<body xml:lang="en">
+<form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
+<input class="carryup carry " name="Set-Language" type="hidden" />
+<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="dlimg share" name="T" type="hidden" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Maproom</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/ENSO/">ENSO Monitoring</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Long_x_Time_term"><span property="term:label">Longitude x Time</span></legend>
+            </fieldset> 
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.u/P/925/VALUE/T/%281%20Jan%201948%29last/RANGE/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.pc8110/.Intrinsic/.PressureLevel/.u/P/925/VALUE%5BT%5DregridLinear/sub/Y/%285S%29%285N%29RANGE%5BY%5Daverage/T/5/runningAverage/X/%2850E%29%28170E%29%2880W%29RANGE//long_name/%28Zonal%20Wind%20Anomaly%29def/DATA/1/STEP/a:/startcolormap/DATA/-10.0/10.0/RANGE/white/0/0/110/RGB/0/0/110/RGB/-10.0/VALUE/0/0/110/RGB/0/0/110/RGB/-9.0/bandmax/0/0/130/RGB/RGBdup/-8.0/bandmax/10/10/150/RGB/RGBdup/-7.0/bandmax/20/20/170/RGB/RGBdup/-6.0/bandmax/45/45/180/RGB/RGBdup/-5.0/bandmax/70/70/190/RGB/RGBdup/-4.0/bandmax/110/110/210/RGB/RGBdup/-3.0/bandmax/150/150/230/RGB/RGBdup/-2.0/bandmax/170/170/242/RGB/RGBdup/-1.0/bandmax/white/white/1.0/bandmax/242/170/170/RGB/RGBdup/2.0/bandmax/230/150/150/RGB/RGBdup/3.0/bandmax/210/110/110/RGB/RGBdup/4.0/bandmax/190/70/70/RGB/RGBdup/5.0/bandmax/180/45/45/RGB/RGBdup/6.0/bandmax/170/20/20/RGB/RGBdup/7.0/bandmax/150/10/10/RGB/RGBdup/8.0/bandmax/130/0/0/RGB/RGBdup/9.0/bandmax/110/0/0/RGB/RGBdup/10.0/bandmax/110/0/0/RGB/endcolormap/dup/:a:/dataflag/X/180/180/flagrange/mul/DATA/1/STEP/:a/">Dataset</a></li>
+      <li><a href="#tabs-3" >Contact Us</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.u/P/925/VALUE/T/%281%20Jan%201948%29last/RANGE/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.pc8110/.Intrinsic/.PressureLevel/.u/P/925/VALUE%5BT%5DregridLinear/sub/Y/%285S%29%285N%29RANGE%5BY%5Daverage/T/5/runningAverage/X/%2850E%29%28170E%29%2880W%29RANGE//long_name/%28Zonal%20Wind%20Anomaly%29def/DATA/1/STEP/a:/startcolormap/DATA/-10./10./RANGE/white/0/0/110/RGB/0/0/110/RGB/-10./VALUE/0/0/110/RGB/0/0/110/RGB/-9./bandmax/0/0/130/RGB/RGBdup/-8./bandmax/10/10/150/RGB/RGBdup/-7./bandmax/20/20/170/RGB/RGBdup/-6./bandmax/45/45/180/RGB/RGBdup/-5./bandmax/70/70/190/RGB/RGBdup/-4./bandmax/110/110/210/RGB/RGBdup/-3./bandmax/150/150/230/RGB/RGBdup/-2./bandmax/170/170/242/RGB/RGBdup/-1./bandmax/white/white/1./bandmax/242/170/170/RGB/RGBdup/2./bandmax/230/150/150/RGB/RGBdup/3./bandmax/210/110/110/RGB/RGBdup/4./bandmax/190/70/70/RGB/RGBdup/5./bandmax/180/45/45/RGB/RGBdup/6./bandmax/170/20/20/RGB/RGBdup/7./bandmax/150/10/10/RGB/RGBdup/8./bandmax/130/0/0/RGB/RGBdup/9./bandmax/110/0/0/RGB/RGBdup/10./bandmax/110/0/0/RGB/endcolormap/dup/:a:/dataflag/X/180/180/flagrange/mul/DATA/1/STEP/:a/X+T+fig:+colors+nozero+contours+unlabelledcontours+:fig+X/50.0/280.0/plotrange/T/last/120/sub/last/plotrange//plotaxislength+500+psdef//plotborderbottom+40+psdef//plotbordertop+40+psdef//XOVY+1+psdef//color_smoothing+null+psdef//antialias+true+psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.u/P/925/VALUE/T/%281%20Jan%201948%29last/RANGE/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.pc8110/.Intrinsic/.PressureLevel/.u/P/925/VALUE%5BT%5DregridLinear/sub/Y/%285S%29%285N%29RANGE%5BY%5Daverage/T/5/runningAverage/X/%2850E%29%28170E%29%2880W%29RANGE//long_name/%28Zonal%20Wind%20Anomaly%29def/DATA/1/STEP/a:/startcolormap/DATA/-10./10./RANGE/white/0/0/110/RGB/0/0/110/RGB/-10./VALUE/0/0/110/RGB/0/0/110/RGB/-9./bandmax/0/0/130/RGB/RGBdup/-8./bandmax/10/10/150/RGB/RGBdup/-7./bandmax/20/20/170/RGB/RGBdup/-6./bandmax/45/45/180/RGB/RGBdup/-5./bandmax/70/70/190/RGB/RGBdup/-4./bandmax/110/110/210/RGB/RGBdup/-3./bandmax/150/150/230/RGB/RGBdup/-2./bandmax/170/170/242/RGB/RGBdup/-1./bandmax/white/white/1./bandmax/242/170/170/RGB/RGBdup/2./bandmax/230/150/150/RGB/RGBdup/3./bandmax/210/110/110/RGB/RGBdup/4./bandmax/190/70/70/RGB/RGBdup/5./bandmax/180/45/45/RGB/RGBdup/6./bandmax/170/20/20/RGB/RGBdup/7./bandmax/150/10/10/RGB/RGBdup/8./bandmax/130/0/0/RGB/RGBdup/9./bandmax/110/0/0/RGB/RGBdup/10./bandmax/110/0/0/RGB/endcolormap/dup/:a:/dataflag/X/180/180/flagrange/mul/DATA/1/STEP/:a/X+T+fig:+colors+nozero+contours+unlabelledcontours+:fig+X/50.0/280.0/plotrange/T/last/120/sub/last/plotrange//plotaxislength+500+psdef//plotborderbottom+40+psdef//plotbordertop+40+psdef//XOVY+1+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" border="0" alt="image" />
+  <br />
+ <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.u/P/925/VALUE/T/%281%20Jan%201948%29last/RANGE/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.pc8110/.Intrinsic/.PressureLevel/.u/P/925/VALUE%5BT%5DregridLinear/sub/Y/%285S%29%285N%29RANGE%5BY%5Daverage/T/5/runningAverage/X/%2850E%29%28170E%29%2880W%29RANGE//long_name/%28Zonal%20Wind%20Anomaly%29def/DATA/1/STEP/a:/startcolormap/DATA/-10./10./RANGE/white/0/0/110/RGB/0/0/110/RGB/-10./VALUE/0/0/110/RGB/0/0/110/RGB/-9./bandmax/0/0/130/RGB/RGBdup/-8./bandmax/10/10/150/RGB/RGBdup/-7./bandmax/20/20/170/RGB/RGBdup/-6./bandmax/45/45/180/RGB/RGBdup/-5./bandmax/70/70/190/RGB/RGBdup/-4./bandmax/110/110/210/RGB/RGBdup/-3./bandmax/150/150/230/RGB/RGBdup/-2./bandmax/170/170/242/RGB/RGBdup/-1./bandmax/white/white/1./bandmax/242/170/170/RGB/RGBdup/2./bandmax/230/150/150/RGB/RGBdup/3./bandmax/210/110/110/RGB/RGBdup/4./bandmax/190/70/70/RGB/RGBdup/5./bandmax/180/45/45/RGB/RGBdup/6./bandmax/170/20/20/RGB/RGBdup/7./bandmax/150/10/10/RGB/RGBdup/8./bandmax/130/0/0/RGB/RGBdup/9./bandmax/110/0/0/RGB/RGBdup/10./bandmax/110/0/0/RGB/endcolormap/dup/:a:/dataflag/X/180/180/flagrange/mul/DATA/1/STEP/:a/X+T+fig:+colors+nozero+contours+unlabelledcontours+:fig+.auxfig+X/50.0/280.0/plotrange/T/last/120/sub/last/plotrange//plotaxislength+500+psdef//plotborderbottom+40+psdef//plotbordertop+40+psdef//XOVY+1+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >Equatorial Pacific/Indian Ocean Five-Day Running Average 925 hPa Zonal Wind Anomaly Hovmoller</h2>
+<p align="left" property="term:description"> This is a Hovmoller diagram (Longitude x Time) showing five-day running average zonal wind anomalies at 925 hPa averaged over 5°S to 5°N, for the past 120 days, across the equatorial Indian and Pacific Oceans.</p>
+<p align="left">The zonal wind anomalies are contoured at an interval of 1.0 m/s, and shading starts at +/- 1.0 m/s.  Positive anomalies (anomalous westerlies) are in red; negative anomalies (anomalous easterlies) are in blue.  The base period used to calculate the anomalies is 1981-2010.  The longitude domain extends from 50°E to 80°W.  On this chart the last 120 days are shown, and time increases vertically.  The vertical black line denotes 180° longitude.</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<h4><a class="carry">925 hPa Zonal Wind Anomalies</a></h4>
+<dl class="datasetdocumentation">
+<dt>Data</dt><dd>NCEP/NCAR Reanalysis daily zonal wind at 925 hPa on 2.5&#176; lat/lon grid</dd> 
+<dt>Data Source</dt><dd>NOAA National Centers for Environmental Prediction (NCEP) (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.dataset_documentation.html">NCEP/NCAR Reanalysis</a>)</dd> 
+<dt>Analysis</dt><dd>Equatorial average of five-day running average daily zonal wind anomalies (1981-2010 base period), displayed as a longitude x time Hovmoller diagram</dd>
+</dl>
+</div>
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.u/P/925/VALUE/T/%281%20Jan%201948%29last/RANGE/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.pc8110/.Intrinsic/.PressureLevel/.u/P/925/VALUE%5BT%5DregridLinear/sub/Y/%285S%29%285N%29RANGE%5BY%5Daverage/T/5/runningAverage/X/%2850E%29%28170E%29%2880W%29RANGE//long_name/%28Zonal%20Wind%20Anomaly%29def/DATA/1/STEP/a:/startcolormap/DATA/-10.0/10.0/RANGE/white/0/0/110/RGB/0/0/110/RGB/-10.0/VALUE/0/0/110/RGB/0/0/110/RGB/-9.0/bandmax/0/0/130/RGB/RGBdup/-8.0/bandmax/10/10/150/RGB/RGBdup/-7.0/bandmax/20/20/170/RGB/RGBdup/-6.0/bandmax/45/45/180/RGB/RGBdup/-5.0/bandmax/70/70/190/RGB/RGBdup/-4.0/bandmax/110/110/210/RGB/RGBdup/-3.0/bandmax/150/150/230/RGB/RGBdup/-2.0/bandmax/170/170/242/RGB/RGBdup/-1.0/bandmax/white/white/1.0/bandmax/242/170/170/RGB/RGBdup/2.0/bandmax/230/150/150/RGB/RGBdup/3.0/bandmax/210/110/110/RGB/RGBdup/4.0/bandmax/190/70/70/RGB/RGBdup/5.0/bandmax/180/45/45/RGB/RGBdup/6.0/bandmax/170/20/20/RGB/RGBdup/7.0/bandmax/150/10/10/RGB/RGBdup/8.0/bandmax/130/0/0/RGB/RGBdup/9.0/bandmax/110/0/0/RGB/RGBdup/10.0/bandmax/110/0/0/RGB/endcolormap/dup/:a:/dataflag/X/180/180/flagrange/mul/DATA/1/STEP/:a/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-3"  class="ui-tabs-panel">
+<h2  align="center">Helpdesk</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=ENSO 925 hPa zonal wind anomaly Hovmoller">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>

@@ -6,27 +6,56 @@ runs immediately if already loaded.  It is invoked at the end of this file.
 */
 window.$ = {};
 $.ready = function(fn) {
-  if (document.readyState == "complete")
+  if (jsAllLoaded())
       return fn();
-
+      jsAllLoadedFn = fn;
+  if (!(document.readyState == "complete" )){
   if (window.addEventListener) {
-      window.addEventListener("DOMContentLoaded", fn, false);
-      window.addEventListener("load", fn, false);
+      window.addEventListener("DOMContentLoaded", jsAllLoadedRun, false);
+      window.addEventListener("load", jsAllLoadedRun, false);
 }
   else if (window.attachEvent)
-      window.attachEvent("onload", fn);
+      window.attachEvent("onload", jsAllLoadedRun);
   else
-      window.onload = fn;
+      window.onload = jsAllLoadedRun;
 }
+}
+var jsDependsOnList = new Array();
+var jsAllLoadedFn;
+jsDependsOnList.push(document);
+
     function jsDependsOn(srcfile){
 	var s=document.getElementsByTagName('script')[0];
 
     var po = document.createElement('script');
     po.type = 'text/javascript';
     po.src = srcfile;
+    po.onloan = jsLoaded;
+    po.readyState = "loading";
+    jsDependsOnList.push(po);
     s.parentNode.insertBefore(po,s);
     }
-
+function jsAllLoaded() {
+var ans = true;
+for (var i=0; i<jsDependsOnList.length; i++){
+if(!jsDependsOnList[i].loaded){ans=false;}
+}
+return ans;
+}
+function jsLoaded (evt) {
+   var evt = (evt) ? evt : ((event) ? event : null );
+if(evt.currentTarget.readState == 'loading'){
+evt.currentTarget.readyState="complete";
+}
+jsAllLoadedRun();
+}
+function jsAllLoadedRun(){
+if(jsAllLoaded){
+if(jsAllLoadedFn){
+jsAllLoadedFn();
+}
+}
+}
 /*
 To simplify writing maproom documents, and accessing them locally,
 from test locations, and from the server, urls that start /maproom/
@@ -45,16 +74,15 @@ scriptsrc=shref;
 break;
 }
 }
-var scriptroot = scriptsrc.substr(0,scriptsrc.indexOf('/maproom/')+9);
+var scriptroot;
+if(scriptsrc){
+scriptroot = scriptsrc.substr(0,scriptsrc.indexOf('maproom.js'));
+}
 var maproomroot = document.location.href.substr(0,document.location.href.indexOf('/maproom/')+9);
 /* loads pure javascript */
 var puredir = scriptroot.substr(0,scriptroot.length-8) + 'pure/libs/';
 jsDependsOn(puredir + 'pure.js');
-/* var pureloaded = false;
-if(typeof $p != 'undefined'){
-    pureloaded = true;
-}
-*/
+
 function localHrefOf(ghref){
 var lhref;
 var ifmap  = ghref.indexOf('/maproom/');
@@ -69,7 +97,7 @@ return lhref;
 }
 /* replacement for getElementsByClassName when missing */
 if (typeof document.getElementsByClassName!='function') {
-    document.getElementsByClassName = function() {
+document.getElementsByClassName = function() {
         var elms = document.getElementsByTagName('*');
         var ei = new Array();
         for (i=0;i<elms.length;i++) {
@@ -101,6 +129,7 @@ it.previousSibling.innerHTML=it.options[it.selectedIndex].innerHTML;
 
 var opt=it.options[it.selectedIndex];
 var fullpathname = document.location.href;
+if(opt.value.substring(0,5)!='http:'){
 if(fullpathname.indexOf("?")>= 0){
 fullpathname = fullpathname.substring(0,fullpathname.indexOf("?"));
 }
@@ -109,6 +138,9 @@ fullpathname = fullpathname.substring(0,fullpathname.indexOf("#"));
 }
 if (it.hrefroot + opt.value != fullpathname){
 submitPageForm(it.hrefroot + opt.value,"carry");
+}
+} else {
+submitPageForm(opt.value,"carry");
 }
 }
 function tabclick(it){
@@ -169,6 +201,14 @@ function imageinputvaluechange(evt){
    var it = (evt.currentTarget) ? evt.currentTarget : evt.srcElement.parentNode;
  var myinput = it.parentNode.getElementsByTagName('input')[0];
  var myimage =  it.parentNode.mylink.figureimage;
+ // change class of parent whether single (value in list) or multi (value not in list)
+ var cin = it.parentNode.info['iridl:gridvalues']['iridl:valuelist'].indexOf(myinput.value);
+ if(cin > -1){
+     changeClass(it.parentNode,'multiValue','singleValue');
+ }
+ else {
+     changeClass(it.parentNode,'singleValue','multiValue');
+ }
 // copy value(s) to page form and get url
 var pform=document.getElementById('pageform');
 var guess='';
@@ -437,9 +477,17 @@ xmlhttp.mysel=sel;
 xmlhttp.onreadystatechange = function() {
 if(xmlhttp.readyState == 4){
 var xmlDoc=xmlhttp.responseXML;
-if(!xmlDoc){
+// used to test on xmlDoc, but explorer did not work, so now I parse
+if(true){
+    if(window.DOMParser){
 parser= new DOMParser();
 xmlDoc=parser.parseFromString(xmlhttp.responseText,"text/xml");
+    }
+    else {
+	xmlDoc= new ActiveXObject("Microsoft.XMLDOM");
+	xmlDoc.async=false;
+	xmlDoc.loadXML(xmlhttp.responseText);
+    }
 }
 dofinishchooseSection(xmlhttp.mysel,xmlDoc);
 }
@@ -513,7 +561,13 @@ dofinishchooseSection(sel,xmlDoc);
 }
 function dofinishchooseSection(sel,xmlDoc){
 if(xmlDoc){
-var itemlist=xmlDoc.getElementsByClassName('item');
+    var itemlist;
+    if(xmlDoc.getElementsByClassName){
+itemlist=xmlDoc.getElementsByClassName('item');
+    }
+    else {
+	itemlist=getElementsByAttribute(xmlDoc,'*','class','item');
+    }
 var og=sel;
 if(itemlist.length>0){
 for (var i = 0; i<itemlist.length ; i++){
@@ -559,7 +613,50 @@ sel.size=1;
 sel.name="bbox";
 sel.className='pageformcopy';
 sel.onchange=regiononchange;
-sel.innerHTML='<optgroup label="Region"><option value="[-20,-40,55,40]">Africa</option><option value="[40,-10,170,75]">Asia</option><option value="[100,-55,180,0]">Australia</option><option value="[-20,35,40,75]">Europe</option><option value="[10,15,75,45]">Middle East</option><option value="[-170,15,-60,75]">North America</option><option value="[-100,0,-70,35]">Central America</option><option value="[-90,-60,-30,15]">South America</option><option value="" selected="selected">Global</option></optgroup>';
+var optgrp=document.createElement('optgroup');
+optgrp.label="Region";
+var opt = document.createElement('option');
+opt.value="[-20,-40,55,40]";
+opt.innerHTML="Africa";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[40,-10,170,75]";
+opt.innerHTML="Asia";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[100,-55,180,0]";
+opt.innerHTML="Australia";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[-20,35,40,75]";
+opt.innerHTML="Europe";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[10,15,75,45]";
+opt.innerHTML="Middle East";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[-170,15,-60,75]";
+opt.innerHTML="North America";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[-100,0,-70,35]";
+opt.innerHTML="Central America";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[-90,-60,-30,15]";
+opt.innerHTML="South America";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="[100,-60,300,60]";
+opt.innerHTML="Pacific";
+optgrp.appendChild(opt);
+opt = document.createElement('option');
+opt.value="";
+opt.selected="selected";
+opt.innerHTML="Global";
+optgrp.appendChild(opt);
+sel.appendChild(optgrp);
 theregion.appendChild(sel);
 }
 }
@@ -583,7 +680,8 @@ if(it.name == 'bbox'){
 var myin = pform.elements['region'];
 if(myin){
 if(it.options[it.selectedIndex].value){
-myin.value = "bb:" + it.options[it.selectedIndex].value;
+    var mybbox = JSON.parse(it.options[it.selectedIndex].value);
+    myin.value = "bb:" + mybbox.join(':') + ":bb";
 }
 else {
 myin.value="";
@@ -639,6 +737,7 @@ var jsontxt = it.responseText;
 if(it.myLink.href == it.infourl){
 it.myContext.parsedJSON=JSON.parse(jsontxt);
 runPureOnContext(it.myContext);
+updatePageFormCopies(it.myContext);
 }
 }
 };
@@ -665,11 +764,17 @@ for( var idlimage=0 ; idlimage < mylist.length ; idlimage++){
 var s = mylist[idlimage];
 var sl = s.getElementsByTagName('legend');
 var leg;
+var ctl;
 var sfigs=getElementsByAttribute(s,'*','rel','iridl:hasFigure');
 if(!sl.length && sfigs.length){
 leg=document.createElement('legend');
 leg.className='imagecontrols';
-leg.innerHTML='<object class="dlimageswitch" data="' + scriptroot + 'icons/onoff.svg" type="image/svg+xml" width="13" height="13"><img class="dlimageswitch" src="'+ scriptroot + 'icons/onoff.png" width="13" height="13" border="0" hspace="2" vspace="2" /></object>';
+ctl=document.createElement('img');
+ctl.className="dlimageswitch";
+ctl.border="0";
+ctl.src=scriptroot + "icons/onoff.png";
+ctl.title="Settings";
+leg.appendChild(ctl);
 /* var ctl=document.createElement('img');
 ctl.className="dlimagecontrol";
 ctl.width="13";
@@ -738,8 +843,11 @@ alert(x + " is " + JSON.stringify(it.mylink.info[x]));
 DLimageBuildControls(it.mylink);
 }
 };
+try {
 xmlhttp.open("GET",infourl,true);
 xmlhttp.send();
+}
+catch(err) {}
 DLimageResizeImage(xmlhttp.mylink);
 }
 }
@@ -760,7 +868,7 @@ updatePageForm();
 }
 }
 }
-function setbbox (newbbox) {
+function setbbox (newbbox,crs) {
 var update=false;
 var within=false;
 var myform=document.getElementById('pageform');
@@ -771,6 +879,10 @@ if(myin){
 myin.value=JSON.stringify(newbbox);
 update=true;
 }
+}
+var ifCRS = "";
+if(crs && crs != "EPSG:4326"){
+    ifCRS = ":" + crs;
 }
 var myin = myform.elements['region'];
 var res = myform.elements['resolution'];
@@ -791,14 +903,14 @@ roundbox[0]=x;
 roundbox[1]=y;
 roundbox[2]=x+delta;
 roundbox[3]=y+delta;
-myin.value="bb:" + JSON.stringify(roundbox);
+myin.value="bb:" + roundbox.join(':') + ifCRS + ":bb";
 }
 else {
-myin.value="pt:" + JSON.stringify(newbbox.slice(0,2));
+    myin.value="pt:" + newbbox.slice(0,2).join(':') + ifCRS + ":pt";
 }
 }
 else {
-myin.value="bb:" + JSON.stringify(newbbox);
+    myin.value="bb:" + newbbox.join(':') + ifCRS + ":bb";
 }
 update=true;
 }
@@ -827,15 +939,23 @@ var X0,X1,Y0,Y1;
 if(typeof(myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]) != 'undefined'){
 var Xare = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["@type"];
 var Yare = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["@type"];
-if(Xare = 'iridl:EvenGridEdges'){
+if(Xare == 'iridl:EvenGridEdges'){
 X0 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:first"];
 X1 = myinfo["iridl:hasAbscissa"]["iridl:gridvalues"]["iridl:last"];
 }
-if(Yare = 'iridl:EvenGridEdges'){
+if(Xare == 'iridl:CenterValues'){
+X0 = myinfo["iridl:hasAbscissa"]["iridl:plotfirst"];
+X1 = myinfo["iridl:hasAbscissa"]["iridl:plotlast"];
+}
+if(Yare == 'iridl:EvenGridEdges'){
 Y0 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:first"];
 Y1 = myinfo["iridl:hasOrdinate"]["iridl:gridvalues"]["iridl:last"];
 }
-    }
+if(Yare == 'iridl:CenterValues'){
+Y0 = myinfo["iridl:hasOrdinate"]["iridl:plotfirst"];
+Y1 = myinfo["iridl:hasOrdinate"]["iridl:plotlast"];
+}
+}
     else {
 X0 = myinfo["iridl:hasAbscissa"]["iridl:plotfirst"];
 X1 = myinfo["iridl:hasAbscissa"]["iridl:plotlast"];
@@ -863,7 +983,7 @@ function DLimageResizeImage(mylink){
 var imagesrc=mylink.figureimage.src;
 var patt = new RegExp('//plotaxislength.([0-9]*).psdef');
 var csize = imagesrc.match(patt);
-if (csize.length<2){
+if (!csize || csize.length<2){
 	csize=432;
 }
 else {
@@ -893,7 +1013,7 @@ invoked when load of info.json completes
 function DLimageBuildControls(mylink){
 /* builds image choice controls and places them immediately after the hasFigure link 
 */
-if(mylink.nextSibling.className != 'dlcontrol'){
+    if(!mylink.nextSibling.classname || mylink.nextSibling.className.indexOf('dlcontrol') < 0){
 var dimlist=mylink.info["iridl:hasDimensions"];
 var currentObj=mylink;
 if(dimlist){
@@ -901,7 +1021,7 @@ for (var i = 0; i<dimlist.length; i++) {
 var glist=dimlist[i]['iridl:gridvalues']['iridl:valuelist'];
 if(glist && (glist.length > 1)){
 var ctl = document.createElement('div');
-ctl.className='dlcontrol';
+ctl.className='dlcontrol ' + dimlist[i]['iridl:name'];
 var ipt = document.createElement('span');
 ipt.className='controlLabel';
 ipt.innerHTML=dimlist[i]['cfatt:long_name'] + '  ';
@@ -928,6 +1048,19 @@ ipt.value=dimlist[i]['iridl:defaultvalue'];
 ipt.onchange=imageinputvaluechange;
 ipt.size=16;
 iptset.appendChild(ipt);
+/* resets class of iptset to reflect whether the defaultvalue
+ corresponds to singleValue (in list of values) or multiValue (not
+ in list of values and presumably a range) */
+
+var cin = dimlist[i]['iridl:gridvalues']['iridl:valuelist'].indexOf(ipt.value);
+var controlClass;
+if(cin > -1){
+    controlClass="singleValue";
+}
+else {
+    controlClass="multiValue";
+}
+appendMissingClass(iptset,controlClass);
 if(document.getElementById('pageform')){
 var pform=document.getElementById('pageform');
 if(!pform.elements[ipt.name]){
@@ -1093,19 +1226,20 @@ function stopdrag(evt){
 evt = (evt) ? evt : event;
 var myimgdiv=getcurrentTarget(evt);
 var myinfo = myimgdiv.inputimage.mylink.info;
+myimgdiv.style.cursor='auto';
 var myvals;
 if(myobj != null && myinfo){
 if(myobj.style.visibility == 'visible'){
-myvals=lonlat(myinfo,myimgdiv.inputimage.clientWidth,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
+    myvals=lonlat(myinfo,myimgdiv.inputimage.className,myimgdiv.inputimage.clientWidth,parseInt(myobj.style.left),parseInt(myobj.style.top),parseInt(myobj.style.width),parseInt(myobj.style.height));
 changeClass(myimgdiv.inputimage,'valid','invalid-zooming');
 }
 else {
 var dx,dy;
 dx=evt.pageX-absLeft(myimgdiv);
 dy=evt.pageY-absTop(myimgdiv);
-myvals=lonlat(myinfo,myimgdiv.inputimage.clientWidth,dx,dy,0,0);
+myvals=lonlat(myinfo,myimgdiv.inputimage.className,myimgdiv.inputimage.clientWidth,dx,dy,0,0);
 }
-setbbox(myvals);
+setbbox(myvals,myinfo["wms:CRS"]);
 }
 if(myobj != null && myobj.style.visibility == 'visible'){
 evt.cancelBubble = true;
@@ -1154,6 +1288,7 @@ myy=evt.pageY-absTop(myimgdiv);
 if(myobj == null){
 myobj = myimgdiv.outline;
 sizeto(myobj,0,0);
+myimgdiv.style.cursor='se-resize';
 return false;
 }else
 {return true;
@@ -1197,12 +1332,25 @@ return false;
 function skipme(evt){
 return false;
 }
-function plotaxislengthfn(myinfo){
+function classMatch (clists, clists2){
+var clist = clists.split(' ');
+var clist2 = clists2.split(' ');
+for ( var i = 0; i < clist.length; i++ ){
+    for (var j = 0 ; j < clist2.length; j++){
+	if(clist[i] == clist2[j]){
+	    return true;
+	}
+    }
+}
+return false;
+}
+function plotaxislengthfn(myinfo,imageclass){
 var plotaxislength;
 var Xaxislength = myinfo["iridl:Xaxislength"];
 var Yaxislength = myinfo["iridl:Yaxislength"];
 var pform=document.getElementById('pageform');
-if(pform && pform.elements['plotaxislength'] && pform.elements['plotaxislength'].value){
+
+if(pform && pform.elements['plotaxislength'] && classMatch(imageclass,pform.elements['plotaxislength'].className) && pform.elements['plotaxislength'].value){
 	plotaxislength = pform.elements['plotaxislength'].value;
 }
 else {
@@ -1216,27 +1364,37 @@ else {
 return(plotaxislength);
 }
 lonlatA=new Array();
-function lonlat(myinfo,imagewidth,left,top,width,height){
+function lonlat(myinfo,myclass,imagewidth,left,top,width,height){
 myA=lonlatA;
 var plotborderleft = myinfo["iridl:plotborderleft"];
 var plotbordertop = myinfo["iridl:plotbordertop"];
 var plotborderright = myinfo["iridl:plotborderright"];
 var plotborderbottom = myinfo["iridl:plotborderbottom"];
-var plotaxislength = plotaxislengthfn(myinfo);
+var plotaxislength = plotaxislengthfn(myinfo,myclass);
 var Xaxislength = myinfo["iridl:Xaxislength"];
 var Yaxislength = myinfo["iridl:Yaxislength"];
 myA = getbbox(myinfo);
-var X0,X1,Y0,Y1;
+var X0,X1,Y0,Y1,DX,DY;
 X0 = myA[0];
 Y0 = myA[1];
 X1 = myA[2];
 Y1 = myA[3];
-if(X1-X0 >= Y1-Y0) {
-Yaxislength = Math.round((plotaxislength * (Y1-Y0))/(X1-X0));
+if(X1>X0) {
+    DX = X1-X0;
+} else {
+    DX = X0 - X1;
+}
+if(Y1>Y0) {
+    DY = Y1-Y0;
+} else {
+    DY = Y0 - Y1;
+}
+if(DX >= DY) {
+Yaxislength = Math.round((plotaxislength * DY)/DX);
 Xaxislength = plotaxislength;
 }
 else {
-Xaxislength = Math.round((plotaxislength * (X1-X0))/(Y1-Y0));
+    Xaxislength = Math.round((plotaxislength * DX)/DY);
 Yaxislength = plotaxislength;
 }
 frac = imagewidth/(parseFloat(plotborderleft) + parseFloat(Xaxislength) + parseFloat(plotborderright));
@@ -1292,18 +1450,36 @@ var cont=mylist[0];
 var gb= document.createElement('a');
 gb.id='irilink';
 gb.href="http://iri.columbia.edu/";
+var hasSVG = document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Shape", "1.1");
+if(hasSVG){
 var ob= document.createElement('object');
 ob.data=scriptroot + "icons/iri.svg";
 ob.type="image/svg+xml";
 ob.className="iriicon";
-        if(document.width < 750){
-ob.innerHTML='<img class="iriicon" src="'+ scriptroot + 'icons/iri32.png" />';
+gb.appendChild(ob);
 }
 else {
-ob.innerHTML='<img class="iriicon" src="' + scriptroot + 'icons/iri.png" />';
+var obim = document.createElement('img');
+obim.className="iriicon";
+        if(document.width < 750){
+	    obim.src = scriptroot + 'icons/iri32.png';
 }
-gb.appendChild(ob);
+else {
+	    obim.src = scriptroot + 'icons/iri.png';
+}
+gb.appendChild(obim);
+}
 cont.insertBefore(gb,cont.firstChild);
+var slist = cont.getElementsByTagName('select');
+for (var i=0; i<slist.length ; i++){
+    var mysel = slist[i];
+    if(mysel.previousSibling.className != "selectvalue"){
+	var sv = document.createElement('span');
+	sv.className='selectvalue';
+	sv.innerHTML=mysel.options[mysel.selectedIndex].innerHTML;
+	mysel.parentNode.insertBefore(sv,mysel);
+    }
+}
 }
 }
 insertlang();
@@ -1335,8 +1511,10 @@ var sel=document.createElement('select');
 sel.name="Set-Language";
 sel.onchange=languageChange;
 var opt=document.createElement('option');
+if(document.getElementsByTagName('html')[0].hasAttribute("xml:lang")){
 opt.value=document.getElementsByTagName('html')[0].getAttribute("xml:lang");
-if(!opt.value){
+}
+else {
 opt.value=document.getElementsByTagName('body')[0].getAttribute("xml:lang");
 }
 opt.innerHTML=Languages[opt.value];
@@ -1397,6 +1575,7 @@ var inputs=myform.elements;
 		inputs[pair[0]].value=decodeURIComponent(hold);
             }
         }
+	updatePageFormCopies(document);
 }
 }
 function disableNullInputs(){
@@ -1415,7 +1594,11 @@ var myform=document.getElementById('pageform');
 if(myform){
 var lang=myform.elements['Set-Language'];
 if(lang && lang.value){
-var newurl= url + "?Set-Language=" + lang.value;
+    var newurl = url;
+if(newurl.charAt(newurl.length-1) == '/'){
+   newurl=newurl+'index.html';
+}
+newurl= newurl + "?Set-Language=" + lang.value;
 return newurl;
 }
 }
@@ -1522,7 +1705,19 @@ if(newsrc != cmem.src){
 }
 changedInput.value=newvalue;
 }
-var stag = document.getElementsByClassName('pageformcopy');
+updatePageFormCopies(document);
+}
+}
+/* updates class pageformcopy selects to match pageform
+ */
+function updatePageFormCopies(context){
+    var mycontext=context;
+    if(!mycontext || !mycontext.getElementsByClassName){
+	mycontext=document;
+    }
+var myform=document.getElementById('pageform');
+if(myform){
+var stag = mycontext.getElementsByClassName('pageformcopy');
 for (var i=0; i< stag.length ; i++){
 var sel=stag[i];
 var cval = myform.elements[sel.name].value;
@@ -1553,11 +1748,17 @@ changeClass(it,'invalid-zooming','valid');
 if(it.className.indexOf('dlimg') >=0){
 if(it.mylink){
 var mynode = it.mylink.parentNode;
-if(it.height>it.width && mynode.className.indexOf('tall')<0){
+if(it.height>1.5*it.width && mynode.className.indexOf('tall')<0){
 mynode.className = mynode.className + ' tall';
 }
-if(it.height<it.width && mynode.className.indexOf('tall')>0){
+if(it.height<1.5*it.width && mynode.className.indexOf('tall')>0){
 mynode.className = mynode.className.replace(' tall','');
+}
+if(it.height*2<it.width && mynode.className.indexOf('wide')<0){
+mynode.className = mynode.className + ' wide';
+}
+if(it.height*2>it.width && mynode.className.indexOf('wide')>0){
+mynode.className = mynode.className.replace(' wide','');
 }
 }
 hideImageOverlay(it);
@@ -1659,6 +1860,11 @@ if(alldisabled){
 document.location.href=localhref;
 }
 else {
+/* our rewrite rules do not handle Set-Language for a directory, so we avoid doing it
+ */
+if(href.charAt(href.length-1) == '/'){
+    localhref=localhref+'index.html';
+}
 myform.action=localhref;
 myform.submit();
 }
@@ -1722,8 +1928,8 @@ initializeDLimage();
 insertchooseSection();
 insertRegion();
 insertshare();
-setupPageFormLinks();
 loadHasJSON();
+setupPageFormLinks();
 }
 }
 );

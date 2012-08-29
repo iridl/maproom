@@ -6,11 +6,11 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="es"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta property="maproom:Entry_Id" content="IFRC_FIC_pic3mo_same" />
 <title>IFRC PIC: &#191;Es probable que las condiciones inusuales h&#250;medas o secas contin&#250;en?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
@@ -23,7 +23,7 @@
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+//F/622.5/plotvalue/Y/-66.25/76.25/plotrange+//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime/L/first/VALUE%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
 <script type="text/javascript" src="../../maproom.js"></script>
 </head>
-<body>
+<body  xml:lang="es">
 <form name="pageform" id="pageform" class="carryup carrydlimg dlauximg share">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg share" name="bbox" type="hidden" />

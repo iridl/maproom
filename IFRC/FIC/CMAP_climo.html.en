@@ -6,11 +6,11 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="en"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta property="maproom:Entry_Id" content="IFRC_FIC_CMAP_climo" />
 <title>IFRC PIC: How much rain normally falls at this time of year?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
@@ -23,7 +23,7 @@
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
 <script type="text/javascript" src="../../maproom.js"></script>
 </head>
-<body>
+<body  xml:lang="en">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
 <input class="carryup carry " name="Set-Language" type="hidden" />
 <input class="carry dlimg share" name="bbox" type="hidden" />

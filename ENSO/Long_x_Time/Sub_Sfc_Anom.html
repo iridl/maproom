@@ -1,51 +1,106 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-   <meta name="GENERATOR" content="Mozilla/4.75 [en] (X11; U; Linux 2.2.16-3 i686) [Netscape]">
-   <title>Hovmoller Subsurface Temperature Anomaly Eq Pacific</title>
-<link REL=stylesheet TYPE="text/css" HREF="/site.html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Monthly Sub-Surface Temperature Anomaly</title>
+<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<!--
+<link rel="stylesheet" type="text/css" href="../ifrc.css" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="Sub_Sfc_Anom.html?Set-Language=fr" />
+-->
+<link class="share" rel="canonical" href="Sub_Sfc_Anom.html" />
+<meta xml:lang="" property="maproom:Entry_Id" content="ENSO_Long_x_Time_Sub_Sfc_Anom" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#spatial_average_resolution"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Pacific_Ocean_3176947_1"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Global_Seas_370_0"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#enso"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Long_x_Time_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#temperature"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#spatial_average"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#monthly"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomaly"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Pacific"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Ocean"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GODAS/.monthly/.BelowSeaLevel/.POT/X/120/279/RANGEEDGES/Y/%28-5%29%285%29RANGE/Z/55/155/VALUES/nchunk/BufferOrder/a:/:a:/T/%28Jan%201981%29/%28Dec%202010%29/RANGE/yearly-climatology/sub/:a%5BY%5Daverage/DATA/0.5/STEP/startcolormap/DATA/-9.5/9.5/RANGE/white/navy/purple/-9.5/VALUE/cyan/-0.5/VALUE/LightSeaGreen/LightSeaGreen/0.5/bandmax/yellow/0.5/VALUE/red/9.5/VALUE/firebrick/endcolormap/X/T/fig-/colors/|/unlabelledcontours/-fig/T/last/12/sub/last/plotrange//antialias/true/psdef//color_smoothing/null/psdef/++//XOVY+0.625+psdef//Z/55/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
+<script type="text/javascript" src="../../maproom.js"></script>
 </head>
-<body bgcolor="#FFFFFF" link="#CC3320" vlink="#993333" alink="#FF0000">
-<INGRID>leftmenu</INGRID>
-<blockquote>
-<blockquote>
-<center><font size=+2>Monthly Sub-Surface Temperature Anomaly</font></center>
-</blockquote>
-
-<center><table>
-<tr>
-<td ALIGN=CENTER><b>55 m DEPTH (5N-5S)</b></td>
-
-<td ALIGN=CENTER><b>155 m DEPTH (5N-5S)</b></td>
-</tr>
-
-<tr>
-<td ALIGN=CENTER><a href="http://ingrid.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.Pacific/.monthly/.temp/Y/%28-5%29%285%29RANGE/Z/55/VALUE/nchunk/BufferOrder/a:/:a:/yearly-climatology/sub/:a%5BY%5Daverage/DATA/0.5/STEP/startcolormap/DATA/-9.5/9.5/RANGE/white/navy/purple/-9.5/VALUE/cyan/-0.5/VALUE/LightSeaGreen/LightSeaGreen/0.5/bandmax/yellow/0.5/VALUE/red/9.5/VALUE/firebrick/endcolormap/figviewer.html?my.help=more+options&map.T.units=months+since+1960-01-01&map.T.plotlast=last&map.url=X+T+fig-+colors+|+contours+-fig&map.domain=+%7B+T+480.5+491.5+plotrange+%7D&map.domainparam=+/plotaxislength+500+psdef+/plotborder+72+psdef+/XOVY+0.625+psdef&map.zoom=Zoom&map.T.plotfirst=last+11+sub&map.X.plotfirst=121.5E&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=70.5W&map.temp.plotfirst=-9.5&map.temp.units=degree_Celsius&map.temp.plotlast=9.5&map.newurl.grid0=X&map.newurl.grid1=T&map.newurl.plot=colors+|+contours&map.plotaxislength=500&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=0.625&map.color_smoothing=auto" OnMouseOver="self.status='Click here to explore the data';return true"><img SRC="http://ingrid.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.Pacific/.monthly/.temp/Y/%28-5%29%285%29RANGE/Z/55/VALUE/nchunk/BufferOrder/a:/:a:/yearly-climatology/sub/:a%5BY%5Daverage/DATA/0.5/STEP/startcolormap/DATA/-9.5/9.5/RANGE/white/navy/purple/-9.5/VALUE/cyan/-0.5/VALUE/LightSeaGreen/LightSeaGreen/0.5/bandmax/yellow/0.5/VALUE/red/9.5/VALUE/firebrick/endcolormap/X+T+fig-+colors+|+contours+-fig+T/last/11/sub/last/plotrange+//plotaxislength+500+psdef//color_smoothing+null+psdef//XOVY+0.625+psdef+.gif" ALT="Click for options and more information" NOSAVE BORDER=0 height=572 width=385></a>
-<br>&nbsp;</td>
-
-<td ALIGN=CENTER><a href="http://ingrid.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.Pacific/.monthly/.temp/Y/%28-5%29%285%29RANGE/Z/155/VALUE/nchunk/BufferOrder/a:/:a:/yearly-climatology/sub/:a%5BY%5Daverage/DATA/0.5/STEP/startcolormap/DATA/-9.5/9.5/RANGE/white/navy/purple/-9.5/VALUE/cyan/-0.5/VALUE/LightSeaGreen/LightSeaGreen/0.5/bandmax/yellow/0.5/VALUE/red/9.5/VALUE/firebrick/endcolormap/figviewer.html?my.help=more+options&map.T.units=months+since+1960-01-01&map.T.plotlast=last&map.url=X+T+fig-+colors+|+contours+-fig&map.domain=+%7B+T+last+11+sub+last+plotrange+%7D&map.domainparam=+/plotaxislength+500+psdef+/plotborder+72+psdef+/XOVY+0.625+psdef&map.zoom=Zoom&map.T.plotfirst=last+11+sub&map.X.plotfirst=121.5E&map.X.units=degree_east&map.X.modulus=360&map.X.plotlast=70.5W&map.temp.plotfirst=-9.5&map.temp.units=degree_Celsius&map.temp.plotlast=9.5&map.newurl.grid0=X&map.newurl.grid1=T&map.newurl.plot=colors+|+contours&map.plotaxislength=500&map.plotborder=72&map.fnt=Helvetica&map.fntsze=12&map.XOVY=0.625&map.color_smoothing=auto" OnMouseOver="self.status='Click here to explore the data';return true"><img SRC="http://ingrid.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.Pacific/.monthly/.temp/Y/%28-5%29%285%29RANGE/Z/155/VALUE/nchunk/BufferOrder/a:/:a:/yearly-climatology/sub/:a%5BY%5Daverage/DATA/0.5/STEP/startcolormap/DATA/-9.5/9.5/RANGE/white/navy/purple/-9.5/VALUE/cyan/-0.5/VALUE/LightSeaGreen/LightSeaGreen/0.5/bandmax/yellow/0.5/VALUE/red/9.5/VALUE/firebrick/endcolormap/X+T+fig-+colors+|+contours+-fig+T/last/11/sub/last/plotrange+//plotaxislength+500+psdef//color_smoothing+null+psdef//XOVY+0.625+psdef+.gif" ALT="Click for options and more information" NOSAVE BORDER=0 height=572 width=385></a>
-<br>&nbsp;</td>
-</tr>
-</table></center>
-
-<center><table BORDER WIDTH="75%" >
-<tr>
-<td><font size=-1><b>Data</b>:&nbsp; Monthly ocean temperature on a 1.0
-x 1.5 deg. lat/lon grid with vertical gridpoints at 5, 15, 25, 35, 45,
-55, 65, 75, 85, 95, 105, 120. 135, 155, 175, 205, 240, 285, 340 and 430
-m.&nbsp; (Jan 1980-present)&nbsp;</font>
-<br><font size=-1><b>Base Period:</b> 1981-present&nbsp;</font>
-<br><font size=-1><b>Data Source</b>:&nbsp; NCEP, Environmental Monitoring
-Center, Climate Modeling Branch&nbsp;</font><font size=-1></font>
-<p><font size=-1><b>Description:</b>&nbsp;&nbsp; Longitude-depth plot of
-ocean temperature anomaly along the equatorial Pacific. Contours drawn
-at 0.5 deg. C intervals with shading starting at +/- 0.5 deg. C. Thick
-black line is the climatological position of the 0 deg. C anomaly.&nbsp;&nbsp;
-NCEP is an acronym for the US National Centers for Environmental Prediction.</font></td>
-</tr>
-</table></center>
-</blockquote>
-
-</body>
-</html>
+<body xml:lang="en">
+<form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
+<input class="carryup carry " name="Set-Language" type="hidden" />
+<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="dlimg share" name="T" type="hidden" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Maproom</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/ENSO/">ENSO Monitoring</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Long_x_Time_term"><span property="term:label">Longitude x Time</span></legend>
+            </fieldset>
+            <fieldset class="navitem"> 
+                <legend>Depth</legend> 
+                <select class="pageformcopy" name="Z">
+                <option value="55">55 m</option>
+                <option value="155">155 m</option>
+                </select>
+            </fieldset> 
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GODAS/.monthly/.BelowSeaLevel/.POT/X/120/279/RANGEEDGES/Y/%28-5%29%285%29RANGE/Z/55/155/VALUES/nchunk/BufferOrder/a:/:a:/T/%28Jan%201981%29/%28Dec%202010%29/RANGE/yearly-climatology/sub/:a%5BY%5Daverage/DATA/0.5/STEP/startcolormap/DATA/-9.5/9.5/RANGE/white/navy/purple/-9.5/VALUE/cyan/-0.5/VALUE/LightSeaGreen/LightSeaGreen/0.5/bandmax/yellow/0.5/VALUE/red/9.5/VALUE/firebrick/endcolormap/">Dataset</a></li>
+      <li><a href="#tabs-3" >Contact Us</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GODAS/.monthly/.BelowSeaLevel/.POT/X/120/279/RANGEEDGES/Y/%28-5%29%285%29RANGE/Z/55/155/VALUES/nchunk/BufferOrder/a:/:a:/T/%28Jan%201981%29/%28Dec%202010%29/RANGE/yearly-climatology/sub/:a%5BY%5Daverage/DATA/0.5/STEP/startcolormap/DATA/-9.5/9.5/RANGE/white/navy/purple/-9.5/VALUE/cyan/-0.5/VALUE/LightSeaGreen/LightSeaGreen/0.5/bandmax/yellow/0.5/VALUE/red/9.5/VALUE/firebrick/endcolormap/X/T/fig-/colors/|/contours/-fig/T/last/12/sub/last/plotrange//antialias/true/psdef//color_smoothing/null/psdef/++//XOVY+0.625+psdef//Z/55/plotvalue//plotaxislength+500+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GODAS/.monthly/.BelowSeaLevel/.POT/X/120/279/RANGEEDGES/Y/%28-5%29%285%29RANGE/Z/55/155/VALUES/nchunk/BufferOrder/a:/:a:/T/%28Jan%201981%29/%28Dec%202010%29/RANGE/yearly-climatology/sub/:a%5BY%5Daverage/DATA/0.5/STEP/startcolormap/DATA/-9.5/9.5/RANGE/white/navy/purple/-9.5/VALUE/cyan/-0.5/VALUE/LightSeaGreen/LightSeaGreen/0.5/bandmax/yellow/0.5/VALUE/red/9.5/VALUE/firebrick/endcolormap/X/T/fig-/colors/|/contours/-fig/T/last/12/sub/last/plotrange//antialias/true/psdef//color_smoothing/null/psdef/++//XOVY+0.625+psdef//Z/55/plotvalue//plotaxislength+500+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef+.gif" border="0" alt="image" />
+  <br />
+ <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GODAS/.monthly/.BelowSeaLevel/.POT/X/120/279/RANGEEDGES/Y/%28-5%29%285%29RANGE/Z/55/155/VALUES/nchunk/BufferOrder/a:/:a:/T/%28Jan%201981%29/%28Dec%202010%29/RANGE/yearly-climatology/sub/:a%5BY%5Daverage/DATA/0.5/STEP/startcolormap/DATA/-9.5/9.5/RANGE/white/navy/purple/-9.5/VALUE/cyan/-0.5/VALUE/LightSeaGreen/LightSeaGreen/0.5/bandmax/yellow/0.5/VALUE/red/9.5/VALUE/firebrick/endcolormap/X/T/fig-/colors/|/contours/-fig/T/last/12/sub/last/plotrange//antialias/true/psdef//color_smoothing/null/psdef/.auxfig+//XOVY+0.625+psdef//Z/55/plotvalue//plotaxislength+500+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef+.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >Monthly Sub-Surface Temperature Anomaly</h2>
+<p align="left" property="term:description"> This is a Hovmoller diagram (Longitude x Time) showing monthly potential temperature anomalies at depths of 55 and 155 meters, averaged over 5°S to 5°N, for the past year across the equatorial Pacific Ocean.</p>
+<p align="left">Contours are drawn at intervals of 0.5°C; negative values (in shades of blue) indicate below-normal potential temperatures with respect to the 1981-2010 mean, and positive values (in shades of yellow and red) represent above-normal potential temperatures with respect to the 1981-2010 mean.  The longitude domain extends from 120°E to 81°W, and data from the last year are shown, with time increasing vertically.</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<h4><a class="carry">Monthly Sub-Surface Temperature Anomaly</a></h4>
+<dl class="datasetdocumentation">
+<dt>Data</dt><dd>NOAA NCEP Global Ocean Data Assimilation System (GODAS) monthly data on a 1.0° lat/lon grid</dd> 
+<dt>Data Source</dt><dd>NOAA National Centers for Environmental Prediction (NCEP) (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GODAS/.monthly/.dataset_documentation.html">GODAS</a>)</dd> 
+<dt>Analysis</dt><dd>Equatorial average of monthly potential temperature anomalies, displayed as a longitude x time Hovmoller diagram</dd>
+</dl>
+</div>
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GODAS/.monthly/.BelowSeaLevel/.POT/X/120/279/RANGEEDGES/Y/%28-5%29%285%29RANGE/Z/55/155/VALUES/nchunk/BufferOrder/a:/:a:/T/%28Jan%201981%29/%28Dec%202010%29/RANGE/yearly-climatology/sub/:a%5BY%5Daverage/DATA/0.5/STEP/startcolormap/DATA/-9.5/9.5/RANGE/white/navy/purple/-9.5/VALUE/cyan/-0.5/VALUE/LightSeaGreen/LightSeaGreen/0.5/bandmax/yellow/0.5/VALUE/red/9.5/VALUE/firebrick/endcolormap/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-3"  class="ui-tabs-panel">
+<h2  align="center">Helpdesk</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Monthly Sub-Surface Temperature Anomaly">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>

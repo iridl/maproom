@@ -6,11 +6,11 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="es"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta property="maproom:Entry_Id" content="IFRC_FIC_prcp_fcst" />
 <title>IFRC PIC: &#191;Es probable que los pr&#243;ximos 3 meses sean inusualmente h&#250;medos o secos?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
@@ -23,7 +23,7 @@
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1./plotvalue/F/last/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
 <script type="text/javascript" src="../../maproom.js"></script>
 </head>
-<body>
+<body xml:lang="es">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg share" name="bbox" type="hidden" />

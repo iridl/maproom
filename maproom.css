@@ -31,6 +31,7 @@ opacity: 0.3;
  transition: opacity 1s linear 1s;
  -webkit-transition: opacity 1s linear 1s;
  -moz-transition: opacity 1s linear 1s;
+background: url('icons/wait30.gif') center no-repeat transparent;
 }
 .lowerLimit, .lowerLimit-disabled {
 display: inline-block;
@@ -82,6 +83,10 @@ border-bottom-left-radius: 10pt;
 .oneStep + .upperLimit {
 margin-left: 5pt;
 }
+.multiValue .oneStep { 
+visibility: hidden;
+                       }
+
 .controlLabel {
 display: inline-block;
 margin-right: 14pt;
@@ -228,18 +233,22 @@ border-radius: 10px;
        min-height: 36px;
 }
 .selectvalue {
-background-color: WhiteSmoke;
 padding: 0px;
 padding-left: 2px;
 padding-right: 2px;
 margin: 0px;
 -moz-border-radius: 4px;
 border-radius: 4px;
-line-height: 1.5;
 display: inline;
+font-size: 120%;
+}
+.navitem + .navitem + .navitem .selectvalue {
+font-size: 12pt;
 }
 .selectvalue::after, .selectvalue:after {
-padding-left: 6px;
+background-color: #EDEDED;
+padding-left: 3px;
+margin-left: 3px;
 padding-right: 3px;
 font-size: 50%;
 vertical-align: middle;
@@ -322,8 +331,12 @@ border-color: #AAAAAA;
        -moz-border-radius: 10px;
        border-radius: 10px;
        border-width: 3px;
-	width: 50%;
+	width: 40%;
 }
+.dlimage wide {
+width: 50%;
+}
+
 .dlimage:hover {
 border-color: black;
 border-style: outset; 
@@ -395,11 +408,13 @@ margin-top: 5px;
 }
 .dlimage > legend > .dlimageswitch {
 display: inline;
+padding: 2px;
+-moz-border-radius: 7px; border-radius: 7px;
 margin: 2px;
-	width: 13pt;
-	height: 13pt;
-        margin-left: 2px;
-        margin-right: 2px;
+	width: 12pt;
+	height: 12pt;
+        background-color: WhiteSmoke;
+	opacity: 0.6;
 }
 
 .dlimage:hover > legend > .dlimageswitch {
@@ -427,14 +442,20 @@ background-color: LightGrey;
 }
 
 @media only all and (max-width: 750px) {
-.dlimage {
+.dlimage, .dlimage.wide, .dlimage.tall {
 	width: 95%;
+}
+.navitem {
+font-size: 10pt;
+}
+.navitem > legend {
+       font-size: 8pt;
 }
 .navitem + .navitem > legend {
        font-size: 8pt;
 }
-.navitem > legend {
-       font-size: 8pt;
+.navitem + .navitem + .navitem > legend {
+       font-size: 7pt;
 }
 .lang > legend {
        font-size: 8pt;
@@ -479,7 +500,6 @@ margin: 0px;
          font-weight: bold;
          }
 .navitem {
-        line-height: .9;
 	min-height: 10px;
 }
 .navitem + .navitem {
@@ -499,9 +519,15 @@ font-size: 8pt;
 font-size: 8pt;
 display: none;
 }
+.navitem {
+font-size: 10pt;
+}
 .selectvalue {
-font-size: 8pt;
+font-size: 100%;
 display: inline;
+}
+.navitem + .navitem + .navitem .selectvalue {
+font-size: 8pt;
 }
 .selectvalue + select {
 display: none;
@@ -565,10 +591,11 @@ display: none;
 .controlBar:active .navmore {
 	display: none;
 }
+
 .controlBar:active .navitem select {
 display: inline;
 }
-.controlBar:active.navitem .selectvalue {
+.controlBar:active .navitem .selectvalue {
 display: none;
 }
 .controlBar:active .lang select {
@@ -581,6 +608,9 @@ display: inline;
 display: inline;
 }
 .navitem + .navitem > legend {
+       font-size: 7pt;
+}
+.navitem + .navitem + .navitem > legend {
        font-size: 6pt;
 }
 .navitem > legend {
@@ -600,7 +630,7 @@ display: inline;
 }
 }
 
-img.dlimg, img.dlauximg {
+img.dlimg, img.dlauximg, img.dlimgts {
          width: 100%;
 }
 .ui-widget {
@@ -636,6 +666,8 @@ margin-bottom: 0px;
 }
 .selectvalue {
 display: inline;
+}
+.navitem + .navitem + .navitem .selectvalue {
 font-size: 6pt;
 }
 
@@ -645,14 +677,17 @@ font-size: 6pt;
 .navitem + .navitem > legend {
        font-size: 3pt;
 }
+.navitem + .navitem + .navitem > legend {
+       font-size: 3pt;
+}
 .lang > legend {
        font-size: 3pt;
 }
 .navitem{
-       font-size: 3pt;
+       font-size: 10pt;
 }
 .navitem + .navitem{
-       font-size: 3pt;
+       font-size: 10pt;
 }
 .lang {
        font-size: 3pt;
@@ -704,6 +739,9 @@ display: inline;
 /* ipad is 1024 -- this 1024 and above */
 @media only all and (min-width: 1024px) {
 .dlimage {
+	width: 45%;
+}
+.dlimage.wide {
 	width: 65%;
 }
 .selectvalue {
@@ -716,7 +754,7 @@ display: inline;
 }
 @media only all and (min-width: 800px) and (orientation: landscape){
 .dlimage.tall {
-	width: 40%;
+	width: 30%;
 }
 }
 .ui-widget-header .ui-state-default {
@@ -870,22 +908,17 @@ visibility: hidden;
 .ui-tabs-nav {
 display: block;
 }
-.ui-tabs-nav li{
-        background: white;
-        padding-bottom: 4px;
-        padding-top: 2pt;
-        padding-left: 2pt;
-        padding-right: 2pt;
-        font-size: 7pt;
-	margin-left: 2px;
-	margin-right: 2px;
-}
+.ui-tabs-nav .ui-state-active a:visited,
+.ui-tabs-nav .ui-state-active a:link
+{color: #2E6E9E; }
+
 .ui-tabs-nav .ui-state-default{
         position:relative;
         left: 0px;
         top: 0px;
 }
 .ui-tabs-nav .ui-state-active{
+        background: #ECECEC;
 	border: 2px;
         border-style: outset;
         margin-left: 1px;
@@ -898,9 +931,30 @@ display: block;
         left: 3px;
         top: 3px;
 }
+.ui-tabs-nav li{
+        padding-bottom: 4px;
+        padding-top: 2pt;
+        padding-left: 2pt;
+        padding-right: 2pt;
+        font-size: 7pt;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
 .ui-tabs .ui-tabs-panel-hidden { 
         display: block;
                                  }
+}
+@media only all and (max-width: 479px) {
+.ui-tabs-nav li{
+        padding-bottom: 4px;
+        padding-top: 2pt;
+        padding-left: 2pt;
+        padding-right: 2pt;
+        font-size: 5pt;
+	margin-left: 2px;
+	margin-right: 2px;
+}
 }
 @media print {
 .ui-tabs .ui-tabs-panel-hidden {display: block;}
@@ -993,7 +1047,9 @@ border-radius: 7px;
 margin-bottom: 2pt;
 }
 .itemFooter {clear: both; }
-.itemIcon{ float:right; background-color: WhiteSmoke; font-size: 12pt; color: #000080; display:table-cell; display: inline-block; text-align: center; padding-right: 5px; padding-top: 2px; border-left-width: 1px;}
+.itemIcon{ float:right; background-color: WhiteSmoke; font-size: 12pt; color: #000080; display:table-cell; display: inline-block; text-align: center; padding-right: 5px; padding-top: 2px; border-left-width: 1px; max-width: 60%;}
+.itemImage { max-width: 100%;
+}
 .itemDescription { font-size: 12pt; color: #000000; display: inline; vertical-align: top; max-width: 320px; min-width: 100px; padding-top: 0px; padding-bottom: 0px; line-height: 1.3;}
 .searchDescription { max-width: 450px; min-width: 100px; display: inline-block; margin-right: 2px}
 .a_column{font-size: 10pt; margin: 0px 0px 5px 0px; padding-left: 5px; padding-right: 5px; width: 137px; float: left; background-color: inherit}
@@ -1019,7 +1075,7 @@ border-radius: 7px;
     height: 20px;
     display: inline-block;
     padding: 2px 5px 2px 15px;
-    background: url('http://a4.twimg.com/images/favicon.ico') center no-repeat;
+    background: url('icons/tweet.png') center no-repeat;
     border: 1px solid #ccc;
 text-indent:-9999px; overflow:hidden; 
   }
@@ -1083,3 +1139,7 @@ border-radius: 7px;
 opacity: 1.0;
 background-color: white;
 }
+.datasetdocumentation dd {margin: 0;}
+.datasetdocumentation dt {float: left; clear: left; font-weight: bold; padding-right: .8em;}
+.datasetdocumentation dt::after {content: ":"}
+
