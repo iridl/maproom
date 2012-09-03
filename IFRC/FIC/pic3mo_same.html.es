@@ -47,9 +47,9 @@
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
       <li><a href="#tabs-1" >Descripci&#243;n</a></li>
-      <li><a href="#tabs-2" >Dataset de Documentaci&#243;n</a></li>
+      <li><a href="#tabs-2" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-3" >Dataset de Documentaci&#243;n</a></li>
       <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>
-      <li><a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/instructions.es.html">Instrucciones</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//plotbordertop/60/psdef//plotborderbottom/40/psdef/" />
@@ -64,7 +64,49 @@
 <p align="left"><i>Este pron&#243;stico solo muestra la probabilidad de que la lluvia (o nieve) acumulada en 3 meses sea inusualmente alta o baja, y no indica posibilidades de eventos individuales de lluvias abundantes.  Los pron&#243;sticos se aplican solamente a &#225;reas grandes, y no deberia ser usado para predecir condiciones locales, o como un pron&#243;stico de inundaciones.</i> 
 </p>
 </div>
-<div id="tabs-2" class="ui-tabs-panel">
+<div id="tabs-2"  class="ui-tabs-panel">
+<h2  align="center">C&#243;mo usar este mapa interactivo</h2>
+<p><i>Cambiar a otro mapa:</i>
+Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
+<p><i>Ampl&#237;e hasta una regi&#243;n:</i><br />
+M&#233;todo 1: Seleccione una regi&#243;n de la lista:
+<ol>
+<li>Seleccione el men&uacute; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
+<li>Haga clic en la regi&#243;n de inter&#233;s y el mapa se actualizar&#225; autom&#225;ticamente.</li>
+</ol>
+</p>
+<p>M&#233;todo 2: Hacer clic y arrastrar</p>
+<ol>
+<li>Haga clic en el bot&#243;n izquierdo del rat&#243;n en la esquina superior izquierda de la regi&#243;n que quiere ampliar.</li>
+<li>Mientras mantiene presionado el bot&#243;n, arrastre el rat&#243;n a la esquina inferior derecha de la regi&#243;n que quiere ampliar.</li>
+<li>Suelte el bot&#243;n izquierdo del rat&#243;n. El mapa se re-dibujar&#225; autom&#225;ticamente.</li>
+</ol>
+<p><i>Aleje el mapa global:</i></p>
+<ol>
+<li>Mueva su rat&#243;n sobre el mapa hasta que vea que aparecen tres iconos en la esquina superior izquierda.</li>
+<li>Haga clic en el icono de la lupa.</li>
+<li>El mapa se re-dibujar&#225; autom&#225;ticamente. Note que el mapa no puede mostrar &#225;reas fuera de las latitudes mostradas inicialmente en la interfaz (es decir 66.25°S - 76.25°N).</li>
+</ol>
+<p><i>Cambie la fecha del pron&#243;stico: </i>
+Los pron&#243;sticos se rotulan por el d&#237;a en que se publicaron. Puede encontrar este r&#243;tulo moviendo su rat&#243;n sobre el mapa hasta que en la parte superior aparezca un recuadro de texto que contiene datos.
+<ol>
+<li>Para moverse hacia adelante o atr&#225;s un d&#237;a, haga clic sobre los botones correspondientes a la izquierda o a la derecha del recuadro de texto y el mapa se actualizar&#225; autom&#225;ticamente.</li>
+<li>Para cambiar manualmente la fecha de publicaci&#243;n del pron&#243;stico, introduzca su fecha de inter&#233;s en el recuadro de texto. &#233;ste debe tener el siguiente formato: “Jan 2008”. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
+<li>Para crear una animaci&#243;n de estos mapas a lo largo de una serie de fechas, introduzca el rango de fechas en el recuadro de texto. &#233;ste debe tener el siguiente formato: “fecha de inicio” seguida de “al” seguida de “fecha de finalizaci&#243;n”. Por ejemplo “Jan 2008 al Dec 2008”.</li>
+</ol>
+</p>
+<p><i>Cambiar la fecha inicial del pron&#243;stico:</i>
+Cada mes se publica un pron&#243;stico estacional para los siguientes tres meses; por ejemplo, en enero se publica un pron&#243;stico para febrero-abril (el rango por omisi&#243;n) que tiene un “tiempo de inicio” de un mes. Un pron&#243;stico publicado en enero para marzo-mayo tiene un tiempo de inicio de dos meses, y abril-junio tiene un tiempo de inicio de tres meses, porque abril es tres meses despu&#233;s que enero.
+<ol>
+<li>Para cambiar el tiempo de inicio, mueva su rat&#243;n sobre el mapa hasta que aparezca un recuadro de texto que contiene datos.</li>
+<li>Para moverse hacia adelante o atr&#225;s un mes de tiempo de inicio, haga clic sobre los botones correspondientes a la izquierda o a la derecha del recuadro de texto y el mapa se actualizar&#225; autom&#225;ticamente.</li>
+<li>Para cambiar manualmente el tiempo de inicio, introduzca un n&uacute;mero del 1 al 4 en el recuadro de texto. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
+</ol>
+</p>
+</div>
+<div id="tabs-3" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
 <p><b><a class="carry" href="instructions.html.es#pic3mo_same">IRI Predicciones en Contexto (PiC)</a></b><br /> 
 <b>Datos</b>  Datos de Pron&#243;stico:  Datos de pron&#243;stico del tercil dominante para la precipitaci&#243;n estacional de los pr&#243;ximos 3 meses obtenido del pron&#243;stico del IRI Net Assessment, publicado todos los meses en resoluci&#243;n 2.5&#176; lat/lon; Observaciones:  CAMS-OPI precipitaci&#243;n observada mensualmente en grillas de resoluci&#243;n 2.5&#176; lat/lon

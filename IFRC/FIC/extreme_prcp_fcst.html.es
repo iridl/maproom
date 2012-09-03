@@ -47,9 +47,10 @@
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
       <li><a href="#tabs-1" >Descripci&#243;n</a></li>
-      <li><a href="#tabs-2" >Dataset de Documentaci&#243;n</a></li>
-      <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>
-      <li><a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/instructions.es.html">Instrucciones</a></li>
+      <li><a href="#tabs-2" >M&#225;s Informaci&#243;n</a></li>
+      <li><a href="#tabs-3" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-4" >Dataset de Documentaci&#243;n</a></li>
+      <li><a href="#tabs-5" >Cont&#225;ctenos</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1/plotvalue/F/last/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
@@ -58,20 +59,74 @@
   <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCfcstextremecolorscale_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >&#191;Es probable que los pr&#243;ximos 3 meses sean excepcionalmente h&#250;medos o secos?</h2>
-<p align="left" property="term:description"> El mapa muestra d&#243;nde y cu&#225;n probable es que los pr&#243;ximos tres meses sean extremadamente h&#250;medos o secos.  Extremo se refiere a los valores que estan entre los 15% mas altos y mas bajos en los registros historicos. </p>
+<h2 align="center"  property="term:title" >&#191;Es probable que los pr&#243;ximos 3 meses sean excepcionalmente h&uacute;medos o secos? </h2>
+<p align="left" property="term:description">Este mapa muestra d&#243;nde es probable que sea extremadamente h&uacute;medo o seco en los pr&#243;ximos tres meses. Extremadamente se refiere al 15% menor o mayor que el r&#233;cord hist&#243;rico.</p>
+<p><b>&#191;Y ahora qu&#233; hago?</b></p>
+<p>Si ve un color azul sobre su regi&#243;n, las respuestas posibles incluyen:
+<ul>
+<li>Comun&#237;quese con su departamento meteorol&#243;gico local o regional y observe sus pron&#243;sticos para los siguientes tres meses.</li>
+<li>Considere qui&#233;n puede resultar m&#225;s afectado por el pron&#243;stico de lluvias, abundantes o escasas.</li>
+<li>Revise sus planes de contingencia y actual&#237;celos seg&uacute;n sea necesario.</li>
+</ul>
+</p>
+<p>Consulte la secci&#243;n “M&#225;s informaci&#243;n” para ver los detalles.</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2 align="center">Explicaci&#243;n</h2>
 <p align="left"> Las &#225;reas azules muestran &#225;reas en donde hay una probabilidad mayor de que existan condiciones extremadamente h&#250;medas durante los pr&#243;ximos tres meses.  El azul m&#225;s oscuro indica probabilidades m&#225;s altas de condiciones extremadamente h&#250;medas.  Las &#225;reas naranjas y marrones muestran &#225;reas donde hay una probabilidad m&#225;s grande de que existan condiciones extremadamente secas durante los pr&#243;ximos tres meses.  El marr&#243;n m&#225;s oscuro indica probabilidades m&#225;s altas de condiciones extremadamente secas.</p>
 <p align="left"><i>Este pron&#243;stico solo muestra la probabilidad de que la lluvia (o nieve) acumulada en 3 meses sea inusualmente alta o baja, y no indica posibilidades de eventos individuales de lluvias abundantes.  Los pron&#243;sticos se aplican solamente a &#225;reas grandes, y no deberia ser usado para predecir condiciones locales, o como un pron&#243;stico de inundaciones.</i> 
 </p>
 </div>
-<div id="tabs-2" class="ui-tabs-panel">
+<div id="tabs-3"  class="ui-tabs-panel">
+<h2  align="center">C&#243;mo usar este mapa interactivo</h2>
+<p><i>Cambiar a otro mapa:</i>
+Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
+<p><i>Ampl&#237;e hasta una regi&#243;n:</i><br />
+M&#233;todo 1: Seleccione una regi&#243;n de la lista:
+<ol>
+<li>Seleccione el men&uacute; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
+<li>Haga clic en la regi&#243;n de inter&#233;s y el mapa se actualizar&#225; autom&#225;ticamente.</li>
+</ol>
+</p>
+<p>M&#233;todo 2: Hacer clic y arrastrar</p>
+<ol>
+<li>Haga clic en el bot&#243;n izquierdo del rat&#243;n en la esquina superior izquierda de la regi&#243;n que quiere ampliar.</li>
+<li>Mientras mantiene presionado el bot&#243;n, arrastre el rat&#243;n a la esquina inferior derecha de la regi&#243;n que quiere ampliar.</li>
+<li>Suelte el bot&#243;n izquierdo del rat&#243;n. El mapa se re-dibujar&#225; autom&#225;ticamente.</li>
+</ol>
+<p><i>Aleje el mapa global:</i></p>
+<ol>
+<li>Mueva su rat&#243;n sobre el mapa hasta que vea que aparecen tres iconos en la esquina superior izquierda.</li>
+<li>Haga clic en el icono de la lupa.</li>
+<li>El mapa se re-dibujar&#225; autom&#225;ticamente. Note que el mapa no puede mostrar &#225;reas fuera de las latitudes mostradas inicialmente en la interfaz (es decir 66.25°S - 76.25°N).</li>
+</ol>
+<p><i>Cambie la fecha del pron&#243;stico: </i>
+Los pron&#243;sticos se rotulan por el d&#237;a en que se publicaron. Puede encontrar este r&#243;tulo moviendo su rat&#243;n sobre el mapa hasta que en la parte superior aparezca un recuadro de texto que contiene datos.
+<ol>
+<li>Para moverse hacia adelante o atr&#225;s un d&#237;a, haga clic sobre los botones correspondientes a la izquierda o a la derecha del recuadro de texto y el mapa se actualizar&#225; autom&#225;ticamente.</li>
+<li>Para cambiar manualmente la fecha de publicaci&#243;n del pron&#243;stico, introduzca su fecha de inter&#233;s en el recuadro de texto. &#233;ste debe tener el siguiente formato: “Jan 2008”. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
+<li>Para crear una animaci&#243;n de estos mapas a lo largo de una serie de fechas, introduzca el rango de fechas en el recuadro de texto. &#233;ste debe tener el siguiente formato: “fecha de inicio” seguida de “al” seguida de “fecha de finalizaci&#243;n”. Por ejemplo “Jan 2008 al Dec 2008”.</li>
+</ol>
+</p>
+<p><i>Cambiar la fecha inicial del pron&#243;stico:</i>
+Cada mes se publica un pron&#243;stico estacional para los siguientes tres meses; por ejemplo, en enero se publica un pron&#243;stico para febrero-abril (el rango por omisi&#243;n) que tiene un “tiempo de inicio” de un mes. Un pron&#243;stico publicado en enero para marzo-mayo tiene un tiempo de inicio de dos meses, y abril-junio tiene un tiempo de inicio de tres meses, porque abril es tres meses despu&#233;s que enero.
+<ol>
+<li>Para cambiar el tiempo de inicio, mueva su rat&#243;n sobre el mapa hasta que aparezca un recuadro de texto que contiene datos.</li>
+<li>Para moverse hacia adelante o atr&#225;s un mes de tiempo de inicio, haga clic sobre los botones correspondientes a la izquierda o a la derecha del recuadro de texto y el mapa se actualizar&#225; autom&#225;ticamente.</li>
+<li>Para cambiar manualmente el tiempo de inicio, introduzca un n&uacute;mero del 1 al 4 en el recuadro de texto. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
+</ol>
+</p>
+</div>
+<div id="tabs-4" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
 <p><b><a class="carry" href="instructions.html.es#extreme_prcp_fcst">Pron&#243;stico de la Precipitaci&#243;n Extrema del IRI</a></b><br /> 
 <b>Datos</b> El pron&#243;stico provee probabilidades de que la precipitaci&#243;n estacional (3 meses) estar&#225; en el 15% m&#225;s bajo o en el 15% m&#225;s alto de la distribuci&#243;n climatol&#243;gica (30 a&#241;os) para el tiempo de entrega de la primera IRI Net Assessment Forecast, emitido cada mes a una resoluci&#243;n 2.5&#176; lat/lon.
 <br /><b>Fuente de Datos</b> International Research Institute for Climate and Society, <a href="http://iri.columbia.edu/climate/forecast/net">Pron&#243;stico de Net Assessment</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library</a>
 </p>
 </div>
-<div id="tabs-4"  class="ui-tabs-panel">
+<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Servicios de Asistencia</h2>
 <p>
 Contacte con <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> si usted es un humanitario que toma las decisiones con preguntas sobre la informaci&#243;n en esta Sala de Mapas, o el clima y otras preguntas relacionadas con el clima.  Por lo general, responden en un d&#237;a laborable.</p>

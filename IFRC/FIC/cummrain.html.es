@@ -109,8 +109,8 @@ M&#233;todo 1: Seleccione una regi&#243;n de la lista:
 Los pron&#243;sticos se rotulan por el d&#237;a en que se publicaron. Puede encontrar este r&#243;tulo moviendo su rat&#243;n sobre el mapa hasta que en la parte superior aparezca un recuadro de texto que contiene datos.
 <ol>
 <li>Para moverse hacia adelante o atr&#225;s un d&#237;a, haga clic sobre los botones correspondientes a la izquierda o a la derecha del recuadro de texto y el mapa se actualizar&#225; autom&#225;ticamente.</li>
-<li>2.  Para cambiar manualmente la fecha de publicaci&#243;n del pron&#243;stico, introduzca su fecha de inter&#233;s en el recuadro de texto. &#233;ste debe tener el siguiente formato: “0000 16 Ene 2008”. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
-<li>3.  Para crear una animaci&#243;n de estos mapas a lo largo de una serie de fechas, introduzca el rango de fechas en el recuadro de texto. &#233;ste debe tener el siguiente formato: “fecha de inicio” seguida de “al” seguida de “fecha de finalizaci&#243;n”. Por ejemplo “0000 1 Jan 2008 al 0000 15 Jan 2008”.</li>
+<li>Para cambiar manualmente la fecha de publicaci&#243;n del pron&#243;stico, introduzca su fecha de inter&#233;s en el recuadro de texto. &#233;ste debe tener el siguiente formato: “0000 16 Ene 2008”. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
+<li>Para crear una animaci&#243;n de estos mapas a lo largo de una serie de fechas, introduzca el rango de fechas en el recuadro de texto. &#233;ste debe tener el siguiente formato: “fecha de inicio” seguida de “al” seguida de “fecha de finalizaci&#243;n”. Por ejemplo “0000 1 Jan 2008 al 0000 15 Jan 2008”.</li>
 </ol>
 </p>
 </div>
