@@ -41,54 +41,54 @@
     <ul class="ui-tabs-nav">
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
-      <li><a href="#tabs-1" >Description</a></li>
-      <li><a href="#tabs-2" >More Information</a></li>
-      <li><a href="#tabs-3" >Instructions</a></li>
-      <li><a href="#tabs-4" >Dataset Documentation</a></li>
-      <li><a href="#tabs-5" >Contact Us</a></li>
+      <li><a href="#tabs-1" >Descripci&#243;n</a></li>
+      <li><a href="#tabs-2" >M&#225;s Informaci&#243;n</a></li>
+      <li><a href="#tabs-3" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-4" >Dataset de Documentaci&#243;n</a></li>
+      <li><a href="#tabs-5" >Cont&#225;ctenos</a></li>></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
-<img class="dlimg" src="skillmap.jpg" border="0" alt="image" />
+<img class="dlimg" src="skillmapes.jpg" border="0" alt="image" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >How Well Can We Predict Seasonal Climate?</h2>
-<p align="left" property="term:description">This map shows where IRI 3-month forecasts are consistently good at predicting seasonal rainfall for at least one season of the year.</p>
-<p align="left">Specific patterns of rainfall that enable us to consistently predict climate 3 months in advance are strongest in the tropical regions, which you can see on this map.
-If you are in a red or yellow area, we recommend monitoring seasonal forecasts all year long for current confidence levels in predicted rainfall.</p>
+<h2 align="center"  property="term:title" >&#191;Qu&#233; tan bien podemos predecir el clima estacional? </h2>
+<p align="left" property="term:description">Este mapa muestra d&#243;nde los pron&#243;sticos del IRI para 3 meses son constantemente buenos para predecir precipitaci&#243;n estacional en al menos una estaci&#243;n del año.</p>
+<p align="left">Los patrones espec&#237;ficos de precipitaci&#243;n que nos permiten predecir de manera congruente el clima con tres meses de anticipaci&#243;n son m&#225;s fuertes en las regiones tropicales, que puede ver en este mapa.
+Si se encuentra en el &#225;rea roja o en la amarilla, le recomendamos observar los pron&#243;sticos estacionales todo el año para los niveles de confidencia actuales de la lluvia pronosticada.</p>
 </div>
 <div id="tabs-2"  class="ui-tabs-panel">
-<h2  align="center">Explanation</h2>
+<h2  align="center">Explicaci&#243;n</h2>
 <ul>
-<li> Red areas show where forecasts can be generally skillful, and so it is possible for us to indicate high confidence for forecasts of unusually wet or dry seasons in these locations.  Seasonal forecasts in red areas may be most useful for early warning. </li>
-<li> Yellow areas indicate where forecasts have some skill.  These are also areas worth monitoring, although we will only occasionally indicate high confidence for these forecasts. </li>
-<li> Grey locations are places with little or no skill.  Any forecasts of unusual rainfall in these locations will usually only show low confidence and early warning opportunities would likely be limited. </li>
+<li>Las &#225;reas rojas muestran d&#243;nde los pron&#243;sticos pueden ser generalmente previsibles, y as&#237; es posible para nosotros indicar una alta confianza por los pron&#243;sticos de temporadas inusualmente h&uacute;medas o secas en estos lugares.  Los pron&#243;sticos estacionales en las &#225;reas rojas pueden ser los m&#225;s &uacute;tiles para advertencias tempranas. </li>
+<li>Las &#225;reas amarillas indican d&#243;nde los pron&#243;sticos tienen cierta previsibilidad.  Estas tambi&#233;n son &#225;reas que valen la pena monitorizar, aunque s&#243;lo ocasionalmente indicaremos alta confianza por estos pron&#243;sticos.  </li>
+<li>Los lugares grises son lugares con poca o nada de previsibilidad.  Cualquier pron&#243;stico de precipitaci&#243;n inusitada en estas &#225;reas usualmente s&#243;lo mostrar&#225; baja confianza y las oportunidades de advertencia temprana probablemente ser&#237;an limitadas.</li>
 </ul>
-<p> The map categories are calculated as follows: </p>
-<p>Assume a simple model, in which you will break even over many years if you ignore the forecast and prepare evenly for below-normal, normal, and above-normal rainfall. If you don’t ignore the forecast and instead invest preparedness resources according to the forecast probabilities of each category, based on this simplified model, you would</p>
+<p> Las categor&#237;as del mapa se calculan de la siguiente manera:</p>
+<p>Asuma un simple modelo, en el que llegar&#225; al equilibrio por muchos años si ignora el pron&#243;stico y se prepara uniformemente para una precipitaci&#243;n por debajo de la normal, normal y por arriba de la normal. Si no ignora el pron&#243;stico e invierte en recursos de preparaci&#243;n de acuerdo con las probabilidades de pron&#243;stico de cada categor&#237;a, con base en este modelo simplificado, usted</p>
 <ul>
-<li>Have a return of 10% in “good skill” areas.</li>
-<li>Have a return of 5-10% in “some skill” areas.</li>
-<li>Have a return of less than 5% in “little or no skill” areas.</li>
+<li>Tendr&#237;a un retorno del 10% en las &#225;reas de “buena previsibilidad”.</li>
+<li>Tendr&#237;a un retorno del 5 al 10% en las &#225;reas de “cierta previsibilidad”.</li>
+<li>Tendr&#237;a un retorno menor que el 5% en las &#225;reas de “poca o nada de previsibilidad”.</li>
 </ul>
-<p>These categories are based on the Effective Interest Rate which is derived from the Likelihood Score.  Detailed information on these skill scores is available on IRI’s Seasonal Forecast Verification <a href="http://iri.columbia.edu/climate/forecast/verification">Webpages</a>.</p>
+<p>Estas categor&#237;as se basan en la Tasa de Inter&#233;s Efectiva que se deriva de la Puntuaci&#243;n de Probabilidad.  Puede encontrar informaci&#243;n detallada de estas puntuaciones de previsibilidad en las <a href="http://iri.columbia.edu/climate/forecast/verification">p&#225;ginas Web</a> de Verificaci&#243;n de Pron&#243;stico Estacional de IRI. </p>
 </div>
 <div id="tabs-3"  class="ui-tabs-panel">
-<h2  align="center">How to navigate between maps</h2>
-<p><i>Switch to another map:</i>
-Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
-<p><i>Return to the menu page:</i>
-Click the blue link called “Forecasts in Context” at the top left corner of the page.</p>
+<h2  align="center">C&#243;mo navegar por los mapas</h2>
+<p><i>Cambiar a otro mapa:</i>
+Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
 </div>
 <div id="tabs-4" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <p></p>
 </div>
 <div id="tabs-5"  class="ui-tabs-panel">
-<h2  align="center">Helpdesks</h2>
+<h2  align="center">Servicios de Asistencia</h2>
 <p>
-Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
+Contacte con <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> si usted es un humanitario que toma las decisiones con preguntas sobre la informaci&#243;n en esta Sala de Mapas, o el clima y otras preguntas relacionadas con el clima.  Por lo general, responden en un d&#237;a laborable.</p>
 <p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+En contacto con <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> con cualquier pregunta t&#233;cnica o problemas con esta Sala de Mapas, por ejemplo, las previsiones no mostrar o actualizar correctamente.
  </p>
 </div>
 </div>

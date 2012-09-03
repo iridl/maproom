@@ -45,9 +45,9 @@
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
       <li><a href="#tabs-1" >Descripci&#243;n</a></li>
-      <li><a href="#tabs-2" >Dataset de Documentaci&#243;n</a></li>
+      <li><a href="#tabs-2" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-3" >Dataset de Documentaci&#243;n</a></li>
       <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>
-      <li><a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/instructions.es.html">Instrucciones</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.GPWv3/.count/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/546./plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef/" />
@@ -56,13 +56,39 @@
   <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRC_pop_count_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >&#191;Las zonas de riesgo con lluvias abundantes, est&#225;n densamente pobladas?</h2>
+<h2 align="center"  property="term:title" >&#191;Est&#225;n densamente pobladas las zonas con riesgo de lluvias abundantes?</h2>
 <p align="left" property="term:description">Este mapa muestra la densidad de la poblaci&#243;n humana.</p>
 <p align="left"> Aunque este mapa no muestra ninguna informaci&#243;n sobre lluvias, puede ser &#250;til para evaluar si las &#225;reas bajo riesgo de lluvias abundantes est&#225;n densamente pobladas.</p>
 <p align="left">Los datos son cortes&#237;a del Center for International Earth Science Information Network (CIESIN), Socio-Economic Data Center (SEDAC).
 </p>
 </div>
-<div id="tabs-2" class="ui-tabs-panel">
+<div id="tabs-2"  class="ui-tabs-panel">
+<h2  align="center">C&#243;mo usar este mapa interactivo</h2>
+<p><i>Cambiar a otro mapa:</i>
+Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
+<p><i>Ampl&#237;e hasta una regi&#243;n:</i><br />
+M&#233;todo 1: Seleccione una regi&#243;n de la lista:
+<ol>
+<li>Seleccione el men&uacute; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
+<li>Haga clic en la regi&#243;n de inter&#233;s y el mapa se actualizar&#225; autom&#225;ticamente.</li>
+</ol>
+</p>
+<p>M&#233;todo 2: Hacer clic y arrastrar</p>
+<ol>
+<li>Haga clic en el bot&#243;n izquierdo del rat&#243;n en la esquina superior izquierda de la regi&#243;n que quiere ampliar.</li>
+<li>Mientras mantiene presionado el bot&#243;n, arrastre el rat&#243;n a la esquina inferior derecha de la regi&#243;n que quiere ampliar.</li>
+<li>Suelte el bot&#243;n izquierdo del rat&#243;n. El mapa se re-dibujar&#225; autom&#225;ticamente.</li>
+</ol>
+<p><i>Aleje el mapa global:</i></p>
+<ol>
+<li>Mueva su rat&#243;n sobre el mapa hasta que vea que aparecen tres iconos en la esquina superior izquierda.</li>
+<li>Haga clic en el icono de la lupa.</li>
+<li>El mapa se re-dibujar&#225; autom&#225;ticamente. Note que el mapa no puede mostrar &#225;reas fuera de las latitudes mostradas inicialmente en la interfaz (es decir 66.25°S - 76.25°N).</li>
+</ol>
+</div>
+<div id="tabs-3" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
 <p><b><a class="carry" href="instructions.html.es#count">CIESIN/SEDAC GPWv3 Poblaci&#243;n Ajustada para el A&#241;o 2005 Proyectada por Naciones Unidas</a></b><br /> 
 <b>Datos</b>  N&#250;mero de personas por cuadr&#237;cula de 2.5 minutos de arco, proyectado para el a&#241;o 2005, basado en estimaciones de poblaci&#243;n de oficinas nacionales de estad&#237;sticas y ajustado de acuerdo con estimaciones nacionales de poblaci&#243;n de las Naciones Unidas, del dataset del CIESIN Gridded Population of the World, Version 3 (GPWv3).

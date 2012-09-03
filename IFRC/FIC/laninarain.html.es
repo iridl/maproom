@@ -41,40 +41,40 @@
     <ul class="ui-tabs-nav">
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
-      <li><a href="#tabs-1" >Description</a></li>
-      <li><a href="#tabs-2" >Instructions</a></li>
-      <li><a href="#tabs-3" >Dataset Documentation</a></li>
-      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-1" >Descripci&#243;n</a></li>
+      <li><a href="#tabs-2" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-3" >Dataset de Documentaci&#243;n</a></li>
+      <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <img class="dlimg" src="LaNinaandRainfall.png" border="0" alt="image" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >What Changes in Rainfall are Typical during La Niña?</h2>
-<p align="left" property="term:description">During a La Niña episode, areas in green or yellow
-are likely to become wetter or dryer than normal during the indicated months.</p>
-<p align="left">To see if we are currently experiencing  El Niño, La Niña, or neutral conditions, click <a href="http://iri.columbia.edu/climate/ENSO/currentinfo/QuickLook.html">here</a>.</p>
-<p align="left">Seasonal forecasts take into account many other factors; consult the latest <a href="prcp_fcst.html">seasonal forecast</a> to see exactly where and when unusual rainfall is expected in the next few months.</p>
+<h2 align="center"  property="term:title" >&#191;Qu&#233; cambios en la precipitaci&#243;n son t&#237;picos durante La Ni&#241;a?</h2>
+<p align="left" property="term:description">Durante un episodio de La Ni&#241;a, las &#225;reas verdes o amarillas tienen la probabilidad de ser m&#225;s h&uacute;medas o secas que lo normal en los meses indicados.</p>
+<p align="left">Para ver si actualmente estamos experimentando condiciones de El Ni&#241;o, La Ni&#241;a o neutrales, haga clic <a href="http://iri.columbia.edu/climate/ENSO/currentinfo/QuickLook.html">aqu&#237;</a>.</p>
+<p align="left">Consulte el &uacute;ltimo <a href="prcp_fcst.html">pron&#243;stico estacional</a> para ver exactamente d&#243;nde y cu&#225;ndo se esperan lluvias inusuales en los pr&#243;ximos meses.
+Los pron&#243;sticos estacionales tambi&#233;n toman en cuenta muchos otros factores.</p>
 </div>
 <div id="tabs-2"  class="ui-tabs-panel">
-<h2  align="center">How to navigate between maps</h2>
-<p><i>Switch to another map:</i>
-Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
-<p><i>Return to the menu page:</i>
-Click the blue link called “Forecasts in Context” at the top left corner of the page.</p>
+<h2  align="center">C&#243;mo navegar por los mapas </h2>
+<p><i>Cambiar a otro mapa:</i>
+Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
 </div>
 <div id="tabs-3" class="ui-tabs-panel">
-<h2  align="center">Dataset Documentation</h2>
+<h2  align="center">Dataset de Documentaci&#243;n</h2>
 <p></p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
-<h2  align="center">Helpdesks</h2>
+<h2  align="center">Servicios de Asistencia</h2>
 <p>
-Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
+Contacte con <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> si usted es un humanitario que toma las decisiones con preguntas sobre la informaci&#243;n en esta Sala de Mapas, o el clima y otras preguntas relacionadas con el clima.  Por lo general, responden en un d&#237;a laborable.</p>
 <p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+En contacto con <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> con cualquier pregunta t&#233;cnica o problemas con esta Sala de Mapas, por ejemplo, las previsiones no mostrar o actualizar correctamente.
  </p>
- </div>
+</div>
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>

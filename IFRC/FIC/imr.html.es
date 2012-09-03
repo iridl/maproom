@@ -46,9 +46,9 @@
 <div id="ifrcdiv">
 <img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
       <li><a href="#tabs-1" >Descripci&#243;n</a></li>
-      <li><a href="#tabs-2" >Dataset de Documentaci&#243;n</a></li>
+      <li><a href="#tabs-2" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-3" >Dataset de Documentaci&#243;n</a></li>
       <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>
-      <li><a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/instructions.es.html">Instrucciones</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef/" />
@@ -64,6 +64,32 @@
 </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">C&#243;mo usar este mapa interactivo</h2>
+<p><i>Cambiar a otro mapa:</i>
+Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
+<p><i>Ampl&#237;e hasta una regi&#243;n:</i><br />
+M&#233;todo 1: Seleccione una regi&#243;n de la lista:
+<ol>
+<li>Seleccione el men&uacute; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
+<li>Haga clic en la regi&#243;n de inter&#233;s y el mapa se actualizar&#225; autom&#225;ticamente.</li>
+</ol>
+</p>
+<p>M&#233;todo 2: Hacer clic y arrastrar</p>
+<ol>
+<li>Haga clic en el bot&#243;n izquierdo del rat&#243;n en la esquina superior izquierda de la regi&#243;n que quiere ampliar.</li>
+<li>Mientras mantiene presionado el bot&#243;n, arrastre el rat&#243;n a la esquina inferior derecha de la regi&#243;n que quiere ampliar.</li>
+<li>Suelte el bot&#243;n izquierdo del rat&#243;n. El mapa se re-dibujar&#225; autom&#225;ticamente.</li>
+</ol>
+<p><i>Aleje el mapa global:</i></p>
+<ol>
+<li>Mueva su rat&#243;n sobre el mapa hasta que vea que aparecen tres iconos en la esquina superior izquierda.</li>
+<li>Haga clic en el icono de la lupa.</li>
+<li>El mapa se re-dibujar&#225; autom&#225;ticamente. Note que el mapa no puede mostrar &#225;reas fuera de las latitudes mostradas inicialmente en la interfaz (es decir 66.25°S - 76.25°N).</li>
+</ol>
+</div>
+<div id="tabs-3" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
 <p><b><a class="carry" href="instructions.html.es#imr">CIESIN/SEDAC Global Distribution of Poverty, Tasa de Mortalidad Infantil, a&#241;o 2000</a></b><br /> 
 <b>Datos</b>  Tasa de Mortalidad Infantil (numero de muertes infantiles por cada 10,000 nacidos vivos) por grilla de 0.25&#176; lat/lon, para el a&#241;o 2000, del conjunto de datos del SEDAC Global Distribution of Poverty 
