@@ -63,7 +63,6 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >How much rain is expected cumulatively?</h2>
-<p><b>What does this map tell me?</b></p>
 <p align="left" property="term:description">This map shows the total amount of rain or snow that is expected to fall in the next 6 days.</p>
 <p><b>What do I do next?</b></p>
 <p>If you see dark colours over your region, possible responses include:
