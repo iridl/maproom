@@ -44,7 +44,7 @@
       <li><a href="#tabs-1" >Descripci&#243;n</a></li>
       <li><a href="#tabs-2" >Instructi&#243;nes</a></li>
       <li><a href="#tabs-3" >Dataset de Documentaci&#243;n</a></li>
-      <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>></li>
+      <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <img class="dlimg" src="ElNinoandRainfall.png" border="0" alt="image" />
@@ -74,7 +74,6 @@ Contacte con <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> si
 <p>
 En contacto con <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> con cualquier pregunta t&#233;cnica o problemas con esta Sala de Mapas, por ejemplo, las previsiones no mostrar o actualizar correctamente.
  </p>
-</div>
 </div>
 </div>
 <div class="optionsBar">

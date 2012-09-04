@@ -44,7 +44,7 @@
       <li><a href="#tabs-1" >Descripci&#243;n</a></li>
       <li><a href="#tabs-2" >Instructi&#243;nes</a></li>
       <li><a href="#tabs-3" >Dataset de Documentaci&#243;n</a></li>
-      <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>></li>
+      <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <img class="dlimg" src="LaNinaandRainfall.png" border="0" alt="image" />

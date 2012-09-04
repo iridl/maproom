@@ -45,7 +45,7 @@
       <li><a href="#tabs-2" >M&#225;s Informaci&#243;n</a></li>
       <li><a href="#tabs-3" >Instructi&#243;nes</a></li>
       <li><a href="#tabs-4" >Dataset de Documentaci&#243;n</a></li>
-      <li><a href="#tabs-5" >Cont&#225;ctenos</a></li>></li>
+      <li><a href="#tabs-5" >Cont&#225;ctenos</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <img class="dlimg" src="skillmapes.jpg" border="0" alt="image" />

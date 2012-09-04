@@ -66,7 +66,7 @@ color: blue;
             <fieldset class="navitem" id="chooseRegion"> 
                 <legend>Region</legend> 
             </fieldset>
-            <fieldset class="navitem"><legend>Variable</legend><span class="selectvalue"></span><select class="pageformcopy" name="var"><option value="">Lluvia</option><option value=".tmp">Temperatura/option></select></fieldset>
+            <fieldset class="navitem"><legend>Variable</legend><span class="selectvalue"></span><select class="pageformcopy" name="var"><option value="">Lluvia</option><option value=".tmp">Temperatura</option></select></fieldset>
             <fieldset class="navitem"><legend>Season</legend><span class="selectvalue"></span><select class="pageformcopy" name="seasonStart"><option value="">Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select> to <span class="selectvalue"></span><select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option value="">Dec</option></select></fieldset>
  </div>
 <div class="ui-tabs">
