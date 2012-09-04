@@ -639,7 +639,15 @@ img.dlimg, img.dlauximg, img.dlimgts {
 	background: LightGrey;
 	 font-size: 9pt;
 }
+@media only all and (max-width: 600px) {
+.dlimage, .dlimage.wide, .dlimage.tall {
+	width: 92%;
+}
+}
 @media only all and (max-width: 479px) {
+.dlimage, .dlimage.wide, .dlimage.tall {
+	width: 90%;
+}
 .iriicon {
 float: left;
 height: 22px;
