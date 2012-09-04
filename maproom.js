@@ -661,7 +661,7 @@ theregion.appendChild(sel);
 }
 }
 }
-function regionwithinbbox(mydisplay){
+function setregionwithinbbox(mydisplay){
 var mylist=document.getElementsByClassName('regionwithinbbox');
 if(mylist.length>0){
 for(var i=0; i < mylist.length ; i++){
@@ -686,7 +686,6 @@ if(it.options[it.selectedIndex].value){
 else {
 myin.value="";
 }
-regionwithinbbox('none');
 }
 }
 if(pform.elements[it.name]){
@@ -859,7 +858,7 @@ if(myform){
 var myin = myform.elements['region'];
 if(myin){
 myin.value='';
-regionwithinbbox('none');
+setregionwithinbbox('none');
 }
 myin = myform.elements['bbox'];
 if(myin){
@@ -916,12 +915,6 @@ update=true;
 }
 if(update){
 updatePageForm();
-}
-if(within){
-regionwithinbbox('inline');
-}
-else {
-regionwithinbbox('none');
 }
 }
 }
@@ -1706,6 +1699,35 @@ if(newsrc != cmem.src){
 changedInput.value=newvalue;
 }
 updatePageFormCopies(document);
+}
+updatePageFormConditionalClasses();
+}
+function updatePageFormConditionalClasses(){
+var myform=document.getElementById('pageform');
+if(myform){
+    /* updates regionwithinbbox */
+var mybb = myform.elements['bbox'];
+var myregion = myform.elements['region'];
+var within = false;
+if(myregion && myregion.value.length > 8){
+    within = true;
+}
+if (mybb && mybb.value.length>8 && myregion && myregion.value.length > 8){
+var bba = JSON.parse(mybb.value);
+    var regiona = myregion.value.split(':',8);
+    if(regiona[0] == 'bb' && regiona.length > 4 && regiona[1] == bba[0] && regiona[2] == bba[1] && regiona[3] == bba[2]   && regiona[4] == bba[3]){
+	within = false;
+    }
+    else {
+	within = true;
+    }
+}
+if(within){
+setregionwithinbbox('inline');
+}
+else {
+setregionwithinbbox('none');
+}
 }
 }
 /* updates class pageformcopy selects to match pageform
