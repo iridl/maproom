@@ -53,7 +53,7 @@
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >How Well Can We Predict Seasonal Climate?</h2>
 <p align="left" property="term:description">This map shows where IRI 3-month forecasts are consistently good at predicting seasonal rainfall for at least one season of the year.</p>
-<p align="left">Specific patterns of rainfall that enable us to consistently predict climate 3 months in advance are strongest in the tropical regions, which you can see on this map.
+<p align="left">Specific patterns of rainfall that can be predicted 3 months in advance are strongest in the tropical regions, which you can see on this map.
 If you are in a red or yellow area, we recommend monitoring seasonal forecasts all year long for current confidence levels in predicted rainfall.</p>
 </div>
 <div id="tabs-2"  class="ui-tabs-panel">

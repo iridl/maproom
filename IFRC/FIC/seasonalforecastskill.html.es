@@ -53,7 +53,7 @@
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;Qu&#233; tan bien podemos predecir el clima estacional? </h2>
 <p align="left" property="term:description">Este mapa muestra d&#243;nde los pron&#243;sticos del IRI para 3 meses son constantemente buenos para predecir precipitaci&#243;n estacional en al menos una estaci&#243;n del año.</p>
-<p align="left">Los patrones espec&#237;ficos de precipitaci&#243;n que nos permiten predecir de manera congruente el clima con tres meses de anticipaci&#243;n son m&#225;s fuertes en las regiones tropicales, que puede ver en este mapa.
+<p align="left">Los patrones espec&#237;ficos de precipitaci&#243;n que puede ser predecido con tres meses de anticipaci&#243;n son m&#225;s fuertes en las regiones tropicales, que puede ver en este mapa.
 Si se encuentra en el &#225;rea roja o en la amarilla, le recomendamos observar los pron&#243;sticos estacionales todo el año para los niveles de confidencia actuales de la lluvia pronosticada.</p>
 </div>
 <div id="tabs-2"  class="ui-tabs-panel">
