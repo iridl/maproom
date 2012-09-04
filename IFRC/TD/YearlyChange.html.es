@@ -6,7 +6,7 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.1"
- xml:lang="en"
+ xml:lang="es"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link rel="canonical" href="YearlyChange.html" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="YearlyChange.html?Set-Language=en" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#TimeScales" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />

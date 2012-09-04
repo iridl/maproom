@@ -6,7 +6,7 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="en"
+ xml:lang="es"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
@@ -15,7 +15,7 @@
 <title>IFRC PIC: What Changes in Rainfall are Typical during El Niño and La Niña?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="laninarain.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="laninarain.html?Set-Language=en" />
 <link rel="canonical" href="laninarain.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
