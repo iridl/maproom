@@ -34,7 +34,7 @@
                       <a rev="section" class="navlink carryup" href="/maproom/IFRC/">Forecasts in Context</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts"><span property="term:label">Forecasts for the Next Three Months</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts"><span property="term:label">Pron&#243;stico para los Pr&#243;ximos 3 Meses</span></legend>
             </fieldset> 
  </div>
 <div class="ui-tabs">
