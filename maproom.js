@@ -1469,7 +1469,9 @@ for (var i=0; i<slist.length ; i++){
     if(mysel.previousSibling.className != "selectvalue"){
 	var sv = document.createElement('span');
 	sv.className='selectvalue';
+	if(mysel.selectedIndex >=0){
 	sv.innerHTML=mysel.options[mysel.selectedIndex].innerHTML;
+	}
 	mysel.parentNode.insertBefore(sv,mysel);
     }
 }
@@ -1663,13 +1665,13 @@ var cmem=members[j];
 if(cmem.tagName == 'IMG'){
 var newsrc = appendPageForm(cmem.src.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.src){
-    cmem.src = newsrc;
 if(!quietflag) {
 changeClass(cmem,'valid','invalid');
 }
+    cmem.src = newsrc;
 }
 }
-if(cmem.tagName == 'LINK'){
+if(cmem.tagName == 'LINK' || cmem.tagName == 'A'){
 var newsrc = appendPageForm(cmem.href.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.href){
     cmem.href = newsrc;
