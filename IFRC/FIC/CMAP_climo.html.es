@@ -65,7 +65,6 @@ Usted puede ver:
 <li>Qu&#233; lugares tienden a ser m&#225;s h&uacute;medos o secos que otros.</li>
 <li>Cu&#225;les son los meses m&#225;s lluviosos para diferentes lugares.</li>
 </ul>
-</p>
 <p align="left">Estos mapas mensuales se basan en la precipitaci&#243;n de los a&#241;os anteriores (1979-2004). Cuanto m&#225;s oscuro sea el azul, m&#225;s abundante es la lluvia. Este mapa no indica cu&#225;nta lluvia se espera este a&#241;o.</p>
 </div>
 <div id="tabs-2"  class="ui-tabs-panel">

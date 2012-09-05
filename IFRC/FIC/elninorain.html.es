@@ -6,7 +6,7 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="en"
+ xml:lang="es"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
@@ -15,7 +15,7 @@
 <title>IFRC PIC: What Changes in Rainfall are Typical during El Niño and La Niña?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="elninorain.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="elninorain.html?Set-Language=en" />
 <link rel="canonical" href="elninorain.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
@@ -44,7 +44,7 @@
       <li><a href="#tabs-1" >Descripci&#243;n</a></li>
       <li><a href="#tabs-2" >Instructi&#243;nes</a></li>
       <li><a href="#tabs-3" >Dataset de Documentaci&#243;n</a></li>
-      <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>></li>
+      <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <img class="dlimg" src="ElNinoandRainfall.png" border="0" alt="image" />
@@ -74,7 +74,6 @@ Contacte con <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> si
 <p>
 En contacto con <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> con cualquier pregunta t&#233;cnica o problemas con esta Sala de Mapas, por ejemplo, las previsiones no mostrar o actualizar correctamente.
  </p>
-</div>
 </div>
 </div>
 <div class="optionsBar">

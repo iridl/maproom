@@ -6,7 +6,7 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.1"
- xml:lang="en"
+ xml:lang="es"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="YearlyChange.html?Set-Language=es" />
 <link rel="canonical" href="YearlyChange.html" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="YearlyChange.html?Set-Language=en" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#TimeScales" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
@@ -67,7 +68,7 @@ color: blue;
             <fieldset class="navitem" id="chooseRegion"> 
                 <legend>Region</legend> 
             </fieldset>
-            <fieldset class="navitem"><legend>Variable</legend><span class="selectvalue"></span><select class="pageformcopy" name="var"><option value="">Lluvia</option><option value=".tmp">Temperatura/option></select></fieldset>
+            <fieldset class="navitem"><legend>Variable</legend><span class="selectvalue"></span><select class="pageformcopy" name="var"><option value="">Lluvia</option><option value=".tmp">Temperatura</option></select></fieldset>
             <fieldset class="navitem"><legend>Season</legend><span class="selectvalue"></span><select class="pageformcopy" name="seasonStart"><option value="">Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select> to <span class="selectvalue"></span><select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option value="">Dec</option></select></fieldset>
  </div>
 <div class="ui-tabs">
