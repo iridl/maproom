@@ -50,8 +50,7 @@ Esta colecci&#243;n de mapas provee informaci&#243;n que puede ser utilizado par
 <li><b>Condiciones Hist&#243;ricas:</b> Est&#233;s mapas muestran patrones de lluvia que son t&#237;picos durante El Ni&#241;o, La Ni&#241;a, y normalmente.</li>
 <li><b>Fluctuaciones Recientes del Clima:</b> Est&#233;s mapas muestran cu&#225;nto a variado la lluvia en los &uacute;ltimos 100 a&#241;os, y que tendencias de lluvia existe en su localidad.</li>
 <li><b>Indicadores de Vulnerabilidad:</b> Est&#233;s mapas muestran la densidad de la poblaci&#243;n humana y la tase de mortalidad infantil, lo que indica las &#225;reas que pueden ser m&#225;s vulnerable a grande o peque&#241;o cantidades de lluvia.</li>
-</p>
-
+</ul>
 </p>
 </div>
 
