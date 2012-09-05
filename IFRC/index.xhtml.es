@@ -41,8 +41,16 @@
  <div id="content" class="searchDescription">
 <div><img src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
 <h2 property="term:title">La Federaci&#243;n Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja:  Predicciones en Contexto</h2>
-<span align="left" property="term:description">En colaboraci&#243;n con la Federaci&#243;n Internacional de Sociedades de la Cruz Roja y la Media Luna Roja, el IRI ha desarrollado una herramienta en base a mapas para proporcionar informaci&#243;n de contexto sobre pron&#243;sticos de la precipitaci&#243;n global.</span> 
-<p>La herramienta muestra mapas de varias medidas de la severidad relativa del pron&#243;stico de eventos de precipitaci&#243;n en el mundo para 1 a 6 d&#237;as antes del evento, comparando los valores del pron&#243;stico actual con la climatolog&#237;a de 25 a&#241;os del modelo de pron&#243;stico.  La herramienta tambi&#233;n muestra el pron&#243;stico probabil&#237;stico estacional de precipitaci&#243;n a nivel mundial, incluyendo "predicciones en contexto", mapas que muestran donde el pron&#243;stico estacional indica un aumento de la probabilidad de continuaci&#243;n o reversi&#243;n de la precipitaci&#243;n estacional sobre lo normal o por debajo de lo normal observada previamente.  Tambi&#233;n se proporcionan mapas de climatolog&#237;a (es decir promedios de largo plazo) de la precipitaci&#243;n mensual, y mapas de poblaci&#243;n y pobreza, para poder analizar la exposici&#243;n relativa a fen&#243;menos meteorol&#243;gicos y fluctuaciones estacionales de precipitaci&#243;n.
+<span align="left" property="term:description">
+Esta colecci&#243;n de mapas provee informaci&#243;n que puede ser utilizado para tomar decisiones humanitarias a cualquier parte del mundo, fue creado por el IRI y la FICR.</span> 
+<p>Aga clic en las fichas (arriba a la derecha) para acceder a los enlaces a las mapas siguientes:
+ <ul>
+<li><b>Pron&#243;sticos para los Pr&#243;ximos 6 D&#237;as:</b> Est&#233;s mapas muestran las &#225;reas donde se predice la lluvia abundante en los pr&#243;ximos seis dias, y cu&#225;nta lluvia se espera.</li>
+<li><b>Pron&#243;sticos para los Pr&#243;ximos 3 Meses:</b> Est&#233;s mapas muestran las &#225;reas donde se predice grande o peque&#241;o cantidades de lluvia en los pr&#243;ximos tres meses.</li>
+<li><b>Condiciones Hist&#243;ricas:</b> Est&#233;s mapas muestran patrones de lluvia que son t&#237;picos durante El Ni&#241;o, La Ni&#241;a, y normalmente.</li>
+<li><b>Fluctuaciones Recientes del Clima:</b> Est&#233;s mapas muestran cu&#225;nto a variado la lluvia en los &uacute;ltimos 100 a&#241;os, y que tendencias de lluvia existe en su localidad.</li>
+<li><b>Indicadores de Vulnerabilidad:</b> Est&#233;s mapas muestran la densidad de la poblaci&#243;n humana y la tase de mortalidad infantil, lo que indica las &#225;reas que pueden ser m&#225;s vulnerable a grande o peque&#241;o cantidades de lluvia.</li>
+</p>
 
 </p>
 </div>
@@ -51,8 +59,8 @@
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#SixDayForecasts" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions" />
-<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#VulnerabilityIndicators" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#TimeScales" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#VulnerabilityIndicators" />
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Compartir</legend>

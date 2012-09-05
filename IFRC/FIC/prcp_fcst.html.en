@@ -62,7 +62,6 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Are the next 3 months likely to be unusually wet or dry?</h2>
-<p><b>What does this map tell me?</b></p>
 <p align="left" property="term:description">This map shows the likelihood that total 3-month precipitation will be unusually high or low.</p>
 <p><b>What do I do next?</b></p>
 <p>If you see a colour over your region, possible responses include:
@@ -72,7 +71,7 @@
 <li>Review your contingency plans and update as necessary.</li>
 </ul>
 </p>
-<p>See the "More Information" tab for details.</p>
+<p>See the "More Information" tab for details on the forecast, and see the <a href="http://www.climatecentre.org/downloads/File/IRI/2012/Sep%202012/El%20Nino%20Briefing%20Note%20August%202012.pdf">Climate Centre page </a> for humanitarian guidance information and previous forecasts.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Explanation</h2>
