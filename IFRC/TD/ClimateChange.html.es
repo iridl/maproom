@@ -16,7 +16,6 @@
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="ClimateChange.html?Set-Language=en" />
 <link rel="canonical" href="ClimateChange.html" />
-<link class="altLanguage" rel="alternate" hreflang="en" href="ClimateChange.html?Set-Language=en" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#TimeScales" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
