@@ -14,6 +14,7 @@
 <title>IFRC PIC: Recent Climate Trends</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="YearlyChange.html?Set-Language=es" />
 <link rel="canonical" href="YearlyChange.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#TimeScales" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
