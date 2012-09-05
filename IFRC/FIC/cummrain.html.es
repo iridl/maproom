@@ -12,7 +12,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Entry_Id" content="IFRC_FIC_cummrain" />
 <meta property="maproom:Sort_Id" content="a04" />
-<title>&#191;IFRC PIC: Cu&#225;nta lluvia acumulada se espera?</title>
+<title>&#191;IFRC PIC: Cu&#225;nta lluvia se espera?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="cummrain.html?Set-Language=en" />
@@ -61,18 +61,12 @@
   <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCprcp_accum_scale_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >&#191;Cu&#225;nta lluvia acumulada se espera?</h2>
-<p align="left" property="term:description">Este mapa muestra la cantidad total de lluvia o nieve que se espera que caiga en los pr&#243;ximos 6 d&#237;as.</p>
-<p><b>&#191;Y ahora qu&#233; hago?</b></p>
-<p>Si ve colores oscuros sobre su regi&#243;n, las respuestas posibles incluyen:
-<ul>
-<li>•	Considere cu&#225;nta lluvia es “normal” para esta parte del año y si el pron&#243;stico indica algo inusualmente alto o bajo.</li>
-<li>Comun&#237;quese con su departamento meteorol&#243;gico local o regional y observe sus pron&#243;sticos para los siguientes seis d&#237;as.</li>
-<li>Considere qui&#233;n puede resultar m&#225;s afectado por el pron&#243;stico de lluvias abundantes.</li>
-<li>Revise sus planes de contingencia y actual&#237;celos seg&uacute;n sea necesario.</li>
-</ul>
+<h2 align="center"  property="term:title" >&#191;Cu&#225;nta lluvia se espera?</h2>
+<p align="left" property="term:description">Este mapa muestra la cantidad total de lluvia o nieve (en mm) que se espera que caiga en los pr&#243;ximos 6 d&#237;as.</p>
+<p>Considere cu&#225;nta lluvia es “normal” para esta parte del año y si el pron&#243;stico indica algo inusualmente alto o bajo.
+Revise <a href="http://iridl.ldeo.columbia.edu/proto/maproom/IFRC/FIC/index.html">este mapa</a> para ver si se esperan lluvias excepcionalmente abundantes en su locati&#243;n.
 </p>
-<p>Consulte la secci&#243;n “M&#225;s informaci&#243;n” para ver los detalles.</p>
+<p>Consulte la secci&#243;n “M&#225;s informaci&#243;n” para ver los detalles de pron&#243;stico.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2 align="center">&#191;Qu&#233; significa los colores?</h2>

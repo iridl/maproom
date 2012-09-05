@@ -12,7 +12,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Entry_Id" content="IFRC_FIC_heavyrain" />
 <meta property="maproom:Sort_Id" content="a03" />
-<title>IFRC PIC: &#191;Qu&#233; tan abundante se espera que sea la lluvia?</title>
+<title>IFRC PIC: &#191;C&#243;mo se compara la cantidad de lluvia pronosticada con la lluvia normal durante este mes?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="heavyrain.html?Set-Language=en" />
@@ -61,17 +61,15 @@
   <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCprcp_pct_monthly_scale_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >&#191;Qu&#233; tan abundante se espera que sea la lluvia?</h2>
-<p align="left" property="term:description">Este mapa muestra las &#225;reas donde se predice que la lluvia (o nieve) en los pr&#243;ximos seis d&#237;as sea inusualmente abundante, y cu&#225;nta lluvia se espera.</p>
-<p><b>&#191;Y ahora qu&#233; hago?</b></p>
-<p>Si ve un color azul sobre su regi&#243;n, las respuestas posibles incluyen:
+<h2 align="center"  property="term:title" >&#191;C&#243;mo se compara la cantidad de lluvia pronosticada con la lluvia normal durante este mes?</h2>
+<p align="left" property="term:description">Este mapa muestra locaciones que tiene un pron&#243;stico de recibir en los pr&#243;ximos seis d&#237;as un grande porcentaje de la lluvia que se recibe normalmente durante este mes en cada locati&#243;n.</p>
+<p>Si ve colores oscuras sobre su regi&#243;n:
 <ul>
-<li>Comun&#237;quese con su departamento meteorol&#243;gico local o regional y observe sus pron&#243;sticos para los siguientes seis d&#237;as.</li>
-<li>Considere qui&#233;n puede resultar m&#225;s afectado por el pron&#243;stico de lluvias abundantes.</li>
-<li>Revise sus planes de contingencia y actual&#237;celos seg&uacute;n sea necesario.</li>
+<li>Revise <a href="http://iridl.ldeo.columbia.edu/proto/maproom/IFRC/FIC/index.html?Set-Language=es">este mapa</a> para ver si se esperan lluvias excepcionalmente abundantes en su locati&#243;n.</li>
+<li>Considere qui&#233;n puede resultar m&#225;s afectado si un grande porcentaje de la lluvia que se recibe normalmente durante este mes viene en los pr&#243;ximos seis d&#237;as.</li>
 </ul>
 </p>
-<p>Consulte la secci&#243;n “M&#225;s informaci&#243;n” para ver los detalles.</p>
+<p>Consulte la secci&#243;n “M&#225;s informaci&#243;n” para ver los detalles de pron&#243;stico.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2 align="center">&#191;Qu&#233; significa “Abundante”?</h2>

@@ -62,26 +62,26 @@
 </fieldset>
 <div id="tabs-1" class="ui-tabs-panel">
 <h2 align="center"  property="term:title" >Where is exceptionally heavy rainfall expected?</h2>
-<p align="left" property="term:description">This map shows where unusually heavy rainfall (or snowfall) is expected for the next 6 days.</p>
-<p><b>What do I do next?</b></p>
-<p>If you see blue over your region, possible responses include:
+<p align="left" property="term:description">This map shows places in the world that are forecasted to receive exceptionally heavy rainfall in the next six days relative to what is normal for their location.</p>
+<p><b>What early action can I take to reduce possible disaster effects?</b></p>
 <ul>
 <li>Contact your local/regional meterological department and monitor their forecasts for the next six days.</li>
 <li>Consider who may be most affected by heavy rainfall.</li>
 <li>Review your contingency plans and update as necessary.</li>
+<li> See pages 4 and 5 in this <a href="http://www.climatecentre.org/downloads/File/reports/Early%20Warning%20Early%20Action%202008.pdf">Early Warning Early Action booklet</a> for examples of early action based on rainfall forecasts.</li>
 </ul>
 </p>
-<p>See the "More Information" tab for details.</p>
+<p>See the "More Information" tab for forecast details.</p>
 </div>
  <div id="tabs-2" class="ui-tabs-panel" about="">
 <h2 align="center">What does "Heavy" mean?</h2>
 <p>This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be exceptionally heavy.</p>
 <ul>
-<li> The darkest blue shows where the total 6-day rainfall is expected to be exceptionally heavy, meaning in the top 1% of rainfall experienced at this location at any time of year in the past. </li>
+<li> The darkest blue shows where the total 6-day rainfall is expected to be exceptionally heavy, meaning in the top 1% of rainfall ever at this location at any time of year in the past. </li>
 <li> The medium blue shows expected rainfall in the top 5% </li>
 <li> Light blue shows expected rainfall in the top 10% of rainfall experienced in this location in the past. </li>
 </ul>
-<p align="left"><i>This forecast shows rain over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i>  The map does not distinguish areas where rainfall is expected from areas where snow is expected.
+<p align="left"><i>This forecast shows rain/snow over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i> 
 </p>
 </div>
 <div id="tabs-3"  class="ui-tabs-panel">

@@ -62,16 +62,16 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;D&#243;nde se esperan lluvias excepcionalmente abundantes?</h2>
-<p align="left" property="term:description">Este mapa muestra las &#225;reas donde se predice que la lluvia (o nieve) acumulada en los pr&#243;ximos seis d&#237;as sea excepcionalmente abundante.</p>
-<p><b>&#191;Y ahora qu&#233; hago?</b></p>
-<p>Si ve un color azul sobre su regi&#243;n, las respuestas posibles incluyen:
+<p align="left" property="term:description">Este mapa muestra las &#225;reas donde se predice que la lluvia (o nieve) acumulada en los pr&#243;ximos seis d&#237;as sea excepcionalmente abundante relativo a la lluvia normal en este locaci&#243;n.</p>
+<p><b>&#191;Qu&#233; acci&#243;n temprana puedo hacer?</b></p>
 <ul>
 <li>Comun&#237;quese con su departamento meteorol&#243;gico local o regional y observe sus pron&#243;sticos para los siguientes seis d&#237;as.</li>
 <li>Considere qui&#233;n puede resultar m&#225;s afectado por el pron&#243;stico de lluvias abundantes.</li>
 <li>Revise sus planes de contingencia y actual&#237;celos seg&uacute;n sea necesario.</li>
+<li>Vea p&#225;ginas 6 y 7 en este <a href="http://www.climatecentre.org/downloads/File/reports/Alerta%20Temprana.pdf">folleto Alerta temprana, Acci&#243;n temprana</a> para encontrar ejemplos de acci&#243;n basadas en pron&#243;sticos.</li>
 </ul>
 </p>
-<p>Consulte la secci&#243;n “M&#225;s informaci&#243;n” para ver los detalles.</p>
+<p>Consulte la secci&#243;n “M&#225;s informaci&#243;n” para ver los detalles de pron&#243;stico.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2 align="center">&#191;Qu&#233; significa “Abundante”?</h2>

@@ -42,7 +42,7 @@
 <div><img src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
 <h2 property="term:title">La Federaci&#243;n Internacional de Sociedades de la Cruz Roja y de la Media Luna Roja:  Predicciones en Contexto</h2>
 <span align="left" property="term:description">
-Esta colecci&#243;n de mapas provee informaci&#243;n que puede ser utilizado para tomar decisiones humanitarias a cualquier parte del mundo, fue creado por el IRI y la FICR.</span> 
+Esta colecci&#243;n de mapas provee informaci&#243;n que puede ser utilizado para tomar decisiones humanitarias a cualquier parte del mundo. Esta colecci&#243;n fue creada por el IRI y la FICR. Tambi&#233;n provee informaci&#243;n de acci&#243;nes tempranas que puede hacer basada de los mapas.</span> 
 <p>Aga clic en las fichas (arriba a la derecha) para acceder a los enlaces a las mapas siguientes:
  <ul>
 <li><b>Pron&#243;sticos para los Pr&#243;ximos 6 D&#237;as:</b> Est&#233;s mapas muestran las &#225;reas donde se predice la lluvia abundante en los pr&#243;ximos seis dias, y cu&#225;nta lluvia se espera.</li>

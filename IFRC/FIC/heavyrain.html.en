@@ -12,7 +12,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Entry_Id" content="IFRC_FIC_heavyrain" />
 <meta property="maproom:Sort_Id" content="a02" />
-<title>IFRC PIC: How heavy is the rainfall expected to be?</title>
+<title>IFRC PIC: How does expected rainfall compare to normal rainfall for this month?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="heavyrain.html?Set-Language=es" />
@@ -61,18 +61,16 @@
   <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colorscale2+-fig//nplotstream+2+def+//S/1369./plotvalue/X/178.75/538.75/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >How heavy is the rainfall expected to be?</h2>
-<p align="left" property="term:description">This map shows areas where total rainfall (or snow) over the next six days is expected to be unusually heavy, and how much that rainfall will be.</p>
+<h2 align="center"  property="term:title" >How does expected rainfall compare to normal rainfall for this month?</h2>
+<p align="left" property="term:description">This map shows places in the world that are forecasted to receive over the next six days a large percentage of the rainfall that normally falls over this entire month in their location.</p>
 
-<p><b>What do I do next?</b></p>
-<p>If you see blue over your region, possible responses include:
+<p>If you see dark colours over your region:
 <ul>
-<li>Contact your local/regional meterological department and monitor their forecasts for the next six days.</li>
-<li>Consider who may be most affected by heavy rainfall.</li>
-<li>Review your contingency plans and update as necessary.</li>
+<li>Check <a href="http://iridl.ldeo.columbia.edu/proto/maproom/IFRC/FIC/index.html">this map</a> to see if the expected rainfall is exceptionally heavy for your location.</li>
+<li>Consider who may be most affected if a large percentage of the rainfall that is usually received over this month falls in the next six days.</li>
 </ul>
 </p>
-<p>See the "More Information" tab for details.</p>
+<p>See the "More Information" tab for  forecast details.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2 align="center">What does "Heavy" mean?</h2>

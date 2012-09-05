@@ -13,7 +13,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Entry_Id" content="IFRC_FIC_cummrain" />
 <meta property="maproom:Sort_Id" content="a04" />
-<title>IFRC PIC: How much rain is expected cumulatively?</title>
+<title>IFRC PIC: How much rain is expected?</title>
 <link rel="stylesheet" type="text/css" href="../../maproom.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="cummrain.html?Set-Language=es" />
@@ -62,18 +62,12 @@
   <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colorscale2+-fig//nplotstream+2+def+//S/1369./plotvalue/X/178.75/538.75/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >How much rain is expected cumulatively?</h2>
-<p align="left" property="term:description">This map shows the total amount of rain or snow that is expected to fall in the next 6 days.</p>
-<p><b>What do I do next?</b></p>
-<p>If you see dark colours over your region, possible responses include:
-<ul>
-<li>Consider how much rainfall is "normal" for this time of year, and whether this forecast indicates something unusually high or low.</li>
-<li>Contact your local/regional meterological department and monitor their forecasts for the next six days.</li>
-<li>Consider who may be most affected by the rainfall forecast.</li>
-<li>Review your contingency plans and update as necessary.</li>
-</ul>
+<h2 align="center"  property="term:title" >How much rain is expected?</h2>
+<p align="left" property="term:description">This map shows the total amount of rain or snow (in mm) that is expected to fall in the next 6 days.</p>
+Consider how much rainfall is "normal" for this time of year, and whether this forecast indicates something unusually high or low.</li>
+Check <a href="http://iridl.ldeo.columbia.edu/proto/maproom/IFRC/FIC/index.html">this map</a> to see if the expected rainfall is exceptionally heavy for your location.
 </p>
-<p>See the "More Information" tab for details.</p>
+<p>See the "More Information" tab for forecast details.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2 align="center">What do the colours mean?</h2>
