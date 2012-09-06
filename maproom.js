@@ -1838,7 +1838,7 @@ element.className=element.className.replace(" "+slist[i],"");
 function changeClassWithin(pelement,fromclass,toclass){
 var targetlist=pelement.getElementsByClassName(fromclass);
 if(pelement.className.indexOf(fromclass) >= 0 ){
-    targetlist.push(pelement);
+    targetlist[targetlist.length] = pelement;
 }
 for (var i = targetlist.length-1 ; i >= 0; i--){
 var ind=targetlist[i];
