@@ -1744,10 +1744,15 @@ if(myform){
 var stag = mycontext.getElementsByClassName('pageformcopy');
 for (var i=0; i< stag.length ; i++){
 var sel=stag[i];
+if(typeof(myform.elements[sel.name]) != 'undefined'){
 var cval = myform.elements[sel.name].value;
 if((typeof(sel.value) != 'undefined') && cval && sel.value != cval){
 sel.value=cval;
 }
+    }
+    else {
+	alert('no pageform input called ' + sel.name);
+    }
 if(typeof(sel.selectedIndex) === 'number'){
 var options=sel.options;
 var cval = myform.elements[sel.name].value;
