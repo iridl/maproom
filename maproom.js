@@ -1837,6 +1837,9 @@ element.className=element.className.replace(" "+slist[i],"");
 // traverses list in reverse order because the list updates as it executes
 function changeClassWithin(pelement,fromclass,toclass){
 var targetlist=pelement.getElementsByClassName(fromclass);
+if(pelement.className.indexOf(fromclass) >= 0 ){
+    targetlist.push(pelement);
+}
 for (var i = targetlist.length-1 ; i >= 0; i--){
 var ind=targetlist[i];
 ind.className=ind.className.replace(fromclass,toclass);
