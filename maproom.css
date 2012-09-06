@@ -646,7 +646,7 @@ img.dlimg, img.dlauximg, img.dlimgts {
 }
 @media only all and (max-width: 479px) {
 .dlimage, .dlimage.wide, .dlimage.tall {
-	width: 90%;
+	width: 89%;
 }
 .iriicon {
 float: left;
@@ -747,7 +747,7 @@ display: inline;
 /* ipad is 1024 -- this 1024 and above */
 @media only all and (min-width: 1024px) {
 .dlimage {
-	width: 47%;
+	width: 46%;
 }
 .dlimage.wide {
 	width: 65%;
@@ -759,6 +759,11 @@ display: none;
 display: inline;
 }
 
+}
+@media only all and (min-width: 1400px) {
+.dlimage {
+	width: 47%;
+}
 }
 @media only all and (min-width: 800px) and (orientation: landscape){
 .dlimage.tall {
