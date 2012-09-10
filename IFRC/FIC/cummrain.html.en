@@ -64,8 +64,8 @@
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >How much rain is expected?</h2>
 <p align="left" property="term:description">This map shows the total amount of rain or snow (in mm) that is expected to fall in the next 6 days.</p>
-Consider how much rainfall is "normal" for this time of year, and whether this forecast indicates something unusually high or low.</li>
-Check <a href="http://iridl.ldeo.columbia.edu/proto/maproom/IFRC/FIC/index.html">this map</a> to see if the expected rainfall is exceptionally heavy for your location.
+<p>Consider how much rainfall is "normal" for this time of year, and whether this forecast indicates something unusually high or low.</p>
+<p>Check <a href="http://iridl.ldeo.columbia.edu/proto/maproom/IFRC/FIC/index.html">this map</a> to see if the expected rainfall is exceptionally heavy for your location.
 </p>
 <p>See the "More Information" tab for forecast details.</p>
 </div>

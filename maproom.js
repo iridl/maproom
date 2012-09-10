@@ -1469,7 +1469,9 @@ for (var i=0; i<slist.length ; i++){
     if(mysel.previousSibling.className != "selectvalue"){
 	var sv = document.createElement('span');
 	sv.className='selectvalue';
+	if(mysel.selectedIndex >=0){
 	sv.innerHTML=mysel.options[mysel.selectedIndex].innerHTML;
+	}
 	mysel.parentNode.insertBefore(sv,mysel);
     }
 }
@@ -1663,13 +1665,13 @@ var cmem=members[j];
 if(cmem.tagName == 'IMG'){
 var newsrc = appendPageForm(cmem.src.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.src){
-    cmem.src = newsrc;
 if(!quietflag) {
 changeClass(cmem,'valid','invalid');
 }
+    cmem.src = newsrc;
 }
 }
-if(cmem.tagName == 'LINK'){
+if(cmem.tagName == 'LINK' || cmem.tagName == 'A'){
 var newsrc = appendPageForm(cmem.href.replace(/[?].*/,''),cmem.className);
 if(newsrc != cmem.href){
     cmem.href = newsrc;
@@ -1742,10 +1744,15 @@ if(myform){
 var stag = mycontext.getElementsByClassName('pageformcopy');
 for (var i=0; i< stag.length ; i++){
 var sel=stag[i];
+if(typeof(myform.elements[sel.name]) != 'undefined'){
 var cval = myform.elements[sel.name].value;
 if((typeof(sel.value) != 'undefined') && cval && sel.value != cval){
 sel.value=cval;
 }
+    }
+    else {
+	alert('no pageform input called ' + sel.name);
+    }
 if(typeof(sel.selectedIndex) === 'number'){
 var options=sel.options;
 var cval = myform.elements[sel.name].value;
@@ -1835,6 +1842,9 @@ element.className=element.className.replace(" "+slist[i],"");
 // traverses list in reverse order because the list updates as it executes
 function changeClassWithin(pelement,fromclass,toclass){
 var targetlist=pelement.getElementsByClassName(fromclass);
+if(pelement.className.indexOf(fromclass) >= 0 ){
+    targetlist[targetlist.length] = pelement;
+}
 for (var i = targetlist.length-1 ; i >= 0; i--){
 var ind=targetlist[i];
 ind.className=ind.className.replace(fromclass,toclass);

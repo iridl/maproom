@@ -63,7 +63,7 @@
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;D&#243;nde se esperan lluvias excepcionalmente abundantes?</h2>
 <p align="left" property="term:description">Este mapa muestra las &#225;reas donde se predice que la lluvia (o nieve) acumulada en los pr&#243;ximos seis d&#237;as sea excepcionalmente abundante relativo a la lluvia normal en este locaci&#243;n.</p>
-<p><b>&#191;Qu&#233; acci&#243;n temprana puedo hacer?</b></p>
+<p><b>&#191;Qu&#233; acci&#243;n temprana puedo hacer?</b>
 <ul>
 <li>Comun&#237;quese con su departamento meteorol&#243;gico local o regional y observe sus pron&#243;sticos para los siguientes seis d&#237;as.</li>
 <li>Considere qui&#233;n puede resultar m&#225;s afectado por el pron&#243;stico de lluvias abundantes.</li>
