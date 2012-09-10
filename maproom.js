@@ -1787,8 +1787,9 @@ if(myform){
 var stag = mycontext.getElementsByClassName('pageformcopy');
 for (var i=0; i< stag.length ; i++){
 var sel=stag[i];
+var cval;
 if(typeof(myform.elements[sel.name]) != 'undefined'){
-var cval = myform.elements[sel.name].value;
+cval = myform.elements[sel.name].value;
 if((typeof(sel.value) != 'undefined') && cval && sel.value != cval){
 sel.value=cval;
 }
@@ -1796,7 +1797,7 @@ sel.value=cval;
     else {
 	alert('no pageform input called ' + sel.name);
     }
-if(typeof(sel.selectedIndex) === 'number'){
+if(typeof(cval) != 'undefined' && typeof(sel.selectedIndex) === 'number'){
 var options=sel.options;
 for (var j=0; j < options.length ; j++){
 if(options[j].value == cval){
