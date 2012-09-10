@@ -1100,11 +1100,19 @@ myimgdiv.style.position='absolute';
 myimgdiv.style.width=myfigure.clientWidth + 'px';
 myimgdiv.style.height=myfigure.clientHeight + 'px';
 myimgdiv.style.padding='0px';
+// events on div for almost everybody
 myimgdiv.onmousedown=startdrag;
 myimgdiv.onmouseup=stopdrag;
 myimgdiv.onmousemove=followdrag;
 myimgdiv.onmouseover=hello;
 myimgdiv.onmouseout=goodbye;
+// events on figure for IE9
+myfigure.onmouseover=hello;
+myfigure.onmousedown=startdrag;
+myfigure.onmouseup=stopdrag;
+myfigure.onmousemove=followdrag;
+myfigure.onmouseout=goodbye;
+myfigure.onclick=skipme;
 myimgdiv.mycontainer=myfigure.parentNode;
 myimgdiv.zoomstatus=document.createElement('div');
 myimgdiv.zoomstatus.className='zoomStatus';
@@ -1170,7 +1178,14 @@ return elem;
 return null;
 }
 function hello(evt){
-var myimgdiv=getcurrentTarget(evt);
+    var myimgdiv;
+var mytarget=getcurrentTarget(evt);
+if(mytarget.myoverlay){
+    myimgdiv = mytarget.myoverlay;
+}
+else {
+    myimgdiv = mytarget;
+}
 if(myimgdiv){
 var myform=document.getElementById('pageform');
 var checkobject;
@@ -1197,7 +1212,14 @@ mypar.timeoutId=setTimeout(function () {mypar.style.visibility='hidden'},3000);
 return true;
 }
 function goodbye(evt){
-var myimgdiv=getcurrentTarget(evt);
+    var myimgdiv;
+var mytarget=getcurrentTarget(evt);
+if(mytarget.myoverlay){
+    myimgdiv = mytarget.myoverlay;
+}
+else {
+    myimgdiv = mytarget;
+}
 if(myimgdiv){
 myimgdiv.zoomstatus.style.visibility="hidden";
 if(myimgdiv.zoomstatus.timeoutId){
@@ -1217,7 +1239,14 @@ return false;
 }
 function stopdrag(evt){
 evt = (evt) ? evt : event;
-var myimgdiv=getcurrentTarget(evt);
+    var myimgdiv;
+var mytarget=getcurrentTarget(evt);
+if(mytarget.myoverlay){
+    myimgdiv = mytarget.myoverlay;
+}
+else {
+    myimgdiv = mytarget;
+}
 var myinfo = myimgdiv.inputimage.mylink.info;
 myimgdiv.style.cursor='auto';
 var myvals;
@@ -1267,7 +1296,14 @@ myval=obj.offsetTop;
 return myval;}
 function startdrag(evt){
 evt = (evt) ? evt : event;
-var myimgdiv=getcurrentTarget(evt);
+    var myimgdiv;
+var mytarget=getcurrentTarget(evt);
+if(mytarget.myoverlay){
+    myimgdiv = mytarget.myoverlay;
+}
+else {
+    myimgdiv = mytarget;
+}
 var myworld = myimgdiv.mycontainer;
 if(myworld){
 var myinfo = myimgdiv.inputimage.mylink.info;
@@ -1290,7 +1326,14 @@ return false;
 }
 function followdrag(evt){
 evt = (evt) ? evt : event;
-var myimgdiv=getcurrentTarget(evt);
+    var myimgdiv;
+var mytarget=getcurrentTarget(evt);
+if(mytarget.myoverlay){
+    myimgdiv = mytarget.myoverlay;
+}
+else {
+    myimgdiv = mytarget;
+}
 var myworld = myimgdiv.mycontainer;
 if(myworld){
 var myinfo = myimgdiv.inputimage.mylink.info;
@@ -1755,7 +1798,6 @@ sel.value=cval;
     }
 if(typeof(sel.selectedIndex) === 'number'){
 var options=sel.options;
-var cval = myform.elements[sel.name].value;
 for (var j=0; j < options.length ; j++){
 if(options[j].value == cval){
 sel.selectedIndex=j;
