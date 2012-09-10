@@ -101,8 +101,8 @@ color: blue;
 </span>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >How important have century-long shifts in climate been?</h2>
-<p align="left" property="term:description">This map shows how wet and dry periods have varied over time. Draw a rectangle over a region or click a place on the map, to see graphs for that location. These graphs depict how much rainfall (or temperature) varies from year to year, decade to decade, and over the past century. This information can be used for planning purposes on different timescales, and to provide context for recent memories of rainfall patterns or specific events in a longer-term perspective.</p>
-<p align="left">If 10-year shifts are orange or red, then decade-long shifts in rain or temperature may be particularly important in your location.</p>
+<p align="left" property="term:description">This map shows how wet and dry periods have varied over time. Draw a rectangle over a region or click a place on the map, to see graphs for that location.</p>
+<p>These graphs depict how much rainfall (or temperature) varies from year to year, decade to decade, and over the past century. This information can be used for planning purposes on different timescales, and to provide context for recent memories of rainfall patterns or specific events in a longer-term perspective. Please note, however, that past trends are not necessarily indicative of future trends.</p><p align="left">If a location on the left map is orange or red, then century-long shifts in rain or temperature may have been particularly important in that location.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
