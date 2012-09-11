@@ -1914,6 +1914,9 @@ submitPageForm -- submits pageform to href, appending inputs corresponding to cl
 */
 function submitPageForm(href,classes){
 var localhref=localHrefOf(href);
+if(localhref.indexOf('?')>0){
+    localhref=localhref.substr(0,localhref.indexOf('?'));
+}
 var myform=document.getElementById('pageform');
 if(myform){
 var inputs=myform.elements;
