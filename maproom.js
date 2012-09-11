@@ -1937,7 +1937,7 @@ document.location.href=localhref;
 else {
 /* our rewrite rules do not handle Set-Language for a directory, so we avoid doing it
  */
-if(localhref.charAt(href.length-1) == '/'){
+if(localhref.charAt(localhref.length-1) == '/'){
     localhref=localhref+'index.html';
 }
 myform.action=localhref;
