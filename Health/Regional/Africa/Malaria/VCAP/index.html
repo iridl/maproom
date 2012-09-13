@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Land Surface Temperature (LST) nighttime</title>
+<title>Vectorial Capacity (VCAP)</title>
 <script type="text/javascript" src="../../../../../maproom.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../maproom.css" />
 <link class="share" rel="canonical" href="index.html" />
@@ -24,10 +24,8 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
-<link rel="term:isDescribedBy" href="http://marinemetadata.org/2005/08/gcmd-inst#MODIS"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Reflectance"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#LandSurface"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
@@ -103,15 +101,26 @@ margin: 0px;
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Vectorial Capacity (VCAP) -- Malaria </h2>
-<p align="left" property="term:description">8 day average VCAP from Model</p>
+<p align="left" property="term:description">8 day average VCAP from Model. The VCAP interface provides a contextual perspective of recent vectorial capacity by comparing it to previous seasons.</p>
+<h4>References</h4>
+<p>
+Ceccato, P. , Vancutsem, C., Klaver, R., Rowland, J., Connor, S.J. <a href="http://www.hindawi.com/journals/jtm/2012/595948/">A Vectorial Capacity Product to Monitor Changing Malaria Transmission Potential in Epidemic Regions of Africa</a>. <i>Journal of Tropical Medicine</i>, Volume 2012, Article ID 595948, doi:10.1155/2012/595948.
+</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <p><b><a class="carry"></a>8 day average Vectorial Capacity</b><br /> 
 <b>Data</b> 8 Day Vectorial Capacity Model -- Malaria 
 <br /><b>Data Source</b> USGS/Famine Early Warning System (FEWS)
-<br /><b>Analysis</b> 
 </p>
+<h4>Epidemiological Mask</h4>
+<dl class="datasetdocumentation">
+<p>
+Mask illustrating areas where malaria is considered to be epidemic.  Areas where malaria transmission is considered absent or endemic are therefore excluded. This mask is based purely on climatic constraints to malaria transmission, and does not yet account for areas in the northern and southern margins of the continent where control has eliminated malaria risk.
+</p>
+*More dekadal and daily data from FEWS is available from the 
+<a href="http://earlywarning.usgs.gov/fews/africa/index.php">FEWS NET Africa Data Portal</a>.
+</dl>
 </div>
 <div id="tabs-3"  class="ui-tabs-panel">
 <h2  align="center">Helpdesk</h2>
