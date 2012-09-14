@@ -12,7 +12,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Entry_Id" content="IFRC_FIC_CMAP_climo" />
 <title>IFRC PIC: &#191;Cu&#225;nta lluvia cae normalmente en esta parte del a&#241;o?</title>
-<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="CMAP_climo.html?Set-Language=en" />
 <link rel="canonical" href="CMAP_climo.html" />
@@ -21,7 +21,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
-<script type="text/javascript" src="../../maproom.js"></script>
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body  xml:lang="es">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">

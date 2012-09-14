@@ -13,7 +13,7 @@
 <meta property="maproom:Entry_Id" content="IFRC_FIC_heavyrain" />
 <meta property="maproom:Sort_Id" content="a03" />
 <title>IFRC PIC: &#191;C&#243;mo se compara la cantidad de lluvia pronosticada con la lluvia normal durante este mes?</title>
-<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="heavyrain.html?Set-Language=en" />
 <link rel="canonical" href="heavyrain.html" />
@@ -22,7 +22,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
-<script type="text/javascript" src="../../maproom.js"></script>
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body  xml:lang="es"> 
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">

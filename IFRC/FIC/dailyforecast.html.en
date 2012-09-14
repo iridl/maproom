@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <title>IFRC PIC: Daily Forecasts</title>
-<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <!--<link class="altLanguage" rel="alternate" hreflang="es" href="dailforecast.html?Set-Language=es" />-->
 <link rel="canonical" href="dailyforecast.html" />
@@ -20,7 +20,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
-<script type="text/javascript" src="../../maproom.js"></script>
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <style>
 .dlimage, .dlimage.wide{
 float: none;

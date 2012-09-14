@@ -11,7 +11,7 @@
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>IFRC Forecasts in Context</title>
-<link rel="stylesheet" type="text/css" href="../maproom.css" />
+<link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="ifrc.css" />
 <link rel="canonical" href="index.html"/>
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
@@ -19,7 +19,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/300/plotrange//S/216./plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.jpg" />
-<script type="text/javascript" src="../maproom.js"></script>
+<script type="text/javascript" src="../../uicore/uicore.js"></script>
 </head>
 <body>
 

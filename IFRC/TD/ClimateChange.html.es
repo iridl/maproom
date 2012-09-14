@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <meta property="maproom:Sort_Id" content="d01" />
 <title>IFRC PIC: Recent Climate Trends</title>
-<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="ClimateChange.html?Set-Language=en" />
 <link rel="canonical" href="ClimateChange.html" />
@@ -20,7 +20,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.benno/.UEA/.CRU/.TS3p1/.monthly/.r2p5/a:/%28.tmp%29//var/parameter/interp/yearly-anomalies/T/%28Jan-Dec%201901-2009%29//season/parameter/seasonalAverage/:a:/.stn/%28.pre%29//var/parameter/interp/0/maskle/T/%28Jan-Dec%201901-2009%29//season/parameter/0.66/seasonalAverage/0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage/0.5/masklt%5BT%5D0.5/average/0/mul/add/%28.pre%29//var/parameter/%28.pre%29eq/%7B:a:/.pre/T/%28Jan-Dec%201901-2009%29//season/parameter/seasonalAverage/T/differential_mul%5BT%5Daverage/30/masklt/0/mul/add%7Dif/:a/X/-20/180/-20/RANGEEDGES/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/:butt_filter/.butt%5BX/Y%5DREORDER/2/index/2/index/sub/1/index/sub/pop/pop%5BT%5Drmsaover/0/maskle/%28units%29%28mm/month%29def/dup/mul/exch%5BT%5Drmsaover/dup/mul/div/%7BLow/0.15/Medium/0.25/High/0.45/%28Extremely%20High%29%7D%28DoI%29classify%5BDoI%5Ddominant_class/%28long_name%29%28Degree%20of%20Importance%29def/startcolormap/white/white/90/190/95/RGB/yellow/orange/red/white/endcolormap//max-age/6048000/def/X/Y/fig-/colors/countries_gaz/-fig/%28plotaxislength%29590/psdef/%28antialias%29true/psdef//plotborder/0/psdef//plotaxislength/200/psdef/+//plotborder+0+psdef//plotaxislength+200+psdef+.gif" />
-<script type="text/javascript" src="../../maproom.js"></script>
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <style>
 .dlimage, .dlimage.wide{
 float: none;

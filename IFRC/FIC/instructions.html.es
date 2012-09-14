@@ -10,7 +10,7 @@
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
     <title>IFRC PIC: Como Usar el Pron&oacute;stico de Precipitaci&oacute;n en la Herramienta de Mapa de Contexto</title>
-<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link rev="section" href="fic.html" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="instructions.html?Set-Language=en" />
@@ -31,7 +31,7 @@
     p {clear: right}
     -->
     </STYLE>
-<script type="text/javascript" src="../../maproom.js"></script>
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000">
 <form name="pageform" id="pageform" class="carryup carry">

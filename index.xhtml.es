@@ -11,13 +11,13 @@
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>IRI Map Room</title>
-<link rel="stylesheet" type="text/css" href="maproom.css" />
+<link rel="stylesheet" type="text/css" href="../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link rel="canonical" href="index.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
-<script type="text/javascript" src="maproom.js"></script>
+<script type="text/javascript" src="../uicore/uicore.js"></script>
 </head>
 <body>
 

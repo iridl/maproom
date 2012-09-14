@@ -13,7 +13,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Sort_Id" content="c02" />
 <title>IFRC PIC: What Changes in Rainfall are Typical during El Niño and La Niña?</title>
-<link rel="stylesheet" type="text/css" href="../../maproom.css" />
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="laninarain.html?Set-Language=en" />
 <link rel="canonical" href="laninarain.html" />
@@ -22,7 +22,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <link rel="term:icon" href="LaNinaandRainfall220.png" />
-<script type="text/javascript" src="../../maproom.js"></script>
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body>
 <form name="pageform" id="pageform" class="carryup carry share">
