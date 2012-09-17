@@ -66,7 +66,7 @@
 
 <p>If you see dark colours over your region:
 <ul>
-<li>Check <a href="http://iridl.ldeo.columbia.edu/proto/maproom/IFRC/FIC/index.html">this map</a> to see if the expected rainfall is exceptionally heavy for your location.</li>
+<li>Check <a class="carry" href="index.html">this map</a> to see if the expected rainfall is exceptionally heavy for your location.</li>
 <li>Consider who may be most affected if a large percentage of the rainfall that is usually received over this month falls in the next six days.</li>
 </ul>
 </p>

@@ -65,7 +65,7 @@
 <p align="left" property="term:description">Este mapa muestra locaciones que tiene un pron&#243;stico de recibir en los pr&#243;ximos seis d&#237;as un grande porcentaje de la lluvia que se recibe normalmente durante este mes en cada locati&#243;n.</p>
 <p>Si ve colores oscuras sobre su regi&#243;n:
 <ul>
-<li>Revise <a href="http://iridl.ldeo.columbia.edu/proto/maproom/IFRC/FIC/index.html?Set-Language=es">este mapa</a> para ver si se esperan lluvias excepcionalmente abundantes en su locati&#243;n.</li>
+<li>Revise <a class="carry" href="index.html">este mapa</a> para ver si se esperan lluvias excepcionalmente abundantes en su locati&#243;n.</li>
 <li>Considere qui&#233;n puede resultar m&#225;s afectado si un grande porcentaje de la lluvia que se recibe normalmente durante este mes viene en los pr&#243;ximos seis d&#237;as.</li>
 </ul>
 </p>
