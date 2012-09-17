@@ -34,7 +34,7 @@
                       <a rev="section" class="navlink carryup" href="/maproom/IFRC/">Predicciones en Contexto</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions"><span property="term:label">Historical Conditions</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#HistoricalConditions"><span property="term:label">Condiciones Hist&#243;ricas</span></legend>
             </fieldset> 
  </div>
 <div class="ui-tabs">
