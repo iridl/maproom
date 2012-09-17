@@ -64,7 +64,7 @@
 <h2 align="center"  property="term:title" >&#191;Cu&#225;nta lluvia se espera?</h2>
 <p align="left" property="term:description">Este mapa muestra la cantidad total de lluvia o nieve (en mm) que se espera que caiga en los pr&#243;ximos 6 d&#237;as.</p>
 <p>Considere cu&#225;nta lluvia es “normal” para esta parte del año y si el pron&#243;stico indica algo inusualmente alto o bajo.
-Revise <a href="http://iridl.ldeo.columbia.edu/proto/maproom/IFRC/FIC/index.html">este mapa</a> para ver si se esperan lluvias excepcionalmente abundantes en su locati&#243;n.
+Revise <a class="carry" href="index.html">este mapa</a> para ver si se esperan lluvias excepcionalmente abundantes en su locati&#243;n.
 </p>
 <p>Consulte la secci&#243;n “M&#225;s informaci&#243;n” para ver los detalles de pron&#243;stico.</p>
 </div>
