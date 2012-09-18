@@ -96,6 +96,12 @@ margin: 0px;
     </ul>
 <fieldset class="regionwithinbbox dlimage" style="display: none" about="">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X%5B-20/-40/55/40%5D//bbox/parameter/dup/0/get/exch/2/get/RANGEEDGES/Y//bbox/get_parameter/dup/1/get/exch/3/get/RANGEEDGES/%28bb:-20%2C-40%2C55%2C40%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<div style="display: inline-block; text-align: top;">
+<a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">
+Observations for <b><span class="iridl:long_name"></span></b>
+</div>
+</div>
 <br />
 <div class="dlimgtsbox">
 <div>a)</div>
