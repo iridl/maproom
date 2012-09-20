@@ -1,0 +1,3 @@
+[submodule "uicore"]
+	path = uicore
+	url = git@bitbucket.org:iridl/uicore.git
