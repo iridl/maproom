@@ -4,3 +4,6 @@
 [submodule "maproomtools"]
 	path = maproomtools
 	url = git@bitbucket.org:iridl/maproomtools.git
+[submodule "pure"]
+	path = pure
+	url = git@bitbucket.org:iridl/pure.git
