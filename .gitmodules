@@ -1,3 +1,6 @@
 [submodule "uicore"]
 	path = uicore
 	url = git@bitbucket.org:iridl/uicore.git
+[submodule "maproomtools"]
+	path = maproomtools
+	url = git@bitbucket.org:iridl/maproomtools.git
