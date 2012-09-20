@@ -1,296 +1,167 @@
-<INGRID>
-%SOURCES .NOAA .NCEP .CPC .FEWS .TEN-DAY .RFEv2 .est_prcp
- home .mbell .NASA .GSFC .TOMS .OMI .version8 .daily .ai 
-  X -20 55 RANGE
-  Y -15 40 RANGE
-  T (1 Oct 2004) last RANGE
-  0.667 dekadalAverage
-/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/maproom/.Health/.Regional/.Africa/.Malaria/.MEWS/instructions.html)redirectto stop} if
-leftmenuinfo:
-{ X Y T} setleftmenugrids
-WWWinfo /map FORMgetknown {.Y .step
-nip
-/map.Y.step
-exch def} 
-{pop}ifelse
-[/mask /districts /states /countries /coasts] {dup FORMknown {dup (on) def}if pop} forall
-
-
-:leftmenuinfo
-onClickforInfo?
-{
-WWWinfo .currenturldir 
-(/) rsearch { pop pop} if
-(/) rsearch { pop pop} if
-(/) rsearch { pop pop} if
-(/../Local/NRaerosol.html) append
-redirecttowithleftmenuinfo
-%(toolbar=yes,scrollbars=yes,width=900,height=800) openinpopupwithleftmenuinfo
-%(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print stop
-}if
-
-mimeheader
-pop
-</INGRID>
-<html><head>
-    <title>NASA-ROSES - Dekadal Aerosol Index on an Interactive Map</title>
-<INGRID>
-mappageLinks
-figdefs
-</INGRID>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>OMI Aerosol Monitoring</title>
+<script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
+<link rel="canonical" href="index.html" />
+<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_MEWS" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Meningitis_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#dekad"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Meningitis"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/X/-20/55/RANGE/Y/-15/40/RANGE/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/+.gif" />
+<style>
+.dlimgtsbox { 
+width: 49%;
+display: inline-block
+ }
+</style>
 </head>
-<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onLoad='initdrag();document.mapform.reset();' onunload="window.setTimeout('resetdrag',5000);">
-<INGRID>
-%leftmenuinfo:
-%{ X Y T} setleftmenugrids
-%WWWinfo /map FORMgetknown {.Y .step
-%nip
-%/map.Y.step
-%exch def} 
-%{pop}ifelse
-
-%:leftmenuinfo
-%onClickforInfo?
-%{
-%WWWinfo .currenturldir 
-%(/) rsearch { pop pop} if
-%(/) rsearch { pop pop} if
-%(/) rsearch { pop pop} if
-%(/Local/mewsprcp.html) append
-%redirecttowithleftmenuinfo
-%(toolbar=yes,scrollbars=yes,width=900,height=800) openinpopupwithleftmenuinfo
-%(<script language="JAVASCRIPT">\nif(window.name != "popup"){\nhistory.back();\n}\n</script>\n)print stop
-%}if
-
-%/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Health/.Regional/.Africa/.MEWS/instructions.html)redirectto stop} if
-
-%link:
-%/name (Africa) def
-%/href (javascript:setXY('20W','55E','40S','40N')) def
-%:link
-/leftmenusub? { leftmenulevel 0 get 2 le } def
-leftmenuHeader
-</INGRID>
-<FORM name=mapform action=index.html>
-<INGRID>saveLanguage</INGRID>
-<h3 align=center><u>NASA-ROSES - Dekadal Aerosol Index on an Interactive Map</u></h3>
-<table align=center><tr><td width=600>
-<font point-size=12pt>This interface provides a contextual perspective
-of recent aerosol index by comparing it to previous seasons and recent short-term averages.
-More information about how to use the interface is available <a href="instructions.html">here</a>.</font> 
-</td></tr></table>
-<br><H3 align=center>Clickable Map for Aerosol Index Summaries</h3>
-<center>
-<table border=0><tr valign=center>
-<td align=center>
-<table BORDER COLS=1>
-<tr>
-<td align=center width=130>
-<b><font point-size=12pt>Optional <br>Overlay Maps</font></b>
-</td></tr><tr><td>
-<font point-size=10pt>Boundaries
-<INGRID>
-WWWinfo /map FORMknown 
-[/mask /districts /states /countries /coasts] {FORMknown or} forall
-nip 
-{
-(<br><input type=checkbox name=coasts) print 
-/coasts FORMknown {( checked)print} if
-(>Coasts\n)print
-
-(<br><input type=checkbox name=countries) print
-/countries FORMknown {( checked)print} if
- (>Countries\n) print
-(<br><input type=checkbox name=states)print 
-/states FORMknown {( checked)print} if
-(>States\n)print
-(<br><input type=checkbox name=districts)print 
-/districts FORMknown {( checked)print} if
-(>Districts\n)print
-} 
-{
-(<br><input type=checkbox name=coasts>Coasts\n) print
-(<br><input type=checkbox name=countries checked>Countries\n) print
-(<br><input type=checkbox name=states checked>States\n) print
-(<br><input type=checkbox name=districts>Districts\n) print
-} ifelse
-</INGRID>
-</font></td></tr>
-
-<!--
-<tr><td>
-<font point-size=10pt>Epidemiological
-<br><input type=checkbox name=mask<INGRID>
-/mask FORMknown {( checked)print} if
-</INGRID>>Mask
-</font>
-</td>
-</tr>
--->
-
-</table>
-</td>
-<td align=center>
-<INGRID>
-%SOURCES .NOAA .NCEP .CPC .FEWS .TEN-DAY .RFEv2 .est_prcp MEWSprcp_colors
- home .mbell .NASA .GSFC .TOMS .OMI .version8 .daily .ai 
-  X -20 55 RANGE
-  Y -15 40 RANGE
-  T (1 Oct 2004) last RANGE
-  0.667 dekadalAverage
-T /defaultvalue last def pop
-%  startcolormap 
-%    DATA 0.01 0.05 RANGE
-%    white white LightGoldenrod LightGoldenrod
-%       0.01 VALUE
-%       ForestGreen
-%        0.05 VALUE
-%        ForestGreen endcolormap
-/mask FORMknown
-{
-IRIDB (select epiz_new2_geom as geom from epiz_new2) openquery .geom
-} if
-X Y fig: colors 
-WWWinfo /map FORMknown 
-[/mask /districts /states /countries /coasts] {FORMknown or} forall
-nip
-{
-%/mask FORMknown {blue thin  epiz} if
-/mask FORMknown { red stroke } if
-/districts FORMknown{grey verythin mews_dist} if
-/states FORMknown{
-/districts FORMknown {black}{grey}ifelse verythin mews_prov} if
-/countries FORMknown{black thin countries_gaz} if
-/coasts FORMknown{ black thinnish coasts_gaz} if
-} 
-{
-grey verythin mews_prov black thin countries_gaz 
-}ifelse
-:fig
-/antialias true psdef
-/temp -15 45 plotrange
-%/XOVY 1.7 psdef
-%/plotborderleft 35 psdef
-%/plotborderright 25 psdef
-%/plotborderbottom 90 psdef
-%/plotbordertop 55 psdef
-figdup
-/map 
-showmenu? 
-{inputimagelinkwithlimitcontrolsclickforinfo}
-{imagelink } ifelse
-</INGRID>
-<br>
-<INGRID>
-figdup .auxfig
-imagelink
-</INGRID>
-</td>
-<td>
-<table BORDER COLS=1 width=150>
-<tr>
-<td>
-<center><b><font point-size=12pt>Time Series Region</font></b></center>
-</td></tr><tr><td><font point-size=10pt>
-Spatially average data over the following region:
-<br><input type=radio name="map.Y.step" value="Country">Country Boundary
-<br><input type=radio name="map.Y.step" value="province">Province Boundary
-<br><input type=radio name="map.Y.step" value="district" checked>District Boundary
-<!--
-<br><input type=radio name="map.Y.step" value=".1">11x11 km box 
-<br><input type=radio name="map.Y.step" value=".3">33x33 km box 
-<br><input type=radio name="map.Y.step" value=".5">55x55 km box 
--->
-<br><input type=radio name="map.Y.step" value="1.">111x111 km box 
-</font></td>
-</tr>
-</table>
-</td>
-</tr></table>
-
-
-<table BORDER COLS=1 WIDTH=650 bgcolor="#F5F5F5" NOSAVE >
-<tr><td align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
-<tr>
-<td>
-<b>Aerosol Index</b><br>
-<font size=-1><b>Data</b>:&nbsp;&nbsp;Dekadal-average NASA TOMS OMI aerosol index on a 1.0 x 1.0 deg. lat/lon grid.  The dekadal average is calculated only if at least two-thirds of the daily values in a dekad are non-missing.</font>
-<br><font size=-1><b>Data Source</b>:&nbsp; NASA GSFC
-(<a href="http://ozoneaq.gsfc.nasa.gov/OMIAerosol.md">OMI Aerosol data from NASA GSFC</a>) </font>
+<body xml:lang="en">
+<form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carry dlimg dlauximg info share" name="var" type="hidden" />
+<input class="dlimg share dlimgloc" name="bbox" type="hidden" />
+<input class="share dlimgts dlimgloc" name="region" type="hidden" />
+<input class="unused" name="plotaxislength" type="hidden" value="432" />
+<input class="pickarea" name="resolution" type="hidden" value="0.5" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Climate and Health</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Meningitis/">Meningitis</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"><span property="term:label">Epidemic Meningitis</span></legend>
+            </fieldset> 
+ <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
+<option value=".1">11x11 km box</option>
+<option value=".3">33x33 km box</option>
+<option value=".5">55x55 km box</option>
+<option value="1.">111x111 km box</option>
+<option value="district">district boundaries</option>
+</select></fieldset>
+ </div>
+<style>
+.leftpart {
+display: inline-block; 
+width: 60%
+}
+.rightpart {
+margin-left: 10pt;
+display: inline-block; 
+width: 30%
+}
+@media only all and (max-width: 400px) {
+.leftpart { width: 100%}
+.rightpart {width: 95%}
+}
+.plotheading {
+text-align: center;
+margin: 0px;
+}
+</style>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/">Dataset</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+<fieldset class="regionwithinbbox dlimage" style="display: none" about="">
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X%5B-20/-15/55/40%5D//bbox/parameter/dup/0/get/exch/2/get/RANGEEDGES/Y//bbox/get_parameter/dup/1/get/exch/3/get/RANGEEDGES/%28bb:-20%2C-15%2C55%2C40%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<div style="display: inline-block; text-align: top;">
+<a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">
+Observations for <b><span class="iridl:long_name"></span></b>
+</div>
+</div>
+<br />
+<div class="dlimgtsbox">
+<div>a)</div>
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0/5/RANGE/toNaN%5BT%5DREORDER/T/fig:/line/:fig//ai/0/5/plotrange/T/2453376.0/last/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+</div>
+<!-- <div class="dlimgtsbox">
+<div>b)</div>
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/null/null/RANGE//plotlast/4/def//fullname/%28Aerosol Index%29def/home/.jdcorral/.Analyses/.OMI/.ai//region/get_parameter/geoobject%5BX/Y%5Dweighted-average%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname/%282004-11%20Average%29def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig//ai/0/5/plotrange//ai/0/5/plotrange/T/first/last/plotrange//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+</div> -->
+<div class="dlimgtsbox">
+<div>b)</div>
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/2/copy//pointwidth/0/def/%286%20Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%281/3%20months%20since%202005-01-01%29def/replaceGRID/DATA/0/5/RANGE/dup/T/1/108/RANGE/T/0/36/72/shiftdata/T//modulus/36/def/pop/exch/T/-108/shiftGRID/T/1/last/RANGE/T//modulus/36/def/pop//fullname/%282012%29def/exch/a:/T_lag/72/VALUE/T_lag/removeGRID//fullname/%282011%29def/:a:/T_lag/36/VALUE/T_lag/removeGRID//fullname/%282010%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID//fullname/%282009%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig//plotaxislength/250/psdef//ai/0/5/plotrange//ai/0/5/plotrange//ai/0/5/plotrange//ai/0/5/plotrange/T/0.5/36.5/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+</div>
 <p>
-</td>
-</tr>
-</table>
-
-<INGRID>showmenu? not {stopprint} if</INGRID>
-<table BORDER COLS=1 width=650 bgcolor="#F5F5F5">
-<tr>
-<td colspan=2 width=50% align=center bgcolor=#DCDCDC><b>Download Map</b></td>
-<td colspan=1 align=center bgcolor=#DCDCDC><b>Download Layer</b></td>
-<td align=center bgcolor=#DCDCDC><b>Download Data</b></td></tr>
-<tr>
-<INGRID>
-showmenu? {
-imagelinkstart
-(<td width=20 align=center>)print
-(Figure as PDF) (.pdf) linktoimageformat
-(</td><td align=center>) print
-(Figure as JPEG) (.jpg) linktoimageformat
-(</td>) print
-} if
-</INGRID>
-<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.NASA/.GSFC/.TOMS/.OMI/.version8/.daily/.ai/X/-20/55/RANGE/Y/-15/40/RANGE/T/(1%20Oct%202004)last/RANGE/0.667/dekadalAverage/<INGRID>
-showmenu?{datarestrictionasurl print } if
-</INGRID>palettecolor.tiff">GeoTiff for GIS</a>
-</td>
-<td rowspan=2 align=center><a href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.NASA/.GSFC/.TOMS/.OMI/.version8/.daily/.ai/X/-20/55/RANGE/Y/-15/40/RANGE/T/(1%20Oct%202004)last/RANGE/0.667/dekadalAverage/<INGRID>
-showmenu?{datarestrictionasurl print } if
-</INGRID>?help+datafiles#GIS">Data for GIS</a></td>
-</tr>
-<tr>
-<INGRID>
-showmenu? {
-pop
-.auxfig
-imagelinkstart
-(<td width=20 align=center>)print
-(Colorscale as PDF) (.pdf) linktoimageformat
-(</td><td align=center>) print
-(Colorscale as JPEG) (.jpg) linktoimageformat
-(</td>) print
-pop
-} if
-</INGRID>
-</tr>
-</table>
-</center>
-
-<INGRID>
-startprint
-</INGRID>
-</FORM>
-  </body></html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+a) Dekadal (i.e., ~10-daily) aerosol index estimates for the selected region from 2005 to the present.  
+</p> <!-- <p>
+b) Same as (a) (solid black line) with the addition of the recent short-term average aerosol index for the same region (grey dotted line).  The blue (red) bars are indicative of estimates that are above (below) the short-term average. Note that the short-term average aerosol index data has been smoothed.
+</p> --> <p>
+b) Same as (a) for the current year (thick black line), as indicated by the axis labels. 
+Aerosol Index estimates from previous years are also shown (blue-1 yr from present; magenta-
+2 yrs from present; grey-3 yrs from present). 
+</p> <!-- <p>
+d) Cumulative dekadal satellite-derived aerosol index estimates (solid black line) and the cumulative recent short-term average aerosol index (grey dotted line) for the most 
+recent 12-month period in the selected region.  The blue (red) bars are indicative of estimates that are above (below) the short-term average.
+</p><p>
+<b>NOTE:</b> <u>The recent short-term average (from 2004 to the latest complete year) of aerosol index should not be interpreted as a climatological normal</u>, which is typically based on a long-term (e.g., 30-year) time series. The length of this short-term average will increase over time as more data becomes available. (An additional year of data will be included in the average during January of each year.)  Despite the limitations that the short-term average imposes, it may provide insight into changes in malaria risk in areas where aerosol index anomalies are the principal cause of malaria epidemics by providing a recent historical reference.
+</p> -->
+</fieldset>
+<fieldset class="dlimage">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/X/-20/55/RANGE/Y/-15/40/RANGE/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/X/-20/55/RANGE/Y/-15/40/RANGE/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/X/-20/55/RANGE/Y/-15/40/RANGE/T/%281%20Oct%202004%292456099.0/RANGE/X/Y/fig-+colorscale2+-fig//nplotstream+1+def+//T/2456085.0/plotvalue+//antialias+true+psdef+.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+ <h2 align="center" property="term:title">OMI Aerosol Monitoring for Meningitis</h2>
+  <p align="left" property="term:description">An aerosol-monitoring product based on dekadal aerosol index analyses from NASA GSFC.  The interface allows users to view recent aerosol index analyses with a seasonal and recent historical perspective.  Time series analyses of aerosol index data are generated based on user-selected parameters.  Note that the aerosols included in the index may be of various types and detected at any height in the atmosphere, not necessarily at the surface.
+</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<h4>Aerosol Index</h4>
+<dl class="datasetdocumentation">
+<dt>Data</dt>
+<dd>Dekadal aerosol index estimates on a 1.0° x 1.0° lat/lon grid</dd>
+<dt>Data Source</dt><dd> NASA GSFC
+(<a href="http://ozoneaq.gsfc.nasa.gov/OMIAerosol.md">OMI Aerosol data from NASA GSFC</a>)*</dd>
+</dl>
+</div>
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
