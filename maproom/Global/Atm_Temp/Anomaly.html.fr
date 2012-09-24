@@ -64,7 +64,6 @@
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Anomalie de Température de Surface Mondiale Mensuelle</h2>
 <p align="left" property="term:description">Les anomalies de la température de l'air en surface sont basées sur des stations d'observation sur terre ferme et des données satellitaires à la surface des océans.  Les contours sont tracés à 1°C d'intervale.  "CAMS" est un acronyme pour "Climate Anomaly Monitoring System", un système du Climate Prediction Center (CPC) au US National Centers for Environmental Prediction (NCEP). </p>
-</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Documentation</h2>
