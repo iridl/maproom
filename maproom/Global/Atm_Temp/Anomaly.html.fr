@@ -10,9 +10,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Monthly Surface Air Temperature Anomaly</title>
+<title>Anomalie de Température de Surface Mondiale Mensuelle</title>
 <meta xml:lang="" property="maproom:Entry_Id" content="Global_Atm_Temp_Anomaly" />
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="Anomaly.html?Set-Language=en" />
 <link class="share" rel="canonical" href="Anomaly.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_term" />
@@ -28,7 +29,7 @@
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/-9999/replaceNaN/-9999/-9999/flagrange//name//tmask/def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp//name//tanom/def/DATA/1./STEP/startcolormap/DATA/-10./10./RANGE/white/purple/purple/-10./VALUE/cyan/-1./VALUE/white/white/1./bandmax/yellow/1./VALUE/red/10./VALUE/firebrick/endcolormap/:ds/a-+.tanom+-a-+.tanom+-a-+.tmask+-a+X+Y+fig:+colors+grey+nozero+unlabelledcontours+mask+black+thin+solid+countries_gaz+:fig+/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//XOVY+null+psdef//plotborder+0+psdef//antialias+true+psdef//color_smoothing+null+psdef//plotaxislength+220+psdef+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
-<body  xml:lang="en">
+<body  xml:lang="fr">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
 <input class="carryup carry " name="Set-Language" type="hidden" />
 <input class="carry dlimg share" name="bbox" type="hidden" />
@@ -61,19 +62,16 @@
   <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/-9999/replaceNaN/-9999/-9999/flagrange//name//tmask/def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp//name//tanom/def/DATA/1./STEP/startcolormap/DATA/-10./10./RANGE/white/purple/purple/-10./VALUE/cyan/-1./VALUE/white/white/1./bandmax/yellow/1./VALUE/red/10./VALUE/firebrick/endcolormap/:ds/a-+.tanom+-a-+.tanom+-a-+.tmask+-a+X+Y+fig:+colors+grey+nozero+contours+mask+black+thin+solid+countries_gaz+:fig+.auxfig+/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//XOVY+null+psdef//plotborder+72+psdef//antialias+true+psdef//color_smoothing+null+psdef//plotaxislength+700+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >Monthly Surface Air Temperature Anomaly</h2>
-<p align="left" property="term:description">This map shows CAMS monthly gridded surface air temperature anomalies for the globe.</p>
-<p align="left"> Monthly surface air temperature anomalies are shown in units of &#176;C.  Yellow to orange colors indicate temperatures above the 1971-2000 climatological average, and shades of blue indicate below-normal temperatures for the month.  Contours are drawn at intervals of +/- 1&#176;C.  Grey areas on the map indicate regions with missing data for the month.</p>
-<p align="left"> "CAMS" is an acronym for the "Climate Anomaly Monitoring System" in use at the Climate Prediction Center (CPC) at the U.S. National Centers for Environmental Prediction (NCEP). 
-</p>
+<h2 align="center"  property="term:title" >Anomalie de Température de Surface Mondiale Mensuelle</h2>
+<p align="left" property="term:description">Les anomalies de la température de l'air en surface sont basées sur des stations d'observation sur terre ferme et des données satellitaires à la surface des océans.  Les contours sont tracés à 1°C d'intervale.  "CAMS" est un acronyme pour "Climate Anomaly Monitoring System", un système du Climate Prediction Center (CPC) au US National Centers for Environmental Prediction (NCEP). </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
-<h2  align="center">Dataset Documentation</h2>
-<h4><a class="carry">Monthly Surface Air Temperature Anomaly</a></h4> 
+<h2  align="center">Documentation</h2>
+<h4><a class="carry">Anomalie de Température de Surface Mondiale Mensuelle</a></h4> 
 <dl class="datasetdocumentation">
-<dt>Data</dt><dd>CPC CAMS gridded monthly surface air temperature anomaly values at 2.0&#176; lat/lon resolution</dd>
-<dt>Data Source</dt><dd>NOAA NCEP Climate Prediction Center</dd>
-<dt>Analysis</dt><dd>Monthly surface air temperature anomaly using 1971-2000 base period</dd>
+<dt>Données</dt><dd>CAMS anomalie de température de l'air de surface (° C) sur une grille lat/lon 2.0° x 2.0°</dd>
+<dt>Source</dt><dd>NOAA NCEP Climate Prediction Center</dd>
+<dt>Période de Référence pour la Climatologie</dt><dd>1971-2000</dd>
 </dl>
 </div>
 <div class="ui-tabs-panel-hidden">
@@ -85,7 +83,7 @@
 <div id="tabs-3"  class="ui-tabs-panel">
 <h2  align="center">Helpdesk</h2>
 <p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Monthly Surface Air Temperature Anomaly">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+Contact <a href="mailto:help@iri.columbia.edu?subject=Anomalie de Température de Surface Mondiale Mensuelle">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
  </p>
 </div>
 </div>
