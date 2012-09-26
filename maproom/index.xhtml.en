@@ -21,20 +21,24 @@
 </head>
 <body>
 
-<form name="pageform" id="pageform" class="carry carryup titleLink">
+<form name="pageform" id="pageform" class="carry carryup titleLink itemImage">
 <input class="carry" name="Set-Language" type="hidden" />
+<input class="titleLink itemImage" name="bbox" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem">
                 <legend>IRI/LDEO</legend> 
-                      <a rev="section" class="navlink carryup" href="http://iridl.ldeo.columbia.edu">Climate Data Library</a>
+                      <a rev="section" class="navlink carryup" href="http://iridl.ldeo.columbia.edu/">Climate Data Library</a>
             </fieldset> 
            <fieldset class="navitem"> 
                 <legend>Data Library</legend> 
                      <span class="navtext">Maproom</span>
 
             </fieldset> 
-</div>
+            <fieldset class="navitem" id="chooseRegion"> 
+                <legend>Region</legend> 
+            </fieldset>
+ </div>
 <div>
  <div id="content" class="searchDescription">
 <h2 property="term:title">IRI Climate and Society Map Room</h2>
