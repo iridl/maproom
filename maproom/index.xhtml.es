@@ -21,8 +21,9 @@
 </head>
 <body>
 
-<form name="pageform" id="pageform" class="carry carryup titleLink">
+<form name="pageform" id="pageform" class="carry carryup titleLink itemImage">
 <input class="carry" name="Set-Language" type="hidden" />
+<input class="titleLink itemImage" name="bbox" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem">
@@ -34,7 +35,10 @@
                      <span class="navtext">Maproom</span>
 
             </fieldset> 
-</div>
+            <fieldset class="navitem" id="chooseRegion"> 
+                <legend>Region</legend> 
+            </fieldset>
+ </div>
 <div>
  <div id="content" class="searchDescription">
 <h2 property="term:title">IRI Clima y la Sociedad Maproom</h2>

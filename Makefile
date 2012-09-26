@@ -12,7 +12,7 @@ VER = $(shell miconf/scripts/git-generate-version-info maproom tag)
 VER_ID = $(shell miconf/scripts/git-generate-version-info maproom id)
 TARBALL = $(VER)
 
-.PHONY: clean distclean tarball install
+.PHONY: srcclean clean distclean tarball install srcbuild build
 
 build: build.tag
 
@@ -32,6 +32,14 @@ build.tag: version.xml
 	$(INSTALL) -d $(BUILD)/pure
 	$(TAR) cf - -C pure --exclude=.git . | $(TAR) xf - -C $(BUILD)/pure
 	touch build.tag
+	
+srcbuild: version.xml
+	cd maproom; \
+	   ../maproomtools/build_maproom.pl; \
+	   cp ../version.xml .
+
+srcclean:
+	git clean -f -d -- maproom
 	
 
 version.xml: .git
