@@ -2,7 +2,7 @@ PLAT ?= $(shell miconf/scripts/miconf-platform)
 ARCH ?= $(shell arch)
 PREFIX ?= /usr/local/$(VER)
 
-BUILD_DIR = ___build
+BUILD = ___build
 
 INSTALL = install
 TAR = tar
@@ -14,11 +14,20 @@ TARBALL = $(VER)
 .PHONY: build clean distclean tarball install
 
 build: version.xml
-	$(INSTALL) -d $(BUILD_DIR)
-	$(TAR) cf - -C maproom . | $(TAR) xf - -C $(BUILD_DIR)
-	(cd maproom; ../miconf/scripts/git-update-timestamp HEAD '*' $(abspath $(BUILD_DIR)); )
-	(cd $(BUILD_DIR); ../maproomtools/build_maproom.pl; cp ../version.xml .; )
-	(cd $(BUILD_DIR); rm -f top.xml tabs.xml tab.xslt maproomtop.owl maproomregistry.owl maproom_section_index.serql canonical_imports.serql tabs.nt top.nt; rm -rf newmaproomcache logs;)
+	$(INSTALL) -d $(BUILD)
+	$(INSTALL) -d $(BUILD)/maproom
+	$(TAR) cf - -C maproom . | $(TAR) xf - -C $(BUILD)/maproom
+	cd maproom; \
+	   ../miconf/scripts/git-update-timestamp HEAD '*' $(abspath $(BUILD)/maproom)
+	cd $(BUILD)/maproom; \
+	   ../maproomtools/build_maproom.pl; \
+	   rm -f *.xml *.xslt *.owl *.serql *.nt; \
+	   rm -rf newmaproomcache logs; \
+	   cp ../version.xml .
+	$(INSTALL) -d $(BUILD)/uicore
+	$(TAR) cf - -C uicore --exclude=.git . | $(TAR) xf - -C $(BUILD)/uicore
+	$(INSTALL) -d $(BUILD)/pure
+	$(TAR) cf - -C pure --exclude=.git . | $(TAR) xf - -C $(BUILD)/pure
 	
 
 version.xml: .git
@@ -26,16 +35,16 @@ version.xml: .git
 
 clean:
 	$(RM) -f version.xml
-	$(RM) -rf $(BUILD_DIR)
+	$(RM) -rf $(BUILD)
 
 distclean: clean
 
 #install:
-#	$(MAKE) PREFIX=$(abspath $(BUILD_DIR)) $(MARGS) TARGET=install
+#	$(MAKE) PREFIX=$(abspath $(BUILD)) $(MARGS) TARGET=install
 #	$(INSTALL) -d $(PREFIX)
-#	$(INSTALL) -d $(BUILD_DIR)/lib
-#	$(INSTALL) -m 0644 libs/*.jar $(BUILD_DIR)/lib
-#	$(TAR) cf - -C $(BUILD_DIR) . | $(TAR) xf - -C $(PREFIX)
+#	$(INSTALL) -d $(BUILD)/lib
+#	$(INSTALL) -m 0644 libs/*.jar $(BUILD)/lib
+#	$(TAR) cf - -C $(BUILD) . | $(TAR) xf - -C $(PREFIX)
 #
 #tarball:
 #	$(MAKE) PREFIX=$(abspath $(TARBALL)) $(MARGS) install
