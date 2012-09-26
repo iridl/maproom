@@ -20,10 +20,10 @@ build: version.xml
 	cd maproom; \
 	   ../miconf/scripts/git-update-timestamp HEAD '*' $(abspath $(BUILD)/maproom)
 	cd $(BUILD)/maproom; \
-	   ../maproomtools/build_maproom.pl; \
-	   rm -f *.xml *.xslt *.owl *.serql *.nt; \
+	   ../../maproomtools/build_maproom.pl; \
+	   rm -f *.xml *.xslt *.serql *.nt; \
 	   rm -rf newmaproomcache logs; \
-	   cp ../version.xml .
+	   cp ../../version.xml .
 	$(INSTALL) -d $(BUILD)/uicore
 	$(TAR) cf - -C uicore --exclude=.git . | $(TAR) xf - -C $(BUILD)/uicore
 	$(INSTALL) -d $(BUILD)/pure
