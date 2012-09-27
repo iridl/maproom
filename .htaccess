@@ -1,0 +1,11 @@
+# htaccess file for Multi-Language behavior determined by Set-Language or browser language preference
+RewriteEngine On
+# this should be set to the url name for the directory the .htaccess file is in.
+RewriteBase /
+RewriteRule /?Set /index.html?Set
+# this reads the Set-Language value and puts it in %1
+RewriteCond %{QUERY_STRING} Set-Language=([^&]+)
+# this uses the Set-Language value as a file suffix, preserving the Query string (not that the server uses it).
+RewriteRule (.*)\.html $1.html.%1 [L,E=prefer-language:%1]
+# the default Multifile behavior should return the proper language file for a simple .html  request.
+AddDefaultCharset UTF-8
