@@ -8,6 +8,7 @@ INSTALL = install
 TAR = tar
 GIT = git
 MV = mv
+CP = cp
 
 VER = $(shell miconf/scripts/git-generate-version-info maproom tag)
 VER_ID = $(shell miconf/scripts/git-generate-version-info maproom id)
@@ -28,19 +29,22 @@ utbuild.tag: build.tag
 	cd maproom; \
 	   ../miconf/scripts/git-update-timestamp '$(VER_ID)' '*' $(abspath $(BUILD)/maproom)
 	cd $(BUILD)/maproom; \
-	   rm -f *.xml *.xslt *.serql *.nt; \
-	   rm -rf newmaproomcache logs;
+	   $(RM) -f *.xml *.xslt *.serql *.nt; \
+	   $(RM) -rf newmaproomcache logs;
 	$(INSTALL) -d $(BUILD)/uicore
 	$(TAR) cf - -C uicore --exclude=.git . | $(TAR) xf - -C $(BUILD)/uicore
 	$(INSTALL) -d $(BUILD)/pure
 	$(TAR) cf - -C pure --exclude=.git . | $(TAR) xf - -C $(BUILD)/pure
+	cp .htaccess $(BUILD)
 	touch utbuild.tag
 	
-maproom/version.xml: .git
+maproom/version.xml: .git/HEAD
 	miconf/scripts/git-generate-version-info maproom xml >$@
 
 clean:
-	$(GIT) clean -f -e *.tgz -x -d
+	$(GIT) clean -f -x -d -- maproom
+	$(RM) -f build.tag utbuild.tag 
+	$(RM) -rf $(BUILD)
 
 distclean: clean
 

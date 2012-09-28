@@ -1,5 +1,4 @@
 .DS_Store
-___build
-build.tag
-utbuild.tag
-maproom/version.xml
+/___build
+/build.tag
+/utbuild.tag
