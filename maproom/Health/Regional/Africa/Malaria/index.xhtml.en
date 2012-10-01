@@ -56,6 +56,7 @@ opportunity to work with others on the further development of these products.
   <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
 <a rel="section" href="http://www.map.ox.ac.uk/data/"></a>
 <div about="http://www.map.ox.ac.uk/data/">
+<meta property="maproom:Sort_Id" content="e13" />
 <a rel="canonical"  href="http://www.map.ox.ac.uk/data/"></a>
 <p property="term:title">Malaria Atlas Project (MAP) Maps of Malaria Transmission and Endemicity</p>
 <p property="term:description">The Malaria Atlas Project (MAP) has constructed a global database and atlas of maps that show the spatial limits of Plasmodium falciparum transmission based upon parasite rate surveys, the predicted spatial distribution of Plasmodium falciparum malaria endemicity, and the model uncertainty for the predicted endemicity.</p>
