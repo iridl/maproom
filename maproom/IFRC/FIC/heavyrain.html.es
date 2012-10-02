@@ -11,7 +11,6 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Entry_Id" content="IFRC_FIC_heavyrain" />
-<meta property="maproom:Sort_Id" content="a03" />
 <title>IFRC PIC: &#191;C&#243;mo se compara la cantidad de lluvia pronosticada con la lluvia normal durante este mes?</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
