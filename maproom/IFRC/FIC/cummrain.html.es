@@ -11,7 +11,6 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Entry_Id" content="IFRC_FIC_cummrain" />
-<meta property="maproom:Sort_Id" content="a04" />
 <title>&#191;IFRC PIC: Cu&#225;nta lluvia se espera?</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />

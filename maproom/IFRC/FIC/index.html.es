@@ -11,7 +11,6 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Entry_Id" content="IFRC_FIC_dayexceptional" />
-<meta property="maproom:Sort_Id" content="a01" />
 <title>IFRC PIC: &#191;D&#243;nde se esperan lluvias inusualmente abundantes?</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
