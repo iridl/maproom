@@ -1,4 +1,4 @@
 .DS_Store
-___build
-build.tag
-version.xml
+/___build
+/build.tag
+/utbuild.tag
