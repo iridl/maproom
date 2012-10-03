@@ -21,8 +21,9 @@ href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OM
 </head>
 <body>
 
-<form name="pageform" id="pageform" class="carry carryup titleLink">
+<form name="pageform" id="pageform" class="carry carryup titleLink itemImage bbox">
 <input class="carry carryup" name="Set-Language" type="hidden" />
+<input class="titleLink itemImage" name="bbox" type="hidden" value="bb:-20:-40:55:40:bb" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
