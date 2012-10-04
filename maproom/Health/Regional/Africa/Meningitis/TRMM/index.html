@@ -35,7 +35,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/X/-20/55/RANGE/Y/-15/40/RANGE/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <style>
 .dlimgtsbox { 
 width: 49%;
@@ -47,7 +47,7 @@ display: inline-block
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="dlimg share dlimgloc" name="bbox" type="hidden" />
+<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
 <input class="pickarea" name="resolution" type="hidden" value=".5" />
@@ -59,8 +59,12 @@ display: inline-block
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"><span property="term:label">Epidemic Meningitis</span></legend>
-            </fieldset> 
- <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
+            </fieldset>
+            <fieldset class="navitem" id="chooseRegion"> 
+                <legend>Region</legend> 
+            </fieldset>
+
+<fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
 <option value=".3">33x33 km box</option>
 <option value=".5">55x55 km box</option>
 <option value="1.">111x111 km box</option>
@@ -104,8 +108,9 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <br />
 <div class="dlimgtsbox">
 <div>a)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0/200/RANGE/toNaN%5BT%5DREORDER/dup/0/mul/T/fig:/deltabars/:fig//est_prcp/0/200/plotrange/T/14579.0/last/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
-</div><div class="dlimgtsbox">
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/T/(1 Jan 2010)last/RANGEEDGES/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0/100/RANGE/toNaN%5BT%5DREORDER/dup/0/mul/T/fig:/deltabars/:fig//est_prcp/0/100/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+</div>
+<!-- <div class="dlimgtsbox">
 <div>b)</div>
 <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/null/null/RANGE//plotlast/200/def//fullname/%28Precipitation%29def/home/.grover/.EMILY/.Analyses/.RFEv2Avg/.avg//region/get_parameter/geoobject%5BX/Y%5Dweighted-average%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname/%282000-11%20Average%29def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig//est_prcp/0/200/plotrange//est_prcp/0/200/plotrange/T/14579.0/last/plotrange//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div><div class="dlimgtsbox">
@@ -114,7 +119,7 @@ Observations for <b><span class="iridl:long_name"></span></b>
 </div><div class="dlimgtsbox">
 <div>d)</div>
 <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/home/.grover/.EMILY/.Analyses/.RFEv2Avg/.avg//region/get_parameter/geoobject%5BX/Y%5Dweighted-average/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%202000-11%20Avg%29def/2/1/roll/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20Precipitation%29def/2/1/roll/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/medium/line/grey/line/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
-</div>
+</div> -->
 <p>
 a) Dekadal (i.e., ~10-daily) precipitation estimates for the selected region from Dec 1999 to the present.  
 </p><p>
@@ -131,9 +136,9 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 </p>
 </fieldset>
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/X/-20/55/RANGE/Y/-15/40/RANGE/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/X/-20/55/RANGE/Y/-15/40/RANGE/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/X/-20/55/RANGE/Y/-15/40/RANGE/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig+//T/19231.5/plotvalue+//plotborder+72+psdef//plotaxislength+432+psdef+.gif" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig+//T/19231.5/plotvalue+//plotborder+72+psdef//plotaxislength+432+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">NASA TRMM Rainfall Monitoring</h2>
