@@ -30,29 +30,19 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/ds:/home/.remic/.IRI/.FD/.Flexible_Forecast/.t2m_std/%28name%29%28fcst_stddev%29def/home/.remic/.IRI/.FD/.Flexible_Forecast/.t2m/SOURCES/.NOAA/.NCEP/.CPC/.GHCN_CAMS/.gridded/.deg0p5/.temp/%28Celsius%29unitconvert%5BX/Y%5DregridAverage/T/%28Dec%201980%29%28Jan%202011%29RANGEEDGES/T/3/runningAverage/yearly-climatology/L/S/add/T/sample-along/add/%28name%29%28fcst_mean%29def/S/L/add/%28pointwidth%293/def/%28long_name%29%28Forecast%20Time%29def/%28standard_name%29%28time%29def/%28name%29%28T%29def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/%28units%29%28Celsius%29preferredunitname/def/SOURCES/.NOAA/.NCEP/.CPC/.GHCN_CAMS/.gridded/.deg0p5/.temp/%28Celsius%29unitconvert%5BX/Y%5DregridAverage/T/%281981%29%282010%29RANGEEDGES/yearly-climatology/add/T/%28Dec%201980%29%28Jan%202011%29RANGEEDGES/T/3/runningAverage/dup/yearly-climatology/L/S/add/T/sample-along/%28name%29%28clim_mean%29def/exch/T/12/splitstreamgrid%5BT2%5Drmsaover/L/S/add/T/sample-along/%28name%29%28clim_stddev%29def/:ds/T/.S/last/VALUE/L/2.5/VALUE/X/-180/180/RANGE/Y/-60/90/RANGE/50/100.0/div/2/mul/1/sub/erfinv/clim_stddev/mul/2/sqrt/mul/clim_mean/add/fcst_mean/sub/fcst_stddev/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28long_name%29%28Probability%29def/percentiles_colors_50/X/Y/fig-/colors/grey/coasts/lakes/-fig/%28antialias%29true/psdef//plotborder/0/psdef//XOVY/null/psdef//plotaxislength/220/psdef/+//plotborder+0+psdef//XOVY+null+psdef//plotaxislength+220+psdef+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
-<style>
-.dlimage, .dlimage.wide{
-float: none;
-width: 46%;
-display: inline;
-}
-.dlimgpdf {
-width: 100%;
-}
-</style>
 </head>
 <body xml:lang="en">
-<form name="pageform" id="pageform" class="carryup carry dlimg dlimgts dlimgpdf dlauximg dlimgloc share starttime startleadtime threshold">
+<form name="pageform" id="pageform" class="carryup carry dlimg dlimgts dlauximg dlimgloc share starttime startleadtime threshold">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
 <input class="dlimg dlimgts share starttime startleadtime" name="S" type="hidden" />
 <input class="dlimg dlimgts share startleadtime" name="L" type="hidden" value="2.5" />
-<input class="carry dlimgts dlimgpdf dlimgloc share" name="region" type="hidden" />
+<input class="carry dlimgts dlimgloc share" name="region" type="hidden" />
 <input class="notused" name="plotaxislength" type="hidden" />
 <input class="pickarea" name="resolution" type="hidden" value="2.0" />
-<input class="carry dlimg dlimgts dlimgpdf share starttime startleadtime" name="model" type="hidden" />
-<input class="carry dlimg dlimgts dlimgpdf share" name="climStart" type="hidden" />
-<input class="carry dlimg dlimgts dlimgpdf share" name="climEnd" type="hidden" />
+<input class="carry dlimg dlimgts share starttime startleadtime" name="model" type="hidden" />
+<input class="carry dlimg dlimgts share" name="climStart" type="hidden" />
+<input class="carry dlimg dlimgts share" name="climEnd" type="hidden" />
 <input class="carry dlimg dlauximg share" name="proba" type="hidden" />
 <input class="dlimg dlauximg share threshold" name="var" type="hidden" />
 <input class="dlimg dlauximg share threshold" name="percentile" type="hidden" value="50." />
@@ -137,11 +127,10 @@ width: 100%;
    </td>
 </tr>
 </table>
-
    <br />
     <div  style="display: inline-block; width:49%">
       <h4>Probability of Exceedance</h4>
-  <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/ds:/(Forecast)//model/parameter/(Forecast)eq/%7Bhome/.remic/.IRI/.FD/.Flexible_Forecast/.t2m_std/%7D%7Bhome/.tippett/.scratch/.na/.realtime/.MM/.t2m_std/(units)(Celsius)preferredunitname/def/%7Difelse/%28name%29%28fcst_stddev%29def//model/get_parameter/%28Forecast%29eq/%7Bhome/.remic/.IRI/.FD/.Flexible_Forecast/.t2m/%7D%7Bhome/.tippett/.scratch/.na/.hindcasts/.MM/.t2m/(units)(Celsius)preferredunitname/def/%7Difelse/SOURCES/.NOAA/.NCEP/.CPC/.GHCN_CAMS/.gridded/.deg0p5/.temp/%28Celsius%29unitconvert%5BX/Y%5DregridAverage/T/%28Dec%20%29/(1981)//climStart/parameter/interp/1/sub/s==/append/%28Jan%20%29/(2010)//climEnd/parameter/interp/1/add/s==/append/RANGEEDGES/T/3/runningAverage/yearly-climatology/L/S/add/T/sample-along/add/%28name%29%28fcst_mean%29def/S/L/add/%28pointwidth%293/def/%28long_name%29%28Forecast%20Time%29def/%28standard_name%29%28time%29def/%28name%29%28T%29def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/%28units%29%28Celsius%29preferredunitname/def/SOURCES/.NOAA/.NCEP/.CPC/.GHCN_CAMS/.gridded/.deg0p5/.temp/%28Celsius%29unitconvert%5BX/Y%5DregridAverage/T//climStart/get_parameter//climEnd/get_parameter/RANGEEDGES/yearly-climatology/add/T/%28Dec%20%29/(1981)//climStart/parameter/interp/1/sub/s==/append/%28Jan%20%29/(2010)//climEnd/parameter/interp/1/add/s==/append/RANGEEDGES/T/3/runningAverage/dup/yearly-climatology/L/S/add/T/sample-along/%28name%29%28clim_mean%29def/exch/T/12/splitstreamgrid%5BT2%5Drmsaover/L/S/add/T/sample-along/%28name%29%28clim_stddev%29def/:ds/grid://name/%282m_temperature%29def/0/0.1/50/:grid/clim_mean/-1/mul/add/clim_stddev/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28name%29%28probability%29def/%28fullname%29%28clim%29def/%28long_name%29%28probability%20of%20exceedance%29def/2m_temperature/fcst_mean/-1/mul/add/fcst_stddev/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28name%29%28probability%29def/%28fullname%29%28forecast%29def/%28long_name%29%28probability%20of%20exceedance%29def/2m_temperature/fig-/medium/black/line/green/line/-fig/%28probability%290/1/plotrange/plotborder+72+psdef//plotaxislength+432+psdef/+.gif" />
+  <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/ds:/%28Forecast%29//model/parameter/%28Forecast%29eq/%7Bhome/.remic/.IRI/.FD/.Flexible_Forecast/.t2m_std%7D%7Bhome/.tippett/.scratch/.na/.realtime/.MM/.t2m_std/%28units%29%28Celsius%29preferredunitname/def%7Difelse/%28name%29%28fcst_stddev%29def//model/get_parameter/%28Forecast%29eq/%7Bhome/.remic/.IRI/.FD/.Flexible_Forecast/.t2m%7D%7Bhome/.tippett/.scratch/.na/.hindcasts/.MM/.t2m/%28units%29%28Celsius%29preferredunitname/def%7Difelse/SOURCES/.NOAA/.NCEP/.CPC/.GHCN_CAMS/.gridded/.deg0p5/.temp/%28Celsius%29unitconvert%5BX/Y%5DregridAverage/T/%28Dec%20%29%281981%29//climStart/parameter/interp/1/sub/s==/append/%28Jan%20%29%282010%29//climEnd/parameter/interp/1/add/s==/append/RANGEEDGES/T/3/runningAverage/yearly-climatology/L/S/add/T/sample-along/add/%28name%29%28fcst_mean%29def/S/L/add/%28pointwidth%293/def/%28long_name%29%28Forecast%20Time%29def/%28standard_name%29%28time%29def/%28name%29%28T%29def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/%28units%29%28Celsius%29preferredunitname/def/SOURCES/.NOAA/.NCEP/.CPC/.GHCN_CAMS/.gridded/.deg0p5/.temp/%28Celsius%29unitconvert%5BX/Y%5DregridAverage/T//climStart/get_parameter//climEnd/get_parameter/RANGEEDGES/yearly-climatology/add/T/%28Dec%20%29%281981%29//climStart/parameter/interp/1/sub/s==/append/%28Jan%20%29%282010%29//climEnd/parameter/interp/1/add/s==/append/RANGEEDGES/T/3/runningAverage/dup/yearly-climatology/L/S/add/T/sample-along/%28name%29%28clim_mean%29def/exch/T/12/splitstreamgrid%5BT2%5Drmsaover/L/S/add/T/sample-along/%28name%29%28clim_stddev%29def/:ds/grid://name/%28probability%29def/0/0.01/1/:grid/0.0/add/-2.0/mul/1.0/add/erfinv/clim_stddev/%28bb:%5B0%2C14%2C2%2C16%5D%29//region/parameter/geoobject/%5BX/Y%5Dweighted-average/mul/2.0/sqrt/mul/clim_mean/%28bb:%5B0%2C14%2C2%2C16%5D%29//region/parameter/geoobject/%5BX/Y%5Dweighted-average/add/-Infinity/maskle/Infinity/maskge//fullname/%28clim%29def/probability/0.0/add/-2.0/mul/1.0/add/erfinv/fcst_stddev/%28bb:%5B0%2C14%2C2%2C16%5D%29//region/parameter/geoobject/%5BX/Y%5Dweighted-average/mul/2.0/sqrt/mul/fcst_mean/%28bb:%5B0%2C14%2C2%2C16%5D%29//region/parameter/geoobject/%5BX/Y%5Dweighted-average/add/-Infinity/maskle/Infinity/maskge//fullname/%28forecast%29def/2/copy/min/probability/secondtolast/VALUE/probability/removeGRID/probability/0.0/add/0.01/flaggt/mul/2/index/2/index/max/probability/0.0/add/0.01/flagle/mul/add/X/clim_mean//region/get_parameter/geoobject/rasterize%5BX/Y%5Dweighted-average/Y/clim_mean//region/get_parameter/geoobject/rasterize%5BX/Y%5Dweighted-average/home/.remic/.IRI/.FD/.Flexible_Forecast/.target_date%5BL%5DREORDER/CopyStream/probability/fig-/solid/medium/black/profile/solid/medium/green/profile/verythin/white/dotted/profile/plotlabel/plotlabel/plotlabel/-fig//X/1.0/plotvalue//Y/15.0/plotvalue//S/last/plotvalue//L/first/plotvalue//framelabel/%28%28%25=%5BX%5D%2C%25=%5BY%5D%29%20%25=%5Btarget_date%5D%20issued%20%25=%5BS%5D%29psdef//plotborder/72/psdef//XOVY/null/psdef//plotaxislength/432/psdef//antialias+true+psdef/+.gif" />
       </div>
 
 
