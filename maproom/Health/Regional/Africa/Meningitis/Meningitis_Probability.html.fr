@@ -30,7 +30,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Originals/Health-Regional-Africa-ProbMen.jpg" />
 </head>
-<body xml:lang="en">
+<body xml:lang="fr">
 <form name="pageform" id="pageform" class="carryup carry share dlimg dlauximg">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="dlimg" name="bbox" type="hidden" />
