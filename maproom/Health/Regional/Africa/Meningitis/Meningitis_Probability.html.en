@@ -65,7 +65,17 @@ A meningitis risk map derived from an environmentally-driven model of predicted 
 <p>
 Users should note that these data are based on a statistical model that exhibited a sensitivity and specificity of 83% and 67%, respectively.  It did not include the impact of nonenvironmental factors likely to be related to meningitis epidemics, such as population movement, vaccination coverage and recent epidemics in the area. More information about this model and its limitations may be found in the reference below.   
 </p>
-<p>Reference: Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</p>
+<p>
+<center>
+<table border="1">
+<tr><td bgcolor="white"><pre>  </pre></td><td><font size="-1">Low risk (p&#60;0.4)</font></td></tr>
+<tr><td bgcolor="#DCDCDC"><pre>  </pre></td><td><font size="-1">Moderate risk (p&#60;0.6)</font></td></tr>
+<tr><td bgcolor="#FFC030"><pre>  </pre></td><td><font size="-1">High risk (p&#60;0.8)</font></td></tr>
+<tr><td bgcolor="#B22222"><pre>  </pre></td><td><font size="-1">Very High risk (p&#62;0.8)</font></td></tr>
+</table>
+</center>
+
+</p><p>Reference: Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
