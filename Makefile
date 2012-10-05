@@ -29,7 +29,7 @@ utbuild.tag: build.tag
 	cd maproom; \
 	   ../miconf/scripts/git-update-timestamp '$(VER_ID)' '*' $(abspath $(BUILD)/maproom)
 	cd $(BUILD)/maproom; \
-	   $(RM) -f *.xml *.xslt *.serql *.nt; \
+	   $(RM) -f tabs.xml top.xml *.xslt *.serql *.nt; \
 	   $(RM) -rf newmaproomcache logs;
 	$(INSTALL) -d $(BUILD)/uicore
 	$(TAR) cf - -C uicore --exclude=.git . | $(TAR) xf - -C $(BUILD)/uicore
