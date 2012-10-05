@@ -61,7 +61,7 @@
   <h2 align="center" property="term:title">Probabilité Prévue d'Occurence d'Epidémies de Méningite</h2>
   <p align="left" property="term:description">Une carte du risque de méningite déduit d'un modèle de prédiction de la probabilité d'occurence des épidémies, dérivé de l'environnement.</p>
 <p align="left">
-Une carte de risque de méningite déduit d'un modèle de prédiction de la probabilité d'occurence des épidémies, dérivé de l'environnement, est représentée ci-dessus. Le modèle est basé sur des profils d'humidité absolue et du type d'occupation du sol. L'OMS propose l'emploi de seuils épidémiques pour la détection anticipée d'épidémies et l'amélioration des mesures de contrôle. La définition d'une zone "à risque" a donc des implications importantes sur l'accroissement des activités de surveillance et sur la préparation aux épidémies.</p>
+Le modèle est basé sur des profils d'humidité absolue et du type d'occupation du sol. L'OMS propose l'emploi de seuils épidémiques pour la détection anticipée d'épidémies et l'amélioration des mesures de contrôle. La définition d'une zone "à risque" a donc des implications importantes sur l'accroissement des activités de surveillance et sur la préparation aux épidémies.</p>
 <p>
 Les utilisateurs doivent garder à l'esprit que ces informations sont basées sur un modèle statistique dont la sensibilité et la spécificité sont respectivement de 83% et 67%. Il ne comprend pas l'impact de facteurs non-environnementaux probablement liés aux épidémies de méningite, tels que les mouvements de population, la couverture de vaccination, et de récentes épidémies dans la région. Plus d'informations sur ce modèle et ses limites ci-dessous.
 </p>
