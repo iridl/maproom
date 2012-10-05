@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Predicted Probability of Meningitis Epidemic Experience</title>
+<script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="Meningitis_Probability.html?Set-Language=fr" />
+<link rel="canonical" href="Meningitis_Probability.html" />
+<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Meningitis_Predicted_Probability" />
+<meta property="maproom:Sort_Id" content="e12" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Meningitis"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Meningitis_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+<link rel="term:icon" href="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Originals/Health-Regional-Africa-ProbMen.jpg" />
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform" class="carryup carry share dlimg dlauximg">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="dlimg" name="bbox" type="hidden" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Climate and Health</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Meningitis/">Meningitis</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"><span property="term:label">Epidemic Meningitis</span></legend>
+            </fieldset> 
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a class="carry" href="http://iridl.ldeo.columbia.edu/SOURCES/.LSTM/.MFAP/.molesworth_etal_2003/">Dataset</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/-20/55/RANGEEDGES/Y/-40/40/RANGEEDGES/SOURCES/.LSTM/.MFAP/.molesworth_etal_2003/a:/.the_geom/:a:/.probmen/:a/X/Y/fig:/grey/mask/fillby/grey/verythin/states/black/thinnish/countries_gaz/lakes/:fig/+X/-20.04167/55.04167/plotrange/Y/-40.04167/40.04167/plotrange+//XOVY+null+psdef//plotborder+72+psdef//plotaxislength+432+psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/-20/55/RANGEEDGES/Y/-40/40/RANGEEDGES/SOURCES/.LSTM/.MFAP/.molesworth_etal_2003/a:/.the_geom/:a:/.probmen/:a/X/Y/fig:/grey/mask/fillby/grey/verythin/states/black/thinnish/countries_gaz/lakes/:fig/+X/-20.04167/55.04167/plotrange/Y/-40.04167/40.04167/plotrange+//XOVY+null+psdef//plotborder+72+psdef//plotaxislength+432+psdef+.gif" border="0" alt="image" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/-20/55/RANGEEDGES/Y/-40/40/RANGEEDGES/SOURCES/.LSTM/.MFAP/.molesworth_etal_2003/a:/.the_geom/:a:/.probmen/:a/X/Y/fig:/grey/mask/fillby/grey/verythin/states/black/thinnish/countries_gaz/lakes/:fig/.auxfig+X/-20.04167/55.04167/plotrange/Y/-40.04167/40.04167/plotrange+//XOVY+null+psdef//plotborder+72+psdef//plotaxislength+432+psdef+.gif" border="0" width="454" height="56" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+  <h2 align="center" property="term:title">Predicted Probability of Meningitis Epidemic Experience</h2>
+  <p align="left" property="term:description">A meningitis risk map derived from an environmentally-driven model of predicted probability of epidemic experience.</p>
+<p align="left">
+A meningitis risk map derived from an environmentally-driven model of predicted probability of epidemic experience is shown above.  The model is based on absolute humidity profiles and land-cover type.  The WHO proposes the use of epidemic thresholds for the early detection of epidemics and improved control responses.  Defining an 'at-risk' area therefore has important implications for increased monitoring activities and epidemic preparedness.</p>
+<p>
+Users should note that these data are based on a statistical model that exhibited a sensitivity and specificity of 83% and 67%, respectively.  It did not include the impact of nonenvironmental factors likely to be related to meningitis epidemics, such as population movement, vaccination coverage and recent epidemics in the area. More information about this model and its limitations may be found in the reference below.   
+</p>
+<p>Reference: Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<h4>Reference</h4>
+<dl class="datasetdocumentation">
+Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</dl>
+</div>
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.LSTM/.MFAP/.molesworth_etal_2003/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
