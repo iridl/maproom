@@ -16,10 +16,10 @@
 <link rel="canonical" href="index.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:icon"
-href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/X/-20/55/RANGE/Y/-15/40/RANGE/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//plotaxislength/150/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" />
+href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/X/-20/55/RANGE/Y/-35/40/RANGE/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//plotaxislength/150/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" />
 <script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
 </head>
-<body>
+<body >
 
 <form name="pageform" id="pageform" class="carry carryup titleLink itemImage bbox">
 <input class="carry carryup" name="Set-Language" type="hidden" />
@@ -28,7 +28,7 @@ href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OM
 <div class="controlBar">
            <fieldset class="navitem"> 
                 <legend>Data Library</legend> 
-                    <a rev="section" class="navlink carryup" href="/maproom/Health/">Climate and Health</a>
+                    <a rev="section" class="navlink carryup" href="/maproom/Health/">Site Climat et Santé</a>
             </fieldset> 
            <fieldset class="navitem"> 
                 <legend>Site Climat et Santé</legend> 
