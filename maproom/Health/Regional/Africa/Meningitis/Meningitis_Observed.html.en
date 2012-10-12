@@ -31,8 +31,8 @@
 <link rel="term:icon" href="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Originals/Health-Regional-Africa-ObsMen.jpg" />
 </head>
 <body xml:lang="en">
-<form name="pageform" id="pageform" class="carryup carry share dlimg dlauximg">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="dlimg carry" name="bbox" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
 </form>
