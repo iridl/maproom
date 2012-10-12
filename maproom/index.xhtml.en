@@ -21,7 +21,7 @@
 </head>
 <body>
 
-<form name="pageform" id="pageform" class="carry carryup titleLink itemImage">
+<form name="pageform" id="pageform">
 <input class="carry" name="Set-Language" type="hidden" />
 <input class="titleLink itemImage" name="bbox" type="hidden" />
 </form>
