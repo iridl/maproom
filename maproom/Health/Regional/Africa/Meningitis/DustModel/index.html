@@ -44,7 +44,7 @@ display: inline-block
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" />
+<input class="dlimg share dlimgloc carry" name="bbox" type="hidden"/>
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
 <input class="pickarea" name="resolution" type="hidden" value="1.0" />
@@ -58,7 +58,11 @@ display: inline-block
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis_Analyses"><span property="term:label">Analyses</span></legend>
             </fieldset> 
             <fieldset class="navitem" id="chooseRegion"> 
-                <legend>Region</legend> 
+                <legend>Region</legend>
+                <select class="pageformcopy" name="bbox">
+                   <option value="bb:-20:-40:55:40:bb">Africa</option>
+                   <option value="">Full Extent</option>
+                </select>
             </fieldset>
  <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
 <option value="1.0">111x111 km box</option>

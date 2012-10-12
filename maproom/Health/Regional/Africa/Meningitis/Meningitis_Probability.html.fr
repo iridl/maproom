@@ -46,6 +46,10 @@
             </fieldset> 
             <fieldset class="navitem" id="chooseRegion"> 
                 <legend>Region</legend> 
+                <select class="pageformcopy" name="bbox">
+                   <option value="bb:-20:-40:55:40:bb">Africa</option>
+                   <option value="">Full Extent</option>
+                </select>
             </fieldset>
  </div>
 <div class="ui-tabs">
