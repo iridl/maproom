@@ -58,7 +58,7 @@ display: inline-block
                       <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Endemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Paludisme Endémique</span></legend>
             </fieldset> 
  <fieldset class="navitem"><legend>Moyennes spatiales par</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
 <option value=".1">11x11 km boîte</option>

@@ -56,7 +56,7 @@
                       <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Endemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Paludisme Endémique</span></legend>
             </fieldset> 
  <fieldset class="navitem"><legend>Map Shows</legend><span class="selectvalue"></span><select class="pageformcopy" name="var"><option value="">Number of Months suitable for Malaria Transmission</option>
 <option value="AllCondProb">
