@@ -21,8 +21,8 @@ href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OM
 </head>
 <body >
 
-<form name="pageform" id="pageform" class="carry carryup titleLink itemImage bbox">
-<input class="carry carryup" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform">
+<input class="carryLanguage carryup" name="Set-Language" type="hidden" />
 <input class="titleLink itemImage" name="bbox" type="hidden" value="bb:-20:-40:55:40:bb" />
 </form>
 <div class="controlBar">
@@ -49,6 +49,7 @@ dans l'occurence de la maladie.
 </div>
 <div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Meningitis/" >
   <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis_Analyses"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Meningitis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
@@ -56,7 +57,8 @@ dans l'occurence de la maladie.
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Meningitis_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Meningitis_Monitoring_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Meningitis_Analyses_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 </div>

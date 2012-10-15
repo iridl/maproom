@@ -24,15 +24,15 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Meningitis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Meningitis_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Meningitis_Analyses_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis_Analyses"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Originals/Health-Regional-Africa-ProbMen.jpg" />
 </head>
 <body xml:lang="en">
-<form name="pageform" id="pageform" class="carryup carry share dlimg dlauximg">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="dlimg" name="bbox" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
 </form>
@@ -42,8 +42,15 @@
                       <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Meningitis/">Meningitis</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"><span property="term:label">Epidemic Meningitis</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis_Analyses"><span property="term:label">Analyses</span></legend>
             </fieldset> 
+            <fieldset class="navitem" id="chooseRegion"> 
+                <legend>Region</legend> 
+                <select class="pageformcopy" name="bbox">
+                   <option value="bb:-20:-40:55:40:bb">Africa</option>
+                   <option value="">Full Extent</option>
+                </select>
+            </fieldset>
  </div>
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">

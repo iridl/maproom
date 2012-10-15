@@ -44,8 +44,8 @@ display: inline-block
 </style>
 </head>
 <body xml:lang="fr">
-<form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
@@ -58,7 +58,7 @@ display: inline-block
                       <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Endemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Paludisme Endémique</span></legend>
             </fieldset> 
  <fieldset class="navitem"><legend>Moyennes spatiales par</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
 <option value=".1">11x11 km boîte</option>

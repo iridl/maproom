@@ -30,7 +30,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Meningitis"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis_Analyses"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/home/.nasa_roses_a19/.Dust_model_2011/.RegDustModelProjected/.dust_pm10_sconc10/%28mcg/m%5E3%29unitconvert/dekadalAverage/X+Y+fig-+colors+coasts+-fig+//dust_pm10_sconc10/1.4276642E-04/69.84269/plotrange//T/257.0/plotvalue//plotborder+0+psdef//XOVY+null+psdef//plotaxislength+150+psdef+.gif" />
 <style>
@@ -41,10 +41,10 @@ display: inline-block
 </style>
 </head>
 <body xml:lang="en">
-<form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
+<form name="pageform" id="pageform">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" />
+<input class="dlimg share dlimgloc carry" name="bbox" type="hidden"/>
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
 <input class="pickarea" name="resolution" type="hidden" value="1.0" />
@@ -55,10 +55,14 @@ display: inline-block
                       <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Meningitis/">Meningitis</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"><span property="term:label">Epidemic Meningitis</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis_Analyses"><span property="term:label">Analyses</span></legend>
             </fieldset> 
             <fieldset class="navitem" id="chooseRegion"> 
-                <legend>Region</legend> 
+                <legend>Region</legend>
+                <select class="pageformcopy" name="bbox">
+                   <option value="bb:-20:-40:55:40:bb">Africa</option>
+                   <option value="">Full Extent</option>
+                </select>
             </fieldset>
  <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
 <option value="1.0">111x111 km box</option>
