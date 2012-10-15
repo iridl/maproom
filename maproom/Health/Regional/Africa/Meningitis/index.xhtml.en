@@ -16,13 +16,14 @@
 <link rel="canonical" href="index.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:icon"
-href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/X/-20/55/RANGE/Y/-15/40/RANGE/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//plotaxislength/150/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" />
+href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/X/-20/55/RANGE/Y/-35/40/RANGE/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//plotaxislength/150/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" />
 <script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
 </head>
 <body>
 
-<form name="pageform" id="pageform" class="carry carryup titleLink">
-<input class="carry carryup" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform">
+<input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+<input class="titleLink itemImage" name="bbox" type="hidden" value="bb:-20:-40:55:40:bb" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
@@ -44,6 +45,7 @@ Epidemics of meningitis occur worldwide. The "meningitis belt" in the Sahel regi
 </div>
 <div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Meningitis/" >
   <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis_Analyses"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Meningitis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
@@ -52,6 +54,8 @@ Epidemics of meningitis occur worldwide. The "meningitis belt" in the Sahel regi
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Meningitis_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Meningitis_Monitoring_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Meningitis_Analyses_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 </div>
