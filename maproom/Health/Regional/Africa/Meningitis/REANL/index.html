@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Reanalysis Monitoring</title>
+<title>Reanalysis Specific Humidity and Temperature</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" /> -->
@@ -29,6 +29,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#dekad"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#temperature"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Meningitis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
@@ -43,7 +44,7 @@ display: inline-block
 <body xml:lang="en">
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
 <input class="carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg dlauximg info share" name="var" type="hidden" />
+<input class="carry dlimg dlimgts dlauximg info share" name="var" type="hidden" />
 <input class="dlimg share dlimgloc carry" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
@@ -60,6 +61,10 @@ display: inline-block
             <fieldset class="navitem" id="chooseRegion"> 
                 <legend>Region</legend> 
             </fieldset>
+            <fieldset class="navitem"><legend>Variable</legend><span class="selectvalue"></span><select class="pageformcopy" name="var">
+               <option value="">Specific Humidity</option>
+               <option value=".temp">Temperature</option>
+            </select></fieldset>
 
 <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
 <option value="1.">111x111 km box</option>
@@ -89,7 +94,7 @@ margin: 0px;
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.qa/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/">Dataset</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/%28.qa%29//var/parameter/interp/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" style="display: none" about="">
@@ -103,11 +108,11 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <br />
 <div class="dlimgtsbox">
 <div>a)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.qa/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/T/(1%20Jan%202010)last/RANGEEDGES/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0/0.025/RANGE/toNaN%5BT%5DREORDER/dup/0/mul/T/fig:/deltabars/:fig//qa/0/0.025/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/%28.qa%29//var/parameter/interp/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/T/(1%20Jan%202010)last/RANGEEDGES/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/dup/0/mul/T/DATA/AUTO/AUTO/RANGE/fig:/deltabars/:fig//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div>
 <div class="dlimgtsbox">
 <div>b)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.qa/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/T/(1%20Jan%202012)last/RANGEEDGES/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/null/null/RANGE//plotlast/200/def//fullname/%28Specific Humidity%29def/home/.jdcorral/.Analyses/.REANL/.qa//region/get_parameter/geoobject%5BX/Y%5Dweighted-average%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname/%281981-2010%20Average%29def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig//qa/0/0.025/plotrange//qa/0/0.025/plotrange//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/%28.qa%29//var/parameter/interp/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/T/(1%20Jan%202012)last/RANGEEDGES/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/AUTO/AUTO/RANGE/home/.jdcorral/.Analyses/.REANL/%28.qa%29//var/parameter/interp//region/get_parameter/geoobject%5BX/Y%5Dweighted-average%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname/%281981-2010%20Average%29def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div>
 <!-- <div class="dlimgtsbox">
 <div>c)</div>
@@ -134,13 +139,13 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 </p> -->
 </fieldset>
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.qa/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.qa/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.qa/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/23644.5/plotvalue//antialias/true/psdef/.auxfig+//T/4.5/plotvalue+//plotborder+72+psdef//plotaxislength+432+psdef+.gif" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/%28.qa%29//var/parameter/interp/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/%28.qa%29//var/parameter/interp/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/%28.qa%29//var/parameter/interp/P/1000/VALUE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/23644.5/plotvalue//antialias/true/psdef/.auxfig+//T/4.5/plotvalue+//plotborder+72+psdef//plotaxislength+432+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Reanalysis Monitoring</h2>
-  <p align="left" property="term:description">NCEP-NCAR Reanalysis Project; temperature, wind, and specific humidity on a 2.5&#176; x 2.5&#176; lat/lon grid.</p>
+ <h2 align="center" property="term:title">Reanalysis Specific Humidity and Temperature</h2>
+  <p align="left" property="term:description">NCEP-NCAR Reanalysis Project; specific humidity and temperature on a 2.5&#176; x 2.5&#176; lat/lon grid.</p>
   <p> Reference:
 Kalnay, E., M. Kanamitsu, R. Kistler, W. Collins, D. Deaven, L. Gandin, M. Iredell, S. Saha, G. White, J. Woollen, Y. Zhu, A. Leetmaa, B. Reynolds, M. Chelliah, W. Ebisuzaki, W. Higgins, J. Janowiak, K. C. Mo, C. Ropelewski, J. Wang, R. Jenne, and D. Joseph. The NCEP/NCAR 40-Year Reanalysis Project. Bulletin of the American Meteorological Society, March, 1996
 </p>
@@ -158,7 +163,7 @@ Kalnay, E., M. Kanamitsu, R. Kistler, W. Collins, D. Deaven, L. Gandin, M. Irede
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
 <p>
-<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.qa/P/1000/VALUE/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/T/0.0/dekadalAverage/">Access the dataset used to create this map.</a>
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/%28.qa%29//var/parameter/interp/P/1000/VALUE/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/T/0.0/dekadalAverage/">Access the dataset used to create this map.</a>
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
