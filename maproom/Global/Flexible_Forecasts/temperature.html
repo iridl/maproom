@@ -35,6 +35,16 @@
 width: 47%;
  }
 sup { vertical-align:super; font-size:50%; }
+.varTemperature #percThresh {
+display: none;
+}
+.var #physThresh {
+display: none;
+}
+.varTemperature #physThresh {
+}
+
+
 </style>
 </head>
 <body xml:lang="en">
@@ -50,7 +60,7 @@ sup { vertical-align:super; font-size:50%; }
 <input class="carry dlimg dlimgts share" name="climStart" type="hidden" />
 <input class="carry dlimg dlimgts share" name="climEnd" type="hidden" />
 <input class="carry dlimg dlauximg share" name="proba" type="hidden" />
-<input class="dlimg dlauximg share threshold" name="var" type="hidden" />
+<input class="dlimg dlauximg share threshold bodyClass" name="var" type="hidden" />
 <input class="dlimg dlauximg share threshold" name="percentile" type="hidden" value="50." />
 <input class="dlimg dlauximg share threshold" name="threshold2" type="hidden" />
 </form>
@@ -82,7 +92,7 @@ sup { vertical-align:super; font-size:50%; }
             <fieldset class="navitem"><legend>Probability of</legend><span class="selectvalue"></span><select class="pageformcopy" name="proba"><option value="">exceeding</option><option value="non-exceeding">non-exceeding</option></select></fieldset>
             <fieldset class="navitem"><legend>Value</legend><span class="selectvalue"></span><select class="pageformcopy" name="var"><option value="">Percentile</option><option value="Temperature">Temperature</option></select></fieldset>
 
-           <fieldset class="navitem valid">
+           <fieldset id="percThresh" class="navitem valid">
           <legend>Threshold (%-ile)</legend>
             <link class="threshold" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/(Percentile)//var/parameter/(Percentile)eq/%7B//percentile//unitless/ordered/10/5/90/NewEvenGRID/0/add//name//threshold/def//long_name//threshold/def//fullname//threshold/def/%7D%7Bc:/NaN/:c/name//threshold/def//long_name//threshold/def//fullname//threshold/def%7Difelse/info.json" />
           <select class="pageformcopy" name="percentile">
@@ -92,7 +102,7 @@ sup { vertical-align:super; font-size:50%; }
             </select>
   </fieldset> OR 
 
-           <fieldset class="navitem valid">
+           <fieldset id="physThresh" class="navitem valid">
           <legend>Threshold (˚C)</legend><span class="selectvalue"></span>
           <input class="pageformcopy" name="threshold2" type="text" value="20." size="4" maxlength="4"/></fieldset>
 
