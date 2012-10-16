@@ -13,6 +13,7 @@
 <title>Climat et Paludisme en Afrique</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link rel="canonical" href="index.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:icon"

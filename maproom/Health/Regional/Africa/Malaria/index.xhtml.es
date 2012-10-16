@@ -9,17 +9,17 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>IRI Map Room</title>
+<title>Clima y Salud</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link rel="canonical" href="index.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:icon"
 href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
 </head>
-<body  xml:lang="en">
+<body  xml:lang="es">
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
@@ -28,24 +28,24 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/
            <fieldset class="navitem"> 
                 <legend>Data Library</legend> 
                     <a rev="section" class="navlink carryup" href="/maproom/Health/">Climate and Health</a>
-            </fieldset> 
-           <fieldset class="navitem"> 
-                <legend>Climate and Health</legend> 
+            </fieldset>
+           <fieldset class="navitem">
+                <legend>Clima y Salud</legend>
                      <span class="navtext">Malaria</span>
-            </fieldset> 
+            </fieldset>
 </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">Climate and Malaria in Africa</h2>
+<h2 property="term:title">Clima y Malaria en África</h2>
 <p align="left" property="term:description">
-Economic development has played an enormous role in shaping the current global distribution of malaria. Where malaria is not adequately controlled, however, its distribution and seasonality are closely related to seasonal characteristics of the climate.</p>
- Consequently, it may be found where and when the climatic conditions are favorable for transmission between the mosquito vector and its human host. Malaria is endemic throughout much of Sub-Saharan Africa and regularly affects susceptible populations each year. Within that endemic zone, however, the disease exhibits a spectrum of characteristics. Areas of stable endemicity where transmission occurs all year round exist at one extreme, while at the other extreme, there are areas where little or no transmission takes place most of the time but epidemics may occur among susceptible immunological native populations. <p> Along the margins of endemic malaria, there are geographic zones where malaria transmission is 'unstable' or prone to epidemics. Malaria in these areas is also related to climate, but in this case, at least one of the essential variables, rainfall, temperature or humidity, is not consistently sufficient for transmission. The high inter-annual variability of climate in these regions, however, means that in some years the climatic conditions favorable for malaria transmission do occur and epidemics of the disease may result.</p>
 
-<p>The mapping products below therefore aim to illustrate models of climate suitability for 
-seasonal endemic malaria, and recent climate conditions, such as rainfall anomalies, which may be 
-associated with epidemic malaria in warm semi-arid regions of Africa. Additional 
-models, such as that developed by the MARA Initiative, may be included in the future and we welcome the 
-opportunity to work with others on the further development of these products.
+El desarrollo económico ha jugado un enorme rol en determinar la distribución mundial de malaria actual. Donde la malaria no es adecuadamente controlada, sin embargo, esta distribución y estacionalidad son cercanamente relacionadas con las características estacionales del clima. </p>
+Consecuentemente, esta podría ser encontrada donde y cuando las condiciones climáticas son favorables para la transmisión entre el vector de mosquito y su huésped humano. La malaria es endémica en gran parte del África Sub-Sahariana y afecta regularmente a las poblaciones susceptibles cada año. Dentro de la zona endémica, sin embargo, la enfermedad presenta un espectro de características. Las áreas de endemicidad estable donde la transmisión ocurre durante todo el año existen en un extremo, mientras que en el otro extremo, hay zonas donde poca o ninguna transmisión se lleva a cabo durante la mayor parte del tiempo, pero epidemias pueden ocurrir entre poblaciones nativas  susceptibles inmunológicas. <p> A lo largo de los márgenes de la malaria endémica, hay zonas geográficas donde la transmisión de la malaria es "inestable" o propensa a epidemias. La malaria en estas áreas es también relacionada con el clima, pero en este caso, al menos una de las variables esenciales,  precipitación, temperatura o humedad, no es suficiente consistentemente para la transmisión. La alta variabilidad interanual del clima en estas regiones, sin embargo, significa que en algunos años las condiciones climáticas favorables para la transmisión de malaria ocurren y epidemias de la enfermedad pueden resultar. </p>
+
+<p>Los mapas mostrados debajo, por lo tanto, tienen por objeto ilustrar modelos de idoneidad climática para la malaria endémica estacional,
+y condiciones climáticas recientes, tales como anomalías de precipitación, las cuales pueden estar asociadas con malaria epidémica
+en regiones cálidas semiáridas de África. Modelos adicionales, como el desarrollado por la iniciativa MARA, pueden ser incluidos en
+el futuro y damos la bienvenida a la oportunidad de trabajar con otros en el desarrollo de estos productos.
 
 </p><p><b>References:</b> Grover-Kopec E. K., Blumenthal M. B., Ceccato P., Dinku T., Omumbo J. A., Connor S. J. <a href="http://www.ncbi.nlm.nih.gov/pubmed/16689992">Web-based climate information resources for malaria control in Africa</a>. <i>Malaria Journal</i>. 2006, <b>5</b>:38.
 
@@ -58,8 +58,8 @@ opportunity to work with others on the further development of these products.
 <div about="http://www.map.ox.ac.uk/data/">
 <meta property="maproom:Sort_Id" content="e13" />
 <a rel="canonical"  href="http://www.map.ox.ac.uk/data/"></a>
-<p property="term:title">Malaria Atlas Project (MAP) Maps of Malaria Transmission and Endemicity</p>
-<p property="term:description">The Malaria Atlas Project (MAP) has constructed a global database and atlas of maps that show the spatial limits of Plasmodium falciparum transmission based upon parasite rate surveys, the predicted spatial distribution of Plasmodium falciparum malaria endemicity, and the model uncertainty for the predicted endemicity.</p>
+<p property="term:title">Proyecto de Atlas de Malaria(MAP) Mapas de la Transmission y Endemicidad de Malaria</p>
+<p property="term:description">El Proyecto de Atlas de Malaria (MAP) ha construido una base de datos mundial y mapas de atlas que muestran los límites spaciales de transmisión de Plasmodium falciparum basados en encuestas de tasas de parásitos, la distribución espacial pronosticada de la endemicidad de malaria de Plasmodium falciparum, y la incertidumbre del modelo para la endemicidad pronosticada.</p>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
