@@ -10,10 +10,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Seasonal Climatic Suitability for Malaria Transmission</title>
+<title>Idoneidad Climática Estacional para la Transmisión de la Malaria</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link rel="canonical" href="index.html" />
 <meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_MEWS" />
@@ -39,13 +39,13 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <style>
-.dlimgtsbox { 
+.dlimgtsbox {
 width: 49%;
 display: inline-block
  }
 </style>
 </head>
-<body xml:lang="en">
+<body xml:lang="es">
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
@@ -55,29 +55,29 @@ display: inline-block
 <input class="pickarea" name="resolution" type="hidden" value=".5" />
 </form>
 <div class="controlBar">
-           <fieldset class="navitem" id="toSectionList"> 
-                <legend>Climate and Health</legend> 
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Clima y Salud</legend>
                       <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
-            </fieldset> 
-            <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
-            </fieldset> 
- <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
+            </fieldset>
+            <fieldset class="navitem" id="chooseSection">
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Malaria Epidémica</span></legend>
+            </fieldset>
+ <fieldset class="navitem"><legend>Promedios Espaciales sobre</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
 <option value=".1">11x11 km box</option>
 <option value=".3">33x33 km box</option>
 <option value=".5">55x55 km box</option>
 <option value="1.">111x111 km box</option>
-<option value="district">district boundaries</option>
+<option value="district">límites de los distritos</option>
 </select></fieldset>
  </div>
 <style>
 .leftpart {
-display: inline-block; 
+display: inline-block;
 width: 60%
 }
 .rightpart {
 margin-left: 10pt;
-display: inline-block; 
+display: inline-block;
 width: 30%
 }
 @media only all and (max-width: 400px) {
@@ -91,17 +91,17 @@ margin: 0px;
 </style>
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
-      <li><a href="#tabs-1" >Description</a></li>
-      <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/">Dataset</a></li>
-      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-1" >Descripción</a></li>
+      <li><a href="#tabs-2" >Documentación de la base de datos</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/">Base de Datos</a></li>
+      <li><a href="#tabs-4" >Contáctenos</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" style="display: none" about="">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-40%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C55%2C40%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
 <div class="valid" style="display: inline-block; text-align: top;">
 <a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
 <div class="template">
-Observations for <b><span class="iridl:long_name"></span></b>
+Observaciones para<b><span class="iridl:long_name"></span></b>
 </div>
 </div>
 <br />
@@ -119,18 +119,18 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/home/.grover/.EMILY/.Analyses/.RFEv2Avg/.avg//region/get_parameter/geoobject%5BX/Y%5Dweighted-average/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%202000-11%20Avg%29def/2/1/roll/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20Precipitation%29def/2/1/roll/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/medium/line/grey/line/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div>
 <p>
-a) Dekadal (i.e., ~10-daily) precipitation estimates for the selected region from Dec 1999 to the present.  
+a) Precipitación decadal (p.ej. ~10-diariamente) estimada para la región seleccionada desde Dic 1999 hasta el presente.
 </p><p>
-b) Same as (a) (solid black line) with the addition of the recent short-term average precipitation for the same region (grey dotted line).  The blue (red) bars are indicative of estimates that are above (below) the short-term average. Note that the short-term average precipitation data has been smoothed.
+b) Igual que (a) (línea sólida negra) con la adición del promedio reciente de precipitación a corto plazo para la misma región (línea punteada gris). Las barras azules (rojo) son indicativos de estimaciones que están por encima (por debajo) de la media a corto plazo. Note que los datos de precipitación a corto plazo han sido suviazados.
 </p><p>
-c) Same as (a) for the current year (thick black line), as indicated by the axis labels. 
-Precipitation estimates from previous years are also shown (blue-1 yr from present; magenta-
-2 yrs from present; grey-3 yrs from present). 
+c) Igual que (a) para el año actual (línea gruesa negra), según lo indicado por las etiquetas de los ejes.
+Precipitación estimada de años anteriores también se muestran (azul -1 año desde el presente; magenta-
+2 años desde el presente; gris -3 años desde el presente).
 </p><p>
-d) Cumulative dekadal satellite-derived precipitation estimates (solid black line) and the cumulative recent short-term average precipitation (grey dotted line) for the most 
-recent 12-month period in the selected region.  The blue (red) bars are indicative of estimates that are above (below) the short-term average.
+d) Acumulados decadales de precipitación estimada obtenida por satélite (línea de color negro sólido) y el acumulado del promedio reciente a corto plazo de precipitación (línea gris punteada) para
+el período de 12 meses más reciente en la región seleccionada. Las barras azules (rojo) son indicativos de estimaciones que están por encima (por debajo) de la media a corto plazo.
 </p><p>
-<b>NOTE:</b> <u>The recent short-term average (from 2000 to the latest complete year) of precipitation should not be interpreted as a climatological normal</u>, which is typically based on a long-term (e.g., 30-year) time series. The length of this short-term average will increase over time as more data becomes available. (An additional year of data will be included in the average during January of each year.)  Despite the limitations that the short-term average imposes, it may provide insight into changes in malaria risk in areas where precipitation anomalies are the principal cause of malaria epidemics by providing a recent historical reference.
+<b>NOTA:</b> <u> El promedio reciente a corto plazo de precipitación (desde el 2000 hasta el último año completo) no debe interpretarse como una normal climatológica</u>, la cual es típicamente basada en series de tiempo a largo plazo (p. ej., 30-años). La longitud de este promedio a corto plazo aumentará con el tiempo a medida que más datos estén disponibles. (Un año adicional de datos se incluirá en el promedio de los meses de enero de cada año.) A pesar de las limitaciones que el promedio a corto plazo impone, puede dar una idea de los cambios en el riesgo de malaria en las zonas donde las anomalías de precipitación son la principal causa de las epidemias de malaria proporcionando una referencia histórica reciente.
 </p>
 </fieldset>
 <fieldset class="dlimage">
@@ -139,62 +139,63 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig+//T/19231.5/plotvalue+//plotborder+72+psdef//plotaxislength+432+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Malaria Early Warning System</h2>
-  <p align="left" property="term:description">MEWS is a rainfall-monitoring product based on dekadal precipitation estimates from the Climate Prediction Center. The interface allows users to view recent rainfall estimates with a seasonal and recent historical perspective. Time series analyses of rainfall data are generated based on user-selected parameters.</p>
-<p>Rainfall is largely responsible for creating the conditions which allow sufficient surface
-water for mosquito breeding sites and is, therefore, recognized as one of the major factors
-influencing malaria transmission in warm semi-arid and desert-
-fringe areas.  Explosive epidemics often occur in these regions after excessive rains and,
-where these follow periods of drought and poor food security, can be especially severe.
+ <h2 align="center" property="term:title">Sistema de Alerta Temprana</h2>
+  <p align="left" property="term:description">SATM es un producto de monitoreo de  lluvias basado en estimaciones de precipitación decadal del Centro de Predicción del Clima. La interfaz permite a los usuarios ver las estimaciones recientes de lluvias con una perspectiva estacional e histórica reciente.  Los análisis de series de tiempo de los datos de precipitación son generados en base a los parámetros seleccionados por el usuario.</p>
+<p>La lluvia, es gran medida responsable de crear condiciones favorables que permiten la
+suficiente agua superficial para la formación de los criaderos de mosquitos y, por tanto,
+es reconocida como uno de los principales factores que influyen la transmisión de malaria
+en zonas cálidas semi-áridas y en las franjas desérticas. Epidemias graves a menudo ocurren
+en estas regiones después de lluvias excesivas y, en donde períodos de sequía e inseguridad
+alimentaria continúan, pueden ser especialmente graves.
 </p><p>
-Consequently, rainfall monitoring forms one of the essential elements for the development
-of integrated Malaria Early Warning Systems (MEWS) for sub-Saharan Africa, as outlined by
-the World Health Organization.
+En consecuencia, el monitoreo de precipitación constituye uno de los elementos esenciales
+para el desarrollo de Sistemas integrados de Alerta Temprana contra la Malaria (SATM) en
+el África Sub-Sahariana, como indica la Organización Mundial de la Salud.
 </p><p>
-The map on this page displays dekadal (aproximately 10-day) estimated precipitation amounts
-over Africa.  The default map shows precipitation totals for the most recently available
-dekad, but totals for previous dekads can be displayed as well.  By clicking on a location
-on the map the user can generate four time series graphs
-that provide analyses of recent rainfall averaged over an administrative district or box
-of a selected size, with respect to that of recent seasons and the short-term multiple-year
- average.  These analyses of recent precipitation placed in historical context are intended
-to provide useful epidemic early warning information for epidemic-prone regions.
+El mapa en esta página muestra cantidades estimadas de precipitación  decadal (aproximadamente 10 días)
+en África. El mapa por defecto muestra los totales de precipitación para la década más reciente  disponible,
+pero los totales para décadas previas también pueden ser mostrados. Al hacer clic en una ubicación en el mapa,
+el usuario puede generar cuatro gráficos de series de tiempo las cuales proporcionan análisis de promedios de
+precipitación recientes sobre un distrito administrativo o en el área de tamaño seleccionada, con respecto a
+la reciente estación y promedio multianual a corto plazo. Estos análisis de precipitación dentro de un
+contexto histórico están destinados a proporcionar información útil para la alerta temprana de epidemias
+en regiones propensas a epidemias.
 </p>
-<h4>References</h4>
+<h4>Referencias</h4>
 <p>
 Grover-Kopec E., Kawano M., Klaver R. W., Blumenthal B., Ceccato P., Connor S. J. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC548290/">An online operational rainfall-monitoring resource for epidemic malaria early warning systems in Africa</a>. <i>Malaria Journal</i>, 2005, <b>4</b>:6.
 </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
-<h2  align="center">Dataset Documentation</h2>
-<h4>Precipitation Estimates</h4>
+<h2  align="center">Documentación de la Base de Datos</h2>
+<h4>Precipitación Estimada</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
-<dd>Dekadal precipitation estimates over land areas on a 0.1° x 0.1° lat/lon grid</dd>
-<dt>Data Source</dt><dd> Climate Prediction Center/Famine Early Warning System 
+<dd>Precipitación decadal estimada sobre áreas de superficie terrestre a 0.1° x 0.1° lat/lon malla</dd>
+<dt>Fuente de Datos</dt><dd> Climate Prediction Center/Famine Early Warning System
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>)*</dd>
 </dl>
-<h4>Epidemiological Mask</h4>
+<h4>Máscara Epidemiológica</h4>
 <dl class="datasetdocumentation">
-<dt>Mask</dt><dd>illustrating areas where malaria is considered to be epidemic.  Areas where malaria transmission is considered absent or endemic are therefore excluded. This mask is based purely on climatic constraints to malaria transmission, and does not yet account for areas in the northern and southern margins of the continent where control has eliminated malaria risk.</dd>
-<dt>Reference</dt><dd>WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.  </dd>
+<dt>Máscara</dt><dd>Ilustrando zonas donde la malaria es considerada epidémica. Áreas donde la transmisión de malaria es considerada ausente o endémica son por lo tanto excluidas. Esta máscara esta basada puramente en limitaciones climáticas para la transmisión de malaria, y todavía no representa los márgenes de zonas norte o sur del continente donde el control ha elimiado el riesgo a malaria.</dd>
+<dt>Referencia</dt><dd>OMS: Reporte Final de la tercera reunión de la Red Técnica de Recuros RBM de Prevención y Control en Epidemias. Ginebra: Organización Mundial de la Salud; 2002.  </dd>
 </dl>
 <p>
-<font size="-1">*More dekadal and daily data from FEWS is available from the 
+<font size="-1">*Más datos decadales y diarios del FEWS estan disponibles en
 <a href="http://igskmncnwb015.cr.usgs.gov/adds/">Africa Data Dissemination Service</a>.</font>
 </p>
 </div>
 <div class="ui-tabs-panel-hidden">
-<h2 align="center">Dataset</h2>
+<h2 align="center">Base de Datos</h2>
 <p>
 <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/">Access the dataset used to create this map.</a>
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
-<h2  align="center">Helpdesks</h2>
+<h2  align="center">Servicios de Asistencia</h2>
 <p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
- </p>
+Contacte <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> con cualquier pregunta técnica o problema con este Cuarto de Mapas, por ejemplo, los pronósticos no se muestran o actualizan adecuadamente.
+</p>
 </div>
 </div>
 <div class="optionsBar">
