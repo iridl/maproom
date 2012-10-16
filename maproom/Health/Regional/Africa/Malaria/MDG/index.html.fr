@@ -39,8 +39,8 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
 </head>
 <body xml:lang="fr">
-<form name="pageform" id="pageform" class="carryup carry share dlimg dlauximg">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
 <input class="dlimg share" name="country" type="hidden" />
 <input class="dlimg share" name="Baseline" type="hidden" />

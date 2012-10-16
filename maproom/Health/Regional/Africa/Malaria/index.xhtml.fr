@@ -21,8 +21,8 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/
 </head>
 <body>
 
-<form name="pageform" id="pageform" class="carry carryup titleLink">
-<input class="carry carryup" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform">
+<input class="carryLanguage carryup" name="Set-Language" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
