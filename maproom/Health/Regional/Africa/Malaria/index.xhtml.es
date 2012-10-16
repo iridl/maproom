@@ -26,8 +26,8 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
-                <legend>Data Library</legend> 
-                    <a rev="section" class="navlink carryup" href="/maproom/Health/">Climate and Health</a>
+                <legend>Maproom</legend> 
+                    <a rev="section" class="navlink carryup" href="/maproom/Health/">Clima y Salud</a>
             </fieldset>
            <fieldset class="navitem">
                 <legend>Clima y Salud</legend>

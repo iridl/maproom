@@ -9,7 +9,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>IRI Map Room</title>
+<title>Climate and Health</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
@@ -26,7 +26,7 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
-                <legend>Data Library</legend> 
+                <legend>Maproom</legend> 
                     <a rev="section" class="navlink carryup" href="/maproom/Health/">Climate and Health</a>
             </fieldset> 
            <fieldset class="navitem"> 
