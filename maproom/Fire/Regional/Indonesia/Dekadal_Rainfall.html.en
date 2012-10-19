@@ -37,17 +37,25 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FireHazards"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/X/90./155./RANGEEDGES/Y/-12.5/9.5/RANGEEDGES/X/Y/fig-+colors+grey+verythin+indonesia_prov+black+thin+countries_gaz+-fig+//T/1795./plotvalue+//antialias+true+psdef/+//dekadsum/0/300/plotrange//T/1795./plotvalue//plotaxislength+220+psdef//plotborder+0+psdef//XOVY+null+psdef+.jpg" />
+<style>
+.dlimgtsbox { 
+width: 49%;
+display: inline-block
+ }
+</style>
 </head>
 <body xml:lang="en">
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
-<input class="dlimg carry" name="bbox" type="hidden" />
+<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" value="bb:90:-12:155:10:bb" />
+<input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+<input class="pickarea" name="resolution" type="hidden" value=".5" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climate and Fire</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Fire/">Indonesia</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Fire/">Climate and Fire</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Fire_Regional_Indonesia_term"><span property="term:label">Indonesia</span></legend>
@@ -59,14 +67,61 @@
                    <option value="">Full Extent</option>
                 </select>
             </fieldset>
- </div>
+<fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
+<option value=".3">33x33 km box</option>
+<option value=".5">55x55 km box</option>
+<option value="1.">111x111 km box</option>
+<option value="district">district boundaries</option>
+<option value="province">province boundaries</option>
+</select></fieldset>
+</div>
+
+<style>
+.leftpart {
+display: inline-block; 
+width: 60%
+}
+.rightpart {
+margin-left: 10pt;
+display: inline-block; 
+width: 30%
+}
+@media only all and (max-width: 400px) {
+.leftpart { width: 100%}
+.rightpart {width: 95%}
+}
+.plotheading {
+text-align: center;
+margin: 0px;
+}
+</style>
+
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a class="carry" href="http://iridl.ldeo.columbia.edu/SOURCES/.LSTM/.MFAP/.molesworth_etal_2003/">Dataset</a></li>
+      <li><a class="carry" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
+<fieldset class="regionwithinbbox dlimage" style="display: none" about="">
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-40%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C55%2C40%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<div class="valid" style="display: inline-block; text-align: top;">
+<a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">
+Observations for <b><span class="iridl:long_name"></span></b>
+</div>
+</div>
+<br />
+<div class="dlimgtsbox">
+<div>a)</div>
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/%28bb:%5B112%2C0.50%2C112.5%2C1%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/T/fig:/line/:fig///plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+</div>
+<div class="dlimgtsbox">
+<div>b)</div>
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/%28bb:%5B112%2C0.50%2C112.5%2C1%5D%29//region/parameter/geoobject%5BX/Y%5D0.0/weighted-average/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Indonesia/.avg/X/90/155/RANGEEDGES/Y/-12.5/9.5/RANGEEDGES/%28bb:%5B112%2C0.50%2C112.5%2C1%5D%29//region/parameter/geoobject%5BX/Y%5D0.0/weighted-average/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20CMORPH%202003-11%20avg%29def/2/1/roll/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20CMORPH%20precipitation%29def/2/1/roll/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/medium/line/grey/line/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
+</div>
+</fieldset>
+
 <fieldset class="dlimage" id="content" about="">
 <a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colors+grey+verythin+indonesia_prov+black+thin+countries_gaz+-fig//antialias+true+psdef//plotaxislength+600+psdef/"></a>
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colors+grey+verythin+indonesia_prov+black+thin+countries_gaz+-fig//antialias+true+psdef//plotaxislength+600+psdef+.gif" border="0" alt="image" />
@@ -81,12 +136,12 @@
 <h2  align="center">Dataset Documentation</h2>
 <h4>Reference</h4>
 <dl class="datasetdocumentation">
-Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</dl>
+Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that Produces Global Precipitation Estimates from Passive Microwave and Infrared Data at High Spatial and Temporal Resolution. J. Hydrometeorology, 5, 487-503.</dl>
 </div>
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
 <p>
-<a href="http://iridl.ldeo.columbia.edu/SOURCES/.LSTM/.MFAP/.molesworth_etal_2003/">Access the dataset used to create this map.</a>
+<a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/">Access the dataset used to create this map.</a>
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
