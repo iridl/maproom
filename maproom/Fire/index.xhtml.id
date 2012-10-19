@@ -6,13 +6,13 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="en"
+ xml:lang="id"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Fire Map Room</title>
+<title>Ruang Sumber Informasi untuk Iklim and Kebakaran</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="id" href="index.html?Set-Language=id" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link rel="canonical" href="index.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
@@ -32,45 +32,29 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dek
             </fieldset> 
            <fieldset class="navitem"> 
                 <legend>Maproom</legend> 
-                     <span class="navtext">Climate and Fire</span>
+                     <span class="navtext">Ruang Sumber Informasi untuk Iklim and Kebakaran</span>
             </fieldset> 
 </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">Climate and Fire</h2>
+<h2 property="term:title">Ruang Sumber Informasi untuk Iklim and Kebakaran</h2>
 <p align="left" property="term:description">
-IRI has worked with CARE Indonesia and Bogor Agriculture University (BAU) in Indonesia to support 
-the development of early warning and response for fires in peatland areas of Indonesia.</p>
-<p>This work is part of the Central Kalimantan Peatlands Project, a large consortium effort funded by 
-DGIS of the government of the Netherlands and managed by Wetlands International, to support improved 
-livelihoods and peatland restoration.  For further information about this effort, please see the 
-<a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&#38;objID=466&#38;PageID=0&#38;cached=true&#38;mode=2&#38;userID=2">project page</a>.
+IRI telah bekerja sama dengan CARE Indonesia dan Centre for Climate Risk Management in Souteast Asia and Pacific-Institut Pertanian Bogor (CCROM SEAP-IPB) untuk mendukung pengembangan sistem peringatan dini kebakaran hutan pada lahan gambut di Indonesia.</p>
+<p>Kegiatan ini merupakan bagian dari Proyek Lahan Gambut Kalimantan Tengah, yaitu sebuah konsorsium yang didanai oleh DGIS pemerintah Belanda dan dikelola oleh Wetlands Intenational untuk mendukung peningkatan pelestarian dan restorasi lahan gambut. Informasi lebih lanjut mengenai kegiatan ini bisa diperoleh di <a href="http://portal.iri.columbia.edu/portal/server.pt??open=512&#38;objID=466&#38;PageID=0&#38;cached=true&#38;mode=2&#38;userID=2">Halaman Proyek</a> atau dapat menghubungi IRI
+(<a href="mailto:help@iri.columbia.edu?subject=Climate and Fire Resource Room">help@iri.columbia.edu</a>).
 </p>
 <p>
-IRI, CARE and BAU have investigated links between climate anomalies, biophysical indicators, and fire hotspots in 
-Central Kalimantan and neighboring provinces, where a large portion of Indonesia's peatlands are found. Project 
-research has uncovered a close correlation between satellite rainfall data and fire hotspot activity in these areas. 
-In particular, rainfall during the dry season from June to October is critical in determining fire activity. 
-For further information about these research results, please contact Pietro Ceccato 
-(<a href="mailto:pceccato@iri.columbia.edu?subject=Climate and Fire Resource Room">pceccato@iri.columbia.edu</a>).
+IRI, CARE dan CCROM-SEAP-IPB telah mengidentifikasi keterkaitan antara anomali iklim, indikator biofisik, dan jumlah titik panas di wilayah Kalimantan Tengah dan provinsi lain di sekitarnya, dimana merupakan wilayah dengan lahan gambut terbanyak di Indonesia. Proyek penelitian ini belum memperhitungkan korelasi antara data curah hujan dari satelit dan aktivitas titik panas. Dalam beberapa kasus, curah hujan musim kemarau di bulan Juni hingga Oktober sangat menentukan aktivitas titik panas dan kebakaran. Untuk informasi lebih lanjut mengenai hasil kegiatan ini, dapat menghubungi Pietro Ceccato (<a href="mailto:pceccato@iri.columbia.edu?subject=Climate and Fire Resource Room">pceccato@iri.columbia.edu</a>).
 </p>
-
 <p>
-This finding means that satellite rainfall data can help indicate whether an upcoming fire season will be more or less intense than usual. 
-Therefore, IRI has developed an online tool to enable stakeholders to view satellite rainfall data and rainfall anomalies over Indonesia 
-(see Indonesia Rainfall Analysis Tool below). Given the linkage uncovered between rainfall and fire activity in the Kalimantan region, 
-data over these provinces can help assess fire risk.
+Berdasarkan temuan diatas, data curah hujan satelit dapat digunakan untuk mengindikasikan apakah pada musim berikutnya kebakaran akan lebih sedikit atau bahkan lebih intens dari biasanya. Oleh karena itu, IRI telah mengembangkan tool -- online yang memungkinkan anda untuk melihat data curah hujan satelit dan anomali curah hujan se-Indonesia (Lihat penjelasan selanjutnya mengenai: Tool Analisis Curah Hujan). Dari situs ini anda dapat memperoleh informasi mengenai hubungan antara curah hujan dan aktivitas titik panas di wilayah Kalimantan, data tersebut dapat digunakan untuk membantu analisis resiko kebakaran.
 </p>
-
 <p>
-In addition, IRI has developed Experimental Forecasts of Fire Activity in Central Kalimantan (see link below). These predict the 
-likelihood of high or low fire activity 1-2 months in advance, using a correlation between an index of the sea surface temperature 
-and the occurrence of fire hotspots in Central Kalimantan, Indonesia.
+Selain itu, IRI telah membangun <i>Experimental Forecast of Fire Activity</i> (Prakiraan ekperimental aktivitas api) untuk wilayah Kalimantan (lihat link di bawah ini). Tool ini dapat digunakan untuk memprediksikan tinggi rendahnya aktivitas api pada 1-2 bulan ke depan, menggunakan korelasi antara indeks suhu muka laut dan jumlah kejadian titik panas di Kalimantan Tengah, Indonesia.
 </p>
-
 <p>
-IRI is continuing to work with partners in Indonesia to improve these forecasting methods and tools, and to expand the analysis 
-to other regions where the link between climate and fire activity has been demonstrated.
+IRI terus bekerja sama dengan berbagai pihak di Indonesia untuk mengembangkan metode dan alat, serta mengembangkan
+analisis untuk wilayah lain yang memiliki hubungan erat antara kejadian kebakaran dan iklim. 
 </p>
 
 </div>

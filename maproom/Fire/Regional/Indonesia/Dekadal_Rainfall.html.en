@@ -100,7 +100,7 @@ margin: 0px;
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a class="carry" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/">Dataset</a></li>
+      <li><a class="carry" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" style="display: none" about="">
@@ -118,18 +118,19 @@ Observations for <b><span class="iridl:long_name"></span></b>
 </div>
 <div class="dlimgtsbox">
 <div>b)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/%28bb:%5B112%2C0.50%2C112.5%2C1%5D%29//region/parameter/geoobject%5BX/Y%5D0.0/weighted-average/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Indonesia/.avg/X/90/155/RANGEEDGES/Y/-12.5/9.5/RANGEEDGES/%28bb:%5B112%2C0.50%2C112.5%2C1%5D%29//region/parameter/geoobject%5BX/Y%5D0.0/weighted-average/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20CMORPH%202003-11%20avg%29def/2/1/roll/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20CMORPH%20precipitation%29def/2/1/roll/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/medium/line/grey/line/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/%28bb:%5B112%2C0.50%2C112.5%2C1%5D%29//region/parameter/geoobject%5BX/Y%5D0.0/weighted-average/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Indonesia/.avg/X/90/155/RANGEEDGES/Y/-12.5/9.5/RANGEEDGES/%28bb:%5B112%2C0.50%2C112.5%2C1%5D%29//region/parameter/geoobject%5BX/Y%5D0.0/weighted-average/T/2/index/.T/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20CMORPH%202003-11%20avg%29def/2/1/roll/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20CMORPH%20precipitation%29def/2/1/roll/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/medium/line/grey/line/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
 </div>
 </fieldset>
 
 <fieldset class="dlimage" id="content" about="">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colors+grey+verythin+indonesia_prov+black+thin+countries_gaz+-fig//antialias+true+psdef//plotaxislength+600+psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colors+grey+verythin+indonesia_prov+black+thin+countries_gaz+-fig//antialias+true+psdef//plotaxislength+600+psdef+.gif" border="0" alt="image" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colorscale2+-fig//nplotstream+1+def//antialias+true+psdef//plotaxislength+600+psdef+.gif" border="0" alt="image" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colors+grey+verythin+districts_gaz+indonesia_dist+black+verythin+indonesia_prov+black+thin+countries_gaz+-fig//antialias+true+psdef//plotaxislength+600+psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colors+grey+verythin+districts_gaz+indonesia_dist+black+verythin+indonesia_prov+black+thin+countries_gaz+-fig//antialias+true+psdef//plotaxislength+600+psdef+.gif" border="0" alt="image" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colorscale2+-fig//nplotstream+1+def//antialias+true+psdef//plotaxislength+600+psdef+.gif" border="0" alt="image" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">Indonesia Rainfall Analysis Tool</h2>
-  <p align="left" property="term:description">This tool allows users to analyze recent rainfall in Indonesia via maps and location-specific time series. Over Central Kalimantan and neighboring provinces, rainfall anomalies are correlated with fire activity; from June-October, negative anomalies are associated with high fire activity.</p>
+  <p align="left" property="term:description">This tool allows users to analyze recent rainfall in Indonesia via maps and location-specific time series. </p>
+<p>Over Central Kalimantan and neighboring provinces, rainfall anomalies are correlated with fire activity; from June-October, negative anomalies are associated with high fire activity.</p>
 
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
@@ -141,7 +142,7 @@ Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that 
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
 <p>
-<a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/">Access the dataset used to create this map.</a>
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/">Access the dataset used to create this map.</a>
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">

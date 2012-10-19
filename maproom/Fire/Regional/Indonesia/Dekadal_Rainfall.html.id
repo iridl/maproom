@@ -10,10 +10,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Indonesia Rainfall Analysis Tool</title>
+<title>Alat (Tool) Analisis Hujan Indonesia</title>
 <script type="text/javascript" src="../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="id" href="Dekadal_Rainfall.html?Set-Language=id" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="Dekadal_Rainfall.html?Set-Language=en" />
 <link rel="canonical" href="Dekadal_Rainfall.html" />
 <meta property="maproom:Entry_Id" content="Fire_Regional_Indonesia_Dekadal_Rainfall" />
 <meta property="maproom:Sort_Id" content="e12" />
@@ -44,7 +44,7 @@ display: inline-block
  }
 </style>
 </head>
-<body xml:lang="en">
+<body xml:lang="id" lang="id">
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="dlimg share dlimgloc carry" name="bbox" type="hidden" value="bb:90:-12:155:10:bb" />
@@ -71,8 +71,8 @@ display: inline-block
 <option value=".3">33x33 km box</option>
 <option value=".5">55x55 km box</option>
 <option value="1.">111x111 km box</option>
-<option value="district">district boundaries</option>
-<option value="province">province boundaries</option>
+<option value="district">Kabupaten</option>
+<option value="province">Propinsi</option>
 </select></fieldset>
 </div>
 
@@ -127,11 +127,13 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colors+grey+verythin+districts_gaz+indonesia_dist+black+verythin+indonesia_prov+black+thin+countries_gaz+-fig//antialias+true+psdef//plotaxislength+600+psdef+.gif" border="0" alt="image" />
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colorscale2+-fig//nplotstream+1+def//antialias+true+psdef//plotaxislength+600+psdef+.gif" border="0" alt="image" />
 </fieldset>
- <div id="tabs-1" class="ui-tabs-panel" about="">
-  <h2 align="center" property="term:title">Indonesia Rainfall Analysis Tool</h2>
-  <p align="left" property="term:description">This tool allows users to analyze recent rainfall in Indonesia via maps and location-specific time series. Over Central Kalimantan and neighboring provinces, rainfall anomalies are correlated with fire activity; from June-October, negative anomalies are associated with high fire activity.</p>
 
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+  <h2 align="center" property="term:title">Alat (Tool) Analisis Hujan Indonesia</h2>
+  <p align="left" property="term:description">Alat ini memungkinkan pengguna untuk melakukan analisis kejadian hujan terkini di Indonesia melalui peta dan data historis di lokasi tertentu. Untuk wilayah Kalimantan Tengah dan provinsi lain di sekitarnya, telah diketahui bahwa anomali curah hujan dan aktivitas api saling berhubungan erat. </p>
+<p>Pada bulan Juni hingga Oktober, anomali curah hujan negatif mengindikasikan tingginya aktivitas kebakaran.</p>
 </div>
+
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <h4>Reference</h4>
