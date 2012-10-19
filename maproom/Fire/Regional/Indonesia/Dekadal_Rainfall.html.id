@@ -47,6 +47,7 @@ display: inline-block
 <body xml:lang="id" lang="id">
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
+<input class="carry dlimg dlauximg info share" name="var" type="hidden" />
 <input class="dlimg share dlimgloc carry" name="bbox" type="hidden" value="bb:90:-12:155:10:bb" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
@@ -54,8 +55,8 @@ display: inline-block
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
-                <legend>Climate and Fire</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Fire/">Climate and Fire</a>
+                <legend>Ruang Sumber Informasi untuk Iklim and Kebakaran</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Fire/">Ruang Sumber Informasi untuk Iklim and Kebakaran</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Fire_Regional_Indonesia_term"><span property="term:label">Indonesia</span></legend>
@@ -123,8 +124,8 @@ Observations for <b><span class="iridl:long_name"></span></b>
 </fieldset>
 
 <fieldset class="dlimage" id="content" about="">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colors+grey+verythin+districts_gaz+indonesia_dist+black+verythin+indonesia_prov+black+thin+countries_gaz+-fig//antialias+true+psdef//plotaxislength+600+psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colors+grey+verythin+districts_gaz+indonesia_dist+black+verythin+indonesia_prov+black+thin+countries_gaz+-fig//antialias+true+psdef//plotaxislength+600+psdef+.gif" border="0" alt="image" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/X/Y/fig-+colors+grey+verythin+districts_gaz+indonesia_dist+black+verythin+indonesia_prov+black+thin+countries_gaz+-fig//antialias+true+psdef//plotaxislength+600+psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/X/Y/fig-+colors+grey+verythin+districts_gaz+indonesia_dist+black+verythin+indonesia_prov+black+thin+countries_gaz+-fig//antialias+true+psdef//plotaxislength+600+psdef+.gif" border="0" alt="image" />
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/T/%281-10%20Oct%202012%29VALUE/X/Y/fig-+colorscale2+-fig//nplotstream+1+def//antialias+true+psdef//plotaxislength+600+psdef+.gif" border="0" alt="image" />
 </fieldset>
 
