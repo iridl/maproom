@@ -23,7 +23,7 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dek
 <body>
 
 <form name="pageform" id="pageform">
-<input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+<input class="carryLanguage" name="Set-Language" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
