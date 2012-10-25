@@ -12,6 +12,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>IRI Map Room</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link rel="canonical" href="index.html" />
 <meta property="maproom:Sort_Id" content="a04" />
@@ -39,7 +40,7 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/
 </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">Climate and Health Resource Room</h2>
+<h2 property="term:title">Climate and Health</h2>
 <p align="left" property="term:description">
 Climate affects health in a number of ways. These effects may be
 direct, as with heat stress, or indirect, as with infectious diseases
