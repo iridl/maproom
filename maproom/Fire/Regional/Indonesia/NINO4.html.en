@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Predictive Tool for Fire Activity in Kalimantan, Indonesia</title>
+<script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="id" href="NINO4.html?Set-Language=id" />
+<link rel="canonical" href="NINO4.html" />
+<meta property="maproom:Entry_Id" content="Fire_Regional_Indonesia_Forecasts_Kalimantan" />
+<meta property="maproom:Sort_Id" content="e13" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Indonesia_69_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_Southeast_317_0"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Surface"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#PlanetarySurface"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#WaterSurface"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Climate_Indices"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#enso"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Fire_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Fire_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Fire_Regional_Indonesia_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Kalimantan_Timur_2206_2"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Kalimantan_Tengah_2516_2"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Kalimantan_Selatan_1902_2"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Kalimantan_Barat_2522_2"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#monthly"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#SeaSurface"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Nino4"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FireHazards"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Count"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/correlationcolorscale/DATA/-2/2/RANGE/dup+T+fig-+colorbars2+-fig+T/466./last/plotrange//plotaxislength+220+psdef//plotborder+0+psdef//XOVY+null+psdef+.jpg" />
+<style>
+.dlimgtsbox { 
+width: 49%;
+display: inline-block
+ }
+</style>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
+<input class="carry dlimg dlauximg info share" name="var" type="hidden" />
+<input class="dlimgts share" name="L" type="hidden" value="1" />
+<input class="dlimgts share" name="fires" type="hidden" value="medianover" />
+<input class="dlimgts share" name="nino4" type="hidden" value="medianover" />
+<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" value="bb:90:-12:155:10:bb" />
+<input class="share dlimgts dlimgloc" name="region" type="hidden" value="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@12:ds" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Maproom</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Fire/">Climate and Fire</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Fire_Regional_Indonesia_term"><span property="term:label">Indonesia</span></legend>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseRegion"> 
+                <legend>Province</legend> 
+                <select class="pageformcopy" name="region">
+                   <option value="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@10:ds">Barat</option>
+                   <option value="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@11:ds">Seletan</option>
+                   <option value="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@12:ds">Tengah</option>
+                   <option value="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@13:ds">Timur</option>
+                </select>
+            </fieldset>
+            <fieldset class="navitem" id="chooseLead"> 
+                <legend>Lead Time</legend> 
+                <select class="pageformcopy" name="L">
+                   <option value="1">1 month</option>
+                   <option value="2">2 months</option>
+                </select>
+            </fieldset>
+            <fieldset class="navitem" id="chooseFireThresh"> 
+                <legend>Number of Fires Threshold</legend> 
+                <select class="pageformcopy" name="fires">
+                   <option value="medianover">median</option>
+                   <option value="average">mean</option>
+                </select>
+            </fieldset>
+            <fieldset class="navitem" id="chooseNinoThresh"> 
+                <legend>NINO4 Threshold</legend> 
+                <select class="pageformcopy" name="nino4">
+                   <option value="medianover">median</option>
+                   <option value="average">mean</option>
+                </select>
+            </fieldset>
+</div>
+
+<style>
+.leftpart {
+display: inline-block; 
+width: 60%
+}
+.rightpart {
+margin-left: 10pt;
+display: inline-block; 
+width: 30%
+}
+@media only all and (max-width: 400px) {
+.leftpart { width: 100%}
+.rightpart {width: 95%}
+}
+.plotheading {
+text-align: center;
+margin: 0px;
+}
+</style>
+
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a class="carry" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/">Dataset</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+<fieldset class="regionwithinbbox dlimage" style="display: none" about="">
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-40%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C55%2C40%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/200/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<!-- <div class="valid" style="display: inline-block; text-align: top;">
+<a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">
+Observations for <b><span class="iridl:long_name"></span></b>
+</div>
+</div> -->
+<br />
+<div class="dlimgtsbox">
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T/1//L/parameter/-1/mul/shiftdata/home/.remic/.Fire/.numberOfFires%5Bgid%5Daverage/0/mul/add/dup/dup%5BT%5D%28medianover%29//nino4/parameter/interp/dup/getrealization/0/get/100/mul/round/100/div/s==/3/-1/roll/3/-1/roll/flaglt/2/mul/home/.remic/.Fire/.numberOfFires/gid/%28irids:SOURCES:Features:Political:Indonesia:Provinces:gid%4010:ds%29//region/parameter/geoobject/.gid/SAMPLE/dup/dup%5BT%5D%28medianover%29//fires/parameter/interp/dup/getrealization/0/get/round/cvi/s==/3/-1/roll/3/-1/roll/flaglt/4/-1/roll/add/%28Fires%20%3E%20%292/index/%28%20%26%20NINO4%20%3E%20%296/index/4/array/astore/concat/%28Fires%20%3C%20%293/index/%28%20%26%20NINO4%20%3E%20%297/index/4/array/astore/concat/%28Fires%20%3E%20%294/index/%28%20%26%20NINO4%20%3C%20%298/index/4/array/astore/concat/%28Fires%20%3C%20%296/-1/roll/%28%20%26%20NINO4%20%3C%20%299/-1/roll/4/array/astore/concat/4/array/astore/%28CLIST%29exch/def/startcolormap/%28maxncolor%298/def/DATA/0/3/RANGE/white/red/red/LimeGreen/DeepSkyBlue/gold/gold/endcolormap/%28units%29%28ids%29def/%28long_name%29%28%29def/3/-1/roll/3/-1/roll/2/RECHUNK/CopyStream/2/index/2/RECHUNK/CopyStream/fig:/scattercolor/:fig/%28XOVY%291/psdef/%28fnt%29%28Palatino-Roman%29psdef/%28fntsze%2920/psdef//XOVY/1/psdef//plotaxislength/432/psdef//plotborder/72/psdef//plotaxislength/432/psdef//plotborder/72/psdef//XOVY/1/psdef/+.gif" />
+</div>
+<div class="dlimgtsbox">
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T/1//L/parameter/-1/mul/shiftdata/home/.remic/.Fire/.numberOfFires%5Bgid%5Daverage/0/mul/add/dup/dup%5BT%5D%28medianover%29//nino4/parameter/interp/dup/getrealization/0/get/100/mul/round/100/div/s==/3/-1/roll/3/-1/roll/flaglt/2/mul/home/.remic/.Fire/.numberOfFires/gid/%28irids:SOURCES:Features:Political:Indonesia:Provinces:gid%4010:ds%29//region/parameter/geoobject/.gid/SAMPLE/dup/dup%5BT%5D%28medianover%29//fires/parameter/interp/dup/getrealization/0/get/round/cvi/s==/3/-1/roll/3/-1/roll/flaglt/4/-1/roll/add/%28Fires%20%3E%20%292/index/%28%20%26%20NINO4%20%3E%20%296/index/4/array/astore/concat/%28Fires%20%3C%20%293/index/%28%20%26%20NINO4%20%3E%20%297/index/4/array/astore/concat/%28Fires%20%3E%20%294/index/%28%20%26%20NINO4%20%3C%20%298/index/4/array/astore/concat/%28Fires%20%3C%20%296/-1/roll/%28%20%26%20NINO4%20%3C%20%299/-1/roll/4/array/astore/concat/4/array/astore/%28CLIST%29exch/def/startcolormap/%28maxncolor%298/def/DATA/0/3/RANGE/white/red/red/LimeGreen/DeepSkyBlue/gold/gold/endcolormap/%28units%29%28ids%29def/%28long_name%29%28%29def/3/-1/roll/3/-1/roll/2/RECHUNK/CopyStream/2/index/2/RECHUNK/CopyStream/fig:/scattercolor/:fig/.auxfig/%28XOVY%291/psdef/%28fnt%29%28Palatino-Roman%29psdef/%28fntsze%2920/psdef//XOVY/1/psdef//plotaxislength/432/psdef//plotborder/72/psdef//plotaxislength/432/psdef//plotborder/72/psdef//XOVY/1/psdef/+.gif" />
+</div>
+<!-- <div class="dlimgtsbox">
+<div> </div>
+<table border=1 style=font-family:Palatino-Roman>
+<tr><td><b>Decision Matrix</b></td>
+<td>NINO4 below median </td>
+<td>NINO4 above median </td></tr>
+<tr><td>Fires above median </td>
+<td align=center bgcolor=DeepSkyBlue><b>7 (32%)</b></td>
+<td align=center bgcolor=red><b>16 (70%)</b></td></tr>
+<tr><td>Fires below median</td>
+<td align=center bgcolor=gold><b>15 (68%)</b></td>
+<td align=center bgcolor=LimeGreen><b>7 (30%)</b></td></tr>
+</table>
+</div> -->
+</fieldset>
+
+<fieldset class="dlimage" about="">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/correlationcolorscale/DATA/-2/2/RANGE/dup+T+fig-+colorbars2+-fig+T/466./last/plotrange//plotaxislength+432+psdef//XOVY+null+psdef//plotborder+72+psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/correlationcolorscale/DATA/-2/2/RANGE/dup+T+fig-+colorbars2+-fig+T/466./last/plotrange//plotaxislength+432+psdef//XOVY+null+psdef//plotborder+72+psdef+.gif" border="0" alt="image" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+  <h2 align="center" property="term:title">Predictive Tool for Fire Activity in Kalimantan, Indonesia</h2>
+  <p align="left" property="term:description">These are experimental forecasts of the likelihood of high or low fire activity in the province of Central Kalimantan, Indonesia. By monitoring the NINO 4 index of the sea surface temperature from April to September, it is possible to estimate the fire activity one to two months in advance.</p>
+<p>This page presents experimental forecasts of the likelihood of high or low fire activity in the provinces of South, Central, West, and East Kalimantan in Indonesia. This experimental research was conducted by IRI through a partnership with Bogor Agriculture University with support from CARE Indonesia. IRI is currently working with the Indonesian Meteorological Service (BMG) to compare methodologies for forecasting relevant to fires.</p>
+<p>By monitoring the NINO4 index of the Sea Surface Temperature (SST) from April to September, it is possible to estimate the fire activity one to two months in advance.  This analysis is based on data from 1998-2006 on fire hotspots (derived from NOAA-AVHRR) and on the <a href="http://iri.columbia.edu/climate/ENSO/background/monitoring.html#sst">NINO4 index</a>.  The four graphs that appear further down on this page show the results of this analysis for each of the four Kalimantan provinces in Indonesia.</p>
+<p>
+The time series of the NINO4 index (shown in the graph above) is updated every month.  Based on its relationship to fire activity, users may view the NINO4 data and forecast 1-2 months ahead whether fire activity is likely to be above or below median levels.</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<h4>Reference</h4>
+<dl class="datasetdocumentation">
+Reynolds, R.W., N.A. Rayner, T.M. Smith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite SST Analysis for Climate. J. Climate, 15, 1609-1625</dl>
+</div>
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/">Access the dataset used to create this graph.</a>
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>

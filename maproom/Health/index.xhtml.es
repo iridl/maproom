@@ -6,21 +6,23 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="fr"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>IRI Map Room</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link rel="canonical" href="index.html" />
+<meta property="maproom:Sort_Id" content="a04" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
+<link rel="term:isDescribedBy"
+href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:icon"
+href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <script type="text/javascript" src="../../uicore/uicore.js"></script>
 </head>
-<body>
+<body  xml:lang="es">
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
@@ -28,22 +30,27 @@
 <div class="controlBar">
            <fieldset class="navitem"> 
                 <legend>Data Library</legend> 
-                    <a rev="section" class="navlink carryup" href="/maproom/">Maproom</a>
-
+                    <a rev="section" class="navlink carryup" href="/maproom/">Sala de Mapas</a>
             </fieldset> 
            <fieldset class="navitem"> 
-                <legend>Maproom</legend> 
-                     <span class="navtext">Climat et Santé</span>
+                <legend>Sala de Mapas</legend> 
+                     <span class="navtext">Clima y Salud</span>
             </fieldset> 
 </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">Climat et Santé</h2>
+<h2 property="term:title">Clima y Salud</h2>
 <p align="left" property="term:description">
-Le climat affecte la santé humaine de différentes façons. Ses effets peuvent être directs, comme dans le cas d'une vague de chaleur ou
-indirects, comme dans le cas des maladies infectieuses telles que le paludisme et la dengue.</p><p>Ce site a pour but d'explorer le lien climat-santé et d'informer les utilisateurs
-sur l'utilité de cette information avec une attention particulière sur la nature saisonnière de la relation. Ce site débute avec une attention particulière sur le paludisme, une
-maladie transmise par les moustiques d'importance majeure dans la plupart des pays en voie de développement, et en particulier l'Afrique sub-saharienne. Notre intention est d'augmenter le contenu de ce site en incluant des analyses qui se concentreront sur d'autres maladies et régions, ainsi que d'inclure dans le futur des produits développés par d'autres institutions.
+
+El clima afecta a la salud en diferentes formas. Estos efectos pueden ser directos, 
+como con el estrés por calor, o indirectos, como las enfermedades infecciosas tales 
+como la malaria y meningitis.</p><p>Este servicio tiene como objetivo explorar e 
+informar a los usuarios sobre la relación entre clima y salud con énfasis en la
+naturaleza estacional de esta relación, cuando es oportuno. Esta "Sala de 
+recursos de Mapas en Clima y Salud" se iniciará con un enfoque en la malaria y 
+meningitis en África. Es nuestra intención aumentar el contenido de esta sala de
+recursos mediante la inclusión de análisis que se centran en otras enfermedades 
+y regiones, así como aquellas que se desarrollan en otras instituciones.
 </p>
 </div>
 <div class="rightcol tabbedentries" about="/maproom/Health/" >
