@@ -40,13 +40,15 @@
 width: 49%;
 display: inline-block
  }
+body.varreflectance img.dlauximg{display: none}
 </style>
 </head>
 <body xml:lang="en">
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
 <input class="carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" value="bb:-20.0:-9.5446024E-04:20.00206:39.99889:bb" />
+<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" />
+<input class="dlimg dlauximg share dlimgloc carry justsregion" name="sregion" type="hidden" value=".WAF" />
+<input class="dlimg dlauximg share dlimgloc carry justsregion bodyClass" name="var" type="hidden" value="NDVI" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
 <input class="pickarea" name="resolution" type="hidden" value=".5" />
@@ -59,15 +61,20 @@ display: inline-block
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
             </fieldset> 
-            <fieldset class="navitem" id="chooseRegion"> 
+            <fieldset class="navitem"> 
                 <legend>Region</legend> 
-                <select class="pageformcopy" name="bbox">
-                   <option value="bb:-20.0:-9.5446024E-04:20.00206:39.99889:bb">West Africa</option>
-                   <option value="bb:20.0:-9.5446024E-04:60.00206:39.99889:bb">East Africa</option>
-                   <option value="bb:8.0:-35.00018:51.00069:-0.00109222:bb">Sothern Africa</option>
-                 <!--  <option value="WAF">West Africa</option>
-                   <option value="EAF">East Africa</option>
-                   <option value="SAF">Sothern Africa</option> -->
+                <select class="pageformcopy" name="sregion">
+                 <option value=".WAF">West Africa</option>
+                   <option value=".EAF">East Africa</option>
+                   <option value=".SAF">Southern Africa</option>
+                    </select>
+            </fieldset>
+            <fieldset class="navitem"> 
+                <legend>Variable</legend> 
+                <select class="pageformcopy" name="var">
+                 <option value="NDVI">NDVI</option>
+                   <option value="EVI">EVI</option>
+                   <option value="reflectance">reflectance</option>
                     </select>
             </fieldset>
  <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
@@ -137,9 +144,9 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 </p> -->
 </fieldset>
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.WAF/.NDVI/X/Y/fig-/colors/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/first/last/plotrange//antialias/true/psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.WAF/.NDVI/X/Y/fig-/colors/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/first/last/plotrange//antialias/true/psdef/+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.WAF/.NDVI/X/Y/fig-/colors/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig+//T/3567.0/plotvalue/Y/-9.5446024E-04/39.99889/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef+.gif" />
+<a class="justsregion" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28.reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange/.auxfig+//T/3567.0/plotvalue/Y/-9.5446024E-04/39.99889/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
