@@ -40,16 +40,18 @@
 width: 49%;
 display: inline-block
  }
+body.varreflectance img.dlauximg{display: none}
 </style>
 </head>
 <body xml:lang="en">
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
 <input class="carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" value="bb:-20.0:-9.5446024E-04:20.00206:39.99889:bb" />
+<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" />
+<input class="dlimg dlauximg dlimgts share dlimgloc carry justsregion" name="sregion" type="hidden" value=".WAF" />
+<input class="dlimg dlauximg dlimgts share dlimgloc carry justsregion bodyClass" name="var" type="hidden" value="NDVI" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value=".5" />
+<input class="pickarea dlimgts" name="resolution" type="hidden" value=".5" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -59,15 +61,20 @@ display: inline-block
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
             </fieldset> 
-            <fieldset class="navitem" id="chooseRegion"> 
+            <fieldset class="navitem"> 
                 <legend>Region</legend> 
-                <select class="pageformcopy" name="bbox">
-                   <option value="bb:-20.0:-9.5446024E-04:20.00206:39.99889:bb">West Africa</option>
-                   <option value="bb:20.0:-9.5446024E-04:60.00206:39.99889:bb">East Africa</option>
-                   <option value="bb:8.0:-35.00018:51.00069:-0.00109222:bb">Sothern Africa</option>
-                 <!--  <option value="WAF">West Africa</option>
-                   <option value="EAF">East Africa</option>
-                   <option value="SAF">Sothern Africa</option> -->
+                <select class="pageformcopy" name="sregion">
+                 <option value=".WAF">West Africa</option>
+                   <option value=".EAF">East Africa</option>
+                   <option value=".SAF">Southern Africa</option>
+                    </select>
+            </fieldset>
+            <fieldset class="navitem"> 
+                <legend>Variable</legend> 
+                <select class="pageformcopy" name="var">
+                 <option value="NDVI">NDVI</option>
+                   <option value="EVI">EVI</option>
+                   <option value="reflectance">reflectance</option>
                     </select>
             </fieldset>
  <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
@@ -105,7 +112,7 @@ margin: 0px;
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" style="display: none" about="">
-<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-15%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:11%2C1%2C11.5%2C1.5%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-35%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:11%2C1%2C11.5%2C1.5%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
 <div style="display: inline-block; text-align: top;">
 <a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
 <div class="template">
@@ -115,36 +122,27 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <br />
 <div class="dlimgtsbox">
 <div>a)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.MODIS/.ndviWAF_coarse/T/last/365/sub/last/RANGEEDGES//fullname/%28NDVI%29def/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/T/fig:/line/:fig//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/home/.jdcorral/.Analyses/%28NDVI%29//var/parameter/interp/%28.WAF%29//sregion/parameter/interp/T/last/365/sub/last/RANGEEDGES/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/CopyStream/T/fig:/line/:fig//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div>
 <div class="dlimgtsbox">
 <div>b)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.MODIS/.ndviWAF_coarse/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average//long_name/%28NDVI%29def/DATA/-0.2/1/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202007-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282007%29VALUES//fullname/%282007%29def/3/index/3/index/T/%282008%29VALUES//fullname/%282008%29def/5/index/5/index/T/%282009%29VALUES//fullname/%282009%29def/7/index/7/index/T/%282010%29VALUES//fullname/%282010%29def/9/index/9/index/T/%282011%29VALUES//fullname/%282011%29def/11/index/11/index/T/%282012%29VALUES//fullname/%282012%29def/fig:/green/solid/scatterline/red/solid/scatterline/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/+//doy/9./359./plotrange//NDVI/-0.2/1./plotrange//doy/9./359./plotrange//NDVI/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef//antialias+true+psdef+.gif" />
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/home/.jdcorral/.Analyses/%28NDVI%29//var/parameter/interp/%28.WAF%29//sregion/parameter/interp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0.0/1.0/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202007-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282007%29VALUES//fullname/%282007%29def/3/index/3/index/T/%282008%29VALUES//fullname/%282008%29def/5/index/5/index/T/%282009%29VALUES//fullname/%282009%29def/7/index/7/index/T/%282010%29VALUES//fullname/%282010%29def/9/index/9/index/T/%282011%29VALUES//fullname/%282011%29def/11/index/11/index/T/%282012%29VALUES//fullname/%282012%29def/CopyStream/fig:/green/solid/scatterline/red/solid/scatterline/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/+//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef//antialias+true+psdef+.gif" />
 </div>
 <p>
-a) Dekadal (i.e., ~10-daily) aerosol index estimates for the selected region from 2005 to the present.  
-</p> <!-- <p>
-b) Same as (a) (solid black line) with the addition of the recent short-term average aerosol index for the same region (grey dotted line).  The blue (red) bars are indicative of estimates that are above (below) the short-term average. Note that the short-term average aerosol index data has been smoothed.
-</p> --> <p>
-b) Same as (a) for the current year (thick black line), as indicated by the axis labels. 
-Aerosol Index estimates from previous years are also shown (blue-1 yr from present; magenta-
-2 yrs from present; grey-3 yrs from present). 
-</p> <!-- <p>
-d) Cumulative dekadal satellite-derived aerosol index estimates (solid black line) and the cumulative recent short-term average aerosol index (grey dotted line) for the most 
-recent 12-month period in the selected region.  The blue (red) bars are indicative of estimates that are above (below) the short-term average.
-</p><p>
-<b>NOTE:</b> <u>The recent short-term average (from 2004 to the latest complete year) of aerosol index should not be interpreted as a climatological normal</u>, which is typically based on a long-term (e.g., 30-year) time series. The length of this short-term average will increase over time as more data becomes available. (An additional year of data will be included in the average during January of each year.)  Despite the limitations that the short-term average imposes, it may provide insight into changes in malaria risk in areas where aerosol index anomalies are the principal cause of malaria epidemics by providing a recent historical reference.
-</p> -->
+a) 16 day estimates for the selected region for the last 12 months.  
+</p> <p>
+b) Same as (a) for the current year (thick black line), as indicated by the axis labels. Estimates from previous years are also shown
+</p>
 </fieldset>
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.WAF/.NDVI/X/Y/fig-/colors/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/first/last/plotrange//antialias/true/psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.WAF/.NDVI/X/Y/fig-/colors/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/first/last/plotrange//antialias/true/psdef/+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.WAF/.NDVI/X/Y/fig-/colors/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig+//T/3567.0/plotvalue/Y/-9.5446024E-04/39.99889/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef+.gif" />
+<a class="justsregion" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28.reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange/.auxfig+//T/3567.0/plotvalue/Y/-9.5446024E-04/39.99889/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
-  <p align="left" property="term:description">An aerosol-monitoring product based on dekadal aerosol index analyses from NASA GSFC.  
-</p><p>The interface allows users to view recent aerosol index analyses with a seasonal and recent historical perspective.  Time series analyses of aerosol index data are generated based on user-selected parameters.  Note that the aerosols included in the index may be of various types and detected at any height in the atmosphere, not necessarily at the surface.
+  <p align="left" property="term:description">A regional tool that facilitate access to MODIS images, which are provided by the United States Geological Survey. Images are available for West Africa, East Africa, and Southern Africa.  
+</p><p>An interactive map of the Normalized Difference Vegetation Index (NDVI), Enhanced Vegetation Index (EVI), and reflectance constructed from the middle infrared, near infrared and red channels for West Africa, East Africa, and Southern Africa. Time series analyses of NDVI,EVI, and reflectance are generated based on user-selected parameters.
 </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
@@ -152,15 +150,17 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 <h4>Aerosol Index</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
-<dd>Dekadal aerosol index estimates on a 1.0° x 1.0° lat/lon grid</dd>
-<dt>Data Source</dt><dd> NASA GSFC
-(<a href="http://ozoneaq.gsfc.nasa.gov/OMIAerosol.md">OMI Aerosol data from NASA GSFC</a>)*</dd>
+<dd>16 day estimates on a 0.1° x 0.1° lat/lon grid</dd>
+<dt>Data Source</dt><dd> United States Geological Survey, Land Processes Distributed Active Archive Center, 
+Moderate Resolution Imaging Spectroradiometer 
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.dataset_documentation.html">USGS LandDAAC MODIS</a>)</dd>
+<b>Note</b>:&nbsp;&nbsp;There is typically a 12- to 16-day delay between the end of the observation period for the latest data and the date when those data are received and displayed on this page.
 </dl>
 </div>
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
 <p>
-<a href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/">Access the dataset used to create this map.</a>
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/">Access the dataset used to create this map.</a>
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
