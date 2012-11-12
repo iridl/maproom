@@ -3,9 +3,10 @@
 # releases the latest commit from current branch of maproom repo
 #
 
+progname=`basename $0`
 if [ $# -lt 2 ]; then
    echo "usage: "
-   echo "   `basename $0` <prefix> <repo>"
+   echo "   $progname <prefix> <repo>"
    exit 1
 
 fi
@@ -13,6 +14,8 @@ fi
 
 prefix="$1"
 repo="$2"
+
+lockfile="$prefix/maproom_release.lock"
 
 export PATH=/usr/local/semantic_tools/bin:$PATH
 export PATH=/usr/local/raptor-1.4.21/bin:$PATH
@@ -36,6 +39,13 @@ export PATH=/usr/local/raptor-1.4.21/bin:$PATH
 
 echo "Maproom release started: `date`"
 
+if [ ! -f "$lockfile" ]; then
+   touch "$lockfile"
+else 
+   echo "If you would like me to proceed, please make sure there are no running '$progname \"$prefix\" ...' processes, and then remove '$lockfile'."
+   exit 1;
+fi
+
 if [ ! -e "$prefix" ]; then
    echo "Creating '$prefix'..."
    install -d "$prefix"
@@ -58,6 +68,7 @@ if [ "$ver" == "$rver" ]; then
 else
    git reset --hard
    git clean -f -d
+   git submodule update --init --recursive
    make tarball
 
    cd "$prefix"
@@ -75,6 +86,8 @@ else
 
    echo "Maproom has been upgraded: $rver -> $ver"
 fi
+
+rm "$lockfile"
 
 echo "Maproom release completed: `date`"
 exit 0
