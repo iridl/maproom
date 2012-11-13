@@ -176,6 +176,14 @@ The time series of the NINO4 index (shown in the graph above) is updated every m
 <h4>Reference</h4>
 <dl class="datasetdocumentation">
 Reynolds, R.W., N.A. Rayner, T.M. Smith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite SST Analysis for Climate. J. Climate, 15, 1609-1625</dl>
+<b>Data: </b>Monthly NINO4 index based upon Reynolds and Smith OIv2 sea surface temperature anomalies 
+
+<br /><b>Data Period </b>November 1998 - present
+<br /><b>Base Period for Climatology: </b>January 1971 - December 2000
+<br /><b>Data Source</b>: NCEP Environmental Modeling Center
+<p><b>Description: </b>The time series above gives the value of the NINO4 sea surface temperature anomaly index in the central equatorial Pacific Ocean (<a href="http://iri.columbia.edu/climate/ENSO/background/monitoring.html#sst">description of NINO4 index</a>) based upon sea surface temperature anomalies in the Reynolds and Smith OIv2 data set (<a href="http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/">description</a>), with 1971-2000 as the climatological base period.
+&nbsp; NCEP is
+an acronym for the US&nbsp;National Centers for Environmental Prediction.</p>
 </div>
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
