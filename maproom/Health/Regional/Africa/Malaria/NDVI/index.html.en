@@ -41,6 +41,7 @@ width: 49%;
 display: inline-block
  }
 body.varreflectance img.dlauximg{display: none}
+body.varreflectance .regionwithinbbox{display: none !important}
 </style>
 </head>
 <body xml:lang="en">
@@ -111,7 +112,7 @@ margin: 0px;
       <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
-<fieldset class="regionwithinbbox dlimage" style="display: none" about="">
+<fieldset class="regionwithinbbox dlimage" about="">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-35%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:11%2C1%2C11.5%2C1.5%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
 <div style="display: inline-block; text-align: top;">
 <a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
@@ -141,16 +142,16 @@ b) Same as (a) for the current year (thick black line), as indicated by the axis
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
-  <p align="left" property="term:description">A regional tool that facilitate access to MODIS images, which are provided by the United States Geological Survey. Images are available for West Africa, East Africa, and Southern Africa.  
+  <p align="left" property="term:description">A regional tool that facilitate access to estimates of vegetation from MODIS images provided by the United States Geological Survey. Images are available for West Africa, East Africa, and Southern Africa.  
 </p><p>An interactive map of the Normalized Difference Vegetation Index (NDVI), Enhanced Vegetation Index (EVI), and reflectance constructed from the middle infrared, near infrared and red channels for West Africa, East Africa, and Southern Africa. Time series analyses of NDVI,EVI, and reflectance are generated based on user-selected parameters.
 </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<h4>Aerosol Index</h4>
+<h4>Vegatation Estimates</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
-<dd>16 day estimates on a 0.1° x 0.1° lat/lon grid</dd>
+<dd>16 day estimates on a 250m lat/lon grid</dd>
 <dt>Data Source</dt><dd> United States Geological Survey, Land Processes Distributed Active Archive Center, 
 Moderate Resolution Imaging Spectroradiometer 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.dataset_documentation.html">USGS LandDAAC MODIS</a>)</dd>
