@@ -47,10 +47,9 @@ display: inline-block
 </head>
 <body xml:lang="en">
 <form name="pageform" id="pageform">
-<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
+<input class="carryup carryLanguage href" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="dlimg share dlimgloc" name="bbox" type="hidden" />
-<!-- <input class="share dlimgts dlimgloc" name="region" type="hidden" /> -->
+<input class="dlimg share dlimgloc href" name="bbox" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
 </form>
 <div class="controlBar">
@@ -98,7 +97,7 @@ margin: 0px;
  <h2 align="center" property="term:title">Rainfall Estimate Differences</h2>
   <p align="left" property="term:description">The Rainfall Estimate Differences (RED) map illustrates the difference between the most recent dekadal rainfall estimates from the Climate Prediction Center and their short term average (from 2000 to last recent complete year).</p>
 <p> These differences should not be confused with conventional rainfall anomalies, but may provide insight into changes in malaria risk in areas where precipitation anomalies are the principal cause of malaria epidemics by providing a recent historical reference.</p>
-<p>The map above displays the difference between the most recent dekadal rainfall estimates and the short term average (from 2000 to the latest complete year). Positive (negative) values indicate dekadal estimates that are above (below) the short term average. These differences should not be confused with conventional rainfall anomalies, which are based on the difference between observed data and a long-term (e.g., 30-year) average.  The length of the referenced short-term average will increase over time as more data becomes available. Despite the limitations that the short-term average imposes, it may provide insight into changes in malaria risk in areas where precipitation anomalies are the principal cause of malaria epidemics by providing a recent historical reference. Rainfall estimates expressed as percentages of the short-term average can be viewed on the Rainfall Estimate Percentages (<a href="http://iridl.ldeo.columbia.edu/maproom/.Health/.Regional/.Africa/.Malaria/.REP/index.html">REP</a>) map page.
+<p>Positive (negative) values indicate dekadal estimates that are above (below) the short term average. These differences should not be confused with conventional rainfall anomalies, which are based on the difference between observed data and a long-term (e.g., 30-year) average.  The length of the referenced short-term average will increase over time as more data becomes available. Despite the limitations that the short-term average imposes, it may provide insight into changes in malaria risk in areas where precipitation anomalies are the principal cause of malaria epidemics by providing a recent historical reference. Rainfall estimates expressed as percentages of the short-term average can be viewed on the Rainfall Estimate Percentages (<a class="href" href="../REP/index.html">REP</a>) map page.
 </p>
 <h4>References</h4>
 <p>
