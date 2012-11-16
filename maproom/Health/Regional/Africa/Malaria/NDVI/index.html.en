@@ -194,9 +194,9 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia
 <div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Instructions</h2>
 <p>
-To aid in the risk assessment of malaria outbreak potential, the MODIS interface provides users with the ability to make graphs. The interface will provide a contextual perspective of recent MODIAS images by displaying an interactive map of the Normalized Difference Vegetation Index (NDVI) and Enhanced Vegetation Index (EVI). Time series analyses of NDVI and EVI are generated based on user-selected parameters which include zooming into regions of interest and the ability to change the resolution of the gridded boxes used to spatially average the variables.
+To aid in the risk assessment of malaria outbreak potential, the MODIS interface provides users with the ability to make graphs. The interface will provide a contextual perspective of recent MODIAS images by displaying an interactive map of the Normalized Difference Vegetation Index (NDVI) and Enhanced Vegetation Index (EVI). Time series analyses of NDVI and EVI are generated based on user-selected parameters.
  </p>
- <p> Isolating a certain region of interest can be accomplished by clicking and dragging a rectangle across the desired region. The map will zoom to that area to allow for a more precise estimation. Any zoom level will allow for the user to click a location and generate 2 separate time series. The resolution of variable estimation can be modified by changing the area over which the spatial averaging is performed. 
+ <p> Isolating a certain region of interest can be accomplished by clicking and dragging a rectangle across that region. The map will zoom to that area to allow for a more precise estimation. Any zoom level will allow for the user to click a location and generate 2 separate time series. Changing the area over which the spatial averaging is performed will modify the resolution of variable estimation. 
   </p>
  
  <p> Time series a: 16 day estimates of NDVI or EVI for the selected region selected for the last 12 months.
