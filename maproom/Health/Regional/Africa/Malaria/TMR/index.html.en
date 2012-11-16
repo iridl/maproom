@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Maximum Land Surface Temperature (LST)</title>
+<script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
+<!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" /> -->
+<link rel="canonical" href="index.html" />
+<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_TMR" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Surface"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#PlanetarySurface"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#eight-day"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#temperature"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#LandSurface"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+<link rel="term:icon" href="http://iri.columbia.edu/~remic/icons/Health-Regional-Africa-TMR-icon.jpg" />
+<style>
+.dlimgtsbox { 
+width: 90%;
+display: inline-block
+ }
+</style>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" />
+<input class="dlimg dlauximg dlimgts share dlimgloc carry justsregion" name="sregion" type="hidden" value=".WAF" />
+<input class="share dlimgts dlimgloc" name="region" type="hidden" />
+<input class="unused" name="plotaxislength" type="hidden" value="432" />
+<input class="pickarea dlimgts" name="resolution" type="hidden" value=".5" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Climate and Health</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
+            </fieldset> 
+            <fieldset class="navitem"> 
+                <legend>Region</legend> 
+                <select class="pageformcopy" name="sregion">
+                 <option value=".WAF">West Africa</option>
+                   <option value=".EAF">East Africa</option>
+                   <option value=".SAF">Southern Africa</option>
+                    </select>
+            </fieldset>
+ <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
+<option value=".1">11x11 km box</option>
+<option value=".3">33x33 km box</option>
+<option value=".5">55x55 km box</option>
+<option value="1.">111x111 km box</option>
+<option value="district">district boundaries</option>
+</select></fieldset>
+ </div>
+<style>
+.leftpart {
+display: inline-block; 
+width: 60%
+}
+.rightpart {
+margin-left: 10pt;
+display: inline-block; 
+width: 30%
+}
+@media only all and (max-width: 400px) {
+.leftpart { width: 100%}
+.rightpart {width: 95%}
+}
+.plotheading {
+text-align: center;
+margin: 0px;
+}
+</style>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/Aqua/">Dataset</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+<fieldset class="regionwithinbbox dlimage" about="">
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-35%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:11%2C1%2C11.5%2C1.5%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<div style="display: inline-block; text-align: top;">
+<a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">
+Observations for <b><span class="iridl:long_name"></span></b>
+</div>
+</div>
+<br />
+<div class="dlimgtsbox">
+<div>a)</div>
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/Analyses/TMR/%28.WAF%29//sregion/parameter/interp/T/second/last/RANGEEDGES/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/CopyStream/T/fig:/line/:fig//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/450/psdef//XOVY/null/psdef/+.gif" />
+</div>
+<!-- <div class="dlimgtsbox">
+<div>b)</div>
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.Analyses/.TMR/%28.WAF%29//sregion/parameter/interp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0.0/1.0/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202007-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282007%29VALUES//fullname/%282007%29def/3/index/3/index/T/%282008%29VALUES//fullname/%282008%29def/5/index/5/index/T/%282009%29VALUES//fullname/%282009%29def/7/index/7/index/T/%282010%29VALUES//fullname/%282010%29def/9/index/9/index/T/%282011%29VALUES//fullname/%282011%29def/11/index/11/index/T/%282012%29VALUES//fullname/%282012%29def/CopyStream/fig:/green/solid/scatterline/red/solid/scatterline/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/+//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef//antialias+true+psdef+.gif" />
+</div> -->
+<p>
+a) 8 day average reconstructed maximum air temperature for the selected region since 2002.  
+</p> <!-- <p>
+b) Same as (a) for the current year (thick black line), as indicated by the axis labels. Estimates from previous years are also shown
+</p> -->
+</fieldset>
+<fieldset class="dlimage">
+<a class="justsregion" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/.tmax_rec/DATA/-10/50/RANGE/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/"></a>
+
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/.tmax_rec/DATA/-10/50/RANGE/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/+.gif" border="0" />
+
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/.SAF/.tmax_rec/DATA/-10/50/RANGE/X+Y+fig-+colors+coasts+lakes+-fig+//T/3595.0/plotvalue/Y/-34.99908/-0.004368878/plotrange//plotborder+72+psdef//plotaxislength+432+psdef/.auxfig+//T/3595.0/plotvalue/Y/-34.99908/-0.004368878/plotrange+//plotborder+72+psdef//plotaxislength+432+psdef+.gif" />
+
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+ <h2 align="center" property="term:title">Maximum Land Surface Temperature (LST)</h2>
+  <p align="left" property="term:description">Inferred maximum air temperature from space using observations from polar orbiting satellite AQUA-sensor MODIS.
+</p><p>The map shows inferred maximum air temperature from space using observations from polar orbiting satellite AQUA-sensor MODIS. Minimum Land Surface Temperature (LST) derived from MODIS night-time images provides a good surrogate for minimum air temperature while the retrieval of maximum air temperature is less straightforward. Maximum air temperatures are estimated through the extrapolation of the minimum temperature derived from MODIS according to the diurnal cycle. The diurnal cycle parameters (i.e. phase and amplitude) which are used to estimate the maximum air temperature are determined locally using data from the WORLDCLIM database.
+</p><p><b>Reference:</b>Ceccato, P. , Vancutsem, C., Temimi, M. (2010). <a href="http://www.scopus.com/record/display.url?eid&#61;2-s2.0-78650855812&#38;origin=resultslist&#38;sort=plf-f&#38;src=s&#38;st1=Ceccato&#38;st2=P&#38;nlo=1&#38;nlr=20&#38;nls=first-t&#38;sid=jLNiD-7V9i5Mwf99SugfMOt%3a553&#38;sot=anl&#38;sdt=aut&#38;sl=35&#38;s=AU-ID%28%22Ceccato%2c+Pietro%22+8303142200%29&#38;relpos=0&#38;relpos=0&#38;searchTerm=AU-ID%28%5C">Monitoring Air and Land Surface Temperatures from Remotely Sensed Data for Climate-Human Health Applications</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
+</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<dl class="datasetdocumentation">
+<dt>Data</dt>
+<dd>Maximum Air Temperature Reconstructed</dd>
+<dt>Data Source</dt><dd>the International Research Institute for Climate and Society <a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/">reconstructed max temperature</a>
+</dd><br />
+<dt>Data</dt>
+<dd>Minimum Air Temperature</dd>
+<dt>Data Source</dt><dd>United Stated Geological Survey <a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/">MODIS Minimum LST</a>
+</dd><br />
+<dt>Data</dt>
+<dd>Diurnal Cycle Amplitude</dd>
+<dt>Data Source</dt><dd>WorldClim <a href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.WORLDCLIM/">Global Climate Data</a>
+</dd>
+</dl>
+</div>
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>

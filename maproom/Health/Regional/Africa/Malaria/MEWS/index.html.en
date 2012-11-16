@@ -67,7 +67,7 @@ display: inline-block
 <option value=".3">33x33 km box</option>
 <option value=".5">55x55 km box</option>
 <option value="1.">111x111 km box</option>
-<option value="district">district boundaries</option>
+<option value="irids:SOURCES:Features:Political:Africa:Districts:ds">district boundaries</option>
 </select></fieldset>
  </div>
 <style>
@@ -151,7 +151,7 @@ Consequently, rainfall monitoring forms one of the essential elements for the de
 of integrated Malaria Early Warning Systems (MEWS) for sub-Saharan Africa, as outlined by
 the World Health Organization.
 </p><p>
-The map on this page displays dekadal (aproximately 10-day) estimated precipitation amounts
+The map on this page displays dekadal (approximately 10-day) estimated precipitation amounts
 over Africa.  The default map shows precipitation totals for the most recently available
 dekad, but totals for previous dekads can be displayed as well.  By clicking on a location
 on the map the user can generate four time series graphs
