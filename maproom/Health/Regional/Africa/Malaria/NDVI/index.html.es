@@ -13,7 +13,7 @@
 <title>MODIS Analysis Tool</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link rel="canonical" href="index.html" />
 <meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_MODIS" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
@@ -44,14 +44,14 @@ body.varreflectance img.dlauximg{display: none}
 body.varreflectance .regionwithinbbox{display: none !important}
 </style>
 </head>
-<body xml:lang="en">
+<body xml:lang="es">
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="dlimg share dlimgloc carry" name="bbox" type="hidden" />
 <input class="dlimg dlauximg dlimgts share dlimgloc carry justsregion" name="sregion" type="hidden" value=".WAF" />
 <input class="dlimg dlauximg dlimgts share dlimgloc carry justsregion bodyClass" name="var" type="hidden" value="NDVI" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="32" />
+<input class="unused" name="plotaxislength" type="hidden" value="432" />
 <input class="pickarea dlimgts" name="resolution" type="hidden" value=".5" />
 </form>
 <div class="controlBar">
@@ -111,8 +111,6 @@ margin: 0px;
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
-      </a></li>
-      <li><a href="#tabs-5" >Instructions</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-35%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:11%2C1%2C11.5%2C1.5%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
@@ -132,9 +130,9 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/home/.jdcorral/.Analyses/%28NDVI%29//var/parameter/interp/%28.WAF%29//sregion/parameter/interp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0.0/1.0/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202007-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282007%29VALUES//fullname/%282007%29def/3/index/3/index/T/%282008%29VALUES//fullname/%282008%29def/5/index/5/index/T/%282009%29VALUES//fullname/%282009%29def/7/index/7/index/T/%282010%29VALUES//fullname/%282010%29def/9/index/9/index/T/%282011%29VALUES//fullname/%282011%29def/11/index/11/index/T/%282012%29VALUES//fullname/%282012%29def/CopyStream/fig:/green/solid/scatterline/red/solid/scatterline/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/+//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef//antialias+true+psdef+.gif" />
 </div>
 <p>
-a) 16 day estimates of NDVI or EVI for the selected region selected for the last 12 months.  
+a) 16 day estimates for the selected region for the last 12 months.  
 </p> <p>
-b) The 16 day estimates of NDVI and EVI for the current and five most recent years are plotted for comparison. The thick black line is the same series shown in a. 
+b) Same as (a) for the current year (thick black line), as indicated by the axis labels. Estimates from previous years are also shown
 </p>
 </fieldset>
 <fieldset class="dlimage">
@@ -144,24 +142,9 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
-  <p align="left" property="term:description">The maps on this page are produced by The Moderate Resolution Imaging Spectroradiometer (MODIS) regional tool. This module facilitates access to estimates of vegetation from MODIS images provided by the United States Geological Survey. Images are available for West Africa, East Africa, and Southern Africa.
-</p><p>Vegetation estimation is useful for the prediction of possible outbreaks of Malaria due to the correlation between vegetation and biological growth. 
-
-</p><p>The first map displayed is the most recent MODIS image. The interface allows users to select desired vegetation variables for a desired region using spatial averages. Refer to the instructions tab for help with customizing graphs. 
-</p> 
+  <p align="left" property="term:description">A regional tool that facilitates access to estimates of vegetation from MODIS images provided by the United States Geological Survey. Images are available for West Africa, East Africa, and Southern Africa.  
+</p><p>An interactive map of the Normalized Difference Vegetation Index (NDVI), Enhanced Vegetation Index (EVI), and reflectance constructed from the middle infrared, near infrared and red channels for West Africa, East Africa, and Southern Africa. Time series analyses of NDVI,EVI, and reflectance are generated based on user-selected parameters.
 </p>
-</p><p>NDVI: The Normalized Difference Vegetation Index (NDVI) is the ratio of two wavelengths, red and near-Infrared (NIR). The index compares healthy and sparse areas of vegetation by examining their difference in wavelength absorption and reflection. Healthy vegetation growth, such as forests, will absorb more and reflect less visible light (red wavelengths) compared to sparse vegetation. For example, an area of forest would yield a NDVI ratio closer to 1 compared to 0 for a desert.  The predictive value of NDVI is attributed to its ability to integrate general biological growth over long periods of time. 
-</p>
-</p><p>EVI: The Enhanced Vegetation Index is provided as a complimentary index to NDVI. EVI is similar to NDVI but corrects distortions in the reflected light caused by haze and alterations by the land surface beneath vegetation. 
-</p>
-</p><p>
-The NDVI and EVI are useful, but are subject to intrinsic commission errors which lead to potential misrepresentation of land surfaces. When used in conjuncture with NDVI and EVI, reflectance is used to successfully mitigate these potential errors.
-</p>
-</p><p>Reflectance:Using simultaneous exploitation of MIR, NIR, and Red wavelengths, reflectance maps allow for a more robust and reliable qualitative discrimination between land surfaces with vegetation and those without vegetation. The value in the reflectance product is reinforced by its high accuracy in detecting water bodies and sparse vegetation. Through the use of a multi-temporal and multi-spectral image analysis method using a combination of MIR, NIR and Red reﬂectance measurements, land surfaces are accurately plotted. The user can follow the spatio-temporal dynamic of green vegetation and identify ephemeral vegetation occurring after one isolated rainfall event seasonal vegetation areas, and evergreen vegetation.
-
-</p>
-
-
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
@@ -185,27 +168,6 @@ Moderate Resolution Imaging Spectroradiometer
 <h2  align="center">Helpdesks</h2>
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
- </p>
-</div>
-</div>
-<div class="optionsBar">
-            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
-</div>
-<div id="tabs-5"  class="ui-tabs-panel">
-<h2  align="center">Instructions</h2>
-<p>
-To aid in the risk assessment of malaria outbreak potential, the MODIS interface provides users with the ability to make graphs. The interface will provide a contextual perspective of recent MODIAS images by displaying an interactive map of the Normalized Difference Vegetation Index (NDVI) and Enhanced Vegetation Index (EVI). Time series analyses of NDVI and EVI are generated based on user-selected parameters.
- </p>
- <p> Isolating a certain region of interest can be accomplished by clicking and dragging a rectangle across that region. The map will zoom to that area to allow for a more precise estimation. Any zoom level will allow for the user to click a location and generate 2 separate time series. Changing the area over which the spatial averaging is performed will modify the resolution of variable estimation. 
-  </p>
- 
- <p> Time series a: 16 day estimates of NDVI or EVI for the selected region selected for the last 12 months.
-  </p>
- <p> Time series b: The 16 day estimates of NDVI and EVI for the current and five most recent years are plotted for comparison. The thick black line is the same series shown in a. 
-  </p>
-
- </p>
- 
  </p>
 </div>
 </div>
