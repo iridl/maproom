@@ -154,9 +154,11 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 </p>
 </p><p>EVI: The Enhanced Vegetation Index is provided as a complimentary index to NDVI. EVI is similar to NDVI but corrects distortions in the reflected light caused by haze and alterations by the land surface beneath vegetation. 
 </p>
+</p><p>
+The NDVI and EVI are useful, but are subject to intrinsic commission errors which lead to potential misrepresentation of land surfaces. When used in conjuncture with NDVI and EVI, reflectance is used to successfully mitigate these potential errors.
+</p>
 </p><p>Reflectance:Using simultaneous exploitation of MIR, NIR, and Red wavelengths, reflectance maps allow for a more robust and reliable qualitative discrimination between land surfaces with vegetation and those without vegetation. The value in the reflectance product is reinforced by its high accuracy in detecting water bodies and sparse vegetation. Through the use of a multi-temporal and multi-spectral image analysis method using a combination of MIR, NIR and Red reﬂectance measurements, land surfaces are accurately plotted. The user can follow the spatio-temporal dynamic of green vegetation and identify ephemeral vegetation occurring after one isolated rainfall event seasonal vegetation areas, and evergreen vegetation.
 
-The Reflectance maps resolve commission errors intrinsic to the NDVI and EVI which result in the misrepresentation in land surfaces. 
 </p>
 
 
