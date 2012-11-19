@@ -84,7 +84,7 @@ body.varreflectance .regionwithinbbox{display: none !important}
 <option value=".3">33x33 km box</option>
 <option value=".5">55x55 km box</option>
 <option value="1.">111x111 km box</option>
-<option value="district">district boundaries</option>
+<option value="irids:SOURCES:Features:Political:Africa:Districts:ds">district boundaries</option>
 </select></fieldset>
  </div>
 <style>
@@ -115,11 +115,11 @@ margin: 0px;
       <li><a href="#tabs-5" >Instructions</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
-<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-35%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:11%2C1%2C11.5%2C1.5%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-40%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C-20%2C-40%29dup//region/parameter/dup//bbox/get_parameter/eq/%7Bpop%7D%7Bnip%7Difelse/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
 <div style="display: inline-block; text-align: top;">
 <a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
 <div class="template">
-Observations for <b><span class="iridl:long_name"></span></b>
+Observations for <span class="bold iridl:long_name"></span>
 </div>
 </div>
 <br />
