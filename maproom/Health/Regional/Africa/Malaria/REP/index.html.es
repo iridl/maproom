@@ -10,14 +10,14 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Rainfall Estimate Differences</title>
+<title>Rainfall Estimate Percentages</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link rel="canonical" href="index.html" />
-<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_RED" />
-<meta property="maproom:Sort_Id" content="e02" />
+<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_REP" />
+<meta property="maproom:Sort_Id" content="e03" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
@@ -37,15 +37,15 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<link rel="term:icon" href="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Health-Regional-Africa-RED-icon.jpg" />
+<link rel="term:icon" href="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Health-Regional-Africa-REP-icon.jpg" />
 <style>
-.dlimgtsbox { 
+.dlimgtsbox {
 width: 49%;
 display: inline-block
  }
 </style>
 </head>
-<body xml:lang="en">
+<body xml:lang="es">
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage href" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
@@ -53,22 +53,22 @@ display: inline-block
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
 </form>
 <div class="controlBar">
-           <fieldset class="navitem" id="toSectionList"> 
-                <legend>Climate and Health</legend> 
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Clima y Salud</legend>
                       <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
-            </fieldset> 
-            <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
-            </fieldset> 
+            </fieldset>
+            <fieldset class="navitem" id="chooseSection">
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Malaria Epidémica</span></legend>
+            </fieldset>
  </div>
 <style>
 .leftpart {
-display: inline-block; 
+display: inline-block;
 width: 60%
 }
 .rightpart {
 margin-left: 10pt;
-display: inline-block; 
+display: inline-block;
 width: 30%
 }
 @media only all and (max-width: 400px) {
@@ -82,65 +82,65 @@ margin: 0px;
 </style>
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
-      <li><a href="#tabs-1" >Description</a></li>
-      <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfediffmask/">Dataset</a></li>
-      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-1" >Descripción</a></li>
+      <li><a href="#tabs-2" >Documentos de la Base de Datos</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfe_vs_meanrfe/">Base de Datos</a></li>
+      <li><a href="#tabs-4" >Contáctenos</a></li>
     </ul>
 
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfediffmask/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfediffmask/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfediffmask/X/Y/fig-+colorscale2+-fig//nplotstream+1+def+//T/19303.0/plotvalue+//antialias+true+psdef+.gif" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfe_vs_meanrfe/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfe_vs_meanrfe/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfe_vs_meanrfe/X/Y/fig-+colorscale2+-fig//nplotstream+1+def+//T/19303.0/plotvalue+//antialias+true+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Rainfall Estimate Differences</h2>
-  <p align="left" property="term:description">The Rainfall Estimate Differences (RED) map illustrates the difference between the most recent dekadal rainfall estimates from the Climate Prediction Center and their short term average (from 2000 to last recent complete year).</p>
-<p> These differences should not be confused with conventional rainfall anomalies, but may provide insight into changes in malaria risk in areas where precipitation anomalies are the principal cause of malaria epidemics by providing a recent historical reference.</p>
-<p>Positive (negative) values indicate dekadal estimates that are above (below) the short term average, unlike conventional rainfall anomalies, which are based on the difference between observed data and a long-term (e.g., 30-year) average.  The length of the referenced short-term average will increase over time as more data becomes available. Despite the limitations that the short-term average imposes, it may provide insight into changes in malaria risk in areas where precipitation anomalies are the principal cause of malaria epidemics by providing a recent historical reference. Rainfall estimates expressed as percentages of the short-term average can be viewed on the Rainfall Estimate Percentages (<a class="href" href="../REP/index.html">REP</a>) map page.
+ <h2 align="center" property="term:title">Porcentajes de Precipitación Estimada</h2>
+  <p align="left" property="term:description">El mapa de Porcentaje de Precipitación Estimada (REP) expresa las estimaciones más recientes de precipitación decadal provenientes del Centro de Predicción del Clima como un porcentaje del promedio a corto plazo (desde el 2000 hasta el último año completo reciente).</p>
+<p> Valores mayores (menores) que 100% por lo tanto indican estimados decadales que estan sobre (bajo) el promedio de precipitación a corto plazo. Porcentajes de precipitación en áreas donde el promedio acumulado es menor que 7 mm no son mostrados en el análisis.</p>
+<p> Las precipitaciones estimadas expresadas como diferencias del promedio a corto plazo pueden ser vistas en el mapa de la página de Diferencias de Precipitación Estimada (<a class="href" href="../RED/index.html">RED</a>).
 </p>
-<h4>References</h4>
+<h4>Referencias</h4>
 <p>
 WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.
 </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
-<h2  align="center">Dataset Documentation</h2>
-<h4>Rainfall Estimates Estimates</h4>
+<h2  align="center">Documentación de la Base de Datos</h2>
+<h4>Precipitación Estimada</h4>
 <dl class="datasetdocumentation">
-<dt>Data</dt>
-<dd>Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid</dd>
-<dt>Data Source</dt><dd> Climate Prediction Center/Famine Early Warning System 
+<dt>Datos</dt>
+<dd>Precipitación Decadal en malla de 0.1 x 0.1 grados de lat/lon</dd>
+<dt>Fuente de Datos</dt><dd> Climate Prediction Center/Famine Early Warning System
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>)*</dd>
 </dl>
-<h4>Rainfall Estimate Short-Term Average</h4>
+<h4>Precipitación Estimada Promedio a corto plazo</h4>
 <dl class="datasetdocumentation">
-<dt>Data</dt>
-<dd><b>Data</b>: Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid
-<br /><b>Base Period</b>: 1 Jan 2000 to 31 Dec of last year</dd>
-<dt>Data Source</dt><dd> Climate Prediction Center/Famine Early Warning System 
+<dt>Datos</dt>
+<dd><b>Datos</b>: Precipitación Decadal en malla de 0.1 x 0.1 grados de lat/lon.
+<br /><b>Periodo Base</b>: 1 Enero 2000 al 31 Dic del año pasado</dd>
+<dt>Fuente de Datos</dt><dd> Climate Prediction Center/Famine Early Warning System
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>)*</dd>
 </dl>
-<h4>Epidemiological Mask</h4>
+<h4>Máscara Epidemiológica</h4>
 <dl class="datasetdocumentation">
-<dt>Mask</dt><dd>illustrating areas where malaria is considered to be epidemic.  Areas where malaria transmission is considered absent or endemic are therefore excluded. This mask is based purely on climatic constraints to malaria transmission, and does not yet account for areas in the northern and southern margins of the continent where control has eliminated malaria risk.</dd>
-<dt>Reference</dt><dd>WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.  </dd>
+<dt>Máscara</dt><dd>Ilustrando áreas donde la malaria es considerada epidémica. Áreas donde la transmissión de malaria es considerada ausente o endémica son, por lo tanto, excluidas. Esta máscara esta basada exclusivamente en limitaciones climáticas para la transmisión de malaria, y aún no representa los márgenes de zonas norte o sur del continente, donde el control ha elimiado el riesgo a malaria.</dd>
+<dt>Referencia</dt><dd>WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.  </dd>
 </dl>
 <p>
-<font size="-1">*More dekadal and daily data from FEWS is available from the 
+<font size="-1">*Más información decadal y datos diarios provistos por FEWS estan disponible en
 <a href="http://igskmncnwb015.cr.usgs.gov/adds/">Africa Data Dissemination Service</a>.</font>
 </p>
 </div>
 <div class="ui-tabs-panel-hidden">
-<h2 align="center">Dataset</h2>
+<h2 align="center">Base de Datos</h2>
 <p>
-<a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfediffmask/">Access the dataset used to create this map.</a>
+<a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfe_vs_meanrfe/">Acceder a la base de datos usada para crear este mapa.</a>
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
-<h2  align="center">Helpdesks</h2>
+<h2  align="center">Servicios de Asistencia</h2>
 <p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+Contacte <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> con cualquier pregunta técnica o problema con este Cuarto de Mapas, por ejemplo, los pronósticos no se muestran o actualizan adecuadamente.
  </p>
 </div>
 </div>
