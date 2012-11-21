@@ -13,7 +13,8 @@
 <title>MODIS Analysis Tool</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link rel="canonical" href="index.html" />
 <meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_MODIS" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
@@ -52,7 +53,7 @@ body.varreflectance .regionwithinbbox{display: none !important}
 <input class="dlimg dlauximg dlimgts share dlimgloc carry justsregion bodyClass" name="var" type="hidden" value="NDVI" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="32" />
-<input class="pickarea dlimgts" name="resolution" type="hidden" value=".5" />
+<input class="pickarea" name="resolution" type="hidden" value=".5" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -83,7 +84,7 @@ body.varreflectance .regionwithinbbox{display: none !important}
 <option value=".3">33x33 km box</option>
 <option value=".5">55x55 km box</option>
 <option value="1.">111x111 km box</option>
-<option value="district">district boundaries</option>
+<option value="irids:SOURCES:Features:Political:Africa:Districts:ds">district boundaries</option>
 </select></fieldset>
  </div>
 <style>
@@ -111,15 +112,14 @@ margin: 0px;
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
-      </a></li>
       <li><a href="#tabs-5" >Instructions</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
-<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-35%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:11%2C1%2C11.5%2C1.5%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-40%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C-20%2C-40%29dup//region/parameter/dup//bbox/get_parameter/eq/%7Bpop%7D%7Bnip%7Difelse/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
 <div style="display: inline-block; text-align: top;">
-<a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<a class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
 <div class="template">
-Observations for <b><span class="iridl:long_name"></span></b>
+Observations for <span class="bold iridl:long_name"></span>
 </div>
 </div>
 <br />
@@ -148,7 +148,9 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 
 </p><p>The interface allows users to select desired vegetation variables for a desired region using spatial averages. Refer to the instructions tab for help with customizing graphs. 
 </p> 
+<p>NDVI: The Normalized Difference Vegetation Index (NDVI) is the ratio of two wavelengths, red and near-Infrared (NIR). The index compares healthy and sparse areas of vegetation by examining their difference in wavelength absorption and reflection. Healthy vegetation growth, such as forests, will absorb more and reflect less visible light (red wavelengths) compared to sparse vegetation. For example, an area of forest would yield a NDVI ratio closer to 1 compared to 0 for a desert.  The predictive value of NDVI is attributed to its ability to integrate general biological growth over long periods of time. 
 </p>
+<<<<<<< HEAD
 </p><p>NDVI: The Normalized Difference Vegetation Index (NDVI) is the ratio between the difference of red and near-Infrared (NIR) divided by the sum of red and near infrared reflectances. The index provides some information on healthy vegetation by examining their difference in wavelength absorption and reflectance. Healthy vegetation growth, such as forests, will yield high NDVI values closer to one, while low vegetation will yield values close to 0.2.	
 </p>
 </p><p>EVI: The Enhanced Vegetation Index is provided as a complimentary index to NDVI. EVI is an 'optimized' index designed to enhance the vegetation signal with improved sensitivity in high biomass regions and improved vegetation monitoring through a de-coupling of the canopy background signal and a reduction in atmosphere influences. 
@@ -160,6 +162,14 @@ To improve the retrieval of vegetation properties, reflectance values in the Blu
 
 </p>
 </p><p>Reflectance: Using simultaneous exploitation of MIR, NIR, and Red wavelengths in a Red-Green-Blue color space, reflectance images allow for a more robust and reliable qualitative discrimination between land surfaces with sparse vegetation and those without vegetation. The user can follow the spatio-temporal dynamic of green vegetation and identify water bodies using the combination of MIR, NIR and Red channels. 
+=======
+<p>EVI: The Enhanced Vegetation Index is provided as a complimentary index to NDVI. EVI is similar to NDVI but corrects distortions in the reflected light caused by haze and alterations by the land surface beneath vegetation. 
+</p>
+<p>
+The NDVI and EVI are useful, but are subject to intrinsic commission errors which lead to potential misrepresentation of land surfaces. When used in conjuncture with NDVI and EVI, reflectance is used to successfully mitigate these potential errors.
+</p>
+<p>Reflectance:Using simultaneous exploitation of MIR, NIR, and Red wavelengths, reflectance maps allow for a more robust and reliable qualitative discrimination between land surfaces with vegetation and those without vegetation. The value in the reflectance product is reinforced by its high accuracy in detecting water bodies and sparse vegetation. Through the use of a multi-temporal and multi-spectral image analysis method using a combination of MIR, NIR and Red reﬂectance measurements, land surfaces are accurately plotted. The user can follow the spatio-temporal dynamic of green vegetation and identify ephemeral vegetation occurring after one isolated rainfall event seasonal vegetation areas, and evergreen vegetation.
+>>>>>>> f92cb50feb00cac43b313a2eedd9874b3e3d6d12
 
 </p>
 
@@ -174,7 +184,7 @@ To improve the retrieval of vegetation properties, reflectance values in the Blu
 <dt>Data Source</dt><dd> United States Geological Survey, Land Processes Distributed Active Archive Center, 
 Moderate Resolution Imaging Spectroradiometer 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.dataset_documentation.html">USGS LandDAAC MODIS</a>)</dd>
-<b>Note</b>:&nbsp;&nbsp;There is typically a 12- to 16-day delay between the end of the observation period for the latest data and the date when those data are received and displayed on this page.
+<b>Note</b>:There is typically a 12- to 16-day delay between the end of the observation period for the latest data and the date when those data are received and displayed on this page.
 </dl>
 </div>
 <div class="ui-tabs-panel-hidden">
@@ -206,10 +216,6 @@ The MODIS interface provides users with the ability to make graphs. The interfac
  <p> Time series b: The 16 day estimates of NDVI and EVI for the current and five most recent years are plotted for comparison. The thick black line is the same series shown in a. 
   </p>
 
- </p>
- 
- </p>
-</div>
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
