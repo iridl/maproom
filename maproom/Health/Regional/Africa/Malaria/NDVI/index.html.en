@@ -150,7 +150,7 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 </p> 
 <p>NDVI: The Normalized Difference Vegetation Index (NDVI) is the ratio of two wavelengths, red and near-Infrared (NIR). The index compares healthy and sparse areas of vegetation by examining their difference in wavelength absorption and reflection. Healthy vegetation growth, such as forests, will absorb more and reflect less visible light (red wavelengths) compared to sparse vegetation. For example, an area of forest would yield a NDVI ratio closer to 1 compared to 0 for a desert.  The predictive value of NDVI is attributed to its ability to integrate general biological growth over long periods of time. 
 </p>
-<<<<<<< HEAD
+
 </p><p>NDVI: The Normalized Difference Vegetation Index (NDVI) is the ratio between the difference of red and near-Infrared (NIR) divided by the sum of red and near infrared reflectances. The index provides some information on healthy vegetation by examining their difference in wavelength absorption and reflectance. Healthy vegetation growth, such as forests, will yield high NDVI values closer to one, while low vegetation will yield values close to 0.2.	
 </p>
 </p><p>EVI: The Enhanced Vegetation Index is provided as a complimentary index to NDVI. EVI is an 'optimized' index designed to enhance the vegetation signal with improved sensitivity in high biomass regions and improved vegetation monitoring through a de-coupling of the canopy background signal and a reduction in atmosphere influences. 
@@ -162,14 +162,14 @@ To improve the retrieval of vegetation properties, reflectance values in the Blu
 
 </p>
 </p><p>Reflectance: Using simultaneous exploitation of MIR, NIR, and Red wavelengths in a Red-Green-Blue color space, reflectance images allow for a more robust and reliable qualitative discrimination between land surfaces with sparse vegetation and those without vegetation. The user can follow the spatio-temporal dynamic of green vegetation and identify water bodies using the combination of MIR, NIR and Red channels. 
-=======
+
 <p>EVI: The Enhanced Vegetation Index is provided as a complimentary index to NDVI. EVI is similar to NDVI but corrects distortions in the reflected light caused by haze and alterations by the land surface beneath vegetation. 
 </p>
 <p>
 The NDVI and EVI are useful, but are subject to intrinsic commission errors which lead to potential misrepresentation of land surfaces. When used in conjuncture with NDVI and EVI, reflectance is used to successfully mitigate these potential errors.
 </p>
 <p>Reflectance: Using simultaneous exploitation of MIR, NIR, and Red wavelengths, reflectance maps allow for a more robust and reliable qualitative discrimination between land surfaces with vegetation and those without vegetation. The value in the reflectance product is reinforced by its high accuracy in detecting water bodies and sparse vegetation. Through the use of a multi-temporal and multi-spectral image analysis method using a combination of MIR, NIR and Red reﬂectance measurements, land surfaces are accurately plotted. The user can follow the spatio-temporal dynamic of green vegetation and identify ephemeral vegetation occurring after one isolated rainfall event seasonal vegetation areas, and evergreen vegetation.
->>>>>>> f92cb50feb00cac43b313a2eedd9874b3e3d6d12
+
 
 </p>
 
