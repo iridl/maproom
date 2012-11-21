@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>MODIS Analysis Tool</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
-<link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" h="../../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link rel="canonical" href="index.html" />
@@ -76,7 +76,7 @@ body.varreflectance .regionwithinbbox{display: none !important}
                 <select class="pageformcopy" name="var">
                  <option value="NDVI">NDVI</option>
                    <option value="EVI">EVI</option>
-                   <option value="reflectance">reflectance</option>
+                   <option value="Reflectance">reflectance</option>
                     </select>
             </fieldset>
  <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
@@ -198,11 +198,7 @@ Moderate Resolution Imaging Spectroradiometer
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
-</div>
-</div>
-<div class="optionsBar">
-            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
-</div>
+ 
 <div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Instructions</h2>
 <p>
