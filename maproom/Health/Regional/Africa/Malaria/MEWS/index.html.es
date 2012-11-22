@@ -62,7 +62,7 @@ display: inline-block
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Malaria Epidémica</span></legend>
             </fieldset>
- <fieldset class="navitem"><legend>Promedios Espaciales sobre</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
+ <fieldset class="navitem"><legend>Promedios Espaciales sobre</legend><select class="pageformcopy" name="resolution">
 <option value=".1">11x11 km box</option>
 <option value=".3">33x33 km box</option>
 <option value=".5">55x55 km box</option>
