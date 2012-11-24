@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>MODIS Analysis Tool</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
-<link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" h="../../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link rel="canonical" href="index.html" />
@@ -76,7 +76,7 @@ body.varreflectance .regionwithinbbox{display: none !important}
                 <select class="pageformcopy" name="var">
                  <option value="NDVI">NDVI</option>
                    <option value="EVI">EVI</option>
-                   <option value="reflectance">reflectance</option>
+                   <option value="Reflectance">reflectance</option>
                     </select>
             </fieldset>
  <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
@@ -144,19 +144,32 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
-  <p align="left" property="term:description">The maps on this page are produced by The Moderate Resolution Imaging Spectroradiometer (MODIS) regional tool. This module facilitates access to estimates of vegetation from MODIS images provided by the United States Geological Survey. Images are available for West Africa, East Africa, and Southern Africa.
-</p><p>Vegetation estimation is useful for the prediction of possible outbreaks of Malaria due to the correlation between vegetation and biological growth. 
+  <p align="left" property="term:description">The images on this page are derived from The Moderate Resolution Imaging Spectroradiometer (MODIS) sensor at 250m spatial resolution provided every 16 days. This interface facilitates access to estimates of vegetation from MODIS images provided by the United States Geological Survey. Images are available for West Africa, East Africa, and Southern Africa.
 
-</p><p>The first map displayed is the most recent MODIS image. The interface allows users to select desired vegetation variables for a desired region using spatial averages. Refer to the instructions tab for help with customizing graphs. 
+</p><p>The interface allows users to select desired vegetation variables for a desired region using spatial averages. Refer to the instructions tab for help with customizing graphs. 
 </p> 
 <p>NDVI: The Normalized Difference Vegetation Index (NDVI) is the ratio of two wavelengths, red and near-Infrared (NIR). The index compares healthy and sparse areas of vegetation by examining their difference in wavelength absorption and reflection. Healthy vegetation growth, such as forests, will absorb more and reflect less visible light (red wavelengths) compared to sparse vegetation. For example, an area of forest would yield a NDVI ratio closer to 1 compared to 0 for a desert.  The predictive value of NDVI is attributed to its ability to integrate general biological growth over long periods of time. 
+</p>
+
+<p>NDVI: The Normalized Difference Vegetation Index (NDVI) is the ratio between the difference of red and near-Infrared (NIR) divided by the sum of red and near infrared reflectances. The index provides some information on healthy vegetation by examining their difference in wavelength absorption and reflectance. Healthy vegetation growth, such as forests, will yield high NDVI values closer to one, while low vegetation will yield values close to 0.2.	
+</p>
+<p>EVI: The Enhanced Vegetation Index is provided as a complimentary index to NDVI. EVI is an 'optimized' index designed to enhance the vegetation signal with improved sensitivity in high biomass regions and improved vegetation monitoring through a de-coupling of the canopy background signal and a reduction in atmosphere influences. 
+
+</p>
+<p>
+The NDVI and EVI are useful to estimate the presence of vegetation, but are subject to intrinsic commission errors which lead to potential misrepresentation of land surfaces. 
+To improve the retrieval of vegetation properties, reflectance values in the Blue, Red, near-infrared(NIR) and middle infrared(MIR) channels can be used. 
+
+</p>
+<p>Reflectance: Using simultaneous exploitation of MIR, NIR, and Red wavelengths in a Red-Green-Blue color space, reflectance images allow for a more robust and reliable qualitative discrimination between land surfaces with sparse vegetation and those without vegetation. The user can follow the spatio-temporal dynamic of green vegetation and identify water bodies using the combination of MIR, NIR and Red channels. 
 </p>
 <p>EVI: The Enhanced Vegetation Index is provided as a complimentary index to NDVI. EVI is similar to NDVI but corrects distortions in the reflected light caused by haze and alterations by the land surface beneath vegetation. 
 </p>
 <p>
 The NDVI and EVI are useful, but are subject to intrinsic commission errors which lead to potential misrepresentation of land surfaces. When used in conjuncture with NDVI and EVI, reflectance is used to successfully mitigate these potential errors.
 </p>
-<p>Reflectance:Using simultaneous exploitation of MIR, NIR, and Red wavelengths, reflectance maps allow for a more robust and reliable qualitative discrimination between land surfaces with vegetation and those without vegetation. The value in the reflectance product is reinforced by its high accuracy in detecting water bodies and sparse vegetation. Through the use of a multi-temporal and multi-spectral image analysis method using a combination of MIR, NIR and Red reﬂectance measurements, land surfaces are accurately plotted. The user can follow the spatio-temporal dynamic of green vegetation and identify ephemeral vegetation occurring after one isolated rainfall event seasonal vegetation areas, and evergreen vegetation.
+<p>Reflectance: Using simultaneous exploitation of MIR, NIR, and Red wavelengths, reflectance maps allow for a more robust and reliable qualitative discrimination between land surfaces with vegetation and those without vegetation. The value in the reflectance product is reinforced by its high accuracy in detecting water bodies and sparse vegetation. Through the use of a multi-temporal and multi-spectral image analysis method using a combination of MIR, NIR and Red reﬂectance measurements, land surfaces are accurately plotted. The user can follow the spatio-temporal dynamic of green vegetation and identify ephemeral vegetation occurring after one isolated rainfall event seasonal vegetation areas, and evergreen vegetation.
+
 
 </p>
 
@@ -185,17 +198,13 @@ Moderate Resolution Imaging Spectroradiometer
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
-</div>
-</div>
-<div class="optionsBar">
-            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
-</div>
+ </div>
 <div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Instructions</h2>
 <p>
-To aid in the risk assessment of malaria outbreak potential, the MODIS interface provides users with the ability to make graphs. The interface will provide a contextual perspective of recent MODIAS images by displaying an interactive map of the Normalized Difference Vegetation Index (NDVI) and Enhanced Vegetation Index (EVI). Time series analyses of NDVI and EVI are generated based on user-selected parameters.
+The MODIS interface provides users with the ability to make graphs. The interface provides a contextual perspective of recent MODIS images by displaying an interactive map of the Normalized Difference Vegetation Index (NDVI) and Enhanced Vegetation Index (EVI). Time series analyses of NDVI and EVI are generated based on user-selected parameters.
  </p>
- <p> Isolating a certain region of interest can be accomplished by clicking and dragging a rectangle across that region. The map will zoom to that area to allow for a more precise estimation. Any zoom level will allow for the user to click a location and generate 2 separate time series. Changing the area over which the spatial averaging is performed will modify the resolution of variable estimation. 
+ <p> Isolating a certain region of interest can be accomplished by clicking and dragging a rectangle across that region. The map will zoom to that area to allow for more precise variable. Any zoom level will allow for the user to click a location and generate 2 separate time series. Changing the area over which the spatial averaging is performed will modify the resolution of variable estimation. 
   </p>
  
  <p> Time series a: 16 day estimates of NDVI or EVI for the selected region selected for the last 12 months.
@@ -203,6 +212,7 @@ To aid in the risk assessment of malaria outbreak potential, the MODIS interface
  <p> Time series b: The 16 day estimates of NDVI and EVI for the current and five most recent years are plotted for comparison. The thick black line is the same series shown in a. 
   </p>
 
+</div>
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
