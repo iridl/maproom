@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>MODIS Analysis Tool</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
-<link rel="stylesheet" type="text/css" h="../../../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link rel="canonical" href="index.html" />
