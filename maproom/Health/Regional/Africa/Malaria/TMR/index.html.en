@@ -10,12 +10,13 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Maximum Land Surface Temperature (LST)</title>
+<title>Inferred Maximum Air Temperature at 2m</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" /> -->
 <link rel="canonical" href="index.html" />
 <meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_TMR" />
+<meta property="maproom:Sort_Id" content="e05" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
@@ -133,7 +134,7 @@ b) Same as (a) for the current year (thick black line), as indicated by the axis
 
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Maximum Land Surface Temperature (LST)</h2>
+ <h2 align="center" property="term:title">Inferred Maximum Air Temperature at 2m</h2>
   <p align="left" property="term:description">Inferred maximum air temperature from space using observations from polar orbiting satellite AQUA-sensor MODIS.
 </p><p>The map shows inferred maximum air temperature from space using observations from polar orbiting satellite AQUA-sensor MODIS. Minimum Land Surface Temperature (LST) derived from MODIS night-time images provides a good surrogate for minimum air temperature while the retrieval of maximum air temperature is less straightforward. Maximum air temperatures are estimated through the extrapolation of the minimum temperature derived from MODIS according to the diurnal cycle. The diurnal cycle parameters (i.e. phase and amplitude) which are used to estimate the maximum air temperature are determined locally using data from the WORLDCLIM database.
 </p><p><b>Reference:</b>Ceccato, P. , Vancutsem, C., Temimi, M. (2010). <a href="http://www.scopus.com/record/display.url?eid&#61;2-s2.0-78650855812&#38;origin=resultslist&#38;sort=plf-f&#38;src=s&#38;st1=Ceccato&#38;st2=P&#38;nlo=1&#38;nlr=20&#38;nls=first-t&#38;sid=jLNiD-7V9i5Mwf99SugfMOt%3a553&#38;sot=anl&#38;sdt=aut&#38;sl=35&#38;s=AU-ID%28%22Ceccato%2c+Pietro%22+8303142200%29&#38;relpos=0&#38;relpos=0&#38;searchTerm=AU-ID%28%5C">Monitoring Air and Land Surface Temperatures from Remotely Sensed Data for Climate-Human Health Applications</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
