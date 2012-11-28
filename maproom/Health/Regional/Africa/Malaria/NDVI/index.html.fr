@@ -144,7 +144,8 @@ b) Identique à (a) mais pour l'année calendaire en cours (ligne grasse noire),
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
-  <p align="left" property="term:description">The maps on this page are produced by The Moderate Resolution Imaging Spectroradiometer (MODIS) regional tool. This module facilitates access to estimates of vegetation from MODIS images provided by the United States Geological Survey. Images are available for West Africa, East Africa, and Southern Africa.
+  <p align="left" property="term:description">Une carte interactive de l'Index de Végétation Normalisé (NDVI), l'Index de Végétation Amélioré (EVI), ou Reflectance pour l'Afrique de l'Ouest, l'Afrique de l'Est, et l'Afrique Australe.</p>
+<p> Des séries temporelles du NDVI sont générées à partir de paramètres sélectionnés par l'utilisateur.
 </p><p>Vegetation estimation is useful for the prediction of possible outbreaks of Malaria due to the correlation between vegetation and biological growth. 
 
 </p><p>The first map displayed is the most recent MODIS image. The interface allows users to select desired vegetation variables for a desired region using spatial averages. Refer to the instructions tab for help with customizing graphs. 
