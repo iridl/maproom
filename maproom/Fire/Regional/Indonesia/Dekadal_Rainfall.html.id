@@ -61,13 +61,6 @@ display: inline-block
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Fire_Regional_Indonesia_term"><span property="term:label">Indonesia</span></legend>
             </fieldset> 
-            <fieldset class="navitem" id="chooseRegion"> 
-                <legend>Region</legend> 
-                <select class="pageformcopy" name="bbox">
-                   <option value="bb:90:-12:155:10:bb">Indonesia</option>
-                   <option value="">Global</option>
-                </select>
-            </fieldset>
 <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
 <option value=".3">33x33 km box</option>
 <option value=".5">55x55 km box</option>
