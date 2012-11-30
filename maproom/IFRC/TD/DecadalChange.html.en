@@ -77,6 +77,7 @@ color: blue;
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-5" >More Information</a></li>
       <li><a href="#tabs-6" >Detailed Instructions</a></li>
+	  <li><a href="#tabs-7" >Technical Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
@@ -165,6 +166,16 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in 
 <li>Finally, look at the actual rainfall in your location (black line).  It is common for most of the ups and downs (65% or more) in rainfall to happen on the season-to-season or year-to-year timescale.  This just means that rainfall fluctuates a good amount from year to year. There are <a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/index.html?mapsel=prcp_fcst&#38;map.S.plotvalue=0000+7+Jun+2012&#38;map.Y.units=degree_north&#38;map.Y.plotlast=76.25N&#38;map.url=+SOURCES+.IRI+.MD+.IFRC+.ESRL+.PSD+.reforecast+.ensemble_mean+.analyses+.tot6day+a%3A+.apcppctlenoseasonal+%3Aa%3A+.forecasttime+%3Aa+X+Y+fig-+colors+plotlabel+black+thin+countries_gaz+-fig&#38;map.domain=+{+%2FS+1749.+plotvalue+}&#38;map.domainparam=+%2Fplotaxislength+550+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&#38;map.zoom=Click+for+Info&#38;map.Y.plotfirst=66.25S&#38;map.X.plotfirst=178.75E&#38;map.X.units=degree_east&#38;map.X.modulus=360&#38;map.X.plotlast=178.75E&#38;map.Y.step=.5">forecasts</a> available to predict rainfall every season, so monitoring these can be helpful to anticipate heightened flood and drought risk. Can you pick out years of very high or low rains?  Additionally, it can be helpful to note that the range of the real data is likely to be much greater than any increase or decrease in rainfall shown over time by the longer-term climate change trend. In any given year, the short-term year-to-year fluctuations can overshadow the longer-term climate change trend.</li>
 </ol>
 </div>
+<div id="tabs-7" class="ui-tabs-panel">
+<h2  align="center">Technical Description</h2>
+<p align="left"> <b>Decade-long shifts in climate.</b>
+After detrending, about 20% of the variance of annually-resolved white noise would be expected to accrue to the decadal component, as here defined, for a sample of this size (about 100 years). White noise is a random process having no “memory,” in the sense that its value at a particular time does not exhibit any dependence on its values at other previous times. This differs from processes having memory or “persistence,” in which the process level is dependent on previous values (such processes tend to vary more slowly than white noise). Thus, a decadal variance fraction of as much as 20% (meaning the decadal fraction divided by the sum of decadal and interannual fractions alone) should not be mistaken for the signature of a systematic decadal oscillation, or even a slow random process, that differs from white noise. As a result, the Medium importance of decade-long shifts is defined as the decadal variance fraction (relative to the sum of decadal and interannual fractions only) comprised between 15% and 25%. The Low category is defined as decadal variance fraction lower then 15%; the High category greater than 25% and the Extremely High category greater than 40%.</p>
+
+<p align="left"><b>Year-to-year shifts in climate.</b>
+Complementarily, an interannual variance fraction of as much as 80% is expected in a random signal. Therefore, the Medium importance of year-to-year shifts is defined as the interannual variance fraction (relative to the sum of decadal and interannual fractions) comprised between 75% and 85%. The Low category is defined as interannual variance fraction lower then 75%; the High category greater than 85% and the Extremely High category greater than 90%.</p>
+
+<p align="left"><b>Century-long shifts in climate.</b>
+The trend, or more precisely the part of the regional signal which is linearly dependent on global mean temperature, here called century-long shifts, has different statistical characteristics than the decade-long and year-to-year shifts signals so that we used a different approach to define its categories of importance. The categories are simply and intuitively defined relatively to the importance of the two other time scale components. Thus, Extremely High category is assigned when the trend variance fraction (relative to total variance of the original signal) is greater than both the decadal and interannual fraction variances; High category when the trend variance fraction is comprised between the two others; Medium when the trend variance fraction is lower than both other fractions; Low when the trend variance fraction is lower than at least 10% less than the smaller of the two other trends.</p>
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
