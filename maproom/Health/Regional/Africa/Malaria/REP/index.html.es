@@ -17,7 +17,6 @@
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link rel="canonical" href="index.html" />
 <meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_REP" />
-<meta property="maproom:Sort_Id" content="e03" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>

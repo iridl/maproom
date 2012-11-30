@@ -16,7 +16,6 @@
 <link class="share" rel="canonical" href="index.html" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_VCAP" />
-<meta property="maproom:Sort_Id" content="e04" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
