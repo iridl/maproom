@@ -49,8 +49,9 @@ display: inline-block
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="dlimg share dlimgloc" name="bbox" type="hidden" />
-<input class="share dlimgts dlimgloc" name="region" type="hidden" />
+<input class="dlimg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
+<input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
+<input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
 <input class="pickarea" name="resolution" type="hidden" value=".5" />
 </form>
@@ -62,12 +63,12 @@ display: inline-block
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
             </fieldset> 
- <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
+ <fieldset class="navitem"><legend>Spatially Average Over</legend><select class="pageformcopy" name="resolution">
 <option value=".1">11x11 km box</option>
 <option value=".3">33x33 km box</option>
 <option value=".5">55x55 km box</option>
 <option value="1.">111x111 km box</option>
-<option value="district">district boundaries</option>
+<option value="irids:SOURCES:Features:Political:Africa:Districts:ds">district boundaries</option>
 </select></fieldset>
  </div>
 <style>
@@ -97,26 +98,26 @@ margin: 0px;
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
-<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-40%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C55%2C40%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-40%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C-20%2C-40%29dup//region/parameter/dup//bbox/get_parameter/eq/%7Bpop%7D%7Bnip%7Difelse/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
 <div class="valid" style="display: inline-block; text-align: top;">
-<a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<a class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
 <div class="template">
-Observations for <b><span class="iridl:long_name"></span></b>
+Observations for <span class="bold iridl:long_name"></span>
 </div>
 </div>
 <br />
 <div class="dlimgtsbox">
 <div>a)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0/200/RANGE/toNaN%5BT%5DREORDER/dup/0/mul/T/fig:/deltabars/:fig//est_prcp/0/200/plotrange/T/14579.0/last/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0/200/RANGE/toNaN%5BT%5DREORDER/dup/0/mul/T/fig:/deltabars/:fig//est_prcp/0/200/plotrange/T/14579.0/last/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div><div class="dlimgtsbox">
 <div>b)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/null/null/RANGE//plotlast/200/def//fullname/%28Precipitation%29def/home/.grover/.EMILY/.Analyses/.RFEv2Avg/.avg//region/get_parameter/geoobject%5BX/Y%5Dweighted-average%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname/%282000-11%20Average%29def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig//est_prcp/0/200/plotrange//est_prcp/0/200/plotrange/T/14579.0/last/plotrange//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/null/null/RANGE//plotlast/200/def//fullname/%28Precipitation%29def/home/.grover/.EMILY/.Analyses/.RFEv2Avg/.avg//region/get_parameter/geoobject%5BX/Y%5Dweighted-average%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname/%282000-11%20Average%29def/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/line/grey/line/:fig//est_prcp/0/200/plotrange//est_prcp/0/200/plotrange/T/14579.0/last/plotrange//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div><div class="dlimgtsbox">
 <div>c)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/2/copy//pointwidth/0/def/%286%20Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%281/3%20months%20since%202005-01-01%29def/replaceGRID/DATA/0/200/RANGE/dup/T/1/108/RANGE/T/0/36/72/shiftdata/T//modulus/36/def/pop/exch/T/-108/shiftGRID/T/1/last/RANGE/T//modulus/36/def/pop//fullname/%282012%29def/exch/a:/T_lag/72/VALUE/T_lag/removeGRID//fullname/%282011%29def/:a:/T_lag/36/VALUE/T_lag/removeGRID//fullname/%282010%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID//fullname/%282009%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig//plotaxislength/250/psdef//est_prcp/0/250/plotrange//est_prcp/0/250/plotrange//est_prcp/0/250/plotrange//est_prcp/0/250/plotrange/T/0.5/36.5/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/2/copy//pointwidth/0/def/%286%20Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%281/3%20months%20since%202005-01-01%29def/replaceGRID/DATA/0/200/RANGE/dup/T/1/108/RANGE/T/0/36/72/shiftdata/T//modulus/36/def/pop/exch/T/-108/shiftGRID/T/1/last/RANGE/T//modulus/36/def/pop//fullname/%282012%29def/exch/a:/T_lag/72/VALUE/T_lag/removeGRID//fullname/%282011%29def/:a:/T_lag/36/VALUE/T_lag/removeGRID//fullname/%282010%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID//fullname/%282009%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig//plotaxislength/250/psdef//est_prcp/0/250/plotrange//est_prcp/0/250/plotrange//est_prcp/0/250/plotrange//est_prcp/0/250/plotrange/T/0.5/36.5/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div><div class="dlimgtsbox">
 <div>d)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/home/.grover/.EMILY/.Analyses/.RFEv2Avg/.avg//region/get_parameter/geoobject%5BX/Y%5Dweighted-average/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%202000-11%20Avg%29def/2/1/roll/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20Precipitation%29def/2/1/roll/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/medium/line/grey/line/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/home/.grover/.EMILY/.Analyses/.RFEv2Avg/.avg//region/get_parameter/geoobject%5BX/Y%5Dweighted-average/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%202000-11%20Avg%29def/2/1/roll/T/last/365/sub/last/RANGE/T/differential_div/T/integral//fullname/%28Cumulative%20Precipitation%29def/2/1/roll/2/copy/maskgt/1/index/T/fig:/blue/deltabars/brown/deltabars/|/black/medium/line/grey/line/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div>
 <p>
 a) Dekadal (i.e., ~10-daily) precipitation estimates for the selected region from Dec 1999 to the present.  
@@ -151,7 +152,7 @@ Consequently, rainfall monitoring forms one of the essential elements for the de
 of integrated Malaria Early Warning Systems (MEWS) for sub-Saharan Africa, as outlined by
 the World Health Organization.
 </p><p>
-The map on this page displays dekadal (aproximately 10-day) estimated precipitation amounts
+The map on this page displays dekadal (approximately 10-day) estimated precipitation amounts
 over Africa.  The default map shows precipitation totals for the most recently available
 dekad, but totals for previous dekads can be displayed as well.  By clicking on a location
 on the map the user can generate four time series graphs
