@@ -10,10 +10,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Rainfall Analysis Tool</title>
+<title>Analyse des Précipitations</title>
 <script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link rel="canonical" href="index.html" />
 <meta property="maproom:Entry_Id" content="Food_Security_Locusts_Regional_Rainfall" />
 <meta property="maproom:Sort_Id" content="e01" />
@@ -44,7 +44,7 @@ display: inline-block
  }
 </style>
 </head>
-<body xml:lang="en">
+<body xml:lang="fr">
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
@@ -56,15 +56,15 @@ display: inline-block
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
-                <legend>Food Security</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Food_Security/Locusts/">Locusts</a>
+                <legend>Climat et Sécurité Alimentaire</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Food_Security/Locusts/">Criquet Pèlerin</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FoodSecurity"><span property="term:label">Rainfall Analysis Tool</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FoodSecurity"><span property="term:label">Analyse des Précipitations</span></legend>
             </fieldset> 
- <fieldset class="navitem"><legend>Spatially Average Over</legend><select class="pageformcopy" name="resolution">
-<option value=".25">27x27 km box</option>
-<option value=".75">83x83 km box</option>
+ <fieldset class="navitem"><legend>Moyennes spatiales par:</legend><select class="pageformcopy" name="resolution">
+<option value=".25">27x27 km boîte</option>
+<option value=".75">83x83 km boîte</option>
 </select></fieldset>
  </div>
 <style>
@@ -116,15 +116,15 @@ Observations for <span class="bold iridl:long_name"></span>
 <img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/last/365/sub/last/RANGE/0/replaceNaN/T/differential_div/T/integral//fullname/%28Cumulative%20Precipitation%29def%5BT%5D2/SM121/dup/0/mul//fullname/%28Zero%20Ref%29def/2/copy/maskgt/1/index/T//pointwidth/0/def/pop/T/fig:/lightgrey/deltabars/grey/deltabars/%7C/black/medium/line/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
 </div>
 <p>
-a) Daily precipitation estimates for the most recent 12 months in the selected region.
+a) Précipitaions quotidiennes au cours des 12 derniers mois dans la région selectionnée.
 </p><p>
-b) Dekadal* precipitation estimates for 1 Jan 2003 to the present in the selected region.
+b) Précipitations décadaires* de Jan 2003 à aujourd'hui dans la région selectionnée.
 </p><p>
-c) Same as (b) for the current calendar year (thick black line), as indicated by the axis labels. Precipitation estimates from previous years are also shown (blue-1 yr from present; magenta-2 yrs from present; grey-3 yrs from present). 
+c) Identique à (b) mais pour l'année calendaire courante (courbe noire en gras), comme indiqué par les axes. Les estimations de précipitations des années précédentes sont également tracées (bleu : -1 an ; magenta : -2 ans ; gris : -3 ans).
 </p><p>
-d) Cumulative precipitation for the most recent 12-month period in the selected region.
+d) Précipitations cumulées sur 12 mois dans la région selectionnée.
 </p><p>
-<b>*</b> The dekadal precipitation estimates have been aggregated from the daily data. Every month has three dekads, such that the first two dekads have 10 days (i.e., 1-10, 11-20), and the third is comprised of the remaining days of the month. Therefore, the length of the third dekad of each month is not consistent and varies from 8-11 days, depending on the length of the month.</p>
+<b>*</b> Les estimations de précipitations décadaires ont été accumulées à partir des données quotidiennes. Chaque mois a trois dékades : les deux premières ont 10 jours (i.e. 1-10 et 11-20), et la troisième comporte les jours restants du mois. Ainsi, la longueur de la troisième série n'est pas constante et varie de 8 à 11 jours, en fonction de la longueur du mois.</p>
 </fieldset>
 <fieldset class="dlimage">
 <a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/3656.5/plotvalue//antialias/true/psdef//plotaxislength/600/psdef/"></a>
@@ -132,21 +132,21 @@ d) Cumulative precipitation for the most recent 12-month period in the selected 
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/3656.5/plotvalue//antialias/true/psdef//plotaxislength/600/psdef/.auxfig+//T/0.5/plotvalue+//plotaxislength+600+psdef//plotborder+72+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Rainfall Analysis Tool</h2>
-  <p align="left" property="term:description">A rainfall monitoring product based on daily rainfall estimates from the Climate Prediction Center.</p>
-<p>The interface allows users to analyze recent rainfall in the desert locust breeding areas via maps and location-specific time series.
+ <h2 align="center" property="term:title">Analyse des Précipitations</h2>
+  <p align="left" property="term:description">Un outil de surveillance des précipitations basé sur des estimations de précipitations quotidiennes du Climate Prediction Center.</p>
+<p>L'interface permet à l'utilisateur d'analyser les précipitations récentes dans les zones de reproduction du criquet pèlerin grâce à des cartes et des séries temporelles locales.
 </p>
-<h4>Reference</h4>
+<h4>Référence</h4>
 <p>
 Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that Produces Global Precipitation Estimates from Passive Microwave and Infrared Data at High Spatial and Temporal Resolution. J. Hydrometeorology, 5, 487-503.
 </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<h4>Precipitation Estimates</h4>
+<h4>Précipitations Estimées</h4>
 <dl class="datasetdocumentation">
-<dt>Data</dt>
-<dd>Daily precipitation estimates on a 0.25 x 0.25 deg. lat/lon grid</dd>
+<dt>Données</dt>
+<dd>Précipitations estimées quotidiennes sur une grille lat/lon 0,25 x 0,25°.</dd>
 <dt>Data Source</dt><dd> Climate Prediction Center Morphing Technique 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a></dd>
 </dl>

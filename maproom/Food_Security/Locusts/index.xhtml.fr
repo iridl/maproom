@@ -9,10 +9,9 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Locusts</title>
+<title>Criquet Pèlerin</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
-<link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link rel="canonical" href="index.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_Locusts_term"/>
@@ -21,7 +20,7 @@
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/634.5/plotvalue//plotaxislength/200/psdef//antialias/true/psdef//plotborder/0/psdef/+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
-<body  xml:lang="en">
+<body  xml:lang="fr">
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
@@ -29,22 +28,22 @@
 <div class="controlBar">
            <fieldset class="navitem"> 
                 <legend>Maproom</legend> 
-                    <a rev="section" class="navlink carryup" href="/maproom/Food_Security/">Food Security</a>
+                    <a rev="section" class="navlink carryup" href="/maproom/Food_Security/">Sécurité Alimentaire</a>
             </fieldset> 
            <fieldset class="navitem"> 
                 <legend>Food Security</legend> 
-                     <span class="navtext">Locusts</span>
+                     <span class="navtext">Criquet Pèlerin</span>
             </fieldset> 
 </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">Locusts</h2>
+<h2 property="term:title">Criquet Pèlerin</h2>
 <p align="left" property="term:description">
-The Desert Locust (Schistocerca gregaria) is an insect whose distribution area extends from West Africa to India.</p>
+Le Criquet pèlerin (Schistocerca gregaria) est un insecte dont la distribution géographique s'étend de l'Afrique Occidentale à l'Inde.</p>
 <p>
-During invasion periods, adults form swarms that can fly or be carried by wind over great distances.  These swarms can wipe out crops located hundreds of kilometers from their places of origin and create starvation conditions in regions that are already financially challenged.  The Desert Locust Information Service (DLIS) from the UN Food and Agriculture Organization (FAO) collaborates with the National Locust Units to collate, summarize and analyze field data (e.g., vegetation, rainfall, locust and control information) in order to assess the current situation and forecast the scale, timing and location of locust breeding and migration (<a href="http://www.fao.org/ag/locusts/en/info/info/index.html">more information</a>). The warnings, assessments and forecasts produced by DLIS are used by affected countries to plan survey and control operations and by the international donor community to target assistance, especially during emergencies.</p>
+Pendant les périodes d'invasion, les adultes forment des essaims qui peuvent voler ou être transportés par le vent sur de grandes distances. Ces essaims peuvent détruire les productions agricoles situées à des centaines de kilomètres de leur lieu d'origine et provoquer des conditions de famine dans des régions qui sont déjà en difficulté financière. Le service de l'information du Criquet pèlerin (DLIS) de l'Organisation des Nations Unies pour l'Alimentation et l'Agriculture (FAO) collabore avec les Unités Antiacridiennes Nationales pour rassembler, synthétiser et analyser les données du terrain (par exemple, végétation, précipitations, criquets et information de surveillance) afin d'appréhender la situation actuelle et de prévoir l'échelle, le timing et la localisation de la reproduction et migration des criquets (<a href="http://www.fao.org/ag/locusts/fr/info/info/index.html">plus d'informations</a>). Les avertissements, évaluations et prévisions produites par le DLIS sont utilisés par les pays touchés pour planifier les opérations de surveillance et de contrôle, et par la communauté interantionale des donateurs pour cibler l'assistance, notamment en temps de crise.</p>
 <p>
-In collaboration with DLIS, IRI is developing products to estimate ecological conditions and rainfall events in the Desert Locust recession area. The maps and analysis products below illustrate recent climate conditions, such as rainfall and vegetation, which provide ideal breeding conditions for the locusts.  Additional information may be included in the future and we welcome the opportunity to work with others on the further development of these products.
+Avec la collaboration du DLIS, l'IRI développe des produits pour estimer les conditions écologiques et les précipitations dans les zones de récession du Criquet pèlerin. Les cartes et analyses ci-dessous illustrent des conditions climatiques récentes, telles que précipitations et végétation, qui fournissent des conditions propices à la reproduction des criquets. Des informations supplémentaires sont susceptibles d'être ajoutées dans le futur, et toute opportunité de coopération pour le développement des ces produits est la bienvenue.
 </p>
 </div>
 <div class="rightcol tabbedentries" about="/maproom/Food_Security/Locusts/" >
