@@ -58,7 +58,7 @@ display: inline-block
 <input class="dlimgts share" name="fires" type="hidden" value="medianover" />
 <input class="dlimgts share" name="nino4" type="hidden" value="medianover" />
 <input class="dlimg share dlimgloc carry" name="bbox" type="hidden" value="bb:90:-12:155:10:bb" />
-<input class="share dlimgts dlimgloc" name="region" type="hidden" value="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@12:ds" />
+<input class="share carry dlimgts dlimgloc" name="region" type="hidden" value="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@12:ds" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">
@@ -130,12 +130,12 @@ margin: 0px;
     </ul>
 <fieldset class="regionwithinbbox dlimage"  about="">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-40%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C55%2C40%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/200/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
-<!-- <div class="valid" style="display: inline-block; text-align: top;">
+<div class="valid" style="display: inline-block; text-align: top;">
 <a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
 <div class="template">
 Observations for <b><span class="iridl:long_name"></span></b>
 </div>
-</div> -->
+</div>
 <br />
 <div class="dlimgtsbox">
 <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T/1//L/parameter/-1/mul/shiftdata/home/.remic/.Fire/.numberOfFires%5Bgid%5Daverage/0/mul/add/dup/dup%5BT%5D%28medianover%29//nino4/parameter/interp/dup/getrealization/0/get/100/mul/round/100/div/s==/3/-1/roll/3/-1/roll/flaglt/2/mul/home/.remic/.Fire/.numberOfFires/gid/%28irids:SOURCES:Features:Political:Indonesia:Provinces:gid%4010:ds%29//region/parameter/geoobject/.gid/SAMPLE/dup/dup%5BT%5D%28medianover%29//fires/parameter/interp/dup/getrealization/0/get/round/cvi/s==/3/-1/roll/3/-1/roll/flaglt/4/-1/roll/add/%28Fires%20%3E%20%292/index/%28%20%26%20NINO4%20%3E%20%296/index/4/array/astore/concat/%28Fires%20%3C%20%293/index/%28%20%26%20NINO4%20%3E%20%297/index/4/array/astore/concat/%28Fires%20%3E%20%294/index/%28%20%26%20NINO4%20%3C%20%298/index/4/array/astore/concat/%28Fires%20%3C%20%296/-1/roll/%28%20%26%20NINO4%20%3C%20%299/-1/roll/4/array/astore/concat/4/array/astore/%28CLIST%29exch/def/startcolormap/%28maxncolor%298/def/DATA/0/3/RANGE/white/red/red/LimeGreen/DeepSkyBlue/gold/gold/endcolormap/%28units%29%28ids%29def/%28long_name%29%28%29def/3/-1/roll/3/-1/roll/2/RECHUNK/CopyStream/2/index/2/RECHUNK/CopyStream/fig:/scattercolor/:fig/%28XOVY%291/psdef/%28fnt%29%28Palatino-Roman%29psdef/%28fntsze%2920/psdef//XOVY/1/psdef//plotaxislength/432/psdef//plotborder/72/psdef//plotaxislength/432/psdef//plotborder/72/psdef//XOVY/1/psdef/+.gif" />

@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Rainfall Analysis Tool</title>
+<script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
+<link rel="canonical" href="index.html" />
+<meta property="maproom:Entry_Id" content="Food_Security_Locusts_Regional_Rainfall" />
+<meta property="maproom:Sort_Id" content="e01" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Rate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Middle_East_328_0"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_Locusts_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FoodSecurity"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_Locusts_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#precipitation_rate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Middle_East"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/black/thin/countries_gaz/-fig//T/3654.5/plotvalue//antialias/true/psdef//plotaxislength/200/psdef//plotborder/0/psdef/+.gif" />
+<style>
+.dlimgtsbox { 
+width: 49%;
+display: inline-block
+ }
+</style>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
+<input class="carry dlimg dlauximg info share" name="var" type="hidden" />
+<input class="dlimg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
+<input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
+<input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
+<input class="unused" name="plotaxislength" type="hidden" value="600" />
+<input class="pickarea" name="resolution" type="hidden" value=".25" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Food Security</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Food_Security/Locusts/">Locusts</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_Locusts_Regional_term"><span property="term:label">Locusts</span></legend>
+            </fieldset> 
+ <fieldset class="navitem"><legend>Spatially Average Over</legend><select class="pageformcopy" name="resolution">
+<option value=".25">27x27 km box</option>
+<option value=".75">83x83 km box</option>
+</select></fieldset>
+ </div>
+<style>
+.leftpart {
+display: inline-block; 
+width: 60%
+}
+.rightpart {
+margin-left: 10pt;
+display: inline-block; 
+width: 30%
+}
+@media only all and (max-width: 400px) {
+.leftpart { width: 100%}
+.rightpart {width: 95%}
+}
+.plotheading {
+text-align: center;
+margin: 0px;
+}
+</style>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/">Dataset</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+<fieldset class="regionwithinbbox dlimage" about="">
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-5%2C95%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C-20%2C-40%29dup//region/parameter/dup//bbox/get_parameter/eq/%7Bpop%7D%7Bnip%7Difelse/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<div class="valid" style="display: inline-block; text-align: top;">
+<a class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">
+Observations for <span class="bold iridl:long_name"></span>
+</div>
+</div>
+<br />
+<div class="dlimgtsbox">
+<div>a)</div>
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/last/365/sub/last/RANGE/dup/0/mul/T/fig:/deltabars/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
+</div><div class="dlimgtsbox">
+<div>b)</div>
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/dup/0/mul/T/fig:/deltabars/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
+</div><div class="dlimgtsbox">
+<div>c)</div>
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/2/copy//pointwidth/0/def/%286%20Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%281/3%20months%20since%202005-01-01%29def/replaceGRID/DATA/0/250/RANGE/dup/T/1/108/RANGE/T/0/36/72/shiftdata/T//modulus/36/def/pop/exch/T/-108/shiftGRID/T/1/last/RANGE/T//modulus/36/def/pop//fullname/%282012%29def/exch/a:/T_lag/72/VALUE/T_lag/removeGRID//fullname/%282011%29def/:a:/T_lag/36/VALUE/T_lag/removeGRID//fullname/%282010%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID//fullname/%282009%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig/T/0.5/36.5/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
+</div><div class="dlimgtsbox">
+<div>d)</div>
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/last/365/sub/last/RANGE/0/replaceNaN/T/differential_div/T/integral//fullname/%28Cumulative%20Precipitation%29def%5BT%5D2/SM121/dup/0/mul//fullname/%28Zero%20Ref%29def/2/copy/maskgt/1/index/T//pointwidth/0/def/pop/T/fig:/lightgrey/deltabars/grey/deltabars/%7C/black/medium/line/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
+</div>
+<p>
+a) Daily precipitation estimates for the most recent 12 months in the selected region.
+</p><p>
+b) Dekadal* precipitation estimates for 1 Jan 2003 to the present in the selected region.
+</p><p>
+c) Same as (b) for the current calendar year (thick black line), as indicated by the axis labels. Precipitation estimates from previous years are also shown (blue-1 yr from present; magenta-2 yrs from present; grey-3 yrs from present). 
+</p><p>
+d) Cumulative precipitation for the most recent 12-month period in the selected region.
+</p><p>
+<b>*</b> The dekadal precipitation estimates have been aggregated from the daily data. Every month has three dekads, such that the first two dekads have 10 days (i.e., 1-10, 11-20), and the third is comprised of the remaining days of the month. Therefore, the length of the third dekad of each month is not consistent and varies from 8-11 days, depending on the length of the month.</p>
+</fieldset>
+<fieldset class="dlimage">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/3656.5/plotvalue//antialias/true/psdef//plotaxislength/600/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/3656.5/plotvalue//antialias/true/psdef//plotaxislength/600/psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/3656.5/plotvalue//antialias/true/psdef//plotaxislength/600/psdef/.auxfig+//T/0.5/plotvalue+//plotaxislength+600+psdef//plotborder+72+psdef+.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+ <h2 align="center" property="term:title">Rainfall Analysis Tool</h2>
+  <p align="left" property="term:description">A rainfall monitoring product based on daily rainfall estimates from the Climate Prediction Center.</p>
+<p>The interface allows users to analyze recent rainfall in the desert locust breeding areas via maps and location-specific time series.
+</p>
+<h4>Reference</h4>
+<p>
+Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that Produces Global Precipitation Estimates from Passive Microwave and Infrared Data at High Spatial and Temporal Resolution. J. Hydrometeorology, 5, 487-503.
+</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<h4>Precipitation Estimates</h4>
+<dl class="datasetdocumentation">
+<dt>Data</dt>
+<dd>Daily precipitation estimates on a 0.25 x 0.25 deg. lat/lon grid</dd>
+<dt>Data Source</dt><dd> Climate Prediction Center Morphing Technique 
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a></dd>
+</dl>
+</div>
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
