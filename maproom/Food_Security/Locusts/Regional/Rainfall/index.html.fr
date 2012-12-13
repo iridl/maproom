@@ -56,11 +56,11 @@ display: inline-block
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
-                <legend>Climat et Sécurité Alimentaire</legend> 
+                <legend>Sécurité Alimentaire</legend> 
                       <a rev="section" class="navlink carryup" href="/maproom/Food_Security/Locusts/">Criquet Pèlerin</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FoodSecurity"><span property="term:label">Analyse des Précipitations</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_Locusts_Regional_term"><span property="term:label">Criquet Pèlerin</span></legend>
             </fieldset> 
  <fieldset class="navitem"><legend>Moyennes spatiales par:</legend><select class="pageformcopy" name="resolution">
 <option value=".25">27x27 km boîte</option>
