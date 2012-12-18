@@ -25,8 +25,14 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
-<link rel="term:icon" href="+//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.SSTA_FCST/%28ASST%29//forcing/parameter/%28ASST%29eq/%7B.ASST/.version02/a:/.sst/L/3/0.0/runningAverage//pointwidth/3/def/temp_anomaly_colors_gcm/DATA/-6/6/RANGE/:a:/.T/L/3/0.0/runningAverage//pointwidth/3/def/:a/X/Y/fig-/colors/|/thinzero/contours/thinnish/grey/land/plotlabel/-fig//antialias/true/psdef//framelabel/%28%25=%5BT%5D%20IRI%20seasonal%20Forecast%20SSTA%20issued%20%25=%5BS%5D%29psdef//L/first/plotvalue%7D%7B.PSST/.ssta/dup/T/1/shiftGRID/T//S/renameGRID/temp_anomaly_colors_gcm/DATA/-6/6/RANGE/exch/.T/0/add//name//target_date/def/T/S/replaceGRID/X/Y/fig-/colors/|/thinzero/contours/thinnish/grey/land/plotlabel/-fig/Y/-89.25845/89.25845/plotrange//framelabel/%28%20%25=%5Btarget_date%5D%20persisted%20SSTA%20issued%20%25=%5BS%5D%29psdef%7Difelse//antialias/true/psdef//plotaxislength/220/psdef//S/last/plotvalue//plotborder/0/psdef/+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<style>
+.dlcontrol.L {display: none !important;}
+.forcingPersisted #LMenu {
+display: none;
+}
+</style>
 </head>
 <body xml:lang="en">
 <form name="pageform" id="pageform">
@@ -34,8 +40,8 @@
 <input class="carry dlimg share" name="bbox" type="hidden" />
 <input class="dlimg share starttime startleadtime" name="S" type="hidden" />
 <input class="dlimg share startleadtime" name="L" type="hidden" value="1.5" />
-<input class="dlimg share" name="T" type="hidden" />
-<input class="dlimgnotuseddlauximg" name="plotaxislength" type="hidden" />
+<input class="dlimgnotused dlauximg" name="plotaxislength" type="hidden" />
+<input class="dlimg share starttime bodyClass" name="forcing" type="hidden" /> 
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -49,8 +55,11 @@
                 <legend>Region</legend> 
             </fieldset>
            <fieldset class="navitem valid">
+          <legend>Forcing Type</legend>
+            <select class="pageformcopy" name="forcing"><option value="">ASST</option><option value="Persisted">Persisted</option></select></fieldset>
+	   <fieldset class="navitem valid" id="LMenu"> 
           <legend>Target Time</legend>
-	    <link class="starttime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.SSTA_FCST/.ASST/.version02/.T/L/3/0.0/runningAverage//pointwidth/3/def/S/last/cvsunits//S/parameter/VALUE/info.json" />
+	    <link class="starttime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.SSTA_FCST/.ASST/.version02/.T/L/3/0.0/runningAverage//pointwidth/3/def/S/last/cvsunits//S/parameter/VALUE/info.json/" />
           <select class="pageformcopy" name="L">
 	    <optgroup class="template" label="Target Time">
 	    <option class="iridl:values L@value T"></option>
@@ -66,22 +75,35 @@
     </ul>
 
 <fieldset class="dlimage" about="">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Temperature%20Forecast%20issued%20%25=%5BF%5D%29psdef//plotaxislength/590/psdef//plotborderbottom/40/psdef//plotbordertop/40/psdef/" />
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Temperature%20Forecast%20issued%20%25=%5BF%5D%29psdef//plotaxislength/590/psdef//plotborderbottom/40/psdef//plotbordertop/40/psdef/+.gif" border="0" alt="image" />
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.SSTA_FCST/%28ASST%29//forcing/parameter/%28ASST%29eq/%7B.ASST/.version02/a:/.sst/L/3/0.0/runningAverage//pointwidth/3/def/temp_anomaly_colors_gcm/DATA/-6/6/RANGE/:a:/.T/L/3/0.0/runningAverage//pointwidth/3/def/:a/X/Y/fig-/colors/|/thinzero/contours/thinnish/grey/land/plotlabel/-fig//antialias/true/psdef//framelabel/%28%25=%5BT%5D%20IRI%20seasonal%20Forecast%20SSTA%20issued%20%25=%5BS%5D%29psdef//L/first/plotvalue%7D%7B.PSST/.ssta/dup/T/1/shiftGRID/T//S/renameGRID/temp_anomaly_colors_gcm/DATA/-6/6/RANGE/exch/.T/0/add//name//target_date/def/T/S/replaceGRID/X/Y/fig-/colors/|/thinzero/contours/thinnish/grey/land/plotlabel/-fig/Y/-89.25845/89.25845/plotrange//framelabel/%28%20%25=%5Btarget_date%5D%20persisted%20SSTA%20issued%20%25=%5BS%5D%29psdef%7Difelse//antialias/true/psdef//plotaxislength/600/psdef//S/last/plotvalue//plotborderbottom/40/psdef//plotbordertop/40/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.SSTA_FCST/%28ASST%29//forcing/parameter/%28ASST%29eq/%7B.ASST/.version02/a:/.sst/L/3/0.0/runningAverage//pointwidth/3/def/temp_anomaly_colors_gcm/DATA/-6/6/RANGE/:a:/.T/L/3/0.0/runningAverage//pointwidth/3/def/:a/X/Y/fig-/colors/|/thinzero/contours/thinnish/grey/land/plotlabel/-fig//antialias/true/psdef//framelabel/%28%25=%5BT%5D%20IRI%20seasonal%20Forecast%20SSTA%20issued%20%25=%5BS%5D%29psdef//L/first/plotvalue%7D%7B.PSST/.ssta/dup/T/1/shiftGRID/T//S/renameGRID/temp_anomaly_colors_gcm/DATA/-6/6/RANGE/exch/.T/0/add//name//target_date/def/T/S/replaceGRID/X/Y/fig-/colors/|/thinzero/contours/thinnish/grey/land/plotlabel/-fig/Y/-89.25845/89.25845/plotrange//framelabel/%28%20%25=%5Btarget_date%5D%20persisted%20SSTA%20issued%20%25=%5BS%5D%29psdef%7Difelse//antialias/true/psdef//plotaxislength/600/psdef//S/last/plotvalue//plotborderbottom/40/psdef//plotbordertop/40/psdef/+.gif" border="0" alt="image" />
   <br />
-  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Temperature%20Forecast%20issued%20%25=%5BF%5D%29psdef//plotaxislength/590/psdef//plotborderbottom/40/psdef//plotbordertop/40/psdef/.auxfig+//L/1.0/plotvalue//F/last/plotvalue+//plotaxislength+590+psdef//plotborder+72+psdef+.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.SSTA_FCST/%28ASST%29//forcing/parameter/%28ASST%29eq/%7B.ASST/.version02/a:/.sst/L/3/0.0/runningAverage//pointwidth/3/def/temp_anomaly_colors_gcm/DATA/-6/6/RANGE/:a:/.T/L/3/0.0/runningAverage//pointwidth/3/def/:a/X/Y/fig-/colors/|/thinzero/contours/thinnish/grey/land/plotlabel/-fig//antialias/true/psdef//framelabel/%28%25=%5BT%5D%20IRI%20seasonal%20Forecast%20SSTA%20issued%20%25=%5BS%5D%29psdef//L/first/plotvalue%7D%7B.PSST/.ssta/dup/T/1/shiftGRID/T//S/renameGRID/temp_anomaly_colors_gcm/DATA/-6/6/RANGE/exch/.T/0/add//name//target_date/def/T/S/replaceGRID/X/Y/fig-/colors/|/thinzero/contours/thinnish/grey/land/plotlabel/-fig/Y/-89.25845/89.25845/plotrange//framelabel/%28%20%25=%5Btarget_date%5D%20persisted%20SSTA%20issued%20%25=%5BS%5D%29psdef%7Difelse//antialias/true/psdef//plotaxislength/600/psdef//S/last/plotvalue//plotborderbottom/40/psdef//plotbordertop/40/psdef/++.auxfig+//sst/-2.65276/2.65276/plotrange//L/1.5/plotvalue//S/635.0/plotvalue//framelabelstart+%28%25=%5BT%5D%20IRI%20seasonal%20Forecast%20SSTA%20issued%20%25=%5BS%5D%29+psdef//plotborder+72+psdef//plotaxislength+600+psdef//XOVY+null+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >IRI Seasonal Temperature Forecast</h2>
-<p align="left" property="term:description">The seasonal forecast for above-, below- and near-normal temperature from the IRI.</p>
+<h2 align="center"  property="term:title" >Sea Surface Temperature Anomaly Forecast</h2>
+<p align="left" property="term:description">
+Maps of sea surface temperature scenarii (SST forecasts) used to force the AGCMs.
+</p><p>
+The predicted SST field contains forecast SST anomalies for the tropical oceans and damped-persisted observed SST anomalies for the mid-latitude oceans. At this time, the SST predictions are made separately for each of the tropical ocean basins.
+
+In the tropical Pacific Ocean (15S-15N) the forecast SSTs are produced at NCEP using their coupled climate model, CMP12 (Pacific basin ocean/global atmosphere), where the ocean has been initialized with assimilated observed ocean temperature data as measured by the TAO buoy array.
+
+For the tropical Atlantic Ocean (18S-30N) SST anomalies are forecast at CPTEC (Brazil) using the statistical method of CCA (canonical correlation analysis). The predictors for the tropical Atlantic CCA prediction of SST is the recent observed SST anomalies in the tropical Pacific and Atlantic Oceans.
+
+The Indian Ocean SST anomalies (15S-15N) are also forecast using a CCA technique, which is run at the IRI. The predictors for the tropical Indian Ocean SST are the recently observed SST anomalies in the tropical Pacific and Indian Oceans and also the NCEP forecasts for the tropical Pacific.
+
+The tropical oceans where forecast SST anomalies are specified are smoothed into the mid-latitude observed SST anomalies over approximately 8 degress of latitude.
+
+In the mid-latitudes, the SST field is damped from observed initial SST anomalies to climatology (1969-1998 reconstructed SST), with an e-folding time of approximately 90 days. 
+</p><p>
+The global SST anomalies are predicted as unchanging from the latest observed field. The prescribed SST field is thus persisted (held fixed). The observed SST anomalies are taken from the month previous to when the forecast was made and added to the climatological monthly average SSTs to obtain the total SST values that are used as boundary conditions to force the AGCM. For example, for the forcasts made in August, the observed SST anomalies are taken from July, and the forecast season is Sep-Oct-Nov. Dynamical predictions using persisted SST forcing are run only 1 season into the future. 
+</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-</div>
-<div class="ui-tabs-panel-hidden">
-<h2 align="center">Dataset</h2>
 <p>
-<a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.Seasonal_Forecast/.PiC/.pic3mo_same/Y/-85/85/RANGE/X/-180/180/RANGEEDGES/">Access the dataset used to create this map.</a>
+Access the datasets used to create this maproom <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.SSTA_FCST/"> Real-Time IRI SST predictions (forcing for IRI climate prediction)</a>.
 </p>
 </div>
 <div id="tabs-3"  class="ui-tabs-panel">
