@@ -66,6 +66,7 @@ display: none;
 <input class="dlimg share dlauximg varc" name="fieldTemp" type="hidden" />
 <input class="dlimg share dlauximg varc" name="fieldPrecip" type="hidden" />
 <input class="dlimg share dlauximg varc" name="fieldGeop" type="hidden" />
+<input class="dlimg share dlauximg modelc" name="clim" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -114,6 +115,16 @@ display: none;
            <fieldset class="navitem valid" id="fieldG">
           <legend>Field</legend>
             <select class="pageformcopy" name="fieldGeop"><option value="">Total</option><option value="Anomaly">Anomaly</option><option value="Zonal">Zonal Anomaly</option></select></fieldset>
+           <fieldset class="navitem valid">
+          <legend>Climatology</legend>
+            <link class="modelc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/mark/home/.remic/.IRI/.FD/.GCM/%28.%29%28ECHAM4p5%29//model/parameter/append/interp/.History/%7Bpop%7Dforsomedataset/counttomark/array/astore/dup/length//climname/exch/NewIntegerGRID/dup/0/add/3/-1/roll/STREAMGRID/exch//name//climid/def//long_name/%28climid%29def//fullname/%28climid%29def/climname/3/-1/roll/replaceGRID/climname/3/-1/roll/.gridvalues/aload/pop/invertontogrid/nip/info.json/" />
+          <select class="pageformcopy" name="clim">
+                        <optgroup class="template" label="Climatology">
+            <option class="iridl:values climid@value climname"></option>
+              </optgroup>
+            </select>
+  </fieldset>
+
 <br>
    <fieldset class="navitem valid"> 
           <legend>Target Time</legend>
