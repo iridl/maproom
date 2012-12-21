@@ -46,6 +46,7 @@
 <input class="dlimg" name="plotaxislength" type="hidden" />
 <input class="dlimg share" name="country" type="hidden" />
 <input class="dlimg share" name="Baseline" type="hidden" />
+<input class="dlimg share" name="baseyear" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -55,6 +56,12 @@
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
             </fieldset> 
+
+            <fieldset class="navitem">
+                <legend>Baseline Years</legend><input class="pageformcopy" name="baseyear" type="text" value="1979" size="9" maxlength="" />
+            </fieldset>
+
+
  </div>
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
@@ -64,8 +71,9 @@
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/caCMAP-latest_WASP12//fullname/%2812-Month%20WASP%29def/tag://fullname/%2812-Month%20WASP%29:tag//long_name/%2812-Month%20WASP%29def/cabaseline//fullname/%28Baseline%29def/tag://fullname/%28Baseline%29:tag//long_name/%28Baseline%29def/2/copy/maskgt/1/index/T//pointwidth/0/def/pop/T/fig:/green/deltabars/brown/deltabars/|/black/thin/line/black/medium/line/:fig//framelabel/%28%25s%5Bcountry%5D%20precipitation%20relative%20to%20%25=%5BBaseline%5D%29psdef//country//Algeria/plotvalue//Baseline/234.0/plotvalue//plotaxislength/432/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//XOVY/null/psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/caCMAP-latest_WASP12//fullname/%2812-Month%20WASP%29def/tag://fullname/%2812-Month%20WASP%29:tag//long_name/%2812-Month%20WASP%29def/cabaseline//fullname/%28Baseline%29def/tag://fullname/%28Baseline%29:tag//long_name/%28Baseline%29def/2/copy/maskgt/1/index/T//pointwidth/0/def/pop/T/fig:/green/deltabars/brown/deltabars/|/black/thin/line/black/medium/line/:fig//framelabel/%28%25s%5Bcountry%5D%20precipitation%20relative%20to%20%25=%5BBaseline%5D%29psdef//country//Algeria/plotvalue//Baseline/234.0/plotvalue//plotaxislength/432/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//XOVY/null/psdef/++//country//Algeria/plotvalue//Baseline/234.0/plotvalue+//plotborder+72+psdef//XOVY+null+psdef//plotaxislength+432+psdef+.gif" border="0" alt="image" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/a:/.caCMAP-latest_WASP12/tag:/%28fullname%29%2812-Month%20WASP%29:tag//plotfirst/-3.5/def//plotlast/3.5/def//long_name/%2812-Month%20WASP%29def/home/.remic/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full/%281979%29//baseyear/parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/:a:/.caCMAP-latest_WASP12/tag:/%28fullname%29%2812-Month%20WASP%29:tag//plotfirst/-3.5/def//plotlast/3.5/def//long_name/%2812-Month%20WASP%29def/home/.remic/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full//baseyear/get_parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/maskgt/home/.remic/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full//baseyear/get_parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/:a/T/fig-/green/deltabars/brown/deltabars/|/black/thin/line/black/medium/line/-fig//framelabel/%28%25s%5Bcountry%5D%20precipitation%20relative%20to%20years%20%29//baseyear/get_parameter/%28%20starting%20%25=%5BBaseline%5D%29append/append/psdef//country//Algeria/plotvalue//Baseline/0.5/plotvalue//plotaxislength/432/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//XOVY/null/psdef/"></a>
+
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/a:/.caCMAP-latest_WASP12/tag:/%28fullname%29%2812-Month%20WASP%29:tag//plotfirst/-3.5/def//plotlast/3.5/def//long_name/%2812-Month%20WASP%29def/home/.remic/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full/%281979%29//baseyear/parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/:a:/.caCMAP-latest_WASP12/tag:/%28fullname%29%2812-Month%20WASP%29:tag//plotfirst/-3.5/def//plotlast/3.5/def//long_name/%2812-Month%20WASP%29def/home/.remic/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full//baseyear/get_parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/maskgt/home/.remic/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full//baseyear/get_parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/:a/T/fig-/green/deltabars/brown/deltabars/|/black/thin/line/black/medium/line/-fig//framelabel/%28%25s%5Bcountry%5D%20precipitation%20relative%20to%20years%20%29//baseyear/get_parameter/%28%20starting%20%25=%5BBaseline%5D%29append/append/psdef//country//Algeria/plotvalue//Baseline/0.5/plotvalue//plotaxislength/432/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//XOVY/null/psdef/+.gif" border="0" alt="image" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">Country-Average WASP Index</h2>
@@ -75,6 +83,9 @@ This plot shows a time series of the country-averaged value of the 12-Month Weig
 To compute the WASP index, monthly precipitation departures from the long-term average are obtained and then standardized by dividing by the standard deviation of monthly precipitation.  The standardized monthly anomalies are then weighted by multiplying by the fraction of the average annual precipitation for the given month.  These weighted anomalies are then summed over a 12-month time period in this case, and this result is itself standardized.</p>
 <p>
 The user is also able to select a reference year, placing a baseline on the plot corresponding to the WASP index value for the center of the selected year.  For WASP index values above the baseline, the area between the index and the baseline value is shaded in green.  For WASP index values below the baseline, the area between the index and the baseline value is shaded in brown.</p>
+<p>
+The baseline(s) can be a single year, multiple years or a range of years. For a single year, just type in the 4 digits of the year of interest, as shown by default. For multiple years, enter the 4 digits of the desired years separated by one blank. For instance the entry <i>1985 1990 2004</i> will select those 3 single-year baselines and average them to form a new baseline. For a range of years, enter the 4 digits of the first and the last year (inclusive) separated by a <i>-</i>. For instance <i>1990-1999</i> will select the 10 single-year baselines of the 90s and average them to form a new baseline. Finally, the year can be defined otherwise than the January to December year by choosing the month a year start. For instance, choosing <i>Mar</i> will define a year as the 12 months going from March to February.
+</p>
 <p>
 The purpose of this tool is to provide a simple visual means of relating country-average precipitation to a reference year of interest.
 </p>

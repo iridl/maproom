@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.1"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta xml:lang="" property="maproom:Sort_Id" content="d02" />
+<title>Precipitation Flexible Seasonal Forecast</title>
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link class="share" rel="canonical" href="precipitation.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#monthly"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#precipitation"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Global"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#percentile"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Probability"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#IRI"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_Flexible_Forecasts_term" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_term" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.IRI/.FD/.Flexible_Forecast/.precipitation/%28Percentile%29//var/parameter/%28Percentile%29eq/%7B%2850.%29//percentile/parameter/interp/100.0/div/2/mul/1/sub/erfinv/clim_stddev/mul/2/sqrt/mul/clim_mean/add/X/-180/180/RANGE/Y/-60/90/RANGE%7D%7B%281.%29//threshold2/parameter/interp/fcst_mean/0.0/mul/add/dup/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Txb%5BX/Y%5DregridAverage/0/mul/1/add/mul%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/sqrt/replaceNaN%7Difelse/fcst_mean/sub/fcst_stddev/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28exceeding%29//proba/parameter/%28exceeding%29ne/%7B-1/mul/1/add%7Dif/S//fullname/%28Month%20Forecast%20Issued%29def/pop//var/get_parameter/%28Percentile%29eq/%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//percentile/get_parameter/append/%28th%20%25-ile%29append/def/%28percentiles_colors_%29//proba/get_parameter/%28exceeding%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7D%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//threshold2/get_parameter/append/%28mm/day%29append/def/correlationcolorscale/DATA/0/1/RANGE/X/-180/180/RANGE/Y/-60/90/RANGE%7Difelse/X/Y/fig-/colors/grey/coasts/lakes/-fig//S/last/plotvalue//L/2.5/plotvalue/%28antialias%29true/psdef//plotaxislength/220/psdef//plotborder/0/psdef/+.gif" />
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<style>
+sup { vertical-align:super; font-size:50%; }
+.varPrecipitation #percThresh {
+display: none;
+}
+.var #physThresh {
+display: none;
+}
+.dlcontrol.L {display: none !important;}
+.dlimage2 {
+        width: 29%;
+	float: right;
+}
+.dlimage3 {
+	width: 99%;
+}
+@media only all and (max-width: 750px) {
+.dlimage2 {
+        width: 95%;
+	float: right;
+}
+.dlimage3 {
+        width: 49%;
+}
+}
+</style>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
+<input class="carry dlimg dlimgts share starttime startleadtime" name="S" type="hidden" />
+<input class="carry dlimg dlimgts share startleadtime" name="L" type="hidden" value="2.5" />
+<input class="carry dlimgts dlimgloc share" name="region" type="hidden" />
+<input class="dlimgnotuseddlauximg" name="plotaxislength" type="hidden" />
+<input class="pickarea" name="resolution" type="hidden" value="2.5" />
+<input class="carry dlimg dlimgts share starttime startleadtime" name="model" type="hidden" />
+<input class="carry dlimg dlimgts share" name="climStart" type="hidden" />
+<input class="carry dlimg dlimgts share" name="climEnd" type="hidden" />
+<input class="carry dlimg dlauximg share" name="proba" type="hidden" />
+<input class="carry dlimg dlauximg share threshold bodyClass" name="var" type="hidden" />
+<input class="carry dlimg dlauximg share threshold" name="percentile" type="hidden" value="50." />
+<input class="dlimg dlauximg share threshold" name="threshold2" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Maproom</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Global/">Climate Monitoring</a>
+            </fieldset>
+            <fieldset class="navitem" id="chooseSection">
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_Flexible_Forecasts_term"><span property="term:label">Flexible Forecasts</span></legend>
+            </fieldset>
+            <fieldset class="navitem" id="chooseRegion">
+                <legend>Region</legend>
+            </fieldset>
+<br>
+            <fieldset class="navitem"><legend>Model</legend><select class="pageformcopy" name="model"><option value="">Forecast</option>
+<!-- <option value="Hindcast">Hindcast</option> -->
+</select></fieldset>
+<!--           <fieldset class="navitem valid">
+          <legend>Issue Date</legend>
+            <link class="starttime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.IRI/.FD/.Flexible_Forecast/.temperature/.target_date/.S/0/add//name//issue_date/def//units/%28months%20since%201960-01-01%29def/S//defaultvalue/%7Blast%7Ddef/pop/info.json" />
+          <select class="pageformcopy" name="S">
+            <optgroup class="template" label="Issue Date">
+            <option class="iridl:values S@value issue_date"></option>
+              </optgroup>
+            </select>
+  </fieldset> -->
+           <fieldset class="navitem valid">
+          <legend>Target Time</legend>
+            <link class="starttime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28Forecast%29//model/parameter/%28Forecast%29eq/%7Bhome/.remic/.IRI/.FD/.Flexible_Forecast/.precipitation/.target_date%7D%7Bhome/.tippett/.scratch/.na/.hindcasts/.MM/.t2m/a:/.S/:a:/.L/:a/add//pointwidth/3/def//name//target_date/def%7Difelse/S/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.S/.last/cvsunits//S/parameter/VALUE/L//units/unitless/def/pop/info.json" />
+          <select class="pageformcopy" name="L">
+            <optgroup class="template" label="Target Time">
+            <option class="iridl:values L@value target_date"></option>
+              </optgroup>
+            </select>
+  </fieldset>
+
+            <fieldset class="navitem"><legend>Climatology Start (from 1979)</legend><input class="pageformcopy" name="climStart" type="text" value="1981" size="4" maxlength="4"/></fieldset>
+            <fieldset class="navitem"><legend>Climatology End (to 2011)</legend><input class="pageformcopy" name="climEnd" type="text" value="2010" size="4" maxlength="4"/></fieldset>
+            <fieldset class="navitem"><legend>Probability of</legend><select class="pageformcopy" name="proba"><option value="">exceeding</option><option value="non-exceeding">non-exceeding</option></select></fieldset>
+            <fieldset class="navitem"><legend>Value</legend><select class="pageformcopy" name="var"><option value="">Percentile</option><option value="Precipitation">Precipitation</option></select></fieldset>
+
+           <fieldset id="percThresh" class="navitem valid">
+          <legend>Threshold (%-ile)</legend>
+            <link class="threshold" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert//percentile//unitless/ordered/10/5/90/NewEvenGRID/0/add//name//threshold/def//long_name//threshold/def//fullname//threshold/def/info.json" />
+          <select class="pageformcopy" name="percentile">
+            <optgroup class="template" label="Threshold (%-ile)">
+            <option class="iridl:values percentile@value threshold"></option>
+              </optgroup>
+            </select>
+  </fieldset>  
+
+           <fieldset id="physThresh" class="navitem valid">
+          <legend>Threshold (mm/day)</legend>
+          <input class="pageformcopy" name="threshold2" type="text" value="1." size="4" maxlength="4"/></fieldset>
+</br>
+</div>
+
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-3" >More Information</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+
+<span>
+    <fieldset class="regionwithinbbox dlimage2" about="" >
+<p>
+<table>
+<tr>
+  <td rowspan="2"><img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-180:-90:180:90:bb%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C55%2C40%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+  </td>
+
+  <td>
+    <span class="valid">
+       <a class="startleadtime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28Forecast%29//model/parameter/%28Forecast%29eq/%7Bhome/.remic/.IRI/.FD/.Flexible_Forecast/.precipitation/.target_date%7D%7Bhome/.tippett/.scratch/.na/.hindcasts/.MM/.t2m/a:/.S/:a:/.L/:a/add//pointwidth/3/def//name//target_date/def%7Difelse/S/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.S/.last/cvsunits//S/parameter/VALUE/L/second/cvsnamedunits//L/parameter/VALUE/info.json" ></a>
+      <span class="template">
+        <table bgcolor="f0f0f0">
+           <tr>
+              <td>Target Date</td><td>Issue Date</td><td>Lead Time</td>
+           </tr>
+           <tr>
+             <th class="iridl:value"></th>
+             <th class="iridl:hasIndependentVariables">
+               <span class="iridl:value"></span>
+             </th>
+           </tr>
+         </table>
+       </span>
+     </span>
+   </td>
+</tr>
+</table>
+   </p>
+    <div class="dlimage3" style="display: inline-block">
+      <h4>Probability of Exceedance</h4>
+  <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.IRI/.FD/.Flexible_Forecast/.precipitation/grid://name/%28probability%29def/9.9999997E-05/0.9999/2/copy/exch/sub/500.0/div/exch/:grid/0.0/add/-2.0/mul/1.0/add/erfinv/clim_stddev/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/mul/2.0/sqrt/mul/clim_mean/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/add/dup/fcst_mean/0.0/mul/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/replaceNaN/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/0/maskle/mul/exch/0/masklt/dup/mul/replaceNaN//fullname/%28clim%29def/probability/0.0/add/-2.0/mul/1.0/add/erfinv/fcst_stddev/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/mul/2.0/sqrt/mul/fcst_mean/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/add/dup/fcst_mean/0.0/mul/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/replaceNaN/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/0/maskle/mul/exch/0/masklt/dup/mul/replaceNaN//fullname/%28forecast%29def/target_date/clim_mean/X/exch//region/get_parameter/geoobject/rasterize%5BX/Y%5Dweighted-average/clim_mean/Y/exch//region/get_parameter/geoobject/rasterize%5BX/Y%5Dweighted-average/%281981%29//climStart/parameter/interp/%282010%29//climEnd/parameter/interp/sub/0.0/eq/%7B3%7D%7B4%7Difelse/index/probability/fig-/dotted/medium/black/profile/solid/medium/green/profile/plotlabel/plotlabel/plotlabel/dotted/verythin/white/profile/-fig//framelabel/%28%25=%5Btarget_date%5D%20issued%20%25=%5BS%5D%20at%20%28%25=%5BX%5D%2C%25=%5BY%5D%29%20%29psdef//plotborder/72/psdef//XOVY/1.6/psdef//plotaxislength/432/psdef//antialias/true/psdef//S/last/plotvalue/+.gif" />
+      </div>
+
+      <div class="dlimage3" style="display: inline-block">
+        <h4>Probability Distribution</h4>
+  <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.IRI/.FD/.Flexible_Forecast/.precipitation/grid://name/%28probability%29def/9.9999997E-05/3/2/copy/exch/sub/500.0/div/exch/:grid/%281981%29//climStart/parameter/interp/%282010%29//climEnd/parameter/interp/sub/0.0/eq/%7B0.0/add/0.0/flagge%7D%7Bclim_stddev/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/mul/pi/2.0/mul/sqrt/mul/ln/clim_stddev/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/dup/mul/mul/-2.0/mul/sqrt%7Difelse/clim_mean/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/%281981%29//climStart/parameter/interp/%282010%29//climEnd/parameter/interp/sub/0.0/eq/%7Bmul%7D%7Bdup/2/index/add//scale_symmetric/false/def%7Difelse/dup/fcst_mean/0.0/mul/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/replaceNaN/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/0/maskle/mul/exch/0/masklt/dup/mul/replaceNaN/%281981%29//climStart/parameter/interp/%282010%29//climEnd/parameter/interp/sub/0.0/eq/%7B//fullname/%28%29def//scale_symmetric/false/def/dup//fullname/%28clim%29def%7D%7B//fullname/%28%29def/3/-2/roll/exch/sub//scale_symmetric/false/def/dup/fcst_mean/0.0/mul/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/replaceNaN/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/0/maskle/mul/exch/0/masklt/dup/mul/replaceNaN//fullname/%28clim%29def/dup/probability/first/secondtolast/RANGE/2/index/dup/probability/first/VALUE/probability/3/-1/roll/probability/last/VALUE/.probability/replaceGRID/appendstream%7Difelse/probability/fcst_stddev/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/mul/pi/2.0/mul/sqrt/mul/ln/fcst_stddev/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/dup/mul/mul/-2.0/mul/sqrt/fcst_mean/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/dup/2/index/add//scale_symmetric/false/def/dup/fcst_mean/0.0/mul/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/replaceNaN/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/0/maskle/mul/exch/0/masklt/dup/mul/replaceNaN//fullname/%28%29def/3/-2/roll/exch/sub//scale_symmetric/false/def/dup/fcst_mean/0.0/mul/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/replaceNaN/%28bb:%5B0%2C0%2C2.5%2C2.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/0/maskle/mul/exch/0/masklt/dup/mul/replaceNaN//fullname/%28forecast%29def/%281981%29//climStart/parameter/interp/%282010%29//climEnd/parameter/interp/sub/0.0/eq/%7Bdup/probability/first/secondtolast/RANGE/2/index/dup/probability/first/VALUE/probability/3/-1/roll/probability/last/VALUE/.probability/replaceGRID/appendstream%7Dif/target_date/clim_mean/X/exch//region/get_parameter/geoobject/rasterize%5BX/Y%5Dweighted-average/clim_mean/Y/exch//region/get_parameter/geoobject/rasterize%5BX/Y%5Dweighted-average/%281981%29//climStart/parameter/interp/%282010%29//climEnd/parameter/interp/sub/0.0/eq/%7B4%7D%7B6%7Difelse/-1/roll//fullname/%28%29def/probability/fig:/medium/dotted/black/profile/profile/solid/green/profile/profile/plotlabel/plotlabel/plotlabel/verythin/white/dotted/profile/:fig//framelabel/%28%25=%5Btarget_date%5D%20issued%20%25=%5BS%5D%20at%20%28%25=%5BX%5D%2C%25=%5BY%5D%29%20%29psdef//plotborder/72/psdef//XOVY/1.6/psdef//plotaxislength/432/psdef//antialias/true/psdef//S/last/plotvalue/+.gif" />
+        </div>
+  </fieldset>
+<fieldset class="dlimage" about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.IRI/.FD/.Flexible_Forecast/.precipitation/%28Percentile%29//var/parameter/%28Percentile%29eq/%7B%2850.%29//percentile/parameter/interp/100.0/div/2/mul/1/sub/erfinv/clim_stddev/mul/2/sqrt/mul/clim_mean/add/X/-180/180/RANGE/Y/-60/90/RANGE/dup%7D%7B%281.%29//threshold2/parameter/interp/fcst_mean/0.0/mul/add/dup/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add/mul%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/sqrt/replaceNaN%7Difelse/fcst_mean/sub/fcst_stddev/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28exceeding%29//proba/parameter/%28exceeding%29ne/%7B-1/mul/1/add%7Dif/S//fullname/%28Month%20Forecast%20Issued%29def/pop//var/get_parameter/%28Percentile%29eq/%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//percentile/get_parameter/append/%28th%20%25-ile%29append/def/%28percentiles_colors_%29//proba/get_parameter/%28exceeding%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp/exch/dup/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add/mul%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/dup/mul/replaceNaN%7D%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//threshold2/get_parameter/append/%28mm/day%29append/def/correlationcolorscale/DATA/0/1/RANGE/X/-180/180/RANGE/Y/-60/90/RANGE/dup/0/mul%7Difelse/target_date/X/Y/fig-/colors/contours/grey/coasts/lakes/plotlabel/-fig/%28antialias%29true/psdef/%28framelabel%29%28%25=%5Btarget_date%5D%20Flexible%20seasonal%20Precipitation%20forecast%20issued%20%25=%5BS%5D%20%29psdef//plotaxislength/700/psdef//S/last/plotvalue/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.IRI/.FD/.Flexible_Forecast/.precipitation/%28Percentile%29//var/parameter/%28Percentile%29eq/%7B%2850.%29//percentile/parameter/interp/100.0/div/2/mul/1/sub/erfinv/clim_stddev/mul/2/sqrt/mul/clim_mean/add/X/-180/180/RANGE/Y/-60/90/RANGE/dup%7D%7B%281.%29//threshold2/parameter/interp/fcst_mean/0.0/mul/add/dup/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add/mul%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/sqrt/replaceNaN%7Difelse/fcst_mean/sub/fcst_stddev/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28exceeding%29//proba/parameter/%28exceeding%29ne/%7B-1/mul/1/add%7Dif/S//fullname/%28Month%20Forecast%20Issued%29def/pop//var/get_parameter/%28Percentile%29eq/%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//percentile/get_parameter/append/%28th%20%25-ile%29append/def/%28percentiles_colors_%29//proba/get_parameter/%28exceeding%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp/exch/dup/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add/mul%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/dup/mul/replaceNaN%7D%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//threshold2/get_parameter/append/%28mm/day%29append/def/correlationcolorscale/DATA/0/1/RANGE/X/-180/180/RANGE/Y/-60/90/RANGE/dup/0/mul%7Difelse/target_date/X/Y/fig-/colors/contours/grey/coasts/lakes/plotlabel/-fig/%28antialias%29true/psdef/%28framelabel%29%28%25=%5Btarget_date%5D%20Flexible%20seasonal%20Precipitation%20forecast%20issued%20%25=%5BS%5D%20%29psdef//plotaxislength/700/psdef//S/last/plotvalue/+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.IRI/.FD/.Flexible_Forecast/.precipitation/%28Percentile%29//var/parameter/%28Percentile%29eq/%7B%2850.%29//percentile/parameter/interp/100.0/div/2/mul/1/sub/erfinv/clim_stddev/mul/2/sqrt/mul/clim_mean/add/X/-180/180/RANGE/Y/-60/90/RANGE/dup%7D%7B%281.%29//threshold2/parameter/interp/fcst_mean/0.0/mul/add/dup/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add/mul%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/sqrt/replaceNaN%7Difelse/fcst_mean/sub/fcst_stddev/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28exceeding%29//proba/parameter/%28exceeding%29ne/%7B-1/mul/1/add%7Dif/S//fullname/%28Month%20Forecast%20Issued%29def/pop//var/get_parameter/%28Percentile%29eq/%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//percentile/get_parameter/append/%28th%20%25-ile%29append/def/%28percentiles_colors_%29//proba/get_parameter/%28exceeding%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp/exch/dup/home/.remic/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Pxb%5BX/Y%5DregridAverage/0/mul/1/add/mul%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/dup/mul/replaceNaN%7D%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//threshold2/get_parameter/append/%28mm/day%29append/def/correlationcolorscale/DATA/0/1/RANGE/X/-180/180/RANGE/Y/-60/90/RANGE/dup/0/mul%7Difelse/target_date/X/Y/fig-/colors/contours/grey/coasts/lakes/plotlabel/-fig//var/get_parameter/%28Precipitation%29/eq/%7B//ratio/0/1.0/plotrange/%7Dif/+.auxfig+/%28antialias%29true/psdef/%28framelabel%29%28%25=%5BT%5D%20Flexible%20seasonal%20Precipitation%20forecast%20issued%20%25=%5BS%5D%20%29psdef//plotaxislength/700/psdef//plotborder/40/psdef/+.gif" />
+</fieldset>
+</span>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >Precipitation Flexible Seasonal Forecast</h2>
+<p align="left" property="term:description">
+This seasonal forecasting system consists of probabilistic precipitation seasonal forecasts based on the full estimate of the probability distribution.
+</p><p>
+Probabilistic seasonal forecasts from multi-model ensembles through the use of statistical recalibration, based on the historical performance of those models, provide reliable information to a wide range of climate risk and decision making communities, as well as the forecast community. The flexibility of the full probability distributions allows to deliver interactive maps and point-wise distributions that become relevant to user-determined needs.
+</p><p>
+The default map shows globally the seasonal precipitation forecast probability (colors between 0 and 1) of exceeding the 50<sup>th</sup> percentile of the distribution from historical 1981-2010 climatology. The quantitative value (in mm/day) of that percentile is indicated by the contours. The forecast shown is the latest forecast made (e.g. Sep 2012) for the next season to come (e.g. Oct-Dec 2012). Five different seasons are forecasted and it is also possible to consult forecasts made previously. What makes the forecast flexible is that underlying the default map is the full probability distribution for the forecast and climatology. Therefore, the user can specify the historical percentile or a quantitative value (here precipitation in mm/day) for probability of exceedance or non-exceedance. The climatological reference on which the forecast probability of (non-)exceeding is computed can be tailored by defining its starting and ending years.
+</p><p>
+Clicking on a point on the map will show the local culmulative distribution and probability distribution fucntions of the forecast (green) together with the climatological distribution (black).
+</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p>
+<b>Distribution parameters:</b> The means and standard deviations of the climatological observed reference and the forecast are available  <a href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.IRI/.FD/.Flexible_Forecast/.precipitation/" target="_blank">here</a>. This is a parametrized dataset. The parameters are climStart and climEnd, respectively the starting year and the ending year defining the period of climatological observed reference. The default parameters are (1981) and (2010). The forecast is produced by the IRI for the Globe for all Lead times and for the Unites States for the first Lead time. For the other Lead times over the US, the forecast is produced by CPC. This merged produc doesn't hold the same units for the IRI part as for the CPC part.
+</p><p>
+<b>Observations:</b> monthly precipitation from <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.Merged_Analysis/.monthly/.latest/.ver2/.prcp_est/" target="_blank">CMAP estimated precipitation data</a>
+</p>
+</div>
+<div id="tabs-3"  class="ui-tabs-panel">
+<h2  align="center">More Information</h2>
+<p align="left">
+This forecasting system acts to correct spatial biases in the medians of ensemble forecasts for individual models. The model calibration is performed using multi-variate regression based on EOF structures, thus allowing for spatial corrections. Penalized regression methods help forecast reliability and select predictors effectively. In particular, Lasso regression, similar to ridge regression, eliminates more agressively poor predictors and retains much of the skill improvements of EOF regression.
+</p><p>
+This system has been based on several of the atmospheric general circulation models (AGCMs) that IRI uses in its “Net Assessment” seasonal forecast. The correction parameters in the system are estimated from retrospective forecasts that use forecast SST thereby explicitly incorporating SST forecast error and lead-time dependence.
+</p><p>
+The system produces a complete probability distribution, not just tercile probabilities so that probabilities for user-defined categories (based on user-defined climatology) are possible. Related to that, the distribution is quantitative so that, for example, probabilities of threshold exceedances can be queried.
+</p><p>
+Reference: <a href="www.nws.noaa.gov/ost/climate/STIP/36CDPW/36cdpw-mtippett.pdf">Recalibrating and Combining Ensemble Predictions.</a><i>Science and Technology Infusion Climate Bulletin, NOAA’s National Weather Service, 36th NOAA Annual Climate Diagnostics and Prediction Workshop.</i> Michael K. Tippett, Tony Barnston, Lisa Goddard, Simon Mason, Malaquias Pena Mendez, Huug van den Dool
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesk</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Flexible Forecast: Precipitation">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+
+</div>
+</div>
+
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
+
