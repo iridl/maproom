@@ -43,15 +43,17 @@
 <script type="text/javascript" src="../../../../uicore/uicore.js"></script>
 
 <script type="text/javascript">
+/* <![CDATA[ */
 function validateTextForm()
  {
  var x = document.forms["tholdForm"]["thold"].value;
- if (x==null || x=="" || x<-99 || x>99 || isNaN (x-0))
+ if (x==null || x=="" || x<-99 || x>99 || isNaN(x))
    {
    alert("Temperature threshold must have a value between -99\°C and 99\°C");
    return false;
    }
  }
+/* ]]> */
 </script>
 
 </head>
