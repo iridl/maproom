@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Locusts</title>
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
+<link rel="canonical" href="index.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_Locusts_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FoodSecurity"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/634.5/plotvalue//plotaxislength/200/psdef//antialias/true/psdef//plotborder/0/psdef/+.gif" />
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
+</head>
+<body  xml:lang="en">
+
+<form name="pageform" id="pageform">
+<input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem"> 
+                <legend>Maproom</legend> 
+                    <a rev="section" class="navlink carryup" href="/maproom/Food_Security/">Food Security</a>
+            </fieldset> 
+           <fieldset class="navitem"> 
+                <legend>Food Security</legend> 
+                     <span class="navtext">Locusts</span>
+            </fieldset> 
+</div>
+<div>
+ <div id="content" class="searchDescription">
+<h2 property="term:title">Locusts</h2>
+<p align="left" property="term:description">
+The Desert Locust (Schistocerca gregaria) is an insect whose distribution area extends from West Africa to India.</p>
+<p>
+During invasion periods, adults form swarms that can fly or be carried by wind over great distances.  These swarms can wipe out crops located hundreds of kilometers from their places of origin and create starvation conditions in regions that are already financially challenged.  The Desert Locust Information Service (DLIS) from the UN Food and Agriculture Organization (FAO) collaborates with the National Locust Units to collate, summarize and analyze field data (e.g., vegetation, rainfall, locust and control information) in order to assess the current situation and forecast the scale, timing and location of locust breeding and migration (<a href="http://www.fao.org/ag/locusts/en/info/info/index.html">more information</a>). The warnings, assessments and forecasts produced by DLIS are used by affected countries to plan survey and control operations and by the international donor community to target assistance, especially during emergencies.</p>
+<p>
+In collaboration with DLIS, IRI is developing products to estimate ecological conditions and rainfall events in the Desert Locust recession area. The maps and analysis products below illustrate recent climate conditions, such as rainfall and vegetation, which provide ideal breeding conditions for the locusts.  Additional information may be included in the future and we welcome the opportunity to work with others on the further development of these products.
+</p>
+</div>
+<div class="rightcol tabbedentries" about="/maproom/Food_Security/Locusts/" >
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_Locusts_Regional_term"/>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend>
+
+</fieldset>
+</div>
+ </body>
+
+ </html>

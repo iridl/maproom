@@ -11,31 +11,33 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>Analyses du MODIS</title>
-<script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
-<link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
+<script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link rel="canonical" href="index.html" />
-<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_MODIS" />
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
+<meta property="maproom:Entry_Id" content="Food_Security_Locusts_Regional_MODIS" />
+<meta property="maproom:Sort_Id" content="e06" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Surface"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#PlanetarySurface"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_Locusts_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FoodSecurity"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_Locusts_Regional_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#sixteen-day"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Reflectance"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#NDVI"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#EVI"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#LandSurface"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Middle_East_328_0"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<link rel="term:icon" href="http://iri.columbia.edu/~mbell/icons/Health-Regional-Africa-NDVI-icon.jpg" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Middle_East"/>
+<link rel="term:icon" href="http://iri.columbia.edu/~mbell/icons/FoodSecurity-Locusts-Regional-NDVI-icon.jpg" />
 <style>
 .dlimgtsbox { 
 width: 49%;
@@ -53,22 +55,22 @@ body.varreflectance .regionwithinbbox{display: none !important}
 <input class="dlimg dlauximg dlimgts share dlimgloc justsregion bodyClass" name="var" type="hidden" value="NDVI" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value=".5" />
+<input class="pickarea" name="resolution" type="hidden" value=".1" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
-                <legend>Climat et Santé</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Paludisme</a>
+                <legend>Sécurité Alimentaire</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Food_Security/Locusts/">Criquet Pèlerin</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Paludisme Epidémique</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_Locusts_Regional_term"><span property="term:label">Criquet Pèlerin</span></legend>
             </fieldset> 
             <fieldset class="navitem"> 
                 <legend>Region</legend> 
                 <select class="pageformcopy" name="sregion">
                  <option value=".WAF">l'Afrique de l'Ouest</option>
                    <option value=".EAF">l'Afrique de l'Est</option>
-                   <option value=".SAF">l'Afrique Australe</option>
+                   <option value=".SWAS">Asie du Sud</option>
                     </select>
             </fieldset>
             <fieldset class="navitem"> 
@@ -79,12 +81,11 @@ body.varreflectance .regionwithinbbox{display: none !important}
                    <option value="reflectance">reflectance</option>
                     </select>
             </fieldset>
- <fieldset class="navitem"><legend>Spatially Average Over</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
+ <fieldset class="navitem"><legend>Moyennes spatiales par</legend><span class="selectvalue"></span><select class="pageformcopy" name="resolution">
 <option value=".1">11x11 km boîte</option>
 <option value=".3">33x33 km boîte</option>
 <option value=".5">55x55 km boîte</option>
 <option value="1.">111x111 km boîte</option>
-<option value="irids:SOURCES:Features:Political:Africa:Districts:ds">district boundaries</option>
 </select></fieldset>
  </div>
 <style>
@@ -125,11 +126,11 @@ Observations for <span class="bold iridl:long_name"></span>
 <br />
 <div class="dlimgtsbox">
 <div>a)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.IRI/.MD/.maproom/.Analyses/.MODIS/eviEAF_coarse/eviWAF_coarse/eviSAF_coarse/ndviEAF_coarse/ndviWAF_coarse/ndviSAF_coarse/%7BEAFEVI/WAFEVI/SAFEVI/EAFNDVI/WAFNDVI/SAFNDVI%7Dds%5B%28.WAF%29//sregion/parameter/%28NDVI%29//var/parameter%5Dconcat/interp/T/last/365/sub/last/RANGEEDGES/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/CopyStream/T/fig:/line/:fig//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.IRI/.MD/.maproom/.Analyses/.MODIS/eviEAF_coarse/eviWAF_coarse/eviSWAS_coarse/ndviEAF_coarse/ndviWAF_coarse/ndviSWAS_coarse/%7BEAFEVI/WAFEVI/SWASEVI/EAFNDVI/WAFNDVI/SWASNDVI%7Dds%5B%28.WAF%29//sregion/parameter/%28NDVI%29//var/parameter%5Dconcat/interp/T/last/365/sub/last/RANGEEDGES/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/CopyStream/T/fig:/line/:fig//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div>
 <div class="dlimgtsbox">
 <div>b)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.IRI/.MD/.maproom/.Analyses/.MODIS/eviEAF_coarse/eviWAF_coarse/eviSAF_coarse/ndviEAF_coarse/ndviWAF_coarse/ndviSAF_coarse/%7BEAFEVI/WAFEVI/SAFEVI/EAFNDVI/WAFNDVI/SAFNDVI%7Dds%5B%28.WAF%29//sregion/parameter/%28NDVI%29//var/parameter%5Dconcat/interp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0.0/1.0/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202007-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282007%29VALUES//fullname/%282007%29def/3/index/3/index/T/%282008%29VALUES//fullname/%282008%29def/5/index/5/index/T/%282009%29VALUES//fullname/%282009%29def/7/index/7/index/T/%282010%29VALUES//fullname/%282010%29def/9/index/9/index/T/%282011%29VALUES//fullname/%282011%29def/11/index/11/index/T/%282012%29VALUES//fullname/%282012%29def/CopyStream/fig:/green/solid/scatterline/red/solid/scatterline/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/+//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef//antialias+true+psdef+.gif" />
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.IRI/.MD/.maproom/.Analyses/.MODIS/eviEAF_coarse/eviWAF_coarse/eviSWAS_coarse/ndviEAF_coarse/ndviWAF_coarse/ndviSWAS_coarse/%7BEAFEVI/WAFEVI/SWASEVI/EAFNDVI/WAFNDVI/SWASNDVI%7Dds%5B%28.WAF%29//sregion/parameter/%28NDVI%29//var/parameter%5Dconcat/interp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0.0/1.0/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202007-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282007%29VALUES//fullname/%282007%29def/3/index/3/index/T/%282008%29VALUES//fullname/%282008%29def/5/index/5/index/T/%282009%29VALUES//fullname/%282009%29def/7/index/7/index/T/%282010%29VALUES//fullname/%282010%29def/9/index/9/index/T/%282011%29VALUES//fullname/%282011%29def/11/index/11/index/T/%282012%29VALUES//fullname/%282012%29def/CopyStream/fig:/green/solid/scatterline/red/solid/scatterline/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/+//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef//antialias+true+psdef+.gif" />
 </div>
 <p>
 a) Index de Végétation Normalisé (NDVI) ou Index de Végétation Amélioré (EVI) par 16 jours pour la région sélectionnée, durant les 12 derniers mois.
@@ -143,7 +144,7 @@ b) Identique à (a) mais pour l'année calendaire en cours (ligne grasse noire),
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28.reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange/.auxfig+//T/3567.0/plotvalue/Y/-9.5446024E-04/39.99889/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
+ <h2 align="center" property="term:title">Analyses du MODIS</h2>
   <p align="left" property="term:description">Une carte interactive de l'Index de Végétation Normalisé (NDVI), l'Index de Végétation Amélioré (EVI), ou Reflectance pour l'Afrique de l'Ouest, l'Afrique de l'Est, et l'Afrique Australe.</p>
 <p> Des séries temporelles du NDVI sont générées à partir de paramètres sélectionnés par l'utilisateur.
 </p><p>Vegetation estimation is useful for the prediction of possible outbreaks of Malaria due to the correlation between vegetation and biological growth. 
@@ -167,12 +168,12 @@ The NDVI and EVI are useful, but are subject to intrinsic commission errors whic
 <h2  align="center">Dataset Documentation</h2>
 <h4>Vegatation Estimates</h4>
 <dl class="datasetdocumentation">
-<dt>Data</dt>
-<dd>16 day estimates on a 250m lat/lon grid</dd>
-<dt>Data Source</dt><dd> United States Geological Survey, Land Processes Distributed Active Archive Center, 
+<dt>Données</dt>
+<dd>Indice de Végétation Normalisé à 250m de résolution spatiale</dd>
+<dt>Données Source</dt><dd> United States Geological Survey, Land Processes Distributed Active Archive Center, 
 Moderate Resolution Imaging Spectroradiometer 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.dataset_documentation.html">USGS LandDAAC MODIS</a>)</dd>
-<b>Note</b>:There is typically a 12- to 16-day delay between the end of the observation period for the latest data and the date when those data are received and displayed on this page.
+<b>N. B. </b>:Typiquement, il y a 12 à 16 jours de décalage entre la fin de la dernière période d'observation et la date à laquelle ces données sont reçues et publiées sur cette page.
 </dl>
 </div>
 <div class="ui-tabs-panel-hidden">
@@ -187,10 +188,6 @@ Moderate Resolution Imaging Spectroradiometer
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
 </div>
-</div>
-<div class="optionsBar">
-            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
-</div>
 <div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Instructions</h2>
 <p>
@@ -204,6 +201,7 @@ To aid in the risk assessment of malaria outbreak potential, the MODIS interface
  <p> Time series b: The 16 day estimates of NDVI and EVI for the current and five most recent years are plotted for comparison. The thick black line is the same series shown in a. 
   </p>
 
+</div>
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
