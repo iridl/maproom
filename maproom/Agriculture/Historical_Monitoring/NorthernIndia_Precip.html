@@ -161,14 +161,14 @@ display: none;
 
             <fieldset class="navitem"><legend>Season</legend><span class="selectvalue"></span><select class="pageformcopy" name="seasonStart"><option value="">Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/> to  <span class="selectvalue"></span><select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option value="">Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="
 31" size="2" maxlength="2"/></fieldset>
-</br>
+<br />
             <fieldset class="navitem"><legend>Mask interpolated values</legend><select class="pageformcopy" name="obsOnly"><option value="off">off</option><option value="on">on</option></select></fieldset>
 
             <fieldset class="navitem"><legend>Seasonal Data Coverage</legend>Minimum fraction of non-missing daily values:<input class="pageformcopy" name="minFrac" type="text" value="0.5" size="4" maxlength="4"/></fieldset>
             <fieldset class="navitem"><legend>Wet/Dry Day definition</legend>Rainfall amount above/below<input class="pageformcopy" name="wetThreshold" type="text" value="1." size="5" maxlength="5"/>mm/day</fieldset>
 
             <fieldset class="navitem"><legend>Wet/Dry Spell definition</legend><input class="pageformcopy" name="spellThreshold" type="text" value="5" size="2" maxlength="2"/>continuous wet/dry days</fieldset>
-</br>
+<br />
             <fieldset class="navitem"><legend>Seasonal daily statistics</legend><span class="selectvalue"></span><select class="pageformcopy" name="seasonalStat"><option value="TotRain">Total Rainfall</option><option value="NumWD">Number of Wet Days</option><option value="RainInt">Rainfall Intensity</option><option value="NumDS">Number of Dry Spells</option><option value="NumWS">Number of Wet Spells</option><option value="PerDA">Percentage of Data Available</option></select></fieldset>
 
             <fieldset class="navitem" id="yearlyStat"><legend>Yearly seasonal statistics</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Mean</option><option value="StdDev">Standard deviation</option><option value="PoE">Probability of exceeding</option></select>
@@ -222,25 +222,25 @@ The Maproom explores historical daily precipitation by calculating simple season
   <p align="left">
 <b>Years and Season</b>:
 Specify the range of years over which to perform the analysis and choose the start and end dates of the season , over which the diagnostics are to be performed.
-<br>
+<br />
 <b>Mask and Seasonal Data Coverage</b>:
 The APHRODITE dataset includes a record of the number of station data observations present for each gridbox on each day of the dataset. The maproom allows this information to be used in two ways: (1) gridbox-days without at least one observation can be masked prior to any calculations (masking so called interpolated values); (2) a minimum fraction of non-masked days per season can be required in order for the seasonal diagnostic to be defined at that gridbox &mdash; if this minimum threshold is not met, then the seasonal diagnostic is assigned a missing value at that gridbox, for that season and year.
-<br>
+<br />
 <b>Wet/Dry Day/Spell Definitions</b>:
 These define the amount in millimeters (non inclusive) above which a day is considered to be a wet day (as opposed to dry), and the minimum number (inclusive) of consecutive wet (dry) days to define a wet (dry) spell.
-<br><br><b>Seasonal daily statistcis</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
-<br><b>Total Rainfall</b>: total cumulative precipitation (in mm) falling over the season.
-<br><b>Number of Wet Days</b>: the number of wet days (as defined above) during the season.
-<br><b>Rainfall Intensity</b>:
-the average daily precipitation over the season considering only wet days.<br>
+<br /><br /><b>Seasonal daily statistcis</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
+<br /><b>Total Rainfall</b>: total cumulative precipitation (in mm) falling over the season.
+<br /><b>Number of Wet Days</b>: the number of wet days (as defined above) during the season.
+<br /><b>Rainfall Intensity</b>:
+the average daily precipitation over the season considering only wet days.<br />
 <b>Number of Wet (Dry) Spells</b>:
 the number of wet (dry) spells during the season according to the definitions in the Options section. For example, if a wet spell is defined as 5 contiguous wet days, 10 contiguous wet days are counted as 1 wet spell. Note that a spell, according to the definitions above, that is overlapping the start or end of the season will be counted only if the part of the spell that falls within the season reaches the minimal length of consecutive days.
-<br>
+<br />
 <b>Percentage of Data Available</b>: the percentage of days with non missing values within the season.
-<br><br>
+<br /><br />
 <b>Yearly seasonal statistics</b>: a choice of yearly statistics over the chosen season of the selected range of years to produce the map among: the mean, the standard deviation and the probability of exceeding a user specified threshold.
-<br>
-<br><b>Spatial Resolution</b>:
+<br />
+<br /><b>Spatial Resolution</b>:
 The analysis can performed and map at each grid point for both 0.25˚ and 0.50˚ resolution APHRODITE products. Additionally it is possible to average the results of the analysis over the 0.25˚ grid points falling within administrative boundaries for the time series graph.
 </p>
 </div>
