@@ -13,7 +13,7 @@
 <title>IRI Map Room</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
 <link rel="canonical" href="index.html" />
-<meta property="maproom:Sort_Id" content="a03" />
+<meta property="maproom:Sort_Id" content="a06" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy"
 href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
@@ -25,6 +25,7 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%2
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+<input class="carryup titleLink itemImage" name="bbox" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
