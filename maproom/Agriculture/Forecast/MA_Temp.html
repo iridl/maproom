@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>South Asia CPT Temperature Forecast</title>
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="canonical" href="MA_Temp.html" />
+<meta property="maproom:Entry_Id" content="Agriculture_Forecast_MA_Temperature" />
+<meta property="maproom:Sort_Id" content="" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Temperature"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast"/>
+<link rel="term:icon" href="/plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
+<style>
+.dlimage2 {
+        width: 24%;
+        float: right;
+}
+.dlimage3 {
+        width: 99%;
+}
+.dlimgtsbox {
+width: 49%;
+display: inline-block
+ }
+.fieldTemperature #PoEV {
+display: none;
+}
+.fieldAnomaly #PoEV {
+display: none;
+}
+.field #PoEV {
+display: none;
+}
+.varPercentile #physThresh {
+display: none;
+}
+.var #percThresh {
+display: none;
+}
+.dlcontrol.L {display: none !important;}
+</style>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
+<input class="dlimg dlauximg dlimg2 share dlimgloc dlimglocclick" name="bbox" type="hidden" />
+<input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
+<input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
+<input class="unused" name="plotaxislength" type="hidden" value="432" />
+<input class="dlimg dlauximg dlimg2 dlimgts share starttime startleadtime" name="S" type="hidden" />
+<input class="dlimg dlauximg dlimg2 dlimgts share startleadtime" name="L" type="hidden" value="2.5" />
+<input class="pickarea" name="resolution" type="hidden" value=".5" />
+<input class="carry dlimg dlauximg dlimg2 share" name="tempvar" type="hidden" value="average"/>
+<input class="carry dlimg dlauximg share threshold poe bodyClass" name="field" type="hidden" />
+<input class="carry dlimg dlauximg share threshold poe bodyClass" name="var" type="hidden" value="Temperature" />
+<input class="carry dlimg dlauximg share threshold" name="percentile" type="hidden" value="50." />
+<input class="dlimg dlauximg share threshold" name="threshold2" type="hidden" />
+<input class="dlimgts share" name="poelimit" type="hidden" value="20" />
+<input class="dlimgts share" name="poelimit2" type="hidden" value="-20" />
+</form>
+
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Maproom</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+            </fieldset>
+            <fieldset class="navitem" id="chooseSection">
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"><span property="term:label">Forecast</span></legend>
+            </fieldset>
+<br />
+
+           <fieldset class="navitem valid">
+          <legend>Target Time</legend>
+            <link class="starttime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.CPT/.Monsoon_Asia/.temperature/.average/.target_date/S/last/cvsunits//S/parameter/VALUE/L//units/unitless/def/pop/info.json" />
+          <select class="pageformcopy" name="L">
+            <optgroup class="template" label="Target Time">
+            <option class="iridl:values L@value target_date"></option>
+              </optgroup>
+            </select>
+  </fieldset>
+
+   <fieldset class="navitem">          <legend>Temperature</legend><select class="pageformcopy" name="tempvar"><option value="">average</option><option value="maximum">maximum</option><option value="minimum">minimum</option></select>
+  </fieldset>
+   <fieldset class="navitem">
+          <legend>Field</legend>
+<select class="pageformcopy" name="field"><option value="">Temperature</option><option value="Anomaly">Anomaly</option><option value="PoE">Probability of exceeding</option><option value="PonE">Probability of non-exceeding</option></select>
+  </fieldset>
+
+<span id="PoEV">
+            <fieldset class="navitem"><legend>Value</legend><select class="pageformcopy" name="var"><option value="">Temperature</option><option value="Percentile">Percentile</option></select></fieldset>
+
+           <fieldset id="percThresh" class="navitem valid">
+          <legend>Threshold (%-ile)</legend>
+            <link class="threshold" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert//percentile//unitless/ordered/10/5/90/NewEvenGRID/0/add//name//threshold/def//long_name//threshold/def//fullname//threshold/def/info.json" />
+          <select class="pageformcopy" name="percentile">
+            <optgroup class="template" label="Threshold (%-ile)">
+            <option class="iridl:values percentile@value threshold"></option>
+              </optgroup>
+            </select>
+  </fieldset>
+
+           <fieldset id="physThresh" class="navitem valid">
+          <legend>Threshold (˚C)</legend>
+          <input class="pageformcopy" name="threshold2" type="text" value="20." size="4" maxlength="4"/></fieldset>
+</span>
+
+           <fieldset class="navitem valid">
+          <legend>Lower and Upper limit of probability of exceedance graph</legend>
+          <input class="pageformcopy" name="poelimit2" type="text" value="-20" size="4" maxlength="4"/>˚C to 
+          <input class="pageformcopy" name="poelimit" type="text" value="20" size="4" maxlength="4"/>˚C</fieldset>
+
+</div>
+
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-3" >Contact Us</a></li>
+    </ul>
+
+<fieldset class="dlimage">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.CPT/.Monsoon_Asia/.temperature/%28.%29%28average%29//tempvar/parameter/append/interp/Forecast/%28Temperature%29//field/parameter/%28Anomaly%29eq/%7BCrossValHind/T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/VALUE%5BT2%5Daverage/sub/temp_anomaly_colors_gcm/DATA/-6/6/RANGE%7Dif//field/get_parameter/dup/%28PoE%29eq/exch/%28PonE%29eq/or/%7B-1/mul/%28Temperature%29//var/parameter/%28Temperature%29eq/%7B%2820%29//threshold2/parameter/interp%7D%7B%2850%29//percentile/parameter/interp/100.0/div/30/1/sub/poestudnt2/InputObs//units/%28unitless%29/def/%5BT2%5D0.0/rootmeansqover/mul/InputObs//units/%28unitless%29/def/%5BT2%5Daverage/add%7Difelse/add/PredErrorVars//units/%28unitless%29/def/sqrt/div/30/1/sub/5/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//field/get_parameter/%28PonE%29eq/%7B-1/mul/1/add%7Dif//units/%28unitless%29/def//var/get_parameter/%28Temperature%29eq/%7Bcorrelationcolorscale/DATA/0/1/RANGE%7D%7B%28percentiles_colors_%29//field/get_parameter/%28PoE%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7Difelse%7Dif/target_date/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thin/black/countries_gaz/blue/verythin/rivers_gaz/lakes/plotlabel/-fig//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//plotborderbottom/40/psdef//framelabel/%28%25=%5Btarget_date%5D%20CPT%20forecast%20issued%20%25=%5BS%5D%20%29psdef//antialias/true/psdef//plotaxislength/500/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.CPT/.Monsoon_Asia/.temperature/%28.%29%28average%29//tempvar/parameter/append/interp/Forecast/%28Temperature%29//field/parameter/%28Anomaly%29eq/%7BCrossValHind/T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/VALUE%5BT2%5Daverage/sub/temp_anomaly_colors_gcm/DATA/-6/6/RANGE%7Dif//field/get_parameter/dup/%28PoE%29eq/exch/%28PonE%29eq/or/%7B-1/mul/%28Temperature%29//var/parameter/%28Temperature%29eq/%7B%2820%29//threshold2/parameter/interp%7D%7B%2850%29//percentile/parameter/interp/100.0/div/30/1/sub/poestudnt2/InputObs//units/%28unitless%29/def/%5BT2%5D0.0/rootmeansqover/mul/InputObs//units/%28unitless%29/def/%5BT2%5Daverage/add%7Difelse/add/PredErrorVars//units/%28unitless%29/def/sqrt/div/30/1/sub/5/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//field/get_parameter/%28PonE%29eq/%7B-1/mul/1/add%7Dif//units/%28unitless%29/def//var/get_parameter/%28Temperature%29eq/%7Bcorrelationcolorscale/DATA/0/1/RANGE%7D%7B%28percentiles_colors_%29//field/get_parameter/%28PoE%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7Difelse%7Dif/target_date/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thin/black/countries_gaz/blue/verythin/rivers_gaz/lakes/plotlabel/-fig//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//plotborderbottom/40/psdef//framelabel/%28%25=%5Btarget_date%5D%20CPT%20forecast%20issued%20%25=%5BS%5D%20%29psdef//antialias/true/psdef//plotaxislength/500/psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/%28bb:%5B70%2C20%2C100%2C36%5D%29//bbox/parameter/geoobject/.iridl:geoId/%28:%29search/pop/pop/pop/%28:%29rsearch/pop/pop/pop/3/%7B%28:%29search/pop/nip/exch%7Drepeat/home/.remic/.CPT/.Monsoon_Asia/.temperature/%28.%29%28average%29//tempvar/parameter/append/interp/X/6/-1/roll/interp/5/-1/roll/interp/RANGEEDGES/Y/4/-2/roll/2/%7Binterp/exch%7Drepeat/RANGEEDGES/Forecast/%28Temperature%29//field/parameter/%28Anomaly%29eq/%7BCrossValHind/T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/VALUE%5BT2%5Daverage/sub/temp_anomaly_colors_gcm/DATA/-6/6/RANGE%7Dif//field/get_parameter/dup/%28PoE%29eq/exch/%28PonE%29eq/or/%7B-1/mul/%28Temperature%29//var/parameter/%28Temperature%29eq/%7B%2820%29//threshold2/parameter/interp%7D%7B%2850%29//percentile/parameter/interp/100.0/div/30/1/sub/poestudnt2/InputObs//units/%28unitless%29/def/%5BT2%5D0.0/rootmeansqover/mul/InputObs//units/%28unitless%29/def%5BT2%5Daverage/add%7Difelse/add/PredErrorVars//units/%28unitless%29/def/sqrt/div/30/1/sub/5/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//field/get_parameter/%28PonE%29eq/%7B-1/mul/1/add%7Dif//units/%28unitless%29/def//var/get_parameter/%28Temperature%29eq/%7Bcorrelationcolorscale/DATA/0/1/RANGE%7D%7B%28percentiles_colors_%29//field/get_parameter/%28PoE%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7Difelse%7Dif/target_date/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thin/black/countries_gaz/blue/verythin/rivers_gaz/lakes/plotlabel/-fig//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//plotborderbottom/40/psdef//framelabel/%28%25=%5Btarget_date%5D%20CPT%20forecast%20issued%20%25=%5BS%5D%20%29psdef//antialias/true/psdef//plotaxislength/500/psdef/.auxfig/+.gif" />
+</fieldset>
+<fieldset class="dlimage2">
+<img class="dlimg2" src="http://iridl.ldeo.columbia.edu/home/.remic/.CPT/.Monsoon_Asia/.temperature/%28.%29%28average%29//tempvar/parameter/append/interp/PearsonR/target_date/S/last/cvsunits//S/parameter/VALUE/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thin/black/countries_gaz/blue/verythin/rivers_gaz/lakes/plotlabel/-fig//antialias/true/psdef//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//framelabel/%28%25=%5Btarget_date%5D%20skill%20with%20%25=%5BL%5D%20Lead%29psdef//plotbordertop/40/psdef//plotborderright/40/psdef//plotborderleft/40/psdef//plotborderbottom/40/psdef//plotaxislength/300/psdef/+.gif" border="0" />
+<img class="dlauximg2" src="http://iridl.ldeo.columbia.edu/home/.remic/.CPT/.Monsoon_Asia/.temperature/%28.%29%28average%29//tempvar/parameter/append/interp/PearsonR/target_date/S/last/cvsunits//S/parameter/VALUE/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thin/black/countries_gaz/blue/verythin/rivers_gaz/lakes/plotlabel/-fig//antialias/true/psdef//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//framelabel/%28%25=%5Btarget_date%5D%20skill%20with%20%25=%5BL%5D%20Lead%29psdef//plotbordertop/40/psdef//plotborderright/40/psdef//plotborderleft/40/psdef//plotborderbottom/40/psdef//plotaxislength/300/psdef/.auxfig+.gif" />
+</fieldset>
+
+<fieldset class="regionwithinbbox dlimage" about="">
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:70%2C20%2C100%2C36%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:70%2C20%2C70%2C20%29dup//region/parameter/dup//bbox/get_parameter/eq/%7Bpop%7D%7Bnip%7Difelse/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/admin2_gaz/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<div class="valid" style="display: inline-block; text-align: top;">
+<a class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">
+Observations for <span class="bold iridl:long_name"></span>
+</div>
+</div>
+</fieldset>
+<br />
+<fieldset class="regionwithinbbox dlimage3" about="">
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.CPT/.Monsoon_Asia/.temperature/%28.%29%28average%29//tempvar/parameter/append/interp/InputObs/%28bb:%5B84%2C25%2C84.5%2C25.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/dup/DATA/%28-20%29//poelimit2/parameter/interp/%2820%29//poelimit/parameter/interp/2/copy/exch/sub/500.0/div/RANGESTEP%5BT/L%5Dintegrateddistrib1D/InputObs//temp/renameGRID/-1/mul/1/add//long_name/%28probability%20of%20exceedance%29def//fullname/%28obs%29def/exch/dup%5BT2%5Drmsaover/30/dup/1/sub/div/sqrt/mul/exch%5BT2%5Daverage/-1/mul/temp/add/exch/div/30/1/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//fullname/%28obs%20parameterized%29def/PredErrorVars/%28bb:%5B84%2C25%2C84.5%2C25.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/sqrt/Forecast/%28bb:%5B84%2C25%2C84.5%2C25.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/-1/mul/temp/add/exch/div/30/1/sub/5/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//fullname/%28forecast%29def/target_date/temp/fig-/medium/solid/black/line/blue/line/red/line/plotlabel/black/thin/0.1/0.1/0.9/horizontallines/-fig//plotaxislength/500/psdef//antialias/true/psdef//XOVY/2/psdef//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//plotborderbottom/40/psdef//plotborderright/40/psdef//framelabel/%28%25=%5Btarget_date%5D%20probability%20of%20exceedance%20issued%20%25=%5BS%5D%29psdef/+.gif" />
+</div>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/expert/expert/home/.remic/.CPT/.Monsoon_Asia/.temperature/%28.%29%28average%29//tempvar/parameter/append/interp/hindcast_date/T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/VALUE/L/%282.5%29//L/parameter/interp/VALUE/L/removeGRID/T/removeGRID/use_as_grid/InputObs/%28bb:%5B84%2C25%2C84.5%2C25.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average//long_name/%28temp%29def//fullname/%28obs%29def/DATA/AUTO/AUTO/RANGE/CrossValHind/%28bb:%5B84%2C25%2C84.5%2C25.5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average//long_name/%28temp%29def//fullname/%28hindcast%29def/DATA/AUTO/AUTO/RANGE/target_date/S/last/cvsunits//S/parameter/VALUE/hindcast_date/fig-/medium/solid/blue/line/red/line/plotlabel/-fig//plotaxislength/500/psdef//antialias/true/psdef//XOVY/2/psdef//plotborderbottom/40/psdef//plotborderright/40/psdef//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//framelabel/%28%25=%5Btarget_date%5D%20hindcast%20%28C%29%20with%20%25=%5BL%5D%20Lead%29psdef/+.gif" />
+</div>
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+ <h2 align="center" property="term:title">South Asia CPT Temperature Forecast</h2>
+  <p align="left" property="term:description">
+Seasonal deterministic temperature forecasts and a series of analysis to apply to a map of the region or to selected grid box</p>
+</div>
+ <div id="tabs-2" class="ui-tabs-panel" about="">
+ <h2 align="center">Dataset Documentation</h2>
+  <p align="left">
+<b>Data</b>: Output from CPT for 12 3-month running seasons for 1979-2008 with UEA CRU TS3p1 monthly dataset, CPT v10 <a href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.CPT/.Monsoon_Asia/.temperature/">here</a>.
+</p>
+</div>
+<div id="tabs-3"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
+
