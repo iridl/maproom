@@ -42,7 +42,6 @@ display: inline-block
 <body xml:lang="es">
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
 <input class="carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg dlauximg info share" name="var" type="hidden" />
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
@@ -80,8 +79,9 @@ margin: 0px;
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Descripción</a></li>
       <li><a href="#tabs-2" >Documentación de la Base de Datos</a></li>
-      <li><a href="#tabs-3" >Contáctenos</a></li>
-      <li><a href="#tabs-4" >Instrucciones</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.VCAP/.eight-day/.v200906/.vcap/">Base de Datos</a></li>
+      <li><a href="#tabs-4" >Contáctenos</a></li>
+      <li><a href="#tabs-5" >Instrucciones</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/-30/60/RANGE/Y/-60/40/RANGE/%28bb:0:0:5:5:bb%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+//plotborder+0+psdef//plotaxislength+120+psdef+.gif" />
@@ -91,7 +91,7 @@ margin: 0px;
 <img class="dlimgts"  style="width: 100%" src="http://iridl.ldeo.columbia.edu/home/.jdcorral/.Analyses/.VCAP/.vcap_coarse/%28bb:11:12:12:13:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/last/365/sub/last/RANGE//long_name/%28VCAP%29def/DATA/0.0/20.0/RANGE/T/fig-/line/-fig//VCAP/0.0/20.0/plotrange//plotborder/62/psdef//XOVY/null/psdef//plotaxislength/250/psdef/+.gif" />
 </div><div class="dlimgtsbox">
 <div>Comparaciones Múltiples Interanuales</div>
-<img class="dlimgts"  style="width: 100%" src="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.Analyses/.VCAP/.vcap_coarse/%28bb:11:12:12:13:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average//long_name/%28VCAP%29def/DATA/0.0/20.0/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//units/%28days%20since%202007-01-01%29def//modulus/365.0/def/exch/1/index/1/index/T/%282007%29VALUES//fullname/%282007%29def/3/index/3/index/T/%282008%29VALUES//fullname/%282008%29def/5/index/5/index/T/%282009%29VALUES//fullname/%282009%29def/7/index/7/index/T/%282010%29VALUES//fullname/%282010%29def/9/index/9/index/T/%282011%29VALUES//fullname/%282011%29def/11/index/11/index/T/%282012%29VALUES//fullname/%282012%29def/fig:/green/solid/scatterline/red/solid/scatterline/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig//doy/4.0/361.0/plotrange//VCAP/0.0/20.0/plotrange//doy/4.0/361.0/plotrange//VCAP/0.0/20.0/plotrange//plotborder/62/psdef//XOVY/null/psdef//plotaxislength/250/psdef/+.gif" />
+<img class="dlimgts"  style="width: 100%" src="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.Analyses/.VCAP/.vcap_coarse/%28bb:11:12:12:13:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average//long_name/%28VCAP%29def/DATA/0.0/20.0/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//units/%28days%20since%202007-01-01%29def//modulus/365.0/def/exch/1/index/1/index/T/%282007%29VALUES//fullname/%282007%29def/3/index/3/index/T/%282008%29VALUES//fullname/%282008%29def/5/index/5/index/T/%282009%29VALUES//fullname/%282009%29def/7/index/7/index/T/%282010%29VALUES//fullname/%282010%29def/9/index/9/index/T/%282011%29VALUES//fullname/%282011%29def/11/index/11/index/T/%282012%29VALUES/interp//fullname/%282012%29def/fig:/green/solid/scatterline/red/solid/scatterline/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig//doy/4.0/361.0/plotrange//VCAP/0.0/20.0/plotrange//doy/4.0/361.0/plotrange//VCAP/0.0/20.0/plotrange//plotborder/62/psdef//XOVY/null/psdef//plotaxislength/250/psdef/+.gif" />
 </div>
 </fieldset>
 
@@ -124,18 +124,22 @@ Ceccato, P. , Vancutsem, C., Klaver, R., Rowland, J., Connor, S.J. <a href="http
 <b>Data</b> 8 Días del Modelo de Capacidad Vectorial -- Malaria
 <br /><b>Fuente de Datos</b> USGS/Famine Early Warning System (FEWS)
 </p>
-
-
 *Información adicional de datos decadales y diarios de FEWS esta disponible en
 <a href="http://earlywarning.usgs.gov/fews/africa/index.php">FEWS NET Africa Data Portal</a>.
 </div>
-<div id="tabs-3"  class="ui-tabs-panel">
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Base de Datos</h2>
+<p>
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.VCAP/.eight-day/.v200906/.vcap/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Servicios de Asistencia</h2>
 <p>
 Contacte <a href="mailto:help@iri.columbia.edu?subject=VCAP:  African Sector">help@iri.columbia.edu</a> con cualquier pregunta técnica o problema con este Cuarto de Mapas.
  </p>
 </div>
-<div id="tabs-4"  class="ui-tabs-panel">
+<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Instrucciones</h2>
 <p>
 Para ayudar en la evaluación de riesgo potencial de brote de malaria, la interfaz VCAP proporciona a los usuarios la posibilidad de realizar gráficos. Al seleccionar una zona donde predomina la VCAP, la interfaz proporcionará una perspectiva contextual de la VCAP reciente mostrando una serie de tiempo VCAP de 12 meses y ofreciendo comparaciones múltiples interanuales.

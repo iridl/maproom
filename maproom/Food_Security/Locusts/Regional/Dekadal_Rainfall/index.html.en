@@ -47,10 +47,8 @@ display: inline-block
 <body xml:lang="en">
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
-<input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="carry dlimg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
-<input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
-<input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
+<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="dlimg share" name="T" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="600" />
 </form>
 <div class="controlBar">
