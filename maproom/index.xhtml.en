@@ -15,6 +15,9 @@
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link rel="canonical" href="index.html" />
+<link rel="shortcut icon" href="../uicore/icons/iri32.png" />
+<link rel="apple-touch-icon" href="../uicore/icons/iriwh.png" />
+<link rel="icon" href="../uicore/icons/iriwh.svg" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <script type="text/javascript" src="../uicore/uicore.js"></script>
