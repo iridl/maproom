@@ -47,6 +47,7 @@ Climate and Agriculture</p>
 <div class="rightcol tabbedentries" about="/maproom/Agriculture/" >
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_ENSO_Prob_term" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term" />
 
 </div>
 
