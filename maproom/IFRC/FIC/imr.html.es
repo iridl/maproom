@@ -44,7 +44,7 @@
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
 <div id="ifrcdiv">
-<img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
+</div>
       <li><a href="#tabs-1" >Descripci&#243;n</a></li>
       <li><a href="#tabs-2" >Instructi&#243;nes</a></li>
       <li><a href="#tabs-3" >Dataset de Documentaci&#243;n</a></li>
