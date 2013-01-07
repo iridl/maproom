@@ -36,7 +36,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/634.5/plotvalue//antialias/true/psdef//plotaxislength/200/psdef//plotborder/0/psdef/+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotaxislength/200/psdef//plotborder/0/psdef/+.gif" />
 <style>
 .dlimgtsbox { 
 width: 49%;
@@ -47,7 +47,6 @@ display: inline-block
 <body xml:lang="en">
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
-<input class="carry dlimg dlauximg info share" name="var" type="hidden" />
 <input class="carry dlimg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
 <input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
@@ -129,9 +128,9 @@ d) Cumulative dekadal precipitation estimates (solid black line) and the cumulat
 <b>*</b>The dekadal precipitation estimates have been aggregated from the daily data. Every month has three dekads, such that the first two dekads have 10 days (i.e., 1-10, 11-20), and the third is comprised of the remaining days of the month. Therefore, the length of the third dekad of each month is not consistent and varies from 8-11 days, depending on the length of the month.</p>
 </fieldset>
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-+colors+grey+verythin+states_gaz+black+thin+countries_gaz+-fig+//T/634.5/plotvalue+//antialias+true+psdef//plotaxislength+600+psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-+colors+grey+verythin+states_gaz+black+thin+countries_gaz+-fig+//T/634.5/plotvalue+//antialias+true+psdef//plotaxislength+600+psdef/+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-+colorscale2+-fig//nplotstream+1+def+//T/634.5/plotvalue+//antialias+true+psdef//plotaxislength+600+psdef+.gif" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-+colors+grey+verythin+states_gaz+black+thin+countries_gaz+-fig+//T/last/plotvalue+//antialias+true+psdef//plotaxislength+600+psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-+colors+grey+verythin+states_gaz+black+thin+countries_gaz+-fig+//T/last/plotvalue+//antialias+true+psdef//plotaxislength+600+psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-+colorscale2+-fig//nplotstream+1+def+//T/last/plotvalue+//antialias+true+psdef//plotaxislength+600+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Monthly Rainfall Estimates</h2>

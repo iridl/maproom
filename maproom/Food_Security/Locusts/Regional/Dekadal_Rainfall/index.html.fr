@@ -36,7 +36,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/black/thin/countries_gaz/-fig//T/3654.5/plotvalue//antialias/true/psdef//plotaxislength/200/psdef//plotborder/0/psdef/+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotaxislength/200/psdef//plotborder/0/psdef/+.gif" />
 <style>
 .dlimgtsbox { 
 width: 49%;
@@ -47,10 +47,8 @@ display: inline-block
 <body xml:lang="fr">
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
-<input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="carry dlimg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
-<input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
-<input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
+<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="dlimg share" name="T" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="600" />
 </form>
 <div class="controlBar">
@@ -89,9 +87,9 @@ margin: 0px;
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/3656.5/plotvalue//antialias/true/psdef//plotaxislength/600/psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/3656.5/plotvalue//antialias/true/psdef//plotaxislength/600/psdef/+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/3656.5/plotvalue//antialias/true/psdef//plotaxislength/600/psdef/.auxfig+//T/0.5/plotvalue+//plotaxislength+600+psdef//plotborder+72+psdef+.gif" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotaxislength/600/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotaxislength/600/psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotaxislength/600/psdef/.auxfig+//T/0.5/plotvalue+//plotaxislength+600+psdef//plotborder+72+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Précipitations Estimées Décadaires</h2>
