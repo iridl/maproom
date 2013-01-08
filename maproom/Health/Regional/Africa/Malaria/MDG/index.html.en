@@ -62,7 +62,7 @@
 
 <fieldset class="navitem">
 	  <legend>Country</legend>
-	  <link rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/.countryquery/.cntry_name/info.json"></a>
+	  <a rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/.countryquery/.cntry_name/info.json"></a>
 	  <select class="pageformcopy" name="country">
 	  <optgroup class="template" label="Country">
 	  <option class="iridl:values country"></option>
