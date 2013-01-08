@@ -39,6 +39,9 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+<style>
+.dlcontrol.country {display: none !important;}
+</style>
 </head>
 <body xml:lang="es">
 <form name="pageform" id="pageform">
@@ -56,6 +59,15 @@
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Malaria Epidémica</span></legend>
             </fieldset>
+<fieldset class="navitem">
+	  <legend>Región</legend>
+	  <link rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/.countryquery/.cntry_name/info.json"></a>
+	  <select class="pageformcopy" name="country">
+	  <optgroup class="template" label="Country">
+	  <option class="iridl:values country"></option>
+	  </optgroup>
+	  </select>
+	  </fieldset>
             <fieldset class="navitem">
                 <legend>Años de Referencia</legend><input class="pageformcopy" name="baseyear" type="text" value="1979" size="9" maxlength="" />
             </fieldset>
