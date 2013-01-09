@@ -106,14 +106,14 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <br />
 <div class="dlimgtsbox">
 <div>a)</div>
-<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/home/.jdcorral/Analyses/TMR/%28.WAF%29//sregion/parameter/interp/T/second/last/RANGEEDGES/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/CopyStream/T/fig:/line/:fig//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/450/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/T/second/last/RANGEEDGES/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/CopyStream/T/fig:/line/:fig//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/450/psdef//XOVY/null/psdef/+.gif" />
 </div>
 <!-- <div class="dlimgtsbox">
 <div>b)</div>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.Analyses/.TMR/%28.WAF%29//sregion/parameter/interp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0.0/1.0/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202007-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282007%29VALUES//fullname/%282007%29def/3/index/3/index/T/%282008%29VALUES//fullname/%282008%29def/5/index/5/index/T/%282009%29VALUES//fullname/%282009%29def/7/index/7/index/T/%282010%29VALUES//fullname/%282010%29def/9/index/9/index/T/%282011%29VALUES//fullname/%282011%29def/11/index/11/index/T/%282012%29VALUES//fullname/%282012%29def/CopyStream/fig:/green/solid/scatterline/red/solid/scatterline/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/+//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef//antialias+true+psdef+.gif" />
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/0.0/1.0/RANGE/T/exch/T/dup/dup/yearlyedgesgrid/1/index/boundinggrids/pop/.gridvalues/constantdata/sub/1/add/toi4//name//doy/def//long_name/%28Day%20of%20the%20Year%29def//units/%28days%20since%202007-01-01%29def//modulus/365./def/exch/1/index/1/index/T/%282007%29VALUES//fullname/%282007%29def/3/index/3/index/T/%282008%29VALUES//fullname/%282008%29def/5/index/5/index/T/%282009%29VALUES//fullname/%282009%29def/7/index/7/index/T/%282010%29VALUES//fullname/%282010%29def/9/index/9/index/T/%282011%29VALUES//fullname/%282011%29def/11/index/11/index/T/%282012%29VALUES//fullname/%282012%29def/CopyStream/fig:/green/solid/scatterline/red/solid/scatterline/gray/solid/scatterline/magenta/solid/scatterline/blue/scatterline/black/medium/solid/scatterline/:fig/+//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange//doy/9./359./plotrange//var/get_parameter/-0.2/1./plotrange+//plotborder+62+psdef//XOVY+null+psdef//plotaxislength+250+psdef//antialias+true+psdef+.gif" />
 </div> -->
 <p>
-a) 8 day average reconstructed maximum air temperature for the selected region since 2002.  
+a) 8 day average inferred maximum air temperature for the selected region since 2002.  
 </p> <!-- <p>
 b) Same as (a) for the current year (thick black line), as indicated by the axis labels. Estimates from previous years are also shown
 </p> -->
@@ -137,8 +137,8 @@ b) Same as (a) for the current year (thick black line), as indicated by the axis
 <h2  align="center">Dataset Documentation</h2>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
-<dd>Maximum Air Temperature Reconstructed</dd>
-<dt>Data Source</dt><dd>the International Research Institute for Climate and Society <a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/">reconstructed max temperature</a>
+<dd>Maximum Air Temperature Inferred</dd>
+<dt>Data Source</dt><dd>the International Research Institute for Climate and Society <a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/">inferred max temperature</a>
 </dd><br />
 <dt>Data</dt>
 <dd>Minimum Air Temperature</dd>
