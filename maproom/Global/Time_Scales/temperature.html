@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.1"
+ xml:lang="en"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta property="maproom:Sort_Id" content="d01" />
+<title>Time Scales</title>
+<link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+<link rel="canonical" href="temperature.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/><link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_TimeScales_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#temperature" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#decadal" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interannual" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#change" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#variance" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#standard_deviation" />
+<link rel="term:icon" href="
+//plotborder+0+psdef//plotaxislength+200+psdef+.gif" />
+<script type="text/javascript" src="../../uicore/uicore.js"></script>
+<style>
+.dlimage, .dlimage.wide{
+float: none;
+width: 46%;
+display: inline;
+}
+.dlimgts {
+width: 33%;
+}
+@media only all and (max-width: 800px) {
+.dlimage, .dlimage.wide {
+width: 95%;
+}
+}
+.climatechange {
+color: red;
+}
+.decadal {
+color: green;
+}
+.residual {
+color: blue;
+}
+.covariance {
+color: purple;
+}
+</style>
+</head>
+<body>
+<form name="pageform" id="pageform">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
+<input class="carry dlimgts dlimgloc share" name="region" type="hidden" />
+<input class="carry dlimg share" name="timeScale" type="hidden" value="Decadal"/>
+<input class="carry dlimg share" name="timeAnal" type="hidden" />
+<input class="carry dlimg dlimgts share" name="seasonStart" type="hidden"  />
+<input class="carry dlimg dlimgts share" name="seasonEnd" type="hidden"  />
+<input class="notused" name="plotaxislength" type="hidden" />
+<input class="pickarea" name="resolution" type="hidden" value="0.5" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Maproom</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Global/">Climate Monitoring</a>
+            </fieldset>
+            <fieldset class="navitem" id="chooseSection">
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_TimeScales_term"><span property="term:label">Time Scales</span></legend>
+            </fieldset>
+
+            <fieldset class="navitem" id="chooseRegion"> 
+                <legend>Region</legend> 
+            </fieldset>
+            <fieldset class="navitem"><legend>Time Scale</legend><span class="selectvalue"></span><select class="pageformcopy" name="timeScale"><option>Trend</option><option>Decadal</option><option>Inter-annual</option></select></fieldset>
+            <fieldset class="navitem"><legend>Variability</legend><span class="selectvalue"></span><select class="pageformcopy" name="timeAnal"><option>Percent of Variance Explained
+            <fieldset class="navitem"><legend>Season</legend><span class="selectvalue"></span><select class="pageformcopy" name="seasonStart"><option value="">Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select> to <span class="selectvalue"></span><select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option value="">Dec</option></select></fieldset>
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+<div id="ifrcdiv">
+<img id="ifrcicon" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-5" >More Information</a></li>
+      <li><a href="#tabs-6" >Detailed Instructions</a></li>
+      <li><a href="#tabs-7" >Technical Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+<span id="content">
+<fieldset class="dlimage" about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.benno/.UEA/.CRU/.TS3p1/.monthly/.r2p5%5B%28Jan%29//seasonStart/parameter/%28-%29%28Dec%29//seasonEnd/parameter/%28%201901-2009%29%5Dconcat//season/parameter/a:/%28.pre%29//var/parameter/interp/yearly-anomalies/T//season/get_parameter/seasonalAverage/:a:/.stn/%28.pre%29//var/parameter/interp/0/maskle/T//season/get_parameter/0.66/seasonalAverage/0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage/0.5/masklt%5BT%5D0.5/average/0/mul/add/%28.pre%29//var/parameter/%28.pre%29eq/%7B:a:/.pre/T/%28Jan-Dec%201901-2009%29//season/parameter/seasonalAverage/T/differential_mul%5BT%5Daverage/30/masklt/0/mul/add%7Dif/:a/X/-20/180/-20/RANGEEDGES/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/:butt_filter/.butt%5BX/Y%5DREORDER/2/index/2/index/sub/1/index/sub/4/%7B4/-1/roll%5BT%5Drmsaover/%28units%29%28mm/month%29def/dup/mul%7Drepeat/2/copy/min/3/-2/roll/max/2/index/1/index/sub/0/flaggt/4.5/mul/5/-4/roll/2/index/sub/0/flagge/2/index/2/index/sub/0/flaggt/mul/3.5/mul/4/-3/roll/sub/0/maskgt/exch/div/-0.1/flagle/1.5/add/0/replaceNaN/add/add/0/maskle/%7BLow/2/Medium/3/High/4/%28Extremely%20High%29%7D/%28DoI%29classify%5BDoI%5Ddominant_class/%28long_name%29%28Importance%20of%20century-long%20shifts%29def/startcolormap/white/white/90/190/95/RGB/yellow/orange/red/white/endcolormap//max-age/6048000/def/X/Y/fig-/colors/countries_gaz/-fig/%28plotaxislength%29590/psdef/%28antialias%29true/psdef//plotborder/72/psdef//plotaxislength/590/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//framelabel/%28.pre%29//var/parameter/%28.pre%29eq/%28Historical%20Precipitation%20%29%28Historical%20Temperature%20%29ifelse//season/get_parameter/append/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.benno/.UEA/.CRU/.TS3p1/.monthly/.r2p5%5B%28Jan%29//seasonStart/parameter/%28-%29%28Dec%29//seasonEnd/parameter/%28%201901-2009%29%5Dconcat//season/parameter/a:/%28.pre%29//var/parameter/interp/yearly-anomalies/T//season/get_parameter/seasonalAverage/:a:/.stn/%28.pre%29//var/parameter/interp/0/maskle/T//season/get_parameter/0.66/seasonalAverage/0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage/0.5/masklt%5BT%5D0.5/average/0/mul/add/%28.pre%29//var/parameter/%28.pre%29eq/%7B:a:/.pre/T/%28Jan-Dec%201901-2009%29//season/parameter/seasonalAverage/T/differential_mul%5BT%5Daverage/30/masklt/0/mul/add%7Dif/:a/X/-20/180/-20/RANGEEDGES/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/:butt_filter/.butt%5BX/Y%5DREORDER/2/index/2/index/sub/1/index/sub/4/%7B4/-1/roll%5BT%5Drmsaover/%28units%29%28mm/month%29def/dup/mul%7Drepeat/2/copy/min/3/-2/roll/max/2/index/1/index/sub/0/flaggt/4.5/mul/5/-4/roll/2/index/sub/0/flagge/2/index/2/index/sub/0/flaggt/mul/3.5/mul/4/-3/roll/sub/0/maskgt/exch/div/-0.1/flagle/1.5/add/0/replaceNaN/add/add/0/maskle/%7BLow/2/Medium/3/High/4/%28Extremely%20High%29%7D/%28DoI%29classify%5BDoI%5Ddominant_class/%28long_name%29%28Importance%20of%20century-long%20shifts%29def/startcolormap/white/white/90/190/95/RGB/yellow/orange/red/white/endcolormap//max-age/6048000/def/X/Y/fig-/colors/countries_gaz/-fig/%28plotaxislength%29590/psdef/%28antialias%29true/psdef//plotborder/72/psdef//plotaxislength/590/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//framelabel/%28.pre%29//var/parameter/%28.pre%29eq/%28Historical%20Precipitation%20%29%28Historical%20Temperature%20%29ifelse//season/get_parameter/append/psdef/+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.benno/.UEA/.CRU/.TS3p1/.monthly/.r2p5%5B%28Jan%29//seasonStart/parameter/%28-%29%28Dec%29//seasonEnd/parameter/%28%201901-2009%29%5Dconcat//season/parameter/a:/%28.pre%29//var/parameter/interp/yearly-anomalies/T//season/get_parameter/seasonalAverage/:a:/.stn/%28.pre%29//var/parameter/interp/0/maskle/T//season/get_parameter/0.66/seasonalAverage/0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage/0.5/masklt%5BT%5D0.5/average/0/mul/add/%28.pre%29//var/parameter/%28.pre%29eq/%7B:a:/.pre/T/%28Jan-Dec%201901-2009%29//season/parameter/seasonalAverage/T/differential_mul%5BT%5Daverage/30/masklt/0/mul/add%7Dif/:a/X/-20/180/-20/RANGEEDGES/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/:butt_filter/.butt%5BX/Y%5DREORDER/2/index/2/index/sub/1/index/sub/4/%7B4/-1/roll%5BT%5Drmsaover/%28units%29%28mm/month%29def/dup/mul%7Drepeat/2/copy/min/3/-2/roll/max/2/index/1/index/sub/0/flaggt/4.5/mul/5/-4/roll/2/index/sub/0/flagge/2/index/2/index/sub/0/flaggt/mul/3.5/mul/4/-3/roll/sub/0/maskgt/exch/div/-0.1/flagle/1.5/add/0/replaceNaN/add/add/0/maskle/%7BLow/2/Medium/3/High/4/%28Extremely%20High%29%7D/%28DoI%29classify%5BDoI%5Ddominant_class/%28long_name%29%28Importance%20of%20century-long%20shifts%29def/startcolormap/white/white/90/190/95/RGB/yellow/orange/red/white/endcolormap//max-age/6048000/def/X/Y/fig-/colors/countries_gaz/-fig/%28plotaxislength%29590/psdef/%28antialias%29true/psdef//plotborder/72/psdef//plotaxislength/590/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//framelabel/%28.pre%29//var/parameter/%28.pre%29eq/%28Historical%20Precipitation%20%29%28Historical%20Temperature%20%29ifelse//season/get_parameter/append/psdef/.auxfig//plotborder+72+psdef//plotaxislength+590+psdef+.gif" />
+</fieldset>
+<fieldset class="dlimage">
+<img class="dlimgloc regionwithinbbox" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20:-60:340:80:bb%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C55%2C40%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<div style="display: inline-block; text-align: top">
+<link class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.benno/.UEA/.CRU/.TS3p1/.monthly/.r2p5%5B%28Jan%29//seasonStart/parameter/%28-%29%28Dec%29//seasonEnd/parameter/%28%201901-2009%29%5Dconcat//season/parameter/a:/%28.pre%29//var/parameter/interp/yearly-anomalies/T//season/get_parameter/seasonalAverage/:a:/.stn//var/get_parameter/interp/0/maskle/T//season/get_parameter/0.66/seasonalAverage/0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage/0.5/masklt%5BT%5D0.5/average/0/mul/add//var/get_parameter/%28.pre%29eq/%7B:a:/.pre/T//season/get_parameter/seasonalAverage/T/differential_mul%5BT%5Daverage/30/masklt/0/mul/:a/add%7Dif/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/:butt_filter/.butt%5BX/Y%5DREORDER/2/index/2/index/sub/1/index/sub/4/%7B4/-1/roll/%28bb:%5B-180%2C-60%2C180%2C80%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average%5BT%5Drmsaover/dup/mul%7Drepeat/3/%7B3/-1/roll/3/index/div//percent/unitconvert/0.5/add/toi4%7Drepeat/%7Bclimatechange/decadal/residual%7Dds/climatechange//long_name/%28Century-long%20Shifts%29def/decadal//long_name/%28Decade-long%20Shifts%29def/residual//long_name/%28Year-to-Year%20Shifts%29def/%7Bclimatechange/decadal/residual%7Dds/nip//max-age/864000/7/mul/def/info.json" />
+<table class="valid template">
+<tr class="iridl:hasDependentVariables"><td class="iridl:name@class"> <span class="iridl:long_name"></span></td><td align="right" class="iridl:name@class"><span class="iridl:value"></span>%
+</td></tr>
+</table>
+</div>
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/home/.benno/.UEA/.CRU/.TS3p1/.monthly/.r2p5%5B%28Jan%29//seasonStart/parameter/%28-%29%28Dec%29//seasonEnd/parameter/%28%201901-2009%29%5Dconcat//season/parameter/a:/%28.pre%29//var/parameter/interp/yearly-anomalies/T//season/get_parameter/seasonalAverage/:a:/.stn//var/get_parameter/interp/0/maskle/T//season/get_parameter/0.66/seasonalAverage/0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage/0.5/masklt%5BT%5D0.5/average/0/mul/add//var/get_parameter/%28.pre%29eq/%7B:a:/.pre/T//season/get_parameter/seasonalAverage/T/differential_mul%5BT%5Daverage/30/masklt/0/mul/:a/add%7Dif/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/:butt_filter/.butt%5BX/Y%5DREORDER/2/index/2/index/sub/1/index/sub/4/%7B4/-1/roll/%28bb:%5B-180%2C-60%2C180%2C80%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average%7Drepeat/pop/%28scale_symmetric%29%28true%29def/%28fullname%29%28Decade-long%20Shifts%29def/DATA/AUTO/AUTO/RANGE/exch/%28scale_symmetric%29%28true%29def/%28fullname%29%28Century-long%20Shifts%29def/DATA/AUTO/AUTO/RANGE/3/-1/roll/%28scale_symmetric%29%28true%29def/%28fullname%29//var/get_parameter/%28.pre%29eq/%28Total%20Rain%20and%20Snow%29%28Total%29ifelse/def/DATA/AUTO/AUTO/RANGE/3/-2/roll//max-age/6048000/def/T/fig-/black/line/zeroline/solid/thick/blue/line/magenta/line/-fig/%28plotaxislength%29590/psdef//plotborder/72/psdef//plotaxislength/590/psdef//framelabel//region/get_parameter/s==/space/append//season/get_parameter/append/psdef/+.gif" />
+</fieldset>
+</span>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >How important have century-long shifts in climate been?</h2>
+<p align="left" property="term:description">This map shows how wet and dry periods have varied over time. Draw a rectangle over a region or click a place on the map, to see graphs for that location. These graphs depict how much rainfall (or temperature) varies from year to year, decade to decade, and over the past century. This information can be used for planning purposes on different timescales, and to provide context for recent memories of rainfall patterns or specific events in a longer-term perspective.</p>
+<p align="left">If 100-year shifts are orange or red, then century-long shifts in rain or temperature may be particularly important in your location.</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p><a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Time_Scales/notes.html">Technical Reference Document</a></p>
+Greene, A.M, L. Goddard and R. Cousin, <a href="http://www.agu.org/pubs/crossref/2011/2011EO450001.shtml">Web tool deconstructs variability in twentieth-century climate</a>, Eos Trans. AGU, 92(45), 397, doi:10.1029/2011EO450001.
+<p>
+<b>Global-mean multimodel-mean temperature record</b>
+<br /><font size="-1"><b>Data Source</b>:
+<a href="http://iridl.ldeo.columbia.edu/SOURCES/.WCRP/.CMIP3/" target="_blank">CMIP3 multi-model ensemble mean</a>
+</font>
+</p><p>
+<b>Observations</b>
+<br /><font size="-1"><b>Data Source</b>:
+monthly mean precipitation and temperature from <a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS3p1/.monthly/" target="_blank">CRU TS 3.1</a>
+</font>
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+<div id="tabs-5" class="ui-tabs-panel">
+<h2  align="center">What is this tool?</h2>
+<p align="left">This “Recent Climate Trends Maproom” shows how wet and dry (or hot and cold) periods have varied over the past century. Many parts of the world have dry seasons and rainy seasons (or summers and winters) within each year, but also have entire years or decades that are unusually dry or wet (or hot or cold). These graphs are intended to show trends in rain/snow (or temperature) over three “timescales”:</p>
+<ul>
+<li>Year-to-year shifts (black line is actual rainfall)</li>
+<li>Decade-long shifts (smooth blue line)</li>
+<li>Century-long trends (straight purple line)</li>
+</ul>
+<p align="left">On the map, if the colour of a location is closer to red, it means that century long shifts in rain (or temperature) may have greater importance for that location. The legend shows the degree of important of rainfall (or temperature) changes that can be explained by this century long trend.</p>
+<p><b>Use this tool to:</b></p>
+<ul>
+<li>Examine the context and history of a wet/dry (or hot/cool) trend that you are currently experiencing.</li>
+<li>See if there have been past century long shifts to help you prepare to expect them in the future.</li>
+<li>See if there is evidence that a longer-term shift in rainfall/temperature is already underway (purple line).</li>
+</ul>
+<p><b>Not recommended to:</b></p>
+<ul>
+<li>Just look at one gridpoint (this could be misleading). Check a few in the same area, or average over a larger box.</li>
+<li>Just look at one timescale. Actual rainfall is influenced by yearly, decade long, and century long shifts.</li>
+<li>Use this as a tool to predict the future. It shows only historical information.</li>
+</ul>
+</div>
+<div id="tabs-6" class="ui-tabs-panel">
+<h2  align="center">How do I use this tool?</h2>
+<ol>
+<li>Pick your location by clicking on a point on the top map, selecting a preset region from the blue sidebar, or drawing a box with the mouse for an area average (in this case, click the box for “regional analysis”). A graph should appear at the bottom to show rainfall/snowfall in your location for the last 100 years (see above for information about these graphs). BE PATIENT as the graph sometimes takes a few minutes to calculate.</li>
+<li>Start by looking at the long-term trend (purple line) to see if there is any evidence of a longer-term trend in rainfall over the past 100 years.  This may or may not be in alignment with longer-term climate change projections for the 21st century you gather from sources like the <a href="http://www.ipcc.ch/">IPCC</a>. If you have questions about the alignment of past trends and future projections, email the <a href="mailto:ifrc@iri.columbia.edu">IFRC Help Desk at IRI</a>.  Even if there is some evidence of a long-term trend, you’ll probably notice it is very small and that rainfall varies a lot more in shorter timescales (seasons, years, decades).</li>
+<li>Next, look at the blue line of decade-long shifts. You can find a blue number at the top of the graph next to the word “Decade-long shifts” that indicates how much of the historical rainfall or temperature can be explained by this blue line. If this number is above 20%, then 10-year phases might be important in the location you selected.</li>
+<ol>
+<li>If these phases are important in your location, you will want to take that into consideration when thinking about the longer-term climate change projections, so that you’re prepared to experience periods of rainfall that may contradict what is predicted for the longer-term trend.</li>
+<li>If there is very little importance of the blue line, then you can focus more on the year-to-year shifts as well as the longer-term trends.</li>
+<li>If you have experienced a dry or wet (or hot or cold) period lasting multiple years in your location, the blue line might help determine if you were in a wet or dry (or hot or cold) 10-year phase. If so, when the phase changes, you could see opposite results, and the recent pattern might not be due to a longer term climate trend.</li>
+</ol>
+<li>Finally, look at the actual rainfall in your location (black line).  It is common for most of the ups and downs (65% or more) in rainfall to happen on the season-to-season or year-to-year timescale.  This just means that rainfall fluctuates a good amount from year to year. There are <a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/index.html?mapsel=prcp_fcst&#38;map.S.plotvalue=0000+7+Jun+2012&#38;map.Y.units=degree_north&#38;map.Y.plotlast=76.25N&#38;map.url=+SOURCES+.IRI+.MD+.IFRC+.ESRL+.PSD+.reforecast+.ensemble_mean+.analyses+.tot6day+a%3A+.apcppctlenoseasonal+%3Aa%3A+.forecasttime+%3Aa+X+Y+fig-+colors+plotlabel+black+thin+countries_gaz+-fig&#38;map.domain=+{+%2FS+1749.+plotvalue+}&#38;map.domainparam=+%2Fplotaxislength+550+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&#38;map.zoom=Click+for+Info&#38;map.Y.plotfirst=66.25S&#38;map.X.plotfirst=178.75E&#38;map.X.units=degree_east&#38;map.X.modulus=360&#38;map.X.plotlast=178.75E&#38;map.Y.step=.5">forecasts</a> available to predict rainfall every season, so monitoring these can be helpful to anticipate heightened flood and drought risk. Can you pick out years of very high or low rains?  Additionally, it can be helpful to note that the range of the real data is likely to be much greater than any increase or decrease in rainfall shown over time by the longer-term climate change trend. In any given year, the short-term year-to-year fluctuations can overshadow the longer-term climate change trend.</li>
+</ol>
+</div>
+<div id="tabs-7" class="ui-tabs-panel">
+<h2  align="center">Technical Description</h2>
+<p align="left"> <b>Decade-long shifts in climate.</b>
+After detrending, about 20% of the variance of annually-resolved white noise would be expected to accrue to the decadal component, as here defined, for a sample of this size (about 100 years). White noise is a random process having no “memory,” in the sense that its value at a particular time does not exhibit any dependence on its values at other previous times. This differs from processes having memory or “persistence,” in which the process level is dependent on previous values (such processes tend to vary more slowly than white noise). Thus, a decadal variance fraction of as much as 20% (meaning the decadal fraction divided by the sum of decadal and interannual fractions alone) should not be mistaken for the signature of a systematic decadal oscillation, or even a slow random process, that differs from white noise. As a result, the Medium importance of decade-long shifts is defined as the decadal variance fraction (relative to the sum of decadal and interannual fractions only) comprised between 15% and 25%. The Low category is defined as decadal variance fraction lower then 15%; the High category greater than 25% and the Extremely High category greater than 40%.</p>
+
+<p align="left"><b>Year-to-year shifts in climate.</b>
+Complementarily, an interannual variance fraction of as much as 80% is expected in a random signal. Therefore, the Medium importance of year-to-year shifts is defined as the interannual variance fraction (relative to the sum of decadal and interannual fractions) comprised between 75% and 85%. The Low category is defined as interannual variance fraction lower then 75%; the High category greater than 85% and the Extremely High category greater than 90%.</p>
+
+<p align="left"><b>Century-long shifts in climate.</b>
+The trend, or more precisely the part of the regional signal which is linearly dependent on global mean temperature, here called century-long shifts, has different statistical characteristics than the decade-long and year-to-year shifts signals so that we used a different approach to define its categories of importance. The categories are simply and intuitively defined relatively to the importance of the two other time scale components. Thus, Extremely High category is assigned when the trend variance fraction (relative to total variance of the original signal) is greater than both the decadal and interannual fraction variances; High category when the trend variance fraction is comprised between the two others; Medium when the trend variance fraction is lower than both other fractions; Low when the trend variance fraction is lower than at least 10% less than the smaller of the two other trends.</p>
+
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
