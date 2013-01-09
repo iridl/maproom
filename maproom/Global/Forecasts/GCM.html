@@ -106,17 +106,17 @@ display: none;
 <form name="pageform" id="pageform">
 <input class="carryup carry " name="Set-Language" type="hidden" />
 <input class="carry dlimg share" name="bbox" type="hidden" />
-<input class="dlimg share modelc sstforcingc starttime startleadtime" name="S" type="hidden" />
-<input class="dlimg share modelc sstforcingc startleadtime" name="L" type="hidden" value="1.5" />
+<input class="dlimg share starttime startleadtime" name="S" type="hidden" />
+<input class="dlimg share startleadtime" name="L" type="hidden" value="1.5" />
 <input class="dlimgnotused dlauximg" name="plotaxislength" type="hidden" />
 <input class="dlimg share modelc bodyClass" name="model" type="hidden" value="ECHAM4p5" />
-<input class="dlimg share modelc sstforcingc bodyClass" name="sstforcing" type="hidden" value="psst" />
-<input class="dlimg share modelc sstforcingc bodyClass" name="sstcoupling" type="hidden" value="coupled" />
-<input class="dlimg share dlauximg modelc sstforcingc varc bodyClass" name="var" type="hidden" value="prcp" />
-<input class="dlimg share dlauximg varc" name="fieldPrcp" type="hidden"/>
-<input class="dlimg share dlauximg varc" name="fieldTemp" type="hidden"/>
-<input class="dlimg share dlauximg varc" name="fieldGeop" type="hidden"/>
-<input class="dlimg share dlauximg modelc" name="clim" type="hidden" value="c7100" />
+<input class="dlimg share sstforcingc bodyClass" name="sstforcing" type="hidden" value="psst" />
+<input class="dlimg share sstforcingc bodyClass" name="sstcoupling" type="hidden" value="coupled" />
+<input class="dlimg share dlauximg varc bodyClass" name="var" type="hidden" value="prcp" />
+<input class="dlimg share dlauximg" name="fieldPrcp" type="hidden"/>
+<input class="dlimg share dlauximg" name="fieldTemp" type="hidden"/>
+<input class="dlimg share dlauximg" name="fieldGeop" type="hidden"/>
+<input class="dlimg share dlauximg" name="clim" type="hidden" value="c7100" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -149,7 +149,7 @@ display: none;
             </select>
   </fieldset>
            <fieldset class="navitem valid" id="sstcouplingid">
-          <legend>SST Forcing</legend><select class="pageformcopy" name="sstcoupling"><option>coupled</option></select></fieldset>
+          <legend>SST Forcing</legend><select class="modelc pageformcopy" name="sstcoupling"><option>coupled</option></select></fieldset>
 
            <fieldset class="navitem valid">          
           <legend>Variable</legend>            
