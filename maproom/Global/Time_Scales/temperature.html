@@ -136,18 +136,18 @@ At particular locations, data may include "filled" values, where instrumental me
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Documentation</h2>
-<P STYLE="margin-bottom: 0in"><FONT SIZE="5"><B>The Time scales maproom</B></FONT></P><P  STYLE="margin-bottom: 0in"><<BR />>
+<P STYLE="margin-bottom: 0in"><FONT SIZE="5"><B>The Time scales maproom</B></FONT></P><P  STYLE="margin-bottom: 0in"><BR />
 </P>
 <P  STYLE="margin-bottom: 0in">
 Although the decomposition of a signal into trend, low- and high-frequency components may seem straightforward, the analysis prese
 nted involves a number of subtleties. This document provides a more detailed look at the analytical procedures utilized than does 
-the overview presented in Greene et al. (2011), and offers a number of caveats regarding the interpretation of maproom displays.</P><P  STYLE="margin-bottom: 0in"><<BR />></P><P  STYLE="margin-bottom: 0in"><FONT SIZE="4"><B>Method</B></FONT></P>
-<P  STYLE="margin-bottom: 0in"><<BR />>
+the overview presented in Greene et al. (2011), and offers a number of caveats regarding the interpretation of maproom displays.</P><P  STYLE="margin-bottom: 0in"><BR /></P><P  STYLE="margin-bottom: 0in"><FONT SIZE="4"><B>Method</B></FONT></P>
+<P  STYLE="margin-bottom: 0in"><BR />
 </P>
 <P >
 Data processing consists of three steps: <i>Screening</i> the individual gridbox values for filled data and for very dry seasons a
 nd regions, <i>detrending</i> in order to extract slow, trend-like changes and <i>filtering</i>, to separate high and low frequenc
-y components in the detrended data. Each of these steps is described below. Data are processed gridbox by gridbox, meaning that results in adjacent gridboxes are not compared or combined, except when the user requests that analysis be performed on area-averaged data. Averaging over gridboxes is then performed prior to the time scales decomposition.</P><P ><<BR />><<BR />>
+y components in the detrended data. Each of these steps is described below. Data are processed gridbox by gridbox, meaning that results in adjacent gridboxes are not compared or combined, except when the user requests that analysis be performed on area-averaged data. Averaging over gridboxes is then performed prior to the time scales decomposition.</P><P ><BR /><BR />
 </P>
 <P ><B>Screening</B></P>
 <P >The underlying datasets employed are <i>complete</i>, i.e., they do not contain missing values. This does not mean, however, that actual measurements were available for every month and at every geographic location covered by the data. The completeness requirement has been imposed by the data providers with particular uses in mind and is met by "filling in" values for which actual station measurements do not exist. The exact manner by which this is accomplished is described in documentation linked on the dataset pages; these can be accessed via the maproom pages based on the respective datasets.</P><P >Relatively little filling has been performed on the temperature data, so in this case the screening requires that <i>all</i> data 
@@ -173,7 +173,7 @@ ill not produce a result that is regionally representative.
 <P >
 Because even partially filled records may be expected to degrade analytical results to some degree, and because data at individual gridpoints may be noisy, it is probably best, for the sake of robustness, to average the data over at least a small region before applying the time scales decomposition.
 </P>
-<P ><<BR />><<BR />></P><P ><B>The trend component</B></P><P >Trends are often computed in the time domain, in which case they might be expressed, for example, as a change of so many millimete
+<P ><BR /><BR /></P><P ><B>The trend component</B></P><P >Trends are often computed in the time domain, in which case they might be expressed, for example, as a change of so many millimete
 rs per month occurring per decade. The common procedure of fitting a linear trend assumes that such a rate of change is constant w
 ith time.
 </P><P >The map room takes a different approach, based on a simple conceptual model: Rather than expressing local or regional trends as functions of <i>time</i>, we relate them instead to global <i>temperature</i> change. The assumption is not that precipitation (or temperature) changes simply as a result of the passage of time, but rather, because of the warming of the planet. It is in this sen
@@ -192,18 +192,18 @@ othed global temperature signal, which serves as the signature of the forced cli
 ternal" as far as the maproom is concerned: Volcanic eruptions are not believed to be associated, at least in any easily demonstra
 ble way, with natural climate variability, so it was deemed incorrect to treat them as such.
 </P>
-<P ><<BR />><<BR />>
+<P ><BR /><BR />
 </P>
 <P  ALIGN=CENTER><IMG SRC="http://iridl.ldeo.columbia.edu/expert/home/.remic/.AR4/.tas/T/fig:/blue/medium/solid/line/grey/thin/dotted/286.4/0.2/287.4/horizontallines/:fig/T/-708./624./plotrange//XOVY/null/psdef//antialias/true/psdef//tas/286.2704/287.4/plotrange//plotborder/77/psdef//fntsze/16/psdef//plotaxislength/500/psdef/+//plotborder+77+psdef//XOVY+null+psdef//plotaxislength+500+psdef+.gif" NAME="graphics1" ALIGN=BOTTOM WIDTH=447 HEIGHT=301 BORDER=0></P>
 <P  ALIGN=CENTER>Figure 1: The global mean "climate
 change" temperature record used for detrending.</P>
-<P  ALIGN=CENTER><<BR />><<BR />></P><P >The trend component of a local temperature or precipitation signal is extracted by regressing the local series on the global temperature signal of Fig 1. Fitted values from the regression represent, by construction, that part of the regional signal which is linearly dependent on global mean temperature. It is in this sense that the trend, as here computed, may be thought of as the climate change component of the regional signal.</P><P >
+<P  ALIGN=CENTER><BR /><BR /></P><P >The trend component of a local temperature or precipitation signal is extracted by regressing the local series on the global temperature signal of Fig 1. Fitted values from the regression represent, by construction, that part of the regional signal which is linearly dependent on global mean temperature. It is in this sense that the trend, as here computed, may be thought of as the climate change component of the regional signal.</P><P >
 It is worth noting that for a local or regional signal that is being analyzed in the maproom, the entanglement of forced and natural components is still possible. This is because, while the signal of Fig. 1 has been effectively stripped of natural internal variability, a real-world signal may still contain natural components that are "masquerading" as trend. This might happen, for example, if some natural mode of variability were to be increasing over a relatively long time period, say the last 30 years of the 20<sup>th</sup> century. In such a case this mode might motivate a similar increase in values of the regional series being analyzed, which then "maps" onto the global mean temperature increase shown in Fig. 1. The Atlantic Multidecadal Oscillation (AMO, see, e.g., Enfield, 2001) exhibits a signal something like this; to the extent that the AMO influences local climate, there may be some possibility for this sort of misidentification to occur (see, e.g., DelSole et al., 2011). In general, and for the more approximative type of assessment for which the maproom is designed, we do not believe that such entanglement will pose a major problem with interpretation.
 </P>
 <P >
 Figure 2a illustrates the detrending step, as applied to a typical precipitation record obtained from the maproom. Note that the inferred trend is negative, and appears as a shifted, scaled inversion of the signal shown in Fig. 1. The inverse characteristic results from the fitting of a downward-trending regional signal; the fact that the inferred trend is a scaled, shifted version of the signal of Fig. 1 is a characteristic of the linear regression. Recall, finally, that the inferred trend represents a regression on global mean <i>temperature</i>; this explains its nonlinearity in the time domain.
 </P>
-<P ><<BR />><<BR />>
+<P ><BR /><BR />
 </P>
 <P ><IMG SRC="http://iridl.ldeo.columbia.edu/SOURCES/.WCRP/.GCOS/.GPCC/.FDP/.version4/.2p5/a:/.anom/T/%28Jun-Aug%201901-2007%29seasonalAverage/:a:/.cnts/T/%28Jun-Aug%201901-2007%29seasonalAverage/0/maskle%5BT%5D0.5/average/0/mul/add/:a:/.prcp/T/%28Jun-Aug%201901-2007%29seasonalAverage/%28Aug%29interp/%28Jun%29interp/sub/dup/0/ge/%7B1/add%7D%7B13/add%7Difelse/mul%5BT%5Daverage/30/masklt/0/mul/:a/add/home/.remic/.AR4/.tas%5BT%5D1./0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/2/%7Bexch/X/%28-20%29%2810%29RANGEEDGES/Y/%280%29%2822.5%29RANGEEDGES%5BX/Y%5Daverage%7Drepeat/%28scale_symmetric%29%28true%29def/%28fullname%29%28trend%29def/DATA/AUTO/AUTO/RANGE/exch/%28scale_symmetric%29%28true%29def/%28fullname%29%28raw%29def/DATA/AUTO/AUTO/RANGE/exch/dup/T/fig-/line/black/zeroline/thick/solid/red/line/plotlabel/-fig//framelabel/(a)psdef//plotborder/72/psdef//plotaxislength/300/psdef//asum/-43/43/plotrange//XOVY/null/psdef/+//plotborder+72+psdef//XOVY+null+psdef//plotaxislength+300+psdef+.gif" NAME="graphics2" ALIGN=BOTTOM BORDER=0>
 <IMG SRC="http://iridl.ldeo.columbia.edu/SOURCES/.WCRP/.GCOS/.GPCC/.FDP/.version4/.2p5/a:/.anom/T/%28Jun-Aug%201901-2007%29seasonalAverage/:a:/.cnts/T/%28Jun-Aug%201901-2007%29seasonalAverage/0/maskle%5BT%5D0.5/average/0/mul/add/:a:/.prcp/T/%28Jun-Aug%201901-2007%29seasonalAverage/%28Aug%29interp/%28Jun%29interp/sub/dup/0/ge/%7B1/add%7D%7B13/add%7Difelse/mul%5BT%5Daverage/30/masklt/0/mul/:a/add/home/.remic/.AR4/.tas%5BT%5D1./0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/sub/dup/T/1/1./10/div/butt_filter:/5./store/ford/:butt_filter/.butt/2/%7Bexch/X/%28-20%29%2810%29RANGEEDGES/Y/%280%29%2822.5%29RANGEEDGES%5BX/Y%5Daverage%7Drepeat/%28scale_symmetric%29%28true%29def/%28fullname%29%28decadal%29def/DATA/AUTO/AUTO/RANGE/exch/%28scale_symmetric%29%28true%29def/%28fullname%29%28residual%29def/DATA/AUTO/AUTO/RANGE/exch/dup/T/fig-/black/line/black/zeroline/thick/solid/green/line/plotlabel/-fig//framelabel/(b)psdef//plotborder/72/psdef//plotaxislength/300/psdef//asum/-43/43/plotrange//XOVY/null/psdef/+//plotborder+72+psdef//XOVY+null+psdef//plotaxislength+300+psdef+.gif" NAME="graphics3" ALIGN=BOTTOM BORDER=0>
@@ -217,7 +217,7 @@ from this regression and its lowpass-filtered counterpart, the latter
 identified with the decadal component of variability; (c) Interannual
 component, which is the residual signal in (b), from which the
 decadal component has been subtracted.</P>
-<P ><<BR />><<BR />>
+<P ><BR /><BR />
 </P>
 <P ><B>Decadal and Interannual components</B></P>
 <P >
@@ -235,15 +235,15 @@ This second stage in the decomposition in illustrated in Fig. 2b, which shows in
 <P >
 Finally, the interannual component is computed as the difference between black and green traces in Fig. 2b, i.e., the residual from the detrending step minus its lowpassed incarnation. Shown in Fig. 2c, this signal represents that part of natural variability having its expression at periods shorter than ten years. The trend (red), decadal (green) and interannual (blue) signals are what is shown in the maproom when the user either clicks at a point or chooses "area average," the latter in order to display the time scale decomposition as applied to an area-averaged signal.
 </P>
-<P ><<BR />><<BR />>
+<P ><BR /><BR />
 </P>
-<P ><<BR />><<BR />>
+<P ><BR /><BR />
 </P>
 <P STYLE="margin-bottom: 0in"><B>A
 few things to be aware of in using the maproom </B>
 </P>
 <P STYLE="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in">
-<<BR />>
+<BR />
 </P>
 <UL>
         <LI><P STYLE="margin-bottom: 0in">
@@ -268,19 +268,19 @@ Although the variance decomposition, or other aspects of the maproom plots may p
 </P>
         <P STYLE="margin-bottom: 0in"></P>
 </UL>
-<P  STYLE="margin-bottom: 0in"><<BR />>
+<P  STYLE="margin-bottom: 0in"><BR />
 </P>
 <P  STYLE="margin-bottom: 0in">
 Thank you for visiting the Time Scales Maproom. We anticipate that interaction with maproom users will help us to understand how the product might be improved. Questions or comments are therefore solicited, and may be addressed to <FONT COLOR="#0000ff"><U><A HREF="mailto:help@iri.columbia.edu">help@iri.columbia.edu</A></U></FONT>.Please include the phrase "Time scales" in the subject line.</P>
-<P  STYLE="margin-bottom: 0in"><<BR />>
+<P  STYLE="margin-bottom: 0in"><BR />
 </P>
-<P  STYLE="margin-bottom: 0in"><<BR />>
+<P  STYLE="margin-bottom: 0in"><BR />
 </P>
 <P  STYLE="margin-bottom: 0in"><FONT SIZE="4"><B>References</B></FONT></P>
-<P  STYLE="margin-bottom: 0in"><<BR />>
+<P  STYLE="margin-bottom: 0in"><BR />
 </P>
 <P  STYLE="margin-bottom: 0in">DelSole, Timothy, Michael K. Tippett, Jagadish Shukla, A Significant Component of Unforced Multidecadal Variability in the Recent Acceleration of Global Warming. J. Climate, <b>24</b>: 909—926. doi: 10.1175/2010JCLI3659.1, 2011.</P>
-<P  STYLE="margin-bottom: 0in"><<BR />>
+<P  STYLE="margin-bottom: 0in"><BR />
 </P>
 <P  STYLE="margin-bottom: 0in">Enfield, D.B., A.M.
 Mestas-Nunez and P.J. Trimble, The Atlantic Multidecadal Oscillation
@@ -288,7 +288,7 @@ and its relationship to rainfall and river flows in the continental
 U.S., Geophys. Res. Lett. <B>28</B>: 2077—2080.
 <FONT COLOR="#0000ff"><A HREF="http://en.wikipedia.org/wiki/Digital_object_identifier"><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none">doi</SPAN></FONT></A></FONT>:<FONT COLOR="#0000ff"><A HREF="http://dx.doi.org/10.1029%2F2000GL012745"><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none">10.1029/2000GL012745</SPAN></FONT></A></FONT>,
 2001.</P>
-<P  STYLE="margin-bottom: 0in"><<BR />>
+<P  STYLE="margin-bottom: 0in"><BR />
 </P>
 <P  STYLE="margin-bottom: 0in">IPCC, <FONT COLOR="#0000ff"><A HREF="http://ipcc-wg1.ucar.edu/wg1/wg1-report.html"><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none">Climate
 Change 2007: The Physical Science Basis. Contribution of Working
@@ -297,15 +297,15 @@ Panel on Climate Change</SPAN></FONT></A></FONT> [Solomon, S., D.
 Qin, M. Manning, Z. Chen, M. Marquis, K.B. Averyt, M.Tignor and H.L.
 Miller (eds.)]. Cambridge University Press, Cambridge, United Kingdom
 and New York, NY, USA, 2007.</P>
-<P  STYLE="margin-bottom: 0in"><<BR />>
+<P  STYLE="margin-bottom: 0in"><BR />
 </P>
 <P  STYLE="margin-bottom: 0in">Meehl, Gerald A., and
 Coauthors, Decadal Prediction: Can it be skillful, Bull. Amer.
 Meteor. Soc., <B>90</B>, 1467—1485, doi: 10.1175/2009BAMS2778.1,
 2009.</P>
-<P  STYLE="margin-bottom: 0in"><<BR />>
+<P  STYLE="margin-bottom: 0in"><BR />
 </P>
-<P  STYLE="margin-bottom: 0in"><<BR />>
+<P  STYLE="margin-bottom: 0in"><BR />
 </P>
 <p>
 Greene, A.M, L. Goddard and R. Cousin, <a href="http://www.agu.org/pubs/crossref/2011/2011EO450001.shtml">Web tool deconstructs variability in twentieth-century climate</a>, Eos Trans. AGU, 92(45), 397, doi:10.1029/2011EO450001.
