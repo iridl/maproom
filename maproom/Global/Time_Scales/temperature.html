@@ -136,9 +136,183 @@ At particular locations, data may include "filled" values, where instrumental me
 </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
-<h2  align="center">Dataset Documentation</h2>
-<p><a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Time_Scales/notes.html">Technical Reference Document</a></p>
+<h2  align="center">Documentation</h2>
+<P STYLE="margin-bottom: 0in"><FONT SIZE=5><B>The Time scales maproom</B></FONT></P><P  STYLE="margin-bottom: 0in"><BR>
+</P>
+<P  STYLE="margin-bottom: 0in">
+Although the decomposition of a signal into trend, low- and high-frequency components may seem straightforward, the analysis prese
+nted involves a number of subtleties. This document provides a more detailed look at the analytical procedures utilized than does 
+the overview presented in Greene et al. (2011), and offers a number of caveats regarding the interpretation of maproom displays.</P><P  STYLE="margin-bottom: 0in"><BR></P><P  STYLE="margin-bottom: 0in"><FONT SIZE=4><B>Method</B></FONT></P>
+<P  STYLE="margin-bottom: 0in"><BR>
+</P>
+<P >
+Data processing consists of three steps: <i>Screening</i> the individual gridbox values for filled data and for very dry seasons a
+nd regions, <i>detrending</i> in order to extract slow, trend-like changes and <i>filtering</i>, to separate high and low frequenc
+y components in the detrended data. Each of these steps is described below. Data are processed gridbox by gridbox, meaning that results in adjacent gridboxes are not compared or combined, except when the user requests that analysis be performed on area-averaged data. Averaging over gridboxes is then performed prior to the time scales decomposition.</P><P ><BR><BR>
+</P>
+<P ><B>Screening</B></P>
+<P >The underlying datasets employed are <i>complete</i>, i.e., they do not contain missing values. This does not mean, however, that actual measurements were available for every month and at every geographic location covered by the data. The completeness requirement has been imposed by the data providers with particular uses in mind and is met by "filling in" values for which actual station measurements do not exist. The exact manner by which this is accomplished is described in documentation linked on the dataset pages; these can be accessed via the maproom pages based on the respective datasets.</P><P >Relatively little filling has been performed on the temperature data, so in this case the screening requires that <i>all</i> data 
+values represent actual measurements, rather than filled values. The screening procedure employed for precipitation is more flexib
+le, with consideration given to both the number and the distribution in time of actual measurements contributing to each gridpoint
+ value. A trade-off between spatial and temporal coverage then comes into play, with a higher degree of temporal coverage corresponding to fewer qualifying gridpoints, and vice versa. The user can control this balance by choosing among "high temporal coverage," "high spatial coverage" and "intermediate temporal and spatial coverage." Because the focus of the maproom is time series behavi
+or, it is recommended that the user prefer "high temporal coverage" or the intermediate option whenever possible. The "high spatia
+l coverage" option presents the data without any temporal screening, so results from the time scales decomposition may be less rel
+iable than with the other choices.</P><P >The "high temporal coverage" option imposes the same requirement as that imposed on temperature, viz., that all data values must r
+epresent actual measurements, and that none can be filled. For the "intermediate" option this requirement is relaxed somewhat, wit
+h at least half of the data values required to represent measurements.
+</P><P >In addition, it is required that the data be relatively uniformly distributed in time. For example, using the intermediate option, the 50% of values that are not filled may not all be concentrated in the second half of the data series. As presently implemented
+, the uniformity requirement is based on a 10-year sliding window. The fraction of filled values within this window is not permitt
+ed to fall below the specified threshold.
+</P><P >In addition to the temporal screening there is the requirement that, for precipitation, climatological seasonal rainfall must exceed 30 mm. Such a threshold would represent very dry conditions, rendering the utility of the time scales decomposition questionabl
+e. In addition, even small fluctuations in precipitation would seem large compared with such a dry climatology, increasing the var
+iance of estimated precipitation variations. The minimum screening requirement avoids these situations.
+</P><P >Gridpoints failing these requirements are shown as blank on the maps presented; clicking on such points returns a "no data" messag
+e. When the user selects "area average" for a region, only those points meeting the minimum data requirements are utilized in comp
+uting the area-averaged data. It should be apparent that area-averaging over a large area that contains few qualifying gridboxes w
+ill not produce a result that is regionally representative.
+</P>
+<P >
+Because even partially filled records may be expected to degrade analytical results to some degree, and because data at individual gridpoints may be noisy, it is probably best, for the sake of robustness, to average the data over at least a small region before applying the time scales decomposition.
+</P>
+<P ><BR><BR></P><P ><B>The trend component</B></P><P >Trends are often computed in the time domain, in which case they might be expressed, for example, as a change of so many millimete
+rs per month occurring per decade. The common procedure of fitting a linear trend assumes that such a rate of change is constant w
+ith time.
+</P><P >The map room takes a different approach, based on a simple conceptual model: Rather than expressing local or regional trends as functions of <i>time</i>, we relate them instead to global <i>temperature</i> change. The assumption is not that precipitation (or temperature) changes simply as a result of the passage of time, but rather, because of the warming of the planet. It is in this sen
+se that the trend component, as computed in the maproom, can be identified with "climate change." Such a trend has a functional, r
+ather than simply a numerical significance.
+</P><P >Computation of the global temperature record to be used as a regressand is less simple than it sounds. Fluctuations in the Earth's climate have many sources, including "natural" variability — intrinsic variations that are not associated with anthropogenically-
+induced climate change. Such variations, if large enough in scale, can significantly influence, or "project" onto the global mean 
+temperature. If we take the latter to represent in some sense the signature of climate change, there is a risk that we will uninte
+ntionally include some component of natural variability, which will then mistakenly be identified with this signature.</P><P >To circumvent this problem the global temperature signal is computed using an ensemble of general circulation models (GCMs). These models, which constitute a comprehensive representation of our current understanding of the mechanisms of climate variability and change, underlie much of the Fourth Assessment Report of the Intergovernmental Panel on Climate Change (IPCC, 2007). Simulations from the "Twentieth Century Climate in Coupled Models" (20C3M) experiment are used.</P><P >As with the real Earth, climate in each of these simulations includes both a "forced" response (what we think of a climate change) and natural, "unforced" variations. However, the unforced variability is <i>incoherent</i> from model to model — there is no sync
+hronization or phase relationship among the models, and indeed, the character of each model's unforced variability differs to a gr
+eater or lesser degree from that of the others. To obtain an estimate of the forced response, we average together the 20<sup>th</sup>-century global mean temperature records from the members of this ensemble, which here includes 23 (nearly all) of the IPCC GCMs. Averaging has the effect of attenuating the incoherent (i.e., uncorrelated) unforced variability while enhancing that part of the response that the models have in common — the climate change signal. The multimodel averaging can thus be said to increase the signal-to-noise ratio, where "signal" refers to the common climate change response and "noise" the unforced natural variability. This ratio is increased in the multimodel mean relative to that of the individual simulations. Most of the models provide multiple 20C3M simulations; to put the models on an even footing, a single simulation from each model is used to create the multimodel average.</P>
+<P >
+The multimodel mean signal is further processed, by lowpass filtering. This has the effect of removing most of the residual year-t
+o-year and decade-to-decade variability that has not been averaged away in the formation of the multimodel mean. The resulting smo
+othed global temperature signal, which serves as the signature of the forced climate change response, is shown in Fig. 1. Downward "bumps" in this signal in the 1900s, 1960s and early 1990s can probably be attributed, at least in part, to major volcanic eruptions, which have a short-term cooling effect; to the extent that these variations are expressed in regional signals they will be recognized as part of the forced response. Although the forcing is not anthropogenic in this case, it is nevertheless considered "ex
+ternal" as far as the maproom is concerned: Volcanic eruptions are not believed to be associated, at least in any easily demonstra
+ble way, with natural climate variability, so it was deemed incorrect to treat them as such.
+</P>
+<P ><BR><BR>
+</P>
+<P  ALIGN=CENTER><IMG SRC="http://iridl.ldeo.columbia.edu/expert/home/.remic/.AR4/.tas/T/fig:/blue/medium/solid/line/grey/thin/dotted/286.4/0.2/287.4/horizontallines/:fig/T/-708./624./plotrange//XOVY/null/psdef//antialias/true/psdef//tas/286.2704/287.4/plotrange//plotborder/77/psdef//fntsze/16/psdef//plotaxislength/500/psdef/+//plotborder+77+psdef//XOVY+null+psdef//plotaxislength+500+psdef+.gif" NAME="graphics1" ALIGN=BOTTOM WIDTH=447 HEIGHT=301 BORDER=0></P>
+<P  ALIGN=CENTER>Figure 1: The global mean "climate
+change" temperature record used for detrending.</P>
+<P  ALIGN=CENTER><BR><BR></P><P >The trend component of a local temperature or precipitation signal is extracted by regressing the local series on the global temperature signal of Fig 1. Fitted values from the regression represent, by construction, that part of the regional signal which is linearly dependent on global mean temperature. It is in this sense that the trend, as here computed, may be thought of as the climate change component of the regional signal.</P><P >
+It is worth noting that for a local or regional signal that is being analyzed in the maproom, the entanglement of forced and natural components is still possible. This is because, while the signal of Fig. 1 has been effectively stripped of natural internal variability, a real-world signal may still contain natural components that are "masquerading" as trend. This might happen, for example, if some natural mode of variability were to be increasing over a relatively long time period, say the last 30 years of the 20<sup>th</sup> century. In such a case this mode might motivate a similar increase in values of the regional series being analyzed, which then "maps" onto the global mean temperature increase shown in Fig. 1. The Atlantic Multidecadal Oscillation (AMO, see, e.g., Enfield, 2001) exhibits a signal something like this; to the extent that the AMO influences local climate, there may be some possibility for this sort of misidentification to occur (see, e.g., DelSole et al., 2011). In general, and for the more approximative type of assessment for which the maproom is designed, we do not believe that such entanglement will pose a major problem with interpretation.
+</P>
+<P >
+Figure 2a illustrates the detrending step, as applied to a typical precipitation record obtained from the maproom. Note that the inferred trend is negative, and appears as a shifted, scaled inversion of the signal shown in Fig. 1. The inverse characteristic results from the fitting of a downward-trending regional signal; the fact that the inferred trend is a scaled, shifted version of the signal of Fig. 1 is a characteristic of the linear regression. Recall, finally, that the inferred trend represents a regression on global mean <i>temperature</i>; this explains its nonlinearity in the time domain.
+</P>
+<P ><BR><BR>
+</P>
+<P ><IMG SRC="http://iridl.ldeo.columbia.edu/SOURCES/.WCRP/.GCOS/.GPCC/.FDP/.version4/.2p5/a:/.anom/T/%28Jun-Aug%201901-2007%29seasonalAverage/:a:/.cnts/T/%28Jun-Aug%201901-2007%29seasonalAverage/0/maskle%5BT%5D0.5/average/0/mul/add/:a:/.prcp/T/%28Jun-Aug%201901-2007%29seasonalAverage/%28Aug%29interp/%28Jun%29interp/sub/dup/0/ge/%7B1/add%7D%7B13/add%7Difelse/mul%5BT%5Daverage/30/masklt/0/mul/:a/add/home/.remic/.AR4/.tas%5BT%5D1./0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/2/%7Bexch/X/%28-20%29%2810%29RANGEEDGES/Y/%280%29%2822.5%29RANGEEDGES%5BX/Y%5Daverage%7Drepeat/%28scale_symmetric%29%28true%29def/%28fullname%29%28trend%29def/DATA/AUTO/AUTO/RANGE/exch/%28scale_symmetric%29%28true%29def/%28fullname%29%28raw%29def/DATA/AUTO/AUTO/RANGE/exch/dup/T/fig-/line/black/zeroline/thick/solid/red/line/plotlabel/-fig//framelabel/(a)psdef//plotborder/72/psdef//plotaxislength/300/psdef//asum/-43/43/plotrange//XOVY/null/psdef/+//plotborder+72+psdef//XOVY+null+psdef//plotaxislength+300+psdef+.gif" NAME="graphics2" ALIGN=BOTTOM BORDER=0>
+<IMG SRC="http://iridl.ldeo.columbia.edu/SOURCES/.WCRP/.GCOS/.GPCC/.FDP/.version4/.2p5/a:/.anom/T/%28Jun-Aug%201901-2007%29seasonalAverage/:a:/.cnts/T/%28Jun-Aug%201901-2007%29seasonalAverage/0/maskle%5BT%5D0.5/average/0/mul/add/:a:/.prcp/T/%28Jun-Aug%201901-2007%29seasonalAverage/%28Aug%29interp/%28Jun%29interp/sub/dup/0/ge/%7B1/add%7D%7B13/add%7Difelse/mul%5BT%5Daverage/30/masklt/0/mul/:a/add/home/.remic/.AR4/.tas%5BT%5D1./0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/sub/dup/T/1/1./10/div/butt_filter:/5./store/ford/:butt_filter/.butt/2/%7Bexch/X/%28-20%29%2810%29RANGEEDGES/Y/%280%29%2822.5%29RANGEEDGES%5BX/Y%5Daverage%7Drepeat/%28scale_symmetric%29%28true%29def/%28fullname%29%28decadal%29def/DATA/AUTO/AUTO/RANGE/exch/%28scale_symmetric%29%28true%29def/%28fullname%29%28residual%29def/DATA/AUTO/AUTO/RANGE/exch/dup/T/fig-/black/line/black/zeroline/thick/solid/green/line/plotlabel/-fig//framelabel/(b)psdef//plotborder/72/psdef//plotaxislength/300/psdef//asum/-43/43/plotrange//XOVY/null/psdef/+//plotborder+72+psdef//XOVY+null+psdef//plotaxislength+300+psdef+.gif" NAME="graphics3" ALIGN=BOTTOM BORDER=0>
+<IMG SRC="http://iridl.ldeo.columbia.edu/home/.remic/.maproom/.Global/.Time_Scales/.Precipitation/SOURCES/.WCRP/.GCOS/.GPCC/.FDP/.version4/.2p5/a:/.anom/T/%28Jun-Aug%201901-2007%29seasonalAverage/:a:/.cnts/T/%28Jun-Aug%201901-2007%29seasonalAverage/0/maskle%5BT%5D0.5/average/0/mul/add/:a:/.prcp/T/%28Jun-Aug%201901-2007%29seasonalAverage/%28Aug%29interp/%28Jun%29interp/sub/dup/0/ge/%7B1/add%7D%7B13/add%7Difelse/mul%5BT%5Daverage/30/masklt/0/mul/:a/add/home/.remic/.AR4/.tas%5BT%5D1./0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/sub/dup/T/1/1./10/div/butt_filter:/5./store/ford/:butt_filter/.butt/sub/X/%28-20%29%2810%29RANGEEDGES/Y/%280%29%2822.5%29RANGEEDGES%5BX/Y%5Daverage/%28scale_symmetric%29%28true%29def/%28fullname%29%28interannual%29def/DATA/AUTO/AUTO/RANGE/dup/T/fig-/solid/blue/line/black/zeroline/plotlabel/-fig//framelabel/(c)psdef//plotborder/72/psdef//plotaxislength/300/psdef//adif/-43/43/plotrange//XOVY/null/psdef/+//plotborder+72+psdef//XOVY+null+psdef//plotaxislength+300+psdef+.gif" NAME="graphics4" ALIGN=BOTTOM BORDER=0>
+</P>
+<P  STYLE="margin-bottom: 0in">Figure 2: Stages of the
+maproom decomposition process. (a) Trend component, represented by
+the fitted values in a regression of the local signal onto the
+multimodel mean temperature record of Fig. 1; (b) Residual signal
+from this regression and its lowpass-filtered counterpart, the latter
+identified with the decadal component of variability; (c) Interannual
+component, which is the residual signal in (b), from which the
+decadal component has been subtracted.</P>
+<P ><BR><BR>
+</P>
+<P ><B>Decadal and Interannual components</B></P>
+<P >
+If the fitted values from the regression onto the global multimodel mean temperature record of Fig. 1 are taken as the "climate change" trend, the residuals from this regression then represent the natural, unforced component of variability. The next step in the analysis aims to decompose this residual signal into "decadal" and "interannual" signals, representing respectively the low- and high-frequency components of natural variability.
+</P>
+<P >
+To do this, the residuals are lowpassed by filtering, using an order-five Butterworth filter with half-power at a period of 10 year. Although the Butterworth design has some desirable properties that make it well-suited to this task, any number of alternate filtering procedures could also have been used; testing indicates that results are not sensitive to the filter details. Filter parameters were chosen (a) so as to effect a clean separation between low- and high-frequency components without introducing instability in the filter response (this refers to the filter order) and (b) to effectively classify variability due to El Ni&ntilde;o-Southern Oscillation (ENSO) as "interannual." With the order-five filter, covariation between the two components generally amounts to no more than a few percent of the variance of the initial "raw" series. (In the real world a "perfect" separation of time scales is not achievable; all practical filter designs represent compromises in this regard.)
+</P>
+<P >
+ENSO exhibits a broad spectral peak in the 2-8 year band. Phenomena responsible for variability on longer time scales belong to class of processes that are less well-understood, and whose predictability is currently the subject of active research (see, e.g., Meehl et al. 2009). This "low-frequency" class includes large-scale modes such as the Pacific Decadal Oscillation (PDO) and Atlantic Multidecadal Oscillation (AMO), as well as low-frequency stochastic variations. Thus the filtering effectively partitions variability by process class, not simply by nominal time scale.
+</P>
+<P >
+This second stage in the decomposition in illustrated in Fig. 2b, which shows in black the "natural" residual from the detrending operation of Fig. 2a (i.e., the raw initial signal minus the trend component). Superimposed on this is the green "decadal" signal, which represents the output of the lowpass filter, applied to the natural residual.
+</P>
+<P >
+Finally, the interannual component is computed as the difference between black and green traces in Fig. 2b, i.e., the residual from the detrending step minus its lowpassed incarnation. Shown in Fig. 2c, this signal represents that part of natural variability having its expression at periods shorter than ten years. The trend (red), decadal (green) and interannual (blue) signals are what is shown in the maproom when the user either clicks at a point or chooses "area average," the latter in order to display the time scale decomposition as applied to an area-averaged signal.
+</P>
+<P ><BR><BR>
+</P>
+<P ><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><B>A
+few things to be aware of in using the maproom </B>
+</P>
+<P STYLE="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in">
+<BR>
+</P>
+<UL>
+        <LI><P STYLE="margin-bottom: 0in">
+As noted above, detrending via regression on the multimodel temperature record represents only an approximate separation of forced and natural variability; rigorously performed, such separation is not a simple exercise. Depending on timing and period, natural fluctuations in the data could project onto the multimodel mean temperature signal and be incorrectly identified with the forced response. The potential for such entanglement becomes lower as length-of-record increases, and vice versa.
+</P>
+        <P STYLE="margin-bottom: 0in"></P>
+        <LI><P STYLE="margin-bottom: 0in">
+We recommend the analysis of area-averaged data if possible, for a number of reasons. First, data at an individual gridpoint is likely to be <i>noisy</i>. For example, a couple of wet years near one terminus of the series could create the impression of a trend, even though there is no overall trend in the series. Even if the gridpoint passes the intermediate screening criteria a number of values may have been filled, with potentially misleading effects. These problems will generally be ameliorated to some degree by area-averaging, for the same reason that multimodel averaging increases the signal-to-noise ratio of the resultant series: Anomalous events will be less likely to occur in many locations at once, so their effects will be reduced.
+</P>
+<P  STYLE="margin-bottom: 0in">
+</P>
+        <LI><P STYLE="margin-bottom: 0in">
+The maproom shows the percent of variance in the raw data that is explained by each of the three components. The alert user will notice that these percentages often sum to less than one hundred percent. This is because the filtering procedure is necessarily imperfect, and does not completely separate the decadal and interannual components of the detrended series, leading to a degree of covariance between them. (This is the filtering problem known as "leakage.") The value for this covariance is also provided. Twice the covariance value, added to the trend, decadal and interannual variance percentages, should add to one hundred percent, give or take a percent for rounding error.
+</P>
+        <P STYLE="margin-bottom: 0in"></P>
+        <LI><P STYLE="margin-bottom: 0in">
+After detrending, about 20% of the variance of annually-resolved white noise would be expected to accrue to the decadal component, as here defined. White noise is a random process having no "memory," in the sense that its value at a particular time does not exhibit any dependence on its values at other previous times. This differs from processes having memory or "persistence," in which the process level is dependent on previous values (such processes tend to vary more slowly than white noise). Thus, a decadal variance fraction of as much as 20% (meaning the decadal fraction divided by the sum of decadal and interannual fractions) should not be mistaken for the signature of a systematic decadal "oscillation," or even a slow random process, that differs from white noise.
+</P>
+        <P STYLE="margin-bottom: 0in"></P>
+        <LI><P STYLE="margin-bottom: 0in">
+Although the variance decomposition, or other aspects of the maproom plots may provide some sense of future expectations (in the statistical sense), the maproom is primarily a means of deconstructing past variations, not a predictive tool. In particular, it cannot tell us how the character of variability may change in response to global warming and thus, how the decomposition of variance might evolve with the passage of time.
+</P>
+        <P STYLE="margin-bottom: 0in"></P>
+</UL>
+<P  STYLE="margin-bottom: 0in"><BR>
+</P>
+<P  STYLE="margin-bottom: 0in">
+Thank you for visiting the Time Scales Maproom. We anticipate that interaction with maproom users will help us to understand how the product might be improved. Questions or comments are therefore solicited, and may be addressed to <FONT COLOR="#0000ff"><U><A HREF="mailto:help@iri.columbia.edu">help@iri.columbia.edu</A></U></FONT>.Please include the phrase "Time scales" in the subject line.</P>
+<P  STYLE="margin-bottom: 0in"><BR>
+</P>
+<P  STYLE="margin-bottom: 0in"><BR>
+</P>
+<P  STYLE="margin-bottom: 0in"><FONT SIZE=4><B>References</B></FONT></P>
+<P  STYLE="margin-bottom: 0in"><BR>
+</P>
+<P  STYLE="margin-bottom: 0in">DelSole, Timothy, Michael K. Tippett, Jagadish Shukla, A Significant Component of Unforced Multidecadal Variability in the Recent Acceleration of Global Warming. J. Climate, <b>24</b>: 909—926. doi: 10.1175/2010JCLI3659.1, 2011.</P>
+<P  STYLE="margin-bottom: 0in"><BR>
+</P>
+<P  STYLE="margin-bottom: 0in">Enfield, D.B., A.M.
+Mestas-Nunez and P.J. Trimble, The Atlantic Multidecadal Oscillation
+and its relationship to rainfall and river flows in the continental
+U.S., Geophys. Res. Lett. <B>28</B>: 2077—2080.
+<FONT COLOR="#0000ff"><A HREF="http://en.wikipedia.org/wiki/Digital_object_identifier"><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none">doi</SPAN></FONT></A></FONT>:<FONT COLOR="#0000ff"><A HREF="http://dx.doi.org/10.1029%2F2000GL012745"><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none">10.1029/2000GL012745</SPAN></FONT></A></FONT>,
+2001.</P>
+<P  STYLE="margin-bottom: 0in"><BR>
+</P>
+<P  STYLE="margin-bottom: 0in">IPCC, <FONT COLOR="#0000ff"><A HREF="http://ipcc-wg1.ucar.edu/wg1/wg1-report.html"><FONT COLOR="#000000"><SPAN STYLE="text-decoration: none">Climate
+Change 2007: The Physical Science Basis. Contribution of Working
+Group I to the Fourth Assessment Report of the Intergovernmental
+Panel on Climate Change</SPAN></FONT></A></FONT> [Solomon, S., D.
+Qin, M. Manning, Z. Chen, M. Marquis, K.B. Averyt, M.Tignor and H.L.
+Miller (eds.)]. Cambridge University Press, Cambridge, United Kingdom
+and New York, NY, USA, 2007.</P>
+<P  STYLE="margin-bottom: 0in"><BR>
+</P>
+<P  STYLE="margin-bottom: 0in">Meehl, Gerald A., and
+Coauthors, Decadal Prediction: Can it be skillful, Bull. Amer.
+Meteor. Soc., <B>90</B>, 1467—1485, doi: 10.1175/2009BAMS2778.1,
+2009.</P>
+<P  STYLE="margin-bottom: 0in"><BR>
+</P>
+<P  STYLE="margin-bottom: 0in"><BR>
+</P>
+<p>
 Greene, A.M, L. Goddard and R. Cousin, <a href="http://www.agu.org/pubs/crossref/2011/2011EO450001.shtml">Web tool deconstructs variability in twentieth-century climate</a>, Eos Trans. AGU, 92(45), 397, doi:10.1029/2011EO450001.
+</p>
+</div>
+<div id="tabs-3"  class="ui-tabs-panel"><h2  align="center">Dataset Documentation</h2>
 <p>
 <b>Global-mean multimodel-mean temperature record</b>
 <br /><font size="-1"><b>Data Source</b>:
@@ -154,58 +328,8 @@ monthly mean precipitation and temperature from <a href="http://iridl.ldeo.colum
 <div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Helpdesks</h2>
 <p>
-Contact <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> if you are a humanitarian-decision maker with questions about information in this Map Room, or other weather and climate related questions. We usually respond within one business day.</p>
-<p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+Contact <a href="mailto:help@iri.columbia.edu?subject=Temperature Time Scales Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
-</div>
-<div id="tabs-5" class="ui-tabs-panel">
-<h2  align="center">What is this tool?</h2>
-<p align="left">This “Recent Climate Trends Maproom” shows how wet and dry (or hot and cold) periods have varied over the past century. Many parts of the world have dry seasons and rainy seasons (or summers and winters) within each year, but also have entire years or decades that are unusually dry or wet (or hot or cold). These graphs are intended to show trends in rain/snow (or temperature) over three “timescales”:</p>
-<ul>
-<li>Year-to-year shifts (black line is actual rainfall)</li>
-<li>Decade-long shifts (smooth blue line)</li>
-<li>Century-long trends (straight purple line)</li>
-</ul>
-<p align="left">On the map, if the colour of a location is closer to red, it means that century long shifts in rain (or temperature) may have greater importance for that location. The legend shows the degree of important of rainfall (or temperature) changes that can be explained by this century long trend.</p>
-<p><b>Use this tool to:</b></p>
-<ul>
-<li>Examine the context and history of a wet/dry (or hot/cool) trend that you are currently experiencing.</li>
-<li>See if there have been past century long shifts to help you prepare to expect them in the future.</li>
-<li>See if there is evidence that a longer-term shift in rainfall/temperature is already underway (purple line).</li>
-</ul>
-<p><b>Not recommended to:</b></p>
-<ul>
-<li>Just look at one gridpoint (this could be misleading). Check a few in the same area, or average over a larger box.</li>
-<li>Just look at one timescale. Actual rainfall is influenced by yearly, decade long, and century long shifts.</li>
-<li>Use this as a tool to predict the future. It shows only historical information.</li>
-</ul>
-</div>
-<div id="tabs-6" class="ui-tabs-panel">
-<h2  align="center">How do I use this tool?</h2>
-<ol>
-<li>Pick your location by clicking on a point on the top map, selecting a preset region from the blue sidebar, or drawing a box with the mouse for an area average (in this case, click the box for “regional analysis”). A graph should appear at the bottom to show rainfall/snowfall in your location for the last 100 years (see above for information about these graphs). BE PATIENT as the graph sometimes takes a few minutes to calculate.</li>
-<li>Start by looking at the long-term trend (purple line) to see if there is any evidence of a longer-term trend in rainfall over the past 100 years.  This may or may not be in alignment with longer-term climate change projections for the 21st century you gather from sources like the <a href="http://www.ipcc.ch/">IPCC</a>. If you have questions about the alignment of past trends and future projections, email the <a href="mailto:ifrc@iri.columbia.edu">IFRC Help Desk at IRI</a>.  Even if there is some evidence of a long-term trend, you’ll probably notice it is very small and that rainfall varies a lot more in shorter timescales (seasons, years, decades).</li>
-<li>Next, look at the blue line of decade-long shifts. You can find a blue number at the top of the graph next to the word “Decade-long shifts” that indicates how much of the historical rainfall or temperature can be explained by this blue line. If this number is above 20%, then 10-year phases might be important in the location you selected.</li>
-<ol>
-<li>If these phases are important in your location, you will want to take that into consideration when thinking about the longer-term climate change projections, so that you’re prepared to experience periods of rainfall that may contradict what is predicted for the longer-term trend.</li>
-<li>If there is very little importance of the blue line, then you can focus more on the year-to-year shifts as well as the longer-term trends.</li>
-<li>If you have experienced a dry or wet (or hot or cold) period lasting multiple years in your location, the blue line might help determine if you were in a wet or dry (or hot or cold) 10-year phase. If so, when the phase changes, you could see opposite results, and the recent pattern might not be due to a longer term climate trend.</li>
-</ol>
-<li>Finally, look at the actual rainfall in your location (black line).  It is common for most of the ups and downs (65% or more) in rainfall to happen on the season-to-season or year-to-year timescale.  This just means that rainfall fluctuates a good amount from year to year. There are <a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/index.html?mapsel=prcp_fcst&#38;map.S.plotvalue=0000+7+Jun+2012&#38;map.Y.units=degree_north&#38;map.Y.plotlast=76.25N&#38;map.url=+SOURCES+.IRI+.MD+.IFRC+.ESRL+.PSD+.reforecast+.ensemble_mean+.analyses+.tot6day+a%3A+.apcppctlenoseasonal+%3Aa%3A+.forecasttime+%3Aa+X+Y+fig-+colors+plotlabel+black+thin+countries_gaz+-fig&#38;map.domain=+{+%2FS+1749.+plotvalue+}&#38;map.domainparam=+%2Fplotaxislength+550+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&#38;map.zoom=Click+for+Info&#38;map.Y.plotfirst=66.25S&#38;map.X.plotfirst=178.75E&#38;map.X.units=degree_east&#38;map.X.modulus=360&#38;map.X.plotlast=178.75E&#38;map.Y.step=.5">forecasts</a> available to predict rainfall every season, so monitoring these can be helpful to anticipate heightened flood and drought risk. Can you pick out years of very high or low rains?  Additionally, it can be helpful to note that the range of the real data is likely to be much greater than any increase or decrease in rainfall shown over time by the longer-term climate change trend. In any given year, the short-term year-to-year fluctuations can overshadow the longer-term climate change trend.</li>
-</ol>
-</div>
-<div id="tabs-7" class="ui-tabs-panel">
-<h2  align="center">Technical Description</h2>
-<p align="left"> <b>Decade-long shifts in climate.</b>
-After detrending, about 20% of the variance of annually-resolved white noise would be expected to accrue to the decadal component, as here defined, for a sample of this size (about 100 years). White noise is a random process having no “memory,” in the sense that its value at a particular time does not exhibit any dependence on its values at other previous times. This differs from processes having memory or “persistence,” in which the process level is dependent on previous values (such processes tend to vary more slowly than white noise). Thus, a decadal variance fraction of as much as 20% (meaning the decadal fraction divided by the sum of decadal and interannual fractions alone) should not be mistaken for the signature of a systematic decadal oscillation, or even a slow random process, that differs from white noise. As a result, the Medium importance of decade-long shifts is defined as the decadal variance fraction (relative to the sum of decadal and interannual fractions only) comprised between 15% and 25%. The Low category is defined as decadal variance fraction lower then 15%; the High category greater than 25% and the Extremely High category greater than 40%.</p>
-
-<p align="left"><b>Year-to-year shifts in climate.</b>
-Complementarily, an interannual variance fraction of as much as 80% is expected in a random signal. Therefore, the Medium importance of year-to-year shifts is defined as the interannual variance fraction (relative to the sum of decadal and interannual fractions) comprised between 75% and 85%. The Low category is defined as interannual variance fraction lower then 75%; the High category greater than 85% and the Extremely High category greater than 90%.</p>
-
-<p align="left"><b>Century-long shifts in climate.</b>
-The trend, or more precisely the part of the regional signal which is linearly dependent on global mean temperature, here called century-long shifts, has different statistical characteristics than the decade-long and year-to-year shifts signals so that we used a different approach to define its categories of importance. The categories are simply and intuitively defined relatively to the importance of the two other time scale components. Thus, Extremely High category is assigned when the trend variance fraction (relative to total variance of the original signal) is greater than both the decadal and interannual fraction variances; High category when the trend variance fraction is comprised between the two others; Medium when the trend variance fraction is lower than both other fractions; Low when the trend variance fraction is lower than at least 10% less than the smaller of the two other trends.</p>
-
 </div>
 </div>
 <div class="optionsBar">
