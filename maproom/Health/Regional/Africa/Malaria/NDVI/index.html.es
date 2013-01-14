@@ -53,7 +53,7 @@ body.varreflectance .regionwithinbbox{display: none !important}
 <input class="dlimg dlauximg dlimgts share dlimgloc justsregion bodyClass" name="var" type="hidden" value="NDVI" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value=".5" />
+<input class="pickarea" name="resolution" type="hidden" value="irids:SOURCES:Features:Political:Africa:Districts:ds" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
