@@ -45,7 +45,7 @@ display: inline-block
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value="0.5" />
+<input class="pickarea" name="resolution" type="hidden" value="irids:SOURCES:Features:Political:Africa:Districts:ds" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
@@ -55,6 +55,13 @@ display: inline-block
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Malaria Epidémica</span></legend>
             </fieldset>
+ <fieldset class="navitem"><legend>Spatially Average Over</legend><select class="pageformcopy" name="resolution">
+<option value=".1">11x11 km box</option>
+<option value=".3">33x33 km box</option>
+<option value=".5">55x55 km box</option>
+<option value="1.">111x111 km box</option>
+<option value="irids:SOURCES:Features:Political:Africa:Districts:ds">district boundaries</option>
+</select></fieldset>
  </div>
 <style>
 .leftpart {
@@ -85,6 +92,12 @@ margin: 0px;
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/-30/60/RANGE/Y/-60/40/RANGE/%28bb:0:0:5:5:bb%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+//plotborder+0+psdef//plotaxislength+120+psdef+.gif" />
+<div class="valid" style="display: inline-block; text-align: top;">
+<a class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">
+Observations for <span class="bold iridl:long_name"></span>
+</div>
+</div>
 <br />
 <div class="dlimgtsbox">
 <div>Últimos 12 Meses de VCAP</div>
