@@ -86,6 +86,9 @@ margin: 0px;
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfediffmask/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
+      <li><a href="#tabs-6" >Functions</a></li>
+      
     </ul>
 
 <fieldset class="dlimage">
@@ -95,9 +98,11 @@ margin: 0px;
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Rainfall Estimate Differences</h2>
-  <p align="left" property="term:description">The Rainfall Estimate Differences (RED) map illustrates the difference between the most recent dekadal rainfall estimates from the Climate Prediction Center and their short term average (from 2000 to last recent complete year).</p>
-<p> These differences should not be confused with conventional rainfall anomalies, but may provide insight into changes in malaria risk in areas where precipitation anomalies are the principal cause of malaria epidemics by providing a recent historical reference.</p>
-<p>Positive (negative) values indicate dekadal estimates that are above (below) the short term average, unlike conventional rainfall anomalies, which are based on the difference between observed data and a long-term (e.g., 30-year) average.  The length of the referenced short-term average will increase over time as more data becomes available. Despite the limitations that the short-term average imposes, it may provide insight into changes in malaria risk in areas where precipitation anomalies are the principal cause of malaria epidemics by providing a recent historical reference. Rainfall estimates expressed as percentages of the short-term average can be viewed on the Rainfall Estimate Percentages (<a class="href" href="../REP/index.html">REP</a>) map page.
+  <p align="left" property="term:description">This map shows dekadal (10-day) rainfall estimates as the difference from the short term average (from 2000 to last recent complete year). Positive (negative) values indicate dekadal estimates that are above (below) the short-term average rainfall.</p>
+<p> The Rainfall Estimate Differences (RED) values are different from conventional rainfall anomalies because they are based on a short-term average and not the typical long-term (e.g., 30-year) average. This comparison provides insight into changes in malaria risk relative to a recent historical perspective. </p>
+<p> Rainfall, especially in dry lands (warm semi-arid and desert fringe areas), is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites. </p>
+
+<p> Rainfall estimates expressed as percentages of the short-term average can be viewed on the Rainfall Estimate Percentages (<a class="href" href="../REP/index.html">REP</a>) map page.
 </p>
 <h4>References</h4>
 <p>
@@ -106,7 +111,10 @@ WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Ep
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<h4>Rainfall Estimates Estimates</h4>
+
+<dd>RED maps are produced every 10 days on an 11 km spatial resolution basis. Dekadal estimates and short-term averages are derived from the Climate Prediction Center/Famine Early Warning System. Areas where the average accumulation for the selected dekad is less than 7 mm are not shown in the analysis.</dd>
+
+<h4>Rainfall Estimates </h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
 <dd>Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid</dd>
@@ -116,14 +124,14 @@ WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Ep
 <h4>Rainfall Estimate Short-Term Average</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
-<dd><b>Data</b>: Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid
+<dd>Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid
 <br /><b>Base Period</b>: 1 Jan 2000 to 31 Dec of last year</dd>
 <dt>Data Source</dt><dd> Climate Prediction Center/Famine Early Warning System 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>)*</dd>
 </dl>
 <h4>Epidemiological Mask</h4>
 <dl class="datasetdocumentation">
-<dt>Mask</dt><dd>illustrating areas where malaria is considered to be epidemic.  Areas where malaria transmission is considered absent or endemic are therefore excluded. This mask is based purely on climatic constraints to malaria transmission, and does not yet account for areas in the northern and southern margins of the continent where control has eliminated malaria risk.</dd>
+<dd>This map utilizes an epidemiological mask to isolate areas prone to new exposure of malaria. The mask allows for RED to be exclusively illustrated in areas where malaria is considered to be epidemic, therefore, areas where malaria transmission is considered absent or endemic are excluded. The mask is based purely on climatic constraints to malaria transmission and does not yet account for areas in the northern and southern margins of the continent where control has eliminated malaria risk.</dd>
 <dt>Reference</dt><dd>WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.  </dd>
 </dl>
 <p>
@@ -142,6 +150,16 @@ WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Ep
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
+</div>
+<div id="tabs-5" class="ui-tabs-panel" instructions="">
+ <h2 align="center" property="term:title">Instructions</h2>
+  <p align="left" property="term:description">The default map on this page displays the most recent dekadal (10-day) estimated precipitation amounts over Africa. As the user moves the cursor over the map, a tool bar will appear on top that will allow for previous dekads (1999-to the most recent dekad) to be displayed.</p>
+  
+<p>The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, four time series graphs are generated that provide analyses of recent precipitation with respect to that of recent seasons and the short-term multiple-year average. 
+</p><p>
+By placing recent precipitation in historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
+</p>
+
 </div>
 </div>
 <div class="optionsBar">
