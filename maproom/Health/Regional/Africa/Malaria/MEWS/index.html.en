@@ -147,12 +147,9 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Malaria Early Warning System</h2>
-  <p align="left" property="term:description">MEWS is a rainfall-monitoring product based on dekadal precipitation estimates from the Climate Prediction Center. The interface allows users to view recent rainfall estimates with a seasonal and recent historical perspective. Time series analyses of rainfall data are generated based on user-selected parameters.</p>
-<p>Rainfall is largely responsible for creating the conditions which allow sufficient surface
-water for mosquito breeding sites and is, therefore, recognized as one of the major factors
-influencing malaria transmission in warm semi-arid and desert-
-fringe areas.  Explosive epidemics often occur in these regions after excessive rains and,
-where these follow periods of drought and poor food security, can be especially severe.
+  <p align="left" property="term:description">The Malaria Early Warning System (MEWS) consists of an integrated framework that utilizes climate forecasting and environmental monitoring products in order to provide warning to a potential outbreak of malaria (DaSilva et al., 2004). Precipitation is one of the essential elements of MEWS.</p>
+  
+<p>This map shows precipitation based on dekadal precipitation estimates from the Climate Prediction Center. Precipitation, especially in dry lands (warm semi-arid and desert fringe areas), is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites.  
 </p><p>
 Consequently, rainfall monitoring forms one of the essential elements for the development
 of integrated Malaria Early Warning Systems (MEWS) for sub-Saharan Africa, as outlined by
