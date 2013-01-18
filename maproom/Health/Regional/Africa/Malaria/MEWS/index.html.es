@@ -54,6 +54,11 @@ display: inline-block
 <input class="share dlimg" name="T" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
 <input class="pickarea" name="resolution" type="hidden" value="irids:SOURCES:Features:Political:Africa:Districts:ds" />
+<input class="dlimg" name="layers" value="est_prcp" checked="checked" type="checkbox" />
+<input class="dlimg" name="layers" value="countries_gaz" checked="checked" type="checkbox" />
+<input class="dlimg" name="layers" value="mews_prov" checked="checked" type="checkbox" />
+<input class="dlimg" name="layers" value="mews_dist" type="checkbox" />
+<input class="dlimg" name="layers" value="Risk_map"  type="checkbox" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
@@ -135,9 +140,9 @@ el período de 12 meses más reciente en la región seleccionada. Las barras azu
 </p>
 </fieldset>
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig+//T/19231.5/plotvalue+//plotborder+72+psdef//plotaxislength+432+psdef+.gif" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/SOURCES/.Features/.Epidemiological/.Malaria/.Risk_map/.the_geom/X/Y/fig-/colors/red/stroke/grey/verythin/mews_dist/black/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//layers%5B//est_prcp//mews_prov//countries_gaz%5Dpsdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/SOURCES/.Features/.Epidemiological/.Malaria/.Risk_map/.the_geom/X/Y/fig-/colors/red/stroke/grey/verythin/mews_dist/black/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//layers%5B//est_prcp//mews_prov//countries_gaz%5Dpsdef+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/SOURCES/.Features/.Epidemiological/.Malaria/.Risk_map/.the_geom/X/Y/fig-/colors/red/stroke/grey/verythin/mews_dist/black/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig+//T/19231.5/plotvalue+//plotborder+72+psdef//plotaxislength+432+psdef//layers%5B//est_prcp//mews_prov//countries_gaz%5Dpsdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Sistema de Alerta Temprana</h2>
