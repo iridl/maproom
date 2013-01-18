@@ -180,7 +180,7 @@ Grover-Kopec E., Kawano M., Klaver R. W., Blumenthal B., Ceccato P., Connor S. J
 </dl>
 <h4>Epidemiological Mask</h4>
 <dl class="datasetdocumentation">
-<dd>This map utilizes an epidemiological mask to isolate areas prone to new exposure of malaria. The mask allows for MEWS to be exclusively illustrated in areas where malaria is considered to be epidemic, therefore, areas where malaria transmission is considered absent or endemic are excluded. The mask is based purely on climatic constraints to malaria transmission and does not yet account for areas in the northern and southern margins of the continent where control has eliminated malaria risk.</dd></p>
+<dd>This map utilizes an epidemiological mask to isolate areas prone to new exposure of malaria. The mask allows for MEWS to be exclusively illustrated in areas where malaria is considered to be epidemic, therefore, areas where malaria transmission is considered absent or endemic are excluded. The mask is based purely on climatic constraints to malaria transmission and does not yet account for areas in the northern and southern margins of the continent where control has eliminated malaria risk.</dd>
 
 <dt>Reference</dt><dd>WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.  </dd>
 </dl>
@@ -202,7 +202,7 @@ Grover-Kopec E., Kawano M., Klaver R. W., Blumenthal B., Ceccato P., Connor S. J
 <p>The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, four time series graphs are generated that provide analyses of recent precipitation with respect to that of recent seasons and the short-term multiple-year average. 
 </p><p>
 By placing recent precipitation in historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
-</p><p>
+</p>
 
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
