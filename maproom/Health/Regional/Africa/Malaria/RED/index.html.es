@@ -49,6 +49,7 @@ display: inline-block
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage href" name="Set-Language" type="hidden" />
 <input class="dlimg share dlimgloc href" name="bbox" type="hidden" />
+<input class="share dlimg" name="T" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
 </form>
 <div class="controlBar">
