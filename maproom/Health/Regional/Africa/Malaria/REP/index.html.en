@@ -85,6 +85,8 @@ margin: 0px;
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfe_vs_meanrfe/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
+      <li><a href="#tabs-6" >Functions</a></li>
     </ul>
 
 <fieldset class="dlimage">
@@ -94,8 +96,10 @@ margin: 0px;
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Rainfall Estimate Percentages</h2>
-  <p align="left" property="term:description">The Rainfall Estimate Percentages (REP) map expresses the most recent dekadal rainfall estimates from the Climate Prediction Center as a percentage of the short term average (from 2000 to last recent complete year).</p>
-<p> Values greater (less) than 100% therefore indicate dekadal estimates that are above (below) the short-term average rainfall. Rainfall percentages in areas where the average accumulation is less than 7 mm are not shown in the analysis.</p>
+  <p align="left" property="term:description">This map shows dekadal (10-day) rainfall estimates as a percentage of the short term average (from 2000 to last complete year). Values greater (less) than 100% therefore indicate dekadal estimates that are above (below) the short-term average rainfall.</p>
+<p> The Rainfall Estimate Percentage (REP) values are different from conventional rainfall anomalies because they are based on a short-term average and not the typical long-term (e.g., 30-year) average. This comparison provides insight into changes in malaria risk relative to a recent historical perspective.</p>
+<p> Rainfall, especially in dry lands (warm semi-arid and desert fringe areas), is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites.</p>  
+  
 <p> Rainfall estimates expressed as differences of the short-term average can be viewed on the Rainfall Estimate Differences (<a class="href" href="../RED/index.html">RED</a>) map page.
 </p>
 <h4>References</h4>
@@ -105,7 +109,8 @@ WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Ep
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<h4>Rainfall Estimates Estimates</h4>
+<dd>REP maps are produced every 10 days on an 11 km spatial resolution basis. Dekadal estimates and short-term averages are derived from the Climate Prediction Center/Famine Early Warning System. Areas where the average accumulation for the selected dekad is less than 7 mm are not shown in the analysis.</dd>
+<h4>Rainfall Estimates Percentages</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
 <dd>Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid</dd>
@@ -134,6 +139,15 @@ WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Ep
 <h2 align="center">Dataset</h2>
 <p>
 <a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfe_vs_meanrfe/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-5" class="ui-tabs-panel">
+<h2  align="center">Instructions</h2>
+<p> The default map on this page displays most recent dekadal REP values over Africa. As the user moves the cursor over the map, a tool bar will appear on top that will allow for previous dekads (1999-the most recent) to be displayed. </p>
+  
+<p>The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, four time series graphs are generated that provide analyses of recent precipitation with respect to that of recent seasons and the short-term multiple-year average. 
+</p><p>
+By placing recent precipitation in historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">

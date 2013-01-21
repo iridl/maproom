@@ -153,7 +153,7 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia
 </div>
 <div id="tabs-5" class="ui-tabs-panel" instructions="">
  <h2 align="center">Instructions</h2>
-  <p align="left">The default map on this page displays the most recent dekadal (10-day) estimated precipitation amounts over Africa. As the user moves the cursor over the map, a tool bar will appear on top that will allow for previous dekads (1999-to the most recent dekad) to be displayed.</p>
+  <p align="left">The default map on this page displays the most recent dekadal (10-day) rainfall estimates over Africa as percentages of the short-term average.  As the user moves the cursor over the map, a tool bar will appear on top that will allow for previous dekads (1999-to the most recent dekad) to be displayed.</p>
   
 <p>The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, four time series graphs are generated that provide analyses of recent precipitation with respect to that of recent seasons and the short-term multiple-year average. 
 </p><p>
