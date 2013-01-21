@@ -152,7 +152,7 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
   <p align="left" property="term:description">The Malaria Early Warning System (MEWS) consists of an integrated framework that utilizes climate forecasting and environmental monitoring products in order to provide warning to a potential outbreak of malaria (DaSilva et al., 2004). Precipitation is one of the essential elements of MEWS.</p>
   
 <p>This map shows precipitation based on dekadal (10-day) precipitation estimates from the Climate Prediction Center. Precipitation, especially in dry lands (warm semi-arid and desert fringe areas), is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites.  
-</p>
+</p>	
 
 
 <p>Epidemic outbreaks can occur in these dry land regions and can be severe soon after periods of drought and poor food security. 
@@ -190,7 +190,7 @@ Grover-Kopec E., Kawano M., Klaver R. W., Blumenthal B., Ceccato P., Connor S. J
 </div>
 <div id="tabs-5" class="ui-tabs-panel" instructions="">
  <h2 align="center">Instructions</h2>
-  <p align="left">The default map on this page displays the most recent dekadal (10-day) estimated precipitation amounts over Africa. As the user moves the cursor over the map, a tool bar will appear on top that will allow for previous dekads (1999-the most recent dekad) to be displayed.</p>
+  <p align="left">The default map on this page shows the most recent dekadal (10-day) estimated precipitation amounts over Africa. As the user moves the cursor over the map, a tool bar will appear on top that will allow for previous dekads (1999-the most recent dekad) to be displayed.</p>
   
 <p>The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, four time series graphs are generated that provide analyses of recent precipitation with respect to that of recent seasons and the short-term multiple-year average. 
 </p><p>
