@@ -80,6 +80,7 @@
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a class="carry" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/caCMAP-latest_WASP12//fullname/%2812-Month%20WASP%29def/tag://fullname/%2812-Month%20WASP%29:tag//long_name/%2812-Month%20WASP%29def/cabaseline//fullname/%28Baseline%29def/tag://fullname/%28Baseline%29:tag//long_name/%28Baseline%29def/%7BWASP/Baseline%7Dds/nip/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/a:/.caCMAP-latest_WASP12/tag:/%28fullname%29%2812-Month%20WASP%29:tag//plotfirst/-3.5/def//plotlast/3.5/def//long_name/%2812-Month%20WASP%29def/home/.remic/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full/%281979%29//baseyear/parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/:a:/.caCMAP-latest_WASP12/tag:/%28fullname%29%2812-Month%20WASP%29:tag//plotfirst/-3.5/def//plotlast/3.5/def//long_name/%2812-Month%20WASP%29def/home/.remic/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full//baseyear/get_parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/maskgt/home/.remic/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full//baseyear/get_parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/:a/T/fig-/green/deltabars/brown/deltabars/|/black/thin/line/black/medium/line/-fig//framelabel/%28%25s%5Bcountry%5D%20precipitation%20relative%20to%20years%20%29//baseyear/get_parameter/%28%20starting%20%25=%5BBaseline%5D%29append/append/psdef//country//Algeria/plotvalue//Baseline/0.5/plotvalue//plotaxislength/432/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//XOVY/null/psdef/"></a>
@@ -89,17 +90,17 @@
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">Country-Average WASP Index</h2>
   <p align="left" property="term:description">
-This plot shows a time series of the country-averaged value of the 12-Month Weighted Anomaly Standardized Precipitation (WASP) index calculated using the latest version of the CMAP monthly precipitation dataset for a user-selected country in Africa. </p>
+This plot shows the time series of a country’s 12-month Weighted Anomaly Standardization Precipitation (WASP) index relative to a baseline period. The purpose of this tool is to provide a simple visual means of relating country-averaged precipitation to a reference period of interest. </p>
 <p align="left">
-To compute the WASP index, monthly precipitation departures from the long-term average are obtained and then standardized by dividing by the standard deviation of monthly precipitation.  The standardized monthly anomalies are then weighted by multiplying by the fraction of the average annual precipitation for the given month.  These weighted anomalies are then summed over a 12-month time period in this case, and this result is itself standardized.</p>
+To compute the WASP index, monthly precipitation departures from the long-term (30-year) average are obtained and then standardized by dividing by the standard deviation of monthly precipitation. The standardized monthly anomalies are then weighted by multiplying by the fraction of the average annual precipitation for the given month. These weighted anomalies are then summed over a 12-month time period.</p>
 <p>
-The user is also able to select a reference year, placing a baseline on the plot corresponding to the WASP index value for the center of the selected year.  For WASP index values above the baseline, the area between the index and the baseline value is shaded in green.  For WASP index values below the baseline, the area between the index and the baseline value is shaded in brown.</p>
+Precipitation, especially in dry lands (warm semi-arid and desert fringe areas), is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites.  </p>
 <p>
-The baseline(s) can be a single year, multiple years or a range of years. For a single year, just type in the 4 digits of the year of interest, as shown by default. For multiple years, enter the 4 digits of the desired years separated by one blank. For instance the entry <i>1985 1990 2004</i> will select those 3 single-year baselines and average them to form a new baseline. For a range of years, enter the 4 digits of the first and the last year (inclusive) separated by a <i>-</i>. For instance <i>1990-1999</i> will select the 10 single-year baselines of the 90s and average them to form a new baseline. Finally, the year can be defined otherwise than the January to December year by choosing the month a year start. For instance, choosing <i>Mar</i> will define a year as the 12 months going from March to February.
+For WASP index values above (below) the baseline, the area between the index and the baseline value is shaded in green (brown). A baseline above (below) 0 indicates the selected year or period recorded precipitation above (below) the long-term average.</p>
+<p>
+WASP index values are derived from precipitation estimates from the Merged Analysis of Precipitation from the Climate Prediction Center (CMAP). 
 </p>
-<p>
-The purpose of this tool is to provide a simple visual means of relating country-average precipitation to a reference year of interest.
-</p>
+
 <h4>References:</h4>
 <b>Lyon</b>, B., and A. G. Barnston, 2005:  ENSO and the spatial extent of interannual precipitation extremes in tropical land areas. <i>Journal of Climate</i>, <b>18</b>, 5095-5109.
 <p>
@@ -112,7 +113,7 @@ The purpose of this tool is to provide a simple visual means of relating country
 <dt>Data Source</dt>
 <dd>Latest available release of monthly CPC Merged Analysis of Precipitation (CMAP, version 2, combined gauge and satellite estimates) on a 2.5° x 2.5° lat/lon grid.</dd>
 <dt>Base Period for Anomalies</dt>
-<dd>1979 to latest complete calendar year (2007)</dd>
+<dd>1979 to latest complete calendar year (2010)</dd>
 </dl>
 </div>
 <div class="ui-tabs-panel-hidden">
@@ -126,6 +127,15 @@ The purpose of this tool is to provide a simple visual means of relating country
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
+</div>
+<div id="tabs-5" class="ui-tabs-panel">
+<h2  align="center">Instructions</h2>
+<dl class="instructions">
+
+<p>The default plot on this page displays the WASP values spatially averaged over a country (Algeria) against a base period (1979). Users can select a country and baseline year by using the menu at the top of the page. As the user moves the cursor over the map, a tool bar will appear on top that will allow for the baseline period to begin at different months. </p>
+<p>For example, selecting “Mali”, “1985” and “March” will produce a time series with WASP values averaged over Mali relative to a baseline corresponding to the March 1985-February 1986 average.</p>
+<p>The baseline can be a single year or consist of a range of years. For multiple years, enter the 4 digits of the desired years separated by one blank. For instance the entry 1985 1990 2004 will select those 3 single-year baselines and average them to form a new baseline. For a range of years, enter the 4 digits of the first and the last year (inclusive) separated by a "-". For instance 1990-1999 will select the 10 single-year baselines of the 90s and average them to form a new baseline.</p>
+</dl>
 </div>
 </div>
 <div class="optionsBar">
