@@ -95,6 +95,8 @@ margin: 0px;
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/Aqua/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
+      
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-35%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:11%2C1%2C11.5%2C1.5%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
@@ -129,14 +131,27 @@ b) Same as (a) for the current year (thick black line), as indicated by the axis
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Inferred Maximum Air Temperature at 2m</h2>
-  <p align="left" property="term:description">Inferred maximum air temperature from space using observations from polar orbiting satellite AQUA-sensor MODIS.
-</p><p>The map shows inferred maximum air temperature from space using observations from polar orbiting satellite AQUA-sensor MODIS. Minimum Land Surface Temperature (LST) derived from MODIS night-time images provides a good surrogate for minimum air temperature while the retrieval of maximum air temperature is less straightforward. Maximum air temperatures are estimated through the extrapolation of the minimum temperature derived from MODIS according to the diurnal cycle. The diurnal cycle parameters (i.e. phase and amplitude) which are used to estimate the maximum air temperature are determined locally using data from the WORLDCLIM database.
-</p><p><b>Reference:</b>Ceccato, P. , Vancutsem, C., Temimi, M. (2010). <a href="http://www.scopus.com/record/display.url?eid&#61;2-s2.0-78650855812&#38;origin=resultslist&#38;sort=plf-f&#38;src=s&#38;st1=Ceccato&#38;st2=P&#38;nlo=1&#38;nlr=20&#38;nls=first-t&#38;sid=jLNiD-7V9i5Mwf99SugfMOt%3a553&#38;sot=anl&#38;sdt=aut&#38;sl=35&#38;s=AU-ID%28%22Ceccato%2c+Pietro%22+8303142200%29&#38;relpos=0&#38;relpos=0&#38;searchTerm=AU-ID%28%5C">Monitoring Air and Land Surface Temperatures from Remotely Sensed Data for Climate-Human Health Applications</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
+  <p align="left" property="term:description">The map shows inferred maximum air temperature, one important component for the transmission of malaria (Ceccato et el., 2010). The black points on the map indicate locations of weather stations.</p>
+
+<p>Maximum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors (Ceccato et el., 2012). Maximum air temperature values of 32°C act as the upper limit for vector development and potential malaria transmission.</p>
+
+<p>The temperatures shown are estimated by combining nighttime land surface temperatures (LST) with diurnal cycle values.</p>
+
+
+<p><b>Reference:</b>Ceccato, P. , Vancutsem, C., Temimi, M. (2010). <a href="http://www.scopus.com/record/display.url?eid&#61;2-s2.0-78650855812&#38;origin=resultslist&#38;sort=plf-f&#38;src=s&#38;st1=Ceccato&#38;st2=P&#38;nlo=1&#38;nlr=20&#38;nls=first-t&#38;sid=jLNiD-7V9i5Mwf99SugfMOt%3a553&#38;sot=anl&#38;sdt=aut&#38;sl=35&#38;s=AU-ID%28%22Ceccato%2c+Pietro%22+8303142200%29&#38;relpos=0&#38;relpos=0&#38;searchTerm=AU-ID%28%5C">Monitoring Air and Land Surface Temperatures from Remotely Sensed Data for Climate-Human Health Applications</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
 </p>
 </div>
-<div id="tabs-2" class="ui-tabs-panel">
+<div id="tabs-2"  class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <dl class="datasetdocumentation">
+
+<p align="center">Inferred Maximum Air Temperature maps are produced every 8 days on a 1 km spatial resolution basis.</p>
+
+<p align="center">LST is derived from the MODIS sensor aboard the Aqua satellite courtesy of the United States Geological Survey. Local diurnal cycles are obtained from the WORLDCLIM database. 
+</p>
+
+
+
 <dt>Data</dt>
 <dd>Maximum Air Temperature Inferred</dd>
 <dt>Data Source</dt><dd>the International Research Institute for Climate and Society <a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/">inferred max temperature</a>
@@ -160,12 +175,28 @@ b) Same as (a) for the current year (thick black line), as indicated by the axis
 <div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Helpdesks</h2>
 <p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
- </p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly. </p>
 </div>
+
+<div id="tabs-5"  class="ui-tabs-panel">
+<h2  align="center">Instructions</h2>
+
+<p> The interface consists of a clickable map that allows users to generate customized time series graphs based on geographical parameterization. </p>
+
+<p> By clicking on a map location, the interface will provide a time series of maximum air temperature reconstructed for that location (from Jul 2002 to the last 8-day composite available). </p>
+
+
+<p>For comparison purposes, the time series will also display the observed maximum air temperature at the closest station to the clicked location. </p>
+
+
+<p>By placing temperature in historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions. </p>
+
+
+
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
 </div>
  </body>
  </html>
