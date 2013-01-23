@@ -60,6 +60,7 @@
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a class="carry" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/X+Y+fig:+colors+grey+verythin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+lakes+:fig//plotaxislength+432+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotborder+72+psdef/"></a>
@@ -68,15 +69,18 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">MARA Distribution Model of Climatic Suitability for Malaria Transmission</h2>
-  <p align="left" property="term:description">The MARA distribution model is a static map illustrating climatic suitability for malaria transmission. Climatological averages of precipitation and temperature are utilized in a fuzzy logic model developed by scientists associated with the Mapping Malaria Risk in Africa (MARA) group (after Craig et al. 1999).</p>
+  <p align="left" property="term:description">This map shows climatic suitability for malaria transmission based on the MARA (Mapping Malaria Risk in Africa) distribution model.</p>
 <p align="left">
-This map is a <i><u>theoretical</u></i> model based on available long-term climate data. Although it is reasonably accurate, it is <i><u>not based on actual malaria data</u></i> and may not reflect the real malaria status. It shows the theoretical suitability of local climatic conditions, and therefore the potential distribution of stable malaria transmission in the average year. Please note that climatic conditions, and therefore malaria transmission, vary substantially from one year to the next. Malaria control activities can also dramatically alter the malaria transmission situation.</p>
+The MARA distribution model is a static map illustrating climatic suitability derived from climatological averages of precipitation and temperature. These averages are utilized in a fuzzy logic model developed by scientists associated with the Mapping Malaria Risk in Africa (MARA) group (after Craig et al. 1999).</p>
 <p>
-Where climate is "suitable" (red = 1), malaria is likely endemic (hypo-, meso-, hyper- or holoendemic). "Suitable" areas may have little or no malaria because of malaria control. Where climate is "unsuitable" (white = 0), malaria is likely epidemic or absent. Some "unsuitable" areas may actually have endemic malaria because of the presence of surface water in an area where there is little or no rain. In the marginally suitable areas (0.1 - 0.9) transmission may occur at steady but low levels (eg eastern Africa), or in strongly seasonal cycles with great inter-annual variation (eg western &amp; southern Africa). [Courtesy of <a href="http://www.mara.org.za/">Mapping Malaria Risk in Africa</a> (MARA) web page]</p>
+Temperature, precipitation and relative humidity are factors of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors (Grover-Kopec et al., 2006). The aforementioned values act as the upper limit for vector development and potential malaria transmission. </p>
+<p>This map is a <i><u>theoretical</u></i> model based on available long-term climate data. Although it is reasonably accurate, it is <i><u>not based on actual malaria data</u></i> and may not reflect the real malaria status. It shows the theoretical suitability of local climatic conditions, and therefore the potential distribution of stable malaria transmission in the average year. Please note that climatic conditions, and therefore malaria transmission, vary substantially from one year to the next. Malaria control activities can also dramatically alter the malaria transmission situation.</p>
+
 <p>Reference: Craig, M. H., R. W. Snow, and D. le Seur, 1999: A climate-based distribution model of malaria transmission in Sub-Saharan Africa. Parasitology Today, 15(3), 105-111.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
+<dd>Temperature and precipitation climatology is compiled on a 0.5° x 0.5° lat/lon grid from University of East Anglia’s Climate Research Unit (CRU). The base period for climatology is 1971-2000.</dd>
 <h4>Precipitation Climatology</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt><dd>Monthly precipitation over land areas on a 0.5° x 0.5° lat/lon grid</dd>
@@ -101,6 +105,25 @@ Where climate is "suitable" (red = 1), malaria is likely endemic (hypo-, meso-, 
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
+</div>
+<div id="tabs-5" class="ui-tabs-panel" about="">
+  <h2 align="center" property="term:title">Instructions</h2>
+  
+  
+  <p>Where climate is "suitable" (red = 1)  malaria is likely endemic (hypo-, meso-, hyper- or holoendemic). "Suitable" areas may have little or no malaria because of malaria control. Where climate is "unsuitable" (white = 0), malaria is likely epidemic or absent. Some "unsuitable" areas may actually have endemic malaria because of the presence of surface water in an area where there is little or no rain. (<a class="href" href="http://www.mara.org.za/">Mapping Malaria Risk in Africa</a>)</p>
+  
+  
+  
+  
+  <p> In the marginally suitable areas (0.1 - 0.9) transmission may occur. In eastern Africa transmission may occur at steady but low levels. In western and southern Africa transmission may occur in strongly seasonal cycles with great inter-annual variation. </p>
+  
+  
+<p>
+This map is a <i><u>theoretical</u></i> model based on available long-term climate data. Although it is reasonably accurate, it is <i><u>not based on actual malaria data</u></i> and may not reflect the real malaria status. </p>
+
+
+
+
 </div>
 </div>
 <div class="optionsBar">
