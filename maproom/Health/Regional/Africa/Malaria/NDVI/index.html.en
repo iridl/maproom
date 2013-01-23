@@ -68,8 +68,8 @@ body.varreflectance .regionwithinbbox{display: none !important}
             <fieldset class="navitem"> 
                 <legend>Region</legend> 
                 <select class="pageformcopy" name="sregion">
-                 <option value=".WAF">West Africa</option>
-                   <option value=".EAF">East Africa</option>
+                 <option value=".WAF">western Africa</option>
+                   <option value=".EAF">eastern Africa</option>
                    <option value=".SAF">Southern Africa</option>
                     </select>
             </fieldset>
@@ -146,7 +146,7 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
-  <p align="left" property="term:description">The Moderate Resolution Imaging Spectrometer (MODIS) Analysis Tool allows for maps of estimated vegetation to be produced. Two vegetation indices are provided: NDVI, EVI in addition to the reflectance values for the blue, red, near infrared and middle infrared channels. Images are available for West Africa, East Africa and southern Africa. 
+  <p align="left" property="term:description">The Moderate Resolution Imaging Spectrometer (MODIS) Analysis Tool allows for maps of estimated vegetation to be produced. Two vegetation indices are provided: NDVI, EVI in addition to the reflectance values for the blue, red, near infrared and middle infrared channels. Images are available for western Africa, eastern Africa and southern Africa. 
 
 </p>
 <dl class="datasetdocumentation">
