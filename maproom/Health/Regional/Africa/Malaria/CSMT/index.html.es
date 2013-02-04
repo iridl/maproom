@@ -114,7 +114,7 @@ Ideales para la Transmisión de Malaria</h4>
 </div>
 </fieldset>
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/%28Annual_Sum%29//var/parameter/cvn/cvx/exec//var/get_parameter/%28RHCondProb%29eq/%7BSOURCES/.UEA/.CRU/.TS2p0/.climatology/.c7100/.mean/.temp/0/flaggt/0/maskle/mul/0.1/sub/DATA/0/100/RANGE%7Dif/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//antialias/true/psdef/"></a>
+<a class="info" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/%28Annual_Sum%29//var/parameter/cvn/cvx/exec//var/get_parameter/%28RHCondProb%29eq/%7BSOURCES/.UEA/.CRU/.TS2p0/.climatology/.c7100/.mean/.temp/0/flaggt/0/maskle/mul/0.1/sub/DATA/0/100/RANGE%7Dif/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//antialias/true/psdef/"></a>
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/%28Annual_Sum%29//var/parameter/cvn/cvx/exec//var/get_parameter/%28RHCondProb%29eq/%7BSOURCES/.UEA/.CRU/.TS2p0/.climatology/.c7100/.mean/.temp/0/flaggt/0/maskle/mul/0.1/sub/DATA/0/100/RANGE%7Dif/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//antialias/true/psdef/+.gif" border="0" />
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/%28Annual_Sum%29//var/parameter/cvn/cvx/exec//var/get_parameter/%28RHCondProb%29eq/%7BSOURCES/.UEA/.CRU/.TS2p0/.climatology/.c7100/.mean/.temp/0/flaggt/0/maskle/mul/0.1/sub/DATA/0/100/RANGE%7Dif/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//antialias/true/psdef/.auxfig//plotborder+72+psdef//plotaxislength+432+psdef+.gif" />
 </fieldset>
