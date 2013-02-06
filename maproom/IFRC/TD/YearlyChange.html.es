@@ -77,6 +77,7 @@ color: blue;
       <li><a href="#tabs-1" >Descripci&#243;n</a></li>
       <li><a href="#tabs-2" >M&#225;s Informaci&#243;n</a></li>
       <li><a href="#tabs-3" >Instructi&#243;nes</a></li>
+    <li><a href="#tabs-7" >Descripci&#243;n T&#233;cnica</a></li>
       <li><a href="#tabs-4" >Dataset de Documentaci&#243;n</a></li>
       <li><a href="#tabs-5" >Cont&#225;ctenos</a></li>
     </ul>
@@ -165,6 +166,19 @@ Contacte con <a href="mailto:ifrc@iri.columbia.edu">ifrc@iri.columbia.edu</a> si
 En contacto con <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> con cualquier pregunta t&#233;cnica o problemas con esta Sala de Mapas, por ejemplo, las previsiones no mostrar o actualizar correctamente.
  </p>
 </div>
+<div id="tabs-7" class="ui-tabs-panel">
+<h2  align="center">Descripci&#243;n T&#233;cnica</h2>
+<p align="left"> <b>Fluctuaciones decadales del clima</b>
+Despu&#233;s de eliminar la tendencia, se esperar&#237;a que unos 20% de la varianza del ruido blanco anualmente resuelto se acumular&#237;a al componente decadal, como es definido aqu&#237;, por este tama&#241;o de la muestra (aproximadamente 100 a&#241;os). Ruido blanco es un proceso aleatorio sin &#34;memoria,&#34; en el sentido que su valor en un momento en particular no muestra dependencia de sus valores en tiempos anteriores. Esto difiere de los procesos con memoria o &#34;persistencia&#34; en cuales el nivel del proceso es dependiente de los valores anteriores (tales procesos tienden a variar con m&#225;s baja frecuencia que el ruido blanco). De este modo, una fracci&#243;n de varianza decadal de hasta unos 20% (significando la fracci&#243;n decadal dividida entre la suma de la fracciones decadales e interanuales solas) no se debe confundir con la se&#241;al de una oscilaci&#243;n sistem&#225;tica decadal o m&#225;s a&uacute;n con un proceso aleatorio de baja frecuencia, que se diferenciar&#237;a del ruido blanco. Como resultado, la importancia Media de los fluctuaciones decadales del clima es definida como la fracci&#243;n de la varianza decadal (relativa s&#243;lo a la suma de las fracciones decadales e interanuales) entre 15% y 25%. La categor&#237;a Baja es definida como una fracci&#243;n de varianza decadal de menos de 15%; la categor&#237;a Alta es mayor que 25% y la categor&#237;a Extremadamente Alta es mayor que 40%.</p>
+
+<p align="left"><b>Fluctuaciones interanuales del clima</b>
+Complementariamente, una fracci&#243;n de varianza interanual de hasta unos 80% se anticipa en una se&#241;al aleatoria. Por lo tanto, la importancia Media de los fluctuaciones interanuales del clima es definida como la fracci&#243;n de la varianza interanual (relativa a la suma de las fracciones decadales e interanuales) entre 75% y 85%. La categor&#237;a Baja es definida como una fracci&#243;n de varianza interanual de menos de 75%; la categor&#237;a Alta es mayor que 85% y la categor&#237;a Extremadamente Alta es mayor que 90%.</p>
+
+<p align="left"><b>Tendencias clim&#225;ticas a largo plazo </b>
+La tendencia, o m&#225;s precisamente la parte de la se&#241;al regional que es linealmente dependiente de la temperatura media global, aqu&#237; llamada tendencias clim&#225;ticas a largo plazo, tiene caracter&#237;sticas estad&#237;sticas diferentes a las se&#241;ales de los fluctuaciones decadales e interanuales as&#237; que usamos una estrategia diferente para definir sus categor&#237;as de importancia. Las categor&#237;as son definidas simplemente e intuitivamente con relaci&#243;n a la importancia de las otras dos escalas temporales. De este modo, Extremadamente Alta es asignada cuando la fracci&#243;n de la varianza correspondiente a la tendencia (relativa a la varianza total de la se&#241;al original) es mayor que ambas fracciones de varianza decadal e interanual; Alta es asignada cuando la fracci&#243;n de la varianza correspondiente a la tendencia se encuentra entre las otras dos; Medio es asignada cuando la fracci&#243;n de la varianza correspondiente a la tendencia es menos que las otras dos fracciones; Bajo es asignada cuando la fracci&#243;n de la varianza correspondiente a la tendencia es como m&#237;nimo 10% menos que la menor de las otras dos fracciones. </p>
+
+</div>
+
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
