@@ -47,7 +47,7 @@ display: inline-block
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="432" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
 <input class="pickarea" name="resolution" type="hidden" value="10000.0" />
 </form>
 <div class="controlBar">
@@ -82,8 +82,9 @@ margin: 0px;
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a href="#tabs-3" >Contact Us</a></li>
-      <li><a href="#tabs-4" >Instructions</a></li>
+      <li><a class="href" href="http://iridl.ldeo.columbia.edu/home/.benno/.USGS/.landdaac/.global/.LST_Night_1km/X/-2000000./6000000./RANGEEDGES/Y/-4000000./4500000./RANGEEDGES/">Dataset</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <div class="leftpart">
@@ -91,7 +92,7 @@ margin: 0px;
 </div>
 <div class="dlimgtsbox">
 <h4 class="plotheading">Recent 12 Months<br/><font size="-2">(Minimum Temp.)</font></h4>
-<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/home/.benno/.USGS/.landdaac/.global/.LST_Night_1km/X/-2111960/5535840/RANGEEDGES/Y/-3667928/2779872/RANGEEDGES/%28bb:1894654:970449:1895654:971449:IRI:102111:bb%29//region/parameter/geoobject%5BX2/Y2/X/Y%5Dweighted-average/%28Celsius%29unitconvert/T/last/365/sub/last/RANGE/T/long_name/%28MinimumLST%29def/fig-/line/-fig/plotborder/60/psdef//plotaxislength/400/psdef/+gif" />
+<img class="dlimgts" src="http://iridl.ldeo.columbia.edu/home/.benno/.USGS/.landdaac/.global/.LST_Night_1km/X/-2000000./6000000./RANGEEDGES/Y/-4000000./4500000./RANGEEDGES/RANGEEDGES/%28bb:1894654:970449:1895654:971449:IRI:102111:bb%29//region/parameter/geoobject%5BX2/Y2/X/Y%5Dweighted-average/%28Celsius%29unitconvert/T/last/365/sub/last/RANGE/T/long_name/%28MinimumLST%29def/fig-/line/-fig/plotborder/60/psdef//plotaxislength/400/psdef/+gif" />
 <!-- <h4 class="plotheading">Multi-year Comparisons<br /><font size="-2">(18°C &lt; T &lt; 32°C)</font></h4>
 <img class="dlimgts"  style="width: 100%" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.TempCondProb/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/startcolormap/0.0/100/RANGE/white/white/white/0.0/VALUE/LightGoldenrod/LightGoldenrod/100.0/bandmax/white/endcolormap//long_name/%28Percent%20Occurrence%29def/dup/T/fig-/colorbars2/-fig//plotborder/60/psdef//plotaxislength/160/psdef/+gif" /> -->
 </div>
@@ -107,32 +108,44 @@ margin: 0px;
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Minimum Land Surface Temperature (LST) </h2>
-<p align="left" property="term:description">The map depicts a mosaic of MODIS Minimum Land Surface Temperature images at 1km resolution, averaged over 8 days. Images come from the Aqua satellite, and are provided by the United States Geological Survey. </p>
-<p>Land surface temperature is a direct factor of mosquito development time as well as a direct indicator of development of the Plasmodium parasite within the mosquito vectors. A Minimum LST range of 18-26.5 C is directly related to the climatic suitability of malaria transmission.</p> 
+<p align="left" property="term:description"> The Malaria Early Warning System (MEWS) consists of an integrated framework that utilizes climate forecasting and environmental monitoring products in order to provide warning to a potential outbreak of malaria (DaSilva et al., 2004).</p>
+
+<p>This map shows minimum land surface temperature (LST) used as a proxy for monitoring minimum air temperature (Vancutsem et al., 2010).  Minimum air temperature is one important component for the transmission of malaria.</p>
+<p>Minimum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors.  A minimum air temperature of 18 °C is necessary for vector development and potential malaria transmission.</p> 
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
+<p align="center"> This map is a mosaic of MODIS images at 1km resolution, averaged over 8 days. Images are a product of the Aqua satellite and are courtesy of the United States Geological Survey.</p>
+
+
 <p><b><a class="carry"></a>8 day average minimum Land Surface Temperature</b><br /> <br />
+
 <b>Data:</b> 8 day average MODIS Night Land Surface Temperature image at 1 km spatial resolution from the Aqua satellite.
 </p> 
 <p><br /><b>Data Source:</b> United States Geological Survey, Land Processes Distributed Active Archive Center, 
 Moderate Resolution Imaging Spectroradiometer 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.dataset_documentation.html">USGS LandDAAC MODIS</a>)
 </p> 
-<p><br /><b>Note:</b>There is typically a 8 to 10 day delay between the end of the observation period for the latest data and the date when those data are received and displayed on this page. 
+<p><br /><b>Note:</b> There is typically a 8 to 10 day delay between the end of the observation period for the latest data and the date when those data are received and displayed on this page. 
 </p>
 </div>
-<div id="tabs-3"  class="ui-tabs-panel">
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.benno/.USGS/.landdaac/.global/.LST_Night_1km/X/-2000000./6000000./RANGEEDGES/Y/-4000000./4500000./RANGEEDGES/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Helpdesk</h2>
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Monthly Tropical Wind Anomalies:  African Sector">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
  </p>
 </div>
-<div id="tabs-4"  class="ui-tabs-panel">
+<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Instructions</h2>
+<p> The default map on this page shows the most recent 8 day average minimum LST over Africa. As the user moves the cursor over the map, a tool bar will appear on top that will allow for previous 8 day periods (2002-the most recent period) to be displayed. </p>
 <p>
-To aid in the risk assessment of malaria outbreak potential, the LST map interface provides users with the ability to make graphs based on geographical parameterization. By clicking on a map location, the interface will provide a contextual perspective of recent LST readings for that location in the form of the most recent 12 month LST time series.
- </p>
+The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, the most recent 12 month LST time series will be generated. </p>
 </div>
 </div>
 <div class="optionsBar">

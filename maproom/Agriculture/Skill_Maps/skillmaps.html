@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="en"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Skill Maps</title>
+<link rel="stylesheet" type="text/css" href="http://iridl.ldeo.columbia.edu/uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="http://iridl.ldeo.columbia.edu/uicore/uicore.css" />
+<link rel="canonical" href="skillmaps.html" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_SkillMaps_term" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#NMME" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomalycorrelation" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#skillmaps" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/%28Precipitation%29//var/parameter/%28Precipitation%29eq/%7BSOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_050deg/.precip/%28Seasonal%20Total%29//diagnostic/parameter/%28Seasonal%20Total%29eq/%7B0.0/monthlyAverage%7Dif//diagnostic/get_parameter/%28Mean%20Daily%20Intensity%29eq/%7B1/masklt/monthlyAverage%7Dif//diagnostic/get_parameter/%28Rainfall%20Frequency%29eq/%7B1/flagge/monthlyAverage%7Dif%7D%7BSOURCES/.UEA/.CRU/.TS3p1/.monthly/.tmp%7Difelse/%28.NCEP-CFSv2%29//model/parameter/%28Multi-model%29eq/%7B%7D%7BSOURCES/.Models/.NMME/%28.NCEP-CFSv2%29//model/parameter/interp/.MONTHLY/S/first/%282009%29RANGEEDGES//var/get_parameter/%28Precipitation%29eq/%7Bprec%7Dif//var/get_parameter/%28Temperature%29eq/%7Btref%7Dif%7Difelse/L/1.5/3.5/RANGE%5BM%5Daverage/3/-2/roll/.T/L/1.5/3.5/RANGE/T/sample-along%5BX/Y%5DregridLinear/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/2/%7Bexch%5BL%5Daverage/S/12/splitstreamgrid%7Drepeat%5BS2%5Dcorrelate/DATA/-1/1/RANGE/X/Y/fig-/colors/coasts/countries/-fig//correlation/-1/1/plotrange//XOVY/null/psdef//plotborder/72/psdef//plotaxislength/432/psdef//S/%28000%201%20May%29plotvalue/+.gif" />
+<script type="text/javascript" src="http://iridl.ldeo.columbia.edu/uicore/uicore.js"></script>
+<style>
+.varTemperature #PrecipMenu{
+display:none;
+}
+</style>
+</head>
+<body>
+<form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="carry dlimg share" name="S" type="hidden" value="0000 1 May"/>
+<input class="carry dlimg share" name="L" type="hidden" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+<input class="dlimg carry share bodyClass" name="var" type="hidden" />
+<input class="dlimg carry share" name="diagnostic" type="hidden" />
+<input class="dlimg carry share" name="model" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Maproom</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+            </fieldset>
+           
+           <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_SkillMaps_term"><span property="term:label">"Skill" Maps</span></legend>
+            </fieldset> 
+                          <fieldset class="navitem"><legend>Variable</legend><span class="selectvalue"></span><select class="pageformcopy" name="var">
+<option value="Precipitation">Precipitation</option>
+<option value="Temperature">Temperature: Seasonal Average</option>
+</select></fieldset>   
+         
+                       <fieldset class="navitem" id="PrecipMenu"><legend>Diagnostic</legend><span class="selectvalue"></span><select class="pageformcopy" name="diagnostic">
+<option value="Seasonal Total">Seasonal Average</option>
+<option value="Mean Daily Intensity">Mean Daily Intensity</option>
+<option value="Rainfall Frequency">Frequency</option>
+
+</select></fieldset>      
+
+            <fieldset class="navitem"><legend>Model</legend><span class="selectvalue"></span><select class="pageformcopy" name="model">
+<option value=".NCEP-CFSv2">CFSv2</option>
+<option value=".NASA-GMAO">NASA GMAO</option>
+<option value=".GFDL-CM2p1">GFDL CM2p1</option>
+<option value=".COLA-RSMAS-CCSM3">COLA RSMAS CCSM3</option>
+</select></fieldset>
+      
+            
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-4" >Project Resources</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/%28Precipitation%29//var/parameter/%28Precipitation%29eq/%7BSOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_050deg/.precip/%28Seasonal%20Total%29//diagnostic/parameter/%28Seasonal%20Total%29eq/%7B0.0/monthlyAverage%7Dif//diagnostic/get_parameter/%28Mean%20Daily%20Intensity%29eq/%7B1/masklt/monthlyAverage%7Dif//diagnostic/get_parameter/%28Rainfall%20Frequency%29eq/%7B1/flagge/monthlyAverage%7Dif%7D%7BSOURCES/.UEA/.CRU/.TS3p1/.monthly/.tmp%7Difelse/%28.NCEP-CFSv2%29//model/parameter/%28Multi-model%29eq/%7B%7D%7BSOURCES/.Models/.NMME/%28.NCEP-CFSv2%29//model/parameter/interp/.MONTHLY/S/first/%282009%29RANGEEDGES//var/get_parameter/%28Precipitation%29eq/%7Bprec%7Dif//var/get_parameter/%28Temperature%29eq/%7Btref%7Dif%7Difelse/L/1.5/3.5/RANGE%5BM%5Daverage/3/-2/roll/.T/L/1.5/3.5/RANGE/T/sample-along%5BX/Y%5DregridLinear/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/2/%7Bexch%5BL%5Daverage/S/12/splitstreamgrid%7Drepeat%5BS2%5Dcorrelate/DATA/-1/1/RANGE/S/1.5/add//pointwidth/1.0/def//name//target_date_start/def/S/3.5/add//pointwidth/1.0/def//name//target_date_end/def/X/Y/fig-/colors/coasts/countries/plotlabel/plotlabel/-fig//correlation/-1/1/plotrange//XOVY/null/psdef//plotborder/72/psdef//plotaxislength/432/psdef//S/%28000%201%20May%29plotvalue//framelabel/%28%25b%5Btarget_date_start%5D-%25b%5Btarget_date_end%5D%20forecast%20issued%20%25B%5BS%5D%29psdef//plotborderbottom/40/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/%28Precipitation%29//var/parameter/%28Precipitation%29eq/%7BSOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_050deg/.precip/%28Seasonal%20Total%29//diagnostic/parameter/%28Seasonal%20Total%29eq/%7B0.0/monthlyAverage%7Dif//diagnostic/get_parameter/%28Mean%20Daily%20Intensity%29eq/%7B1/masklt/monthlyAverage%7Dif//diagnostic/get_parameter/%28Rainfall%20Frequency%29eq/%7B1/flagge/monthlyAverage%7Dif%7D%7BSOURCES/.UEA/.CRU/.TS3p1/.monthly/.tmp%7Difelse/%28.NCEP-CFSv2%29//model/parameter/%28Multi-model%29eq/%7B%7D%7BSOURCES/.Models/.NMME/%28.NCEP-CFSv2%29//model/parameter/interp/.MONTHLY/S/first/%282009%29RANGEEDGES//var/get_parameter/%28Precipitation%29eq/%7Bprec%7Dif//var/get_parameter/%28Temperature%29eq/%7Btref%7Dif%7Difelse/L/1.5/3.5/RANGE%5BM%5Daverage/3/-2/roll/.T/L/1.5/3.5/RANGE/T/sample-along%5BX/Y%5DregridLinear/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/2/%7Bexch%5BL%5Daverage/S/12/splitstreamgrid%7Drepeat%5BS2%5Dcorrelate/DATA/-1/1/RANGE/S/1.5/add//pointwidth/1.0/def//name//target_date_start/def/S/3.5/add//pointwidth/1.0/def//name//target_date_end/def/X/Y/fig-/colors/coasts/countries/plotlabel/plotlabel/-fig//correlation/-1/1/plotrange//XOVY/null/psdef//plotborder/72/psdef//plotaxislength/432/psdef//S/%28000%201%20May%29plotvalue//framelabel/%28%25b%5Btarget_date_start%5D-%25b%5Btarget_date_end%5D%20forecast%20issued%20%25B%5BS%5D%29psdef//plotborderbottom/40/psdef/.gif" border="0" alt="image" />
+  <br />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_050deg/.precip/T/%28Dec-Feb%29seasonalAverage/T/%28Dec-Feb%201982%29%28Dec-Feb%202007%29RANGE/T//S/renameGRID/SOURCES/.Models/.NMME/%28.NCEP-CFSv2%29//model/parameter/interp/.MONTHLY/.prec/S/%280000%201%20Nov%201982-2006%29VALUES/L/1.5/3.5/RANGE%5BM/L%5Daverage%5BX/Y%5DregridLinear/X/60.0/150.0/RANGEEDGES/Y/-15/40/RANGEEDGES/S/2.5/shiftGRID%5BS%5Dcorrelate/correlationcolorscale/X/Y/fig:/colors/thinnish/solid/countries_gaz/coasts_gaz/:fig//S/%280000%201%20May%29/plotvalue//correlation/-1/1/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//XOVY/null/psdef/++.auxfig//plotborder+72+psdef//plotaxislength+432+psdef//XOVY+null+psdef+.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >Anomaly Correlation "Skill" Maps</h2>
+<p align="left" property="term:description">The GCM hindcasts of individual seasonal forecast models were spatially interpolated onto the 0.5-degree grid of the APHRODITE data (precipitation) and CRU TS3p1 data (temperature).</p><p>This documents the regional seasonal forecast performance of four NMMEs available in the IRIDL. The anomaly correlation maps of seasonal average rainfall have been extended to selected seasonal statistics of observed daily rainfall, such as rainfall frequency and intensity constructed from APHRODITE data (while still using the GCMs interpolated seasonal average precipitation as the predictor).</p>
+<p> Mouse over the map to view the model start date, or "S".  The default May start date shows the skill of the selected model and variable for the June-July-August season with a one month lead time. Change the start date to view other three month seasons, all with one month leads.   Please be patient while new maps are loading, as indicated by a greying of the map. 
+</p> 
+<p> Correlations are calculated for the January 1982 to December 2007 period for precipitation and January 1982 to December 2009 for temperature, with the exception of the NASA GMAO model which begin in January 1981 for both precipitation and temperature variables.
+</p> 
+</div>
+
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p> More information on National Multimodel Ensemble Models <a href="http://iridl.ldeo.columbia.edu/SOURCES/.Models/.NMME/">here.</a>
+</p> 
+<p> More information on Aphrodite Precipitation Data <a href="http://iridl.ldeo.columbia.edu/SOURCES/.RIHN/.aphrodite/">here.</a>
+</p>
+<p> More information on CRU TS3.1 Temperature Data <a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS3p1/">here.</a>
+</p>
+</div>
+
+<div id="tabs-4" class="ui-tabs-panel">
+<h2  align="center">Project Resources</h2>
+<p> More information on the CCAFS Asia Subproject available <a href="http://wiki.iri.columbia.edu/index.php?n=CCAFS.Resources">here.</a>
+</p> 
+</div>
+
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>

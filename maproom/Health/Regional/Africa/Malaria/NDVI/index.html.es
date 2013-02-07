@@ -49,11 +49,12 @@ body.varreflectance .regionwithinbbox{display: none !important}
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="dlimg share dlimgloc carry" name="bbox" type="hidden" />
+<input class="dlimg share" name="T" type="hidden" />
 <input class="dlimg dlauximg dlimgts share dlimgloc carry justsregion" name="sregion" type="hidden" value=".WAF" />
 <input class="dlimg dlauximg dlimgts share dlimgloc justsregion bodyClass" name="var" type="hidden" value="NDVI" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value=".5" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
+<input class="pickarea" name="resolution" type="hidden" value="irids:SOURCES:Features:Political:Africa:Districts:ds" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 

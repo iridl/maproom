@@ -53,6 +53,9 @@ display: none;
 .varPercentile #physThresh {
 display: none;
 }
+.varTemperature #percThresh {
+display: none;
+}
 .var #percThresh {
 display: none;
 }
@@ -86,7 +89,6 @@ display: none;
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"><span property="term:label">Forecast</span></legend>
             </fieldset>
-<br />
 
            <fieldset class="navitem valid">
           <legend>Target Time</legend>
@@ -98,30 +100,28 @@ display: none;
             </select>
   </fieldset>
 
-   <fieldset class="navitem">          <legend>Temperature</legend><select class="pageformcopy" name="tempvar"><option value="">average</option><option value="maximum">maximum</option><option value="minimum">minimum</option></select>
+   <fieldset class="navitem">          <legend>Temperature</legend><select class="pageformcopy" name="tempvar"><option>average</option><option value="maximum">maximum</option><option value="minimum">minimum</option></select>
   </fieldset>
    <fieldset class="navitem">
           <legend>Field</legend>
-<select class="pageformcopy" name="field"><option value="">Temperature</option><option value="Anomaly">Anomaly</option><option value="PoE">Probability of exceeding</option><option value="PonE">Probability of non-exceeding</option></select>
-  </fieldset>
+<select class="pageformcopy" name="field"><option>Temperature</option><option value="Anomaly">Anomaly</option><option value="PoE">Probability of exceeding</option><option value="PonE">Probability of non-exceeding</option></select>
 
 <span id="PoEV">
-            <fieldset class="navitem"><legend>Value</legend><select class="pageformcopy" name="var"><option value="">Temperature</option><option value="Percentile">Percentile</option></select></fieldset>
+            <select class="pageformcopy" name="var"><option>Temperature</option><option value="Percentile">Percentile</option></select>
 
-           <fieldset id="percThresh" class="navitem valid">
-          <legend>Threshold (%-ile)</legend>
+           <span id="percThresh">
             <link class="threshold" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert//percentile//unitless/ordered/10/5/90/NewEvenGRID/0/add//name//threshold/def//long_name//threshold/def//fullname//threshold/def/info.json" />
           <select class="pageformcopy" name="percentile">
-            <optgroup class="template" label="Threshold (%-ile)">
+            <optgroup class="template">
             <option class="iridl:values percentile@value threshold"></option>
               </optgroup>
-            </select>
-  </fieldset>
+            </select>%-ile
+  </span>
 
-           <fieldset id="physThresh" class="navitem valid">
-          <legend>Threshold (˚C)</legend>
-          <input class="pageformcopy" name="threshold2" type="text" value="20." size="4" maxlength="4"/></fieldset>
+           <span id="physThresh">
+          <input class="pageformcopy" name="threshold2" type="text" value="20." size="4" maxlength="4"/>˚C</span>
 </span>
+</fieldset>
 
            <fieldset class="navitem valid">
           <legend>Lower and Upper limit of probability of exceedance graph</legend>

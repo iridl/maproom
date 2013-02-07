@@ -108,24 +108,22 @@ display: none;
             </select>
   </fieldset>
 
-            <fieldset class="navitem"><legend>Climatology Start (from 1979)</legend><input class="pageformcopy" name="climStart" type="text" value="1981" size="4" maxlength="4"/></fieldset>
-            <fieldset class="navitem"><legend>Climatology End (to 2011)</legend><input class="pageformcopy" name="climEnd" type="text" value="2010" size="4" maxlength="4"/></fieldset>
-            <fieldset class="navitem"><legend>Probability of</legend><select class="pageformcopy" name="proba"><option value="">exceeding</option><option value="non-exceeding">non-exceeding</option></select></fieldset>
-            <fieldset class="navitem"><legend>Value</legend><select class="pageformcopy" name="var"><option value="">Percentile</option><option value="Precipitation">Precipitation</option></select></fieldset>
+            <fieldset class="navitem"><legend>Climatology (1979 to 2011)</legend><input class="pageformcopy" name="climStart" type="text" value="1981" size="4" maxlength="4"/> to <input class="pageformcopy" name="climEnd" type="text" value="2010" size="4" maxlength="4"/></fieldset>
+            <fieldset class="navitem"><legend>Probability</legend><select class="pageformcopy" name="proba"><option value="">exceeding</option><option value="non-exceeding">non-exceeding</option></select>
+            <select class="pageformcopy" name="var"><option value="">Percentile</option><option value="Precipitation">Precipitation</option></select>
 
-           <fieldset id="percThresh" class="navitem valid">
-          <legend>Threshold (%-ile)</legend>
+           <span id="percThresh">
             <link class="threshold" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert//percentile//unitless/ordered/10/5/90/NewEvenGRID/0/add//name//threshold/def//long_name//threshold/def//fullname//threshold/def/info.json" />
           <select class="pageformcopy" name="percentile">
-            <optgroup class="template" label="Threshold (%-ile)">
+            <optgroup class="template">
             <option class="iridl:values percentile@value threshold"></option>
               </optgroup>
-            </select>
-  </fieldset>  
+            </select>%-ile
+  </span>  
 
-           <fieldset id="physThresh" class="navitem valid">
-          <legend>Threshold (mm/day)</legend>
-          <input class="pageformcopy" name="threshold2" type="text" value="1." size="4" maxlength="4"/></fieldset>
+           <span id="physThresh">
+          <input class="pageformcopy" name="threshold2" type="text" value="1." size="4" maxlength="4"/>mm/day</span>
+</fieldset>
 </br>
 </div>
 
