@@ -116,7 +116,7 @@ and <b><span class="iridl:long_name"></span></b>
 </div>
 <br />
 <div class="dlimgtsbox">
-<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/T/second/last/RANGEEDGES%5B%28bb:17:4.50:17.5:5:bb%29%28irids:SOURCES:NOAA:NCEP:CPC:EVE:IWMO%4060607:ds%29%5D//region/parameter/0/get/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/CopyStream/SOURCES/.NOAA/.NCEP/.CPC/.EVE/.Max/.temp/IWMO//region/get_parameter/1/get/geoobject/.IWMO/SAMPLE/T/2/index/.T/.units/streamgridunitconvert/T/%2812-19%20Jul%202002%29last/RANGE%5BT%5DregridAverage/T/fig:/blue/line/red/line/:fig/+.gif" />
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/T/second/last/RANGEEDGES%5B%28bb:17:4.50:17.5:5:bb%29%28irids:SOURCES:NOAA:NCEP:CPC:EVE:IWMO%4060607:ds%29%5D//region/parameter/0/get/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/CopyStream/DATA/0/50/RANGE/SOURCES/.NOAA/.NCEP/.CPC/.EVE/.Max/.temp/IWMO//region/get_parameter/1/get/geoobject/.IWMO/SAMPLE/T/2/index/.T/.units/streamgridunitconvert/T/%2812-19%20Jul%202002%29last/RANGE%5BT%5DregridAverage/DATA/0/50/RANGE/T/fig:/blue/line/red/line/:fig/+.gif" />
 </div>
 <p>
 8 day average inferred maximum air temperature for the selected region since 2002.  
