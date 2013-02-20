@@ -124,7 +124,7 @@ and <b><span class="iridl:long_name"></span></b>
 </p> 
 <div class="valid" style="display: inline-block; text-align: top;">
 <a class="station" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
-<div class="template">
+<div class="template" style="color : red">
 Nearest Station <b><span class="iridl:long_name"></span></b>
 </div>
 </div>
@@ -132,18 +132,18 @@ Nearest Station <b><span class="iridl:long_name"></span></b>
 <div class="valid" style="display: inline-block; text-align: top;">
 <a class="station" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.EVE/IWMO/%28irids:SOURCES:NOAA:NCEP:CPC:EVE:IWMO%4061017:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/lon/lat/elev/3/ds/info.json"></a>
 <div class="template">
-<table><tr class="iridl:hasDependentVariables"><td class="iridl:name"></td><td class="iridl:value"></td></tr></table>
+<table><tr class="iridl:hasDependentVariables" style="color : red"><td class="iridl:name"></td><td class="iridl:value"></td></tr></table>
 </div>
 </div><br />
 <div class="valid" style="display: inline-block; text-align: top;">
 <a class="dlimglocnosta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
-<div class="template">
+<div class="template" style="color : blue">
 Map Location <b><span class="iridl:long_name"></span></b>
 </div>
 </div><br />
 <div class="valid" style="display: inline-block; text-align: top;">
 <a class="dlimglocnosta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NGDC/.ETOPO5/.elev/%28bb:1:2:3:4:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/info.json"></a>
-<div class="template">
+<div class="template" style="color : blue">
 elev <span class="iridl:value"></span>
 </div>
 </div>
