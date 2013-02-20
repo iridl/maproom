@@ -125,7 +125,7 @@ and <b><span class="iridl:long_name"></span></b>
 <div class="valid" style="display: inline-block; text-align: top;">
 <a class="station" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.EVE/IWMO/%28irids:SOURCES:NOAA:NCEP:CPC:EVE:IWMO%4061017:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/lon/lat/elev/3/ds/info.json"></a>
 <div class="template">
-Nearest Station<table><tr class="iridl:hasDependentVariables"><td class="iridl:name"></td><td class="iridl:value"></td></tr></table></b>
+Nearest Station<table><tr class="iridl:hasDependentVariables"><td class="iridl:name"></td><td class="iridl:value"></td></tr></table>
 </div>
 </div>
 </fieldset>
