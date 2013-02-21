@@ -102,51 +102,40 @@ margin: 0px;
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-35%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES%5B%28bb:11%2C1%2C11.5%2C1.5%29%28pt:11:5:pt%29%5D//region/parameter/%7Bgeoobject%7Dforall/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/blue/medium/stroke/red/geometrypushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+gif" />
-<br />
+
 <div class="valid" style="display: inline-block; text-align: top;">
-<a class="dlimglocnosta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
-<div class="template">
-Observations for <b><span class="iridl:long_name"></span></b>
-</div>
-</div>
-<div class="valid" style="display: inline-block; text-align: top;">
+<div class="valid" style="text-align: top;">
 <a class="station" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template" style="color : red">
+Nearest Station <b><span class="iridl:long_name"></span></b>
+</div>
+</div>
+<div class="valid" style="text-align: top;">
+<a class="station" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.EVE/IWMO/%28irids:SOURCES:NOAA:NCEP:CPC:EVE:IWMO%4061017:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/lon/lat/elev/3/ds/info.json"></a>
 <div class="template">
-and <b><span class="iridl:long_name"></span></b>
+<table><tr class="iridl:hasDependentVariables" style="color : red"><td class="iridl:name"></td><td class="iridl:value"></td></tr></table>
 </div>
 </div>
-<br />
+<div class="valid" style="text-align: top;">
+<a class="dlimglocnosta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template" style="color : blue">
+Map Location <b><span class="iridl:long_name"></span></b>
+</div>
+</div>
+<div class="valid" style="text-align: top;">
+<a class="dlimglocnosta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NGDC/.ETOPO5/.elev/%28bb:1:2:3:4:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/info.json"></a>
+<div class="template" style="color : blue">
+elev <span class="iridl:value"></span>
+</div>
+</div>
+</div>
+
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/T/second/last/RANGEEDGES%5B%28bb:17:4.50:17.5:5:bb%29%28irids:SOURCES:NOAA:NCEP:CPC:EVE:IWMO%4060607:ds%29%5D//region/parameter/0/get/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/CopyStream/DATA/0/50/RANGE/SOURCES/.NOAA/.NCEP/.CPC/.EVE/.Max/.temp/IWMO//region/get_parameter/1/get/geoobject/.IWMO/SAMPLE/T/2/index/.T/.units/streamgridunitconvert/T/%2812-19%20Jul%202002%29last/RANGE%5BT%5DregridAverage/DATA/0/50/RANGE/T/fig:/blue/line/red/line/:fig/+.gif" />
 </div>
 <p>
 8 day average inferred maximum air temperature and nearest meteorological station measurement for the selected region since 2002.  
 </p> 
-<div class="valid" style="display: inline-block; text-align: top;">
-<a class="station" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
-<div class="template" style="color : red">
-Nearest Station <b><span class="iridl:long_name"></span></b>
-</div>
-</div>
-<br />
-<div class="valid" style="display: inline-block; text-align: top;">
-<a class="station" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.EVE/IWMO/%28irids:SOURCES:NOAA:NCEP:CPC:EVE:IWMO%4061017:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/lon/lat/elev/3/ds/info.json"></a>
-<div class="template">
-<table><tr class="iridl:hasDependentVariables" style="color : red"><td class="iridl:name"></td><td class="iridl:value"></td></tr></table>
-</div>
-</div><br />
-<div class="valid" style="display: inline-block; text-align: top;">
-<a class="dlimglocnosta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
-<div class="template" style="color : blue">
-Map Location <b><span class="iridl:long_name"></span></b>
-</div>
-</div><br />
-<div class="valid" style="display: inline-block; text-align: top;">
-<a class="dlimglocnosta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NGDC/.ETOPO5/.elev/%28bb:1:2:3:4:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/info.json"></a>
-<div class="template" style="color : blue">
-elev <span class="iridl:value"></span>
-</div>
-</div>
 </fieldset>
 <fieldset class="dlimage">
 <a class="justsregion" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.EVE/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/.tmax_rec/DATA/-10/50/RANGE/1/index/a:/.lon/DATA/-20/60/RANGE/:a:/.lat/DATA/-40/36/RANGE/:a/X/Y/fig-/colors/scatter/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/"></a>
