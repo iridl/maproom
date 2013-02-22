@@ -103,7 +103,7 @@ margin: 0px;
 <fieldset class="regionwithinbbox dlimage" about="">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-35%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES%5B%28bb:11%2C1%2C11.5%2C1.5%29%28pt:11:5:pt%29%5D//region/parameter/%7Bgeoobject%7Dforall/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/blue/medium/stroke/red/geometrypushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+gif" />
 
-<div class="valid" style="display: inline-block; text-align: top;">
+<div style="display: inline-block; text-align: top;">
 <div class="valid" style="text-align: top;">
 <a class="station" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
 <div class="template" style="color : red">
