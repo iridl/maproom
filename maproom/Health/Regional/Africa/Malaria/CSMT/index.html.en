@@ -96,6 +96,7 @@ margin: 0px;
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <div class="leftpart">
@@ -120,16 +121,19 @@ Suitable for Malaria Transmission</h4>
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">Seasonal Climatic Suitability for Malaria Transmission</h2>
-  <p align="left" property="term:description">Empirically-derived thresholds of precipitation, temperature and relative humidity are used to assess the climatic suitability of malaria transmission. The interactive map initially displays the number of months during the year when climatological averages meet these requirements. Users may gain insight into how often these conditions have actually occurred during any particular month by clicking on the map at the location of interest.
+  <p align="left" property="term:description">This map shows the number of months suitable for malaria transmission, based on climatological averages. Suitability is defined as the coincidence of precipitation accumulation greater than 80 mm, mean temperature between 18°C and 32°C, and relative humidity greater than 60%.
 </p>
 <p align="left">
-Please note that the above map is based on a theoretical model of climate data and is not based on actual malaria data. Therefore, it may not accurately resemble actual malaria transmission status on a local scale.
-</p><p>
-<i>Number of Months suitable for Malaria Transmission</i> are the number of months during the year that are suitable for malaria transmission, based on monthly climatological averages*. Suitability is defined as the coincidence of precipitation accumulation greater than 80 mm, mean temperature between 18°C and 32°C, and relative humidity greater than 60 percent. These are rough thresholds that are intended to describe conditions that are suitable for both the development of the falciparum parasite and the life cycle of the mosquito vector. </p>
-<p>*Additional analyses that display how often these conditions have actually occurred in the historical record may be accessed by clicking on the map at the location of interest.
-</p></div>
+Temperature, precipitation and relative humidity are factors of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors (Grover-Kopec et al., 2006). The aforementioned values act as the upper limit for vector development and potential malaria transmission. 
+</p>
+
+
+</div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
+<p>Temperature and precipitation climatology is compiled on a 0.5° x 0.5° lat/lon grid from University of East Anglia’s Climate Research Unit (CRU). Relative Humidity climatology is compiled on a 2.5° x 2.5° lat/lon grid from NCEP/NCAR CDAS/Reanalysis.</p>
+
+<p> This map is based on a theoretical model of climate data and is not based on actual malaria data. </p>
 <h4>Precipitation Climatology</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
@@ -165,6 +169,15 @@ Please note that the above map is based on a theoretical model of climate data a
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
+<h2  align="center">Instructions</h2>
+<p> The default map displays the number of months suitable for malaria transmission over Africa. </p>
+<p> The interface consists of a clickable map that allows users to generate customized analyses for a location of interest. When a desired location is clicked, four time series graphs are generated that provide analyses of how often suitability has occurred in the historical record (1951-2000). </p>
+<p> The "Map Shows" drop down menu allows users to isolate a single climatic variable and show the percent occurrence of malaria suitability based on that variable. </p>
+
+<p>
+The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, the most recent 12 month LST time series will be generated. </p>
 </div>
 </div>
 <div class="optionsBar">

@@ -1,0 +1,15 @@
+*~
+.DS_Store
+/build.tag
+/maproom/version.xml
+/maproom/canonical_imports.serql
+/maproom/maproom_section_index.serql
+/maproom/maproomregistry.owl
+/maproom/maproomtop.owl
+/maproom/newmaproomcache/
+/maproom/tab.xslt
+/maproom/tabs.nt
+/maproom/tabs.xml
+/maproom/top.nt
+/maproom/top.xml
+/maproom/version.xml

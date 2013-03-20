@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>PAGASA/IRI Philippines CPT Precipitation Forecast</title>
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="canonical" href="Philippines_Precip.html" />
+<meta property="maproom:Entry_Id" content="Agriculture_Forecast_Philippines_Precipitation" />
+<meta property="maproom:Sort_Id" content="" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Rate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#precipitation_rate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#station"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/a:/.WORLDBATH/.bath/X/118/127/RANGEEDGES/Y/5/21/RANGEEDGES/-1/maskgt/:a:/.Features/.Political/.World/.Countries/.the_geom/home/.remic/.CPT/.PAGASA/a:/.lon/:a:/.lat/:a:/.Forecast/precip_colors/DATA/null/null/RANGE/:a/X/Y/fig-/white/mask/lightgrey/fill/black/verythin/states_gaz/scattercolor/-fig//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/nip/plotvalue//L/first/plotvalue//antialias/true/psdef//plotborder/0/psdef//plotaxislength/150/psdef/+.gif" />
+<style>
+.dlimage2 {
+        width: 24%;
+        float: right;
+}
+.dlimage3 {
+        width: 99%;
+}
+.dlimage.ver4 {
+        width: 33%;
+}
+.dlimgtsbox {
+width: 99%;
+display: inline-block
+ }
+@media only all and (max-width: 800px) {
+.dlimage.ver4 {
+        width: 99%;
+}
+}
+.fieldRainfall #PoEV {
+display: none;
+}
+.fieldAnomaly #PoEV {
+display: none;
+}
+.fieldPoM #PoEV {
+display: none;
+}
+.field #PoEV {
+display: none;
+}
+.varPercentile #physThresh {
+display: none;
+}
+.varRainfall #percThresh {
+display: none;
+}
+.var #percThresh {
+display: none;
+}
+.dlcontrol.L {display: none !important;}
+</style>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
+<input class="dlimg dlauximg dlimg2 share dlimgloc dlimglocclick" name="bbox" type="hidden" />
+<input class="share dlimgts dlimgloc dlimglocclick station" name="region" type="hidden" />
+<input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
+<input class="unused" name="plotaxislength" type="hidden" value="432" />
+<input class="dlimg dlauximg dlimg2 dlimgts share starttime startleadtime" name="S" type="hidden" />
+<input class="dlimg dlauximg dlimg2 dlimgts share startleadtime" name="L" type="hidden" value="2.5" />
+<input class="carry dlimg dlauximg share threshold poe bodyClass" name="field" type="hidden" />
+<input class="carry dlimg dlauximg share threshold poe bodyClass" name="var" type="hidden" value="Rainfall" />
+<input class="carry dlimg dlauximg share threshold" name="percentile" type="hidden" value="50." />
+<input class="dlimg dlauximg share threshold" name="threshold2" type="hidden" />
+<input class="dlimgts share" name="poelimit" type="hidden" value="25" />
+<input class="pickarea dlimgts" name="resolution" type="hidden" value="irids:home:remic:CPT:PAGASA:ds" />
+</form>
+
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Maproom</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+            </fieldset>
+            <fieldset class="navitem" id="chooseSection">
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"><span property="term:label">Forecast</span></legend>
+            </fieldset>
+
+           <fieldset class="navitem valid">
+          <legend>Target Time</legend>
+            <link class="starttime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.CPT/.PAGASA/.target_date/S/last/cvsunits//S/parameter/VALUE/L//units/unitless/def/pop/info.json" />
+          <select class="pageformcopy" name="L">
+            <optgroup class="template" label="Target Time">
+            <option class="iridl:values L@value target_date"></option>
+              </optgroup>
+            </select>
+  </fieldset>
+
+           <fieldset class="navitem">
+          <legend>Field</legend>
+<select class="pageformcopy" name="field"><option value="">Rainfall</option><option value="Anomaly">Anomaly</option><option value="PoM">Percent of Median</option><option value="PoE">Probability of exceeding</option><option value="PonE">Probability of non-exceeding</option></select>
+
+<span id="PoEV">
+            <select class="pageformcopy" name="var"><option>Rainfall</option><option value="Percentile">Percentile</option></select>
+
+           <span id="percThresh">
+            <link class="threshold" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert//percentile//unitless/ordered/10/5/90/NewEvenGRID/0/add//name//threshold/def//long_name//threshold/def//fullname//threshold/def/info.json" />
+          <select class="pageformcopy" name="percentile">
+            <optgroup class="template">
+            <option class="iridl:values percentile@value threshold"></option>
+              </optgroup>
+            </select>%-ile
+  </span>
+
+           <span id="physThresh">
+          <input class="pageformcopy" name="threshold2" type="text" value="20." size="4" maxlength="4"/>mm/day</span>
+</span>
+</fieldset>
+
+           <fieldset class="navitem valid">
+          <legend>Upper limit of probability of exceedance graph</legend>
+          <input class="pageformcopy" name="poelimit" type="text" value="25" size="4" maxlength="4"/>mm/day</fieldset>
+
+</div>
+
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-3" >Contact Us</a></li>
+    </ul>
+
+<fieldset class="regionwithinbbox dlimage ver4" about="">
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:118%2C5%2C127%2C21%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28pt:118:5:pt%29//region/parameter/geoobject/X/Y/fig-/lightgrey/mask/black/countries_gaz/red/geometrypushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0.1/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<div>
+<a class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">
+Observations for <span class="bold iridl:long_name"></span>
+</div>
+</div>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.CPT/.PAGASA/STNID/%28irids:home:remic:CPT:PAGASA:STNID%401:ds%29//region/parameter/geoobject/.STNID/.gridvalues/VALUE/InputObs/dup/DATA/0/%2825%29//poelimit/parameter/interp/2/copy/exch/sub/500.0/div/RANGESTEP%5BSTNID/T/L%5Dintegrateddistrib1D/InputObs//prcp/renameGRID/-1/mul/1/add//long_name/%28probability%20of%20exceedance%29def//fullname/%28obs%29def/exch/dup%5BT2%5Drmsaover/27/dup/1/sub/div/sqrt/mul/exch%5BT2%5Daverage/-1/mul/prcp/add/exch/div/27/1/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//fullname/%28obs%20parameterized%29def/PredErrorVars/sqrt/Forecast/-1/mul/prcp/add/exch/div/27/1/sub/5/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//fullname/%28forecast%29def/target_date/prcp/fig-/medium/solid/black/line/blue/line/red/line/plotlabel/black/thin/0.1/0.1/0.9/horizontallines/-fig//plotaxislength/500/psdef//antialias/true/psdef//XOVY/2/psdef//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//plotborderbottom/40/psdef//plotborderright/40/psdef//framelabel/%28%25=%5Btarget_date%5D%20probability%20of%20exceedance%20issued%20%25=%5BS%5D%29psdef/+.gif" />
+</div>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.CPT/.PAGASA/STNID/%28irids:home:remic:CPT:PAGASA:STNID%401:ds%29//region/parameter/geoobject/.STNID/.gridvalues/VALUE/hindcast_date/T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/VALUE/L/%282.5%29//L/parameter/interp/VALUE/L/removeGRID/T/removeGRID/use_as_grid/InputObs//long_name/%28prcp%29def//fullname/%28obs%29def/DATA/0/AUTO/RANGE/CrossValHind//long_name/%28prcp%29def//fullname/%28hindcast%29def/DATA/0/AUTO/RANGE/target_date/S/last/cvsunits//S/parameter/VALUE/hindcast_date/fig-/medium/solid/blue/line/red/line/plotlabel/black/thin/5/5/30/horizontallines/-fig//plotaxislength/500/psdef//antialias/true/psdef//XOVY/2/psdef//plotborderbottom/40/psdef//plotborderright/40/psdef//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//framelabel/%28%25=%5Btarget_date%5D%20hindcast%20%28mm/day%29%20with%20%25=%5BL%5D%20Lead%29psdef/+.gif" />
+</div>
+</fieldset>
+
+<fieldset class="dlimage">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/118/127/RANGEEDGES/Y/5/21/RANGEEDGES/0/masklt/halfgreyscale/home/.remic/.CPT/.PAGASA/lon/lat/2/copy/Forecast/precip_colors/DATA/0/AUTO/RANGE/%28Rainfall%29//field/parameter/%28Anomaly%29eq/%7BCrossValHind%5BT2%5Daverage/sub/prcp_anomaly/DATA/null/null/RANGE%7Dif//field/get_parameter/%28PoM%29eq/%7BCrossValHind%5BT2%5D0.5/0.0/replacebypercentile/div/%28percent%29unitconvert/Infinity/maskge/prcp_anomaly_25max500_colors2_percentmedian%7Dif//field/get_parameter/dup/%28PoE%29eq/exch/%28PonE%29eq/or/%7B-1/mul/%28Rainfall%29//var/parameter/%28Rainfall%29eq/%7B%2820%29//threshold2/parameter/interp%7D%7B%2850%29//percentile/parameter/interp/100.0/div/dup/2.0/mul/29/1/sub/poestudnt2/exch/round/-2.0/mul/1.0/add/mul/InputObs%5BT2%5D0.0/rootmeansqover/mul/InputObs%5BT2%5Daverage/add%7Difelse/add/PredErrorVars/sqrt/div/29/1/sub/5/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//field/get_parameter/%28PonE%29eq/%7B-1/mul/1/add%7Dif//var/get_parameter/%28Rainfall%29eq/%7Bcorrelationcolorscale/DATA/0/1/RANGE%7D%7B%28percentiles_colors_%29//field/get_parameter/%28PoE%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7Difelse%7Dif/6/-1/roll/.target_date/X/Y/fig-/colors/||/black/verythin/states_gaz/black/scatter/scattercolor/plotlabel/-fig//plotaxislength/520/psdef//antialias/true/psdef//fntsze/20/psdef//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//plotborderbottom/72/psdef//framelabel/%28%25=%5Btarget_date%5D%20forecast%20issued%20%25b%20%25Y%5BS%5D%20%29psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/118/127/RANGEEDGES/Y/5/21/RANGEEDGES/0/masklt/halfgreyscale/home/.remic/.CPT/.PAGASA/lon/lat/2/copy/Forecast/precip_colors/DATA/0/AUTO/RANGE/%28Rainfall%29//field/parameter/%28Anomaly%29eq/%7BCrossValHind%5BT2%5Daverage/sub/prcp_anomaly/DATA/null/null/RANGE%7Dif//field/get_parameter/%28PoM%29eq/%7BCrossValHind%5BT2%5D0.5/0.0/replacebypercentile/div/%28percent%29unitconvert/Infinity/maskge/prcp_anomaly_25max500_colors2_percentmedian%7Dif//field/get_parameter/dup/%28PoE%29eq/exch/%28PonE%29eq/or/%7B-1/mul/%28Rainfall%29//var/parameter/%28Rainfall%29eq/%7B%2820%29//threshold2/parameter/interp%7D%7B%2850%29//percentile/parameter/interp/100.0/div/dup/2.0/mul/29/1/sub/poestudnt2/exch/round/-2.0/mul/1.0/add/mul/InputObs%5BT2%5D0.0/rootmeansqover/mul/InputObs%5BT2%5Daverage/add%7Difelse/add/PredErrorVars/sqrt/div/29/1/sub/5/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//field/get_parameter/%28PonE%29eq/%7B-1/mul/1/add%7Dif//var/get_parameter/%28Rainfall%29eq/%7Bcorrelationcolorscale/DATA/0/1/RANGE%7D%7B%28percentiles_colors_%29//field/get_parameter/%28PoE%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7Difelse%7Dif/6/-1/roll/.target_date/X/Y/fig-/colors/||/black/verythin/states_gaz/black/scatter/scattercolor/plotlabel/-fig//plotaxislength/520/psdef//antialias/true/psdef//fntsze/20/psdef//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//plotborderbottom/72/psdef//framelabel/%28%25=%5Btarget_date%5D%20forecast%20issued%20%25b%20%25Y%5BS%5D%20%29psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/118/127/RANGEEDGES/Y/5/21/RANGEEDGES/0/masklt/halfgreyscale/home/.remic/.CPT/.PAGASA/lon/lat/2/copy/Forecast/precip_colors/DATA/0/AUTO/RANGE/%28Rainfall%29//field/parameter/%28Anomaly%29eq/%7BCrossValHind%5BT2%5Daverage/sub/prcp_anomaly/DATA/null/null/RANGE%7Dif//field/get_parameter/%28PoM%29eq/%7BCrossValHind%5BT2%5D0.5/0.0/replacebypercentile/div/%28percent%29unitconvert/Infinity/maskge/prcp_anomaly_25max500_colors2_percentmedian%7Dif//field/get_parameter/dup/%28PoE%29eq/exch/%28PonE%29eq/or/%7B-1/mul/%28Rainfall%29//var/parameter/%28Rainfall%29eq/%7B%2820%29//threshold2/parameter/interp%7D%7B%2850%29//percentile/parameter/interp/100.0/div/dup/2.0/mul/29/1/sub/poestudnt2/exch/round/-2.0/mul/1.0/add/mul/InputObs%5BT2%5D0.0/rootmeansqover/mul/InputObs%5BT2%5Daverage/add%7Difelse/add/PredErrorVars/sqrt/div/29/1/sub/5/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//field/get_parameter/%28PonE%29eq/%7B-1/mul/1/add%7Dif//var/get_parameter/%28Rainfall%29eq/%7Bcorrelationcolorscale/DATA/0/1/RANGE%7D%7B%28percentiles_colors_%29//field/get_parameter/%28PoE%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7Difelse%7Dif/6/-1/roll/.target_date/X/Y/fig-/colors/||/black/verythin/states_gaz/black/scatter/scattercolor/plotlabel/-fig//plotaxislength/520/psdef//antialias/true/psdef//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//plotborderbottom/72/psdef/.auxfig/+.gif" />
+</fieldset>
+<fieldset class="dlimage2">
+<img class="dlimg2" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/118/127/RANGEEDGES/Y/5/21/RANGEEDGES/0/masklt/halfgreyscale/home/.remic/.CPT/.PAGASA/lon/lat/2/copy/PearsonR/6/-1/roll/.target_date/S/last/cvsunits//S/parameter/VALUE/dup/1/sub//name//target_start/def/exch/1/add//name//target_end/def/X/Y/fig-/colors/||/black/verythin/states_gaz/black/scatter/scattercolor/plotlabel/plotlabel/-fig//plotaxislength/310/psdef//antialias/true/psdef//fntsze/20/psdef//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//plotborderbottom/72/psdef//framelabel/%28%25b%5Btarget_start%5D-%25b%5Btarget_end%5D%20Skill%20Lead%20%25=%5BL%5D%29psdef//plotbordertop/40/psdef/+.gif" border="0" />
+<img class="dlauximg2" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/118/127/RANGEEDGES/Y/5/21/RANGEEDGES/0/masklt/halfgreyscale/home/.remic/.CPT/.PAGASA/lon/lat/2/copy/PearsonR/6/-1/roll/.target_date/S/last/cvsunits//S/parameter/VALUE/dup/1/sub//name//target_start/def/exch/1/add//name//target_end/def/X/Y/fig-/colors/||/black/verythin/states_gaz/black/scatter/scattercolor/plotlabel/plotlabel/-fig//plotaxislength/310/psdef//antialias/true/psdef//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//plotborderbottom/72/psdef//plotbordertop/40/psdef/.auxfig+.gif" />
+</fieldset>
+
+
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+ <h2 align="center" property="term:title">PAGASA/IRI Philippines CPT Precipitation Forecast</h2>
+  <p align="left" property="term:description">
+Seasonal deterministic precipitation forecasts and a series of analysis to apply to a map of the region or to selected grid box</p>
+</div>
+ <div id="tabs-2" class="ui-tabs-panel" about="">
+ <h2 align="center">Dataset Documentation</h2>
+  <p align="left">
+<b>Data</b>: Output from CPT for 12 3-month running seasons for 1977-2003 between Echam4.5 CASST GCM and PAGASA stations dataset, CPT recompiled on Mac 9.04 version <a href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.CPT/.PAGASA/">here</a>.
+</p>
+</div>
+<div id="tabs-3"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
+
