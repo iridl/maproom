@@ -89,6 +89,7 @@ margin: 0px;
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20%2C-15%2C55%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-15%2C-20%2C-20%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
@@ -133,19 +134,26 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">OMI Aerosol Monitoring for Meningitis</h2>
-  <p align="left" property="term:description">An aerosol-monitoring product based on dekadal aerosol index analyses from NASA GSFC.  
-</p><p>The interface allows users to view recent aerosol index analyses with a seasonal and recent historical perspective.  Time series analyses of aerosol index data are generated based on user-selected parameters.  Note that the aerosols included in the index may be of various types and detected at any height in the atmosphere, not necessarily at the surface.
+  <p align="left" property="term:description"> This map shows the presence of aerosols in dekadal (10-day) averages.</p><p>
+High positive values indicate the presence of absorbing aerosols such as desert dust, smoke and volcanic ash. Analysis is based on an aerosol index derived from the Ozone Monitoring Instrument (OMI) aboard NASA’s Aura satellite.</p><p>
+Studies have shown that destabilized mucous membranes in the pharynx allow for the meningitis bacteria to pass through the blood, thus increasing the probability of infection. The desert aerosols (dust) are used as a predictive indicator to meningitis epidemics as they tend to destabilize mucous membranes and lead to increased vulnerability of a population.  
+</p><p> The aerosols included in the index may be of various types and detected at any height in the atmosphere, not necessarily at the surface.
 </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<h4>Aerosol Index</h4>
+
 <dl class="datasetdocumentation">
+
 <dt>Data</dt>
 <dd>Dekadal aerosol index estimates on a 1.0° x 1.0° lat/lon grid</dd>
 <dt>Data Source</dt><dd> NASA GSFC
 (<a href="http://ozoneaq.gsfc.nasa.gov/OMIAerosol.md">OMI Aerosol data from NASA GSFC</a>)*</dd>
 </dl>
+
+<p>This map displays dekadal (10-day) averages of the OMI aerosol index on a 1.0 x 1.0 deg. lat/lon grid. The dekadal average is calculated if at least two-thirds of the daily values in a dekad are non-missing. </p>
+
+<p>The data sets were computed using only positive values (i.e. absorbing aerosol indices) of the aerosol index for each dekad. </p>
 </div>
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
@@ -153,12 +161,27 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 <a href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/">Access the dataset used to create this map.</a>
 </p>
 </div>
+
 <div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Helpdesks</h2>
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
 </div>
+<div id="tabs-5"  class="ui-tabs-panel">
+<h2  align="center">Instructions</h2>
+<p>
+The OMI aerosols interface consists of a clickable map that allows users to generate customized time series graphs in different contextual perspectives. When a desired African location is clicked, 2 time series graphs will provide aerosol analyses.  </p><p>
+a. Seasonal perspective - A single time series from 2005 until present.</p><p>
+
+b. Historical perspective - The data of the past year in comparison to the 3 most recent years.
+</p><p>
+
+By placing the current aerosol index in recent historical and seasonal perspective, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
+ </p>
+</div>
+
+
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
