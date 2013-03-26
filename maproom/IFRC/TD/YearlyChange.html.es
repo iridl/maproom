@@ -23,7 +23,6 @@
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <style>
 .dlimage, .dlimage.wide{
-float: none;
 width: 46%;
 display: inline;
 }
