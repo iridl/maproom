@@ -58,6 +58,8 @@
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a class="carry" href="http://iridl.ldeo.columbia.edu/SOURCES/.LSTM/.MFAP/.molesworth_etal_2003/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
+       <li><a href="#tabs-5" >Instructions</a></li>
+      
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/-20/55/RANGEEDGES/Y/-40/40/RANGEEDGES/SOURCES/.LSTM/.MFAP/.molesworth_etal_2003/a:/.the_geom/:a:/.obsmen/:a/X/Y/fig:/grey/mask/fillby/grey/verythin/states_gaz/black/thinnish/countries_gaz/lakes/:fig/+X/-20.04167/55.04167/plotrange/Y/-40.04167/40.04167/plotrange+//XOVY+null+psdef//plotborder+72+psdef//plotaxislength+432+psdef/"></a>
@@ -65,10 +67,13 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">Observed Distribution of Meningitis in Historical Record</h2>
-  <p align="left" property="term:description">The distribution of observed meningitis epidemics during 1841-1999.</p>
+  <p align="left" property="term:description">This map shows the distribution of observed meningitis epidemics during 1841-1999.</p>
 <p align="left">
-These data are based on the accounts of epidemics documented in the published literature and internal institutional reports, which had been attributed by the authors to meningococci. The WHO proposes the use of epidemic thresholds for the early detection of epidemics and improved control responses.  Defining an 'at-risk' area therefore has important implications for increased surveillance activities and epidemic preparedness.
-</p>
+These data are based on the accounts of epidemics attributed to meningococci documented in published literature and internal institutional reports.</p>
+
+<p> The World Health Organization (WHO) proposes the use of epidemic thresholds for the early detection of epidemics and improved control responses. This map is a useful tool in defining 'at-risk' areas in critical need of increased monitoring activities and epidemic preparedness.</p>
+
+
 <p>
 <center>
 <table border="1" bgcolor="white">
@@ -78,13 +83,20 @@ These data are based on the accounts of epidemics documented in the published li
 </table>
 </center>
 
-</p><p>Reference: Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</p>
+</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<h4>Reference</h4>
+
 <dl class="datasetdocumentation">
-Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</dl>
+<dt>Reference</dt>
+Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.
+<p>
+<dt>Data Source</dt> <dd>
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3033099/" target="_blank">Environmental Risk and Meningitis Epidemics in Africa.</a></dd></p>
+
+
+</dl>
 </div>
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
@@ -98,6 +110,29 @@ Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 20
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
 </div>
+
+<div id="tabs-5"  class="ui-tabs-panel">
+<h2  align="center">Instructions</h2>
+<p>
+This product shows the distribution of reported meningitis over district and provincial spatial scales. </p><p>
+
+This model does not attempt to correlate meningitis outbreaks with any environmental factors.</p>
+
+
+<p>
+<center>
+<table border="1" bgcolor="white">
+<tr><td bgcolor="#FFFFF0"><pre>  </pre></td><td><font size="-1">Not Reported</font></td></tr>
+<tr><td bgcolor="black"><pre>  </pre></td><td><font size="-1">Reported to District</font></td></tr>
+<tr><td bgcolor="#DCDCDC"><pre>  </pre></td><td><font size="-1">Reported to Province</font></td></tr>
+</table>
+</center>
+
+</p><p>Reference: Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</p>
+
+</div>
+
+
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>

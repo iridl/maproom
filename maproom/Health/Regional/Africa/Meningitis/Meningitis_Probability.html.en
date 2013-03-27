@@ -71,7 +71,7 @@
 <p align="left">
 Although there are many factors (environmental and otherwise) that contribute to a meningitis outbreak, this product is the first attempt to map correlations between historical outbreaks of meningitis with both absolute humidity and land-cover type.</p><p>
 
-The World Health Organization proposes the use of environmental thresholds for enhanced early detection of epidemics and improved control responses. This map is a useful tool in defining areas in critical need of increased monitoring activities and epidemic preparedness. 
+The World Health Organization proposes the use of environmental thresholds for enhanced early detection of epidemics and improved control responses. This map is a useful tool in defining 'at-risk' areas in critical need of increased monitoring activities and epidemic preparedness. 
 </p>
 
 
@@ -87,15 +87,30 @@ The World Health Organization proposes the use of environmental thresholds for e
 <tr><td bgcolor="#B22222"><pre>  </pre></td><td><font size="-1">Very High risk (p&#62;0.8)</font></td></tr>
 </table>
 </center>
+</p>
 
-</p><p>Reference: Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</p>
+
+
+
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<h4>Reference</h4>
-<dl class="datasetdocumentation">
 
-Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</dl>
+<dl class="datasetdocumentation">
+<dt>Reference</dt>
+Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.
+
+<p><dt>Data Source</dt> <dd>
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3033099/" target="_blank">Environmental Risk and Meningitis Epidemics in Africa.</a></dd></p>
+
+</dl>
+
+
+
+
+
+
+
 </div>
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
