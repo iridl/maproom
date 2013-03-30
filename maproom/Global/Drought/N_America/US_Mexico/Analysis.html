@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.1"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+
+<!--
+<meta property="maproom:Sort_Id" content="d03" />
+-->
+
+<title>U.S. - Mexico Drought Analysis Tool</title>
+<link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
+
+<link rel="canonical" href="Analysis.html" />
+<meta xml:lang="" property="maproom:Entry_Id" content="Global_Drought_N_America_US_Mexico_Analysis" />
+
+<!--
+<link class="altLanguage" rel="alternate" hreflang="es" href="Analysis.html?Set-Language=es" />
+-->
+
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#North_America"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#North_America_406_0"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#monthly"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#percentile"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#standardized"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Climate_Indices"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#StandardizedPrecipitationIndex"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_Drought_N_America_US_Mexico_term"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.Analyses/a:/.SPI/%5B%28.%29%28SPI-UNI_USMex_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/:a:/.cntrymask/.CPC_USMex/.deg0p5/.maskdeg0p5/mul//plotlast/3.5/def//plotfirst/-3.5/:a/def//name//SPI/def/X/Y/fig-/colors/white/ocean/blue/lakes/black/thinnish/coasts_gaz/black/thin/countries_gaz/-fig//plotaxislength/220/psdef//plotborder/0/psdef//T/last/plotvalue//XOVY/null/psdef//color_smoothing/null/psdef//antialias/true/psdef/+.gif" />
+<script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
+<style>
+.dlimgtsbox { 
+width: 49%;
+display: inline-block
+ }
+</style>
+<!--
+.SPIselectvalue .depClass {
+color: red;
+}
+</style>
+-->
+
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform" class="carryup carry dlimg dlimgts dlauximg dlimgloc share">
+<input class="carryup carry carryLanguage" name="Set-Language" type="hidden" />
+<input class="bodyClass carry dlimg dlauximg info dlimgts share" name="SPIselect" type="hidden" value="SPI-UNI_USMex_3-Month_pw1" />
+<input class="carry dlimg dlimgloc share dlimglocclick" name="bbox" type="hidden" />
+<input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
+<input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
+<input class="notused" name="plotaxislength" type="hidden" />
+<input class="pickarea" name="resolution" type="hidden" value=".5" />
+<input class="dlimg share" name="layers" value="SPI" checked="checked" type="checkbox" />
+<input class="dlimg share" name="layers" value="lakes" checked="checked" type="checkbox" />
+<input class="dlimg share" name="layers" value="coasts_gaz" checked="checked" type="checkbox" />
+<input class="dlimg share" name="layers" value="countries_gaz" checked="checked" type="checkbox" />
+<input class="dlimg share" name="layers" value="states_gaz" type="checkbox" />
+<input class="dlimg share" name="layers" value="us_counties"  type="checkbox" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Drought</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Global/Drought/N_America/">North America</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_Drought_N_America_US_Mexico_term"><span property="term:label">U.S. - Mexico</span></legend>
+            </fieldset> 
+            <fieldset class="navitem"><legend>Drought Index Selection</legend><span class="selectvalue"></span><select class="pageformcopy" name="SPIselect"><option value="SPI-UNI_USMex_3-Month_pw1">3-Month SPI</option><option value="SPI-UNI_USMex_6-Month_pw1">6-Month SPI</option><option value="SPI-UNI_USMex_9-Month_pw1">9-Month SPI</option><option value="SPI-UNI_USMex_12-Month_pw1">12-Month SPI</option></select></fieldset>
+ <fieldset class="navitem"><legend>Generate Time Series for a</legend><select class="pageformcopy" name="resolution">
+<option value=".5">0.5°x0.5° box</option>
+</select></fieldset>            
+ </div>
+<style>
+.leftpart {
+display: inline-block; 
+width: 60%
+}
+.rightpart {
+margin-left: 10pt;
+display: inline-block; 
+width: 30%
+}
+@media only all and (max-width: 400px) {
+.leftpart { width: 100%}
+.rightpart {width: 95%}
+}
+.plotheading {
+text-align: center;
+margin: 0px;
+}
+</style>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.Analyses/a:/.SPI/%5B%28.%29%28SPI-UNI_USMex_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/:a:/.cntrymask/.CPC_USMex/.deg0p5/.maskdeg0p5/mul//plotlast/3.5/def//plotfirst/-3.5/:a/def//name//SPI/def/X/Y/fig-/colors/white/ocean/blue/lakes/black/thinnish/coasts_gaz/black/thin/countries_gaz/-fig//plotaxislength/550/psdef//XOVY/null/psdef//color_smoothing/null/psdef//antialias/true/psdef/">Dataset</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+
+<fieldset class="regionwithinbbox dlimage" about="">
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-129.5%2C12.5%2C-62.5%2C50.5%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-100%2C35%2C-100%2C35%29dup//region/parameter/dup//bbox/get_parameter/eq/%7Bpop%7D%7Bnip%7Difelse/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/states_gaz/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<div class="valid" style="display: inline-block; text-align: top;">
+<a class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">Observed SPI for <span class="bold iridl:long_name"></span>
+</div>
+</div>
+<br />
+
+<div class="dlimgtsbox">
+<div>a)</div>
+<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.Analyses/.SPI/%5B%28.%29%28SPI-UNI_USMex_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/%28bb:-100%2C35%2C-100%2C35%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/last/120/sub/last/RANGE/T+fig-+blue+thinnish+line+black+thin+zeroline+thin+dotted+red%5B-2.05375+-1.64486+-1.28155+-0.84162+-0.5244%5Dhorizontallines+green%5B0.5244+0.84162+1.28155+1.64486+2.05375%5Dhorizontallines+-fig+/%5B%28/%29%28SPI-UNI_USMex_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/-3.1/3.1/plotrange/T/last+120+sub/last/plotrange+//plotborder+72+psdef//plotaxislength+250+psdef//antialias+true+psdef//XOVY+null+psdef+.gif" />
+</div>
+
+<div class="dlimgtsbox">
+<div>b)</div>
+<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.Analyses/.SPI/%5B%28.%29%28SPI-UNI_USMex_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/%28bb:-100%2C35%2C-100%2C35%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/2/copy//pointwidth/0/def/%28Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%28months%20since%2001-Jan%29def/replaceGRID/dup/T/0.5/35.5/RANGE/T/0/12/24/shiftdata/T//modulus/12/def/pop/exch/T/-36/shiftGRID/T/0.5/last/RANGE/T//modulus/12/def/pop/T/-0.5/shiftGRID//fullname/%282013%29def/exch/a:/T_lag/24/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282012%29def/:a:/T_lag/12/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282011%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282010%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig//plotaxislength/250/psdef//T/0/12/plotrange//plotborder/42/psdef//plotaxislength/250/psdef//XOVY/null/psdef/++/%5B%28/%29%28SPI-UNI_USMex_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/-3.1/3.1/plotrange//T/0./12./plotrange+//antialias+true+psdef//plotborder+42+psdef//plotaxislength+250+psdef//XOVY+null+psdef+.gif" />
+</div>
+<p>
+a) Time series of Standardized Precipitation Index values for the selected location for the past 10 years.
+</p>
+<p>
+b) Time series of Standardized Precipitation Index values for the current year (thick black line), and for the three previous years (blue: 1 calendar year ago; magenta: 2 calendar years ago; grey: 3 calendar years ago).
+</p>
+<p>
+Red dashed lines on plot a. indicate the SPI thresholds corresponding to the percentiles associated with the D0 (30%tile) to D4 (2%tile) drought intensity categories in the U. S. Drought Monitor, and green dashed lines indicate the SPI thresholds corresponding to the W0 to W4 "wetness" categories.
+</p>
+</fieldset>
+
+<fieldset class="dlimage">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.Analyses/a:/.SPI/%5B%28.%29%28SPI-UNI_USMex_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/:a:/.cntrymask/.CPC_USMex/.deg0p5/.maskdeg0p5/mul//plotlast/3.5/def//plotfirst/-3.5/:a/def//name//SPI/def/X/Y/fig-/colors/white/ocean/blue/lakes/grey/verythin/us_counties/black/thin/states_gaz/black/thinnish/coasts_gaz/black/thin/countries_gaz/-fig//plotaxislength/550/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//T/last/plotvalue//XOVY/null/psdef//color_smoothing/null/psdef//antialias/true/psdef//layers%5B//SPI//lakes//coasts_gaz//countries_gaz%5Dpsdef/"></a>
+
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.Analyses/a:/.SPI/%5B%28.%29%28SPI-UNI_USMex_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/:a:/.cntrymask/.CPC_USMex/.deg0p5/.maskdeg0p5/mul//plotlast/3.5/def//plotfirst/-3.5/:a/def//name//SPI/def/X/Y/fig-/colors/white/ocean/blue/lakes/grey/verythin/us_counties/black/thin/states_gaz/black/thinnish/coasts_gaz/black/thin/countries_gaz/-fig//plotaxislength/550/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//T/last/plotvalue//XOVY/null/psdef//color_smoothing/null/psdef//antialias/true/psdef//layers%5B//SPI//lakes//coasts_gaz//countries_gaz%5Dpsdef+.gif" border="0" />
+
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.Analyses/a:/.SPI/%5B%28.%29%28SPI-UNI_USMex_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/:a:/.cntrymask/.CPC_USMex/.deg0p5/.maskdeg0p5/mul//plotlast/3.5/def//plotfirst/-3.5/:a/def//name//SPI/def/X/Y/fig-/colors/white/ocean/blue/lakes/grey/verythin/us_counties/black/thin/states_gaz/black/thinnish/coasts_gaz/black/thin/countries_gaz/-fig//plotaxislength/550/psdef//XOVY/null/psdef//color_smoothing/null/psdef//antialias/true/psdef/.auxfig+//T/634.5/plotvalue+//XOVY+null+psdef//plotaxislength+550+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//layers%5B//SPI//lakes//coasts_gaz//countries_gaz%5Dpsdef+.gif" />
+</fieldset>
+
+
+
+
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >U.S. - Mexico Drought Analysis Tool</h2>
+<p align="left" property="term:description">This map shows values of the monthly Standardized Precipitation Index (SPI) for a user-selected accumulation period (3, 6, 9, or 12-month) over the United States and Mexico, based upon observed monthly precipitation totals from the Climate Prediction Center's (CPC) Unified global precipitation dataset (combined retrospective and real-time).  The SPI maps provide an indication of short-term to longer-term wet (green, positive SPI) or dry (yellow to red, negative SPI) conditions based upon precipitation alone.  The negative half of the color scale uses the same colors and thresholds of SPI corresponding to the percentiles associated with the D0 (30%tile) to D4 (2%tile) drought intensity categories used in the U. S. Drought Monitor.</p>
+<p align="left">Additionally, the user can click on a location on the map to generate a time series graph of the selected SPI index over the past ten years for that location, and a time series graph that overlays a plot of the SPI over the past calendar year with plots of SPI for the three previous calendar years at that location.</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p>
+<b>Standardized Precipitation Index</b>
+<br /><b>Data</b>:
+The Standardized Precipitation Index (SPI) values shown on this page are generated using monthly precipitation totals at 0.5° lat/lon resolution calculated from a dataset that combines the retrospective and real-time CPC-Unified daily precipitation datasets over the U.S. and Mexico.
+<br /><b>Data Source</b>:
+U. S. Climate Prediction Center (<a href="http://www.cpc.ncep.noaa.gov/products/Global_Monsoons/gl_obs.shtml" target="_blank">U. S. Climate Prediction Center Unified Global Precipitation Analysis over Land, Gauge-Based Only</a>)
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesk</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=U.S. - Mexico Drought Analysis Tool">help@iri.columbia.edu</a> with any questions about or problems with this Map Room.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
