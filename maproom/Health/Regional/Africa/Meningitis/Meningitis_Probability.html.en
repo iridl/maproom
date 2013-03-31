@@ -58,6 +58,7 @@
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a class="carry" href="http://iridl.ldeo.columbia.edu/SOURCES/.LSTM/.MFAP/.molesworth_etal_2003/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/-20/55/RANGEEDGES/Y/-40/40/RANGEEDGES/SOURCES/.LSTM/.MFAP/.molesworth_etal_2003/a:/.the_geom/:a:/.probmen/:a/X/Y/fig:/grey/mask/fillby/grey/verythin/states/black/thinnish/countries_gaz/lakes/:fig/+X/-20.04167/55.04167/plotrange/Y/-40.04167/40.04167/plotrange+//XOVY+null+psdef//plotborder+72+psdef//plotaxislength+432+psdef/"></a>
@@ -66,11 +67,16 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">Predicted Probability of Meningitis Epidemic Experience</h2>
-  <p align="left" property="term:description">A meningitis risk map derived from an environmentally-driven model of predicted probability of epidemic experience.</p>
+  <p align="left" property="term:description">This map shows meningitis risk in Africa derived from probabilistic model based on environmental factors.</p>
 <p align="left">
-The model is based on absolute humidity profiles and land-cover type.  The WHO proposes the use of epidemic thresholds for the early detection of epidemics and improved control responses.  Defining an 'at-risk' area therefore has important implications for increased monitoring activities and epidemic preparedness.</p>
+Although there are many factors (environmental and otherwise) that contribute to a meningitis outbreak, this product is the first attempt to map correlations between historical outbreaks of meningitis with both absolute humidity and land-cover type.</p><p>
+
+The World Health Organization proposes the use of environmental thresholds for enhanced early detection of epidemics and improved control responses. This map is a useful tool in defining 'at-risk' areas in critical need of increased monitoring activities and epidemic preparedness. 
+</p>
+
+
 <p>
-Users should note that these data are based on a statistical model that exhibited a sensitivity and specificity of 83% and 67%, respectively.  It did not include the impact of nonenvironmental factors likely to be related to meningitis epidemics, such as population movement, vaccination coverage and recent epidemics in the area. More information about this model and its limitations may be found in the reference below.   
+ More information about the model and its limitations may be found in the reference below.   
 </p>
 <p>
 <center>
@@ -81,14 +87,30 @@ Users should note that these data are based on a statistical model that exhibite
 <tr><td bgcolor="#B22222"><pre>  </pre></td><td><font size="-1">Very High risk (p&#62;0.8)</font></td></tr>
 </table>
 </center>
+</p>
 
-</p><p>Reference: Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</p>
+
+
+
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<h4>Reference</h4>
+
 <dl class="datasetdocumentation">
-Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.</dl>
+<dt>Reference</dt>
+Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 2003: Environmental Risk and Meningitis Epidemics in Africa. Emerging Infectious Diseases, 9(10): 1287-1293.
+
+<p><dt>Data Source</dt> <dd>
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3033099/" target="_blank">Environmental Risk and Meningitis Epidemics in Africa.</a></dd></p>
+
+</dl>
+
+
+
+
+
+
+
 </div>
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
@@ -102,6 +124,20 @@ Molesworth, A. M., L. E. Cuevas, S. J. Connor, A. P. Morse and M. C. Thomson, 20
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
 </div>
+<div id="tabs-5"  class="ui-tabs-panel">
+<h2  align="center">Instructions</h2>
+<p>
+This product shows the predicted probability for epidemic experience due to the environmental factors of absolute humidity and land-cover type. </p><p>
+This model does not include the impact of nonenvironmental factors likely to be related to meningitis epidemics, such as population movement, vaccination coverage and recent epidemics in the area.</p>
+
+<p> Users should note that these data are based on a statistical model that exhibited a sensitivity and specificity of 83% and 67%, respectively. </p>
+
+
+</div>
+
+
+
+
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
