@@ -139,7 +139,7 @@ b) Same as (a) for the current calendar year (thick black line), as indicated by
 <fieldset class="dlimage">
 <a class="justsregion" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/.Night/.LST/X/Y/fig-/colors/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/"></a>
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/.Night/.LST/X/Y/fig-/colors/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/.Night/.LST/X/Y/fig-/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange/.auxfig+//T/3567.0/plotvalue/Y/-9.5446024E-04/39.99889/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef+.gif" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/.Night/.LST/%28Celsius%29unitconvert/X/Y/fig-+colorscale2+-fig//nplotstream+1+def+//T/3737.0/plotvalue/Y/1.5405659E-04/39.99557/plotrange+//antialias+true+psdef/+.gif" />
 
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
