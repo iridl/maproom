@@ -52,8 +52,8 @@ display: inline-block
 <input class="share dlimgts dlimgloc dlimglocnosta" name="region" type="hidden" />
 <input class="share dlimgts dlimgloc dlimglocsta station" name="region" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value=".1" />
-<input class="pickarea" name="resolution" type="hidden" value="irids:SOURCES:NOAA:NCEP:CPC:EVE:ds" />
+<input class="pickarea1" name="resolution" type="hidden" value=".1" />
+<input class="pickarea2" name="resolution" type="hidden" value="irids:SOURCES:NOAA:NCEP:CPC:EVE:ds" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
