@@ -12,7 +12,6 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>Skill Maps</title>
 <link rel="stylesheet" type="text/css" href="http://iridl.ldeo.columbia.edu/uicore/uicore.css" />
-<link rel="stylesheet" type="text/css" href="http://iridl.ldeo.columbia.edu/uicore/uicore.css" />
 <link rel="canonical" href="skillmaps.html" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_SkillMaps_term" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#NMME" />
@@ -27,7 +26,7 @@ display:none;
 </style>
 </head>
 <body>
-<form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
+<form name="pageform" id="pageform" >
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg share" name="bbox" type="hidden" />
 <input class="carry dlimg share" name="S" type="hidden" value="0000 1 May"/>
@@ -46,19 +45,19 @@ display:none;
            <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_SkillMaps_term"><span property="term:label">"Skill" Maps</span></legend>
             </fieldset> 
-                          <fieldset class="navitem"><legend>Variable</legend><span class="selectvalue"></span><select class="pageformcopy" name="var">
+                          <fieldset class="navitem"><legend>Variable</legend><select class="pageformcopy" name="var">
 <option value="Precipitation">Precipitation</option>
 <option value="Temperature">Temperature: Seasonal Average</option>
 </select></fieldset>   
          
-                       <fieldset class="navitem" id="PrecipMenu"><legend>Diagnostic</legend><span class="selectvalue"></span><select class="pageformcopy" name="diagnostic">
+                       <fieldset class="navitem" id="PrecipMenu"><legend>Diagnostic</legend><select class="pageformcopy" name="diagnostic">
 <option value="Seasonal Total">Seasonal Average</option>
 <option value="Mean Daily Intensity">Mean Daily Intensity</option>
 <option value="Rainfall Frequency">Frequency</option>
 
 </select></fieldset>      
 
-            <fieldset class="navitem"><legend>Model</legend><span class="selectvalue"></span><select class="pageformcopy" name="model">
+            <fieldset class="navitem"><legend>Model</legend><select class="pageformcopy" name="model">
 <option value=".NCEP-CFSv2">CFSv2</option>
 <option value=".NASA-GMAO">NASA GMAO</option>
 <option value=".GFDL-CM2p1">GFDL CM2p1</option>
@@ -74,10 +73,10 @@ display:none;
       <li><a href="#tabs-4" >Project Resources</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/%28Precipitation%29//var/parameter/%28Precipitation%29eq/%7BSOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_050deg/.precip/%28Seasonal%20Total%29//diagnostic/parameter/%28Seasonal%20Total%29eq/%7B0.0/monthlyAverage%7Dif//diagnostic/get_parameter/%28Mean%20Daily%20Intensity%29eq/%7B1/masklt/monthlyAverage%7Dif//diagnostic/get_parameter/%28Rainfall%20Frequency%29eq/%7B1/flagge/monthlyAverage%7Dif%7D%7BSOURCES/.UEA/.CRU/.TS3p1/.monthly/.tmp%7Difelse/%28.NCEP-CFSv2%29//model/parameter/%28Multi-model%29eq/%7B%7D%7BSOURCES/.Models/.NMME/%28.NCEP-CFSv2%29//model/parameter/interp/.MONTHLY/S/first/%282009%29RANGEEDGES//var/get_parameter/%28Precipitation%29eq/%7Bprec%7Dif//var/get_parameter/%28Temperature%29eq/%7Btref%7Dif%7Difelse/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/L/1.5/3.5/RANGE%5BM%5Daverage/3/-2/roll/.T/L/1.5/3.5/RANGE/T/sample-along%5BX/Y%5DregridLinear/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/2/%7Bexch%5BL%5Daverage/S/12/splitstreamgrid%5BX/Y%5DREORDER%7Drepeat%5BS2%5Dcorrelate%5BX/Y%5DREORDER/DATA/-1/1/RANGE/S/1.5/add//pointwidth/1.0/def//name//target_date_start/def/S/3.5/add//pointwidth/1.0/def//name//target_date_end/def/X/Y/fig-/colors/coasts/countries/plotlabel/plotlabel/-fig//correlation/-1/1/plotrange//XOVY/null/psdef//plotborder/72/psdef//plotaxislength/432/psdef//framelabel/%28%25b%5Btarget_date_start%5D-%25b%5Btarget_date_end%5D%20forecast%20issued%20%25B%5BS%5D%29psdef//plotborderbottom/40/psdef/" />
-<img class="dlimg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/%28Precipitation%29//var/parameter/%28Precipitation%29eq/%7BSOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_050deg/.precip/%28Seasonal%20Total%29//diagnostic/parameter/%28Seasonal%20Total%29eq/%7B0.0/monthlyAverage%7Dif//diagnostic/get_parameter/%28Mean%20Daily%20Intensity%29eq/%7B1/masklt/monthlyAverage%7Dif//diagnostic/get_parameter/%28Rainfall%20Frequency%29eq/%7B1/flagge/monthlyAverage%7Dif%7D%7BSOURCES/.UEA/.CRU/.TS3p1/.monthly/.tmp%7Difelse/%28.NCEP-CFSv2%29//model/parameter/%28Multi-model%29eq/%7B%7D%7BSOURCES/.Models/.NMME/%28.NCEP-CFSv2%29//model/parameter/interp/.MONTHLY/S/first/%282009%29RANGEEDGES//var/get_parameter/%28Precipitation%29eq/%7Bprec%7Dif//var/get_parameter/%28Temperature%29eq/%7Btref%7Dif%7Difelse/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/L/1.5/3.5/RANGE%5BM%5Daverage/3/-2/roll/.T/L/1.5/3.5/RANGE/T/sample-along%5BX/Y%5DregridLinear/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/2/%7Bexch%5BL%5Daverage/S/12/splitstreamgrid%5BX/Y%5DREORDER%7Drepeat%5BS2%5Dcorrelate%5BX/Y%5DREORDER/DATA/-1/1/RANGE/S/1.5/add//pointwidth/1.0/def//name//target_date_start/def/S/3.5/add//pointwidth/1.0/def//name//target_date_end/def/X/Y/fig-/colors/coasts/countries/plotlabel/plotlabel/-fig//correlation/-1/1/plotrange//XOVY/null/psdef//plotborder/72/psdef//plotaxislength/432/psdef//framelabel/%28%25b%5Btarget_date_start%5D-%25b%5Btarget_date_end%5D%20forecast%20issued%20%25B%5BS%5D%29psdef//plotborderbottom/40/psdef/.gif" border="0" alt="image" />
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/%28Precipitation%29//var/parameter/%28Precipitation%29eq/%7BSOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_050deg/.precip/%28Seasonal%20Total%29//diagnostic/parameter/%28Seasonal%20Total%29eq/%7B0.0/monthlyAverage%7Dif//diagnostic/get_parameter/%28Mean%20Daily%20Intensity%29eq/%7B1/masklt/monthlyAverage%7Dif//diagnostic/get_parameter/%28Rainfall%20Frequency%29eq/%7B1/flagge/monthlyAverage%7Dif%7D%7BSOURCES/.UEA/.CRU/.TS3p1/.monthly/.tmp%7Difelse/%28.NCEP-CFSv2%29//model/parameter/%28Multi-model%29eq/%7B%7D%7BSOURCES/.Models/.NMME/%28.NCEP-CFSv2%29//model/parameter/interp/.MONTHLY/S//long_name%28Forecast%20Issued%29def/first/%282009%29RANGEEDGES//var/get_parameter/%28Precipitation%29eq/%7Bprec%7Dif//var/get_parameter/%28Temperature%29eq/%7Btref%7Dif%7Difelse/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/L/1.5/3.5/RANGE%5BM%5Daverage/3/-2/roll/.T/L/1.5/3.5/RANGE/T/sample-along%5BX/Y%5DregridLinear/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/2/%7Bexch%5BL%5Daverage/S/12/splitstreamgrid%5BX/Y%5DREORDER%7Drepeat%5BS2%5Dcorrelate%5BX/Y%5DREORDER/DATA/-1/1/RANGE/S/1.5/add//pointwidth/1.0/def//name//target_date_start/def/S/3.5/add//pointwidth/1.0/def//name//target_date_end/def/X/Y/fig-/colors/coasts/countries/plotlabel/plotlabel/-fig//correlation/-1/1/plotrange//XOVY/null/psdef//plotborder/72/psdef//plotaxislength/432/psdef//framelabel/%28%25b%5Btarget_date_start%5D-%25b%5Btarget_date_end%5D%20forecast%20issued%20%25B%5BS%5D%29psdef//plotborderbottom/40/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/%28Precipitation%29//var/parameter/%28Precipitation%29eq/%7BSOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_050deg/.precip/%28Seasonal%20Total%29//diagnostic/parameter/%28Seasonal%20Total%29eq/%7B0.0/monthlyAverage%7Dif//diagnostic/get_parameter/%28Mean%20Daily%20Intensity%29eq/%7B1/masklt/monthlyAverage%7Dif//diagnostic/get_parameter/%28Rainfall%20Frequency%29eq/%7B1/flagge/monthlyAverage%7Dif%7D%7BSOURCES/.UEA/.CRU/.TS3p1/.monthly/.tmp%7Difelse/%28.NCEP-CFSv2%29//model/parameter/%28Multi-model%29eq/%7B%7D%7BSOURCES/.Models/.NMME/%28.NCEP-CFSv2%29//model/parameter/interp/.MONTHLY/S//long_name%28Forecast%20Issued%29def/first/%282009%29RANGEEDGES//var/get_parameter/%28Precipitation%29eq/%7Bprec%7Dif//var/get_parameter/%28Temperature%29eq/%7Btref%7Dif%7Difelse/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/L/1.5/3.5/RANGE%5BM%5Daverage/3/-2/roll/.T/L/1.5/3.5/RANGE/T/sample-along%5BX/Y%5DregridLinear/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/2/%7Bexch%5BL%5Daverage/S/12/splitstreamgrid%5BX/Y%5DREORDER%7Drepeat%5BS2%5Dcorrelate%5BX/Y%5DREORDER/DATA/-1/1/RANGE/S/1.5/add//pointwidth/1.0/def//name//target_date_start/def/S/3.5/add//pointwidth/1.0/def//name//target_date_end/def/X/Y/fig-/colors/coasts/countries/plotlabel/plotlabel/-fig//correlation/-1/1/plotrange//XOVY/null/psdef//plotborder/72/psdef//plotaxislength/432/psdef//framelabel/%28%25b%5Btarget_date_start%5D-%25b%5Btarget_date_end%5D%20forecast%20issued%20%25B%5BS%5D%29psdef//plotborderbottom/40/psdef/.gif" border="0" alt="image" />
   <br />
-  <img class="dlauximg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_050deg/.precip/T/%28Dec-Feb%29seasonalAverage/T/%28Dec-Feb%201982%29%28Dec-Feb%202007%29RANGE/T//S/renameGRID/SOURCES/.Models/.NMME/%28.NCEP-CFSv2%29//model/parameter/interp/.MONTHLY/.prec/S/%280000%201%20Nov%201982-2006%29VALUES/L/1.5/3.5/RANGE%5BM/L%5Daverage%5BX/Y%5DregridLinear/X/60.0/150.0/RANGEEDGES/Y/-15/40/RANGEEDGES/S/2.5/shiftGRID%5BS%5Dcorrelate/correlationcolorscale/X/Y/fig:/colors/thinnish/solid/countries_gaz/coasts_gaz/:fig//correlation/-1/1/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//XOVY/null/psdef/++.auxfig//plotborder+72+psdef//plotaxislength+432+psdef//XOVY+null+psdef+.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_050deg/.precip/T/%28Dec-Feb%29seasonalAverage/T/%28Dec-Feb%201982%29%28Dec-Feb%202007%29RANGE/T//S/renameGRID/SOURCES/.Models/.NMME/%28.NCEP-CFSv2%29//model/parameter/interp/.MONTHLY/.prec/S/%280000%201%20Nov%201982-2006%29VALUES/L/1.5/3.5/RANGE%5BM/L%5Daverage%5BX/Y%5DregridLinear/X/60.0/150.0/RANGEEDGES/Y/-15/40/RANGEEDGES/S/2.5/shiftGRID%5BS%5Dcorrelate/correlationcolorscale/X/Y/fig:/colors/thinnish/solid/countries_gaz/coasts_gaz/:fig//correlation/-1/1/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//XOVY/null/psdef/++.auxfig//plotborder+72+psdef//plotaxislength+432+psdef//XOVY+null+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Anomaly Correlation "Skill" Maps</h2>
