@@ -10,7 +10,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Ситуационный Центр Международного Научно-Исследовательского Института по вопросам Климата и Общества, Института Земли при Колумбийском университете, США</title>
+<title>Ситуационный Центр Международного Научно-Исследовательского Института по вопросам Климата и Общества, Институт Земли при Колумбийском университете, США</title>
 <link rel="stylesheet" type="text/css" href="../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
@@ -39,8 +39,16 @@
                      <span class="navtext">Ситуационный Центр</span>
 
             </fieldset> 
-            <fieldset class="navitem" id="chooseRegion"> 
+            <fieldset class="navitem">
                 <legend>Регион</legend> 
+            <a class="carryLanguage" rel="iridl:hasJSON" href="globalregions.json"></a>
+                <select class="RegionMenu" name="bbox">
+                <option value="">Глобальный</option>
+                <optgroup class="template" label="Region">
+                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+                </optgroup>
+                </select>
+
             </fieldset>
  </div>
 <div>
