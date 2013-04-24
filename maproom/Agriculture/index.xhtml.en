@@ -49,6 +49,7 @@ Climate and Agriculture</p>
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_SkillMaps_term" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Farming_Systems_term" />
 
 </div>
 
