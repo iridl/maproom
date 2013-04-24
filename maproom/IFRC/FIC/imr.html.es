@@ -54,7 +54,7 @@
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef/" />
 <h3 class="dlimagelegend"> Infant Mortality Rate </h3><img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef+.gif" border="0" alt="image" />
   <br />
-  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRC_imr_es.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/IFRC/Forecasts/IFRC_imr_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;Las zonas de riesgo con lluvias abundantes, contienen poblaciones vulnerables?</h2>
