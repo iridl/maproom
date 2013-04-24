@@ -44,7 +44,7 @@
             <a class="carryLanguage" rel="iridl:hasJSON" href="globalregions.json"></a>
                 <select class="RegionMenu" name="bbox">
                 <option value="">Глобальный</option>
-                <optgroup class="template" label="Region">
+                <optgroup class="template" label="Регион">
                 <option class="irigaz:hasPart irigaz:id@value term:label"></option>
                 </optgroup>
                 </select>
