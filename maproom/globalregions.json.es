@@ -18,10 +18,10 @@
   "term:label": "Australia"
 },
 { "irigaz:id": "bb:-20:35:40:75:bb",
-  "term:label": "Europe"
+  "term:label": "Europa"
 },
 { "irigaz:id": "bb:10:15:75:45:bb",
-  "term:label": "Middle East"
+  "term:label": "Oriente Medio"
 },
 { "irigaz:id": "bb:-170:15:-40:75:bb",
   "term:label": "América del Norte"
@@ -33,7 +33,7 @@
   "term:label": "América del Sur"
 },
 { "irigaz:id": "bb:100:-60:300:60:bb",
-  "term:label": "Pacific"
+  "term:label": "Pacífico"
 }
 ]
 }
