@@ -56,7 +56,7 @@
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1/plotvalue/F/last/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1/plotvalue/F/last/plotvalue/Y/-66.25/76.25/plotrange+//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
   <br />
-  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/IFRCfcstextremecolorscale_es.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/IFRC/Forecasts/IFRCfcstextremecolorscale_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;Es probable que los pr&#243;ximos 3 meses sean excepcionalmente h&uacute;medos o secos? </h2>
