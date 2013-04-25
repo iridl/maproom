@@ -12,6 +12,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>Climate Monitoring and Analysis</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="ru" href="index.html?Set-Language=ru" />
 <link rel="canonical" href="index.html" />
 <meta property="maproom:Sort_Id" content="a01" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
@@ -34,9 +35,17 @@
                 <legend>Maproom</legend> 
                      <span class="navtext">Climate Monitoring</span>
             </fieldset> 
-            <fieldset class="navitem" id="chooseRegion"> 
-                <legend>Region</legend> 
+            <fieldset class="navitem">
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="../globalregions.json"></a>
+                <select class="RegionMenu" name="bbox">
+                <option value="">Global</option>
+                <optgroup class="template" label="Region">
+                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+                </optgroup>
+                </select>
             </fieldset>
+
  </div>
 <div>
  <div id="content" class="searchDescription">
