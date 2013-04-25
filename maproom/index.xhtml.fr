@@ -38,7 +38,7 @@
             </fieldset> 
             <fieldset class="navitem"> 
                 <legend>Région</legend>
-            <a class="carryLanguage" rel="iridl:hasJSON" href="globalregions.json"></a>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
 		<select class="RegionMenu" name="bbox">
 		<option value="">Global</option>
 		<optgroup class="template" label="Région">
