@@ -62,23 +62,23 @@ display: none;
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="dlimg share dlimgloc dlimglocsta carry" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
+<input class="share degbox" name="region" type="hidden" />
 <input class="share prcpsta station" name="region" type="hidden" />
 <input class="share tempsta station" name="region" type="hidden" />
-<input class="share degbox" name="region" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
 <input class="carry dlimg share" name="mapsel" type="hidden" value="Precip" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startyr" type="hidden" value="1901" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startmon" type="hidden" value="Jan" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="endmon" type="hidden" value="Mar" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="threshold" type="hidden" value="0.85" />
+<input name="resolution" type="hidden" value="2.5" />
 <input name="resolution" type="hidden" value="irids:SOURCES:NOAA:NCDC:GHCN:v2beta:ds" />
 <input name="resolution" type="hidden" value="irids:SOURCES:NOAA:NCDC:GHCN:v2:ds" />
-<input name="resolution" type="hidden" value="2.5" />
 
+<input name="resolutionFilter" type="hidden" value="notused" />
 <input class="prcpfilter" name="resolutionFilter" type="hidden" value="{prcp (units) (mm/month) def T[lpar (Jan ) (1901) /startyr parameter rpar]concat interp (Dec 2000) RANGE T[lpar (Jan) /startmon parameter (-) (Mar) /endmon parameter rpar]concat interp VALUES dataflag[T]average (0.85) /threshold parameter masklt SELECT}" />
 
 <input class="tempfilter" name="resolutionFilter" type="hidden" value="{adjusted .mean .temp VER 0 VALUE VER removeGRID T[lpar (Jan ) (1901) /startyr parameter rpar]concat interp (Dec 2000) RANGE T[lpar (Jan) /startmon parameter (-) (Mar) /endmon parameter rpar]concat interp VALUES dataflag[T]average (0.85) /threshold parameter masklt SELECT}" />
-<input name="resolutionFilter" type="hidden" value="notused" />
 </form>
 
 <div class="controlBar">
@@ -134,6 +134,8 @@ margin: 0px;
 <fieldset class="regionwithinbbox dlimage" about="">
 
 <div id="precipGraphs">
+
+<a class="dlimgts prcpsta" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087616000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28long_name%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28long_name%29%28Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28long_name%29%2811-Year%20Running%20Average%20%28Trend%20Included%29%29def/1/index/.T/lon/lat/Name/table:/7/:table/"></a>
 
 <img class="dlimgloc degbox prcpsta" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-180%2C-90%2C180%2C90%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES%5B%28bb:11%2C1%2C11.5%2C1.5%29%28pt:11:5:pt%29%5D//region/parameter/%7Bgeoobject%7Dforall/X/Y/fig-/lightgrey/mask/black/countries_gaz/blue/medium/stroke/red/geometrypushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+gif" />
 
@@ -246,7 +248,7 @@ h. Linear Trend of (Jan-Mar) Seasonal Average Gridded Precipitation Anomalies fr
 i. Comparison of Seasonal Average Precipitation Values (Station vs. Gridded)
 </p>
 <div class="dlimgtsbox">
-<img class="dlimgts regionwithinbbox prcpsta degbox valid" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO%5B%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087311000:ds%29%28bb:-69.375:-33.75:-65.625:-31.25:bb%29%5D//region/parameter/0/get/geoobject/.IWMO/.first/VALUE/prcp/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Station%20Data%29def/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE//region/get_parameter/1/get/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Gridded%20Data%29def/lon/lat/Name/T/fig-/twolines/plotlabel/plotlabel/plotlabel/-fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange/%28plotborder%2995/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox prcpsta degbox valid" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO%5B%28bb:-69.375:-33.75:-65.625:-31.25:bb%29%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087311000:ds%29%5D//region/parameter/1/get/geoobject/.IWMO/.first/VALUE/prcp/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Station%20Data%29def/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE//region/get_parameter/0/get/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Gridded%20Data%29def/lon/lat/Name/T/fig-/twolines/plotlabel/plotlabel/plotlabel/-fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange/%28plotborder%2995/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
 </div>
 
 </div>
@@ -307,7 +309,7 @@ Gridded Temperature Plots
 <p>i. Comparison of Seasonal Average Temperature Values (Station vs. Gridded)
 </p>
 <div class="dlimgtsbox">
-<img class="dlimgts regionwithinbbox degbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/IWMO%5B%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%4087047000:ds%29%28bb:-65.0:-30.0:-60.0:-25.0:bb%29%5D//region/parameter/0/get/geoobject/.IWMO/.first/VALUE/adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Station%20Data%29def/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE//region/get_parameter/1/get/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Gridded%20Data%29def/lon/lat/Name/T/fig-/twolines/plotlabel/plotlabel/plotlabel/-fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange/%28plotborder%2995/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox degbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/IWMO%5B%28bb:-65.0:-30.0:-60.0:-25.0:bb%29%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%4087047000:ds%29%5D//region/parameter/1/get/geoobject/.IWMO/.first/VALUE/adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Station%20Data%29def/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE//region/get_parameter/0/get/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Gridded%20Data%29def/lon/lat/Name/T/fig-/twolines/plotlabel/plotlabel/plotlabel/-fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange/%28plotborder%2995/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
 </div>
 
 
