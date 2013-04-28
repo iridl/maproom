@@ -6,12 +6,13 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="en"
+ xml:lang="ru"
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Climate Monitoring and Analysis</title>
+<title>Анализ и Мониторинг Климата</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link rel="canonical" href="index.html" />
 <meta property="maproom:Sort_Id" content="a01" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
@@ -27,21 +28,29 @@
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
-                <legend>Data Library</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/">Maproom</a>
+                <legend>Библиотека Данных</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/">Ситуационный Центр</a>
             </fieldset> 
            <fieldset class="navitem"> 
-                <legend>Maproom</legend> 
-                     <span class="navtext">Climate Monitoring</span>
+                <legend>Ситуационный Центр</legend> 
+                     <span class="navtext">Мониторинг Климата</span>
             </fieldset> 
-            <fieldset class="navitem" id="chooseRegion"> 
-                <legend>Region</legend> 
+            <fieldset class="navitem">
+                <legend>Регион</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+                <select class="RegionMenu" name="bbox">
+                <option value="">Глобальный</option>
+                <optgroup class="template" label="Регион">
+                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+                </optgroup>
+                </select>
+
             </fieldset>
  </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">Climate Monitoring and Analysis</h2>
-<p align="left" property="term:description">Current and historical climate conditions around the globe.</p>
+<h2 property="term:title">Анализ и Мониторинг Климата</h2>
+<p align="left" property="term:description">Текущие и исторические климатические условия вокруг Земли.</p>
 </div>
 
 <div class="rightcol tabbedentries" about="/maproom/Global/" >
@@ -59,7 +68,7 @@
 
 </div>
 <div class="optionsBar">
-            <fieldset class="navitem" id="share"><legend>Share</legend>
+            <fieldset class="navitem" id="share"><legend>Поделиться</legend>
 
 </fieldset>
 </div>

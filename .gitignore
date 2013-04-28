@@ -19,7 +19,9 @@
 /maproom/Global/Ocean_Temp/index.html
 /maproom/Global/Precipitation/index.html
 /maproom/Global/Time_Scales/index.html
-/maproom/Global/index.html
+/maproom/Global/World_Bank/index.html
+/maproom/Global/index.html.en
+/maproom/Global/index.html.ru
 /maproom/Health/Regional/Africa/Malaria/index.html.en
 /maproom/Health/Regional/Africa/Malaria/index.html.es
 /maproom/Health/Regional/Africa/Malaria/index.html.fr
@@ -28,12 +30,14 @@
 /maproom/Health/index.html.en
 /maproom/Health/index.html.es
 /maproom/Health/index.html.fr
+/maproom/Health/index.html.ru
 /maproom/IFRC/index.html.en
 /maproom/IFRC/index.html.es
 /maproom/canonical_imports.serql
 /maproom/index.html.en
 /maproom/index.html.es
 /maproom/index.html.fr
+/maproom/index.html.ru
 /maproom/maproom_section_index.serql
 /maproom/maproomregistry.owl
 /maproom/maproomtop.owl

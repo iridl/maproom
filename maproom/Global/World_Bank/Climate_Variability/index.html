@@ -1,981 +1,473 @@
-<INGRID>
-%  SOURCES .NOAA .NCDC .GHCN .v2beta
-%SOURCES .WORLDBATH .bath
-% comment comment
-SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon /X renameGRID lat /Y renameGRID
-/helpnow FORMknown {(http://iridl.ldeo.columbia.edu/maproom/.Global/.World_Bank/.Climate_Variability/instructions.html)redirectto stop} if
-mimeheader
-pop
-</INGRID><?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
-      xmlns:wb="http://www.worldbank.org#">
+      version="XHTML+RDFa 1.0"
+      >
 <head>
- <title>World Bank Climate Change Data Portal GHCN Station Temperature &amp; Precipitation Variability Tool</title>
-  <style type="text/css">
-         h2		{font: 20pt; color: #191970; }
-	.drktxt 	{font: 12pt; color: #191970; }
-	.lttxt		{font: 12pt; color: #000080; }
-	.tmptxt		{font: 12pt; color: gray; }
-        .rightcol	{float: left; width: 505px; padding-top: 10px; padding-bottom: 10px;}
-	.leftcol        {float: left; width: 505px; padding-top: 10px; padding-bottom: 10px;}
-        .coltext        {float: left; width: 350px; padding-top: 10px; padding-bottom: 10px;}
-        .footer         {width: 700px; padding-top: 10px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px; background-color: #F0F8FF; layer-background-color: #F0F8FF; border: 3px black ridge; font-size: 0.65em; font-family: Helvetica,Arial;}
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>World Bank Climate Variability Tool</title>
+<script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" /> -->
+<link rel="canonical" href="index.html" />
+<meta property="maproom:Entry_Id" content="Global_World_Bank" />
+<!-- <meta property="maproom:Sort_Id" content="e05" /> -->
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#MassContent"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#temperature"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#NearSurface"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Global"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_World_Bank_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#z2m"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#time_series"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#precipitation_amount"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#monthly"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomaly"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Surface"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#AirTemperature2m"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#AirTemperature"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#station"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#deg5x5"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#deg3.75x2.5"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#deg0.01666667x0.01666667"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/lon/%28X%29renameGRID/lat/%28Y%29renameGRID/X/-180/180/RANGE/Y/-90/90/RANGE/startcolormap/DATA/0/8752/RANGE/white/white/LightGoldenrodYellow/0/VALUE/LightGoldenrod/500/VALUE/goldenrod/1500/VALUE/DarkGoldenrod/3000/VALUE/sienna/8224/VALUE/sienna/endcolormap/%28Precip%29//mapsel/parameter/%28Precip%29eq/%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2beta/a:/.lon/DATA/-180/180/RANGE/:a:/.lat/DATA/-90/90/RANGE/:a:/.prcp/%28units%29%28mm/month%29def%7D%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2/a:/.lon/DATA/-180/180/RANGE/:a:/.lat/DATA/-90/90/RANGE/:a:/.adjusted/.mean/.temp/VER/0/VALUE/VER/removeGRID%7Difelse/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/VALUES/dataflag%5BT%5Daverage/%280.85%29//threshold/parameter/masklt/dataflag/0/maskle/:a/startcolormap/DATA/0/1/RANGE/black/black/black/0/VALUE/black/black/1/bandmax/black/endcolormap/X/Y/fig:/colors/scattercolor/black/thin/countries_gaz/coasts_gaz/:fig/%28plotaxislength%29220/psdef//plotaxislength/220/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" />
+<style>
+.dlimgtsbox { 
+width: 90%;
+display: inline-block
+ }
 
-  </style>
-
- <!--
- body
-    {
-    font-family:arial,sans-serif
-    }
- P.indented
-    {
-    padding-left: 25pt;
-    padding-right: 25pt;
-    text-align: justify;
-    }
- -->
-
-<script language="JavaScript">
-<!--
-  function printtext() {
-  document.getElementById("content").innerHTML = "<p>The Data Completeness Threshold is used to specify which stations appear on the map based upon how much data each station has during the season and year range you have chosen.  If you set a low Data Completeness Threshold such as 65%, for example, you will be able to choose from a larger number of stations, but some of those stations will have as little as 65% of the data that a fully complete station record would have.  Therefore, the stations with less complete records will display time series with many gaps that make it more difficult to compute a good estimate of the long-term linear trend, for example.  If you set a high Data Completeness Threshold such as 100%, for example, you will have fewer stations from which to choose, but their time series will have few or no gaps and will provide a better estimate of the long-term linear trend. </p>"
-  }
-
-  function ReverseContentDisplay(d) {
-if(d.length < 1) { return; }
-if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
-else { document.getElementById(d).style.display = "none"; }
+.mapselPrecip #tempGraphs {
+display: none;
 }
- -->  
-<!-- END script -->
-</script>
-
- <INGRID>
- figdefs
- </INGRID>
- 
- </head>
-
-<body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000" onload="initdrag();document.mapform.reset();" onunload="window.setTimeout('resetdrag',5000);">
-
-<INGRID>
-
-leftmenuinfo:
-{ } setleftmenugrids
-%WWWinfo /map FORMgetknown {.Y .plotvalue
-%nip
-%/map.Y.plotvalue
-%exch def}
-%{pop}ifelse
-%WWWinfo /map FORMgetknown {.X .plotvalue
-%nip
-%/map.X.plotvalue
-%exch def}
-%{pop}ifelse
-:leftmenuinfo
-
-
-/leftmenusub? { leftmenulevel 0 get 2 le } def
-leftmenuHeader
-
-% set default values for the forms
-
-WWWinfo
-.FORMinfo null eq
-{
-null 8 object
-/mapsel (Precip) def
-/startmon (Jan) def
-/endmon (Mar) def
-/startyr (1901) def
-/threshold (0.85) def 
-/menu (on) def
-/stnmap (on) def
-/locinfo (on) def
-/desc (on) def
-/FORMinfo WWWinfo !
-} if
-
-</INGRID>
-<form name="mapform" action="index.html">
-
-
-<center>
-
-<table border="0" cols="2">
-<caption align="top"> 
-<h2 align="center">World Bank Climate Change Data Portal GHCN Station Temperature &amp; Precipitation Variability Tool</h2>
-</caption>
-<tr valign="top">
-<td align="center" rowspan="2">
-
-<INGRID>showmenu? not {stopprint} if</INGRID>
-
-<INGRID>
-
-
-WWWinfo
-
-/datlist null 2 object
- /Precip ( SOURCES .NOAA .NCDC .GHCN .v2beta ) def
- /Temp ( SOURCES .NOAA .NCDC .GHCN .v2 ) def
-%/defaultdat currentobject /Precip get def
-def
-
-/varlist null 2 object
- /Precip ( SOURCES .NOAA .NCDC .GHCN .v2beta a: :a: .prcp (units) (mm/month) def ) def
- /Temp ( SOURCES .NOAA .NCDC .GHCN .v2 a: :a: .adjusted .mean .temp VER 0 VALUE ) def
-%/default currentobject /Precip get def
-def
-
-/varlistplotting null 2 object
- /Precip ( SOURCES .NOAA .NCDC .GHCN .v2beta a: .lon DATA -180 180 RANGE :a: .lat DATA -90 90 RANGE :a: .prcp (units) (mm/month) def ) def
- /Temp ( SOURCES .NOAA .NCDC .GHCN .v2 a: .lon DATA -180 180 RANGE :a: .lat DATA -90 90 RANGE :a: .adjusted .mean .temp VER 0 VALUE VER removeGRID ) def
-%/defaultvarplot currentobject /Precip get def
-def
-
-%/varlistplotting2 null 2 object
-% /Precip ( SOURCES .NOAA .NCDC .GHCN .v2beta a: .lon DATA -180 180 RANGE :a: .lat DATA -90 90 RANGE :a: prcp (units) (mm/month) def T (Jan 1901) (Dec 2000) RANGE ) def
-% /Temp ( SOURCES .NOAA .NCDC .GHCN .v2 a: .lon DATA -180 180 RANGE :a: .lat DATA -90 90 RANGE :a: adjusted .mean .temp T (Jan 1901) (Dec 2000) RANGE VER 0 VALUE VER removeGRID ) def
-%/defaultvarplot2 currentobject /Precip get def
-%def
-
-/varnames null 2 object
- /Precip ( prcp (units) (mm/month) def (long_name) (GHCN Precipitation) def ) def
- /Temp ( adjusted .mean .temp VER 0 VALUE (long_name) (GHCN Temperature) def ) def
-%/defaultname currentobject /Precip get def
-def
-
-/varnamesglobalgridded null 2 object
- /Precip ( SOURCES .UEA .CRU .Hulme .Global .prcp (long_name) (Hulme Precipitation) def ) def
- /Temp ( SOURCES .UEA .CRU .Jones .CRUTEM3v .varadjtanom (degree_Celsius) unitconvert SOURCES .UEA .CRU .Jones .climatology .c6190 .temp add (long_name) (Jones Temperature) def ) def
-def
-
-%/varnamesTS2p1numstn null 2 object
-% /Precip ( SOURCES .UEA .CRU .TS2p1 .monthly .stations .prcp ) def
-% /Temp ( SOURCES .UEA .CRU .TS2p1 .monthly .stations .temp ) def
-%def
-
-/varnamesdot null 2 object
- /Precip ( .prcp (units) (mm/month) def ) def
- /Temp ( .adjusted .mean .temp VER 0 VALUE ) def
-%/defaultname currentobject /Precip get def
-def
-
-/varlongnames null 2 object
- /Precip (GHCN Precipitation) def
- /Temp (GHCN Temperature) def
-%/defaultlongname currentobject /Precip get def
-def
-
-/varshortnames null 2 object
- /Precip ( precipitation) def
- /Temp ( temperature) def
-def
-
-/varshortnamescap null 2 object
- /Precip ( Precipitation) def
- /Temp ( Temperature) def
-def
-
-/startyrnames null 6 object
- /1901 (1901 to 2000) def
-%/1911 (1911 to 2000) def
-%/1921 (1921 to 2000) def
-%/1931 (1931 to 2000) def
-%/1941 (1941 to 2000) def
- /1951 (1951 to 2000) def
-def
-
-/ensotimestartyr null 2 object
- /1901 (-708.) def
- /1951 (-108.) def
-def
-
-/thresholdpct null 8 object
- (1.0) (100%) def
- (0.95) (95%) def
- (0.9) (90%) def
- (0.85) (85%) def
- (0.8) (80%) def
- (0.75) (75%) def
- (0.7) (70%) def
- (0.65) (65%) def
-def
-
-% decide whether to display menu
-/menu FORMget (on) eq {
-
-(<table cellpadding="5" border="2" cols="1">) print
-(<tr>) print
-(<td align="left" width="100" title="Choose to view either GHCN monthly station temperature or precipitation data.">) print
-(<font point-size="10pt"><b>Select Precipitation or Temperature Data: </b>) print
-
-%/descprintcondition {stopprint /mapsel FORMgetknown {cvn eq} {pop false} ifelse {startprint} if} def
-%[ /Precip /Temp ]
-
-showmenu?
-{
-
-(<select name="mapsel" id="mapsel" size="1" >) print
-[ /Precip /Temp ]
-{
-  (<option value=") print
-   dup cvntos print /mapsel FORMgetknown { cvn 1 index eq {(" selected="selected) print} if} { dup /Precip eq {(" selected="selected)print} if }ifelse
- (">)print
- varlongnames 1 index getknown {print}{dup cvntos print} ifelse pop (</option>) print } forall
-
-(</select>) print
-} {} ifelse
-
-(</font></td></tr>) print
-
-(<tr><td title="Select the starting and ending months of the season for which you would like to calculate the seasonal-average precipitation or temperature for each year.">) print
-
-(<font point-size="10pt"><b>Select Season: </b>) print
-
-(<select name="startmon" id="startmon" onChange="changedtext(this)">) print
-[(Jan) (Feb) (Mar) (Apr) (May) (Jun) (Jul) (Aug) (Sep) (Oct) (Nov) (Dec)] {
- (<option value=") print
- dup print /startmon FORMgetknown {
-   1 index eq {(" selected="selected) print} if
- }{
-   (Jan) dup 2 index eq {(" selected="selected)print} if /startmon FORM!
- } ifelse
- (">) print print (</option>) print
-}forall 
-(</select>) print
-
-( to ) print
-
-(<select name="endmon" id="endmon" onChange="changedtext(this)">) print
-[(Jan) (Feb) (Mar) (Apr) (May) (Jun) (Jul) (Aug) (Sep) (Oct) (Nov) (Dec)] {
- (<option value=") print
- dup print /endmon FORMgetknown {
-   1 index eq {(" selected="selected) print} if
- }{
-   (Mar) dup 2 index eq {(" selected="selected)print} if /endmon FORM!
- } ifelse
- (">) print print (</option>) print
-}forall 
-(</select>) print
-
-(</font></td></tr>) print
-
-(<tr><td title="Choose a range of years in the 20th century to select stations with adequate data and the length of the time series of seasonal-average temperature or precipitation values.">) print
-(<b><font point-size="10pt">Select Year Range for Station Filtering: </font></b>) print
-
-%(<select name="startyr" id="startyr" onChange="changedtext(this);">) print
-%[(1901) (1911) (1921) (1931) (1941) (1951) ] {
-% (<option value=) print
-% dup print /startyr FORMgetknown {
-%  1 index eq {( selected="selected") print} if
-% }{
-%   (1901) dup 2 index eq {( selected="selected")print} if /startyr FORM!
-% } ifelse
-% (>) print print (</option>) print
-%}forall
-%(</select> to 2000) print
-
-(<select name="startyr" id="startyr" onChange="changedtext(this);">) print
-[(1901) (1951) ] {
- (<option value=") print
- dup cvntos print /startyr FORMgetknown {
-  1 index eq {(" selected="selected) print} if
- }{
-   (1901) dup 2 index eq {(" selected="selected)print} if 
- } ifelse
- (">) print startyrnames 1 index getknown {print}{dup cvntos print} ifelse pop (</option>) print
-}forall
-(</select>) print
-
-(</td></tr>) print
-
-(<tr><td title="The Data Completeness Threshold is used to specify which stations appear on the map, based upon how much data each station has during the season and year range you have chosen.  If you set a low Data Completeness Threshold such as 65%, for example, you will be able to choose from a larger number of stations, but some of them will have as little as 65% of the data that a fully complete station record would have.  Stations with less complete records will have time series with many gaps that make it difficult to compute a good estimate of the long-term linear trend, for example.">) print
-
-(<font point-size="10pt"><b>Select Data Completeness Threshold: </b>) print
-
-%(<select name="threshold" id="threshold" onChange="document.mapform.submit();">) print
-%[(1.0) (0.95) (0.9) (0.85) (0.8) (0.75) (0.7) (0.65) ] {
-% (<option value=) print
-% dup print /threshold FORMgetknown {
-%   1 index eq {( selected="selected") print} if
-% }{
-%   (0.85) dup 2 index eq {( selected="selected")print} if /threshold FORM!
-% } ifelse
-% (>) print print (</option>) print
-%}forall
-%(</select>) print
-
-(<select name="threshold" id="threshold" onChange="changedtext(this);">) print
-[(1.0) (0.95) (0.9) (0.85) (0.8) (0.75) (0.7) (0.65) ] {
- (<option value=") print
- dup cvntos print /threshold FORMgetknown {
-   1 index eq {(" selected="selected) print} if
- }{
-   (0.85) dup 2 index eq {(" selected="selected")print} if 
- } ifelse
- (">) print thresholdpct 1 index getknown {print}{dup cvntos print} ifelse pop (</option>) print
-}forall
-(</select></font>) print
-
-(</td></tr>) print
-
-(<tr><td>) print
-(<font face="Helvetical,Arial" point-size="10pt" size="-1">) print
-%(Click on the map to show graphs of the seasonal average ) print varshortnames /mapsel FORMget get print (, its interannual variability, decadal variability, and trend during 1901 to 2000 for the nearest available station with at least ) print thresholdpct /threshold FORMget get print ( complete monthly data for all ) print /startmon FORMget print ( to ) print /endmon FORMget print ( months over the years ) print startyrnames /startyr FORMget get print (.) print
-
-(Click on the map to show graphs of the seasonal average ) print varshortnames /mapsel FORMget get print (, its interannual variability, decadal variability, and trend for the nearest available station with monthly data that are at least ) print thresholdpct /threshold FORMget get print ( complete for all ) print /startmon FORMget print ( to ) print /endmon FORMget print ( months over the years ) print /startyr FORMget s== print ( - 2000.) print
-
-(</font>) print
-(</td></tr>) print
-
-(</table>) print
-
-
-
-
-
-
-(</td>) print
-
-(<td align="center" valign="top">) print
-
-(<div class="footer" align="left">) print
-(<font face="Helvetical,Arial" point-size="9pt" size="-1">) print
-( This tool allows a user to investigate the historical variability of precipitation and temperature at various time scales (interannual, decadal, and long-term linear trend) over the 20th century near a user-selected location. ) print 
-(<a href="javascript:ReverseContentDisplay('topinstructions')">Show/Hide Additional Instructions</a>) print
-(<div id="topinstructions" style="display:none;">) print
-(<ol> ) print
-( <li>Use the menus at left to specify temperature or precipitation station data, season of interest, range of years within the 20th Century (1901-2000 or 1951-2000), and Data Completeness Threshold. ) print 
-(<br /><a href="javascript:ReverseContentDisplay('numberstationstable')">Show/Hide Summary of Available Stations and Completeness Criteria</a>) print
-
-(<div id="numberstationstable" style="display:none; border: 3px black ridge; padding-top: 10px; padding-bottom: 10px;">) print
-(<table cellpadding="5" border="2" cols="10" rows="6" align="center"><font point-size="9pt">) print 
-(<caption><b>Number of Available Stations to Choose From if the Jan-Dec "Season" is Chosen, by Variable, Year Range, and Completeness Threshold</b></caption>) print
-(<tr> <td></td><td></td><td align="center" colspan="8">Data Completeness Threshold</td></tr> ) print
-(<tr align="right"> <td>Variable</td><td>Year Range</td><td>100%</td><td>95%</td><td>90%</td><td>85%</td><td>80%</td><td>75%</td><td>70%</td><td>65%</td></tr> ) print
-(<tr align="right"> <td rowspan="2">GHCN Precipitation</td><td>1901-2000</td><td>92</td><td>2086</td><td>2927</td><td>3565</td><td>4089</td><td>4602</td><td>5100</td><td>6455</td></tr> ) print
-(<tr align="right"> <td>1951-2000</td><td>217</td><td>2862</td><td>3670</td><td>4287</td><td>5224</td><td>6417</td><td>7204</td><td>8064</td></tr> ) print
-(<tr align="right"> <td rowspan="2">GHCN Temperature</td><td>1901-2000</td><td>36</td><td>681</td><td>1035</td><td>1343</td><td>1525</td><td>1706</td><td>1836</td><td>1987</td></tr> ) print
-(<tr align="right"> <td>1951-2000</td><td>122</td><td>1038</td><td>1167</td><td>1236</td><td>1739</td><td>2548</td><td>2838</td><td>3072</td></tr> ) print
-(</font></table> ) print
-(</div>) print
-
-(</li>) print
-
-( <li>Click the Redraw (circular arrow) button to refresh the map and show the available stations based upon the selections you have made. </li>) print
-( <li>Click and drag on the map to zoom in, if you wish.  Click a location on the map (which will be marked by a green pushpin) to display time series graphs of seasonal mean temperature or precipitation (and its interannual, decadal, and linear trend components) for the closest available station (black pushpin).  For comparison you may also use the "Plots a. to d. are for station data; click here to show/hide these charts for gridded information" link to display the same analyses for the grid box containing the location you clicked based upon coarsely-gridded precipitation (2.5&#176; lat. x 3.75&#176; lon.) and temperature (5&#176; lat. x 5&#176; lon.) data derived from a combination of multiple nearby stations.</li>) print
-(</ol>) print
-(<p>Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> and <a href="instructions.html">instructions page</a> for this tool for more information on interpreting these graphs.</p> ) print
-(</div>) print
-(</font>) print
-(</div>) print
-
-%(</td>) print
-
-
-
-
-} if
-
-(<input type="hidden" name="menu" value="on" checked="checked" />) print
-(<input type="hidden" name="stnmap" value="on" checked="checked" /><br />) print
-(<input type="hidden" name="locinfo" value="on" checked="checked" /><br />) print
-(<input type="hidden" name="desc" value="on" checked="checked" /><br />) print
-
-
-% end of decision whether to display menu
-
-</INGRID>
-
-<INGRID>
-startprint
-</INGRID>
-
-<INGRID>
-WWWinfo
-
-
-% use stnfilter to construct Ingrid code that selects the dataset (GHCN Precip or Temp),
-% specifies the season selected by the user, and specifies the completeness threshold
-% specified by the user to then filter and select the stations that meet these criteria
-
-%/stnfilter [varlist /mapsel FORMget get ( T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt SELECT )] concat def
-
-%/stnfilter2 [varlist /mapsel FORMget get ( T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle )] concat def
-
-/stnfilter2 [varlist /mapsel FORMget get ( T ) lpar (Jan ) /startyr FORMget rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle )] concat def
-
-/stnfiltplot [varlistplotting /mapsel FORMget get ( T ) lpar (Jan ) /startyr FORMget rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle :a startcolormap DATA 0 1 RANGE black black black 0 VALUE black black 1 bandmax black endcolormap )] concat def
-
-/stnfiltplot2 [varlistplotting /mapsel FORMget get ( T ) lpar (Jan ) /startyr FORMget rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle )] concat def
-
-%/stnfiltplotwms [(SOURCES .WORLDBATH .bath X -180 180 RANGE Y -90 90 RANGE ) varlistplotting /mapsel FORMget get ( T ) lpar (Jan ) /startyr FORMget rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle :a startcolormap DATA 0 1 RANGE black black black 0 VALUE black black 1 bandmax black endcolormap )] concat def
-
-/stnfiltplotwms [(SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon (X) renameGRID lat (Y) renameGRID X -180 180 RANGE Y -90 90 RANGE ) varlistplotting /mapsel FORMget get ( T ) lpar (Jan ) /startyr FORMget rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( VALUES dataflag [T] average ) /threshold FORMget s== ( masklt dataflag 0 maskle :a startcolormap DATA 0 1 RANGE black black black 0 VALUE black black 1 bandmax black endcolormap )] concat def
-
-%stnfiltplot2 pstack
-
-/getplots (off) def
-
-onClickforInfo?
-{/map FORMget
-
-/mylon clickpoint 0 get .value s== def
-
-/mylat clickpoint 1 get .value s== def
-
-% mylat /map.Y.plotvalue exch def 
-% mylon /map.X.plotvalue exch def
-% /FORMinfo WWWinfo !
-
-clickpoint 1 get .value -90 lt clickpoint 1 get .value 90 gt or {(Please choose a latitude value within the range -90 to 90) print stop } if
-clickpoint 0 get .value -360 lt clickpoint 0 get .value 360 gt or {(Please choose a longitude value within the range -360 to 360) print stop } if
-
+.mapselTemp #precipGraphs {
+display: none;
 }
-% if no onclickforinfo, check for lonpoint and latpoint form entries
-{
-  /lonpoint FORMknown /latpoint FORMknown and 
- {
-  /lonpoint FORMget /mylon exch def
-  /latpoint FORMget /mylat exch def 
- } if
-
-% Check for valid longitude and latitude values
-
-/latpoint FORMget cvi -90 lt /latpoint FORMget cvi 60 gt or {(Please choose a latitude value within the range -90 to 90) print stop } if
-/lonpoint FORMget cvi -360 lt /lonpoint FORMget cvi 360 gt or {(Please choose a longitude value within the range -360 to 360) print stop } if
-
-} ifelse  
-
-% ifelse is for onclickforinfo vs lonpoint latpoint
-
-
-/lonpoint FORMknown /latpoint FORMknown and onClickforInfo? or 
-
-% if there is a click on the map, or if lonpoint and latpoint are defined, define graphs
-
-{
-
-%/pointelev [( SOURCES .WORLDBATH .bath X ) mylon ( VALUE Y ) mylat ( VALUE )] concat def
-%pointelev interp reserverealization
-
-/pointelev [( SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon (X) renameGRID lat (Y) renameGRID  X ) mylon ( VALUE Y ) mylat ( VALUE )] concat def
-pointelev interp reserverealization
-
-/clickpin ( green pushpins ) def
-
-/clickpinfct [mylon ( ) mylat ( togeopoint a: .lon :a: .lat :a )] concat def
-
-/stnpin ( red pushpinsmaskby ) def
-
-/stnpinfct [stnfiltplot2 ( ) mylon ( lon sub cosd lat cosd ) mylat ( cosd mul mul lat sind ) mylat ( sind mul add acosd pi 180 div mul 6366.707 mul mul -1 mul [IWMO]datarank 1 1 masknotrange :a )] concat def
-
-
-/localstuff
-[stnfilter2 mylon ( lon sub cosd lat cosd ) mylat ( cosd mul mul lat sind ) mylat ( sind
-mul add acosd pi 180 div mul 6366.707 mul mul -1 mul [IWMO]datarank 1 1 masknotrange :a SELECT )] concat interp def
-/localname localstuff .Name def
-/locallon localstuff .lon def
-/locallat localstuff .lat def
-/localelev localstuff .elev def
-/localID localstuff .IWMO def
-
-
-/dist [stnfilter2 mylon ( lon sub cosd lat cosd ) mylat ( cosd mul mul lat sind ) mylat ( sind mul add acosd pi 180 div mul 6366.707 mul mul [IWMO]minover (units) (kilometers) def nip :a )] concat def
-
-
-% if a 12-month period is chosen, use numeric season length version of seasonalAverage to do the calculation, otherwise use seasonalAverage with 3-letter month names to designate the season
-
- /startmon FORMget (Jan) eq /endmon FORMget (Dec) eq and 
- /startmon FORMget (Feb) eq /endmon FORMget (Jan) eq and or
- /startmon FORMget (Mar) eq /endmon FORMget (Feb) eq and or
- /startmon FORMget (Apr) eq /endmon FORMget (Mar) eq and or
- /startmon FORMget (May) eq /endmon FORMget (Apr) eq and or
- /startmon FORMget (Jun) eq /endmon FORMget (May) eq and or
- /startmon FORMget (Jul) eq /endmon FORMget (Jun) eq and or
- /startmon FORMget (Aug) eq /endmon FORMget (Jul) eq and or
- /startmon FORMget (Sep) eq /endmon FORMget (Aug) eq and or
- /startmon FORMget (Oct) eq /endmon FORMget (Sep) eq and or
- /startmon FORMget (Nov) eq /endmon FORMget (Oct) eq and or
- /startmon FORMget (Dec) eq /endmon FORMget (Nov) eq and or 
-
- {
-
-/seasavgplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def 1 index T 132 0.9 runningAverage (fullname) (11-Year Running Average (Trend Included)) def lon lat Name 4 index T differences [T] medianover 100 mul (name) (lineartrend) def T fig: solid black line thinnish red line thinnish blue line plotlabel plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]; Trend: %=[lineartrend] per century) psdef T -708. 492. plotrange )] concat def
-
-
-
-/seasavgplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def 1 index T 132 0.9 runningAverage (fullname) (11-Year Running Average (Trend Included)) def 1 index T differences [T] medianover 100 mul (name) (lineartrend) def T fig: solid black line thinnish red line thinnish blue line plotlabel :fig (framelabelstart) (Trend: %=[lineartrend] per century; ) psdef T -708. 492. plotrange )] concat def
-
-
-
-/seasavgtable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage )] concat def
-
-
-
-/seasavgtableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage )] concat def
-
-
-/seasavgplotGridStn [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Station Data) def lon lat Name ) varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Gridded Data) def 4 1 roll T fig: twolines plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange (plotborder) 95 psdef )] concat def
-
-
-/interannplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def lon lat Name T fig: line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
-
-
-
-/interannplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def T fig: line :fig T -708. 492. plotrange )] concat def
-
-
-/interanntable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def )] concat def
-
-
-
-/interanntableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def )] concat def
-
-
-
-/runavg10plot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage (fullname) (11-Year Running Average) def lon lat Name T fig: lightgrey solid line black thinnish solid line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
-
-
-
-/runavg10plotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage (fullname) (11-Year Running Average) def T fig: lightgrey solid line black thinnish solid line :fig T -708. 492. plotrange )] concat def
-
-
-
-/runavg10table [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage T (pointwidth) 0 def pop (fullname) (11-Year Running Average) def )] concat def
-
-
-
-/runavg10tableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage T (pointwidth) 0 def pop (fullname) (11-Year Running Average) def )] concat def
-
-
-
-/trendplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def lon lat Name T fig: lightgrey solid line black thinnish solid line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
-
-
-
-/trendplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T fig: lightgrey solid line black thinnish solid line :fig T -708. 492. plotrange )] concat def
-
-
-
-/trendtable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def )] concat def
-
-
-
-/trendtableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def )] concat def
-
-
-
-/trendvalue [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T differences [T] medianover 100 mul )] concat def
-
-
-
-/trendvalueGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget ( ) /startyr FORMget s== rpar ( ) lpar /endmon FORMget ( 2000) rpar ( RANGE T 12 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T differences [T] medianover 100 mul )] concat def
-
-
- } {
-
-%/seasavgplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T (Jan 1901) (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage lon lat Name T fig: line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
-
-/seasavgplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def 1 index T 132 0.9 runningAverage (fullname) (11-Year Running Average (Trend Included)) def lon lat Name 4 index T differences [T] medianover 100 mul (name) (lineartrend) def T fig: solid black line thinnish red line thinnish blue line plotlabel plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]; Trend: %=[lineartrend] per century) psdef T -708. 492. plotrange )] concat def
-
-
-
-/seasavgplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def 1 index T 132 0.9 runningAverage (fullname) (11-Year Running Average (Trend Included)) def 1 index T differences [T] medianover 100 mul (name) (lineartrend) def T fig: solid black line thinnish red line thinnish blue line plotlabel :fig (framelabelstart) (Trend: %=[lineartrend] per century; ) psdef T -708. 492. plotrange )] concat def
-
-
-
-/seasavgtable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage )] concat def
-
-
-
-/seasavgtableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage )] concat def
-
-
-
-/seasavgplotGridStn [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Station Data) def lon lat Name ) varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Gridded Data) def 4 1 roll T fig: twolines plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange (plotborder) 95 psdef )] concat def
-
-
-
-/interannplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def lon lat Name T fig: line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
-
-
-
-/interannplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def T fig: line :fig T -708. 492. plotrange )] concat def
-
-
-
-/interanntable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def )] concat def
-
-
-
-/interanntableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage [T]detrend-bfl dup T 132 0.9 runningAverage sub (long_name) (Anomaly) def )] concat def
-
-
-
-/runavg10plot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage (fullname) (11-Year Running Average) def lon lat Name T fig: lightgrey solid line black thinnish solid line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
-
-
-
-/runavg10plotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage (fullname) (11-Year Running Average) def T fig: lightgrey solid line black thinnish solid line :fig T -708. 492. plotrange )] concat def
-
-
-
-/runavg10table [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage T (pointwidth) 0 def pop (fullname) (11-Year Running Average) def )] concat def
-
-
-
-/runavg10tableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def dup [T]detrend-bfl T 132 0.9 runningAverage T (pointwidth) 0 def pop (fullname) (11-Year Running Average) def )] concat def
-
-
-
-/trendplot [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def lon lat Name T fig: lightgrey solid line black thinnish solid line plotlabel plotlabel plotlabel :fig (framelabel) (Station at (%=[lon], %=[lat]) %=[Name]) psdef T -708. 492. plotrange )] concat def
-
-
-
-/trendplotGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T fig: lightgrey solid line black thinnish solid line :fig T -708. 492. plotrange )] concat def
-
-
-
-/trendtable [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def )] concat def
-
-
-
-/trendtableGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def )] concat def
-
-
-
-/trendvalue [datlist /mapsel FORMget get varnames /mapsel FORMget get ( IWMO ) localID interp getrealization 0 get s== ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T differences [T] medianover 100 mul )] concat def
-
-
-
-/trendvalueGG [varnamesglobalgridded /mapsel FORMget get ( X ) mylon ( VALUE Y ) mylat ( VALUE T ) lpar (Jan ) /startyr FORMget s== rpar ( (Dec 2000) RANGE yearly-anomalies T ) lpar /startmon FORMget (-) /endmon FORMget rpar ( 1. seasonalAverage (fullname) (Seasonal Average) def a: :a: :a: [T]detrend-bfl :a sub (fullname) (Linear Trend) def T differences [T] medianover 100 mul )] concat def
-
- } ifelse
-
-% end of check on the nature of the seasonalAverage calculation
-
-}
-% middle of check on if getplots = true (if there was a map click or lonpoint and latpoint defined
-{
-  /clickpin ( ) def
-  /clickpinfct ( ) def
-  /stnpin ( ) def
-  /stnpinfct ( ) def
-} ifelse
-
-</INGRID>
-
-
-
-<INGRID>
-% decide whether to display the map
-
-/stnmap FORMget (on) eq {
-
-(<tr>) print
-(<td align="center" valign="top">) print
-
-WWWinfo
-
-%SOURCES .WORLDBATH .bath X -180 180 RANGE Y -90 90 RANGE
-%X Y fig: colors black countries_gaz coasts_gaz :fig (plotaxislength) 550 psdef (fntsze) 14 psdef
-
-%[( SOURCES .WORLDBATH .bath X -180 180 RANGE Y -90 90 RANGE )
-%( startcolormap DATA 0 7833 RANGE white white LightGoldenrodYellow 0 VALUE LightGoldenrod 500 VALUE goldenrod 1500 VALUE DarkGoldenrod 3000 VALUE sienna 7833 VALUE sienna endcolormap )
-
-[( SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon (X) renameGRID lat (Y) renameGRID X -180 180 RANGE Y -90 90 RANGE )
-( startcolormap DATA 0 8224 RANGE white white LightGoldenrodYellow 0 VALUE LightGoldenrod 500 VALUE goldenrod 1500 VALUE DarkGoldenrod 3000 VALUE sienna 8224 VALUE sienna endcolormap )
-clickpinfct  
-stnfiltplot  
-stnpinfct  
-( X Y fig: colors ) clickpin ( scattercolor ) stnpin ( black thin countries_gaz coasts_gaz :fig (plotaxislength) 550 psdef (fntsze) 14 psdef )] concat interp 
-
-%figdup 
-
-/map
-
-%[( SOURCES .WORLDBATH .bath X -180 180 RANGE Y -90 90 RANGE )
-%( startcolormap DATA 0 7833 RANGE white white LightGoldenrodYellow 0 VALUE LightGoldenrod 500 VALUE goldenrod 1500 VALUE DarkGoldenrod 3000 VALUE sienna 7833 VALUE sienna endcolormap )
-
-[( SOURCES .NOAA .NGDC .ETOPO1 .z_ice lon (X) renameGRID lat (Y) renameGRID X -180 180 RANGE Y -90 90 RANGE )
-( startcolormap DATA 0 8752 RANGE white white LightGoldenrodYellow 0 VALUE LightGoldenrod 500 VALUE goldenrod 1500 VALUE DarkGoldenrod 3000 VALUE sienna 8224 VALUE sienna endcolormap )
-clickpinfct  
-stnfiltplot  
-stnpinfct  
-( X Y fig: colors ) clickpin ( scattercolor ) stnpin ( black thin countries_gaz coasts_gaz :fig (plotaxislength) 550 psdef (fntsze) 14 psdef )] concat 
-
-showmenu?
-{inputimagelinkwithlimitcontrolsclickforinfo}
-{imagelink } ifelse
-
-(</td>) print
-
-} if   
-
-% end of condition statement for displaying the map
-
-
-</INGRID>
-
-</tr></td></tr>
-</table>
-
-<INGRID>
-%plot local data
-WWWinfo
-
-
-
-onClickforInfo?
-{
-
-% decide whether to display location information
- /locinfo FORMget (on) eq {
-
-(<div class="coltext" align="left"><font point-size="10pt">) print
-
-(<b>Selected Location:</b><img src="greenpushpin2.gif" />) print
-(<br />Longitude: <span property="wb:longitude">) print mylon print
-(</span><br />Latitude: <span property="wb:latitude">) print mylat print
-(</span><br />Approximate Elevation: <span property="wb:elevation">) print pointelev interp dup getrealization 0 get printunits pop
-
-%(<font size="-1"><br /><a href=") print stnfiltplotwms interp dataseturl (/X/Y/fig-/white/mask/scattercolor/-fig//transparent/true/psdef//plotaxislength/600/psdef//plotborder/72/psdef//XOVY/null/psdef/wms.xml">Station Map WMS Layer</a></font>) print
-
-
-(</span></font></div>) print
-
-(<div class="coltext" align="left"><font point-size="10pt">) print
-
-(<b>Nearest Station:</b><img src="blackpushpin2.gif" />) print
-(<br />Name:  <span property="wb:station_name">) print localname interp getrealization print
-(</span><br />ID: <span property="wb:station_id">) print localID interp dup getrealization 0 get printunits pop
-(</span><br />Longitude: <span property="wb:station_longitude">) print locallon interp dup getrealization 0 get printunits pop  
-(</span><br />Latitude: <span property="wb:station_latitude">) print locallat interp dup getrealization 0 get printunits pop 
-(</span><br />Elevation: <span property="wb:station_elevation">) print localelev interp dup getrealization 0 get printunits pop 
-(</span><br />Distance from Selected Location: <span property="wb:station_distance">) print dist interp dup getrealization 0 get printunits pop
-
-(</span></font></div>) print
-
- } if
-% end of decision to display location information
-
-} {         
-% if no onClickforInfo?, check for defined /lonpoint and /latpoint
-
-  /lonpoint FORMknown /latpoint FORMknown and
- {
-
-  % decide whether to display location information
-  /locinfo FORMget (on) eq {
-
-  (<div class="coltext" align="left"><font point-size="10pt">) print
-
-  (<b>Selected Location:</b><img src="greenpushpin2.gif" />) print
-  (<br />Longitude: ) print mylon print 
-  (<br />Latitude: ) print mylat print 
-  (<br />Approximate Elevation: ) print pointelev interp dup getrealization 0 get printunits pop
-
-
-  (</font></div>) print
-
-  (<div class="coltext" align="left"><font point-size="10pt">) print
-
-(<b>Nearest Station:</b><img src="blackpushpin2.gif" />) print
-(<br />Name:  <span property="wb:station_name">) print localname interp getrealization print
-(</span><br />ID: <span property="wb:station_id">) print localID interp dup getrealization 0 get printunits pop
-(</span><br />Longitude: <span property="wb:station_longitude">) print locallon interp dup getrealization 0 get printunits pop  
-(</span><br />Latitude: <span property="wb:station_latitude">) print locallat interp dup getrealization 0 get printunits pop 
-(</span><br />Elevation: <span property="wb:station_elevation">) print localelev interp dup getrealization 0 get printunits pop 
-(</span><br />Distance from Selected Location: <span property="wb:station_distance">) print dist interp dup getrealization 0 get printunits pop
-  
-  (</span></font></div>) print
-
-  } if
-  % end of decision to display location information
-
- } if  % end of check whether /lonpoint and /latpoint defined
-
-} ifelse
-% end of check for onClickforInfo?
-
-
-
-/lonpoint FORMknown /latpoint FORMknown and onClickforInfo? or 
-
-{
-
-(<div><font point-size="10pt">) print
-% this div is start of container for all plot displays
-
-(<div class="rightcol"><center><b>a. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, &amp; Linear Trend</b></center>) print
-
-seasavgplot interp
-/map
-seasavgplot
-imagelink
-
-(<font size="-1"><br /><a href=") print seasavgtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplot interp imagelinkstart (GIF image of this graph) (.gif) (wb:figa) linktoimageformatwithrel (</font>) print
-
-
-(</div>) print
-
-(<div class="rightcol"><center><b>b. Interannual Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
-
-interannplot interp
-/map
-interannplot
-imagelink
-
-(<font size="-1"><br /><a href=") print interanntable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data in this graph</a> | ) print interannplot interp imagelinkstart (GIF image of this graph) (.gif) (wb:figb) linktoimageformatwithrel (</font>) print
-
-(</div>) print
-
-(<div class="rightcol"><center><b>c. Decadal Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
-
-runavg10plot interp
-/map
-runavg10plot
-imagelink
-
-(<font size="-1"><br /><a href=") print runavg10table interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plot interp imagelinkstart (GIF image of this graph) (.gif) (wb:figc) linktoimageformatwithrel (</font>) print
-
-(</div>) print
-
-(<div class="rightcol"><center><b>d. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Station ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
-
-trendplot interp
-/map
-trendplot
-imagelink
-
-(<font size="-1"><br /><a href=") print trendtable interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the linear trend in this graph</a> | ) print trendplot interp imagelinkstart (GIF image of this graph) (.gif) (wb:figd) linktoimageformatwithrel (</font>) print
-
-(<br />Linear Trend: &amp;nbsp;&amp;nbsp; ) print trendvalue interp dup getrealization 0 get 100 mul round 0.01 mul printunits pop ( per century) print
-
-(</div>) print
-
-   (<div id="griddedplot" style="display:none; float: left; background-color: white; padding-top: 10px; padding-bottom: 10px;">) print
-
-(<div class="rightcol"><center><b>e. ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Values, Decadal Variability, &amp; Linear Trend</b></center>) print
-
-%(<div class="rightcol"><center><b>e. Seasonal Average Values (Gridded Data)</b></center>) print
-
-seasavgplotGG interp
-/map
-seasavgplotGG
-imagelink
-
-(<font size="-1"><br /><a href=") print seasavgtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Seasonal average data in this graph</a> | ) print seasavgplotGG interp imagelinkstart (GIF image of this graph) (.gif) (wb:fige) linktoimageformatwithrel (</font>) print
-
-(</div>) print
-
-(<div class="rightcol"><center><b>f. Interannual Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
-
-%(<div class="rightcol"><center><b>f. Interannual Component of Variability (Gridded Data)</b></center>) print
-
-interannplotGG interp
-/map
-interannplotGG
-imagelink
-
-(<font size="-1"><br /><a href=") print interanntableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data in this graph</a> | ) print interannplotGG interp imagelinkstart (GIF image of this graph) (.gif) (wb:figf) linktoimageformatwithrel (</font>) print
-
-(</div>) print
-
-(<div class="rightcol"><center><b>g. Decadal Component of Variability of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
-
-%(<div class="rightcol"><center><b>g. Decadal Component of Variability (Gridded Data)</b></center>) print
-
-runavg10plotGG interp
-/map
-runavg10plotGG
-imagelink
-
-(<font size="-1"><br /><a href=") print runavg10tableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the decadal component in this graph</a> | ) print runavg10plotGG interp imagelinkstart (GIF image of this graph) (.gif) (wb:figg) linktoimageformatwithrel (</font>) print
-
-(</div>) print
-
-(<div class="rightcol"><center><b>h. Linear Trend of ) print /startmon FORMget print (-) print /endmon FORMget print ( Seasonal Average Gridded ) print varshortnamescap /mapsel FORMget get print ( Anomalies From ) print /startyr FORMget s== print ( - 2000 Mean</b></center>) print
-
-%(<div class="rightcol"><center><b>h. Linear Trend (Gridded Data)</b></center></td></tr>) print
-
-trendplotGG interp
-/map
-trendplotGG
-imagelink
-
-(<font size="-1"><br /><a href=") print trendtableGG interp dataseturl (/T+exch/2+ncoltable.html?tabopt.N=3%26tabopt.1=text%26tabopt.2=text%26tabopt.3=markNaN%26NaNmarker=NaN%26tabtype=html">Data for the linear trend in this graph</a> | ) print trendplotGG interp imagelinkstart (GIF image of this graph) (.gif) (wb:figh) linktoimageformatwithrel (</font>) print
-
-(<br />Linear Trend: &amp;nbsp;&amp;nbsp; ) print trendvalueGG interp dup getrealization 0 get 100 mul round 0.01 mul printunits pop ( per century) print
-
-(</div>) print
-
-(<div class="rightcol"><center><b>i. Comparison of Seasonal Average Values (Station vs. Gridded)</b></center>) print
-
-seasavgplotGridStn interp
-/map
-seasavgplotGridStn
-imagelink
-
-(<font size="-1"><br />) print seasavgplotGridStn interp imagelinkstart (GIF image of this graph) (.gif) linktoimageformat (</font>) print
-
-(</div>) print
-
-  (</div>) print  %div container for gridded data plot displays
-
-(<div id="leftcol" align="left">) print
-(<a href="javascript:ReverseContentDisplay('griddedplot')">Plots a. to d. are for station data; click here to show/hide the same charts using gridded information</a>) print
-(</div>) print
-
-    (</font></div>) print  %end of div container for all plots
-
-
-} 
-
- { } ifelse
-
-% ifelse for onclickfor info or lonpoint/latpoint
-
-
-/desc FORMget (on) eq {
-(<div style="clear: both;"> </div>) print
-
-
-(<div class="footer" align="left">) print
-(
-<font face="Helvetical,Arial" point-size="10pt" size="-1">
-<b><u>Description</u></b>
-</font>
-<p>
-<font face="Helvetical,Arial" point-size="9pt" size="-1">
-The station time series data used in this interface are from the Global Historical Climatology Network (GHCN) beta version 2 monthly station precipitation data set and the GHCN version 2 station monthly mean temperature data set.  The gridded temperature and precipitation data are from the Hulme Global Gridded Precipitation Version 1.0 data set and the CRUTEM3v Variance-Adjusted Global (Land-Only) Gridded Air Temperature data set.  For more detailed information about these data and each time series graph, please see the <a href="instructions.html#datadescription">Description of the Data Used in this Interface</a> section of the <a href="instructions.html">instructions</a> page. 
-</font></p><p><font face="Helvetical,Arial" point-size="9pt" size="-1">
-Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> for this tool for more information on interpreting these graphs.</font></p>
-) print
-
-(</div>) print
-
-} if
-% condition for displaying dataset description currently tied to desc display condition
-
-
-% == in place of print to see what kind of object you're dealing with 
-</INGRID>
-
-
-</center>
-
-<INGRID>
-startprint
-</INGRID>
+</style>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="dlimg share dlimgloc dlimglocsta carry" name="bbox" type="hidden" />
+<input class="dlimg share" name="T" type="hidden" />
+<input class="share prcpsta station" name="region" type="hidden" />
+<input class="share tempsta station" name="region" type="hidden" />
+<input class="share degbox" name="region" type="hidden" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
+<input class="carry dlimg share" name="mapsel" type="hidden" value="Precip" />
+<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startyr" type="hidden" value="1901" />
+<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startmon" type="hidden" value="Jan" />
+<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="endmon" type="hidden" value="Mar" />
+<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="threshold" type="hidden" value="0.85" />
+<input name="resolution" type="hidden" value="irids:SOURCES:NOAA:NCDC:GHCN:v2beta:ds" />
+<input name="resolution" type="hidden" value="irids:SOURCES:NOAA:NCDC:GHCN:v2:ds" />
+<input name="resolution" type="hidden" value="2.5" />
+
+<input class="prcpfilter" name="resolutionFilter" type="hidden" value="{prcp (units) (mm/month) def T[lpar (Jan ) (1901) /startyr parameter rpar]concat interp (Dec 2000) RANGE T[lpar (Jan) /startmon parameter (-) (Mar) /endmon parameter rpar]concat interp VALUES dataflag[T]average (0.85) /threshold parameter masklt SELECT}" />
+
+<input class="tempfilter" name="resolutionFilter" type="hidden" value="{adjusted .mean .temp VER 0 VALUE VER removeGRID T[lpar (Jan ) (1901) /startyr parameter rpar]concat interp (Dec 2000) RANGE T[lpar (Jan) /startmon parameter (-) (Mar) /endmon parameter rpar]concat interp VALUES dataflag[T]average (0.85) /threshold parameter masklt SELECT}" />
+<input name="resolutionFilter" type="hidden" value="notused" />
 </form>
 
-</body></body>
-</html>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Climate Monitoring</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Global/World_Bank/">World Bank</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#World_Bank"><span property="term:label">World Bank</span></legend>
+            </fieldset>
+            <fieldset class="navitem" id="chooseRegion">
+                <legend>Region</legend>
+            </fieldset>
+
+            <fieldset class="navitem"><legend>Select Variable</legend><span class="selectvalue"></span><select class="pageformcopy" name="mapsel"><option value="Temp">GHCN Temperature</option><option value="Precip">GHCN Precipitation</option></select></fieldset>
+
+            <fieldset class="navitem"><legend>Select Season</legend><span class="selectvalue"></span><select class="pageformcopy" name="startmon"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select> to <span class="selectvalue"></span><select class="pageformcopy" name="endmon"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select></fieldset>
+
+            <fieldset class="navitem"><legend>Select Year Range for Station Filtering</legend><span class="selectvalue"></span><select class="pageformcopy" name="startyr"><option value="1901">1901 to 2000</option><option value="1951">1951 to 2000</option></select></fieldset>
+
+            <fieldset class="navitem"><legend>Data Completeness Threshold</legend><span class="selectvalue"></span><select class="pageformcopy" name="threshold"><option value="1.0">100%</option><option value="0.95">95%</option><option value="0.90">90%</option><option value="0.85">85%</option><option value="0.80">80%</option><option value="0.75">75%</option><option value="0.70">70%</option><option value="0.65">65%</option></select></fieldset>
+
+ </div>
+<style>
+.leftpart {
+display: inline-block; 
+width: 60%
+}
+.rightpart {
+margin-left: 10pt;
+display: inline-block; 
+width: 30%
+}
+@media only all and (max-width: 400px) {
+.leftpart { width: 100%}
+.rightpart {width: 95%}
+}
+.plotheading {
+text-align: center;
+margin: 0px;
+}
+
+</style>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/Aqua/">Dataset</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
+      
+    </ul>
+<fieldset class="regionwithinbbox dlimage" about="">
+
+<div id="precipGraphs">
+
+<img class="dlimgloc degbox prcpsta" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-180%2C-90%2C180%2C90%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES%5B%28bb:11%2C1%2C11.5%2C1.5%29%28pt:11:5:pt%29%5D//region/parameter/%7Bgeoobject%7Dforall/X/Y/fig-/lightgrey/mask/black/countries_gaz/blue/medium/stroke/red/geometrypushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+gif" />
+
+<div style="display: inline-block; text-align: top;">
+
+<div class="valid" style="text-align: top;">
+<a class="prcpsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+
+<div class="template" style="color : red">
+Nearest Precipitation Station <b><span class="iridl:long_name"></span></b>
+</div>
+
+</div>
+
+<div class="valid" style="text-align: top;">
+
+<a class="prcpsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/lon/lat/elev/3/ds/info.json"></a>
+
+<div class="template">
+<table><tr class="iridl:hasDependentVariables" style="color : red"><td class="iridl:name"></td><td class="iridl:value"></td></tr></table>
+</div>
+
+</div>
+
+<div class="valid" style="text-align: top;">
+<a class="degbox" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template" style="color : blue">
+Map Location <b><span class="iridl:long_name"></span></b>
+</div>
+</div>
+
+<div class="valid" style="text-align: top;">
+<a class="degbox" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NGDC/.ETOPO5/.elev/%28bb:1:2:3:4:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/info.json"></a>
+<div class="template" style="color : blue">
+Approximate elevation: <span class="iridl:value"></span> meters
+</div>
+</div>
+
+</div>
+
+<p>
+Precipitation Plots
+</p>
+
+<p>
+Station Precipitation Plots
+</p>
+
+<p>
+a. (Jan-Mar) Seasonal Average Station Precipitation Values, Decadal Variability &amp; Linear Trend  
+</p> 
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox prcpsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087616000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%20%28Trend%20Included%29%29def/lon/lat/Name/4/index/T/differences%5BT%5Dmedianover/100/mul/%28name%29%28lineartrend%29def/T/fig:/solid/black/line/thinnish/red/line/thinnish/blue/line/plotlabel/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D;%20Trend:%20%25=%5Blineartrend%5D%20per%20century%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef//+.gif" />
+</div>
+
+<p>
+b. Interannual Component of Variability of (Jan-Mar) Seasonal Average Station Precipitation Anomalies from (1901-2000) Mean
+</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox prcpsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087616000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/lon/lat/Name/T/fig:/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+<p>
+c. Decadal Component of Variability of (Jan-Mar) Seasonal Average Station Precipitation Anomalies from (1901-2000) Mean
+</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox prcpsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087616000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/dup%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/lon/lat/Name/T/fig:/grey/solid/line/black/thinnish/solid/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+<p>
+d. Linear Trend of (Jan-Mar) Seasonal Average Station Precipitation Anomalies from (1901-2000) Mean
+</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox prcpsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087616000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/lon/lat/Name/T/fig:/grey/solid/line/black/thinnish/solid/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+<p>
+Gridded Precipitation Plots
+</p>
+
+<p>
+e. (Jan-Mar) Seasonal Average Griddedp Precipitation Values, Decadal Variability, &amp; Linear Trend 
+</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-64.25:-29.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%20%28Trend%20Included%29%29def/1/index/T/differences%5BT%5Dmedianover/100/mul/%28name%29%28lineartrend%29def/T/fig:/solid/black/line/thinnish/red/line/thinnish/blue/line/plotlabel/:fig/%28framelabelstart%29%28Trend:%20%25=%5Blineartrend%5D%20per%20century;%20%29psdef/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif " />
+</div>
+
+<p>
+f. Interannual Component of Variability of (Jan-Mar) Seasonal Average Gridded Precipitation Anomalies from (1901-2000) Mean
+</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-64.25:-29.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/T/fig:/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+<p>
+g. Decadal Component of Variability of (Jan-Mar) Seasonal Average Gridded Precipitation Anomalies from (1901-2000) Mean
+</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-64.25:-29.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/dup%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/T/fig:/grey/solid/line/black/thinnish/solid/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+<p>
+h. Linear Trend of (Jan-Mar) Seasonal Average Gridded Precipitation Anomalies from (1901-2000) Mean
+</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-64.25:-29.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/T/fig:/grey/solid/line/black/thinnish/solid/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+<p>
+i. Comparison of Seasonal Average Precipitation Values (Station vs. Gridded)
+</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox prcpsta degbox valid" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO%5B%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087311000:ds%29%28bb:-69.375:-33.75:-65.625:-31.25:bb%29%5D//region/parameter/0/get/geoobject/.IWMO/.first/VALUE/prcp/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Station%20Data%29def/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE//region/get_parameter/1/get/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Gridded%20Data%29def/lon/lat/Name/T/fig-/twolines/plotlabel/plotlabel/plotlabel/-fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange/%28plotborder%2995/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+</div>
+
+<div id="tempGraphs">
+<p>
+Temperature Plots
+</p>
+
+<p>
+Station Temperature Plots
+</p>
+
+<p>a. (Jan-Mar) Seasonal Average Station Temperature Values, Decadal Variability &amp; Linear Trend</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%20%28Trend%20Included%29%29def/lon/lat/Name/4/index/T/differences%5BT%5Dmedianover/100/mul/%28name%29%28lineartrend%29def/T/fig:/solid/black/line/thinnish/red/line/thinnish/blue/line/plotlabel/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D;%20Trend:%20%25=%5Blineartrend%5D%20per%20century%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+gif" />
+</div>
+
+<p>b. Interannual Component of Variability of (Jan-Mar) Seasonal Average Station Temperature Anomalies from (1901 - 2000) Mean</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/lon/lat/Name/T/fig:/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+<p>c. Decadal Component of Variability of (Jan-Mar) Seasonal Average Station Temperature Anomalies from (1901 - 2000) Mean </p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/dup%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/lon/lat/Name/T/fig:/grey/solid/line/black/thinnish/solid/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+<p>d. Linear Trend of (Jan-Mar) Seasonal Average Station Temperature Anomalies from (1901 - 2000) Mean </p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/lon/lat/Name/T/fig:/grey/solid/line/black/thinnish/solid/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+<p>
+Gridded Temperature Plots
+</p>
+
+<p>e. (Jan-Mar) Seasonal Average Gridded Temperature Values, Decadal Variability, &amp; Linear Trend</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%20%28Trend%20Included%29%29def/1/index/T/differences%5BT%5Dmedianover/100/mul/%28name%29%28lineartrend%29def/T/fig:/solid/black/line/thinnish/red/line/thinnish/blue/line/plotlabel/:fig/%28framelabel%29%28Trend%20%25=%5Blineartrend%5D%20per%20century%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+<p>f. Interannual Component of Variability of (Jan-Mar) Seasonal Average Gridded Temperature Anomalies from 1901 - 2000 Mean</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/T/fig:/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif " />
+</div>
+
+<p>g. Decadal Component of Variability of (Jan-Mar) Seasonal Average Gridded Temperature Anomalies from (1901 - 2000) Mean</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/dup%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/T/fig:/grey/solid/line/black/thinnish/solid/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+gif" />
+</div>
+
+<p>h. Linear Trend of (Jan-Mar) Seasonal Average Gridded Temperature Anomalies from (1901 - 2000) Mean</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/T/fig:/grey/solid/line/black/thinnish/solid/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+<p>i. Comparison of Seasonal Average Temperature Values (Station vs. Gridded)
+</p>
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox degbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/IWMO%5B%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%4087047000:ds%29%28bb:-65.0:-30.0:-60.0:-25.0:bb%29%5D//region/parameter/0/get/geoobject/.IWMO/.first/VALUE/adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Station%20Data%29def/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE//region/get_parameter/1/get/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Gridded%20Data%29def/lon/lat/Name/T/fig-/twolines/plotlabel/plotlabel/plotlabel/-fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange/%28plotborder%2995/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
+</div>
+
+
+</div>
+
+
+
+</fieldset>
+
+
+
+<fieldset class="dlimage">
+<a class="justsregion" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/lon/%28X%29renameGRID/lat/%28Y%29renameGRID/X/-180/180/RANGE/Y/-90/90/RANGE/startcolormap/DATA/0/8752/RANGE/white/white/LightGoldenrodYellow/0/VALUE/LightGoldenrod/500/VALUE/goldenrod/1500/VALUE/DarkGoldenrod/3000/VALUE/sienna/8224/VALUE/sienna/endcolormap/%28Precip%29//mapsel/parameter/%28Precip%29eq/%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2beta/a:/.lon/DATA/-180/180/RANGE/:a:/.lat/DATA/-90/90/RANGE/:a:/.prcp/%28units%29%28mm/month%29def%7D%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2/a:/.lon/DATA/-180/180/RANGE/:a:/.lat/DATA/-90/90/RANGE/:a:/.adjusted/.mean/.temp/VER/0/VALUE/VER/removeGRID%7Difelse/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/VALUES/dataflag%5BT%5Daverage/%280.85%29//threshold/parameter/masklt/dataflag/0/maskle/:a/startcolormap/DATA/0/1/RANGE/black/black/black/0/VALUE/black/black/1/bandmax/black/endcolormap/X/Y/fig:/colors/scattercolor/black/thin/countries_gaz/coasts_gaz/:fig/%28plotaxislength%29550/psdef/%28fntsze%2914/psdef//plotaxislength/550/psdef//plotborder/72/psdef//antialias/true/psdef/"></a>
+
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/lon/%28X%29renameGRID/lat/%28Y%29renameGRID/X/-180/180/RANGE/Y/-90/90/RANGE/startcolormap/DATA/0/8752/RANGE/white/white/LightGoldenrodYellow/0/VALUE/LightGoldenrod/500/VALUE/goldenrod/1500/VALUE/DarkGoldenrod/3000/VALUE/sienna/8224/VALUE/sienna/endcolormap/%28Precip%29//mapsel/parameter/%28Precip%29eq/%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2beta/a:/.lon/DATA/-180/180/RANGE/:a:/.lat/DATA/-90/90/RANGE/:a:/.prcp/%28units%29%28mm/month%29def%7D%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2/a:/.lon/DATA/-180/180/RANGE/:a:/.lat/DATA/-90/90/RANGE/:a:/.adjusted/.mean/.temp/VER/0/VALUE/VER/removeGRID%7Difelse/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/VALUES/dataflag%5BT%5Daverage/%280.85%29//threshold/parameter/masklt/dataflag/0/maskle/:a/startcolormap/DATA/0/1/RANGE/black/black/black/0/VALUE/black/black/1/bandmax/black/endcolormap/X/Y/fig:/colors/scattercolor/black/thin/countries_gaz/coasts_gaz/:fig/%28plotaxislength%29550/psdef/%28fntsze%2914/psdef//plotaxislength/550/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif" border="0" />
+
+
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+ <h2 align="center" property="term:title">World Bank Climate Variability Tool</h2>
+  <p align="left" property="term:description">This tool allows a user to investigate the historical variability of precipitation and temperature at various time scales (interannual, decadal, and long-term linear trend) over the 20th century near a user-selected location.</p>
+
+<p>Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> and instructions page for this tool for more information on interpreting these graphs.</p>
+
+<p>Click on the map to show graphs of the seasonal average (temperature), its interannual variability, decadal variability, and trend for the nearest available station with monthly data that are at least (85%) complete for all (Jan to Mar) months over the years (1901-2000).</p>
+
+</div>
+<div id="tabs-2"  class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<dl class="datasetdocumentation">
+
+<h4>Station Precipitation Data</h4>
+<dt>Data</dt>
+<dd>Global Historical Climatology Network (GHCN) beta version 2 monthly station precipitation and station metadata (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/">Location in Data Library</a>)</dd>
+<dt>Data Source</dt><dd>U.S. National Climatic Data Center (NCDC)</dd>
+<dt>Description</dt><dd>Quality-controlled raw monthly station precipitation values in units of mm/month.  While quality control procedures have been applied to these data to remove values that are likely erroneous, no adjustments for inhomogeneities have been applied to correct for other possible non-climatic influences such as station moves, raingauge changes, changes in the observation period, etc.</dd>
+
+<h4>Station Temperature Data</h4>
+<dt>Data</dt>
+<dd>Global Historical Climatology Network (GHCN) version 2 station monthly mean temperatures and station metadata (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GHCN/.v2/">Location in Data Library</a>)</dd>
+<dt>Data Source</dt><dd>U.S. National Climatic Data Center (NCDC)
+</dd>
+<dt>Description</dt><dd>Quality-controlled, adjusted monthly mean temperature values in units of °C.  The temperature data used here have been subjected to quality control procedures to remove values that are likely erroneous, and have been adjusted to correct for inhomogeneities resulting from non-climatic influences such as station moves, sensor changes, environmental changes around the station, etc.  In cases where stations have duplicate temperature records from different sources, the longest duplicate record was used here.</dd>
+
+<h4>Gridded Precipitation Data</h4>
+<dt>Data</dt>
+<dd>Hulme Global Gridded Precipitation (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.Hulme/.Global/">Location in Data Library</a>)</dd>
+<dt>Data Source</dt><dd>'gu23wld0098.dat' (Version 1.0) constructed and supplied by Dr. Mike Hulme at the Climatic Research Unit, University of East Anglia, Norwich, UK
+</dd>
+<dt>Description</dt><dd>An historical monthly precipitation dataset for global land areas from 1900 to 1998, gridded at 2.5° latitude by 3.75° longitude resolution</dd>
+
+<h4>Gridded Temperature Data</h4>
+<dt>Data</dt><dd>CRUTEM3v Variance-Adjusted Global (Land-Only) Gridded Air Temperature (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.Jones/">Location in Data Library</a>)</dd>
+<dt>Data Source</dt><dd>Climatic Research Unit, University of East Anglia, Norwich, UK</dd>
+<dt>Description</dt><dd>CRUTEM3v variance-adjusted monthly land air temperature anomalies from January 1850 to present on a 5° latitude by 5° longitude grid, derived from monthly station temperature time series</dd>
+
+<h4>Gridded Elevation Data</h4>
+<dt>Data</dt><dd>ETOPO1 grid registered 1 arc-minute global relief model for topography (land and ice surfaces) and bathymetry (<a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/">Location in Data Library</a>)</dd>
+<dt>Data Source</dt><dd>National Oceanic and Atmospheric Administration (NOAA), National Geophysical Data Center (NGDC)</dd>
+<dt>Description</dt><dd>The elevation/bathymetry data used as the map background and to indicate the "approximate elevation" of the location the user selected is from the ETOPO1 1 arc-minute resolution gridded bathymetry topography data set.  The station elevations come from the GHCN station data sets.</dd>
+
+<h4>References:</h4>
+
+<p>
+Peterson, T. C., and R. S. Vose, 1997: An overview of the Global Historical Climatology Network temperature database. <i>Bull. Amer. Met. Soc.</i>, <b>78</b>, 2837-2849.
+</p>
+<p>
+Peterson, T. C., R. Vose, R. Schmoyer, and V. Razuvaev, 1998: Global Historical Climatology Network (GHCN) quality control of monthly temperature data. <i>Int. J. Climatol.</i>, <b>18</b>, 1169-1179.
+</p>
+<p>
+Hulme, M. (1992) A 1951-80 global land precipitation climatology for the evaluation of General Circulation Models. <i>Climate Dynamics</i>, <b>7</b>, 57-72.
+</p>
+<p>
+Hulme, M. (1994) Validation of large-scale precipitation fields in General Circulation Models. pp. 387-406, in <i>Global Precipitations and Climate Change</i>, (eds.) Desbois, M. and Desalmand, F., NATO ASI Series, Springer-Verlag, Berlin, 466pp.
+</p>
+<p>
+Hulme, M., T. J. Osborn, and T. C. Johns (1998) Precipitation sensitivity to global warming: Comparison of observations with HadCM2 simulations. <i>Geophys. Res. Letts.</i>, <b>25</b>, 3379-3382.
+</p>
+<p>
+Brohan, P., J. J. Kennedy, I. Harris, S. F. B. Tett and P. D. Jones, 2006: Uncertainty estimates in regional and global observed temperature changes: a new dataset from 1850. <i>J. Geophysical Research</i>, <b>111</b>, D12106, doi:10.1029/2005JD006548.
+</p>
+<p>
+Jones, P. D., New, M., Parker, D. E., Martin, S. and Rigor, I. G., 1999: Surface air temperature and its variations over the last 150 years. <i>Reviews of Geophysics</i>, <b>37</b>, 173-199.
+</p>
+<p>
+Amante, C. and B. W. Eakins, ETOPO1 1 Arc-Minute Global Relief Model: Procedures, Data Sources, and Analysis., NOAA Technical Memorandum NESDIS NGDC-24, National Geophysical Data Center, NESDIS, NOAA, U. S. Department of Commerce, Boulder, CO, March 2009. 
+</p>
+
+</dl>
+</div>
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesk</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly. </p>
+</div>
+
+<div id="tabs-5"  class="ui-tabs-panel">
+<h2  align="center">Instructions</h2>
+
+<p> This interface allows a user to display on a map the locations of GHCN (Global Historical Climatology Network) monthly precipitation or temperature stations that meet a user-defined threshold of data completeness for a defined season and range of years and view time series of seasonal-average precipitation or temperature and its variability on various time scales over the 20th century from one of these user-selected stations. </p>
+
+<p> The menu at the top of the page presents options for selecting: </p>
+
+<ul>
+ <li>The GHCN monthly station precipitation or temperature data set</li>
+ <li>The starting and ending months of a season of interest</li>
+ <li>A range of years over which to evaluate the completeness of the temperature or precipitation data and to specify the length of the time series</li>
+ <li>A Data Completeness Threshold for specifying what percentage of months, for the selected season and range of years, must contain non-missing data in order for stations to be displayed on the map and considered for selection.  If a low Data Completeness Threshold such as 65% is selected, for example, you will be able to choose from a larger number of stations, but some of them will have as little as 65% of the data that a fully complete station record would have.  Stations with less complete records will have time series with many gaps that make it difficult to compute a good estimate of the long-term linear trend, for example.</li>
+</ul>
+
+<p>Users may generate time series analyses of seasonal-average precipitation or temperature for the station that meets the selected data completeness criteria and is closest to the location clicked on the map.  Click on the map at the point of interest.  Once the map is clicked several items will be displayed.</p>
+
+<ul>
+ <li>Under the "Selected Location" heading, the longitude, latitude, and approximate elevation of the location clicked by the user are displayed.</li>
+
+ <li>Under the "Nearest Station" heading, the name, IWMO identification number, longitude, latitude, and elevation of the station, and the distance from the station to the selected location are displayed.</li>
+
+ <li>Four graphs display time series from the user-selected starting year to 2000 of the seasonal-average GHCN station precipitation or temperature, the interannual component of variability, the dekadal component of variability (11-year running average), and the linear trend of the seaonal-average values.  For comparison, the same analyses for the grid box containing the location you clicked are displayed based upon coarsely-gridded precipitation (2.5° lat. x 3.75° lon.) and temperature (5° lat. x 5° lon.) data derived from a combination of multiple nearby stations.</li>
+</ul>
+
+<h4>Graphs Based Upon GHCN Station Data:</h4>
+<ol type="a">
+ <li>Time series of seasonal-average (black line) temperature (in °C) or precipitation (in mean mm/month) at the closest GHCN station, its decadal component with the linear trend retained (blue line), and its linear trend (red line) for the selected season over the selected year range. The seasonal average for a given year is calculated and displayed only if non-missing data from all months in the selected season are available. </li>
+
+ <li>Time series of the interannual component of variablility of the seasonal-average GHCN station temperature (in ° C) or precipitation (in mean mm/month) time series, given as the anomaly from the long-term mean over the selected range of years. 
+ <p>This time series is constructed by first calculating the seasonal-average temperature or precipitation values, and then calculating the anomaly from the long-term mean of the same (using all non-missing seasons available during the selected year range). Next, the linear best fit to the anomalies (as shown in plot d.) is subtracted, and, finally, the 11-year running average of the detrended anomalies (as shown in plot c.) is subtracted. Since a simple 11-year running average is used in the calculation, five years of data will be lost from each end of the time series.</p> </li>
+
+ <li>Time series of the decadal component of variability of the seasonal-average GHCN station temperature (in ° C) or precipitation (in mean mm/month), given as the anomaly from the long-term monthly mean (black line), and time series of the seasonal-average temperature or precipitation anomaly from the long-term monthly mean (in light grey). 
+ <p>The decadal component time series is constructed by first calculating the seasonal-average temperature or precipitation values, then calculating the anomaly from the long-term mean of the same (using all non-missing seasons available during the range of selected years). Next, the linear best fit to the anomalies (as shown in plot d.) is subtracted, and an un-weighted 11-year running average is applied to the result. For any given year the 11-year running average is calculated and displayed only if at least 90% of the 11 values in the moving window are non-missing, otherwise the 11-year running average is considered missing and not shown for that year. Since a simple 11-year running average is used, five years of data will be lost from each end of the time series.</p> </li>
+
+ <li>Time series of the linear trend of the seasonal-average GHCN station temperature (in ° C) or precipitation (in mean mm/month), given as the anomaly from the long-term mean (black line), and time series of the seasonal-average temperature or precipitation anomaly from the long-term mean (in light grey). The linear trend line is calculated as the linear best fit to the seasonal-average temperature or precipitation anomalies from the long-term mean.  </li>
+
+<h4>Graphs Based Upon Hulme Gridded Precipitation or CRUTEM3v Gridded Temperature Data:</h4>
+ 
+ <li>Time series of seasonal-average (black line) CRUTEM3v gridded temperature (in °C) or Hulme gridded precipitation (in mean mm/month) at the closest grid point, its decadal component with the linear trend retained (blue line), and its linear trend (red line) for the selected season over the selected year range. The seasonal average for a given year is calculated and displayed only if non-missing data from all months in the selected season are available. </li>
+
+ <li>Time series of the interannual component of variablility of the seasonal-average CRUTEM3v gridded temperature (in ° C) or Hulme gridded precipitation (in mean mm/month) time series, given as the anomaly from the long-term mean over the selected range of years.
+ <p>This time series is constructed by first calculating the seasonal-average temperature or precipitation values, and then calculating the anomaly from the long-term mean of the same (using all non-missing seasons available during the selected year range). Next, the linear best fit to the anomalies (as shown in plot h.) is subtracted, and, finally, the 11-year running average of the detrended anomalies (as shown in plot g.) is subtracted. Since a simple 11-year running average is used in the calculation, five years of data will be lost from each end of the time series. </p> </li>
+
+ <li>Time series of the decadal component of variability of the seasonal-average CRUTEM3v gridded temperature (in ° C) or Hulme gridded precipitation (in mean mm/month), given as the anomaly from the long-term monthly mean (black line), and time series of the seasonal-average temperature or precipitation anomaly from the long-term monthly mean (in light grey).
+ <p>The decadal component time series is constructed by first calculating the seasonal-average temperature or precipitation values, then calculating the anomaly from the long-term mean of the same (using all non-missing seasons available during the range of selected years). Next, the linear best fit to the anomalies (as shown in plot h.) is subtracted, and an un-weighted 11-year running average is applied to the result. For any given year the 11-year running average is calculated and displayed only if at least 90% of the 11 values in the moving window are non-missing, otherwise the 11-year running average is considered missing and not shown for that year. Since a simple 11-year running average is used, five years of data will be lost from each end of the time series. </p></li>
+
+ <li>Time series of the linear trend of the seasonal-average CRUTEM3v gridded temperature (in ° C) or Hulme gridded precipitation (in mean mm/month), given as the anomaly from the long-term mean (black line), and time series of the seasonal-average temperature or precipitation anomaly from the long-term mean (in light grey). The linear trend line is calculated as the linear best fit to the seasonal-average temperature or precipitation anomalies from the long-term mean. </li>
+
+<h4>Graph Comparing Seasonal-Average GHCN Station Values to Gridded Values:</h4>
+
+ <li>Time series of seasonal-average temperature (in ° C) or precipitation (in mean mm/month) values at the nearest available GHCN station (solid line) and seasonal-average CRUTEM3v gridded temperature (in ° C) or Hulme gridded precipitation (in mean mm/month) values at the nearest grid point (dashed line).</li>
+
+</ol>
+
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+</div>
+ </body>
+ </html>

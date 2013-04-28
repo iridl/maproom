@@ -34,8 +34,8 @@
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000">
-<form name="pageform" id="pageform" class="carryup carry">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform" class="carryLanguage carryup carry">
+<input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
 <input class="carry" name="Region" type="hidden" />
 </form>
 <div class="controlBar">

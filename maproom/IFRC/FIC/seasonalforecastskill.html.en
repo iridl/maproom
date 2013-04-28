@@ -25,8 +25,8 @@
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body>
-<form name="pageform" id="pageform" class="carryup carry share">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform" class="carryLanguage carryup carry share">
+<input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
