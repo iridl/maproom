@@ -35,7 +35,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#LandSurface"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<link rel="term:icon" href="http://iri.columbia.edu/~remic/icons/Health-Regional-Africa-TMR-icon.jpg" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/.WAF/T/last/VALUE/X/Y/fig-/colors/coasts/-fig//WAF/-10/50/plotrange//plotborder/0/psdef//XOVY/null/psdef//plotaxislength/120/psdef/.gif" />
 <style>
 .dlimgtsbox { 
 width: 90%;
