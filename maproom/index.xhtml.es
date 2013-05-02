@@ -12,6 +12,8 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>IRI Map Room</title>
 <link rel="stylesheet" type="text/css" href="../uicore/uicore.css" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link class="altLanguage" rel="alternate" hreflang="ru" href="index.html?Set-Language=ru" />
@@ -38,7 +40,7 @@
             </fieldset> 
             <fieldset class="navitem"> 
                 <legend>Región</legend>
-            <a class="carryLanguage" rel="iridl:hasJSON" href="globalregions.json"></a>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
 		<select class="RegionMenu" name="bbox">
 		<option value="">Global</option>
 		<optgroup class="template" label="Región">

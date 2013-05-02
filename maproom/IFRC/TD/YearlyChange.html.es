@@ -14,8 +14,10 @@
 <title>IFRC PIC: Recent Climate Trends</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="YearlyChange.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="eN" href="YearlyChange.html?Set-Language=eN" />
 <link rel="canonical" href="YearlyChange.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#TimeScales" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
@@ -45,8 +47,8 @@ color: blue;
 </style>
 </head>
 <body>
-<form name="pageform" id="pageform" class="carryup carry dlimg dlimgts dlauximg dlimgloc share">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform" class="carryLanguage carryup carry dlimg dlimgts dlauximg dlimgloc share">
+<input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
 <input class="carry dlimgts dlimgloc share" name="region" type="hidden" />
 <input class="carry dlimg dlimgts share" name="var" type="hidden" />
@@ -63,8 +65,15 @@ color: blue;
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#TimeScales"><span property="term:label">Fluctuaciones Recientes del Clima</span></legend>
             </fieldset> 
-            <fieldset class="navitem" id="chooseRegion"> 
-                <legend>Región</legend> 
+            <fieldset class="navitem"> 
+                <legend>Región</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">Global</option>
+		<optgroup class="template" label="Región">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
             </fieldset>
             <fieldset class="navitem"><legend>Variable</legend><span class="selectvalue"></span><select class="pageformcopy" name="var"><option value="">Lluvia</option><option value=".tmp">Temperatura</option></select></fieldset>
             <fieldset class="navitem"><legend>Season</legend><span class="selectvalue"></span><select class="pageformcopy" name="seasonStart"><option value="">Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select> to <span class="selectvalue"></span><select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option value="">Dec</option></select></fieldset>

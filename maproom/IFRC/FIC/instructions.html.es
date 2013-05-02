@@ -15,6 +15,8 @@
 <link rev="section" href="fic.html" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="instructions.html?Set-Language=en" />
 <link rel="canonical" href="instructions.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
@@ -34,8 +36,8 @@
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000">
-<form name="pageform" id="pageform" class="carryup carry">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform" class="carryLanguage carryup carry">
+<input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
 <input class="carry" name="Region" type="hidden" />
 </form>
 <div class="controlBar">

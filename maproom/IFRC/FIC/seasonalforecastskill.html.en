@@ -17,6 +17,8 @@
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="seasonalforecastskill.html?Set-Language=es" />
 <link rel="canonical" href="seasonalforecastskill.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
@@ -25,8 +27,8 @@
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body>
-<form name="pageform" id="pageform" class="carryup carry share">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform" class="carryLanguage carryup carry share">
+<input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 

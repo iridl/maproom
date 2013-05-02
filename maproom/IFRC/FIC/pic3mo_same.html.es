@@ -16,6 +16,8 @@
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="pic3mo_same.html?Set-Language=en" />
 <link rel="canonical" href="pic3mo_same.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
@@ -24,8 +26,8 @@
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body  xml:lang="es">
-<form name="pageform" id="pageform" class="carryup carrydlimg dlauximg share">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<form name="pageform" id="pageform" class="carryLanguage carryup carrydlimg dlauximg share">
+<input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg share" name="bbox" type="hidden" />
 <input class="dlimg share" name="F" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
@@ -38,8 +40,15 @@
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#ThreeMonthForecasts"><span property="term:label">Pron&#243;stico para los Pr&#243;ximos 3 Meses</span></legend>
             </fieldset> 
-            <fieldset class="navitem" id="chooseRegion"> 
-                <legend>Regi&#243;n</legend> 
+            <fieldset class="navitem"> 
+                <legend>Región</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">Global</option>
+		<optgroup class="template" label="Región">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
             </fieldset>
  </div>
 <div class="ui-tabs">

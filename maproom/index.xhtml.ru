@@ -12,6 +12,8 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>Ситуационный Центр Международного Научно-Исследовательского Института по вопросам Климата и Общества, Институт Земли при Колумбийском университете, США</title>
 <link rel="stylesheet" type="text/css" href="../uicore/uicore.css" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
@@ -41,7 +43,7 @@
             </fieldset> 
             <fieldset class="navitem">
                 <legend>Регион</legend> 
-            <a class="carryLanguage" rel="iridl:hasJSON" href="globalregions.json"></a>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
                 <select class="RegionMenu" name="bbox">
                 <option value="">Глобальный</option>
                 <optgroup class="template" label="Регион">
