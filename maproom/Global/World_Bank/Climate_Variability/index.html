@@ -62,6 +62,7 @@ display: none;
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="dlimg share dlimgloc dlimglocsta carry" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
+<input class="share tempbox" name="region" type="hidden" />
 <input class="share degbox" name="region" type="hidden" />
 <input class="share prcpsta station" name="region" type="hidden" />
 <input class="share tempsta station" name="region" type="hidden" />
@@ -71,10 +72,12 @@ display: none;
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startmon" type="hidden" value="Jan" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="endmon" type="hidden" value="Mar" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="threshold" type="hidden" value="0.85" />
+<input name="resolution" type="hidden" value="5.0" />
 <input name="resolution" type="hidden" value="2.5" />
 <input name="resolution" type="hidden" value="irids:SOURCES:NOAA:NCDC:GHCN:v2beta:ds" />
 <input name="resolution" type="hidden" value="irids:SOURCES:NOAA:NCDC:GHCN:v2:ds" />
 
+<input name="resolutionFilter" type="hidden" value="notused" />
 <input name="resolutionFilter" type="hidden" value="notused" />
 <input class="prcpfilter" name="resolutionFilter" type="hidden" value="{prcp (units) (mm/month) def T[lpar (Jan ) (1901) /startyr parameter rpar]concat interp (Dec 2000) RANGE T[lpar (Jan) /startmon parameter (-) (Mar) /endmon parameter rpar]concat interp VALUES dataflag[T]average (0.85) /threshold parameter masklt SELECT}" />
 
@@ -133,9 +136,8 @@ margin: 0px;
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 
-<div id="precipGraphs">
 
-<a class="dlimgts prcpsta" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087616000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28long_name%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28long_name%29%28Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28long_name%29%2811-Year%20Running%20Average%20%28Trend%20Included%29%29def/1/index/.T/lon/lat/Name/table:/7/:table/"></a>
+<a class="dlimgts prcpsta degbox" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO%5B%28bb:-69.375:-33.75:-65.625:-31.25:bb%29%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087311000:ds%29%5D//region/parameter/1/get/geoobject/.IWMO/.first/VALUE/prcp/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28long_name%29%28Station%20Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28long_name%29%28Station%20Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28long_name%29%28Station%2011-Year%20Running%20Average%20%28Trend%20Included%29%29def/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE//region/get_parameter/0/get/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28long_name%29%28Gridded%20Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28long_name%29%28Gridded%20Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28long_name%29%28Gridded%2011-Year%20Running%20Average%20%28Trend%20Included%29%29def/1/index/.T/lon/lat/Name/table:/10/:table/"></a>
 
 <img class="dlimgloc degbox prcpsta" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-180%2C-90%2C180%2C90%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES%5B%28bb:11%2C1%2C11.5%2C1.5%29%28pt:11:5:pt%29%5D//region/parameter/%7Bgeoobject%7Dforall/X/Y/fig-/lightgrey/mask/black/countries_gaz/blue/medium/stroke/red/geometrypushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+gif" />
 
@@ -146,6 +148,16 @@ margin: 0px;
 
 <div class="template" style="color : red">
 Nearest Precipitation Station <b><span class="iridl:long_name"></span></b>
+</div>
+
+</div>
+
+<div class="valid" style="text-align: top;">
+
+<a class="prcpsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/elev/info.json"></a>
+
+<div class="template" style="color : red">
+Station ID <b><span class="iridl:hasIndependentVariables iridl:value"></span></b>
 </div>
 
 </div>
@@ -176,6 +188,9 @@ Approximate elevation: <span class="iridl:value"></span> meters
 
 </div>
 
+
+
+<div class="prcp" id="precipGraphs">
 <p>
 Precipitation Plots
 </p>
@@ -253,10 +268,81 @@ i. Comparison of Seasonal Average Precipitation Values (Station vs. Gridded)
 
 </div>
 
-<div id="tempGraphs">
+<div class="temp" id="tempGraphs">
+
+
+
+
+
+
 <p>
 Temperature Plots
 </p>
+
+<img class="dlimgloc tempbox tempsta" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-180%2C-90%2C180%2C90%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES%5B%28bb:11%2C1%2C11.5%2C1.5%29%28pt:11:5:pt%29%5D//region/parameter/%7Bgeoobject%7Dforall/X/Y/fig-/lightgrey/mask/black/countries_gaz/blue/medium/stroke/red/geometrypushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+gif" />
+
+<div style="display: inline-block; text-align: top;">
+
+<div class="valid" style="text-align: top;">
+<a class="tempsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+
+<div class="template" style="color : red">
+Nearest Temperature Station <b><span class="iridl:long_name"></span></b>
+</div>
+
+</div>
+
+<div class="valid" style="text-align: top;">
+
+<a class="tempsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/elev/info.json"></a>
+
+<div class="template" style="color : red">
+Station ID <b><span class="iridl:hasIndependentVariables iridl:value"></span></b>
+</div>
+
+</div>
+
+<div class="valid" style="text-align: top;">
+
+<a class="tempsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/lon/lat/elev/3/ds/info.json"></a>
+
+<div class="template">
+<table><tr class="iridl:hasDependentVariables" style="color : red"><td class="iridl:name"></td><td class="iridl:value"></td></tr></table>
+</div>
+
+</div>
+
+<div class="valid" style="text-align: top;">
+<a class="tempbox" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template" style="color : blue">
+Map Location <b><span class="iridl:long_name"></span></b>
+</div>
+</div>
+
+<div class="valid" style="text-align: top;">
+<a class="tempbox" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NGDC/.ETOPO5/.elev/%28bb:1:2:3:4:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/info.json"></a>
+<div class="template" style="color : blue">
+Approximate elevation: <span class="iridl:value"></span> meters
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <p>
 Station Temperature Plots
