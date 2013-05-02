@@ -1,7 +1,7 @@
 {
 "@context": {
 "bb": "http://iridl.ldeo.columbia.edu/ontologies/gisuri/geobb/",
-"irigaz": "http://iridl.ldeo.columbia.edu/ontologies/irigaz_grwk.owl#",
+"irigaz": "http://iridl.ldeo.columbia.edu/ontologies/irigaz_frwk.owl#",
 "term": "http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#",
 "irigaz:id": { "@type": "@id" },
 "irigaz:hasPart": { "@container": "@list", "@type": "irigaz:GazEntity"},

@@ -15,6 +15,8 @@
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" /> -->
 <link rel="canonical" href="index.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_TMR" />
 <meta property="maproom:Sort_Id" content="e05" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
@@ -35,7 +37,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#LandSurface"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<link rel="term:icon" href="http://iri.columbia.edu/~remic/icons/Health-Regional-Africa-TMR-icon.jpg" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/.WAF/T/last/VALUE/X/Y/fig-/colors/coasts/-fig//WAF/-10/50/plotrange//plotborder/0/psdef//XOVY/null/psdef//plotaxislength/120/psdef/.gif" />
 <style>
 .dlimgtsbox { 
 width: 90%;

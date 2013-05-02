@@ -15,6 +15,8 @@
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="NINO4.html?Set-Language=en" />
 <link rel="canonical" href="NINO4.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <meta property="maproom:Entry_Id" content="Fire_Regional_Indonesia_Forecasts_Kalimantan" />
 <meta property="maproom:Sort_Id" content="e13" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Indonesia_69_1"/>

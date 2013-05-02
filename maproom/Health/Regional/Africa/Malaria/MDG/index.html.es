@@ -16,6 +16,8 @@
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link rel="canonical" href="index.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:icon" href="http://iri.columbia.edu/~mbell/icons/Health-Regional-Africa-MDG-icon.jpg" />
 <meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_MDG" />
 <meta property="maproom:Sort_Id" content="e09" />
