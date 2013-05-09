@@ -69,7 +69,7 @@ display: none;
 <input class="share prcpsta station" name="region" type="hidden" />
 <input class="share tempsta station" name="region" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
-<input class="carry dlimg share" name="mapsel" type="hidden" value="Precip" />
+<input class="carry dlimg share bodyClass" name="mapsel" type="hidden" value="Precip" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startyr" type="hidden" value="1901" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startmon" type="hidden" value="Jan" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="endmon" type="hidden" value="Mar" />
@@ -461,10 +461,10 @@ Gridded Temperature Plots
 <p>Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> and instructions page for this tool for more information on interpreting these graphs.</p>
 
 <div class="valid">
-<a class="justsregion" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter/%280.85%29//threshold/parameter/%281901%29//startyr/parameter/%28Precip%29//mapsel/parameter/%28Precip%29eq/%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2beta/.prcp/%28units%29%28mm/month%29def//name/%28precipitation%29def%7D%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2/.adjusted/.mean/.temp/VER/0/VALUE/VER/removeGRID//name//temperature/def%7Difelse/T%5Blpar/%28Jan%20%29//startyr/get_parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T//season/get_parameter/VALUES/T//season/get_parameter/1.0/seasonalAverage/IWMO/first/VALUE/T/first/VALUE/"></a>
+<a class="justsregion dlimg" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter/%280.85%29//threshold/parameter/%281901%29//startyr/parameter/%28Precip%29//mapsel/parameter/%28Precip%29eq/%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2beta/.prcp/%28units%29%28mm/month%29def//name/%28precipitation%29def%7D%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2/.adjusted/.mean/.temp/VER/0/VALUE/VER/removeGRID//name//temperature/def%7Difelse/T%5Blpar/%28Jan%20%29//startyr/get_parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T//season/get_parameter/VALUES/T//season/get_parameter/1.0/seasonalAverage/IWMO/first/VALUE/T/first/VALUE/info.json"></a>
 
 <div class="template">
-<p>Click on the map to show graphs of the seasonal average <span class="iridl:hasDependentVariables iridl:long_name"></span>, its interannual variability, decadal variability, and trend for the nearest available station with monthly data that are at least (85%) complete for all (Jan to Mar) months over the years (1901-2000).</p>
+<p>Click on the map to show graphs of the seasonal average <span class="iridl:hasDependentVariables iridl:name"></span>, its interannual variability, decadal variability, and trend for the nearest available station with monthly data that are at least (85%) complete for all (Jan to Mar) months over the years (1901-2000).</p>
 </div>
 </div>
 
