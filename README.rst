@@ -27,13 +27,6 @@ Directory::
 Rewrite rules::
 
 	RewriteEngine On
-	RewriteRule /?Set /index.html?Set
-	RewriteCond %{QUERY_STRING} Set-Language=([^&]+)
-	RewriteRule (.*)\.(html|json) $1.$2.%1 [E=prefer-language:%1,L]
-
-or::
-
-	RewriteEngine On
 	RewriteCond %{QUERY_STRING} Set-Language=([^&]+)
 	RewriteRule .? -  [E=prefer-language:%1]
 
