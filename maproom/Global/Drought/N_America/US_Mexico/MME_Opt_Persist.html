@@ -69,8 +69,8 @@ display: none;
 <input class="dlimg share" name="layers" value="states_gaz" type="checkbox" />
 <input class="dlimg share" name="layers" value="us_counties"  type="checkbox" />
 <input class="carry dlimg dlauximg share bodyClass" name="maptype" type="hidden" value="probmap" />
-<input class="carry dlimg share" name="SPIselect" type="hidden" value="spi3" />
-<input class="carry dlimg share" name="lead" type="hidden" value="1" />
+<input class="carry dlimg share spisellead" name="SPIselect" type="hidden" value="spi3" />
+<input class="carry dlimg share leadtime" name="lead" type="hidden" value="1." />
 <input class="carry dlimg share" name="threshold" type="hidden" value="0.0" />
 <input class="carry dlimg share" name="margprob" type="hidden" value="0.5" />
 
@@ -89,7 +89,15 @@ display: none;
 
             <fieldset class="navitem"><legend>SPI Period</legend><span class="selectvalue"></span><select class="pageformcopy" name="SPIselect"><option value="spi3">3-Month SPI</option><option value="spi6">6-Month SPI</option><option value="spi9">9-Month SPI</option><option value="spi12">12-Month SPI</option></select></fieldset>
 
+<!--
             <fieldset class="navitem"><legend>Lead Time</legend><span class="selectvalue"></span><select class="pageformcopy" name="lead"><option value="1">1 Month</option><option value="2">2 Months</option><option value="3">3 Months</option><option value="4">4 Months</option><option value="5">5 Months</option></select></fieldset>
+-->
+
+            <fieldset class="navitem valid"><legend>Lead Time</legend>
+             <link class="leadtime spisellead" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.CPC/.UNIFIED_PRCP/.GAUGE_BASED/.GLOBAL/.v1p0/.retro_realtime_merged/.fcstmeanvalue/.comb_MMprcp_resampled/.lead_0month%5B%28.%29%28spi3%29//SPIselect/parameter%5Dconcat/interp/.mean/S/last/VALUE/X/-70/VALUE/Y/35/VALUE/info.json" />
+             <select class="pageformcopy template" name="lead">
+              <option class="iridl:values L@value L"><span class="leadtime"></span></option> 
+             </select> Month(s)</fieldset>
 
             <fieldset class="navitem valid" id="threshMenu"><legend>SPI Threshold</legend><span class="selectvalue"></span><select class="pageformcopy" name="threshold"><option>2.5</option><option>2.0</option><option>1.5</option><option>1.0</option><option>0.5</option><option>0.0</option><option>-0.5</option><option>-1.0</option><option>-1.5</option><option>-2.0</option><option>-2.5</option></select></fieldset>
 
