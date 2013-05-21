@@ -14,6 +14,8 @@
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link rel="canonical" href="index.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:icon"
 href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
@@ -58,6 +60,8 @@ el futuro y damos la bienvenida a la oportunidad de trabajar con otros en el des
 <div about="http://www.map.ox.ac.uk/data/">
 <meta property="maproom:Sort_Id" content="e13" />
 <a rel="canonical"  href="http://www.map.ox.ac.uk/data/"></a>
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <p property="term:title">Proyecto de Atlas de Malaria(MAP) Mapas de la Transmission y Endemicidad de Malaria</p>
 <p property="term:description">El Proyecto de Atlas de Malaria (MAP) ha construido una base de datos mundial y mapas de atlas que muestran los límites spaciales de transmisión de Plasmodium falciparum basados en encuestas de tasas de parásitos, la distribución espacial pronosticada de la endemicidad de malaria de Plasmodium falciparum, y la incertidumbre del modelo para la endemicidad pronosticada.</p>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
