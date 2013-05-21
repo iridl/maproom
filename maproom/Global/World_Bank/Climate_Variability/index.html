@@ -160,10 +160,16 @@ Nearest Precipitation Station <b><span class="iridl:long_name"></span></b>
 
 <div class="valid" style="text-align: top;">
 
-<a class="prcpsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/elev/info.json"></a>
-
+<a id="prcpstaid" class="prcpsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/elev/info.json"></a>
+<script type="application/json" property="iridl:hasPUREdirective">
+{ 
+".myvalue": {
+"ivar&lt;-prcpstaid.iridl:hasIndependentVariables": {".": "ivar.iridl:value"}
+       }
+}
+</script>
 <div class="template" style="color : red">
-Station ID <b><span class="iridl:hasIndependentVariables iridl:value"></span></b>
+Station ID <b><span class="myvalue"></span></b>
 </div>
 
 </div>
