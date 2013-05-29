@@ -177,9 +177,19 @@ Station ID <b><span class="myvalue"></span></b>
 <div class="valid" style="text-align: top;">
 
 <a class="prcpsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/lon/lat/elev/3/ds/info.json"></a>
-
+<script type="application/json" property="iridl:hasPUREdirective">
+{"tr": {
+ "var&lt;-iridl:hasDependentVariables": {
+  "td.name": "var.iridl:name",
+ "td.name@class+": "var.iridl:name",
+ "+td.value": "var.iridl:value",
+"td.value@class+": "var.iridl:name"
+}
+}
+}
+</script>
 <div class="template">
-<table><tr class="iridl:hasDependentVariables" style="color : red"><td class="iridl:name"></td><td class="iridl:value"></td></tr></table>
+<table><tr style="color : red"><td class="name "></td><td class="value "></td></tr></table>
 </div>
 
 </div>
@@ -333,9 +343,19 @@ Station ID <b><span class="iridl:hasIndependentVariables iridl:value"></span></b
 <div class="valid" style="text-align: top;">
 
 <a class="tempsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/lon/lat/elev/3/ds/info.json"></a>
-
+<script type="application/json" property="iridl:hasPUREdirective">
+{"tr": {
+ "var&lt;-iridl:hasDependentVariables": {
+  "td.name": "var.iridl:name",
+ "td.name@class+": "var.iridl:name",
+ "+td.value": "var.iridl:value",
+"td.value@class+": "var.iridl:name"
+}
+}
+}
+</script>
 <div class="template">
-<table><tr class="iridl:hasDependentVariables" style="color : red"><td class="iridl:name"></td><td class="iridl:value"></td></tr></table>
+<table><tr style="color : red"><td class="name "></td><td class="value "></td></tr></table>
 </div>
 
 </div>
@@ -467,10 +487,11 @@ Gridded Temperature Plots
 <p>Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> and instructions page for this tool for more information on interpreting these graphs.</p>
 
 <div class="valid">
-<a class="justsregion dlimg" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter/%280.85%29//threshold/parameter/%281901%29//startyr/parameter/%28Precip%29//mapsel/parameter/%28Precip%29eq/%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2beta/.prcp/%28units%29%28mm/month%29def//name/%28precipitation%29def%7D%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2/.adjusted/.mean/.temp/VER/0/VALUE/VER/removeGRID//name//temperature/def%7Difelse/T%5Blpar/%28Jan%20%29//startyr/get_parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T//season/get_parameter/VALUES/T//season/get_parameter/1.0/seasonalAverage/IWMO/first/VALUE/T/first/VALUE/info.json"></a>
+<a class="dlimg" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert%5B%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter%5Dconcat//season/parameter/%280.85%29//threshold/parameter/%281901%29//startyr/parameter/%28Precip%29//mapsel/parameter/%28Precip%29eq/%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2beta/.prcp/%28units%29%28mm/month%29def//name/%28precipitation%29def%7D%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2/.adjusted/.mean/.temp/VER/0/VALUE/VER/removeGRID//name//temperature/def%7Difelse/T%5Blpar/%28Jan%20%29//startyr/get_parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T//season/get_parameter/VALUES/T//season/get_parameter/1.0/seasonalAverage/IWMO/first/VALUE/T/first/VALUE//season//ids/2/2/index/get_parameter/1/namearray/astore/NewGRID/addGRID//threshold//percent/2/2/index/get_parameter/interp/100/mul/1/realarray/astore/NewGRID/addGRID//startyr//ids/2/2/index/get_parameter/s==/1/namearray/astore/NewGRID/addGRID/info.json"></a>
 
 <div class="template">
-<p>Click on the map to show graphs of the seasonal average <span class="iridl:hasDependentVariables iridl:name"></span>, its interannual variability, decadal variability, and trend for the nearest available station with monthly data that are at least (85%) complete for all (Jan to Mar) months over the years (1901-2000).</p>
+<p>Click on the map to show graphs of the seasonal average <span class="iridl:name"></span>, its interannual variability, decadal variability, 
+<span class="iridl:values">and trend for the nearest available station with monthly data that are at least (<span class="threshold">85</span>%) complete for all (<span class="season">Jan to Mar</span>) months over the years (<span class="startyr">1901</span>-2000).</span></p>
 </div>
 </div>
 
