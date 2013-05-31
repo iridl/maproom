@@ -128,6 +128,20 @@ margin: 0px;
 
 </style>
 <div class="ui-tabs">
+<a id="parameters" class="dlimg" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert%5B%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter%5Dconcat//season/parameter/%280.85%29//threshold/parameter/%281901%29//startyr/parameter/%28Precip%29//mapsel/parameter/%28Precip%29eq/%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2beta/.prcp/%28units%29%28mm/month%29def//name/%28precipitation%29def%7D%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2/.adjusted/.mean/.temp/VER/0/VALUE/VER/removeGRID//name//temperature/def%7Difelse/T%5Blpar/%28Jan%20%29//startyr/get_parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T//season/get_parameter/VALUES/T//season/get_parameter/1.0/seasonalAverage/IWMO/first/VALUE/T/first/VALUE//season//ids/2/2/index/get_parameter/1/namearray/astore/NewGRID/addGRID//threshold//percent/2/2/index/get_parameter/interp/100/mul/1/realarray/astore/NewGRID/addGRID//startyr//ids/2/2/index/get_parameter/s==/1/namearray/astore/NewGRID/addGRID/info.json"></a>
+<script class="parametersTemplate" type="application/json" property="iridl:hasPUREdirective">
+{
+"span.varname": "parameters.iridl:name",
+"span.parameterinfo": {
+"val<-parameters.iridl:values": {
+".season": "val.season",
+".threshold": "val.threshold",
+".startyr": "val.startyr"
+}
+}
+}
+</script>
+
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
@@ -150,10 +164,10 @@ Precipitation Plots
 <div style="display: inline-block; text-align: top;">
 
 <div class="valid" style="text-align: top;">
-<a class="prcpsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<a id="prcpstaname" class="prcpsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
 
 <div class="template" style="color : red">
-Nearest Precipitation Station <b><span class="iridl:long_name"></span></b>
+Nearest Precipitation Station <b><span class="prcpstaname.iridl:long_name"></span></b>
 </div>
 
 </div>
@@ -176,10 +190,10 @@ Station ID <b><span class="myvalue"></span></b>
 
 <div class="valid" style="text-align: top;">
 
-<a class="prcpsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/lon/lat/elev/3/ds/info.json"></a>
+<a id="prcpstalatlon" class="prcpsta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/lon/lat/elev/3/ds/info.json"></a>
 <script type="application/json" property="iridl:hasPUREdirective">
 {"tr": {
- "var&lt;-iridl:hasDependentVariables": {
+ "var&lt;-prcpstalatlon.iridl:hasDependentVariables": {
   "td.name": "var.iridl:name",
  "td.name@class+": "var.iridl:name",
  "+td.value": "var.iridl:value",
@@ -449,7 +463,7 @@ Gridded Temperature Plots
 <a class="dlimgts tempbox" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/T/exch/table:/2/:table/"></a>
 </div>
 
-<p>h. Linear Trend of (Jan-Mar) Seasonal Average Gridded Temperature Anomalies from (1901 - 2000) Mean</p>
+<p class="parametersTemplate valid"><span class="parameterinfo">h. Linear Trend of <span class="season">Jan-Mar</span> Seasonal Average Gridded Temperature Anomalies from <span class="startyr">1901</span> - 2000 Mean</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox tempbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/T/fig:/grey/solid/line/black/thinnish/solid/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif" />
 
@@ -486,13 +500,9 @@ Gridded Temperature Plots
 
 <p>Please see the accompanying <a href="http://iri.columbia.edu/~mbell/WorldBank/ClimatePortal/Guidance_Document.doc">Guidance Document</a> and instructions page for this tool for more information on interpreting these graphs.</p>
 
-<div class="valid">
-<a class="dlimg" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert%5B%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter%5Dconcat//season/parameter/%280.85%29//threshold/parameter/%281901%29//startyr/parameter/%28Precip%29//mapsel/parameter/%28Precip%29eq/%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2beta/.prcp/%28units%29%28mm/month%29def//name/%28precipitation%29def%7D%7BSOURCES/.NOAA/.NCDC/.GHCN/.v2/.adjusted/.mean/.temp/VER/0/VALUE/VER/removeGRID//name//temperature/def%7Difelse/T%5Blpar/%28Jan%20%29//startyr/get_parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T//season/get_parameter/VALUES/T//season/get_parameter/1.0/seasonalAverage/IWMO/first/VALUE/T/first/VALUE//season//ids/2/2/index/get_parameter/1/namearray/astore/NewGRID/addGRID//threshold//percent/2/2/index/get_parameter/interp/100/mul/1/realarray/astore/NewGRID/addGRID//startyr//ids/2/2/index/get_parameter/s==/1/namearray/astore/NewGRID/addGRID/info.json"></a>
-
-<div class="template">
-<p>Click on the map to show graphs of the seasonal average <span class="iridl:name"></span>, its interannual variability, decadal variability, 
-<span class="iridl:values">and trend for the nearest available station with monthly data that are at least (<span class="threshold">85</span>%) complete for all (<span class="season">Jan to Mar</span>) months over the years (<span class="startyr">1901</span>-2000).</span></p>
-</div>
+<div>
+<p class="parametersTemplate valid">Click on the map to show graphs of the seasonal average <span class="varname"></span>, its interannual variability, decadal variability, 
+<span class="parameterinfo">and trend for the nearest available station with monthly data that are at least <span class="threshold">85</span>% complete for all <span class="season">Jan to Mar</span> months over the years <span class="startyr">1901</span>-2000.</span></p>
 </div>
 
 </div>
