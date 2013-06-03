@@ -9,7 +9,7 @@
       >
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>World Bank Climate Variability Tool</title>
 <script type="text/javascript" src="../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
@@ -141,6 +141,16 @@ margin: 0px;
 }
 }
 </script>
+<script class="captionTemplate" type="application/json" property="iridl:hasPUREdirective">
+{
+"span.caption": {
+"val&lt;-parameters.iridl:values": {
+".season": "val.season",
+".startyr": "val.startyr"
+}
+}
+}
+</script>
 
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Description</a></li>
@@ -230,27 +240,26 @@ Approximate elevation: <span class="iridl:value"></span> meters
 Station Precipitation Plots
 </p>
 
-<p>
-a. (Jan-Mar) Seasonal Average Station Precipitation Values, Decadal Variability &amp; Linear Trend  
-</p> 
+<p class="captionTemplate valid"><span class="caption">
+a. <span class="season">Jan - Mar</span> Seasonal Average Station Precipitation Values, Decadal Variability &amp; Linear Trend from <span class="startyr">1901</span>-2000</span></p> 
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox prcpsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087616000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%20%28Trend%20Included%29%29def/lon/lat/Name/4/index/T/differences%5BT%5Dmedianover/100/mul/%28name%29%28lineartrend%29def/T/fig:/solid/black/line/thinnish/red/line/thinnish/blue/line/plotlabel/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D;%20Trend:%20%25=%5Blineartrend%5D%20per%20century%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef//+.gif" />
 
 <a class="dlimgts prcpsta" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087311000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28long_name%29%28Station%20Seasonal%20Average%29def/T/exch/lon/lat/Name/table:/5/:table/"></a>
 </div>
 
-<p>
-b. Interannual Component of Variability of (Jan-Mar) Seasonal Average Station Precipitation Anomalies from (1901-2000) Mean
-</p>
+<p class="captionTemplate valid"><span class="caption">
+b. Interannual Component of Variability of <span class="season">Jan - Mar</span> Seasonal Average Station Precipitation Anomalies from <span class="startyr">1901</span>-2000 Mean
+</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox prcpsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087616000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/lon/lat/Name/T/fig:/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
 
 <a class="dlimgts prcpsta" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087616000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/T/exch/lon/lat/Name/table:/5/:table/"></a>
 </div>
 
-<p>
-c. Decadal Component of Variability of (Jan-Mar) Seasonal Average Station Precipitation Anomalies from (1901-2000) Mean
-</p>
+<p class="captionTemplate valid"><span class="caption">
+c. Decadal Component of Variability of <span class="season">Jan - Mar</span> Seasonal Average Station Precipitation Anomalies from <span class="startyr">1901</span>-2000 Mean
+</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox prcpsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087616000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/dup%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/lon/lat/Name/T/fig:/grey/solid/line/black/thinnish/solid/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
 
@@ -258,9 +267,9 @@ c. Decadal Component of Variability of (Jan-Mar) Seasonal Average Station Precip
 
 </div>
 
-<p>
-d. Linear Trend of (Jan-Mar) Seasonal Average Station Precipitation Anomalies from (1901-2000) Mean
-</p>
+<p class="captionTemplate valid"><span class="caption">
+d. Linear Trend of <span class="season">Jan - Mar</span> Seasonal Average Station Precipitation Anomalies from <span class="startyr">1901</span>-2000 Mean
+</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox prcpsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/dup/.prcp/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087616000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/lon/lat/Name/T/fig:/grey/solid/line/black/thinnish/solid/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
 
@@ -272,36 +281,36 @@ d. Linear Trend of (Jan-Mar) Seasonal Average Station Precipitation Anomalies fr
 Gridded Precipitation Plots
 </p>
 
-<p>
-e. (Jan-Mar) Seasonal Average Griddedp Precipitation Values, Decadal Variability, &amp; Linear Trend 
-</p>
+<p class="captionTemplate valid"><span class="caption">
+e. <span class="season">Jan - Mar</span> Seasonal Average Gridded Precipitation Values, Decadal Variability, &amp; Linear Trend from <span class="startyr">1901</span>-2000
+</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-64.25:-29.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%20%28Trend%20Included%29%29def/1/index/T/differences%5BT%5Dmedianover/100/mul/%28name%29%28lineartrend%29def/T/fig:/solid/black/line/thinnish/red/line/thinnish/blue/line/plotlabel/:fig/%28framelabelstart%29%28Trend:%20%25=%5Blineartrend%5D%20per%20century;%20%29psdef/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif " />
 
 <a class="dlimgts degbox" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-64.25:-29.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/T/exch/table:/2/:table/"></a>
 </div>
 
-<p>
-f. Interannual Component of Variability of (Jan-Mar) Seasonal Average Gridded Precipitation Anomalies from (1901-2000) Mean
-</p>
+<p class="captionTemplate valid"><span class="caption">
+f. Interannual Component of Variability of <span class="season">Jan - Mar</span> Seasonal Average Gridded Precipitation Anomalies from <span class="startyr">1901</span>-2000 Mean
+</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-64.25:-29.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/T/fig:/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif" />
 
 <a class="dlimgts degbox" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-64.25:-29.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/T/exch/table:/2/:table/"></a>
 </div>
 
-<p>
-g. Decadal Component of Variability of (Jan-Mar) Seasonal Average Gridded Precipitation Anomalies from (1901-2000) Mean
-</p>
+<p class="captionTemplate valid"><span class="caption">
+g. Decadal Component of Variability of <span class="season">Jan - Mar</span> Seasonal Average Gridded Precipitation Anomalies from <span class="startyr">1901</span>-2000 Mean
+</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-64.25:-29.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/dup%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/T/fig:/grey/solid/line/black/thinnish/solid/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif" />
 
 <a class="dlimgts degbox" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-64.25:-29.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/T/exch/table:/2/:table/"></a>
 </div>
 
-<p>
-h. Linear Trend of (Jan-Mar) Seasonal Average Gridded Precipitation Anomalies from (1901-2000) Mean
-</p>
+<p class="captionTemplate valid"><span class="caption">
+h. Linear Trend of <span class="season">Jan - Mar</span> Seasonal Average Gridded Precipitation Anomalies from <span class="startyr">1901</span>-2000 Mean
+</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox degbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-64.25:-29.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/T/fig:/grey/solid/line/black/thinnish/solid/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif" />
 
@@ -309,9 +318,7 @@ h. Linear Trend of (Jan-Mar) Seasonal Average Gridded Precipitation Anomalies fr
 
 </div>
 
-<p>
-i. Comparison of Seasonal Average Precipitation Values (Station vs. Gridded)
-</p>
+<p>i. Comparison of Seasonal Average Precipitation Values (Station vs. Gridded)</p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox prcpsta degbox valid" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2beta/IWMO%5B%28bb:-69.375:-33.75:-65.625:-31.25:bb%29%28irids:SOURCES:NOAA:NCDC:GHCN:v2beta:IWMO%4087311000:ds%29%5D//region/parameter/1/get/geoobject/.IWMO/.first/VALUE/prcp/%28units%29%28mm/month%29def/%28long_name%29%28GHCN%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Station%20Data%29def/SOURCES/.UEA/.CRU/.Hulme/.Global/.prcp/%28long_name%29%28Hulme%20Precipitation%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE//region/get_parameter/0/get/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Gridded%20Data%29def/lon/lat/Name/T/fig-/twolines/plotlabel/plotlabel/plotlabel/-fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange/%28plotborder%2995/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
 
@@ -410,68 +417,67 @@ Approximate elevation: <span class="iridl:value"></span> meters
 Station Temperature Plots
 </p>
 
-<p>a. (Jan-Mar) Seasonal Average Station Temperature Values, Decadal Variability &amp; Linear Trend</p>
+<p class="captionTemplate  valid"><span class="caption">a. <span class="season">Jan - Mar</span> Seasonal Average Station Temperature Values, Decadal Variability &amp; Linear Trend from <span class="startyr">1901</span>-2000</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%20%28Trend%20Included%29%29def/lon/lat/Name/4/index/T/differences%5BT%5Dmedianover/100/mul/%28name%29%28lineartrend%29def/T/fig:/solid/black/line/thinnish/red/line/thinnish/blue/line/plotlabel/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D;%20Trend:%20%25=%5Blineartrend%5D%20per%20century%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+gif" />
 
 <a class="dlimgts tempsta" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/T/exch/lon/lat/Name/table:/5/:table/"></a>
 </div>
 
-<p>b. Interannual Component of Variability of (Jan-Mar) Seasonal Average Station Temperature Anomalies from (1901 - 2000) Mean</p>
+<p class="captionTemplate  valid"><span class="caption">b. Interannual Component of Variability of <span class="season">Jan - Mar</span> Seasonal Average Station Temperature Anomalies from <span class="startyr">1901</span>-2000 Mean</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/lon/lat/Name/T/fig:/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
 
 <a class="dlimgts tempsta" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/T/exch/lon/lat/Name/table:/5/:table/"></a>
 </div>
 
-<p>c. Decadal Component of Variability of (Jan-Mar) Seasonal Average Station Temperature Anomalies from (1901 - 2000) Mean </p>
+<p class="captionTemplate  valid"><span class="caption">c. Decadal Component of Variability of <span class="season">Jan - Mar</span> Seasonal Average Station Temperature Anomalies from <span class="startyr">1901</span>-2000 Mean </span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/dup%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/lon/lat/Name/T/fig:/grey/solid/line/black/thinnish/solid/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
 
 <a class="dlimgts tempsta" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/T/exch/lon/lat/Name/table:/5/:table/"></a>
 </div>
 
-<p>d. Linear Trend of (Jan-Mar) Seasonal Average Station Temperature Anomalies from (1901 - 2000) Mean </p>
+<p class="captionTemplate  valid"><span class="caption">d. Linear Trend of <span class="season">Jan - Mar</span> Seasonal Average Station Temperature Anomalies from <span class="startyr">1901</span>-2000 Mean </span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/lon/lat/Name/T/fig:/grey/solid/line/black/thinnish/solid/line/plotlabel/plotlabel/plotlabel/:fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
 
 <a class="dlimgts tempsta" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/dup/.adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/IWMO/%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%401001000:ds%29//region/parameter/geoobject/.IWMO/.first/VALUE/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/dup%5BT%5Ddetrend-bfl/sub/%28fullname%29%28Linear%20Trend%29def/T/exch/lon/lat/Name/table:/5/:table/"></a>
 </div>
 
-<p>
-Gridded Temperature Plots
+<p>Gridded Temperature Plots
 </p>
 
-<p>e. (Jan-Mar) Seasonal Average Gridded Temperature Values, Decadal Variability, &amp; Linear Trend</p>
+<p class="captionTemplate  valid"><span class="caption">e. <span class="season">Jan - Mar</span> Seasonal Average Gridded Temperature Values, Decadal Variability, &amp; Linear Trend from <span class="startyr"></span>-2000</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox tempbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/1/index/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%20%28Trend%20Included%29%29def/1/index/T/differences%5BT%5Dmedianover/100/mul/%28name%29%28lineartrend%29def/T/fig:/solid/black/line/thinnish/red/line/thinnish/blue/line/plotlabel/:fig/%28framelabel%29%28Trend%20%25=%5Blineartrend%5D%20per%20century%29psdef/T/-708.0/492.0/plotrange//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
 
 <a class="dlimgts tempbox" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/T/exch/table:/2/:table/"></a>
 </div>
 
-<p>f. Interannual Component of Variability of (Jan-Mar) Seasonal Average Gridded Temperature Anomalies from 1901 - 2000 Mean</p>
+<p class="captionTemplate valid"><span class="caption">
+f. Interannual Component of Variability of <span class="season">Jan-Mar</span> Seasonal Average Gridded Temperature Anomalies from <span class="startyr">1901</span> - 2000 Mean</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox tempbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/T/fig:/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif " />
 
 <a class="dlimgts tempbox" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage%5BT%5Ddetrend-bfl/dup/T/132/0.9/runningAverage/sub/%28long_name%29%28Anomaly%29def/T/exch/table:/2/:table/"></a>
 </div>
 
-<p>g. Decadal Component of Variability of (Jan-Mar) Seasonal Average Gridded Temperature Anomalies from (1901 - 2000) Mean</p>
+<p class="captionTemplate  valid"><span class="caption">g. Decadal Component of Variability of <span class="season">Jan - Mar</span> Seasonal Average Gridded Temperature Anomalies from <span class="startyr">1901</span>-2000 Mean</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox tempbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/dup%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/T/fig:/grey/solid/line/black/thinnish/solid/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+gif" />
 
 <a class="dlimgts tempbox" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def%5BT%5Ddetrend-bfl/T/132/0.9/runningAverage/%28fullname%29%2811-Year%20Running%20Average%29def/T/exch/table:/2/:table/"></a>
 </div>
 
-<p class="parametersTemplate valid"><span class="parameterinfo">h. Linear Trend of <span class="season">Jan-Mar</span> Seasonal Average Gridded Temperature Anomalies from <span class="startyr">1901</span> - 2000 Mean</span></p>
+<p class="captionTemplate valid"><span class="caption">h. Linear Trend of <span class="season">Jan-Mar</span> Seasonal Average Gridded Temperature Anomalies from <span class="startyr">1901</span> - 2000 Mean</span></p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox tempbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/a:/:a:/:a:%5BT%5Ddetrend-bfl/:a/sub/%28fullname%29%28Linear%20Trend%29def/T/fig:/grey/solid/line/black/thinnish/solid/line/:fig/T/-708.0/492.0/plotrange//plotaxislength/432/psdef//plotborder/72/psdef//antialias/true/psdef/+.gif" />
 
 <a class="dlimgts tempbox" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/%28bb:-68.0:-31.5:-67.5:-31.0:bb%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/yearly-anomalies/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Seasonal%20Average%29def/dup%5BT%5Ddetrend-bfl/sub/%28fullname%29%28Linear%20Trend%29def/T/exch/table:/2/:table/"></a>
 </div>
 
-<p>i. Comparison of Seasonal Average Temperature Values (Station vs. Gridded)
-</p>
+<p>i. Comparison of Seasonal Average Temperature Values (Station vs. Gridded)</p>
 <div class="dlimgtsbox">
 <img class="dlimgts regionwithinbbox tempbox tempsta" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GHCN/.v2/IWMO%5B%28bb:-65.0:-30.0:-60.0:-25.0:bb%29%28irids:SOURCES:NOAA:NCDC:GHCN:v2:IWMO%4087047000:ds%29%5D//region/parameter/1/get/geoobject/.IWMO/.first/VALUE/adjusted/.mean/.temp/VER/0/VALUE/%28long_name%29%28GHCN%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Station%20Data%29def/SOURCES/.UEA/.CRU/.Jones/.CRUTEM3v/.varadjtanom/%28degree_Celsius%29unitconvert/SOURCES/.UEA/.CRU/.Jones/.climatology/.c6190/.temp/add/%28long_name%29%28Jones%20Temperature%29def/T%5Blpar/%28Jan%20%29%281901%29//startyr/parameter/rpar%5Dconcat/interp/%28Dec%202000%29RANGE//region/get_parameter/0/get/geoobject%5BX/Y%5Dweighted-average/toNaN/T%5Blpar/%28Jan%29//startmon/parameter/%28-%29%28Mar%29//endmon/parameter/rpar%5Dconcat/interp/1.0/seasonalAverage/%28fullname%29%28Gridded%20Data%29def/lon/lat/Name/T/fig-/twolines/plotlabel/plotlabel/plotlabel/-fig/%28framelabel%29%28Station%20at%20%28%25=%5Blon%5D%2C%20%25=%5Blat%5D%29%20%25=%5BName%5D%29psdef/T/-708.0/492.0/plotrange/%28plotborder%2995/psdef//plotaxislength/432/psdef//antialias/true/psdef/+.gif" />
 
