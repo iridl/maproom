@@ -22,7 +22,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body  xml:lang="es">
@@ -61,8 +61,8 @@
       <li><a href="#tabs-4" >Cont&#225;ctenos</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef+.gif" border="0" alt="image" />
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef+.gif" border="0" alt="image" />
   <br />
   <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/IFRC/Forecasts/IFRC_CMAP_climo_es.gif" />
 </fieldset>
@@ -74,7 +74,7 @@ Usted puede ver:
 <li>Qu&#233; lugares tienden a ser m&#225;s h&uacute;medos o secos que otros.</li>
 <li>Cu&#225;les son los meses m&#225;s lluviosos para diferentes lugares.</li>
 </ul>
-<p align="left">Estos mapas mensuales se basan en la precipitaci&#243;n de los a&#241;os anteriores (1979-2004). Cuanto m&#225;s oscuro sea el azul, m&#225;s abundante es la lluvia. Este mapa no indica cu&#225;nta lluvia se espera este a&#241;o.</p>
+<p align="left">Estos mapas mensuales se basan en la precipitaci&#243;n de los a&#241;os anteriores (1985-2010). Cuanto m&#225;s oscuro sea el azul, m&#225;s abundante es la lluvia. Este mapa no indica cu&#225;nta lluvia se espera este a&#241;o.</p>
 </div>
 <div id="tabs-2"  class="ui-tabs-panel">
 <h2  align="center">C&#243;mo usar este mapa interactivo</h2>
@@ -112,9 +112,9 @@ Este mapa muestra la precipitaci&#243;n normal de un mes del a&#241;o. Usted pue
 <div id="tabs-3" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>
 <p><b><a class="carry" href="instructions.html.es#CMAP_climo">Climatologia Mensual del CPC Merged Analysis of Precipitation</a></b><br /> 
-<b>Datos</b>  Valores de precipitaci&#243;n mensual en resoluci&#243;n 2.5&#176; lat/lon del CPC Merged Analysis of Precipitation (CMAP) v0703 (publicado Marzo 2007) version 2 (combinaci&#243;n de observaciones y estimaciones por sat&#233;lite).
+<b>Datos</b>  Valores de precipitaci&#243;n mensual en resoluci&#243;n 2.5&#176; lat/lon del CPC Merged Analysis of Precipitation (CMAP) v1201 (publicado Enero 2012) version 2 (combinaci&#243;n de observaciones y estimaciones por sat&#233;lite).
 <br /><b>Fuente de Datos</b> NOAA, Climate Prediction Center, <a href="http://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
-<br /><b>An&#225;lisis</b> Climatolog&#237;a de precipitaci&#243;n mensual usando 1979-2004 como per&#237;odo base.
+<br /><b>An&#225;lisis</b> Climatolog&#237;a de precipitaci&#243;n mensual usando 1985-2010 como per&#237;odo base.
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
