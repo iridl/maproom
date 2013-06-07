@@ -55,7 +55,7 @@
  <li><a href="#visual">Visual features of the map interface</a><br></li>
  <li><a href="#interp">Interpreting the maps</a><br></li>
  <div class="indented">
-  <li><a href="#esrlgfs">ESRL GFS Six-Day and Daily Precipitation Forecast Maps</a><br></li>
+  <li><a href="#esrlgfs">ESRL GEFS Six-Day and Daily Precipitation Forecast Maps</a><br></li>
   <li><a href="#prcp_fcst">IRI Seasonal Precipitation Forecast</a><br></li>
   <li><a href="#extreme_prcp_fcst">IRI Seasonal Extreme Precipitation Forecast</a><br></li>
   <li><a href="#pic3mo_same">IRI Predictions in Context (PiC)</a><br></li>
@@ -122,51 +122,51 @@ step (by one day for the Six-Day maps and one month for the IRI forecast maps), 
 <p><a name="interp"><u><b>Interpreting the maps</b></u>
 <br>The following sections provide some explanation regarding the correct interpretation of each of the maps available in the interface.
 <p>
-   <a name="esrlgfs"><b>ESRL GFS Six-Day and Daily Precipitation Forecast Maps</b><br>
+   <a name="esrlgfs"><b>ESRL GEFS Six-Day and Daily Precipitation Forecast Maps</b><br>
 <p>
-The Earth System Research Laboratory (ESRL) Physical Sciences Division (PSD) has undertaken a "reforecasting" effort using an older, but unchanging version of the Medium-Range Forecast model (MRF, a precursor to the Global Forecast System model currenly run operationally by NCEP) to produce 15-member ensemble numerical weather forecasts on a daily basis, run from 1979 to the present at 2.5&deg; lat/lon spatial resolution.  The model uses initial conditions from the NCEP/NCAR Reanalysis and is updated on a daily basis at 00 UTC.  The result is a stable model climatology of forecast variables from 1979 to the present, including accumulated precipitation.  You can find more information on the ESRL Reforecast project at the following website: <a href="http://www.cdc.noaa.gov/people/jeffrey.s.whitaker/refcst/">ESRL Reforecast Project</a> 
+The Earth System Research Laboratory (ESRL) Physical Sciences Division (PSD) Reforecast Version 2 Project has produced a dataset of historical weather forecasts generated with a fixed numerical model, using the 2012 version of the National Centers for Environmental Prediction's (NCEP) Global Ensemble Forecasting System (GEFS).  This Reforecast Version 2 dataset consists of an 11-member ensemble of forecasts, produced on a daily basis from 00 UTC initial conditions for the period December 1984 to the present.  The horizontal resolution of GEFS is T254 (about 50 km) out to 8 days, and T190 (about 70 km) from 8-16 days.  In this application, data interpolated to 1.0&deg; lat/lon spatial resolution are used.  The result is a stable model climatology of forecast variables from December 1984 to the present, including accumulated precipitation.  You can find more information on the ESRL Reforecast Version 2 Project at the following website: <a href="http://esrl.noaa.gov/psd/forecasts/reforecast2/">ESRL Reforecast Version 2 Project</a> 
 <p>
-<b>Reference:</b>  Hamill, T. M., J. S. Whitaker, and S. L. Mullen, 2006:  Reforecasts:  An important dataset for improving weather predictions. <i>Bull. Amer. Meteor. Soc.</i>, <b>87</b>, 33-46.
+<b>Reference:</b>  Hamill, T. M., J. S. Whitaker, G. T. Bates, D. R. Murray, M. Fiorino, T. J. Galarneau, Jr., Y. Zhu, and W. Lapenta, 2013:  NOAA's second-generation global medium-range ensemble forecast data set. <i>Bull. Amer. Meteor. Soc.</i>, in press.
 <p>
 In the current application of these forecast data, no adjustments have been made to account for model biases with respect to the real atmosphere.  However, using this fixed climatology, self-consistent forecast precipitation statistics, including daily anomalies, percent of mean monthly total precipitation, and precipitation percentiles, have been computed to put the daily and six-day forecast precipitation totals into historical context.  All the precipitation forecast maps shown are derived from daily ensemble mean precipitation values.  Maps based on the forecast of six-day total precipitation may be selected and displayed in the main window of the interface.  Maps of forecast single-day precipitation for days 1-6 are available via hyperlinks in the table entitled "Single-Day (24-Hour) Total Precipitation Forecast Maps" found below the main interface window. 
 <p>
-Since the spatial resolution of the forecast precipitation values from the forecast model is 2.5&deg; lat/lon, the forecast totals and statistics represent values for large-scale precipitation.  Although these maps should, in general, be able to identify regions of large-scale heavy cumulative rainfall associated with tropical cyclones, for instance, they should not be used for forecasting cyclone tracks or the intensity or location of intense fine-scale or localized precipitation (associated with orography, for example). 
+Since the spatial resolution of the forecast precipitation values from the forecast model is 1.0&deg; lat/lon, the forecast totals and statistics represent values for large-scale precipitation.  Although these maps should, in general, be able to identify regions of large-scale heavy cumulative rainfall associated with tropical cyclones, for instance, they should not be used for forecasting cyclone tracks or the intensity or location of intense fine-scale or localized precipitation (associated with orography, for example). 
 
-<p><a name="tot6dayapcp"><b>ESRL GFS Six-Day Total Forecast Precipitation</b>
+<p><a name="tot6dayapcp"><b>ESRL GEFS Six-Day Total Forecast Precipitation</b>
 <p>
 <div class="rightbox">
 <a href="cummrain.html">
-<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
 </a>
 </div>
 This map displays six-day total forecast large-scale precipitation (in millimeters) for the period displayed on the map, using the forecast issued at the indicated forecast start time.
 
-<p><a name="tot6dayapcpanom"><b>ESRL GFS Six-Day Total Forecast Precipitation Anomaly</b>
+<p><a name="tot6dayapcpanom"><b>ESRL GEFS Six-Day Total Forecast Precipitation Anomaly</b>
 <p>
 <div class="rightbox">
 <a href="wetter.html">
-<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcpanom/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcpanom/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
 </a>
 </div>
-This map displays the difference (in millimeters) between the current six-day total forecast precipitation value and the long-term 1979-2004 mean six-day total precipitation value in the model climatology for the same time of year.  The 1979-2004 mean value is calculated based upon a pentad set of six-day total values from each year in the model climatology; therefore, the long-term mean will usually be calculated using 130 values.  Although the precipitation anomaly expresses how much the currently forecast precipitation value differs from the long-term "normal" in terms of a precipitation amount, it does not clearly specify how unusual that difference is for that particular location or time of year.  For instance, while an anomaly of 30 mm may be significant in North Africa, it might not be significant in Indonesia.
+This map displays the difference (in millimeters) between the current six-day total forecast precipitation value and the long-term 1985-2012 mean six-day total precipitation value in the model climatology for the same time of year.  The 1985-2012 mean value is calculated based upon a pentad set of six-day total values from each year in the model climatology; therefore, the long-term mean will usually be calculated using 140 values.  Although the precipitation anomaly expresses how much the currently forecast precipitation value differs from the long-term "normal" in terms of a precipitation amount, it does not clearly specify how unusual that difference is for that particular location or time of year.  For instance, while an anomaly of 30 mm may be significant in North Africa, it might not be significant in Indonesia.
 
-<p><a name="tot6dayapcppctle"><b>ESRL GFS Six-Day Total Forecast Precipitation Percentile</b>
+<p><a name="tot6dayapcppctle"><b>ESRL GEFS Six-Day Total Forecast Precipitation Percentile</b>
 <p>
 <div class="rightbox">
 <a href="sampletabslogo.html">
-<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctle/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
 </a>
 </div>
-This map displays the percentile of six-day total forecast precipitation with respect to all six-day forecast precipitation values in the 1979-2004 model climatology.  To determine the percentile value to be assigned to the current six-day total forecast precipitation amount, six-day total forecast precipitation values were chosen from the years 1979 to 2004 and ranked from lowest to highest.  Of these, the lowest value is assigned a value of 0, and the highest a value of 1.  The current forecast precipitation value is compared to this climatological set of paired precipitation and percentile values and assigned its percentile ranking within that set.  To emphasize the largest forecast precipitation values with respect to the model history, only percentile values above 0.9 are displayed.  Percentile values provide a good sense of how the current forecast precipitation total compares to the historical record for a given location. 
+This map displays the percentile of six-day total forecast precipitation with respect to all six-day forecast precipitation values in the 1985-2012 model climatology.  To determine the percentile value to be assigned to the current six-day total forecast precipitation amount, six-day total forecast precipitation values were chosen from the years 1985 to 2012 and ranked from lowest to highest.  Of these, the lowest value is assigned a value of 0, and the highest a value of 1.  The current forecast precipitation value is compared to this climatological set of paired precipitation and percentile values and assigned its percentile ranking within that set.  To emphasize the largest forecast precipitation values with respect to the model history, only percentile values above 0.9 are displayed.  Percentile values provide a good sense of how the current forecast precipitation total compares to the historical record for a given location. 
 
-<p><a name="tot6dayapcppctmonthlyclim"><b>ESRL GFS Six-Day Total Forecast Precipitation as Percent of Mean Monthly Total</b>
+<p><a name="tot6dayapcppctmonthlyclim"><b>ESRL GEFS Six-Day Total Forecast Precipitation as Percent of Mean Monthly Total</b>
 <p>
 <div class="rightbox">
 <a href="heavyrain.html">
-<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/178.75/538.75/plotrange+//framelabel+(Forecast for %25=[forecasttime] Issued %25=[S])+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+250+psdef+.gif">
 </a>
 </div>
-This map shows the current forecast six-day total precipitation value expressed as a percentage of the 1979-2004 mean monthly precipitation total from the model climatology.  This measure highlights locations of forecast extreme daily or 6-day total precipitation since it compares single-day or 6-day totals against what would normally be received over the course of a full month.  A value of 100% would indicate that the daily or six-day precipitation total is forecast to be as large as the mean monthly total normally received at that time of year in the model climatology.  A value of 25% would indicate that the daily or six-day precipitation total is forecast to be 1/4 of the mean monthly total normally received at that time of year in the model climatology.
+This map shows the current forecast six-day total precipitation value expressed as a percentage of the 1985-2012 mean monthly precipitation total from the model climatology.  This measure highlights locations of forecast extreme daily or 6-day total precipitation since it compares single-day or 6-day totals against what would normally be received over the course of a full month.  A value of 100% would indicate that the daily or six-day precipitation total is forecast to be as large as the mean monthly total normally received at that time of year in the model climatology.  A value of 25% would indicate that the daily or six-day precipitation total is forecast to be 1/4 of the mean monthly total normally received at that time of year in the model climatology.
 
 <p><a name="prcp_fcst"><b>IRI Seasonal Precipitation Forecast</b>
 <p>
@@ -230,10 +230,10 @@ For more information on this analysis, see the following pages:  <a href="http:/
 <p>
 <div class="rightbox">
 <a href="CMAP_climo.html">
-<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v0703/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//color_smoothing+null+psdef//plotaxislength+250+psdef+.gif">
+<img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//color_smoothing+null+psdef//plotaxislength+250+psdef+.gif">
 </a>
 </div>
-1979-2004 mean monthly precipitation values are shown to provide background on "normal" monthly precipitation totals during the course of the year.  The data are from the NOAA Climate Prediction Center's Merged Analysis of Precipitation data set, available at 2.5&deg; lat/lon resolution.  CMAP precipitation values provided here are derived from a combination of surface gauge data and infrared and microwave satellite estimates.  You can find more information on this data set at the following site: <a href="http://www.cpc.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
+1985-2010 mean monthly precipitation values are shown to provide background on "normal" monthly precipitation totals during the course of the year.  The data are from the NOAA Climate Prediction Center's Merged Analysis of Precipitation data set, available at 2.5&deg; lat/lon resolution.  CMAP precipitation values provided here are derived from a combination of surface gauge data and infrared and microwave satellite estimates.  You can find more information on this data set at the following site: <a href="http://www.cpc.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
 <p>
 <b>Reference:</b>  Xie, P. and P. A. Arkin, 1997:  Global precipitation:  A 17-year monthly analysis based on gauge observations, satellite estimates, and numerical model outputs. <i>Bull. Amer. Met. Soc.</i>, <b>78</b>, 2539-2558. 
 

@@ -23,7 +23,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/300/plotrange//S/216./plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.jpg" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/300/plotrange//S/216./plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.jpg" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body  xml:lang="en">
@@ -64,8 +64,8 @@
       <li><a href="#tabs-6" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage ControlLock" id="content" about="">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
   <br />
   <img class="dlauximg" src="/maproom/IFRC/Forecasts/IFRCpctlecolorscale.gif" />
 </fieldset>
@@ -144,10 +144,10 @@ Forecasts are labeled by the day they were issued. You can find this label by mo
 </div>
 <div id="tabs-5" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<p><b><a class="carry" href="instructions.html#esrlgfs">ESRL GFS Six-Day and Daily Precipitation Forecast Maps</a></b><br /> 
-<b>Data</b>  Daily ensemble-mean forecast precipitation totals at 2.5&#176; lat/lon resolution from the Medium-Range Forecast (MRF/GFS) model run daily at 00 UTC by the NOAA ESRL PSD Reforecast project 
-<br /><b>Data Source</b> U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://www.cdc.noaa.gov/people/jeffrey.s.whitaker/refcst/">ESRL GFS Reforecast Project</a>
-<br /><b>Analyses</b>: Analyses shown here include forecast daily (days 1-6) and six-day precipitation totals, forecast daily and six-day total precipitation anomalies from the 1979-2004 mean, forecast daily and six-day total precipitation as percent of mean monthly total precipitation (1979-2004 base period), and forecast daily and six-day total precipitation percentiles (1979-2004 base period).
+<p><b><a class="carry" href="instructions.html#esrlgfs">ESRL GEFS Six-Day and Daily Precipitation Forecast Maps</a></b><br /> 
+<b>Data</b>  Daily ensemble-mean forecast precipitation totals at 1.0&#176; lat/lon resolution from the 2012 version of the National Centers for Environmental Prediction's (NCEP) Global Ensemble Forecasting System (GEFS) model run daily using 00 UTC initial conditions, available via the NOAA ESRL PSD Reforecast Version 2 Project 
+<br /><b>Data Source</b> U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://esrl.noaa.gov/psd/forecasts/reforecast2/">ESRL Reforecast Version 2 Project</a>
+<br /><b>Analyses</b>: Analyses shown here include forecast daily (days 1-6) and six-day precipitation totals, forecast daily and six-day total precipitation anomalies from the 1985-2012 mean, forecast daily and six-day total precipitation as percent of mean monthly total precipitation (1985-2012 base period), and forecast daily and six-day total precipitation percentiles (1985-2012 base period).
 </p>
 </div>
 <div id="tabs-6"  class="ui-tabs-panel">
