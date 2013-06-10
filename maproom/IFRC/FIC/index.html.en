@@ -23,7 +23,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/300/plotrange//S/216./plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.jpg" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/300/plotrange/S/last/plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.jpg" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body  xml:lang="en">
@@ -74,7 +74,7 @@
 <p align="left" property="term:description">This map shows places in the world that are forecasted to receive exceptionally heavy rainfall in the next six days relative to what is normal for their location.</p>
 <p><b>What early action can I take to reduce possible disaster effects?</b>
 <ul>
-<li>Contact your local/regional meterological department and monitor their forecasts for the next six days.</li>
+<li>Contact your local/regional meteorological department and monitor their forecasts for the next six days.</li>
 <li>Consider who may be most affected by heavy rainfall.</li>
 <li>Review your contingency plans and update as necessary.</li>
 <li> See pages 4 and 5 in this <a href="http://www.climatecentre.org/downloads/File/reports/Early%20Warning%20Early%20Action%202008.pdf">Early Warning Early Action booklet</a> for examples of early action based on rainfall forecasts.</li>

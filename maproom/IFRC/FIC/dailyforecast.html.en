@@ -50,7 +50,7 @@ width: 95%;
                       <a rev="section" class="navlink carryup" href="/maproom/IFRC/">Forecasts in Context</a>
             </fieldset> 
             <fieldset class="navitem"> 
-                <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#DailyForecasts"><span property="term:label">Daily Forecasts</span></legend>ESRL MRF/GFS Daily Precipitation
+                <legend about="http://iridl.ldeo.columbia.edu/maproom/IFRC/#DailyForecasts"><span property="term:label">Daily Forecasts</span></legend>ESRL GEFS Daily Precipitation
             </fieldset> 
 	    <fieldset class="navitem">
 	    <legend>Day</legend>
