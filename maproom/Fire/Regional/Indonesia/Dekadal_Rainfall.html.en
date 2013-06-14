@@ -120,6 +120,13 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <div>c)</div>
 <img class="regionwithinbbox dlimgts" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/%28bb:%5B112%2C0.50%2C112.5%2C1%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/T/2/copy//pointwidth/0/def/%286%20Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%281/3%20months%20since%2001-Jan%29def//add_offset/0.5/def/replaceGRID/DATA/0/300/RANGE/dup/T/1/108/RANGE/T/0/36/72/shiftdata/T//modulus/36/def/pop/exch/T/-108/shiftGRID/T/1/last/RANGE/T//modulus/36/def/pop//fullname/%282013%29def/exch/a:/T_lag/72/VALUE/T_lag/removeGRID//fullname/%282012%29def/:a:/T_lag/36/VALUE/T_lag/removeGRID//fullname/%282011%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID//fullname/%282010%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/green/line/:fig/T/0.5/36.5/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
 </div>
+<p>
+a) Dekadal precipitation estimates for 1 Jan 2003 to the present (solid black line) with the addition of the short-term (2003-2012) average precipitation for the same region (grey dotted line).  The blue (red) bars are indicative of precipitation estimates that are above (below) the short-term average.  Note that the short-term average estimated precipitation data have been smoothed.
+</p><p>
+b) Dekadal precipitation estimates for the current calendar year (thick black line). Precipitation estimates from previous years are also shown (blue: -1 yr from present; magenta: -2 yrs from present; grey: -3 yrs from present).
+</p><p>
+c) Cumulative dekadal precipitation estimates (solid black line) and the cumulative short-term (2003-2012) average precipitation estimates (grey dotted line) for the most recent 12-month period in the selected region.  The blue (red) bars are indicative of estimates that are above (below) the short-term average.  
+</p>
 </fieldset>
 
 <fieldset class="dlimage" id="content" about="">
@@ -135,6 +142,18 @@ Observations for <b><span class="iridl:long_name"></span></b>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
+<h4>Data Sources</h4>
+<dl class="datasetdocumentation">
+<b>Precipitation Estimates</b><br />
+<b>Data</b>: Daily precipitation estimates, aggregated by dekad (approximately 10 days), on a 0.25 x 0.25 deg. lat/lon grid
+<br /><b>Data Source</b>: Climate Prediction Center Morphing Technique
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a>)</dl>
+<br />
+<h4>NB</h4>
+<dl class="datasetdocumentation">
+The dekadal precipitation estimates have been aggregated from the daily data. Every month has three dekads, such that the first two dekads have 10 days (i.e., 1-10, 11-20), and the third is comprised of the remaining days of the month.  Therefore, the length of the third dekad of each month is not consistent and varies from 8-11 days, depending on the length of the month.
+</dl>
+<br />
 <h4>Reference</h4>
 <dl class="datasetdocumentation">
 Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that Produces Global Precipitation Estimates from Passive Microwave and Infrared Data at High Spatial and Temporal Resolution. J. Hydrometeorology, 5, 487-503.</dl>

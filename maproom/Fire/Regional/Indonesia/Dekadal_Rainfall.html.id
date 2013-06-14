@@ -120,6 +120,13 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <div>c)</div>
 <img class="regionwithinbbox dlimgts" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/%28bb:%5B112%2C0.50%2C112.5%2C1%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/T/2/copy//pointwidth/0/def/%286%20Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%281/3%20months%20since%2001-Jan%29def//add_offset/0.5/def/replaceGRID/DATA/0/300/RANGE/dup/T/1/108/RANGE/T/0/36/72/shiftdata/T//modulus/36/def/pop/exch/T/-108/shiftGRID/T/1/last/RANGE/T//modulus/36/def/pop//fullname/%282013%29def/exch/a:/T_lag/72/VALUE/T_lag/removeGRID//fullname/%282012%29def/:a:/T_lag/36/VALUE/T_lag/removeGRID//fullname/%282011%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID//fullname/%282010%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/green/line/:fig/T/0.5/36.5/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div>
+<p>
+a) Estimasi curah hujan Dasarian* periode 1 Jan 2003 sampai sekarang (garis hitam) ditambah dengan rata rata curah hujan (2003-2012) untuk wilayah yang sama (garis titik-titik abu-abu). Batang biru (merah) mengindikasikan estimasi curah hujan diatas (dibawah) rata-rata jangka pendek. Catatan, data estimasi curah hujan jangka pendek telah diperhalus.
+</p><p>
+b) Estimasi curah hujan dasarian untuk tahun ini (garis hitam tebal). Estimasi curah hujan dari beberapa tahun yang lalu juga diperlihatkan (biru: -1 tahun dari sekarang; magenta: -2 tahun dari sekarang; abu-abu: -3 tahun dari sekarang).
+</p><p>
+c) Estimasi curah hujan dasarian kumulatif (garis hitam) dan estimasi curah hujan rata-rata kumulatif (2003-2012) (garis titik-titik-abu-abu) untuk daerah terpilih periode 12 bin belakangan ini. Batangan biru (merah) mengindikasikan estimasi diatas (dibawah) rata-rata jangka pendek.  
+</p>
 </fieldset>
 
 <fieldset class="dlimage" id="content" about="">
@@ -136,6 +143,19 @@ Observations for <b><span class="iridl:long_name"></span></b>
 
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
+<h4>Sumber Data</h4>
+<dl class="datasetdocumentation">
+<b>Estimasi Curah Hujan</b><br />
+<b>Data</b>: Estimasi curah hujan harian, dikumpulkan secara dasarian (kira-kira 10 hari), pada grid lintang/bujur 0.25 x 0.25 deg.
+<br />
+<b>Sumbar Data</b> Climate Prediction Center Morphing Technique
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a>)</dl>
+<br />
+<h4>NB</h4>
+<dl class="datasetdocumentation">
+Estimasi dasarian hujan merupakan hasil penggabungan data harian. Satu bulan terdiri dari tiga dasarian, dasarian pertama dan kedua terdiri dari 10 hari (yaitu tanggal 1-10, dan 11-20) dan dasarian ketiga sisa jumlah hari pada bulan tersebut. Oleh karena itu, jumiah hari dari tiga dasarian tiap bulan tidak konsisten dan bervariasi dari 8-11 hari, tergantung dari jumiah hari pada bulan tersebut.
+</dl>
+<br />
 <h4>Reference</h4>
 <dl class="datasetdocumentation">
 Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that Produces Global Precipitation Estimates from Passive Microwave and Infrared Data at High Spatial and Temporal Resolution. J. Hydrometeorology, 5, 487-503.</dl>
