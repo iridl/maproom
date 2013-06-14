@@ -44,6 +44,11 @@
 width: 49%;
 display: inline-block
  }
+@media only all and (min-width: 800px) {
+.regioniswithinbbox .dlimage.withMap {
+width: 45%;
+}
+}
 </style>
 </head>
 <body xml:lang="id" lang="id">
@@ -147,7 +152,7 @@ c) Estimasi curah hujan dasarian kumulatif (garis hitam) dan estimasi curah huja
 </p>
 </fieldset>
 
-<fieldset class="dlimage" id="content" about="">
+<fieldset class="dlimage withMap" id="content" about="">
 <a class="justsregion" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/%28prcpmap%29//maptype/parameter/%28prcpmap%29eq/%7BSOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/%28indonesia%29//selregion/parameter/%28kapuas%29eq/%7BX/113.1/114.8/RANGE/Y/-3.45/-0.2/RANGE%7D%7BX/90/155/RANGE/Y/-12/10/RANGE%7Difelse%7D%7BSOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kapuas/.risk%7Difelse/X/Y/fig-/colors/grey/verythin/indonesia_dist/black/verythin/indonesia_prov/black/thin/countries_gaz/-fig//antialias/true/psdef//T/last/plotvalue//plotaxislength/600/psdef/%28indonesia%29//selregion/parameter/%28kapuas%29eq/%7BX/113.1/114.8/plotrange/Y/-3.45/-0.2/plotrange%7D%7BX/90/155/plotrange/Y/-12/10/plotrange%7Difelse/"></a>
 
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/%28prcpmap%29//maptype/parameter/%28prcpmap%29eq/%7BSOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/Y/-59.5/59.5/RANGEEDGES/%28indonesia%29//selregion/parameter/%28kapuas%29eq/%7BX/113.1/114.8/RANGE/Y/-3.45/-0.2/RANGE%7D%7BX/90/155/RANGE/Y/-12/10/RANGE%7Difelse%7D%7BSOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kapuas/.risk%7Difelse/X/Y/fig-/colors/grey/verythin/indonesia_dist/black/verythin/indonesia_prov/black/thin/countries_gaz/-fig//antialias/true/psdef//T/last/plotvalue//plotaxislength/600/psdef/%28indonesia%29//selregion/parameter/%28kapuas%29eq/%7BX/113.1/114.8/plotrange/Y/-3.45/-0.2/plotrange%7D%7BX/90/155/plotrange/Y/-12/10/plotrange%7Difelse/+.gif" border="0" alt="image" />
