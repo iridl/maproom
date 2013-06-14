@@ -54,8 +54,15 @@ display: none;
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_Forecasts_term"><span property="term:label">Forecasts</span></legend>
             </fieldset> 
-            <fieldset class="navitem" id="chooseRegion"> 
-                <legend>Region</legend> 
+           <fieldset class="navitem">
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globaloceans.json"></a>
+                <select class="RegionMenu" name="bbox">
+                <option value="">Global</option>
+                <optgroup class="template" label="Region">
+                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+                </optgroup>
+                </select>
             </fieldset>
            <fieldset class="navitem valid">
           <legend>Forcing Type</legend>
