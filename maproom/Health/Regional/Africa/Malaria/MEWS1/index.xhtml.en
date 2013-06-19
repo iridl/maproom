@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="en"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Climate and Malaria</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
+<link class="altLanguage" rel="alternate" hreflang="ru" href="index.html?Set-Language=ru" />
+<link rel="canonical" href="index.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<meta property="maproom:Sort_Id" content="a04" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy"
+href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:icon"
+href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
+<script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
+</head>
+
+<body>
+
+<form name="pageform" id="pageform">
+<input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem"> 
+                <legend>Climate and Health</legend> 
+                    <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria">Climate and Malaria</a>
+            </fieldset> 
+           <fieldset class="navitem"> 
+                <legend>Climate and Malaria</legend> 
+                     <span class="navtext">Malaria Early Warning System</span>
+            </fieldset> 
+</div>
+ <div id="content" class="searchDescription">
+<h2 property="term:title">Malaria Early Warning System</h2>
+
+<p align="left" property="term:description">
+The Malaria Early Warning System (MEWS) consists of an integrated framework that utilizes climate forecasting and environmental monitoring products in order to provide warning to a potential outbreak of malaria (DaSilva et al., 2004). Precipitation is one of the essential elements of MEWS.</p><p>This facility aims to explore and
+inform users about the climate-health relationship with an emphasis on
+the seasonal nature of that relationship, where appropriate. This
+"Climate and Health Resource Room" will begin with a focus on malaria
+and meningitis in Africa. It is our intention to increase the content
+of the resource room by including analyses that focus on other
+diseases and regions, as well those developed at other institutions.
+</p>
+</div>
+
+
+
+<div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/MEWS1" >
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Socioeconomic_Vulnerabiltiy"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Seasonal_Climate_Forecasts"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Observed Malaria Morbidity"/>
+  
+  
+  </div>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend>
+
+</fieldset>
+</div>
+ </body>
+
+ </html>
+
