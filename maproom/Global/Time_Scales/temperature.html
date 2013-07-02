@@ -30,6 +30,16 @@
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.UEA/.CRU/.TS3p1/.monthly/.r2p5/a:/.tmp/SOURCES/.UEA/.CRU/.TS3p1/.climatology/.c1901-2009/.tmp%5BX/Y%5DregridLinear/sub/X//gridtype/periodic/def/pop/T/%28Jun%29//seasonStart/parameter/%28-%29append/%28Aug%29//seasonEnd/parameter/append/%28%201901-2009%29append/seasonalAverage/:a:/.stn/.tmp/0/maskle/T//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%201901-2009%29append/0.66/seasonalAverage/0/maskle%5BT%5D1.0/average/0/mul/:a/add/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/5.0/store/ford/:butt_filter/.butt/2/index/2/index/sub/1/index/sub/%28Decadal%29//timeScale/parameter/%28Decadal%29eq/%7Bpop/nip%7Dif//timeScale/get_parameter/%28Trend%29eq/%7Bpop/pop%7Dif//timeScale/get_parameter/%28Inter-annual%29eq/%7Bnip/nip%7Dif%5BT%5Drmsaover/0/maskle//units/%28Celsius_scale%29def//long_name/%28standard%20deviation%29def/startcolormap/DATA/0/256/RANGE/white/white/210/250/210/RGB/0/VALUE/210/250/210/RGB/160/240/165/RGB/4/VALUE/130/210/135/RGB/8/VALUE/90/190/95/RGB/16/VALUE/yellow/51/VALUE/orange/102/VALUE/red/128/VALUE/magenta/162/VALUE/purple/196/VALUE/MidnightBlue/230/VALUE/MidnightBlue/MidnightBlue/256/bandmax/MidnightBlue/endcolormap/DATA/0/AUTO/RANGE/%28Percent%20of%20Variance%20Explained%29//timeAnal/parameter/%28Percent%20of%20Variance%20Explained%29eq/%7Bdup/mul/exch%5BT%5Drmsaover/dup/mul/div//long_name/%28variance%20explained%29def//units/unitless/def/%28percent%29unitconvert/DATA/0/100/RANGE%7Dif/X/Y/fig-/colors/countries_gaz/-fig//framelabel//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%20%29append//timeScale/get_parameter/append/%28%20Time%20Scale%29append/psdef//plotborder+0+psdef//plotaxislength+200+psdef+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <style>
+.val999 {
+visibility: hidden
+}
+.message999 {
+display: none;
+}
+.message999.val999 {
+display: block;
+visibility: visible;
+}
 .dlimage.ver3, .dlimage.ver3.wide {
 width: 29%;
 }
@@ -115,14 +125,14 @@ color: red;
 <fieldset class="dlimage ver3">
 <img class="dlimgloc regionwithinbbox" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-20:-60:340:80:bb%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-20%2C-40%2C55%2C40%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
 <div class="valid" style="display: inline-block; text-align: top">
-<link class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.UEA/.CRU/.TS3p1/.monthly/.r2p5/a:/.tmp/SOURCES/.UEA/.CRU/.TS3p1/.climatology/.c1901-2009/.tmp%5BX/Y%5DregridLinear/sub/X//gridtype/periodic/def/pop/T/%28Jun%29//seasonStart/parameter/%28-%29append/%28Aug%29//seasonEnd/parameter/append/%28%201901-2009%29append/seasonalAverage/:a:/.stn/.tmp/0/maskle/T//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%201901-2009%29append/0.66/seasonalAverage/0/maskle%5BT%5D1.0/average/0/mul/:a/add/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/5.0/store/ford/:butt_filter/.butt/2/index/2/index/sub/1/index/sub/4/%7B4/-1/roll/%28bb:%5B-180%2C-60%2C180%2C80%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average%5BT%5Drmsaover/dup/mul%7Drepeat/3/%7B3/-1/roll/3/index/div//percent/unitconvert/0.5/add/toi4%7Drepeat/%7Bclimatechange/decadal/residual%7Dds/climatechange//long_name/%28Trend%29def/decadal//long_name/%28Decadal%29def/residual//long_name/%28Inter-Annual%29def/%7Bclimatechange/decadal/residual%7Dds/nip/nip//max-age/864000/7/mul/def/info.json" />
+<link class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.UEA/.CRU/.TS3p1/.monthly/.r2p5/a:/.tmp/SOURCES/.UEA/.CRU/.TS3p1/.climatology/.c1901-2009/.tmp%5BX/Y%5DregridLinear/sub/X//gridtype/periodic/def/pop/T/%28Jun%29//seasonStart/parameter/%28-%29append/%28Aug%29//seasonEnd/parameter/append/%28%201901-2009%29append/seasonalAverage/:a:/.stn/.tmp/0/maskle/T//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%201901-2009%29append/0.66/seasonalAverage/0/maskle%5BT%5D1.0/average/0/mul/:a/add/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/5.0/store/ford/:butt_filter/.butt/2/index/2/index/sub/1/index/sub/4/%7B4/-1/roll/%28bb:%5B-180%2C-60%2C180%2C80%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average%5BT%5Drmsaover/dup/mul%7Drepeat/3/%7B3/-1/roll/3/index/div//percent/unitconvert/0.5/add/999/setmissing_value/toi4%7Drepeat/%7Bclimatechange/decadal/residual%7Dds/climatechange//long_name/%28Trend%29def/decadal//long_name/%28Decadal%29def/residual//long_name/%28Inter-Annual%29def/%7Bclimatechange/decadal/residual%7Dds/nip/nip//max-age/864000/7/mul/def/info.json" />
 <script type="application/json" property="iridl:hasPUREdirective">
 {"tr": {
  "var&lt;-iridl:hasDependentVariables": {
   "td.name": "var.iridl:long_name",
  "td.name@class+": "var.iridl:name",
  "+td.value": "var.iridl:value",
-"td.value@class+": "var.iridl:name"
+"td.value@class+": "#{var.iridl:name} val#{var.iridl:value}"
 }
 }
 }
@@ -140,7 +150,7 @@ color: red;
   "td.name": "var.iridl:long_name",
  "td.name@class+": "var.iridl:name",
  "+td.value": "var.iridl:value",
-"td.value@class+": "var.iridl:name"
+"td.value@class+": "#{var.iridl:name} val#{var.iridl:value}"
 }
 }
 }
@@ -149,21 +159,25 @@ color: red;
 <tr><td class="name "></td><td align="right" class="value ">%</td></tr>
 </table>
 </div>
-<div class="valid" style="display: inline-block; text-align: top; float: right"><link class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.UEA/.CRU/.TS3p1/.monthly/.r2p5/a:/.tmp/SOURCES/.UEA/.CRU/.TS3p1/.climatology/.c1901-2009/.tmp%5BX/Y%5DregridLinear/sub/X//gridtype/periodic/def/pop/T/%28Jun%29//seasonStart/parameter/%28-%29append/%28Aug%29//seasonEnd/parameter/append/%28%201901-2009%29append/seasonalAverage/:a:/.stn/.tmp/0/maskle/T//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%201901-2009%29append/0.66/seasonalAverage/0/maskle%5BT%5D1.0/average/0/mul/:a/add/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/5.0/store/ford/:butt_filter/.butt/2/index/2/index/sub/1/index/sub/4/%7B4/-1/roll/%28bb:%5B-180%2C-60%2C180%2C80%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average%7Drepeat/dup%5BT%5Drmsaover/2/index%5BT%5Drmsaover/mul/3/-2/roll%5BT%5Dcorrelate/mul/nip/exch%5BT%5Drmsaover/dup/mul/div//percent/unitconvert/0.5/add/toi4/%7Bcovariance%7Dds/covariance//long_name/%28Decadal/Interannual%20covariance%29def/%7Bcovariance%7Dds/nip//max-age/864000/7/mul/def/info.json" />
+<div class="valid" style="display: inline-block; text-align: top; float: right"><link class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.UEA/.CRU/.TS3p1/.monthly/.r2p5/a:/.tmp/SOURCES/.UEA/.CRU/.TS3p1/.climatology/.c1901-2009/.tmp%5BX/Y%5DregridLinear/sub/X//gridtype/periodic/def/pop/T/%28Jun%29//seasonStart/parameter/%28-%29append/%28Aug%29//seasonEnd/parameter/append/%28%201901-2009%29append/seasonalAverage/:a:/.stn/.tmp/0/maskle/T//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%201901-2009%29append/0.66/seasonalAverage/0/maskle%5BT%5D1.0/average/0/mul/:a/add/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/5.0/store/ford/:butt_filter/.butt/2/index/2/index/sub/1/index/sub/4/%7B4/-1/roll/%28bb:%5B-180%2C-60%2C180%2C80%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average%7Drepeat/dup%5BT%5Drmsaover/2/index%5BT%5Drmsaover/mul/3/-2/roll%5BT%5Dcorrelate/mul/nip/exch%5BT%5Drmsaover/dup/mul/div//percent/unitconvert/0.5/add/999/setmissing_value/toi4/%7Bcovariance%7Dds/covariance//long_name/%28Decadal/Interannual%20covariance%29def/%7Bcovariance%7Dds/nip//max-age/864000/7/mul/def/info.json" />
 <script type="application/json" property="iridl:hasPUREdirective">
 {"tr": {
  "var&lt;-iridl:hasDependentVariables": {
   "td.name": "var.iridl:long_name",
  "td.name@class+": "var.iridl:name",
  "+td.value": "var.iridl:value",
-"td.value@class+": "var.iridl:name"
+"td.value@class+": "#{var.iridl:name} val#{var.iridl:value}"
 }
-}
+},
+".message999@class+": "iridl:hasDependentVariables.covariance.iridl:value"
 }
 </script>
-<table class="valid template">
+<div class="template">
+<table class="valid">
 <tr><td class="name "></td><td align="right" class="value ">%</td></tr>
 </table>
+<div class="message999 val">No analysis available at this location</div>
+</div>
 </div>
 <br />
 <img class="dlimgts" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.UEA/.CRU/.TS3p1/.monthly/.r2p5/a:/.tmp/SOURCES/.UEA/.CRU/.TS3p1/.climatology/.c1901-2009/.tmp%5BX/Y%5DregridLinear/sub/X//gridtype/periodic/def/pop/T/%28Jun%29//seasonStart/parameter/%28-%29append/%28Aug%29//seasonEnd/parameter/append/%28%201901-2009%29append/seasonalAverage/:a:/.stn/.tmp/0/maskle/T//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%201901-2009%29append/0.66/seasonalAverage/0/maskle%5BT%5D1.0/average/0/mul/:a/add/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/5.0/store/ford/:butt_filter/.butt/2/index/2/index/sub/1/index/sub/pop/pop/2/%7B2/-1/roll/%28bb:%5B-180%2C-60%2C180%2C80%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average%7Drepeat//scale_symmetric/%28true%29def//fullname/%28trend%29def//units/%28degC%29def/DATA/AUTO/AUTO/RANGE/exch//scale_symmetric/%28true%29def//fullname/%28raw%29def//units/%28degC%29def/DATA/AUTO/AUTO/RANGE/exch/T/fig-/line/black/zeroline/thick/solid/red/line/-fig//plotaxislength/300/psdef//plotborder/72/psdef//framelabel//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%20%29append/%28%20raw%20and%20trend%20components%29append/psdef/+.gif" />
