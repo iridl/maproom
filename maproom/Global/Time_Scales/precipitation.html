@@ -171,13 +171,29 @@ color: red;
 }
 </script>
 <div class="template">
-<div class="message1 ">Trend <span class="message0 ">not </span>significant at 1%</div>
+<div class="message1 ">Trend <span class="message0 ">not </span>significant at 5%</div>
 </div>
+</div>
+<div class="valid" style="display: inline-block; text-align: top; float: right"><link class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.TS3p1/.r2p5/a:/.pre/SOURCES/.UEA/.CRU/.TS3p1/.climatology/.c1901-2009/.pre%5BX/Y%5DregridLinear/sub/X//gridtype/periodic/def/pop/T/%28Jun%29//seasonStart/parameter/%28-%29append/%28Aug%29//seasonEnd/parameter/append/%28%201901-2009%29append/seasonalAverage/:a:/.stn/.pre/0/maskle/T//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%201902-2009%29append/0.66/seasonalAverage/%28High%20temporal%20coverage%29//screening/parameter/%28High%20spatial%20coverage%29eq/%7B%5BT%5D0.0/average%7D%7B0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage//screening/get_parameter/%28High%20temporal%20coverage%29eq/%7B1.0%7Dif//screening/get_parameter/%28Intermediate%20coverage%29eq/%7B0.5%7Dif/masklt%5BT%5D1.0/average%7Difelse/0/mul/add/:a:/.pre/T//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%201901-2009%29append/seasonalAverage//seasonEnd/get_parameter/interp//seasonStart/get_parameter/interp/sub/dup/0/ge/%7B1/add%7D%7B13/add%7Difelse/mul%5BT%5Daverage/30/masklt/0/mul/:a/add/Y/-60/80/RANGE/home/.remic/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/5.0/store/ford/:butt_filter/.butt/2/index/2/index/sub/1/index/sub/4/%7B4/-1/roll/%28bb:%5B-180%2C-60%2C180%2C80%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average%7Drepeat/dup%5BT%5Drmsaover/2/index%5BT%5Drmsaover/mul/3/-2/roll%5BT%5Dcorrelate/mul/nip/exch%5BT%5Drmsaover/dup/mul/div//percent/unitconvert/0.5/add/999/setmissing_value/toi4/%7Bcovariance%7Dds/covariance//long_name/%28Decadal/Interannual%20covariance%29def/%7Bcovariance%7Dds/nip//max-age/864000/7/mul/def/info.json" />
+<script type="application/json" property="iridl:hasPUREdirective">
+{"tr": {
+ "var&lt;-iridl:hasDependentVariables": {
+  "td.name": "var.iridl:long_name",
+ "td.name@class+": "var.iridl:name",
+ "+td.value": "var.iridl:value",
+"td.value@class+": "#{var.iridl:name} val#{var.iridl:value}"
+}
+}
+}
+</script>
+<table class="valid template">
+<tr><td class="name "></td><td align="right" class="value ">%</td></tr>
+</table>
 </div>
 <div class="valid" style="display: inline-block; text-align: top"><link class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.UEA/.CRU/.TS3p1/.r2p5/a:/.pre/SOURCES/.UEA/.CRU/.TS3p1/.climatology/.c1901-2009/.pre%5BX/Y%5DregridLinear/sub/X//gridtype/periodic/def/pop/T/%28Jun%29//seasonStart/parameter/%28-%29append/%28Aug%29//seasonEnd/parameter/append/%28%201901-2009%29append/seasonalAverage/:a:/.stn/.pre/0/maskle/T//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%201902-2009%29append/0.66/seasonalAverage/%28High%20temporal%20coverage%29//screening/parameter/%28High%20spatial%20coverage%29eq/%7B%5BT%5D0.0/average%7D%7B0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage//screening/get_parameter/%28High%20temporal%20coverage%29eq/%7B1.0%7Dif//screening/get_parameter/%28Intermediate%20coverage%29eq/%7B0.5%7Dif/masklt%5BT%5D1.0/average%7Difelse/0/mul/add/:a:/.pre/T//seasonStart/get_parameter/%28-%29append//seasonEnd/get_parameter/append/%28%201901-2009%29append/seasonalAverage//seasonEnd/get_parameter/interp//seasonStart/get_parameter/interp/sub/dup/0/ge/%7B1/add%7D%7B13/add%7Difelse/mul%5BT%5Daverage/30/masklt/0/mul/:a/add/Y/-60/80/RANGE/%28bb:%5B-180%2C-60%2C180%2C80%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average%5BT%5Daverage/999/setmissing_value/toi4/%7Bscreening%7Dds/screening//long_name/%28Data%20screening%29def/%7Bscreening%7Dds/nip//max-age/864000/7/mul/def/info.json" />
 <script type="application/json" property="iridl:hasPUREdirective">
 {
-".message999@class+": "iridl:hasDependentVariables.covariance.iridl:value"
+".message999@class+": "val#{iridl:hasDependentVariables.screening.iridl:value}"
 }
 </script>
 <div class="template">
