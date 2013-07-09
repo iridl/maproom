@@ -173,11 +173,7 @@ c) Estimasi curah hujan dasarian kumulatif (garis hitam) dan estimasi curah huja
 <b>Estimasi Curah Hujan</b><br />
 <b>Data</b>: Estimasi curah hujan harian, dikumpulkan secara dasarian (kira-kira 10 hari), pada grid lintang/bujur 0.25 x 0.25 deg.
 <br />
-<<<<<<< HEAD
-<b>Sumbar Data</b> Climate Prediction Center Morphing Technique
-=======
 <b>Sumber Data</b> Climate Prediction Center Morphing Technique
->>>>>>> ad2ecb46faa65e09940ee4544993f94417595f0a
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a>)</dl>
 <br />
 <h4>NB</h4>
