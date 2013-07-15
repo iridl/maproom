@@ -34,7 +34,10 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#WetDayFrequency"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#GroundFrostFrequency"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Elevation"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Classification"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#deg0.5x0.5"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
 
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/mapicons/Global-Climatologies-SelectAPoint-icon.gif" />
@@ -44,7 +47,9 @@
 <form name="pageform" id="pageform" class="info carryup carry dlimg dlauximg share dlimgts dlimgloc">
 <input class="carryup carry " name="Set-Language" type="hidden" />
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
+<input class="dlimg share" name="T" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
+<input class="share dlimg dlauximg" name="maptype" type="hidden" value="koeppen" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
 <input class="pickarea" name="resolution" type="hidden" value=".5" />
 </form>
@@ -59,6 +64,20 @@
             <fieldset class="navitem" id="chooseRegion"> 
                 <legend>Region</legend> 
             </fieldset>
+
+           <fieldset class="navitem"><legend>Map Type</legend>
+             <select class="pageformcopy" name="maptype">
+               <option value="koeppen">Koeppen Climate Classification</option>
+               <option value="prec">Precipitation</option>
+               <option value="wetdays">Wet Day Frequency</option>
+               <option value="meantemp">Mean Temperature</option>
+               <option value="mintemp">Minimum Temperature</option>
+               <option value="maxtemp">Maximum Temperature</option>
+               <option value="frostdays">Frost Day Frequency</option>
+               <option value="elev">Elevation</option>
+             </select>
+           </fieldset>
+
  </div>
 <style>
 .leftpart {
@@ -87,7 +106,7 @@ margin: 0px;
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/">Dataset</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/expert/%28koeppen%29//maptype/parameter/%28koeppen%29eq/%7BSOURCES/.FAO/.NRMED/.SD/.Climate/.Derived/.class%7Dif/%28koeppen%29//maptype/parameter/%28prec%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.prcp/DATA/0/700/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28wetdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.wet%7Dif/%28koeppen%29//maptype/parameter/%28meantemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.mean/.temp/DATA/-55/40/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28mintemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.minimum/.temp/DATA/-55/40/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28maxtemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.maximum/.temp/DATA/-55/40/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28frostdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.frost%7Dif/%28koeppen%29//maptype/parameter/%28elev%29eq/%7BSOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/lon/%28X%29renameGRID/lat/%28Y%29renameGRID/X/-180/180/RANGE/Y/-90/90/RANGE/startcolormap/DATA/0/8752/RANGE/white/white/LightGoldenrodYellow/0/VALUE/LightGoldenrod/500/VALUE/goldenrod/1500/VALUE/DarkGoldenrod/3000/VALUE/sienna/8224/VALUE/sienna/endcolormap%7Dif/">Dataset</a></li>
       <li><a href="#tabs-3" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage" about="">
@@ -118,27 +137,45 @@ margin: 0px;
 
 
 <fieldset class="dlimage">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/lon/%28X%29/renameGRID/lat/%28Y%29/renameGRID/X/-180/180/RANGE/Y/-90/90/RANGE/startcolormap/DATA/0/8752/RANGE/white/white/LightGoldenrodYellow/0/VALUE/LightGoldenrod/500/VALUE/goldenrod/1500/VALUE/DarkGoldenrod/3000/VALUE/sienna/8224/VALUE/sienna+endcolormap/X/Y/fig-+colors+whiteocean+black+thin+coasts_gaz+thin+countries_gaz+-fig//plotaxislength+600+psdef//antialias+true+psdef//XOVY+null+psdef/" />
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/lon/%28X%29/renameGRID/lat/%28Y%29/renameGRID/X/-180/180/RANGE/Y/-90/90/RANGE/startcolormap/DATA/0/8752/RANGE/white/white/LightGoldenrodYellow/0/VALUE/LightGoldenrod/500/VALUE/goldenrod/1500/VALUE/DarkGoldenrod/3000/VALUE/sienna/8224/VALUE/sienna+endcolormap/X/Y/fig-+colors+whiteocean+black+thin+coasts_gaz+thin+countries_gaz+-fig//plotaxislength+600+psdef//antialias+true+psdef//XOVY+null+psdef+.gif" border="0" alt="image" />
+
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/%28koeppen%29//maptype/parameter/%28koeppen%29eq/%7BSOURCES/.FAO/.NRMED/.SD/.Climate/.Derived/.class%7Dif/%28koeppen%29//maptype/parameter/%28prec%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.prcp/DATA/0/700/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28wetdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.wet%7Dif/%28koeppen%29//maptype/parameter/%28meantemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.mean/.temp/DATA/-55/45/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28mintemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.minimum/.temp/DATA/-55/45/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28maxtemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.maximum/.temp/DATA/-55/45/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28frostdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.frost%7Dif/%28koeppen%29//maptype/parameter/%28elev%29eq/%7BSOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/lon/%28X%29renameGRID/lat/%28Y%29renameGRID/X/-180/180/RANGE/Y/-90/90/RANGE/startcolormap/DATA/0/8752/RANGE/white/white/LightGoldenrodYellow/0/VALUE/LightGoldenrod/500/VALUE/goldenrod/1500/VALUE/DarkGoldenrod/3000/VALUE/sienna/8224/VALUE/sienna/endcolormap%7Dif/X/Y/fig-/colors/thin/coasts/countries_gaz/lakes/-fig/Y/-89.75/89.75/plotrange//antialias/true/psdef//plotborder/72/psdef//plotaxislength/432/psdef/" />
+
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/%28koeppen%29//maptype/parameter/%28koeppen%29eq/%7BSOURCES/.FAO/.NRMED/.SD/.Climate/.Derived/.class%7Dif/%28koeppen%29//maptype/parameter/%28prec%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.prcp/DATA/0/700/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28wetdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.wet%7Dif/%28koeppen%29//maptype/parameter/%28meantemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.mean/.temp/DATA/-55/45/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28mintemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.minimum/.temp/DATA/-55/45/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28maxtemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.maximum/.temp/DATA/-55/45/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28frostdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.frost%7Dif/%28koeppen%29//maptype/parameter/%28elev%29eq/%7BSOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/lon/%28X%29renameGRID/lat/%28Y%29renameGRID/X/-180/180/RANGE/Y/-90/90/RANGE/startcolormap/DATA/0/8752/RANGE/white/white/LightGoldenrodYellow/0/VALUE/LightGoldenrod/500/VALUE/goldenrod/1500/VALUE/DarkGoldenrod/3000/VALUE/sienna/8224/VALUE/sienna/endcolormap%7Dif/X/Y/fig-/colors/thin/coasts/countries_gaz/lakes/-fig/Y/-89.75/89.75/plotrange//antialias/true/psdef//plotborder/72/psdef//plotaxislength/432/psdef/+.gif" border="0" alt="image" />
+
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/%28koeppen%29//maptype/parameter/%28koeppen%29eq/%7BSOURCES/.FAO/.NRMED/.SD/.Climate/.Derived/.class%7Dif/%28koeppen%29//maptype/parameter/%28prec%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.prcp/DATA/0/700/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28wetdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.wet%7Dif/%28koeppen%29//maptype/parameter/%28meantemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.mean/.temp/DATA/-55/45/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28mintemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.minimum/.temp/DATA/-55/45/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28maxtemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.maximum/.temp/DATA/-55/45/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28frostdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.frost%7Dif/%28koeppen%29//maptype/parameter/%28elev%29eq/%7BSOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/lon/%28X%29renameGRID/lat/%28Y%29renameGRID/X/-180/180/RANGE/Y/-90/90/RANGE/startcolormap/DATA/0/8752/RANGE/white/white/LightGoldenrodYellow/0/VALUE/LightGoldenrod/500/VALUE/goldenrod/1500/VALUE/DarkGoldenrod/3000/VALUE/sienna/8224/VALUE/sienna/endcolormap%7Dif/X/Y/fig-/colors/thin/coasts/countries_gaz/lakes/-fig/Y/-89.75/89.75/plotrange/%28koeppen%29//maptype/parameter/%28koeppen%29eq/%28koeppen%29//maptype/parameter/%28elev%29eq/or/%7B%7D%7B//T/first/plotvalue%7Difelse//antialias/true/psdef//plotborder/72/psdef//plotaxislength/432/psdef/.auxfig//plotaxislength+432+psdef//plotborder+72+psdef+.gif" border="0" alt="image" />
+
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Select a Point Climatology</h2>
 <p align="left" property="term:description"> Click anywhere over land on the map to see barplots of the local monthly climatology of precipitation, monthly average of daily maximum, minimum, and mean temperature, wet-day frequency, and ground frost frequency.</p>
-<p align="left"> The monthly climatologies are calculated using the University of East Anglia Climatic Research Unit TS2.1 data set on a 0.5&#176; lat/lon grid.  The base period used for the climatology is 1971-2000.</p>
+<p align="left"> Use the "Map Type" drop-down menu to display maps of the Koeppen climate classification, elevation, and monthly climatological animations of precipitation, wet-day frequency, mean temperature, minimum temperature, maximum temperature, and frost-day frequency.  The monthly climatologies are calculated using the University of East Anglia Climatic Research Unit TS2.1 data set on a 0.5&#176; lat/lon grid.  The base period used for the climatology is 1971-2000.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <h4><a class="carry">Select a Point Climatology</a></h4>
+<h4>Monthly Climatological Variables</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt><dd>University of East Anglia Climatic Research Unit TS2.1 monthly precipitation, monthly average of daily maximum, minimum, and mean temperature, wet-day frequency, and ground frost frequency on a 0.5&#176; lat/lon grid</dd> 
 <dt>Data Source</dt><dd>University of East Anglia Climatic Research Unit (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p1/.dataset_documentation.html">CRU TS2.1</a>)</dd> 
 <dt>Analysis</dt><dd>Monthly climatology of monthly precipitation, monthly average of daily maximum, minimum, and mean temperature, wet-day frequency, and ground frost frequency for the 1971-2000 base period</dd>
+<dt>Reference</dt><dd>Mitchell, T. D., P. D. Jones. An improved method of constructing a database of monthly climate observations and associated high-resolution grids. Int. J. Climatol. 25, 2005.</dd>
+</dl>
+<h4>Koeppen Climate Classification</h4>
+<dl class="datasetdocumentation">
+<dt>Data Source</dt><dd>U.N. Food and Agriculture Organization (FAO) Agrometeorology Group</dd>
+<dt>Analysis</dt><dd><a href="http://www.fao.org/sd/EIdirect/climate/EIsptext.htm#anchor2">Koeppen climate classification</a> prepared by the FAO Agrometeorology Group derived from mean monthly climate data prepared in 1991 by R. Leemans and W. Cramer and published by the International Institute for Applied Systems Analysis (IIASA). This Koeppen classification is based upon monthly rainfall and temperatures, including: average monthly temperature of the warmest month, average monthly temperature of the coldest month, average thermal amplitude between the coldest and warmest months, number of months with temperature exceeding 10°C, and winter and summer rains.  For more detailed information see this <a href="http://www.fao.org/sd/EIdirect/climate/EIsp0066.htm">Brief Guide to Koeppen Climate Classification System</a>.</dd>
+</dl>
+<h4>Elevation</h4>
+<dl class="datasetdocumentation">
+<dt>Data Source</dt><dd>National Oceanic and Atmospheric Administration (NOAA) National Geophysical Data Center (NGDC) ETOPO1 ice surface elevation/bathymetry</dd>
+<dt>Description</dt><dd><a href="http://www.ngdc.noaa.gov/mgg/global/relief/ETOPO1/docs/ETOPO1.pdf">ETOPO1 Grid Registered 1 Arc-Minute Global Relief Model</a></dd>
+<dt>Reference</dt><dd>Amante, C. and B. W. Eakins, ETOPO1 1 Arc-Minute Global Relief Model: Procedures, Data Sources and Analysis, National Geophysical Data Center, NESDIS, NOAA, U.S. Department of Commerce, Boulder, CO, July 2008.</dd>
 </dl>
 </div>
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
 <p>
-<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/">Access the dataset used to create this map.</a>
+<a href="http://iridl.ldeo.columbia.edu/expert/%28koeppen%29//maptype/parameter/%28koeppen%29eq/%7BSOURCES/.FAO/.NRMED/.SD/.Climate/.Derived/.class%7Dif/%28koeppen%29//maptype/parameter/%28prec%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.prcp/DATA/0/700/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28wetdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.wet%7Dif/%28koeppen%29//maptype/parameter/%28meantemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.mean/.temp/DATA/-55/40/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28mintemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.minimum/.temp/DATA/-55/40/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28maxtemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.maximum/.temp/DATA/-55/40/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28frostdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.frost%7Dif/%28koeppen%29//maptype/parameter/%28elev%29eq/%7BSOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/lon/%28X%29renameGRID/lat/%28Y%29renameGRID/X/-180/180/RANGE/Y/-90/90/RANGE/startcolormap/DATA/0/8752/RANGE/white/white/LightGoldenrodYellow/0/VALUE/LightGoldenrod/500/VALUE/goldenrod/1500/VALUE/DarkGoldenrod/3000/VALUE/sienna/8224/VALUE/sienna/endcolormap%7Dif/">Access the dataset used to create this map.</a>
 </p>
 </div>
 <div id="tabs-3"  class="ui-tabs-panel">
