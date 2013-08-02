@@ -98,7 +98,7 @@ margin: 0px;
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/Aqua/">Dataset</a></li>
+      <li><a class="href" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/Aqua_reconstructed/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
       <li><a href="#tabs-5" >Instructions</a></li>
       
@@ -153,11 +153,11 @@ elev <span class="iridl:value"></span>
 </p> 
 </fieldset>
 <fieldset class="dlimage">
-<a class="justsregion" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.EVE/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/.tmax_rec/DATA/-10/50/RANGE/1/index/a:/.lon/DATA/-20/60/RANGE/:a:/.lat/DATA/-40/36/RANGE/:a/X/Y/fig-/colors/scatter/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/"></a>
+<a class="justsregion" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.EVE/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua_reconstructed/%28.WAF%29//sregion/parameter/interp/.tmax_rec/DATA/-10/50/RANGE/1/index/a:/.lon/DATA/-20/60/RANGE/:a:/.lat/DATA/-40/36/RANGE/:a/X/Y/fig-/colors/scatter/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/"></a>
 
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.EVE/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/%28.WAF%29//sregion/parameter/interp/.tmax_rec/DATA/-10/50/RANGE/1/index/a:/.lon/DATA/-20/60/RANGE/:a:/.lat/DATA/-40/36/RANGE/:a/X/Y/fig-/colors/scatter/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/+.gif" border="0" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.EVE/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua_reconstructed/%28.WAF%29//sregion/parameter/interp/.tmax_rec/DATA/-10/50/RANGE/1/index/a:/.lon/DATA/-20/60/RANGE/:a:/.lat/DATA/-40/36/RANGE/:a/X/Y/fig-/colors/scatter/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/+.gif" border="0" />
 
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/.SAF/.tmax_rec/DATA/-10/50/RANGE/X+Y+fig-+colors+coasts+lakes+-fig+//T/3595.0/plotvalue/Y/-34.99908/-0.004368878/plotrange//plotborder+72+psdef//plotaxislength+432+psdef/.auxfig+//T/3595.0/plotvalue/Y/-34.99908/-0.004368878/plotrange+//plotborder+72+psdef//plotaxislength+432+psdef+.gif" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua_reconstructed/.SAF/.tmax_rec/DATA/-10/50/RANGE/X+Y+fig-+colors+coasts+lakes+-fig+//T/3595.0/plotvalue/Y/-34.99908/-0.004368878/plotrange//plotborder+72+psdef//plotaxislength+432+psdef/.auxfig+//T/3595.0/plotvalue/Y/-34.99908/-0.004368878/plotrange+//plotborder+72+psdef//plotaxislength+432+psdef+.gif" />
 
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
@@ -185,7 +185,7 @@ elev <span class="iridl:value"></span>
 
 <dt>Data</dt>
 <dd>Maximum Air Temperature Inferred</dd>
-<dt>Data Source</dt><dd>the International Research Institute for Climate and Society <a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/">inferred max temperature</a>
+<dt>Data Source</dt><dd>the International Research Institute for Climate and Society <a class="href" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua_reconstructed/">inferred max temperature</a>
 </dd><br />
 <dt>Data</dt>
 <dd>Minimum Air Temperature</dd>
@@ -193,14 +193,14 @@ elev <span class="iridl:value"></span>
 </dd><br />
 <dt>Data</dt>
 <dd>Diurnal Cycle Amplitude</dd>
-<dt>Data Source</dt><dd>WorldClim <a href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.WORLDCLIM/">Global Climate Data</a>
+<dt>Data Source</dt><dd>WorldClim <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.WORLDCLIM/">Global Climate Data</a>
 </dd>
 </dl>
 </div>
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
 <p>
-<a class="href" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/">Access the dataset used to create this map.</a>
+<a class="href" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua_reconstructed/">Access the dataset used to create this map.</a>
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
