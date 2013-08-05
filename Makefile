@@ -38,11 +38,10 @@ utbuild.tag: build.tag
 	cp .htaccess $(BUILD)
 	touch utbuild.tag
 	
-maproom/version.xml: .git/HEAD
+maproom/version.xml: .git
 	miconf/scripts/git-generate-version-info maproom xml >$@
 
 clean:
-	$(GIT) clean -f -x -d -- maproom
 	$(RM) -f build.tag utbuild.tag 
 	$(RM) -rf $(BUILD)
 
