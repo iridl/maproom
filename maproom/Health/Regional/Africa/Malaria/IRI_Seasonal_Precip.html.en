@@ -44,7 +44,7 @@
 </head>
 <body xml:lang="en">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg dlimgts dlimgloc share starttime startleadtime">
-<input class="carryup carry " name="Set-Language" type="hidden" value= />
+<input class="carryup carry " name="Set-Language" type="hidden" value="" />
 <input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
 <input class="dlimg dlimgts share starttime startleadtime" name="F" type="hidden" />
 <input class="dlimg dlimgts share startleadtime" name="L" type="hidden" value="1." />
