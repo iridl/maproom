@@ -35,6 +35,16 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/
                 <legend>Climate and Health</legend> 
                      <span class="navtext">Malaria</span>
             </fieldset> 
+            
+            <fieldset class="navitem" id="chooseSection">
+                   
+           <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"><span property="term:label">Climate and Malaria</span></legend>
+            </fieldset> 
+            
+            
+            
+            
+            
 </div>
 <div>
  <div id="content" class="searchDescription">
