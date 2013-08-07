@@ -29,9 +29,11 @@
 <body  xml:lang="en">
 <form name="pageform" id="pageform" class="carryLanguage carryup carry dlimg dlauximg share">
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="carry dlimg share localemap" name="bbox" type="hidden" />
 <input class="dlimg share" name="S" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
+<input name="resolution" type="hidden" value="irids:SOURCES:Features:Political:World:Countries:ds" />
+<input class="locale localemap" name="region" type="hidden" value="" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -64,6 +66,12 @@
       <li><a href="#tabs-6" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage ControlLock" id="content" about="">
+<div class="popup regionwithinbbox">
+<a class="locale" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:-180:-90:180:90:bb%29//region/parameter/geoobject/info.json"></a>
+<img class="localemap valid" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-180%2C-90%2C180%2C90%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-180%2C-90%2C-180%2C-90%29//region/parameter/geoobject/X/Y/fig-/lightgrey/mask/grey/black/countries_gaz/red/fill/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef/+.gif" />
+<div class="template"><span class="iridl:long_name valid"></span>
+</div>
+</div>
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
   <br />
