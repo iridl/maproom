@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>El Ni&#241;a and Precipitation Terciles</title>
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<!--
+<link rel="stylesheet" type="text/css" href="../ifrc.css" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="Station_PRCP_NINA.html?Set-Language=fr" />
+-->
+<link class="share" rel="canonical" href="Station_PRCP_NINA.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<meta xml:lang="" property="maproom:Entry_Id" content="ENSO_Climate_Impacts_Station_PRCP_NINA" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Rate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#enso"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Climate_Impacts_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#station"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#precipitation_rate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climatology"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#animated"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GCPS/.MONTHLY/.STATION.cuf/T/%28Jan%201901%29%28Dec%201990%29RANGE/a:/.lon/:a:/.lat/:a:/.mean/.prcp/:a/T/3./boxAverage/T/12/splitstreamgrid/a:/SOURCES/.KAPLAN/.Indices/.NINO3/.avOS/T/%28Jan%201901%29%28Dec%201990%29RANGE/T/3/boxAverage%5BT%5Dpercentileover/0.2/maskgt/T/12/splitstreamgrid/0/mul/markunitless/add//units//mm/cvx/def%5BT2%5Dmedianover/percentile/removeGRID//fullname%5B//LA_NINA//prcp%5Ddef/:a:%5BT2%5D0.0/0.33/0.67/1./0.75/replacebypercentile/:a/tablefunction/startcolormap/DATA/0/1/RANGE/white/grey/brown/0/VALUE/brown/0.33/bandmax/black/black/0.67/bandmax/green/green/1./bandmax/grey/endcolormap/+fig:+scattercolor+thin+solid+coasts+countries+:fig+//lat/-65/75/plotrange//T/1.5/10.5/plotrange//mftime+125+psdef//plotaxislength+220+psdef//iftime+125+psdef//antialias+true+psdef//plotborder+0+psdef//XOVY+null+psdef//fftime+125+psdef+.gif" />
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
+<input class="carryup carry " name="Set-Language" type="hidden" />
+<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="dlimg share" name="T" type="hidden" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Maproom</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/ENSO/">ENSO Monitoring</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Climate_Impacts_term"><span property="term:label">Climate Impacts</span></legend>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseRegion"> 
+                <legend>Region</legend> 
+            </fieldset>
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GCPS/.MONTHLY/.STATION.cuf/T/%28Jan%201901%29%28Dec%201990%29RANGE/a:/.lon/:a:/.lat/:a:/.mean/.prcp/:a/T/3.0/boxAverage/T/12/splitstreamgrid/a:/SOURCES/.KAPLAN/.Indices/.NINO3/.avOS/T/%28Jan%201901%29%28Dec%201990%29RANGE/T/3/boxAverage%5BT%5Dpercentileover/0.2/maskgt/T/12/splitstreamgrid/0/mul/markunitless/add//units//mm/cvx/def%5BT2%5Dmedianover/percentile/removeGRID//fullname%5B//LA_NINA//prcp%5Ddef/:a:%5BT2%5D0.0/0.33/0.67/1.0/0.75/replacebypercentile/:a/tablefunction/startcolormap/DATA/0/1/RANGE/white/grey/brown/0/VALUE/brown/0.33/bandmax/black/black/0.67/bandmax/green/green/1.0/bandmax/grey/endcolormap/">Dataset</a></li>
+      <li><a href="#tabs-3" >Contact Us</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GCPS/.MONTHLY/.STATION.cuf/T/%28Jan%201901%29%28Dec%201990%29RANGE/a:/.lon/:a:/.lat/:a:/.mean/.prcp/:a/T/3./boxAverage/T/12/splitstreamgrid/a:/SOURCES/.KAPLAN/.Indices/.NINO3/.avOS/T/%28Jan%201901%29%28Dec%201990%29RANGE/T/3/boxAverage%5BT%5Dpercentileover/0.2/maskgt/T/12/splitstreamgrid/0/mul/markunitless/add//units//mm/cvx/def%5BT2%5Dmedianover/percentile/removeGRID//fullname%5B//LA_NINA//prcp%5Ddef/:a:%5BT2%5D0.0/0.33/0.67/1./0.75/replacebypercentile/:a/tablefunction/startcolormap/DATA/0/1/RANGE/white/grey/brown/0/VALUE/brown/0.33/bandmax/black/black/0.67/bandmax/green/green/1./bandmax/grey/endcolormap/+fig:+scattercolor+thin+solid+coasts+countries+:fig+//lat/-65/75/plotrange//T/1.5/10.5/plotrange//mftime+125+psdef//plotaxislength+600+psdef//iftime+125+psdef//antialias+true+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//fftime+125+psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GCPS/.MONTHLY/.STATION.cuf/T/%28Jan%201901%29%28Dec%201990%29RANGE/a:/.lon/:a:/.lat/:a:/.mean/.prcp/:a/T/3./boxAverage/T/12/splitstreamgrid/a:/SOURCES/.KAPLAN/.Indices/.NINO3/.avOS/T/%28Jan%201901%29%28Dec%201990%29RANGE/T/3/boxAverage%5BT%5Dpercentileover/0.2/maskgt/T/12/splitstreamgrid/0/mul/markunitless/add//units//mm/cvx/def%5BT2%5Dmedianover/percentile/removeGRID//fullname%5B//LA_NINA//prcp%5Ddef/:a:%5BT2%5D0.0/0.33/0.67/1./0.75/replacebypercentile/:a/tablefunction/startcolormap/DATA/0/1/RANGE/white/grey/brown/0/VALUE/brown/0.33/bandmax/black/black/0.67/bandmax/green/green/1./bandmax/grey/endcolormap/+fig:+scattercolor+thin+solid+coasts+countries+:fig+//lat/-65/75/plotrange//T/1.5/10.5/plotrange//mftime+125+psdef//plotaxislength+600+psdef//iftime+125+psdef//antialias+true+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//fftime+125+psdef+.gif" border="0" alt="image" />
+  <br />
+ <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GCPS/.MONTHLY/.STATION.cuf/T/%28Jan%201901%29%28Dec%201990%29RANGE/a:/.lon/:a:/.lat/:a:/.mean/.prcp/:a/T/3./boxAverage/T/12/splitstreamgrid/a:/SOURCES/.KAPLAN/.Indices/.NINO3/.avOS/T/%28Jan%201901%29%28Dec%201990%29RANGE/T/3/boxAverage%5BT%5Dpercentileover/0.2/maskgt/T/12/splitstreamgrid/0/mul/markunitless/add//units//mm/cvx/def%5BT2%5Dmedianover/percentile/removeGRID//fullname%5B//LA_NINA//prcp%5Ddef/:a:%5BT2%5D0.0/0.33/0.67/1./0.75/replacebypercentile/:a/tablefunction/startcolormap/DATA/0/1/RANGE/white/grey/brown/0/VALUE/brown/0.33/bandmax/black/black/0.67/bandmax/green/green/1./bandmax/grey/endcolormap/+fig:+scattercolor+thin+solid+coasts+countries+:fig+.auxfig+//lat/-65/75/plotrange//T/1.5/10.5/plotrange//mftime+125+psdef//plotaxislength+600+psdef//iftime+125+psdef//antialias+true+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//fftime+125+psdef+.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >La Ni&#241;a and Precipitation Terciles</h2>
+<p align="left" property="term:description"> For a given 3-month season of the calendar year (Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec), this animated map indicates which precipitation tercile from the 1901-1990 distribution the median value of seasonal station precipitation in La Ni&#241;a years would belong to.  This is one way of showing how seasonal precipitation tends to increase or decrease in some locations during La Ni&#241;a conditions.</p>
+<p align="left">This map cycles through four 3-month seasons of the year.  Green points on the map show stations whose median precipitation value in La Ni&#241;a years is within the highest one-third (above normal, upper tercile) of the 1901-1990 precipitation distribution, brown points represent stations in the lower tercile (below normal), and black points represent stations in the middle tercile (near normal).  Kaplan sea surface temperature anomalies averaged over the NINO3 region of the central-eastern equatorial Pacific are used to classify La Ni&#241;a years, using the 20th percentile of NINO3 sea surface temeperature anomalies for a given 3-month season between 1901 and 1990 as the La Ni&#241;a threshold.</p>
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<h4>Precipitation Data</h4>
+<dl class="datasetdocumentation">
+<dt>Data</dt><dd>NCDC Global Climate Perspectives System (GCPS) monthly station precipitation from January 1901 to December 1990</dd> 
+<dt>Data Source</dt><dd>NOAA National Climatic Data Center (NCDC) (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GCPS/.MONTHLY/.STATION/.dataset_documentation.html">GCPS</a>)</dd> 
+<dt>Analysis</dt><dd>Precipitation stations classified by tercile based upon median seasonal-average precipitation calculated over La Ni&#241;a years compared to precipitation terciles from the 1901-1990 historical distribution</dd>
+</dl>
+<h4>SST Data</h4>
+<dl class="datasetdocumentation">
+<dt>Data</dt><dd>Kaplan NINO3 index from Optimal Smoother analysis of MOHSST5 monthly sea surface temperature anomalies from January 1901 to December 1990</dd>
+<dt>Data Source</dt><dd>Lamont-Doherty Earth Observatory, IRI Data Library (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.KAPLAN/.Indices/.dataset_documentation.html">Kaplan NINO3 index</a>)</dd>
+<dt>Analysis</dt><dd>Three-month seasonal-average NINO3 SST index classified into the bottom 20% of the 1901-1990 historical distribution, to define La Ni&#241;a seasons</dd>
+</dl>
+</div>
+<div class="ui-tabs-panel-hidden">
+<h2 align="center">Dataset</h2>
+<p>
+<a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCDC/.GCPS/.MONTHLY/.STATION.cuf/T/%28Jan%201901%29%28Dec%201990%29RANGE/a:/.lon/:a:/.lat/:a:/.mean/.prcp/:a/T/3.0/boxAverage/T/12/splitstreamgrid/a:/SOURCES/.KAPLAN/.Indices/.NINO3/.avOS/T/%28Jan%201901%29%28Dec%201990%29RANGE/T/3/boxAverage%5BT%5Dpercentileover/0.2/maskgt/T/12/splitstreamgrid/0/mul/markunitless/add//units//mm/cvx/def%5BT2%5Dmedianover/percentile/removeGRID//fullname%5B//LA_NINA//prcp%5Ddef/:a:%5BT2%5D0.0/0.33/0.67/1.0/0.75/replacebypercentile/:a/tablefunction/startcolormap/DATA/0/1/RANGE/white/grey/brown/0/VALUE/brown/0.33/bandmax/black/black/0.67/bandmax/green/green/1.0/bandmax/grey/endcolormap/">Access the dataset used to create this map.</a>
+</p>
+</div>
+<div id="tabs-3"  class="ui-tabs-panel">
+<h2  align="center">Helpdesk</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=La Ni&#241;a and Precipitation Terciles">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
