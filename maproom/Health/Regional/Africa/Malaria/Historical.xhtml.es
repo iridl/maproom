@@ -9,39 +9,42 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Climate and Health</title>
+<title>Clima y Salud</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
-<link rel="canonical" href="index.html" />
+<link rel="canonical" href="Historical.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate_and_malaria_term" />
 <link rel="term:icon"
 href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
 </head>
-<body  xml:lang="en">
+<body  xml:lang="es">
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
 </form>
 <div class="controlBar">
-           <fieldset class="navitem"> 
-                <legend>Maproom</legend> 
-                    <a rev="section" class="navlink carryup" href="/maproom/Health/">Climate and Health</a>
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Clima y Salud</legend> 
+                    <a rev="section" class="navlink carryup" href="index.html">Clima y Malaria </a>
             </fieldset> 
-           <fieldset class="navitem"> 
-                <legend>Climate and Health</legend> 
-                     <span class="navtext">Malaria</span>
+        
+            
+               <fieldset class="navitem" id="chooseSection">
+                   
+           <legend>Clima y Malaria</legend>
             </fieldset> 
-
+            
 </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">Climate and Malaria in Africa</h2>
+<h2 property="term:title">Analisis Historico de Malaria</h2>
 <p align="left" property="term:description">
-Economic development has played an enormous role in shaping the current global distribution of malaria. Where malaria is not adequately controlled, however, its distribution and seasonality are closely related to seasonal characteristics of the climate.</p>
+AQUI - Poner el analisis historico de malaria En ESPANOL</p>
  Consequently, it may be found where and when the climatic conditions are favorable for transmission between the mosquito vector and its human host. Malaria is endemic throughout much of Sub-Saharan Africa and regularly affects susceptible populations each year. Within that endemic zone, however, the disease exhibits a spectrum of characteristics. Areas of stable endemicity where transmission occurs all year round exist at one extreme, while at the other extreme, there are areas where little or no transmission takes place most of the time but epidemics may occur among susceptible immunological native populations. <p> Along the margins of endemic malaria, there are geographic zones where malaria transmission is 'unstable' or prone to epidemics. Malaria in these areas is also related to climate, but in this case, at least one of the essential variables, rainfall, temperature or humidity, is not consistently sufficient for transmission. The high inter-annual variability of climate in these regions, however, means that in some years the climatic conditions favorable for malaria transmission do occur and epidemics of the disease may result.</p>
 
 <p>The mapping products below therefore aim to illustrate models of climate suitability for 
@@ -54,9 +57,32 @@ opportunity to work with others on the further development of these products.
 
 </p>
 </div>
-<div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/index.html" >
+
+<div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/Historical.html" >
+
+<a rel="section" href="http://www.map.ox.ac.uk/data/"></a>
+<div about="http://www.map.ox.ac.uk/data/">
+<meta property="maproom:Sort_Id" content="e13" />
+<a rel="canonical"  href="http://www.map.ox.ac.uk/data/"></a>
+<p property="term:title">Proyecto de Atlas de Malaria(MAP) Mapas de la Transmission y Endemicidad de Malaria</p>
+<p property="term:description">El Proyecto de Atlas de Malaria (MAP) ha construido una base de datos mundial y mapas de atlas que muestran los límites spaciales de transmisión de Plasmodium falciparum basados en encuestas de tasas de parásitos, la distribución espacial pronosticada de la endemicidad de malaria de Plasmodium falciparum, y la incertidumbre del modelo para la endemicidad pronosticada.</p>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"/>
+  <link rel="term:isDescribedBy"
+  href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+<a rel="term:icon" href="http://iri.columbia.edu/~mbell/icons/MAP-Africa-Pf-endemicity-icon.jpg"></a>
 
 
+</div>
 </div>
 </div>
 <div class="optionsBar">
