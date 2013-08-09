@@ -66,7 +66,7 @@ display: inline-block
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
                 <legend>Clima y Salud</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Malaria Early Warning System</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Sistema de Alerta Temprana</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">el analisis de la ambiente</span></legend>
