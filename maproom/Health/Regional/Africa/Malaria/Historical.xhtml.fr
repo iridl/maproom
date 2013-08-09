@@ -30,7 +30,7 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climat et Santé</legend> 
-                    <a rev="section" class="navlink carryup" href="index.html">Climat et paludisme </a>
+                    <a rev="section" class="navlink carryup" href="index.html">Climat et Paludisme </a>
             </fieldset> 
         
             
