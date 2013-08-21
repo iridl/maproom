@@ -66,7 +66,7 @@
       <li><a href="#tabs-5" >Dataset Documentation</a></li>
       <li><a href="#tabs-6" >Contact Us</a></li>
     </ul>
-<fieldset class="dlimage" id="content" about="">
+<fieldset class="dlimage ControlLock NoDefaultIvars" id="content" about="">
 <div class="popup regionwithinbbox">
 <a class="locale" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:-180:-90:180:90:bb%29//region/parameter/geoobject/info.json"></a>
 <img class="localemap valid" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-180%2C-90%2C180%2C90%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-180%2C-90%2C-180%2C-90%29//region/parameter/geoobject/X/Y/fig-/lightgrey/mask/grey/black/countries_gaz/red/fill/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef/+.gif" />
