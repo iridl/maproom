@@ -64,7 +64,7 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Greenness Estimates</h2>
-  <p align="left" property="term:description">Number of dekads passed since vegetation onset.</p>
+  <p align="left" property="term:description">A critical factor in Locust control is areas which have recently transitioned from desert to vegetation.  Greenness is the number of dekads (approximately ten days) passed since vegetation onset.</p>
 <p>
 The methodology allows a robust and reliable discrimination between vegetation and no vegetation. It identiﬁes efficiently the vegetation close to the onset and avoids the classic commission errors (i.e., detecting vegetation when there is no
 vegetation on the ground), encountered with the NDVI-based
