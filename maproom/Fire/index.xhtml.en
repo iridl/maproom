@@ -41,7 +41,7 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dek
 <div>
  <div id="content" class="searchDescription">
 <h2 property="term:title">Climate and Fire</h2>
-<p align="left" property="term:description">
+<p align="left">
 The <a href="http://www.earth.columbia.edu/">Earth Institute</a> is leading a USAID-funded project to  
 collaborate with <a href="http://www.ipb.ac.id/">Institut Pertanian Bogor</a> (IPB), a leading
 Indonesian university, to build science and technology capacity for climate risk management in
@@ -58,7 +58,7 @@ hotspot activity (particularly during the dry season from June to October) means
 whether an upcoming fire season will be more or less intense than usual.  For further information about these research results, please 
 contact Pietro Ceccato (<a href="mailto:pceccato@iri.columbia.edu?subject=Climate and Fire Map Room">pceccato@iri.columbia.edu</a>). 
 </p>
-<p>
+<p  property="term:description">
 This IRI Data Library Map Room includes two tools that can support a robust fire early warning system.  The Indonesia Rainfall Analysis
 Tool provides maps and location-specific time series that allow the user to examine recent rainfall in Indonesia, and includes a fire risk
 map based upon land use/land cover classification and MODIS Active Fire Product data that focuses on a specific district in Central Kalimantan
