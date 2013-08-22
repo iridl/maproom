@@ -14,6 +14,8 @@
 <script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
 <link rel="canonical" href="greenness.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <meta property="maproom:Entry_Id" content="Food_Security_Locusts_Regional_greenness" />
 <meta property="maproom:Sort_Id" content="e06" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Middle_East_328_0"/>
@@ -32,7 +34,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/coasts/-fig//greenness/0.5/36.5/plotrange//T/last/plotvalue/Y/low/high/plotrange/plotaxislength/200/psdef//plotborder/0/psdef/+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//greenness/0.5/36.5/plotrange//T/last/plotvalue/Y/low/high/plotrange/plotaxislength/200/psdef//plotborder/0/psdef/+.gif" />
 </head>
 <body xml:lang="en">
 <form name="pageform" id="pageform">
@@ -58,13 +60,20 @@
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/coasts/-fig/Y/low/high/plotrange/T/last/plotvalue//plotbordertop/40/psdef//plotborderbottom/40/psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/coasts/-fig//T/last/plotvalue/Y/low/high/plotrange//plotbordertop/40/psdef//plotborderbottom/40/psdef+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/coasts/-fig//T/last/plotvalue/.auxfig/+.gif" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig/Y/low/high/plotrange/T/last/plotvalue//plotbordertop/40/psdef//plotborderbottom/40/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//plotbordertop/40/psdef//plotborderbottom/40/psdef+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/last/plotvalue/.auxfig/+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Greenness Estimates</h2>
   <p align="left" property="term:description">A critical factor in Locust control is areas which have recently transitioned from desert to vegetation.  Greenness is the number of dekads (approximately ten days) passed since vegetation onset.</p>
+<p>
+The warmer colours (dekads 1-3) indicate annual vegetation that has
+just recently become green, and this is preferred by Desert
+Locust. Darker colours (dekads 7 and beyond) are most likely areas of
+perennial vegetation (oasis, forests, etc.) that are not particularly
+favourable for Desert Locust.
+</p>
 <p>
 The methodology allows a robust and reliable discrimination between vegetation and no vegetation. It identiﬁes efficiently the vegetation close to the onset and avoids the classic commission errors (i.e., detecting vegetation when there is no
 vegetation on the ground), encountered with the NDVI-based
