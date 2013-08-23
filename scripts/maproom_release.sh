@@ -14,9 +14,9 @@ fi
 prefix="$1"
 repo="$2"
 
-export PATH=/usr/local/miconf/bin:$PATH
-export PATH=/usr/local/semantic_tools/bin:$PATH
-export PATH=/usr/local/raptor-1.4.21/bin:$PATH
+export PATH=/usr/local/datalib/bin:$PATH
+export PATH=/usr/local/datalib/semantic_tools/bin:$PATH
+#export PATH=/usr/local/raptor-1.4.21/bin:$PATH
 #export JAVA_HOME=/usr/local/jdk1.6.0_10-64  
 #export PATH=$JAVA_HOME/bin:$PATH            
 
