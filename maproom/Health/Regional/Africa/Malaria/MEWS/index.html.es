@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Sistema de Alerta Temprana</title>
+<title>Precipitación decadal (p.ej. ~10-diariamente)</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
@@ -66,7 +66,7 @@ display: inline-block
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
                 <legend>Clima y Salud</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Sistema de Alerta Temprana</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Precipitación decadal (p.ej. ~10-diariamente)</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">el analisis de la ambiente</span></legend>
@@ -149,7 +149,7 @@ el período de 12 meses más reciente en la región seleccionada. Las barras azu
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/SOURCES/.Features/.Epidemiological/.Malaria/.Risk_map/.the_geom/X/Y/fig-/colors/red/stroke/grey/verythin/mews_dist/black/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig+//T/19231.5/plotvalue+//plotborder+72+psdef//plotaxislength+432+psdef//layers%5B//est_prcp//mews_prov//countries_gaz%5Dpsdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Sistema de Alerta Temprana</h2>
+ <h2 align="center" property="term:title">Precipitación decadal (p.ej. ~10-diariamente)</h2>
   <p align="left" property="term:description">SATM es un producto de monitoreo de  lluvias basado en estimaciones de precipitación decadal del Centro de Predicción del Clima. La interfaz permite a los usuarios ver las estimaciones recientes de lluvias con una perspectiva estacional e histórica reciente.  Los análisis de series de tiempo de los datos de precipitación son generados en base a los parámetros seleccionados por el usuario.</p>
 <p>La lluvia, es gran medida responsable de crear condiciones favorables que permiten la
 suficiente agua superficial para la formación de los criaderos de mosquitos y, por tanto,

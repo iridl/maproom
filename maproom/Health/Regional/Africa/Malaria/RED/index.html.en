@@ -97,6 +97,8 @@ margin: 0px;
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfediffmask/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/+.gif" border="0" />
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfediffmask/X/Y/fig-+colorscale2+-fig//nplotstream+1+def+//T/19303.0/plotvalue+//antialias+true+psdef+.gif" />
 </fieldset>
+
+
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Rainfall Estimate Differences</h2>
   <p align="left" property="term:description">This map shows dekadal (10-day) rainfall estimates as the difference from the short term average (from 2000 to last recent complete year). Positive (negative) values indicate dekadal estimates that are above (below) the short-term average rainfall.</p>

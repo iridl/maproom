@@ -18,7 +18,7 @@
 <link rel="canonical" href="MARA_Distribution_Model.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
-<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_MARA_Distribution_Model" />
+<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_Historical_MARA_Distribution_Model" />
 <meta property="maproom:Sort_Id" content="e12" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
@@ -51,7 +51,7 @@
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climate and Health</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/Historical.html">Malaria Historical Analysis</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"><span property="term:label">Malaria Historical Analysis</span></legend>
