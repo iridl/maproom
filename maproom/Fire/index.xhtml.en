@@ -41,8 +41,17 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dek
 <div>
  <div id="content" class="searchDescription">
 <h2 property="term:title">Climate and Fire</h2>
-<p align="left">
-The <a href="http://www.earth.columbia.edu/">Earth Institute</a> is leading a USAID-funded project to  
+
+<p align="left" property="term:description">
+The Climate and Fire Map Room includes two tools that can support a robust fire early warning system in Indonesia.  The Indonesia Rainfall Analysis
+Tool provides maps and location-specific time series that allow the user to examine recent rainfall in Indonesia, and includes a fire risk 
+map that focuses on Kapuas district in Central Kalimantan.
+The Predictive Tool for Fire Activity offers experimental forecasts of the likelihood of high or low fire activity 1-2 months
+in advance in Kalimantan, Indonesia.
+</p>
+
+<p>
+The <a href="http://www.earth.columbia.edu/">Earth Institute</a> at Columbia University is leading a USAID-funded project to  
 collaborate with <a href="http://www.ipb.ac.id/">Institut Pertanian Bogor</a> (IPB), a leading
 Indonesian university, to build science and technology capacity for climate risk management in
 agriculture and peatland forest fire management.  The <a href="http://cgsd.columbia.edu/">Center on Globalization and Sustainable Development</a>
@@ -50,6 +59,7 @@ and <a href="http://iri.columbia.edu">International Research Institute for Clima
 partnering with the <a href="http://ccromseap.ipb.ac.id/">Center for Climate Risk and Opportunity Management for Southeast Asia and Pacific</a>
 at IPB on this collaborative research.  Please visit the CGSD <a href="http://cgsd.columbia.edu/where-we-work/indonesia/">project website</a> 
 for more information on these exciting activities.</p>
+
 <p>One key component of this project is the development of an early warning system for fire risk in Central Kalimantan, which hosts the large
 portion of Indonesia's peatlands.  Through this project and previous research on the links between climate anomalies, land use/land cover
 indicators, and fire hotspots in Central Kalimantan, our researchers have uncovered valuable relationships that can be used to offer 
@@ -57,14 +67,6 @@ predictions for areas of high fire risk.  The close correlation between satellit
 hotspot activity (particularly during the dry season from June to October) means a tool based on rainfall and land use data can help indicate
 whether an upcoming fire season will be more or less intense than usual.  For further information about these research results, please 
 contact Pietro Ceccato (<a href="mailto:pceccato@iri.columbia.edu?subject=Climate and Fire Map Room">pceccato@iri.columbia.edu</a>). 
-</p>
-<p  property="term:description">
-This IRI Data Library Map Room includes two tools that can support a robust fire early warning system.  The Indonesia Rainfall Analysis
-Tool provides maps and location-specific time series that allow the user to examine recent rainfall in Indonesia, and includes a fire risk
-map based upon land use/land cover classification and MODIS Active Fire Product data that focuses on a specific district in Central Kalimantan
- (Kapuas).  The Predictive Tool for Fire Activity offers experimental forecasts of the likelihood of high or low fire activity 1-2 months
-in advance, using a correlation between an index of the sea surface temperature and the occurrence of fire hotspots in Central Kalimantan,
-Indonesia.
 </p>
 
 <p>
