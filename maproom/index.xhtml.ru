@@ -17,6 +17,7 @@
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
+<link class="altLanguage" rel="alternate" hreflang="id" href="index.html?Set-Language=id" />
 <link rel="canonical" href="index.html" />
 <link rel="shortcut icon" href="../uicore/icons/iri32.png" />
 <link rel="apple-touch-icon" sizes="54x54" href="../uicore/icons/iriwh.png" />
