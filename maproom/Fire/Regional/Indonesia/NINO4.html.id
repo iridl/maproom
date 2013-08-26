@@ -65,7 +65,7 @@ display: inline-block
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
-                <legend>Maproom</legend> 
+                <legend>Ruang Peta</legend> 
                       <a rev="section" class="navlink carryup" href="/maproom/Fire/">Climate and Fire</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
