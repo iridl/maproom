@@ -6,15 +6,15 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.0"
- xml:lang="en"
+ xml:lang="id"
       >
 <head>
  <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>IRI Map Room</title>
+<title>Ruang Sumber Informasi Data dan Peta Iklim IRI</title>
 <link rel="stylesheet" type="text/css" href="../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
-<link class="altLanguage" rel="alternate" hreflang="id" href="index.html?Set-Language=id" />
 <link class="altLanguage" rel="alternate" hreflang="ru" href="index.html?Set-Language=ru" />
 <link rel="canonical" href="index.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
@@ -35,15 +35,15 @@
 <div class="controlBar">
            <fieldset class="navitem">
                 <legend>IRI/LDEO</legend> 
-                      <a rev="section" class="navlink carryup" href="http://iridl.ldeo.columbia.edu/">Climate Data Library</a>
+                      <a rev="section" class="navlink carryup" href="http://iridl.ldeo.columbia.edu/">Ruang Sumber Informasi Data Iklim</a>
             </fieldset> 
            <fieldset class="navitem"> 
-                <legend>Data Library</legend> 
-                     <span class="navtext">Maproom</span>
+                <legend>Ruang Sumber Informasi Data</legend> 
+                     <span class="navtext">Ruang Peta</span>
 
             </fieldset> 
             <fieldset class="navitem"> 
-                <legend>Region</legend>
+                <legend>Wilayah</legend>
             <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
 		<select class="RegionMenu" name="bbox">
 		<option value="">Global</option>
@@ -55,9 +55,9 @@
  </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">IRI Climate and Society Map Room</h2>
+<h2 property="term:title">Ruang Sumber Informasi Data dan Peta Iklim IRI</h2>
 <p align="left" property="term:description">
-The climate and society maproom is a collection of maps and other figures that monitor climate and societal conditions at present and in the recent past. The maps and figures can be manipulated and are linked to the original data. Even if you are primarily interested in data rather than figures, this is a good place to see which datasets are particularly useful for monitoring current conditions.</p>
+Ruang sumber informasi data dan peta iklim berisi berbagai peta dan gambar yang memantau perubahan kondisi iklim dan masyarakat dari beberapa waktu lalu sampai sekarang.  Peta dan gambar dapat dirubah sesuai dengan yang diinginkan karena sudah dihubungkan dengan data aslinya.  Walaupun anda lebih tertarik pada data dari pada Gambar, tetapi ruang ini merupakan tempat yang tepat buat anda untuk melihat set data mana yang sangat bermanfaat untuk memantau kondisi-kondisi saat ini.</p>
 </div>
 
 <div class="rightcol tabbedentries" about="/maproom/" >
