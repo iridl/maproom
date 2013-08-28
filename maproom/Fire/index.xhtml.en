@@ -44,9 +44,9 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dek
 
 <p align="left" property="term:description">
 The Climate and Fire Map Room includes two tools that can support a robust fire early warning system in Indonesia.  The Indonesia Rainfall Analysis
-Tool provides maps and location-specific time series that allow the user to examine recent rainfall in Indonesia, and includes a fire risk 
-map that focuses on Kapuas district in Central Kalimantan.
-The Predictive Tool for Fire Activity offers experimental forecasts of the likelihood of high or low fire activity 1-2 months
+Tool provides maps and time series of recent rainfall in Indonesia and a fire risk 
+map for Kapuas district in Central Kalimantan.
+The Predictive Tool for Fire Activity offers experimental forecasts of the likelihood of fire activity 1-2 months
 in advance in Kalimantan, Indonesia.
 </p>
 
