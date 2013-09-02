@@ -77,9 +77,9 @@ en regiones propensas a epidemias.
 </p>
 </div>
 <div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/System.html" >
-    <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerability"/>
   <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Seasonal_Climate_Forecast"/>
+    <link class="ui-state-active" rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
       <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria_Morbidity"/>
 
 </div>
