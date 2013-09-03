@@ -141,7 +141,6 @@ The four elements are Vulnerability, Seasonal Climate Forecasts, Monitoring the 
 
 
 
-
 <div about="http://www.drugresistancemaps.org/">
 <meta property="maproom:Sort_Id" content="e13" />
 <a rel="canonical"  href="http://www.drugresistancemaps.org/"></a>
@@ -162,7 +161,7 @@ The four elements are Vulnerability, Seasonal Climate Forecasts, Monitoring the 
     <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerability"/>
   <link rel="term:isDescribedBy"
   href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<a rel="term:icon" href="http://iri.columbia.edu/~mbell/icons/MAP-Africa-Pf-endemicity-icon.jpg"></a>
+<a rel="term:icon" href="/maproom/Health/Regional/Africa/Malaria/drug_resistance.png"></a>
 </div>
 
 
