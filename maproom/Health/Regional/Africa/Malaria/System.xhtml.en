@@ -112,13 +112,14 @@ The four elements are Vulnerability, Seasonal Climate Forecasts, Monitoring the 
 <a rel="section" href="http://www.drugresistancemaps.org/"></a>
 <a rel="section" href="http://www.promedmail.org/"></a>
 
-%list other sections right here after one another
+
 
 <div about="http://www.irmapper.com/">
 <meta property="maproom:Sort_Id" content="e13" />
 <a rel="canonical"  href="http://www.irmapper.com/"></a>
 <p property="term:title">Insecticide Resistance</p>
 <p property="term:description">IR Mapper is a tool used to view results from insecticide studies (WHO susceptibility tests) using malaria mosquitoes collected from sites throughout the world.</p>
+
 
 
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
@@ -134,8 +135,12 @@ The four elements are Vulnerability, Seasonal Climate Forecasts, Monitoring the 
     <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerability"/>
   <link rel="term:isDescribedBy"
   href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<a rel="term:icon" href="http://iri.columbia.edu/~mbell/icons/MAP-Africa-Pf-endemicity-icon.jpg"></a>
+  <a rel="term:icon" href="maproom/Health/Regional/Africa/irmapper.png"></a>
+
 </div>
+
+
+
 
 <div about="http://www.drugresistancemaps.org/">
 <meta property="maproom:Sort_Id" content="e13" />
