@@ -135,7 +135,7 @@ The four elements are Vulnerability, Seasonal Climate Forecasts, Monitoring the 
     <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerability"/>
   <link rel="term:isDescribedBy"
   href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-  <a rel="term:icon" href="/maproom/Health/Regional/Africa/Malaria/irmappersmall.png"></a>
+  <a rel="term:icon" href="irmappersmall.png"></a>
 
 </div>
 
@@ -161,7 +161,7 @@ The four elements are Vulnerability, Seasonal Climate Forecasts, Monitoring the 
     <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerability"/>
   <link rel="term:isDescribedBy"
   href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<a rel="term:icon" href="/maproom/Health/Regional/Africa/Malaria/drug_resistance.png"></a>
+<a rel="term:icon" href="drug_resistance.png"></a>
 </div>
 
 
@@ -185,7 +185,11 @@ The four elements are Vulnerability, Seasonal Climate Forecasts, Monitoring the 
     <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria_Morbidity"/>
   <link rel="term:isDescribedBy"
   href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+<<<<<<< HEAD
 <a rel="term:icon" href="/maproom/Health/Regional/Africa/Malaria/observed_morbidity.png"></a>
+=======
+<a rel="term:icon" href="morbidity.png"></a>
+>>>>>>> 0ad468684612b538f325ac546e1c4db913fec4c4
 </div>
 
 
