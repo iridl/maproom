@@ -185,7 +185,7 @@ The four elements are Vulnerability, Seasonal Climate Forecasts, Monitoring the 
     <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria_Morbidity"/>
   <link rel="term:isDescribedBy"
   href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<a rel="term:icon" href="morbidity.png"></a>
+<a rel="term:icon" href="observed_morbidity.png"></a>
 </div>
 
 
