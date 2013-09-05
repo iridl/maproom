@@ -137,12 +137,12 @@
 <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >IRI Seasonal Precipitation Forecast</h2>
 <p align="left" property="term:description">In areas of Africa where climate drives mosquito vector development and parasite development, skillful seasonal climate forecasts may provide early warning of risk of an epidemic.</p>
-
+</p>
 
 <p>
 This forecast is based on the teleconnection of Sea Surface Temperatures in the equatorial Pacific (ENSO) on global precipitation patterns.
 </p>
-<p>
+
 The seasonal forecast for above-, below- and near-normal precipitation from the IRI.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
@@ -163,15 +163,6 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Predictions in Context:  S
 <div id="tabs-4" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Instructions</h2>
 <p align="left" property="term:description">The IRI Seasonal Forecast interface provides the ability to make graph at a user-selected location. </p>
-<p> 
-The graph shows the probability, or chance, that the month(s) being forecast will fal into certain categories.
-</p>
-<p>
-The three categories are below normal, normal and above normal. 
-</p>
-<p>
-"Normal" conditions are defined as the average precipitation for the forecast month(s) at a given location since 1980.
-</p>	
 </div>
 </div>
 <div class="optionsBar">
