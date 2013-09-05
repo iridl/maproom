@@ -32,14 +32,12 @@
 <input class="carryup carry titleLink itemImage" name="bbox" type="hidden" />
 </form>
 <div class="controlBar">
-           <fieldset class="navitem"> 
-                <legend>Data Library</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/">Maproom</a>
-            </fieldset> 
-           <fieldset class="navitem"> 
+           <fieldset class="navitem" id="toSectionList"> 
                 <legend>Maproom</legend> 
-                     <span class="navtext">Bicol Agri-Water Knowledge Portal</span>
-
+                      <a rev="section" class="navlink carryup" href="/maproom/Water/">Water Management</a>
+            </fieldset> 
+           <fieldset class="navitem" id="chooseSection"> 
+                <legend>Water Management</legend> 
             </fieldset> 
  </div>
 <div>
@@ -51,7 +49,7 @@ Decision support tools for water use and allocation at the Lake Buhi guide decis
 </span>
 </div>
 
-<div class="rightcol tabbedentries" about="/maproom/Water/" >
+<div class="rightcol tabbedentries" about="/maproom/Water/BAWKP/" >
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Climate_term" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Agriculture_term" />
 </div>
