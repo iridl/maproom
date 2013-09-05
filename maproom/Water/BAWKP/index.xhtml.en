@@ -51,7 +51,7 @@ Decision support tools for water use and allocation at the Lake Buhi guide decis
 
 <div class="rightcol tabbedentries" about="/maproom/Water/BAWKP/" >
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Climate_term" />
-<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Agriculture_term" />
+<!-- <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Agriculture_term" /> -->
 </div>
 
 </div>

@@ -18,8 +18,7 @@
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <meta property="maproom:Entry_Id" content="Agriculture_Historical_Bicol_Precipitation" />
 <meta property="maproom:Sort_Id" content="" />
-<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Climate_term" />
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Climate_term" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
@@ -158,6 +157,18 @@ display: none;
 .yearlyStat #pET5 {
 display: none;
 }
+.resolution #aphrodite {
+display: none;
+}
+.resolutionirids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:ds #aphrodite {
+display: none;
+}
+.resolution0.25 #pagasa {
+display: none;
+}
+.resolution0.50 #pagasa {
+display: none;
+}
 </style>
 </head>
 <body xml:lang="en">
@@ -194,7 +205,7 @@ display: none;
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Climate_term"><span property="term:label">Climate</span></legend>
             </fieldset>
             <fieldset class="navitem"><legend><span id="pagasa">Seasons (1977 to 2008)</span>
-<!-- 					      <span id="aphrodite">Seasons (1951 to 2007)</span> -->
+ 					      <span id="aphrodite">Seasons (1951 to 2007)</span> 
 </legend>
 
             <select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1977" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2008" size="4" maxlength="4"/></fieldset>
