@@ -162,14 +162,17 @@ elev <span class="iridl:value"></span>
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Inferred Maximum Air Temperature at 2m</h2>
-  <p align="left" property="term:description">The map shows inferred maximum air temperature, one important component for the transmission of malaria. The black points on the map indicate locations of weather stations.</p>
+  <p align="left" property="term:description">The map shows inferred maximum air temperature, one important component for the transmission of malaria. </p>
 
 <p>Maximum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors. Maximum air temperature values of 32°C act as the upper limit for vector development and potential malaria transmission.</p>
 
 <p>The temperatures shown are estimated by combining nighttime land surface temperatures (LST) with diurnal cycle values.</p>
+<p> The black points on the map indicate locations of weather stations.</p>
 
 
-<p><b>Reference:</b>Ceccato, P. , Vancutsem, C., Temimi, M. (2010). <a href="http://www.scopus.com/record/display.url?eid&#61;2-s2.0-78650855812&#38;origin=resultslist&#38;sort=plf-f&#38;src=s&#38;st1=Ceccato&#38;st2=P&#38;nlo=1&#38;nlr=20&#38;nls=first-t&#38;sid=jLNiD-7V9i5Mwf99SugfMOt%3a553&#38;sot=anl&#38;sdt=aut&#38;sl=35&#38;s=AU-ID%28%22Ceccato%2c+Pietro%22+8303142200%29&#38;relpos=0&#38;relpos=0&#38;searchTerm=AU-ID%28%5C">Monitoring Air and Land Surface Temperatures from Remotely Sensed Data for Climate-Human Health Applications</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
+<h4>References:</h4>
+
+<p>Ceccato, P., Vancutsem, C., Temimi, M. (2010). <a href="http://www.scopus.com/record/display.url?eid&#61;2-s2.0-78650855812&#38;origin=resultslist&#38;sort=plf-f&#38;src=s&#38;st1=Ceccato&#38;st2=P&#38;nlo=1&#38;nlr=20&#38;nls=first-t&#38;sid=jLNiD-7V9i5Mwf99SugfMOt%3a553&#38;sot=anl&#38;sdt=aut&#38;sl=35&#38;s=AU-ID%28%22Ceccato%2c+Pietro%22+8303142200%29&#38;relpos=0&#38;relpos=0&#38;searchTerm=AU-ID%28%5C">Monitoring Air and Land Surface Temperatures from Remotely Sensed Data for Climate-Human Health Applications</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
 </p>
 </div>
 <div id="tabs-2"  class="ui-tabs-panel">

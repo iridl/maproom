@@ -71,9 +71,9 @@ display: inline-block
             <fieldset class="navitem"> 
                 <legend>Region</legend> 
                 <select class="pageformcopy" name="sregion">
-                 <option value=".WAF">West Africa</option>
-                   <option value=".EAF">East Africa</option>
-                   <option value=".SAF">Southern Africa</option>
+                 <option value=".WAF">western Africa</option>
+                   <option value=".EAF">eastern Africa</option>
+                   <option value=".SAF">southern Africa</option>
                     </select>
             </fieldset>
              <fieldset class="navitem"><legend>Spatially Average Over</legend><select class="pageformcopy" name="resolution">
@@ -110,6 +110,7 @@ margin: 0px;
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a class="href" href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <a class="dlimgts" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua_night/%28.WAF%29//sregion/parameter/interp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/%5BT%5DREORDER/T/exch/table:/2/:table/"></a>
