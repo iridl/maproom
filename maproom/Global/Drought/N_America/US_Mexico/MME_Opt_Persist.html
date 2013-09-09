@@ -96,7 +96,7 @@ display: none;
               <option class="iridl:values L@value L"><span class="leadtime"></span></option> 
              </select> Month(s)</fieldset>
 
-            <fieldset class="navitem valid" id="threshMenu"><legend>SPI Threshold</legend><span class="selectvalue"></span><select class="pageformcopy" name="threshold"><option value="2.5">2.5</option><option value="2.0">2.0</option><option value="1.5">1.5</option><option value="1.0">1.0</option><option value="0.5">0.5</option><option value="0.0">0.0</option><option value="-0.5">-0.5</option><option value="-1.0">-1.0</option><option value="-1.5">-1.5</option><option value="-2.0">-2.0</option><option value="-2.5">-2.5</option></select></fieldset>
+            <fieldset class="navitem valid" id="threshMenu"><legend>SPI Threshold</legend><span class="selectvalue"></span><select class="pageformcopy" name="threshold"><option value="2.5">2.5</option><option value="2.0">2.0</option><option value="1.5">1.5</option><option value="1.0">1.0</option><option value="0.5">0.5</option><option value="0.0">0.0</option><option value="-0.5">-0.5</option><option value="-1.0">-1.0</option><option value="-1.5">-1.5</option><option value="-2.0">-2.0</option><option value="-2.5">-2.5</option></select><span class="colorbox"></span></fieldset>
 
             <fieldset class="navitem valid" id="probMenu"><legend>Probability of Non-Exceedance</legend><span class="selectvalue"></span><select class="pageformcopy" name="margprob"><option>0.95</option><option>0.9</option><option>0.85</option><option>0.8</option><option>0.75</option><option>0.7</option><option>0.65</option><option>0.6</option><option>0.55</option><option>0.5</option><option>0.45</option><option>0.4</option><option>0.35</option><option>0.3</option><option>0.25</option><option>0.2</option><option>0.15</option><option>0.1</option><option>0.05</option></select></fieldset>
 
@@ -113,6 +113,36 @@ display: none;
 #threshMenu select option[value="1.5"]{color: black; background-color: rgba(0,130,5,.5);}
 #threshMenu select option[value="2.0"]{color: black; background-color: rgba(0,100,0,.5);}
 #threshMenu select option[value="2.5"]{color: black; background-color: rgba(0,70,0,.5);}
+.colorbox {
+display: inline-block;
+margin-left: 10px;
+width: 14px;
+height: 14px;
+background-color: white;
+}
+.colorbox.split {
+width: 7px;
+}
+#threshMenu .selectvalue[value="-2.5"] + select + .colorbox {background-color: rgba(115,0,0,.5);}
+#threshMenu .selectvalue[value="-2.0"] + select + .colorbox {background-color: rgba(230,0,0,.5);}
+#threshMenu .selectvalue[value="-1.5"] + select + .colorbox {background-color: rgba(230,152,0,.5);}
+#threshMenu .selectvalue[value="-1.0"] + select + .colorbox {background-color: rgba(255,211,127,.5);}
+#threshMenu .selectvalue[value="-0.5"] + select + .colorbox {background-color: rgba(255,255,0,.5);}
+#threshMenu .selectvalue[value="0.0"] + select + .colorbox {background-color: white;}
+#threshMenu .selectvalue[value="0.5"] + select + .colorbox {background-color: rgba(110,210,115,.5)}
+#threshMenu .selectvalue[value="1.0"] + select + .colorbox {background-color: rgba(20,170,25,.5);}
+#threshMenu .selectvalue[value="1.5"] + select + .colorbox {background-color: rgba(0,130,5,.5);}
+#threshMenu .selectvalue[value="2.0"] + select + .colorbox {background-color: rgba(0,100,0,.5);}
+#threshMenu .selectvalue[value="2.5"] + select + .colorbox {background-color: rgba(0,70,0,.5);}
+@media only all and (max-width: 750px) {
+.colorbox {
+width: 10px;
+height: 10px;
+}
+.colorbox.split {
+width: 5px;
+}
+}
 </style>
 <!--
 <style>
