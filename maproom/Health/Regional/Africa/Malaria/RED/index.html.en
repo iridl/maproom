@@ -103,7 +103,7 @@ margin: 0px;
  <h2 align="center" property="term:title">Rainfall Estimate Differences</h2>
   <p align="left" property="term:description">This map shows dekadal (10-day) rainfall estimates as the difference from the short term average (from 2000 to last recent complete year). Positive (negative) values indicate dekadal estimates that are above (below) the short-term average rainfall.</p>
 <p> The Rainfall Estimate Differences (RED) values are different from conventional rainfall anomalies because they are based on a short-term average and not the typical long-term (e.g., 30-year) average. This comparison provides insight into changes in malaria risk relative to a recent historical perspective. </p>
-<p> Rainfall, especially in dry lands (warm semi-arid and desert fringe areas), is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites. </p>
+<p> Rainfall, especially in warm semi-arid and desert fringe areas, is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites. </p>
 
 <p> Rainfall estimates expressed as percentages of the short-term average can be viewed on the Rainfall Estimate Percentages (<a class="href" href="../REP/index.html">REP</a>) map page.
 </p>

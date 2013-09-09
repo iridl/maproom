@@ -152,14 +152,12 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Dekadal (10-day) Precipitation </h2>
-  <p align="left" property="term:description">This map shows precipitation based on dekadal (10-day) precipitation estimates from the Climate Prediction Center. </p>
+  <p align="left" property="term:description">This map shows dekadal (10-day) precipitation estimates from the Climate Prediction Center. </p>
   
-<p> Precipitation, especially in dry lands (warm semi-arid and desert fringe areas), is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites. Monitoring precipitation on short term time scales (1-2 weeks) may aid in determining the location and timing of a potential outbreak.
+<p> Precipitation, especially in warm semi-arid and desert fringe areas, is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites. Monitoring precipitation on short term time scales (1-2 weeks) may aid in determining the location and timing of a potential outbreak.
 </p>	
 
 
-<p>Epidemic outbreaks can occur in these dry land regions and can be severe soon after periods of drought and poor food security. 
-</p>
 <h4>References</h4>
 <p>
 Grover-Kopec E., Kawano M., Klaver R. W., Blumenthal B., Ceccato P., Connor S. J. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC548290/">An online operational rainfall-monitoring resource for epidemic malaria early warning systems in Africa</a>. <i>Malaria Journal</i>, 2005, <b>4</b>:6.
