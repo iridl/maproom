@@ -150,9 +150,11 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
-  <p align="left" property="term:description">The Moderate Resolution Imaging Spectrometer (MODIS) Analysis Tool allows for maps of estimated vegetation to be produced. Two vegetation indices are provided: NDVI, EVI in addition to the reflectance values for the blue, red, near infrared and middle infrared channels. Images are available for western Africa, eastern Africa and southern Africa. 
-
+  <p align="left" property="term:description">The Moderate Resolution Imaging Spectrometer (MODIS) Analysis Tool allows for maps of estimated vegetation to be produced. Two vegetation indices are provided: NDVI, EVI in addition to the reflectance values for the blue, red, near infrared and middle infrared channels. 
 </p>
+
+
+
 <dl class="datasetdocumentation">
 <dt>NDVI</dt> <dd>The Normalized Difference Vegetation Index (NDVI) is the ratio between the difference of red and near-Infrared (NIR) divided by the sum of red and near-Infrared reflectances. The index provides some information on healthy vegetation by examining their difference in wavelength absorption and reflectance. Healthy vegetation growth, such as forests, will yield high NDVI values closer to 1 while low vegetation will yield values close to 0.2.</dd>
 
@@ -162,6 +164,9 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 <p><dt>Reflectance</dt> <dd> Using simultaneous exploitation of MIR, NIR, and Red wavelengths in a Red-Green-Blue color space, reflectance images allow for a more robust and reliable qualitative discrimination between land surfaces with sparse vegetation and those without vegetation.  Land surfaces such as water bodies can also be accurately mapped. The user can follow the spatio-temporal dynamic of green vegetation and identify water bodies using the combination of MIR, NIR and Red channels.
 </dd></p>
 <p>NDVI and EVI are useful to estimate the presence of vegetation, but are subject to intrinsic commission and omission errors which lead to potential misrepresentation of land surfaces. To improve the retrieval of vegetation properties, reflectance values in the Blue, Red, near-Infrared (NIR) and Middle Infrared (MIR) channels can be used.
+</p>
+<p>
+Images are available for western Africa, eastern Africa and southern Africa. 
 </p>
 </dl>
 </div>

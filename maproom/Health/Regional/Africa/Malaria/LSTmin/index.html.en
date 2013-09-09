@@ -148,10 +148,10 @@ b) Same as (a) for the current calendar year (thick black line), as indicated by
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Minimum Land Surface Temperature (LST)</h2>
-  <p align="left" property="term:description">The Malaria Early Warning System (MEWS) consists of an integrated framework that utilizes climate forecasting and environmental monitoring products in order to provide warning to a potential outbreak of malaria.</p>
+  <p align="left" property="term:description">This map shows minimum land surface temperature (LST) used as a proxy for monitoring minimum air temperature. </p>
 
-<p>This map shows minimum land surface temperature (LST) used as a proxy for monitoring minimum air temperature.  Minimum air temperature is one important component for the transmission of malaria.</p>
-<p>Minimum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors.  A minimum air temperature of 18 °C is necessary for vector development and potential malaria transmission.</p> 
+
+<p>Minimum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors. A minimum air temperature of 18 °C or greater is necessary for vector development and potential malaria transmission.</p> 
 
 <h4>References:</h4>
 

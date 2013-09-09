@@ -162,7 +162,7 @@ elev <span class="iridl:value"></span>
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Inferred Maximum Air Temperature at 2m</h2>
-  <p align="left" property="term:description">The map shows inferred maximum air temperature, one important component for the transmission of malaria. </p>
+  <p align="left" property="term:description">The map shows inferred maximum air temperature.  </p>
 
 <p>Maximum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors. Maximum air temperature values of 32°C act as the upper limit for vector development and potential malaria transmission.</p>
 
