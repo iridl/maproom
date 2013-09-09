@@ -98,7 +98,7 @@ display: none;
 
             <fieldset class="navitem valid" id="threshMenu"><legend>SPI Threshold</legend><span class="selectvalue"></span><select class="pageformcopy" name="threshold"><option value="2.5">2.5</option><option value="2.0">2.0</option><option value="1.5">1.5</option><option value="1.0">1.0</option><option value="0.5">0.5</option><option value="0.0">0.0</option><option value="-0.5">-0.5</option><option value="-1.0">-1.0</option><option value="-1.5">-1.5</option><option value="-2.0">-2.0</option><option value="-2.5">-2.5</option></select><span class="colorbox"></span></fieldset>
 
-            <fieldset class="navitem valid" id="probMenu"><legend>Probability of Non-Exceedance</legend><span class="selectvalue"></span><select class="pageformcopy" name="margprob"><option>0.95</option><option>0.9</option><option>0.85</option><option>0.8</option><option>0.75</option><option>0.7</option><option>0.65</option><option>0.6</option><option>0.55</option><option>0.5</option><option>0.45</option><option>0.4</option><option>0.35</option><option>0.3</option><option>0.25</option><option>0.2</option><option>0.15</option><option>0.1</option><option>0.05</option></select></fieldset>
+            <fieldset class="navitem valid" id="probMenu"><legend>Probability of Non-Exceedance</legend><span class="selectvalue"></span><select class="pageformcopy" name="margprob"><option>0.95</option><option>0.9</option><option>0.85</option><option>0.8</option><option>0.75</option><option>0.7</option><option>0.65</option><option>0.6</option><option>0.55</option><option>0.5</option><option>0.45</option><option>0.4</option><option>0.35</option><option>0.3</option><option>0.25</option><option>0.2</option><option>0.15</option><option>0.1</option><option>0.05</option></select><span class="colorbox split"></span><span class="colorbox split"></span></fieldset>
 
  </div>
 <style>
@@ -122,18 +122,122 @@ background-color: white;
 }
 .colorbox.split {
 width: 7px;
+margin-right: 0px;
 }
-#threshMenu .selectvalue[value="-2.5"] + select + .colorbox {background-color: rgba(115,0,0,.5);}
-#threshMenu .selectvalue[value="-2.0"] + select + .colorbox {background-color: rgba(230,0,0,.5);}
-#threshMenu .selectvalue[value="-1.5"] + select + .colorbox {background-color: rgba(230,152,0,.5);}
-#threshMenu .selectvalue[value="-1.0"] + select + .colorbox {background-color: rgba(255,211,127,.5);}
-#threshMenu .selectvalue[value="-0.5"] + select + .colorbox {background-color: rgba(255,255,0,.5);}
+.colorbox + .colorbox {
+margin-left: 0px;
+margin-right: 5px;
+}
+#threshMenu .selectvalue[value="-2.5"] + select + .colorbox {background-color: rgba(115,0,0,1.0);}
+#threshMenu .selectvalue[value="-2.0"] + select + .colorbox {background-color: rgba(230,0,0,1.0);}
+#threshMenu .selectvalue[value="-1.5"] + select + .colorbox {background-color: rgba(230,152,0,1.0);}
+#threshMenu .selectvalue[value="-1.0"] + select + .colorbox {background-color: rgba(255,211,127,1.0);}
+#threshMenu .selectvalue[value="-0.5"] + select + .colorbox {background-color: rgba(255,255,0,1.0);}
 #threshMenu .selectvalue[value="0.0"] + select + .colorbox {background-color: white;}
-#threshMenu .selectvalue[value="0.5"] + select + .colorbox {background-color: rgba(110,210,115,.5)}
-#threshMenu .selectvalue[value="1.0"] + select + .colorbox {background-color: rgba(20,170,25,.5);}
-#threshMenu .selectvalue[value="1.5"] + select + .colorbox {background-color: rgba(0,130,5,.5);}
-#threshMenu .selectvalue[value="2.0"] + select + .colorbox {background-color: rgba(0,100,0,.5);}
-#threshMenu .selectvalue[value="2.5"] + select + .colorbox {background-color: rgba(0,70,0,.5);}
+#threshMenu .selectvalue[value="0.5"] + select + .colorbox {background-color: rgba(110,210,115,1.0)}
+#threshMenu .selectvalue[value="1.0"] + select + .colorbox {background-color: rgba(20,170,25,1.0);}
+#threshMenu .selectvalue[value="1.5"] + select + .colorbox {background-color: rgba(0,130,5,1.0);}
+#threshMenu .selectvalue[value="2.0"] + select + .colorbox {background-color: rgba(0,100,0,1.0);}
+#threshMenu .selectvalue[value="2.5"] + select + .colorbox {background-color: rgba(0,70,0,1.0);}
+#probMenu .selectvalue[value="0.05"] + select + .colorbox {background-color: white;}
+#probMenu .selectvalue[value="0.1"] + select + .colorbox {background-color: white;}
+#probMenu .selectvalue[value="0.1"] + select + .colorbox + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.15"] + select + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.15"] + select + .colorbox + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.2"] + select + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.2] + select + .colorbox + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.25"] + select + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.25] + select + .colorbox + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.3"] + select + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.3"] + select + .colorbox + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.35"] + select + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.35"] + select + .colorbox + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.4"] + select + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.4"] + select + .colorbox + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.45"] + select + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.45"] + select + .colorbox + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.5"] + select + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.5"] + select + .colorbox + .colorbox {background-color: rgba(255,165,0,1.0);}
+
+#threshMenu .selectvalue[value="-2.5"] + select + .colorbox {background-color: rgba(115,0,0,1.0);}
+#threshMenu .selectvalue[value="-2.0"] + select + .colorbox {background-color: rgba(230,0,0,1.0);}
+#threshMenu .selectvalue[value="-1.5"] + select + .colorbox {background-color: rgba(230,152,0,1.0);}
+#threshMenu .selectvalue[value="-1.0"] + select + .colorbox {background-color: rgba(255,211,127,1.0);}
+#threshMenu .selectvalue[value="-0.5"] + select + .colorbox {background-color: rgba(255,255,0,1.0);}
+#threshMenu .selectvalue[value="0.0"] + select + .colorbox {background-color: white;}
+#threshMenu .selectvalue[value="0.5"] + select + .colorbox {background-color: rgba(110,210,115,1.0)}
+#threshMenu .selectvalue[value="1.0"] + select + .colorbox {background-color: rgba(20,170,25,1.0);}
+#threshMenu .selectvalue[value="1.5"] + select + .colorbox {background-color: rgba(0,130,5,1.0);}
+#threshMenu .selectvalue[value="2.0"] + select + .colorbox {background-color: rgba(0,100,0,1.0);}
+#threshMenu .selectvalue[value="2.5"] + select + .colorbox {background-color: rgba(0,70,0,1.0);}
+#probMenu .selectvalue[value="0.05"] + select + .colorbox {background-color: white;}
+#probMenu .selectvalue[value="0.1"] + select + .colorbox {background-color: white;}
+#probMenu .selectvalue[value="0.1"] + select + .colorbox + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.15"] + select + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.15"] + select + .colorbox + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.2"] + select + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.2] + select + .colorbox + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.25"] + select + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.25] + select + .colorbox + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.3"] + select + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.3"] + select + .colorbox + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.35"] + select + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.35"] + select + .colorbox + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.4"] + select + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.4"] + select + .colorbox + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.45"] + select + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.45"] + select + .colorbox + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.5"] + select + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.5"] + select + .colorbox + .colorbox {background-color: rgba(255,165,0,1.0);}
+
+#threshMenu .selectvalue[value="-2.5"] + select + .colorbox {background-color: rgba(115,0,0,1.0);}
+#threshMenu .selectvalue[value="-2.0"] + select + .colorbox {background-color: rgba(230,0,0,1.0);}
+#threshMenu .selectvalue[value="-1.5"] + select + .colorbox {background-color: rgba(230,152,0,1.0);}
+#threshMenu .selectvalue[value="-1.0"] + select + .colorbox {background-color: rgba(255,211,127,1.0);}
+#threshMenu .selectvalue[value="-0.5"] + select + .colorbox {background-color: rgba(255,255,0,1.0);}
+#threshMenu .selectvalue[value="0.0"] + select + .colorbox {background-color: white;}
+#threshMenu .selectvalue[value="0.5"] + select + .colorbox {background-color: rgba(110,210,115,1.0)}
+#threshMenu .selectvalue[value="1.0"] + select + .colorbox {background-color: rgba(20,170,25,1.0);}
+#threshMenu .selectvalue[value="1.5"] + select + .colorbox {background-color: rgba(0,130,5,1.0);}
+#threshMenu .selectvalue[value="2.0"] + select + .colorbox {background-color: rgba(0,100,0,1.0);}
+#threshMenu .selectvalue[value="2.5"] + select + .colorbox {background-color: rgba(0,70,0,1.0);}
+#probMenu .selectvalue[value="0.05"] + select + .colorbox {background-color: white;}
+#probMenu .selectvalue[value="0.1"] + select + .colorbox {background-color: white;}
+#probMenu .selectvalue[value="0.1"] + select + .colorbox + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.15"] + select + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.15"] + select + .colorbox + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.2"] + select + .colorbox {background-color: rgba(238,232,170,1.0);}
+#probMenu .selectvalue[value="0.2] + select + .colorbox + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.25"] + select + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.25] + select + .colorbox + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.3"] + select + .colorbox {background-color: rgba(238,221,130,1.0);}
+#probMenu .selectvalue[value="0.3"] + select + .colorbox + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.35"] + select + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.35"] + select + .colorbox + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.4"] + select + .colorbox {background-color: rgba(255,255,0,1.0);}
+#probMenu .selectvalue[value="0.4"] + select + .colorbox + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.45"] + select + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.45"] + select + .colorbox + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.5"] + select + .colorbox {background-color: rgba(255,215,0,1.0);}
+#probMenu .selectvalue[value="0.5"] + select + .colorbox + .colorbox {background-color: rgba(255,165,0,1.0);}
+#probMenu .selectvalue[value="0.55"] + select + .colorbox {background-color: rgba(255,165,0,1.0);}
+#probMenu .selectvalue[value="0.55"] + select + .colorbox + .colorbox {background-color: rgba(255,165,0,1.0);}
+#probMenu .selectvalue[value="0.6"] + select + .colorbox {background-color: rgba(255,165,0,1.0);}
+#probMenu .selectvalue[value="0.6"] + select + .colorbox + .colorbox {background-color: rgba(255,140,0,1.0);}
+#probMenu .selectvalue[value="0.65"] + select + .colorbox {background-color: rgba(255,140,0,1.0);}
+#probMenu .selectvalue[value="0.65"] + select + .colorbox + .colorbox {background-color: rgba(255,140,0,1.0);}
+#probMenu .selectvalue[value="0.7"] + select + .colorbox {background-color: rgba(255,140,0,1.0);}
+#probMenu .selectvalue[value="0.7"] + select + .colorbox + .colorbox {background-color: rgba(235,80,80,1.0);}
+#probMenu .selectvalue[value="0.75"] + select + .colorbox {background-color: rgba(235,80,80,1.0);}
+#probMenu .selectvalue[value="0.75"] + select + .colorbox + .colorbox {background-color: rgba(235,80,80,1.0);}
+#probMenu .selectvalue[value="0.8"] + select + .colorbox {background-color: rgba(235,80,80,1.0);}
+#probMenu .selectvalue[value="0.8"] + select + .colorbox + .colorbox {background-color: rgba(255,30,30,1.0);}
+#probMenu .selectvalue[value="0.85"] + select + .colorbox {background-color: rgba(255,30,30,1.0);}
+#probMenu .selectvalue[value="0.85"] + select + .colorbox + .colorbox {background-color: rgba(255,30,30,1.0);}
+#probMenu .selectvalue[value="0.9"] + select + .colorbox {background-color: rgba(255,30,30,1.0);}
+#probMenu .selectvalue[value="0.9"] + select + .colorbox + .colorbox {background-color: rgba(200,5,40,1.0);}
+#probMenu .selectvalue[value="0.95"] + select + .colorbox {background-color: rgba(200,5,40,1.0);}
+#probMenu .selectvalue[value="0.95"] + select + .colorbox + .colorbox {background-color: rgba(200,5,40,1.0);}
 @media only all and (max-width: 750px) {
 .colorbox {
 width: 10px;
