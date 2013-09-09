@@ -153,6 +153,8 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
   <p align="left" property="term:description">The Moderate Resolution Imaging Spectrometer (MODIS) Analysis Tool allows for maps of estimated vegetation to be produced. Two vegetation indices are provided: NDVI, EVI in addition to the reflectance values for the blue, red, near infrared and middle infrared channels. 
 </p>
 
+<p> In some semi-arid regions of eastern Africa, precipitation has been found to have a 2-3 month lagged correlation with malaria incidence. Due to the lack of station data and because of the lagged nature of precipitation yielding lagged plant growth, vegetation indicies have been used as a proxy measure to forecast malaria.</p>
+
 
 
 <dl class="datasetdocumentation">
@@ -169,6 +171,13 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 Images are available for western Africa, eastern Africa and southern Africa. 
 </p>
 </dl>
+
+<h4>References:</h4>
+<p>Ceccato, P., et.al. (2007). <a href="http://portal.iri.columbia.edu/portal/server.pt/gateway/PTARGS_0_2_3864_0_0_18/AMJTMH.pdf">Malaria stratification, climate, and epidemic early warning in Eritrea.</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
+
+<i>American Journal of Tropical Medicine and Hygiene</i>, 2007, <b77</b>:61-68.
+</p>
+
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
