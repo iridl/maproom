@@ -72,10 +72,10 @@ width: 30%;
 text-align: center;
 font-weight: bold
 }
-.mapselPrecip #tempGraphs {
+body[mapsel="Precip"] #tempGraphs {
 display: none;
 }
-.mapselTemp #precipGraphs {
+body[mapsel="Temp"] #precipGraphs {
 display: none;
 }
 </style>
@@ -90,7 +90,7 @@ display: none;
 <input class="share prcpsta station" name="region" type="hidden" />
 <input class="share tempsta station" name="region" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
-<input class="carry dlimg share bodyClass" name="mapsel" type="hidden" value="Precip" />
+<input class="carry dlimg share bodyAttribute" name="mapsel" type="hidden" value="Precip" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startyr" type="hidden" value="1901" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startmon" type="hidden" value="Jan" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="endmon" type="hidden" value="Mar" />
