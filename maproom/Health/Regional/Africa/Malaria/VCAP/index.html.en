@@ -123,7 +123,8 @@ Observations for <span class="bold iridl:long_name"></span>
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Vectorial Capacity </h2>
-<p align="left" property="term:description">This map shows a Vectorial Capacity (VCAP) model that defines rainfall and temperature as the limiting factors of malaria incidence. VCAP is the daily rate at which future malaria inoculations could arise from a currently infected case. It is used as a convenient way to express malaria transmission risk or receptivity of an area to malaria (Ceccato et al., 2012).</p>
+<p align="left" property="term:description">This map shows a Vectorial Capacity (VCAP) model that defines rainfall and temperature as the limiting factors of malaria incidence. VCAP is the daily rate at which future malaria inoculations could arise from a currently infected case.</p>
+<p> It is used as a convenient way to express malaria transmission risk or receptivity of an area to malaria </p>
 
 
 <h4>References</h4>
