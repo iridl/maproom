@@ -144,7 +144,7 @@ The four elements are Vulnerability, Seasonal Climate Forecasts, Monitoring the 
 <meta property="maproom:Sort_Id" content="e13" />
 <a rel="canonical"  href="http://www.drugresistancemaps.org/"></a>
 <p property="term:title">Drug Resistance</p>
-<p property="term:description">Drug Resistance Maps is a project that maps the geographical distribution of resistance genes of malaria in Africa. The maps were developed by the London School of Hygiene and Tropical Medicine.</p>
+<p property="term:description">Drug Resistance Maps is a project that maps the geographical distribution of resistance genes of malaria in Africa. These maps were developed by the London School of Hygiene and Tropical Medicine.</p>
 
 
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
@@ -168,7 +168,7 @@ The four elements are Vulnerability, Seasonal Climate Forecasts, Monitoring the 
 <meta property="maproom:Sort_Id" content="e13" />
 <a rel="canonical"  href="http://www.promedmail.org/"></a>
 <p property="term:title">Monitoring Emerging Diseases</p>
-<p property="term:description">ProMED (The Program for Monitoring Emerging Diseases) is dedicated to rapid global dissemination of information on outbreaks of infectious diseases. By providing early warning of outbreaks of emerging and re-emerging diseases, public health precautions at all levels can be taken in a timely manner to prevent epidemic transmission and to save lives.</p>
+<p property="term:description">The Program for Monitoring Emerging Diseases (ProMED) is dedicated to rapid global dissemination of information on outbreaks of infectious diseases. By providing early warning of outbreaks of emerging and re-emerging diseases, public health precautions at all levels can be taken in a timely manner to prevent epidemic transmission and to save lives.</p>
 
 
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
