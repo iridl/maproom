@@ -33,7 +33,7 @@
   "term:label": "América del Sur"
 },
 { "irigaz:id": "bb:-125:0:-50:28:bb",
-  "term:label": "Caribbean"
+  "term:label": "el Caribe"
 },
 { "irigaz:id": "bb:100:-60:300:60:bb",
   "term:label": "Pacífico"
