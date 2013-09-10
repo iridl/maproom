@@ -72,10 +72,10 @@ width: 30%;
 text-align: center;
 font-weight: bold
 }
-.mapselPrecip #tempGraphs {
+body[mapsel="Precip"] #tempGraphs {
 display: none;
 }
-.mapselTemp #precipGraphs {
+body[mapsel="Temp"] #precipGraphs {
 display: none;
 }
 </style>
@@ -90,7 +90,7 @@ display: none;
 <input class="share prcpsta station" name="region" type="hidden" />
 <input class="share tempsta station" name="region" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
-<input class="carry dlimg share bodyClass" name="mapsel" type="hidden" value="Precip" />
+<input class="carry dlimg share bodyAttribute" name="mapsel" type="hidden" value="Precip" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startyr" type="hidden" value="1901" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startmon" type="hidden" value="Jan" />
 <input class="carry dlimg dlimgts share prcpfilter tempfilter" name="endmon" type="hidden" value="Mar" />
@@ -115,8 +115,15 @@ display: none;
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#World_Bank"><span property="term:label">World Bank</span></legend>
             </fieldset>
-            <fieldset class="navitem" id="chooseRegion">
+            <fieldset class="navitem"> 
                 <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">Global</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
             </fieldset>
 
             <fieldset class="navitem"><legend>Select Variable</legend><span class="selectvalue"></span><select class="pageformcopy" name="mapsel"><option value="Temp">GHCN Temperature</option><option value="Precip">GHCN Precipitation</option></select></fieldset>
