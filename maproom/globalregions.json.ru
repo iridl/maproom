@@ -32,6 +32,9 @@
 { "irigaz:id": "bb:-90:-60:-30:15:bb",
   "term:label": "Южная Америка"
 },
+{ "irigaz:id": "bb:-125:0:-50:28:bb",
+  "term:label": "Caribbean"
+},
 { "irigaz:id": "bb:100:-60:300:60:bb",
   "term:label": "Тихий Океан"
 }
