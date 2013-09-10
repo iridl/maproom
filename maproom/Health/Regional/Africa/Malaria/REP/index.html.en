@@ -112,7 +112,7 @@ WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Ep
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<dd>REP maps are produced every 10 days on an 11 km spatial resolution basis. Dekadal estimates and short-term averages are derived from the Climate Prediction Center/Famine Early Warning System. Areas where the average accumulation for the selected dekad is less than 7 mm are not shown in the analysis.</dd>
+<p>REP maps are produced every 10 days on an 11 km spatial resolution basis. Dekadal estimates and short-term averages are derived from the Climate Prediction Center/Famine Early Warning System. Areas where the average accumulation for the selected dekad is less than 7 mm are not shown in the analysis.</p>
 <h4>Rainfall Estimates Percentages</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>

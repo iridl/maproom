@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>MODIS Analysis Tool</title>
+<title>Measures of Vegetation</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
@@ -149,11 +149,14 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28.reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange/.auxfig+//T/3567.0/plotvalue/Y/-9.5446024E-04/39.99889/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
-  <p align="left" property="term:description">The Moderate Resolution Imaging Spectrometer (MODIS) Analysis Tool allows for maps of estimated vegetation to be produced. Two vegetation indices are provided: NDVI, EVI in addition to the reflectance values for the blue, red, near infrared and middle infrared channels. 
+ <h2 align="center" property="term:title">Measures of Vegetation</h2>
+  <p align="left" property="term:description">This Analysis Tool allows for maps of estimated vegetation to be produced. 
 </p>
 
 <p> In some semi-arid regions of eastern Africa, precipitation has been found to have a 2-3 month lagged correlation with malaria incidence. Due to the lack of station data and because of the lagged nature of precipitation yielding lagged plant growth, vegetation indicies have been used as a proxy measure to forecast malaria.</p>
+
+<p>  Two vegetation indices are provided: NDVI, EVI in addition to the reflectance values for the blue, red, near infrared and middle infrared channels. Each index is derived from data provided from The Moderate Resolution Imaging Spectrometer (MODIS), a key instrument aboard NASA's Terra and Aqua satellites.</p>
+
 
 
 
