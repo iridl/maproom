@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Inferred Maximum Air Temperature at 2m</title>
+<title>Inferred Maximum Air Temperature</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" /> -->
@@ -161,12 +161,14 @@ elev <span class="iridl:value"></span>
 
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Inferred Maximum Air Temperature at 2m</h2>
-  <p align="left" property="term:description">The map shows inferred maximum air temperature.  </p>
+ <h2 align="center" property="term:title">Inferred Maximum Air Temperature</h2>
+  <p align="left" property="term:description">The map shows approximated maximum air temperatures at 2 meters above the ground.</p>
 
 <p>Maximum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors. Maximum air temperature values of 32°C act as the upper limit for vector development and potential malaria transmission.</p>
 
-<p>The temperatures shown are estimated by combining nighttime land surface temperatures (LST) with diurnal cycle values.</p>
+<p>Due to confounding geophysical variables, it is difficult to estimate the maximum temperature of certain location using satellites. Studies have validated satellite based daily low surface temperature with nearby stations. To create a product that gives the best estimate of maximum air temperature, values shown are estimated by combining nighttime land surface temperatures (LST) with known diurnal cycle values. The diurnal cycle is the name of the change in temperature throughout the course of 24 hours at a single location.</p>
+
+
 <p> The black points on the map indicate locations of weather stations.</p>
 
 <h4>References:</h4>
