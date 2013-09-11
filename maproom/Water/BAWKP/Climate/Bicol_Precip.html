@@ -157,16 +157,16 @@ display: none;
 .yearlyStat #pET5 {
 display: none;
 }
-.resolution #aphrodite {
+.datasource #aphrodite {
 display: none;
 }
-.resolutioniridsSOURCESIRIAnalysesTailoredPhilippinesprecipitationPAGASA_precipitationds #aphrodite {
+.datasourceiridsSOURCESIRIAnalysesTailoredPhilippinesprecipitationPAGASA_precipitationds #aphrodite {
 display: none;
 }
-.resolution025 #pagasa {
+.datasource025 #pagasa {
 display: none;
 }
-.resolution050 #pagasa {
+.datasource050 #pagasa {
 display: none;
 }
 </style>
@@ -174,12 +174,13 @@ display: none;
 <body xml:lang="en">
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
-<input class="dlimg dlauximg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
-<input class="share dlimgts dlimgloc dlimglocclick station" name="region" type="hidden" />
+<input class="dlimg dlauximg share dlimgloc dlimglocsta dlimglocclick" name="bbox" type="hidden" />
+<input class="share dlimgts dlimgloc dlimglocclick dlimglocsta station" name="region" type="hidden" />
+<input class="share dlimgts dlimgloc dlimglocclick dlimglocnosta" name="region" type="hidden" />
 <input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="432" />
 <input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" value="1977" />
-<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" value="2008" />
+<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" value="2007" />
 <input class="carry dlimg dlauximg share dlimgts" name="seasonStart" type="hidden" value="Jan" />
 <input class="carry dlimg dlauximg share dlimgts" name="seasonEnd" type="hidden" value="Jan" />
 <input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" value="1" />
@@ -193,9 +194,13 @@ display: none;
 <input class="dlimg share pET" name="probExcThresh1" type="hidden" value="150." />
 <input class="dlimg share pET" name="probExcThresh2" type="hidden" value="30." />
 <input class="dlimg share pET" name="probExcThresh3" type="hidden" value="10." />
-<input class="dlimg share pET" name="probExcThresh4" type="hidden" value="3." /><input class="dlimg share pET" name="probExcThresh5" type="hidden" value="3." />
-<input class="pickarea dlimg dlauximg dlimgts bodyClass" name="resolution" type="hidden" value="irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:ds" />
+<input class="dlimg share pET" name="probExcThresh4" type="hidden" value="3." />
+<input class="dlimg share pET" name="probExcThresh5" type="hidden" value="3." />
+<input class="pickarea1 dlimg dlauximg bodyClass" name="resolution" type="hidden" value="irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:ds" />
+<input class="pickarea2 dlimg dlauximg bodyClass" name="resolution" type="hidden" value="0.25" />
+<input class="dlimg dlauximg bodyClass" name="datasource" type="hidden" value="irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:ds" />
 </form>
+
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
                 <legend>Water Management</legend>
@@ -204,11 +209,10 @@ display: none;
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Climate_term"><span property="term:label">Climate</span></legend>
             </fieldset>
-            <fieldset class="navitem"><legend><span id="pagasa">Seasons (1977 to 2008)</span>
- 					      <span id="aphrodite">Seasons (1951 to 2007)</span> 
+            <fieldset class="navitem"><legend>Seasons (1977 to 2007)
 </legend>
 
-            <select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1977" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2008" size="4" maxlength="4"/></fieldset>
+            <select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1977" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2007" size="4" maxlength="4"/></fieldset>
             <fieldset class="navitem"><legend>Seasonal daily statistics</legend><select class="pageformcopy" name="seasonalStat"><option value="TotRain">Total Rainfall</option><option value="NumWD">Number of Wet Days</option><option value="RainInt">Rainfall Intensity</option><option value="NumDS">Number of Dry Spells</option><option value="NumWS">Number of Wet Spells</option><option value="PerDA">Percentage of Data Available</option></select></fieldset>            <fieldset class="navitem" id="yearlyStat"><legend>Yearly seasonal statistics</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Mean</option><option value="StdDev">Standard deviation</option><option value="PoE">Probability of exceeding</option></select><span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="150" size="3" maxlength="3"/>mm</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="30" size="3" maxlength="3"/>days</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="10" size="2" maxlength="2"/>mm/day</span><span id="pET4"><input class="pageformcopy" name="probExcThresh4" type="text" value="3" size="2" maxlength="2"/>spells</span><span id="pET5"><input class="pageformcopy" name="probExcThresh5" type="text" value="3" size="2" maxlength="2"/>spells</span>
 </fieldset>
 
@@ -217,11 +221,13 @@ display: none;
 
             <fieldset class="navitem"><legend>Wet/Dry Spell definition</legend><input class="pageformcopy" name="spellThreshold" type="text" value="5" size="2" maxlength="2"/>continuous wet/dry days</fieldset>
 
-<fieldset class="navitem"><legend>Resolution</legend><select class="pageformcopy" name="resolution">
+<fieldset class="navitem"><legend>Resolution</legend><select class="pageformcopy" name="datasource">
 <option value="irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:ds">stations</option>
 <option value="0.25">girdded 0.25˚</option>
-<option value="0.50">gridded 0.50˚</option>
+<!-- <option value="0.50">gridded 0.50˚</option> -->
 </select></fieldset>
+
+            <fieldset class="navitem" id="aphrodite"><legend>Mask interpolated values</legend><select class="pageformcopy" name="obsOnly"><option value="off">off</option><option value="on">on</option></select></fieldset>
 
 </div>
 
@@ -234,6 +240,44 @@ display: none;
     </ul>
 
 <fieldset class="regionwithinbbox dlimage" about="">
+<div style="float: left;">
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:122%2C11.3%2C124.8%2C15%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES%5B%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:STNID%401:ds%29%28bb:123%2C13%2C123.1%2C13.1%29%5D//region/parameter/%7Bgeoobject%7Dforall/X/Y/fig-/lightgrey/mask/black/countries_gaz/red/geometrypushpins/blue/fill/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0.1/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+gif" />
+</div>
+<div style="display: inline-block; text-align: top;">
+<div class="valid" style="text-align: top;">
+<a class="station" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template" style="color : red">
+PAGASA Station <b><span class="iridl:long_name"></span></b>
+</div>
+</div>
+<div class="valid" style="text-align: top;">
+<a class="station" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/.PAGASA_precipitation/STNID/%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:STNID%401:ds%29//region/parameter/geoobject/.STNID/.first/VALUE/lon/lat/elev/3/ds/info.json"></a>
+
+<script type="application/json" property="iridl:hasPUREdirective">
+{"tr": {
+ "var&lt;-iridl:hasDependentVariables": {
+  "td.name": "var.iridl:name",
+ "td.name@class+": "var.iridl:name",
+ "+td.value": "var.iridl:value",
+"td.value@class+": "var.iridl:name"
+}
+}
+}
+</script>
+<div class="template">
+<table><tr style="color : red"><td class="name "></td><td class="value "></td></tr></table>
+</div>
+</div>
+<div class="valid" style="text-align: top;">
+<a class="dlimglocnosta" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template" style="color : blue">
+APHRODITE Observations for <b><span class="iridl:long_name"></span></b>
+</div>
+</div>
+
+<!--
+<fieldset class="regionwithinbbox dlimage" about="">
+<span id="pagasa">
 <div style="float: left;">
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:122%2C11.3%2C124.8%2C15%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28pt:118:5:pt%29//region/parameter/geoobject/X/Y/fig-/lightgrey/mask/black/countries_gaz/red/geometrypushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0.1/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
 </div>
@@ -263,16 +307,29 @@ PAGASA Station <b><span class="iridl:long_name"></span></b>
 </div>
 </div>
 </div>
+</span>
+<span id="aphrodite">
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:122%2C11.3%2C124.8%2C15%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:88%2C20.5%2C88%2C20.5%29dup//region/parameter/dup//bbox/get_parameter/eq/%7Bpop%7D%7Bnip%7Difelse/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/admin2_gaz/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<div class="valid" style="display: inline-block; text-align: top;">
+<a class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">
+APHRODITE Observations for <span class="bold iridl:long_name"></span>
+</div>
+</div>
+</span>
+-->
+
+
 <br />
 <div class="dlimgtsbox">
-<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.PAGASA/.daily/.stations/T/%281977%29//YearStart/parameter/%282008%29//YearEnd/parameter/RANGEEDGES/%28TotRain%29//seasonalStat/parameter/%28PerDA%29eq/%7B.prcp/dataflag%7Dif/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%285%29//spellThreshold/parameter/interp/%281%29//wetThreshold/parameter/interp/%280.5%29//minFrac/parameter/interp//seasonalStat/get_parameter/%28TotRain%29eq/%7Bnip/nip/3/-1/roll/.prcp/3/-2/roll/flexseastotAvgFill%7Dif//seasonalStat/get_parameter/%28NumWD%29eq/%7B3/-1/roll/pop/4/-1/roll/.prcp/4/-3/roll/flexseasonalfreqGT%7Dif//seasonalStat/get_parameter/%28RainInt%29eq/%7B3/-1/roll/pop/4/-1/roll/.prcp/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28NumDS%29eq/%7B5/-1/roll/.prcp/5/-4/roll/flexseasonalnonoverlapDSfreq%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B5/-1/roll/.prcp/5/-4/roll/flexseasonalnonoverlapWSfreq%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7Bpop/pop/pop/exch/.prcp/exch/T/exch/0.0/seasonalAverage%7Dif/STNID/%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:STNID%401:ds%29//region/parameter/geoobject/.STNID/SAMPLE//seasonalStat/get_parameter/%28TotRain%29eq/%7B//long_name/%28Precipitation%29def//units/%28mm%29def%7Dif//seasonalStat/get_parameter/%28NumWD%29eq/%7B//long_name/%28count%29def%7Dif//seasonalStat/get_parameter/%28RainInt%29eq/%7B//long_name/%28Precipitation%29def//units/%28mm/day%29def%7Dif//seasonalStat/get_parameter/%28NumDS%29eq/%7B//long_name/%28count%29def//units/%28unitless%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B//long_name/%28count%29def//units/%28unitless%29def%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7B%28percent%29unitconvert//long_name/%28Availability%29def%7Dif/T/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.PAGASA/.daily/.stations/T/%281977%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%28TotRain%29//seasonalStat/parameter/%28PerDA%29eq/%7B.prcp/dataflag%7Dif/prcp/SOURCES/.RIHN/.aphrodite/.V1101/.APHRO_MA_025deg/X/122/124.8/RANGEEDGES/Y/11.3/15/RANGEEDGES/a:/.precip/%28off%29//obsOnly/parameter/%28on%29eq/%7B:a:/.rstn/0.0/maskle/0.0/mul/add%7Dif/:a/T/%281951%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%28TotRain%29//seasonalStat/parameter/%28PerDA%29eq/%7BSOURCES/.RIHN/.aphrodite/.V1101/.APHRO_MA_025deg/X/122/124.8/RANGEEDGES/Y/11.3/15/RANGEEDGES/.rstn/0.0/maskle/dataflag/nip%7Dif/2/array/astore/%7B%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%285%29//spellThreshold/parameter/interp/%281%29//wetThreshold/parameter/interp/%280.5%29//minFrac/parameter/interp//seasonalStat/get_parameter/%28TotRain%29eq/%7Bnip/nip/flexseastotAvgFill%7Dif//seasonalStat/get_parameter/%28NumWD%29eq/%7B3/-1/roll/pop/flexseasonalfreqGT%7Dif//seasonalStat/get_parameter/%28RainInt%29eq/%7B3/-1/roll/pop/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28NumDS%29eq/%7BflexseasonalnonoverlapDSfreq%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BflexseasonalnonoverlapWSfreq%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7Bpop/pop/pop/T/exch/0.0/seasonalAverage%7Dif%7Dforall%5B%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:STNID%401:ds%29%28bb:%5B123%2C13%2C123.25%2C13.25%5D%29%5D//region/parameter/%7Bgeoobject%7Dforall/3/-1/roll/exch%5BX/Y%5Dweighted-average/3/-2/roll/1/index/.STNID/exch/.STNID/SAMPLE/T/%28days%20since%201960-01-01%29streamgridunitconvert//fullname/%28PAGASA%20stations%29def/exch//fullname/%28APHRODITE%20gridbox%29def/2/array/astore/%7B//seasonalStat/get_parameter/%28TotRain%29eq/%7B//long_name/%28Precipitation%29def//units/%28mm%29def%7Dif//seasonalStat/get_parameter/%28NumWD%29eq/%7B//long_name/%28count%29def%7Dif//seasonalStat/get_parameter/%28RainInt%29eq/%7B//long_name/%28Precipitation%29def//units/%28mm/day%29def%7Dif//seasonalStat/get_parameter/%28NumDS%29eq/%7B//long_name/%28count%29def//units/%28unitless%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B//long_name/%28count%29def//units/%28unitless%29def%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7B%28percent%29unitconvert//long_name/%28Availability%29def%7Dif%7Dforall/T/fig-/medium/red/line/blue/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
 </div>
 </fieldset>
 
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/.PAGASA_precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/X/122/124.8/RANGEEDGES/Y/11.3/15/RANGEEDGES/X//lon/renameGRID/Y//lat/renameGRID/-1/min/6/-5/roll/lon/lat/fig-/white/mask/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef/"></a>
-<img class="dlimg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/.PAGASA_precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/X/122/124.8/RANGEEDGES/Y/11.3/15/RANGEEDGES/X//lon/renameGRID/Y//lat/renameGRID/-1/min/6/-5/roll/lon/lat/fig-/white/mask/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef/+.gif" border="0" />
-<img class="dlauximg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/.PAGASA_precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/X/122/124.8/RANGEEDGES/Y/11.3/15/RANGEEDGES/X//lon/renameGRID/Y//lat/renameGRID/-1/min/6/-5/roll/lon/lat/fig-/white/mask/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//XOVY/null/psdef//antialias/true/psdef/.auxfig+.gif" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:ds%29//datasource/parameter/%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:ds%29eq/%7BSOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/.PAGASA_precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/X/122/124.8/RANGEEDGES/Y/11.3/15/RANGEEDGES/X//lon/renameGRID/Y//lat/renameGRID/-1/min/6/-5/roll/lon/lat/fig-/white/mask/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//XOVY/null/psdef//fntsze/15/psdef%7D%7BSOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/.APHRODITE_precipitation/.historical/X/122/124.8/RANGEEDGES/Y/11.3/15/RANGEEDGES/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//plotaxislength/500/psdef//antialias/true/psdef//framelabel//seasonalStat/get_parameter/%28PerDA%291/index/eq/not/%7B//yearlyStat/get_parameter/%28%20of%20%29append/exch/append%7Dif/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/%28%20over%20years%20from%20%29append//YearStart/get_parameter/append/%28%20to%20%29append//YearEnd/get_parameter/append/psdef//plotborderbottom/72/psdef%7Difelse//antialias/true/psdef/"></a>
+<img class="dlimg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:ds%29//datasource/parameter/%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:ds%29eq/%7BSOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/.PAGASA_precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/X/122/124.8/RANGEEDGES/Y/11.3/15/RANGEEDGES/X//lon/renameGRID/Y//lat/renameGRID/-1/min/6/-5/roll/lon/lat/fig-/white/mask/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//XOVY/null/psdef//fntsze/15/psdef%7D%7BSOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/.APHRODITE_precipitation/.historical/X/122/124.8/RANGEEDGES/Y/11.3/15/RANGEEDGES/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//plotaxislength/500/psdef//antialias/true/psdef//framelabel//seasonalStat/get_parameter/%28PerDA%291/index/eq/not/%7B//yearlyStat/get_parameter/%28%20of%20%29append/exch/append%7Dif/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/%28%20over%20years%20from%20%29append//YearStart/get_parameter/append/%28%20to%20%29append//YearEnd/get_parameter/append/psdef//plotborderbottom/72/psdef%7Difelse//antialias/true/psdef/+.gif" border="0" />
+<img class="dlauximg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:ds%29//datasource/parameter/%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:ds%29eq/%7BSOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/.PAGASA_precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/X/122/124.8/RANGEEDGES/Y/11.3/15/RANGEEDGES/X//lon/renameGRID/Y//lat/renameGRID/-1/min/6/-5/roll/lon/lat/fig-/white/mask/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//XOVY/null/psdef//fntsze/15/psdef%7D%7BSOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/APHRODITE_precipitation/.historical/X/122/124.8/RANGEEDGES/Y/11.3/15/RANGEEDGES/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//plotaxislength/500/psdef//antialias/true/psdef//framelabel//seasonalStat/get_parameter/%28PerDA%291/index/eq/not/%7B//yearlyStat/get_parameter/%28%20of%20%29append/exch/append%7Dif/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/%28%20over%20years%20from%20%29append//YearStart/get_parameter/append/%28%20to%20%29append//YearEnd/get_parameter/append/psdef//plotborderbottom/72/psdef%7Difelse//antialias/true/psdef/.auxfig+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">PAGASA/IRI Bicol Region Historical Precipitation Monitoring</h2>
@@ -303,12 +360,21 @@ the number of wet (dry) spells during the season according to the definitions in
 <b>Percentage of Data Available</b>: the percentage of days with non missing values within the season.
 <br /><br />
 <b>Yearly seasonal statistics</b>: a choice of yearly statistics over the chosen season of the selected range of years to produce the map among: the mean, the standard deviation and the probability of exceeding a user specified threshold.
+<br /><br />
+<b>Resolution</b>: a choice to map the yearly seasonal statistics of either the PAGASA meteorological stations or the 0.25˚ APHRODITE grid boxes.
+<br />
+<b>Mask</b>:
+In the case of APHRODITE, the dataset includes a record of the number of station data observations present for each gridbox on each day of the dataset. Gridbox-days without at least one observation can be masked prior to any calculations (masking so called interpolated values).
 </p>
 </div>
  <div id="tabs-3" class="ui-tabs-panel" about="">
  <h2 align="center">Dataset Documentation</h2>
   <p align="left">
 <b>Data</b>: daily stations precipitation from <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.PAGASA/.daily/.stations">PAGASA</a>: Philippine Atmospheric, Geophysical and Astronomical Services Administration.
+</p>
+<br /><br />
+  <p align="left">
+<b>Data</b>: RIHN aphrodite V1101 Monsoon Asia gridded daily precipitation <a href="http://iridl.ldeo.columbia.edu/SOURCES/.RIHN/.aphrodite/.V1101/">here</a>.
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
