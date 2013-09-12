@@ -15,7 +15,7 @@
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
 <!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" /> -->
-<link rel="canonical" href="index.html" />
+<link rel="canonical" href="Bicol_MODIS.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <meta property="maproom:Entry_Id" content="Agriculture_Bicol_MODIS" />
@@ -125,9 +125,9 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 </p>
 </fieldset>
 <fieldset class="dlimage">
-<a class="justsregion" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28.reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange/.auxfig+//T/3567.0/plotvalue/Y/-9.5446024E-04/39.99889/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef+.gif" />
+<a class="justsregion" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.SEAS/%28NDVI%29//var/parameter/interp/nip/X/122/124.8/RANGE/Y/11.3/15/RANGE/X/Y/fig-//var/get_parameter/%28reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.SEAS/%28NDVI%29//var/parameter/interp/nip/X/122/124.8/RANGE/Y/11.3/15/RANGE/X/Y/fig-//var/get_parameter/%28reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//antialias/true/psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.SEAS/%28NDVI%29//var/parameter/interp/nip/X/122/124.8/RANGE/Y/11.3/15/RANGE/X/Y/fig-//var/get_parameter/%28.reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange/.auxfig+//T/3567.0/plotvalue/Y/-9.5446024E-04/39.99889/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
@@ -158,24 +158,18 @@ Moderate Resolution Imaging Spectroradiometer
 <b>Note</b>:There is typically a 12- to 16-day delay between the end of the observation period for the latest data and the date when those data are received and displayed on this page.
 </dl>
 </div>
-<div class="ui-tabs-panel-hidden">
-<h2 align="center">Dataset</h2>
-<p>
-<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/">Access the dataset used to create this map.</a>
-</p>
-</div>
-<div id="tabs-4"  class="ui-tabs-panel">
+<div id="tabs-3"  class="ui-tabs-panel">
 <h2  align="center">Helpdesks</h2>
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
  </div>
-<div id="tabs-5"  class="ui-tabs-panel">
+<div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Instructions</h2>
 <p>
  The MODIS interface provides the ability to make graphs at a user-selected location across different resolutions of spatial averaging.   The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, 2 time series graphs will provide vegetation analyses of the past year and in comparison to the 5 most recent years. 
  </p>
- <p> By placing current vegetation in recent historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
+ <p> By placing current vegetation in recent historical context, comparisons can be made to past crop yields and useful early warning information can be developed using vegetation as a proxy for crop yield.
   </p>
  
 
