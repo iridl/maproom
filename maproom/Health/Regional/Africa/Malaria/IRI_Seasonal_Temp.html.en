@@ -140,11 +140,21 @@
 
 
 <p>
-This forecast is based on the teleconnection of Sea Surface Temperatures in the equatorial Pacific (ENSO) on global temperature patterns.
+Research has shown that the sea surface temperatures in the equatorial Pacific Ocean have global influence on temperature and precipitation patterns. 
+
+One of the advantages of using sea surface temperatures in the equatorial Pacific Ocean to predict air temperatures in far away places on the globe is the lagged "teleconnection" effect. Using teleconnections, or lagged effects of sea surface temperatures on air temperatures elsewhere, we can make forecasts with 1-6 month lead times. 
+
+This map uses that connection to produce global temperature forecasts for different seasons. 
 </p>
+
 <p>
 The seasonal forecast for above-, below- and near-normal temperatures from the IRI.</p>
+
+
+
+
 </div>
+
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 </div>

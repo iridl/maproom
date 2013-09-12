@@ -150,7 +150,7 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Measures of Vegetation</h2>
-  <p align="left" property="term:description">Using data from NASA's MODIS sensor, this tool allows for maps of estimated vegetation to be produced. 
+  <p align="left" property="term:description">Using data from NASA's MODIS sensor, this tool produces maps of estimated vegetation. 
 </p>
 
 <p> In some semi-arid regions of eastern Africa, precipitation has been found to have a 2-3 month lagged correlation with malaria incidence. Due to the lack of station data and because of the lagged nature of precipitation yielding lagged plant growth, vegetation indicies have been used as a proxy measure to forecast malaria.</p>
