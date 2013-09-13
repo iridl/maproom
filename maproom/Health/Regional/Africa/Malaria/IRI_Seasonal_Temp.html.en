@@ -140,11 +140,13 @@
 
 
 <p>
-Research has shown that the sea surface temperatures in the equatorial Pacific Ocean have global influence on temperature and precipitation patterns. 
+Research has shown that the sea surface temperatures in the equatorial Pacific Ocean have global influence on temperature and precipitation patterns.</p>
 
-One of the advantages of using sea surface temperatures in the equatorial Pacific Ocean to predict air temperatures in far away places on the globe is the lagged "teleconnection" effect. Using teleconnections, or lagged effects of sea surface temperatures on air temperatures elsewhere, we can make forecasts with 1-6 month lead times. 
+<p>One of the advantages of using sea surface temperatures in the equatorial Pacific Ocean to predict air temperatures in far away places on the globe is the lagged "teleconnection" effect.</p> 
 
-This map uses that connection to produce global temperature forecasts for different seasons. 
+<p>Using teleconnections, or lagged effects of sea surface temperatures on air temperatures elsewhere, we can make forecasts with 1-6 month lead times.</p>
+
+<p>This map uses that connection to produce global temperature forecasts for different seasons. 
 </p>
 
 <p>
@@ -172,17 +174,19 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Predictions in Context:  S
 </div>
 <div id="tabs-4" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Instructions</h2>
-<p align="left" property="term:description">The IRI Seasonal Forecast interface provides the ability to make graph at a user-selected location. </p>
+<p align="left" property="term:description">The IRI Seasonal Forecast interface allows for graphs to be made easily by pointing and clicking on a location anywhere in the world. </p>
 
 <p> 
-The graph shows the probability, or chance, that the month(s) being forecast will fal into certain categories.
+The graph shows the probability, or chance, that the target date being forecast will fall into certain categories relative to "normal" or average conditions.
 </p>
 <p>
 The three categories are below normal, normal and above normal. 
 </p>
 <p>
-"Normal" conditions are defined as the average temperature for the forecast month(s) at a given location since 1980.
+"Normal" conditions are defined as the average temperature for the forecast month(s) at the selected location since 1980.
 </p>
+
+<p> The interface also allows for the month in which the forecast was issued to be changed. This can be valuable when trying to determine how a forecast for a specific area at a fixed target date has changed from older forecast to newer forecast.</p> 
 </div>
 </div>
 <div class="optionsBar">
