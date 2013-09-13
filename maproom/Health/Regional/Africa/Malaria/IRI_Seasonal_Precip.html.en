@@ -143,7 +143,7 @@ Research has shown that the sea surface temperatures in the equatorial Pacific O
 <p>One of the advantages of using sea surface temperatures in the equatorial Pacific Ocean to predict precipitation in far away places on the globe is the lagged "teleconnection" effect.</p>
 <p>Using teleconnections, or lagged effects of sea surface temperatures on precipitation elsewhere, we can make forecasts with 1-6 month lead times.</p>
 
-<p>This map uses that connection to produce global precipitation forecasts for different seasons. 
+<p>This map uses that relationship to produce global precipitation forecasts for different seasons. 
 </p>
 
 
@@ -180,7 +180,7 @@ The three categories are below normal, normal and above normal.
 "Normal" conditions are defined as the average temperature for the forecast month(s) at the selected location since 1980.
 </p>
 
-<p> The interface also allows for the month in which the forecast was issued to be changed. This can be valuable when trying to determine how a forecast for a specific area at a fixed target date has changed from older forecast to newer forecast.</p>
+<p> The interface also allows for the month in which the forecast was issued to change. This may be useful to determine how a forecast for a specific area at a fixed target date has changed from older forecast to newer forecast.</p> 
 </div>
 </div>
 <div class="optionsBar">
