@@ -152,6 +152,36 @@ Research has shown that the sea surface temperatures in the equatorial Pacific O
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
+<p>IRI Seasonal Precipitation Forecasts are produced monthly on a 2.5 degree spatial resolution basis. </p>
+<h4>Rainfall Estimates Percentages</h4>
+<dl class="datasetdocumentation">
+<dt>Data</dt>
+<dd>Monthly total precipitation forecast on a 0.1 x 0.1 deg. lat/lon grid</dd>
+<dt>Data Source</dt><dd> Forecast Division from IRI: International Research Institute for Climate and Society
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/">CPC/FEWS RFE2.0</a>)*</dd>
+</dl>
+<h4>Monthly estimate of average precipitation</h4>
+<dl class="datasetdocumentation">
+<dt>Data</dt>
+<dd><b>Data</b>: monthly precipitation on a 2.5 x 2.5 deg. lat/lon grid
+<br /><b>Base Period</b>: 1 Jan 1981 to 31 Dec of last year</dd>
+<dt>Data Source</dt><dd> Forecast Division from IRI: International Research Institute for Climate and Society
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Climatologies/.c6998/.monthly/.prcp/">CPC/FEWS RFE2.0</a>)*</dd>
+</dl>
+
+<p>
+<font size="-1">*More dekadal and daily data from FEWS is available from the 
+<a href="http://igskmncnwb015.cr.usgs.gov/adds/">Africa Data Dissemination Service</a>.</font>
+</p>
+  
+
+
+
+
+
+
+
+
 </div>
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>

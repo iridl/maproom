@@ -164,7 +164,7 @@ b) Same as (a) for the current calendar year (thick black line), as indicated by
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<p align="center"> This map is a mosaic of MODIS images at 1km resolution, averaged over 8 days. Images are a product of the Aqua satellite and are courtesy of the United States Geological Survey.</p>
+<p> This map is a mosaic of MODIS images at 1km resolution, averaged over 8 days. Images are a product of the Aqua satellite and are courtesy of the United States Geological Survey.</p>
 
 
 <p><b><a class="carry"></a>8 day average minimum Land Surface Temperature</b><br /> <br />
