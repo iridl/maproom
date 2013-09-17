@@ -57,10 +57,9 @@ width: 95%;
 
 
 <p align="left" property="term:description">
-The Malaria Early Warning System (MEWS) aids in the prediction of malaria outbreaks. The system consists of four elements that may be used to determine the timing and severity of an outbreak.</p> 
+The Malaria Early Warning System (MEWS) aids in the prediction of malaria outbreaks. The system consists of four elements; Vulnerability, Seasonal Climate Forecasts, Monitoring the Environment and Observed Malaria morbidity. In certain regions, these products may be used to determine the timing and severity of an outbreak.</p> 
 
-<p>
-The four elements are Vulnerability, Seasonal Climate Forecasts, Monitoring the Environment and Observed Malaria morbidity. </p> 
+
 <p>Vulnerability and Observed Malaria morbidity reflect important socioeconomic aspects of malaria outbreaks. Seasonal Climate Forecasts and Monitoring the Environment result in climatic indicators of transmission risk. Climatic indicators can indicate an increased risk in vector (mosquito) development and in the development of the virus inside the vector. These are monitored on long and short-term time scales. Examples of such indicators include precipitation, temperature, and humidity.
 </p>
 
