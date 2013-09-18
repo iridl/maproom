@@ -65,7 +65,7 @@ display: inline-block
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climat et Santé</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Early Warning System de Paludisme</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Système d'Alerte Précoce Contre du Paludisme</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">Surveillance de l'environnement</span></legend>
@@ -148,7 +148,7 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/SOURCES/.Features/.Epidemiological/.Malaria/.Risk_map/.the_geom/X/Y/fig-/colors/red/stroke/grey/verythin/mews_dist/black/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig+//T/19231.5/plotvalue+//plotborder+72+psdef//plotaxislength+432+psdef//layers%5B//est_prcp//mews_prov//countries_gaz%5Dpsdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Malaria Early Warning System</h2>
+ <h2 align="center" property="term:title">Précipitations Estimées Décadaires </h2>
   <p align="left" property="term:description">This map shows dekadal (10-day) precipitation estimates from the Climate Prediction Center. </p>
   
 <p>

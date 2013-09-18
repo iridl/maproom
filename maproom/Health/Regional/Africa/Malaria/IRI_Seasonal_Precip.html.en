@@ -157,14 +157,14 @@ Research has shown that the sea surface temperatures in the equatorial Pacific O
 <dl class="datasetdocumentation">
 <dt>Data</dt>
 <dd>Monthly Total Precipitation Forecast on a 2.5 x 2.5 deg. lat/lon grid</dd>
-dt>Data Source</dt><dd> 
+<dt>Data Source</dt><dd> 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/">Forecast Division from IRI: International Research Institute for Climate and Society</a>)</dd>
 </dl>
-<h4>Climatology of Precipiation</h4>
+<h4>Climatology of Precipitation</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
 Monthly Temperature on a 2.5 x 2.5 deg. lat/lon grid
-<br /><b>Base Period</b>: 1 Jan 1981 to 31 Dec of last year</dd>
+<dd><b>Base Period</b>: 1 Jan 1981 to 31 Dec of last year</dd>
 <dt>Data Source</dt><dd>
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Climatologies/.c7100/.seasonal/.UEA_TS2p1/.deg0p5/.prcp/">Forecast Division from IRI: International Research Institute for Climate and Society</a>)</dd>
 </dl>

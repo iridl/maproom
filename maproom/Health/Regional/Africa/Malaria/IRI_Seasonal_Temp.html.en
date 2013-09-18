@@ -171,7 +171,7 @@ The seasonal forecast for above-, below- and near-normal temperatures from the I
 <dl class="datasetdocumentation">
 <dt>Data</dt>
 Monthly Temperature on a 2.5 x 2.5 deg. lat/lon grid
-<br /><b>Base Period</b>: 1 Jan 1971 to 31 Dec of last year</dd>
+<dd><b>Base Period</b>: 1 Jan 1971 to 31 Dec of last year</dd>
 <dt>Data Source</dt><dd>
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Climatologies/.c7100/.seasonal/.UEA_TS2p1/.deg0p5/.temp/">Forecast Division from IRI: International Research Institute for Climate and Society</a>)</dd>
 </dl>
