@@ -12,13 +12,14 @@
 <title>Climate and Health</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="es"
-            href="System.html?Set-Language=es" />
+            href="Historical.html?Set-Language=es" />
       <link class="altLanguage" rel="alternate" hreflang="fr"
-            href="System.html?Set-Language=fr" />
-      <link rel="canonical" href="System.html" />
+            href="Historical.html?Set-Language=fr" />
+  
 <link rel="canonical" href="Historical.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+ <meta property="maproom:Sort_Id" content="a02" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate_and_malaria_term" />
 <link rel="term:icon"
