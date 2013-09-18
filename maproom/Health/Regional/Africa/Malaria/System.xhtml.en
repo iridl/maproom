@@ -11,7 +11,11 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>Climate and Health</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
-
+<link class="altLanguage" rel="alternate" hreflang="es"
+            href="System.html?Set-Language=es" />
+      <link class="altLanguage" rel="alternate" hreflang="fr"
+            href="System.html?Set-Language=fr" />
+      <link rel="canonical" href="System.html" />
 <link rel="canonical" href="System.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -57,11 +61,11 @@ width: 95%;
 
 
 <p align="left" property="term:description">
-The Malaria Early Warning System (MEWS) aids in the prediction of malaria outbreaks. The system consists of four elements; Vulnerability, Seasonal Climate Forecasts, Monitoring the Environment and Observed Malaria morbidity. In certain regions, these products may be used to determine the timing and severity of an outbreak.</p> 
+The Malaria Early Warning System (MEWS) aids in the prediction of malaria outbreaks. The system consists of four elements; Vulnerability, Seasonal Climate Forecasts, Monitoring the Environment and Observed Malaria Morbidity. In certain regions, these products may be used to determine the timing and severity of an outbreak.</p> 
 
 
 <p>
-Certain levels of climatic variables can indicate an increased risk in vector (mosquito) development and in the development of the virus inside the vector. These are monitored on long and short-term time scales. Examples of such indicators include precipitation, temperature, and humidity. The Seasonal Climate Forecasts and Monitoring the Environment products can be used to determine transmission risk from climatic indicators. The remaining two elements of the MEWS, Vulnerability and Observed Malaria morbidity, reflect important socioeconomic aspects of malaria outbreaks. 
+Certain levels of climatic variables can indicate an increased risk in vector (mosquito) development and in the development of the virus inside the vector. Examples of such indicators include precipitation, temperature, and humidity. The Seasonal Climate Forecasts and Monitoring the Environment products can be used to monitor climatic variables on long and short term time scales respectively, in turn they may be used to determine transmission risk from climatic indicators. The remaining two elements of the MEWS, Vulnerability and Observed Malaria Morbidity, reflect important socioeconomic aspects of malaria outbreaks. 
 </p>
 
 

@@ -11,8 +11,10 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>Clima y Salud</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="en" href="System.html?Set-Language=en" />
-<link class="altLanguage" rel="alternate" hreflang="fr" href="System.html?Set-Language=fr" />
+<link class="altLanguage" rel="alternate" hreflang="en" 
+		href="System.html?Set-Language=en" />
+<link class="altLanguage" rel="alternate"
+		hreflang="fr" href="System.html?Set-Language=fr" />
 <link rel="canonical" href="System.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />

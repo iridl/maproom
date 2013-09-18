@@ -11,7 +11,11 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>Climate and Health</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
-
+<link class="altLanguage" rel="alternate" hreflang="es"
+            href="System.html?Set-Language=es" />
+      <link class="altLanguage" rel="alternate" hreflang="fr"
+            href="System.html?Set-Language=fr" />
+      <link rel="canonical" href="System.html" />
 <link rel="canonical" href="Historical.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -44,19 +48,19 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/
 <h2 property="term:title">Malaria Historical Analysis</h2>
 <p align="left" property="term:description">
 
-Climate variables may effect malaria transmission in certain regions. Current climate risk may be determined by comparing current climate conditions to historical climate conditions.
+Climate variables may effect malaria transmission in certain regions. 
   </p>
 
-
 <p> 
-
-The maps and charts in this section may aid in forecasting malaria epidemics by helping the user understand the climate risk of their region. Studies have shown that the risk for a malaria epidemic may increase when levels of these variables exist within a certain range. 
-
+The maps and charts in this section may aid in forecasting malaria epidemics by helping the user understand the climate risk of their region by:
 </p>
 
-<p>
+<p><li>Showing the suitability of malaria transmission based on historical climate records.</li></p>
 
-Studies indicate that three climate variables are related to malaria outbreaks. These variables and the range that may increase the risk for malaria transmission are listed below.
+<p><li>Comparing current climatic conditions to climatic conditions during a past outbreak.</li></p>
+
+<p>
+Studies show that three climatic variables are related to malaria outbreaks. These variables and the range that may increase the risk for malaria transmission are listed below.
 <ul>
                   <li><b>Temperature:</b> Average temperature between 18°C and 32°C 
                   </li>
