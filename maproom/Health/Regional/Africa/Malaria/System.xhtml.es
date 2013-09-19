@@ -79,7 +79,7 @@ en regiones propensas a epidemias.
 </p>
 </div>
 <div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/System.html" >
-  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerabilidad"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerability"/>
   <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Seasonal_Climate_Forecast"/>
     <link class="ui-state-active" rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
       <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria_Morbidity"/>
@@ -108,7 +108,7 @@ en regiones propensas a epidemias.
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
-    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerabilidad"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerability"/>
   <link rel="term:isDescribedBy"
   href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
   <a rel="term:icon" href="irmappersmall.png"></a>
@@ -134,7 +134,7 @@ en regiones propensas a epidemias.
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
-    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerabilidad"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerability"/>
   <link rel="term:isDescribedBy"
   href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <a rel="term:icon" href="drug_resistance.png"></a>
