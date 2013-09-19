@@ -101,13 +101,16 @@ margin: 0px;
 
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Rainfall Estimate Differences</h2>
-  <p align="left" property="term:description">This map shows dekadal (10-day) rainfall estimates as the difference from the short term average (from 2000 to last recent complete year). Positive (negative) values indicate dekadal estimates that are above (below) the short-term average rainfall.</p>
+  <p align="left" property="term:description">This map shows dekadal (10-day) rainfall estimates as the difference from the short term average (from 2000 to last recent complete year).</p>
+<p> Positive (negative) values indicate dekadal estimates that are above (below) the short-term average rainfall.</p>
+ <p> Rainfall, especially in warm semi-arid and desert fringe areas, is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites. </p> 
+  
 <p> The Rainfall Estimate Differences (RED) values are different from conventional rainfall anomalies because they are based on a short-term average and not the typical long-term (e.g., 30-year) average. This comparison provides insight into changes in malaria risk relative to a recent historical perspective. </p>
-<p> Rainfall, especially in warm semi-arid and desert fringe areas, is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites. </p>
+
 
 <p> Rainfall estimates expressed as percentages of the short-term average can be viewed on the Rainfall Estimate Percentages (<a class="href" href="../REP/index.html">REP</a>) map page.
 </p>
-<h4>References</h4>
+<h4>References:</h4>
 <p>
 WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.
 </p>

@@ -209,7 +209,7 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia
 <div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Instructions</h2>
 <p>
- The MODIS interface provides the ability to make graphs at a user-selected location across different resolutions of spatial averaging.   The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, 2 time series graphs will provide vegetation analyses of the past year and in comparison to the 5 most recent years. 
+ The MODIS interface provides the ability to make graphs at a user-selected location across different resolutions of spatial averaging.  The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, 2 time series graphs will provide vegetation analyses of the past year and in comparison to the 5 most recent years. 
  </p>
  <p> By placing current vegetation in recent historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
   </p>

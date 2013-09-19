@@ -148,9 +148,12 @@ b) Same as (a) for the current year (thick black line), as indicated by the axis
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
-  <p align="left" property="term:description">A regional tool that facilitates access to estimates of vegetation from MODIS images provided by the United States Geological Survey. Images are available for West Africa, East Africa, and Southern Africa.  
-</p><p>An interactive map of the Normalized Difference Vegetation Index (NDVI), Enhanced Vegetation Index (EVI), and reflectance constructed from the middle infrared, near infrared and red channels for West Africa, East Africa, and Southern Africa. Time series analyses of NDVI,EVI, and reflectance are generated based on user-selected parameters.
+  <p align="left" property="term:description">This tool produces maps of estimated vegetation using data from NASA's MODIS sensor.
 </p>
+
+<p> In some semi-arid regions of eastern Africa, precipitation has been found to have a 2-3 month lagged correlation with malaria incidence. Due to the lack of station data and because of the lagged nature of precipitation yielding lagged plant growth, vegetation indicies have been used as a proxy measure to forecast malaria.</p>
+
+<p>  Two vegetation indices are provided: NDVI, EVI in addition to the reflectance values for the blue, red, near infrared and middle infrared channels. Each index is derived from data provided from The Moderate Resolution Imaging Spectrometer (MODIS), a key instrument aboard NASA's Terra and Aqua satellites.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
