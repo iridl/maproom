@@ -79,10 +79,90 @@ en regiones propensas a epidemias.
 </p>
 </div>
 <div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/System.html" >
-  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerability"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerabilidad"/>
   <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Seasonal_Climate_Forecast"/>
     <link class="ui-state-active" rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
       <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria_Morbidity"/>
+      
+<a rel="section" href="http://www.irmapper.com/"></a>
+<a rel="section" href="http://www.drugresistancemaps.org/"></a>
+<a rel="section" href="http://www.promedmail.org/"></a>
+
+
+
+<div about="http://www.irmapper.com/">
+<meta property="maproom:Sort_Id" content="e13" />
+<a rel="canonical"  href="http://www.irmapper.com/"></a>
+<p property="term:title">Insecticide Resistance</p>
+<p property="term:description">The Insecticide Resistance (IR) Mapper is a tool used to map results from World Health Organization susceptibility tests and insecticide studies using malarial mosquitoes collected from sites throughout the world.</p>
+
+
+
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerabilidad"/>
+  <link rel="term:isDescribedBy"
+  href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+  <a rel="term:icon" href="irmappersmall.png"></a>
+
+</div>
+
+
+
+<div about="http://www.drugresistancemaps.org/">
+<meta property="maproom:Sort_Id" content="e13" />
+<a rel="canonical"  href="http://www.drugresistancemaps.org/"></a>
+<p property="term:title">Drug Resistance</p>
+<p property="term:description">Drug Resistance Maps is a project that maps the geographical distribution of resistance genes of malaria in Africa. These maps were developed by the London School of Hygiene and Tropical Medicine.</p>
+
+
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerabilidad"/>
+  <link rel="term:isDescribedBy"
+  href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+<a rel="term:icon" href="drug_resistance.png"></a>
+</div>
+
+
+<div about="http://www.promedmail.org/">
+<meta property="maproom:Sort_Id" content="e13" />
+<a rel="canonical"  href="http://www.promedmail.org/"></a>
+<p property="term:title">Monitoring Emerging Diseases</p>
+<p property="term:description">The Program for Monitoring Emerging Diseases (ProMED) is dedicated to rapid global dissemination of information on outbreaks of infectious diseases. By providing early warning of outbreaks of emerging and re-emerging diseases, public health precautions at all levels can be taken in a timely manner to prevent epidemic transmission and to save lives.</p>
+
+
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria_Morbidity"/>
+  <link rel="term:isDescribedBy"
+  href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+<a rel="term:icon" href="observed_morbidity.png"></a>
+</div>
 
 </div>
 </div>

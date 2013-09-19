@@ -136,7 +136,7 @@
 </span>
 <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >IRI Seasonal Precipitation Forecast</h2>
-<p align="left" property="term:description"> This map provides seasonal precipitation forecasts produced by the International Research Institute for Climate and Society. In areas of Africa where the presence of water allows for mosquito vector development, skillful seasonal rainfall forecasts may provide early warning of risk of an epidemic.</p>
+<p align="left" property="term:description"> This map shows seasonal precipitation forecasts from the International Research Institute for Climate and Society. In areas of Africa where the presence of water allows for mosquito vector development, skillful seasonal rainfall forecasts may provide early warning of risk of an epidemic.</p>
 
 <p><b>Seasonal Precipitation Forecast Legend</b></p>
 

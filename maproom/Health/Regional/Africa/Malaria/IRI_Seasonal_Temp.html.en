@@ -136,7 +136,7 @@
 </span>
 <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >IRI Seasonal Temperature Forecast</h2>
-<p align="left" property="term:description">This map provides seasonal precipitation forecasts produced by the International Research Institute for Climate and Society. In areas of Africa where temperature drives mosquito vector development and parasite development, skillful seasonal temperature forecasts may provide early warning of risk of an epidemic.</p>
+<p align="left" property="term:description">This tool produces maps of seasonal temperature forecasts from the International Research Institute for Climate and Society. In areas of Africa where temperature drives mosquito vector development and parasite development, skillful seasonal temperature forecasts may provide early warning of risk of an epidemic.</p>
 <p><b>Seasonal Temperature Forecast Legend</b></p>
 
 <p>
