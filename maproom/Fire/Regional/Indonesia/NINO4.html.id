@@ -65,7 +65,7 @@ display: inline-block
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
-                <legend>Maproom</legend> 
+                <legend>Ruang Peta</legend> 
                       <a rev="section" class="navlink carryup" href="/maproom/Fire/">Climate and Fire</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
@@ -167,7 +167,7 @@ Observations for <b><span class="iridl:long_name"></span></b>
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">Explorasi Tool Prakiraan untuk Aktivitas Kebakaran di Wilayah Kalimantan, Indonesia</h2>
-  <p align="left" property="term:description">Bagian ini menjelaskan prakiraan kemungkinan tinggi atau rendahnya aktivitas kebakaran hutan di Selatan, Tengah, Barat dan Timur Propinsi Kalimantan Indonesia. Penelitian ini telah dilakukan oleh IRI bekerjasama dengan CCROM SEAP Institut Pertanian Bogor (IPB) didukung oleh CARE Indonesia. Saat ini IRI dan Badan Meteorologi dan Geofisika (BMG) sedang membandingkan metode yang cocok untuk pendugaan kebakaran hutan. 
+  <p align="left" property="term:description">Bagian ini menjelaskan prakiraan kemungkinan tinggi atau rendahnya aktivitas kebakaran hutan di Selatan, Tengah, Barat dan Timur Propinsi Kalimantan Indonesia. Penelitian ini telah dilakukan oleh IRI bekerjasama dengan CCROM SEAP Institut Pertanian Bogor (IPB) didukung oleh CARE Indonesia. Saat ini IRI dan Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) sedang membandingkan metode yang cocok untuk pendugaan kebakaran hutan. 
 </p>
 <p>Berdasarkan hasil monitoring indeks suhu muka laut (SST) di wilayah NINO4 dari bulan April sampai September, memungkinkan untuk melakukan pendugaan atau estimasi aktivitas kebakaran 1-2 bulan ke depan. Analisis ini berdasarkan data hotspot dari tahun 1998-2006 (Sumber dari NOAA-AVHRR) dan pada <a href="http://iri.columbia.edu/climate/ENSO/background/monitoring.html#sst">indeks NINO4</a>.  Keempat grafik di bawah ini memperlihatkan hasil analisis untuk masing-masing provinsi di wilayah Kalimantan, Indonesia.</p>
 <p>Indeks NINO4 dalam bentuk deret waktu (ditunjukkan oleh grafik) yang diperbaharui setiap bulan. Berdasarkan keterkaitan antara indeks NINO4 dengan aktivitas api (kebakaran), pengguna dapat memperoleh gambaran dan memprediksi aktivitas api 1-2 bulan kedepan, apakah akan mengalami peningkatan atau penurunan dari nilai rata-rata.</p>

@@ -48,8 +48,15 @@
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_Atm_Circulation_term"><span property="term:label">Atmospheric Circulation</span></legend>
             </fieldset> 
-            <fieldset class="navitem" id="chooseRegion"> 
-                <legend>Region</legend> 
+            <fieldset class="navitem"> 
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">Global</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
             </fieldset>
  </div>
 <div class="ui-tabs">

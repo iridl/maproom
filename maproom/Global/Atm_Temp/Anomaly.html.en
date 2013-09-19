@@ -37,6 +37,10 @@
 <input class="carry dlimg share" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+<input class="dlimg share" name="layers" value="tanom" checked="checked" type="checkbox" />
+<input class="dlimg share" name="layers" value="tanom_contours" checked="checked" type="checkbox" />
+<input class="dlimg share" name="layers" value="states_gaz" type="checkbox" />
+<input class="dlimg share" name="layers" value="countries_gaz" checked="checked" type="checkbox" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -46,8 +50,15 @@
             <fieldset class="navitem" id="chooseSection"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_Atm_Temp_term"><span property="term:label">Atmospheric Temperature</span></legend>
             </fieldset> 
-            <fieldset class="navitem" id="chooseRegion"> 
-                <legend>Region</legend> 
+            <fieldset class="navitem"> 
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">Global</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
             </fieldset>
  </div>
 <div class="ui-tabs">
@@ -57,12 +68,14 @@
       <li><a href="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/-9999/replaceNaN/-9999/-9999/flagrange//name//tmask/def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp//name//tanom/def/DATA/1.0/STEP/startcolormap/DATA/-10.0/10.0/RANGE/white/purple/purple/-10.0/VALUE/cyan/-1.0/VALUE/white/white/1.0/bandmax/yellow/1.0/VALUE/red/10.0/VALUE/firebrick/endcolormap/:ds/">Dataset</a></li>
       <li><a href="#tabs-3" >Contact Us</a></li>
     </ul>
+
 <fieldset class="dlimage" id="content" about="">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/-9999/replaceNaN/-9999/-9999/flagrange//name//tmask/def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp//name//tanom/def/DATA/1./STEP/startcolormap/DATA/-10./10./RANGE/white/purple/purple/-10./VALUE/cyan/-1./VALUE/white/white/1./bandmax/yellow/1./VALUE/red/10./VALUE/firebrick/endcolormap/:ds/a-+.tanom+-a-+.tanom+-a-+.tmask+-a+X+Y+fig:+colors+grey+nozero+contours+mask+black+thin+solid+countries_gaz+:fig+/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//XOVY+null+psdef//plotborder+72+psdef//antialias+true+psdef//color_smoothing+null+psdef//plotaxislength+700+psdef/" />
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/-9999/replaceNaN/-9999/-9999/flagrange//name//tmask/def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp//name//tanom/def/DATA/1./STEP/startcolormap/DATA/-10./10./RANGE/white/purple/purple/-10./VALUE/cyan/-1./VALUE/white/white/1./bandmax/yellow/1./VALUE/red/10./VALUE/firebrick/endcolormap/:ds/a-+.tanom+-a-+.tanom+-a-+.tmask+-a+X+Y+fig:+colors+grey+nozero+contours+mask+black+thin+solid+countries_gaz+:fig+/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//XOVY+null+psdef//plotborder+72+psdef//antialias+true+psdef//color_smoothing+null+psdef//plotaxislength+700+psdef+.gif" border="0" alt="image" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/-9999/replaceNaN/-9999/-9999/flagrange//name//tmask/def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp//name//tanom/def/DATA/1.0/STEP/startcolormap/DATA/-10.0/10.0/RANGE/white/purple/purple/-10.0/VALUE/cyan/-1.0/VALUE/white/white/1.0/bandmax/yellow/1.0/VALUE/red/10.0/VALUE/firebrick/endcolormap/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/1/mul//name//tanom_contours/def/DATA/1.0/STEP/:ds/a-/.tanom/-a-/.tanom_contours/-a-/.tmask/-a/X/Y/fig:/colors/grey/nozero/contours/grey/mask/black/thin/solid/states_gaz/black/thin/solid/countries_gaz/:fig/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//XOVY/null/psdef//plotborder/72/psdef//antialias/true/psdef//color_smoothing/null/psdef//plotaxislength/700/psdef//layers%5B//tanom//tanom_contours//countries_gaz%5Dpsdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/-9999/replaceNaN/-9999/-9999/flagrange//name//tmask/def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp//name//tanom/def/DATA/1.0/STEP/startcolormap/DATA/-10.0/10.0/RANGE/white/purple/purple/-10.0/VALUE/cyan/-1.0/VALUE/white/white/1.0/bandmax/yellow/1.0/VALUE/red/10.0/VALUE/firebrick/endcolormap/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/1/mul//name//tanom_contours/def/DATA/1.0/STEP/:ds/a-/.tanom/-a-/.tanom_contours/-a-/.tmask/-a/X/Y/fig:/colors/grey/nozero/contours/grey/mask/black/thin/solid/states_gaz/black/thin/solid/countries_gaz/:fig/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//XOVY/null/psdef//plotborder/72/psdef//antialias/true/psdef//color_smoothing/null/psdef//plotaxislength/700/psdef//layers%5B//tanom//tanom_contours//countries_gaz%5Dpsdef/+.gif" border="0" />
   <br />
-  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/-9999/replaceNaN/-9999/-9999/flagrange//name//tmask/def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp//name//tanom/def/DATA/1./STEP/startcolormap/DATA/-10./10./RANGE/white/purple/purple/-10./VALUE/cyan/-1./VALUE/white/white/1./bandmax/yellow/1./VALUE/red/10./VALUE/firebrick/endcolormap/:ds/a-+.tanom+-a-+.tanom+-a-+.tmask+-a+X+Y+fig:+colors+grey+nozero+contours+mask+black+thin+solid+countries_gaz+:fig+.auxfig+/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//XOVY+null+psdef//plotborder+72+psdef//antialias+true+psdef//color_smoothing+null+psdef//plotaxislength+700+psdef+.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/-9999/replaceNaN/-9999/-9999/flagrange//name//tmask/def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp//name//tanom/def/DATA/1.0/STEP/startcolormap/DATA/-10.0/10.0/RANGE/white/purple/purple/-10.0/VALUE/cyan/-1.0/VALUE/white/white/1.0/bandmax/yellow/1.0/VALUE/red/10.0/VALUE/firebrick/endcolormap/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.anomaly/.temp/1/mul//name//tanom_contours/def/DATA/1.0/STEP/:ds/a-/.tanom/-a-/.tanom_contours/-a-/.tmask/-a/X/Y/fig:/colors/grey/nozero/contours/grey/mask/black/thin/solid/states_gaz/black/thin/solid/countries_gaz/:fig/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//XOVY/null/psdef//plotborder/72/psdef//antialias/true/psdef//color_smoothing/null/psdef//plotaxislength/700/psdef//layers%5B//tanom//tanom_contours//countries_gaz%5Dpsdef/.auxfig+//plotborder+72+psdef+.gif" />
 </fieldset>
+
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Monthly Surface Air Temperature Anomaly</h2>
 <p align="left" property="term:description">This map shows CAMS monthly gridded surface air temperature anomalies for the globe.</p>
