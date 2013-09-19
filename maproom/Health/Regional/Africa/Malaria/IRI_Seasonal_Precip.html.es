@@ -10,15 +10,15 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>IRI Seasonal Temperature Forecast</title>
+<title>IRI Seasonal Precipitation Forecast</title>
 <script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="IRI_Seasonal_Temp.html?Set-Language=es" />
-<link class="altLanguage" rel="alternate" hreflang="fr" href="IRI_Seasonal_Temp.html?Set-Language=fr" />
-<link rel="canonical" href="IRI_Seasonal_Temp.html" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="IRI_Seasonal_Precip.html?Set-Language=en" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="IRI_Seasonal_Precip.html?Set-Language=fr" />
+<link rel="canonical" href="IRI_Seasonal_Precip.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
-<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_IRI_Seasonal_Temp" />
+<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_IRI_Seasonal_Precip" />
 <meta property="maproom:Sort_Id" content="e12" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
@@ -40,9 +40,9 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
     <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Seasonal_Climate_Forecast"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Precipitation%20Forecast%20issued%20%25=%5BF%5D%29psdef//L/1.0/plotvalue//F/last/plotvalue+//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Precipitation%20Forecast%20issued%20%25=%5BF%5D%29psdef//L/1.0/plotvalue//F/last/plotvalue+//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
 </head>
-<body xml:lang="en">
+<body xml:lang="es">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg dlimgts dlimgloc share starttime startleadtime">
 <input class="carryup carry " name="Set-Language" type="hidden" value="" />
 <input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
@@ -73,7 +73,7 @@
             </fieldset>
            <fieldset class="navitem valid">
           <legend>Target Time</legend>
-	    <link class="starttime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/.target_date/F/last/cvsunits//F/parameter/VALUE/info.json" />
+	    <link class="starttime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/.target_date/F/last/cvsunits//F/parameter/VALUE/info.json" />
           <select class="pageformcopy" name="L">
 	    <optgroup class="template" label="Target Time">
 	    <option class="iridl:values L@value target_date"></option>
@@ -85,7 +85,7 @@
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/" >Dataset</a></li>
+      <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/" >Dataset</a></li>
       <li><a href="#tabs-3" >Contact Us</a></li>
       <li><a href="#tabs-4" >Instructions</a></li>
     </ul>
@@ -98,7 +98,7 @@
 
   <td>
     <span class="valid">
-       <a class="startleadtime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/.target_date/F/last/cvsunits//F/parameter/VALUE/L/first/cvsnamedunits//L/parameter/VALUE%5BL/F%5DREORDER/info.json" ></a>
+       <a class="startleadtime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/.target_date/F/last/cvsunits//F/parameter/VALUE/L/first/cvsnamedunits//L/parameter/VALUE%5BL/F%5DREORDER/info.json" ></a>
       <span class="template">
         <table bgcolor="f0f0f0">
            <tr>
@@ -119,35 +119,36 @@
 
    <br />
     <div  style="display: inline-block; width:49%">
-    	<h4>Temperature</h4>
-  <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/a:/.prob/dup/%28bb:-64:-12:-63:-11:bb%29//region/parameter/geoobject/rasterize/exch/1/index%5BX/Y%5Dweighted-average/dup/0/mul/3/-1/roll/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/:a:/.target_date/:a/C/fig-/grey/deltabars/plotlabel/plotlabel/plotlabel/black/dashed/33/1/33/horizontallines/-fig//X/-63.75/plotvalue//Y/-11.25/plotvalue//L/1.0/plotvalue//F/last/plotvalue//framelabel/%28%28%25=%5BX%5D%2C%25=%5BY%5D%29%20%25=%5Btarget_date%5D%20issued%20%25=%5BF%5D%29psdef//XOVY/1/psdef//plotaxislength/200/psdef/+.gif" />
+      <h4>Precipitation</h4>
+  <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/a:/.prob/Y/low/high/RANGE/dup/Y/0.5/boxAverage/X/0.5/boxAverage/%28bb:9:19:9.5:19.5:bb%29//region/parameter/geoobject/rasterize%5BX/Y%5DregridAverage/0/flaggt/exch/1/index%5BX/Y%5Dweighted-average/dup/0/mul/3/-1/roll/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/:a:/.target_date/:a/C/fig-/grey/deltabars/plotlabel/plotlabel/plotlabel/black/dashed/33/1/33/horizontallines/-fig//X/-63.75/plotvalue//Y/-11.25/plotvalue//L/1.0/plotvalue//F/last/plotvalue//framelabel/%28%28%25=%5BX%5D%2C%25=%5BY%5D%29%20%25=%5Btarget_date%5D%20issued%20%25=%5BF%5D%29psdef//XOVY/1/psdef//plotaxislength/200/psdef/+.gif" />
       </div>
       <div style="display: inline-block; width:49%">
-<h4>Precipitation</h4>
-  <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/a:/.prob/Y/low/high/RANGE/dup/Y/0.5/boxAverage/X/0.5/boxAverage/%28bb:9:19:9.5:19.5:bb%29//region/parameter/geoobject/rasterize%5BX/Y%5DregridAverage/0/flaggt/exch/1/index%5BX/Y%5Dweighted-average/dup/0/mul/3/-1/roll/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/:a:/.target_date/:a/C/fig-/grey/deltabars/plotlabel/plotlabel/plotlabel/black/dashed/33/1/33/horizontallines/-fig//X/-63.75/plotvalue//Y/-11.25/plotvalue//L/1.0/plotvalue//F/last/plotvalue//framelabel/%28%28%25=%5BX%5D%2C%25=%5BY%5D%29%20%25=%5Btarget_date%5D%20issued%20%25=%5BF%5D%29psdef//XOVY/1/psdef//plotaxislength/200/psdef/+.gif" />
+	<h4>Temperature</h4>
+  <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/a:/.prob/dup/%28bb:-64:-12:-63:-11:bb%29//region/parameter/geoobject/rasterize/exch/1/index%5BX/Y%5Dweighted-average/dup/0/mul/3/-1/roll/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/:a:/.target_date/:a/C/fig-/grey/deltabars/plotlabel/plotlabel/plotlabel/black/dashed/33/1/33/horizontallines/-fig//X/-63.75/plotvalue//Y/-11.25/plotvalue//L/1.0/plotvalue//F/last/plotvalue//framelabel/%28%28%25=%5BX%5D%2C%25=%5BY%5D%29%20%25=%5Btarget_date%5D%20issued%20%25=%5BF%5D%29psdef//XOVY/1/psdef//plotaxislength/200/psdef/+.gif" />
 	</div>
   </fieldset>
 <fieldset class="dlimage" about="">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Temperature%20Forecast%20issued%20%25=%5BF%5D%29psdef//plotaxislength/590/psdef//plotborderbottom/40/psdef//plotbordertop/40/psdef/" />
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Temperature%20Forecast%20issued%20%25=%5BF%5D%29psdef//plotaxislength/590/psdef//plotborderbottom/40/psdef//plotbordertop/40/psdef/+.gif" border="0" alt="image" />
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Precipitation%20Forecast%20issued%20%25=%5BF%5D%29psdef//plotaxislength/590/psdef//plotborderbottom/40/psdef//plotbordertop/40/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Precipitation%20Forecast%20issued%20%25=%5BF%5D%29psdef//plotaxislength/590/psdef//plotborderbottom/40/psdef//plotbordertop/40/psdef/+.gif" border="0" alt="image" />
   <br />
-  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Temperature%20Forecast%20issued%20%25=%5BF%5D%29psdef//plotaxislength/590/psdef//plotborderbottom/40/psdef//plotbordertop/40/psdef/.auxfig+//L/1.0/plotvalue//F/631.5/plotvalue+//plotaxislength+590+psdef//plotborder+72+psdef+.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Precipitation%20Forecast%20issued%20%25=%5BF%5D%29psdef//plotaxislength/590/psdef//plotborderbottom/40/psdef//plotbordertop/40/psdef/.auxfig+//L/1.0/plotvalue//F/631.5/plotvalue+//plotaxislength+590+psdef//plotborder+72+psdef+.gif" />
 </fieldset>
 </span>
 <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >IRI Seasonal Temperature Forecast</h2>
-<p align="left" property="term:description">This map provides seasonal precipitation forecasts produced by the International Research Institute for Climate and Society. In areas of Africa where temperature drives mosquito vector development and parasite development, skillful seasonal temperature forecasts may provide early warning of risk of an epidemic.</p>
-<p><b>Seasonal Temperature Forecast Legend</b></p>
+<h2 align="center"  property="term:title" >IRI Seasonal Precipitation Forecast</h2>
+<p align="left" property="term:description"> This map provides seasonal precipitation forecasts produced by the International Research Institute for Climate and Society. In areas of Africa where the presence of water allows for mosquito vector development, skillful seasonal rainfall forecasts may provide early warning of risk of an epidemic.</p>
+
+<p><b>Seasonal Precipitation Forecast Legend</b></p>
 
 <p>
 <ul>
-                  <li><b>Above-Average:</b> Pink - Red colors.
+                  <li><b>Above-Average:</b> Green - Blue colors.
                   </li>
 
                   
                 <p>
                   <li>
-                  <b>Below-Average:</b> Aqua - Blue - Purple colors.
+                  <b>Below-Average:</b> Yellow - Brown colors.
                   </li>
                   </p>
                   <p>
@@ -161,11 +162,12 @@
 <p>
 Research has shown that sea surface temperatures in the Indian Ocean influence temperature and precipitation patterns in Africa.</p> 
 
-<p>One of the main advantages of using sea surface temperatures in the Indian Ocean to predict temperature in Africa is the "teleconnection" effect.</p>
-<p>Using teleconnections, or lagged effects of sea surface temperatures on temperature elsewhere, we can make forecasts with 1-6 month lead times.</p>
+<p>One of the main advantages of using sea surface temperatures in the Indian Ocean to predict precipitation in Africa is the "teleconnection" effect.</p>
+<p>Using teleconnections, or lagged effects of sea surface temperatures on precipitation elsewhere, we can make forecasts with 1-6 month lead times.</p>
 
-<p>This map uses that relationship to produce temperature forecasts for specific seasons. 
+<p>This map uses that relationship to produce precipitation forecasts for specific seasons. 
 </p>
+
 
 
 <h4>References:</h4>
@@ -179,25 +181,35 @@ anomalies over eastern and southern Africa</a>. J. Geo. Res., 104, 19099-19116.
 
 
 </div>
-
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<p>IRI Seasonal Temperature Forecasts are produced monthly on a 2.5 degree spatial resolution basis. </p>
-<h4>Temperature Forecasts </h4>
+<p>IRI Seasonal Precipitation Forecasts are produced monthly on a 2.5 degree spatial resolution basis. </p>
+<h4>Precipitation Forecasts</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
-<dd>Monthly Total Temperature Forecast on a 2.5 x 2.5 deg. lat/lon grid</dd>
+<dd>Monthly Total Precipitation Forecast on a 2.5 x 2.5 deg. lat/lon grid</dd>
 <dt>Data Source</dt><dd> 
-(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/">Forecast Division from IRI: International Research Institute for Climate and Society</a>)</dd>
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/">Forecast Division from IRI: International Research Institute for Climate and Society</a>)</dd>
 </dl>
-<h4>Climatology of Temperature</h4>
+<h4>Climatology of Precipitation</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
 Monthly Temperature on a 2.5 x 2.5 deg. lat/lon grid
-<dd><b>Base Period</b>: 1 Jan 1971 to 31 Dec of last year</dd>
+<dd><b>Base Period</b>: 1 Jan 1981 to 31 Dec of last year</dd>
 <dt>Data Source</dt><dd>
-(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Climatologies/.c7100/.seasonal/.UEA_TS2p1/.deg0p5/.temp/">Forecast Division from IRI: International Research Institute for Climate and Society</a>)</dd>
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Climatologies/.c7100/.seasonal/.UEA_TS2p1/.deg0p5/.prcp/">Forecast Division from IRI: International Research Institute for Climate and Society</a>)</dd>
 </dl>
+
+
+  
+
+
+
+
+
+
+
+
 </div>
 <div class="ui-tabs-panel-hidden">
 <h2 align="center">Dataset</h2>
@@ -223,7 +235,7 @@ The graph shows the probability, or chance, that the target date being forecast 
 The three categories are below normal, normal and above normal. 
 </p>
 <p>
-"Normal" conditions are defined as the average temperature for the forecast month(s) at the selected location since 1980. An above (below) normal forecast indicates there is confidence that temperature for that season will fall within the top (bottom) 33% of the observed average temperature. 	 
+"Normal" conditions are defined as the average temperature for the forecast month(s) at the selected location since 1980. An above (below) normal forecast indicates there is confidence that rainfall for that season will fall within the top (bottom) 33% of the observed average rainfall. 	 
 
 </p>
 
