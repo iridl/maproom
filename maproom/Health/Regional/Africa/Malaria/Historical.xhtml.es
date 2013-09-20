@@ -44,19 +44,47 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/
  <div id="content" class="searchDescription">
 <h2 property="term:title">Analisis Historico de Malaria</h2>
 <p align="left" property="term:description">
-AQUI - Poner el analisis historico de malaria En ESPANOL</p>
- Consequently, it may be found where and when the climatic conditions are favorable for transmission between the mosquito vector and its human host. Malaria is endemic throughout much of Sub-Saharan Africa and regularly affects susceptible populations each year. Within that endemic zone, however, the disease exhibits a spectrum of characteristics. Areas of stable endemicity where transmission occurs all year round exist at one extreme, while at the other extreme, there are areas where little or no transmission takes place most of the time but epidemics may occur among susceptible immunological native populations. <p> Along the margins of endemic malaria, there are geographic zones where malaria transmission is 'unstable' or prone to epidemics. Malaria in these areas is also related to climate, but in this case, at least one of the essential variables, rainfall, temperature or humidity, is not consistently sufficient for transmission. The high inter-annual variability of climate in these regions, however, means that in some years the climatic conditions favorable for malaria transmission do occur and epidemics of the disease may result.</p>
+Climate variables may effect malaria transmission in certain regions. 
+These products aid to determine the historical risk for malaria due to climatic factors. 
+  </p>
 
-<p>The mapping products below therefore aim to illustrate models of climate suitability for 
-seasonal endemic malaria, and recent climate conditions, such as rainfall anomalies, which may be 
-associated with epidemic malaria in warm semi-arid regions of Africa. Additional 
-models, such as that developed by the MARA Initiative, may be included in the future and we welcome the 
-opportunity to work with others on the further development of these products.
+<p> 
+The maps and charts in this section may aid in forecasting malaria epidemics by helping the user understand the climate risk of their region by:
+</p>
 
-</p><p><b>References:</b> Grover-Kopec E. K., Blumenthal M. B., Ceccato P., Dinku T., Omumbo J. A., Connor S. J. <a href="http://www.ncbi.nlm.nih.gov/pubmed/16689992">Web-based climate information resources for malaria control in Africa</a>. <i>Malaria Journal</i>. 2006, <b>5</b>:38.
+<p><li>Showing the suitability of malaria transmission based on historical climate records.</li></p>
+
+<p><li>Comparing current climatic conditions to climatic conditions during a past outbreak.</li></p>
+
+<p>
+Studies show that three climatic variables are related to malaria outbreaks. These variables and the range that may increase the risk for malaria transmission are listed below.
+<ul>
+                  <li><b>Temperature:</b> Average temperature between 18°C and 32°C 
+                  </li>
+                <p>
+                  <li>
+                  <b>Precipitation:</b> Average precipitation is greater than 80mm
+                  </li>
+                  </p>
+                  <p>
+                  <li><b>Humidity:</b> Average relative humidity is greater than 60%
+                  </li>
+                  </p>
+            
+               </ul>
+
+
+</p> 
+ 
+<p><b>References:</b></p>
+<p> Ceccato P., Connor S. J., Jeanne I., Thomson M.C.<b> <a href="https://www.isse.ucar.edu/climatehealth/doc/Publications.Pg/Pubs.Ceccato.GIS.Remote.Sensing.pdf">Application of Geographical Information Systems and
+Remote Sensing technologies for assessing
+and monitoring malaria risk</a></b>. <i>Parassitologia </i>.47.1 (2005), 81-96.
 
 </p>
+
 </div>
+
 
 <div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/Historical.html" >
 

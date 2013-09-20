@@ -74,12 +74,20 @@
   <h2 align="center" property="term:title">MARA Distribution Model of Climatic Suitability for Malaria Transmission</h2>
   <p align="left" property="term:description">This map shows climatic suitability for malaria transmission based on the MARA (Mapping Malaria Risk in Africa) distribution model.</p>
 <p align="left">
-The MARA distribution model is a static map illustrating climatic suitability derived from climatological averages of precipitation and temperature. These averages are utilized in a fuzzy logic model developed by scientists associated with the Mapping Malaria Risk in Africa (MARA) group (after Craig et al. 1999).</p>
+The MARA distribution model is a static map illustrating climatic suitability derived from climatological averages of precipitation and temperature. These averages are utilized in a fuzzy logic model developed by scientists associated with the Mapping Malaria Risk in Africa (MARA) group.</p>
 <p>
 Temperature, precipitation and relative humidity are factors of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors (Grover-Kopec et al., 2006). The aforementioned values act as the upper limit for vector development and potential malaria transmission. </p>
-<p>This map is a <i><u>theoretical</u></i> model based on available long-term climate data. Although it is reasonably accurate, it is <i><u>not based on actual malaria data</u></i> and may not reflect the real malaria status. It shows the theoretical suitability of local climatic conditions, and therefore the potential distribution of stable malaria transmission in the average year. Please note that climatic conditions, and therefore malaria transmission, vary substantially from one year to the next. Malaria control activities can also dramatically alter the malaria transmission situation.</p>
+<p>This map is a <i><u>theoretical</u></i> model based on available long-term climate data. Although it is reasonably accurate, it is <i><u>not based on actual malaria data</u></i> and may not reflect the real malaria status. It shows the theoretical suitability of local climatic conditions, and therefore the potential distribution of stable malaria transmission in the average year. Please note that climatic conditions, and therefore malaria transmission, vary substantially from one year to the next. Malaria control activities can also dramatically alter the malaria transmission.</p>
 
-<p>Reference: Craig, M. H., R. W. Snow, and D. le Seur, 1999: A climate-based distribution model of malaria transmission in Sub-Saharan Africa. Parasitology Today, 15(3), 105-111.</p>
+<p> Used with permission from: <a href="http://www.mara.org.za/">Mapping Malaria Risk in Africa</a> (MARA)</p>
+
+
+<h4>References:</h4>
+<p>Craig, M. H., R. W. Snow, and D. le Seur. (1999). <a href="http://portal.iri.columbia.edu/portal/server.pt/gateway/PTARGS_0_2_3830_0_0_18/Craig%201999%20TIP.pdf">A climate-based distribution model of malaria transmission in Sub-Saharan Africa</a>. Parasitology Today, 15(3), 105-111.
+</p> 
+
+
+
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>

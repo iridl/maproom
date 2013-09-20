@@ -42,11 +42,6 @@
            <legend>Clima y Malaria</legend>
             </fieldset> 
 
-
-                
-
-
-
 </div>
 <div>
  <div id="content" class="searchDescription">

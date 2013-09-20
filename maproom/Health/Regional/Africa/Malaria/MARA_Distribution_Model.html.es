@@ -78,7 +78,9 @@ Por favor note que las condiciones climáticas, y por lo tanto la transmisión d
 <p>
 Donde el clima es “idóneo” (rojo=1), la malaria es probablemente endémica (hipo-, meso-. hiper u holo-endémicos).  Áreas “idóneas” pueden tener poco o no tener malaria debido al control de malaria. Donde el clima  es “inadecuado” (blanco=0), la malaria es probablemente epidémica o ausente. Algunas áreas “inadecuadas” pueden tener actualmente malaria endémica debido a la presencia de agua superficial en áreas donde hay poca o nada de lluvia.
 En las zonas marginalmente idóneas (0.1 - 0.9) la transmisión puede ocurrir a niveles estables, pero con bajos niveles (por ejemplo, el África Oriental), o en ciclos fuertemente estacionales con una gran variación interanual (por ejemplo, el Occidente &amp; y el Sur de África).[Cortesía de la página web de <a href="http://www.mara.org.za/">Mapeo de Riesgo de Malaria en África</a> (MARA)]</p>
-<p>Referencia: Craig, M. H., R. W. Snow, and D. le Seur, 1999: A climate-based distribution model of malaria transmission in Sub-Saharan Africa. Parasitology Today, 15(3), 105-111.</p>
+<h4>References:</h4>
+<p>Craig, M. H., R. W. Snow, and D. le Seur. (1999). <a href="http://portal.iri.columbia.edu/portal/server.pt/gateway/PTARGS_0_2_3830_0_0_18/Craig%201999%20TIP.pdf">A climate-based distribution model of malaria transmission in Sub-Saharan Africa</a>. Parasitology Today, 15(3), 105-111.
+</p> 
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Documentación de la Base de Datos</h2>
