@@ -1,0 +1,26 @@
+{
+    "app": {
+        "launch": {
+            "urls": [
+                "http://iridl.ldeo.columbia.edu/maproom/"
+            ],
+            "web_url": "http://iridl.ldeo.columbia.edu/maproom/",
+            "container": "tab"
+        }
+    },
+    "offline_enabled": false,
+    "permissions": [],
+    "requirements": {
+        "3D": {
+            "features": []
+        }
+    },
+    "icons": {
+        "128": "iri128.png"
+    },
+    "name": "__MSG_appName__",
+    "description": "__MSG_appDesc__",
+    "default_locale": "en",
+    "version": "1.0.0.2",
+    "manifest_version": 2
+}

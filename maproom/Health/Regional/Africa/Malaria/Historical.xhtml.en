@@ -56,29 +56,26 @@ These products aid to determine the historical risk for malaria due to climatic 
 The maps and charts in this section may aid in forecasting malaria epidemics by helping the user understand the climate risk of their region by:
 </p>
 
-<p><li>Showing the suitability of malaria transmission based on historical climate records.</li></p>
-
-<p><li>Comparing current climatic conditions to climatic conditions during a past outbreak.</li></p>
+<ul><li>Showing the suitability of malaria transmission based on historical climate records.</li>
+<li>Comparing current climatic conditions to climatic conditions during a past outbreak.</li></ul>
 
 <p>
 Studies show that three climatic variables are related to malaria outbreaks. These variables and the range that may increase the risk for malaria transmission are listed below.
 <ul>
                   <li><b>Temperature:</b> Average temperature between 18°C and 32°C 
                   </li>
-                <p>
+                
                   <li>
                   <b>Precipitation:</b> Average precipitation is greater than 80mm
                   </li>
-                  </p>
-                  <p>
+                 
+                
                   <li><b>Humidity:</b> Average relative humidity is greater than 60%
                   </li>
-                  </p>
+            
             
                </ul>
-
-
-</p> 
+</p>
  
 <p><b>References:</b></p>
 <p> Ceccato P., Connor S. J., Jeanne I., Thomson M.C.<b> <a href="https://www.isse.ucar.edu/climatehealth/doc/Publications.Pg/Pubs.Ceccato.GIS.Remote.Sensing.pdf">Application of Geographical Information Systems and
