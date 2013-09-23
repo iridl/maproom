@@ -38,6 +38,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <style>
@@ -66,10 +67,10 @@ display: inline-block
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climate and Health</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Malaria Early Warning System</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">Monitoring The Environment</span></legend>
             </fieldset> 
  <fieldset class="navitem"><legend>Spatially Average Over</legend><select class="pageformcopy" name="resolution">
 <option value=".1">11x11 km box</option>
@@ -150,15 +151,17 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/SOURCES/.Features/.Epidemiological/.Malaria/.Risk_map/.the_geom/X/Y/fig-/colors/red/stroke/grey/verythin/mews_dist/black/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig+//T/19231.5/plotvalue+//plotborder+72+psdef//plotaxislength+432+psdef//layers%5B//est_prcp//mews_prov//countries_gaz%5Dpsdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Malaria Early Warning System</h2>
-  <p align="left" property="term:description">The Malaria Early Warning System (MEWS) consists of an integrated framework that utilizes climate forecasting and environmental monitoring products in order to provide warning to a potential outbreak of malaria (DaSilva et al., 2004). Precipitation is one of the essential elements of MEWS.</p>
+ <h2 align="center" property="term:title">Dekadal (10-day) Precipitation </h2>
+  <p align="left" property="term:description">This map shows dekadal (10-day) precipitation estimates from the Climate Prediction Center. </p>
   
-<p>This map shows precipitation based on dekadal (10-day) precipitation estimates from the Climate Prediction Center. Precipitation, especially in dry lands (warm semi-arid and desert fringe areas), is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites.  
-</p>	
-
-
-<p>Epidemic outbreaks can occur in these dry land regions and can be severe soon after periods of drought and poor food security. 
+<p>
+Precipitation, especially in warm semi-arid and desert fringe areas, is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites. Monitoring precipitation on short term time scales (1-2 weeks) may aid in determining the location and timing of a potential outbreak.
 </p>
+<p>
+By placing recent precipitation in historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
+</p>
+
+
 <h4>References</h4>
 <p>
 Grover-Kopec E., Kawano M., Klaver R. W., Blumenthal B., Ceccato P., Connor S. J. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC548290/">An online operational rainfall-monitoring resource for epidemic malaria early warning systems in Africa</a>. <i>Malaria Journal</i>, 2005, <b>4</b>:6.
@@ -195,8 +198,6 @@ Grover-Kopec E., Kawano M., Klaver R. W., Blumenthal B., Ceccato P., Connor S. J
   <p align="left">The default map on this page shows the most recent dekadal (10-day) estimated precipitation amounts over Africa. As the user moves the cursor over the map, a tool bar will appear on top that will allow for previous dekads (1999-the most recent dekad) to be displayed.</p>
   
 <p>The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, four time series graphs are generated that provide analyses of recent precipitation with respect to that of recent seasons and the short-term multiple-year average. 
-</p><p>
-By placing recent precipitation in historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
 </p>
 
 </div>

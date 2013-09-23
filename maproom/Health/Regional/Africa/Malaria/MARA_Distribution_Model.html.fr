@@ -18,7 +18,7 @@
 <link rel="canonical" href="MARA_Distribution_Model.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
-<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_MARA_Distribution_Model" />
+<meta property="maproom:Entry_Id" content="Health_Regional_Africa_Malaria_Historical_MARA_Distribution_Model" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
@@ -37,6 +37,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climatology"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/X+Y+fig:+colors+grey+verythin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+lakes+:fig//plotaxislength+432+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotborder+72+psdef+//plotaxislength+150+psdef//plotborder+0+psdef//color_smoothing+1+psdef+.gif" />
 </head>
@@ -49,10 +50,10 @@
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climat et Santé</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Paludisme</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/Historical.html">L'analyse Historique du Paludisme</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Paludisme Endémique</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"><span property="term:label">Paludisme Endémique</span></legend>
             </fieldset> 
  </div>
 <div class="ui-tabs">
@@ -75,7 +76,10 @@ Le modèle de distribution ARMA est une carte statique montrant les conditions f
 Cette carte est issue d'un modèle <i><u>théorique</u></i> basé sur des données climatiques disponibles de longue date. Bien que ce soit raisonablement précis, ce <i><u>n'est pas basé sur des données de paludisme propres</u></i> et peut ne pas refléter le véritable status du paludisme. La carte montre l'adéquation théorique des conditions climatiques locales, et par conséquent la distribution potentielle d'une transmission stable du paludisme pour une année type. N.B. : les conditions climatiques, et donc la transmission du paludisme, varient substentiellement d'une année sur l'autre. Les activités de contrôle du paludisme peuvent aussi altérer grandement les conditions de transmission du paludisme.</p>
 <p>
 Là où le climat est "favorable" (rouge = 1), le paludisme est le plus probablement endémique (hypo-, meso-, hyper- ou holoendémique). Certaines zones "favorables" peuvent avoir peu voir pas du tout de paludisme grâce au contrôle. Là où le climat est "non-favorable" (blanc = 0), le paludisme est plus probablement épidémique ou absent. Certaines zones "non-favorables" peuvent cependant connaître un paludisme endémique à cause de la présence d'étendues d'eau sans pour autant qu'il y ait beaucoup de précipitations. Dans les zones propices marginales (0.1-0.9), la transmission peut se passer à niveau constant mais faible (par exmple en Afrique orientale), ou à travers de forts cycles saisonniers avec d'importantes variations inter-annuelles (par exemple l'Afirque occidentale et méridionale). [Avec la permission de <a href="http://www.mara.org.za/">l'Atlas du Risque de la Malaria en Afrique</a> (ARMA)]</p>
-<p>Référence: Craig, M. H., R. W. Snow, and D. le Seur, 1999: A climate-based distribution model of malaria transmission in Sub-Saharan Africa. Parasitology Today, 15(3), 105-111.</p>
+<h4>References:</h4>
+<p>Craig, M. H., R. W. Snow, and D. le Seur. (1999). <a href="http://portal.iri.columbia.edu/portal/server.pt/gateway/PTARGS_0_2_3830_0_0_18/Craig%201999%20TIP.pdf">A climate-based distribution model of malaria transmission in Sub-Saharan Africa</a>. Parasitology Today, 15(3), 105-111.
+</p> 
+
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Documentation</h2>

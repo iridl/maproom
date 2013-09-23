@@ -46,37 +46,17 @@ Consecuentemente, esta podría ser encontrada donde y cuando las condiciones cli
 
 <p>Los mapas mostrados debajo, por lo tanto, tienen por objeto ilustrar modelos de idoneidad climática para la malaria endémica estacional,
 y condiciones climáticas recientes, tales como anomalías de precipitación, las cuales pueden estar asociadas con malaria epidémica
-en regiones cálidas semiáridas de África. Modelos adicionales, como el desarrollado por la iniciativa MARA, pueden ser incluidos en
+en regiones cálidas semiáridas de África. Modelos adicionales, como el desarrollado por la Iniciativa MARA, pueden ser incluidos en
 el futuro y damos la bienvenida a la oportunidad de trabajar con otros en el desarrollo de estos productos.
 
 </p><p><b>References:</b> Grover-Kopec E. K., Blumenthal M. B., Ceccato P., Dinku T., Omumbo J. A., Connor S. J. <a href="http://www.ncbi.nlm.nih.gov/pubmed/16689992">Web-based climate information resources for malaria control in Africa</a>. <i>Malaria Journal</i>. 2006, <b>5</b>:38.
 
 </p>
 </div>
-<div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/" >
-  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
-  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
-<a rel="section" href="http://www.map.ox.ac.uk/data/"></a>
-<div about="http://www.map.ox.ac.uk/data/">
-<meta property="maproom:Sort_Id" content="e13" />
-<a rel="canonical"  href="http://www.map.ox.ac.uk/data/"></a>
-<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
-<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
-<p property="term:title">Proyecto de Atlas de Malaria(MAP) Mapas de la Transmission y Endemicidad de Malaria</p>
-<p property="term:description">El Proyecto de Atlas de Malaria (MAP) ha construido una base de datos mundial y mapas de atlas que muestran los límites spaciales de transmisión de Plasmodium falciparum basados en encuestas de tasas de parásitos, la distribución espacial pronosticada de la endemicidad de malaria de Plasmodium falciparum, y la incertidumbre del modelo para la endemicidad pronosticada.</p>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Africa_3327_1"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_term"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_term"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_term"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#health"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Health_Regional_Africa_Malaria_term"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#static"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<a rel="term:icon" href="http://iri.columbia.edu/~mbell/icons/MAP-Africa-Pf-endemicity-icon.jpg"></a>
-</div>
+<div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/index.html" >
+
+
+
 </div>
 </div>
 <div class="optionsBar">

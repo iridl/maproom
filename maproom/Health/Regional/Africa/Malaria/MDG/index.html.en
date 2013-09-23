@@ -40,6 +40,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#WASP"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
 <style>
 .dlcontrol.country {display: none !important;}
@@ -56,10 +57,10 @@
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climate and Health</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/Historical.html">Malaria Historical Analysis</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"><span property="term:label">Malaria Historical Analysis</span></legend>
             </fieldset> 
 
 <fieldset class="navitem">
@@ -103,10 +104,14 @@ For WASP index values above (below) the baseline, the area between the index and
 WASP index values are derived from precipitation estimates from the Merged Analysis of Precipitation from the Climate Prediction Center (CMAP). 
 </p>
 
-<h4>References:</h4>
-<b>Lyon</b>, B., and A. G. Barnston, 2005:  ENSO and the spatial extent of interannual precipitation extremes in tropical land areas. <i>Journal of Climate</i>, <b>18</b>, 5095-5109.
+
+<h4>References</h4>
 <p>
-<b>Lyon</b>, B., 2004:  The strength of El Niño and the spatial extent of tropical drought. <i>Geophys. Res. Lett.</i>, <b>31</b>, L21204.
+Lyon, B., and A. G. Barnston. <a href="http://journals.ametsoc.org/doi/abs/10.1175/JCLI3598.1">ENSO and the spatial extent of interannual precipitation extremes in tropical land areas</a>. <i>Journal of Climate</i>, 2005, <b>18</b>:5095-5109.
+</p>
+
+<p>
+Lyon, B. <a href="http://journals.ametsoc.org/doi/abs/10.1175/JCLI3598.1">The strength of El Niño and the spatial extent of tropical drought.</a> <i>Geophys. Res. Lett.</i>, <b>31</b>, 2004, L21204.
 </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">

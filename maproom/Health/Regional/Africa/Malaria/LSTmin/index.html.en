@@ -36,6 +36,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#temperature"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#LandSurface"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/home/.benno/.USGS/.landdaac/.global/.LST_Night_1km/T/last/VALUE/X/-2223910/6671690/RANGEEDGES/Y/-5003778/5003772/RANGEEDGES/X+Y+fig-+colors+coasts+-fig//plotaxislength+100+psdef//plotborder+0+psdef+.gif" />
 <style>
@@ -62,17 +63,17 @@ display: inline-block
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climate and Health</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Malaria Early Warning System</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">Monitoring The Environment</span></legend>
             </fieldset> 
             <fieldset class="navitem"> 
                 <legend>Region</legend> 
                 <select class="pageformcopy" name="sregion">
-                 <option value=".WAF">West Africa</option>
-                   <option value=".EAF">East Africa</option>
-                   <option value=".SAF">Southern Africa</option>
+                 <option value=".WAF">western Africa</option>
+                   <option value=".EAF">eastern Africa</option>
+                   <option value=".SAF">southern Africa</option>
                     </select>
             </fieldset>
              <fieldset class="navitem"><legend>Spatially Average Over</legend><select class="pageformcopy" name="resolution">
@@ -109,6 +110,7 @@ margin: 0px;
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a class="href" href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-5" >Instructions</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <a class="dlimgts" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua_night/%28.WAF%29//sregion/parameter/interp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN/%5BT%5DREORDER/T/exch/table:/2/:table/"></a>
@@ -146,14 +148,23 @@ b) Same as (a) for the current calendar year (thick black line), as indicated by
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Minimum Land Surface Temperature (LST)</h2>
-  <p align="left" property="term:description">The Malaria Early Warning System (MEWS) consists of an integrated framework that utilizes climate forecasting and environmental monitoring products in order to provide warning to a potential outbreak of malaria (DaSilva et al., 2004).</p>
+  <p align="left" property="term:description">This map shows minimum land surface temperature (LST) used as a proxy for monitoring minimum air temperature. </p>
 
-<p>This map shows minimum land surface temperature (LST) used as a proxy for monitoring minimum air temperature (Vancutsem et al., 2010).  Minimum air temperature is one important component for the transmission of malaria.</p>
-<p>Minimum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors.  A minimum air temperature of 18 °C is necessary for vector development and potential malaria transmission.</p> 
+
+<p>Minimum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors. A minimum air temperature of 18 °C or greater is necessary for potential Plasmodium falciparum malaria transmission while a minimum temperature of 16°C and above is considered necessary for Plasmodium vivax transmission.</p> 
+
+<h4>References:</h4>
+
+<p>Ceccato, P., Vancutsem, C., Temimi, M. (2010). <a href="http://www.scopus.com/record/display.url?eid&#61;2-s2.0-78650855812&#38;origin=resultslist&#38;sort=plf-f&#38;src=s&#38;st1=Ceccato&#38;st2=P&#38;nlo=1&#38;nlr=20&#38;nls=first-t&#38;sid=jLNiD-7V9i5Mwf99SugfMOt%3a553&#38;sot=anl&#38;sdt=aut&#38;sl=35&#38;s=AU-ID%28%22Ceccato%2c+Pietro%22+8303142200%29&#38;relpos=0&#38;relpos=0&#38;searchTerm=AU-ID%28%5C">Monitoring Air and Land Surface Temperatures from Remotely Sensed Data for Climate-Human Health Applications</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
+</p>
+<p>DaSilva, J., et. al. (2004) <a href="http://www.malariajournal.com/content/3/1/37">Improving epidemic malaria planning, preparedness and response in Southern Africas</a>. Malaria Journal vol. 3. pp. 37
+</p>
+
+
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<p align="center"> This map is a mosaic of MODIS images at 1km resolution, averaged over 8 days. Images are a product of the Aqua satellite and are courtesy of the United States Geological Survey.</p>
+<p> This map is a mosaic of MODIS images at 1km resolution, averaged over 8 days. Images are a product of the Aqua satellite and are courtesy of the United States Geological Survey.</p>
 
 
 <p><b><a class="carry"></a>8 day average minimum Land Surface Temperature</b><br /> <br />

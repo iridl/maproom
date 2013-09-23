@@ -129,7 +129,12 @@ Suitable for Malaria Transmission</h4>
 La carte représente le nombre de mois dans l'année qui sont propices à la transmission du paludisme, basé sur des moyennes climatologiques mensuelles*. L'adéquation des conditions climatiques est définie comme la conjoncture de l'accumalation de précipitations supérieure à 80 mm, d'une température moyenne comprise entre 18°C et 32°C, et d'une humidité relative supérieure à 60%. Il s'agit de seuils approximatifs qui cherchent à décrire les conditions favorables à la fois au développement du parasite falciparum et au cycle vital du vecteur moustique.
 </p><p>
 *Des analyses supplémentaires qui montrent la fréquence de ces conditions dans les données historiques sont disponibles en cliquant sur la carte à la localité de votre choix.
-</p></div>
+</p>
+<h4>References:</h4>
+<p>Grover-Kopec, E. K., et. al. (2006). <a href="http://www.malariajournal.com/content/5/1/38">Web-based climate information resources for malaria control in Africa</a>. Malaria Journal, 5:38.
+</p> 
+
+</div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Documentation</h2>
 <h4>Climatologie des Précipitations</h4>

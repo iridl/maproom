@@ -53,9 +53,8 @@ certaines régions telles que les zones semi-arides de l'Afrique. D'autres modè
 <p><b>Références:</b> Grover-Kopec E. K., Blumenthal M. B., Ceccato P., Dinku T., Omumbo J. A., Connor S. J. <a href="http://www.ncbi.nlm.nih.gov/pubmed/16689992">Web-based climate information resources for malaria control in Africa</a>. <i>Malaria Journal</i>. 2006, <b>5</b>:38.
 </p>
 </div>
-<div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/" >
-  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
-  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
+<div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/index.html" >
+
 </div>
 
 </div>
