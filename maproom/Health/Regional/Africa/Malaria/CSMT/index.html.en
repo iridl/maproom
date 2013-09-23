@@ -41,8 +41,11 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#RelativeHumidity"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
+  
+  
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 </head>
 <body xml:lang="en">
@@ -57,10 +60,10 @@
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climate and Health</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/Historical.html">Malaria Historical Analysis</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Endemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"><span property="term:label">Malaria Historical Analysis</span></legend>
             </fieldset> 
  <fieldset class="navitem"><legend>Map Shows</legend><span class="selectvalue"></span><select class="pageformcopy" name="var"><option value="">Number of Months suitable for Malaria Transmission</option>
 <option value="AllCondProb">
@@ -123,11 +126,15 @@ Suitable for Malaria Transmission</h4>
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">Seasonal Climatic Suitability for Malaria Transmission</h2>
-  <p align="left" property="term:description">This map shows the number of months suitable for malaria transmission, based on climatological averages. Suitability is defined as the coincidence of precipitation accumulation greater than 80 mm, mean temperature between 18°C and 32°C, and relative humidity greater than 60%.
+  <p align="left" property="term:description">This map shows the number of months suitable for malaria transmission, based on climatological averages. Suitability is defined as the coincidence of precipitation accumulation greater than 80 mm, average temperature between 18°C and 32°C, and relative humidity greater than 60%.
 </p>
 <p align="left">
-Temperature, precipitation and relative humidity are factors of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors (Grover-Kopec et al., 2006). The aforementioned values act as the upper limit for vector development and potential malaria transmission. 
+Temperature, precipitation and relative humidity are factors of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors. The aforementioned values act as the upper limit for vector development and potential malaria transmission. 
 </p>
+
+<h4>References:</h4>
+<p>Grover-Kopec, E. K., et. al. (2006). <a href="http://www.malariajournal.com/content/5/1/38">Web-based climate information resources for malaria control in Africa</a>. Malaria Journal, 5:38.
+</p> 
 
 
 </div>

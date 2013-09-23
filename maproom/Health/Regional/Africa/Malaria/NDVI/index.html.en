@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>MODIS Analysis Tool</title>
+<title>Measures of Vegetation</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
@@ -37,6 +37,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#NDVI"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#LandSurface"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iri.columbia.edu/~mbell/icons/Health-Regional-Africa-NDVI-icon.jpg" />
 <style>
@@ -62,17 +63,17 @@ body.varreflectance .regionwithinbbox{display: none !important}
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climate and Health</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Malaria Early Warning System</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">Monitoring The Environment</span></legend>
             </fieldset> 
             <fieldset class="navitem"> 
                 <legend>Region</legend> 
                 <select class="pageformcopy" name="sregion">
                  <option value=".WAF">western Africa</option>
                    <option value=".EAF">eastern Africa</option>
-                   <option value=".SAF">Southern Africa</option>
+                   <option value=".SAF">southern Africa</option>
                     </select>
             </fieldset>
             <fieldset class="navitem"> 
@@ -148,10 +149,17 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28.reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange/.auxfig+//T/3567.0/plotvalue/Y/-9.5446024E-04/39.99889/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
-  <p align="left" property="term:description">The Moderate Resolution Imaging Spectrometer (MODIS) Analysis Tool allows for maps of estimated vegetation to be produced. Two vegetation indices are provided: NDVI, EVI in addition to the reflectance values for the blue, red, near infrared and middle infrared channels. Images are available for western Africa, eastern Africa and southern Africa. 
-
+ <h2 align="center" property="term:title">Measures of Vegetation</h2>
+  <p align="left" property="term:description">This tool produces maps of estimated vegetation using data from NASA's MODIS sensor.
 </p>
+
+<p> In some semi-arid regions of eastern Africa, precipitation has been found to have a 2-3 month lagged correlation with malaria incidence. Due to the lack of station data and because of the lagged nature of precipitation yielding lagged plant growth, vegetation indicies have been used as a proxy measure to forecast malaria.</p>
+
+<p>  Two vegetation indices are provided: NDVI, EVI in addition to the reflectance values for the blue, red, near infrared and middle infrared channels. Each index is derived from data provided from The Moderate Resolution Imaging Spectrometer (MODIS), a key instrument aboard NASA's Terra and Aqua satellites.</p>
+
+
+
+
 <dl class="datasetdocumentation">
 <dt>NDVI</dt> <dd>The Normalized Difference Vegetation Index (NDVI) is the ratio between the difference of red and near-Infrared (NIR) divided by the sum of red and near-Infrared reflectances. The index provides some information on healthy vegetation by examining their difference in wavelength absorption and reflectance. Healthy vegetation growth, such as forests, will yield high NDVI values closer to 1 while low vegetation will yield values close to 0.2.</dd>
 
@@ -162,7 +170,17 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 </dd></p>
 <p>NDVI and EVI are useful to estimate the presence of vegetation, but are subject to intrinsic commission and omission errors which lead to potential misrepresentation of land surfaces. To improve the retrieval of vegetation properties, reflectance values in the Blue, Red, near-Infrared (NIR) and Middle Infrared (MIR) channels can be used.
 </p>
+<p>
+Images are available for western Africa, eastern Africa and southern Africa. 
+</p>
 </dl>
+
+<h4>References:</h4>
+<p>Ceccato, P., et.al. (2007). <a href="http://portal.iri.columbia.edu/portal/server.pt/gateway/PTARGS_0_2_3864_0_0_18/AMJTMH.pdf">Malaria stratification, climate, and epidemic early warning in Eritrea.</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
+
+<i>American Journal of Tropical Medicine and Hygiene</i>, 2007.
+</p>
+
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
@@ -191,7 +209,7 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia
 <div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Instructions</h2>
 <p>
- The MODIS interface provides the ability to make graphs at a user-selected location across different resolutions of spatial averaging.   The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, 2 time series graphs will provide vegetation analyses of the past year and in comparison to the 5 most recent years. 
+ The MODIS interface provides the ability to make graphs at a user-selected location across different resolutions of spatial averaging.  The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, 2 time series graphs will provide vegetation analyses of the past year and in comparison to the 5 most recent years. 
  </p>
  <p> By placing current vegetation in recent historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
   </p>

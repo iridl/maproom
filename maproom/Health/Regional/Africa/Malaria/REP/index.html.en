@@ -38,6 +38,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Health-Regional-Africa-REP-icon.jpg" />
 <style>
@@ -57,10 +58,10 @@ display: inline-block
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climate and Health</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Malaria Early Warning System</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">Monitoring The Environment</span></legend>
             </fieldset> 
  </div>
 <style>
@@ -98,20 +99,22 @@ margin: 0px;
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Rainfall Estimate Percentages</h2>
-  <p align="left" property="term:description">This map shows dekadal (10-day) rainfall estimates as a percentage of the short term average (from 2000 to last complete year). Values greater (less) than 100% therefore indicate dekadal estimates that are above (below) the short-term average rainfall.</p>
+  <p align="left" property="term:description">This map shows dekadal (10-day) rainfall estimates as a percentage of the short term average (from 2000 to last complete year).</p>
+<p>Values greater (less) than 100% therefore indicate dekadal estimates that are above (below) the short-term average rainfall.</p>
+ <p> Rainfall, especially in warm semi-arid and desert fringe areas, is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites.</p>   
 <p> The Rainfall Estimate Percentage (REP) values are different from conventional rainfall anomalies because they are based on a short-term average and not the typical long-term (e.g., 30-year) average. This comparison provides insight into changes in malaria risk relative to a recent historical perspective.</p>
-<p> Rainfall, especially in dry lands (warm semi-arid and desert fringe areas), is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites.</p>  
+
   
 <p> Rainfall estimates expressed as differences of the short-term average can be viewed on the Rainfall Estimate Differences (<a class="href" href="../RED/index.html">RED</a>) map page.
 </p>
-<h4>References</h4>
+<h4>References:</h4>
 <p>
 WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Epidemic Prevention and Control. Geneva: World Health Organization; 2002.
 </p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<dd>REP maps are produced every 10 days on an 11 km spatial resolution basis. Dekadal estimates and short-term averages are derived from the Climate Prediction Center/Famine Early Warning System. Areas where the average accumulation for the selected dekad is less than 7 mm are not shown in the analysis.</dd>
+<p>REP maps are produced every 10 days on an 11 km spatial resolution basis. Dekadal estimates and short-term averages are derived from the Climate Prediction Center/Famine Early Warning System. Areas where the average accumulation for the selected dekad is less than 7 mm are not shown in the analysis.</p>
 <h4>Rainfall Estimates Percentages</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>

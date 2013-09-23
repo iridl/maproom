@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Climat et Santé</title>
+<link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="System.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="System.html?Set-Language=en" />
+<link rel="canonical" href="System.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+
+
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
+
+
+<script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
+</head>
+<body  xml:lang="fr">
+
+<form name="pageform" id="pageform">
+<input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList">  
+                <legend>Climat et Santé</legend> 
+                    <a rev="section" class="navlink carryup" href="index.html">Climat et Paludisme</a>
+            </fieldset> 
+            
+           <fieldset class="navitem" id="chooseSection">
+                   
+           <legend>Climat et Paludisme</legend>
+            </fieldset> 
+
+</div>
+<div>
+ <div id="content" class="searchDescription">
+<h2 property="term:title">Système d'Alerte Précoce Contre le Paludisme </h2>
+<p align="left" property="term:description">
+The Malaria Early Warning System (MEWS) aids in the prediction of malaria outbreaks. The system consists of four elements; Vulnerability, Seasonal Climate Forecasts, Monitoring the Environment and Observed Malaria Morbidity. In certain regions, these products may be used to determine the timing and severity of an outbreak.</p> 
+
+<p>This maproom outlines each element of the MEWS. Each element contains products, some of which may be used to help determine the risk of a malaria outbreak in a specific region.</p> 
+
+
+
+<p>
+Certain levels of climatic variables can indicate an increased risk in vector (mosquito) development and in the development of the virus inside the vector. Examples of such indicators include precipitation, temperature, and humidity. The Seasonal Climate Forecasts and Monitoring the Environment products can be used to monitor climatic variables on long and short term time scales respectively, in turn they may be used to determine transmission risk from climatic indicators. The remaining two elements of the MEWS, Vulnerability and Observed Malaria Morbidity, reflect important socioeconomic aspects of malaria outbreaks. 
+</p>
+
+
+<img class="dsimg" src="MEWSrevised.png" border="0" />
+
+<p> Using all of the elements as a system may be useful in understanding the socioeconomic and climatic drivers of malaria in particular regions. The diagram above depicts how the four elements can be employed on different time scales using flags to raise concern of a potential outbreak. </p>
+
+<p>
+<ul>
+                  <li><b>Vulnerability:</b> Socioeconomic indicators are monitored continuously and determine the vulnerability of a specific region. These indicators are especially useful in predicting the severity of potential outbreaks. Examples of such indicators may be low immunity, malnutrition, HIV, population movement and drug resistance.
+                  </li>
+
+                  
+                <p>
+                  <li>
+                  <b>Seasonal Climate Forecast:</b> Changes in global circulation patterns can indicate a lagged change in local climate with a 1-6 month lead-time. These long-term forecasts may be useful in implicating the timing of a potential outbreak.
+                  </li>
+                  </p>
+                  <p>
+                  <li><b>Monitoring the Environment:</b> Daily and weekly monitoring of climatic variables may allow users of the system to refine the timing of a potential outbreak. One of the prime methods of monitoring the environment is remote sensing using satellites. 
+                  </li>
+                  </p>
+                  <p>
+                  <li><b>Observed Malaria Morbidity:</b> Early detection using strategically placed sentinel sites may allow for the confirmation of the onset of an outbreak. 
+                  </li>
+                </p>
+               </ul>
+
+</p>
+<p><b>References:</b></p>
+<p> Thomson M., Indeje M., Connor S., Dilley M., Ward N.<b> <a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(03)14135-9/fulltext">Malaria early warning in Kenya and seasonal climate forecasts</a></b>. <i>The Lancet</i>. 2003, 362:9383.
+
+</p>
+<p>WHO: <b><a href="http:helid.digicollection.org/en/d/Js2893e/1.html">Malaria Early Warning Systems - Concepts, Indicators and Partners - A Framework for Field Research in Africa</a>.</b> <i>WHO/CDS/RBM/2001.32.</i>.Geneva: World Health Organization; 2001.
+
+</p>
+</div>
+
+<div class="rightcol tabbedentries" about="/maproom/Health/Regional/Africa/Malaria/System.html" >
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Vulnerability"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Seasonal_Climate_Forecast"/>
+    <link class="ui-state-active" rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
+	<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Malaria_Morbidity"/>
+
+</div>
+</div>
+
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend>
+
+</fieldset>
+</div>
+ </body>
+
+ </html>

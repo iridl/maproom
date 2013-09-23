@@ -14,7 +14,7 @@
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
-<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link rel="canonical" href="index.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -37,6 +37,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+      <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <style>
@@ -63,11 +64,11 @@ display: inline-block
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
-                <legend>Climate and Health</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                <legend>Climat et Santé</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Système d'Alerte Précoce Contre du Paludisme</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Paludisme Epidémique</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">Surveillance de l'environnement</span></legend>
             </fieldset> 
  <fieldset class="navitem"><legend>Moyennes spatiales par</legend><select class="pageformcopy" name="resolution">
 <option value=".1">11x11 km boîte</option>
@@ -147,26 +148,14 @@ recent 12-month period in the selected region.  The blue (red) bars are indicati
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/SOURCES/.Features/.Epidemiological/.Malaria/.Risk_map/.the_geom/X/Y/fig-/colors/red/stroke/grey/verythin/mews_dist/black/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig+//T/19231.5/plotvalue+//plotborder+72+psdef//plotaxislength+432+psdef//layers%5B//est_prcp//mews_prov//countries_gaz%5Dpsdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Malaria Early Warning System</h2>
-  <p align="left" property="term:description">MEWS is a rainfall-monitoring product based on dekadal precipitation estimates from the Climate Prediction Center. The interface allows users to view recent rainfall estimates with a seasonal and recent historical perspective. Time series analyses of rainfall data are generated based on user-selected parameters.</p>
-<p>Rainfall is largely responsible for creating the conditions which allow sufficient surface
-water for mosquito breeding sites and is, therefore, recognized as one of the major factors
-influencing malaria transmission in warm semi-arid and desert-
-fringe areas.  Explosive epidemics often occur in these regions after excessive rains and,
-where these follow periods of drought and poor food security, can be especially severe.
-</p><p>
-Consequently, rainfall monitoring forms one of the essential elements for the development
-of integrated Malaria Early Warning Systems (MEWS) for sub-Saharan Africa, as outlined by
-the World Health Organization.
-</p><p>
-The map on this page displays dekadal (aproximately 10-day) estimated precipitation amounts
-over Africa.  The default map shows precipitation totals for the most recently available
-dekad, but totals for previous dekads can be displayed as well.  By clicking on a location
-on the map the user can generate four time series graphs
-that provide analyses of recent rainfall averaged over an administrative district or box
-of a selected size, with respect to that of recent seasons and the short-term multiple-year
- average.  These analyses of recent precipitation placed in historical context are intended
-to provide useful epidemic early warning information for epidemic-prone regions.
+ <h2 align="center" property="term:title">Précipitations Estimées Décadaires </h2>
+  <p align="left" property="term:description">This map shows dekadal (10-day) precipitation estimates from the Climate Prediction Center. </p>
+  
+<p>
+Precipitation, especially in warm semi-arid and desert fringe areas, is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites. Monitoring precipitation on short term time scales (1-2 weeks) may aid in determining the location and timing of a potential outbreak.
+</p>
+<p>
+By placing recent precipitation in historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
 </p>
 <h4>Références</h4>
 <p>

@@ -36,6 +36,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#NDVI"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#LandSurface"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+      <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iri.columbia.edu/~mbell/icons/Health-Regional-Africa-NDVI-icon.jpg" />
 <style>
@@ -61,10 +62,10 @@ body.varreflectance .regionwithinbbox{display: none !important}
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climat et Santé</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Paludisme</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Early Warning System de Paludisme</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Paludisme Epidémique</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">Surveillance de l'environnement</span></legend>
             </fieldset> 
             <fieldset class="navitem"> 
                 <legend>Region</legend> 
@@ -147,24 +148,37 @@ b) Identique à (a) mais pour l'année calendaire en cours (ligne grasse noire),
 <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/%28.WAF%29//sregion/parameter/interp/%28NDVI%29//var/parameter/interp/nip/X/Y/fig-//var/get_parameter/%28.reflectance%29eq/%7Brgbcolor%7D%7Bcolors%7Difelse/lightgrey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange/.auxfig+//T/3567.0/plotvalue/Y/-9.5446024E-04/39.99889/plotrange+//plotaxislength+432+psdef//plotborder+72+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">MODIS Analysis Tool</h2>
-  <p align="left" property="term:description">Une carte interactive de l'Index de Végétation Normalisé (NDVI), l'Index de Végétation Amélioré (EVI), ou Reflectance pour l'Afrique de l'Ouest, l'Afrique de l'Est, et l'Afrique Australe.</p>
-<p> Des séries temporelles du NDVI sont générées à partir de paramètres sélectionnés par l'utilisateur.
-</p><p>Vegetation estimation is useful for the prediction of possible outbreaks of Malaria due to the correlation between vegetation and biological growth. 
-
-</p><p>The first map displayed is the most recent MODIS image. The interface allows users to select desired vegetation variables for a desired region using spatial averages. Refer to the instructions tab for help with customizing graphs. 
-</p> 
-<p>NDVI: The Normalized Difference Vegetation Index (NDVI) is the ratio of two wavelengths, red and near-Infrared (NIR). The index compares healthy and sparse areas of vegetation by examining their difference in wavelength absorption and reflection. Healthy vegetation growth, such as forests, will absorb more and reflect less visible light (red wavelengths) compared to sparse vegetation. For example, an area of forest would yield a NDVI ratio closer to 1 compared to 0 for a desert.  The predictive value of NDVI is attributed to its ability to integrate general biological growth over long periods of time. 
+ <h2 align="center" property="term:title">Measures of Vegetation</h2>
+  <p align="left" property="term:description">This tool produces maps of estimated vegetation using data from NASA's MODIS sensor.
 </p>
-<p>EVI: The Enhanced Vegetation Index is provided as a complimentary index to NDVI. EVI is similar to NDVI but corrects distortions in the reflected light caused by haze and alterations by the land surface beneath vegetation. 
+
+<p> In some semi-arid regions of eastern Africa, precipitation has been found to have a 2-3 month lagged correlation with malaria incidence. Due to the lack of station data and because of the lagged nature of precipitation yielding lagged plant growth, vegetation indicies have been used as a proxy measure to forecast malaria.</p>
+
+<p>  Two vegetation indices are provided: NDVI, EVI in addition to the reflectance values for the blue, red, near infrared and middle infrared channels. Each index is derived from data provided from The Moderate Resolution Imaging Spectrometer (MODIS), a key instrument aboard NASA's Terra and Aqua satellites.</p>
+
+
+
+
+<dl class="datasetdocumentation">
+<dt>NDVI</dt> <dd>The Normalized Difference Vegetation Index (NDVI) is the ratio between the difference of red and near-Infrared (NIR) divided by the sum of red and near-Infrared reflectances. The index provides some information on healthy vegetation by examining their difference in wavelength absorption and reflectance. Healthy vegetation growth, such as forests, will yield high NDVI values closer to 1 while low vegetation will yield values close to 0.2.</dd>
+
+<p><dt>EVI</dt> <dd> The Enhanced Vegetation Index is provided as a complimentary index to NDVI. EVI is an 'optimized' index designed to enhance the vegetation signal with improved sensitivity in high biomass regions and improved vegetation monitoring through a de-coupling of the canopy background signal and a reduction in atmosphere influences.  
+</dd></p>
+
+<p><dt>Reflectance</dt> <dd> Using simultaneous exploitation of MIR, NIR, and Red wavelengths in a Red-Green-Blue color space, reflectance images allow for a more robust and reliable qualitative discrimination between land surfaces with sparse vegetation and those without vegetation.  Land surfaces such as water bodies can also be accurately mapped. The user can follow the spatio-temporal dynamic of green vegetation and identify water bodies using the combination of MIR, NIR and Red channels.
+</dd></p>
+<p>NDVI and EVI are useful to estimate the presence of vegetation, but are subject to intrinsic commission and omission errors which lead to potential misrepresentation of land surfaces. To improve the retrieval of vegetation properties, reflectance values in the Blue, Red, near-Infrared (NIR) and Middle Infrared (MIR) channels can be used.
 </p>
 <p>
-The NDVI and EVI are useful, but are subject to intrinsic commission errors which lead to potential misrepresentation of land surfaces. When used in conjuncture with NDVI and EVI, reflectance is used to successfully mitigate these potential errors.
+Images are available for western Africa, eastern Africa and southern Africa. 
 </p>
-<p>Reflectance:Using simultaneous exploitation of MIR, NIR, and Red wavelengths, reflectance maps allow for a more robust and reliable qualitative discrimination between land surfaces with vegetation and those without vegetation. The value in the reflectance product is reinforced by its high accuracy in detecting water bodies and sparse vegetation. Through the use of a multi-temporal and multi-spectral image analysis method using a combination of MIR, NIR and Red reﬂectance measurements, land surfaces are accurately plotted. The user can follow the spatio-temporal dynamic of green vegetation and identify ephemeral vegetation occurring after one isolated rainfall event seasonal vegetation areas, and evergreen vegetation.
+</dl>
 
+<h4>References:</h4>
+<p>Ceccato, P., et.al. (2007). <a href="http://portal.iri.columbia.edu/portal/server.pt/gateway/PTARGS_0_2_3864_0_0_18/AMJTMH.pdf">Malaria stratification, climate, and epidemic early warning in Eritrea.</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
+
+<i>American Journal of Tropical Medicine and Hygiene</i>, 2007.
 </p>
-
 
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
@@ -191,23 +205,16 @@ Moderate Resolution Imaging Spectroradiometer
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
  </p>
 </div>
-</div>
-<div class="optionsBar">
-            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
-</div>
 <div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Instructions</h2>
 <p>
-To aid in the risk assessment of malaria outbreak potential, the MODIS interface provides users with the ability to make graphs. The interface will provide a contextual perspective of recent MODIAS images by displaying an interactive map of the Normalized Difference Vegetation Index (NDVI) and Enhanced Vegetation Index (EVI). Time series analyses of NDVI and EVI are generated based on user-selected parameters.
+ The MODIS interface provides the ability to make graphs at a user-selected location across different resolutions of spatial averaging.  The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, 2 time series graphs will provide vegetation analyses of the past year and in comparison to the 5 most recent years. 
  </p>
- <p> Isolating a certain region of interest can be accomplished by clicking and dragging a rectangle across that region. The map will zoom to that area to allow for a more precise estimation. Any zoom level will allow for the user to click a location and generate 2 separate time series. Changing the area over which the spatial averaging is performed will modify the resolution of variable estimation. 
+ <p> By placing current vegetation in recent historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
   </p>
  
- <p> Time series a: 16 day estimates of NDVI or EVI for the selected region selected for the last 12 months.
-  </p>
- <p> Time series b: The 16 day estimates of NDVI and EVI for the current and five most recent years are plotted for comparison. The thick black line is the same series shown in a. 
-  </p>
 
+</div>
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
