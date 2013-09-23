@@ -69,7 +69,11 @@ en regiones propensas a epidemias.
 </p> 
  
  
- <p><b>Referencias:</b> Grover-Kopec E. K., Blumenthal M. B., Ceccato P., Dinku T., Omumbo J. A., Connor S. J. <a href="http://www.ncbi.nlm.nih.gov/pubmed/16689992">Web-based climate information resources for malaria control in Africa</a>. <i>Malaria Journal</i>. 2006, <b>5</b>:38.
+ <p><b>Referencias:</b> </p>
+<p> Thomson M., Indeje M., Connor S., Dilley M., Ward N.<b> <a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(03)14135-9/fulltext">Malaria early warning in Kenya and seasonal climate forecasts</a></b>. <i>The Lancet</i>. 2003, 362:9383.
+
+</p>
+<p>WHO: <b><a href="http://apps.who.int/iris/handle/10665/66848">Malaria Early Warning Systems - Concepts, Indicators and Partners - A Framework for Field Research in Africa</a>.</b> <i>WHO/CDS/RBM/2001.32.</i>.Geneva: World Health Organization; 2001.
 
 </p>
 </div>
