@@ -164,9 +164,13 @@ elev <span class="iridl:value"></span>
  <h2 align="center" property="term:title">Inferred Maximum Air Temperature</h2>
   <p align="left" property="term:description">This map shows approximated maximum air temperatures at 2 meters above the ground.</p>
 
-<p>Maximum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors. Maximum air temperature values of 32°C act as the upper limit for vector development and potential malaria transmission.</p>
+<p>Maximum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors. An average air temperature range of 18-32°C is considered to be required for vector development and potential malaria transmission.</p>
 
-<p>Due to confounding geophysical variables, it is difficult to estimate the maximum temperature of certain location using satellites. Studies have validated satellite based daily low surface temperature with nearby stations. To create a product that gives the best estimate of maximum air temperature, values shown are estimated by combining nighttime land surface temperatures (LST) with known diurnal cycle values. The diurnal cycle is the name of the change in temperature throughout the course of 24 hours at a single location.</p>
+<p>Due to confounding geophysical variables, it is difficult to estimate the maximum temperature of a specific location using satellites. Conversely, studies have shown that satellite based observations of minimum land surface temperatures (<a class="href" href="../LST/index.html">LST</a>) are more accurate. </p>
+
+<p>To create a product that gives the best estimate of maximum air temperature, values shown on this map are inferred by combining (<a class="href" href="../LST/index.html">LST</a>) are more accurate. with average diurnal cycle values at that location. The diurnal cycle is the change in temperature throughout the course of 24 hours at a single location.</p>
+
+<p>For example, if the LST is 10°C and the historical diurnal cycle for that location is known to average 12°C on that date, the inferred maximum air temperature will be calculated as 22 °C.</p>
 
 
 <p> The black points on the map indicate locations of weather stations.</p>

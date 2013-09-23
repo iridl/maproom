@@ -65,16 +65,15 @@ The Malaria Early Warning System (MEWS) aids in the prediction of malaria outbre
 
 <p>This maproom outlines each element of the MEWS. Each element contains products, some of which may be used to help determine the risk of a malaria outbreak in a specific region.</p> 
 
-
-
-<p>
-Certain levels of climatic variables can indicate an increased risk in vector (mosquito) development and in the development of the virus inside the vector. Examples of such indicators include precipitation, temperature, and humidity. The Seasonal Climate Forecasts and Monitoring the Environment products can be used to monitor climatic variables on long and short term time scales respectively, in turn they may be used to determine transmission risk from climatic indicators. The remaining two elements of the MEWS, Vulnerability and Observed Malaria Morbidity, reflect important socioeconomic aspects of malaria outbreaks. 
-</p>
-
-
 <img class="dsimg" src="MEWSrevised.png" border="0" />
 
 <p> Using all of the elements as a system may be useful in understanding the socioeconomic and climatic drivers of malaria in particular regions. The diagram above depicts how the four elements can be employed on different time scales using flags to raise concern of a potential outbreak. </p>
+
+<p>
+Climatic and environmental variables can indicate an increased risk in vector (mosquito) and malaria parasite development (when inside its mosquito host). Examples of such indicators include precipitation, temperature, humidity and surface water. The Seasonal Climate Forecasts can predict likely changes in climatic and environmental risk several months in advance while climate and environmental monitoring products provide concrete evidence of such changes and can be used to indicate changes in malaria risk several months ahead of a potential epidemic. The Vulnerability indicators are necessary to indicate the likely severity of any change in malaria transmission risk while the observed case data from health facilities provides the first evidence that an epidemic is underway.
+</p>
+
+
 
 <p>
 <ul>
@@ -84,11 +83,11 @@ Certain levels of climatic variables can indicate an increased risk in vector (m
                   
                 <p>
                   <li>
-                  <b>Seasonal Climate Forecast:</b> Changes in global circulation patterns can indicate a lagged change in local climate with a 1-6 month lead-time. These long-term forecasts may be useful in implicating the timing of a potential outbreak.
+                  <b>Seasonal Climate Forecast:</b> Changes in global circulation patterns can indicate a lagged change in local climate with a 1-6 month lead-time for specific regions of the world and in specific seasons. Where applicable, these long-term forecasts may be useful in implicating the timing of a potential outbreak.
                   </li>
                   </p>
                   <p>
-                  <li><b>Monitoring the Environment:</b> Daily and weekly monitoring of climatic variables may allow users of the system to refine the timing of a potential outbreak. One of the prime methods of monitoring the environment is remote sensing using satellites. 
+                  <li><b>Monitoring the Environment:</b> Routine monitoring of climatic variables may allow users of the system to predict the timing and location of epidemics in vulnerable populations. One of the prime methods of monitoring the environment is remote sensing using satellites. Routinely updated meteorological station data can also be used.
                   </li>
                   </p>
                   <p>
@@ -102,7 +101,7 @@ Certain levels of climatic variables can indicate an increased risk in vector (m
 <p> Thomson M., Indeje M., Connor S., Dilley M., Ward N.<b> <a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(03)14135-9/fulltext">Malaria early warning in Kenya and seasonal climate forecasts</a></b>. <i>The Lancet</i>. 2003, 362:9383.
 
 </p>
-<p>WHO: <b><a href="http:helid.digicollection.org/en/d/Js2893e/1.html">Malaria Early Warning Systems - Concepts, Indicators and Partners - A Framework for Field Research in Africa</a>.</b> <i>WHO/CDS/RBM/2001.32.</i>.Geneva: World Health Organization; 2001.
+<p>WHO: <b><a href="http://apps.who.int/iris/handle/10665/66848">Malaria Early Warning Systems - Concepts, Indicators and Partners - A Framework for Field Research in Africa</a>.</b> <i>WHO/CDS/RBM/2001.32.</i>.Geneva: World Health Organization; 2001.
 
 </p>
 </div>

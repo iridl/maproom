@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Rainfall Estimate Differences</title>
+<title>Precipitation Estimate Differences</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
@@ -100,15 +100,15 @@ margin: 0px;
 
 
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Rainfall Estimate Differences</h2>
-  <p align="left" property="term:description">This map shows dekadal (10-day) rainfall estimates as the difference from the short term average (from 2000 to last recent complete year).</p>
-<p> Positive (negative) values indicate dekadal estimates that are above (below) the short-term average rainfall.</p>
- <p> Rainfall, especially in warm semi-arid and desert fringe areas, is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites. </p> 
+ <h2 align="center" property="term:title">Precipitation Estimate Differences</h2>
+  <p align="left" property="term:description">This map shows dekadal (10-day) precipitation estimates as the difference from the short term average (from 2000 to last recent complete year).</p>
+<p> Positive (negative) values indicate dekadal estimates that are above (below) the short-term average Precipitation.</p>
+ <p> Precipitation, especially in warm semi-arid and desert fringe areas, is one of the factors responsible for creating the conditions which lead to the formation of sufficient surface water and moisture for mosquito breeding sites. </p> 
   
-<p> The Rainfall Estimate Differences (RED) values are different from conventional rainfall anomalies because they are based on a short-term average and not the typical long-term (e.g., 30-year) average. This comparison provides insight into changes in malaria risk relative to a recent historical perspective. </p>
+<p> The Precipitation Estimate Differences values are different from conventional precipitation anomalies because they are based on a short-term average and not the typical long-term (e.g., 30-year) average. This comparison provides insight into changes in malaria risk relative to a recent historical perspective. </p>
 
 
-<p> Rainfall estimates expressed as percentages of the short-term average can be viewed on the Rainfall Estimate Percentages (<a class="href" href="../REP/index.html">REP</a>) map page.
+<p>Alternatively, precipitation estimates can also be expressed as percentages of the short-term average, This data can be viewed on the (<a class="href" href="../REP/index.html">Precipitation Estimate Percentages</a>) map page.
 </p>
 <h4>References:</h4>
 <p>
@@ -120,14 +120,14 @@ WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Ep
 
 <p>RED maps are produced every 10 days on an 11 km spatial resolution basis. Dekadal estimates and short-term averages are derived from the Climate Prediction Center/Famine Early Warning System. Areas where the average accumulation for the selected dekad is less than 7 mm are not shown in the analysis.</p>
 
-<h4>Rainfall Estimates </h4>
+<h4>Precipitation Estimates </h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
 <dd>Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid</dd>
 <dt>Data Source</dt><dd> Climate Prediction Center/Famine Early Warning System 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.TEN-DAY/.RFEv2/.dataset_documentation.html">CPC/FEWS RFE2.0</a>)*</dd>
 </dl>
-<h4>Rainfall Estimate Short-Term Average</h4>
+<h4>Precipitation Estimate Short-Term Average</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt>
 <dd>Dekadal precipitation on a 0.1 x 0.1 deg. lat/lon grid
@@ -159,7 +159,7 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia
 </div>
 <div id="tabs-5" class="ui-tabs-panel" instructions="">
  <h2 align="center">Instructions</h2>
-  <p align="left">The default map on this page displays the most recent dekadal (10-day) rainfall estimates over Africa as percentages of the short-term average.  As the user moves the cursor over the map, a tool bar will appear on top that will allow for previous dekads (1999-to the most recent dekad) to be displayed.</p>
+  <p align="left">The default map on this page displays the most recent dekadal (10-day) precipitaion estimates over Africa as percentages of the short-term average.  As the user moves the cursor over the map, a tool bar will appear on top that will allow for previous dekads (1999-to the most recent dekad) to be displayed.</p>
   
 <p>The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, four time series graphs are generated that provide analyses of recent precipitation with respect to that of recent seasons and the short-term multiple-year average. 
 </p><p>

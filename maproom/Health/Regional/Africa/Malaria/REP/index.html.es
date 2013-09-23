@@ -99,7 +99,7 @@ margin: 0px;
  <h2 align="center" property="term:title">Porcentajes de Precipitación Estimada</h2>
   <p align="left" property="term:description">El mapa de Porcentaje de Precipitación Estimada (REP) expresa las estimaciones más recientes de precipitación decadal provenientes del Centro de Predicción del Clima como un porcentaje del promedio a corto plazo (desde el 2000 hasta el último año completo reciente).</p>
 <p> Valores mayores (menores) que 100% por lo tanto indican estimados decadales que estan sobre (bajo) el promedio de precipitación a corto plazo. Porcentajes de precipitación en áreas donde el promedio acumulado es menor que 7 mm no son mostrados en el análisis.</p>
-<p> Las precipitaciones estimadas expresadas como diferencias del promedio a corto plazo pueden ser vistas en el mapa de la página de Diferencias de Precipitación Estimada (<a class="href" href="../RED/index.html">RED</a>).
+<p> Las precipitaciones estimadas expresadas como diferencias del promedio a corto plazo pueden ser vistas en el mapa de la página de  (<a class="href" href="../RED/index.html">Diferencias de Precipitación Estimada</a>).
 </p>
 <h4>Referencias</h4>
 <p>

@@ -99,7 +99,7 @@ margin: 0px;
  <h2 align="center" property="term:title">Pourcentages des Précipitations Estimées</h2>
   <p align="left" property="term:description">La carte ci-dessus montre les plus récentes précipitations estimées décadaires en tant que pourcentages de la moyenne des précipitations à court terme (depuis 2000 à la dernière année complète).</p>
 <p> Les pourcentages supérieurs (inférieurs) à 100% indiquent donc des estimations décadaires qui sont au-dessus (en-dessous) de la moyenne des précipitations à court terme. Les pourcentages de précipitations dans les zones où l'accumulation moyenne est inférieure à 7 mm ne sont pas analysées.</p>
-<p> Les précipitations estimées exprimées en tant que différences relatives à la moyenne à court terme peuvent être consultées sur la page des Différences des Précipitations Estimées (<a class="href" href="../RED/index.html">RED</a>).
+<p> Les précipitations estimées exprimées en tant que différences relatives à la moyenne à court terme peuvent être consultées sur la page des  (<a class="href" href="../RED/index.html">Différences des Précipitations Estimées</a>).
 </p>
 <h4>References</h4>
 <p>
