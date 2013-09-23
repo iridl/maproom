@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Diferencias de Lluvia Estimada</title>
+<title>Diferencias de Precipitación Estimada</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
@@ -100,7 +100,7 @@ margin: 0px;
  <h2 align="center" property="term:title">Diferencias de Precipitación Estimada</h2>
   <p align="left" property="term:description">El mapa de Diferencias de Precipitación Estimada (RED) ilustra la diferencia entre la más reciente precipitación decadal estimada proveniente del Centro de Predicción del Clima y su promedio a corto plazo (desde el 2000 hasta el último año completo reciente).</p>
 <p> Estas diferencias no deben ser confundidas con anomalías de precipitación convencional, sin embargo pueden proporcionar idea de los cambios en el riesgo de malaria en las zonas donde las anomalías de precipitación son la principal causa de las epidemias de malaria, proporcionando una referencia histórica reciente.</p>
-<p>Valores positivos (negativos) indican estimaciones decadales que están sobre (bajo) el promedio a corto plazo, distinto de las cuales están basadas en la diferencia entre data observada y el promedio a largo plazo (por ejemplo 30 años). La longitud de la referencia del promedio de corto plazo aumentará con el tiempo a medida que más datos estén disponibles. A pesar de las limitaciones que el promedio a corto plazo impone, este puede proporcionar una idea de los cambios en el riesgo de malaria en las zonas donde las anomalías de precipitación son la principal causa de las epidemias de malaria, proporcionando una referencia histórica reciente. Las precipitaciones estimadas expresadas como porcentajes de la media a corto plazo pueden ser vistas en el mapa de la página de Porcentajes de Precipitación Estimada (<a class="href" href="../REP/index.html">REP</a>).
+<p>Valores positivos (negativos) indican estimaciones decadales que están sobre (bajo) el promedio a corto plazo, distinto de las cuales están basadas en la diferencia entre data observada y el promedio a largo plazo (por ejemplo 30 años). La longitud de la referencia del promedio de corto plazo aumentará con el tiempo a medida que más datos estén disponibles. A pesar de las limitaciones que el promedio a corto plazo impone, este puede proporcionar una idea de los cambios en el riesgo de malaria en las zonas donde las anomalías de precipitación son la principal causa de las epidemias de malaria, proporcionando una referencia histórica reciente. Las precipitaciones estimadas expresadas como porcentajes de la media a corto plazo pueden ser vistas en el mapa de la página de  (<a class="href" href="../REP/index.html">Porcentajes de Precipitación Estimada</a>).
 </p>
 <h4>Referencias</h4>
 <p>
@@ -109,7 +109,7 @@ WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Ep
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Documentación de la Base de Datos</h2>
-<h4>Lluvias Estimadas</h4>
+<h4>Precipitación Estimadas</h4>
 <dl class="datasetdocumentation">
 <dt>Datos</dt>
 <dd>Precipitación Decadal en malla a 0.1 x 0.1 grados de lat/lon</dd>
