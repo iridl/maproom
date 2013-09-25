@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Indonesia CPT Precipitation Forecast -- APHR</title>
+<title>Indonesia District CPT Precipitation Forecast -- APHR</title>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="canonical" href="Indonesia_Precip_APHR.html" />
@@ -94,7 +94,16 @@ display: none;
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"><span property="term:label">Forecast</span></legend>
             </fieldset>
-
+            <fieldset class="navitem">
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/kapuasdistrict.json"></a>
+                <select class="RegionMenu" name="bbox">
+                <option value="">Indonesia</option>
+                <optgroup class="template" label="Region">
+                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+                </optgroup>
+                </select>
+            </fieldset>
            <fieldset class="navitem valid">
           <legend>Target Season</legend>
             <link class="starttime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.CPT/.Indonesia/.APHR_obs/.target_date/S/last/cvsunits//S/parameter/VALUE/L//units/unitless/def/pop/info.json" />
@@ -166,7 +175,7 @@ Observations for <span class="bold iridl:long_name"></span>
 </div>
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Indonesia CPT Precipitation Forecast -- APHR</h2>
+ <h2 align="center" property="term:title">Indonesia District CPT Precipitation Forecast -- APHR</h2>
   <p align="left" property="term:description">
 Seasonal deterministic precipitation forecasts and a series of analysis to apply to a map of the region or to selected grid box</p>. 
 </div>
