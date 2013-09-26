@@ -94,7 +94,16 @@ display: none;
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"><span property="term:label">Forecast</span></legend>
             </fieldset>
-
+<fieldset class="navitem">
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/indonesiaregions.json"></a>
+                <select class="RegionMenu" name="bbox">
+                <option value="">Indonesia</option>
+                <optgroup class="template" label="Region">
+                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+                </optgroup>
+                </select>
+            </fieldset>
            <fieldset class="navitem valid">
           <legend>Target Season</legend>
             <link class="starttime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.CPT/.Indonesia/.APHR_obs/.target_date/S/last/cvsunits//S/parameter/VALUE/L//units/unitless/def/pop/info.json" />
