@@ -1,0 +1,27 @@
+# Local maproom Apache configuration
+<VirtualHost <<<Host>>>:<<<Port>>>>
+   ServerAdmin <<<ServerAdmin>>>
+   ServerName <<<ServerName>>>
+   ServerAlias <<<ServerAlias>>>
+   # DL Maproom Configuration
+   Alias /maproom <<<RepoDir>>>/maproom
+   Alias /uicore  <<<RepoDir>>>/uicore
+   Alias /pure    <<<RepoDir>>>/pure
+   <Directory "<<<RepoDir>>>/maproom">
+      Options Indexes FollowSymLinks MultiViews
+      LanguagePriority en es de fr
+      ForceLanguagePriority Prefer Fallback
+   </Directory>
+   # We use UTF-8 and want json to be a known type for language
+   AddType application/json .json
+   AddCharset UTF-8 .json
+   AddDefaultCharset UTF-8
+   # This sets the enviroment variable prefer-language
+   # so that Set-Language overrides the automatic language choice
+   RewriteEngine On
+   RewriteCond %{QUERY_STRING} Set-Language=([^&]+)
+   RewriteRule .? -  [E=prefer-language:%1]
+
+<<<ProxyRules>>>
+
+</VirtualHost>

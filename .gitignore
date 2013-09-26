@@ -1,6 +1,7 @@
 *~
 .DS_Store
 /build.tag
+/localmaproom.conf
 /maproom/Agriculture/index.html.en
 /maproom/ENSO/index.html
 /maproom/Fire/index.html.en
@@ -55,3 +56,4 @@
 /maproom/top.nt
 /maproom/top.xml
 /maproom/version.xml
+/utbuild.tag

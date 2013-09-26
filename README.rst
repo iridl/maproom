@@ -1,33 +1,14 @@
-Build
------
-
 To build maproom you need the following software:
 
-* Java 1.6.0_10+
-* GNU Make 3.81+
-* Unix shell
-* Raptor 1.4.18+
-* semantic_tools 1.2.0+
+	* Java 1.6.0_10+
+	* GNU Make 3.81+
+	* Unix shell
+	* Raptor 1.4.18+
+	* semantic_tools 1.3.2+
+	* miconf 1.6.2+
 
-Apache Configuration
---------------------
+To build and set up:
 
-
-Directory::
-
-	<Directory "/var/www/html/proto">
-	    AddType application/json .json
-	    AddCharset UTF-8 .json
-	    Options Indexes FollowSymLinks MultiViews
-	    AllowOverride All
-	        LanguagePriority en es de fr
-	        ForceLanguagePriority Prefer Fallback
-	</Directory>
-
-Rewrite rules::
-
-	RewriteEngine On
-	RewriteCond %{QUERY_STRING} Set-Language=([^&]+)
-	RewriteRule .? -  [E=prefer-language:%1]
-
-
+	* Edit config.lua
+	* Run 'make'
+	* Drop localmaproom.conf into your Apache config dir
