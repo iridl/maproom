@@ -1,6 +1,7 @@
 PLAT ?= $(shell miconf-platform)
 ARCH ?= $(shell arch)
 PREFIX ?= /usr/local/$(VER)
+RULESET ?= owl-max-optimized
 
 BUILD = ___build
 
@@ -12,8 +13,9 @@ TARBALL = $(VER)
 
 build: build.tag
 build.tag: maproom/version.xml
-	cd maproom; ../maproomtools/build_maproom.pl;
-	echo "Generating local apache configuration file localmaproom.conf. . ."; miconf -c config.lua -p '[.]tpost$$' -r .
+	cd maproom; ../maproomtools/build_maproom.pl $(RULESET);
+	@echo "Generating local apache configuration file localmaproom.conf"
+	miconf -c config.lua -p '[.]tpost$$' -r .
 	touch build.tag
 
 utbuild.tag: build.tag
@@ -35,6 +37,7 @@ maproom/version.xml: .git
 clean:
 	rm -f build.tag utbuild.tag 
 	rm -rf $(BUILD)
+	rm -rf maproom/newmaproomcache
 
 distclean: clean
 
