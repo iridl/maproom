@@ -1,6 +1,8 @@
 *~
 .DS_Store
 /build.tag
+/utbuild.tag
+/localmaproom.conf
 /maproom/version.xml
 /maproom/canonical_imports.serql
 /maproom/maproom_section_index.serql
