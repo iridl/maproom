@@ -10,7 +10,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Climate Monitoring and Analysis</title>
+<title>Climate: Analysis, Monitoring and Forecasts</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="ru" href="index.html?Set-Language=ru" />
 <link rel="canonical" href="index.html" />
@@ -51,8 +51,8 @@
  </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">Climate Monitoring and Analysis</h2>
-<p align="left" property="term:description">Current and historical climate conditions around the globe.</p>
+<h2 property="term:title">Climate: Analysis, Monitoring and Forecasts</h2>
+<p align="left" property="term:description">Historical, current, and future climate conditions around the globe.</p>
 </div>
 
 <div class="rightcol tabbedentries" about="/maproom/Global/" >
