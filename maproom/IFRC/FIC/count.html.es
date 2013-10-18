@@ -28,7 +28,7 @@
 <body  xml:lang="es">
 <form name="pageform" id="pageform" class="carryLanguage carryup carry dlimg dlauximg share">
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg share localemap" name="bbox" type="hidden" />
+<input class="carryup carry dlimg share localemap" name="bbox" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
 <input name="resolution" type="hidden" value="irids:SOURCES:Features:Political:World:Countries:ds" />
 <input class="locale localemap" name="region" type="hidden" value="" />
