@@ -60,7 +60,7 @@ color: blue;
 <body>
 <form name="pageform" id="pageform" class="carryLanguage carryup carry dlimg dlimgts dlauximg dlimgloc share">
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
+<input class="carryup carry dlimg dlimgloc share" name="bbox" type="hidden" />
 <input class="carry dlimgts dlimgloc share" name="region" type="hidden" />
 <input class="carry dlimg dlimgts share" name="var" type="hidden" />
 <input class="carry dlimg dlimgts share" name="seasonStart" type="hidden"  />

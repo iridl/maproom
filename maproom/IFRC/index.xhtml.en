@@ -40,6 +40,16 @@
                      <span class="navtext">Forecasts in Context</span>
 
             </fieldset> 
+            <fieldset class="navitem"> 
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">Global</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
+            </fieldset>
  </div>
 <div>
  <div id="content" class="searchDescription">

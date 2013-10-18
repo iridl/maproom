@@ -28,7 +28,7 @@
 <body  xml:lang="es">
 <form name="pageform" id="pageform" class="carryLanguage carryup carry dlimg dlauximg share">
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="carryup carry dlimg share" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
 </form>
