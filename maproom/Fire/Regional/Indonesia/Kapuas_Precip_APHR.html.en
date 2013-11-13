@@ -94,8 +94,8 @@ display: none;
 
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Ruang Peta</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Fire/">Ruang Sumber Informasi untuk Iklim and Kebakaran</a>
+                <legend>Maproom</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Fire/">Climate and Fire</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Fire_Regional_Indonesia_term"><span property="term:label">Indonesia</span></legend>
