@@ -22,6 +22,10 @@
    RewriteCond %{QUERY_STRING} Set-Language=([^&]+)
    RewriteRule .? -  [E=prefer-language:%1]
 
+#Proxy or Rewrite rules to redirect requests of the apache server
+#to a local or remote ingrid -- means that apache serves the role of
+#squid, allowing simple setup of a prototype maproom
+
 <<<ProxyRules>>>
 
 </VirtualHost>
