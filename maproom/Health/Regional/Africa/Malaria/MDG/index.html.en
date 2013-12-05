@@ -143,6 +143,7 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia
 <p>For example, selecting “Mali”, “1985” and “March” will produce a time series with WASP values averaged over Mali relative to a baseline corresponding to the March 1985-February 1986 average.</p>
 <p>The baseline can be a single year or consist of a range of years. For multiple years, enter the 4 digits of the desired years separated by one blank. For instance the entry 1985 1990 2004 will select those 3 single-year baselines and average them to form a new baseline. For a range of years, enter the 4 digits of the first and the last year (inclusive) separated by a "-". For instance 1990-1999 will select the 10 single-year baselines of the 90s and average them to form a new baseline.</p>
 </dl>
+<div class="buttonInstructions"></div>
 </div>
 </div>
 <div class="optionsBar">

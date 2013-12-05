@@ -228,6 +228,7 @@ The three categories are below normal, normal and above normal.
 </p>
 
 <p> The interface also allows for the month in which the forecast was issued to change. This may be useful to determine how a forecast for a specific area at a fixed target date has changed from older forecast to newer forecast.</p> 
+<div class="buttonInstructions"></div>
 </div>
 </div>
 <div class="optionsBar">
