@@ -195,6 +195,7 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Monthly Tropical Wind Anom
 <p> The default map on this page shows the most recent 8 day average minimum LST over Africa. As the user moves the cursor over the map, a tool bar will appear on top that will allow for previous 8 day periods (2002-the most recent period) to be displayed. </p>
 <p>
 The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, the most recent 12 month LST time series will be generated. </p>
+<div class="buttonInstructions"></div>
 </div>
 </div>
 <div class="optionsBar">

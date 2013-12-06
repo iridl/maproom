@@ -165,8 +165,8 @@ The default map on this page displays the most recent 8 day average VCAP over Af
 <p>The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, two time series graphs are generated that provide a 12 Month VCAP time series and a Multi-year Comparison.  </p>
 
 <p>By placing recent VCAP in historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
-
  </p>
+<div class="buttonInstructions"></div>
 </div>
 </div>
 <div class="optionsBar">

@@ -9,7 +9,7 @@
       >
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Malaria Early Warning System</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
@@ -199,7 +199,7 @@ Grover-Kopec E., Kawano M., Klaver R. W., Blumenthal B., Ceccato P., Connor S. J
   
 <p>The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, four time series graphs are generated that provide analyses of recent precipitation with respect to that of recent seasons and the short-term multiple-year average. 
 </p>
-
+<div class="buttonInstructions"></div>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Helpdesks</h2>

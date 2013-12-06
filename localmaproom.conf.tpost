@@ -12,6 +12,11 @@
       LanguagePriority en es de fr
       ForceLanguagePriority Prefer Fallback
    </Directory>
+   <Directory "<<<RepoDir>>>/uicore/toolinfo">
+      Options Indexes FollowSymLinks MultiViews
+      LanguagePriority en es de fr
+      ForceLanguagePriority Prefer Fallback
+   </Directory>
    # We use UTF-8 and want json to be a known type for language
    AddType application/json .json
    AddCharset UTF-8 .json
