@@ -216,6 +216,7 @@ Find the the date of the daily estimated rainfall map by moving your mouse over 
  <li>Click on a location on the map to generate time series graphs of daily precipitation estimates for the selected region. </li>
 </ol>
 </p>
+<div class="buttonInstructions"></div>
 <p>
 Please feel free to <a href="mailto:help@iri.columbia.edu">email us</a> with any questions or comments.
 </p>

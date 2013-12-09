@@ -164,6 +164,7 @@ Find the the date of the estimated dekadal rainfall map by moving your mouse ove
  <li>To step forward or backward by one dekad, click the corresponding arrow buttons to the left or right of the date text box, and the map will automatically refresh.</li>
  <li>To manually change the date of the map, type your date of interest into the text box.  For dekadal dates type the range of dates represented by the dekad of interest, using a format such as "1-10 Jan 2008", and press "enter".</li>
 </ol>
+<div class="buttonInstructions"></div>
 <p>
 Please feel free to <a href="mailto:help@iri.columbia.edu">email us</a> with any questions or comments.
 </p>
