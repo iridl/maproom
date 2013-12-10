@@ -158,7 +158,7 @@ Contacte <a href="mailto:help@iri.columbia.edu?subject=VCAP:  African Sector">he
  </p>
 </div>
 <div id="tabs-5"  class="ui-tabs-panel">
-<h2  align="center">Instrucciones</h2>
+<h2  align="center">Instrucci&#243;nes</h2>
 <p>
 Para ayudar en la evaluación de riesgo potencial de brote de malaria, la interfaz VCAP proporciona a los usuarios la posibilidad de realizar gráficos. Al seleccionar una zona donde predomina la VCAP, la interfaz proporcionará una perspectiva contextual de la VCAP reciente mostrando una serie de tiempo VCAP de 12 meses y ofreciendo comparaciones múltiples interanuales.
  </p>

@@ -115,7 +115,8 @@ margin: 0px;
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/">Dataset</a></li>
-      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-4" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-5" >Contact Us</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <a class="dlimgts" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.IRI/.MD/.maproom/.Analyses/.MODIS/eviEAF_coarse/eviWAF_coarse/eviSAF_coarse/ndviEAF_coarse/ndviWAF_coarse/ndviSAF_coarse/%7BEAFEVI/WAFEVI/SAFEVI/EAFNDVI/WAFNDVI/SAFNDVI%7Dds%5B%28.WAF%29//sregion/parameter/%28NDVI%29//var/parameter%5Dconcat/interp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/toNaN%5BT%5DREORDER/CopyStream/T/exch/table:/2/:table/"></a>
@@ -174,6 +175,10 @@ Moderate Resolution Imaging Spectroradiometer
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Instructi&#243;nes</h2>
+<div class="buttonInstructions"></div>
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Helpdesks</h2>
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.

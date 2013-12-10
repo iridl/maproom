@@ -62,7 +62,8 @@
       <li><a href="#tabs-1" >Descripción</a></li>
       <li><a href="#tabs-2" >Documentación de la Base de Datos</a></li>
       <li><a class="carry" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/">Base de Datos</a></li>
-      <li><a href="#tabs-4" >Contáctenos</a></li>
+      <li><a href="#tabs-4" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-5" >Contáctenos</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.MARA/.CSMT/.fuzzy_suit/X+Y+fig:+colors+grey+verythin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+lakes+:fig//plotaxislength+432+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotborder+72+psdef/"></a>
@@ -104,6 +105,10 @@ En las zonas marginalmente idóneas (0.1 - 0.9) la transmisión puede ocurrir a 
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Instructi&#243;nes</h2>
+<div class="buttonInstructions"></div>
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Servicios de Asistencia</h2>
 <p>
 Contacte <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> con cualquier pregunta técnica o problema con este Cuarto de Mapas, por ejemplo, los pronósticos no se muestran o actualizan adecuadamente.
