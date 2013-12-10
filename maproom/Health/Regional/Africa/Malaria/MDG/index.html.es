@@ -79,7 +79,8 @@
       <li><a href="#tabs-1" >Descripción</a></li>
       <li><a href="#tabs-2" >Documentación de la Base de Datos</a></li>
       <li><a class="carry" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/caCMAP-latest_WASP12//fullname/%2812-Month%20WASP%29def/tag://fullname/%2812-Month%20WASP%29:tag//long_name/%2812-Month%20WASP%29def/cabaseline//fullname/%28Baseline%29def/tag://fullname/%28Baseline%29:tag//long_name/%28Baseline%29def/%7BWASP/Baseline%7Dds/nip/">Base de Datos</a></li>
-      <li><a href="#tabs-4" >Contáctenos</a></li>
+      <li><a href="#tabs-4" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-5" >Contáctenos</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
 <a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/a:/.caCMAP-latest_WASP12/tag:/%28fullname%29%2812-Month%20WASP%29:tag//plotfirst/-3.5/def//plotlast/3.5/def//long_name/%2812-Month%20WASP%29def/SOURCES/.IRI/.Analyses/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full/%281979%29//baseyear/parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/:a:/.caCMAP-latest_WASP12/tag:/%28fullname%29%2812-Month%20WASP%29:tag//plotfirst/-3.5/def//plotlast/3.5/def//long_name/%2812-Month%20WASP%29def/SOURCES/.IRI/.Analyses/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full//baseyear/get_parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/maskgt/SOURCES/.IRI/.Analyses/.MDG/.Africa/.queriesCMAPlatest/.cabaseline_full//baseyear/get_parameter/dup/%28%20%29rsearch/%7Bpop/pop/pop/BaseYears/exch/mark/exch/interp/counttomark/array/astore/nip/%7Bs==%7Dforall/VALUES%7D%7Bpop/BaseYears/exch/VALUES%7Difelse%5BBaseYears%5Daverage//fullname/%28BaseLine%29def/tag:/%28fullname%29%28BaseLine%29:tag//long_name/%28BaseLine%29def/:a/T/fig-/green/deltabars/brown/deltabars/|/black/thin/line/black/medium/line/-fig//framelabel/%28%25s%5Bcountry%5D%20precipitation%20relative%20to%20years%20%29//baseyear/get_parameter/%28%20starting%20%25=%5BBaseline%5D%29append/append/psdef//country//Algeria/plotvalue//Baseline/0.5/plotvalue//plotaxislength/432/psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef//XOVY/null/psdef/"></a>
@@ -121,6 +122,10 @@ El propósito de esta herramienta es proveer un medio visual simple de relación
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Instructi&#243;nes</h2>
+<div class="buttonInstructions"></div>
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Servicios de Asistencia</h2>
 <p>
 Contacte <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> con cualquier pregunta técnica o problema con este Cuarto de Mapas, por ejemplo, los pronósticos no se muestran o actualizan adecuadamente.

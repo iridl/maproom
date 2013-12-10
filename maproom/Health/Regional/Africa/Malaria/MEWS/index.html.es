@@ -103,7 +103,8 @@ margin: 0px;
       <li><a href="#tabs-1" >Descripción</a></li>
       <li><a href="#tabs-2" >Documentación de la base de datos</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/">Base de Datos</a></li>
-      <li><a href="#tabs-4" >Contáctenos</a></li>
+      <li><a href="#tabs-4" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-5" >Contáctenos</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <a class="dlimgts" rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/DATA/null/null/RANGE//plotlast/200/def//fullname/%28Precipitation%29def/home/.grover/.EMILY/.Analyses/.RFEv2Avg/.avg//region/get_parameter/geoobject%5BX/Y%5Dweighted-average%5BT%5D2/SM121/T/2/index/.T//pointwidth/0/def/a:/.first/cvsunits/:a:/.last/cvsunits/:a/RANGE/T/2/index/.T/replaceGRID//fullname/%282000-12%20Average%29def/T/3/1/roll/table:/3/:table/"></a>
@@ -202,6 +203,10 @@ Grover-Kopec E., Kawano M., Klaver R. W., Blumenthal B., Ceccato P., Connor S. J
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Instructi&#243;nes</h2>
+<div class="buttonInstructions"></div>
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Servicios de Asistencia</h2>
 <p>
 Contacte <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> con cualquier pregunta técnica o problema con este Cuarto de Mapas, por ejemplo, los pronósticos no se muestran o actualizan adecuadamente.

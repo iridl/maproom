@@ -88,7 +88,8 @@ margin: 0px;
       <li><a href="#tabs-1" >Descripción</a></li>
       <li><a href="#tabs-2" >Documentación de la Base de Datos</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfediffmask/">Base de Datos</a></li>
-      <li><a href="#tabs-4" >Contáctenos</a></li>
+      <li><a href="#tabs-4" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-5" >Contáctenos</a></li>
     </ul>
 
 <fieldset class="dlimage">
@@ -141,6 +142,10 @@ WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Ep
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Instructi&#243;nes</h2>
+<div class="buttonInstructions"></div>
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Servicios de Asistencia</h2>
 <p>
 Contáctenos <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> con cualquier pregunta técnica o problema con este Cuarto de Mapas, por ejemplo, los pronósticos no se muestran o actualizan adecuadamente.
