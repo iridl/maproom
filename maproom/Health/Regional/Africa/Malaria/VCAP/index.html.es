@@ -44,7 +44,7 @@ display: inline-block
 </head>
 <body xml:lang="es">
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carryup carry carryLanguage" name="Set-Language" type="hidden" />
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
