@@ -135,6 +135,7 @@ Cada mes se publica un pron&#243;stico estacional para los siguientes tres meses
 <li>Para cambiar manualmente el tiempo de inicio, introduzca un n&uacute;mero del 1 al 4 en el recuadro de texto. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
 </ol>
 </p>
+<div class="buttonInstructions"></div>
 </div>
 <div id="tabs-4" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>

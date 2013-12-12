@@ -104,6 +104,7 @@ M&#233;todo 1: Seleccione una regi&#243;n de la lista:
 <li>Haga clic en el icono de la lupa.</li>
 <li>El mapa se re-dibujar&#225; autom&#225;ticamente. Note que el mapa no puede mostrar &#225;reas fuera de las latitudes mostradas inicialmente en la interfaz (es decir 66.25°S - 76.25°N).</li>
 </ol>
+<div class="buttonInstructions"></div>
 </div>
 <div id="tabs-3" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>

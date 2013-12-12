@@ -122,6 +122,7 @@ Method 1: Pick a region from the list:
 <li>Click the icon of the magnifying glass.</li>
 <li>The map will redraw automatically. Note that the map cannot display areas outside of the latitudes initially shown on the interface (about 66.25S – 76.25N).</li>
 </ol>
+<div class="buttonInstructions"></div>
 </div>
 </div>
 <div class="optionsBar">

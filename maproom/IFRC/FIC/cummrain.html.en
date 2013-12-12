@@ -125,6 +125,7 @@ Forecasts are labeled by the day they were issued. You can find this label by mo
 <li>To produce an animation of these maps over a series of dates, type the date range into the text box. This must follow the format: “start date” followed by “to” followed by “end date”. For example “0000 1 Jan 2008 to 0000 15 Jan 2008”.</li>
 </ol>
 </p>
+<div class="buttonInstructions"></div>
 </div>
 <div id="tabs-4" class="ui-tabs-panel">
 <h2  align="center">Single-Day (24-Hour) Total Precipitation Forecast Maps</h2>
