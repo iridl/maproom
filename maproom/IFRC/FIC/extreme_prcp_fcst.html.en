@@ -128,6 +128,7 @@ Forecasts are labeled by the month they were issued. You can find this label by 
 <li>To produce an animation of these maps over a series of dates, type the date range into the text box. This must follow the format: “start date” followed by “to” followed by “end date”. For example “Jan 2008 to Dec 2008”.</li>
 </ol>
 </p>
+<div class="buttonInstructions"></div>
 </div>
 <div id="tabs-4" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
