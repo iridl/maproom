@@ -160,3 +160,102 @@ display: none;
 </head>
 
 <body xml:lang="en">
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
+<input class="dlimg dlauximg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
+<input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
+<input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
+<input class="unused" name="plotaxislength" type="hidden" value="432" />
+<input class="pickarea dlimg dlauximg share" name="resolution" type="hidden" value="0.25" />
+<input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" value="1951" />
+<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" value="2007" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonStart" type="hidden" value="Jan" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonEnd" type="hidden" value="Jan" />
+<input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" value="1" />
+<input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" value="31" />
+<input class="dlimg dlauximg share dlimgts" name="minFrac" type="hidden" value="0.5" />
+<input class="dlimg dlauximg share dlimgts" name="obsOnly" type="hidden" value="off" />
+<input class="dlimg dlauximg share dlimgts" name="wetThreshold" type="hidden" value="1." />
+<input class="dlimg dlauximg share dlimgts" name="spellThreshold" type="hidden" value="5." />
+<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" value="TotRain" />
+<input class="dlimg dlauximg share ylyStat pET bodyClass" name="yearlyStat" type="hidden" value="Mean" />
+<input class="dlimg share pET" name="probExcThresh1" type="hidden" value="150." />
+<input class="dlimg share pET" name="probExcThresh2" type="hidden" value="30." />
+<input class="dlimg share pET" name="probExcThresh3" type="hidden" value="10." />
+<input class="dlimg share pET" name="probExcThresh4" type="hidden" value="3." />
+<input class="dlimg share pET" name="probExcThresh5" type="hidden" value="3." />
+</form>
+
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Maproom</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+            </fieldset>
+            <fieldset class="navitem" id="chooseSection">
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Monitoring</span></legend>
+            </fieldset>
+</div>
+
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Options</a></li>
+      <li><a href="#tabs-3" >Dataset Documentation</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+
+
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+ <h2 align="center" property="term:title">Lao Historical Precipitation Monitoring</h2>
+  <p align="left" property="term:description">
+The Maproom explores historical daily precipitation by calculating simple seasonal statistics.</p>
+<p>Many options can be specified to produce yearly time series of a chosen seasonal diagnostic of the daily precipitation data. The user can then choose to map the mean, standard deviation or probability of exceeding a chosen threshold, over years; clicking on the map will then produce a local yearly time series of the chosen diagnostic.
+</p>
+</div>
+ <div id="tabs-2" class="ui-tabs-panel" about="">
+ <h2 align="center">Options</h2>
+  <p align="left">
+<b>Years and Season</b>:
+Specify the range of years over which to perform the analysis and choose the start and end dates of the season , over which the diagnostics are to be performed.
+<br />
+<b>Mask and Seasonal Data Coverage</b>:
+The APHRODITE dataset includes a record of the number of station data observations present for each gridbox on each day of the dataset. The maproom allows this information to be used in two ways: (1) gridbox-days without at least one observation can be masked prior to any calculations (masking so called interpolated values); (2) a minimum fraction of non-masked days per season can be required in order for the seasonal diagnostic to be defined at that gridbox &mdash; if this minimum threshold is not met, then the seasonal diagnostic is assigned a missing value at that gridbox, for that season and year.
+<br />
+<b>Wet/Dry Day/Spell Definitions</b>:
+These define the amount in millimeters (non inclusive) above which a day is considered to be a wet day (as opposed to dry), and the minimum number (inclusive) of consecutive wet (dry) days to define a wet (dry) spell.
+<br /><br /><b>Seasonal daily statistcis</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
+<br /><b>Total Rainfall</b>: total cumulative precipitation (in mm) falling over the season.
+<br /><b>Number of Wet Days</b>: the number of wet days (as defined above) during the season.
+<br /><b>Rainfall Intensity</b>:
+the average daily precipitation over the season considering only wet days.<br />
+<b>Number of Wet (Dry) Spells</b>:
+the number of wet (dry) spells during the season according to the definitions in the Options section. For example, if a wet spell is defined as 5 contiguous wet days, 10 contiguous wet days are counted as 1 wet spell. Note that a spell, according to the definitions above, that is overlapping the start or end of the season will be counted only if the part of the spell that falls within the season reaches the minimal length of consecutive days.
+<br />
+<b>Percentage of Data Available</b>: the percentage of days with non missing values within the season.
+<br /><br />
+<b>Yearly seasonal statistics</b>: a choice of yearly statistics over the chosen season of the selected range of years to produce the map among: the mean, the standard deviation and the probability of exceeding a user specified threshold.
+<br />
+<br /><b>Spatial Resolution</b>:
+The analysis can performed and map at each grid point for both 0.25˚ and 0.50˚ resolution APHRODITE products. Additionally it is possible to average the results of the analysis over the 0.25˚ grid points falling within administrative boundaries for the time series graph.
+</p>
+</div>
+ <div id="tabs-3" class="ui-tabs-panel" about="">
+ <h2 align="center">Dataset Documentation</h2>
+  <p align="left">
+<b>Data</b>: RIHN aphrodite V1101 Monsoon Asia gridded daily precipitation <a href="http://iridl.ldeo.columbia.edu/SOURCES/.RIHN/.aphrodite/.V1101/">here</a>.
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+</div>
+</div>
+
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+
+</body>
+</html>
