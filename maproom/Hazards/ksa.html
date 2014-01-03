@@ -34,18 +34,18 @@ width: 90%
 <script type="text/javascript" src="../../uicore/uicore.js"></script>
 </head>
 <body  xml:lang="en">
-<form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
+<form name="pageform" id="pageform">
 <input class="carryLanguage carryup carry " name="Set-Language" type="hidden" />
 <input class="carryup carry share dlimgmap" name="bbox" type="hidden" />
-<input class="carryup carry share dlimg" name="bbox" type="hidden" />
+<input class="carryup carry share dlimg dlimgts" name="bbox" type="hidden" />
 <input class="dlimgmap share" name="T" type="hidden" />
 <input class="dlimgmap share" name="L" type="hidden" />
 <input type="checkbox" name="layers" value="states_gaz" checked="" class="dlimgmap share" disabled="" />
 <input type="checkbox" name="layers" value="countries_gaz" checked="" class="dlimgmap share" disabled="" />
 <input type="checkbox" name="layers" value="coasts_gaz" checked="" class="dlimgmap share" disabled="" />
 <input type="checkbox" name="layers" value="ocean" checked="" class="dlimgmap share" disabled="" />
-<input type="checkbox" name="layers" value="aprod" checked="" class="dlimgmap share" disabled="" />
-<input type="checkbox" name="layers" value="PRATE_INDEX" checked="" class="dlimg share" disabled="" />
+<input type="checkbox" name="layers" value="PRATE_daily" checked="" class="dlimgmap share" disabled="" />
+<input type="checkbox" name="layers" value="PRATE_INDEX_daily" checked="" class="dlimg share" disabled="" />
 <input class="unused" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">
@@ -75,8 +75,8 @@ width: 90%
     </ul>
 <div class="dlimagecontainer">
 <fieldset class="dlimage map">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.tippett/.6_hourly_test1/.FLXF/.surface/.PRATE/c:/6/%28hr%29:c/mul/%28kg%20m%5E-2%29unitconvert/X/32/60/RANGE/Y/12/33/RANGE%5BM%5Daverage/L/0/1/RANGE%5BL%5D//keepgrids/average/4/mul/S/1./STEP/S//T/renameGRID/T/0.5/shiftGRID/T//pointwidth/1.0/def/pop/startcolormap/DATA/0/1200/RANGE/white/white/LightCyan/0/VALUE/PaleTurquoise/PaleTurquoise/5/bandmax/LightSkyBlue/LightSkyBlue/10/bandmax/DeepSkyBlue/DeepSkyBlue/25/bandmax/DodgerBlue/DodgerBlue/50/bandmax/blue/blue/75/bandmax/MediumBlue/MediumBlue/100/bandmax/DarkGreen/DarkGreen/150/bandmax/SeaGreen/SeaGreen/200/bandmax/MediumSeaGreen/MediumSeaGreen/250/bandmax/LimeGreen/LimeGreen/300/bandmax/green/green/350/bandmax/GreenYellow/GreenYellow/400/bandmax/yellow/yellow/450/bandmax/gold/gold/500/bandmax/orange/orange/600/bandmax/DarkOrange/DarkOrange/700/bandmax/red/red/800/bandmax/DeepPink/DeepPink/900/bandmax/HotPink/HotPink/1000/bandmax/magenta/magenta/1100/bandmax/orchid/orchid/1200/bandmax/orchid/endcolormap/X/Y/fig:/colors/blue/ocean/lightgrey/thin/solid/states_gaz/black/thinnish/countries_gaz/:fig//aprod/0.0/20/plotrange//T/485.5/plotvalue/Y/11.33854/34.01561/plotrange//plotborder/72/psdef//plotaxislength/375/psdef//XOVY/null/psdef/" />
-<img class="dlimgmap" src="http://iridl.ldeo.columbia.edu/expert/home/.tippett/.6_hourly_test1/.FLXF/.surface/.PRATE/c:/6/%28hr%29:c/mul/%28kg%20m%5E-2%29unitconvert/X/32/60/RANGE/Y/12/33/RANGE%5BM%5Daverage/L/0/1/RANGE%5BL%5D//keepgrids/average/4/mul/S/1./STEP/S//T/renameGRID/T/0.5/shiftGRID/T//pointwidth/1.0/def/pop/startcolormap/DATA/0/1200/RANGE/white/white/LightCyan/0/VALUE/PaleTurquoise/PaleTurquoise/5/bandmax/LightSkyBlue/LightSkyBlue/10/bandmax/DeepSkyBlue/DeepSkyBlue/25/bandmax/DodgerBlue/DodgerBlue/50/bandmax/blue/blue/75/bandmax/MediumBlue/MediumBlue/100/bandmax/DarkGreen/DarkGreen/150/bandmax/SeaGreen/SeaGreen/200/bandmax/MediumSeaGreen/MediumSeaGreen/250/bandmax/LimeGreen/LimeGreen/300/bandmax/green/green/350/bandmax/GreenYellow/GreenYellow/400/bandmax/yellow/yellow/450/bandmax/gold/gold/500/bandmax/orange/orange/600/bandmax/DarkOrange/DarkOrange/700/bandmax/red/red/800/bandmax/DeepPink/DeepPink/900/bandmax/HotPink/HotPink/1000/bandmax/magenta/magenta/1100/bandmax/orchid/orchid/1200/bandmax/orchid/endcolormap/X/Y/fig:/colors/blue/ocean/lightgrey/thin/solid/states_gaz/black/thinnish/countries_gaz/:fig//aprod/0.0/20/plotrange//T/485.5/plotvalue/Y/11.33854/34.01561/plotrange//plotborder/72/psdef//plotaxislength/375/psdef//XOVY/null/psdef+.gif" />
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.tippett/.KAU/.PRATE_daily/startcolormap/DATA/0/1200/RANGE/white/white/LightCyan/0/VALUE/PaleTurquoise/PaleTurquoise/5/bandmax/LightSkyBlue/LightSkyBlue/10/bandmax/DeepSkyBlue/DeepSkyBlue/25/bandmax/DodgerBlue/DodgerBlue/50/bandmax/blue/blue/75/bandmax/MediumBlue/MediumBlue/100/bandmax/DarkGreen/DarkGreen/150/bandmax/SeaGreen/SeaGreen/200/bandmax/MediumSeaGreen/MediumSeaGreen/250/bandmax/LimeGreen/LimeGreen/300/bandmax/green/green/350/bandmax/GreenYellow/GreenYellow/400/bandmax/yellow/yellow/450/bandmax/gold/gold/500/bandmax/orange/orange/600/bandmax/DarkOrange/DarkOrange/700/bandmax/red/red/800/bandmax/DeepPink/DeepPink/900/bandmax/HotPink/HotPink/1000/bandmax/magenta/magenta/1100/bandmax/orchid/orchid/1200/bandmax/orchid/endcolormap/X/Y/fig:/colors/blue/ocean/lightgrey/thin/solid/states_gaz/black/thinnish/countries_gaz/:fig//PRATE_daily/0.0/20/plotrange//L/.5/plotvalue//T/485.5/plotvalue/Y/11.33854/34.01561/plotrange//plotborder/72/psdef//plotaxislength/375/psdef//XOVY/null/psdef/" />
+<img class="dlimgmap" src="http://iridl.ldeo.columbia.edu/home/.tippett/.KAU/.PRATE_daily/startcolormap/DATA/0/1200/RANGE/white/white/LightCyan/0/VALUE/PaleTurquoise/PaleTurquoise/5/bandmax/LightSkyBlue/LightSkyBlue/10/bandmax/DeepSkyBlue/DeepSkyBlue/25/bandmax/DodgerBlue/DodgerBlue/50/bandmax/blue/blue/75/bandmax/MediumBlue/MediumBlue/100/bandmax/DarkGreen/DarkGreen/150/bandmax/SeaGreen/SeaGreen/200/bandmax/MediumSeaGreen/MediumSeaGreen/250/bandmax/LimeGreen/LimeGreen/300/bandmax/green/green/350/bandmax/GreenYellow/GreenYellow/400/bandmax/yellow/yellow/450/bandmax/gold/gold/500/bandmax/orange/orange/600/bandmax/DarkOrange/DarkOrange/700/bandmax/red/red/800/bandmax/DeepPink/DeepPink/900/bandmax/HotPink/HotPink/1000/bandmax/magenta/magenta/1100/bandmax/orchid/orchid/1200/bandmax/orchid/endcolormap/X/Y/fig:/colors/blue/ocean/lightgrey/thin/solid/states_gaz/black/thinnish/countries_gaz/:fig//PRATE_daily/0.0/20/plotrange//L/.5/plotvalue//T/485.5/plotvalue/Y/11.33854/34.01561/plotrange//plotborder/72/psdef//plotaxislength/375/psdef//XOVY/null/psdef+.gif" />
 </fieldset>
 <fieldset class="dlimage map">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.DAILY/.RFEv2/.est_prcp/dup/SOURCES/.Features/.Political/.World/.Countries/.the_geom/objectid/56/VALUE/rasterize/0.5/masklt/mul/X+Y+fig:+colors+blue+ocean+lightgrey+thin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+:fig+//aprod/0.0/20/plotrange//T/4564.0/plotvalue/X/31.40625/60.46875/plotrange/Y/11.33854/34.01561/plotrange+//plotborder+72+psdef//plotaxislength+375+psdef//XOVY+null+psdef/" />
@@ -84,12 +84,12 @@ width: 90%
 </fieldset>
 </div>
 <fieldset class="dlimage">
-<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.tippett/.KAU/.PRATE_INDEX/S/L/add//name//T/def/S/toS/T+L+fig-+colors+-fig+//PRATE_INDEX/0.0/3/plotrange/T/330.375/608.5/plotrange+//plotborder+110+psdef//plotaxislength+600+psdef//XOVY+null+psdef/" border="0" alt="image" />
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/home/.tippett/.KAU/.PRATE_INDEX/S/L/add//name//T/def/S/toS/T+L+fig-+colors+-fig+//PRATE_INDEX/0.0/3/plotrange/T/330.375/608.5/plotrange+//plotborder+110+psdef//plotaxislength+600+psdef//XOVY+null+psdef+.gif" />
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.tippett/.KAU/.PRATE_INDEX_daily/T+L+fig-+colors+-fig+//PRATE_INDEX_daily/0.0/3/plotrange/T/330.375/608.5/plotrange+//plotborder+110+psdef//plotaxislength+600+psdef//XOVY+null+psdef/" border="0" alt="image" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/home/.tippett/.KAU/.PRATE_INDEX_daily/T+L+fig-+colors+-fig+//PRATE_INDEX_daily/0.0/3/plotrange/T/330.375/608.5/plotrange+//plotborder+110+psdef//plotaxislength+600+psdef//XOVY+null+psdef+.gif" />
   <br />
 <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.DAILY/.RFEv2/.est_prcp/SOURCES/.Features/.Political/.World/.Countries/.the_geom/objectid/56/VALUE%5BX/Y%5Dweighted-average/T/%281%20Dec%202012%29last/45/add/RANGE/dup+T+fig-+colorbars2+-fig+//est_prcp/0.0/12/plotrange//est_prcp/0.0/12/plotrange/T/4413.5/4691.5/plotrange+//plotborder+110+psdef//plotaxislength+600+psdef//XOVY+4+psdef+.gif" />
 <br />
-  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/home/.tippett/.KAU/.PRATE_INDEX/S/L/add//name//T/def/S/toS/T+L+fig-+colors+-fig+.auxfig//PRATE_INDEX/0.0/3/plotrange/T/330.375/608.5/plotrange+//plotborder+110+psdef//plotaxislength+600+psdef//XOVY+null+psdef+.gif" />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/home/.tippett/.KAU/.PRATE_INDEX_daily/T+L+fig-+colors+-fig+.auxfig//PRATE_INDEX_daily/0.0/3/plotrange/T/330.375/608.5/plotrange+//plotborder+110+psdef//plotaxislength+600+psdef//XOVY+null+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Precip Forecast Viewer</h2>
