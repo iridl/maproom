@@ -15,6 +15,9 @@
 <title>RISE Tornado Viewer</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
 <style>
+span[dataflag=NoDataAvailable] + .dlimage {
+display: none !important;
+}
 .dlimagecontainer {
 width: 46%;
 float: right
@@ -49,7 +52,7 @@ float: none;
 <input class="carryLanguage carryup carry " name="Set-Language" type="hidden" />
 <input class="carryup carry share dlimgmap dlimgmapfc" name="bbox" type="hidden" />
 <input class="carryup carry share dlimgtt dlimgts" name="bbox" type="hidden" />
-<input class="dlimgmap dlimgmapfc share" name="T" type="hidden" />
+<input class="dlimgmap dlimgmapfc justT share" name="T" type="hidden" />
 <input class="dlimgmapfc share" name="L" type="hidden" />
 <input type="checkbox" name="layers" value="states_gaz" checked="" class="dlimgmap dlimagemapfc share" disabled="" />
 <input type="checkbox" name="layers" value="countries_gaz" checked="" class="dlimgmap dlimgmapfc share" disabled="" />
@@ -85,11 +88,12 @@ float: none;
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <div class="dlimagecontainer">
+<link class="justT" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.DAILY/.RFEv2/.est_prcp/.T/%282%20Jan%202013%29//T/parameter/readunits/length/0/gt/%28DataAvailable%29%28NoDataAvailable%29ifelse//string/as.json" />
 <fieldset class="dlimage map">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.tippett/.KAU/.PRATE_daily/startcolormap/DATA/0/1200/RANGE/white/white/LightCyan/0/VALUE/PaleTurquoise/PaleTurquoise/5/bandmax/LightSkyBlue/LightSkyBlue/10/bandmax/DeepSkyBlue/DeepSkyBlue/25/bandmax/DodgerBlue/DodgerBlue/50/bandmax/blue/blue/75/bandmax/MediumBlue/MediumBlue/100/bandmax/DarkGreen/DarkGreen/150/bandmax/SeaGreen/SeaGreen/200/bandmax/MediumSeaGreen/MediumSeaGreen/250/bandmax/LimeGreen/LimeGreen/300/bandmax/green/green/350/bandmax/GreenYellow/GreenYellow/400/bandmax/yellow/yellow/450/bandmax/gold/gold/500/bandmax/orange/orange/600/bandmax/DarkOrange/DarkOrange/700/bandmax/red/red/800/bandmax/DeepPink/DeepPink/900/bandmax/HotPink/HotPink/1000/bandmax/magenta/magenta/1100/bandmax/orchid/orchid/1200/bandmax/orchid/endcolormap/X/Y/fig:/colors/blue/ocean/lightgrey/thin/solid/states_gaz/black/thinnish/countries_gaz/:fig//PRATE_daily/0.0/20/plotrange//L/.5/plotvalue//T/485.5/plotvalue/Y/11.33854/34.01561/plotrange//plotborder/72/psdef//plotaxislength/375/psdef//XOVY/null/psdef/" />
 <img class="dlimg dlimgmapfc" src="http://iridl.ldeo.columbia.edu/home/.tippett/.KAU/.PRATE_daily/startcolormap/DATA/0/1200/RANGE/white/white/LightCyan/0/VALUE/PaleTurquoise/PaleTurquoise/5/bandmax/LightSkyBlue/LightSkyBlue/10/bandmax/DeepSkyBlue/DeepSkyBlue/25/bandmax/DodgerBlue/DodgerBlue/50/bandmax/blue/blue/75/bandmax/MediumBlue/MediumBlue/100/bandmax/DarkGreen/DarkGreen/150/bandmax/SeaGreen/SeaGreen/200/bandmax/MediumSeaGreen/MediumSeaGreen/250/bandmax/LimeGreen/LimeGreen/300/bandmax/green/green/350/bandmax/GreenYellow/GreenYellow/400/bandmax/yellow/yellow/450/bandmax/gold/gold/500/bandmax/orange/orange/600/bandmax/DarkOrange/DarkOrange/700/bandmax/red/red/800/bandmax/DeepPink/DeepPink/900/bandmax/HotPink/HotPink/1000/bandmax/magenta/magenta/1100/bandmax/orchid/orchid/1200/bandmax/orchid/endcolormap/X/Y/fig:/colors/blue/ocean/lightgrey/thin/solid/states_gaz/black/thinnish/countries_gaz/:fig//PRATE_daily/0.0/20/plotrange//L/.5/plotvalue//T/485.5/plotvalue/Y/11.33854/34.01561/plotrange//plotborder/72/psdef//plotaxislength/375/psdef//XOVY/null/psdef+.gif" />
 </fieldset>
-<fieldset class="dlimage map">
+<span class="template value@dataflag"></span><fieldset class="dlimage map">
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.DAILY/.RFEv2/.est_prcp/dup/SOURCES/.Features/.Political/.World/.Countries/.the_geom/objectid/56/VALUE/rasterize/0.5/masklt/mul/%7B/PRATE_daily%7D/ds/.PRATE_daily/X+Y+fig:+colors+blue+ocean+lightgrey+thin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+:fig+//PRATE_daily/0.0/20/plotrange//T/4564.0/plotvalue/X/31.40625/60.46875/plotrange/Y/11.33854/34.01561/plotrange+//plotborder+72+psdef//plotaxislength+375+psdef//XOVY+null+psdef/" />
 <img class="dlimg dlimgmap" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.DAILY/.RFEv2/.est_prcp/dup/SOURCES/.Features/.Political/.World/.Countries/.the_geom/objectid/56/VALUE/rasterize/0.5/masklt/mul/%7B/PRATE_daily%7D/ds/.PRATE_daily/X+Y+fig:+colors+blue+ocean+lightgrey+thin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+:fig+//PRATE_daily/0.0/20/plotrange//T/4564.0/plotvalue/X/31.40625/60.46875/plotrange/Y/11.33854/34.01561/plotrange+//plotborder+72+psdef//plotaxislength+375+psdef//XOVY+null+psdef+.gif" />
 </fieldset>
