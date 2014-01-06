@@ -18,6 +18,9 @@
 span[dataflag=NoDataAvailable] + .dlimage {
 display: none !important;
 }
+.dlimage.wide {
+width: 45%
+}
 .dlimagecontainer {
 width: 46%;
 float: right
@@ -34,6 +37,14 @@ float: none;
 .dlimagecontainer .dlimage {
 width: 95%;
 float: none;
+}
+.dlimage.wide {
+width: 95%
+}
+}
+@media only all and (min-width: 900px) {
+.dlimage.wide {
+width: 45%
 }
 }
 </style>
