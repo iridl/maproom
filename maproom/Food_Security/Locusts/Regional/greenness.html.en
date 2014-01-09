@@ -67,7 +67,7 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Greenness Estimates</h2>
-  <p align="left" property="term:description">A critical factor in Locust control is areas which have recently transitioned from desert to vegetation.  Greenness is the number of dekads (approximately ten days) passed since vegetation onset. Thus greenness is a measure which highlights the transition from desert to vegetation.</p>
+  <p align="left" property="term:description">A critical factor in Locust control is areas which have recently transitioned from desert to vegetation.  Greenness is the number of dekads (approximately ten days) passed since vegetation onset. Thus greenness is a measure which highlights this critical transition.</p>
 <p>
 The warmer colours (dekads 1-3) indicate annual vegetation that has
 just recently become green, and this is preferred by Desert
