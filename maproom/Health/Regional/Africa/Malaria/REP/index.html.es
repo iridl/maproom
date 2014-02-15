@@ -37,6 +37,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+      <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Health-Regional-Africa-REP-icon.jpg" />
 <style>
@@ -56,10 +57,10 @@ display: inline-block
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
                 <legend>Clima y Salud</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Sistema de Alerta Temprana</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Malaria Epidémica</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">el analisis de la ambiente</span></legend>
             </fieldset>
  </div>
 <style>
@@ -86,7 +87,8 @@ margin: 0px;
       <li><a href="#tabs-1" >Descripción</a></li>
       <li><a href="#tabs-2" >Documentos de la Base de Datos</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.RFEDiff/.rfe_vs_meanrfe/">Base de Datos</a></li>
-      <li><a href="#tabs-4" >Contáctenos</a></li>
+      <li><a href="#tabs-4" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-5" >Contáctenos</a></li>
     </ul>
 
 <fieldset class="dlimage">
@@ -98,7 +100,7 @@ margin: 0px;
  <h2 align="center" property="term:title">Porcentajes de Precipitación Estimada</h2>
   <p align="left" property="term:description">El mapa de Porcentaje de Precipitación Estimada (REP) expresa las estimaciones más recientes de precipitación decadal provenientes del Centro de Predicción del Clima como un porcentaje del promedio a corto plazo (desde el 2000 hasta el último año completo reciente).</p>
 <p> Valores mayores (menores) que 100% por lo tanto indican estimados decadales que estan sobre (bajo) el promedio de precipitación a corto plazo. Porcentajes de precipitación en áreas donde el promedio acumulado es menor que 7 mm no son mostrados en el análisis.</p>
-<p> Las precipitaciones estimadas expresadas como diferencias del promedio a corto plazo pueden ser vistas en el mapa de la página de Diferencias de Precipitación Estimada (<a class="href" href="../RED/index.html">RED</a>).
+<p> Las precipitaciones estimadas expresadas como diferencias del promedio a corto plazo pueden ser vistas en el mapa de la página de  (<a class="href" href="../RED/index.html">Diferencias de Precipitación Estimada</a>).
 </p>
 <h4>Referencias</h4>
 <p>
@@ -139,6 +141,10 @@ WHO: Final report on the 3rd meeting of the RBM Technical Resource Network on Ep
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Instructi&#243;nes</h2>
+<div class="buttonInstructions"></div>
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Servicios de Asistencia</h2>
 <p>
 Contacte <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> con cualquier pregunta técnica o problema con este Cuarto de Mapas, por ejemplo, los pronósticos no se muestran o actualizan adecuadamente.

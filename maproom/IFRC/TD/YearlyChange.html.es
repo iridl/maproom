@@ -60,7 +60,7 @@ color: blue;
 <body>
 <form name="pageform" id="pageform" class="carryLanguage carryup carry dlimg dlimgts dlauximg dlimgloc share">
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
+<input class="carryup carry dlimg dlimgloc share" name="bbox" type="hidden" />
 <input class="carry dlimgts dlimgloc share" name="region" type="hidden" />
 <input class="carry dlimg dlimgts share" name="var" type="hidden" />
 <input class="carry dlimg dlimgts share" name="seasonStart" type="hidden"  />
@@ -172,6 +172,7 @@ color: blue;
 </ol>
 <li>Finalmente, vea la precipitaci&#243;n real en su &#225;rea (l&#237;nea negra).  Es com&uacute;n para la mayor&#237;a de las fluctuaciones (65% o m&#225;s) en precipitaci&#243;n que sucedan en una escala de tiempo de estaci&#243;n a estaci&#243;n o de a&#241;o a a&#241;o.  Esto s&#243;lo significa que la precipitaci&#243;n fluct&uacute;a una buena cantidad a&#241;o con a&#241;o. Estos son <a href="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/index.html?mapsel=prcp_fcst&#38;map.S.plotvalue=0000+7+Jun+2012&#38;map.Y.units=degree_north&#38;map.Y.plotlast=76.25N&#38;map.url=+SOURCES+.IRI+.MD+.IFRC+.ESRL+.PSD+.reforecast+.ensemble_mean+.analyses+.tot6day+a%3A+.apcppctlenoseasonal+%3Aa%3A+.forecasttime+%3Aa+X+Y+fig-+colors+plotlabel+black+thin+countries_gaz+-fig&#38;map.domain=+{+%2FS+1749.+plotvalue+}&#38;map.domainparam=+%2Fplotaxislength+550+psdef+%2Fplotborder+72+psdef+%2FXOVY+null+psdef&#38;map.zoom=Click+for+Info&#38;map.Y.plotfirst=66.25S&#38;map.X.plotfirst=178.75E&#38;map.X.units=degree_east&#38;map.X.modulus=360&#38;map.X.plotlast=178.75E&#38;map.Y.step=.5">pron&#243;sticos </a> disponibles para predecir la precipitaci&#243;n cada temporada, as&#237; que su monitorizaci&#243;n podr&#237;a ser &uacute;til para anticipar un aumento en el riesgo de inundaciones y sequ&#237;as. &#191;Puede escoger a&#241;os de lluvias muy abundantes o escasas?  Adicionalmente, puede ser &uacute;til notar que es muy probable que el rango de los datos reales que sea mucho mayor que cualquier aumento o reducci&#243;n de la precipitaci&#243;n mostrado con el tiempo por la tendencia de cambios clim&#225;ticos a plazo m&#225;s largo. En cualquier a&#241;o determinado, las fluctuaciones a&#241;o con a&#241;o a corto plazo pueden eclipsar la tendencia de cambio clim&#225;tico a plazo m&#225;s largo.</li>
 </ol>
+<div class="buttonInstructions"></div>
 </div>
 <div id="tabs-4" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>

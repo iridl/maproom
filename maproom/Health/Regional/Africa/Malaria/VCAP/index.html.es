@@ -32,6 +32,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#LandSurface"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/maproom/.Health/.Regional/.Africa/.Malaria/VCAPsmall.jpg" />
 <style>
@@ -43,7 +44,7 @@ display: inline-block
 </head>
 <body xml:lang="es">
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carryup carry carryLanguage" name="Set-Language" type="hidden" />
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
@@ -52,11 +53,11 @@ display: inline-block
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Salud</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                <legend>Clima y Salud</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Sistema de Alerta Temprana</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Malaria Epidémica</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">el analisis de la ambiente</span></legend>
             </fieldset>
  <fieldset class="navitem"><legend>Spatially Average Over</legend><select class="pageformcopy" name="resolution">
 <option value=".1">11x11 km box</option>
@@ -157,11 +158,11 @@ Contacte <a href="mailto:help@iri.columbia.edu?subject=VCAP:  African Sector">he
  </p>
 </div>
 <div id="tabs-5"  class="ui-tabs-panel">
-<h2  align="center">Instrucciones</h2>
+<h2  align="center">Instrucci&#243;nes</h2>
 <p>
 Para ayudar en la evaluación de riesgo potencial de brote de malaria, la interfaz VCAP proporciona a los usuarios la posibilidad de realizar gráficos. Al seleccionar una zona donde predomina la VCAP, la interfaz proporcionará una perspectiva contextual de la VCAP reciente mostrando una serie de tiempo VCAP de 12 meses y ofreciendo comparaciones múltiples interanuales.
-
  </p>
+<div class="buttonInstructions"></div>
 </div>
 </div>
 <div class="optionsBar">

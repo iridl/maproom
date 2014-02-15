@@ -29,7 +29,7 @@
 <body  xml:lang="en">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
 <input class="carryLanguage carryup carry " name="Set-Language" type="hidden" />
-<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="carryup carry dlimg share" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
 </form>
@@ -110,6 +110,7 @@ This map shows the normal rainfall for one month of the year. You edit this by m
 <li>To manually change the month, type the first three letters of the month of interest into the tex box. For example, type “Apr”. Then, press “enter” or click the “refresh” icon in the top left corner of the map.</li>
 <li>To produce an animation of these maps over a series of dates, type the range of months into the text box. This must follow the format: “start date” followed by “to” followed by “end date”. For example “Jan to Dec”.</li>
 </ol>
+<div class="buttonInstructions"></div>
 </div>
 <div id="tabs-3" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>

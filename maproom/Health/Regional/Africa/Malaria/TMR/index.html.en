@@ -10,7 +10,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Inferred Maximum Air Temperature at 2m</title>
+<title>Inferred Maximum Air Temperature</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
 <!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" /> -->
@@ -36,6 +36,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#temperature"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#LandSurface"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+    <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.LandDAAC/.MODIS/.1km/.8day/.version_005/.Aqua/.WAF/T/last/VALUE/X/Y/fig-/colors/coasts/-fig//WAF/-10/50/plotrange//plotborder/0/psdef//XOVY/null/psdef//plotaxislength/120/psdef/.gif" />
 <style>
@@ -47,7 +48,7 @@ display: inline-block
 </head>
 <body xml:lang="en">
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carryup carry carryLanguage" name="Set-Language" type="hidden" />
 <input class="dlimg share dlimgloc dlimglocsta carry" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="dlimg dlauximg dlimgts share dlimgloc carry justsregion" name="sregion" type="hidden" value=".WAF" />
@@ -60,17 +61,17 @@ display: inline-block
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climate and Health</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Malaria Early Warning System</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">Monitoring The Environment</span></legend>
             </fieldset> 
             <fieldset class="navitem"> 
                 <legend>Region</legend> 
                 <select class="pageformcopy" name="sregion">
-                 <option value=".WAF">West Africa</option>
-                   <option value=".EAF">East Africa</option>
-                   <option value=".SAF">Southern Africa</option>
+                 <option value=".WAF">western Africa</option>
+                   <option value=".EAF">eastern Africa</option>
+                   <option value=".SAF">southern Africa</option>
                     </select>
             </fieldset>
  </div>
@@ -160,16 +161,25 @@ elev <span class="iridl:value"></span>
 
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Inferred Maximum Air Temperature at 2m</h2>
-  <p align="left" property="term:description">The map shows inferred maximum air temperature, one important component for the transmission of malaria (Ceccato et el., 2010). The black points on the map indicate locations of weather stations.</p>
+ <h2 align="center" property="term:title">Inferred Maximum Air Temperature</h2>
+  <p align="left" property="term:description">This map shows approximated maximum air temperatures at 2 meters above the ground.</p>
 
-<p>Maximum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors (Ceccato et el., 2012). Maximum air temperature values of 32°C act as the upper limit for vector development and potential malaria transmission.</p>
+<p>Maximum air temperature is a factor of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors. An average air temperature range of 18-32°C is considered to be required for vector development and potential malaria transmission.</p>
 
-<p>The temperatures shown are estimated by combining nighttime land surface temperatures (LST) with diurnal cycle values.</p>
+<p>Due to confounding geophysical variables, it is difficult to estimate the maximum temperature of a specific location using satellites. Conversely, studies have shown that satellite based observations of minimum land surface temperatures (<a class="href" href="../LST/index.html">LST</a>) are more accurate. </p>
+
+<p>To create a product that gives the best estimate of maximum air temperature, values shown on this map are inferred by combining (<a class="href" href="../LST/index.html">LST</a>) are more accurate. with average diurnal cycle values at that location. The diurnal cycle is the change in temperature throughout the course of 24 hours at a single location.</p>
+
+<p>For example, if the LST is 10°C and the historical diurnal cycle for that location is known to average 12°C on that date, the inferred maximum air temperature will be calculated as 22 °C.</p>
 
 
-<p><b>Reference:</b>Ceccato, P. , Vancutsem, C., Temimi, M. (2010). <a href="http://www.scopus.com/record/display.url?eid&#61;2-s2.0-78650855812&#38;origin=resultslist&#38;sort=plf-f&#38;src=s&#38;st1=Ceccato&#38;st2=P&#38;nlo=1&#38;nlr=20&#38;nls=first-t&#38;sid=jLNiD-7V9i5Mwf99SugfMOt%3a553&#38;sot=anl&#38;sdt=aut&#38;sl=35&#38;s=AU-ID%28%22Ceccato%2c+Pietro%22+8303142200%29&#38;relpos=0&#38;relpos=0&#38;searchTerm=AU-ID%28%5C">Monitoring Air and Land Surface Temperatures from Remotely Sensed Data for Climate-Human Health Applications</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
+<p> The black points on the map indicate locations of weather stations.</p>
+
+<h4>References:</h4>
+<p>Ceccato, P., Vancutsem, C., Temimi, M. (2010). <a href="http://www.scopus.com/record/display.url?eid&#61;2-s2.0-78650855812&#38;origin=resultslist&#38;sort=plf-f&#38;src=s&#38;st1=Ceccato&#38;st2=P&#38;nlo=1&#38;nlr=20&#38;nls=first-t&#38;sid=jLNiD-7V9i5Mwf99SugfMOt%3a553&#38;sot=anl&#38;sdt=aut&#38;sl=35&#38;s=AU-ID%28%22Ceccato%2c+Pietro%22+8303142200%29&#38;relpos=0&#38;relpos=0&#38;searchTerm=AU-ID%28%5C">Monitoring Air and Land Surface Temperatures from Remotely Sensed Data for Climate-Human Health Applications</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
 </p>
+
+
 </div>
 <div id="tabs-2"  class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
@@ -221,6 +231,7 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia
 
 <p>By placing temperature in historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions. </p>
 
+<div class="buttonInstructions"></div>
 
 
 </div>

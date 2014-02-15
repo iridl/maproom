@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta property="maproom:Entry_Id" content="IFRC_FIC_CMAP_climo" />
+<meta property="maproom:Sort_Id" content="c03" />
+<title>RISE Tornado Viewer</title>
+<link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+<style>
+span[dataflag=NoDataAvailable] + .dlimage {
+display: none !important;
+}
+.dlimage {
+width: 60%
+}
+.dlimage.wide {
+width: 45%
+}
+.dlimagecontainer {
+width: 35%;
+float: right
+}
+.dlimagecontainer .dlimage {
+width: 90%;
+float: none;
+}
+@media only all and (max-width: 800px) {
+.dlimagecontainer {
+width: 95%;
+float: none;
+}
+.dlimagecontainer .dlimage {
+width: 95%;
+float: none;
+}
+.dlimage.wide {
+width: 95%
+}
+}
+@media only all and (min-width: 900px) {
+.dlimage.wide {
+width: 45%
+}
+}
+</style>
+<link class="altLanguage" rel="alternate" hreflang="es" href="CMAP_climo.html?Set-Language=es" />
+<link class="share" rel="canonical" href="ksa.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
+<script type="text/javascript" src="../../uicore/uicore.js"></script>
+</head>
+<body  xml:lang="en">
+<form name="pageform" id="pageform">
+<input class="carryLanguage carryup carry " name="Set-Language" type="hidden" />
+<input class="carryup carry share dlimgmap dlimgmapfc" name="bbox" type="hidden" />
+<input class="carryup carry share dlimgtt dlimgts" name="bbox" type="hidden" />
+<input class="dlimgmap dlimgmapfc justT share" name="T" type="hidden" />
+<input class="dlimgmapfc share" name="L" type="hidden" />
+<input type="checkbox" name="layers" value="states_gaz" checked="" class="dlimgmap dlimagemapfc share" disabled="" />
+<input type="checkbox" name="layers" value="countries_gaz" checked="" class="dlimgmap dlimgmapfc share" disabled="" />
+<input type="checkbox" name="layers" value="coasts_gaz" checked="" class="dlimgmap dlimgmapfc share" disabled="" />
+<input type="checkbox" name="layers" value="ocean" checked="" class="dlimgmap dlimgmapfc share" disabled="" />
+<input type="checkbox" name="layers" value="PRATE_daily" checked="" class="dlimgmap dlimgmapfc share" disabled="" />
+<input type="checkbox" name="layers" value="PRATE_INDEX_daily" checked="" class="dlimgtt share" disabled="" />
+<input class="unused" name="plotaxislength" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>CU Rise</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Hazards/">Hazards</a>
+            </fieldset> 
+            <fieldset class="navitem"> 
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">Global</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
+            </fieldset>
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+<div id="ifrcdiv">
+</div>
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Instructions</a></li>
+      <li><a href="#tabs-3" >Dataset Documentation</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+<div class="dlimagecontainer">
+<link class="justT" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.DAILY/.RFEv2/.est_prcp/.T/%282%20Jan%202013%29//T/parameter/readunits/length/0/gt/%28DataAvailable%29%28NoDataAvailable%29ifelse//string/as.json" />
+<fieldset class="dlimage map">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/home/.tippett/.KAU/.PRATE_daily/startcolormap/DATA/0/1200/RANGE/white/white/LightCyan/0/VALUE/PaleTurquoise/PaleTurquoise/5/bandmax/LightSkyBlue/LightSkyBlue/10/bandmax/DeepSkyBlue/DeepSkyBlue/25/bandmax/DodgerBlue/DodgerBlue/50/bandmax/blue/blue/75/bandmax/MediumBlue/MediumBlue/100/bandmax/DarkGreen/DarkGreen/150/bandmax/SeaGreen/SeaGreen/200/bandmax/MediumSeaGreen/MediumSeaGreen/250/bandmax/LimeGreen/LimeGreen/300/bandmax/green/green/350/bandmax/GreenYellow/GreenYellow/400/bandmax/yellow/yellow/450/bandmax/gold/gold/500/bandmax/orange/orange/600/bandmax/DarkOrange/DarkOrange/700/bandmax/red/red/800/bandmax/DeepPink/DeepPink/900/bandmax/HotPink/HotPink/1000/bandmax/magenta/magenta/1100/bandmax/orchid/orchid/1200/bandmax/orchid/endcolormap/X/Y/fig:/colors/blue/ocean/lightgrey/thin/solid/states_gaz/black/thinnish/countries_gaz/:fig//PRATE_daily/0.0/20/plotrange//L/.5/plotvalue//T/485.5/plotvalue/Y/11.33854/34.01561/plotrange//plotborder/72/psdef//plotaxislength/375/psdef//XOVY/null/psdef/" />
+<img class="dlimg dlimgmapfc" src="http://iridl.ldeo.columbia.edu/home/.tippett/.KAU/.PRATE_daily/startcolormap/DATA/0/1200/RANGE/white/white/LightCyan/0/VALUE/PaleTurquoise/PaleTurquoise/5/bandmax/LightSkyBlue/LightSkyBlue/10/bandmax/DeepSkyBlue/DeepSkyBlue/25/bandmax/DodgerBlue/DodgerBlue/50/bandmax/blue/blue/75/bandmax/MediumBlue/MediumBlue/100/bandmax/DarkGreen/DarkGreen/150/bandmax/SeaGreen/SeaGreen/200/bandmax/MediumSeaGreen/MediumSeaGreen/250/bandmax/LimeGreen/LimeGreen/300/bandmax/green/green/350/bandmax/GreenYellow/GreenYellow/400/bandmax/yellow/yellow/450/bandmax/gold/gold/500/bandmax/orange/orange/600/bandmax/DarkOrange/DarkOrange/700/bandmax/red/red/800/bandmax/DeepPink/DeepPink/900/bandmax/HotPink/HotPink/1000/bandmax/magenta/magenta/1100/bandmax/orchid/orchid/1200/bandmax/orchid/endcolormap/X/Y/fig:/colors/blue/ocean/lightgrey/thin/solid/states_gaz/black/thinnish/countries_gaz/:fig//PRATE_daily/0.0/20/plotrange//L/.5/plotvalue//T/485.5/plotvalue/Y/11.33854/34.01561/plotrange//plotborder/72/psdef//plotaxislength/375/psdef//XOVY/null/psdef+.gif" />
+</fieldset>
+<span class="template value@dataflag"></span><fieldset class="dlimage map">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.DAILY/.RFEv2/.est_prcp/dup/SOURCES/.Features/.Political/.World/.Countries/.the_geom/objectid/56/VALUE/rasterize/0.5/masklt/mul/%7B/PRATE_daily%7D/ds/.PRATE_daily/X+Y+fig:+colors+blue+ocean+lightgrey+thin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+:fig+//PRATE_daily/0.0/20/plotrange//T/4564.0/plotvalue/X/31.40625/60.46875/plotrange/Y/11.33854/34.01561/plotrange+//plotborder+72+psdef//plotaxislength+375+psdef//XOVY+null+psdef/" />
+<img class="dlimg dlimgmap" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.DAILY/.RFEv2/.est_prcp/dup/SOURCES/.Features/.Political/.World/.Countries/.the_geom/objectid/56/VALUE/rasterize/0.5/masklt/mul/%7B/PRATE_daily%7D/ds/.PRATE_daily/X+Y+fig:+colors+blue+ocean+lightgrey+thin+solid+states_gaz+black+thinnish+countries_gaz+coasts_gaz+:fig+//PRATE_daily/0.0/20/plotrange//T/4564.0/plotvalue/X/31.40625/60.46875/plotrange/Y/11.33854/34.01561/plotrange+//plotborder+72+psdef//plotaxislength+375+psdef//XOVY+null+psdef+.gif" />
+</fieldset>
+</div>
+<fieldset class="dlimage">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.tippett/.KAU/.PRATE_INDEX_daily/T+L+fig-+colors+-fig+//PRATE_INDEX_daily/0.0/3/plotrange/T/330.375/last/plotrange+//plotborder+110+psdef//plotaxislength+600+psdef//XOVY+null+psdef/" border="0" alt="image" />
+<img class="dlimg dlimgtt" src="http://iridl.ldeo.columbia.edu/expert/home/.tippett/.KAU/.PRATE_INDEX_daily/T+L+fig-+colors+-fig+//PRATE_INDEX_daily/0.0/3/plotrange/T/330.375/last/plotrange+//plotborder+110+psdef//plotaxislength+600+psdef//XOVY+null+psdef+.gif" />
+  <br />
+<img class="dlimg dlimgts" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.DAILY/.RFEv2/.est_prcp/SOURCES/.Features/.Political/.World/.Countries/.the_geom/objectid/56/VALUE%5BX/Y%5Dweighted-average/T/%281%20Dec%202012%29last/45/add/RANGE/dup+T+fig-+colorbars2+-fig+//est_prcp/0.0/12/plotrange//est_prcp/0.0/12/plotrange/T/4413.5/last/45/add/plotrange+//plotborder+110+psdef//plotaxislength+600+psdef//XOVY+4+psdef+.gif" />
+<br />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/home/.tippett/.KAU/.PRATE_INDEX_daily/T+L+fig-+colors+-fig+.auxfig//PRATE_INDEX_daily/0.0/3/plotrange/T/330.375/last/plotrange+//plotborder+110+psdef//plotaxislength+600+psdef//XOVY+null+psdef+.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >Precip Forecast Viewer</h2>
+<p align="left" property="term:description">views consistent forecasts as a group and individually.
+</p>
+</div>
+<div id="tabs-2"  class="ui-tabs-panel">
+<h2  align="center">How to use this interactive map</h2>
+<div class="buttonInstructions"></div>
+</div>
+<div id="tabs-3" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>

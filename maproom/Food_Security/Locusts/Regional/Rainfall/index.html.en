@@ -52,6 +52,7 @@ display: inline-block
 <input class="carry dlimg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
 <input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
+<input class="dlimg share" name="T" type="hidden" />
 <input class="unused" name="plotaxislength" type="hidden" value="600" />
 <input class="pickarea" name="resolution" type="hidden" value=".25" />
 </form>
@@ -91,6 +92,7 @@ margin: 0px;
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-3" >Instructions</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/">Dataset</a></li>
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
@@ -111,7 +113,7 @@ Observations for <span class="bold iridl:long_name"></span>
 <img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/dup/0/mul/T/fig:/deltabars/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
 </div><div class="dlimgtsbox">
 <div>c)</div>
-<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/2/copy//pointwidth/0/def/%286%20Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%281/3%20months%20since%202005-01-01%29def/replaceGRID/DATA/0/250/RANGE/dup/T/1/108/RANGE/T/0/36/72/shiftdata/T//modulus/36/def/pop/exch/T/-108/shiftGRID/T/1/last/RANGE/T//modulus/36/def/pop//fullname/%282013%29def/exch/a:/T_lag/72/VALUE/T_lag/removeGRID//fullname/%282012%29def/:a:/T_lag/36/VALUE/T_lag/removeGRID//fullname/%282011%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID//fullname/%282010%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig/T/0.5/36.5/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/home/.grover/.EMILY/.Analyses/.Locust/.CMORPH/.dekadsum/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/2/copy//pointwidth/0/def/%286%20Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%281/3%20months%20since%202005-01-01%29def/replaceGRID/DATA/0/250/RANGE/dup/T/1/108/RANGE/T/0/36/72/shiftdata/T//modulus/36/def/pop/exch/T/-108/shiftGRID/T/1/last/RANGE/T//modulus/36/def/pop//fullname/%282014%29def/exch/a:/T_lag/72/VALUE/T_lag/removeGRID//fullname/%282013%29def/:a:/T_lag/36/VALUE/T_lag/removeGRID//fullname/%282012%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID//fullname/%282011%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig/T/0.5/36.5/plotrange//plotborder/72/psdef//plotbordertop/15/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
 </div><div class="dlimgtsbox">
 <div>d)</div>
 <img class="dlimgts regionwithinbbox" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/%28bb:%5B17%2C4.50%2C17.5%2C5%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/T/last/365/sub/last/RANGE/0/replaceNaN/T/differential_div/T/integral//fullname/%28Cumulative%20Precipitation%29def%5BT%5D2/SM121/dup/0/mul//fullname/%28Zero%20Ref%29def/2/copy/maskgt/1/index/T//pointwidth/0/def/pop/T/fig:/lightgrey/deltabars/grey/deltabars/%7C/black/medium/line/:fig//plotborder/72/psdef//plotbordertop/20/psdef//plotborderbottom/62/psdef//plotaxislength/250/psdef//antialias/true/psdef//XOVY/null/psdef/+.gif" />
@@ -149,7 +151,7 @@ Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that 
 <dt>Data</dt>
 <dd>Daily precipitation estimates on a 0.25 x 0.25 deg. lat/lon grid</dd>
 <dt>Data Source</dt><dd> Climate Prediction Center Morphing Technique 
-(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a></dd>
+(<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.dataset_documentation.html">CMORPH</a>)</dd>
 </dl>
 </div>
 <div class="ui-tabs-panel-hidden">
@@ -158,6 +160,70 @@ Joyce, R.J., J.E. Janowiak, P. A. Arkin and P. Xie, 2004: CMORPH: A Method that 
 <a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/">Access the dataset used to create this map.</a>
 </p>
 </div>
+
+<div id="tabs-3"  class="ui-tabs-panel">
+<h3 align="center">How to Use the Rainfall Analysis Tool</h3>
+<p>
+<a name="about"><u><b>About the Tool</b></u></a>
+</p>
+<p>This tool enables users to view maps of satellite estimates of daily rainfall over areas within the range of the Desert Locust, from West Africa to South Asia.  The tool uses Climate Prediction Center Morphing Technique (CMORPH) satellite-estimated precipitation data from December 2002 to the present.  The data are updated every day.  This tool enables users to:
+</p>
+<ul>
+ <li>view maps of these data for customized time periods, and with overlays of state or provincial boundaries;</li> 
+ <li>produce time series graphs of these data that illustrate daily and dekadal precipitation values over time, precipitation values for the current year compared to previous years, and accumulated precipitation over the past year</li>
+</ul>
+<p>
+This tool can be helpful in seeing where recent rainfall has occurred that might support the growth of green vegetation that could attract Desert Locusts.
+</p>
+<p>
+For further information about the relationship between satellite-estimated rainfall and Desert Locust activity, or if you have questions about how to interpret the data in this tool, please contact Pietro Ceccato (<a href="mailto:pceccato@iri.columbia.edu?subject=Desert Locust Rainfall Analysis Tool">pceccato@iri.columbia.edu</a>).
+</p>
+<p>
+<a name="using"><u><b>How to Use this Tool</b></u></a>
+</p>
+To return to the menu page, click the "Locust" link at the top left corner of the page.
+<p>
+<i>Click and Drag to Zoom in to a Region on the Map:</i>
+<ol>
+ <li>Click the left mouse button at the upper-left corner of the region to which you would like to zoom.</li>
+ <li>While holding down the mouse button, drag the mouse to the lower-right corner of the region to which you would like to zoom.</li>
+ <li>Release the left mouse button.  The map will redraw automatically.</li>
+</ol>
+<i>Zoom Out to the Full Map Extent:</i>
+<ol>
+ <li>Move your mouse over the map until you see several icons appear above the map.</li>
+ <li>Click the icon representing a magnifying glass.</li>
+ <li>The map will redraw automatically.</li>
+</ol>
+<i>Overlay or Remove Administrative Boundaries on the Map:</i>
+<ol>
+ <li>Move your mouse over the map until you see several icons appear above the map.</li>
+ <li>Click the "Layers" icon. </li>
+ <li>Select from among the labeled check boxes that appear to select the administrative boundaries of interest.</li>
+</ol>
+</p>
+<p>
+<i>Change the Date of the Map:</i>
+</p>
+Find the the date of the daily estimated rainfall map by moving your mouse over the map until you see several icons appear above the map.  Ensure that the "Time" icon has been selected and a text box will appear above the map with the date inside.
+<ol>
+ <li>To step forward or backward by one day, click the corresponding arrow buttons to the left or right of the date text box, and the map will automatically refresh.</li>
+ <li>To manually change the date of the map, type your date of interest into the text box.  Use a format such as "10 Jan 2008", and press "enter".</li>
+</ol>
+<p>
+<i>Generate Time Series Analyses:</i>
+<ol>
+ <li>From the "Spatially Average Over" drop-down menu select the size of a rectangular box (e.g., 27 x 27 km box) over which estimated daily rainfall will be averaged to produce time series.</li>
+ <li>Click on a location on the map to generate time series graphs of daily precipitation estimates for the selected region. </li>
+</ol>
+</p>
+<div class="buttonInstructions"></div>
+<p>
+Please feel free to <a href="mailto:help@iri.columbia.edu">email us</a> with any questions or comments.
+</p>
+
+</div>
+
 <div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Helpdesks</h2>
 <p>

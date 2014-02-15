@@ -57,16 +57,17 @@
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/">Dataset</a></li>
-      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-4" >Instructions</a></li>
+      <li><a href="#tabs-5" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig/Y/low/high/plotrange/T/last/plotvalue//plotbordertop/40/psdef//plotborderbottom/40/psdef/"></a>
-<img class="dlimg" src="http://iridl.ldeo.columbia.edu/1/pop/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//plotbordertop/40/psdef//plotborderbottom/40/psdef+.gif" border="0" />
-<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/last/plotvalue/.auxfig/+.gif" />
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig/Y/low/high/plotrange/T/last/plotvalue//plotbordertop/40/psdef//plotborderbottom/40/psdef//antialias/true/psdef/"></a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/1/pop/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/last/plotvalue/Y/low/high/plotrange//plotbordertop/40/psdef//plotborderbottom/40/psdef//antialias/true/psdef/+.gif" border="0" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.EU/.VITO/.DevCoCast/.greenness/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef/.auxfig/+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Greenness Estimates</h2>
-  <p align="left" property="term:description">A critical factor in Locust control is areas which have recently transitioned from desert to vegetation.  Greenness is the number of dekads (approximately ten days) passed since vegetation onset.</p>
+  <p align="left" property="term:description">A critical factor in Locust control is areas which have recently transitioned from desert to vegetation.  Greenness is the number of dekads (approximately ten days) passed since vegetation onset. Thus greenness is a measure which highlights this critical transition.</p>
 <p>
 The warmer colours (dekads 1-3) indicate annual vegetation that has
 just recently become green, and this is preferred by Desert
@@ -99,6 +100,11 @@ Pekel, JF., Ceccato, P., Vancutsem, C., Cressman, K., Vanbogaert, E., Defourny, 
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Instructions</h2>
+<div class="buttonInstructions"></div>
+
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Helpdesks</h2>
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.

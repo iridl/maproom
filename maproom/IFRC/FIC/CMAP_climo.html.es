@@ -28,7 +28,7 @@
 <body  xml:lang="es">
 <form name="pageform" id="pageform" class="carryLanguage carryup carry dlimg dlauximg share">
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg share" name="bbox" type="hidden" />
+<input class="carryup carry dlimg share" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
 </form>
@@ -108,6 +108,7 @@ Este mapa muestra la precipitaci&#243;n normal de un mes del a&#241;o. Usted pue
 <li>Para cambiar manualmente el mes, introduzca las primeras tres letras del mes de inter&#233;s en el recuadro de texto. Por ejemplo, introduzca “Abr”. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
 <li>Para crear una animaci&#243;n de estos mapas a lo largo de una serie de fechas, introduzca el rango de meses en el recuadro de texto. &#233;ste debe tener el siguiente formato: “fecha de inicio” seguida de “al”  seguida de “fecha de finalizaci&#243;n”. Por ejemplo “Jan-Dec”.</li>
 </ol>
+<div class="buttonInstructions"></div>
 </div>
 <div id="tabs-3" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>

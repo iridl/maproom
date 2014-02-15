@@ -1,0 +1,18 @@
+{
+"@context": {
+"bb": "http://iridl.ldeo.columbia.edu/ontologies/gisuri/geobb/",
+"irigaz": "http://iridl.ldeo.columbia.edu/ontologies/irigaz_frwk.owl#",
+"term": "http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#",
+"irigaz:id": { "@type": "@id" },
+"irigaz:hasPart": { "@container": "@list", "@type": "irigaz:GazEntity"},
+"term:label": {"@language": "en"}
+},
+"irigaz:hasPart": [
+{ "irigaz:id": "bb:108:-5:120:8:bb",
+  "term:label": "Borneo"
+},
+{ "irigaz:id": "bb:113:-3.5:115:0:bb",
+  "term:label": "Kapuas District"
+}
+]
+}

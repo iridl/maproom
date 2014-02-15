@@ -28,7 +28,7 @@
 <body  xml:lang="es">
 <form name="pageform" id="pageform" class="carryLanguage carryup carrydlimg dlauximg share">
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg share localemap" name="bbox" type="hidden" />
+<input class="carryup carry dlimg share localemap" name="bbox" type="hidden" />
 <input class="dlimg share" name="F" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
 <input name="resolution" type="hidden" value="irids:SOURCES:Features:Political:World:Countries:ds" />
@@ -122,6 +122,7 @@ Cada mes se publica un pron&#243;stico estacional para los siguientes tres meses
 <li>Para cambiar manualmente el tiempo de inicio, introduzca un n&uacute;mero del 1 al 4 en el recuadro de texto. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
 </ol>
 </p>
+<div class="buttonInstructions"></div>
 </div>
 <div id="tabs-3" class="ui-tabs-panel">
 <h2  align="center">Dataset de Documentaci&#243;n</h2>

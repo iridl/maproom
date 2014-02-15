@@ -37,6 +37,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+      <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Health-Regional-Africa-REP-icon.jpg" />
 <style>
@@ -56,10 +57,10 @@ display: inline-block
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climat et Santé</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Paludisme</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Early Warning System de Paludisme</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Paludisme Epidémique</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">Surveillance de l'environnement</span></legend>
             </fieldset> 
  </div>
 <style>
@@ -98,7 +99,7 @@ margin: 0px;
  <h2 align="center" property="term:title">Pourcentages des Précipitations Estimées</h2>
   <p align="left" property="term:description">La carte ci-dessus montre les plus récentes précipitations estimées décadaires en tant que pourcentages de la moyenne des précipitations à court terme (depuis 2000 à la dernière année complète).</p>
 <p> Les pourcentages supérieurs (inférieurs) à 100% indiquent donc des estimations décadaires qui sont au-dessus (en-dessous) de la moyenne des précipitations à court terme. Les pourcentages de précipitations dans les zones où l'accumulation moyenne est inférieure à 7 mm ne sont pas analysées.</p>
-<p> Les précipitations estimées exprimées en tant que différences relatives à la moyenne à court terme peuvent être consultées sur la page des Différences des Précipitations Estimées (<a class="href" href="../RED/index.html">RED</a>).
+<p> Les précipitations estimées exprimées en tant que différences relatives à la moyenne à court terme peuvent être consultées sur la page des  (<a class="href" href="../RED/index.html">Différences des Précipitations Estimées</a>).
 </p>
 <h4>References</h4>
 <p>

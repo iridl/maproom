@@ -40,13 +40,13 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#deg0.5x0.5"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
 
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/mapicons/Global-Climatologies-SelectAPoint-icon.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.FAO/.NRMED/.SD/.Climate/.Derived/.class/dup/%28bb:20:20:25:25:bb%29//bbox/parameter/geoobject/rasterize/a:/X/exch%5BX/Y%5Dweighted-average/:a:/Y/exch%5BX/Y%5Dweighted-average/:a/geopt/X/Y/fig-/colors/grey/thin/coasts/countries_gaz/lakes/red/geometrypushpins/-fig/Y/-89.75/89.75/plotrange//antialias/true/psdef//plotborder/0/psdef//plotaxislength/220/psdef/+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body xml:lang="en">
 <form name="pageform" id="pageform" class="info carryup carry dlimg dlauximg share dlimgts dlimgloc">
 <input class="carryup carry " name="Set-Language" type="hidden" />
-<input class="dlimg share dlimgloc" name="bbox" type="hidden" />
+<input class="carryup carry dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="share dlimg dlauximg" name="maptype" type="hidden" value="koeppen" />
@@ -107,6 +107,12 @@ display: inline-block
 .plotheading {
 text-align: center;
 margin: 0px;
+}
+
+@media only all and (min-width: 600px) {
+.dlimage.wide {
+width: 45%;
+}
 }
 </style>
 <div class="ui-tabs">

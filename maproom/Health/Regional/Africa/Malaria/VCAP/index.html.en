@@ -33,6 +33,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#LandSurface"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/maproom/.Health/.Regional/.Africa/.Malaria/VCAPsmall.jpg" />
 <style>
@@ -44,7 +45,7 @@ display: inline-block
 </head>
 <body xml:lang="en">
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
-<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carryup carry carryLanguage" name="Set-Language" type="hidden" />
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
@@ -54,10 +55,10 @@ display: inline-block
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Health</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Malaria Early Warning System</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Epidemic Malaria</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">Monitoring The Environment</span></legend>
             </fieldset> 
  <fieldset class="navitem"><legend>Spatially Average Over</legend><select class="pageformcopy" name="resolution">
 <option value=".1">11x11 km box</option>
@@ -122,8 +123,8 @@ Observations for <span class="bold iridl:long_name"></span>
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Vectorial Capacity </h2>
-<p align="left" property="term:description">The Malaria Early Warning System (MEWS) consists of an integrated framework that utilizes climate forecasting and environmental monitoring products in order to provide warning to a potential outbreak of malaria (DaSilva et al., 2004).</p>
-<p>This map shows a Vectorial Capacity (VCAP) model that defines rainfall and temperature as the limiting factors of malaria incidence. VCAP is the daily rate at which future malaria inoculations could arise from a currently infected case. It is used as a convenient way to express malaria transmission risk or receptivity of an area to malaria (Ceccato et al., 2012).</p>
+<p align="left" property="term:description">This map shows a Vectorial Capacity (VCAP) model that defines precipitation and temperature as the limiting factors of malaria incidence. VCAP is the daily rate at which future malaria inoculations could arise from a currently infected case.</p>
+<p> It is used as a convenient way to express malaria transmission risk or receptivity of an area to malaria </p>
 
 
 <h4>References</h4>
@@ -164,8 +165,8 @@ The default map on this page displays the most recent 8 day average VCAP over Af
 <p>The interface consists of a clickable map that allows users to generate customized time series graphs. When a desired location is clicked, two time series graphs are generated that provide a 12 Month VCAP time series and a Multi-year Comparison.  </p>
 
 <p>By placing recent VCAP in historical context, comparisons can be made to past outbreaks and useful early warning information can be developed for epidemic prone regions.
-
  </p>
+<div class="buttonInstructions"></div>
 </div>
 </div>
 <div class="optionsBar">

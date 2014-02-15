@@ -38,6 +38,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
+      <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Health-Regional-Africa-RED-icon.jpg" />
 <style>
@@ -57,10 +58,10 @@ display: inline-block
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climat et Santé</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/System.html">Early Warning System de Paludisme</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"><span property="term:label">Paludisme Epidémique</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"><span property="term:label">Surveillance de l'environnement</span></legend>
             </fieldset> 
  </div>
 <style>
@@ -99,7 +100,7 @@ margin: 0px;
  <h2 align="center" property="term:title">Différences des Précipitations Estimées</h2>
   <p align="left" property="term:description">La carte ci-dessus montre la différence entre les plus récentes précipitations estimées décadaires et la moyenne à court terme (de 2000 à la dernière année complète).</p>
 <p> Les différences positives (négatives) indiquent des estimations décadaires supérieures (inférieures) à la moyenne à court terme. Ces différences ne doivent pas être amalgamées avec des anomalies de précipitations conventionnelles, qui sont basées sur des différences entre des observations et une moyenne à long terme (ex : 30 ans). La durée de la moyenne à court terme de référence augmentera avec le temps, comme plus d'observations deviendront disponibles.</p>
-<p>Malgré les limitations d'une moyenne à court terme, cela peut cependant indiquer des changements dans le risque de paludisme dans des zones où les anomalies de précipitations sont la principale cause d'épidémies de paludisme en fournissant une référence historique récente. Les précipitations estimées exprimées en tant que pourcentages de la moyenne à court terme peuvent être consultées sur la page des Pourcentages des Précipitations Estimées (<a class="href" href="../REP/index.html">REP</a>).
+<p>Malgré les limitations d'une moyenne à court terme, cela peut cependant indiquer des changements dans le risque de paludisme dans des zones où les anomalies de précipitations sont la principale cause d'épidémies de paludisme en fournissant une référence historique récente. Les précipitations estimées exprimées en tant que pourcentages de la moyenne à court terme peuvent être consultées sur la page des  (<a class="href" href="../REP/index.html">Pourcentages des Précipitations Estimées</a>).
 </p>
 <h4>References</h4>
 <p>

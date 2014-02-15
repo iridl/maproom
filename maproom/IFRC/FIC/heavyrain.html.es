@@ -28,7 +28,7 @@
 <body  xml:lang="es"> 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg share localemap" name="bbox" type="hidden" />
+<input class="carryup carry dlimg share localemap" name="bbox" type="hidden" />
 <input class="dlimg share" name="S" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
 <input name="resolution" type="hidden" value="irids:SOURCES:Features:Political:World:Countries:ds" />
@@ -126,6 +126,7 @@ Los pron&#243;sticos se rotulan por el d&#237;a en que se publicaron. Puede enco
 <li>Para crear una animaci&#243;n de estos mapas a lo largo de una serie de fechas, introduzca el rango de fechas en el recuadro de texto. &#233;ste debe tener el siguiente formato: “fecha de inicio” seguida de “al” seguida de “fecha de finalizaci&#243;n”. Por ejemplo “0000 1 Jan 2008 al 0000 15 Jan 2008”.</li>
 </ol>
 </p>
+<div class="buttonInstructions"></div>
 </div>
 <div id="tabs-4" class="ui-tabs-panel">
 <h2  align="center">Mapas de Pron&#243;stico de Precipitaci&#243;n Total de un D&#237;a</h2>

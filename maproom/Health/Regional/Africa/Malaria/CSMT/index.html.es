@@ -97,7 +97,8 @@ margin: 0px;
       <li><a href="#tabs-1" >Descripción</a></li>
       <li><a href="#tabs-2" >Documentación de la Base de Datos</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/">Base de Datos</a></li>
-      <li><a href="#tabs-4" >Contáctenos</a></li>
+      <li><a href="#tabs-4" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-5" >Contáctenos</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
 <div class="leftpart">
@@ -129,7 +130,12 @@ Por favor  tenga en cuenta que el mapa arriba está basado en un modelo teórico
 </p><p>
 <i>Número de meses que tiene condiciones climatica ideales para la transmisión de Malaria</i> es el número de meses que durante el año tienen las condiciones  adecuados para la transmisión de malaria. El calculo de meses esta basado  en promedios climatológicos mensuales*. Condiciones climaticas ideales para la transmision de malaria  se define como la coincidencia de la precipitación acumulada mayor que 80 mm, temperatura media entre 18 ° C y 32 ° C, y humedad relativa mayor que 60 por ciento. Estos umbrales  pretenden describir condiciones ideales para el desarrollo del parásito de falciparum y el ciclo de vida del vector. </p>
 <p>*Análisis adicionales que muestran con qué frecuencia estas condiciones climaticas se han producido en el registro histórico pueden verse  haciendo clic en el mapa en el lugar de interés.
-</p></div>
+</p>
+<h4>References:</h4>
+<p>Grover-Kopec, E. K., et. al. (2006). <a href="http://www.malariajournal.com/content/5/1/38">Web-based climate information resources for malaria control in Africa</a>. Malaria Journal, 5:38.
+</p> 
+
+</div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Documentación de la Base de Datos</h2>
 <h4> Climatolgia de la Precipitacion</h4>
@@ -163,6 +169,10 @@ Por favor  tenga en cuenta que el mapa arriba está basado en un modelo teórico
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Instructi&#243;nes</h2>
+<div class="buttonInstructions"></div>
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">Servicios de Asistencia</h2>
 <p>
 Contacte <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> si tienen alguna  pregunta técnica o problema con este  Mapa, por ejemplo, los pronósticos no se muestran o actualizan adecuadamente.
