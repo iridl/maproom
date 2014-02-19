@@ -1,0 +1,410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Bicol Region Historical Wetter Water Balance Monitoring</title>
+<script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link rel="canonical" href="Bicol_WB_Wet.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<meta property="maproom:Entry_Id" content="Agriculture_Historicalrical_Bicol_Water_Balance_Wet" />
+<meta property="maproom:Sort_Id" content="a1" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Agriculture_term" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Water_Balance"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Soil"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Wet_19612007/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%2823%29//DayStart/parameter/%28%20%29append/%28Jun%29//seasonStart/parameter/append/%28%20-%20%29append/%284%29//DayEnd/parameter/append/%28%20%29append/%28Nov%29//seasonEnd/parameter/append/%281.0%29//wsThreshold/parameter/interp/0/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7Bnip/-1.0/exch/SM/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7Bnip/-1.0/exch/ETcrop_red/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7Bnip/-1.0/exch/Peffective/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7Bnip/-1.0/exch/ETcrop_red/ETcrop/div/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/div/4/-3/roll/flexseasonalfreqLT%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7Bnip/-1.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7Bnip/100.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalfreqLT%7Dif/%28Mean%29//yearlyStat/parameter/%28Mean%29eq/%7B%5BT%5Daverage%7Dif//yearlyStat/get_parameter/%28StdDev%29eq/%7Bdup/dataflag%5BT%5Dsum/dup/1.0/sub/div/sqrt/exch%5BT%5D0.0/rmsaover/mul/rainbowcolorscale%7Dif//yearlyStat/get_parameter/%28PoE%29eq/%7BDATA/0/300/1/RANGESTEP%5Bgid%5Ddistrib1D/dup/0.0%5Baprod%5Dintegrate/aprod/300.5/VALUE/aprod/removeGRID/div//name/%28pdf%29def/DATA/null/null/RANGE/0.0%5Baprod%5Dintegrate//name/%28pdf%29def/DATA/0/0.02/0.17/0.5/0.83/0.98/1.0001/VALUES/-1/mul/1/add/aprod//seasonalStat/get_parameter/%28SM%29eq/%7B%28100%29//probExcThresh1/parameter/interp%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7B%2830%29//probExcThresh2/parameter/interp%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7B%2860%29//probExcThresh3/parameter/interp%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7B%281%29//probExcThresh4/parameter/interp%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B%2810%29//probExcThresh5/parameter/interp%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7B%2850%29//probExcThresh6/parameter/interp%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7B%2810%29//probExcThresh7/parameter/interp%7Dif/VALUE/%28percent%29unitconvert//long_name/%28Probability%29def/correlationcolorscale/DATA/0/100/RANGE%7Dif/SOURCES/.WORLDBATH/.bath/X/122.0/124.5/RANGE/Y/12.25/14.75/RANGE/exch/the_geom/exch/1/index/X/Y/fig-/white/mask/||/fillby/black/verythin/stroke/-fig//antialias/true/psdef//plotborder/0/psdef//plotaxislength/150/psdef/+.gif" />
+<style>
+.dlimage.ver2 {
+        width: 24%;
+position:absolute;
+bottom:1%;
+float: right;
+}
+.dlimgtsbox {
+width: 99%;
+display: inline-block
+ }
+.seasonalStatSM #pET2 {
+display: none;
+}
+.seasonalStatSM #pET3 {
+display: none;
+}
+.seasonalStatSM #pET4 {
+display: none;
+}
+.seasonalStatSM #pET5 {
+display: none;
+}
+.seasonalStatSM #pET6 {
+display: none;
+}
+.seasonalStatSM #pET7 {
+display: none;
+}
+.seasonalStatETcrop #pET1 {
+display: none;
+}
+.seasonalStatETcrop #pET3 {
+display: none;
+}
+.seasonalStatETcrop #pET4 {
+display: none;
+}
+.seasonalStatETcrop #pET5 {
+display: none;
+}
+.seasonalStatETcrop #pET6 {
+display: none;
+}
+.seasonalStatETcrop #pET7 {
+display: none;
+}
+.seasonalStatPeff #pET1 {
+display: none;
+}
+.seasonalStatPeff #pET2 {
+display: none;
+}
+.seasonalStatPeff #pET4 {
+display: none;
+}
+.seasonalStatPeff #pET5 {
+display: none;
+}
+.seasonalStatPeff #pET6 {
+display: none;
+}
+.seasonalStatPeff #pET7 {
+display: none;
+}
+.seasonalStatWS #pET1 {
+display: none;
+}
+.seasonalStatWS #pET2 {
+display: none;
+}
+.seasonalStatWS #pET3 {
+display: none;
+}
+.seasonalStatWS #pET5 {
+display: none;
+}
+.seasonalStatWS #pET6 {
+display: none;
+}
+.seasonalStatWS #pET7 {
+display: none;
+}
+.seasonalStatNumWS #pET1 {
+display: none;
+}
+.seasonalStatNumWS #pET2 {
+display: none;
+}
+.seasonalStatNumWS #pET3 {
+display: none;
+}
+.seasonalStatNumWS #pET4 {
+display: none;
+}
+.seasonalStatNumWS #pET6 {
+display: none;
+}
+.seasonalStatNumWS #pET7 {
+display: none;
+}
+.seasonalStatPTAW #pET1 {
+display: none;
+}
+.seasonalStatPTAW #pET2 {
+display: none;
+}
+.seasonalStatPTAW #pET3 {
+display: none;
+}
+.seasonalStatPTAW #pET4 {
+display: none;
+}
+.seasonalStatPTAW #pET5 {
+display: none;
+}
+.seasonalStatPTAW #pET7 {
+display: none;
+}
+.seasonalStatNumPTAW #pET1 {
+display: none;
+}
+.seasonalStatNumPTAW #pET2 {
+display: none;
+}
+.seasonalStatNumPTAW #pET3 {
+display: none;
+}
+.seasonalStatNumPTAW #pET4 {
+display: none;
+}
+.seasonalStatNumPTAW #pET5 {
+display: none;
+}
+.seasonalStatNumPTAW #pET6 {
+display: none;
+}
+.seasonalStat #pET2 {
+display: none;
+}
+.seasonalStat #pET3 {
+display: none;
+}
+.seasonalStat #pET4 {
+display: none;
+}
+.seasonalStat #pET5 {
+display: none;
+}
+.seasonalStat #pET6 {
+display: none;
+}
+.seasonalStat #pET7 {
+display: none;
+}
+.yearlyStatMean #pET1 {
+display: none;
+}
+.yearlyStatStdDev #pET1 {
+display: none;
+}
+.yearlyStat #pET1 {
+display: none;
+}
+.yearlyStatMean #pET2 {
+display: none;
+}
+.yearlyStatStdDev #pET2 {
+display: none;
+}
+.yearlyStat #pET2 {
+display: none;
+}
+.yearlyStatMean #pET3 {
+display: none;
+}
+.yearlyStatStdDev #pET3 {
+display: none;
+}
+.yearlyStat #pET3 {
+display: none;
+}
+.yearlyStatMean #pET4 {
+display: none;
+}
+.yearlyStatStdDev #pET4 {
+display: none;
+}
+.yearlyStat #pET4 {
+display: none;
+}
+.yearlyStatMean #pET5 {
+display: none;
+}
+.yearlyStatStdDev #pET5 {
+display: none;
+}
+.yearlyStat #pET5 {
+display: none;
+}
+.yearlyStatMean #pET6 {
+display: none;
+}
+.yearlyStatStdDev #pET6 {
+display: none;
+}
+.yearlyStat #pET6 {
+display: none;
+}
+.yearlyStatMean #pET7 {
+display: none;
+}
+.yearlyStatStdDev #pET7 {
+display: none;
+}
+.yearlyStat #pET7 {
+display: none;
+}
+</style>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
+<input class="dlimg dlauximg share dlimgloc dlimglocdlimglocclick" name="bbox" type="hidden" />
+<input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
+<input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
+<input class="unused" name="plotaxislength" type="hidden" value="432" />
+<input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" value="1961" />
+<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" value="2007" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonStart" type="hidden" value="Jun" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonEnd" type="hidden" value="Nov" />
+<input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" value="23" />
+<input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" value="4" />
+<input class="dlimg dlauximg share dlimgts" name="wsThreshold" type="hidden" value="1.0" />
+<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" value="SM" />
+<input class="dlimg dlauximg share ylyStat pET bodyClass" name="yearlyStat" type="hidden" value="Mean" />
+<input class="dlimg share pET" name="probExcThresh1" type="hidden" value="100" />
+<input class="dlimg share pET" name="probExcThresh2" type="hidden" value="30" />
+<input class="dlimg share pET" name="probExcThresh3" type="hidden" value="60" />
+<input class="dlimg share pET" name="probExcThresh4" type="hidden" value="1.0" />
+<input class="dlimg share pET" name="probExcThresh5" type="hidden" value="10" />
+<input class="dlimg share pET" name="probExcThresh6" type="hidden" value="100" />
+<input class="dlimg share pET" name="probExcThresh7" type="hidden" value="10" />
+<input class="pickarea1 dlimg dlauximg bodyClass" name="resolution" type="hidden" value="irids:home:remic:Philippines:Bicol:soilTypes:ds" />
+</form>
+
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Water Management</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Water/BAWKP/">Bicol Agri-Water Knowledge Portal</a>
+            </fieldset>
+            <fieldset class="navitem" id="chooseSection">
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Agriculture_term"><span property="term:label">Agriculture</span></legend>
+            </fieldset>
+            <fieldset class="navitem"><legend>Seasons (1961 to 2007)
+</legend>
+
+            <select class="pageformcopy" name="seasonStart">
+<option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option></select><input class="pageformcopy" name="DayStart" type="text" value="23" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1961" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd">
+<option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option></select><input class="pageformcopy" name="DayEnd" type="text" value="4" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2007" size="4" maxlength="4"/></fieldset>
+
+            <fieldset class="navitem"><legend>Seasonal daily statistics</legend><select class="pageformcopy" name="seasonalStat"><option value="SM">Soil Moisture</option><option value="ETcropRed">Reduced ET Crop</option><option value="Peff">Effective Precipitation</option><option value="WS">Water Stress</option><option value="NumWS">Persistent Water Stress</option><option value="PAW">Water Excess</option><option value="NumPAW">Persistent Water Excess</option></select></fieldset>
+
+            <fieldset class="navitem" id="yearlyStat"><legend>Yearly seasonal statistics</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Mean</option><option value="StdDev">Standard deviation</option><option value="PoE">Probability of exceeding</option><option value="CoV">Coefficient of variation</option><option value="RbyP">Percentile</option></select>
+<span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="100" size="3" maxlength="3"/>mm</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="30" size="3" maxlength="3"/>mm</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="60" size="2" maxlength="2"/>mm</span><span id="pET4"><input class="pageformcopy" name="probExcThresh4" type="text" value="1" size="2" maxlength="2"/></span><span id="pET5"><input class="pageformcopy" name="probExcThresh5" type="text" value="10" size="2" maxlength="2"/>days</span>
+<span id="pET6"><input class="pageformcopy" name="probExcThresh6" type="text" value="100" size="2" maxlength="2"/>%</span><span id="pET7"><input class="pageformcopy" name="probExcThresh7" type="text" value="10" size="2" maxlength="2"/>days</span>
+</fieldset>
+
+            <fieldset class="navitem"><legend>Water Stress Threshold</legend>Reduced ET crop / ET crop<input class="pageformcopy" name="wsThreshold" type="text" value="1.0" size="5" maxlength="5"/></fieldset>
+
+</div>
+
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Options</a></li>
+      <li><a href="#tabs-3" >Dataset Documentation</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+
+<fieldset class="regionwithinbbox dlimage" about="">
+  <div style="float: left;">
+    <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:122%2C11.3%2C124.8%2C15%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:STNID%401:ds%29//region/parameter/geoobject/X/Y/fig-/lightgrey/mask/black/countries_gaz/red/fill/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0.1/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+gif" />
+  </div>
+  <div style="display: inline-block; text-align: top;">
+    <div class="valid" style="text-align: top;">
+      <a class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+      <div class="template" style="color : red">
+        Soil Type <b><span class="iridl:long_name"></span></b>
+      </div>
+    </div>
+ </div>
+<br />
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Wet_19612007/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%2823%29//DayStart/parameter/%28%20%29append/%28Jun%29//seasonStart/parameter/append/%28%20-%20%29append/%284%29//DayEnd/parameter/append/%28%20%29append/%28Nov%29//seasonEnd/parameter/append/%281.0%29//wsThreshold/parameter/interp/0/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7Bnip/-1.0/exch/SM/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Soil%20Moisture%29def%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7Bnip/-1.0/exch/ETcrop_red/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28ET%20Crop%20Reduced%29def%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7Bnip/-1.0/exch/Peffective/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Effective%20Precipitation%29def//units%28mm/day%29def%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7Bnip/-1.0/exch/ETcrop_red/ETcrop/div/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/div/4/-3/roll/flexseasonalfreqLT//long_name%28Persistent%20Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7Bnip/-1.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Water%20Excess%29def%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7Bnip/100.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalfreqLT//long_name%28Persistent%20Excess%20Water%29def%7Dif/gid/%28irids:home:remic:Philippines:Bicol:soilTypes:gid%4011:ds%29//region/parameter/geoobject/.gid/.gridvalues/VALUE/T/fig-/medium/black/line/-fig/+.gif" />
+</div>
+</fieldset>
+
+<fieldset class="dlimage">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Wet_19612007/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%2823%29//DayStart/parameter/%28%20%29append/%28Jun%29//seasonStart/parameter/append/%28%20-%20%29append/%284%29//DayEnd/parameter/append/%28%20%29append/%28Nov%29//seasonEnd/parameter/append/%281.0%29//wsThreshold/parameter/interp/0/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7Bnip/-1.0/exch/SM/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Soil%20Moisture%29def%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7Bnip/-1.0/exch/ETcrop_red/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28ET%20Crop%20Reduced%29%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7Bnip/-1.0/exch/Peffective/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Effective%20Precipitation%29def//units%28mm/day%29def/precip_colors/DATA/AUTO/AUTO/RANGE%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7Bnip/-1.0/exch/ETcrop_red/ETcrop/div/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/div/4/-3/roll/flexseasonalfreqLT/0./maskle//long_name%28Persistent%20Water%20Stress%29def/wetday_freq_colors/DATA/AUTO/AUTO/RANGE%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7Bnip/-1.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Water%20Excess%29def%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7Bnip/100.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalfreqLT/0./maskle//long_name%28Persistent%20Excess%20Water%29def/wetday_freq_colors/DATA/AUTO/AUTO/RANGE%7Dif/%28Mean%29//yearlyStat/parameter/%28Mean%29eq/%7B%5BT%5Daverage%7Dif//yearlyStat/get_parameter/%28StdDev%29eq/%7Bdup/dataflag%5BT%5Dsum/dup/1.0/sub/div/sqrt/exch%5BT%5D0.0/rmsaover/mul/rainbowcolorscale%7Dif//yearlyStat/get_parameter/%28PoE%29eq/%7BDATA/0/300/1/RANGESTEP%5Bgid%5Ddistrib1D/dup/0.0%5Baprod%5Dintegrate/aprod/300.5/VALUE/aprod/removeGRID/div//name/%28pdf%29def/DATA/null/null/RANGE/0.0%5Baprod%5Dintegrate//name/%28pdf%29def/DATA/0/0.02/0.17/0.5/0.83/0.98/1.0001/VALUES/-1/mul/1/add/aprod//seasonalStat/get_parameter/%28SM%29eq/%7B%28100%29//probExcThresh1/parameter/interp%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7B%2830%29//probExcThresh2/parameter/interp%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7B%2860%29//probExcThresh3/parameter/interp%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7B%281%29//probExcThresh4/parameter/interp%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B%2810%29//probExcThresh5/parameter/interp%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7B%2850%29//probExcThresh6/parameter/interp%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7B%2810%29//probExcThresh7/parameter/interp%7Dif/VALUE/%28percent%29unitconvert//long_name/%28Probability%29def/correlationcolorscale/DATA/0/100/RANGE%7Dif/SOURCES/.WORLDBATH/.bath/X/122.0/124.5/RANGE/Y/12.25/14.75/RANGE/exch/the_geom/exch/1/index/X/Y/fig-/white/mask/||/fillby/black/verythin/stroke/-fig/"></a>
+<img class="dlimg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Wet_19612007/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%2823%29//DayStart/parameter/%28%20%29append/%28Jun%29//seasonStart/parameter/append/%28%20-%20%29append/%284%29//DayEnd/parameter/append/%28%20%29append/%28Nov%29//seasonEnd/parameter/append/%281.0%29//wsThreshold/parameter/interp/0/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7Bnip/-1.0/exch/SM/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Soil%20Moisture%29def%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7Bnip/-1.0/exch/ETcrop_red/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28ET%20Crop%20Reduced%29%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7Bnip/-1.0/exch/Peffective/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Effective%20Precipitation%29def//units%28mm/day%29def/precip_colors/DATA/AUTO/AUTO/RANGE%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7Bnip/-1.0/exch/ETcrop_red/ETcrop/div/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/div/4/-3/roll/flexseasonalfreqLT/0./maskle//long_name%28Persistent%20Water%20Stress%29def/wetday_freq_colors/DATA/AUTO/AUTO/RANGE%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7Bnip/-1.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Water%20Excess%29def%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7Bnip/100.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalfreqLT/0./maskle//long_name%28Persistent%20Excess%20Water%29def/wetday_freq_colors/DATA/AUTO/AUTO/RANGE%7Dif/%28Mean%29//yearlyStat/parameter/%28Mean%29eq/%7B%5BT%5Daverage%7Dif//yearlyStat/get_parameter/%28StdDev%29eq/%7Bdup/dataflag%5BT%5Dsum/dup/1.0/sub/div/sqrt/exch%5BT%5D0.0/rmsaover/mul%7Dif//yearlyStat/get_parameter/%28PoE%29eq/%7BDATA/0/300/1/RANGESTEP%5Bgid%5Ddistrib1D/dup/0.0%5Baprod%5Dintegrate/aprod/300.5/VALUE/aprod/removeGRID/div//name/%28pdf%29def/DATA/null/null/RANGE/0.0%5Baprod%5Dintegrate//name/%28pdf%29def/DATA/0/0.02/0.17/0.5/0.83/0.98/1.0001/VALUES/-1/mul/1/add/aprod//seasonalStat/get_parameter/%28SM%29eq/%7B%28100%29//probExcThresh1/parameter/interp%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7B%2830%29//probExcThresh2/parameter/interp%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7B%2860%29//probExcThresh3/parameter/interp%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7B%281%29//probExcThresh4/parameter/interp%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B%2810%29//probExcThresh5/parameter/interp%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7B%2850%29//probExcThresh6/parameter/interp%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7B%2810%29//probExcThresh7/parameter/interp%7Dif/VALUE/%28percent%29unitconvert//long_name/%28Probability%29def/correlationcolorscale/DATA/0/100/RANGE%7Dif/SOURCES/.WORLDBATH/.bath/X/122.0/124.5/RANGE/Y/12.25/14.75/RANGE/exch/the_geom/exch/1/index/X/Y/fig-/white/mask/||/fillby/black/verythin/stroke/-fig/+.gif" border="0" />
+<img class="dlauximg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Wet_19612007/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%2823%29//DayStart/parameter/%28%20%29append/%28Jun%29//seasonStart/parameter/append/%28%20-%20%29append/%284%29//DayEnd/parameter/append/%28%20%29append/%28Nov%29//seasonEnd/parameter/append/%281.0%29//wsThreshold/parameter/interp/0/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7Bnip/-1.0/exch/SM/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Soil%20Moisture%29def%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7Bnip/-1.0/exch/ETcrop_red/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28ET%20Crop%20Reduced%29%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7Bnip/-1.0/exch/Peffective/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Effective%20Precipitation%29def//units%28mm/day%29def/precip_colors/DATA/AUTO/AUTO/RANGE%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7Bnip/-1.0/exch/ETcrop_red/ETcrop/div/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/div/4/-3/roll/flexseasonalfreqLT/0./maskle//long_name%28Persistent%20Water%20Stress%29def/wetday_freq_colors/DATA/AUTO/AUTO/RANGE%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7Bnip/-1.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Water%20Excess%29def%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7Bnip/100.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalfreqLT/0./maskle//long_name%28Persistent%20Excess%20Water%29def/wetday_freq_colors/DATA/AUTO/AUTO/RANGE%7Dif/%28Mean%29//yearlyStat/parameter/%28Mean%29eq/%7B%5BT%5Daverage%7Dif//yearlyStat/get_parameter/%28StdDev%29eq/%7Bdup/dataflag%5BT%5Dsum/dup/1.0/sub/div/sqrt/exch%5BT%5D0.0/rmsaover/mul%7Dif//yearlyStat/get_parameter/%28PoE%29eq/%7BDATA/0/300/1/RANGESTEP%5Bgid%5Ddistrib1D/dup/0.0%5Baprod%5Dintegrate/aprod/300.5/VALUE/aprod/removeGRID/div//name/%28pdf%29def/DATA/null/null/RANGE/0.0%5Baprod%5Dintegrate//name/%28pdf%29def/DATA/0/0.02/0.17/0.5/0.83/0.98/1.0001/VALUES/-1/mul/1/add/aprod//seasonalStat/get_parameter/%28SM%29eq/%7B%28100%29//probExcThresh1/parameter/interp%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7B%2830%29//probExcThresh2/parameter/interp%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7B%2860%29//probExcThresh3/parameter/interp%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7B%281%29//probExcThresh4/parameter/interp%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B%2810%29//probExcThresh5/parameter/interp%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7B%2850%29//probExcThresh6/parameter/interp%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7B%2810%29//probExcThresh7/parameter/interp%7Dif/VALUE/%28percent%29unitconvert//long_name/%28Probability%29def/correlationcolorscale/DATA/0/100/RANGE%7Dif/SOURCES/.WORLDBATH/.bath/X/122.0/124.5/RANGE/Y/12.25/14.75/RANGE/exch/the_geom/exch/1/index/X/Y/fig-/white/mask/||/fillby/black/verythin/stroke/-fig/.auxfig+.gif" />
+<br />
+<b>Rice Paddy Crop Cultivar -- Kc</b>
+<img rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Wet_19612007/.Kc/T/%2823%20Jun%202007%29%284%20Nov%202007%29RANGE/T/grid://name//DsP/def/0/1/134//long_name/%28Days%20since%20planting%29def//units/%28day%29def/:grid/replaceGRID/DsP/fig-/medium/line/-fig/+.gif" />
+</fieldset>
+<!--
+<fieldset class="dlimage ver2">
+<img src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Wet_19612007/.Kc/T/%2823%20Jun%202007%29%284%20Nov%202007%29RANGE/T/grid://name//DsP/def/0/1/134//long_name/%28Days%20since%20planting%29def//units/%28day%29def/:grid/replaceGRID/DsP/fig-/medium/line/-fig/+.gif" />
+</fieldset>
+-->
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+ <h2 align="center" property="term:title">Bicol Region Historical Wetter Water Balance Monitoring</h2>
+  <p align="left" property="term:description">
+The Maproom explores historical daily water balance by calculating simple seasonal statistics.</p>
+<p>
+The water balance algorithm is described <a href="http://iridl.ldeo.columbia.edu/dochelp/Documentation/details/index.html?func=%3AWater_Balance">in the IRI DL Function Documentation</a>. For the 47 years of daily precipitation and average temperature available, the water balance is run continuously for a standard planting date of June 23rd. Kc is also invariant and a visualization of it in days since planting is provided.
+</p>
+<p>Many options can be specified to produce yearly time series of a chosen seasonal diagnostic of the daily water blance data. The user can then choose to map the mean, standard deviation or probability of exceeding a chosen threshold, over years; clicking on the map will then produce a local yearly time series of the chosen diagnostic.
+</p>
+</div>
+ <div id="tabs-2" class="ui-tabs-panel" about="">
+ <h2 align="center">Options</h2>
+  <p align="left">
+<b>Years and Season</b>:
+Specify the range of years over which to perform the analysis and choose the start and end dates of the season , over which the diagnostics are to be performed.
+<br />
+<b>Water Stressed Day Definition</b>:
+This defines the ratio of Reduced ET Crop with ET crop below which (non inclusive) a day is considered to be a water stressed day.
+<br /><br /><b>Seasonal daily statistcis</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
+<br /><b>Soil Moisture</b>: average soil moisture (in mm/day) over the season.
+<br /><b>Reduced Crop ET</b>: average Reduced Crop ET during the season.
+<br /><b>Effective Precipitation</b>:
+the average effective precipitation over the season.<br />
+<b>Water Stress</b>:
+Water stress is defined as the ratio of reduced ET crop and ET crop.
+<br />
+<b>Persistent Water Stress</b>: the number of water stressed days during the season according to the definitions in the Options section. Water stress is defined as the ratio of reduced ET crop and ET crop as being lower than the chosen threshold.
+<br />
+<b>Water Excess</b>: Water Excess is defined as the percentage of available water, ie the ratio of soil moisture with total available water.
+<br />
+<b>Persistent Water Excess</b>: the number of days when water excess is 100%.
+<br /><br />
+<b>Yearly seasonal statistics</b>: a choice of yearly statistics over the chosen season of the selected range of years to produce the map among: the mean, the standard deviation and the probability of exceeding a user specified threshold.
+<br /><br />
+</p>
+</div>
+ <div id="tabs-3" class="ui-tabs-panel" about="">
+ <h2 align="center">Dataset Documentation</h2>
+  <p align="left">
+<b>Daily precipitation:</b> <a href="http://iridl.ldeo.columbia.edu/SOURCES/.RIHN/.aphrodite/.V1101/.APHRO_MA_025deg/">APHRODITE version 1101</a> regridded to 0.05˚ spatial resolution
+</p>
+  <p align="left">
+<b>Daily mean temperature:</b> <a href="http://iridl.ldeo.columbia.edu/SOURCES/.RIHN/.aphroTemp/.V1204R1/.APHRO_MA_025deg/">APHRODITE version 1204R1</a> regridded to 0.05˚ spatial resolution
+</p>
+  <p align="left">
+<b>Daily temperature amplitude:</b> <a href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.WORLDCLIM/">WORLDCLIM</a> difference between maximum and minimum temperature, regridded to 0.05˚ spatial resolution and to linearly interpolated from monthly climatology to daily from 1961 to 2007
+</p>
+  <p align="left">
+<b>Total Available Water:</b> <a href="http://iridl.ldeo.columbia.edu/home/.remic/.Philippines/.Bicol/.soilTypes/">TAW</a> derived from Bicol soil type textures with the from Soil Hydraulic Function - Mualem-Van Genuchten Model and the UNSODA databse.
+</p>
+<br /><br />
+  <p align="left">
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
+
