@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>Bicol Water Balance Monitoring</title>
+<script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link rel="canonical" href="Bicol_WB_Monitoring.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<meta property="maproom:Entry_Id" content="Agriculture_Bicol_Water_Balance_Monit" />
+<meta property="maproom:Sort_Id" content="a1" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Agriculture_term" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Water_Balance"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Soil"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Wet_19612007/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%2823%29//DayStart/parameter/%28%20%29append/%28Jun%29//seasonStart/parameter/append/%28%20-%20%29append/%284%29//DayEnd/parameter/append/%28%20%29append/%28Nov%29//seasonEnd/parameter/append/%281.0%29//wsThreshold/parameter/interp/0/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7Bnip/-1.0/exch/SM/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7Bnip/-1.0/exch/ETcrop_red/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7Bnip/-1.0/exch/Peffective/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7Bnip/-1.0/exch/ETcrop_red/ETcrop/div/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/div/4/-3/roll/flexseasonalfreqLT%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7Bnip/-1.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7Bnip/100.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalfreqLT%7Dif/%28Mean%29//yearlyStat/parameter/%28Mean%29eq/%7B%5BT%5Daverage%7Dif//yearlyStat/get_parameter/%28StdDev%29eq/%7Bdup/dataflag%5BT%5Dsum/dup/1.0/sub/div/sqrt/exch%5BT%5D0.0/rmsaover/mul/rainbowcolorscale%7Dif//yearlyStat/get_parameter/%28PoE%29eq/%7BDATA/0/300/1/RANGESTEP%5Bgid%5Ddistrib1D/dup/0.0%5Baprod%5Dintegrate/aprod/300.5/VALUE/aprod/removeGRID/div//name/%28pdf%29def/DATA/null/null/RANGE/0.0%5Baprod%5Dintegrate//name/%28pdf%29def/DATA/0/0.02/0.17/0.5/0.83/0.98/1.0001/VALUES/-1/mul/1/add/aprod//seasonalStat/get_parameter/%28SM%29eq/%7B%28100%29//probExcThresh1/parameter/interp%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7B%2830%29//probExcThresh2/parameter/interp%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7B%2860%29//probExcThresh3/parameter/interp%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7B%281%29//probExcThresh4/parameter/interp%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B%2810%29//probExcThresh5/parameter/interp%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7B%2850%29//probExcThresh6/parameter/interp%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7B%2810%29//probExcThresh7/parameter/interp%7Dif/VALUE/%28percent%29unitconvert//long_name/%28Probability%29def/correlationcolorscale/DATA/0/100/RANGE%7Dif/SOURCES/.WORLDBATH/.bath/X/122.0/124.5/RANGE/Y/12.25/14.75/RANGE/exch/the_geom/exch/1/index/X/Y/fig-/white/mask/||/fillby/black/verythin/stroke/-fig//antialias/true/psdef//plotborder/0/psdef//plotaxislength/150/psdef/+.gif" />
+<style>
+.dlimgtsbox {
+width: 99%;
+display: inline-block
+ }
+</style>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
+<input class="dlimg dlauximg share dlimgloc dlimglocdlimglocclick" name="bbox" type="hidden" />
+<input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
+<input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
+<input class="unused" name="plotaxislength" type="hidden" value="432" />
+<input class="dlimg dlauximg share" name="T" type="hidden" />
+<input class="share dlimgts" name="YearA" type="hidden" value="2006" />
+<!--<input class="share dlimgts" name="YearB" type="hidden" value="2005" />
+<input class="share dlimgts" name="YearC" type="hidden" value="2004" />
+-->
+<input class="carry dlimg dlauximg share dlimgts" name="seasonStartZ" type="hidden" value="Jan" />
+<input class="carry share dlimgts" name="seasonStartA" type="hidden" value="Jan" />
+<!--<input class="carry share dlimgts" name="seasonStartB" type="hidden" value="Jan" />
+<input class="carry share dlimgts" name="seasonStartC" type="hidden" value="Jan" />
+-->
+<input class="dlimg dlauximg share dlimgts" name="DayStartZ" type="hidden" value="7" />
+<input class="share dlimgts" name="DayStartA" type="hidden" value="7" />
+<!--<input class="share dlimgts" name="DayStartB" type="hidden" value="7" />
+<input class="share dlimgts" name="DayStartC" type="hidden" value="7" />
+-->
+<input class="dlimg dlauximg share dlimgts" name="wsThreshold" type="hidden" value="1.0" />
+<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" value="SM" />
+<input class="dlimg dlauximg share dlimgts" name="InitKcZ" type="hidden" value="0.0" />
+<input class="share dlimgts" name="InitKcA" type="hidden" value="0.0" />
+<!--<input class="share dlimgts" name="InitKcB" type="hidden" value="0.0" />
+<input class="share dlimgts" name="InitKcC" type="hidden" value="0.0" />
+-->
+<input class="dlimg dlauximg share dlimgts" name="InitDZ" type="hidden" value="3" />
+<input class="share dlimgts" name="InitDA" type="hidden" value="3" />
+<!--<input class="share dlimgts" name="InitDB" type="hidden" value="3" />
+<input class="share dlimgts" name="InitDC" type="hidden" value="3" />
+-->
+<input class="dlimg dlauximg share dlimgts" name="VegKcZ" type="hidden" value="0.0" />
+<input class="share dlimgts" name="VegKcA" type="hidden" value="0.0" />
+<!--<input class="share dlimgts" name="VegKcB" type="hidden" value="0.0" />
+<input class="share dlimgts" name="VegKcC" type="hidden" value="0.0" />
+-->
+<input class="dlimg dlauximg share dlimgts" name="VegDZ" type="hidden" value="27" />
+<input class="share dlimgts" name="VegDA" type="hidden" value="27" />
+<!--<input class="share dlimgts" name="VegDB" type="hidden" value="27" />
+<input class="share dlimgts" name="VegDC" type="hidden" value="27" />
+-->
+<input class="dlimg dlauximg share dlimgts" name="MidKcZ" type="hidden" value="1.1" />
+<input class="share dlimgts" name="MidKcA" type="hidden" value="1.1" />
+<!--<input class="share dlimgts" name="MidKcB" type="hidden" value="1.1" />
+<input class="share dlimgts" name="MidKcC" type="hidden" value="1.1" />
+-->
+<input class="dlimg dlauximg share dlimgts" name="MidDZ" type="hidden" value="45" />
+<input class="share dlimgts" name="MidDA" type="hidden" value="45" />
+<!--<input class="share dlimgts" name="MidDB" type="hidden" value="45" />
+<input class="share dlimgts" name="MidDC" type="hidden" value="45" />
+-->
+<input class="dlimg dlauximg share dlimgts" name="LateKcZ" type="hidden" value="1.1" />
+<input class="share dlimgts" name="LateKcA" type="hidden" value="1.1" />
+<!--<input class="share dlimgts" name="LateKcB" type="hidden" value="1.1" />
+<input class="share dlimgts" name="LateKcC" type="hidden" value="1.1" />
+-->
+<input class="dlimg dlauximg share dlimgts" name="LateDZ" type="hidden" value="60" />
+<input class="share dlimgts" name="LateDA" type="hidden" value="60" />
+<!--<input class="share dlimgts" name="LateDB" type="hidden" value="60" />
+<input class="share dlimgts" name="LateDC" type="hidden" value="60" />
+-->
+<input class="dlimg dlauximg share dlimgts" name="EndKcZ" type="hidden" value="0.0" />
+<input class="share dlimgts" name="EndKcA" type="hidden" value="0.0" />
+<!--<input class="share dlimgts" name="EndKcB" type="hidden" value="0.0" />
+<input class="share dlimgts" name="EndKcC" type="hidden" value="0.0" />
+-->
+<input class="dlimg dlauximg share dlimgts" name="CropNameZ" type="hidden" value="Rice" />
+<input class="share dlimgts" name="CropNameA" type="hidden" value="Rice" />
+<!--<input class="share dlimgts" name="CropNameB" type="hidden" value="Rice" />
+<input class="share dlimgts" name="CropNameC" type="hidden" value="Rice" />
+-->
+<input class="pickarea1 dlimg dlauximg bodyClass" name="resolution" type="hidden" value="irids:home:remic:Philippines:Bicol:soilTypes:ds" />
+</form>
+
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Water Management</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Water/BAWKP/">Bicol Agri-Water Knowledge Portal</a>
+            </fieldset>
+            <fieldset class="navitem" id="chooseSection">
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Agriculture_term"><span property="term:label">Agriculture</span></legend>
+            </fieldset>
+
+            <fieldset class="navitem"><legend>Current Season</legend>
+            Planting Day:<select class="pageformcopy" name="seasonStartZ">
+<option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select>
+<input class="pageformcopy" name="DayStartZ" type="text" value="7" size="2" maxlength="2"/>
+Crop Name:<input class="pageformcopy" name="CropNameZ" type="text" value="Rice" size="10" maxlength="10"/>
+Kc:<input class="pageformcopy" name="InitKcZ" type="text" value="0.0" size="4" maxlength="4"/>
+<input class="pageformcopy" name="InitDZ" type="text" value="3" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="VegKcZ" type="text" value="0.0" size="4" maxlength="4"/>
+<input class="pageformcopy" name="VegDZ" type="text" value="27" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="MidKcZ" type="text" value="1.1" size="4" maxlength="4"/>
+<input class="pageformcopy" name="MidDZ" type="text" value="45" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="LateKcZ" type="text" value="1.1" size="4" maxlength="4"/>
+<input class="pageformcopy" name="LateDZ" type="text" value="60" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="EndKcZ" type="text" value="0.0" size="4" maxlength="4"/>
+</fieldset>
+
+            <fieldset class="navitem"><legend>Other Season</legend>
+            Planting Day:<input class="pageformcopy" name="YearA" type="text" value="2006" size="4" maxlength="4"/>
+<select class="pageformcopy" name="seasonStartA">
+<option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select>
+<input class="pageformcopy" name="DayStartA" type="text" value="7" size="2" maxlength="2"/>
+Crop Name:<input class="pageformcopy" name="CropNameA" type="text" value="Rice" size="10" maxlength="10"/>
+Kc:<input class="pageformcopy" name="InitKcA" type="text" value="0.0" size="4" maxlength="4"/>
+<input class="pageformcopy" name="InitDA" type="text" value="3" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="VegKcA" type="text" value="0.0" size="4" maxlength="4"/>
+<input class="pageformcopy" name="VegDA" type="text" value="27" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="MidKcA" type="text" value="1.1" size="4" maxlength="4"/>
+<input class="pageformcopy" name="MidDA" type="text" value="45" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="LateKcA" type="text" value="1.1" size="4" maxlength="4"/>
+<input class="pageformcopy" name="LateDA" type="text" value="60" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="EndKcA" type="text" value="0.0" size="4" maxlength="4"/>
+</fieldset>
+<!--
+            <fieldset class="navitem"><legend>Magenta Season</legend>
+            Planting Day:<input class="pageformcopy" name="YearB" type="text" value="2006" size="4" maxlength="4"/>
+<select class="pageformcopy" name="seasonStartB">
+<option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select>
+<input class="pageformcopy" name="DayStartB" type="text" value="7" size="2" maxlength="2"/>
+Crop Name:<input class="pageformcopy" name="CropNameB" type="text" value="Rice" size="10" maxlength="10"/>
+Kc:<input class="pageformcopy" name="InitKcB" type="text" value="0.0" size="4" maxlength="4"/>
+<input class="pageformcopy" name="InitDB" type="text" value="3" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="VegKcB" type="text" value="0.0" size="4" maxlength="4"/>
+<input class="pageformcopy" name="VegDB" type="text" value="27" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="MidKcB" type="text" value="1.1" size="4" maxlength="4"/>
+<input class="pageformcopy" name="MidDB" type="text" value="45" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="LateKcB" type="text" value="1.1" size="4" maxlength="4"/>
+<input class="pageformcopy" name="LateB" type="text" value="60" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="EndKcB" type="text" value="0.0" size="4" maxlength="4"/>
+</fieldset>
+
+            <fieldset class="navitem"><legend>Red Season</legend>
+            Planting Day:<input class="pageformcopy" name="YearC" type="text" value="2006" size="4" maxlength="4"/>
+<select class="pageformcopy" name="seasonStartC">
+<option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select>
+<input class="pageformcopy" name="DayStartC" type="text" value="7" size="2" maxlength="2"/>
+Crop Name:<input class="pageformcopy" name="CropNameC" type="text" value="Rice" size="10" maxlength="10"/>
+Kc:<input class="pageformcopy" name="InitKcC" type="text" value="0.0" size="4" maxlength="4"/>
+<input class="pageformcopy" name="InitDC" type="text" value="3" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="VegKcC" type="text" value="0.0" size="4" maxlength="4"/>
+<input class="pageformcopy" name="VegDC" type="text" value="27" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="MidKcC" type="text" value="1.1" size="4" maxlength="4"/>
+<input class="pageformcopy" name="MidDC" type="text" value="45" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="LateKcC" type="text" value="1.1" size="4" maxlength="4"/>
+<input class="pageformcopy" name="LateDC" type="text" value="60" size="2" maxlength="2"/>
+days to:<input class="pageformcopy" name="EndKcC" type="text" value="0.0" size="4" maxlength="4"/>
+</fieldset>
+-->
+            <fieldset class="navitem"><legend>Water Balance</legend><select class="pageformcopy" name="seasonalStat"><option value="SM">Soil Moisture</option><option value="ETcropRed">Reduced ET Crop</option><option value="Peff">Effective Precipitation</option><option value="WS">Water Stress</option><option value="NumWS">Persistent Water Stress</option><option value="PAW">Water Excess</option><option value="NumPAW">Persistent Water Excess</option></select></fieldset>
+
+
+<!--            <fieldset class="navitem"><legend>Water Stress Threshold</legend>Reduced ET crop / ET crop<input class="pageformcopy" name="wsThreshold" type="text" value="1.0" size="5" maxlength="5"/></fieldset>
+-->
+
+</div>
+
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Options</a></li>
+      <li><a href="#tabs-3" >Dataset Documentation</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+
+<fieldset class="regionwithinbbox dlimage" about="">
+  <div style="float: left;">
+    <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:122%2C11.3%2C124.8%2C15%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:STNID%401:ds%29//region/parameter/geoobject/X/Y/fig-/lightgrey/mask/black/countries_gaz/red/fill/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0.1/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+gif" />
+  </div>
+  <div style="display: inline-block; text-align: top;">
+    <div class="valid" style="text-align: top;">
+      <a class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+      <div class="template" style="color : red">
+        Soil Type <b><span class="iridl:long_name"></span></b>
+      </div>
+    </div>
+ </div>
+<br />
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Wet_19612007/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%2823%29//DayStart/parameter/%28%20%29append/%28Jun%29//seasonStart/parameter/append/%28%20-%20%29append/%284%29//DayEnd/parameter/append/%28%20%29append/%28Nov%29//seasonEnd/parameter/append/%281.0%29//wsThreshold/parameter/interp/0/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7Bnip/-1.0/exch/SM/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Soil%20Moisture%29def%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7Bnip/-1.0/exch/ETcrop_red/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28ET%20Crop%20Reduced%29def%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7Bnip/-1.0/exch/Peffective/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Effective%20Precipitation%29def//units%28mm/day%29def%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7Bnip/-1.0/exch/ETcrop_red/ETcrop/div/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/div/4/-3/roll/flexseasonalfreqLT//long_name%28Persistent%20Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7Bnip/-1.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalmeandailyvalueGT//long_name%28Water%20Excess%29def%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7Bnip/100.0/exch/SM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert/4/-3/roll/flexseasonalfreqLT//long_name%28Persistent%20Excess%20Water%29def%7Dif/gid/%28irids:home:remic:Philippines:Bicol:soilTypes:gid%4011:ds%29//region/parameter/geoobject/.gid/.gridvalues/VALUE/T/fig-/medium/black/line/-fig/+.gif" />
+</div>
+</fieldset>
+
+<fieldset class="dlimage">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.APHRODITE/.precip/dup/T/%287%29//DayStartZ/parameter/%28%20%29append/%28Jan%29//seasonStartZ/parameter/append/%28%20%29append/%282007%29append/VALUE/.T/.gridvalues/0/get/7.0/sub/dup/7/add/%283%29//InitDZ/parameter/interp/add/%2827%29//VegDZ/parameter/interp/add/%2845%29//MidDZ/parameter/interp/add/%2860%29//LateDZ/parameter/interp/add/T/3/-2/roll/RANGE/home/.remic/.Philippines/.Bicol/.APHRODITE/.temp/T/2/index/.T/a:/.first/:a:/.last/:a/RANGE/home/.remic/.Philippines/.Bicol/.WORLDCLIM/.amplitude/T/2/index/.T/a:/.first/:a:/.last/:a/RANGE/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/T%5BX/Y/home/.remic/.Philippines/.Bicol/.soilTypes/.the_geom%5DWater_Balance:/%2845%29//MidDZ/parameter/interp/store/MidD/%281.1%29//LateKcZ/parameter/interp/store/LateKc/%280.0%29//EndKcZ/parameter/interp/store/EndKc/%2860%29//LateDZ/parameter/interp/store/LateD/%283%29//InitDZ/parameter/interp/store/InitD/%280.0%29//VegKcZ/parameter/interp/store/VegKc/%2827%29//VegDZ/parameter/interp/store/VegD/%28Rice%29//CropNameZ/parameter/store/Crop/%281.1%29//MidKcZ/parameter/interp/store/MidKc/%280.0%29//InitKcZ/parameter/interp/store/InitKc/%28Jan%29//seasonStartZ/parameter/store/PlDm/%287%29//DayStartZ/parameter/interp/store/PlDd/:Water_Balance/T/dup//defaultvalue/%7Blast%7Ddef/replaceGRID/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7BSM%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7BETcrop_red%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7BPeffective//units/%28mm/day%29def/precip_colors/DATA/AUTO/AUTO/RANGE%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7BETcrop_red/ETcrop/div//long_name/%28Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/flaglt/0/T/integrate/T//pointwidth/1.0/def/-0.5/shiftGRID//long_name/%28Persistent%20Water%20Stress%29def/wetday_freq_colors/DATA/0/AUTO/RANGE/T//defaultvalue/%7Blast%7Ddef/pop%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7BSM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert//long_name/%28Water%20Excess%29def%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7BSM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/flagge/0/T/integrate/T//pointwidth/1.0/def/-0.5/shiftGRID//long_name/%28Persistent%20Excess%20Water%29def/wetday_freq_colors/DATA/0/AUTO/RANGE/T//defaultvalue/%7Blast%7Ddef/pop%7Dif/SOURCES/.WORLDBATH/.bath/X/122.0/124.5/RANGE/Y/12.25/14.75/RANGE/exch/the_geom/exch/1/index/X/Y/fig-/white/mask/||/fillby/black/verythin/stroke/-fig/"></a>
+<img class="dlimg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.APHRODITE/.precip/dup/T/%287%29//DayStartZ/parameter/%28%20%29append/%28Jan%29//seasonStartZ/parameter/append/%28%20%29append/%282007%29append/VALUE/.T/.gridvalues/0/get/7.0/sub/dup/7/add/%283%29//InitDZ/parameter/interp/add/%2827%29//VegDZ/parameter/interp/add/%2845%29//MidDZ/parameter/interp/add/%2860%29//LateDZ/parameter/interp/add/T/3/-2/roll/RANGE/home/.remic/.Philippines/.Bicol/.APHRODITE/.temp/T/2/index/.T/a:/.first/:a:/.last/:a/RANGE/home/.remic/.Philippines/.Bicol/.WORLDCLIM/.amplitude/T/2/index/.T/a:/.first/:a:/.last/:a/RANGE/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/T%5BX/Y/home/.remic/.Philippines/.Bicol/.soilTypes/.the_geom%5DWater_Balance:/%2845%29//MidDZ/parameter/interp/store/MidD/%281.1%29//LateKcZ/parameter/interp/store/LateKc/%280.0%29//EndKcZ/parameter/interp/store/EndKc/%2860%29//LateDZ/parameter/interp/store/LateD/%283%29//InitDZ/parameter/interp/store/InitD/%280.0%29//VegKcZ/parameter/interp/store/VegKc/%2827%29//VegDZ/parameter/interp/store/VegD/%28Rice%29//CropNameZ/parameter/store/Crop/%281.1%29//MidKcZ/parameter/interp/store/MidKc/%280.0%29//InitKcZ/parameter/interp/store/InitKc/%28Jan%29//seasonStartZ/parameter/store/PlDm/%287%29//DayStartZ/parameter/interp/store/PlDd/:Water_Balance/T/dup//defaultvalue/%7Blast%7Ddef/replaceGRID/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7BSM%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7BETcrop_red%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7BPeffective//units/%28mm/day%29def/precip_colors/DATA/AUTO/AUTO/RANGE%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7BETcrop_red/ETcrop/div//long_name/%28Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/flaglt/0/T/integrate/T//pointwidth/1.0/def/-0.5/shiftGRID//long_name/%28Persistent%20Water%20Stress%29def/wetday_freq_colors/DATA/0/AUTO/RANGE/T//defaultvalue/%7Blast%7Ddef/pop%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7BSM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert//long_name/%28Water%20Excess%29def%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7BSM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/flagge/0/T/integrate/T//pointwidth/1.0/def/-0.5/shiftGRID//long_name/%28Persistent%20Excess%20Water%29def/wetday_freq_colors/DATA/0/AUTO/RANGE/T//defaultvalue/%7Blast%7Ddef/pop%7Dif/SOURCES/.WORLDBATH/.bath/X/122.0/124.5/RANGE/Y/12.25/14.75/RANGE/exch/the_geom/exch/1/index/X/Y/fig-/white/mask/||/fillby/black/verythin/stroke/-fig/+.gif" border="0" />
+<img class="dlauximg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.APHRODITE/.precip/dup/T/%287%29//DayStartZ/parameter/%28%20%29append/%28Jan%29//seasonStartZ/parameter/append/%28%20%29append/%282007%29append/VALUE/.T/.gridvalues/0/get/7.0/sub/dup/7/add/%283%29//InitDZ/parameter/interp/add/%2827%29//VegDZ/parameter/interp/add/%2845%29//MidDZ/parameter/interp/add/%2860%29//LateDZ/parameter/interp/add/T/3/-2/roll/RANGE/home/.remic/.Philippines/.Bicol/.APHRODITE/.temp/T/2/index/.T/a:/.first/:a:/.last/:a/RANGE/home/.remic/.Philippines/.Bicol/.WORLDCLIM/.amplitude/T/2/index/.T/a:/.first/:a:/.last/:a/RANGE/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/T%5BX/Y/home/.remic/.Philippines/.Bicol/.soilTypes/.the_geom%5DWater_Balance:/%2845%29//MidDZ/parameter/interp/store/MidD/%281.1%29//LateKcZ/parameter/interp/store/LateKc/%280.0%29//EndKcZ/parameter/interp/store/EndKc/%2860%29//LateDZ/parameter/interp/store/LateD/%283%29//InitDZ/parameter/interp/store/InitD/%280.0%29//VegKcZ/parameter/interp/store/VegKc/%2827%29//VegDZ/parameter/interp/store/VegD/%28Rice%29//CropNameZ/parameter/store/Crop/%281.1%29//MidKcZ/parameter/interp/store/MidKc/%280.0%29//InitKcZ/parameter/interp/store/InitKc/%28Jan%29//seasonStartZ/parameter/store/PlDm/%287%29//DayStartZ/parameter/interp/store/PlDd/:Water_Balance/T/dup//defaultvalue/%7Blast%7Ddef/replaceGRID/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7BSM%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7BETcrop_red%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7BPeffective//units/%28mm/day%29def/precip_colors/DATA/AUTO/AUTO/RANGE%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7BETcrop_red/ETcrop/div//long_name/%28Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/flaglt/0/T/integrate/T//pointwidth/1.0/def/-0.5/shiftGRID//long_name/%28Persistent%20Water%20Stress%29def/wetday_freq_colors/DATA/0/AUTO/RANGE/T//defaultvalue/%7Blast%7Ddef/pop%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7BSM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert//long_name/%28Water%20Excess%29def%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7BSM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/flagge/0/T/integrate/T//pointwidth/1.0/def/-0.5/shiftGRID//long_name/%28Persistent%20Excess%20Water%29def/wetday_freq_colors/DATA/0/AUTO/RANGE/T//defaultvalue/%7Blast%7Ddef/pop%7Dif/SOURCES/.WORLDBATH/.bath/X/122.0/124.5/RANGE/Y/12.25/14.75/RANGE/exch/the_geom/exch/1/index/X/Y/fig-/white/mask/||/fillby/black/verythin/stroke/-fig/.auxfig+.gif" />
+<br />
+<!--
+<b>Rice Paddy Crop Cultivar - Kc</b>
+<img rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Wet_19612007/.Kc/T/%2823%20Jun%202007%29%284%20Nov%202007%29RANGE/T/grid://name//DsP/def/0/1/134//long_name/%28Days%20since%20planting%29def//units/%28day%29def/:grid/replaceGRID/DsP/fig-/medium/line/-fig/+.gif" />
+-->
+</fieldset>
+<!--
+<fieldset class="dlimage ver2">
+<img src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Wet_19612007/.Kc/T/%2823%20Jun%202007%29%284%20Nov%202007%29RANGE/T/grid://name//DsP/def/0/1/134//long_name/%28Days%20since%20planting%29def//units/%28day%29def/:grid/replaceGRID/DsP/fig-/medium/line/-fig/+.gif" />
+</fieldset>
+-->
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+ <h2 align="center" property="term:title">Bicol Region Historical Wetter Water Balance Monitoring</h2>
+  <p align="left" property="term:description">
+The Maproom explores historical daily water balance by calculating simple seasonal statistics.</p>
+<p>
+The water balance algorithm is described <a href="http://iridl.ldeo.columbia.edu/dochelp/Documentation/details/index.html?func=%3AWater_Balance">in the IRI DL Function Documentation</a>. For the 47 years of daily precipitation and average temperature available, the water balance is run continuously for a standard planting date of June 23rd. Kc is also invariant and a visualization of it in days since planting is provided.
+</p>
+<p>Many options can be specified to produce yearly time series of a chosen seasonal diagnostic of the daily water blance data. The user can then choose to map the mean, standard deviation or probability of exceeding a chosen threshold, over years; clicking on the map will then produce a local yearly time series of the chosen diagnostic.
+</p>
+</div>
+ <div id="tabs-2" class="ui-tabs-panel" about="">
+ <h2 align="center">Options</h2>
+  <p align="left">
+<b>Years and Season</b>:
+Specify the range of years over which to perform the analysis and choose the start and end dates of the season , over which the diagnostics are to be performed.
+<br />
+<b>Water Stressed Day Definition</b>:
+This defines the ratio of Reduced ET Crop with ET crop below which (non inclusive) a day is considered to be a water stressed day.
+<br /><br /><b>Seasonal daily statistcis</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
+<br /><b>Soil Moisture</b>: average soil moisture (in mm/day) over the season.
+<br /><b>Reduced Crop ET</b>: average Reduced Crop ET during the season.
+<br /><b>Effective Precipitation</b>:
+the average effective precipitation over the season.<br />
+<b>Water Stress</b>:
+Water stress is defined as the ratio of reduced ET crop and ET crop.
+<br />
+<b>Persistent Water Stress</b>: the number of water stressed days during the season according to the definitions in the Options section. Water stress is defined as the ratio of reduced ET crop and ET crop as being lower than the chosen threshold.
+<br />
+<b>Water Excess</b>: Water Excess is defined as the percentage of available water, ie the ratio of soil moisture with total available water.
+<br />
+<b>Persistent Water Excess</b>: the number of days when water excess is 100%.
+<br /><br />
+<b>Yearly seasonal statistics</b>: a choice of yearly statistics over the chosen season of the selected range of years to produce the map among: the mean, the standard deviation and the probability of exceeding a user specified threshold.
+<br /><br />
+</p>
+</div>
+ <div id="tabs-3" class="ui-tabs-panel" about="">
+ <h2 align="center">Dataset Documentation</h2>
+  <p align="left">
+<b>Daily precipitation:</b> <a href="http://iridl.ldeo.columbia.edu/SOURCES/.RIHN/.aphrodite/.V1101/.APHRO_MA_025deg/">APHRODITE version 1101</a> regridded to 0.05˚ spatial resolution
+</p>
+  <p align="left">
+<b>Daily mean temperature:</b> <a href="http://iridl.ldeo.columbia.edu/SOURCES/.RIHN/.aphroTemp/.V1204R1/.APHRO_MA_025deg/">APHRODITE version 1204R1</a> regridded to 0.05˚ spatial resolution
+</p>
+  <p align="left">
+<b>Daily temperature amplitude:</b> <a href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.WORLDCLIM/">WORLDCLIM</a> difference between maximum and minimum temperature, regridded to 0.05˚ spatial resolution and to linearly interpolated from monthly climatology to daily from 1961 to 2007
+</p>
+  <p align="left">
+<b>Total Available Water:</b> <a href="http://iridl.ldeo.columbia.edu/home/.remic/.Philippines/.Bicol/.soilTypes/">TAW</a> derived from Bicol soil type textures with the from Soil Hydraulic Function - Mualem-Van Genuchten Model and the UNSODA databse.
+</p>
+<br /><br />
+  <p align="left">
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
+
