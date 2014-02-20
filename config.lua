@@ -1,4 +1,4 @@
-RepoDir = "/home/user/Git/maproom"
+RepoDir = os.getenv('PWD')
 Host = "127.0.0.1"
 Port = 80
 ServerAdmin = "webmaster@localhost"
