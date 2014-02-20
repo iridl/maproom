@@ -29,7 +29,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.APHRODITE/.precip/dup/T/%287%29//DayStartZ/parameter/%28%20%29append/%28Jan%29//seasonStartZ/parameter/append/%28%20%29append/%282007%29append/VALUE/.T/.gridvalues/0/get/7.0/sub/dup/7/add/%283%29//InitDZ/parameter/interp/add/%2827%29//VegDZ/parameter/interp/add/%2845%29//MidDZ/parameter/interp/add/%2860%29//LateDZ/parameter/interp/add/T/3/-2/roll/RANGE/home/.remic/.Philippines/.Bicol/.APHRODITE/.temp/T/2/index/.T/a:/.first/:a:/.last/:a/RANGE/home/.remic/.Philippines/.Bicol/.WORLDCLIM/.amplitude/T/2/index/.T/a:/.first/:a:/.last/:a/RANGE/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/T%5BX/Y/home/.remic/.Philippines/.Bicol/.soilTypes/.the_geom%5DWater_Balance:/%2845%29//MidDZ/parameter/interp/store/MidD/%281.1%29//LateKcZ/parameter/interp/store/LateKc/%280.0%29//EndKcZ/parameter/interp/store/EndKc/%2860%29//LateDZ/parameter/interp/store/LateD/%283%29//InitDZ/parameter/interp/store/InitD/%280.0%29//VegKcZ/parameter/interp/store/VegKc/%2827%29//VegDZ/parameter/interp/store/VegD/%28Rice%29//CropNameZ/parameter/store/Crop/%281.1%29//MidKcZ/parameter/interp/store/MidKc/%280.0%29//InitKcZ/parameter/interp/store/InitKc/%28Jan%29//seasonStartZ/parameter/store/PlDm/%287%29//DayStartZ/parameter/interp/store/PlDd/:Water_Balance/T/dup//defaultvalue/%7Blast%7Ddef/replaceGRID/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7BSM%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7BETcrop_red%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7BPeffective//units/%28mm/day%29def/precip_colors/DATA/AUTO/AUTO/RANGE%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7BETcrop_red/ETcrop/div//long_name/%28Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/flaglt/0/T/integrate/T//pointwidth/1.0/def/-0.5/shiftGRID//long_name/%28Persistent%20Water%20Stress%29def/wetday_freq_colors/DATA/0/AUTO/RANGE/T//defaultvalue/%7Blast%7Ddef/pop%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7BSM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert//long_name/%28Water%20Excess%29def%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7BSM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/flagge/0/T/integrate/T//pointwidth/1.0/def/-0.5/shiftGRID//long_name/%28Persistent%20Excess%20Water%29def/wetday_freq_colors/DATA/0/AUTO/RANGE/T//defaultvalue/%7Blast%7Ddef/pop%7Dif/SOURCES/.WORLDBATH/.bath/X/122.0/124.5/RANGE/Y/12.25/14.75/RANGE/exch/the_geom/exch/1/index/X/Y/fig-/white/mask/||/fillby/black/verythin/stroke/-fig/T/last/plotvalue//plotaxislength/150/psdef/+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.APHRODITE/.precip/dup/T/%287%29//DayStartZ/parameter/%28%20%29append/%28Jan%29//seasonStartZ/parameter/append/%28%20%29append/%282007%29append/VALUE/.T/.gridvalues/0/get/7.0/sub/dup/7/add/%283%29//InitDZ/parameter/interp/add/%2827%29//VegDZ/parameter/interp/add/%2845%29//MidDZ/parameter/interp/add/%2860%29//LateDZ/parameter/interp/add/T/3/-2/roll/RANGE/home/.remic/.Philippines/.Bicol/.APHRODITE/.temp/T/2/index/.T/a:/.first/:a:/.last/:a/RANGE/home/.remic/.Philippines/.Bicol/.WORLDCLIM/.amplitude/T/2/index/.T/a:/.first/:a:/.last/:a/RANGE/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/T%5BX/Y/home/.remic/.Philippines/.Bicol/.soilTypes/.the_geom%5DWater_Balance:/%2845%29//MidDZ/parameter/interp/store/MidD/%281.1%29//LateKcZ/parameter/interp/store/LateKc/%280.0%29//EndKcZ/parameter/interp/store/EndKc/%2860%29//LateDZ/parameter/interp/store/LateD/%283%29//InitDZ/parameter/interp/store/InitD/%280.0%29//VegKcZ/parameter/interp/store/VegKc/%2827%29//VegDZ/parameter/interp/store/VegD/%28Rice%29//CropNameZ/parameter/store/Crop/%281.1%29//MidKcZ/parameter/interp/store/MidKc/%280.0%29//InitKcZ/parameter/interp/store/InitKc/%28Jan%29//seasonStartZ/parameter/store/PlDm/%287%29//DayStartZ/parameter/interp/store/PlDd/:Water_Balance/T/dup//defaultvalue/%7Blast%7Ddef/replaceGRID/%28SM%29//seasonalStat/parameter/%28SM%29eq/%7BSM%7Dif//seasonalStat/get_parameter/%28ETcropRed%29eq/%7BETcrop_red%7Dif//seasonalStat/get_parameter/%28Peff%29eq/%7BPeffective//units/%28mm/day%29def/precip_colors/DATA/AUTO/AUTO/RANGE%7Dif//seasonalStat/get_parameter/%28WS%29eq/%7BETcrop_red/ETcrop/div//long_name/%28Water%20Stress%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7BETcrop_red/ETcrop/flaglt/0/T/integrate/T//pointwidth/1.0/def/-0.5/shiftGRID//long_name/%28Persistent%20Water%20Stress%29def/wetday_freq_colors/DATA/0/AUTO/RANGE/T//defaultvalue/%7Blast%7Ddef/pop%7Dif//seasonalStat/get_parameter/%28PAW%29eq/%7BSM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/div/%28percent%29unitconvert//long_name/%28Water%20Excess%29def%7Dif//seasonalStat/get_parameter/%28NumPAW%29eq/%7BSM/home/.remic/.Philippines/.Bicol/.soilTypes/.TAW/flagge/0/T/integrate/T//pointwidth/1.0/def/-0.5/shiftGRID//long_name/%28Persistent%20Excess%20Water%29def/wetday_freq_colors/DATA/0/AUTO/RANGE/T//defaultvalue/%7Blast%7Ddef/pop%7Dif/SOURCES/.WORLDBATH/.bath/X/122.0/124.5/RANGE/Y/12.25/14.75/RANGE/exch/the_geom/exch/1/index/X/Y/fig-/white/mask/||/fillby/black/verythin/stroke/-fig/T/last/plotvalue//plotaxislength/150/psdef//plotborder/0/psdef/+.gif" />
 <style>
 .dlimgtsbox {
 width: 99%;
@@ -243,38 +243,32 @@ days to:<input class="pageformcopy" name="EndKcC" type="text" value="0.0" size="
 </fieldset>
 -->
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">Bicol Region Historical Wetter Water Balance Monitoring</h2>
+ <h2 align="center" property="term:title">Bicol Region Historical Water Balance Monitoring</h2>
   <p align="left" property="term:description">
-The Maproom explores historical daily water balance by calculating simple seasonal statistics.</p>
+The Maproom monitors daily water balance and puts it in historical context.</p>
 <p>
-The water balance algorithm is described <a href="http://iridl.ldeo.columbia.edu/dochelp/Documentation/details/index.html?func=%3AWater_Balance">in the IRI DL Function Documentation</a>. For the 47 years of daily precipitation and average temperature available, the water balance is run continuously for a standard planting date of June 23rd. Kc is also invariant and a visualization of it in days since planting is provided.
+The water balance algorithm is described <a href="http://iridl.ldeo.columbia.edu/dochelp/Documentation/details/index.html?func=%3AWater_Balance">in the IRI DL Function Documentation</a>. The water balance is run from a few days prior to planting up to last day of availbale data. Planting date and Kc parameters are defined by the user. The current situation can be compared with another past growing season of interest where again the planting date and Kc parameters can be defined.
 </p>
-<p>Many options can be specified to produce yearly time series of a chosen seasonal diagnostic of the daily water blance data. The user can then choose to map the mean, standard deviation or probability of exceeding a chosen threshold, over years; clicking on the map will then produce a local yearly time series of the chosen diagnostic.
+<p>
+Different water balance outputs can be plotted on a map for a given day or as a time series for a given location
 </p>
 </div>
  <div id="tabs-2" class="ui-tabs-panel" about="">
  <h2 align="center">Options</h2>
   <p align="left">
-<b>Years and Season</b>:
-Specify the range of years over which to perform the analysis and choose the start and end dates of the season , over which the diagnostics are to be performed.
-<br />
-<b>Water Stressed Day Definition</b>:
-This defines the ratio of Reduced ET Crop with ET crop below which (non inclusive) a day is considered to be a water stressed day.
-<br /><br /><b>Seasonal daily statistcis</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
-<br /><b>Soil Moisture</b>: average soil moisture (in mm/day) over the season.
-<br /><b>Reduced Crop ET</b>: average Reduced Crop ET during the season.
-<br /><b>Effective Precipitation</b>:
-the average effective precipitation over the season.<br />
+<br /><br /><b>Water Balance Outputs</b>: Choose the water balance output to be computed for each season, from the following choices.
+<br /><b>Soil Moisture</b>: soil moisture (in mm/day).
+<br /><b>Reduced Crop ET</b>: Reduced Crop ET.
+<br /><b>Effective Precipitation</b>: effective precipitation.<br />
 <b>Water Stress</b>:
 Water stress is defined as the ratio of reduced ET crop and ET crop.
 <br />
-<b>Persistent Water Stress</b>: the number of water stressed days during the season according to the definitions in the Options section. Water stress is defined as the ratio of reduced ET crop and ET crop as being lower than the chosen threshold.
+<b>Persistent Water Stress</b>: the cumulative number of water stressed days . Water stress is defined as the ratio of reduced ET crop and ET crop as being lower than 1.
 <br />
 <b>Water Excess</b>: Water Excess is defined as the percentage of available water, ie the ratio of soil moisture with total available water.
 <br />
-<b>Persistent Water Excess</b>: the number of days when water excess is 100%.
+<b>Persistent Water Excess</b>: the cumulative number of days when water excess is 100%.
 <br /><br />
-<b>Yearly seasonal statistics</b>: a choice of yearly statistics over the chosen season of the selected range of years to produce the map among: the mean, the standard deviation and the probability of exceeding a user specified threshold.
 <br /><br />
 </p>
 </div>
