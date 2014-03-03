@@ -13,10 +13,10 @@
 <title>South Asia Historical Temperature Monitoring</title>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
-<link rel="canonical" href="South_Asia_Temp.html" />
+<link rel="canonical" href="SouthAsia_Temp.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
-<meta property="maproom:Entry_Id" content="Agriculture_Historical_South_Asia_Temperature" />
+<meta property="maproom:Entry_Id" content="Agriculture_Historical_SouthAsia_Temperature" />
 <meta property="maproom:Sort_Id" content="" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
@@ -58,9 +58,6 @@ display: none;
 display: none;
 }
 .seasonalStatNumHD #pET3 {
-display: none;
-}
-.seasonalStat #pET1 {
 display: none;
 }
 .seasonalStat #pET2 {
@@ -134,11 +131,9 @@ display: none;
 <input class="dlimg dlauximg share dlimgts" name="hotThreshold" type="hidden" value="0." />
 <input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" value="HDD" />
 <input class="dlimg dlauximg share ylyStat pET perc bodyClass" name="yearlyStat" type="hidden" value="Mean" />
-<input class="dlimg share pET" name="probExcThresh1" type="hidden" value="0." />
-<input class="dlimg share pET" name="probExcThresh2" type="hidden" value="0." />
-<input class="dlimg share pET" name="probExcThresh3" type="hidden" value="100." />
-<input class="dlimg share pET" name="probExcThresh4" type="hidden" value="30." />
-<input class="dlimg share pET" name="probExcThresh5" type="hidden" value="30." />
+<input class="dlimg share pET" name="probExcThresh1" type="hidden" value="100." />
+<input class="dlimg share pET" name="probExcThresh2" type="hidden" value="30." />
+<input class="dlimg share pET" name="probExcThresh3" type="hidden" value="30." />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
@@ -150,10 +145,10 @@ display: none;
             </fieldset>
 
             <fieldset class="navitem"><legend>Seasons</legend><select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1961" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2007" size="4" maxlength="4"/></fieldset>
-            <fieldset class="navitem"><legend>Seasonal daily statistics</legend><select class="pageformcopy" name="seasonalStat"><option value="HDD">Heating Degree Days</option><option value="NumCD">Number of Cold Days</option><option value="NumHD">Number of Hot Days</option></select></fieldset>
+            <fieldset class="navitem"><legend>Seasonal daily statistics</legend><select class="pageformcopy" name="seasonalStat"><option value="HDD">Growing Degree Days</option><option value="NumCD">Number of Cold Days</option><option value="NumHD">Number of Hot Days</option></select></fieldset>
 
             <fieldset class="navitem" id="yearlyStat"><legend>Yearly seasonal statistics</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Mean</option><option value="StdDev">Standard deviation</option><option value="CoV">Coefficient of variation</option><option value="RbyP">Percentile</option></select>
-        <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="0" size="3" maxlength="3"/>days</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="0" size="3" maxlength="3"/>days</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="0" size="3" maxlength="3"/>days</span>
+        <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="100" size="4" maxlength="4"/>˚C.days</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="0" size="3" maxlength="3"/>days</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="0" size="3" maxlength="3"/>days</span>
 </span>
 </fieldset>
 
@@ -184,7 +179,7 @@ Observations for <span class="bold iridl:long_name"></span>
 </div>
 <br />
 <div class="dlimgtsbox">
-<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.RIHN/.aphroTemp/.V1204R1/%280.25%29//resolution/parameter/%280.50%29ne/%7B.APHRO_MA_025deg%7D%7B.APHRO_MA_050deg%7Difelse/X/73.5/88.5/RANGEEDGES/Y/24/33/RANGEEDGES/a:/.temp/%28off%29//obsOnly/parameter/%28on%29eq/%7B:a:/.rstn/0.0/maskle/0.0/mul/add%7Dif/:a/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%28HDD%29//seasonalStat/parameter/%28PerDA%29eq/%7BSOURCES/.RIHN/.aphroTemp/.V1204R1/%280.25%29//resolution/parameter/%280.50%29ne/%7B.APHRO_MA_025deg%7D%7B.APHRO_MA_050deg%7Difelse/X/73.5/88.5/RANGEEDGES/Y/24/33/RANGEEDGES/.rstn/0.0/maskle/dataflag/nip%7Dif/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%285%29//hotThreshold/parameter/interp/0.0/%28MinTemp%29//seasonalStat/get_parameter/%28HDD%29eq/%7B4/-1/roll/.temp/3/-1/roll/sub/0/maskge/abs/3/-2/roll/flexseastotZeroFill%7Dif//seasonalStat/get_parameter/%28NumCD%29eq/%7B4/-1/roll/.temp/4/-3/roll/flexseasonalfreqLT%7Dif//seasonalStat/get_parameter/%28NumHD%29eq/%7B4/-1/roll/.temp/4/-3/roll/flexseasonalfreqGT%7Dif/%28bb:%5B80%2C26%2C81%2C27%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average//seasonalStat/get_parameter/%28HDD%29eq/%7B//long_name/%28Heating%20Degree%20Days%29def%7Dif//seasonalStat/get_parameter/dup/%28NumCD%29eq/exch/%28NumHD%29eq/or/%7B//long_name/%28count%29def%7Dif/T/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.RIHN/.aphroTemp/.V1204R1/%280.25%29//resolution/parameter/%280.50%29ne/%7B.APHRO_MA_025deg%7D%7B.APHRO_MA_050deg%7Difelse/X/73.5/88.5/RANGEEDGES/Y/24/33/RANGEEDGES/a:/.temp/%28off%29//obsOnly/parameter/%28on%29eq/%7B:a:/.rstn/0.0/maskle/0.0/mul/add%7Dif/:a/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%28HDD%29//seasonalStat/parameter/%28PerDA%29eq/%7BSOURCES/.RIHN/.aphroTemp/.V1204R1/%280.25%29//resolution/parameter/%280.50%29ne/%7B.APHRO_MA_025deg%7D%7B.APHRO_MA_050deg%7Difelse/X/73.5/88.5/RANGEEDGES/Y/24/33/RANGEEDGES/.rstn/0.0/maskle/dataflag/nip%7Dif/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%285%29//hotThreshold/parameter/interp/0.0/%28MinTemp%29//seasonalStat/get_parameter/%28HDD%29eq/%7B4/-1/roll/.temp/3/-1/roll/sub/0/maskge/abs/3/-2/roll/flexseastotZeroFill%7Dif//seasonalStat/get_parameter/%28NumCD%29eq/%7B4/-1/roll/.temp/4/-3/roll/flexseasonalfreqLT%7Dif//seasonalStat/get_parameter/%28NumHD%29eq/%7B4/-1/roll/.temp/4/-3/roll/flexseasonalfreqGT%7Dif/%28bb:%5B80%2C26%2C81%2C27%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average//seasonalStat/get_parameter/%28HDD%29eq/%7B//long_name/%28Growing%20Degree%20Days%29def%7Dif//seasonalStat/get_parameter/dup/%28NumCD%29eq/exch/%28NumHD%29eq/or/%7B//long_name/%28count%29def%7Dif/T/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
 </div>
 </fieldset>
 <fieldset class="dlimage">
@@ -206,9 +201,9 @@ The Maproom explores historical daily temperature by calculating simple seasonal
 Specify the range of years over which to perform the analysis and choose the start and end dates of the season , over which the diagnostics are to be performed.
 <br />
 <b>Hot/Cold Day Definition</b>:
-This threshold is used to define in Celsius degrees (non inclusive) the temperature under which a day is considered cold if the mean temperature is below it; or the temperature above which a days is considered hot if the mean temperature is above it; or the reference temperature for to compute the heating degree days.
+This threshold is used to define in Celsius degrees (non inclusive) the temperature under which a day is considered cold if the mean temperature is below it; or the temperature above which a days is considered hot if the mean temperature is above it; or the reference temperature to compute the growing degree days.
 <br /><br /><b>Seasonal daily statistcis</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
-<br /><b>Heating/Cooling Degree Days</b>: Heating or cooling degree days are summations of negative/positive differences between the mean daily temperature and user-defined reference base temperature during the season.
+<br /><b>Growing/Chilling Degree Days</b>: Growing or chilling degree days are summations of negative/positive differences between the mean daily temperature and user-defined reference base temperature during the season.
 <br /><b>Number of Cold and Hot days</b>:
 the number of cold or hot days during the season according to the user-defined threshold and according to the mean daily temperature.
 <br />
