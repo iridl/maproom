@@ -1,6 +1,7 @@
 PLAT ?= $(shell miconf-platform)
 ARCH ?= $(shell arch)
 PREFIX ?= /usr/local/$(VER)
+#RULESET ?= owl2-rl-conf
 RULESET ?= owl-max-optimized
 
 BUILD = ___build
@@ -30,7 +31,7 @@ utbuild.tag: build.tag
 	tar cf - -C pure --exclude=.git . | tar xf - -C $(BUILD)/pure
 	cp .htaccess $(BUILD)
 	touch utbuild.tag
-	
+
 maproom/version.xml: .git
 	git-generate-version-info maproom xml >$@
 
