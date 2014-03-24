@@ -10,14 +10,15 @@
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>IFAD Maprooms</title>
-<link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="canonical" href="index.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<meta property="maproom:Sort_Id" content="a02" />
 <link rel="term:icon"
 href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Lao/.aphroditeV1101/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
-<script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body  xml:lang="en">
 
