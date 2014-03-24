@@ -9,7 +9,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>CCAFS Maprooms</title>
+<title>CGIAR research program on Climate Change, Agriculture and Food Security</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="ccafs.css" />
 <link rel="canonical" href="index.html" />
@@ -39,8 +39,8 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%2
 </div>
 <div>
  <div id="content" class="searchDescription">
-<div><img src="http://iridl.ldeo.columbia.edu/maproom/Agriculture/CCAFS/ccafs_big.jpg" /></div>
-<h2 property="term:title">CCAFS Maprooms</h2>
+<div><img src="ccafs_big.jpg" /></div>
+<h2 property="term:title">CGIAR research program on Climate Change, Agriculture and Food Security</h2>
 <p align="left" property="term:description">
 Talk about CCAFS Maprooms briefly.</p>
 <p>Talk about them more.</p>

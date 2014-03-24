@@ -9,7 +9,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>IFAD Maprooms</title>
+<title>International Fund for Agricultural Development</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="ifad.css" />
 <link rel="canonical" href="index.html" />
@@ -39,7 +39,8 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.La
 </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">IFAD Maprooms</h2>
+<div><img src="ifad_big.png" /></div>
+<h2 property="term:title">Inaternational Fund for Agricultural Development</h2>
 <p align="left" property="term:description">
 Talk about IFAD Maprooms briefly.</p>
 <p>Talk about them more.</p>

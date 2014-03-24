@@ -18,7 +18,7 @@
 <link class="share" rel="canonical" href="CMAP_climo.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
-<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_HistoricalConditions" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_HistoricalConditions" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
@@ -51,10 +51,10 @@
 		</select>
             </fieldset>
  </div>
-<div id="ifaddiv">
-</div>
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
+<div id="ifaddiv">
+</div>
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Instructions</a></li>
       <li><a href="#tabs-3" >Dataset Documentation</a></li>
