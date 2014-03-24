@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta property="maproom:Entry_Id" content="IFRC_FIC_CMAP_climo" />
+<meta property="maproom:Sort_Id" content="c03" />
+<title>IFAD PIC: How much rain normally falls at this time of year?</title>
+<link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<!-- <link rel="stylesheet" type="text/css" href="../ifrc.css" /> -->
+<link class="share" rel="canonical" href="CMAP_climo.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_HistoricalConditions" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/88/165/RANGE/Y/-10/27/RANGE/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-10/27/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
+<script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+</head>
+<body  xml:lang="en">
+<form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">
+<input class="carryLanguage carryup carry " name="Set-Language" type="hidden" />
+<input class="carryup carry dlimg share" name="bbox" type="hidden" />
+<input class="dlimg share" name="T" type="hidden" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Maproom</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/IFAD/">Forecasts in Context</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_HistoricalConditions"><span property="term:label">Past Conditions</span></legend>
+            </fieldset> 
+            <fieldset class="navitem"> 
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/ifadregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">IFAD Countries</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
+            </fieldset>
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+<div id="ifrcdiv">
+</div>
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Instructions</a></li>
+      <li><a href="#tabs-3" >Dataset Documentation</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+<fieldset class="dlimage" id="content" about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/88/165/RANGE/Y/-10/27/RANGE/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/88/165/plotrange/Y/-10/27/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/88/165/RANGE/Y/-10/27/RANGE/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/88/165/plotrange/Y/-10/27/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/88/165/RANGE/Y/-10/27/RANGE/X/Y/fig-+colorscale2+-fig//nplotstream+1+def+//T/0.5/plotvalue/X/88/165/plotrange/Y/-10/27/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//color_smoothing+null+psdef+.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >How much rain normally falls at this time of year?</h2>
+<p align="left" property="term:description">This map shows how much rain normally falls in each month of the year.
+You can see:
+<ul>
+<li>Which places tend to be wetter or dryer than others.</li>
+<li>Which are the rainiest months for different locations.</li>
+</ul>
+</p>
+<p align="left"> These monthly maps are based on rainfall in past years (1985-2010).  The darker the blue, the heavier the rain.  This map does not indicate how much rain is expected this year.</p>
+</div>
+<div id="tabs-2"  class="ui-tabs-panel">
+<h2  align="center">How to use this interactive map</h2>
+<p><i>Switch to another map:</i>
+Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
+<p><i>Return to the menu page:</i>
+Click the blue link called “Forecasts in Context” at the top left corner of the page.</p>
+<p><i>Zoom in to a region:</i><br />
+Method 1: Pick a region from the list:
+<ol>
+<li>Select the dropdown menu at the top of the page, titled “Region”</li>
+<li>Click on the region of interest, and the map will automatically refresh.</li>
+</ol>
+</p>
+<p>Method 2: Click-and-drag:</p>
+<ol>
+<li>Click the left mouse button at the upper-left corner of the region to which you would like to zoom.</li>
+<li>While holding down the button, drag the mouse to the lower-right corner of the region to which you would like to zoom.</li>
+<li>Release the left mouse button. The map will redraw automatically.</li>
+</ol>
+<p><i>Zoom out to the global map:</i></p>
+<ol>
+<li>Move your mouse over the map, until you see three icons appear in the upper left corner.</li>
+<li>Click the icon of the magnifying glass.</li>
+<li>The map will redraw automatically. Note that the map cannot display areas outside of the latitudes initially shown on the interface (about 66.25S – 76.25N).</li>
+</ol>
+<p><i>Change the month:</i>
+This map shows the normal rainfall for one month of the year. You edit this by moving your mouse over the map until you see a text box appear at the top with the month inside.</p>
+<ol>
+<li>To step forward or back by one month, click the corresponding buttons to the left or right of the text box, and the map will automatically refresh.</li>
+<li>To manually change the month, type the first three letters of the month of interest into the tex box. For example, type “Apr”. Then, press “enter” or click the “refresh” icon in the top left corner of the map.</li>
+<li>To produce an animation of these maps over a series of dates, type the range of months into the text box. This must follow the format: “start date” followed by “to” followed by “end date”. For example “Jan to Dec”.</li>
+</ol>
+<div class="buttonInstructions"></div>
+</div>
+<div id="tabs-3" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p><b><a class="carry" href="instructions.html#CMAP_climo">CPC Merged Analysis of Precipitation Monthly Climatology</a></b><br /> 
+<b>Data</b>  CPC Merged Analysis of Precipitation (CMAP) v1201 (January 2012 release) version 2 (merged gauge and satellite estimates) monthly precipitation values at 2.5&#176; lat/lon resolution
+<br /><b>Data Source</b> NOAA, Climate Prediction Center, <a href="http://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
+<br /><b>Analysis</b> Monthly precipitation climatology using 1985-2010 base period.
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
