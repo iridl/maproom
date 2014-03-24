@@ -1,0 +1,57 @@
+#ccafsdiv {
+float: right; position: relative; top: -7px; width: 225px; height: 21px
+} 
+#ccafsicon {
+position: absolute; left: 0px; top: 0px;
+	border: 1px;
+        border-style: outset;
+	border-color: LightGrey;
+        padding-right: 2px;
+        padding-bottom: 1px;
+        background: white;
+}
+#ccafsdiv:before {
+	content: url(ccafs_big.jpg);
+}
+@media only all and (max-width: 850px) {
+#ccafsdiv {
+top: -7px;
+width: 40px;
+} 
+#ccafsdiv:before {
+	content: url(ccafs_small.jpg);
+}
+#ccafsicon {
+clip: rect(0px,36px,21px,0px);
+position: absolute; left: 0px; top: 0px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        background: white;
+}
+}
+
+@media only all and (max-width: 479px) {
+#ccafsdiv {
+top: 0px;
+width: 18px;
+height: 12px;
+} 
+#ccafsicon {
+clip: rect(0px,20px,12px,0px);
+height: 12px;
+position: absolute; left: 0px; top: 0px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        background: white;
+}
+.controlBar::before, .controlBar:before{
+display: inline;
+float: right;
+content: url(ccafs_small.jpg);
+visibility: visible;
+height: 12px;
+width: 20px;
+padding-right: 12pt;
+padding-top: 4pt;
+ }
+}

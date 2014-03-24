@@ -15,7 +15,7 @@
 <meta property="maproom:Sort_Id" content="a04" />
 <title>IFAD PIC: How much rain is expected?</title>
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
-<!-- <link rel="stylesheet" type="text/css" href="../ifrc.css" /> -->
+<link rel="stylesheet" type="text/css" href="../ifad.css" />
 <link rel="canonical" href="cummrain.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -37,12 +37,11 @@
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
-                <legend>Maproom</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/IFAD/">IFAD Maprooms</a>
+                <legend>Climate and Agriculture</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/IFAD/">IFAD</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_Six
-DayForecasts"><span property="term:label">Six-Day Forecasts</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_SixDayForecasts"><span property="term:label">Six-Day Forecasts</span></legend>
             </fieldset> 
             <fieldset class="navitem"> 
                 <legend>Region</legend>
@@ -57,7 +56,7 @@ DayForecasts"><span property="term:label">Six-Day Forecasts</span></legend>
  </div>
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
-<div id="ifrcdiv">
+<div id="ifaddiv">
 </div>
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >More Information</a></li>

@@ -14,7 +14,7 @@
 <meta property="maproom:Sort_Id" content="c02" />
 <title>IFAD PIC: What Changes in Rainfall are Typical during El Niño and La Niña?</title>
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
-<!-- <link rel="stylesheet" type="text/css" href="../ifrc.css" /> -->
+<link rel="stylesheet" type="text/css" href="../ifad.css" /> 
 <link rel="canonical" href="laninarain.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -31,17 +31,16 @@
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
-                <legend>Maproom</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/IFAD/">IFAD Maprooms</a>
+                <legend>Climate and Agriculture</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/IFAD/">IFAD</a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_His
-toricalConditions"><span property="term:label">Past Conditions</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_HistoricalConditions"><span property="term:label">Past Conditions</span></legend>
             </fieldset> 
  </div>
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
-<div id="ifrcdiv">
+<div id="ifaddiv">
 </div>
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Instructions</a></li>

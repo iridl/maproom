@@ -1,0 +1,57 @@
+#ifaddiv {
+float: right; position: relative; top: -7px; width: 225px; height: 21px
+} 
+#ifadicon {
+position: absolute; left: 0px; top: 0px;
+	border: 1px;
+        border-style: outset;
+	border-color: LightGrey;
+        padding-right: 2px;
+        padding-bottom: 1px;
+        background: white;
+}
+#ifaddiv:before {
+	content: url(ifad_big.png);
+}
+@media only all and (max-width: 850px) {
+#ifaddiv {
+top: -7px;
+width: 40px;
+} 
+#ifaddiv:before {
+	content: url(ifad_small.jpg);
+}
+#ifadicon {
+clip: rect(0px,36px,21px,0px);
+position: absolute; left: 0px; top: 0px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        background: white;
+}
+}
+
+@media only all and (max-width: 479px) {
+#ifaddiv {
+top: 0px;
+width: 18px;
+height: 12px;
+} 
+#ifadicon {
+clip: rect(0px,20px,12px,0px);
+height: 12px;
+position: absolute; left: 0px; top: 0px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        background: white;
+}
+.controlBar::before, .controlBar:before{
+display: inline;
+float: right;
+content: url(ifad_small.jpg);
+visibility: visible;
+height: 12px;
+width: 20px;
+padding-right: 12pt;
+padding-top: 4pt;
+ }
+}
