@@ -12,7 +12,7 @@
 <title>International Fund for Agricultural Development</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="IFAD/ifad.css" />
-<link rel="canonical" href="index.html" />
+<link rel="canonical" href="ifad.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
@@ -30,7 +30,7 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.La
 <div class="controlBar">
            <fieldset class="navitem">
                 <legend>Maproom</legend>
-                    <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Climate and Angriculture</a>
+                    <a rev="section" class="navlink carryup" href="index.html">Climate and Angriculture</a>
             </fieldset>
            <fieldset class="navitem">
                 <legend>Climate and Agriculture</legend>
@@ -55,7 +55,7 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.La
 Talk about IFAD Maprooms briefly.</p>
 <p>Talk about them more.</p>
 </div>
-<div class="rightcol tabbedentries" about="/maproom/Agriculture/IFAD/" >
+<div class="rightcol tabbedentries" about="/maproom/Agriculture/ifad.html" >
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_Historical_term" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_Forecast_term" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_SixDayForecasts" />

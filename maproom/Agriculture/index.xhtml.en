@@ -46,7 +46,7 @@
 <p align="left" property="term:description">
 The variability of seasonal temperature and precipitation and the sub-seasonal statistics of these and other climate variables play a key role in the quality and quantity of agricultural output.  This map room includes maps and analyses of seasonal statistics of historical temperature and precipitation, seasonal temperature and precipitation forecasts, and GCM skill maps for regions of Asia and South America, and a map of farming systems in Africa.</p>
 </div>
-<div class="rightcol tabbedentries" about="/maproom/Agriculture/" >
+<div class="rightcol tabbedentries" about="/maproom/Agriculture/index.html" >
 <!-- <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_ENSO_Prob_term" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term" />
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term" />

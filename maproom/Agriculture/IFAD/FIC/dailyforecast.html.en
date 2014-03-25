@@ -46,7 +46,7 @@ width: 95%;
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Climate and Agriculture</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/IFAD/">IFAD</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/ifad.html">IFAD</a>
             </fieldset> 
             <fieldset class="navitem"> 
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_DailyForecasts"><span property="term:label">Daily Forecasts</span></legend>ESRL GEFS Daily Precipitation

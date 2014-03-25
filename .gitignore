@@ -2,8 +2,8 @@
 .DS_Store
 /build.tag
 /localmaproom.conf
-/maproom/Agriculture/CCAFS/index.html.en
-/maproom/Agriculture/IFAD/index.html.en
+/maproom/Agriculture/ccafs.html.en
+/maproom/Agriculture/ifad.html.en
 /maproom/Agriculture/index.html.en
 /maproom/ENSO/index.html
 /maproom/Fire/index.html.en
