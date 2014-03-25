@@ -25,6 +25,7 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.La
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+<input class="carry share" name="bbox" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem">
@@ -35,11 +36,20 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.La
                 <legend>Climate and Agriculture</legend>
                      <span class="navtext">IFAD</span>
             </fieldset>
-
+            <fieldset class="navitem">
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/ifadregions.json"></a>
+                <select class="RegionMenu" name="bbox">
+                <option value="">IFAD Countries</option>
+                <optgroup class="template" label="Region">
+                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+                </optgroup>
+                </select>
+            </fieldset>
 </div>
 <div>
  <div id="content" class="searchDescription">
-<div><img src="ifad_big.png" /></div>
+<div><img src="ifad_verybig.png" /></div>
 <h2 property="term:title">Inaternational Fund for Agricultural Development</h2>
 <p align="left" property="term:description">
 Talk about IFAD Maprooms briefly.</p>
