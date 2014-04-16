@@ -10,18 +10,18 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>IRI Map Room</title>
-<link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+<title>ENSO Impacts</title>
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" /> -->
 <link rel="canonical" href="index.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
-<meta property="maproom:Sort_Id" content="a03" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy"
 href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<!-- <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Impacts_term" /> -->
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/filters/.NINO/SOURCES/.Indices/.india/.rainfall/T/first/%281870%29RANGE/SOURCES/.IITM/.All_India/.Rainfall/.PCPN/T/%28Jun%201871%29last/RANGE/T/4/boxAverage/4/mul/T/12/STEP/appendstream%5BT%5DREORDER/dup/mean/sub/SOURCES/.KAPLAN/.EXTENDED/.v2/.ssta/NINO3/T/%28Oct%201856%29last/RANGE/T/4/boxAverage/T/12/STEP/T/-4/shiftGRID/2/T/1/MATCH/correlationcolorscale/DATA/-2.5/2.5/RANGE/T+fig-+colorbars2+thin+grey+dotted+-200+50+150+horizontallines++|+colorbars2+-fig+//rainfall/-241.5632/174.4369/plotrange//NINO3/-3/3/plotrange/T/-1243./last/plotrange+//plotaxislength+220+psdef//XOVY+null+psdef//plotborder+0+psdef+.gif" />
-<script type="text/javascript" src="../../uicore/uicore.js"></script>
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
 <body>
 
@@ -30,43 +30,40 @@ href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <input class="carryup titleLink itemImage" name="bbox" type="hidden" />
 </form>
 <div class="controlBar">
-           <fieldset class="navitem"> 
-                <legend>Data Library</legend> 
-                      <a rev="section" class="navlink carryup" href="/maproom/">Maproom</a>
-            </fieldset> 
-           <fieldset class="navitem"> 
+           <fieldset class="navitem" id="toSectionList"> 
                 <legend>Maproom</legend> 
-                     <span class="navtext">Climate</span>
+                    <a rev="section" class="navlink carryup" href="/maproom/Global/">Climate</a>
             </fieldset> 
-            <fieldset class="navitem">
+           <fieldset class="navitem" id="chooseSection"> 
+                <legend>Climate</legend> 
+             </fieldset> 
+            <fieldset class="navitem"> 
                 <legend>Region</legend>
             <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
-                <select class="RegionMenu" name="bbox">
-                <option value="">Global</option>
-                <optgroup class="template" label="Region">
-                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
-                </optgroup>
-                </select>
+		<select class="RegionMenu" name="bbox">
+		<option value="">Global</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
             </fieldset>
-
- </div>
+</div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">El Niño, La Niña and the Southern Oscillation</h2>
+<h2 property="term:title">ENSO Impacts</h2>
 <p align="left" property="term:description">
 "ENSO" refers to the El Niño/Southern Oscillation, the interaction between the atmosphere and ocean in the tropical Pacific that results in a somewhat periodic variation between between below-normal and above-normal sea surface temperatures and dry and wet conditions over the course of a few years.</p> 
 <p>This year-to-year or multi-year variability in oceanic and atmospheric conditions in the tropical Pacific has far-reaching impacts, called "teleconnections", on seasonal precipitation and temperature patterns in many areas of the globe.  This Maproom includes maps and analyses useful for monitoring ENSO and its wide-ranging impact on climate.
 </p>
 </div>
-  
-  <div class="rightcol tabbedentries" about="/maproom/ESNSO" >
-<!-- <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Diagnostics_term" />
-<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Impacts_term" />
 
+<div class="rightcol tabbedentries" about="/maproom/ENSO/Impacts/" >
+  <link rel="maproom:tabterm" 
+href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Impacts_term"/>
+ 
 </div>
-  
-  
-  
+
+
 
 </div>
 <div class="optionsBar">
