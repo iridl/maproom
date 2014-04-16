@@ -100,6 +100,18 @@
                      <div class="itemFooter"></div>
                   </div>
                   <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="file:////Users/andrewkruczkiewicz/maproom/maproom/ENSO/Impacts/index.html">ENSO Impacts</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="file:////Users/andrewkruczkiewicz/maproom/maproom/ENSO/Impacts/index.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/filters/.NINO/SOURCES/.Indices/.india/.rainfall/T/first/%281870%29RANGE/SOURCES/.IITM/.All_India/.Rainfall/.PCPN/T/%28Jun%201871%29last/RANGE/T/4/boxAverage/4/mul/T/12/STEP/appendstream%5BT%5DREORDER/dup/mean/sub/SOURCES/.KAPLAN/.EXTENDED/.v2/.ssta/NINO3/T/%28Oct%201856%29last/RANGE/T/4/boxAverage/T/12/STEP/T/-4/shiftGRID/2/T/1/MATCH/correlationcolorscale/DATA/-2.5/2.5/RANGE/T+fig-+colorbars2+thin+grey+dotted+-200+50+150+horizontallines++|+colorbars2+-fig+//rainfall/-241.5632/174.4369/plotrange//NINO3/-3/3/plotrange/T/-1243./last/plotrange+//plotaxislength+220+psdef//XOVY+null+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">"ENSO" refers to the El Niño/Southern Oscillation, the interaction between the atmosphere and ocean in the tropical Pacific
+                        that results in a somewhat periodic variation between between below-normal and above-normal sea surface temperatures and dry
+                        and wet conditions over the course of a few years.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
                      <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Atm_Circulation/index.html">Atmospheric Circulation</a></div>
                      <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Atm_Circulation/index.html"><img class="itemImage"
                                 src="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.phi/P/%28500%29VALUE/T/3/runningAverage/dup/T/%28Jan%201971%29%28Dec%202000%29RANGE/yearly-climatology/sub/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.phi/P/%28500%29VALUE/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/dup/yearly-climatology/sub/T/12/splitstreamgrid%5BT2%5Drmsover/div//long_name/%28Standardized%20Geopotential%20Height%20Anomaly%29def/std_anomaly_colors2//name/%28phianom%29def/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.phi/P/%28500%29VALUE/T/3/runningAverage/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/DATA/60/STEP//name/%28phiclim%29def/:ds/a-+.phianom+-a-+.phiclim+-a+X+Y+fig:+colors+grey+unlabelledcontours+thin+solid+coasts+countries+:fig//T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotaxislength+220+psdef//plotborder+0+psdef//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef+.gif" /></a></div>
