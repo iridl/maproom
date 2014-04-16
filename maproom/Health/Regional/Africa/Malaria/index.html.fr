@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      xml:lang="fr">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+      <title>Climat et Paludisme en Afrique</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
+      <link class="altLanguage" rel="alternate" hreflang="en"
+            href="index.html?Set-Language=en" />
+      <link class="altLanguage" rel="alternate" hreflang="es"
+            href="index.html?Set-Language=es" />
+      <link rel="canonical" href="index.html" />
+      <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+      <link class="carryLanguage" rel="home alternate" type="application/json"
+            href="/maproom/navmenu.json" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+      <link rel="term:icon"
+            href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+150+psdef+.gif" /><script type="text/javascript" src="../../../../../uicore/uicore.js"
+              xml:space="preserve"></script></head>
+   <body>
+      
+      
+      <form name="pageform" id="pageform" method="get"
+            enctype="application/x-www-form-urlencoded">
+         <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+         
+      </form>
+      
+      <div class="controlBar">
+         
+         <fieldset class="navitem"> 
+            
+            <legend>Maproom</legend> 
+            <a rev="section" class="navlink carryup" href="/maproom/Health/" shape="rect">Climat et Santé</a>
+            
+         </fieldset> 
+         
+         <fieldset class="navitem"> 
+            
+            <legend>Climat et Santé</legend> 
+            <span class="navtext">Paludisme</span>
+            
+         </fieldset> 
+         
+      </div>
+      
+      <div>
+         
+         <div id="content" class="searchDescription">
+            
+            <h2 property="term:title">Climat et Paludisme en Afrique</h2>
+            
+            <p align="left" property="term:description">
+               Le développement économique a joué un rôle important dans la distribution actuelle du paludisme dans le monde. Là où
+               le paludisme n'est pas suffisamment contrôlé, sa distribution et son caractère saisonnier sont étroitement liés aux caractéristiques
+               saisonnières du climat.
+            </p>
+            
+            <p>Le paludisme peut être rencontré partout où les conditions climatiques sont favorables à une transmission entre le moustique
+               (vecteur) et l'être humain (hôte). Le paludisme est endémique dans la majorité des pays de l'Afrique sub-saharienne et affecte
+               régulièrement les populations. A l'intérieur de la zone endémique, la maladie peut varier d'un extrême à l'autre (maladie
+               stable durant toute l'année ou présente durant certaines périodes seulement).
+            </p> 
+            <p> En bordure des zones de paludisme endémique, se trouvent les zones géographiques où la transmission du paludisme est instable
+               ou épidémique. Le paludisme dans ces régions est aussi fortement lié au climat, mais dans ce cas, au moins une des variables
+               essentielles (soit les précipitations, la température ou l'humidité), est un facteur limitant la transmission.  La forte variabilité
+               inter-annuelle du climat dans ces régions permet cependant, certaines années, de réunir les conditions climatiques favorables
+               à la transmission du paludisme et au déclenchement d'épidémies.
+               
+            </p>
+            
+            <p> Ainsi, les produits cartographiques ci-dessous ont pour but d'illustrer des modèles définissant les conditions climatiques
+               favorables au développement du
+               paludisme endémique saisonnier, accompagnés de conditions climatiques récentes, telles que les anomalies de précipitations,
+               qui peuvent être responsables du paludisme épidémique dans
+               certaines régions telles que les zones semi-arides de l'Afrique. D'autres modèles, comme celui développé par l'initiative
+               ARMA, sont inclus. Nous sommes intéressés par un
+               échange d'information et d'idées sur le contenu des cartes proposées et sommes ouverts à toute collaboration qui pourrait
+               aboutir au développement de ces produits.
+               
+            </p>
+            
+            <p><b>Références:</b> Grover-Kopec E. K., Blumenthal M. B., Ceccato P., Dinku T., Omumbo J. A., Connor S. J. <a href="http://www.ncbi.nlm.nih.gov/pubmed/16689992" shape="rect">Web-based climate information resources for malaria control in Africa</a>. <i>Malaria Journal</i>. 2006, <b>5</b>:38.
+               
+            </p>
+            
+         </div>
+         
+         <div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:maproomregistry="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
+              xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+              class="rightcol">
+            <div class="ui-tabs">
+               <ul class="ui-tabs-nav"></ul>
+               <div class="ui-tabs-panel">
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="System.html">Système d'Alerte Précoce Contre le Paludisme</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="System.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.FEWS/.Africa/.TEN-DAY/.RFEv2/.est_prcp/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">The Malaria Early Warning System (MEWS) aids in the prediction of malaria outbreaks. The system consists of four elements;
+                        Vulnerability, Seasonal Climate Forecasts, Monitoring the Environment and Observed Malaria Morbidity. In certain regions,
+                        these products may be used to determine the timing and severity of an outbreak.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical.html">L'analyse Historique du Paludisme</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">Climate variables may effect malaria transmission in certain regions. These products aid to determine the historical risk
+                        for malaria due to climatic factors.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         
+      </div>
+      
+      <div class="optionsBar">
+         
+         <fieldset class="navitem" id="share">
+            <legend>Share</legend>
+            
+            
+         </fieldset>
+         
+      </div>
+      
+   </body>
+</html>

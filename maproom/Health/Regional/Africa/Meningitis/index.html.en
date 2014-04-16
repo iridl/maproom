@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+      <title>IRI Map Room</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
+      <link class="altLanguage" rel="alternate" hreflang="fr"
+            href="index.html?Set-Language=fr" />
+      <link rel="canonical" href="index.html" />
+      <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+      <link class="carryLanguage" rel="home alternate" type="application/json"
+            href="/maproom/navmenu.json" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+      <link rel="term:icon"
+            href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/X/-20/55/RANGE/Y/-35/40/RANGE/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//plotaxislength/150/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" /><script type="text/javascript" src="../../../../../uicore/uicore.js"
+              xml:space="preserve"></script></head>
+   <body>
+      
+      
+      <form name="pageform" id="pageform" method="get"
+            enctype="application/x-www-form-urlencoded">
+         <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+         <input class="titleLink itemImage" name="bbox" type="hidden"
+                value="bb:-20:-40:55:40:bb" />
+         
+      </form>
+      
+      <div class="controlBar">
+         
+         <fieldset class="navitem"> 
+            
+            <legend>Data Library</legend> 
+            <a rev="section" class="navlink carryup" href="/maproom/Health/" shape="rect">Climate and Health</a>
+            
+         </fieldset> 
+         
+         <fieldset class="navitem"> 
+            
+            <legend>Climate and Health</legend> 
+            <span class="navtext">Meningitis</span>
+            
+         </fieldset> 
+         
+      </div>
+      
+      <div>
+         
+         <div id="content" class="searchDescription">
+            
+            <h2 property="term:title">Climate and Meningitis in Africa</h2>
+            
+            <p align="left" property="term:description">
+               The products in this maproom aim to illustrate models of climate suitability for seasonal epidemic meningitis.
+            </p>
+            <p>
+               
+               Meningitis effects up to 200,000 people a year the African 'Meningitis Belt'.  This region, stretching latitudinal across
+               the Sahel region from Senegal to Ethiopia, faces recurring epidemics during the dry season of February to May. In addition,
+               rainfall during subsequent months seems to alleviate the epidemic, reinforcing the suspected link between meningitis and environmental
+               factors.
+            </p>
+            <p>
+               
+               Different variables combine to cause epidemics of disease. Among these factors are the characteristics of the infecting organism,
+               the resistance of the host and climatic conditions.
+            </p>
+            <p>
+               
+               Studies have suggested that dry weather, low humidity and the presence of dust play an important role in the temporal and
+               spatial occurrence of the disease.
+            </p>
+            
+            
+            
+            
+            
+            
+         </div>
+         
+         <div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:maproomregistry="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
+              xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+              class="rightcol">
+            <div class="ui-tabs">
+               <ul class="ui-tabs-nav">
+                  <li><a href="#tabs-1">Monitoring</a></li>
+                  <li><a href="#tabs-2">Analyses</a></li>
+               </ul>
+               <div id="tabs-1" class="ui-tabs-panel">
+                  <div class="itemGroup">Monitoring</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Aerosol/index.html">OMI Aerosol Monitoring for Meningitis</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Aerosol/index.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//plotaxislength/150/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the presence of aerosols in dekadal (10-day) averages.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="MISR/index.html">MISR Aerosol Monitoring for Meningitis</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="MISR/index.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/home/.nasa_roses_a19/.MISR_Africa_0.50_region1/.aot/longitude/%28X%29renameGRID/latitude/%28Y%29renameGRID/time/%28T%29renameGRID/T/%281%20Apr%202000%293316.5/RANGE/T/0.1/dekadalAverage/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/3312.0/plotvalue//antialias/true/psdef/++//aot/0.016/2.352/plotrange//T/5.0/plotvalue//plotborder+0+psdef//XOVY+null+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the presence of absorbing aerosols in dekadal (10-day) averages.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="REANL/index.html">Reanalysis: Specific Humidity, Temperature, and Wind</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="REANL/index.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.DAILY/.Intrinsic/.PressureLevel/.qa/P/1000/VALUE/T/(1%20Jan%202012)(10%20Jan%202012)RANGE/T/0.0/dekadalAverage/X/-180/0.5/180/GRID/Y/-90/0.5/90/GRID/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This Reanalysis product displays different meteorological variables over Africa. Each plays an important role as a predictive
+                        indicator for forecasting potential meningitis outbreaks.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="TRMM/index.html">NASA TRMM Rainfall Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="TRMM/index.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES-DAAC/.TRMM_L3/.TRMM_3B42/.v7/.daily/.precipitation/MEWSprcp_colors/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows global daily precipitation estimates.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+               <div id="tabs-2" class="ui-tabs-panel">
+                  <div class="itemGroup">Analyses</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Meningitis_Observed.html">Observed Distribution of Meningitis in Historical Record</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Meningitis_Observed.html"><img class="itemImage"
+                                src="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Originals/Health-Regional-Africa-ObsMen.jpg" /></a></div>
+                     <div class="itemDescription">This map shows the distribution of observed meningitis epidemics during 1841-1999.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Meningitis_Probability.html">Predicted Probability of Meningitis Epidemic Experience</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Meningitis_Probability.html"><img class="itemImage"
+                                src="http://iri.columbia.edu/~grover/DataLibrary/Maproom_Icons/Originals/Health-Regional-Africa-ProbMen.jpg" /></a></div>
+                     <div class="itemDescription">This map shows meningitis risk in Africa derived from probabilistic model based on environmental factors.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="DustModel/index.html">Regional Dust Model</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="DustModel/index.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/home/.nasa_roses_a19/.Dust_model_2011/.RegDustModelProjected/.dust_pm10_sconc10/%28mcg/m%5E3%29unitconvert/dekadalAverage/X+Y+fig-+colors+coasts+-fig+//dust_pm10_sconc10/1.4276642E-04/69.84269/plotrange//T/257.0/plotvalue//plotborder+0+psdef//XOVY+null+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the presence of dust over northern Africa in dekadal (10-day) averages.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </div>
+      
+      <div class="optionsBar">
+         
+         <fieldset class="navitem" id="share">
+            <legend>Share</legend>
+            
+            
+         </fieldset>
+         
+      </div>
+      
+   </body>
+</html>

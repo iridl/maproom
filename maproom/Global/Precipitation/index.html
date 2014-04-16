@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+      <title>Precipitation</title>
+      <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+      <!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" /> -->
+      <link rel="canonical" href="index.html" />
+      <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+      <link class="carryLanguage" rel="home alternate" type="application/json"
+            href="/maproom/navmenu.json" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+      <!-- <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_Precipitaion_term" /> -->
+      <link rel="term:icon"
+            href="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP/.CPC/.GLOBAL/.monthly/.olr/X/Y/1/SM121/DATA/10/STEP/Y/%2822S%29%2822N%29RANGE//name//tropical_OLR/def/SOURCES/.NOAA/.NCEP/.CPC/.GLOBAL/.monthly/.olr/X/Y/1/SM121/DATA/10/STEP//name//global_OLR/def/:ds/a-+.tropical_OLR+startcolormap+DATA+120+300+RANGE+5+130+5+RGB+RGBdup+120+VALUE+5+130+5+RGB+RGBdup+170+VALUE+10+150+15+RGB+RGBdup+180+VALUE+20+170+25+RGB+RGBdup+190+VALUE+45+180+50+RGB+RGBdup+200+VALUE+70+190+75+RGB+RGBdup+210+VALUE+110+210+115+RGB+RGBdup+220+VALUE+150+230+155+RGB+RGBdup+230+VALUE+170+242+175+RGB+RGBdup+240+VALUE+211+211+211+RGB+RGBdup+250+VALUE+255+255+255+RGB+300+VALUE+white+endcolormap+-a-+.global_OLR+-a+X+Y+fig:+colors+grey+unlabelledcontours+black+thin+solid+coasts+countries+:fig+/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef//XOVY+null+psdef+.gif" /><script type="text/javascript" src="../../../uicore/uicore.js" xml:space="preserve"></script></head>
+   <body xml:lang="en">
+      
+      
+      <form name="pageform" id="pageform" method="get"
+            enctype="application/x-www-form-urlencoded">
+         <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+         <input class="carryup titleLink itemImage" name="bbox" type="hidden" />
+         
+      </form>
+      
+      <div class="controlBar">
+         
+         <fieldset class="navitem" id="toSectionList"> 
+            
+            <legend>Maproom</legend> 
+            <a rev="section" class="navlink carryup" href="/maproom/Global/" shape="rect">Climate</a>
+            
+         </fieldset> 
+         
+         <fieldset class="navitem" id="chooseSection"> 
+            
+            <legend>Climate</legend> 
+            
+         </fieldset> 
+         
+         <fieldset class="navitem"> 
+            
+            <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"
+               shape="rect"></a>
+            		<select class="RegionMenu" name="bbox">
+               <option value="">Global</option>
+               <optgroup class="template" label="Region">
+                  <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+               </optgroup></select>
+            
+         </fieldset>
+         
+      </div>
+      
+      <div>
+         
+         <div id="content" class="searchDescription">
+            
+            <h2 property="term:title">Precipitation</h2>
+            
+            <p align="left" property="term:description">
+               Monthly to seasonal measures and analyses of precipitation.
+            </p> 
+            
+         </div>
+         
+         <div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:maproomregistry="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
+              xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+              class="rightcol">
+            <div class="ui-tabs">
+               <ul class="ui-tabs-nav">
+                  <li><a href="#tabs-1">Monthly</a></li>
+                  <li><a href="#tabs-2">Pentad</a></li>
+                  <li><a href="#tabs-3">Seasonal</a></li>
+               </ul>
+               <div id="tabs-1" class="ui-tabs-panel">
+                  <div class="itemGroup">Monthly</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Anomaly.html">Monthly Precipitation Anomaly</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Anomaly.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.anomaly/.prcp/T/%28days%20since%201960-01-01%29streamgridunitconvert/T/differential_mul/T/%28months%20since%201960-01-01%29streamgridunitconvert//units/%28mm/month%29def/prcp_anomaly_max500_colors2//long_name/%28Precipitation%20Anomaly%29def/DATA/-500/-450/-400/-350/-300/-250/-200/-150/-100/-50/-25/25/50/100/150/200/250/300/350/400/450/500/VALUES/prcp_anomaly_max500_colors2+X+Y+fig-+colors+|+thin+grey+unlabelledcontours+black+thin+solid+coasts+countries+-fig+//aprod/-500/500/plotrange/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange+//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef//XOVY+null+psdef//color_smoothing+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows monthly precipitation anomalies for the globe.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Monthly_OLR.html">Monthly Average OLR</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Monthly_OLR.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP/.CPC/.GLOBAL/.monthly/.olr/X/Y/1/SM121/DATA/10/STEP/Y/%2822S%29%2822N%29RANGE//name//tropical_OLR/def/SOURCES/.NOAA/.NCEP/.CPC/.GLOBAL/.monthly/.olr/X/Y/1/SM121/DATA/10/STEP//name//global_OLR/def/:ds/a-+.tropical_OLR+startcolormap+DATA+120+300+RANGE+5+130+5+RGB+RGBdup+120+VALUE+5+130+5+RGB+RGBdup+170+VALUE+10+150+15+RGB+RGBdup+180+VALUE+20+170+25+RGB+RGBdup+190+VALUE+45+180+50+RGB+RGBdup+200+VALUE+70+190+75+RGB+RGBdup+210+VALUE+110+210+115+RGB+RGBdup+220+VALUE+150+230+155+RGB+RGBdup+230+VALUE+170+242+175+RGB+RGBdup+240+VALUE+211+211+211+RGB+RGBdup+250+VALUE+255+255+255+RGB+300+VALUE+white+endcolormap+-a-+.global_OLR+-a+X+Y+fig:+colors+grey+unlabelledcontours+black+thin+solid+coasts+countries+:fig+/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef//XOVY+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows monthly-average outgoing longwave radiation values for the globe, with an emphasis on tropical regions.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Monthly_OLR_anom.html">Monthly OLR Anomaly</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Monthly_OLR_anom.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.GLOBAL/.monthly/.olr/a:/:a:/yearly-climatology/sub/:a/startcolormap/DATA/-60./60./RANGE/white/0/110/4/RGB/0/110/4/RGB/-60/VALUE/0/110/4/RGB/0/110/4/RGB/-50/bandmax/10/150/15/RGB/RGBdup/-40/bandmax/45/180/50/RGB/RGBdup/-30/bandmax/110/210/115/RGB/RGBdup/-20/bandmax/170/242/175/RGB/RGBdup/-10./bandmax/white/white/10./bandmax/240/215/210/RGB/RGBdup/20/bandmax/220/185/175/RGB/RGBdup/30/bandmax/200/160/150/RGB/RGBdup/40/bandmax/180/140/130/RGB/RGBdup/50/bandmax/130/90/80/RGB/RGBdup/60/bandmax/130/90/80/RGB/60/VALUE/130/90/80/RGB/endcolormap/DATA/10/STEP/DATA/-60/-50/-40/-30/-20/-10/10/20/30/40/50/60/VALUES/a-++-a-++-a+X+Y+fig:+colors+grey+nozero+unlabelledcontours+black+thin+solid+coasts+countries+:fig+//T/627.5/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange+//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef//XOVY+null+psdef//color_smoothing+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows monthly outgoing longwave radiation anomalies for the globe.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Monthly_stn_anom.html">Monthly CAMS Station Precipitation Anomaly</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Monthly_stn_anom.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.station/.precipitation/DataFlag/1/1/masknotrange/SELECT/lon//long_name/%28Longitude%29def/lat//long_name/%28Latitude%29def/2/index/.prcp/3/index/.prcp/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/sub//units/%28mm/month%29def/startcolormap/DATA/-200.0/200.0/RANGE/white/130/90/80/RGB/RGBdup/-200.0/VALUE/150/110/100/RGB/RGBdup/-150/bandmax/170/130/120/RGB/RGBdup/-100/bandmax/190/150/140/RGB/RGBdup/-50/bandmax/220/185/175/RGB/RGBdup/-10/bandmax/LightGoldenrodYellow/LightGoldenrodYellow/10.0/bandmax/150/230/155/RGB/RGBdup/50/bandmax/110/210/115/RGB/RGBdup/100/bandmax/45/180/50/RGB/RGBdup/150/bandmax/10/150/15/RGB/RGBdup/200/bandmax/0/110/4/RGB/endcolormap//long_name/%28CAMS%20Precipitation%20Departure%20from%201981-2010%20Normal%29def/fig:/scattercolor/thin/solid/coasts/countries/:fig//lat/-65/75/plotrange/T/last/plotvalue//plotborder/0/psdef//antialias/true/psdef//plotaxislength/220/psdef//XOVY/null/psdef//fntsze/20/psdef//XOVY+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows monthly station precipitation anomalies for the globe, with respect to the 1981-2010 climatological base period.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Monthly_stn_pctle.html">Monthly CAMS Station Precipitation Percentile</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Monthly_stn_pctle.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.station/.precipitation/DataFlag/1/1/masknotrange/SELECT/lon//long_name/%28Longitude%29def/lat//long_name/%28Latitude%29def/prcp/prcp/T/%28Jan%201981%29%28Dec%202010%29RANGE/T/12/splitstreamgrid%5BT2%5D0.0/0.1/0.2/0.3/0.4/0.5/0.6/0.7/0.8/0.9/1.0/0.5/replacebypercentile%5Bpercentile%5Dtablefunction/startcolormap/DATA/0.0/1.0/RANGE/white/170/130/120/RGB/RGBdup/0.0/VALUE/170/130/120/RGB/RGBdup/0.1/bandmax/220/185/175/RGB/RGBdup/0.2/bandmax/LightYellow/LightYellow/0.8/bandmax/150/230/155/RGB/RGBdup/0.9/bandmax/45/180/50/RGB/RGBdup/1/bandmax/45/180/50/RGB/endcolormap//long_name/%28CAMS%20Precipitation%20Percentile%20%281981-2010%20Base%20Period%29%29def/fig:/scattercolor/thin/solid/coasts/countries/:fig//lat/-65/75/plotrange/T/last/plotvalue//plotborder/0/psdef//antialias/true/psdef//plotaxislength/220/psdef//XOVY/null/psdef//fntsze/20/psdef//color_smoothing/null/psdef/++/T/last/plotvalue//plotborder+0+psdef//plotaxislength+220+psdef//XOVY+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows monthly station precipitation percentiles for the globe, with respect to the 1981-2010 climatological base
+                        period.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Monthly_stn_pctmed.html">Monthly CAMS Station Percent of Median Precipitation</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Monthly_stn_pctmed.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.CAMS/.station/.precipitation/DataFlag/1/1/masknotrange/SELECT/lon//long_name/%28Longitude%29def/lat//long_name/%28Latitude%29def/prcp/prcp/T/%28Jan%201981%29%28Dec%202010%29RANGE/T/12/splitstreamgrid%5BT2%5D0.87/medianover/div/100/mul/1000/maskgt//long_name/%28CAMS%20Precipitation:%20%20Percent%20of%201981-2010%20Median%29def/startcolormap/DATA/0/350/RANGE/white/190/150/140/RGB/0/VALUE/190/150/140/RGB/RGBdup/50/bandmax/220/185/175/RGB/RGBdup/75/bandmax/240/215/210/RGB/RGBdup/90/bandmax/250/235/230/RGB/RGBdup/100/bandmax/230/255/235/RGB/RGBdup/120/bandmax/210/255/215/RGB/RGBdup/140/bandmax/150/230/155/RGB/RGBdup/160/bandmax/110/210/115/RGB/RGBdup/180/bandmax/45/180/50/RGB/RGBdup/200/bandmax/20/170/25/RGB/RGBdup/220/bandmax/10/150/15/RGB/RGBdup/240/bandmax/0/130/5/RGB/RGBdup/260/bandmax/0/110/4/RGB/RGBdup/280/bandmax/DarkSeaGreen/DarkSeaGreen/300/bandmax/DarkGreen/DarkGreen/350/bandmax/DarkGreen/endcolormap/fig:/scattercolor/thin/solid/coasts/countries/:fig//lat/-65/75/plotrange/T/last/plotvalue//plotborder/0/psdef//antialias/true/psdef//plotaxislength/220/psdef//XOVY/null/psdef//fntsze/20/psdef/++/T/last/plotvalue//plotborder+0+psdef//plotaxislength+220+psdef//XOVY+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the percentage of 1981-2010 median precipitation (for the given month of the year) received in the month shown
+                        for each station.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Percentiles.html">Monthly Precipitation Percentile</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Percentiles.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/T/12/splitstreamgrid%5BT2%5D0.0/0.1/0.2/0.3/0.4/0.5/0.6/0.7/0.8/0.9/1.0/1.0/replacebypercentile%5Bpercentile%5Dboundedtablefunction/startcolormap/DATA/0/1/RANGE/white/sienna/sienna/0/VALUE/sienna/0.1/bandmax/tan/RGBdup/0.2/bandmax/white/white/0.8/bandmax/PaleGreen/RGBdup/0.9/bandmax/DarkGreen/RGBdup/1.0/bandmax/RGBdup/endcolormap//name//prcp_percentiles/def//long_name/%28Precipitation%20Percentiles%20%28brown%20below%2020th%20and%20green%20above%2080th%29%29def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/T/%28Jan%201981%29%28Dec%202010%29RANGE/T/%28days%20since%201960-01-01%29streamgridunitconvert/T/differential_mul/T/%28months%20since%201960-01-01%29streamgridunitconvert//units/%28mm/month%29def/yearly-climatology/10/flaglt%5BT%5DregridAverage//name//dry_mask/def/:ds/a-/.prcp_percentiles/-a-/.dry_mask/-a/X/Y/fig:/colors/grey/mask/black/thin/solid/coasts/countries_gaz/:fig//prcp_percentiles/0.0/1.0/plotrange/T/last/plotvalue/X/-175/185/plotrange/Y/-65/75/plotrange//plotborder/0/psdef//plotaxislength/220/psdef//XOVY/null/psdef//color_smoothing/null/psdef/++/T/last/plotvalue//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef//XOVY+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows monthly precipitation percentiles below the 20th percentile and above the 80th percentile for the globe.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Persistence.html">Monthly Precipitation Persistence</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Persistence.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/T/12/splitstreamgrid%5BT2%5D0.0/0.1/0.2/0.3/0.33/0.4/0.5/0.6/0.67/0.7/0.8/0.9/1.0/1.0/replacebypercentile/percentile/0.67/VALUE/flagge/T/-2/0/shiftdatashort%5BT_lag%5Daverage/3/mul/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/T/12/splitstreamgrid%5BT2%5D0.0/0.1/0.2/0.3/0.33/0.4/0.5/0.6/0.67/0.7/0.8/0.9/1.0/1.0/replacebypercentile/percentile/0.33/VALUE/flagle/T/-2/0/shiftdatashort%5BT_lag%5Daverage/-3/mul/add//name//persistence/def/prcp_persistence_colors//long_name/%28Number%20of%20past%203%20months%20PRCP%20was%20in%20bottom%20tercile%20%28brown%29%20or%20top%20tercile%20%28green%29%29def/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/T/%28Jan%201981%29%28Dec%202010%29RANGE/T/%28days%20since%201960-01-01%29streamgridunitconvert/T/differential_mul/T/%28months%20since%201960-01-01%29streamgridunitconvert//units/%28mm/month%29def/yearly-climatology%5BT%5DregridLinear/T/-2/0/shiftdatashort%5BT_lag%5Dsum/30/flaglt//name//dry_mask/def/:ds/a-/.persistence/prcp_persistence_colors/-a-/.dry_mask/-a/X/Y/fig:/colors/grey/mask/white/ocean/black/thin/solid/coasts/countries/:fig//persistence/-3.5/3.5/plotrange/X/-180/180/plotrange/Y/-65/75/plotrange/++/T/last/plotvalue//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef//XOVY+null+psdef//color_smoothing+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows, over the course of the three previous months, the number of months in which monthly precipitation was in the
+                        bottom or top tercile of the climatological distribution.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="WASP_Indices.html">WASP Indices</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="WASP_Indices.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/sub%5BT%5DREORDER/dup/T/12/splitstreamgrid%5BT2%5Drmsover/0.01/masklt/div/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology%5BT%5DREORDER/a:/:a:%5BT%5Daverage/12/mul/0.001/masklt/div/:a/mul/12/mul/T/3/runningAverage/dup/T/12/splitstreamgrid%5BT2%5Drmsaover/0.01/masklt/div/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology%5BT%5Daverage/0.2/masklt/dup/div/div/%28long_name%29%28DRY%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%203-Month%20WASP%20Index%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20WET%29cvn/def/std_wasp_colors/std_wasp_colors/X/Y/fig:/colors/grey/ocean/black/thin/solid/coasts/countries/:fig//prcp/-3.5/3.5/plotrange/T/last/plotvalue/X/-175/185/plotrange/Y/-65/75/plotrange//XOVY/null/psdef//color_smoothing/null/psdef/++/T/last/plotvalue//XOVY+null+psdef//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the WASP index for the globe at various monthly accumulation periods. The WASP index gives a standardized measure
+                        of precipitation excess or deficits over the selected accumulation period.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+               <div id="tabs-2" class="ui-tabs-panel">
+                  <div class="itemGroup">Pentad</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Pentad_OLR.html">Pentad OLR Anomaly</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Pentad_OLR.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.GLOBAL/.pentad/.olra/olr_anomaly/DATA/-110/-90/-70/-50/-30/-10/10/30/50/70/90/110/VALUES/X+Y+fig:+colors+|+verythin+grey+nozero+unlabelledcontours+black+thin+solid+coasts+countries+:fig+/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef//XOVY+null+psdef//color_smoothing+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows pentad (5-day average) outgoing longwave radiation anomalies for the globe.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+               <div id="tabs-3" class="ui-tabs-panel">
+                  <div class="itemGroup">Seasonal</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="SPI.html">Standardized Precipitation Index</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="SPI.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.SPI/.SPI-CAMSOPI_1-Month/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/yearly-climatology%5BT%5Daverage/0.2/masklt/0.2/flagge/mul/SOURCES/.WORLDBATH/.bath/0/masklt/0/flagge/mul/X/periodic/setgridtype/pop/Y/%28-65%29%2875%29RANGE/DATA/-3.1/3.1/RANGE//long_name/%28SPI%29def/X/Y/fig:/colors/thin/solid/countries_gaz/coasts_gaz/:fig//aprod/-3.1/3.1/plotrange/X/-175/185/plotrange/Y/-65/75/plotrange//antialias/true/psdef//color_smoothing/null/psdef//plotaxislength/220/psdef/++/T/last/plotvalue//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the Standardized Precipitation Index (SPI) for multiple monthly accumulation periods for the globe.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Seasonal.html">Seasonal Precipitation Anomaly</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Seasonal.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.anomaly/.prcp/T/%28days%20since%201960-01-01%29streamgridunitconvert/T/differential_mul/T/%28months%20since%201960-01-01%29streamgridunitconvert/T/3/runningAverage/3/mul//units/%28mm/season%29def/prcp_anomaly_max1000_colors2//long_name/%28Precipitation%20Anomaly%29def/DATA/-1000/-900/-800/-700/-600/-500/-400/-300/-200/-100/-50/50/100/200/300/400/500/600/700/800/900/1000/VALUES/prcp_anomaly_max1000_colors2+X+Y+fig-+colors+|+thin+grey+unlabelledcontours+black+thin+solid+coasts+countries+-fig+//aprod/-1000/1000/plotrange/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange+//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef//XOVY+null+psdef//color_smoothing+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows 3-month seasonal precipitation anomalies for the globe.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Seasonal_OLR.html">Seasonal-Average OLR</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Seasonal_OLR.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/ds:/SOURCES/.NOAA/.NCEP/.CPC/.GLOBAL/.monthly/.olr/T/3/runningAverage/X/Y/1/SM121/DATA/10/STEP/Y/%2822S%29%2822N%29RANGE//name//tropical_OLR/def/SOURCES/.NOAA/.NCEP/.CPC/.GLOBAL/.monthly/.olr/T/3/runningAverage/X/Y/1/SM121/DATA/10/STEP//name//global_OLR/def/:ds/a-+.tropical_OLR+startcolormap+DATA+120+300+RANGE+5+130+5+RGB+RGBdup+120+VALUE+5+130+5+RGB+RGBdup+170+VALUE+10+150+15+RGB+RGBdup+180+VALUE+20+170+25+RGB+RGBdup+190+VALUE+45+180+50+RGB+RGBdup+200+VALUE+70+190+75+RGB+RGBdup+210+VALUE+110+210+115+RGB+RGBdup+220+VALUE+150+230+155+RGB+RGBdup+230+VALUE+170+242+175+RGB+RGBdup+240+VALUE+211+211+211+RGB+RGBdup+250+VALUE+255+255+255+RGB+300+VALUE+white+endcolormap+-a-+.global_OLR+-a+X+Y+fig:+colors+grey+unlabelledcontours+black+thin+solid+coasts+countries+:fig+/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef//XOVY+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows seasonal-average outgoing longwave radiation values for the globe, with an emphasis on tropical regions.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Seasonal_OLR_anom.html">Seasonal OLR Anomaly</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Seasonal_OLR_anom.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.GLOBAL/.monthly/.olr/a:/:a:/yearly-climatology/sub/:a/T/3/runningAverage/olr_anomaly/DATA/10/STEP/DATA/-55/-45/-35/-25/-15/-5/5/15/25/35/45/55/VALUES/a-++olr_anomaly+-a-++-a+X+Y+fig:+colors+grey+nozero+unlabelledcontours+black+thin+solid+coasts+countries+:fig+//olr/-55/55/plotrange/T/last/plotvalue/X/-20/340/plotrange/Y/-65/75/plotrange//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef//XOVY+null+psdef//color_smoothing+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows seasonal outgoing longwave radiation anomalies for the globe.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="WASP_Indices.html">WASP Indices</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="WASP_Indices.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/dup/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology/sub%5BT%5DREORDER/dup/T/12/splitstreamgrid%5BT2%5Drmsover/0.01/masklt/div/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology%5BT%5DREORDER/a:/:a:%5BT%5Daverage/12/mul/0.001/masklt/div/:a/mul/12/mul/T/3/runningAverage/dup/T/12/splitstreamgrid%5BT2%5Drmsaover/0.01/masklt/div/SOURCES/.NOAA/.NCEP/.CPC/.CAMS_OPI/.v0208/.mean/.prcp/T/%28Jan%201981%29%28Dec%202010%29RANGE/yearly-climatology%5BT%5Daverage/0.2/masklt/dup/div/div/%28long_name%29%28DRY%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%203-Month%20WASP%20Index%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20WET%29cvn/def/std_wasp_colors/std_wasp_colors/X/Y/fig:/colors/grey/ocean/black/thin/solid/coasts/countries/:fig//prcp/-3.5/3.5/plotrange/T/last/plotvalue/X/-175/185/plotrange/Y/-65/75/plotrange//XOVY/null/psdef//color_smoothing/null/psdef/++/T/last/plotvalue//XOVY+null+psdef//plotborder+0+psdef//antialias+true+psdef//plotaxislength+220+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the WASP index for the globe at various monthly accumulation periods. The WASP index gives a standardized measure
+                        of precipitation excess or deficits over the selected accumulation period.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         
+      </div>
+      
+      <div class="optionsBar">
+         
+         <fieldset class="navitem" id="share">
+            <legend>Share</legend>
+            
+            
+         </fieldset>
+         
+      </div>
+      
+   </body>
+</html>

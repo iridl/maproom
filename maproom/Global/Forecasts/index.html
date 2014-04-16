@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+      <title>Forecasts</title>
+      <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+      <!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" /> -->
+      <link rel="canonical" href="index.html" />
+      <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+      <link class="carryLanguage" rel="home alternate" type="application/json"
+            href="/maproom/navmenu.json" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+      <!-- <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Global_Forecasts_term" /> -->
+      <link rel="term:icon"
+            href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Precipitation%20Forecast%20issued%20%25=%5BF%5D%29psdef//L/1.0/plotvalue//F/last/plotvalue+//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /><script type="text/javascript" src="../../../uicore/uicore.js" xml:space="preserve"></script></head>
+   <body xml:lang="en">
+      
+      
+      <form name="pageform" id="pageform" method="get"
+            enctype="application/x-www-form-urlencoded">
+         <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+         <input class="carryup titleLink itemImage" name="bbox" type="hidden" />
+         
+      </form>
+      
+      <div class="controlBar">
+         
+         <fieldset class="navitem" id="toSectionList"> 
+            
+            <legend>Maproom</legend> 
+            <a rev="section" class="navlink carryup" href="/maproom/Global/" shape="rect">Climate</a>
+            
+         </fieldset> 
+         
+         <fieldset class="navitem" id="chooseSection"> 
+            
+            <legend>Climate</legend> 
+            
+         </fieldset> 
+         
+         <fieldset class="navitem">
+            
+            <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"
+               shape="rect"></a>
+            <select class="RegionMenu" name="bbox">
+               <option value="">Global</option>
+               <optgroup class="template" label="Region">
+                  <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+               </optgroup></select>
+            
+         </fieldset>
+         
+      </div>
+      
+      <div>
+         
+         <div id="content" class="searchDescription">
+            
+            <h2 property="term:title">Forecasts</h2>
+            
+            <p align="left" property="term:description">
+               Seasonal forecasts of temperature and precipitation.
+            </p> 
+            
+         </div>
+         
+         <div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:maproomregistry="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
+              xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+              class="rightcol">
+            <div class="ui-tabs">
+               <ul class="ui-tabs-nav">
+                  <li><a href="#tabs-1">Flexible Forecasts</a></li>
+                  <li><a href="#tabs-2">Forecasts</a></li>
+                  <li><a href="#tabs-3">Predictions In Context</a></li>
+               </ul>
+               <div id="tabs-1" class="ui-tabs-panel">
+                  <div class="itemGroup">Flexible Forecasts</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Flexible_Forecasts/temperature.html">Temperature Flexible Seasonal Forecast</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Flexible_Forecasts/temperature.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.Flexible_Forecast/.temperature/%28Percentile%29//var/parameter/%28Percentile%29eq/%7B%2850.%29//percentile/parameter/interp/100.0/div/2/mul/1/sub/erfinv/clim_stddev/mul/2/sqrt/mul/clim_mean/add/X/-180/180/RANGE/Y/-60/90/RANGE%7D%7B%2820.%29//threshold2/parameter/interp%7Difelse/fcst_mean/sub/fcst_stddev/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28exceeding%29//proba/parameter/%28exceeding%29ne/%7B-1/mul/1/add%7Dif/S//fullname/%28Month%20Forecast%20Issued%29def/pop//var/get_parameter/%28Percentile%29eq/%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//percentile/get_parameter/append/%28th%20%25-ile%29append/def/%28percentiles_colors_%29//proba/get_parameter/%28exceeding%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7D%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//threshold2/get_parameter/append/%28degC%29append/def/correlationcolorscale/DATA/0/1/RANGE/X/-180/180/RANGE/Y/-60/90/RANGE%7Difelse/X/Y/fig-/colors/black/coasts/lakes/-fig//S/last/plotvalue//L/2.5/plotvalue/%28antialias%29true/psdef//plotaxislength/220/psdef//plotborder/0/psdef/+.gif" /></a></div>
+                     <div class="itemDescription">This seasonal forecasting system consists of probabilistic temperature seasonal forecasts based on the full estimate of the
+                        probability distribution.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Flexible_Forecasts/precipitation.html">Precipitation Flexible Seasonal Forecast</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Flexible_Forecasts/precipitation.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.Flexible_Forecast/.precipitation/%28Percentile%29//var/parameter/%28Percentile%29eq/%7B%2850.%29//percentile/parameter/interp/100.0/div/2/mul/1/sub/erfinv/clim_stddev/mul/2/sqrt/mul/clim_mean/add/X/-180/180/RANGE/Y/-60/90/RANGE%7D%7B%281.%29//threshold2/parameter/interp/fcst_mean/0.0/mul/add/dup/SOURCES/.IRI/.FD/.NOAA/.NCEP/.CPC/.Forecast/.Unites-States/.mean/.Txb%5BX/Y%5DregridAverage/0/mul/1/add/mul%5BL%5DregridLB/L/0.0/add/1.5/maskle/0.0/mul/add/exch/sqrt/replaceNaN%7Difelse/fcst_mean/sub/fcst_stddev/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28exceeding%29//proba/parameter/%28exceeding%29ne/%7B-1/mul/1/add%7Dif/S//fullname/%28Month%20Forecast%20Issued%29def/pop//var/get_parameter/%28Percentile%29eq/%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//percentile/get_parameter/append/%28th%20%25-ile%29append/def/%28percentiles_colors_%29//proba/get_parameter/%28exceeding%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7D%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//threshold2/get_parameter/append/%28mm/day%29append/def/correlationcolorscale/DATA/0/1/RANGE/X/-180/180/RANGE/Y/-60/90/RANGE%7Difelse/X/Y/fig-/colors/black/coasts/lakes/-fig//S/last/plotvalue//L/2.5/plotvalue/%28antialias%29true/psdef//plotaxislength/220/psdef//plotborder/0/psdef/+.gif" /></a></div>
+                     <div class="itemDescription">This seasonal forecasting system consists of probabilistic precipitation seasonal forecasts based on the full estimate of
+                        the probability distribution.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+               <div id="tabs-2" class="ui-tabs-panel">
+                  <div class="itemGroup">Forecasts</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="GCM.html">Individual Atmospheric General Circulation Models Forecast</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="GCM.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.GCM/%28.%29%28ECHAM4p5%29//model/parameter/append/interp/.Forecast/%28.%29%28psst%29//sstforcing/parameter/append/interp/.monthly/a:/%28.%29%28prcp%29//var/parameter/append/interp//var/get_parameter/%28prcp%29eq/%7B%28mm/day%29unitconvert%7Dif//var/get_parameter/%28t2m%29eq/%7B%28Celsius_scale%29unitconvert%7Dif/L/3/0.0/runningAverage//pointwidth/3/def//var/get_parameter/%28prcp%29eq/%7Bprecip_colors%7Dif//var/get_parameter/%28t2m%29eq/%7Btemp_colors%7Dif/:a:/.T/:a//var/get_parameter/%28prcp%29eq/%7B%28Total%29//fieldPrcp/parameter%7Dif//var/get_parameter/%28t2m%29eq/%7B%28Total%29//fieldTemp/parameter%7Dif//var/get_parameter/%28zg%29eq/%7B%28Total%29//fieldGeop/parameter%7Dif//field/parameter/dup/%28Anomaly%29eq/exch/%28Zonal%29eq/or/%7B//model/get_parameter/%28ECHAM4p5-%29search/%7Bpop/pop/pop/1/index/S/first/%280000%201%20Dec%202011%29RANGE/S/12/splitstreamgrid%5BS2%5Daverage%7D%7Bpop/SOURCES/.IRI/.FD/.GCM/%28.%29//model/get_parameter/append/interp/.History/%28.%29%28c7100%29//clim/parameter/append/interp/%28.%29//var/get_parameter/append/interp//var/get_parameter/%28zg%29eq/%7B%5BX/Y/P%5DREORDER%7D%7B%5BX/Y%5DREORDER/2/index/.units/unitconvert%7Difelse/1/index%5BT%5Dsample-along/L/3/0.0/runningAverage//pointwidth/3/def%7Difelse/3/-1/roll/exch/sub//var/get_parameter/%28prcp%29eq/%7Bprcp_anomaly_25max500_colors2_nan/DATA/-10/10/RANGE%7Dif//var/get_parameter/%28t2m%29eq/%7Btemp_anomaly_colors_gcm%7Dif//var/get_parameter/%28zg%29eq/%7B//field/get_parameter/%28Zonal%29eq/%7Bdup%5BX%5Daverage/sub%7Dif/correlationcolorscale/DATA/-100/100/RANGE%7Dif/exch%7Dif//field/get_parameter/%28Percent%29eq/%7B//model/get_parameter/%28ECHAM4p5-%29search/%7Bpop/pop/pop/1/index/S/first/%280000%201%20Dec%202011%29RANGE/S/12/splitstreamgrid%5BS2%5Dmedianover%7D%7Bpop/SOURCES/.IRI/.FD/.GCM/%28.%29//model/get_parameter/append/interp/.History/%28.m%29%28c7100%29//clim/parameter/1/4/getinterval/append/interp/%28.%29//var/get_parameter/append/interp/1/index%5BT%5Dsample-along/L/3/0.0/runningAverage//pointwidth/3/def%7Difelse/3/-1/roll/exch/div/%28%25%29unitconvert/Infinity/maskge/prcp_anomaly_25max500_colors2_percentmedian/DATA/0/400/RANGE/DATA/10/25/50/75/90/100/120/150/200/250/300/400/VALUES/exch%7Dif/L/3/0.0/runningAverage//pointwidth/3/def/X/Y/fig-/colors/thinnish/grey/coasts_gaz/lakes/|/black/nozero/contours/plotlabel/-fig/X/30/390/plotrange/Y/-89.25845/89.25845/plotrange//antialias/true/psdef//framelabel/%28%25=%5BT%5D%20IRI%20seasonal%20Forecast%20for%20%29//var/get_parameter/%28%20issued%20%25=%5BS%5D%20from%20%29//model/get_parameter/append/append/append/psdef//S/last/plotvalue//L/first/plotvalue//var/get_parameter/%28zg%29eq/%7B//P/500/plotvalue%7Dif//plotaxislength/220/psdef//plotborder/0/psdef/+.gif" /></a></div>
+                     <div class="itemDescription">Maps of temperature, precipitation and 500mb-geopotential height forecasts from Individual Atmospheric General Circulation
+                        Models.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="SST.html">Sea Surface Temperature Anomaly Forecast</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="SST.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.SSTA_FCST/%28ASST%29//forcing/parameter/%28ASST%29eq/%7B.ASST/.version02/a:/.sst/L/3/0.0/runningAverage//pointwidth/3/def/temp_anomaly_colors_gcm/DATA/-6/6/RANGE/:a:/.T/L/3/0.0/runningAverage//pointwidth/3/def/:a/X/Y/fig-/colors/thinnish/grey/land/plotlabel/-fig//antialias/true/psdef//framelabel/%28%25=%5BT%5D%20IRI%20seasonal%20Forecast%20SSTA%20issued%20%25=%5BS%5D%29psdef//L/first/plotvalue%7D%7B.PSST/.ssta/dup/T/1/shiftGRID/T//S/renameGRID/temp_anomaly_colors_gcm/DATA/-6/6/RANGE/exch/.T/0/add//name//target_date/def/T/S/replaceGRID/X/Y/fig-/colors/thinnish/grey/land/plotlabel/-fig/Y/-89.25845/89.25845/plotrange//framelabel/%28%20%25=%5Btarget_date%5D%20persisted%20SSTA%20issued%20%25=%5BS%5D%29psdef%7Difelse//antialias/true/psdef//plotaxislength/220/psdef//S/last/plotvalue//plotborder/0/psdef/+.gif" /></a></div>
+                     <div class="itemDescription">Maps of sea surface temperature scenarii (SST forecasts) used to force the AGCMs.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Precipitation.html">IRI Seasonal Precipitation Forecast</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Precipitation.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Precipitation%20Forecast%20issued%20%25=%5BF%5D%29psdef//L/1.0/plotvalue//F/last/plotvalue+//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">The seasonal forecast for above-, below- and near-normal precipitation from the IRI.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Temperature.html">IRI Seasonal Temperature Forecast</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Temperature.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Temperature%20Forecast%20issued%20%25=%5BF%5D%29psdef//L/1.0/plotvalue//F/last/plotvalue+//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">The seasonal forecast for above-, below- and near-normal temperature from the IRI.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+               <div id="tabs-3" class="ui-tabs-panel">
+                  <div class="itemGroup">Predictions In Context</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="PiC_Reversed_12_Months.html">Reversed Tendency Between Forecast and 12-Month Precipitation Observation</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="PiC_Reversed_12_Months.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.PiC/.pic12mo_reversed/Y/-85/85/RANGE/X/-180/180/RANGEEDGES/X/Y/fig-+colors+black+thin+coasts_gaz+thin+countries_gaz+-fig+//F/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef//antialias+true+psdef//XOVY+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">Shading on this map identifies regions where there has been below-normal or above-normal precipitation during the previous
+                        12 months AND where the IRI seasonal precipitation forecast for the next 3 months indicates an enhanced likelihood of a reversal
+                        of these precipitation conditions.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="PiC_Reversed_3_Months.html">Reversed Tendency Between Forecast and 3-Month Precipitation Observation</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="PiC_Reversed_3_Months.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.PiC/.pic3mo_reversed/Y/-85/85/RANGE/X/-180/180/RANGEEDGES/X/Y/fig-+colors+black+thin+coasts_gaz+thin+countries_gaz+-fig+//F/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef//antialias+true+psdef//XOVY+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">Shading on this map identifies regions where there has been below-normal or above-normal precipitation during the previous
+                        3 months AND where the IRI seasonal precipitation forecast for the next 3 months indicates an enhanced likelihood of a reversal
+                        of these precipitation conditions.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="PiC_Same_12_Months.html">Same Tendency in Forecast and 12-Month Precipitation Observation</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="PiC_Same_12_Months.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.PiC/.pic12mo_same/Y/-85/85/RANGE/X/-180/180/RANGEEDGES/X/Y/fig-+colors+black+thin+coasts_gaz+thin+countries_gaz+-fig+//F/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef//antialias+true+psdef//XOVY+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">Shading on this map identifies regions where there has been below-normal or above-normal precipitation during the previous
+                        12 months AND where the IRI seasonal precipitation forecast for the next 3 months indicates an enhanced likelihood of a continuation
+                        of these precipitation conditions.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="PiC_Same_3_Months.html">Same Tendency in Forecast and 3-Month Precipitation Observation</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="PiC_Same_3_Months.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.PiC/.pic3mo_same/Y/-85/85/RANGE/X/-180/180/RANGEEDGES/X/Y/fig-+colors+black+thin+coasts_gaz+thin+countries_gaz+-fig+//F/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef//antialias+true+psdef//XOVY+null+psdef+.gif" /></a></div>
+                     <div class="itemDescription">Shading on this map identifies regions where there has been below-normal or above-normal precipitation during the previous
+                        3 months AND where the IRI seasonal precipitation forecast for the next 3 months indicates an enhanced likelihood of a continuation
+                        of these precipitation conditions.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         
+      </div>
+      
+      <div class="optionsBar">
+         
+         <fieldset class="navitem" id="share">
+            <legend>Share</legend>
+            
+            
+         </fieldset>
+         
+      </div>
+      
+   </body>
+</html>

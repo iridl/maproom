@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      xml:lang="fr">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+      <title>Sécurité Alimentaire</title>
+      <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+      <link class="altLanguage" rel="alternate" hreflang="es"
+            href="index.html?Set-Language=es" />
+      <link class="altLanguage" rel="alternate" hreflang="en"
+            href="index.html?Set-Language=en" />
+      <link rel="canonical" href="index.html" />
+      <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+      <link class="carryLanguage" rel="home alternate" type="application/json"
+            href="/maproom/navmenu.json" />
+      <meta property="maproom:Sort_Id" content="a05" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_term" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FoodSecurity" />
+      <link rel="term:icon"
+            href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/black/thin/countries_gaz/-fig//T/3654.5/plotvalue//antialias/true/psdef//plotaxislength/200/psdef//plotborder/0/psdef/+.gif" /><script type="text/javascript" src="../../uicore/uicore.js" xml:space="preserve"></script></head>
+   <body>
+      
+      
+      <form name="pageform" id="pageform" method="get"
+            enctype="application/x-www-form-urlencoded">
+         <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+         
+      </form>
+      
+      <div class="controlBar">
+         
+         <fieldset class="navitem"> 
+            
+            <legend>Data Library</legend> 
+            <a rev="section" class="navlink carryup" href="/maproom/" shape="rect">Maproom</a>
+            
+         </fieldset> 
+         
+         <fieldset class="navitem"> 
+            
+            <legend>Maproom</legend> 
+            <span class="navtext">Sécurité Alimentaire</span>
+            
+         </fieldset> 
+         
+      </div>
+      
+      <div>
+         
+         <div id="content" class="searchDescription">
+            
+            <h2 property="term:title">Sécurité Alimentaire</h2>
+            
+            <p align="left" property="term:description">
+               Le climat peut affecter la sécurité alimentaire directement ou indirectement.
+            </p>
+            
+            <p>
+               Par exemple, une sècheresse sévère ou une
+               inondation peuvent directement menacer une récolte, tandis qu'indirectement, des conditions environementales favorables dans
+               les zones désertiques peuvent accroître le nombre de
+               Criquets pèlerins qui peuvent menacer des récoltes à des centaines de kilomètres de là. Cet outil explore et informe les utilisateurs
+               sur les relations entre climat et
+               sécurité alimentaire.
+               
+            </p>
+            
+         </div>
+         
+         <div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:maproomregistry="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
+              xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+              class="rightcol">
+            <div class="ui-tabs">
+               <ul class="ui-tabs-nav"></ul>
+               <div class="ui-tabs-panel">
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Locusts/index.html">Criquet Pèlerin</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Locusts/index.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/634.5/plotvalue//plotaxislength/200/psdef//antialias/true/psdef//plotborder/0/psdef/+.gif" /></a></div>
+                     <div class="itemDescription">Le Criquet pèlerin (Schistocerca gregaria) est un insecte dont la distribution géographique s'étend de l'Afrique Occidentale
+                        à l'Inde.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         
+      </div>
+      
+      <div class="optionsBar">
+         
+         <fieldset class="navitem" id="share">
+            <legend>Share</legend>
+            
+            
+         </fieldset>
+         
+      </div>
+      
+   </body>
+</html>

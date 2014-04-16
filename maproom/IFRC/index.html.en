@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      xml:lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+      <title>IFRC Forecasts in Context</title>
+      <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+      <link rel="stylesheet" type="text/css" href="ifrc.css" />
+      <link class="altLanguage" rel="alternate" hreflang="es"
+            href="index.html?Set-Language=es" />
+      <link rel="canonical" href="index.html" />
+      <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+      <link class="carryLanguage" rel="home alternate" type="application/json"
+            href="/maproom/navmenu.json" />
+      <meta property="maproom:Sort_Id" content="a02" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+      <link rel="term:icon"
+            href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/400/plotrange/S/last/plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//antialias/true/psdef//plotborder+0+psdef//plotaxislength+220+psdef+.gif" /><script type="text/javascript" src="../../uicore/uicore.js" xml:space="preserve"></script></head>
+   <body>
+      
+      
+      <form name="pageform" id="pageform" method="get"
+            enctype="application/x-www-form-urlencoded">
+         <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
+         <input class="carryup carry titleLink itemImage" name="bbox" type="hidden" />
+         
+      </form>
+      
+      <div class="controlBar">
+         
+         <fieldset class="navitem"> 
+            
+            <legend>Data Library</legend> 
+            <a rev="section" class="navlink carryup" href="/maproom/" shape="rect">Maproom</a>
+            
+         </fieldset> 
+         
+         <fieldset class="navitem"> 
+            
+            <legend>International Federation</legend> 
+            <span class="navtext">Forecasts in Context</span>
+            
+            
+         </fieldset> 
+         
+         <fieldset class="navitem"> 
+            
+            <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"
+               shape="rect"></a>
+            		<select class="RegionMenu" name="bbox">
+               <option value="">Global</option>
+               <optgroup class="template" label="Region">
+                  <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+               </optgroup></select>
+            
+         </fieldset>
+         
+      </div>
+      
+      <div>
+         
+         <div id="content" class="searchDescription">
+            
+            <div><img src="http://iridl.ldeo.columbia.edu/maproom/.IFRC/.Forecasts/logoFED_UK_220px.jpg" /></div>
+            
+            <h2 property="term:title">International Federation of Red Cross and Red Crescent Societies:  Forecasts in Context</h2>
+            <span align="left" property="term:description">
+               This collection of maps provides information that can be used for humanitarian decision-making around the world, developed
+               by the IRI and the IFRC. It also provides information on the types of early action that can be taken based on these maps.</span> 
+            
+            <p>Click the tabs (top right) for links to the following useful maps:
+               
+               <ul>
+                  <li><b>Six-Day forecasts:</b> These maps show where heavy rainfall is expected in the next six days, and how much rainfall is expected.
+                  </li>
+                  <li><b>Three-Month Forecasts:</b> These maps show where large or small amounts of rainfall are expected in the next three months.
+                  </li>
+                  <li><b>Past Conditions:</b> These maps show rainfall patterns that can be expected for El Nino, La Nina, and average years.
+                  </li>
+                  <li><b>Recent Climate Trends:</b> These maps show what the rainfall has been like for the last 100 years, and what trends exist in your location.
+                  </li>
+                  <li><b>Vulnerability Indicators:</b> These maps show population density and child mortality rates to indicate areas of the world that might be most vulnerable
+                     to high or low rainfall amounts.
+                  </li>
+               </ul>
+               
+            </p>
+            
+         </div>
+         
+         
+         <div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:maproomregistry="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
+              xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+              class="rightcol">
+            <div class="ui-tabs">
+               <ul class="ui-tabs-nav">
+                  <li><a href="#tabs-1">Six-Day Forecasts</a></li>
+                  <li><a href="#tabs-2">Three-Month Forecasts</a></li>
+                  <li><a href="#tabs-3">Past Conditions</a></li>
+                  <li><a href="#tabs-4">Recent Climate Trends</a></li>
+                  <li><a href="#tabs-5">Vulnerability Indicators</a></li>
+               </ul>
+               <div id="tabs-1" class="ui-tabs-panel">
+                  <div class="itemGroup">Six-Day Forecasts</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/index.html">Where is exceptionally heavy rainfall expected?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/index.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/.apcppctlenoseasonal/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/1/plotrange/S/last/plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows places in the world that are forecasted to receive exceptionally heavy rainfall in the next six days relative
+                        to what is normal for their location.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/heavyrain.html">How does expected rainfall compare to normal rainfall for this month?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/heavyrain.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcppctmonthlyclim/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows places in the world that are forecasted to receive over the next six days a large percentage of the rainfall
+                        that normally falls over this entire month in their location.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/wetter.html">Where is it expected to be wetter than average?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/wetter.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcpanom/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows where the total rain/snow over the next six days is expected to be more or less than what is average for this
+                        time of year.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/cummrain.html">How much rain is expected?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/cummrain.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcp/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue//framelabel+(Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D)+psdef//antialias+true+psdef//color_smoothing+null+psdef//apcp/0/300/plotrange/S/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the total amount of rain or snow (in mm) that is expected to fall in the next 6 days.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+               <div id="tabs-2" class="ui-tabs-panel">
+                  <div class="itemGroup">Three-Month Forecasts</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/prcp_fcst.html">Are the next 3 months likely to be unusually wet or dry?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/prcp_fcst.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1./plotvalue/F/last/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the likelihood that total 3-month precipitation will be unusually high or low.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/extreme_prcp_fcst.html">Are the next 3 months likely to be exceptionally wet or dry?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/extreme_prcp_fcst.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.extreme_prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1/plotvalue//F/622.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">The map shows where it is likely to be extremely wet or dry over the next three months. Extreme refers to the lowest or highest
+                        15% of the historical record.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/pic3mo_reversed.html">Is it likely that unusually wet or dry conditions will end?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/pic3mo_reversed.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_reversed/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+//F/622.5/plotvalue/Y/-66.25/76.25/plotrange+//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20reversed%20from%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows where current wet or dry conditions will likely end over the next 3 months.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/pic3mo_same.html">Is it likely that unusually wet or dry conditions will continue?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/pic3mo_same.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+//F/622.5/plotvalue/Y/-66.25/76.25/plotrange+//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows where and how likely recent wet or dry conditions will continue over the next 3 months.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/seasonalforecastskill.html">How Well Can We Predict Seasonal Climate?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/seasonalforecastskill.html"><img class="itemImage" src="FIC/skillmap-small.jpg" /></a></div>
+                     <div class="itemDescription">This map shows where IRI 3-month forecasts are consistently good at predicting seasonal rainfall for at least one season of
+                        the year.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+               <div id="tabs-3" class="ui-tabs-panel">
+                  <div class="itemGroup">Past Conditions</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/elninorain.html">What Changes in Rainfall are Typical during El Niño?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/elninorain.html"><img class="itemImage" src="FIC/ElNinoandRainfall220.png" /></a></div>
+                     <div class="itemDescription">During an El Niño episode, areas in green or yellow are likely to become wetter or dryer than normal during the indicated
+                        months.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/laninarain.html">What Changes in Rainfall are Typical during La Niña?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/laninarain.html"><img class="itemImage" src="FIC/LaNinaandRainfall220.png" /></a></div>
+                     <div class="itemDescription">During a La Niña episode, areas in green or yellow are likely to become wetter or dryer than normal during the indicated months.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/CMAP_climo.html">How much rain normally falls at this time of year?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/CMAP_climo.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-58/75.04166/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows how much rain normally falls in each month of the year.
+                        You can see:
+                        
+                        Which places tend to be wetter or dryer than others.
+                        Which are the rainiest months for different locations.
+                        
+                        
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+               <div id="tabs-4" class="ui-tabs-panel">
+                  <div class="itemGroup">Recent Climate Trends</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="TD/ClimateChange.html">How important have century-long shifts in climate been?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="TD/ClimateChange.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS3p1/.r2p5%5B%28Jan%29//seasonStart/parameter/%28-%29%28Dec%29//seasonEnd/parameter/%28%201901-2009%29%5Dconcat//season/parameter/a:/%28.pre%29//var/parameter/interp/yearly-anomalies/T//season/get_parameter/seasonalAverage/:a:/.stn/%28.pre%29//var/parameter/interp/0/maskle/T//season/get_parameter/0.66/seasonalAverage/0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage/0.5/masklt%5BT%5D0.5/average/0/mul/add/%28.pre%29//var/parameter/%28.pre%29eq/%7B:a:/.pre/T/%28season%29/get_parameter/seasonalAverage/T/differential_mul%5BT%5Daverage/30/masklt/0/mul/add%7Dif/:a/X/-20/180/-20/RANGEEDGES/Y/-60/80/RANGE/SOURCES/.IRI/.Analyses/.TS/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/:butt_filter/.butt%5BX/Y%5DREORDER/2/index/2/index/sub/1/index/sub/4/%7B4/-1/roll%5BT%5Drmsaover/%28units%29%28mm/month%29def/dup/mul%7Drepeat/2/copy/min/3/-2/roll/max/2/index/1/index/sub/0/flaggt/4.5/mul/5/-4/roll/2/index/sub/0/flagge/2/index/2/index/sub/0/flaggt/mul/3.5/mul/4/-3/roll/sub/0/maskgt/exch/div/-0.1/flagle/1.5/add/0/replaceNaN/add/add/0/maskle/%7BLow/2/Medium/3/High/4/%28Extremely%20High%29%7D/%28DoI%29classify%5BDoI%5Ddominant_class/%28long_name%29%28Importance%20of%20century-long%20shifts%29def/startcolormap/transparent/white/90/190/95/RGB/yellow/orange/red/white/endcolormap/X/Y/fig-/colors/countries_gaz/-fig/%28plotaxislength%29590/psdef/%28antialias%29true/psdef//plotborder/0/psdef//plotaxislength/200/psdef/+//plotborder+0+psdef//plotaxislength+200+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows how wet and dry periods have varied over time. Draw a rectangle over a region or click a place on the map,
+                        to see graphs for that location. These graphs depict how much rainfall (or temperature) varies from year to year, decade to
+                        decade, and over the past century. This information can be used for planning purposes on different timescales, and to provide
+                        context for recent memories of rainfall patterns or specific events in a longer-term perspective.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="TD/DecadalChange.html">How important have decade-long shifts in climate been?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="TD/DecadalChange.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS3p1/.r2p5%5B%28Jan%29//seasonStart/parameter/%28-%29%28Dec%29//seasonEnd/parameter/%28%201901-2009%29%5Dconcat//season/parameter/a:/%28.pre%29//var/parameter/interp/yearly-anomalies/T//season/get_parameter/seasonalAverage/:a:/.stn/%28.pre%29//var/parameter/interp/0/maskle/T//season/get_parameter/0.66/seasonalAverage/0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage/0.5/masklt%5BT%5D0.5/average/0/mul/add/%28.pre%29//var/parameter/%28.pre%29eq/%7B:a:/.pre/T/%28season%29/get_parameter/seasonalAverage/T/differential_mul%5BT%5Daverage/30/masklt/0/mul/add%7Dif/:a/X/-20/180/-20/RANGEEDGES/Y/-60/80/RANGE/SOURCES/.IRI/.Analyses/.TS/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/:butt_filter/.butt%5BX/Y%5DREORDER/2/index/2/index/sub/1/index/sub/4/-2/roll/pop/pop/2/%7Bexch%5BT%5Drmsaover/%28units%29%28mm/month%29def/dup/mul%7Drepeat/1/index/add/div/%7BLow/0.15/Medium/0.25/High/0.4/%28Extremely%20High%29%7D/%28DoI%29classify%5BDoI%5Ddominant_class/%28long_name%29%28Importance%20of%20decade-long%20shifts%29def/startcolormap/transparent/white/90/190/95/RGB/yellow/orange/red/white/endcolormap/X/Y/fig-/colors/countries_gaz/-fig/%28plotaxislength%29590/psdef/%28antialias%29true/psdef//plotborder/0/psdef//plotaxislength/200/psdef/+//plotborder+0+psdef//plotaxislength+200+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows how wet and dry periods have varied over time. Draw a rectangle over a region or click a place on the map,
+                        to see graphs for that location. These graphs depict how much rainfall (or temperature) varies from year to year, decade to
+                        decade, and over the past century. This information can be used for planning purposes on different timescales, and to provide
+                        context for recent memories of rainfall patterns or specific events in a longer-term perspective.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="TD/YearlyChange.html">How important have year-to-year shifts in climate been?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="TD/YearlyChange.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS3p1/.r2p5%5B%28Jan%29//seasonStart/parameter/%28-%29%28Dec%29//seasonEnd/parameter/%28%201901-2009%29%5Dconcat//season/parameter/a:/%28.pre%29//var/parameter/interp/yearly-anomalies/T//season/get_parameter/seasonalAverage/:a:/.stn/%28.pre%29//var/parameter/interp/0/maskle/T//season/get_parameter/0.66/seasonalAverage/0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage/0.5/masklt%5BT%5D0.5/average/0/mul/add/%28.pre%29//var/parameter/%28.pre%29eq/%7B:a:/.pre/T/%28season%29/get_parameter/seasonalAverage/T/differential_mul%5BT%5Daverage/30/masklt/0/mul/add%7Dif/:a/X/-20/180/-20/RANGEEDGES/Y/-60/80/RANGE/SOURCES/.IRI/.Analyses/.TS/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/:butt_filter/.butt%5BX/Y%5DREORDER/2/index/2/index/sub/1/index/sub/4/-2/roll/pop/pop/2/%7Bexch%5BT%5Drmsaover/%28units%29%28mm/month%29def/dup/mul%7Drepeat/exch/1/index/add/div/%7BLow/0.75/Medium/0.85/High/0.9/%28Extremely%20High%29%7D/%28DoI%29classify%5BDoI%5Ddominant_class/%28long_name%29%28Importance%20of%20year-to-year%20shifts%29def/startcolormap/transparent/white/90/190/95/RGB/yellow/orange/red/white/endcolormap/X/Y/fig-/colors/countries_gaz/-fig/%28plotaxislength%29590/psdef/%28antialias%29true/psdef//plotborder/0/psdef//plotaxislength/200/psdef/+//plotborder+0+psdef//plotaxislength+200+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows how wet and dry periods have varied over time. Draw a rectangle over a region or click a place on the map,
+                        to see graphs for that location. These graphs depict how much rainfall (or temperature) varies from year to year, decade to
+                        decade, and over the past century. This information can be used for planning purposes on different timescales, and to provide
+                        context for recent memories of rainfall patterns or specific events in a longer-term perspective.
+                     </div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+               <div id="tabs-5" class="ui-tabs-panel">
+                  <div class="itemGroup">Vulnerability Indicators</div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/count.html">Are the areas at risk of heavy rainfall densely populated?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/count.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.GPWv3/.count/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/546./plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows human population density.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="FIC/imr.html">Are the areas at risk of heavy rainfall inhabited by vulnerable populations?</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="FIC/imr.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the infant mortality rate, an indicator of poverty.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         
+      </div>
+      
+      <div class="optionsBar">
+         
+         <fieldset class="navitem" id="share">
+            <legend>Share</legend>
+            
+            
+         </fieldset>
+         
+      </div>
+      
+   </body>
+</html>
