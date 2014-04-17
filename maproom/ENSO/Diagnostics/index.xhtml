@@ -39,7 +39,13 @@ href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
              </fieldset> 
             <fieldset class="navitem"> 
                 <legend>Diagnostics</legend>
-            
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">Global</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
             </fieldset>
 </div>
 <div>
