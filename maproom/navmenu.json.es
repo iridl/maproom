@@ -27,7 +27,11 @@
 {"href": "/dochelp/Tutorial/",
  "title": "Tutorial"},
 {"href": "/dochelp/StatTutorial/",
-"title": "Statistics Tutorial"}
+"title": "Statistics Tutorial"},
+{"href": "/dochelp/QA/",
+"title": "Q &amp; A"},
+{"href": "/expert/",
+ "title": "Expert Mode"}
 ]
 }
 ]
