@@ -51,3 +51,12 @@ tarball: utbuild.tag
 	tar cf - -C $(BUILD) . | tar xf - -C $(TARBALL)
 	tar cvfz $(TARBALL).tgz $(TARBALL)
 	rm -r $(TARBALL)
+
+text.txt:	text.xml text.xslt
+		saxon_transform $< text.xslt > $@
+
+text.xml:	text.nt
+		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' text.nt > text.xml
+
+text.nt:	maproom/newmaproomcache/owlimMaxRepository.nt textconstruct.serql
+		rdfcache -cache=maproom/newmaproomcache -construct=textconstruct.serql -constructoutput=./text.nt file:///`pwd`/maproom/maproomregistry.owl
