@@ -139,14 +139,6 @@
                      </div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
-                           href="http://earthdata.nasa.gov/labs/worldview/">NASA Worldview</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
-                           href="http://earthdata.nasa.gov/labs/worldview/"><img class="itemImage" src="vegetation.png" /></a></div>
-                     <div class="itemDescription">Satellite Imagery for Vegetation, Dust Storms, Fires, Drought, Smoke Plumes, Ash Plumes, Air Quality, Severe Storms, and Floods</div>
-                     <div class="itemFooter"></div>
-                  </div>
                </div>
             </div>
          </div>
