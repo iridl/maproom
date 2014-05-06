@@ -5,8 +5,7 @@
       xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
-      version="XHTML+RDFa 1.0"
-      xml:lang="en">
+      version="XHTML+RDFa 1.0">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
@@ -21,10 +20,9 @@
             href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
       <link rel="term:isDescribedBy"
             href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
-      <link rel="term:isDescribedBy"
-            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#diagnostics" />
+      <!-- <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_ENSOinfo_term" /> -->
       <link rel="term:icon" href="ssta13.bmp" /><script type="text/javascript" src="../../../uicore/uicore.js" xml:space="preserve"></script></head>
-   <body>
+   <body xml:lang="en">
       
       
       <form name="pageform" id="pageform" method="get"
@@ -33,6 +31,7 @@
          <input class="carryup titleLink itemImage" name="bbox" type="hidden" />
          
       </form>
+      
       
       <div class="controlBar">
          
@@ -45,18 +44,28 @@
          
          <fieldset class="navitem" id="chooseSection"> 
             
-            <legend>ENSO</legend> 
+            <legend>Climate</legend> 
             
          </fieldset> 
          
-         
-         <fieldset class="navitem" id="chooseSection">          
+         <fieldset class="navitem">
             
-            <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Phases_of_ENSO"><span property="term:label">Phases</span></legend>
+            <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"
+               shape="rect"></a>
+            <select class="RegionMenu" name="bbox">
+               <option value="">Global</option>
+               <optgroup class="template" label="Region">
+                  <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+               </optgroup></select>
             
-         </fieldset> 
+         </fieldset>
          
       </div>
+      
+      
+      
+      
       
       
       <div>
@@ -89,12 +98,6 @@
                </div>
             </div>
          </div>
-         
-         
-         
-         
-         
-         
          
          
       </div>
