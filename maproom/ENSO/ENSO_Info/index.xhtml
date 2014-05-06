@@ -5,9 +5,7 @@
       xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
-      version="XHTML+RDFa 1.0"
- xml:lang="en"
-      >
+      version="XHTML+RDFa 1.0">
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>What is ENSO?</title>
@@ -19,30 +17,40 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy"
 href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
-<link rel="term:isDescribedBy"
-href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#diagnostics" />
+<!-- <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_ENSOinfo_term" /> -->
 <link rel="term:icon" href="ssta13.bmp" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
-<body>
+<body xml:lang="en">
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
 <input class="carryup titleLink itemImage" name="bbox" type="hidden" />
 </form>
+
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
                 <legend>Maproom</legend> 
                     <a rev="section" class="navlink carryup" href="/maproom/ENSO/">ENSO</a>
             </fieldset> 
            <fieldset class="navitem" id="chooseSection"> 
-                <legend>ENSO</legend> 
-             </fieldset> 
-                             
-                    <fieldset class="navitem" id="chooseSection">          
-                             <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Phases_of_ENSO"><span property="term:label">Phases</span></legend>
-</fieldset> 
+                <legend>Climate</legend> 
+            </fieldset> 
+            <fieldset class="navitem">
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+                <select class="RegionMenu" name="bbox">
+                <option value="">Global</option>
+                <optgroup class="template" label="Region">
+                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+                </optgroup>
+                </select>
+            </fieldset>
 </div>
+
+
+
+
 
 <div>
  <div id="content" class="searchDescription">
@@ -51,16 +59,10 @@ href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#diagnostics" />
 "ENSO" refers to the El Niño/Southern Oscillation, the interaction between the atmosphere and ocean in the tropical Pacific that results in a somewhat periodic variation between between below-normal and above-normal sea surface temperatures and dry and wet conditions over the course of a few years.</p> 
 </div>
 
-<div class="rightcol tabbedentries" about="/maproom/ENSO/ENSO_Info" >
+<div class="rightcol tabbedentries" about="/maproom/ENSO/ENSO_Info/" >
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Phases_Of_ENSO" />
 <span about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Phases_Of_ENSO"><span property="term:label">Phases of ENSO</span></span>
 </div>
-
-
-
-
-
-
 
 </div>
 <div class="optionsBar">
