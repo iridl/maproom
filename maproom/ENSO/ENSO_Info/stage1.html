@@ -39,11 +39,32 @@ This talks about this dude Walker, who did his ENSO thing
 </p>
 
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
+</head>
 
-
-<head>
-<title>The Southern Oscillation</title></head>
 <body>
+<title>The Southern Oscillation</title>
+
+
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Climate</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/ENSO/ENSO_Info/">What is ENSO?</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_ENSOinfo_term"><span property="term:label">Phases of ENSO</span></legend>
+            </fieldset> 
+            <fieldset class="navitem">
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+                <select class="RegionMenu" name="bbox">
+                <option value="">Global</option>
+                <optgroup class="template" label="Region">
+                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+                </optgroup>
+                </select>
+            </fieldset>
+
+
 
 <h1>The Southern Oscillation</h1>
 
