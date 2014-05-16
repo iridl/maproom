@@ -29,6 +29,8 @@ utbuild.tag: build.tag
 	tar cf - -C uicore --exclude=.git . | tar xf - -C $(BUILD)/uicore
 	install -d $(BUILD)/pure
 	tar cf - -C pure --exclude=.git . | tar xf - -C $(BUILD)/pure
+	install -d $(BUILD)/jsonld.js
+	tar cf - -C jsonld.js --exclude=.git . | tar xf - -C $(BUILD)/jsonld.js
 	cp .htaccess $(BUILD)
 	touch utbuild.tag
 
