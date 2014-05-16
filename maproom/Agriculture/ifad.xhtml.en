@@ -50,10 +50,25 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.La
 <div>
  <div id="content" class="searchDescription">
 <div><img src="IFAD/ifad_verybig.png" /></div>
-<h2 property="term:title">Inaternational Fund for Agricultural Development</h2>
+<h2 property="term:title">International Fund for Agricultural Development</h2>
 <p align="left" property="term:description">
-Talk about IFAD Maprooms briefly.</p>
-<p>Talk about them more.</p>
+This suite of maprooms provides climate information / decision support tools to enable poor rural women and men farmers and policy makers to better manage the risks associated with climate variability and change to increase agricultural production and productivity and enhance food security and rural livelihoods in test sites in Indonesia, Lao PDR, and Bangladesh.</p>
+<p>Click the tabs (top right) for links to the following useful maps:
+<ul>
+<li><b>Historical Daily Seasonal Characteristics:</b> These maps explore historical daily precipitation or temperature by calculating relevant seasonal statistics.</li>
+<li><b>Deterministic Seasonal Forecast:</b> Theses maps show seasonal deterministic precipitation forecasts along with evaluation of their skill and uncertainty.</li>
+<li><b>Six-Day forecasts:</b> These maps show where heavy rainfall is expected in the next six days, and how much rainfall is expected.</li>
+<li><b>Probabilistic Seasonal Forecast:</b> These maps show where large or small amounts of rainfall are expected in the next three months.</li>
+<li><b>Past Conditions:</b> These maps show rainfall patterns that can be expected for El Nino, La Nina, and average years.</li>
+<li><b>Recent Climate Trends:</b> These maps show what the rainfall has been like for the last 100 years, and what trends exist in your location.</li>
+</ul>
+</p>
+<p>
+This suite of maprooms is financed by IFAD through the “Climate risk management in agriculture with demonstration sites in Indonesia, Lao PDR, and Bangladesh”.
+The goals of the project are to develop climate information / decision support tools and the capacity required to enable poor rural women and men farmers and policy makers to better manage the risks associated with climate variability and change to increase agricultural production and productivity and enhance food security and rural livelihoods.
+</p>
+<p>
+Through this project, the International Research Institute for Climate and Society at Columbia University will collaborate with its regional partners at the Centre for Climate Risk and Opportunity Management in South East Asia and Pacific in Indonesia, the National Agriculture and Forestry Research Institute in the Lao PDR, and WorldFish in Bangladesh.</p>
 </div>
 <div class="rightcol tabbedentries" about="/maproom/Agriculture/ifad.html" >
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_Historical_term" />
