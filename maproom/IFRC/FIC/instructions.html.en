@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
