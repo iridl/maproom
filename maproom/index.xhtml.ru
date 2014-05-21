@@ -35,7 +35,7 @@
 <div class="controlBar">
            <fieldset class="navitem">
                 <legend>Международный Научно-Исследовательский Институт, Институт Земли</legend> 
-                      <a rev="section" class="navlink carryup" href="http://iridl.ldeo.columbia.edu/">Библиотека Климатических Данных</a>
+                      <a rev="section" class="navlink carryup" href="/">Библиотека Климатических Данных</a>
             </fieldset> 
            <fieldset class="navitem"> 
                 <legend>Библиотека Данных</legend> 

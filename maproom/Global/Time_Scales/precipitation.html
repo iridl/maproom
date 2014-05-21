@@ -230,72 +230,198 @@ At particular locations, data may include "filled" values, where instrumental me
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Documentation</h2>
-<P STYLE="margin-bottom: 0in"><FONT SIZE="5"><B>The Time scales maproom</B></FONT></P><P  STYLE="margin-bottom: 0in"><BR />
-</P>
+<h4>The Time scales maproom</h4>
 <P  STYLE="margin-bottom: 0in">
-Although the decomposition of a signal into trend, low- and high-frequency components may seem straightforward, the analysis presented involves a number of subtleties. This document provides a more detailed look at the analytical procedures utilized than does 
-the overview presented in Greene et al. (2011), and offers a number of caveats regarding the interpretation of maproom displays.</P><P  STYLE="margin-bottom: 0in"><BR /></P><P  STYLE="margin-bottom: 0in"><FONT SIZE="4"><B>Method</B></FONT></P>
-<P  STYLE="margin-bottom: 0in"><BR />
+Although the decomposition of a signal into trend, low- and
+high-frequency components may seem straightforward, the analysis
+presented involves a number of subtleties. This document provides a
+more detailed look at the analytical procedures utilized than does the
+overview presented in Greene et al. (2011), and offers a number of
+caveats regarding the interpretation of maproom
+displays.</P>
+<h4>Method</h4>
+<P >
+Data processing consists of three steps: <i>Screening</i> the
+individual gridbox values for filled data and for very dry seasons and regions, <i>detrending</i> in order to extract slow, trend-like changes and <i>filtering</i>, to separate high and low frequency
+components in the detrended data. Each of these steps is described
+below. Data are processed gridbox by gridbox, meaning that results in
+adjacent gridboxes are not compared or combined, except when the user
+requests that analysis be performed on area-averaged data. Averaging
+over gridboxes is then performed prior to the time scales
+decomposition.</P>
+<h4>Screening</h4>
+<P >The underlying datasets employed are <i>complete</i>, i.e., they
+do not contain missing values. This does not mean, however, that
+actual measurements were available for every month and at every
+geographic location covered by the data. The completeness requirement
+has been imposed by the data providers with particular uses in mind
+and is met by "filling in" values for which actual station
+measurements do not exist. The exact manner by which this is
+accomplished is described in documentation linked on the dataset
+pages; these can be accessed via the maproom pages based on the
+respective datasets.</P>
+<P >Relatively little filling has been
+performed on the temperature data, so in this case the screening
+requires that <i>all</i> data values represent actual measurements,
+rather than filled values. The screening procedure employed for
+precipitation is more flexib le, with consideration given to both the
+number and the distribution in time of actual measurements
+contributing to each gridpoint value. A trade-off between spatial and
+temporal coverage then comes into play, with a higher degree of
+temporal coverage corresponding to fewer qualifying gridpoints, and
+vice versa. The user can control this balance by choosing among "high
+temporal coverage," "high spatial coverage" and "intermediate temporal
+and spatial coverage." Because the focus of the maproom is time series
+behavior, it is recommended that the user prefer "high temporal
+coverage" or the intermediate option whenever possible. The "high
+spatial coverage" option presents the data without any temporal
+screening, so results from the time scales decomposition may be less
+reliable than with the other choices.</P><P >The "high temporal
+coverage" option imposes the same requirement as that imposed on
+temperature, viz., that all data values must represent actual
+measurements, and that none can be filled. For the "intermediate"
+option this requirement is relaxed somewhat, with at least half of
+the data values required to represent measurements.
+</P>
+<P >In addition, it is required that the data be relatively uniformly
+distributed in time. For example, using the intermediate option, the
+50% of values that are not filled may not all be concentrated in the
+second half of the data series. As presently implemented , the
+uniformity requirement is based on a 10-year sliding window. The
+fraction of filled values within this window is not permitted to fall
+below the specified threshold.
+</P>
+<P>In addition to the temporal screening there is the requirement
+that, for precipitation, climatological seasonal rainfall must exceed
+30 mm. Such a threshold would represent very dry conditions, rendering
+the utility of the time scales decomposition questionable. In
+addition, even small fluctuations in precipitation would seem large
+compared with such a dry climatology, increasing the variance of
+estimated precipitation variations. The minimum screening requirement
+avoids these situations.
+</P>
+<P >Gridpoints failing these requirements are shown as blank on the
+maps presented; clicking on such points returns a "no data"
+message. When the user selects "area average" for a region, only those
+points meeting the minimum data requirements are utilized in computing
+the area-averaged data. It should be apparent that area-averaging over
+a large area that contains few qualifying gridboxes will not produce a
+result that is regionally representative.
 </P>
 <P >
-Data processing consists of three steps: <i>Screening</i> the individual gridbox values for filled data and for very dry seasons a
-nd regions, <i>detrending</i> in order to extract slow, trend-like changes and <i>filtering</i>, to separate high and low frequenc
-y components in the detrended data. Each of these steps is described below. Data are processed gridbox by gridbox, meaning that results in adjacent gridboxes are not compared or combined, except when the user requests that analysis be performed on area-averaged data. Averaging over gridboxes is then performed prior to the time scales decomposition.</P><P ><BR /><BR />
+Because even partially filled records may be expected to degrade
+analytical results to some degree, and because data at individual
+gridpoints may be noisy, it is probably best, for the sake of
+robustness, to average the data over at least a small region before
+applying the time scales decomposition.
 </P>
-<P ><B>Screening</B></P>
-<P >The underlying datasets employed are <i>complete</i>, i.e., they do not contain missing values. This does not mean, however, that actual measurements were available for every month and at every geographic location covered by the data. The completeness requirement has been imposed by the data providers with particular uses in mind and is met by "filling in" values for which actual station measurements do not exist. The exact manner by which this is accomplished is described in documentation linked on the dataset pages; these can be accessed via the maproom pages based on the respective datasets.</P><P >Relatively little filling has been performed on the temperature data, so in this case the screening requires that <i>all</i> data 
-values represent actual measurements, rather than filled values. The screening procedure employed for precipitation is more flexib
-le, with consideration given to both the number and the distribution in time of actual measurements contributing to each gridpoint
- value. A trade-off between spatial and temporal coverage then comes into play, with a higher degree of temporal coverage corresponding to fewer qualifying gridpoints, and vice versa. The user can control this balance by choosing among "high temporal coverage," "high spatial coverage" and "intermediate temporal and spatial coverage." Because the focus of the maproom is time series behavi
-or, it is recommended that the user prefer "high temporal coverage" or the intermediate option whenever possible. The "high spatia
-l coverage" option presents the data without any temporal screening, so results from the time scales decomposition may be less rel
-iable than with the other choices.</P><P >The "high temporal coverage" option imposes the same requirement as that imposed on temperature, viz., that all data values must represent actual measurements, and that none can be filled. For the "intermediate" option this requirement is relaxed somewhat, wit
-h at least half of the data values required to represent measurements.
-</P><P >In addition, it is required that the data be relatively uniformly distributed in time. For example, using the intermediate option, the 50% of values that are not filled may not all be concentrated in the second half of the data series. As presently implemented
-, the uniformity requirement is based on a 10-year sliding window. The fraction of filled values within this window is not permitt
-ed to fall below the specified threshold.
-</P><P >In addition to the temporal screening there is the requirement that, for precipitation, climatological seasonal rainfall must exceed 30 mm. Such a threshold would represent very dry conditions, rendering the utility of the time scales decomposition questionabl
-e. In addition, even small fluctuations in precipitation would seem large compared with such a dry climatology, increasing the var
-iance of estimated precipitation variations. The minimum screening requirement avoids these situations.
-</P><P >Gridpoints failing these requirements are shown as blank on the maps presented; clicking on such points returns a "no data" messag
-e. When the user selects "area average" for a region, only those points meeting the minimum data requirements are utilized in comp
-uting the area-averaged data. It should be apparent that area-averaging over a large area that contains few qualifying gridboxes w
-ill not produce a result that is regionally representative.
+<h4>The trend component</h4>
+<P >Trends are often computed in the time domain, in which case they
+might be expressed, for example, as a change of so many millimeters
+per month occurring per decade. The common procedure of fitting a
+linear trend assumes that such a rate of change is constant with time.
 </P>
+<P >The map room takes a different approach, based on a simple
+conceptual model: Rather than expressing local or regional trends as
+functions of <i>time</i>, we relate them instead to
+global <i>temperature</i> change. The assumption is not that
+precipitation (or temperature) changes simply as a result of the
+passage of time, but rather, because of the warming of the planet. It
+is in this sense that the trend component, as computed in the
+maproom, can be identified with "climate change." Such a trend has a
+functional, rather than simply a numerical significance.
+</P>
+<P >Computation of the global temperature record to be used as a
+regressand is less simple than it sounds. Fluctuations in the Earth's
+climate have many sources, including "natural" variability — intrinsic
+variations that are not associated with anthropogenically-induced
+climate change. Such variations, if large enough in scale, can
+significantly influence, or "project" onto the global mean
+temperature. If we take the latter to represent in some sense the
+signature of climate change, there is a risk that we will
+unintentionally include some component of natural variability, which
+will then mistakenly be identified with this signature.</P>
+<P >To circumvent this problem the global temperature signal is
+computed using an ensemble of general circulation models (GCMs). These
+models, which constitute a comprehensive representation of our current
+understanding of the mechanisms of climate variability and change,
+underlie much of the Fourth Assessment Report of the Intergovernmental
+Panel on Climate Change (IPCC, 2007). Simulations from the "Twentieth
+Century Climate in Coupled Models" (20C3M) experiment are used.</P>
+<P >As with the real Earth, climate in each of these simulations
+includes both a "forced" response (what we think of a climate change)
+and natural, "unforced" variations. However, the unforced variability
+is <i>incoherent</i> from model to model — there is no synchronization
+or phase relationship among the models, and indeed, the character of
+each model's unforced variability differs to a greater or lesser
+degree from that of the others. To obtain an estimate of the forced
+response, we average together the 20<sup>th</sup>-century global mean
+temperature records from the members of this ensemble, which here
+includes 23 (nearly all) of the IPCC GCMs. Averaging has the effect of
+attenuating the incoherent (i.e., uncorrelated) unforced variability
+while enhancing that part of the response that the models have in
+common — the climate change signal. The multimodel averaging can thus
+be said to increase the signal-to-noise ratio, where "signal" refers
+to the common climate change response and "noise" the unforced natural
+variability. This ratio is increased in the multimodel mean relative
+to that of the individual simulations. Most of the models provide
+multiple 20C3M simulations; to put the models on an even footing, a
+single simulation from each model is used to create the multimodel
+average.</P>
 <P >
-Because even partially filled records may be expected to degrade analytical results to some degree, and because data at individual gridpoints may be noisy, it is probably best, for the sake of robustness, to average the data over at least a small region before applying the time scales decomposition.
-</P>
-<P ><BR /><BR /></P><P ><B>The trend component</B></P><P >Trends are often computed in the time domain, in which case they might be expressed, for example, as a change of so many millimete
-rs per month occurring per decade. The common procedure of fitting a linear trend assumes that such a rate of change is constant w
-ith time.
-</P><P >The map room takes a different approach, based on a simple conceptual model: Rather than expressing local or regional trends as functions of <i>time</i>, we relate them instead to global <i>temperature</i> change. The assumption is not that precipitation (or temperature) changes simply as a result of the passage of time, but rather, because of the warming of the planet. It is in this sen
-se that the trend component, as computed in the maproom, can be identified with "climate change." Such a trend has a functional, r
-ather than simply a numerical significance.
-</P><P >Computation of the global temperature record to be used as a regressand is less simple than it sounds. Fluctuations in the Earth's climate have many sources, including "natural" variability — intrinsic variations that are not associated with anthropogenically-
-induced climate change. Such variations, if large enough in scale, can significantly influence, or "project" onto the global mean 
-temperature. If we take the latter to represent in some sense the signature of climate change, there is a risk that we will uninte
-ntionally include some component of natural variability, which will then mistakenly be identified with this signature.</P><P >To circumvent this problem the global temperature signal is computed using an ensemble of general circulation models (GCMs). These models, which constitute a comprehensive representation of our current understanding of the mechanisms of climate variability and change, underlie much of the Fourth Assessment Report of the Intergovernmental Panel on Climate Change (IPCC, 2007). Simulations from the "Twentieth Century Climate in Coupled Models" (20C3M) experiment are used.</P><P >As with the real Earth, climate in each of these simulations includes both a "forced" response (what we think of a climate change) and natural, "unforced" variations. However, the unforced variability is <i>incoherent</i> from model to model — there is no sync
-hronization or phase relationship among the models, and indeed, the character of each model's unforced variability differs to a gr
-eater or lesser degree from that of the others. To obtain an estimate of the forced response, we average together the 20<sup>th</sup>-century global mean temperature records from the members of this ensemble, which here includes 23 (nearly all) of the IPCC GCMs. Averaging has the effect of attenuating the incoherent (i.e., uncorrelated) unforced variability while enhancing that part of the response that the models have in common — the climate change signal. The multimodel averaging can thus be said to increase the signal-to-noise ratio, where "signal" refers to the common climate change response and "noise" the unforced natural variability. This ratio is increased in the multimodel mean relative to that of the individual simulations. Most of the models provide multiple 20C3M simulations; to put the models on an even footing, a single simulation from each model is used to create the multimodel average.</P>
-<P >
-The multimodel mean signal is further processed, by lowpass filtering. This has the effect of removing most of the residual year-t
-o-year and decade-to-decade variability that has not been averaged away in the formation of the multimodel mean. The resulting smo
-othed global temperature signal, which serves as the signature of the forced climate change response, is shown in Fig. 1. Downward "bumps" in this signal in the 1900s, 1960s and early 1990s can probably be attributed, at least in part, to major volcanic eruptions, which have a short-term cooling effect; to the extent that these variations are expressed in regional signals they will be recognized as part of the forced response. Although the forcing is not anthropogenic in this case, it is nevertheless considered "ex
-ternal" as far as the maproom is concerned: Volcanic eruptions are not believed to be associated, at least in any easily demonstra
-ble way, with natural climate variability, so it was deemed incorrect to treat them as such.
-</P>
-<P ><BR /><BR />
+The multimodel mean signal is further processed, by lowpass
+filtering. This has the effect of removing most of the residual
+year-to-year and decade-to-decade variability that has not been
+averaged away in the formation of the multimodel mean. The resulting
+smoothed global temperature signal, which serves as the signature of
+the forced climate change response, is shown in Fig. 1. Downward
+"bumps" in this signal in the 1900s, 1960s and early 1990s can
+probably be attributed, at least in part, to major volcanic eruptions,
+which have a short-term cooling effect; to the extent that these
+variations are expressed in regional signals they will be recognized
+as part of the forced response. Although the forcing is not
+anthropogenic in this case, it is nevertheless considered "external"
+as far as the maproom is concerned: Volcanic eruptions are not
+believed to be associated, at least in any easily demonstrable way,
+with natural climate variability, so it was deemed incorrect to treat
+them as such.
 </P>
 <P  ALIGN="CENTER"><IMG SRC="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.TS/.AR4/.tas/T/fig:/blue/medium/solid/line/grey/thin/dotted/286.4/0.2/287.4/horizontallines/:fig/T/-708./624./plotrange//XOVY/null/psdef//antialias/true/psdef//tas/286.2704/287.4/plotrange//plotborder/77/psdef//fntsze/16/psdef//plotaxislength/500/psdef/+//plotborder+77+psdef//XOVY+null+psdef//plotaxislength+500+psdef+.gif" NAME="graphics1" ALIGN="BOTTOM" WIDTH="447" HEIGHT="301" BORDER="0" /></P>
 <P  ALIGN="CENTER">Figure 1: The global mean "climate
 change" temperature record used for detrending.</P>
-<P  ALIGN="CENTER"><BR /><BR /></P><P >The trend component of a local temperature or precipitation signal is extracted by regressing the local series on the global temperature signal of Fig 1. Fitted values from the regression represent, by construction, that part of the regional signal which is linearly dependent on global mean temperature. It is in this sense that the trend, as here computed, may be thought of as the climate change component of the regional signal.</P><P >
-It is worth noting that for a local or regional signal that is being analyzed in the maproom, the entanglement of forced and natural components is still possible. This is because, while the signal of Fig. 1 has been effectively stripped of natural internal variability, a real-world signal may still contain natural components that are "masquerading" as trend. This might happen, for example, if some natural mode of variability were to be increasing over a relatively long time period, say the last 30 years of the 20<sup>th</sup> century. In such a case this mode might motivate a similar increase in values of the regional series being analyzed, which then "maps" onto the global mean temperature increase shown in Fig. 1. The Atlantic Multidecadal Oscillation (AMO, see, e.g., Enfield, 2001) exhibits a signal something like this; to the extent that the AMO influences local climate, there may be some possibility for this sort of misidentification to occur (see, e.g., DelSole et al., 2011). In general, and for the more approximative type of assessment for which the maproom is designed, we do not believe that such entanglement will pose a major problem with interpretation.
+<P  ALIGN="CENTER"><BR /><BR /></P>
+<P >The trend component of a local temperature or precipitation signal is extracted by regressing the local series on the global temperature signal of Fig 1. Fitted values from the regression represent, by construction, that part of the regional signal which is linearly dependent on global mean temperature. It is in this sense that the trend, as here computed, may be thought of as the climate change component of the regional signal.</P>
+<P >
+It is worth noting that for a local or regional signal that is being
+analyzed in the maproom, the entanglement of forced and natural
+components is still possible. This is because, while the signal of
+Fig. 1 has been effectively stripped of natural internal variability,
+a real-world signal may still contain natural components that are
+"masquerading" as trend. This might happen, for example, if some
+natural mode of variability were to be increasing over a relatively
+long time period, say the last 30 years of the 20<sup>th</sup>
+century. In such a case this mode might motivate a similar increase in
+values of the regional series being analyzed, which then "maps" onto
+the global mean temperature increase shown in Fig. 1. The Atlantic
+Multidecadal Oscillation (AMO, see, e.g., Enfield, 2001) exhibits a
+signal something like this; to the extent that the AMO influences
+local climate, there may be some possibility for this sort of
+misidentification to occur (see, e.g., DelSole et al., 2011). In
+general, and for the more approximative type of assessment for which
+the maproom is designed, we do not believe that such entanglement will
+pose a major problem with interpretation.
 </P>
 <P >
-Figure 2a illustrates the detrending step, as applied to a typical precipitation record obtained from the maproom. Note that the inferred trend is negative, and appears as a shifted, scaled inversion of the signal shown in Fig. 1. The inverse characteristic results from the fitting of a downward-trending regional signal; the fact that the inferred trend is a scaled, shifted version of the signal of Fig. 1 is a characteristic of the linear regression. Recall, finally, that the inferred trend represents a regression on global mean <i>temperature</i>; this explains its nonlinearity in the time domain.
-</P>
-<P ><BR /><BR />
+Figure 2a illustrates the detrending step, as applied to a typical
+precipitation record obtained from the maproom. Note that the inferred
+trend is negative, and appears as a shifted, scaled inversion of the
+signal shown in Fig. 1. The inverse characteristic results from the
+fitting of a downward-trending regional signal; the fact that the
+inferred trend is a scaled, shifted version of the signal of Fig. 1 is
+a characteristic of the linear regression. Recall, finally, that the
+inferred trend represents a regression on global
+mean <i>temperature</i>; this explains its nonlinearity in the time
+domain.
 </P>
 <P ><IMG SRC="http://iridl.ldeo.columbia.edu/SOURCES/.WCRP/.GCOS/.GPCC/.FDP/.version4/.2p5/a:/.anom/T/%28Jun-Aug%201901-2007%29seasonalAverage/:a:/.cnts/T/%28Jun-Aug%201901-2007%29seasonalAverage/0/maskle%5BT%5D0.5/average/0/mul/add/:a:/.prcp/T/%28Jun-Aug%201901-2007%29seasonalAverage/%28Aug%29interp/%28Jun%29interp/sub/dup/0/ge/%7B1/add%7D%7B13/add%7Difelse/mul%5BT%5Daverage/30/masklt/0/mul/:a/add/SOURCES/.IRI/.Analyses/.TS/.AR4/.tas%5BT%5D1./0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/2/%7Bexch/X/%28-20%29%2810%29RANGEEDGES/Y/%280%29%2822.5%29RANGEEDGES%5BX/Y%5Daverage%7Drepeat/%28scale_symmetric%29%28true%29def/%28fullname%29%28trend%29def/DATA/AUTO/AUTO/RANGE/exch/%28scale_symmetric%29%28true%29def/%28fullname%29%28raw%29def/DATA/AUTO/AUTO/RANGE/exch/dup/T/fig-/line/black/zeroline/thick/solid/red/line/plotlabel/-fig//framelabel/(a)psdef//plotborder/72/psdef//plotaxislength/300/psdef//asum/-43/43/plotrange//XOVY/null/psdef/+//plotborder+72+psdef//XOVY+null+psdef//plotaxislength+300+psdef+.gif" NAME="graphics2" ALIGN="BOTTOM" BORDER="0" />
 <IMG SRC="http://iridl.ldeo.columbia.edu/SOURCES/.WCRP/.GCOS/.GPCC/.FDP/.version4/.2p5/a:/.anom/T/%28Jun-Aug%201901-2007%29seasonalAverage/:a:/.cnts/T/%28Jun-Aug%201901-2007%29seasonalAverage/0/maskle%5BT%5D0.5/average/0/mul/add/:a:/.prcp/T/%28Jun-Aug%201901-2007%29seasonalAverage/%28Aug%29interp/%28Jun%29interp/sub/dup/0/ge/%7B1/add%7D%7B13/add%7Difelse/mul%5BT%5Daverage/30/masklt/0/mul/:a/add/SOURCES/.IRI/.Analyses/.TS/.AR4/.tas%5BT%5D1./0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/sub/dup/T/1/1./10/div/butt_filter:/5./store/ford/:butt_filter/.butt/2/%7Bexch/X/%28-20%29%2810%29RANGEEDGES/Y/%280%29%2822.5%29RANGEEDGES%5BX/Y%5Daverage%7Drepeat/%28scale_symmetric%29%28true%29def/%28fullname%29%28decadal%29def/DATA/AUTO/AUTO/RANGE/exch/%28scale_symmetric%29%28true%29def/%28fullname%29%28residual%29def/DATA/AUTO/AUTO/RANGE/exch/dup/T/fig-/black/line/black/zeroline/thick/solid/green/line/plotlabel/-fig//framelabel/(b)psdef//plotborder/72/psdef//plotaxislength/300/psdef//asum/-43/43/plotrange//XOVY/null/psdef/+//plotborder+72+psdef//XOVY+null+psdef//plotaxislength+300+psdef+.gif" NAME="graphics3" ALIGN="BOTTOM" BORDER="0" />
@@ -309,34 +435,65 @@ from this regression and its lowpass-filtered counterpart, the latter
 identified with the decadal component of variability; (c) Interannual
 component, which is the residual signal in (b), from which the
 decadal component has been subtracted.</P>
-<P ><BR /><BR />
-</P>
-<P ><B>Decadal and Interannual components</B></P>
+<h4>Decadal and Interannual components</h4>
 <P >
-If the fitted values from the regression onto the global multimodel mean temperature record of Fig. 1 are taken as the "climate change" trend, the residuals from this regression then represent the natural, unforced component of variability. The next step in the analysis aims to decompose this residual signal into "decadal" and "interannual" signals, representing respectively the low- and high-frequency components of natural variability.
-</P>
-<P >
-To do this, the residuals are lowpassed by filtering, using an order-five Butterworth filter with half-power at a period of 10 year. Although the Butterworth design has some desirable properties that make it well-suited to this task, any number of alternate filtering procedures could also have been used; testing indicates that results are not sensitive to the filter details. Filter parameters were chosen (a) so as to effect a clean separation between low- and high-frequency components without introducing instability in the filter response (this refers to the filter order) and (b) to effectively classify variability due to El Ni&ntilde;o-Southern Oscillation (ENSO) as "interannual." With the order-five filter, covariation between the two components generally amounts to no more than a few percent of the variance of the initial "raw" series. (In the real world a "perfect" separation of time scales is not achievable; all practical filter designs represent compromises in this regard.)
-</P>
-<P >
-ENSO exhibits a broad spectral peak in the 2-8 year band. Phenomena responsible for variability on longer time scales belong to class of processes that are less well-understood, and whose predictability is currently the subject of active research (see, e.g., Meehl et al. 2009). This "low-frequency" class includes large-scale modes such as the Pacific Decadal Oscillation (PDO) and Atlantic Multidecadal Oscillation (AMO), as well as low-frequency stochastic variations. Thus the filtering effectively partitions variability by process class, not simply by nominal time scale.
+If the fitted values from the regression onto the global multimodel
+mean temperature record of Fig. 1 are taken as the "climate change"
+trend, the residuals from this regression then represent the natural,
+unforced component of variability. The next step in the analysis aims
+to decompose this residual signal into "decadal" and "interannual"
+signals, representing respectively the low- and high-frequency
+components of natural variability.
 </P>
 <P >
-This second stage in the decomposition in illustrated in Fig. 2b, which shows in black the "natural" residual from the detrending operation of Fig. 2a (i.e., the raw initial signal minus the trend component). Superimposed on this is the green "decadal" signal, which represents the output of the lowpass filter, applied to the natural residual.
+To do this, the residuals are lowpassed by filtering, using an
+order-five Butterworth filter with half-power at a period of 10
+year. Although the Butterworth design has some desirable properties
+that make it well-suited to this task, any number of alternate
+filtering procedures could also have been used; testing indicates that
+results are not sensitive to the filter details. Filter parameters
+were chosen (a) so as to effect a clean separation between low- and
+high-frequency components without introducing instability in the
+filter response (this refers to the filter order) and (b) to
+effectively classify variability due to El Ni&ntilde;o-Southern
+Oscillation (ENSO) as "interannual." With the order-five filter,
+covariation between the two components generally amounts to no more
+than a few percent of the variance of the initial "raw" series. (In
+the real world a "perfect" separation of time scales is not
+achievable; all practical filter designs represent compromises in this
+regard.)
 </P>
 <P >
-Finally, the interannual component is computed as the difference between black and green traces in Fig. 2b, i.e., the residual from the detrending step minus its lowpassed incarnation. Shown in Fig. 2c, this signal represents that part of natural variability having its expression at periods shorter than ten years. The trend (red), decadal (green) and interannual (blue) signals are what is shown in the maproom when the user either clicks at a point or chooses "area average," the latter in order to display the time scale decomposition as applied to an area-averaged signal.
+ENSO exhibits a broad spectral peak in the 2-8 year band. Phenomena
+responsible for variability on longer time scales belong to class of
+processes that are less well-understood, and whose predictability is
+currently the subject of active research (see, e.g., Meehl et
+al. 2009). This "low-frequency" class includes large-scale modes such
+as the Pacific Decadal Oscillation (PDO) and Atlantic Multidecadal
+Oscillation (AMO), as well as low-frequency stochastic
+variations. Thus the filtering effectively partitions variability by
+process class, not simply by nominal time scale.
 </P>
-<P ><BR /><BR />
+<P >
+This second stage in the decomposition in illustrated in Fig. 2b,
+which shows in black the "natural" residual from the detrending
+operation of Fig. 2a (i.e., the raw initial signal minus the trend
+component). Superimposed on this is the green "decadal" signal, which
+represents the output of the lowpass filter, applied to the natural
+residual.
 </P>
-<P ><BR /><BR />
+<P >
+Finally, the interannual component is computed as the difference
+between black and green traces in Fig. 2b, i.e., the residual from the
+detrending step minus its lowpassed incarnation. Shown in Fig. 2c,
+this signal represents that part of natural variability having its
+expression at periods shorter than ten years. The trend (red), decadal
+(green) and interannual (blue) signals are what is shown in the
+maproom when the user either clicks at a point or chooses "area
+average," the latter in order to display the time scale decomposition
+as applied to an area-averaged signal.
 </P>
-<P STYLE="margin-bottom: 0in"><B>A
-few things to be aware of in using the maproom </B>
-</P>
-<P STYLE="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in">
-<BR />
-</P>
+<H4>Afew things to be aware of in using the maproom </H4>
 <UL>
         <LI><P STYLE="margin-bottom: 0in">
 As noted above, detrending via regression on the multimodel temperature record represents only an approximate separation of forced and natural variability; rigorously performed, such separation is not a simple exercise. Depending on timing and period, natural fluctuations in the data could project onto the multimodel mean temperature signal and be incorrectly identified with the forced response. The potential for such entanglement becomes lower as length-of-record increases, and vice versa.
@@ -360,17 +517,13 @@ Although the variance decomposition, or other aspects of the maproom plots may p
 </P></LI>
         <P STYLE="margin-bottom: 0in"></P>
 </UL>
-<P  STYLE="margin-bottom: 0in"><BR />
-</P>
 <P  STYLE="margin-bottom: 0in">
 Thank you for visiting the Time Scales Maproom. We anticipate that interaction with maproom users will help us to understand how the product might be improved. Questions or comments are therefore solicited, and may be addressed to <FONT COLOR="#0000ff"><U><A HREF="mailto:help@iri.columbia.edu">help@iri.columbia.edu</A></U></FONT>.Please include the phrase "Time scales" in the subject line.</P>
 <P  STYLE="margin-bottom: 0in"><BR />
 </P>
 <P  STYLE="margin-bottom: 0in"><BR />
 </P>
-<P  STYLE="margin-bottom: 0in"><FONT SIZE="4"><B>References</B></FONT></P>
-<P  STYLE="margin-bottom: 0in"><BR />
-</P>
+<h4>References</h4>
 <P  STYLE="margin-bottom: 0in">DelSole, Timothy, Michael K. Tippett, Jagadish Shukla, A Significant Component of Unforced Multidecadal Variability in the Recent Acceleration of Global Warming. J. Climate, <b>24</b>: 909—926. doi: 10.1175/2010JCLI3659.1, 2011.</P>
 <P  STYLE="margin-bottom: 0in"><BR />
 </P>
@@ -395,8 +548,6 @@ and New York, NY, USA, 2007.</P>
 Coauthors, Decadal Prediction: Can it be skillful, Bull. Amer.
 Meteor. Soc., <B>90</B>, 1467—1485, doi: 10.1175/2009BAMS2778.1,
 2009.</P>
-<P  STYLE="margin-bottom: 0in"><BR />
-</P>
 <P  STYLE="margin-bottom: 0in"><BR />
 </P>
 <p>
