@@ -61,7 +61,7 @@ Si se encuentra en el &#225;rea roja o en la amarilla, le recomendamos observar 
 <div id="tabs-2"  class="ui-tabs-panel">
 <h2  align="center">Explicaci&#243;n</h2>
 <ul>
-<li>Las &#225;reas rojas muestran d&#243;nde los pron&#243;sticos pueden ser generalmente previsibles, y as&#237; es posible para nosotros indicar una alta confianza por los pron&#243;sticos de temporadas inusualmente h&uacute;medas o secas en estos lugares.  Los pron&#243;sticos estacionales en las &#225;reas rojas pueden ser los m&#225;s &uacute;tiles para advertencias tempranas. </li>
+<li>Las &#225;reas rojas muestran d&#243;nde los pron&#243;sticos pueden ser generalmente previsibles, y as&#237; es posible para nosotros indicar una alta confianza por los pron&#243;sticos de temporadas inusualmente h&#250;medas o secas en estos lugares.  Los pron&#243;sticos estacionales en las &#225;reas rojas pueden ser los m&#225;s &#250;tiles para advertencias tempranas. </li>
 <li>Las &#225;reas amarillas indican d&#243;nde los pron&#243;sticos tienen cierta previsibilidad.  Estas tambi&#233;n son &#225;reas que valen la pena monitorizar, aunque s&#243;lo ocasionalmente indicaremos alta confianza por estos pron&#243;sticos.  </li>
 <li>Los lugares grises son lugares con poca o nada de previsibilidad.  Cualquier pron&#243;stico de precipitaci&#243;n inusitada en estas &#225;reas usualmente s&#243;lo mostrar&#225; baja confianza y las oportunidades de advertencia temprana probablemente ser&#237;an limitadas.</li>
 </ul>
@@ -77,8 +77,8 @@ Si se encuentra en el &#225;rea roja o en la amarilla, le recomendamos observar 
 <div id="tabs-3"  class="ui-tabs-panel">
 <h2  align="center">C&#243;mo navegar por los mapas</h2>
 <p><i>Cambiar a otro mapa:</i>
-Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
-<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Seleccione el men&#250; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&#250;: </i>
 Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
 </div>
 <div id="tabs-4" class="ui-tabs-panel">

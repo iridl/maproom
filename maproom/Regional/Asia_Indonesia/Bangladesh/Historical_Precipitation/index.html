@@ -177,8 +177,8 @@ spatial resolution of the original dataset:
 <INGRID>
 
 /resolnames null 2 object
-  /025 (0.25&deg;) def
-  /050 (0.50&deg;) def
+  /025 (0.25&#176;) def
+  /050 (0.50&#176;) def
 def
 
 [(025) (050)] {
@@ -507,7 +507,7 @@ onClickforInfo? {
       pop ("") print
     }ifelse
 }ifelse
-  ( size=6 maxlength=6/>&deg;E / lat:
+  ( size=6 maxlength=6/>&#176;E / lat:
   <input name=mylat onkeypress="changedtext(this)" type=text id=mylat value=) print
 onClickforInfo? { 
       clickpoint 1 get .value s== dup print /mylat FORM! 
@@ -518,7 +518,7 @@ onClickforInfo? {
         pop ("") print
       }ifelse
 }ifelse
-  ( size=6 maxlength=6/>&deg;N) print
+  ( size=6 maxlength=6/>&#176;N) print
 
 /mylon FORMgetknown {null eq not}{false}ifelse {
 
@@ -818,25 +818,25 @@ to
 <font size=-1>
 The Maproom explores historical daily precipitation by calculating simple seasonal statistics. Many options can be specified to produce yearly time series of a chosen seasonal diagnostic of the daily precipitation data. The user can then choose to map the mean, standard deviation or probability of exceeding a chosen threshold, over years; clicking on the map will then produce a local yearly time series of the chosen diagnostic. A series of links allow one to download graphs, maps and data files.</font>
 <br><p><b>Options:</b>
-<br><font size=-1><b>Years and Season</b>:&nbsp;&nbsp;
+<br><font size=-1><b>Years and Season</b>:&#160;&#160;
 Specify the range of years over which to perform the analysis and choose the start and end dates of the season , over which the diagnostics are to be performed.
 <br>
-<b>Resolution and Quality Control</b>:&nbsp;&nbsp;
-Select the spatial resolution of the precipitation data set (either  0.25&deg; or 0.50&deg;) and specify how to handle missing data. The APHRODITE dataset includes a record of the number of station data observations present for each gridbox on each day of the dataset. The maproom allows this information to be used in two ways: (1) gridbox-days without at least one observation can be masked prior to any calculations (checkbox); (2) a minimum fraction of non-masked days per season can be required in order for the seasonal diagnostic to be defined at that gridbox &mdash; if this minimum threshold is not met, then the seasonal diagnostic is assigned a missing value at that gridbox, for that season.
+<b>Resolution and Quality Control</b>:&#160;&#160;
+Select the spatial resolution of the precipitation data set (either  0.25&#176; or 0.50&#176;) and specify how to handle missing data. The APHRODITE dataset includes a record of the number of station data observations present for each gridbox on each day of the dataset. The maproom allows this information to be used in two ways: (1) gridbox-days without at least one observation can be masked prior to any calculations (checkbox); (2) a minimum fraction of non-masked days per season can be required in order for the seasonal diagnostic to be defined at that gridbox &#8212; if this minimum threshold is not met, then the seasonal diagnostic is assigned a missing value at that gridbox, for that season.
 <br>
-<b>Daily Parameters</b>:&nbsp;&nbsp;
+<b>Daily Parameters</b>:&#160;&#160;
 These define the amount in millimeters (non inclusive) above which a day is considered to be a wet day,  and the minimum number (inclusive) of consecutive wet (dry) days to define a wet (dry) spell.
-<br><b>Seasonal Diagnostics</b>:&nbsp;&nbsp;Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.</font>
+<br><b>Seasonal Diagnostics</b>:&#160;&#160;Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.</font>
 <br><p><b>Quantities:</b>
-<br><font size=-1><b>Total Rainfall</b>:&nbsp;&nbsp;total cumulative precipitation (in mm) falling over the season.
-<br><b>Number of Wet Days</b>:&nbsp;&nbsp;the number of wet days (as defined in the Options section) during the season.
-<br><b>Rainfall Intensity</b>:&nbsp;&nbsp;
+<br><font size=-1><b>Total Rainfall</b>:&#160;&#160;total cumulative precipitation (in mm) falling over the season.
+<br><b>Number of Wet Days</b>:&#160;&#160;the number of wet days (as defined in the Options section) during the season.
+<br><b>Rainfall Intensity</b>:&#160;&#160;
 the average daily precipitation over the season considering only wet days.<br>
-<b>Number of Wet (Dry) Spells</b>:&nbsp;&nbsp;
+<b>Number of Wet (Dry) Spells</b>:&#160;&#160;
 the number of wet (dry) spells during the season according to the definitions in the Options section. For example, if a wet spell is defined as 5 contiguous wet days, 10 contiguous wet days are counted as 1 wet spell. Note that a spell, according to the definitions above, that is overlapping the start or end of the season will be counted only if the part of the spell that falls within the season reaches the minimal length of consecutive days.
 <br>
-<b>Percentage of Data Available</b>:&nbsp;&nbsp; the percentage of days with non missing values within the season.
-<br><b>Spatial Analysis</b>:&nbsp;&nbsp;
+<b>Percentage of Data Available</b>:&#160;&#160; the percentage of days with non missing values within the season.
+<br><b>Spatial Analysis</b>:&#160;&#160;
 The analysis is performed at each grid point, but it is then possible to average the results over grid points falling within administrative boundaries.
 </font>
  
@@ -848,7 +848,7 @@ The analysis is performed at each grid point, but it is then possible to average
 <tr><td colspan=4 align=center bgcolor=#DCDCDC><b>Dataset Documentation</b></td></tr>
 <tr><td colspan=4>
 <b>Datasets:</b><br>
-<font size=-1><b>Data</b>:&nbsp;&nbsp;RIHN aphrodite V1003R1 Monsoon Asia gridded daily precipitation <a href="http://iridl.ldeo.columbia.edu/SOURCES/.RIHN/.aphrodite/.V1003R1/">here</a>.</font>
+<font size=-1><b>Data</b>:&#160;&#160;RIHN aphrodite V1003R1 Monsoon Asia gridded daily precipitation <a href="http://iridl.ldeo.columbia.edu/SOURCES/.RIHN/.aphrodite/.V1003R1/">here</a>.</font>
 <p>
 </td>
 </tr>

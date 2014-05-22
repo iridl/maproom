@@ -61,7 +61,7 @@ Esta colecci&#243;n de mapas provee informaci&#243;n que puede ser utilizado par
 <li><b>Pron&#243;sticos para los Pr&#243;ximos 6 D&#237;as:</b> Est&#233;s mapas muestran las &#225;reas donde se predice la lluvia abundante en los pr&#243;ximos seis dias, y cu&#225;nta lluvia se espera.</li>
 <li><b>Pron&#243;sticos para los Pr&#243;ximos 3 Meses:</b> Est&#233;s mapas muestran las &#225;reas donde se predice grande o peque&#241;o cantidades de lluvia en los pr&#243;ximos tres meses.</li>
 <li><b>Condiciones Hist&#243;ricas:</b> Est&#233;s mapas muestran patrones de lluvia que son t&#237;picos durante El Ni&#241;o, La Ni&#241;a, y normalmente.</li>
-<li><b>Fluctuaciones Recientes del Clima:</b> Est&#233;s mapas muestran cu&#225;nto a variado la lluvia en los &uacute;ltimos 100 a&#241;os, y que tendencias de lluvia existe en su localidad.</li>
+<li><b>Fluctuaciones Recientes del Clima:</b> Est&#233;s mapas muestran cu&#225;nto a variado la lluvia en los &#250;ltimos 100 a&#241;os, y que tendencias de lluvia existe en su localidad.</li>
 <li><b>Indicadores de Vulnerabilidad:</b> Est&#233;s mapas muestran la densidad de la poblaci&#243;n humana y la tase de mortalidad infantil, lo que indica las &#225;reas que pueden ser m&#225;s vulnerable a grande o peque&#241;o cantidades de lluvia.</li>
 </ul>
 </p>

@@ -165,7 +165,7 @@ b) Same as (a) for the current year (thick black line), as indicated by the axis
 <dt>Data Source</dt><dd> United States Geological Survey, Land Processes Distributed Active Archive Center, 
 Moderate Resolution Imaging Spectroradiometer 
 (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/.dataset_documentation.html">USGS LandDAAC MODIS</a>)</dd>
-<b>Note</b>:&nbsp;&nbsp;There is typically a 12- to 16-day delay between the end of the observation period for the latest data and the date when those data are received and displayed on this page.
+<b>Note</b>:&#160;&#160;There is typically a 12- to 16-day delay between the end of the observation period for the latest data and the date when those data are received and displayed on this page.
 </dl>
 </div>
 <div class="ui-tabs-panel-hidden">

@@ -53,16 +53,16 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;Qu&#233; cambios en la precipitaci&#243;n son t&#237;picos durante La Ni&#241;a?</h2>
-<p align="left" property="term:description">Durante un episodio de La Ni&#241;a, las &#225;reas verdes o amarillas tienen la probabilidad de ser m&#225;s h&uacute;medas o secas que lo normal en los meses indicados.</p>
+<p align="left" property="term:description">Durante un episodio de La Ni&#241;a, las &#225;reas verdes o amarillas tienen la probabilidad de ser m&#225;s h&#250;medas o secas que lo normal en los meses indicados.</p>
 <p align="left">Para ver si actualmente estamos experimentando condiciones de El Ni&#241;o, La Ni&#241;a o neutrales, haga clic <a href="http://iri.columbia.edu/climate/ENSO/currentinfo/QuickLook.html">aqu&#237;</a>.</p>
-<p align="left">Consulte el &uacute;ltimo <a class="carry" href="prcp_fcst.html">pron&#243;stico estacional</a> para ver exactamente d&#243;nde y cu&#225;ndo se esperan lluvias inusuales en los pr&#243;ximos meses.
+<p align="left">Consulte el &#250;ltimo <a class="carry" href="prcp_fcst.html">pron&#243;stico estacional</a> para ver exactamente d&#243;nde y cu&#225;ndo se esperan lluvias inusuales en los pr&#243;ximos meses.
 Los pron&#243;sticos estacionales tambi&#233;n toman en cuenta muchos otros factores.</p>
 </div>
 <div id="tabs-2"  class="ui-tabs-panel">
 <h2  align="center">C&#243;mo navegar por los mapas </h2>
 <p><i>Cambiar a otro mapa:</i>
-Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
-<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Seleccione el men&#250; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&#250;: </i>
 Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
 </div>
 <div id="tabs-3" class="ui-tabs-panel">
