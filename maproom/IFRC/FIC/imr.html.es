@@ -72,7 +72,7 @@
 <h3 class="dlimagelegend"> Infant Mortality Rate </h3>
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef+.gif" border="0" alt="image" />
   <br />
-  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/IFRC/Forecasts/IFRC_imr_es.gif" />
+  <img class="dlauximg" src="IFRC_imr_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;Las zonas de riesgo con lluvias abundantes, contienen poblaciones vulnerables?</h2>
@@ -84,13 +84,13 @@
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">C&#243;mo usar este mapa interactivo</h2>
 <p><i>Cambiar a otro mapa:</i>
-Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
-<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Seleccione el men&#250; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&#250;: </i>
 Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
 <p><i>Ampl&#237;e hasta una regi&#243;n:</i><br />
 M&#233;todo 1: Seleccione una regi&#243;n de la lista:
 <ol>
-<li>Seleccione el men&uacute; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
+<li>Seleccione el men&#250; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
 <li>Haga clic en la regi&#243;n de inter&#233;s y el mapa se actualizar&#225; autom&#225;ticamente.</li>
 </ol>
 </p>
