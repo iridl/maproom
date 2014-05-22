@@ -72,7 +72,7 @@
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//plotbordertop/60/psdef//plotborderbottom/40/psdef/" />
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//plotbordertop/60/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
   <br />
-  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/IFRC/Forecasts/IFRCpic3mo_same_scale_es.gif" />
+  <img class="dlauximg" src="IFRCpic3mo_same_scale_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >&#191;Es probable que las condiciones inusuales h&#250;medas o secas contin&#250;en?</h2>
@@ -84,13 +84,13 @@
 <div id="tabs-2"  class="ui-tabs-panel">
 <h2  align="center">C&#243;mo usar este mapa interactivo</h2>
 <p><i>Cambiar a otro mapa:</i>
-Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
-<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Seleccione el men&#250; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&#250;: </i>
 Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
 <p><i>Ampl&#237;e hasta una regi&#243;n:</i><br />
 M&#233;todo 1: Seleccione una regi&#243;n de la lista:
 <ol>
-<li>Seleccione el men&uacute; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
+<li>Seleccione el men&#250; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
 <li>Haga clic en la regi&#243;n de inter&#233;s y el mapa se actualizar&#225; autom&#225;ticamente.</li>
 </ol>
 </p>
@@ -119,7 +119,7 @@ Cada mes se publica un pron&#243;stico estacional para los siguientes tres meses
 <ol>
 <li>Para cambiar el tiempo de inicio, mueva su rat&#243;n sobre el mapa hasta que aparezca un recuadro de texto que contiene datos.</li>
 <li>Para moverse hacia adelante o atr&#225;s un mes de tiempo de inicio, haga clic sobre los botones correspondientes a la izquierda o a la derecha del recuadro de texto y el mapa se actualizar&#225; autom&#225;ticamente.</li>
-<li>Para cambiar manualmente el tiempo de inicio, introduzca un n&uacute;mero del 1 al 4 en el recuadro de texto. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
+<li>Para cambiar manualmente el tiempo de inicio, introduzca un n&#250;mero del 1 al 4 en el recuadro de texto. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
 </ol>
 </p>
 <div class="buttonInstructions"></div>
