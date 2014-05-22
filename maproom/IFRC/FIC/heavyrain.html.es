@@ -132,14 +132,14 @@ Los pron&#243;sticos se rotulan por el d&#237;a en que se publicaron. Puede enco
 <h2  align="center">Mapas de Pron&#243;stico de Precipitaci&#243;n Total de un D&#237;a</h2>
 <table BORDER="2" >
 <tr>
-<td align="center"><a href="day1fcstapcp.html">D&#237;a 1 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
+<td align="center"><a class="share" href="dailyforecast.html">D&#237;a 1 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
 
-<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day2fcstapcp.html">D&#237;a 2 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
-<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day3fcstapcp.html">D&#237;a 3 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day2">D&#237;a 2 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day3">D&#237;a 3 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
 </tr>
-<tr><td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day4fcstapcp.html">D&#237;a 4 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
-<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day5fcstapcp.html">D&#237;a 5 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
-<td align="center"><a href="http://iridl.ldeo.columbia.edu/maproom/IFRC/.Forecasts/day6fcstapcp.html">D&#237;a 6 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
+<tr><td align="center"><a class="share" href="dailyforecast.html?day=.day4">D&#237;a 4 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day5">D&#237;a 5 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day6">D&#237;a 6 Mapas de Pron&#243;stico de Precipitaci&#243;n</a></td>
 </tr>
 </table>
 </div>
