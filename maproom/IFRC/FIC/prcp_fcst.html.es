@@ -74,37 +74,37 @@
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1./plotvalue/F/last/plotvalue/X/-180/180/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.prcp_fcst/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//L/1./plotvalue/F/last/plotvalue/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D,%20Forecast%20Issued%20%25=%5BF%5D%29+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
   <br />
-  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/IFRC/Forecasts/IFRCnetassesscolorscale_es.gif" />
+  <img class="dlauximg" src="IFRCnetassesscolorscale_es.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >&#191;Es probable que los pr&#243;ximos 3 meses sean inusualmente h&uacute;medos o secos?</h2>
+<h2 align="center"  property="term:title" >&#191;Es probable que los pr&#243;ximos 3 meses sean inusualmente h&#250;medos o secos?</h2>
 <p align="left" property="term:description">Este mapa muestra la probabilidad de que la precipitaci&#243;n total de 3 meses sea inusualmente alta o baja.</p>
 <p><b>&#191;Y ahora qu&#233; hago?</b></p>
 <p>Si ve un color azul sobre su regi&#243;n, las respuestas posibles incluyen:
 <ul>
 <li>Comun&#237;quese con su departamento meteorol&#243;gico local o regional y observe sus pron&#243;sticos para los siguientes tres meses.</li>
 <li>Considere qui&#233;n puede resultar m&#225;s afectado por el pron&#243;stico de lluvias, abundantes o escasas.</li>
-<li>Revise sus planes de contingencia y actual&#237;celos seg&uacute;n sea necesario.</li>
+<li>Revise sus planes de contingencia y actual&#237;celos seg&#250;n sea necesario.</li>
 </ul>
 </p>
 <p>Consulte la secci&#243;n “M&#225;s informaci&#243;n” para ver los detalles.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2 align="center">Explicaci&#243;n</h2>
-<p>Los colores sobre el mapa corresponde a la confianza que podemos tener en el pron&#243;stico de que la cantidad total de precipitaci&#243;n en el periodo del pron&#243;stico de tres meses ser&#225; ya sea por debajo de la normal (esto es, inusualmente seco, indicado por los tonos de anaranjado y caf&#233;) o sobre la normal (esto es, inusualmente h&uacute;medo, indicado por los tonos de azul) para un &#225;rea y parte del año. La precipitaci&#243;n por debajo de la normal y sobre la normal t&#237;picamente ocurre aproximadamente una vez cada tres años (esto es, con una probabilidad del 33%); y as&#237;, las &#225;reas sombreadas indican un aumento del riesgo de una temporada inusualmente h&uacute;meda o seca. Las &#225;reas con mayores niveles de confianza tienen tonos m&#225;s oscuros (vea la barra de colores de arriba).</p>
+<p>Los colores sobre el mapa corresponde a la confianza que podemos tener en el pron&#243;stico de que la cantidad total de precipitaci&#243;n en el periodo del pron&#243;stico de tres meses ser&#225; ya sea por debajo de la normal (esto es, inusualmente seco, indicado por los tonos de anaranjado y caf&#233;) o sobre la normal (esto es, inusualmente h&#250;medo, indicado por los tonos de azul) para un &#225;rea y parte del año. La precipitaci&#243;n por debajo de la normal y sobre la normal t&#237;picamente ocurre aproximadamente una vez cada tres años (esto es, con una probabilidad del 33%); y as&#237;, las &#225;reas sombreadas indican un aumento del riesgo de una temporada inusualmente h&#250;meda o seca. Las &#225;reas con mayores niveles de confianza tienen tonos m&#225;s oscuros (vea la barra de colores de arriba).</p>
 <p align="left"><i>Este pron&#243;stico muestra solamente las probabilidades de que la precipitaci&#243;n (o nieve) acumulada de tres meses sea inusualmente alta o baja, y no indica las probabilidades de eventos individuales de precipitaci&#243;n abundante. Estos pron&#243;sticos solamente muestran lluvias sobre &#225;reas grandes, y no deben ser utilizados para predecir condiciones clim&#225;ticas locales, o como una previsi&#243;n de inundaciones. </i>
 </p>
 </div>
 <div id="tabs-3"  class="ui-tabs-panel">
 <h2  align="center">C&#243;mo usar este mapa interactivo</h2>
 <p><i>Cambiar a otro mapa:</i>
-Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
-<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Seleccione el men&#250; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&#250;: </i>
 Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
 <p><i>Ampl&#237;e hasta una regi&#243;n:</i><br />
 M&#233;todo 1: Seleccione una regi&#243;n de la lista:
 <ol>
-<li>Seleccione el men&uacute; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
+<li>Seleccione el men&#250; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
 <li>Haga clic en la regi&#243;n de inter&#233;s y el mapa se actualizar&#225; autom&#225;ticamente.</li>
 </ol>
 </p>
@@ -133,7 +133,7 @@ Cada mes se publica un pron&#243;stico estacional para los siguientes tres meses
 <ol>
 <li>Para cambiar el tiempo de inicio, mueva su rat&#243;n sobre el mapa hasta que aparezca un recuadro de texto que contiene datos.</li>
 <li>Para moverse hacia adelante o atr&#225;s un mes de tiempo de inicio, haga clic sobre los botones correspondientes a la izquierda o a la derecha del recuadro de texto y el mapa se actualizar&#225; autom&#225;ticamente.</li>
-<li>Para cambiar manualmente el tiempo de inicio, introduzca un n&uacute;mero del 1 al 4 en el recuadro de texto. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
+<li>Para cambiar manualmente el tiempo de inicio, introduzca un n&#250;mero del 1 al 4 en el recuadro de texto. Luego presione “intro” o haga clic en el icono “actualizar” que se encuentra en la esquina superior izquierda del mapa.</li>
 </ol>
 </p>
 <div class="buttonInstructions"></div>
