@@ -87,7 +87,7 @@
 <u><i>Zoom map in/out</i></u>
 <br>There are two ways to zoom the map to different regions; the click-and-drag option and the latitude/longitude 
 text boxes. Note that the map can not display areas outside of the latitudes initially shown on the interface 
-(~66.25&#176;S - 76.25&#176;N).
+(~66.25°S - 76.25°N).
 <br>
 <ul>
  <li><i>Click-and-drag</i>
@@ -124,13 +124,13 @@ step (by one day for the Six-Day maps and one month for the IRI forecast maps), 
 <p>
    <a name="esrlgfs"><b>ESRL GEFS Six-Day and Daily Precipitation Forecast Maps</b><br>
 <p>
-The Earth System Research Laboratory (ESRL) Physical Sciences Division (PSD) Reforecast Version 2 Project has produced a dataset of historical weather forecasts generated with a fixed numerical model, using the 2012 version of the National Centers for Environmental Prediction's (NCEP) Global Ensemble Forecasting System (GEFS).  This Reforecast Version 2 dataset consists of an 11-member ensemble of forecasts, produced on a daily basis from 00 UTC initial conditions for the period December 1984 to the present.  The horizontal resolution of GEFS is T254 (about 50 km) out to 8 days, and T190 (about 70 km) from 8-16 days.  In this application, data interpolated to 1.0&#176; lat/lon spatial resolution are used.  The result is a stable model climatology of forecast variables from December 1984 to the present, including accumulated precipitation.  You can find more information on the ESRL Reforecast Version 2 Project at the following website: <a href="http://esrl.noaa.gov/psd/forecasts/reforecast2/">ESRL Reforecast Version 2 Project</a> 
+The Earth System Research Laboratory (ESRL) Physical Sciences Division (PSD) Reforecast Version 2 Project has produced a dataset of historical weather forecasts generated with a fixed numerical model, using the 2012 version of the National Centers for Environmental Prediction's (NCEP) Global Ensemble Forecasting System (GEFS).  This Reforecast Version 2 dataset consists of an 11-member ensemble of forecasts, produced on a daily basis from 00 UTC initial conditions for the period December 1984 to the present.  The horizontal resolution of GEFS is T254 (about 50 km) out to 8 days, and T190 (about 70 km) from 8-16 days.  In this application, data interpolated to 1.0° lat/lon spatial resolution are used.  The result is a stable model climatology of forecast variables from December 1984 to the present, including accumulated precipitation.  You can find more information on the ESRL Reforecast Version 2 Project at the following website: <a href="http://esrl.noaa.gov/psd/forecasts/reforecast2/">ESRL Reforecast Version 2 Project</a> 
 <p>
 <b>Reference:</b>  Hamill, T. M., J. S. Whitaker, G. T. Bates, D. R. Murray, M. Fiorino, T. J. Galarneau, Jr., Y. Zhu, and W. Lapenta, 2013:  NOAA's second-generation global medium-range ensemble forecast data set. <i>Bull. Amer. Meteor. Soc.</i>, in press.
 <p>
 In the current application of these forecast data, no adjustments have been made to account for model biases with respect to the real atmosphere.  However, using this fixed climatology, self-consistent forecast precipitation statistics, including daily anomalies, percent of mean monthly total precipitation, and precipitation percentiles, have been computed to put the daily and six-day forecast precipitation totals into historical context.  All the precipitation forecast maps shown are derived from daily ensemble mean precipitation values.  Maps based on the forecast of six-day total precipitation may be selected and displayed in the main window of the interface.  Maps of forecast single-day precipitation for days 1-6 are available via hyperlinks in the table entitled "Single-Day (24-Hour) Total Precipitation Forecast Maps" found below the main interface window. 
 <p>
-Since the spatial resolution of the forecast precipitation values from the forecast model is 1.0&#176; lat/lon, the forecast totals and statistics represent values for large-scale precipitation.  Although these maps should, in general, be able to identify regions of large-scale heavy cumulative rainfall associated with tropical cyclones, for instance, they should not be used for forecasting cyclone tracks or the intensity or location of intense fine-scale or localized precipitation (associated with orography, for example). 
+Since the spatial resolution of the forecast precipitation values from the forecast model is 1.0° lat/lon, the forecast totals and statistics represent values for large-scale precipitation.  Although these maps should, in general, be able to identify regions of large-scale heavy cumulative rainfall associated with tropical cyclones, for instance, they should not be used for forecasting cyclone tracks or the intensity or location of intense fine-scale or localized precipitation (associated with orography, for example). 
 
 <p><a name="tot6dayapcp"><b>ESRL GEFS Six-Day Total Forecast Precipitation</b>
 <p>
@@ -233,7 +233,7 @@ For more information on this analysis, see the following pages:  <a href="http:/
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//color_smoothing+null+psdef//plotaxislength+250+psdef+.gif">
 </a>
 </div>
-1985-2010 mean monthly precipitation values are shown to provide background on "normal" monthly precipitation totals during the course of the year.  The data are from the NOAA Climate Prediction Center's Merged Analysis of Precipitation data set, available at 2.5&#176; lat/lon resolution.  CMAP precipitation values provided here are derived from a combination of surface gauge data and infrared and microwave satellite estimates.  You can find more information on this data set at the following site: <a href="http://www.cpc.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
+1985-2010 mean monthly precipitation values are shown to provide background on "normal" monthly precipitation totals during the course of the year.  The data are from the NOAA Climate Prediction Center's Merged Analysis of Precipitation data set, available at 2.5° lat/lon resolution.  CMAP precipitation values provided here are derived from a combination of surface gauge data and infrared and microwave satellite estimates.  You can find more information on this data set at the following site: <a href="http://www.cpc.noaa.gov/products/global_precip/html/wpage.cmap.html">CMAP</a>
 <p>
 <b>Reference:</b>  Xie, P. and P. A. Arkin, 1997:  Global precipitation:  A 17-year monthly analysis based on gauge observations, satellite estimates, and numerical model outputs. <i>Bull. Amer. Met. Soc.</i>, <b>78</b>, 2539-2558. 
 
@@ -255,7 +255,7 @@ This map displays an estimate of the projected number of people living in each 2
 <img src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+250+psdef+.gif">
 </a>
 </div>
-The CIESIN/SEDAC Global Distribution of Poverty data set includes infant mortality rate as one proxy for poverty.  This map displays the infant mortality rate (number of infant deaths per 10,000 live births) for every 0.25&#176; lat/lon grid box, for the year 2000.
+The CIESIN/SEDAC Global Distribution of Poverty data set includes infant mortality rate as one proxy for poverty.  This map displays the infant mortality rate (number of infant deaths per 10,000 live births) for every 0.25° lat/lon grid box, for the year 2000.
 <p>
 More information on this poverty indicator and the full data set can be found at the following site:  <a href="http://sedac.ciesin.columbia.edu/povmap/">Global Distribution of Poverty</a>.
 <p>

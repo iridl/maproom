@@ -148,7 +148,7 @@ Forecasts are labeled by the day they were issued. You can find this label by mo
 <div id="tabs-5" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <p><b><a class="carry" href="instructions.html#esrlgfs">ESRL GEFS Six-Day and Daily Precipitation Forecast Maps</a></b><br /> 
-<b>Data</b>  Daily ensemble-mean forecast precipitation totals at 1.0&#176; lat/lon resolution from the 2012 version of the National Centers for Environmental Prediction's (NCEP) Global Ensemble Forecasting System (GEFS) model run daily using 00 UTC initial conditions, available via the NOAA ESRL PSD Reforecast Version 2 Project 
+<b>Data</b>  Daily ensemble-mean forecast precipitation totals at 1.0° lat/lon resolution from the 2012 version of the National Centers for Environmental Prediction's (NCEP) Global Ensemble Forecasting System (GEFS) model run daily using 00 UTC initial conditions, available via the NOAA ESRL PSD Reforecast Version 2 Project 
 <br /><b>Data Source</b> U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://esrl.noaa.gov/psd/forecasts/reforecast2/">ESRL Reforecast Version 2 Project</a>
 <br /><b>Analyses</b>: Analyses shown here include forecast daily (days 1-6) and six-day precipitation totals, forecast daily and six-day total precipitation anomalies from the 1985-2012 mean, forecast daily and six-day total precipitation as percent of mean monthly total precipitation (1985-2012 base period), and forecast daily and six-day total precipitation percentiles (1985-2012 base period).
 </p>

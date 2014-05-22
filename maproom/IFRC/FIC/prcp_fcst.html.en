@@ -141,7 +141,7 @@ Every month, a seasonal forecast is issued for the next three months; for exampl
 <div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <p><b><a class="carry" href="instructions.html#prcp_fcst">IRI Seasonal Precipitation Forecast</a></b><br /> 
-<b>Data</b>   Dominant tercile probabilities for seasonal (3-month) precipitation for the four overlapping lead times from the IRI Net Assessment Forecast, issued every month at 2.5&#176; lat/lon resolution
+<b>Data</b>   Dominant tercile probabilities for seasonal (3-month) precipitation for the four overlapping lead times from the IRI Net Assessment Forecast, issued every month at 2.5° lat/lon resolution
 <br /><b>Data Source</b> International Research Institute for Climate and Society, <a href="http://iri.columbia.edu/climate/forecast/net">Net Assessment Forecasts</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.Precipitation/">Map Room Forecast page</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library entry</a>
 </p>
 </div>

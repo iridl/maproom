@@ -115,7 +115,7 @@ margin: 0px;
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/SOURCES/.USGS/.LandDAAC/.MODIS/.version_005/">Dataset</a></li>
-      <li><a href="#tabs-4" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-4" >Instructiónes</a></li>
       <li><a href="#tabs-5" >Contact Us</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage" about="">
@@ -175,7 +175,7 @@ Moderate Resolution Imaging Spectroradiometer
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
-<h2  align="center">Instructi&#243;nes</h2>
+<h2  align="center">Instructiónes</h2>
 <div class="buttonInstructions"></div>
 </div>
 <div id="tabs-5"  class="ui-tabs-panel">

@@ -83,10 +83,10 @@ The World Health Organization proposes the use of environmental thresholds for e
 <p>
 <center>
 <table border="1">
-<tr><td bgcolor="white"><pre>  </pre></td><td><font size="-1">Low risk (p&#60;0.4)</font></td></tr>
-<tr><td bgcolor="#DCDCDC"><pre>  </pre></td><td><font size="-1">Moderate risk (p&#60;0.6)</font></td></tr>
-<tr><td bgcolor="#FFC030"><pre>  </pre></td><td><font size="-1">High risk (p&#60;0.8)</font></td></tr>
-<tr><td bgcolor="#B22222"><pre>  </pre></td><td><font size="-1">Very High risk (p&#62;0.8)</font></td></tr>
+<tr><td bgcolor="white"><pre>  </pre></td><td><font size="-1">Low risk (p&lt;0.4)</font></td></tr>
+<tr><td bgcolor="#DCDCDC"><pre>  </pre></td><td><font size="-1">Moderate risk (p&lt;0.6)</font></td></tr>
+<tr><td bgcolor="#FFC030"><pre>  </pre></td><td><font size="-1">High risk (p&lt;0.8)</font></td></tr>
+<tr><td bgcolor="#B22222"><pre>  </pre></td><td><font size="-1">Very High risk (p&gt;0.8)</font></td></tr>
 </table>
 </center>
 </p>
