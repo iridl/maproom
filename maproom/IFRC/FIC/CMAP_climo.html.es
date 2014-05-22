@@ -71,7 +71,7 @@
 <p align="left" property="term:description">Este mapa muestra cu&#225;nta lluvia cae normalmente en cada mes del a&#241;o.</p>
 Usted puede ver:
 <ul>
-<li>Qu&#233; lugares tienden a ser m&#225;s h&uacute;medos o secos que otros.</li>
+<li>Qu&#233; lugares tienden a ser m&#225;s h&#250;medos o secos que otros.</li>
 <li>Cu&#225;les son los meses m&#225;s lluviosos para diferentes lugares.</li>
 </ul>
 <p align="left">Estos mapas mensuales se basan en la precipitaci&#243;n de los a&#241;os anteriores (1985-2010). Cuanto m&#225;s oscuro sea el azul, m&#225;s abundante es la lluvia. Este mapa no indica cu&#225;nta lluvia se espera este a&#241;o.</p>
@@ -79,13 +79,13 @@ Usted puede ver:
 <div id="tabs-2"  class="ui-tabs-panel">
 <h2  align="center">C&#243;mo usar este mapa interactivo</h2>
 <p><i>Cambiar a otro mapa:</i>
-Seleccione el men&uacute; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
-<p><i>Regresar a la p&#225;gina del men&uacute;: </i>
+Seleccione el men&#250; desplegable que se encuentra en la parte superior de esta p&#225;gina, a la derecha del encabezado azul “Pron&#243;sticos en contexto”.</p>
+<p><i>Regresar a la p&#225;gina del men&#250;: </i>
 Haga clic en el enlace azul titulado “Pron&#243;sticos en contexto” que se encuentra en la esquina superior izquierda de la p&#225;gina.</p>
 <p><i>Ampl&#237;e hasta una regi&#243;n:</i><br />
 M&#233;todo 1: Seleccione una regi&#243;n de la lista:
 <ol>
-<li>Seleccione el men&uacute; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
+<li>Seleccione el men&#250; desplegable titulado “Regi&#243;n” que se encuentra en la parte superior de la p&#225;gina.</li>
 <li>Haga clic en la regi&#243;n de inter&#233;s y el mapa se actualizar&#225; autom&#225;ticamente.</li>
 </ol>
 </p>
