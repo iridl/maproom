@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -85,7 +85,7 @@
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <p><b><a class="carry" href="instructions.html#imr">CIESIN/SEDAC Global Distribution of Poverty, Infant Mortality Rate, Year 2000</a></b><br /> 
-<b>Data</b>  Infant mortality rate (number of infant deaths per 10,000 live births) per 0.25&#176; lat/lon grid box, for the year 2000, from the SEDAC Global Distribution of Poverty data set
+<b>Data</b>  Infant mortality rate (number of infant deaths per 10,000 live births) per 0.25° lat/lon grid box, for the year 2000, from the SEDAC Global Distribution of Poverty data set
 <br /><b>Data Source</b> Center for International Earth Science Information Network (CIESIN), Socio-Economic Data Center (SEDAC), <a href="http://sedac.ciesin.columbia.edu/povmap/">Global Distribution of Poverty</a>
 </p>
 </div>

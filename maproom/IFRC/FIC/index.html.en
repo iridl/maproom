@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -75,7 +75,7 @@
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
   <br />
-  <img class="dlauximg" src="/maproom/IFRC/Forecasts/IFRCpctlecolorscale.gif" />
+  <img class="dlauximg" src="IFRCpctlecolorscale.gif" />
 </fieldset>
 <div id="tabs-1" class="ui-tabs-panel">
 <h2 align="center"  property="term:title" >Where is exceptionally heavy rainfall expected?</h2>
@@ -154,7 +154,7 @@ Forecasts are labeled by the day they were issued. You can find this label by mo
 <div id="tabs-5" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <p><b><a class="carry" href="instructions.html#esrlgfs">ESRL GEFS Six-Day and Daily Precipitation Forecast Maps</a></b><br /> 
-<b>Data</b>  Daily ensemble-mean forecast precipitation totals at 1.0&#176; lat/lon resolution from the 2012 version of the National Centers for Environmental Prediction's (NCEP) Global Ensemble Forecasting System (GEFS) model run daily using 00 UTC initial conditions, available via the NOAA ESRL PSD Reforecast Version 2 Project 
+<b>Data</b>  Daily ensemble-mean forecast precipitation totals at 1.0° lat/lon resolution from the 2012 version of the National Centers for Environmental Prediction's (NCEP) Global Ensemble Forecasting System (GEFS) model run daily using 00 UTC initial conditions, available via the NOAA ESRL PSD Reforecast Version 2 Project 
 <br /><b>Data Source</b> U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://esrl.noaa.gov/psd/forecasts/reforecast2/">ESRL Reforecast Version 2 Project</a>
 <br /><b>Analyses</b>: Analyses shown here include forecast daily (days 1-6) and six-day precipitation totals, forecast daily and six-day total precipitation anomalies from the 1985-2012 mean, forecast daily and six-day total precipitation as percent of mean monthly total precipitation (1985-2012 base period), and forecast daily and six-day total precipitation percentiles (1985-2012 base period).
 </p>

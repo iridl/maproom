@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -79,7 +79,7 @@
       <li><a href="#tabs-1" >Descripción</a></li>
       <li><a href="#tabs-2" >Documentación de la Base de Datos</a></li>
       <li><a class="carry" href="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.MDG/.Africa/.queriesCMAPlatest/caCMAP-latest_WASP12//fullname/%2812-Month%20WASP%29def/tag://fullname/%2812-Month%20WASP%29:tag//long_name/%2812-Month%20WASP%29def/cabaseline//fullname/%28Baseline%29def/tag://fullname/%28Baseline%29:tag//long_name/%28Baseline%29def/%7BWASP/Baseline%7Dds/nip/">Base de Datos</a></li>
-      <li><a href="#tabs-4" >Instructi&#243;nes</a></li>
+      <li><a href="#tabs-4" >Instructiónes</a></li>
       <li><a href="#tabs-5" >Contáctenos</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
@@ -122,7 +122,7 @@ El propósito de esta herramienta es proveer un medio visual simple de relación
 </p>
 </div>
 <div id="tabs-4"  class="ui-tabs-panel">
-<h2  align="center">Instructi&#243;nes</h2>
+<h2  align="center">Instructiónes</h2>
 <div class="buttonInstructions"></div>
 </div>
 <div id="tabs-5"  class="ui-tabs-panel">

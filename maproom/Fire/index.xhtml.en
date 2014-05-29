@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -72,8 +72,7 @@ contact Pietro Ceccato (<a href="mailto:pceccato@iri.columbia.edu?subject=Climat
 <p>
 The work of this project builds upon previous IRI collaboration with IPB and CARE Indonesia on activities that were part of the Central
 Kalimantan Peatlands Project, a large consortium effort funded by DGIS of the government of the Netherlands and managed by Wetlands
-International, to support improved livelihoods and peatland restoration.  For further information about this effort, please see the
-<a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&#38;objID=466&#38;PageID=0&#38;cached=true&#38;mode=2&#38;userID=2/">project page</a>.
+International, to support improved livelihoods and peatland restoration.  
 </p>
 
 </div>
