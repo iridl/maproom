@@ -9,10 +9,9 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>CGIAR research program on Climate Change, Agriculture and Food Security</title>
+<title>Historical Climate Information</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
-<link rel="stylesheet" type="text/css" href="CCAFS/ccafs.css" />
-<link rel="canonical" href="ccafs.html" />
+<link rel="canonical" href="historical.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
@@ -33,23 +32,19 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%2
             </fieldset>
            <fieldset class="navitem">
                 <legend>Climate and Agriculture</legend>
-                     <span class="navtext">CCAFS</span>
+                     <span class="navtext">Historical</span>
             </fieldset>
 
 </div>
 <div>
  <div id="content" class="searchDescription">
-<div><img src="CCAFS/ccafs_verybig.jpg" /></div>
-<h2 property="term:title">CGIAR research program on Climate Change, Agriculture and Food Security</h2>
+<h2 property="term:title">Historical Climate Information</h2>
 <p align="left" property="term:description">
-Talk about CCAFS Maprooms briefly.</p>
-<p>Talk about them more.</p>
+A set of tailored analyses to describe historical daily precipitation and temperature caracteristics variability and their relationship with ENSO.</p>
 </div>
-<div class="rightcol tabbedentries" about="/maproom/Agriculture/ccafs.html" >
-<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_CCAFS_ENSO_Prob_term" />
-<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_CCAFS_Historical_term" />
-<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_CCAFS_Forecast_term" />
-<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_CCAFS_SkillMaps_term" />
+<div class="rightcol tabbedentries" about="/maproom/Agriculture/historical.html" >
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_ENSO_Prob_term" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term" />
 
 </div>
 </div>
