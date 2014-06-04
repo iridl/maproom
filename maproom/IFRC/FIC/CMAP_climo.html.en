@@ -69,7 +69,7 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >How much rain normally falls at this time of year?</h2>
-<p align="left" property="term:description">This map shows how much rain normally falls in each month of the year.
+<p align="left" property="term:description" content="This map shows how much rain normally falls in each month of the year. You can see which places tend to be wetter or dryer than others, and which are the rainiest months for different locations.">This map shows how much rain normally falls in each month of the year.
 You can see:
 <ul>
 <li>Which places tend to be wetter or dryer than others.</li>
