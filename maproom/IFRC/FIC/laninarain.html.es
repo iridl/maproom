@@ -49,6 +49,8 @@
       <li><a href="#tabs-4" >Contáctenos</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
+<a rel="iridl:hasPDFImage" href="LaNinaandRainfall.pdf"></a>
+<a rel="iridl:hasPNGImage" href="LaNinaandRainfall.png"></a>
 <img class="dlimg" src="LaNinaandRainfall.png" border="0" alt="image" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">

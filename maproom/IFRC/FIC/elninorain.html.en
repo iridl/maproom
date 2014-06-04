@@ -49,6 +49,8 @@
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
+<a rel="iridl:hasPDFImage" href="ElNinoandRainfall.pdf"></a>
+<a rel="iridl:hasPNGImage" href="ElNinoandRainfall.png"></a>
 <img class="dlimg" src="ElNinoandRainfall.png" border="0" alt="image" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
