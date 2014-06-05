@@ -11,6 +11,8 @@
   xmlns:rdf  ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs ="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:xsd  ="http://www.w3.org/2001/XMLSchema#"
+  xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+  xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
  >
 
 <owl:Ontology rdf:about="">
@@ -20,7 +22,7 @@
 <owl:imports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridlsemantics.owl" />
 <owl:imports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl" />
 <owl:imports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl2terms.owl" />
+<owl:imports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/maproominfo.owl" />
 </owl:Ontology>
-
 <!-- Created: Sun Mar 31 07:47:40 2013 -->
 </rdf:RDF>
