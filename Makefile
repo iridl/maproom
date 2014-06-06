@@ -31,6 +31,7 @@ utbuild.tag: build.tag
 	tar cf - -C pure --exclude=.git . | tar xf - -C $(BUILD)/pure
 	install -d $(BUILD)/jsonld.js
 	tar cf - -C jsonld.js --exclude=.git . | tar xf - -C $(BUILD)/jsonld.js
+	ln -s jsonld.js/js $(BUILD)/jsonld
 	cp .htaccess $(BUILD)
 	touch utbuild.tag
 
