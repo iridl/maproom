@@ -27,11 +27,11 @@
   <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Analysis">
     <rdfs:subClassOf>
       <term:Taxa rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        <rdfs:comment xml:lang="en"
         >This contains the facets useful for the maproom search</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Semantics"/>
         <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#Term"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        <rdfs:label xml:lang="en"
         >Maproom Search</rdfs:label>
       </term:Taxa>
     </rdfs:subClassOf>
