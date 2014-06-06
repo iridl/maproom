@@ -13,6 +13,7 @@
   xmlns:xsd  ="http://www.w3.org/2001/XMLSchema#"
   xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
   xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+  xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
  >
 
 <owl:Ontology rdf:about="">
@@ -69,4 +70,15 @@
   <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Time">
     <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
   </rdf:Description>
+  <owl:Class rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#map_room">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#SearchItems" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+
+        <owl:onProperty rdf:resource="http://www.w3.org/1999/xhtml/vocab#section"/>
+        <owl:allValuesFrom rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#map_room" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+<iridl:map_room rdf:about="/maproom/index.html" />
 </rdf:RDF>
