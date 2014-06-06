@@ -23,7 +23,7 @@
 <owl:imports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridlsemantics.owl" />
 <owl:imports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl" />
 <owl:imports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl2terms.owl" />
-<owl:imports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/gazterms.owl" />
+<owl:notimports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/gazterms.owl" />
 </owl:Ontology>
 <!-- Created: Sun Mar 31 07:47:40 2013 -->
   <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Analysis">
