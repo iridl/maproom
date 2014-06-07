@@ -77,9 +77,9 @@
   </owl:Class>
     <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridc.owl#hasPart">
     <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#section"/>
-      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"/>
+            <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"/>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#section"/>
     </owl:propertyChainAxiom>
   </rdf:Description>
-    <iridl:map_room rdf:about="/maproom/" />
+    <iridl:map_room rdf:about="/maproom/index.html"><owl:sameAs rdf:resource="/maproom/" /></iridl:map_room>
 </rdf:RDF>
