@@ -72,6 +72,7 @@
     <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
   </rdf:Description>
   <owl:Class rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#map_room">
+    <rdfs:label xml:lang="en">Map Room</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#SearchItem" />
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -81,5 +82,5 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-<iridl:map_room rdf:about="/maproom/" />
+        <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#section"><rdfs:subPropertyOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridc.owl#hasPart" /></rdf:Description>
 </rdf:RDF>
