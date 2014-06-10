@@ -11,6 +11,10 @@
   xmlns:rdf  ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs ="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:xsd  ="http://www.w3.org/2001/XMLSchema#"
+  xmlns:xhtml = "http://www.w3.org/1999/xhtml/vocab#"
+  xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+  xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+  xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
  >
 
 <owl:Ontology rdf:about="">
@@ -20,7 +24,74 @@
 <owl:imports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridlsemantics.owl" />
 <owl:imports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl" />
 <owl:imports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl2terms.owl" />
+<owl:notimports rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/gazterms.owl" />
 </owl:Ontology>
-
 <!-- Created: Sun Mar 31 07:47:40 2013 -->
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Analysis">
+    <rdfs:subClassOf>
+      <term:Taxa rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search">
+        <rdfs:comment xml:lang="en"
+        >This contains the facets useful for the maproom search</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Semantics"/>
+        <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#Term"/>
+        <rdfs:label xml:lang="en"
+        >Maproom Search</rdfs:label>
+      </term:Taxa>
+    </rdfs:subClassOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Product_Type">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Disease">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Location">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Realm">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Phenomena">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Quantity">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Project">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Spatial_Resolution">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Sector">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#VerticalLocation">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Time">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
+  <owl:Class rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#map_room">
+    <rdfs:label xml:lang="en">Map Room</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#SearchItem" />
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridc.owl#hasPart"/>
+        <owl:allValuesFrom rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#map_room" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+    <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridc.owl#hasPart">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"/>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#section"/>
+    </owl:propertyChainAxiom>
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"/>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#alternate"/>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#section"/>
+    </owl:propertyChainAxiom>
+  </rdf:Description>
+    <iridl:map_room rdf:about="/maproom/index.html"><xhtml:alternate rdf:resource="/maproom/" /></iridl:map_room>
 </rdf:RDF>

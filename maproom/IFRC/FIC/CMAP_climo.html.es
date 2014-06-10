@@ -68,7 +68,7 @@
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >¿Cuánta lluvia cae normalmente en esta parte del año?</h2>
-<p align="left" property="term:description">Este mapa muestra cuánta lluvia cae normalmente en cada mes del año.</p>
+<p align="left" property="term:description" content="Este mapa muestra cuánta lluvia cae normalmente en cada mes del año.  Usted puede ver qué lugares tienden a ser más húmedos o secos que otros, y quáles son los meses más lluviosos para diferentes lugares.">Este mapa muestra cuánta lluvia cae normalmente en cada mes del año.</p>
 Usted puede ver:
 <ul>
 <li>Qué lugares tienden a ser más húmedos o secos que otros.</li>

@@ -31,6 +31,7 @@ utbuild.tag: build.tag
 	tar cf - -C pure --exclude=.git . | tar xf - -C $(BUILD)/pure
 	install -d $(BUILD)/jsonld.js
 	tar cf - -C jsonld.js --exclude=.git . | tar xf - -C $(BUILD)/jsonld.js
+	ln -s jsonld.js/js $(BUILD)/jsonld
 	cp .htaccess $(BUILD)
 	touch utbuild.tag
 
@@ -62,3 +63,9 @@ text.xml:	text.nt
 
 text.nt:	maproom/newmaproomcache/owlimMaxRepository.nt textconstruct.serql
 		rdfcache -cache=maproom/newmaproomcache -construct=textconstruct.serql -constructoutput=./text.nt file:///`pwd`/maproom/maproomregistry.owl
+
+facetsearch:	facetcache/owlimMaxRepository.nt
+
+facetcache/owlimMaxRepository.nt:	maproom/maproomtop.owl
+		rm -r facetcache
+		rdfcache -cache=facetcache http://iridl.ldeo.columbia.edu/maproom/maproomtop.owl
