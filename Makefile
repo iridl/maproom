@@ -63,3 +63,9 @@ text.xml:	text.nt
 
 text.nt:	maproom/newmaproomcache/owlimMaxRepository.nt textconstruct.serql
 		rdfcache -cache=maproom/newmaproomcache -construct=textconstruct.serql -constructoutput=./text.nt file:///`pwd`/maproom/maproomregistry.owl
+
+facetsearch:	facetcache/owlimMaxRepository.nt
+
+facetcache/owlimMaxRepository.nt:	maproom/maproomtop.owl
+		rm -r facetcache
+		rdfcache -cache=facetcache http://iridl.ldeo.columbia.edu/maproom/maproomtop.owl

@@ -11,6 +11,7 @@
   xmlns:rdf  ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs ="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:xsd  ="http://www.w3.org/2001/XMLSchema#"
+  xmlns:xhtml = "http://www.w3.org/1999/xhtml/vocab#"
   xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
   xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
   xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -92,5 +93,5 @@
       <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#section"/>
     </owl:propertyChainAxiom>
   </rdf:Description>
-    <iridl:map_room rdf:about="/maproom/index.html"></iridl:map_room>
+    <iridl:map_room rdf:about="/maproom/index.html"><xhtml:alternate rdf:resource="/maproom/" /></iridl:map_room>
 </rdf:RDF>
