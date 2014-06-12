@@ -94,11 +94,11 @@
               class="rightcol">
             <div class="ui-tabs">
                <ul class="ui-tabs-nav">
-                  <li><a href="#tabs-1">Monitoring</a></li>
+                  <li><a href="#tabs-1">Epidemic Meningitis Monitoring</a></li>
                   <li><a href="#tabs-2">Analyses</a></li>
                </ul>
                <div id="tabs-1" class="ui-tabs-panel">
-                  <div class="itemGroup">Monitoring</div>
+                  <div class="itemGroup">Epidemic Meningitis Monitoring</div>
                   <div class="item">
                      <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Aerosol/index.html">OMI Aerosol Monitoring for Meningitis</a></div>
                      <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Aerosol/index.html"><img class="itemImage"
