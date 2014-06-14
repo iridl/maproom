@@ -102,7 +102,7 @@
     <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#isDescribedBy">
     <owl:propertyChainAxiom rdf:parseType="Collection">
       <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#isSectionOf"/>
-      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#isCanonicalFor"/>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"/>
       <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#isDescribedBy"/>
     </owl:propertyChainAxiom>
 </rdf:Description>
