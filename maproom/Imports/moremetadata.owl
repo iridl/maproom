@@ -101,7 +101,8 @@
     <iridl:HoldsMapRooms rdf:about="/maproom/index.html"><xhtml:alternate rdf:resource="/maproom/" /></iridl:HoldsMapRooms>
     <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#isDescribedBy">
     <owl:propertyChainAxiom rdf:parseType="Collection">
-      <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridc.owl#isSectionOf"/>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#isSectionOf"/>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"/>
       <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#isDescribedBy"/>
     </owl:propertyChainAxiom>
 </rdf:Description>
