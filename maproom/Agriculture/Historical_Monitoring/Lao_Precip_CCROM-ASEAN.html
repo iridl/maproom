@@ -13,6 +13,7 @@
 <title>Lao Historical Precipitation Monitoring -- CCROM ASEAN</title>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../IFAD/ifad.css" />
 <link rel="canonical" href="Lao_Precip_CCROM-ASEAN.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -21,15 +22,18 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Rate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#precipitation_rate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#station"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Laos"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Laos_85_1"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/100/108/RANGEEDGES/Y/13.5/23/RANGEEDGES/X/Y/fig-/colors/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/-fig//plotaxislength/150/psdef//XOVY/null/psdef//antialias/true/psdef//plotborder/0.0/psdef/+.gif" />
 <style>
 .dlimgtsbox {
@@ -219,11 +223,11 @@ display: none;
 
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Maproom</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+                <legend>Climate and Agriculture</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Historical</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Monitoring</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Daily Seasonal Characteristics</span></legend>
             </fieldset>
 
           <fieldset class="navitem"><legend>Seasons (1980 to 2010)</legend><select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1980" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2010" size="4" maxlength="4"/></fieldset>
@@ -242,6 +246,8 @@ display: none;
 
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
+<div id="ifaddiv">
+</div>
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Options</a></li>
       <li><a href="#tabs-3" >Dataset Documentation</a></li>

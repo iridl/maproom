@@ -13,6 +13,7 @@
 <title>Northern India Historical Temperature Monitoring</title>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../CCAFS/ccafs.css" />
 <link rel="canonical" href="NorthernIndia_Temp.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -21,14 +22,16 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#ccafs"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Temperature"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#India"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#India_68_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Northern_India/.temperature/.IMD_temperature/.historical/X/Y/fig-/colors/grey/verythin/solid/india_dist/thinnish/grey/admin1_india/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <style>
@@ -180,11 +183,11 @@ display: none;
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Maproom</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+                <legend>Climate and Agriculture</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Historical</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Monitoring</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Daily Seasonal Characteristics</span></legend>
             </fieldset>
 
             <fieldset class="navitem"><legend>Seasons</legend><select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1969" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2005" size="4" maxlength="4"/></fieldset>
@@ -207,6 +210,8 @@ display: none;
 
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
+<div id="ccafsdiv">
+</div>
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Options</a></li>
       <li><a href="#tabs-3" >Dataset Documentation</a></li>

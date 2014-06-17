@@ -12,13 +12,19 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <title>Skill Maps</title>
 <link rel="stylesheet" type="text/css" href="http://iridl.ldeo.columbia.edu/uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../CCAFS/ccafs.css" />
 <link rel="canonical" href="skillmaps.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_SkillMaps_term" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#NMME" />
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomalycorrelation" />
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#skillmaps" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomaly" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#correlation" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#skill" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#ccafs" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/%28Precipitation%29//var/parameter/%28Precipitation%29eq/%7BSOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_050deg/.precip/%28Seasonal%20Total%29//diagnostic/parameter/%28Seasonal%20Total%29eq/%7B0.0/monthlyAverage%7Dif//diagnostic/get_parameter/%28Mean%20Daily%20Intensity%29eq/%7B1/masklt/monthlyAverage%7Dif//diagnostic/get_parameter/%28Rainfall%20Frequency%29eq/%7B1/flagge/monthlyAverage%7Dif%7D%7BSOURCES/.UEA/.CRU/.TS3p1/.monthly/.tmp%7Difelse/%28.NCEP-CFSv2%29//model/parameter/%28Multi-model%29eq/%7B%7D%7BSOURCES/.Models/.NMME/%28.NCEP-CFSv2%29//model/parameter/interp/.MONTHLY/S/first/%282009%29RANGEEDGES//var/get_parameter/%28Precipitation%29eq/%7Bprec%7Dif//var/get_parameter/%28Temperature%29eq/%7Btref%7Dif%7Difelse/L/1.5/3.5/RANGE%5BM%5Daverage/3/-2/roll/.T/L/1.5/3.5/RANGE/T/sample-along%5BX/Y%5DregridLinear/X/%2860.25E%29%28149.75E%29RANGE/Y/%2814.75S%29%2854.75N%29RANGE/2/%7Bexch%5BL%5Daverage/S/12/splitstreamgrid%7Drepeat%5BS2%5Dcorrelate/DATA/-1/1/RANGE/X/Y/fig-/colors/coasts/countries/-fig//correlation/-1/1/plotrange//XOVY/null/psdef//plotborder/72/psdef//plotaxislength/432/psdef/+.gif" />
 <script type="text/javascript" src="http://iridl.ldeo.columbia.edu/uicore/uicore.js"></script>
 <style>
@@ -40,8 +46,8 @@ display:none;
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Maproom</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+                <legend>Climate and Agriculture</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/forecast.html">Forecast</a>
             </fieldset>
            
            <fieldset class="navitem" id="chooseSection"> 
@@ -70,6 +76,8 @@ display:none;
  </div>
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
+<div id="ccafsdiv">
+</div>
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="#tabs-4" >Project Resources</a></li>
