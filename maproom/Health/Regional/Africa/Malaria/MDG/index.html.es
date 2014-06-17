@@ -49,7 +49,7 @@
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
-<input class="dlimg share" name="country" type="hidden" value="Algeria" />
+<input class="dlimg share" name="country" type="hidden" data-default="Algeria" />
 <input class="dlimg share" name="Baseline" type="hidden" />
 <input class="dlimg share" name="baseyear" type="hidden" />
 </form>

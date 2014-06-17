@@ -56,12 +56,12 @@ width: 45%;
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <!-- <input class="carry dlimg dlauximg info share" name="var" type="hidden" /> -->
-<input class="share dlimg dlimgloc carry" name="bbox" type="hidden" value="bb:90:-12:155:10:bb" />
-<input class="share dlimgts dlimg dlauximg dlimgloc justsregion" name="maptype" type="hidden" value="prcpmap" />
-<input class="share dlimgts dlimg dlauximg dlimgloc justsregion carry" name="selregion" type="hidden" value="indonesia" />
+<input class="share dlimg dlimgloc carry" name="bbox" type="hidden" data-default="bb:90:-12:155:10:bb" />
+<input class="share dlimgts dlimg dlauximg dlimgloc justsregion" name="maptype" type="hidden" data-default="prcpmap" />
+<input class="share dlimgts dlimg dlauximg dlimgloc justsregion carry" name="selregion" type="hidden" data-default="indonesia" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" value="" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
-<input class="pickarea" name="resolution" type="hidden" value="irids:SOURCES:Features:Political:Indonesia:Districts:ds" />
+<input class="pickarea" name="resolution" type="hidden" data-default="irids:SOURCES:Features:Political:Indonesia:Districts:ds" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 

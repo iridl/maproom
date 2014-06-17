@@ -47,10 +47,10 @@
 <input class="carryup carry carryLanguage" name="Set-Language" type="hidden" value="" />
 <input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
 <input class="dlimg dlimgts share starttime startleadtime" name="F" type="hidden" />
-<input class="dlimg dlimgts share startleadtime" name="L" type="hidden" value="1." />
+<input class="dlimg dlimgts share startleadtime" name="L" type="hidden" data-default="1." />
 <input class="dlimgnotuseddlauximg" name="plotaxislength" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
-<input class="pickarea" name="resolution" type="hidden" value=".5" />
+<input class="pickarea" name="resolution" type="hidden" data-default=".5" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 

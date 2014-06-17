@@ -53,8 +53,8 @@ display: inline-block
 <input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
 <input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="600" />
-<input class="pickarea" name="resolution" type="hidden" value=".25" />
+<input class="unused" name="plotaxislength" type="hidden" data-default="600" />
+<input class="pickarea" name="resolution" type="hidden" data-default=".25" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 

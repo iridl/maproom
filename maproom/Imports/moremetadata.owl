@@ -60,6 +60,9 @@
   <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Project">
     <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Institution">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Spatial_Resolution">
     <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
   </rdf:Description>

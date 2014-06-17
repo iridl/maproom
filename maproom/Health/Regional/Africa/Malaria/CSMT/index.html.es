@@ -51,8 +51,8 @@
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value=".5" />
+<input class="unused" name="plotaxislength" type="hidden" data-default="432" />
+<input class="pickarea" name="resolution" type="hidden" data-default=".5" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">

@@ -66,7 +66,7 @@ color: blue;
 <input class="carry dlimg dlimgts share" name="seasonStart" type="hidden"  />
 <input class="carry dlimg dlimgts share" name="seasonEnd" type="hidden"  />
 <input class="notused" name="plotaxislength" type="hidden" />
-<input class="pickarea" name="resolution" type="hidden" value="2.5" />
+<input class="pickarea" name="resolution" type="hidden" data-default="2.5" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
