@@ -48,8 +48,8 @@ display: inline-block
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
-<input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value="irids:SOURCES:Features:Political:Africa:Districts:ds" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" data-default="432" />
+<input class="pickarea" name="resolution" type="hidden" data-default="irids:SOURCES:Features:Political:Africa:Districts:ds" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">

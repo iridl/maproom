@@ -30,7 +30,7 @@
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
 <input class="carryup carry dlimg share localemap" name="bbox" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
-<input name="resolution" type="hidden" value="irids:SOURCES:Features:Political:World:Countries:ds" />
+<input name="resolution" type="hidden" data-default="irids:SOURCES:Features:Political:World:Countries:ds" />
 <input class="locale localemap" name="region" type="hidden" value="" />
 </form>
 <div class="controlBar">

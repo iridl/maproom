@@ -56,11 +56,11 @@ display: inline-block
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="dlimgts share" name="L" type="hidden" value="1" />
-<input class="dlimgts share" name="fires" type="hidden" value="medianover" />
-<input class="dlimgts share" name="nino4" type="hidden" value="medianover" />
-<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" value="bb:90:-12:155:10:bb" />
-<input class="share carry dlimgts dlimgloc" name="region" type="hidden" value="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@10:ds" />
+<input class="dlimgts share" name="L" type="hidden" data-default="1" />
+<input class="dlimgts share" name="fires" type="hidden" data-default="medianover" />
+<input class="dlimgts share" name="nino4" type="hidden" data-default="medianover" />
+<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" data-default="bb:90:-12:155:10:bb" />
+<input class="share carry dlimgts dlimgloc" name="region" type="hidden" data-default="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@10:ds" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">
