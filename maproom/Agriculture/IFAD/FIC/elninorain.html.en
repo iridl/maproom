@@ -46,6 +46,8 @@
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
+<a rel="iridl:hasPDFImage" href="/maproom/IFRC/FIC/ElNinoandRainfall.pdf"></a>
+<a rel="iridl:hasPNGImage" href="/maproom/IFRC/FIC/ElNinoandRainfall.png"></a>
 <img class="dlimg" src="/maproom/IFRC/FIC/ElNinoandRainfall.png" border="0" alt="image" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
