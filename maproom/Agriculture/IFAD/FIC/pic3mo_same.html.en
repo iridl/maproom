@@ -39,8 +39,7 @@
                       <a rev="section" class="navlink carryup" href="/maproom/Agriculture/ifad.html"></a>
             </fieldset> 
             <fieldset class="navitem" id="chooseSection"> 
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_Thr
-eeMonthForecasts"><span property="term:label">Probabilistic Seasonal Forecast</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_ThreeMonthForecasts"><span property="term:label">Probabilistic Seasonal Forecast</span></legend>
             </fieldset> 
             <fieldset class="navitem"> 
                 <legend>Region</legend>
@@ -72,7 +71,7 @@ eeMonthForecasts"><span property="term:label">Probabilistic Seasonal Forecast</s
 <link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/88/165/plotrange/Y/-10/27/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//plotbordertop/60/psdef//plotborderbottom/40/psdef/" />
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.IRI/.Seasonal_Forecast/a:/.pic3mo_same/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/L/first/VALUE/:a:/.observationtime/:a/X/Y/fig-+colors+plotlabel+plotlabel+black+thin+countries_gaz+-fig+/F/last/plotvalue/X/88/165/plotrange/Y/-10/27/plotrange+//antialias+true+psdef//plotaxislength+550+psdef//XOVY+null+psdef//framelabel+%28%25=%5Bforecasttime%5D%20Forecast%20Precipitation%20Tendency%20same%20as%20Observed%20%25=%5Bobservationtime%5D,%20issued%20%25=%5BF%5D%29+psdef//plotbordertop/60/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
   <br />
-  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/maproom/IFRC/Forecasts/IFRCpic3mo_same_scale.gif" />
+  <img class="dlauximg" src="/maproom/IFRC/FIC/IFRCpic3mo_same_scale.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Is it likely that unusually wet or dry conditions will continue?</h2>
@@ -83,7 +82,7 @@ eeMonthForecasts"><span property="term:label">Probabilistic Seasonal Forecast</s
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
-<p><b><a class="carry" href="instructions.html#pic3mo_same">IRI Predictions in Context (PiC)</a></b><br /> 
+<p>
 <b>Data</b>  Forecast data:  Dominant tercile probabilities for seasonal (3-month) precipitation for the first lead time from the IRI Net Assessment Forecast, issued every month at 2.5&#176; lat/lon resolution; Observational data:  CAMS-OPI monthly observed precipitation gridded at 2.5&#176; lat/lon resolution
 <br /><b>Data Source</b> Analysis data:  International Research Institute for Climate and Society, <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&#38;objID=944&#38;PageID=7613&#38;cached=true&#38;mode=2#pic">Predictions in Context</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.PiC/">Map Room PiC page</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.PiC/">Data Library entry</a>; Forecast data:  International Research Institute for Climate and Society, <a href="http://portal.iri.columbia.edu/portal/server.pt?open=512&#38;objID=944&#38;parentname=CommunityPage&#38;parentid=1&#38;mode=2&#38;in_hi_userid=2&#38;cached=true">Net Assessment Forecasts</a>, <a href="http://iridl.ldeo.columbia.edu/maproom/.Global/.Forecasts/.Precipitation/">Map Room Forecast page</a>, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/">Data Library entry</a>; Observational data:  NOAA, Climate Prediction Center, <a href="http://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.cams_opi.html">CAMS-OPI Precipitation</a>
 <br /><b>Analysis</b> Shaded areas on the "Same Tendency" map indicate locations where the IRI Net Assessment seasonal precipitation forecast for the next 3-month season shows an enhanced likelihood of above-normal (below-normal) precipitation AND where precipitation received in the 3-month season before the forecast was issued was also above normal (below normal), i.e., the forecast has the same tendency as the previously observed precipitation.
@@ -98,9 +97,9 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in 
 <div id="tabs-5"  class="ui-tabs-panel">
 <h2  align="center">How to use this interactive map</h2>
 <p><i>Switch to another map:</i>
-Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
+Select the dropdown menu at the top of the page.</p>
 <p><i>Return to the menu page:</i>
-Click the blue link called “Forecasts in Context” at the top left corner of the page.</p>
+Click the blue link called “IFAD” at the top left corner of the page.</p>
 <p><i>Zoom in to a region:</i><br />
 Method 1: Pick a region from the list:
 <ol>
@@ -118,7 +117,7 @@ Method 1: Pick a region from the list:
 <ol>
 <li>Move your mouse over the map, until you see three icons appear in the upper left corner.</li>
 <li>Click the icon of the magnifying glass.</li>
-<li>The map will redraw automatically. Note that the map cannot display areas outside of the latitudes initially shown on the interface (about 66.25S – 76.25N).</li>
+<li>The map will redraw automatically. Note that the map cannot display areas outside of the latitudes initially shown on the interface.</li>
 </ol>
 <p><i>Change the date of the forecast:</i>
 Forecasts are labeled by the month they were issued. You can find this label by moving your mouse over the map until you see a text box appear at the top with the date inside.
