@@ -10,13 +10,13 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>IRI Map Room</title>
+<title>Climate and Meningitis</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
 <link rel="canonical" href="index.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Meningitis" />
 <link rel="term:icon"
 href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OMI/.version8/.dekadal/.average/.ai/X/-20/55/RANGE/Y/-35/40/RANGE/X/Y/fig-/colors/grey/verythin/mews_prov/black/thin/countries_gaz/-fig//T/last/plotvalue//plotaxislength/150/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" />
 <script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
@@ -25,7 +25,7 @@ href="http://iridl.ldeo.columbia.edu/expert/home/.jdcorral/.NASA/.GSFC/.TOMS/.OM
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
-<input class="titleLink itemImage" name="bbox" type="hidden" value="bb:-20:-40:55:40:bb" />
+<input class="titleLink itemImage" name="bbox" type="hidden" data-default="bb:-20:-40:55:40:bb" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 

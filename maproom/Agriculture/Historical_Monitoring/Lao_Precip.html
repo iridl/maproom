@@ -22,8 +22,6 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#agriculture"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#ifad"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Rate"/>
@@ -33,7 +31,8 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Lao"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Laos"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Laos_85_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Lao/.aphroditeV1101/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <style>
@@ -170,25 +169,25 @@ display: none;
 <input class="dlimg dlauximg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
 <input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea dlimg dlauximg share" name="resolution" type="hidden" value="0.25" />
-<input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" value="1951" />
-<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" value="2007" />
-<input class="carry dlimg dlauximg share dlimgts" name="seasonStart" type="hidden" value="Jan" />
-<input class="carry dlimg dlauximg share dlimgts" name="seasonEnd" type="hidden" value="Jan" />
-<input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" value="1" />
-<input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" value="31" />
-<input class="dlimg dlauximg share dlimgts" name="minFrac" type="hidden" value="0.5" />
-<input class="dlimg dlauximg share dlimgts" name="obsOnly" type="hidden" value="off" />
-<input class="dlimg dlauximg share dlimgts" name="wetThreshold" type="hidden" value="1." />
-<input class="dlimg dlauximg share dlimgts" name="spellThreshold" type="hidden" value="5." />
-<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" value="TotRain" />
-<input class="dlimg dlauximg share ylyStat pET bodyClass" name="yearlyStat" type="hidden" value="Mean" />
-<input class="dlimg share pET" name="probExcThresh1" type="hidden" value="150." />
-<input class="dlimg share pET" name="probExcThresh2" type="hidden" value="30." />
-<input class="dlimg share pET" name="probExcThresh3" type="hidden" value="10." />
-<input class="dlimg share pET" name="probExcThresh4" type="hidden" value="3." />
-<input class="dlimg share pET" name="probExcThresh5" type="hidden" value="3." />
+<input class="unused" name="plotaxislength" type="hidden" data-default="432" />
+<input class="pickarea dlimg dlauximg share" name="resolution" type="hidden" data-default="0.25" />
+<input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" data-default="1951" />
+<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" data-default="2007" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonStart" type="hidden" data-default="Jan" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonEnd" type="hidden" data-default="Jan" />
+<input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" data-default="1" />
+<input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" data-default="31" />
+<input class="dlimg dlauximg share dlimgts" name="minFrac" type="hidden" data-default="0.5" />
+<input class="dlimg dlauximg share dlimgts" name="obsOnly" type="hidden" data-default="off" />
+<input class="dlimg dlauximg share dlimgts" name="wetThreshold" type="hidden" data-default="1." />
+<input class="dlimg dlauximg share dlimgts" name="spellThreshold" type="hidden" data-default="5." />
+<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" data-default="TotRain" />
+<input class="dlimg dlauximg share ylyStat pET bodyClass" name="yearlyStat" type="hidden" data-default="Mean" />
+<input class="dlimg share pET" name="probExcThresh1" type="hidden" data-default="150." />
+<input class="dlimg share pET" name="probExcThresh2" type="hidden" data-default="30." />
+<input class="dlimg share pET" name="probExcThresh3" type="hidden" data-default="10." />
+<input class="dlimg share pET" name="probExcThresh4" type="hidden" data-default="3." />
+<input class="dlimg share pET" name="probExcThresh5" type="hidden" data-default="3." />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">

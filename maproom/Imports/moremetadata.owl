@@ -60,6 +60,9 @@
   <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Project">
     <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Institution">
+    <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Spatial_Resolution">
     <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
   </rdf:Description>
@@ -76,22 +79,34 @@
     <rdfs:label xml:lang="en">Map Room</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#SearchItem" />
     <rdfs:subClassOf>
+<owl:Class rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#HoldsMapRooms">
+<rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridc.owl#hasPart"/>
         <owl:allValuesFrom rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#map_room" />
       </owl:Restriction>
-    </rdfs:subClassOf>
+</rdfs:subClassOf>
+</owl:Class></rdfs:subClassOf>
   </owl:Class>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"><owl:inverseOf rdf:resource="http://www.w3.org/1999/xhtml/vocab#isCanonicalFor" /></rdf:Description>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#section"><owl:inverseOf rdf:resource="http://www.w3.org/1999/xhtml/vocab#isSectionOf" /></rdf:Description>
     <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridc.owl#hasPart">
     <owl:propertyChainAxiom rdf:parseType="Collection">
-      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"/>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#isCanonicalFor"/>
       <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#section"/>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"/>
     </owl:propertyChainAxiom>
     <owl:propertyChainAxiom rdf:parseType="Collection">
-      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"/>
-      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#alternate"/>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#isCanonicalFor"/>
       <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#section"/>
     </owl:propertyChainAxiom>
   </rdf:Description>
-    <iridl:map_room rdf:about="/maproom/index.html"><xhtml:alternate rdf:resource="/maproom/" /></iridl:map_room>
+    <iridl:HoldsMapRooms rdf:about="/maproom/index.html"><xhtml:alternate rdf:resource="/maproom/" /></iridl:HoldsMapRooms>
+    <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#isDescribedBy">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#isSectionOf"/>
+      <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"/>
+      <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#isDescribedBy"/>
+    </owl:propertyChainAxiom>
+</rdf:Description>
 </rdf:RDF>

@@ -19,12 +19,8 @@
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_HistoricalConditions" />
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#agriculture"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#ifad"/>
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
-<link rel="term:icon" href="LaNinaandRainfall220.png" />
+<link rel="term:icon" href="/maproom/IFRC/FIC/LaNinaandRainfall220.png" />
 <script type="text/javascript" src="../../../../uicore/uicore.js"></script>
 </head>
 <body>
@@ -50,7 +46,9 @@
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="dlimage" id="content" about="">
-<img class="dlimg" src="LaNinaandRainfall.png" border="0" alt="image" />
+<a rel="iridl:hasPDFImage" href="/maproom/IFRC/FIC/LaNinaandRainfall.pdf"></a>
+<a rel="iridl:hasPNGImage" href="/maproom/IFRC/FIC/LaNinaandRainfall.png"></a>
+<img class="dlimg" src="/maproom/IFRC/FIC/LaNinaandRainfall.png" border="0" alt="image" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >What Changes in Rainfall are Typical during La Niña?</h2>
@@ -62,9 +60,9 @@ are likely to become wetter or dryer than normal during the indicated months.</p
 <div id="tabs-2"  class="ui-tabs-panel">
 <h2  align="center">How to navigate between maps</h2>
 <p><i>Switch to another map:</i>
-Select the dropdown menu at the top of the page, to the right of the blue “Forecasts in Context” heading.</p>
+Select the dropdown menu at the top of the page.</p>
 <p><i>Return to the menu page:</i>
-Click the blue link called “Forecasts in Context” at the top left corner of the page.</p>
+Click the blue link called “IFAD” at the top left corner of the page.</p>
 </div>
 <div id="tabs-3" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>

@@ -18,9 +18,6 @@
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_TimeScales" />
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#agriculture"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#ifad"/>
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#precipitation" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive" />
@@ -199,7 +196,7 @@ Even if there is some evidence of a long-term trend, you’ll probably notice it
 <li>If there is very little importance of the blue line, then you can focus more on the year-to-year shifts as well as the longer-term trends.</li>
 <li>If you have experienced a dry or wet (or hot or cold) period lasting multiple years in your location, the blue line might help determine if you were in a wet or dry (or hot or cold) 10-year phase. If so, when the phase changes, you could see opposite results, and the recent pattern might not be due to a longer term climate trend.</li>
 </ol>
-<li>Finally, look at the actual rainfall in your location (black line).  It is common for most of the ups and downs (65% or more) in rainfall to happen on the season-to-season or year-to-year timescale.  This just means that rainfall fluctuates a good amount from year to year. There are <a href="http://iridl.ldeo.columbia.edu/maproom/Agriculture/IFAD/FIC/prcp_fcst.html">forecasts</a> available to predict rainfall every season, so monitoring these can be helpful to anticipate heightened flood and drought risk. Can you pick out years of very high or low rains?  Additionally, it can be helpful to note that the range of the real data is likely to be much greater than any increase or decrease in rainfall shown over time by the longer-term climate change trend. In any given year, the short-term year-to-year fluctuations can overshadow the longer-term climate change trend.</li>
+<li>Finally, look at the actual rainfall in your location (black line).  It is common for most of the ups and downs (65% or more) in rainfall to happen on the season-to-season or year-to-year timescale.  This just means that rainfall fluctuates a good amount from year to year. There are <a href="http://iridl.ldeo.columbia.edu/maproom/Agriculture/IFAD/FIC/prcp_fcst.html">forecasts</a> available to predict rainfall every season. Additionally, it can be helpful to note that the range of the real data is likely to be much greater than any increase or decrease in rainfall shown over time by the longer-term climate change trend. In any given year, the short-term year-to-year fluctuations can overshadow the longer-term climate change trend.</li>
 </ol>
 <div class="buttonInstructions"></div>
 </div>

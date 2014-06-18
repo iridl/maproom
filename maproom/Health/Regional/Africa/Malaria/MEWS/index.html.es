@@ -55,8 +55,8 @@ display: inline-block
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
 <input class="share dlimg" name="T" type="hidden" />
-<input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value="irids:SOURCES:Features:Political:Africa:Districts:ds" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" data-default="432" />
+<input class="pickarea" name="resolution" type="hidden" data-default="irids:SOURCES:Features:Political:Africa:Districts:ds" />
 <input class="dlimg share" name="layers" value="est_prcp" checked="checked" type="checkbox" />
 <input class="dlimg share" name="layers" value="countries_gaz" checked="checked" type="checkbox" />
 <input class="dlimg share" name="layers" value="mews_prov" checked="checked" type="checkbox" />

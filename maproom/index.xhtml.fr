@@ -19,8 +19,6 @@
 <link class="altLanguage" rel="alternate" hreflang="id" href="index.html?Set-Language=id" />
 <link class="altLanguage" rel="alternate" hreflang="ru" href="index.html?Set-Language=ru" />
 <link rel="canonical" href="index.html" />
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <script type="text/javascript" src="../uicore/uicore.js"></script>
 </head>
 <body>

@@ -89,22 +89,22 @@ display: none;
 <input class="share degbox" name="region" type="hidden" />
 <input class="share prcpsta station" name="region" type="hidden" />
 <input class="share tempsta station" name="region" type="hidden" />
-<input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
-<input class="carry dlimg share bodyAttribute" name="mapsel" type="hidden" value="Precip" />
-<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startyr" type="hidden" value="1901" />
-<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startmon" type="hidden" value="Jan" />
-<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="endmon" type="hidden" value="Mar" />
-<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="threshold" type="hidden" value="0.85" />
-<input name="resolution" type="hidden" value="5.0" />
-<input name="resolution" type="hidden" value="2.5" />
-<input name="resolution" type="hidden" value="irids:SOURCES:NOAA:NCDC:GHCN:v2beta:ds" />
-<input name="resolution" type="hidden" value="irids:SOURCES:NOAA:NCDC:GHCN:v2:ds" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" data-default="432" />
+<input class="carry dlimg share bodyAttribute" name="mapsel" type="hidden" data-default="Precip" />
+<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startyr" type="hidden" data-default="1901" />
+<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="startmon" type="hidden" data-default="Jan" />
+<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="endmon" type="hidden" data-default="Mar" />
+<input class="carry dlimg dlimgts share prcpfilter tempfilter" name="threshold" type="hidden" data-default="0.85" />
+<input name="resolution" type="hidden" data-default="5.0" />
+<input name="resolution" type="hidden" data-default="2.5" />
+<input name="resolution" type="hidden" data-default="irids:SOURCES:NOAA:NCDC:GHCN:v2beta:ds" />
+<input name="resolution" type="hidden" data-default="irids:SOURCES:NOAA:NCDC:GHCN:v2:ds" />
 
-<input name="resolutionFilter" type="hidden" value="notused" />
-<input name="resolutionFilter" type="hidden" value="notused" />
-<input class="prcpfilter" name="resolutionFilter" type="hidden" value="{prcp (units) (mm/month) def T[lpar (Jan ) (1901) /startyr parameter rpar]concat interp (Dec 2000) RANGE T[lpar (Jan) /startmon parameter (-) (Mar) /endmon parameter rpar]concat interp VALUES dataflag[T]average (0.85) /threshold parameter masklt SELECT}" />
+<input name="resolutionFilter" type="hidden" data-default="notused" />
+<input name="resolutionFilter" type="hidden" data-default="notused" />
+<input class="prcpfilter" name="resolutionFilter" type="hidden" data-default="{prcp (units) (mm/month) def T[lpar (Jan ) (1901) /startyr parameter rpar]concat interp (Dec 2000) RANGE T[lpar (Jan) /startmon parameter (-) (Mar) /endmon parameter rpar]concat interp VALUES dataflag[T]average (0.85) /threshold parameter masklt SELECT}" />
 
-<input class="tempfilter" name="resolutionFilter" type="hidden" value="{adjusted .mean .temp VER 0 VALUE VER removeGRID T[lpar (Jan ) (1901) /startyr parameter rpar]concat interp (Dec 2000) RANGE T[lpar (Jan) /startmon parameter (-) (Mar) /endmon parameter rpar]concat interp VALUES dataflag[T]average (0.85) /threshold parameter masklt SELECT}" />
+<input class="tempfilter" name="resolutionFilter" type="hidden" data-default="{adjusted .mean .temp VER 0 VALUE VER removeGRID T[lpar (Jan ) (1901) /startyr parameter rpar]concat interp (Dec 2000) RANGE T[lpar (Jan) /startmon parameter (-) (Mar) /endmon parameter rpar]concat interp VALUES dataflag[T]average (0.85) /threshold parameter masklt SELECT}" />
 </form>
 
 <div class="controlBar">

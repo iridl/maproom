@@ -22,8 +22,6 @@
 <link rel="shortcut icon" href="../uicore/icons/iri32.png" />
 <link rel="apple-touch-icon" sizes="54x54" href="../uicore/icons/iriwh.png" />
 <link rel="icon" href="../uicore/icons/iriwh.svg" sizes="any" type="image/svg+xml" />
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <script type="text/javascript" src="../uicore/uicore.js"></script>
 </head>
 <body>
