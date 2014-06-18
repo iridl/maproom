@@ -127,7 +127,7 @@
 <iridl:hasId>id</iridl:hasId>
 </iridl:Language>
 <iridl:Language rdf:ID="fr">
-<rdfs:label xml:lang="fr">fran&#xB8;ais</rdfs:label>
+<rdfs:label xml:lang="fr">français</rdfs:label>
 <iridl:hasId>fr</iridl:hasId>
 </iridl:Language>
 <iridl:Language rdf:ID="ru">
