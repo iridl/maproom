@@ -10,9 +10,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>SMNH/IRI Honduras Historical Precipitation Monitoring</title>
+<title>Monitoreo de la Precipitación Histórica en Honduras SMNH/IRI</title>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="Honduras_Precip.html?Set-Language=en" />
 <link rel="canonical" href="Honduras_Precip.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -222,24 +223,24 @@ display: none;
 
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Climate and Agriculture</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Historical</a>
+                <legend>Climá y Agricultura</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Histórica</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Daily Seasonal Characteristics</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Caracteristicas Diarias Estacionales Históricas</span></legend>
             </fieldset>
 
-          <fieldset class="navitem"><legend>Seasons (1944 to 2013)</legend><select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1944" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2013" size="4" maxlength="4"/></fieldset>
-            <fieldset class="navitem"><legend>Seasonal daily statistics</legend><select class="pageformcopy" name="seasonalStat"><option value="TotRain">Total Rainfall</option><option value="NumWD">Number of Wet Days</option><option value="RainInt">Rainfall Intensity</option><option value="NumDS">Number of Dry Spells</option><option value="NumWS">Number of Wet Spells</option><option value="PerDA">Percentage of Data Available</option></select></fieldset>
-            <fieldset class="navitem" id="yearlyStat"><legend>Yearly seasonal statistics</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Mean</option><option value="StdDev">Standard deviation</option><option value="PoE">Probability of exceeding</option><option value="CoV">Coefficient of variation</option><option value="RbyP">Percentile</option></select>
-        <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="150" size="3" maxlength="3"/>mm</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="30" size="3" maxlength="3"/>days</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="10" size="2" maxlength="2"/>mm/day</span><span id="pET4"><input class="pageformcopy" name="probExcThresh4" type="text" value="3" size="2" maxlength="2"/>spells</span><span id="pET5"><input class="pageformcopy" name="probExcThresh5" type="text" value="3" size="2" maxlength="2"/>spells</span>
+          <fieldset class="navitem"><legend>Estaciones (1944 a 2013)</legend><select class="pageformcopy" name="seasonStart"><option value="Jan">Ene</option><option>Feb</option><option>Mar</option><option value="Apr">Abr</option><option>May</option><option>Jun</option><option>Jul</option><option value="Aug">Ago</option><option>Sep</option><option>Oct</option><option>Nov</option><option value="Dec">Dic</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1944" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option value="Jan">Ene</option><option>Feb</option><option>Mar</option><option value="Apr">Abr</option><option>May</option><option>Jun</option><option>Jul</option><option value="Aug">Ago</option><option>Sep</option><option>Oct</option><option>Nov</option><option value="Dec">Dic</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2013" size="4" maxlength="4"/></fieldset>
+            <fieldset class="navitem"><legend>Estadisticas diarias estacionales</legend><select class="pageformcopy" name="seasonalStat"><option value="TotRain">Lluvia Total</option><option value="NumWD">Suma de Días Humedos</option><option value="RainInt">Intensidad de la Lluvia</option><option value="NumDS">Suma de Periodos Secos</option><option value="NumWS">Suma de Periodos Humedos</option><option value="PerDA">Porcentage de Datos Disponibles</option></select></fieldset>
+            <fieldset class="navitem" id="yearlyStat"><legend>Estadisticas estacionales anuales</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Medio</option><option value="StdDev">Deviación Típica</option><option value="PoE">Probabilidad de excedar</option><option value="CoV">Coeficiente de variación</option><option value="RbyP">Percentil</option></select>
+        <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="150" size="3" maxlength="3"/>mm</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="30" size="3" maxlength="3"/>días</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="10" size="2" maxlength="2"/>mm/día</span><span id="pET4"><input class="pageformcopy" name="probExcThresh4" type="text" value="3" size="2" maxlength="2"/>periodos</span><span id="pET5"><input class="pageformcopy" name="probExcThresh5" type="text" value="3" size="2" maxlength="2"/>periodos</span>
 </span>
 </fieldset>
 
-           <fieldset class="navitem"><legend>Seasonal Data Coverage</legend>Minimum fraction of non-missing daily values:<input class="pageformcopy" name="minFrac" type="text" value="0.5" size="4" maxlength="4"/></fieldset>
-            <fieldset class="navitem"><legend>Wet/Dry Day definition</legend>Rainfall amount above/below<input class="pageformcopy" name="wetThreshold" type="text" value="1." size="5" maxlength="5"/>mm/day</fieldset>
+           <fieldset class="navitem"><legend>Cobertura Estacional de los Dataos</legend>Fracción mínima de días con datos :<input class="pageformcopy" name="minFrac" type="text" value="0.5" size="4" maxlength="4"/></fieldset>
+            <fieldset class="navitem"><legend>Definición de un Día Húmedo/Seco</legend>Lluvia con mas/menos de<input class="pageformcopy" name="wetThreshold" type="text" value="1." size="5" maxlength="5"/>mm/día</fieldset>
 
-            <fieldset class="navitem"><legend>Wet/Dry Spell definition</legend><input class="pageformcopy" name="spellThreshold" type="text" value="5" size="2" maxlength="2"/>continuous wet/dry days</fieldset>
+            <fieldset class="navitem"><legend>Definición de un Periodo Húmedo/Seco</legend>continuación de <input class="pageformcopy" name="spellThreshold" type="text" value="5" size="2" maxlength="2"/> días húmedos/secos</fieldset>
 
 </div>
 
