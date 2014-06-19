@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE uridef[
   <!ENTITY owl "http://www.w3.org/2002/07/owl">
   <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns">
@@ -109,4 +109,65 @@
       <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#isDescribedBy"/>
     </owl:propertyChainAxiom>
 </rdf:Description>
+<owl:Class rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Language" />
+<iridl:Language rdf:id="en">
+<rdfs:label xml:lang="en">English</rdfs:label>
+<iridl:hasId>en</iridl:hasId>
+</iridl:Language>
+<iridl:Language rdf:id="es">
+<rdfs:label xml:lang="es">espa&#241;ol</rdfs:label>
+<iridl:hasId>es</iridl:hasId>
+</iridl:Language>
+<iridl:Language rdf:ID="in">
+<rdfs:label xml:lang="in">bahasa</rdfs:label>
+<iridl:hasId>in</iridl:hasId>
+</iridl:Language>
+<iridl:Language rdf:ID="id">
+<rdfs:label xml:lang="id">bahasa</rdfs:label>
+<iridl:hasId>id</iridl:hasId>
+</iridl:Language>
+<iridl:Language rdf:ID="fr">
+<rdfs:label xml:lang="fr">français</rdfs:label>
+<iridl:hasId>fr</iridl:hasId>
+</iridl:Language>
+<iridl:Language rdf:ID="ru">
+<rdfs:label xml:lang="ru">русский</rdfs:label>
+<iridl:hasId>ru</iridl:hasId>
+</iridl:Language>
+<iridl:Language rdf:ID="sw">
+<rdfs:label xml:lang="sw">swahili</rdfs:label>
+<iridl:hasId>su</iridl:hasId>
+</iridl:Language>
+<iridl:Language rdf:ID="mg">
+<rdfs:label xml:lang="mg">malagasy</rdfs:label>
+<iridl:hasId>mg</iridl:hasId>
+</iridl:Language>
+<iridl:LangWeight>
+<iridl:targetLang>en</iridl:targetLang>
+<iridl:sourceLang>en</iridl:sourceLang>
+<iridl:weight>0</iridl:weight>
+</iridl:LangWeight>
+<iridl:LangWeight>
+<iridl:targetLang>es</iridl:targetLang>
+<iridl:sourceLang>es</iridl:sourceLang>
+<iridl:weight>0</iridl:weight>
+</iridl:LangWeight>
+<iridl:LangWeight>
+<iridl:targetLang>fr</iridl:targetLang>
+<iridl:sourceLang>fr</iridl:sourceLang>
+<iridl:weight>0</iridl:weight>
+</iridl:LangWeight>
+<iridl:LangWeight>
+<iridl:targetLang>in</iridl:targetLang>
+<iridl:sourceLang>in</iridl:sourceLang>
+<iridl:weight>0</iridl:weight>
+</iridl:LangWeight>
+<iridl:LangWeight>
+<iridl:targetLang>es</iridl:targetLang>
+<iridl:targetLang>fr</iridl:targetLang>
+<iridl:targetLang>in</iridl:targetLang>
+<iridl:sourceLang>en</iridl:sourceLang>
+<iridl:sourceLang></iridl:sourceLang>
+<iridl:weight>1</iridl:weight>
+</iridl:LangWeight>
 </rdf:RDF>

@@ -24,7 +24,7 @@
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
-<input class="carryup titleLink itemImage" name="bbox" type="hidden" />
+<input class="carryup titleLink itemImage bodyAttribute" name="bbox" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem"> 
