@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -13,6 +13,7 @@
 <title>South Asia CPT Temperature Forecast</title>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../CCAFS/ccafs.css" />
 <link rel="canonical" href="MA_Temp.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -21,15 +22,15 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#ccafs"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Temperature"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_South"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_South_319_0"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.CPT/.Monsoon_Asia/.temperature/%28.%29%28average%29//tempvar/parameter/append/interp/Forecast/%28Temperature%29//field/parameter/%28Anomaly%29eq/%7BCrossValHind/T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/VALUE%5BT2%5Daverage/sub/temp_anomaly_colors_gcm/DATA/-6/6/RANGE%7Dif//field/get_parameter/dup/%28PoE%29eq/exch/%28PonE%29eq/or/%7B-1/mul/%28Temperature%29//var/parameter/%28Temperature%29eq/%7B%2820%29//threshold2/parameter/interp%7D%7B%2850%29//percentile/parameter/interp/100.0/div/dup/2./mul/30/1/sub/poestudnt2/exch/round/-2./mul/1./add/mul/InputObs//units/%28unitless%29/def/%5BT2%5D0.0/rootmeansqover/mul/InputObs//units/%28unitless%29/def/%5BT2%5Daverage/add%7Difelse/add/PredErrorVars//units/%28unitless%29/def/sqrt/div/30/1/sub/5/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//field/get_parameter/%28PonE%29eq/%7B-1/mul/1/add%7Dif//units/%28unitless%29/def//var/get_parameter/%28Temperature%29eq/%7Bcorrelationcolorscale/DATA/0/1/RANGE%7D%7B%28percentiles_colors_%29//field/get_parameter/%28PoE%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7Difelse%7Dif/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thin/black/countries_gaz/blue/verythin/rivers_gaz/lakes/-fig//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/interp/nip/plotvalue//L/first/plotvalue//plotborderbottom/40/psdef//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <style>
 .dlimage.ver2 {
@@ -70,23 +71,23 @@ display: none;
 <input class="dlimg dlauximg dlimg2 share dlimgloc dlimglocclick" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
 <input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="432" />
+<input class="unused" name="plotaxislength" type="hidden" data-default="432" />
 <input class="dlimg dlauximg dlimg2 dlimgts share starttime startleadtime" name="S" type="hidden" />
-<input class="dlimg dlauximg dlimg2 dlimgts share startleadtime" name="L" type="hidden" value="2.5" />
-<input class="pickarea" name="resolution" type="hidden" value=".5" />
-<input class="carry dlimg dlauximg dlimg2 share" name="tempvar" type="hidden" value="average" />
-<input class="dlimg dlauximg share threshold poe bodyClass" name="field" type="hidden" value="Temperature" />
-<input class="dlimg dlauximg share threshold poe bodyClass" name="var" type="hidden" value="Temperature" />
-<input class="dlimg dlauximg share threshold" name="percentile" type="hidden" value="50." />
+<input class="dlimg dlauximg dlimg2 dlimgts share startleadtime" name="L" type="hidden" data-default="2.5" />
+<input class="pickarea" name="resolution" type="hidden" data-default=".5" />
+<input class="carry dlimg dlauximg dlimg2 share" name="tempvar" type="hidden" data-default="average" />
+<input class="dlimg dlauximg share threshold poe bodyClass" name="field" type="hidden" data-default="Temperature" />
+<input class="dlimg dlauximg share threshold poe bodyClass" name="var" type="hidden" data-default="Temperature" />
+<input class="dlimg dlauximg share threshold" name="percentile" type="hidden" data-default="50." />
 <input class="dlimg dlauximg share threshold" name="threshold2" type="hidden" />
-<input class="dlimgts share" name="poelimit" type="hidden" value="20" />
-<input class="dlimgts share" name="poelimit2" type="hidden" value="-20" />
+<input class="dlimgts share" name="poelimit" type="hidden" data-default="20" />
+<input class="dlimgts share" name="poelimit2" type="hidden" data-default="-20" />
 </form>
 
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Maproom</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+                <legend>Climate and Agriculture</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/forecast.html">Forecast</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"><span property="term:label">Forecast</span></legend>
@@ -134,6 +135,8 @@ display: none;
 
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
+<div id="ccafsdiv">
+</div>
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="#tabs-3" >Contact Us</a></li>

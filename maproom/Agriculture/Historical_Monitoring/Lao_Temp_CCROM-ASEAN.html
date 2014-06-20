@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -13,6 +13,7 @@
 <title>Lao Historical Temperature Monitoring -- CCROM ASEAN</title>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../IFAD/ifad.css" />
 <link rel="canonical" href="Lao_Temp_CCROM-ASEAN.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -21,12 +22,15 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Temperature"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#station"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Laos"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridgaz.owl#Laos_85_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/100/108/RANGEEDGES/Y/13.5/23/RANGEEDGES/X/Y/fig-/colors/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/-fig//plotaxislength/150/psdef//XOVY/null/psdef//antialias/true/psdef//plotborder/0.0/psdef/+.gif" />
 <style>
@@ -190,34 +194,34 @@ display: none;
 <input class="dlimg dlauximg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc dlimglocclick station" name="region" type="hidden" />
 <input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea dlimg dlauximg share" name="resolution" type="hidden" value="irids:SOURCES:IRI:Analyses:Tailored:Lao:CCROM-ASEAN:temperature:ds" />
-<input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" value="1980" />
-<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" value="2010" />
-<input class="carry dlimg dlauximg share dlimgts" name="seasonStart" type="hidden" value="Jan" />
-<input class="carry dlimg dlauximg share dlimgts" name="seasonEnd" type="hidden" value="Jan" />
-<input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" value="1" />
-<input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" value="31" />
-<input class="dlimg dlauximg share" name="percentile" type="hidden" value="0.1" />
-<input class="dlimg dlauximg share dlimgts" name="minFrac" type="hidden" value="0.5" />
-<input class="dlimg dlauximg share dlimgts" name="obsOnly" type="hidden" value="off" />
-<input class="dlimg dlauximg share dlimgts" name="hotThreshold" type="hidden" value="0." />
-<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" value="MinTemp" />
-<input class="dlimg dlauximg share ylyStat perc pET bodyClass" name="yearlyStat" type="hidden" value="Mean" />
-<input class="dlimg share pET" name="probExcThresh1" type="hidden" value="0." />
-<input class="dlimg share pET" name="probExcThresh2" type="hidden" value="0." />
-<input class="dlimg share pET" name="probExcThresh3" type="hidden" value="100." />
-<input class="dlimg share pET" name="probExcThresh4" type="hidden" value="30." />
-<input class="dlimg share pET" name="probExcThresh5" type="hidden" value="30." />
+<input class="unused" name="plotaxislength" type="hidden" data-default="432" />
+<input class="pickarea dlimg dlauximg share" name="resolution" type="hidden" data-default="irids:SOURCES:IRI:Analyses:Tailored:Lao:CCROM-ASEAN:temperature:ds" />
+<input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" data-default="1980" />
+<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" data-default="2010" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonStart" type="hidden" data-default="Jan" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonEnd" type="hidden" data-default="Jan" />
+<input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" data-default="1" />
+<input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" data-default="31" />
+<input class="dlimg dlauximg share" name="percentile" type="hidden" data-default="0.1" />
+<input class="dlimg dlauximg share dlimgts" name="minFrac" type="hidden" data-default="0.5" />
+<input class="dlimg dlauximg share dlimgts" name="obsOnly" type="hidden" data-default="off" />
+<input class="dlimg dlauximg share dlimgts" name="hotThreshold" type="hidden" data-default="0." />
+<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" data-default="MinTemp" />
+<input class="dlimg dlauximg share ylyStat perc pET bodyClass" name="yearlyStat" type="hidden" data-default="Mean" />
+<input class="dlimg share pET" name="probExcThresh1" type="hidden" data-default="0." />
+<input class="dlimg share pET" name="probExcThresh2" type="hidden" data-default="0." />
+<input class="dlimg share pET" name="probExcThresh3" type="hidden" data-default="100." />
+<input class="dlimg share pET" name="probExcThresh4" type="hidden" data-default="30." />
+<input class="dlimg share pET" name="probExcThresh5" type="hidden" data-default="30." />
 </form>
 
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Maproom</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+                <legend>Climate and Agriculture</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Historical</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Monitoring</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Daily Seasonal Characteristics</span></legend>
             </fieldset>
 
           <fieldset class="navitem"><legend>Seasons (1980 to 2010)</legend><select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1980" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2010" size="4" maxlength="4"/></fieldset>
@@ -236,6 +240,8 @@ display: none;
 
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
+<div id="ifaddiv">
+</div>
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Options</a></li>
       <li><a href="#tabs-3" >Dataset Documentation</a></li>
@@ -298,7 +304,7 @@ The Maproom explores historical daily temperature by calculating simple seasonal
 Specify the range of years over which to perform the analysis and choose the start and end dates of the season , over which the diagnostics are to be performed.
 <br />
 <b>Seasonal Data Coverage</b>:
-A minimum fraction of non-missing days per season can be required in order for the seasonal diagnostic to be defined at that station &mdash; if this minimum threshold is not met, then the seasonal diagnostic is assigned a missing value at that station, for that season and year.
+A minimum fraction of non-missing days per season can be required in order for the seasonal diagnostic to be defined at that station — if this minimum threshold is not met, then the seasonal diagnostic is assigned a missing value at that station, for that season and year.
 <br />
 <b>Hot/Cold Day Definition</b>:
 This threshold is used to define in Celsius degrees (non inclusive) the temperature under which a day is considered cold if the minimum temperature is below it; or the temperature above which a days is considered hot if the maximum temperature is above it; or the reference temperature for to compute the heating degree days.

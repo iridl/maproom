@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -49,11 +49,11 @@ display: inline-block
 <body xml:lang="en">
 <form name="pageform" id="pageform" class="info carryup carry share dlimg dlauximg dlimgts dlimgloc">
 <input class="carryup carry" name="Set-Language" type="hidden" />
-<input class="carry dlimg dlimgts dlauximg info share bodyClass" name="var" type="hidden" value="qa" />
+<input class="carry dlimg dlimgts dlauximg info share bodyClass" name="var" type="hidden" data-default="qa" />
 <input class="dlimg share dlimgloc carry" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
-<input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value="irids:SOURCES:Features:Political:Africa:Provinces:ds" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" data-default="432" />
+<input class="pickarea" name="resolution" type="hidden" data-default="irids:SOURCES:Features:Political:Africa:Provinces:ds" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -168,7 +168,7 @@ The goal of reanalysis is to produce new atmospheric analyses using historical d
 <dl class="datasetdocumentation">
 <dt>Data</dt>
 
- <dd> NCEP/NCAR Reanalysis Project; specific humidity,temperature, and wind speed on a 2.5&#176; x 2.5&#176; lat/lon grid.</dd>
+ <dd> NCEP/NCAR Reanalysis Project; specific humidity,temperature, and wind speed on a 2.5° x 2.5° lat/lon grid.</dd>
 
 <dt>Data Source</dt><dd>
 (<a href="http://www.cpc.ncep.noaa.gov/products/wesley/reanalysis.html">NCEP/NCAR CDAS-1</a>)*</dd>

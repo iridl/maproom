@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -56,11 +56,11 @@ display: inline-block
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="dlimgts share" name="L" type="hidden" value="1" />
-<input class="dlimgts share" name="fires" type="hidden" value="medianover" />
-<input class="dlimgts share" name="nino4" type="hidden" value="medianover" />
-<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" value="bb:90:-12:155:10:bb" />
-<input class="share carry dlimgts dlimgloc" name="region" type="hidden" value="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@10:ds" />
+<input class="dlimgts share" name="L" type="hidden" data-default="1" />
+<input class="dlimgts share" name="fires" type="hidden" data-default="medianover" />
+<input class="dlimgts share" name="nino4" type="hidden" data-default="medianover" />
+<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" data-default="bb:90:-12:155:10:bb" />
+<input class="share carry dlimgts dlimgloc" name="region" type="hidden" data-default="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@10:ds" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">
@@ -131,8 +131,11 @@ margin: 0px;
       <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 <fieldset class="regionwithinbbox dlimage"  about="">
+
 <img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:90%2C-12%2C155%2C10%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28irids:SOURCES:Features:Political:Indonesia:Provinces:gid%4010:ds%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/200/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+
 <div class="valid" style="display: inline-block; text-align: top;">
+
 <a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28irids:SOURCES:Features:Political:Indonesia:Provinces:gid%4010:ds%29//region/parameter/geoobject/info.json"></a>
 <div class="template">
 Observations for <b><span class="iridl:long_name"></span></b>
@@ -141,6 +144,9 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <br />
 <div class="dlimgtsbox">
 <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T/1//L/parameter/-1/mul/shiftdata/SOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kalimantan/.numberOfFires%5Bgid%5Daverage/0/mul/add/dup/dup%5BT%5D%28medianover%29//nino4/parameter/interp/dup/getrealization/0/get/100/mul/round/100/div/s==/3/-1/roll/3/-1/roll/flaglt/2/mul/SOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kalimantan/.numberOfFires/gid/%28irids:SOURCES:Features:Political:Indonesia:Provinces:gid%4010:ds%29//region/parameter/geoobject/.gid/SAMPLE/dup/dup%5BT%5D%28medianover%29//fires/parameter/interp/dup/getrealization/0/get/round/cvi/s==/3/-1/roll/3/-1/roll/flaglt/4/-1/roll/add/%28Fires%20%3E%20%292/index/%28%20%26%20NINO4%20%3E%20%296/index/4/array/astore/concat/%28Fires%20%3C%20%293/index/%28%20%26%20NINO4%20%3E%20%297/index/4/array/astore/concat/%28Fires%20%3E%20%294/index/%28%20%26%20NINO4%20%3C%20%298/index/4/array/astore/concat/%28Fires%20%3C%20%296/-1/roll/%28%20%26%20NINO4%20%3C%20%299/-1/roll/4/array/astore/concat/4/array/astore/%28CLIST%29exch/def/startcolormap/%28maxncolor%298/def/DATA/0/3/RANGE/white/red/red/LimeGreen/DeepSkyBlue/gold/gold/endcolormap/%28units%29%28ids%29def/%28long_name%29%28%29def/3/-1/roll/3/-1/roll/2/RECHUNK/CopyStream/2/index/2/RECHUNK/CopyStream/fig:/scattercolor/:fig/%28XOVY%291/psdef/%28fnt%29%28Palatino-Roman%29psdef/%28fntsze%2920/psdef//XOVY/1/psdef//plotaxislength/432/psdef//plotborder/72/psdef//plotaxislength/432/psdef//plotborder/72/psdef//XOVY/1/psdef/+.gif" />
+
+<a rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kalimantan/T/gid/name1/numberOfFires/table:/4/:table/"></a>
+
 </div>
 <div class="dlimgtsbox">
 <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T/1//L/parameter/-1/mul/shiftdata/SOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kalimantan/.numberOfFires%5Bgid%5Daverage/0/mul/add/dup/dup%5BT%5D%28medianover%29//nino4/parameter/interp/dup/getrealization/0/get/100/mul/round/100/div/s==/3/-1/roll/3/-1/roll/flaglt/2/mul/SOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kalimantan/.numberOfFires/gid/%28irids:SOURCES:Features:Political:Indonesia:Provinces:gid%4010:ds%29//region/parameter/geoobject/.gid/SAMPLE/dup/dup%5BT%5D%28medianover%29//fires/parameter/interp/dup/getrealization/0/get/round/cvi/s==/3/-1/roll/3/-1/roll/flaglt/4/-1/roll/add/%28Fires%20%3E%20%292/index/%28%20%26%20NINO4%20%3E%20%296/index/4/array/astore/concat/%28Fires%20%3C%20%293/index/%28%20%26%20NINO4%20%3E%20%297/index/4/array/astore/concat/%28Fires%20%3E%20%294/index/%28%20%26%20NINO4%20%3C%20%298/index/4/array/astore/concat/%28Fires%20%3C%20%296/-1/roll/%28%20%26%20NINO4%20%3C%20%299/-1/roll/4/array/astore/concat/4/array/astore/%28CLIST%29exch/def/startcolormap/%28maxncolor%298/def/DATA/0/3/RANGE/white/red/red/LimeGreen/DeepSkyBlue/gold/gold/endcolormap/%28units%29%28ids%29def/%28long_name%29%28%29def/3/-1/roll/3/-1/roll/2/RECHUNK/CopyStream/2/index/2/RECHUNK/CopyStream/fig:/scattercolor/:fig/.auxfig/%28XOVY%291/psdef/%28fnt%29%28Palatino-Roman%29psdef/%28fntsze%2920/psdef//XOVY/1/psdef//plotaxislength/432/psdef//plotborder/72/psdef//plotaxislength/432/psdef//plotborder/72/psdef//XOVY/1/psdef/+.gif" />
@@ -164,6 +170,9 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <fieldset class="dlimage" about="">
 <a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/correlationcolorscale/DATA/-2/2/RANGE/dup+T+fig-+colorbars2+-fig+T/466./last/plotrange//plotaxislength+432+psdef//XOVY+null+psdef//plotborder+72+psdef/"></a>
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/correlationcolorscale/DATA/-2/2/RANGE/dup+T+fig-+colorbars2+-fig+T/466./last/plotrange//plotaxislength+432+psdef//XOVY+null+psdef//plotborder+72+psdef+.gif" border="0" alt="image" />
+
+<a rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T/exch/table:/2/:table/"></a>
+
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">Explorasi Tool Prakiraan untuk Aktivitas Kebakaran di Wilayah Kalimantan, Indonesia</h2>

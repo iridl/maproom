@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -18,6 +18,7 @@
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
 <link rel="term:icon"
 href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dekadsum/X/90./155./RANGEEDGES/Y/-12.5/9.5/RANGEEDGES/X/Y/fig-+colors+grey+verythin+indonesia_prov+black+thin+countries_gaz+-fig+//T/1795./plotvalue+//antialias+true+psdef/+//dekadsum/0/300/plotrange//T/1795./plotvalue//plotaxislength+220+psdef//plotborder+0+psdef//XOVY+null+psdef+.jpg" />
 <script type="text/javascript" src="../../uicore/uicore.js"></script>
@@ -42,8 +43,7 @@ href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.dek
 <h2 property="term:title">Ruang Sumber Informasi untuk Iklim and Kebakaran</h2>
 <p align="left" property="term:description">
 IRI telah bekerja sama dengan CARE Indonesia dan Centre for Climate Risk Management in Souteast Asia and Pacific-Institut Pertanian Bogor (CCROM SEAP-IPB) untuk mendukung pengembangan sistem peringatan dini kebakaran hutan pada lahan gambut di Indonesia.</p>
-<p>Kegiatan ini merupakan bagian dari Proyek Lahan Gambut Kalimantan Tengah, yaitu sebuah konsorsium yang didanai oleh DGIS pemerintah Belanda dan dikelola oleh Wetlands Intenational untuk mendukung peningkatan pelestarian dan restorasi lahan gambut. Informasi lebih lanjut mengenai kegiatan ini bisa diperoleh di <a href="http://portal.iri.columbia.edu/portal/server.pt??open=512&#38;objID=466&#38;PageID=0&#38;cached=true&#38;mode=2&#38;userID=2">Halaman Proyek</a> atau dapat menghubungi IRI
-(<a href="mailto:help@iri.columbia.edu?subject=Climate and Fire Resource Room">help@iri.columbia.edu</a>).
+<p>Kegiatan ini merupakan bagian dari Proyek Lahan Gambut Kalimantan Tengah, yaitu sebuah konsorsium yang didanai oleh DGIS pemerintah Belanda dan dikelola oleh Wetlands Intenational untuk mendukung peningkatan pelestarian dan restorasi lahan gambut. 
 </p>
 <p>
 IRI, CARE dan CCROM-SEAP-IPB telah mengidentifikasi keterkaitan antara anomali iklim, indikator biofisik, dan jumlah titik panas di wilayah Kalimantan Tengah dan provinsi lain di sekitarnya, dimana merupakan wilayah dengan lahan gambut terbanyak di Indonesia. Proyek penelitian ini belum memperhitungkan korelasi antara data curah hujan dari satelit dan aktivitas titik panas. Dalam beberapa kasus, curah hujan musim kemarau di bulan Juni hingga Oktober sangat menentukan aktivitas titik panas dan kebakaran. Untuk informasi lebih lanjut mengenai hasil kegiatan ini, dapat menghubungi Pietro Ceccato (<a href="mailto:pceccato@iri.columbia.edu?subject=Climate and Fire Resource Room">pceccato@iri.columbia.edu</a>).

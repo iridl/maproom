@@ -1,0 +1,14 @@
+construct *
+ from
+{mappage} iriterms:description {description};
+iriterms:title {title}
+WHERE lang(title)="en"
+UNION
+CONSTRUCT {mappage} iriterms:is {lbl}
+FROM {mappage} iriterms:isDescribedBy {tabterm} iriterms:label {lbl}
+WHERE lang(lbl)="en"
+USING NAMESPACE
+maproomregistry = <http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#>,
+vocab = <http://www.w3.org/1999/xhtml/vocab#>,
+iriterms = <http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#>,
+maproom = <http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#>
