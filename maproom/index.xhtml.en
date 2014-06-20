@@ -27,7 +27,11 @@
 <script type="text/javascript" src="../uicore/uicore.js"></script>
 <style>
 body[bbox="bb:-20:-40:55:40:bb"] .item[sem~="iridl:Asia_Indonesia"]{display: none;}
-body[bbox="bb:100:-55:180:0:bb"] .item[sem~="iridl:Asia_Indonesia"]{display: none;}
+body[bbox="bb:-20:35:40:75:bb"] .item[sem~="iridl:Asia_Indonesia"]{display: none;}
+body[bbox="bb:-170:15:-40:75:bb"] .item[sem~="iridl:Asia_Indonesia"]{display: none;}
+body[bbox="bb:-100:0:-70:35:bb"] .item[sem~="iridl:Asia_Indonesia"]{display: none;}
+body[bbox="bb:-90:-60:-30:15:bb"] .item[sem~="iridl:Asia_Indonesia"]{display: none;}
+body[bbox="bb:-125:0:-50:28:bb"] .item[sem~="iridl:Asia_Indonesia"]{display: none;}
 </style>
 </head>
 <body>
