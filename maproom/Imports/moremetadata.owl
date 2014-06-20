@@ -102,6 +102,7 @@
     </owl:propertyChainAxiom>
   </rdf:Description>
     <iridl:HoldsMapRooms rdf:about="/maproom/index.html"><xhtml:alternate rdf:resource="/maproom/" /></iridl:HoldsMapRooms>
+    <rdf:type rdf:reference="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#SearchItem" />
     <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#isDescribedBy">
     <owl:propertyChainAxiom rdf:parseType="Collection">
       <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#isSectionOf"/>
