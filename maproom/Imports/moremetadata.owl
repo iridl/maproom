@@ -75,8 +75,6 @@
   <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Time">
     <rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Maproom_Search"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#map_page">
-    <rdfs:subClassOf>
       <owl:Class rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#map_room">
 	<rdfs:label xml:lang="en">Map Room</rdfs:label>
 	<rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#SearchItem" />
@@ -91,8 +89,6 @@
 	  </owl:Class>
 	</rdfs:subClassOf>
       </owl:Class>
-    </rdfs:subClassOf>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#canonical"><owl:inverseOf rdf:resource="http://www.w3.org/1999/xhtml/vocab#isCanonicalFor" /></rdf:Description>
       <rdf:Description rdf:about="http://www.w3.org/1999/xhtml/vocab#section"><owl:inverseOf rdf:resource="http://www.w3.org/1999/xhtml/vocab#isSectionOf" /></rdf:Description>
     <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridc.owl#hasPart">
