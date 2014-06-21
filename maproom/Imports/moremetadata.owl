@@ -161,14 +161,25 @@
 <iridl:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</iridl:weight>
 </iridl:LangWeight>
 <iridl:LangWeight>
+<iridl:targetLang>id</iridl:targetLang>
+<iridl:sourceLang>id</iridl:sourceLang>
 <iridl:targetLang>in</iridl:targetLang>
 <iridl:sourceLang>in</iridl:sourceLang>
+<iridl:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</iridl:weight>
+</iridl:LangWeight>
+<iridl:LangWeight>
+<iridl:targetLang>ru</iridl:targetLang>
+<iridl:sourceLang>ru</iridl:sourceLang>
 <iridl:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</iridl:weight>
 </iridl:LangWeight>
 <iridl:LangWeight>
 <iridl:targetLang>es</iridl:targetLang>
 <iridl:targetLang>fr</iridl:targetLang>
 <iridl:targetLang>in</iridl:targetLang>
+<iridl:targetLang>id</iridl:targetLang>
+<iridl:targetLang>ru</iridl:targetLang>
+<iridl:targetLang>sw</iridl:targetLang>
+<iridl:targetLang>mg</iridl:targetLang>
 <iridl:sourceLang>en</iridl:sourceLang>
 <iridl:sourceLang></iridl:sourceLang>
 <iridl:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</iridl:weight>
