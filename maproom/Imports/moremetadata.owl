@@ -104,7 +104,7 @@
   </rdf:Description>
     <iridl:HoldsMapRooms rdf:about="/maproom/index.html">
       <xhtml:alternate rdf:resource="/maproom/" />
-      <rdf:type rdf:reference="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#SearchItem" />
+      <rdf:type rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#SearchItem" />
 </iridl:HoldsMapRooms>
     <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#isDescribedBy">
     <owl:propertyChainAxiom rdf:parseType="Collection">
