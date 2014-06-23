@@ -190,7 +190,7 @@ display: none;
 </style>
 </head>
 
-<body xml:lang="en">
+<body xml:lang="es">
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="dlimg dlauximg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
