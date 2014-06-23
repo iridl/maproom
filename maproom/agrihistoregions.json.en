@@ -9,8 +9,8 @@
 },
 "irigaz:hasPart": [
 { "irigaz:id": "bb:40:-10:170:75:bb",
-  "term:label": "Asia",
-  "irigaz:hasPart": [
+  "term:label": "Asia"
+},
 { "irigaz:id": "bb:66:6:98:38:bb",
   "term:label": "South Asia"
 },
@@ -28,8 +28,6 @@
 },
 { "irigaz:id": "bb:118:5:127:21:bb",
   "term:label": "Philippines"
-}
-]
 },
 { "irigaz:id": "bb:-74:-35.05:-74:-35.05:bb",
   "term:label": "Brazil"
