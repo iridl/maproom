@@ -25,6 +25,7 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%2
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+<input class="titleLink itemImage bodyAttribute" name="bbox" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem">
@@ -34,6 +35,17 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%2
            <fieldset class="navitem">
                 <legend>Climate and Agriculture</legend>
                      <span class="navtext">Historical</span>
+            </fieldset>
+
+            <fieldset class="navitem"> 
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/agrihistoregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">Global</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
             </fieldset>
 
 </div>
