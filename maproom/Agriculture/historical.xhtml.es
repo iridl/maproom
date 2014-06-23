@@ -9,9 +9,9 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>Historical Climate Information</title>
+<title>Información Climática Histórica</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="historical.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link rel="canonical" href="historical.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -30,19 +30,20 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%2
 <div class="controlBar">
            <fieldset class="navitem">
                 <legend>Maproom</legend>
-                    <a rev="section" class="navlink carryup" href="index.html">Climate and Agriculture</a>
+                    <a rev="section" class="navlink carryup" href="index.html">Clima y Agricultura</a>
             </fieldset>
            <fieldset class="navitem">
-                <legend>Climate and Agriculture</legend>
-                     <span class="navtext">Historical</span>
+                <legend>Clima y Agricultura</legend>
+                     <span class="navtext">Histórico</span>
             </fieldset>
 
 </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="term:title">Historical Climate Information</h2>
+<h2 property="term:title">Información Climática Histórica</h2>
 <p align="left" property="term:description">
-A set of tailored analyses to describe historical daily precipitation and temperature caracteristics variability and their relationship with ENSO.</p>
+Una serie de analises especializadas para describir las características de la variabilidad de precipitación y temperatura diaria histórica y de su relación con ENSO.
+</p>
 </div>
 <div class="rightcol tabbedentries" about="/maproom/Agriculture/historical.html" >
 <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_ENSO_Prob_term" />
@@ -51,7 +52,7 @@ A set of tailored analyses to describe historical daily precipitation and temper
 </div>
 </div>
 <div class="optionsBar">
-            <fieldset class="navitem" id="share"><legend>Share</legend>
+            <fieldset class="navitem" id="share"><legend>Compartir</legend>
 
 </fieldset>
 </div>
