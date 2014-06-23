@@ -10,10 +10,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>SMNH/IRI Honduras Historical Temperature Monitoring</title>
+<title>Monitoreo de la Precipitación Histórica en Honduras SMNH/IRI</title>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
-<link class="altLanguage" rel="alternate" hreflang="es" href="Honduras_Temp.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="Honduras_Temp.html?Set-Language=en" />
 <link rel="canonical" href="Honduras_Temp.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -214,33 +214,35 @@ display: none;
 
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Climate and Agriculture</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Historical</a>
+                <legend>Climá y Agricultura</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Histórica</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Daily Seasonal Characteristics</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Caracteristicas Diarias Estacionales Históricas</span></legend>
             </fieldset>
 
-          <fieldset class="navitem"><legend>Seasons (1944 to 2013)</legend><select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1944" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2013" size="4" maxlength="4"/></fieldset>
-            <fieldset class="navitem"><legend>Seasonal daily statistics</legend><select class="pageformcopy" name="seasonalStat"><option value="MeanTemp">Mean Temperature</option><option value="MinTemp">Minimum Temperature</option><option value="MaxTemp">Maximum Temperature</option><option value="HDD">Heating Degree Days</option><option value="CDD">Cooling Degree Days</option><option value="NumCD">Number of Cold Days</option><option value="NumHD">Number of Hot Days</option></select></fieldset>
+          <fieldset class="navitem"><legend>Estaciones (1944 hasta 2013)</legend><select class="pageformcopy" name="seasonStart"><option value="Jan">Ene</option><option>Feb</option><option>Mar</option><option value="Apr">Abr</option><option>May</option><option>Jun</option><option>Jul</option><option value="Aug">Ago</option><option>Sep</option><option>Oct</option><option>Nov</option><option value="Dec">Dic</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1944" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option value="Jan">Ene</option><option>Feb</option><option>Mar</option><option value="Apr">Abr</option><option>May</option><option>Jun</option><option>Jul</option><option value="Aug">Ago</option><option>Sep</option><option>Oct</option><option>Nov</option><option value="Dec">Dic</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2013" size="4" maxlength="4"/></fieldset>
+          
+            <fieldset class="navitem"><legend>Estadísticas diarias estacionales</legend><select class="pageformcopy" name="seasonalStat"><option value="MeanTemp">Temperatura Media</option><option value="MinTemp">Temperature Mínima</option><option value="MaxTemp">Temperatura Máxima</option><option value="HDD">Días-Grados de Calentamiento</option><option value="CDD">Días-Grados de Refrigeración</option><option value="NumCD">Suma de Días Frios</option><option value="NumHD">Suma de Días Calientes</option></select></fieldset>
 
-            <fieldset class="navitem" id="yearlyStat"><legend>Yearly seasonal statistics</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Mean</option><option value="StdDev">Standard deviation</option><option value="PoE">Probability of exceeding</option><option value="CoV">Coefficient of variation</option><option value="RbyP">Percentile</option></select>
-        <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="0" size="3" maxlength="3"/>˚C</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="0" size="3" maxlength="3"/>˚C</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="100" size="4" maxlength="4"/>˚C.days</span><span id="pET4"><input class="pageformcopy" name="probExcThresh4" type="text" value="30" size="2" maxlength="2"/>days</span><span id="pET5"><input class="pageformcopy" name="probExcThresh5" type="text" value="30" size="2" maxlength="2"/>days</span>
+            <fieldset class="navitem" id="yearlyStat"><legend>Estadisticas estacionales anuales</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Medio</option><option value="StdDev">Deviación Típica</option><option value="PoE">Probabilidad de excedar</option><option value="CoV">Coeficiente de variación</option><option value="RbyP">Percentil</option></select>
+            
+        <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="0" size="3" maxlength="3"/>˚C</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="0" size="3" maxlength="3"/>˚C</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="100" size="4" maxlength="4"/>días.˚C</span><span id="pET4"><input class="pageformcopy" name="probExcThresh4" type="text" value="30" size="2" maxlength="2"/>días</span><span id="pET5"><input class="pageformcopy" name="probExcThresh5" type="text" value="30" size="2" maxlength="2"/>días</span>
 </span>
 </fieldset>
 
-            <fieldset class="navitem"><legend>Seasonal Data Coverage</legend>Minimum fraction of non-missing daily values:<input class="pageformcopy" name="minFrac" type="text" value="0.5" size="4" maxlength="4"/></fieldset>
+          <fieldset class="navitem"><legend>Cobertura Estacional de los Datos</legend>Fracción mínima de días con datos :<input class="pageformcopy" name="minFrac" type="text" value="0.5" size="4" maxlength="4"/></fieldset>
 
-           <fieldset class="navitem"><legend>Hot/Cold Day definition</legend>Temperature above/below<input class="pageformcopy" name="hotThreshold" type="text" value="0." size="5" maxlength="5"/>˚C</fieldset>
+           <fieldset class="navitem"><legend>Definición de un Día Caliente/Frio</legend>Temperatura mas/menos que<input class="pageformcopy" name="hotThreshold" type="text" value="0." size="5" maxlength="5"/>˚C</fieldset>
 
 </div>
 
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
-      <li><a href="#tabs-1" >Description</a></li>
-      <li><a href="#tabs-2" >Options</a></li>
-      <li><a href="#tabs-3" >Dataset Documentation</a></li>
-      <li><a href="#tabs-4" >Contact Us</a></li>
+      <li><a href="#tabs-1" >Descripción</a></li>
+      <li><a href="#tabs-2" >Opciones</a></li>
+      <li><a href="#tabs-3" >Documentación de los Datos</a></li>
+      <li><a href="#tabs-4" >Contáctenos</a></li>
     </ul>
 
 <fieldset class="regionwithinbbox dlimage" about="">
@@ -277,7 +279,7 @@ Observations for <span class="bold iridl:long_name"></span>
 -->
 <br />
 <div class="dlimgtsbox">
-<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.historical/T/%281944%29//YearStart/parameter/%282013%29//YearEnd/parameter/RANGEEDGES/%28MeanTemp%29//seasonalStat/parameter/%28PerDA%29eq/%7Ba:/.TMinA/dataflag/:a:/.TMaxA/dataflag/:a/mul%7Dif/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%280%29//hotThreshold/parameter/interp/%280.5%29//minFrac/parameter/interp/%28MeanTemp%29//seasonalStat/parameter/%28MinTemp%29eq/%7Bnip/3/-1/roll/.TMinA/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MaxTemp%29eq/%7Bnip/3/-1/roll/.TMaxA/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MeanTemp%29eq/%7Bnip/3/-1/roll/a:/.TMaxA/:a:/.TMinA/:a/add/2.0/div/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28HDD%29eq/%7B4/-1/roll/a:/.TMaxA/:a:/.TMinA/:a/add/2.0/div/3/-1/roll/sub/0/maskge/abs/3/-2/roll/flexseastotZeroFill%7Dif//seasonalStat/get_parameter/%28CDD%29eq/%7B4/-1/roll/a:/.TMaxA/:a:/.TMinA/:a/add/2.0/div/3/-1/roll/sub/0/maskle/abs/3/-2/roll/flexseastotZeroFill%7Dif//seasonalStat/get_parameter/%28NumCD%29eq/%7B4/-1/roll/.TMinA/4/-3/roll/flexseasonalfreqLT%7Dif//seasonalStat/get_parameter/%28NumHD%29eq/%7B4/-1/roll/.TMaxA/4/-3/roll/flexseasonalfreqGT%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7Bpop/pop/T/exch/0.0/seasonalAverage%7Dif/estacion/%28irids:SOURCES:SMNH:SdC:estacion:historical:estacion%40Amapala:ds%29//region/parameter/geoobject/.estacion/SAMPLE//seasonalStat/get_parameter/%28MeanTemp%29eq/%7B//long_name/%28Absolute%20Mean%20Temperature%29def%7Dif//seasonalStat/get_parameter/%28HDD%29eq/%7B//long_name/%28Heating%20Degree%20Days%29def%7Dif//seasonalStat/get_parameter/%28CDD%29eq/%7B//long_name/%28Cooling%20Degree%20Days%29def%7Dif//seasonalStat/get_parameter/dup/%28NumCD%29eq/exch/%28NumHD%29eq/or/%7B//long_name/%28count%29def%7Dif/T/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.historical/T/%281944%29//YearStart/parameter/%282013%29//YearEnd/parameter/RANGEEDGES/%28MeanTemp%29//seasonalStat/parameter/%28PerDA%29eq/%7Ba:/.TMinA/dataflag/:a:/.TMaxA/dataflag/:a/mul%7Dif/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%280%29//hotThreshold/parameter/interp/%280.5%29//minFrac/parameter/interp/%28MeanTemp%29//seasonalStat/parameter/%28MinTemp%29eq/%7Bnip/3/-1/roll/.TMinA/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MaxTemp%29eq/%7Bnip/3/-1/roll/.TMaxA/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MeanTemp%29eq/%7Bnip/3/-1/roll/a:/.TMaxA/:a:/.TMinA/:a/add/2.0/div/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28HDD%29eq/%7B4/-1/roll/a:/.TMaxA/:a:/.TMinA/:a/add/2.0/div/3/-1/roll/sub/0/maskge/abs/3/-2/roll/flexseastotZeroFill%7Dif//seasonalStat/get_parameter/%28CDD%29eq/%7B4/-1/roll/a:/.TMaxA/:a:/.TMinA/:a/add/2.0/div/3/-1/roll/sub/0/maskle/abs/3/-2/roll/flexseastotZeroFill%7Dif//seasonalStat/get_parameter/%28NumCD%29eq/%7B4/-1/roll/.TMinA/4/-3/roll/flexseasonalfreqLT%7Dif//seasonalStat/get_parameter/%28NumHD%29eq/%7B4/-1/roll/.TMaxA/4/-3/roll/flexseasonalfreqGT%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7Bpop/pop/T/exch/0.0/seasonalAverage%7Dif/estacion/%28irids:SOURCES:SMNH:SdC:estacion:historical:estacion%40Amapala:ds%29//region/parameter/geoobject/.estacion/SAMPLE//seasonalStat/get_parameter/%28MeanTemp%29eq/%7B//long_name/%28Temperatura%20Media%20Absoluta%29def%7Dif//seasonalStat/get_parameter/%28HDD%29eq/%7B//long_name/%28Dias-Grados%20de%20Calentamiento%29def%7Dif//seasonalStat/get_parameter/%28CDD%29eq/%7B//long_name/%28Dias-Grados%20de%20Refrigeracion%29def%7Dif//seasonalStat/get_parameter/dup/%28NumCD%29eq/exch/%28NumHD%29eq/or/%7B//long_name/%28suma%29def%7Dif/T//long_name/%28Tiempo%29def/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28MinTemp%29eq/%7B%28Temperatura%20Minima%29%7Dif//seasonalStat/get_parameter/%28MaxTemp%29eq/%7B%28Temperatura%20Maxima%29%7Dif//seasonalStat/get_parameter/%28MeanTemp%29eq/%7B%28Temperatura%20Media%29%7Dif//seasonalStat/get_parameter/%28HDD%29eq/%7B%28Dias-Grados%20de%20Calentamiento%29%7Dif//seasonalStat/get_parameter/%28CDD%29eq/%7B%28Dias-Grados%20de%20Refrigeracion%29%7Dif//seasonalStat/get_parameter/%28NumHD%29eq/%7B%28Dias%20Frios%29%7Dif//seasonalStat/get_parameter/%28NumCD%29eq/%7B%28Dias%20Calientes%29%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7B%28Datos%20Disponibles%29%7Dif/%28%20en%20la%20estacion%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
 </div>
 </fieldset>
 
@@ -288,50 +290,57 @@ Observations for <span class="bold iridl:long_name"></span>
 </fieldset>
 
  <div id="tabs-1" class="ui-tabs-panel" about="">
- <h2 align="center" property="term:title">SMNH/IRI Honduras Historical Temperature Monitoring</h2>
+ <h2 align="center" property="term:title">Monitoreo de la Precipitación Histórica en Honduras SMNH/IRI</h2>
   <p align="left" property="term:description">
-The Maproom explores historical daily temperature by calculating simple seasonal statistics.</p>
-<p>Many options can be specified to produce yearly time series of a chosen seasonal diagnostic of the daily temperature data. The user can then choose to map the mean, standard deviation or probability of exceeding a chosen threshold, over years; clicking on the map will then produce a local yearly time series of the chosen diagnostic.
+La <i>Maproom</i> explora temperatura diaria histórica al calcular estadísticas estacionales sencillas.
+</p>
+<p>
+Se puede elegir muchas opciones para producir series temporales anuales de un análisis estacional particular de los datos de temperatura diarios. Se puede mapear el medio, la deviación típica, la probabilidad de excedar una limite elegida, el coeficiente de variación o el valor de algunos percentiles predefinidos, para el rango de años elegidos. Hacer un click en la mapa produce una serie temporal local del análisis elegido.
 </p>
 </div>
  <div id="tabs-2" class="ui-tabs-panel" about="">
- <h2 align="center">Options</h2>
+ <h2 align="center">Opciones</h2>
   <p align="left">
-<b>Years and Season</b>:
-Specify the range of years over which to perform the analysis and choose the start and end dates of the season , over which the diagnostics are to be performed.
+<b>Años y Estaciones</b>:
+Elige el rango de años para el cual se aplica el análisis anual y elige las fechas iniciales finales de la estación, para la cual el análisis estacional se aplica.
 <br />
-<b>Seasonal Data Coverage</b>:
-A minimum fraction of non-missing days per season can be required in order for the seasonal diagnostic to be defined at that station — if this minimum threshold is not met, then the seasonal diagnostic is assigned a missing value at that station, for that season and year.
+<b>Cobertura Estacional de los Datos</b>:
+Se puede requerir una porción mínima de días con datos en cada estación para que se calcule el análisis estacional — si esta limite mínima no está, el análisis estacional considera el dato faltante para esta estación, en este año, de esta estación meteorologica.
 <br />
-<b>Hot/Cold Day Definition</b>:
-This threshold is used to define in Celsius degrees (non inclusive) the temperature under which a day is considered cold if the minimum temperature is below it; or the temperature above which a days is considered hot if the maximum temperature is above it; or the reference temperature for to compute the heating degree days.
-<br /><br /><b>Seasonal daily statistcis</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
-<br /><b>Mean, Minimum and Maximum Temperature</b>: average mean, minimum or maximum daily temperature over the season.
-<br /><b>Heating and Cooling Degree Days</b>: Heating/Cooling degree days are summations of negative/positive differences between the mean daily temperature and user-defined reference base temperature during the season. The mean temperature is defined as the average of the minimum and the maximum.
-<br /><b>Number of Cold and Hot days</b>:
-the number of cold or hot days during the season according to the user-defined threshold and according respectively to the minumim temperature and the maximum temperature.
+<b>Definición de un Día Caliente/Frio</b>:
+Esta limite define en grados Celsius (no incluido) la temperatura bajo la cual un día está definido como frio si la temperatura mínima está abajo; o la temperatura arriba la cual un día está definido como caliente si la temperatura máxima está arriba; o la temperatura de referencia para el calculo de los días-grados de calentamiento y de refrigeración.
+<br /><br /><b>Estadísticas Estacionales diarias</b>:
+Elige la cantidad para el análisis estacional (i.e. las estadísticas aplicadas a los datos diarios) que se calcula para cada estación, entre las opciones siguientes.
+<br /><b>Temperatura Media, Mínima y Máxima</b>: 
+temperatura diaria media, mínima o máxima, mediada para la estación.
+<br /><b>Días-Grados de Calentamiento o Refrigeración</b>: 
+Días-grados de calentamiento/refrigeración están la suma de diferencias negativas/positivas entre la temperatura diaria media y une temperatura de referencia elegida durante la estación. La temperatura media está definida como el medio de las temperaturas mínimas y máximas.
+<br /><b>Suma de Días Calientes y Frios</b>:
+la suma de días calientes o frios durante la estación según una limite elegida y respectivamente la temperatura máxima y la temperatura mínima.
 <br />
-<b>Percentage of Data Available</b>: the percentage of days with non missing values within the season.
+<b>Porcentage de Datos disponibles</b>: 
+el porcentage de días con datos en la estación.
 <br />
 <br />
-<b>Yearly seasonal statistics</b>: a choice of yearly statistics over the chosen season of the selected range of years to produce the map among: the mean, the standard deviation, the probability of exceeding a user specified threshold, the coefficient of variation and the value of a user specified percentile.
+<b>Estadísticas estacionales anuales</b>: 
+una elección de estadísticas anuales para la estación y el rango de años elegidos que mapea : el medio, la deviación típica, la probabilidad de excedar una limite especificada, el coeficiente de variación o el valor de un percentil elegido.
 </p>
 </div>
  <div id="tabs-3" class="ui-tabs-panel" about="">
- <h2 align="center">Dataset Documentation</h2>
+ <h2 align="center">Documentación de los Datos</h2>
   <p align="left">
-<b>Data</b>: SMNH network of meteorological stations <a href="http://iridl.ldeo.columbia.edu/SOURCES/.SMNH/.SdC/.estacion/.historical/">here</a>.
+<b>Data</b>: estaciones meteorológicas de la red del SMNH, <a href="http://iridl.ldeo.columbia.edu/SOURCES/.SMNH/.SdC/.estacion/.historical/">aquí</a>.
 </p>
 </div>
-<div id="tabs-4"  class="ui-tabs-panel"><h2  align="center">Helpdesks</h2>
+<div id="tabs-4"  class="ui-tabs-panel"><h2  align="center">Ayuda</h2>
 <p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+Contacte <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a>  para cualquiera pregunta técnica o otros problemas al usar la <i>Maproom</i>.
  </p>
 </div>
 </div>
 
 <div class="optionsBar">
-            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+            <fieldset class="navitem" id="share"><legend>Compartir</legend></fieldset>
 </div>
 
 </body>
