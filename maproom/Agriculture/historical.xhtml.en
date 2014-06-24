@@ -24,28 +24,33 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%2
 <style>
 /* Asia bb */
 body[bbox="bb:40:-10:170:75:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
+body[bbox="bb:40:-10:170:75:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* South Asia bb */
 body[bbox="bb:65:6:98:38:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:65:6:98:38:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
 body[bbox="bb:65:6:98:38:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+body[bbox="bb:65:6:98:38:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* India bb */
 body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
 body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
 body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
 body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* Bangladesh bb */
 body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
 body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
 body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
 body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
+body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* Nepal bb */
 body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
 body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
 body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
 body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* Laos bb */
 body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
@@ -53,6 +58,7 @@ body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
 body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
 body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Asia_South_319_0"]{display: none;}
 body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* Philippines bb */
 body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
@@ -60,6 +66,7 @@ body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
 body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
 body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Asia_South_319_0"]{display: none;}
 body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* Brazil bb */
 body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
 body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
@@ -67,6 +74,16 @@ body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
 body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Asia_South_319_0"]{display: none;}
 body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
 body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
+/* Honduras bb */
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Asia_South_319_0"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
+
 </style>
 </head>
 <body  xml:lang="en">

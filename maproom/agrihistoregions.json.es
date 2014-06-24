@@ -5,14 +5,14 @@
 "term": "http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#",
 "irigaz:id": { "@type": "@id" },
 "irigaz:hasPart": { "@container": "@list", "@type": "irigaz:GazEntity"},
-"term:label": {"@language": "en"}
+"term:label": {"@language": "es"}
 },
 "irigaz:hasPart": [
 { "irigaz:id": "bb:40:-10:170:75:bb",
   "term:label": "Asia"
 },
 { "irigaz:id": "bb:65:6:98:38:bb",
-  "term:label": "South Asia"
+  "term:label": "Sur Asia"
 },
 { "irigaz:id": "bb:66:6:98:38:bb",
   "term:label": "India"
@@ -27,13 +27,13 @@
   "term:label": "Laos"
 },
 { "irigaz:id": "bb:118:5:127:21:bb",
-  "term:label": "Philippines"
+  "term:label": "Filipinas"
 },
 { "irigaz:id": "bb:-89.5:12.5:-83:17:bb",
   "term:label": "Honduras"
 },
 { "irigaz:id": "bb:-74:-35:-35:6:bb",
-  "term:label": "Brazil"
+  "term:label": "Brasil"
 }
 ]
 }
