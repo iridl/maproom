@@ -31,7 +31,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Honduras_65_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//plotaxislength/150/psdef//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//plotborder/0.0/psdef//X/-89.5/-83/plotrange//Y/12.5/17.plotrange/+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//plotaxislength/150/psdef//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//plotborder/0.0/psdef//X/-89.5/-83/plotrange//Y/12.5/17/plotrange/+.gif" />
 <style>
 .dlimgtsbox {
 width: 99%;
@@ -196,29 +196,29 @@ display: none;
 <input class="dlimg dlauximg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc dlimglocclick station" name="region" type="hidden" />
 <input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="432" />
+<input class="unused" name="plotaxislength" type="hidden" data-default="432" />
 <!--
 <input class="pickarea dlimg dlauximg share" name="resolution" type="hidden" value="irids:SOURCES:SMNH:SdC:estacion:historical:ds" />
 -->
-<input class="pickarea dlimg dlauximg share" name="resolution" type="hidden" value="irids:SOURCES:SMNH:SdC:estacion:Analyses:Tailored:precipitation:ds" />
-<input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" value="1944" />
-<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" value="2013" />
-<input class="carry dlimg dlauximg share dlimgts" name="seasonStart" type="hidden" value="Jan" />
-<input class="carry dlimg dlauximg share dlimgts" name="seasonEnd" type="hidden" value="Jan" />
-<input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" value="1" />
-<input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" value="31" />
-<input class="dlimg dlauximg share" name="percentile" type="hidden" value="0.1" />
-<input class="dlimg dlauximg share dlimgts" name="minFrac" type="hidden" value="0.5" />
-<input class="dlimg dlauximg share dlimgts" name="obsOnly" type="hidden" value="off" />
-<input class="dlimg dlauximg share dlimgts" name="wetThreshold" type="hidden" value="1." />
-<input class="dlimg dlauximg share dlimgts" name="spellThreshold" type="hidden" value="5." />
-<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" value="TotRain" />
-<input class="dlimg dlauximg share ylyStat perc pET bodyClass" name="yearlyStat" type="hidden" value="Mean" />
-<input class="dlimg share pET" name="probExcThresh1" type="hidden" value="150." />
-<input class="dlimg share pET" name="probExcThresh2" type="hidden" value="30." />
-<input class="dlimg share pET" name="probExcThresh3" type="hidden" value="10." />
-<input class="dlimg share pET" name="probExcThresh4" type="hidden" value="3." />
-<input class="dlimg share pET" name="probExcThresh5" type="hidden" value="3." />
+<input class="pickarea dlimg dlauximg share" name="resolution" type="hidden" data-default="irids:SOURCES:SMNH:SdC:estacion:Analyses:Tailored:precipitation:ds" />
+<input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" data-default="1944" />
+<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" data-default="2013" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonStart" type="hidden" data-default="Jan" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonEnd" type="hidden" data-default="Jan" />
+<input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" data-default="1" />
+<input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" data-default="31" />
+<input class="dlimg dlauximg share" name="percentile" type="hidden" data-default="0.1" />
+<input class="dlimg dlauximg share dlimgts" name="minFrac" type="hidden" data-default="0.5" />
+<input class="dlimg dlauximg share dlimgts" name="obsOnly" type="hidden" data-default="off" />
+<input class="dlimg dlauximg share dlimgts" name="wetThreshold" type="hidden" data-default="1." />
+<input class="dlimg dlauximg share dlimgts" name="spellThreshold" type="hidden" data-default="5." />
+<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" data-default="TotRain" />
+<input class="dlimg dlauximg share ylyStat perc pET bodyClass" name="yearlyStat" type="hidden" data-default="Mean" />
+<input class="dlimg share pET" name="probExcThresh1" type="hidden" data-default="150." />
+<input class="dlimg share pET" name="probExcThresh2" type="hidden" data-default="30." />
+<input class="dlimg share pET" name="probExcThresh3" type="hidden" data-default="10." />
+<input class="dlimg share pET" name="probExcThresh4" type="hidden" data-default="3." />
+<input class="dlimg share pET" name="probExcThresh5" type="hidden" data-default="3." />
 </form>
 
 <div class="controlBar">
@@ -294,9 +294,9 @@ Observations for <span class="bold iridl:long_name"></span>
 </fieldset>
 
 <fieldset class="dlimage">
-<a rel="iridl:hasFigure" class="perc" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//plotaxislength/500/psdef//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//X/-89.5/-83/plotrange//Y/12.5/17.plotrange/"></a>
-<img class="dlimg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//plotaxislength/500/psdef//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//X/-89.5/-83/plotrange//Y/12.5/17.plotrange/+.gif" border="0" />
-<img class="dlauximg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//plotaxislength/500/psdef//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//X/-89.5/-83/plotrange//Y/12.5/17.plotrange/.auxfig+.gif" />
+<a rel="iridl:hasFigure" class="perc" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//plotaxislength/500/psdef//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//X/-89.5/-83/plotrange//Y/12.5/17/plotrange/"></a>
+<img class="dlimg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//plotaxislength/500/psdef//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//X/-89.5/-83/plotrange//Y/12.5/17/plotrange/+.gif" border="0" />
+<img class="dlauximg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//plotaxislength/500/psdef//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//X/-89.5/-83/plotrange//Y/12.5/17/plotrange/.auxfig+.gif" />
 </fieldset>
 
  <div id="tabs-1" class="ui-tabs-panel" about="">
