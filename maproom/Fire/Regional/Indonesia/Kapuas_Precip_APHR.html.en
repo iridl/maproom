@@ -145,7 +145,8 @@ display: none;
     <ul class="ui-tabs-nav">
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
-      <li><a href="#tabs-3" >Contact Us</a></li>
+      <li><a href="#tabs-3" >Instructions</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
     </ul>
 
 <fieldset class="dlimage">
@@ -190,7 +191,39 @@ Use the drop-down menus at the top of the page to select the forecast target sea
 <b>Data</b>: Output from CPT forecast valid for four consecutive 3-month seasons based on training period 1982-2006 between three <a href="http://iridl.ldeo.columbia.edu/SOURCES/.Models/.NMME/">model hindcasts</a> (CFSv2, CanCM3, COLA-CCSM3) from <a href="http://www.cpc.ncep.noaa.gov/products/NMME/">National Multi-Model Ensemble</a>, and <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.RIHN/.aphrodite/.V1003R1/.APHRO_MA_025deg/.precip/">APHRODITE</a> gridded precipitation dataset, CPT v10 <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.CPT/.Indonesia/">here</a>.
 </p>
 </div>
-<div id="tabs-3"  class="ui-tabs-panel">
+
+<div id="tabs-3" class="ui-tabs-panel">
+<h2  align="center">How to use this interactive map</h2>
+<p><i>Return to the menu page:</i>
+Click the blue link called “Climate and Fire” at the top left corner of the page.</p>
+<p><i>Select the precipitation forecast date:</i>
+The forecasts are produced on a monthly basis, at the beginning of the first day of the month.  To view the precipitation forecast of interest, you must select the forecast issuance date from the map, and then the target season of the forecast from the "Target Season" pull-down menu.  Use the following steps: 
+<ol>
+<li>You can see the forecast start date by moving your mouse over the map until you see a text box containing the month appear above the top of the map.  By default this will be the most recent available forecast.</li> 
+<li>To step forward or back by one month, click the corresponding arrow buttons to the left or right of the text box, and the map will automatically refresh.</li>
+<li>To manually change the forecast issue date, type your date of interest into the text box, then press "enter".  This must follow the format: "0000 01 Mar 2014".</li> 
+<li>When the forecast issue date is selected, the available 3-month target seasons will automatically update in the "Target Season" pull-down menu.  Select the target season of interest from this pull-down menu.</li>
+</ol>
+</p>
+<p><i>Select the variable of interest to display:</i>
+Options available in the "Field" pull-down menu include "Rainfall", "Anomaly", "Probability of exceeding", etc.  If "Probability of exceeding" or "Probability of non-exceeding" is chosen, an additional text box will appear that allows a daily precipitation threshold to be specified in units of mm/day.
+</p>
+<p><i>Click on forecast map for local information:</i>
+Click on any grid box in the forecast map to display two graphs at the bottom of the page that display information for the selected grid point, including:
+<ul>
+<li>A small map that shows the location of the selected grid box</li>
+<li>A probability of exceedance graph for precipitation based upon observations (in black) and a curve that parameterizes observed precipitation (in blue) for the 3-month season shown, and the forecast precipitation (in red) for the selected forecast start time and season (all in units of average mm/day).  Use the "Upper limit of probability of exceedance graph" threshold text box at the top of the page to specify the upper limit of precipitation (in average mm/day) shown in this graph.</li>
+<li>A time series graph of observed precipitation for the selected season (in blue), and hindcast precipitation for the starting month and season selected (in red)</li>
+</ul>
+</p>
+<p>
+Click <a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.CPT/.Indonesia/">here</a> to access the Data Library datasets of observations, forecasts, and hindcasts used in this tool.
+</p>
+
+<div class="buttonInstructions"></div>
+</div>
+
+<div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Helpdesks</h2>
 <p>
 Contact <a href="mailto:help@iri.columbia.edu?subject=Seasonal Precipitation Forecast Tool for Kapuas District">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
