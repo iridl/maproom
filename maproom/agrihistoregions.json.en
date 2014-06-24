@@ -11,7 +11,7 @@
 { "irigaz:id": "bb:40:-10:170:75:bb",
   "term:label": "Asia"
 },
-{ "irigaz:id": "bb:66:6:98:38:bb",
+{ "irigaz:id": "bb:65:6:98:38:bb",
   "term:label": "South Asia"
 },
 { "irigaz:id": "bb:66:6:98:38:bb",
@@ -29,7 +29,7 @@
 { "irigaz:id": "bb:118:5:127:21:bb",
   "term:label": "Philippines"
 },
-{ "irigaz:id": "bb:-74:-35.05:-74:-35.05:bb",
+{ "irigaz:id": "bb:-74:-35:-35:6:bb",
   "term:label": "Brazil"
 }
 ]
