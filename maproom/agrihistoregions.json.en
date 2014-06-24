@@ -14,11 +14,11 @@
 { "irigaz:id": "bb:66:6:98:38:bb",
   "term:label": "South Asia"
 },
+{ "irigaz:id": "bb:66:6:98:38:bb",
+  "term:label": "India"
+},
 { "irigaz:id": "bb:88:20.5:93:27:bb",
   "term:label": "Bangladesh"
-},
-{ "irigaz:id": "bb:90:-10:165:14:bb",
-  "term:label": "Indonesia"
 },
 { "irigaz:id": "bb:79.5:26:88.5:31:bb",
   "term:label": "Nepal"
