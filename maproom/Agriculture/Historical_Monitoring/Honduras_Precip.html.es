@@ -223,7 +223,7 @@ display: none;
 
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Climá y Agricultura</legend>
+                <legend>Clima y Agricultura</legend>
                       <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Histórica</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
@@ -232,18 +232,18 @@ display: none;
 
           <fieldset class="navitem"><legend>Estaciones (1944 hasta 2013)</legend><select class="pageformcopy" name="seasonStart"><option value="Jan">Ene</option><option>Feb</option><option>Mar</option><option value="Apr">Abr</option><option>May</option><option>Jun</option><option>Jul</option><option value="Aug">Ago</option><option>Sep</option><option>Oct</option><option>Nov</option><option value="Dec">Dic</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1944" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option value="Jan">Ene</option><option>Feb</option><option>Mar</option><option value="Apr">Abr</option><option>May</option><option>Jun</option><option>Jul</option><option value="Aug">Ago</option><option>Sep</option><option>Oct</option><option>Nov</option><option value="Dec">Dic</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2013" size="4" maxlength="4"/></fieldset>
           
-            <fieldset class="navitem"><legend>Estadísticas diarias estacionales</legend><select class="pageformcopy" name="seasonalStat"><option value="TotRain">Lluvia Total</option><option value="NumWD">Suma de Días Humedos</option><option value="RainInt">Intensidad de la Lluvia</option><option value="NumDS">Suma de Periodos Secos</option><option value="NumWS">Suma de Periodos Humedos</option><option value="PerDA">Porcentage de Datos Disponibles</option></select></fieldset>
+            <fieldset class="navitem"><legend>Estadísticas diarias estacionales</legend><select class="pageformcopy" name="seasonalStat"><option value="TotRain">Lluvia Acumulada</option><option value="NumWD">Suma de Días Humedos</option><option value="RainInt">Intensidad de la Lluvia</option><option value="NumDS">Suma de Períodos Secos</option><option value="NumWS">Suma de Períodos Humedos</option><option value="PerDA">Porcentaje de Datos Disponibles</option></select></fieldset>
             
-            <fieldset class="navitem" id="yearlyStat"><legend>Estadisticas estacionales anuales</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Medio</option><option value="StdDev">Deviación Típica</option><option value="PoE">Probabilidad de excedar</option><option value="CoV">Coeficiente de variación</option><option value="RbyP">Percentil</option></select>
+            <fieldset class="navitem" id="yearlyStat"><legend>Estadísticas estacionales anuales</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Promedio</option><option value="StdDev">Desviación Típica</option><option value="PoE">Probabilidad de exceder</option><option value="CoV">Coeficiente de variación</option><option value="RbyP">Percentil</option></select>
             
-        <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="150" size="3" maxlength="3"/>mm</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="30" size="3" maxlength="3"/>días</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="10" size="2" maxlength="2"/>mm/día</span><span id="pET4"><input class="pageformcopy" name="probExcThresh4" type="text" value="3" size="2" maxlength="2"/>periodos</span><span id="pET5"><input class="pageformcopy" name="probExcThresh5" type="text" value="3" size="2" maxlength="2"/>periodos</span>
+        <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="150" size="3" maxlength="3"/>mm</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="30" size="3" maxlength="3"/>días</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="10" size="2" maxlength="2"/>mm/día</span><span id="pET4"><input class="pageformcopy" name="probExcThresh4" type="text" value="3" size="2" maxlength="2"/>períodos</span><span id="pET5"><input class="pageformcopy" name="probExcThresh5" type="text" value="3" size="2" maxlength="2"/>períodos</span>
 </span>
 </fieldset>
 
            <fieldset class="navitem"><legend>Cobertura Estacional de los Datos</legend>Fracción mínima de días con datos :<input class="pageformcopy" name="minFrac" type="text" value="0.5" size="4" maxlength="4"/></fieldset>
             <fieldset class="navitem"><legend>Definición de un Día Húmedo/Seco</legend>Lluvia con mas/menos de<input class="pageformcopy" name="wetThreshold" type="text" value="1." size="5" maxlength="5"/>mm/día</fieldset>
 
-            <fieldset class="navitem"><legend>Definición de un Periodo Húmedo/Seco</legend>continuación de <input class="pageformcopy" name="spellThreshold" type="text" value="5" size="2" maxlength="2"/> días húmedos/secos</fieldset>
+            <fieldset class="navitem"><legend>Definición de un Período Húmedo/Seco</legend><input class="pageformcopy" name="spellThreshold" type="text" value="5" size="2" maxlength="2"/> días húmedos/secos consecutivos</fieldset>
 
 </div>
 
@@ -289,7 +289,7 @@ Observations for <span class="bold iridl:long_name"></span>
 -->
 <br />
 <div class="dlimgtsbox">
-<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.historical/T/%281944%29//YearStart/parameter/%282013%29//YearEnd/parameter/RANGEEDGES/%28TotRain%29//seasonalStat/parameter/%28PerDA%29eq/%7B.Precip/dataflag%7Dif/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%285%29//spellThreshold/parameter/interp/%281%29//wetThreshold/parameter/interp/%280.5%29//minFrac/parameter/interp//seasonalStat/get_parameter/%28TotRain%29eq/%7Bnip/nip/3/-1/roll/.Precip/3/-2/roll/flexseastotAvgFill%7Dif//seasonalStat/get_parameter/%28NumWD%29eq/%7B3/-1/roll/pop/4/-1/roll/.Precip/4/-3/roll/flexseasonalfreqGT%7Dif//seasonalStat/get_parameter/%28RainInt%29eq/%7B3/-1/roll/pop/4/-1/roll/.Precip/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28NumDS%29eq/%7B5/-1/roll/.Precip/5/-4/roll/flexseasonalnonoverlapDSfreq%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B5/-1/roll/.Precip/5/-4/roll/flexseasonalnonoverlapWSfreq%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7Bpop/pop/pop/T/exch/0.0/seasonalAverage%7Dif/estacion/%28irids:SOURCES:SMNH:SdC:estacion:historical:estacion%40Amapala:ds%29//region/parameter/geoobject/.estacion/SAMPLE//seasonalStat/get_parameter/%28TotRain%29eq/%7B//long_name/%28Precipitacion%29def//units/%28mm%29def%7Dif//seasonalStat/get_parameter/%28NumWD%29eq/%7B//long_name/%28suma%29def%7Dif//seasonalStat/get_parameter/%28RainInt%29eq/%7B//long_name/%28Precipitacion%29def//units/%28mm/day%29def%7Dif//seasonalStat/get_parameter/%28NumDS%29eq/%7B//long_name/%28suma%29def//units/%28unitless%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B//long_name/%28suma%29def//units/%28unitless%29def%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7B%28percent%29unitconvert//long_name/%28Disponibilidad%29def%7Dif/T//long_name/%28Tiempo%29def/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28TotRain%29eq/%7B%28Lluvia%20Total%29%7Dif//seasonalStat/get_parameter/%28NumWD%29eq/%7B%28Suma%20de%20Dias%20Humedos%29%7Dif//seasonalStat/get_parameter/%28RainInt%29eq/%7B%28Intensidad%20de%20Lluvia%29%7Dif//seasonalStat/get_parameter/%28NumDS%29eq/%7B%28Suma%20de%20Periodos%20Secos%29%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B%28Suma%20de%20Periodos%20Humedos%29%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7B%28Datos%20Disponibles%29%7Dif/%28%20en%20estacion%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.historical/T/%281944%29//YearStart/parameter/%282013%29//YearEnd/parameter/RANGEEDGES/%28TotRain%29//seasonalStat/parameter/%28PerDA%29eq/%7B.Precip/dataflag%7Dif/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%285%29//spellThreshold/parameter/interp/%281%29//wetThreshold/parameter/interp/%280.5%29//minFrac/parameter/interp//seasonalStat/get_parameter/%28TotRain%29eq/%7Bnip/nip/3/-1/roll/.Precip/3/-2/roll/flexseastotAvgFill%7Dif//seasonalStat/get_parameter/%28NumWD%29eq/%7B3/-1/roll/pop/4/-1/roll/.Precip/4/-3/roll/flexseasonalfreqGT%7Dif//seasonalStat/get_parameter/%28RainInt%29eq/%7B3/-1/roll/pop/4/-1/roll/.Precip/4/-3/roll/flexseasonalmeandailyvalueGT%7Dif//seasonalStat/get_parameter/%28NumDS%29eq/%7B5/-1/roll/.Precip/5/-4/roll/flexseasonalnonoverlapDSfreq%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B5/-1/roll/.Precip/5/-4/roll/flexseasonalnonoverlapWSfreq%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7Bpop/pop/pop/T/exch/0.0/seasonalAverage%7Dif/estacion/%28irids:SOURCES:SMNH:SdC:estacion:historical:estacion%40Amapala:ds%29//region/parameter/geoobject/.estacion/SAMPLE//seasonalStat/get_parameter/%28TotRain%29eq/%7B//long_name/%28Precipitacion%29def//units/%28mm%29def%7Dif//seasonalStat/get_parameter/%28NumWD%29eq/%7B//long_name/%28suma%29def%7Dif//seasonalStat/get_parameter/%28RainInt%29eq/%7B//long_name/%28Precipitacion%29def//units/%28mm/day%29def%7Dif//seasonalStat/get_parameter/%28NumDS%29eq/%7B//long_name/%28suma%29def//units/%28unitless%29def%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B//long_name/%28suma%29def//units/%28unitless%29def%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7B%28percent%29unitconvert//long_name/%28Disponibilidad%29def%7Dif/T//long_name/%28Tiempo%29def/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28TotRain%29eq/%7B%28Lluvia%20Acumulada%29%7Dif//seasonalStat/get_parameter/%28NumWD%29eq/%7B%28Suma%20de%20Dias%20Humedos%29%7Dif//seasonalStat/get_parameter/%28RainInt%29eq/%7B%28Intensidad%20de%20Lluvia%29%7Dif//seasonalStat/get_parameter/%28NumDS%29eq/%7B%28Suma%20de%20Períodos%20Secos%29%7Dif//seasonalStat/get_parameter/%28NumWS%29eq/%7B%28Suma%20de%20Períodos%20Humedos%29%7Dif//seasonalStat/get_parameter/%28PerDA%29eq/%7B%28Datos%20Disponibles%29%7Dif/%28%20en%20estacion%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
 </div>
 </fieldset>
 
@@ -302,40 +302,40 @@ Observations for <span class="bold iridl:long_name"></span>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Monitoreo de la Precipitación Histórica en Honduras SMNH/IRI</h2>
   <p align="left" property="term:description">
-La <i>Maproom</i> explora precipitación diaria histórica al calcular estadísticas estacionales sencillas.
+El <i>Maproom</i> explora precipitación diaria histórica al calcular estadísticas estacionales sencillas.
 </p>
 <p>
-Se puede elegir muchas opciones para producir series temporales anuales de un análisis estacional particular de los datos de precipitación diarios. Se puede mapear el medio, la deviación típica, la probabilidad de excedar una limite elegida, el coeficiente de variación o el valor de algunos percentiles predefinidos, para el rango de años elegidos. Hacer un click en la mapa produce una serie temporal local del análisis elegido.
+Permite elegir muchas opciones para producir series temporales anuales de un análisis estacional particular de los datos de precipitación diarios. Permite hacer el mapa del promedio, la desviación típica, la probabilidad de exceder un límite elegido, el coeficiente de variación o el valor de algunos percentiles predefinidos, para el rango de años elegidos. Hacer un click en el mapa produce una serie temporal local del análisis elegido.
 </p>
 </div>
  <div id="tabs-2" class="ui-tabs-panel" about="">
  <h2 align="center">Opciones</h2>
   <p align="left">
 <b>Años y Estaciones</b>:
-Elige el rango de años para el cual se aplica el análisis anual y elige las fechas iniciales finales de la estación, para la cual el análisis estacional se aplica.
+Elige el rango de años para el cual se aplica el análisis anual y elige las fechas iniciales y finales de la estación, para la cual el análisis estacional se aplica.
 <br />
 <b>Cobertura Estacional de los Datos</b>:
-Se puede requerir una porción mínima de días con datos en cada estación para que se calcule el análisis estacional — si esta limite mínima no está, el análisis estacional considera el dato faltante para esta estación, en este año, de esta estación meteorologica.
+Permite requerir una fracción mínima de días con datos en cada estación para que se calcule el análisis estacional — si el límite mínimo no se cumple, el análisis estacional otorga un dato faltante a esta estación, en este año, de esta estación meteorologica.
 <br />
-<b>Definiciones de un Día/Periodo Húmedo/Seco</b>:
-Definen la cantidad de lluvia en milímetros (no incluido) mínima para que un día se defina como un día húmedo (en lugar de seco), y la continuación de suma (incluida) de días húmedos (secos) para definir un periodo húmedo (seco).
+<b>Definiciones de un Día/Período Húmedo/Seco</b>:
+Definen la cantidad de lluvia en milímetros que debe ser excedida para considerar un día húmedo (en oposición a un día seco), y la cantidad mínima de días húmedos (secos) para definir un período húmedo (seco).
 <br /><br /><b>Estadísticas Estacionales diarias</b>:
-Elige la cantidad para el análisis estacional (i.e. las estadísticas aplicadas a los datos diarios) que se calcula para cada estación, entre las opciones siguientes.
-<br /><b>Lluvia Total</b>:
-precipitación acumulada total (in mm) que calló durante la estación.
+Elige el estadístico para el análisis estacional (i.e. las estadísticas aplicadas a los datos diarios) que se calcula para cada estación, entre las opciones siguientes.
+<br /><b>Lluvia Acumulada</b>:
+precipitación acumulada total (en mm) durante la estación.
 <br /><b>Suma de Días Húmedos</b>: 
-la suma de días húmedos (como definidos anteriormente) durante la estación.
+la suma de días húmedos (como fueron definidos anteriormente) durante la estación.
 <br /><b>Intensidad de la Lluvia</b>: 
-la precipitación diaria media durante la estación, considerando solamente los días húmedos.
+el promedio de la precipitación diaria durante la estación, considerando solamente los días húmedos.
 <br />
-<b>Suma de Periodos Húmedos (Secos)</b>:
-la suma de periodos húmedos (secos) durante la estación en cuanto a las definiciones en la sección Opciones. Por ejemplo, si un periodo húmedo está definido como la continuación de 5 días húmedos, la continuación de 10 días húmedos representa 1 periodo húmedo. Nota que días húmedos (secos) que extienden antes/después del inicio/fin de la estación no están considerados en el calculo.
+<b>Suma de Períodos Húmedos (Secos)</b>:
+la suma de períodos húmedos (secos) durante la estación de acuerdo a las deficiniciones de la sección Opciones. Por ejemplo, si un período húmedo está definido como la continuación de 5 días húmedos, la continuación de 10 días húmedos representa 1 período húmedo. Note que los días húmedos o secos que se extienden antes del inicio y luego del final de la estación no son considerados en el cálculo.
 <br />
-<b>Porcentage de Datos Disponibles</b>: 
-el porcentage de días con dataos durante la estación.
+<b>Porcentaje de Datos Disponibles</b>: 
+el porcentaje de días con dataos durante la estación.
 <br /><br />
 <b>Estadísticas estacionales anuales</b>: 
-una elección de estadísticas anuales para la estación y el rango de años elegidos que mapea : el medio, la deviación típica, la probabilidad de excedar una limite especificada, el coeficiente de variación o el valor de un percentil elegido.
+una elección de estadísticas anuales para la estación y el rango de años elegidos que hacer el mapa de : el promedio, la desviación típica, la probabilidad de exceder un límite especificado, el coeficiente de variación o el valor de un percentil elegido.
 </p>
 </div>
  <div id="tabs-3" class="ui-tabs-panel" about="">
@@ -347,7 +347,7 @@ una elección de estadísticas anuales para la estación y el rango de años ele
 <div id="tabs-4"  class="ui-tabs-panel">
 <h2  align="center">Ayuda</h2>
 <p>
-Contacte <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a>  para cualquiera pregunta técnica o otros problemas al usar la <i>Maproom</i>.
+Escriba a <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a>  para cualquiera pregunta técnica o otros problemas al usar el <i>Maproom</i>.
  </p>
 </div>
 </div>

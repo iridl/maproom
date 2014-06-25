@@ -214,7 +214,7 @@ display: none;
 
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Climá y Agricultura</legend>
+                <legend>Clima y Agricultura</legend>
                       <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Histórica</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
@@ -225,7 +225,7 @@ display: none;
           
             <fieldset class="navitem"><legend>Estadísticas diarias estacionales</legend><select class="pageformcopy" name="seasonalStat"><option value="MeanTemp">Temperatura Media</option><option value="MinTemp">Temperature Mínima</option><option value="MaxTemp">Temperatura Máxima</option><option value="HDD">Días-Grados de Calentamiento</option><option value="CDD">Días-Grados de Refrigeración</option><option value="NumCD">Suma de Días Frios</option><option value="NumHD">Suma de Días Calientes</option></select></fieldset>
 
-            <fieldset class="navitem" id="yearlyStat"><legend>Estadisticas estacionales anuales</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Medio</option><option value="StdDev">Deviación Típica</option><option value="PoE">Probabilidad de excedar</option><option value="CoV">Coeficiente de variación</option><option value="RbyP">Percentil</option></select>
+            <fieldset class="navitem" id="yearlyStat"><legend>Estadísticas estacionales anuales</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Promedio</option><option value="StdDev">Desviación Típica</option><option value="PoE">Probabilidad de exceder</option><option value="CoV">Coeficiente de variación</option><option value="RbyP">Percentil</option></select>
             
         <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="0" size="3" maxlength="3"/>˚C</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="0" size="3" maxlength="3"/>˚C</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="100" size="4" maxlength="4"/>días.˚C</span><span id="pET4"><input class="pageformcopy" name="probExcThresh4" type="text" value="30" size="2" maxlength="2"/>días</span><span id="pET5"><input class="pageformcopy" name="probExcThresh5" type="text" value="30" size="2" maxlength="2"/>días</span>
 </span>
@@ -292,38 +292,38 @@ Observations for <span class="bold iridl:long_name"></span>
  <div id="tabs-1" class="ui-tabs-panel" about="">
  <h2 align="center" property="term:title">Monitoreo de la Temperatura Histórica en Honduras SMNH/IRI</h2>
   <p align="left" property="term:description">
-La <i>Maproom</i> explora temperatura diaria histórica al calcular estadísticas estacionales sencillas.
+El <i>Maproom</i> explora temperatura diaria histórica al calcular estadísticas estacionales sencillas.
 </p>
 <p>
-Se puede elegir muchas opciones para producir series temporales anuales de un análisis estacional particular de los datos de temperatura diarios. Se puede mapear el medio, la deviación típica, la probabilidad de excedar una limite elegida, el coeficiente de variación o el valor de algunos percentiles predefinidos, para el rango de años elegidos. Hacer un click en la mapa produce una serie temporal local del análisis elegido.
+Permite elegir muchas opciones para producir series temporales anuales de un análisis estacional particular de los datos de temperatura diarios. Permite hacer el mapa del promedio, la desviación típica, la probabilidad de exceder un límite elegido, el coeficiente de variación o el valor de algunos percentiles predefinidos, para el rango de años elegidos. Hacer un click en el mapa produce una serie temporal local del análisis elegido.
 </p>
 </div>
  <div id="tabs-2" class="ui-tabs-panel" about="">
  <h2 align="center">Opciones</h2>
   <p align="left">
 <b>Años y Estaciones</b>:
-Elige el rango de años para el cual se aplica el análisis anual y elige las fechas iniciales finales de la estación, para la cual el análisis estacional se aplica.
+Elige el rango de años para el cual se aplica el análisis anual y elige las fechas iniciales y finales de la estación, para la cual el análisis estacional se aplica.
 <br />
 <b>Cobertura Estacional de los Datos</b>:
-Se puede requerir una porción mínima de días con datos en cada estación para que se calcule el análisis estacional — si esta limite mínima no está, el análisis estacional considera el dato faltante para esta estación, en este año, de esta estación meteorologica.
+Permite requerir una fracción mínima de días con datos en cada estación para que se calcule el análisis estacional — si el límite mínimo no se cumple, el análisis estacional otorga un dato faltante a esta estación, en este año, de esta estación meteorologica.
 <br />
 <b>Definición de un Día Caliente/Frio</b>:
-Esta limite define en grados Celsius (no incluido) la temperatura bajo la cual un día está definido como frio si la temperatura mínima está abajo; o la temperatura arriba la cual un día está definido como caliente si la temperatura máxima está arriba; o la temperatura de referencia para el calculo de los días-grados de calentamiento y de refrigeración.
+Este límite define en grados Celsius (no incluido) la temperatura bajo la cual un día está definido como frio si la temperatura mínima está abajo; o la temperatura arriba la cual un día está definido como caliente si la temperatura máxima está arriba; o la temperatura de referencia para el calculo de los días-grados de calentamiento y de refrigeración.
 <br /><br /><b>Estadísticas Estacionales diarias</b>:
-Elige la cantidad para el análisis estacional (i.e. las estadísticas aplicadas a los datos diarios) que se calcula para cada estación, entre las opciones siguientes.
+Elige el estadístico para el análisis estacional (i.e. las estadísticas aplicadas a los datos diarios) que se calcula para cada estación, entre las opciones siguientes.
 <br /><b>Temperatura Media, Mínima y Máxima</b>: 
 temperatura diaria media, mínima o máxima, mediada para la estación.
 <br /><b>Días-Grados de Calentamiento o Refrigeración</b>: 
-Días-grados de calentamiento/refrigeración están la suma de diferencias negativas/positivas entre la temperatura diaria media y une temperatura de referencia elegida durante la estación. La temperatura media está definida como el medio de las temperaturas mínimas y máximas.
+Días-grados de calentamiento/refrigeración están la suma de diferencias negativas/positivas entre la temperatura diaria media y une temperatura de referencia elegida durante la estación. La temperatura media está definida como el promedio de las temperaturas mínimas y máximas.
 <br /><b>Suma de Días Calientes y Frios</b>:
-la suma de días calientes o frios durante la estación según una limite elegida y respectivamente la temperatura máxima y la temperatura mínima.
+la suma de días calientes o frios durante la estación según un límite elegido y respectivamente la temperatura máxima y la temperatura mínima.
 <br />
-<b>Porcentage de Datos disponibles</b>: 
-el porcentage de días con datos en la estación.
+<b>Porcentaje de Datos disponibles</b>: 
+el porcentaje de días con datos en la estación.
 <br />
 <br />
 <b>Estadísticas estacionales anuales</b>: 
-una elección de estadísticas anuales para la estación y el rango de años elegidos que mapea : el medio, la deviación típica, la probabilidad de excedar una limite especificada, el coeficiente de variación o el valor de un percentil elegido.
+una elección de estadísticas anuales para la estación y el rango de años elegidos que hace el mapa de : el promedio, la desviación típica, la probabilidad de exceder un límite especificado, el coeficiente de variación o el valor de un percentil elegido.
 </p>
 </div>
  <div id="tabs-3" class="ui-tabs-panel" about="">
@@ -334,7 +334,7 @@ una elección de estadísticas anuales para la estación y el rango de años ele
 </div>
 <div id="tabs-4"  class="ui-tabs-panel"><h2  align="center">Ayuda</h2>
 <p>
-Contacte <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a>  para cualquiera pregunta técnica o otros problemas al usar la <i>Maproom</i>.
+Escriba a <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a>  para cualquiera pregunta técnica o otros problemas al usar el <i>Maproom</i>.
  </p>
 </div>
 </div>
