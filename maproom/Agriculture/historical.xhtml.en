@@ -20,11 +20,59 @@
 <link rel="term:icon"
 href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter%5B%28.%29%28tmax%29//var1/parameter%5Dconcat//var/parameter/interp/X/66.0/98.0/RANGEEDGES/Y/6.0/38.0/RANGEEDGES//season/get_parameter/30.0/1.0/%28seasonalfreqGT%29//freqGTLT/parameter/interp/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201969%29%28Dec%202005%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/NINO34//ENSO/renameGRID/aprod//Tercile/renameGRID/tercileclassesscale/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE//ENSO/removeGRID/Tercile/%28Cool%29//tercile/parameter/VALUE//Tercile/removeGRID/X/Y/fig-/colors/coasts_gaz/thin/countries_gaz/verythin/admin1_india/-fig//plotaxislength/220/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" />
 <script type="text/javascript" src="../../uicore/uicore.js"></script>
+<style>
+/* Asia bb */
+body[bbox="bb:40:-10:170:75:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
+/* South Asia bb */
+body[bbox="bb:65:6:98:38:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
+body[bbox="bb:65:6:98:38:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
+body[bbox="bb:65:6:98:38:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+/* India bb */
+body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
+body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
+body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
+body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+/* Bangladesh bb */
+body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
+body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
+body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
+body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
+/* Nepal bb */
+body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
+body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
+body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
+body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+/* Laos bb */
+body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
+body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
+body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
+body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Asia_South_319_0"]{display: none;}
+body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+/* Philippines bb */
+body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
+body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
+body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
+body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
+body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Asia_South_319_0"]{display: none;}
+body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+/* Brazil bb */
+body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
+body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
+body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
+body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Asia_South_319_0"]{display: none;}
+body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+</style>
 </head>
 <body  xml:lang="en">
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+<input class="titleLink itemImage bodyAttribute" name="bbox" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem">
@@ -34,6 +82,17 @@ href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%2
            <fieldset class="navitem">
                 <legend>Climate and Agriculture</legend>
                      <span class="navtext">Historical</span>
+            </fieldset>
+
+            <fieldset class="navitem"> 
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/agrihistoregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">Global</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
             </fieldset>
 
 </div>
