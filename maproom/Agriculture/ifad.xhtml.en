@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>International Fund for Agricultural Development</title>
+<link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="IFAD/ifad.css" />
+<link rel="canonical" href="ifad.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#ifad" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1" />
+<meta property="maproom:Sort_Id" content="a12" />
+<link rel="term:icon"
+href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Lao/.aphroditeV1101/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
+<script type="text/javascript" src="../../uicore/uicore.js"></script>
+</head>
+<body  xml:lang="en">
+
+<form name="pageform" id="pageform">
+<input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+<input class="carry share" name="bbox" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem">
+                <legend>Maproom</legend>
+                    <a rev="section" class="navlink carryup" href="index.html">Climate and Agriculture</a>
+            </fieldset>
+           <fieldset class="navitem">
+                <legend>Climate and Agriculture</legend>
+                     <span class="navtext">IFAD</span>
+            </fieldset>
+            <fieldset class="navitem">
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/ifadregions.json"></a>
+                <select class="RegionMenu" name="bbox">
+                <option value="">IFAD Countries</option>
+                <optgroup class="template" label="Region">
+                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+                </optgroup>
+                </select>
+            </fieldset>
+</div>
+<div>
+ <div id="content" class="searchDescription">
+<div><img src="IFAD/ifad_verybig.png" /></div>
+<h2 property="term:title">International Fund for Agricultural Development</h2>
+<p align="left" property="term:description">
+This suite of maprooms provides climate information and decision support tools to enable poor rural women and men farmers and policy makers to better manage the risks associated with climate variability and change. Better management of such risks will allow farmers to increase agricultural production and productivity and will enhance food security and rural livelihoods in test sites in Indonesia, Lao PDR, and Bangladesh.
+</p>
+<p>Click the tabs (top right) for links to the following useful maps:
+<ul>
+<li><b>Historical Daily Seasonal Characteristics:</b> These maps explore historical daily precipitation or temperature by calculating relevant seasonal statistics.</li>
+<li><b>Deterministic Seasonal Forecast:</b> Theses maps show seasonal deterministic precipitation forecasts along with evaluation of their skill and uncertainty.</li>
+<li><b>Six-Day forecasts:</b> These maps show where heavy rainfall is expected in the next six days, and how much rainfall is expected.</li>
+<li><b>Probabilistic Seasonal Forecast:</b> These maps show where large or small amounts of rainfall are expected in the next three months.</li>
+<li><b>Past Conditions:</b> These maps show rainfall patterns that can be expected for El Nino, La Nina, and average years.</li>
+<li><b>Recent Climate Trends:</b> These maps show what the rainfall has been like for the last 100 years, and what trends exist in your location.</li>
+</ul>
+</p>
+<p>
+This suite of maprooms is financed by IFAD through the “Climate risk management in agriculture with demonstration sites in Indonesia, Lao PDR, and Bangladesh”.
+The goals of the project are to develop climate information / decision support tools and the capacity required to enable poor rural women and men farmers and policy makers to better manage the risks associated with climate variability and change to increase agricultural production and productivity and enhance food security and rural livelihoods.
+</p>
+<p>
+Through this project, the International Research Institute for Climate and Society at Columbia University will collaborate with its regional partners at the Centre for Climate Risk and Opportunity Management in South East Asia and Pacific in Indonesia, the National Agriculture and Forestry Research Institute in the Lao PDR, and WorldFish in Bangladesh.</p>
+</div>
+<div class="rightcol tabbedentries" about="/maproom/Agriculture/ifad.html" >
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_Historical_term" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_Forecast_term" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_SixDayForecasts" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_ThreeMonthForecasts" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_HistoricalConditions" />
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_TimeScales" />
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend>
+
+</fieldset>
+</div>
+ </body>
+
+ </html>

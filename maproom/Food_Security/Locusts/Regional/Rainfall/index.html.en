@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -53,8 +53,8 @@ display: inline-block
 <input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
 <input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="600" />
-<input class="pickarea" name="resolution" type="hidden" value=".25" />
+<input class="unused" name="plotaxislength" type="hidden" data-default="600" />
+<input class="pickarea" name="resolution" type="hidden" data-default=".25" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 

@@ -2,6 +2,9 @@
 .DS_Store
 /build.tag
 /localmaproom.conf
+/maproom/Agriculture/forecast.html.en
+/maproom/Agriculture/historical.html.en
+/maproom/Agriculture/ifad.html.en
 /maproom/Agriculture/index.html.en
 /maproom/ENSO/Bulletins/index.html
 /maproom/ENSO/Diagnostics/index.html

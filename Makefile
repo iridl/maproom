@@ -29,6 +29,9 @@ utbuild.tag: build.tag
 	tar cf - -C uicore --exclude=.git . | tar xf - -C $(BUILD)/uicore
 	install -d $(BUILD)/pure
 	tar cf - -C pure --exclude=.git . | tar xf - -C $(BUILD)/pure
+	install -d $(BUILD)/jsonld.js
+	tar cf - -C jsonld.js --exclude=.git . | tar xf - -C $(BUILD)/jsonld.js
+	ln -s jsonld.js/js $(BUILD)/jsonld
 	cp .htaccess $(BUILD)
 	touch utbuild.tag
 
@@ -51,3 +54,18 @@ tarball: utbuild.tag
 	tar cf - -C $(BUILD) . | tar xf - -C $(TARBALL)
 	tar cvfz $(TARBALL).tgz $(TARBALL)
 	rm -r $(TARBALL)
+
+text.txt:	text.xml text.xslt
+		saxon_transform $< text.xslt > $@
+
+text.xml:	text.nt
+		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' text.nt > text.xml
+
+text.nt:	maproom/newmaproomcache/owlimMaxRepository.nt textconstruct.serql
+		rdfcache -cache=maproom/newmaproomcache -construct=textconstruct.serql -constructoutput=./text.nt file:///`pwd`/maproom/maproomregistry.owl
+
+facetsearch:	facetcache/owlimMaxRepository.nt
+
+facetcache/owlimMaxRepository.nt:	maproom/maproomtop.owl
+		rm -rf facetcache
+		rdfcache -cache=facetcache http://iridl.ldeo.columbia.edu/maproom/maproomtop.owl

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -10,8 +10,8 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
-<title>El Ni&#241;o and Precipitation Terciles</title>
-<link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+<title>El Niño and Precipitation Terciles</title>
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <!--
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="Station_PRCP_NINO.html?Set-Language=fr" />
@@ -69,9 +69,9 @@
  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GCPS/.MONTHLY/.STATION.cuf/T/%28Jan%201901%29%28Dec%201990%29RANGE/a:/.lon/:a:/.lat/:a:/.mean/.prcp/:a/T/3./boxAverage/T/12/splitstreamgrid/a:/SOURCES/.KAPLAN/.Indices/.NINO3/.avOS/T/%28Jan%201901%29%28Dec%201990%29RANGE/T/3/boxAverage%5BT%5Dpercentileover/0.8/masklt/T/12/splitstreamgrid/0/mul/markunitless/add//units//mm/cvx/def%5BT2%5Dmedianover/percentile/removeGRID//fullname%5B//EL_NINO//prcp%5Ddef/:a:%5BT2%5D0.0/0.33/0.67/1./0.75/replacebypercentile/:a/tablefunction/startcolormap/DATA/0/1/RANGE/white/grey/brown/0/VALUE/brown/0.33/bandmax/black/black/0.67/bandmax/green/green/1./bandmax/grey/endcolormap/+fig:+scattercolor+thin+solid+coasts+countries+:fig+.auxfig+//lat/-65/75/plotrange//T/1.5/10.5/plotrange//mftime+125+psdef//plotaxislength+600+psdef//iftime+125+psdef//antialias+true+psdef//plotbordertop+40+psdef//plotborderbottom+40+psdef//XOVY+null+psdef//fftime+125+psdef+.gif" />
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >El Ni&#241;o and Precipitation Terciles</h2>
-<p align="left" property="term:description"> For a given 3-month season of the calendar year (Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec), this animated map indicates which precipitation tercile from the 1901-1990 distribution the median value of seasonal station precipitation in El Ni&#241;o years would belong to.  This is one way of showing how seasonal precipitation tends to increase or decrease in some locations during El Ni&#241;o conditions.</p>
-<p align="left">This map cycles through four 3-month seasons of the year.  Green points on the map show stations whose median precipitation value in El Ni&#241;o years is within the highest one-third (above normal, upper tercile) of the 1901-1990 precipitation distribution, brown points represent stations in the lower tercile (below normal), and black points represent stations in the middle tercile (near normal).  Kaplan sea surface temperature anomalies averaged over the NINO3 region of the central-eastern equatorial Pacific are used to classify El Ni&#241;o years, using the 80th percentile of NINO3 sea surface temeperature anomalies for a given 3-month season between 1901 and 1990 as the El Ni&#241;o threshold.</p>
+<h2 align="center"  property="term:title" >El Niño and Precipitation Terciles</h2>
+<p align="left" property="term:description"> For a given 3-month season of the calendar year (Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec), this animated map indicates which precipitation tercile from the 1901-1990 distribution the median value of seasonal station precipitation in El Niño years would belong to.  This is one way of showing how seasonal precipitation tends to increase or decrease in some locations during El Niño conditions.</p>
+<p align="left">This map cycles through four 3-month seasons of the year.  Green points on the map show stations whose median precipitation value in El Niño years is within the highest one-third (above normal, upper tercile) of the 1901-1990 precipitation distribution, brown points represent stations in the lower tercile (below normal), and black points represent stations in the middle tercile (near normal).  Kaplan sea surface temperature anomalies averaged over the NINO3 region of the central-eastern equatorial Pacific are used to classify El Niño years, using the 80th percentile of NINO3 sea surface temeperature anomalies for a given 3-month season between 1901 and 1990 as the El Niño threshold.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
@@ -79,13 +79,13 @@
 <dl class="datasetdocumentation">
 <dt>Data</dt><dd>NCDC Global Climate Perspectives System (GCPS) monthly station precipitation from January 1901 to December 1990</dd> 
 <dt>Data Source</dt><dd>NOAA National Climatic Data Center (NCDC) (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.GCPS/.MONTHLY/.STATION/.dataset_documentation.html">GCPS</a>)</dd> 
-<dt>Analysis</dt><dd>Precipitation stations classified by tercile based upon median seasonal-average precipitation calculated over El Ni&#241;o years compared to precipitation terciles from the 1901-1990 historical distribution</dd>
+<dt>Analysis</dt><dd>Precipitation stations classified by tercile based upon median seasonal-average precipitation calculated over El Niño years compared to precipitation terciles from the 1901-1990 historical distribution</dd>
 </dl>
 <h4>SST Data</h4>
 <dl class="datasetdocumentation">
 <dt>Data</dt><dd>Kaplan NINO3 index from Optimal Smoother analysis of MOHSST5 monthly sea surface temperature anomalies from January 1901 to December 1990</dd>
 <dt>Data Source</dt><dd>Lamont-Doherty Earth Observatory, IRI Data Library (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.KAPLAN/.Indices/.dataset_documentation.html">Kaplan NINO3 index</a>)</dd>
-<dt>Analysis</dt><dd>Three-month seasonal-average NINO3 SST index classified into the top 20% of the 1901-1990 historical distribution, to define El Ni&#241;o seasons</dd>
+<dt>Analysis</dt><dd>Three-month seasonal-average NINO3 SST index classified into the top 20% of the 1901-1990 historical distribution, to define El Niño seasons</dd>
 </dl>
 </div>
 <div class="ui-tabs-panel-hidden">
@@ -97,7 +97,7 @@
 <div id="tabs-3"  class="ui-tabs-panel">
 <h2  align="center">Helpdesk</h2>
 <p>
-Contact <a href="mailto:help@iri.columbia.edu?subject=El Ni&#241;o and Precipitation Terciles">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+Contact <a href="mailto:help@iri.columbia.edu?subject=El Niño and Precipitation Terciles">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
  </p>
 </div>
 </div>

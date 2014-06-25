@@ -7,6 +7,7 @@
    Alias /maproom <<<RepoDir>>>/maproom
    Alias /uicore  <<<RepoDir>>>/uicore
    Alias /pure    <<<RepoDir>>>/pure
+   Alias /jsonld    <<<RepoDir>>>/jsonld.js/js
    <Directory "<<<RepoDir>>>/maproom">
       Options Indexes FollowSymLinks MultiViews
       LanguagePriority en es de fr

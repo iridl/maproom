@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -37,7 +37,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#monthly"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climatology"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
     <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Seasonal_Climate_Forecast"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Temperature/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Precipitation%20Forecast%20issued%20%25=%5BF%5D%29psdef//L/1.0/plotvalue//F/last/plotvalue+//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
@@ -47,10 +47,10 @@
 <input class="carryup carry carryLanguage" name="Set-Language" type="hidden" value="" />
 <input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
 <input class="dlimg dlimgts share starttime startleadtime" name="F" type="hidden" />
-<input class="dlimg dlimgts share startleadtime" name="L" type="hidden" value="1." />
+<input class="dlimg dlimgts share startleadtime" name="L" type="hidden" data-default="1." />
 <input class="dlimgnotuseddlauximg" name="plotaxislength" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
-<input class="pickarea" name="resolution" type="hidden" value=".5" />
+<input class="pickarea" name="resolution" type="hidden" data-default=".5" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -212,8 +212,8 @@ Contact <a href="mailto:help@iri.columbia.edu?subject=Predictions in Context:  S
  </p>
 </div>
 <div id="tabs-4" class="ui-tabs-panel" about="">
-<h2 align="center"  property="term:title" >Instructions</h2>
-<p align="left" property="term:description">The IRI Seasonal Forecast interface allows for graphs to be made easily by pointing and clicking on a location anywhere in the world. </p>
+<h2 align="center">Instructions</h2>
+<p align="left">The IRI Seasonal Forecast interface allows for graphs to be made easily by pointing and clicking on a location anywhere in the world. </p>
 
 <p> 
 The graph shows the probability, or chance, that the target date being forecast will fall into certain categories relative to "normal" or average conditions.

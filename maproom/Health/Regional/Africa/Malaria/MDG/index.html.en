@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -50,7 +50,7 @@
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="dlimg" name="plotaxislength" type="hidden" />
-<input class="dlimg share" name="country" type="hidden" value="Algeria" />
+<input class="dlimg share" name="country" type="hidden" data-default="Algeria" />
 <input class="dlimg share" name="Baseline" type="hidden" />
 <input class="dlimg share" name="baseyear" type="hidden" />
 </form>

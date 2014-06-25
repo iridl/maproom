@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -18,9 +18,7 @@
 <title>Historical Tercile Probability of the Seasonal Frequency of Daily Temperature Conditioned on ENSO: India</title>
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
 
-<!--
-<link rel="stylesheet" type="text/css" href="../ifrc.css" />
--->
+<link rel="stylesheet" type="text/css" href="../../CCAFS/ccafs.css" />
 
 <link class="share" rel="canonical" href="SeasonalFrequencyIMD.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
@@ -32,17 +30,18 @@
 -->
 
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#ccafs"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/map
-room.owl#Agriculture_ENSO_Prob_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#India"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#India_68_1"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_ENSO_Prob_term"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_ENSO_Prob_Temperature_South_Asia_term"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#temperature"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#enso"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter%5B%28.%29%28tmax%29//var1/parameter%5Dconcat//var/parameter/interp/X/66.0/98.0/RANGEEDGES/Y/6.0/38.0/RANGEEDGES//season/get_parameter/30.0/1.0/%28seasonalfreqGT%29//freqGTLT/parameter/interp/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201969%29%28Dec%202005%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/NINO34//ENSO/renameGRID/aprod//Tercile/renameGRID/tercileclassesscale/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE/Tercile/%28Cool%29//tercile/parameter/VALUE/X/Y/fig-/colors/coasts_gaz/thin/countries_gaz/verythin/admin1_india/-fig//plotaxislength/220/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" />
 <script type="text/javascript" src="../../../../uicore/uicore.js"></script>
 
@@ -65,20 +64,20 @@ function validateTextForm()
 <form name="pageform" id="pageform" class="carryup carry dlimg dlimgts dlauximg dlimgloc share">
 <input class="carryup carry" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlimgloc share" name="bbox" type="hidden" />
-<input class="carry dlimg dlimgts share" name="var" type="hidden" value="tmax" />
-<input class="carry dlimg dlimgts share" name="seasonStart" type="hidden" value="Jan" />
-<input class="carry dlimg dlimgts share" name="seasonEnd" type="hidden" value="Mar" />
-<input class="carry dlimg dlimgts share" name="tercile" type="hidden" value="Cool" />
-<input class="carry dlimg dlimgts share" name="ensoState" type="hidden" value="LaNina" />
-<input class="carry dlimg dlimgts share" name="freqGTLT" type="hidden" value="seasonalfreqGT" />
-<input class="carry dlimg dlimgts share" name="thold" type="hidden" value="30." />
+<input class="carry dlimg dlimgts share" name="var" type="hidden" data-default="tmax" />
+<input class="carry dlimg dlimgts share" name="seasonStart" type="hidden" data-default="Jan" />
+<input class="carry dlimg dlimgts share" name="seasonEnd" type="hidden" data-default="Mar" />
+<input class="carry dlimg dlimgts share" name="tercile" type="hidden" data-default="Cool" />
+<input class="carry dlimg dlimgts share" name="ensoState" type="hidden" data-default="LaNina" />
+<input class="carry dlimg dlimgts share" name="freqGTLT" type="hidden" data-default="seasonalfreqGT" />
+<input class="carry dlimg dlimgts share" name="thold" type="hidden" data-default="30." />
 <input class="notused" name="plotaxislength" type="hidden" />
 
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Maproom</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+                <legend>Climate and Agriculture</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Historical</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_ENSO_Prop_term"><span property="term:label">Probabilistic ENSO Composites</span></legend>
@@ -96,6 +95,8 @@ function validateTextForm()
  </div>
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
+<div id="ccafsdiv">
+</div>
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter%5B%28.%29%28tmax%29//var1/parameter%5Dconcat//var/parameter/interp/X/66.0/98.0/RANGEEDGES/Y/6.0/38.0/RANGEEDGES//season/get_parameter/30.0//thold/parameter/1.0/%28seasonalfreqGT%29//freqGTLT/parameter/interp/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201969%29%28Dec%202005%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/NINO34//ENSO/renameGRID/aprod//Tercile/renameGRID/tercileclassesscale/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE/Tercile/%28Cool%29//tercile/parameter/VALUE/X/Y/fig-/colors/coasts_gaz/thin/countries_gaz/verythin/admin1_india/-fig//plotaxislength/600/psdef//antialias/true/psdef/">Dataset</a></li>

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -13,6 +13,7 @@
 <title>Lao Historical Precipitation Monitoring</title>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../IFAD/ifad.css" />
 <link rel="canonical" href="Lao_Precip.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -21,6 +22,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Rate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
@@ -29,8 +31,8 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Laos"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Laos_85_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Lao/.aphroditeV1101/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <style>
@@ -167,33 +169,33 @@ display: none;
 <input class="dlimg dlauximg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
 <input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea dlimg dlauximg share" name="resolution" type="hidden" value="0.25" />
-<input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" value="1951" />
-<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" value="2007" />
-<input class="carry dlimg dlauximg share dlimgts" name="seasonStart" type="hidden" value="Jan" />
-<input class="carry dlimg dlauximg share dlimgts" name="seasonEnd" type="hidden" value="Jan" />
-<input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" value="1" />
-<input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" value="31" />
-<input class="dlimg dlauximg share dlimgts" name="minFrac" type="hidden" value="0.5" />
-<input class="dlimg dlauximg share dlimgts" name="obsOnly" type="hidden" value="off" />
-<input class="dlimg dlauximg share dlimgts" name="wetThreshold" type="hidden" value="1." />
-<input class="dlimg dlauximg share dlimgts" name="spellThreshold" type="hidden" value="5." />
-<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" value="TotRain" />
-<input class="dlimg dlauximg share ylyStat pET bodyClass" name="yearlyStat" type="hidden" value="Mean" />
-<input class="dlimg share pET" name="probExcThresh1" type="hidden" value="150." />
-<input class="dlimg share pET" name="probExcThresh2" type="hidden" value="30." />
-<input class="dlimg share pET" name="probExcThresh3" type="hidden" value="10." />
-<input class="dlimg share pET" name="probExcThresh4" type="hidden" value="3." />
-<input class="dlimg share pET" name="probExcThresh5" type="hidden" value="3." />
+<input class="unused" name="plotaxislength" type="hidden" data-default="432" />
+<input class="pickarea dlimg dlauximg share" name="resolution" type="hidden" data-default="0.25" />
+<input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" data-default="1951" />
+<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" data-default="2007" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonStart" type="hidden" data-default="Jan" />
+<input class="carry dlimg dlauximg share dlimgts" name="seasonEnd" type="hidden" data-default="Jan" />
+<input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" data-default="1" />
+<input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" data-default="31" />
+<input class="dlimg dlauximg share dlimgts" name="minFrac" type="hidden" data-default="0.5" />
+<input class="dlimg dlauximg share dlimgts" name="obsOnly" type="hidden" data-default="off" />
+<input class="dlimg dlauximg share dlimgts" name="wetThreshold" type="hidden" data-default="1." />
+<input class="dlimg dlauximg share dlimgts" name="spellThreshold" type="hidden" data-default="5." />
+<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" data-default="TotRain" />
+<input class="dlimg dlauximg share ylyStat pET bodyClass" name="yearlyStat" type="hidden" data-default="Mean" />
+<input class="dlimg share pET" name="probExcThresh1" type="hidden" data-default="150." />
+<input class="dlimg share pET" name="probExcThresh2" type="hidden" data-default="30." />
+<input class="dlimg share pET" name="probExcThresh3" type="hidden" data-default="10." />
+<input class="dlimg share pET" name="probExcThresh4" type="hidden" data-default="3." />
+<input class="dlimg share pET" name="probExcThresh5" type="hidden" data-default="3." />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Maproom</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+                <legend>Climate and Agriculture</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Historical</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Monitoring</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Daily Seasonal Characteristics</span></legend>
             </fieldset>
             <fieldset class="navitem"><legend>Seasons (1951 to 2007)</legend>
             <select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1951" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2007" size="4" maxlength="4"/></fieldset>
@@ -219,6 +221,8 @@ display: none;
 
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
+<div id="ifaddiv">
+</div>
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Options</a></li>
       <li><a href="#tabs-3" >Dataset Documentation</a></li>
@@ -257,7 +261,7 @@ The Maproom explores historical daily precipitation by calculating simple season
 Specify the range of years over which to perform the analysis and choose the start and end dates of the season , over which the diagnostics are to be performed.
 <br />
 <b>Mask and Seasonal Data Coverage</b>:
-The APHRODITE dataset includes a record of the number of station data observations present for each gridbox on each day of the dataset. The maproom allows this information to be used in two ways: (1) gridbox-days without at least one observation can be masked prior to any calculations (masking so called interpolated values); (2) a minimum fraction of non-masked days per season can be required in order for the seasonal diagnostic to be defined at that gridbox &mdash; if this minimum threshold is not met, then the seasonal diagnostic is assigned a missing value at that gridbox, for that season and year.
+The APHRODITE dataset includes a record of the number of station data observations present for each gridbox on each day of the dataset. The maproom allows this information to be used in two ways: (1) gridbox-days without at least one observation can be masked prior to any calculations (masking so called interpolated values); (2) a minimum fraction of non-masked days per season can be required in order for the seasonal diagnostic to be defined at that gridbox — if this minimum threshold is not met, then the seasonal diagnostic is assigned a missing value at that gridbox, for that season and year.
 <br />
 <b>Wet/Dry Day/Spell Definitions</b>:
 These define the amount in millimeters (non inclusive) above which a day is considered to be a wet day (as opposed to dry), and the minimum number (inclusive) of consecutive wet (dry) days to define a wet (dry) spell.
