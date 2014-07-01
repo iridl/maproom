@@ -129,8 +129,12 @@ Suitable for Malaria Transmission</h4>
   <p align="left" property="term:description">This map shows the number of months suitable for malaria transmission, based on climatological averages. Suitability is defined as the coincidence of precipitation accumulation greater than 80 mm, average temperature between 18°C and 32°C, and relative humidity greater than 60%.
 </p>
 <p align="left">
-Temperature, precipitation and relative humidity are factors of mosquito development time as well as an indicator of Plasmodium parasite development within the mosquito vectors. The aforementioned values act as the upper limit for vector development and potential malaria transmission. 
+Temperature, precipitation and relative humidity are factors which drive the abundance and feeding cycle rate of Anopheles mosquitoes which transmit malaria. Temperature also drives the development rate of Plasmodium parasite  within the mosquito vectors. The combined value for climate suitability is an indication of the lower limit for potential malaria transmission.
 </p>
+
+
+
+
 
 <h4>References:</h4>
 <p>Grover-Kopec, E. K., et. al. (2006). <a href="http://www.malariajournal.com/content/5/1/38">Web-based climate information resources for malaria control in Africa</a>. Malaria Journal, 5:38.
