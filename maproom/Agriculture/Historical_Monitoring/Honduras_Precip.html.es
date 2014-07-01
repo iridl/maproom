@@ -234,7 +234,7 @@ display: none;
           
             <fieldset class="navitem"><legend>Estadísticas diarias estacionales</legend><select class="pageformcopy" name="seasonalStat"><option value="TotRain">Lluvia Acumulada</option><option value="NumWD">Suma de Días Humedos</option><option value="RainInt">Intensidad de la Lluvia</option><option value="NumDS">Suma de Períodos Secos</option><option value="NumWS">Suma de Períodos Humedos</option><option value="PerDA">Porcentaje de Datos Disponibles</option></select></fieldset>
             
-            <fieldset class="navitem" id="yearlyStat"><legend>Estadísticas estacionales anuales</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Promedio</option><option value="StdDev">Desviación Típica</option><option value="PoE">Probabilidad de exceder</option><option value="CoV">Coeficiente de variación</option><option value="RbyP">Percentil</option></select>
+            <fieldset class="navitem" id="yearlyStat"><legend>Estadísticas estacionales anuales</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Promedio</option><option value="StdDev">Desviación Típica</option><option value="PoE">Probabilidad de excedencias</option><option value="CoV">Coeficiente de variación</option><option value="RbyP">Percentil</option></select>
             
         <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="150" size="3" maxlength="3"/>mm</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="30" size="3" maxlength="3"/>días</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="10" size="2" maxlength="2"/>mm/día</span><span id="pET4"><input class="pageformcopy" name="probExcThresh4" type="text" value="3" size="2" maxlength="2"/>períodos</span><span id="pET5"><input class="pageformcopy" name="probExcThresh5" type="text" value="3" size="2" maxlength="2"/>períodos</span>
 </span>
@@ -305,7 +305,7 @@ Observations for <span class="bold iridl:long_name"></span>
 El <i>Maproom</i> explora precipitación diaria histórica al calcular estadísticas estacionales sencillas.
 </p>
 <p>
-Permite elegir muchas opciones para producir series temporales anuales de un análisis estacional particular de los datos de precipitación diarios. Permite hacer el mapa del promedio, la desviación típica, la probabilidad de exceder un límite elegido, el coeficiente de variación o el valor de algunos percentiles predefinidos, para el rango de años elegidos. Hacer un click en el mapa produce una serie temporal local del análisis elegido.
+Permite elegir muchas opciones para producir series temporales anuales de un análisis estacional particular de los datos de precipitación diarios. Permite hacer el mapa del promedio, la desviación típica, la probabilidad de excedencias un límite elegido, el coeficiente de variación o el valor de algunos percentiles predefinidos, para el rango de años elegidos. Hacer un click en el mapa produce una serie temporal local del análisis elegido.
 </p>
 </div>
  <div id="tabs-2" class="ui-tabs-panel" about="">
@@ -335,7 +335,7 @@ la suma de períodos húmedos (secos) durante la estación de acuerdo a las defi
 el porcentaje de días con dataos durante la estación.
 <br /><br />
 <b>Estadísticas estacionales anuales</b>: 
-una elección de estadísticas anuales para la estación y el rango de años elegidos que hacer el mapa de : el promedio, la desviación típica, la probabilidad de exceder un límite especificado, el coeficiente de variación o el valor de un percentil elegido.
+una elección de estadísticas anuales para la estación y el rango de años elegidos que hacer el mapa de : el promedio, la desviación típica, la probabilidad de excedencias un límite especificado, el coeficiente de variación o el valor de un percentil elegido.
 </p>
 </div>
  <div id="tabs-3" class="ui-tabs-panel" about="">
