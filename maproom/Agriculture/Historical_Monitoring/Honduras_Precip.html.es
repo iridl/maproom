@@ -312,7 +312,7 @@ Permite elegir muchas opciones para producir series temporales anuales de un an�
  <h2 align="center">Opciones</h2>
   <p align="left">
 <b>Años y Estaciones</b>:
-Elige el rango de años para el cual se aplica el análisis anual y elige las fechas iniciales y finales de la estación, para la cual el análisis estacional se aplica.
+Elige el rango de años para el cual se aplica el análisis anual y elige las fechas iniciales y finales de la estación, para las cuales el análisis estacional se aplica.
 <br />
 <b>Cobertura Estacional de los Datos</b>:
 Permite requerir una fracción mínima de días con datos en cada estación para que se calcule el análisis estacional — si el límite mínimo no se cumple, el análisis estacional otorga un dato faltante a esta estación, en este año, de esta estación meteorologica.

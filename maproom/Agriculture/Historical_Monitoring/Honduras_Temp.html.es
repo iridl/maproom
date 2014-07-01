@@ -302,13 +302,13 @@ Permite elegir muchas opciones para producir series temporales anuales de un an�
  <h2 align="center">Opciones</h2>
   <p align="left">
 <b>Años y Estaciones</b>:
-Elige el rango de años para el cual se aplica el análisis anual y elige las fechas iniciales y finales de la estación, para la cual el análisis estacional se aplica.
+Elige el rango de años para el cual se aplica el análisis anual y elige las fechas iniciales y finales de la estación, para las cuales el análisis estacional se aplica.
 <br />
 <b>Cobertura Estacional de los Datos</b>:
 Permite requerir una fracción mínima de días con datos en cada estación para que se calcule el análisis estacional — si el límite mínimo no se cumple, el análisis estacional otorga un dato faltante a esta estación, en este año, de esta estación meteorologica.
 <br />
 <b>Definición de un Día Caliente/Frio</b>:
-Este límite define en grados Celsius (no incluido) la temperatura bajo la cual un día está definido como frio si la temperatura mínima está abajo; o la temperatura arriba la cual un día está definido como caliente si la temperatura máxima está arriba; o la temperatura de referencia para el calculo de los días-grados de calentamiento y de refrigeración.
+La temperatura mínima debe estar debajo de este límite para que un día sea definido como frío. La temperature máxima debe estar por encima de este límite para que un día sea definido como caliente. Este límite sirve también como temperatura de referencia para el cálculo de los días-grados de calentamiento y de refrigeración.
 <br /><br /><b>Estadísticas Estacionales diarias</b>:
 Elige el estadístico para el análisis estacional (i.e. las estadísticas aplicadas a los datos diarios) que se calcula para cada estación, entre las opciones siguientes.
 <br /><b>Temperatura Media, Mínima y Máxima</b>: 
@@ -316,7 +316,7 @@ temperatura diaria media, mínima o máxima, mediada para la estación.
 <br /><b>Días-Grados de Calentamiento o Refrigeración</b>: 
 Días-grados de calentamiento/refrigeración están la suma de diferencias negativas/positivas entre la temperatura diaria media y une temperatura de referencia elegida durante la estación. La temperatura media está definida como el promedio de las temperaturas mínimas y máximas.
 <br /><b>Suma de Días Calientes y Frios</b>:
-la suma de días calientes o frios durante la estación según un límite elegido y respectivamente la temperatura máxima y la temperatura mínima.
+la suma de días calientes o fríos durante la estación según un límite elegido y respectivamente la temperatura máxima y la temperatura mínima.
 <br />
 <b>Porcentaje de Datos disponibles</b>: 
 el porcentaje de días con datos en la estación.
