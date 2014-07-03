@@ -21,14 +21,23 @@
 <meta property="maproom:Sort_Id" content="" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_Historical_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#agriculture"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Temperature"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#AirTemperature"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#AirTemperature2m"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#z2m"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#NearSurface"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Count"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#mean"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#standard_deviation"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#station"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#time_series"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Bangladesh"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Bangladesh_11_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
@@ -246,7 +255,7 @@ IWMO Station <b><span class="iridl:value"></span></b>
 </div>
 <br />
 <div class="dlimgtsbox">
-<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.awr/.CPC_GSOD/.CPC_GSOD/.CPC_GSOD/lon/88/93/masknotrange/SELECT/lat/20/27/masknotrange/SELECT/T/%281979%29//YearStart/parameter/%282011%29//YearEnd/parameter/RANGEEDGES/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%280%29//hotThreshold/parameter/interp/%280.5%29//minFrac/parameter/interp/%28MinTemp%29//seasonalStat/parameter/%28MinTemp%29eq/%7Bnip/3/-1/roll/.tmin//units/%28Celsius_scale%29def/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MaxTemp%29eq/%7Bnip/3/-1/roll/.tmax//units/%28Celsius_scale%29def/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28HDD%29eq/%7B4/-1/roll/a:/.tmax/:a:/.tmin/:a/add/2.0/div//units/%28Celsius_scale%29def/3/-1/roll/sub/0/maskge/abs/3/-2/roll/flexseastotZeroFill%7Dif//seasonalStat/get_parameter/%28NumCD%29eq/%7B4/-1/roll/.tmin//units/%28Celsius_scale%29def/4/-3/roll/flexseasonalfreqLT%7Dif//seasonalStat/get_parameter/%28NumHD%29eq/%7B4/-1/roll/.tmax//units/%28Celsius_scale%29def/4/-3/roll/flexseasonalfreqGT%7Dif/%5BT%20IWMO%5DREORDER/CopyStream/IWMO/%28irids:SOURCES:IRI:Analyses:Tailored:Bangladesh:temperature:IWMO%4042977:ds%29//region/parameter/geoobject/.IWMO/SAMPLE//seasonalStat/get_parameter/%28MinTemp%29eq/%7B//long_name/%28Minimum%20Temperature%29def%7Dif//seasonalStat/get_parameter/%28MaxTemp%29eq/%7B//long_name/%28Maximum%20Temperature%29def%7Dif//seasonalStat/get_parameter/%28HDD%29eq/%7B//long_name/%28Heating%20Degree%20Days%29def%7Dif//seasonalStat/get_parameter/dup/%28NumCD%29eq/exch/%28NumHD%29eq/or/%7B//long_name/%28count%29def%7Dif/T/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.awr/.CPC_GSOD/.CPC_GSOD/lon/88/93/masknotrange/SELECT/lat/20/27/masknotrange/SELECT/T/%281979%29//YearStart/parameter/%282011%29//YearEnd/parameter/RANGEEDGES/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%280%29//hotThreshold/parameter/interp/%280.5%29//minFrac/parameter/interp/%28MinTemp%29//seasonalStat/parameter/%28MinTemp%29eq/%7Bnip/3/-1/roll/.tmin//units/%28Celsius_scale%29def/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MaxTemp%29eq/%7Bnip/3/-1/roll/.tmax//units/%28Celsius_scale%29def/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28HDD%29eq/%7B4/-1/roll/a:/.tmax/:a:/.tmin/:a/add/2.0/div//units/%28Celsius_scale%29def/3/-1/roll/sub/0/maskge/abs/3/-2/roll/flexseastotZeroFill%7Dif//seasonalStat/get_parameter/%28NumCD%29eq/%7B4/-1/roll/.tmin//units/%28Celsius_scale%29def/4/-3/roll/flexseasonalfreqLT%7Dif//seasonalStat/get_parameter/%28NumHD%29eq/%7B4/-1/roll/.tmax//units/%28Celsius_scale%29def/4/-3/roll/flexseasonalfreqGT%7Dif/%5BT%20IWMO%5DREORDER/CopyStream/IWMO/%28irids:SOURCES:IRI:Analyses:Tailored:Bangladesh:temperature:IWMO%4042977:ds%29//region/parameter/geoobject/.IWMO/SAMPLE//seasonalStat/get_parameter/%28MinTemp%29eq/%7B//long_name/%28Minimum%20Temperature%29def%7Dif//seasonalStat/get_parameter/%28MaxTemp%29eq/%7B//long_name/%28Maximum%20Temperature%29def%7Dif//seasonalStat/get_parameter/%28HDD%29eq/%7B//long_name/%28Heating%20Degree%20Days%29def%7Dif//seasonalStat/get_parameter/dup/%28NumCD%29eq/exch/%28NumHD%29eq/or/%7B//long_name/%28count%29def%7Dif/T/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
 </div>
 </fieldset>
 
@@ -267,14 +276,14 @@ The Maproom explores historical daily temperature by calculating simple seasonal
  <h2 align="center">Options</h2>
   <p align="left">
 <b>Years and Season</b>:
-Specify the range of years over which to perform the analysis and choose the start and end dates of the season , over which the diagnostics are to be performed.
+Specify the range of years over which to perform the analysis, and choose the start and end dates of the season over which the diagnostics are to be performed.
 <br />
 <b>Seasonal Data Coverage</b>:
 A minimum fraction of non-missing days per season can be required in order for the seasonal diagnostic to be defined at that station — if this minimum threshold is not met, then the seasonal diagnostic is assigned a missing value at that station, for that season and year.
 <br />
 <b>Hot/Cold Day Definition</b>:
 This threshold is used to define in Celsius degrees (non inclusive) the temperature under which a day is considered cold if the minimum temperature is below it; or the temperature above which a days is considered hot if the maximum temperature is above it; or the reference temperature for to compute the heating degree days.
-<br /><br /><b>Seasonal daily statistcis</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
+<br /><br /><b>Seasonal daily statistics</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
 <br /><b>Minimum and Maximum Temperature</b>: average minimum or maximum daily temperature over the season.
 <br /><b>Heating Degree Days</b>: Heating degree days are summations of negative differences between the mean daily temperature and user-defined reference base temperature during the season. The mean temperature is defined as the average of the minimum and the maximum.
 <br /><b>Number of Cold and Hot days</b>:
