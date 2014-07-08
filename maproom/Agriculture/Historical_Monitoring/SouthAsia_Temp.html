@@ -192,7 +192,7 @@ display: none;
             </fieldset>
 
             <fieldset class="navitem"><legend>Seasons</legend><select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1961" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2007" size="4" maxlength="4"/></fieldset>
-            <fieldset class="navitem"><legend>Seasonal daily statistics</legend><select class="pageformcopy" name="seasonalStat"><option value="HDD">Heating Degree Days</option><option value="NumCD">Number of Cold Days</option><option value="NumHD">Number of Hot Days</option><option value="CDD">Growing Degree Days</option></select></fieldset>
+            <fieldset class="navitem"><legend>Seasonal daily statistics</legend><select class="pageformcopy" name="seasonalStat"><option value="HDD">Chilling Degree Days</option><option value="NumCD">Number of Cold Days</option><option value="NumHD">Number of Hot Days</option><option value="CDD">Growing Degree Days</option></select></fieldset>
 
             <fieldset class="navitem" id="yearlyStat"><legend>Yearly seasonal statistics</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Mean</option><option value="StdDev">Standard deviation</option><option value="CoV">Coefficient of variation</option><option value="RbyP">Percentile</option></select>
         <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh3" type="text" value="100" size="4" maxlength="4"/>˚C.days</span><span id="pET2"><input class="pageformcopy" name="probExcThresh4" type="text" value="30" size="3" maxlength="3"/>days</span><span id="pET3"><input class="pageformcopy" name="probExcThresh5" type="text" value="30" size="3" maxlength="3"/>days</span><span id="pET4"><input class="pageformcopy" name="probExcThresh6" type="text" value="100" size="4" maxlength="4"/>˚C.days</span>
@@ -249,10 +249,13 @@ The Maproom explores historical daily temperature by calculating simple seasonal
 <b>Years and Season</b>:
 Specify the range of years over which to perform the analysis, and choose the start and end dates of the season over which the diagnostics are to be performed.
 <br />
+<br />
 <b>Hot/Cold Day Definition</b>:
-This threshold is used to define in Celsius degrees (non inclusive) the temperature under which a day is considered cold if the mean temperature is below it; or the temperature above which a days is considered hot if the mean temperature is above it; or the reference temperature to compute the growing degree days.
+This threshold is used to define in Celsius degrees (non inclusive) the temperature under which a day is considered cold if the mean temperature is below it; or the temperature above which a days is considered hot if the mean temperature is above it; or the reference temperature to compute the growing/chilling degree days.
 <br /><br /><b>Seasonal daily statistics</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
-<br /><b>Growing/Chilling Degree Days</b>: Growing or chilling degree days are summations of negative/positive differences between the mean daily temperature and user-defined reference base temperature during the season.
+<br />
+<br />
+<b>Growing/Chilling Degree Days</b>: Growing or chilling degree days are summations of positive/negative differences between the mean daily temperature and user-defined reference base temperature during the season. They are comparable to the more familiar cooling/heating degree day definitions utilized by energy-sector.
 <br /><b>Number of Cold and Hot days</b>:
 the number of cold or hot days during the season according to the user-defined threshold and according to the mean daily temperature.
 <br />
