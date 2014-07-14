@@ -50,13 +50,13 @@
 width: 99%;
 display: inline-block
  }
-.seasonalStatHDD #pET2 {
+.seasonalStatCDD #pET2 {
 display: none;
 }
-.seasonalStatHDD #pET3 {
+.seasonalStatCDD #pET3 {
 display: none;
 }
-.seasonalStatHDD #pET4 {
+.seasonalStatCDD #pET4 {
 display: none;
 }
 .seasonalStatNumCD #pET1 {
@@ -77,13 +77,13 @@ display: none;
 .seasonalStatNumHD #pET4 {
 display: none;
 }
-.seasonalStatCDD #pET1 {
+.seasonalStatGDD #pET1 {
 display: none;
 }
-.seasonalStatCDD #pET2 {
+.seasonalStatGDD #pET2 {
 display: none;
 }
-.seasonalStatCDD #pET3 {
+.seasonalStatGDD #pET3 {
 display: none;
 }
 .seasonalStat #pET2 {
@@ -173,7 +173,7 @@ display: none;
 <input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" data-default="1" />
 <input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" data-default="31" />
 <input class="dlimg dlauximg share dlimgts" name="hotThreshold" type="hidden" data-default="0." />
-<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" data-default="HDD" />
+<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" data-default="CDD" />
 <input class="dlimg dlauximg share ylyStat pET perc bodyClass" name="yearlyStat" type="hidden" data-default="Mean" />
 <input class="dlimg share pET" name="probExcThresh1" type="hidden" data-default="0." />
 <input class="dlimg share pET" name="probExcThresh2" type="hidden" data-default="0." />
@@ -192,7 +192,7 @@ display: none;
             </fieldset>
 
             <fieldset class="navitem"><legend>Seasons</legend><select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1961" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2007" size="4" maxlength="4"/></fieldset>
-            <fieldset class="navitem"><legend>Seasonal daily statistics</legend><select class="pageformcopy" name="seasonalStat"><option value="HDD">Chilling Degree Days</option><option value="NumCD">Number of Cold Days</option><option value="NumHD">Number of Hot Days</option><option value="CDD">Growing Degree Days</option></select></fieldset>
+            <fieldset class="navitem"><legend>Seasonal daily statistics</legend><select class="pageformcopy" name="seasonalStat"><option value="CDD">Chilling Degree Days</option><option value="NumCD">Number of Cold Days</option><option value="NumHD">Number of Hot Days</option><option value="GDD">Growing Degree Days</option></select></fieldset>
 
             <fieldset class="navitem" id="yearlyStat"><legend>Yearly seasonal statistics</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Mean</option><option value="StdDev">Standard deviation</option><option value="CoV">Coefficient of variation</option><option value="RbyP">Percentile</option></select>
         <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh3" type="text" value="100" size="4" maxlength="4"/>˚C.days</span><span id="pET2"><input class="pageformcopy" name="probExcThresh4" type="text" value="30" size="3" maxlength="3"/>days</span><span id="pET3"><input class="pageformcopy" name="probExcThresh5" type="text" value="30" size="3" maxlength="3"/>days</span><span id="pET4"><input class="pageformcopy" name="probExcThresh6" type="text" value="100" size="4" maxlength="4"/>˚C.days</span>
@@ -228,7 +228,7 @@ Observations for <span class="bold iridl:long_name"></span>
 </div>
 <br />
 <div class="dlimgtsbox">
-<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.RIHN/.aphroTemp/.V1204R1/%280.25%29//resolution/parameter/%280.50%29ne/%7B.APHRO_MA_025deg%7D%7B.APHRO_MA_050deg%7Difelse/a:/.temp/%28off%29//obsOnly/parameter/%28on%29eq/%7B:a:/.rstn/0.0/maskle/0.0/mul/add%7Dif/:a/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%280%29//hotThreshold/parameter/interp/%280.5%29//minFrac/parameter/interp/%28HDD%29//seasonalStat/parameter/%28MinTemp%29eq/%7Bnip/3/-1/roll/.tmin//units/%28Celsius_scale%29def/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MaxTemp%29eq/%7Bnip/3/-1/roll/.tmax//units/%28Celsius_scale%29def/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MeanTemp%29eq/%7Bnip/T/3/-2/roll/seasonalAverage//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28HDD%29eq/%7B4/-1/roll/3/-1/roll/sub/0/maskge/abs/3/-2/roll/flexseastotZeroFill//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28CDD%29eq/%7B4/-1/roll/3/-1/roll/sub/0/maskle/abs/3/-2/roll/flexseastotZeroFill//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28NumCD%29eq/%7B4/-1/roll/4/-3/roll/flexseasonalfreqLT//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28NumHD%29eq/%7B4/-1/roll/4/-3/roll/flexseasonalfreqGT//scale_symmetric/false/def%7Dif/%28bb:%5B80%2C26%2C81%2C27%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average//seasonalStat/get_parameter/%28HDD%29eq/%7B//long_name/%28Chilling%20Degree%20Days%29def%7Dif//seasonalStat/get_parameter/dup/%28NumCD%29eq/exch/%28NumHD%29eq/or/%7B//long_name/%28count%29def%7Dif/T/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
+<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.RIHN/.aphroTemp/.V1204R1/%280.25%29//resolution/parameter/%280.50%29ne/%7B.APHRO_MA_025deg%7D%7B.APHRO_MA_050deg%7Difelse/a:/.temp/%28off%29//obsOnly/parameter/%28on%29eq/%7B:a:/.rstn/0.0/maskle/0.0/mul/add%7Dif/:a/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%280%29//hotThreshold/parameter/interp/%280.5%29//minFrac/parameter/interp/%28CDD%29//seasonalStat/parameter/%28MinTemp%29eq/%7Bnip/3/-1/roll/.tmin//units/%28Celsius_scale%29def/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MaxTemp%29eq/%7Bnip/3/-1/roll/.tmax//units/%28Celsius_scale%29def/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MeanTemp%29eq/%7Bnip/T/3/-2/roll/seasonalAverage//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28CDD%29eq/%7B4/-1/roll/3/-1/roll/sub/0/maskge/abs/3/-2/roll/flexseastotZeroFill//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28GDD%29eq/%7B4/-1/roll/3/-1/roll/sub/0/maskle/abs/3/-2/roll/flexseastotZeroFill//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28NumCD%29eq/%7B4/-1/roll/4/-3/roll/flexseasonalfreqLT//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28NumHD%29eq/%7B4/-1/roll/4/-3/roll/flexseasonalfreqGT//scale_symmetric/false/def%7Dif/%28bb:%5B80%2C26%2C81%2C27%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average//seasonalStat/get_parameter/%28CDD%29eq/%7B//long_name/%28Chilling%20Degree%20Days%29def%7Dif//seasonalStat/get_parameter/dup/%28NumCD%29eq/exch/%28NumHD%29eq/or/%7B//long_name/%28count%29def%7Dif/T/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
 </div>
 </fieldset>
 <fieldset class="dlimage">
