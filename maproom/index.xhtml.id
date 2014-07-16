@@ -33,7 +33,7 @@
 <div class="controlBar">
            <fieldset class="navitem">
                 <legend>IRI/LDEO</legend> 
-                      <a rev="section" class="navlink carryup" href="/">Ruang Sumber Informasi Data Iklim</a>
+                      <a rev="section" class="navlink carryup carryLanguage" href="/">Ruang Sumber Informasi Data Iklim</a>
             </fieldset> 
            <fieldset class="navitem"> 
                 <legend>Ruang Sumber Informasi Data</legend> 
