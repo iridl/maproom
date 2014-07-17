@@ -10,5 +10,5 @@ To build maproom you need the following software:
 To build and set up:
 
 	* Edit config.lua
-	* Run 'make'
+	* Run 'make build' or 'make tarball'
 	* Drop localmaproom.conf into your Apache config dir

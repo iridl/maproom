@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="en"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>IFAD PIC: Daily Forecasts</title>
+<link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../ifad.css" /> 
+<link rel="canonical" href="dailyforecast.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_SixDayForecasts" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#agriculture"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Rate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#precipitation_rate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#percentile"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#deg1x1"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomaly"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Indonesia"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Indonesia_69_1"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Bangladesh"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Bangladesh_11_1"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Laos"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Laos_85_1"/>
+<script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<style>
+.dlimage, .dlimage.wide{
+float: none;
+width: 46%;
+display: inline;
+}
+@media only all and (max-width: 800px) {
+.dlimage, .dlimage.wide {
+width: 95%;
+}
+}
+</style>
+</head>
+<body>
+<form name="pageform" id="pageform" class="carryLanguage carryup carry dlimg dlauximg share">
+<input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
+<input class="carryup carry dlimg share" name="bbox" type="hidden" />
+<input class="dlimg share" name="S" type="hidden" />
+<input class="dlimg dlauximg share" name="day" type="hidden" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Climate and Agriculture</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/ifad.html">IFAD</a>
+            </fieldset> 
+            <fieldset class="navitem"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_DailyForecasts"><span property="term:label">Daily Forecasts</span></legend>ESRL GEFS Daily Precipitation
+            </fieldset> 
+	    <fieldset class="navitem">
+	    <legend>Day</legend>
+	    <span class="selectvalue"></span><select class="pageformcopy" name="day">
+<option value=".day1">Day 1</option>
+<option value=".day2">Day 2</option>
+<option value=".day3">Day 3</option>
+<option value=".day4">Day 4</option>
+<option value=".day5">Day 5</option>
+<option value=".day6">Day 6</option>
+</select>
+	    </fieldset>
+            <fieldset class="navitem"> 
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/ifadregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">IFAD Countries</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
+            </fieldset>
+ </div>
+<div class="images" id="content">
+<fieldset class="dlimage"  about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcp/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/X/88/165/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcp/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/88/165/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcp/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colorscale2+-fig//nplotstream+2+def+/S/last/plotvalue/X/88/165/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef+.gif" />
+</fieldset>
+<fieldset class="dlimage"  about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcpanom/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+//S/1726.0/plotvalue/X/88/165/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcpanom/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/88/165/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcpanom/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colorscale2+-fig//nplotstream+2+def+/S/last/plotvalue/X/88/165/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef+.gif" />
+</fieldset>
+<fieldset class="dlimage"  about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcppctmonthlyclim/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/88/165/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcppctmonthlyclim/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/88/165/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcppctmonthlyclim/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colorscale2+-fig//nplotstream+2+def+//S/1726.0/plotvalue/X/88/165/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef+.gif" />
+</fieldset>
+<fieldset class="dlimage"  about="">
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcppctlenoseasonal/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/88/165/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcppctlenoseasonal/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue/X/88/165/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlauximg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/%28day1%29//day/parameter/interp/a:/.apcppctlenoseasonal/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colorscale2+-fig//nplotstream+2+def+//S/1726.0/plotvalue/X/88/165/plotrange/Y/-10/27/plotrange+//color_smoothing+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//antialias+true+psdef//XOVY+null+psdef//plotaxislength+550+psdef+.gif" />
+</fieldset>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>

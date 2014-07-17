@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -64,11 +64,11 @@ color: red;
 <body xml:lang="en">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlimgts dlauximg dlimgloc share">
 <input class="carryup carry carryLanguage" name="Set-Language" type="hidden" />
-<input class="bodyClass dlimg dlauximg info dlimgts share" name="SPIselect" type="hidden" value="SPI-US_ClimDiv_3-Month_pw1" />
+<input class="bodyClass dlimg dlauximg info dlimgts share" name="SPIselect" type="hidden" data-default="SPI-US_ClimDiv_3-Month_pw1" />
 <input class="carryup carry dlimg dlimgloc share dlimglocclick" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
 <input class="notused" name="plotaxislength" type="hidden" />
-<input class="pickarea" name="resolution" type="hidden" value="irids:SOURCES:NOAA:NCDC:CIRS:ClimateDivision:ds" />
+<input class="pickarea" name="resolution" type="hidden" data-default="irids:SOURCES:NOAA:NCDC:CIRS:ClimateDivision:ds" />
 <input class="dlimg share" name="layers" value="SPI" checked="checked" type="checkbox" />
 <input class="dlimg share" name="layers" value="lakes" checked="checked" type="checkbox" />
 <input class="dlimg share" name="layers" value="coasts_gaz" checked="checked" type="checkbox" />
@@ -134,7 +134,7 @@ margin: 0px;
 
 <div class="dlimgtsbox">
 <div>b)</div>
-<img class="dlimgts dlimgloc regionwithinbbox idiv" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.IRI/.Analyses/.SPI%5B%28.%29%28SPI-US_ClimDiv_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/IDIV/%28irids:SOURCES:Features:Climatological:US_climate:Divisions:IDIV%40101:ds%29//region/parameter/geoobject/.IDIV/.first/VALUE/T/2/copy//pointwidth/0/def/%28Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%28months%20since%2001-Jan%29def/replaceGRID/dup/T/0.5/35.5/RANGE/T/0/12/24/shiftdata/T//modulus/12/def/pop/exch/T/-36/shiftGRID/T/0.5/last/RANGE/T//modulus/12/def/pop/T/-0.5/shiftGRID//fullname/%282013%29def/exch/a:/T_lag/24/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282012%29def/:a:/T_lag/12/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282011%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282010%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig//plotaxislength/250/psdef//T/0/12/plotrange//plotborder/42/psdef//plotaxislength/250/psdef//XOVY/null/psdef%5B%28/%29%28SPI-US_ClimDiv_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/-3.1/3.1/plotrange//T/0.0/12.0/plotrange//antialias/true/psdef//plotborder/42/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
+<img class="dlimgts dlimgloc regionwithinbbox idiv" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.IRI/.Analyses/.SPI%5B%28.%29%28SPI-US_ClimDiv_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/IDIV/%28irids:SOURCES:Features:Climatological:US_climate:Divisions:IDIV%40101:ds%29//region/parameter/geoobject/.IDIV/.first/VALUE/T/2/copy//pointwidth/0/def/%28Jan%29VALUES/.T/.gridvalues/dup/length/4/sub/get/last/RANGE/T/name/npts/NewIntegerGRID//units/%28months%20since%2001-Jan%29def/replaceGRID/dup/T/0.5/35.5/RANGE/T/0/12/24/shiftdata/T//modulus/12/def/pop/exch/T/-36/shiftGRID/T/0.5/last/RANGE/T//modulus/12/def/pop/T/-0.5/shiftGRID//fullname/%282014%29def/exch/a:/T_lag/24/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282013%29def/:a:/T_lag/12/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282012%29def/:a:/T_lag/0/VALUE/T_lag/removeGRID/T/-0.5/shiftGRID//fullname/%282011%29def/:a/T/fig:/medium/line/verythin/blue/solid/line/magenta/line/grey/line/:fig//plotaxislength/250/psdef//T/0/12/plotrange//plotborder/42/psdef//plotaxislength/250/psdef//XOVY/null/psdef%5B%28/%29%28SPI-US_ClimDiv_3-Month_pw1%29//SPIselect/parameter%5Dconcat/interp/-3.1/3.1/plotrange//T/0.0/12.0/plotrange//antialias/true/psdef//plotborder/42/psdef//plotaxislength/250/psdef//XOVY/null/psdef/+.gif" />
 </div>
 <p>
 a) Time series of Standardized Precipitation Index values for the selected region for the past 10 years.  Red dashed lines on the plot indicate the SPI thresholds corresponding to the percentiles associated with the D0 9top, 30%tile) to D4 (bottom, 2%tile) drought intensity categories in the U.S. Drought Monitor.

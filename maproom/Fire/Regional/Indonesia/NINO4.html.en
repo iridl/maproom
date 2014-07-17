@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -56,11 +56,11 @@ display: inline-block
 <form name="pageform" id="pageform">
 <input class="carryup carryLanguage" name="Set-Language" type="hidden" />
 <input class="carry dlimg dlauximg info share" name="var" type="hidden" />
-<input class="dlimgts share" name="L" type="hidden" value="1" />
-<input class="dlimgts share" name="fires" type="hidden" value="medianover" />
-<input class="dlimgts share" name="nino4" type="hidden" value="medianover" />
-<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" value="bb:90:-12:155:10:bb" />
-<input class="share carry dlimgts dlimgloc" name="region" type="hidden" value="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@10:ds" />
+<input class="dlimgts share" name="L" type="hidden" data-default="1" />
+<input class="dlimgts share" name="fires" type="hidden" data-default="medianover" />
+<input class="dlimgts share" name="nino4" type="hidden" data-default="medianover" />
+<input class="dlimg share dlimgloc carry" name="bbox" type="hidden" data-default="bb:90:-12:155:10:bb" />
+<input class="share carry dlimgts dlimgloc" name="region" type="hidden" data-default="irids:SOURCES:Features:Political:Indonesia:Provinces:gid@10:ds" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">
@@ -144,6 +144,9 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <br />
 <div class="dlimgtsbox">
 <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T/1//L/parameter/-1/mul/shiftdata/SOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kalimantan/.numberOfFires%5Bgid%5Daverage/0/mul/add/dup/dup%5BT%5D%28medianover%29//nino4/parameter/interp/dup/getrealization/0/get/100/mul/round/100/div/s==/3/-1/roll/3/-1/roll/flaglt/2/mul/SOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kalimantan/.numberOfFires/gid/%28irids:SOURCES:Features:Political:Indonesia:Provinces:gid%4010:ds%29//region/parameter/geoobject/.gid/SAMPLE/dup/dup%5BT%5D%28medianover%29//fires/parameter/interp/dup/getrealization/0/get/round/cvi/s==/3/-1/roll/3/-1/roll/flaglt/4/-1/roll/add/%28Fires%20%3E%20%292/index/%28%20%26%20NINO4%20%3E%20%296/index/4/array/astore/concat/%28Fires%20%3C%20%293/index/%28%20%26%20NINO4%20%3E%20%297/index/4/array/astore/concat/%28Fires%20%3E%20%294/index/%28%20%26%20NINO4%20%3C%20%298/index/4/array/astore/concat/%28Fires%20%3C%20%296/-1/roll/%28%20%26%20NINO4%20%3C%20%299/-1/roll/4/array/astore/concat/4/array/astore/%28CLIST%29exch/def/startcolormap/%28maxncolor%298/def/DATA/0/3/RANGE/white/red/red/LimeGreen/DeepSkyBlue/gold/gold/endcolormap/%28units%29%28ids%29def/%28long_name%29%28%29def/3/-1/roll/3/-1/roll/2/RECHUNK/CopyStream/2/index/2/RECHUNK/CopyStream/fig:/scattercolor/:fig/%28XOVY%291/psdef/%28fnt%29%28Palatino-Roman%29psdef/%28fntsze%2920/psdef//XOVY/1/psdef//plotaxislength/432/psdef//plotborder/72/psdef//plotaxislength/432/psdef//plotborder/72/psdef//XOVY/1/psdef/+.gif" />
+
+<a rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kalimantan/T/gid/name1/numberOfFires/table:/4/:table/"></a>
+
 </div>
 <div class="dlimgtsbox">
 <img class="dlimgts" src="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T/1//L/parameter/-1/mul/shiftdata/SOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kalimantan/.numberOfFires%5Bgid%5Daverage/0/mul/add/dup/dup%5BT%5D%28medianover%29//nino4/parameter/interp/dup/getrealization/0/get/100/mul/round/100/div/s==/3/-1/roll/3/-1/roll/flaglt/2/mul/SOURCES/.IRI/.Analyses/.Fire/.Indonesia/.Kalimantan/.numberOfFires/gid/%28irids:SOURCES:Features:Political:Indonesia:Provinces:gid%4010:ds%29//region/parameter/geoobject/.gid/SAMPLE/dup/dup%5BT%5D%28medianover%29//fires/parameter/interp/dup/getrealization/0/get/round/cvi/s==/3/-1/roll/3/-1/roll/flaglt/4/-1/roll/add/%28Fires%20%3E%20%292/index/%28%20%26%20NINO4%20%3E%20%296/index/4/array/astore/concat/%28Fires%20%3C%20%293/index/%28%20%26%20NINO4%20%3E%20%297/index/4/array/astore/concat/%28Fires%20%3E%20%294/index/%28%20%26%20NINO4%20%3C%20%298/index/4/array/astore/concat/%28Fires%20%3C%20%296/-1/roll/%28%20%26%20NINO4%20%3C%20%299/-1/roll/4/array/astore/concat/4/array/astore/%28CLIST%29exch/def/startcolormap/%28maxncolor%298/def/DATA/0/3/RANGE/white/red/red/LimeGreen/DeepSkyBlue/gold/gold/endcolormap/%28units%29%28ids%29def/%28long_name%29%28%29def/3/-1/roll/3/-1/roll/2/RECHUNK/CopyStream/2/index/2/RECHUNK/CopyStream/fig:/scattercolor/:fig/.auxfig/%28XOVY%291/psdef/%28fnt%29%28Palatino-Roman%29psdef/%28fntsze%2920/psdef//XOVY/1/psdef//plotaxislength/432/psdef//plotborder/72/psdef//plotaxislength/432/psdef//plotborder/72/psdef//XOVY/1/psdef/+.gif" />
@@ -167,6 +170,9 @@ Observations for <b><span class="iridl:long_name"></span></b>
 <fieldset class="dlimage" about="">
 <a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/correlationcolorscale/DATA/-2/2/RANGE/dup+T+fig-+colorbars2+-fig+T/466./last/plotrange//plotaxislength+432+psdef//XOVY+null+psdef//plotborder+72+psdef/"></a>
 <img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/correlationcolorscale/DATA/-2/2/RANGE/dup+T+fig-+colorbars2+-fig+T/466./last/plotrange//plotaxislength+432+psdef//XOVY+null+psdef//plotborder+72+psdef+.gif" border="0" alt="image" />
+
+<a rel="iridl:hasTable" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/T/exch/table:/2/:table/"></a>
+
 </fieldset>
  <div id="tabs-1" class="ui-tabs-panel" about="">
   <h2 align="center" property="term:title">Predictive Tool for Fire Activity in Kalimantan, Indonesia</h2>
@@ -181,7 +187,8 @@ The time series of the NINO4 index (shown in the graph above) is updated every m
 <h4>Reference</h4>
 <dl class="datasetdocumentation">
 Reynolds, R.W., N.A. Rayner, T.M. Smith, D.C. Stokes, and W. Wang, 2002: An Improved In Situ and Satellite SST Analysis for Climate. J. Climate, 15, 1609-1625</dl>
-<b>Data: </b>Monthly NINO4 index based upon Reynolds and Smith OIv2 sea surface temperature anomalies 
+<b>Sea Surface Temperature Anomalies</b>
+<br /><b>Data: </b>Monthly NINO4 index based upon Reynolds and Smith OIv2 sea surface temperature anomalies 
 
 <br /><b>Data Period </b>November 1998 - present
 <br /><b>Base Period for Climatology: </b>January 1971 - December 2000
@@ -192,8 +199,8 @@ Reynolds, R.W., N.A. Rayner, T.M. Smith, D.C. Stokes, and W. Wang, 2002: An Impr
 <br /><b>Data Source</b>: The data were acquired by the South Sumatra Forest Fire Management Project (SSFFMP) and the Japanese International Cooperation Agency (JICA)-in collaboration with the Ministry of Forestry of the Republic of Indonesia and collected by the Bogor Agricultural University National Centers for Environmental Prediction, Environmental Modeling Center, Climate Modeling Branch
 
 <p><b>Description: </b>The time series above gives the value of the NINO4 sea surface temperature anomaly index in the central equatorial Pacific Ocean (<a href="http://iri.columbia.edu/climate/ENSO/background/monitoring.html#sst">description of NINO4 index</a>) based upon sea surface temperature anomalies in the Reynolds and Smith OIv2 data set (<a href="http://www.emc.ncep.noaa.gov/research/cmb/sst_analysis/">description</a>), with 1971-2000 as the climatological base period.
-&nbsp; NCEP is
-an acronym for the US&nbsp;National Centers for Environmental Prediction.</p>
+ NCEP is
+an acronym for the US National Centers for Environmental Prediction.</p>
 
 </div>
 <div class="ui-tabs-panel-hidden">

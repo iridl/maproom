@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.1"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta property="maproom:Entry_Id" content="IFRC_FIC_dayexceptional" />
+<meta property="maproom:Sort_Id" content="a01" />
+<title>IFAD PIC: Where is exceptionally heavy rainfall expected?</title>
+<link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../ifad.css" /> 
+<link rel="canonical" href="exceprain.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_SixDayForecasts" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#agriculture"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Rate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#precipitation_rate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#deg1x1"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#percentile"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Indonesia"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Indonesia_69_1"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Bangladesh"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Bangladesh_11_1"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Laos"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Laos_85_1"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/.apcppctlenoseasonal/X/88/165/RANGE/Y/-10/27/RANGE/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/1/plotrange/S/last/plotvalue/X/88/165/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.gif" />
+<script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+</head>
+<body  xml:lang="en">
+<form name="pageform" id="pageform" class="carryLanguage carryup carry dlimg dlauximg share">
+<input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
+<input class="carryup carry dlimg share localemap" name="bbox" type="hidden" />
+<input class="dlimg share" name="S" type="hidden" />
+<input class="dlimg" name="plotaxislength" type="hidden" />
+<input name="resolution" type="hidden" value="irids:SOURCES:Features:Political:World:Countries:ds" />
+<input class="locale localemap" name="region" type="hidden" value="" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Climate and Agriculture</legend> 
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/ifad.html">IFAD</a>
+            </fieldset> 
+            <fieldset class="navitem" id="chooseSection"> 
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_IFAD_SixDayForecasts"><span property="term:label">Six-Day Forecasts</span></legend>
+            </fieldset> 
+            <fieldset class="navitem"> 
+                <legend>Region</legend>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/ifadregions.json"></a>
+		<select class="RegionMenu" name="bbox">
+		<option value="">IFAD Countries</option>
+		<optgroup class="template" label="Region">
+		<option class="irigaz:hasPart irigaz:id@value term:label"></option>
+		</optgroup>
+		</select>
+            </fieldset>
+ </div>
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+<div id="ifaddiv">
+</div>
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >More Information</a></li>
+      <li><a href="#tabs-3" >Instructions</a></li>
+      <li><a href="#tabs-4" >Single-Day Precipitation Maps</a></li>
+      <li><a href="#tabs-5" >Dataset Documentation</a></li>
+      <li><a href="#tabs-6" >Contact Us</a></li>
+    </ul>
+<fieldset class="dlimage ControlLock NoDefaultIvars" id="content" about="">
+<div class="popup regionwithinbbox">
+<a class="locale" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:-180:-90:180:90:bb%29//region/parameter/geoobject/info.json"></a>
+<img class="localemap valid" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/88/165/RANGE/Y/-10/27/RANGE/X/Y/%28bb:-180%2C-90%2C180%2C90%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-180%2C-90%2C-180%2C-90%29//region/parameter/geoobject/X/Y/fig-/lightgrey/mask/grey/black/countries_gaz/red/fill/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef/+.gif" />
+<div class="template"><span class="iridl:long_name valid"></span>
+</div>
+</div>
+<link rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/" />
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/a:/.apcppctlenoseasonal/X/88/165/RANGE/Y/-10/27/RANGE/:a:/.forecasttime/:a/X/Y/fig-+colors+plotlabel+black+thin+countries_gaz+-fig+/S/last/plotvalue+//XOVY+null+psdef//framelabel+%28Forecast%20for%20%25=%5Bforecasttime%5D%20Issued%20%25=%5BS%5D%29+psdef//plotaxislength+600+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotbordertop/40/psdef//plotborderbottom/40/psdef/+.gif" border="0" alt="image" />
+  <br />
+  <img class="dlauximg" src="/maproom/IFRC/FIC/IFRCpctlecolorscale.gif" />
+</fieldset>
+<div id="tabs-1" class="ui-tabs-panel">
+<h2 align="center"  property="term:title" >Where is exceptionally heavy rainfall expected?</h2>
+<p align="left" property="term:description">This map shows places in the world that are forecasted to receive exceptionally heavy rainfall in the next six days relative to what is normal for their location.</p>
+<p>See the "More Information" tab for forecast details.</p>
+</div>
+ <div id="tabs-2" class="ui-tabs-panel" about="">
+<h2 align="center">What does "Heavy" mean?</h2>
+<p>This map shows areas where cumulative rainfall (or snow) over the next six days is expected to be exceptionally heavy.</p>
+<ul>
+<li> The darkest blue shows where the total 6-day rainfall is expected to be exceptionally heavy, meaning in the top 1% of rainfall ever at this location at any time of year in the past. </li>
+<li> The medium blue shows expected rainfall in the top 5% </li>
+<li> Light blue shows expected rainfall in the top 10% of rainfall experienced in this location in the past. </li>
+</ul>
+<p align="left"><i>This forecast shows rain/snow over large areas only, and should not be used to forecast cyclone tracks, local rainfall, or as a flood forecast.</i> 
+</p>
+</div>
+<div id="tabs-3"  class="ui-tabs-panel">
+<h2  align="center">How to use this interactive map</h2>
+<p><i>Switch to another map:</i>
+Select the dropdown menu at the top of the page.</p>
+<p><i>Return to the menu page:</i>
+Click the blue link called “IFAD” at the top left corner of the page.</p>
+<p><i>Zoom in to a region:</i><br />
+Method 1: Pick a region from the list:
+<ol>
+<li>Select the dropdown menu at the top of the page, titled “Region”</li>
+<li>Click on the region of interest, and the map will automatically refresh.</li>
+</ol>
+</p>
+<p>Method 2: Click-and-drag:</p>
+<ol>
+<li>Click the left mouse button at the upper-left corner of the region to which you would like to zoom.</li>
+<li>While holding down the button, drag the mouse to the lower-right corner of the region to which you would like to zoom.</li>
+<li>Release the left mouse button. The map will redraw automatically.</li>
+</ol>
+<p><i>Zoom out to the global map:</i></p>
+<ol>
+<li>Move your mouse over the map, until you see three icons appear in the upper left corner.</li>
+<li>Click the icon of the magnifying glass.</li>
+<li>The map will redraw automatically. Note that the map cannot display areas outside of the latitudes initially shown on the interface.</li>
+</ol>
+<p><i>Change the date of the forecast:</i>
+Forecasts are labeled by the day they were issued. You can find this label by moving your mouse over the map until you see a text box appear at the top with the date inside.
+<ol>
+<li>To step forward or back by one day, click the corresponding buttons to the left or right of the text box, and the map will automatically refresh.</li>
+<li>To manually change the forecast issue date, type your date of interest into the text box. This must follow the format: “0000 16 Jan 2008”. Then, press “enter” or click the “refresh” icon in the top left corner of the map.</li>
+<li>To produce an animation of these maps over a series of dates, type the date range into the text box. This must follow the format: “start date” followed by “to” followed by “end date”. For example “0000 1 Jan 2008 to 0000 15 Jan 2008”.</li>
+</ol>
+</p>
+<div class="buttonInstructions"></div>
+</div>
+<div id="tabs-4" class="ui-tabs-panel">
+<h2  align="center">Single-Day (24-Hour) Total Precipitation Forecast Maps</h2>
+<table BORDER="2" >
+<tr>
+<td align="center"><a class="share" href="dailyforecast.html">Day 1 Precipitation Forecast Maps</a></td>
+
+<td align="center"><a class="share" href="dailyforecast.html?day=.day2">Day 2 Precipitation Forecast Maps</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day3">Day 3 Precipitation Forecast Maps</a></td>
+</tr>
+<tr><td align="center"><a class="share" href="dailyforecast.html?day=.day4">Day 4 Precipitation Forecast Maps</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day5">Day 5 Precipitation Forecast Maps</a></td>
+<td align="center"><a class="share" href="dailyforecast.html?day=.day6">Day 6 Precipitation Forecast Maps</a></td>
+</tr>
+</table>
+</div>
+<div id="tabs-5" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p>
+<b>Data</b>  Daily ensemble-mean forecast precipitation totals at 1.0&#176; lat/lon resolution from the 2012 version of the National Centers for Environmental Prediction's (NCEP) Global Ensemble Forecasting System (GEFS) model run daily using 00 UTC initial conditions, available via the NOAA ESRL PSD Reforecast Version 2 Project 
+<br /><b>Data Source</b> U. S. National Oceanic and Atmospheric Administration (NOAA), Earth System Research Laboratory (ESRL), Physical Sciences Division (PSD), <a href="http://esrl.noaa.gov/psd/forecasts/reforecast2/">ESRL Reforecast Version 2 Project</a>
+<br /><b>Analyses</b>: Analyses shown here include forecast daily (days 1-6) and six-day precipitation totals, forecast daily and six-day total precipitation anomalies from the 1985-2012 mean, forecast daily and six-day total precipitation as percent of mean monthly total precipitation (1985-2012 base period), and forecast daily and six-day total precipitation percentiles (1985-2012 base period).
+</p>
+</div>
+<div id="tabs-6"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Precipitation Forecast in Context Map Tool">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room, for example, the forecasts not displaying or updating properly.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>

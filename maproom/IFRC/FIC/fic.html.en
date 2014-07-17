@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -37,7 +37,7 @@
  </div>
 <div>
  <div id="content" class="searchDescription">
-<div><img src="http://iridl.ldeo.columbia.edu/maproom/IFRC/Forecasts/logoFED_UK_220px.jpg" /></div>
+<div><img src="http://iridl.ldeo.columbia.edu/maproom/IFRC/logoFED_UK_220px.jpg" /></div>
 <h2 property="term:title">International Federation of Red Cross and Red Crescent Societies:  Forecasts in Context</h2>
 <p>
 Working in collaboration with the International Federation of Red Cross and Red Crescent Societies, IRI has developed a map tool to provide context for global precipitation forecast information. The tool displays maps of various measures of the relative severity of forecast precipitation events for the globe for 1 to 6 days in advance by comparing the current forecast amounts with a 25-year forecast model climatology. The tool also displays probabilistic seasonal precipitation forecasts for the globe, including "predictions in context" maps that show where the seasonal forecast indicates an enhanced probability for the continuation or reversal of previously-observed above-normal or below-normal seasonal precipitation. Maps of monthly precipitation climatology, and population and poverty maps are also provided to allow for the examination of the relative exposure to weather events and seasonal precipitation fluctuations.

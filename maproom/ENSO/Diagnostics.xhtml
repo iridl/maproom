@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+ xml:lang="en"
+      >
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>ENSO Diagnostics</title>
+<link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+<!-- <link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" /> -->
+<link rel="canonical" href="Diagnostics.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:isDescribedBy"
+href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:isDescribedBy"
+href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#diagnostics" />
+<link rel="term:icon" href="New/elnino-lalnina-conditions_maproom.jpg" />
+<script type="text/javascript" src="../../uicore/uicore.js"></script>
+</head>
+<body>
+
+<form name="pageform" id="pageform">
+<input class="carryLanguage carryup" name="Set-Language" type="hidden" />
+<input class="carryup titleLink itemImage" name="bbox" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList"> 
+                <legend>Maproom</legend> 
+                    <a rev="section" class="navlink carryup" href="index.html">ENSO</a>
+            </fieldset> 
+           <fieldset class="navitem" id="chooseSection">
+                           <legend>ENSO</legend>
+             </fieldset> 
+            <fieldset class="navitem"> 
+                <legend>Region</legend>
+                            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/globalregions.json"></a>
+                <select class="RegionMenu" name="bbox">
+                <option value="">Global</option>
+                <optgroup class="template" label="Region">
+                <option class="irigaz:hasPart irigaz:id@value term:label"></option>
+                </optgroup>
+                </select>
+
+           
+            </fieldset>
+</div>
+<div>
+ <div id="content" class="searchDescription">
+<h2 property="term:title">ENSO Diagnostics</h2>
+<p align="left" property="term:description">
+This section contains maps, time series and other analyses useful for monitoring ENSO and identifying the presence of a shift into EL Niño or La Niña.
+</p>
+<p>
+Monitoring of El Niño and La Niña requires observations from both the atmosphere and oceans. These observations are often summarized in terms of various atmospheric and oceanic indices. Some indices are based the absolute departure, or anomaly, from the long-term average of a variable over a region(s). Some of the more common indices in use are found within this section.
+</p>
+
+<p>There are several regions of the tropical Pacific Ocean that have been highlighted as being important for monitoring and identifying a developing El Niño or La Niña. Referred to as NINO regions, the most common are shown in the figure below:             
+          </p>
+          <img class="dsimg" src="New/NINO_Regions.jpg" width="348" />
+                               
+      <ul>
+            <li><i>NINO1+2</i> (0-10S, 80-90W). The region that typically 
+warms     first     when            an         El Niño event  develops.</li>
+            <li><i>NINO3</i> (5S-5N; 150W-90W). The region of the tropical
+             Pacific               that has the largest variability in sea-surface 
+            temperature    on   El   Niño               time scales.</li>
+            <li><i>NINO3.4</i> (5S-5N; 170W-120W). The region that has  
+ large      variability          on El Niño time scales, and that
+is closer       (than  NINO3) to  the    region   where changes in local
+sea-surface   temperature       are important  for    shifting   the large
+region of rainfall         typically     located  in the far  western   
+Pacific.</li>
+            <li><i>NINO4</i> (5S-5N: 160E-150W). The region where changes 
+           of  sea-surface         temperature lead to total values around 
+   27.5C,       which   is thought to   be   an   important threshold in producing
+      rainfall</li>
+                               
+      </ul>
+</div>
+
+<div class="rightcol tabbedentries" about="/maproom/ENSO/Diagnostics.html" >
+<link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Long_x_Time_term"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_SST_Plots_term"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Surface_Wind_term"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Thermocline_term"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Time_Series_term"/>
+  <link rel="maproom:tabterm" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#ENSO_Tropical_Atm_Circulation_term"/>
+
+
+
+
+</div>
+
+
+
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend>
+
+</fieldset>
+</div>
+ </body>
+
+ </html>

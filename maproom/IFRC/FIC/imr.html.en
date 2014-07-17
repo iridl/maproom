@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -22,7 +22,12 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/maproom/IFRC/#VulnerabilityIndicators" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Hazards" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
-<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Rate"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#IFRC_term"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Global"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#deg0.25x0.25"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CIESIN/.Poverty/.imr/X/Y/fig-+colors+black+thin+countries_gaz+-fig+X/178.75/538.75/plotrange/Y/-66.25/76.25/plotrange+//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 </head>
@@ -31,7 +36,7 @@
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
 <input class="carryup carry dlimg share localemap" name="bbox" type="hidden" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
-<input name="resolution" type="hidden" value="irids:SOURCES:Features:Political:World:Countries:ds" />
+<input name="resolution" type="hidden" data-default="irids:SOURCES:Features:Political:World:Countries:ds" />
 <input class="locale localemap" name="region" type="hidden" value="" />
 </form>
 <div class="controlBar">
@@ -85,7 +90,7 @@
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <p><b><a class="carry" href="instructions.html#imr">CIESIN/SEDAC Global Distribution of Poverty, Infant Mortality Rate, Year 2000</a></b><br /> 
-<b>Data</b>  Infant mortality rate (number of infant deaths per 10,000 live births) per 0.25&#176; lat/lon grid box, for the year 2000, from the SEDAC Global Distribution of Poverty data set
+<b>Data</b>  Infant mortality rate (number of infant deaths per 10,000 live births) per 0.25° lat/lon grid box, for the year 2000, from the SEDAC Global Distribution of Poverty data set
 <br /><b>Data Source</b> Center for International Earth Science Information Network (CIESIN), Socio-Economic Data Center (SEDAC), <a href="http://sedac.ciesin.columbia.edu/povmap/">Global Distribution of Poverty</a>
 </p>
 </div>

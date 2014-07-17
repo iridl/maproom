@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -77,10 +77,10 @@ Les utilisateurs doivent garder à l'esprit que ces informations sont basées su
 <p>
 <center>
 <table border="1">
-<tr><td bgcolor="white"><pre>  </pre></td><td><font size="-1">Risque faible (p&#60;0.4)</font></td></tr>
-<tr><td bgcolor="#DCDCDC"><pre>  </pre></td><td><font size="-1">Risque modéré (p&#60;0.6)</font></td></tr>
-<tr><td bgcolor="#FFC030"><pre>  </pre></td><td><font size="-1">Risque élevé (p&#60;0.8)</font></td></tr>
-<tr><td bgcolor="#B22222"><pre>  </pre></td><td><font size="-1">Risque très élevé (p&#62;0.8)</font></td></tr>
+<tr><td bgcolor="white"><pre>  </pre></td><td><font size="-1">Risque faible (p&lt;0.4)</font></td></tr>
+<tr><td bgcolor="#DCDCDC"><pre>  </pre></td><td><font size="-1">Risque modéré (p&lt;0.6)</font></td></tr>
+<tr><td bgcolor="#FFC030"><pre>  </pre></td><td><font size="-1">Risque élevé (p&lt;0.8)</font></td></tr>
+<tr><td bgcolor="#B22222"><pre>  </pre></td><td><font size="-1">Risque très élevé (p&gt;0.8)</font></td></tr>
 </table>
 </center>
 

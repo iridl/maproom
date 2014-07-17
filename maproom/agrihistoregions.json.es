@@ -1,0 +1,39 @@
+{
+"@context": {
+"bb": "http://iridl.ldeo.columbia.edu/ontologies/gisuri/geobb/",
+"irigaz": "http://iridl.ldeo.columbia.edu/ontologies/irigaz_frwk.owl#",
+"term": "http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#",
+"irigaz:id": { "@type": "@id" },
+"irigaz:hasPart": { "@container": "@list", "@type": "irigaz:GazEntity"},
+"term:label": {"@language": "es"}
+},
+"irigaz:hasPart": [
+{ "irigaz:id": "bb:40:-10:170:75:bb",
+  "term:label": "Asia"
+},
+{ "irigaz:id": "bb:65:6:98:38:bb",
+  "term:label": "Sur Asia"
+},
+{ "irigaz:id": "bb:66:6:98:38:bb",
+  "term:label": "India"
+},
+{ "irigaz:id": "bb:88:20.5:93:27:bb",
+  "term:label": "Bangladesh"
+},
+{ "irigaz:id": "bb:79.5:26:88.5:31:bb",
+  "term:label": "Nepal"
+},
+{ "irigaz:id": "bb:100:13.5:108:23:bb",
+  "term:label": "Laos"
+},
+{ "irigaz:id": "bb:118:5:127:21:bb",
+  "term:label": "Filipinas"
+},
+{ "irigaz:id": "bb:-89.5:12.5:-83:17:bb",
+  "term:label": "Honduras"
+},
+{ "irigaz:id": "bb:-74:-35:-35:6:bb",
+  "term:label": "Brasil"
+}
+]
+}

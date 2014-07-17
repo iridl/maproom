@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<title>South Asia Historical Temperature Monitoring</title>
+<script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../CCAFS/ccafs.css" />
+<link rel="canonical" href="SouthAsia_Temp.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<meta property="maproom:Entry_Id" content="Agriculture_Historical_SouthAsia_Temperature" />
+<meta property="maproom:Sort_Id" content="" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#agriculture"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#ccafs"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Temperature"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#AirTemperature"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#AirTemperature2m"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#z2m"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#NearSurface"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#mean"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#standard_deviation"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#percentile"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#deg0.5x0.5"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#deg0.25x0.25"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#time_series"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_South"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_South_319_0"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Monsoon_Asia/.temperature/.historical/X/Y/fig-/colors/solid/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
+<style>
+.dlimgtsbox {
+width: 99%;
+display: inline-block
+ }
+.seasonalStatCDD #pET2 {
+display: none;
+}
+.seasonalStatCDD #pET3 {
+display: none;
+}
+.seasonalStatCDD #pET4 {
+display: none;
+}
+.seasonalStatNumCD #pET1 {
+display: none;
+}
+.seasonalStatNumCD #pET3 {
+display: none;
+}
+.seasonalStatNumCD #pET4 {
+display: none;
+}
+.seasonalStatNumHD #pET1 {
+display: none;
+}
+.seasonalStatNumHD #pET2 {
+display: none;
+}
+.seasonalStatNumHD #pET4 {
+display: none;
+}
+.seasonalStatGDD #pET1 {
+display: none;
+}
+.seasonalStatGDD #pET2 {
+display: none;
+}
+.seasonalStatGDD #pET3 {
+display: none;
+}
+.seasonalStat #pET2 {
+display: none;
+}
+.seasonalStat #pET3 {
+display: none;
+}
+.seasonalStat #pET4 {
+display: none;
+}
+.yearlyStatMean #pET1 {
+display: none;
+}
+.yearlyStatStdDev #pET1 {
+display: none;
+}
+.yearlyStatCoV #pET1 {
+display: none;
+}
+.yearlyStatRbyP #pET1 {
+display: none;
+}
+.yearlyStat #pET1 {
+display: none;
+}
+.yearlyStatMean #pET2 {
+display: none;
+}
+.yearlyStatStdDev #pET2 {
+display: none;
+}
+.yearlyStatCoV #pET2 {
+display: none;
+}
+.yearlyStatRbyP #pET2 {
+display: none;
+}
+.yearlyStat #pET2 {
+display: none;
+}
+.yearlyStatMean #pET3 {
+display: none;
+}
+.yearlyStatStdDev #pET3 {
+display: none;
+}
+.yearlyStatCoV #pET3 {
+display: none;
+}
+.yearlyStatRbyP #pET3 {
+display: none;
+}
+.yearlyStat #pET3 {
+display: none;
+}
+.yearlyStatMean #pET4 {
+display: none;
+}
+.yearlyStatStdDev #pET4 {
+display: none;
+}
+.yearlyStatCoV #pET4 {
+display: none;
+}
+.yearlyStatRbyP #pET4 {
+display: none;
+}
+.yearlyStat #pET4 {
+display: none;
+}
+</style>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform">
+<input class="carryup carryLanguage" name="Set-Language" type="hidden" />
+<input class="dlimg dlauximg share dlimgloc dlimglocclick" name="bbox" type="hidden" />
+<input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
+<input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
+<input class="unused" name="plotaxislength" type="hidden" data-default="432" />
+<input class="pickarea share" name="resolution" type="hidden" data-default="0.25" />
+<input class="dlimg dlauximg share" name="percentile" type="hidden" data-default="0.1" />
+<input class="dlimg dlauximg share dlimgts" name="YearStart" type="hidden" data-default="1961" />
+<input class="dlimg dlauximg share dlimgts" name="YearEnd" type="hidden" data-default="2007" />
+<input class="carry dlauximg dlimg share dlimgts" name="seasonStart" type="hidden" data-default="Jan" />
+<input class="carry dlauximg dlimg share dlimgts" name="seasonEnd" type="hidden" data-default="Jan" />
+<input class="dlimg dlauximg share dlimgts" name="DayStart" type="hidden" data-default="1" />
+<input class="dlimg dlauximg share dlimgts" name="DayEnd" type="hidden" data-default="31" />
+<input class="dlimg dlauximg share dlimgts" name="hotThreshold" type="hidden" data-default="0." />
+<input class="dlimg dlauximg share dlimgts pET ylyStat bodyClass" name="seasonalStat" type="hidden" data-default="CDD" />
+<input class="dlimg dlauximg share ylyStat pET perc bodyClass" name="yearlyStat" type="hidden" data-default="Mean" />
+<input class="dlimg share pET" name="probExcThresh1" type="hidden" data-default="0." />
+<input class="dlimg share pET" name="probExcThresh2" type="hidden" data-default="0." />
+<input class="dlimg share pET" name="probExcThresh3" type="hidden" data-default="100." />
+<input class="dlimg share pET" name="probExcThresh4" type="hidden" data-default="30." />
+<input class="dlimg share pET" name="probExcThresh5" type="hidden" data-default="30." />
+<input class="dlimg share pET" name="probExcThresh6" type="hidden" data-default="100." />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Climate and Agriculture</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/historical.html">Historical</a>
+            </fieldset>
+            <fieldset class="navitem" id="chooseSection">
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Historical_term"><span property="term:label">Historical Daily Seasonal Characteristics</span></legend>
+            </fieldset>
+
+            <fieldset class="navitem"><legend>Seasons</legend><select class="pageformcopy" name="seasonStart"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayStart" type="text" value="1" size="2" maxlength="2"/><input class="pageformcopy" name="YearStart" type="text" value="1961" size="4" maxlength="4"/> to <select class="pageformcopy" name="seasonEnd"><option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option><option>May</option><option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option></select><input class="pageformcopy" name="DayEnd" type="text" value="31" size="2" maxlength="2"/><input class="pageformcopy" name="YearEnd" type="text" value="2007" size="4" maxlength="4"/></fieldset>
+            <fieldset class="navitem"><legend>Seasonal daily statistics</legend><select class="pageformcopy" name="seasonalStat"><option value="CDD">Chilling Degree Days</option><option value="NumCD">Number of Cold Days</option><option value="NumHD">Number of Hot Days</option><option value="GDD">Growing Degree Days</option></select></fieldset>
+
+            <fieldset class="navitem" id="yearlyStat"><legend>Yearly seasonal statistics</legend><select class="pageformcopy" name="yearlyStat"><option value="Mean">Mean</option><option value="StdDev">Standard deviation</option><option value="CoV">Coefficient of variation</option><option value="RbyP">Percentile</option></select>
+        <span id="pET0"><span id="pET1"><input class="pageformcopy" name="probExcThresh3" type="text" value="100" size="4" maxlength="4"/>˚C.days</span><span id="pET2"><input class="pageformcopy" name="probExcThresh4" type="text" value="30" size="3" maxlength="3"/>days</span><span id="pET3"><input class="pageformcopy" name="probExcThresh5" type="text" value="30" size="3" maxlength="3"/>days</span><span id="pET4"><input class="pageformcopy" name="probExcThresh6" type="text" value="100" size="4" maxlength="4"/>˚C.days</span>
+</span>
+</fieldset>
+
+ <fieldset class="navitem"><legend>Spatial Resolution</legend><select class="pageformcopy" name="resolution">
+<option value="0.25">0.25˚</option>
+<option value="0.50">0.50˚</option>
+</select></fieldset>
+
+           <fieldset class="navitem"><legend>Hot/Cold Day definition</legend>Temperature above/below<input class="pageformcopy" name="hotThreshold" type="text" value="0." size="5" maxlength="5"/>˚C</fieldset>
+
+</div>
+
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+<div id="ccafsdiv">
+</div>
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Options</a></li>
+      <li><a href="#tabs-3" >Dataset Documentation</a></li>
+      <li><a href="#tabs-4" >Contact Us</a></li>
+    </ul>
+
+<fieldset class="regionwithinbbox dlimage" about="">
+<img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:62.5%2C2%2C90.5%2C40%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:90.5%2C2%2C62.5%2C2%29dup//region/parameter/dup//bbox/get_parameter/eq/%7Bpop%7D%7Bnip%7Difelse/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/india_dist/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
+<div class="valid" style="display: inline-block; text-align: top;">
+<a class="dlimgloc" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/%28bb:1:2:3:4:bb%29//region/parameter/geoobject/info.json"></a>
+<div class="template">
+Observations for <span class="bold iridl:long_name"></span>
+</div>
+</div>
+<br />
+<div class="dlimgtsbox">
+<img class="dlimgts regionwithinbbox" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.RIHN/.aphroTemp/.V1204R1/%280.25%29//resolution/parameter/%280.50%29ne/%7B.APHRO_MA_025deg%7D%7B.APHRO_MA_050deg%7Difelse/a:/.temp/%28off%29//obsOnly/parameter/%28on%29eq/%7B:a:/.rstn/0.0/maskle/0.0/mul/add%7Dif/:a/T/%281961%29//YearStart/parameter/%282007%29//YearEnd/parameter/RANGEEDGES/%281%29//DayStart/parameter/%28%20%29append/%28Jan%29//seasonStart/parameter/append/%28%20-%20%29append/%2831%29//DayEnd/parameter/append/%28%20%29append/%28Jan%29//seasonEnd/parameter/append/%280%29//hotThreshold/parameter/interp/%280.5%29//minFrac/parameter/interp/%28CDD%29//seasonalStat/parameter/%28MinTemp%29eq/%7Bnip/3/-1/roll/.tmin//units/%28Celsius_scale%29def/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MaxTemp%29eq/%7Bnip/3/-1/roll/.tmax//units/%28Celsius_scale%29def/T/4/-2/roll/seasonalAverage%7Dif//seasonalStat/get_parameter/%28MeanTemp%29eq/%7Bnip/T/3/-2/roll/seasonalAverage//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28CDD%29eq/%7B4/-1/roll/3/-1/roll/sub/0/maskge/abs/3/-2/roll/flexseastotZeroFill//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28GDD%29eq/%7B4/-1/roll/3/-1/roll/sub/0/maskle/abs/3/-2/roll/flexseastotZeroFill//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28NumCD%29eq/%7B4/-1/roll/4/-3/roll/flexseasonalfreqLT//scale_symmetric/false/def%7Dif//seasonalStat/get_parameter/%28NumHD%29eq/%7B4/-1/roll/4/-3/roll/flexseasonalfreqGT//scale_symmetric/false/def%7Dif/%28bb:%5B80%2C26%2C81%2C27%5D%29//region/parameter/geoobject%5BX/Y%5Dweighted-average//seasonalStat/get_parameter/%28CDD%29eq/%7B//long_name/%28Chilling%20Degree%20Days%29def%7Dif//seasonalStat/get_parameter/dup/%28NumCD%29eq/exch/%28NumHD%29eq/or/%7B//long_name/%28count%29def%7Dif/T/fig-/medium/line/-fig//antialias/true/psdef//plotaxislength/432/psdef//framelabel//seasonalStat/get_parameter/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/psdef/+.gif" />
+</div>
+</fieldset>
+<fieldset class="dlimage">
+<a class="perc" rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Monsoon_Asia/.temperature/.historical/X/Y/fig-/colors/solid/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//plotaxislength/500/psdef//antialias/true/psdef//framelabel//yearlyStat/get_parameter/%28%20of%20%29append//seasonalStat/get_parameter/append/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/%28%20over%20%29append//YearStart/get_parameter/append/%28%20to%20%29append//YearEnd/get_parameter/append/psdef//plotborderbottom/72/psdef//percentile/0.1/plotvalue/"></a>
+<img class="dlimg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Monsoon_Asia/.temperature/.historical/X/Y/fig-/colors/solid/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//plotaxislength/500/psdef//antialias/true/psdef//framelabel//yearlyStat/get_parameter/%28%20of%20%29append//seasonalStat/get_parameter/append/%28%20in%20season%20%29append/lpar/append//seasonStart/get_parameter/append/%28%20%29append//DayStart/get_parameter/append/%28%20-%20%29append//seasonEnd/get_parameter/append/%28%20%29append//DayEnd/get_parameter/append/rpar/append/%28%20over%20%29append//YearStart/get_parameter/append/%28%20to%20%29append//YearEnd/get_parameter/append/psdef//plotborderbottom/72/psdef//percentile/0.1/plotvalue/+.gif" border="0" />
+<img class="dlauximg" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/(bb:[75%2C24%2C89%2C33])//bbox/parameter/geoobject/.iridl:geoId/(:)search/pop/pop/pop/(:)rsearch/pop/pop/pop/3/{(:)search/pop/nip/exch}repeat/SOURCES/.IRI/.Analyses/.Tailored/.Monsoon_Asia/.temperature/.historical/X/6/-1/roll/interp/5/-1/roll/interp/RANGEEDGES/Y/4/-2/roll/2/{interp/exch}repeat/RANGEEDGES/X/Y/fig-/colors/solid/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//fntsze/16/psdef//plotaxislength/500/psdef//antialias/true/psdef//percentile/0.1/plotvalue/.auxfig+.gif" />
+</fieldset>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+ <h2 align="center" property="term:title">South Asia Historical Temperature Monitoring</h2>
+  <p align="left" property="term:description">
+The Maproom explores historical daily temperature by calculating simple seasonal statistics.</p>
+<p>Many options can be specified to produce yearly time series of a chosen seasonal diagnostic of the daily temperature data. The user can then choose to map the mean, standard deviation, probability of exceeding a chosen threshold, over years, coefficient of variation in percentage or percentile of historical distribution; clicking on the map will then produce a local yearly time series of the chosen diagnostic.
+</p>
+</div>
+ <div id="tabs-2" class="ui-tabs-panel" about="">
+ <h2 align="center">Options</h2>
+  <p align="left">
+<b>Years and Season</b>:
+Specify the range of years over which to perform the analysis, and choose the start and end dates of the season over which the diagnostics are to be performed.
+<br />
+<br />
+<b>Hot/Cold Day Definition</b>:
+This threshold is used to define in Celsius degrees (non inclusive) the temperature under which a day is considered cold if the mean temperature is below it; or the temperature above which a days is considered hot if the mean temperature is above it; or the reference temperature to compute the growing/chilling degree days.
+<br /><br /><b>Seasonal daily statistics</b>: Choose the seasonal diagnostic quantity (i.e the statistic of the daily data) to be computed for each season, from the following choices.
+<br />
+<br />
+<b>Growing/Chilling Degree Days</b>: Growing or chilling degree days are summations of positive/negative differences between the mean daily temperature and user-defined reference base temperature during the season. They are comparable to the more familiar cooling/heating degree day definitions utilized by energy-sector.
+<br /><b>Number of Cold and Hot days</b>:
+the number of cold or hot days during the season according to the user-defined threshold and according to the mean daily temperature.
+<br />
+<br />
+<b>Yearly seasonal statistics</b>: a choice of yearly statistics over the chosen season of the selected range of years to produce the map among: the mean, the standard deviation, the probability of exceeding a user specified threshold, the coeffieient of variation (ratio of standard deviation to the mean) in percentage, and percentile of historical distribution (e.g., 0.1, 0.25, 0.5, 0.75, and 0.9).
+<br />
+<br /><b>Spatial Resolution</b>:
+The analysis is performed and mapped at each grid point. Additionally it is possible to average the results of the analysis over the 0.25/0.5˚ grid points falling within administrative boundaries for the time series graph.
+</p>
+</div>
+ <div id="tabs-3" class="ui-tabs-panel" about="">
+ <h2 align="center">Dataset Documentation</h2>
+  <p align="left">
+<b>Data</b>: RIHN aphroTemp V1204R1 Monsoon Asia gridded daily temperature Data Set 
+ <a href="http://iridl.ldeo.columbia.edu/SOURCES/.RIHN/.aphroTemp/.V1204R1/">here</a>.
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Helpdesks</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
+

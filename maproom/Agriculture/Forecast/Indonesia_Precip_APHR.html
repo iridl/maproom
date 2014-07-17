@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -13,6 +13,7 @@
 <title>Indonesia CPT Precipitation Forecast -- APHR</title>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="../IFAD/ifad.css" />
 <link rel="canonical" href="Indonesia_Precip_APHR.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -20,18 +21,26 @@
 <meta property="maproom:Sort_Id" content="" />
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_term"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#agriculture"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Rate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Atmosphere"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#precipitation_rate"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomaly"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Probability"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#correlation" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#skill" />
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#seasonal"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#monthly"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Gridded"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Asia_Indonesia"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
-  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#deg0.25x0.25"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#time_series"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Indonesia"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Indonesia_69_1"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.CPT/.Indonesia/.APHR_obs/Forecast/precip_colors/DATA/0/AUTO/RANGE/%28Rainfall%29//field/parameter/%28Anomaly%29eq/%7BCrossValHind%5BT2%5Daverage/sub/prcp_anomaly/DATA/null/null/RANGE%7Dif//field/get_parameter/%28PoM%29eq/%7BCrossValHind%5BT2%5D0.5/0.0/replacebypercentile/div/%28percent%29unitconvert/Infinity/maskge/prcp_anomaly_25max500_colors2_percentmedian%7Dif//field/get_parameter/dup/%28PoE%29eq/exch/%28PonE%29eq/or/%7B-1/mul/%28Rainfall%29//var/parameter/%28Rainfall%29eq/%7B%2820%29//threshold2/parameter/interp%7D%7B%2850%29//percentile/parameter/interp/100.0/div//dup/2./mul/36/1/sub/poestudnt2/exch/round/-2./mul/1./add/mul/InputObs%5BT2%5D0.0/rootmeansqover/mul/InputObs%5BT2%5Daverage/add%7Difelse/add/PredErrorVars/sqrt/div/36/1/sub/5/sub/poestudnt//long_name/%28probability%20of%20exceedance%29def//field/get_parameter/%28PonE%29eq/%7B-1/mul/1/add%7Dif//var/get_parameter/%28Rainfall%29eq/%7Bcorrelationcolorscale/DATA/0/1/RANGE%7D%7B%28percentiles_colors_%29//field/get_parameter/%28PoE%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7Difelse%7Dif/Y/last/first/RANGE/target_date/X/Y/fig-/colors/grey/verythin/solid/indonesia_dist/thin/indonesia_prov/black/countries_gaz/blue/verythin/rivers_gaz/lakes/plotlabel/-fig//S/last/plotvalue//T/S/last/cvsunits//S/parameter/7/3/getinterval/nip/plotvalue//L/first/plotvalue//antialias/true/psdef//plotborder+0+psdef//plotaxislength+220+psdef+.gif" />
 <style>
 .dlimage.ver2 {
@@ -75,24 +84,24 @@ display: none;
 <input class="dlimg dlauximg dlimg2 share dlimgloc dlimglocclick" name="bbox" type="hidden" />
 <input class="share dlimgts dlimgloc dlimglocclick" name="region" type="hidden" />
 <input class="transformRegion dlimglocclick" name="clickpt" type="hidden" />
-<input class="unused" name="plotaxislength" type="hidden" value="432" />
+<input class="unused" name="plotaxislength" type="hidden" data-default="432" />
 <input class="dlimg dlauximg dlimg2 dlimgts share starttime startleadtime" name="S" type="hidden" />
-<input class="dlimg dlauximg dlimg2 dlimgts share startleadtime" name="L" type="hidden" value="2.5" />
-<input class="pickarea" name="resolution" type="hidden" value=".25" />
-<input class="dlimg dlauximg share threshold poe bodyClass" name="field" type="hidden" value="Rainfall" />
-<input class="dlimg dlauximg share threshold poe bodyClass" name="var" type="hidden" value="Rainfall" />
-<input class="dlimg dlauximg share threshold" name="percentile" type="hidden" value="50." />
+<input class="dlimg dlauximg dlimg2 dlimgts share startleadtime" name="L" type="hidden" data-default="2.5" />
+<input class="pickarea" name="resolution" type="hidden" data-default=".25" />
+<input class="dlimg dlauximg share threshold poe bodyClass" name="field" type="hidden" data-default="Rainfall" />
+<input class="dlimg dlauximg share threshold poe bodyClass" name="var" type="hidden" data-default="Rainfall" />
+<input class="dlimg dlauximg share threshold" name="percentile" type="hidden" data-default="50." />
 <input class="dlimg dlauximg share threshold" name="threshold2" type="hidden" />
-<input class="dlimgts share" name="poelimit" type="hidden" value="25" />
+<input class="dlimgts share" name="poelimit" type="hidden" data-default="25" />
 </form>
 
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
-                <legend>Maproom</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/">Agriculture</a>
+                <legend>Climate and Agriculture</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Agriculture/forecast.html">Forecast</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
-                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"><span property="term:label">Forecast</span></legend>
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Agriculture_Forecast_term"><span property="term:label">Deterministic Seasonal Forecast</span></legend>
             </fieldset>
 <fieldset class="navitem">
                 <legend>Region</legend>
@@ -143,6 +152,8 @@ display: none;
 
 <div class="ui-tabs">
     <ul class="ui-tabs-nav">
+<div id="ifaddiv">
+</div>
       <li><a href="#tabs-1" >Description</a></li>
       <li><a href="#tabs-2" >Dataset Documentation</a></li>
       <li><a href="#tabs-3" >Contact Us</a></li>

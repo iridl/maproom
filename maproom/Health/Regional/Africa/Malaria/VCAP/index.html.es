@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -48,8 +48,8 @@ display: inline-block
 <input class="dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
-<input class="dlimg dlauximg" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value="irids:SOURCES:Features:Political:Africa:Districts:ds" />
+<input class="dlimg dlauximg" name="plotaxislength" type="hidden" data-default="432" />
+<input class="pickarea" name="resolution" type="hidden" data-default="irids:SOURCES:Features:Political:Africa:Districts:ds" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
@@ -158,7 +158,7 @@ Contacte <a href="mailto:help@iri.columbia.edu?subject=VCAP:  African Sector">he
  </p>
 </div>
 <div id="tabs-5"  class="ui-tabs-panel">
-<h2  align="center">Instrucci&#243;nes</h2>
+<h2  align="center">Instrucciónes</h2>
 <p>
 Para ayudar en la evaluación de riesgo potencial de brote de malaria, la interfaz VCAP proporciona a los usuarios la posibilidad de realizar gráficos. Al seleccionar una zona donde predomina la VCAP, la interfaz proporcionará una perspectiva contextual de la VCAP reciente mostrando una serie de tiempo VCAP de 12 meses y ofreciendo comparaciones múltiples interanuales.
  </p>

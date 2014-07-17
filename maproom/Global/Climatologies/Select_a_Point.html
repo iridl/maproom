@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://iridl.ldeo.columbia.edu/ontologies/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
@@ -49,9 +49,9 @@
 <input class="carryup carry dlimg share dlimgloc" name="bbox" type="hidden" />
 <input class="dlimg share" name="T" type="hidden" />
 <input class="share dlimgts dlimgloc" name="region" type="hidden" />
-<input class="share dlimg dlauximg" name="maptype" type="hidden" value="koeppen" />
-<input class="unused" name="plotaxislength" type="hidden" value="432" />
-<input class="pickarea" name="resolution" type="hidden" value=".5" />
+<input class="share dlimg dlauximg" name="maptype" type="hidden" data-default="koeppen" />
+<input class="unused" name="plotaxislength" type="hidden" data-default="432" />
+<input class="pickarea" name="resolution" type="hidden" data-default=".5" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList"> 
@@ -122,7 +122,7 @@ width: 45%;
       <li><a href="http://iridl.ldeo.columbia.edu/expert/%28koeppen%29//maptype/parameter/%28koeppen%29eq/%7BSOURCES/.FAO/.NRMED/.SD/.Climate/.Derived/.class%7Dif/%28koeppen%29//maptype/parameter/%28prec%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.prcp/DATA/0/700/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28wetdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.wet%7Dif/%28koeppen%29//maptype/parameter/%28meantemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.mean/.temp/DATA/-55/40/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28mintemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.minimum/.temp/DATA/-55/40/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28maxtemp%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.maximum/.temp/DATA/-55/40/RANGE%7Dif/%28koeppen%29//maptype/parameter/%28frostdays%29eq/%7BSOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.frost%7Dif/%28koeppen%29//maptype/parameter/%28elev%29eq/%7BSOURCES/.NOAA/.NGDC/.ETOPO1/.z_ice/lon/%28X%29renameGRID/lat/%28Y%29renameGRID/X/-180/180/RANGE/Y/-90/90/RANGE/startcolormap/DATA/0/8752/RANGE/white/white/LightGoldenrodYellow/0/VALUE/LightGoldenrod/500/VALUE/goldenrod/1500/VALUE/DarkGoldenrod/3000/VALUE/sienna/8224/VALUE/sienna/endcolormap%7Dif/">Dataset</a></li>
       <li><a href="#tabs-3" >Contact Us</a></li>
     </ul>
-<fieldset class="dlimage" about="">
+<fieldset class="dlimage">
 <img class="regionwithinbbox dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:-180%2C-90%2C180%2C90%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES/%28bb:-180%2C-90%2C180%2C90%29//region/parameter/geoobject/2/copy/rasterize/Y/cosd/mul/X/1/index%5BX/Y%5Dweighted-average/exch/Y/exch%5BX/Y%5Dweighted-average/X/Y/fig-/lightgrey/mask/grey/mews_prov/black/countries_gaz/red/fill/red/smallpushpins/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+.gif" />
 <div class="rightblock valid">
 <a class="dlimgts" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/%28bb:-180%2C-90%2C180%2C90%29//region/parameter/geoobject/info.json"></a>
@@ -141,7 +141,7 @@ width: 45%;
 <h4 class="plotheading">TEMPERATURE</h4>
 <img class="dlimgts" style="width: 100%" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/a:/.maximum/.temp/%28bb:-180%2C-90%2C180%2C90%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/:a:/.minimum/.temp/%28bb:-180%2C-90%2C180%2C90%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/:a:/.mean/.temp/%28bb:-180%2C-90%2C180%2C90%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/:a/T/fig-+grey+deltabars+medium+black+line+thin+dotted+-60+5+50+horizontallines+-fig+//XOVY+1.2+psdef//plotaxislength+250+psdef//framelabel//region/get_parameter/psdef/+.gif" />
 
-<h4 class="plotheading">GROUND-FROST FREQUENCY<br />Number of days/mo with Min. Temp. &#60; 0&#176;C</h4>
+<h4 class="plotheading">GROUND-FROST FREQUENCY<br />Number of days/mo with Min. Temp. &lt; 0°C</h4>
 <img class="dlimgts" style="width: 100%" rel="iridl:hasFigureImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p1/.climatology/.c7100/.frost/%28bb:-180%2C-90%2C180%2C90%29//region/parameter/geoobject%5BX/Y%5Dweighted-average/dup/0/mul/T/fig-+grey+deltabars+black+dotted+0+5+30+horizontallines+-fig+//XOVY+1.2+psdef//plotaxislength+250+psdef//framelabel//region/get_parameter/psdef/+.gif" />
 
 </div>
@@ -161,14 +161,14 @@ width: 45%;
  <div id="tabs-1" class="ui-tabs-panel" about="">
 <h2 align="center"  property="term:title" >Select a Point Climatology</h2>
 <p align="left" property="term:description"> Click anywhere over land on the map to see barplots of the local monthly climatology of precipitation, monthly average of daily maximum, minimum, and mean temperature, wet-day frequency, and ground frost frequency.</p>
-<p align="left"> Use the "Map Type" drop-down menu to display maps of the Koeppen climate classification, elevation, and monthly climatological animations of precipitation, wet-day frequency, mean temperature, minimum temperature, maximum temperature, and frost-day frequency.  The monthly climatologies are calculated using the University of East Anglia Climatic Research Unit TS2.1 data set on a 0.5&#176; lat/lon grid.  The base period used for the climatology is 1971-2000.</p>
+<p align="left"> Use the "Map Type" drop-down menu to display maps of the Koeppen climate classification, elevation, and monthly climatological animations of precipitation, wet-day frequency, mean temperature, minimum temperature, maximum temperature, and frost-day frequency.  The monthly climatologies are calculated using the University of East Anglia Climatic Research Unit TS2.1 data set on a 0.5° lat/lon grid.  The base period used for the climatology is 1971-2000.</p>
 </div>
 <div id="tabs-2" class="ui-tabs-panel">
 <h2  align="center">Dataset Documentation</h2>
 <h4><a class="carry">Select a Point Climatology</a></h4>
 <h4>Monthly Climatological Variables</h4>
 <dl class="datasetdocumentation">
-<dt>Data</dt><dd>University of East Anglia Climatic Research Unit TS2.1 monthly precipitation, monthly average of daily maximum, minimum, and mean temperature, wet-day frequency, and ground frost frequency on a 0.5&#176; lat/lon grid</dd> 
+<dt>Data</dt><dd>University of East Anglia Climatic Research Unit TS2.1 monthly precipitation, monthly average of daily maximum, minimum, and mean temperature, wet-day frequency, and ground frost frequency on a 0.5° lat/lon grid</dd> 
 <dt>Data Source</dt><dd>University of East Anglia Climatic Research Unit (<a href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS2p1/.dataset_documentation.html">CRU TS2.1</a>)</dd> 
 <dt>Analysis</dt><dd>Monthly climatology of monthly precipitation, monthly average of daily maximum, minimum, and mean temperature, wet-day frequency, and ground frost frequency for the 1971-2000 base period</dd>
 <dt>Reference</dt><dd>Mitchell, T. D., P. D. Jones. An improved method of constructing a database of monthly climate observations and associated high-resolution grids. Int. J. Climatol. 25, 2005.</dd>
