@@ -185,4 +185,11 @@
 <iridl:sourceLang></iridl:sourceLang>
 <iridl:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</iridl:weight>
 </iridl:LangWeight>
+<iridl:Phenomena rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#teleconnections">
+  <rdfs:label xml:lang="en">Teleconnections</rdfs:label>
+</iridl:Phenomena>
+<iridl:Phenomena rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climateVariablity">
+  <rdfs:label xml:lang="en">Climate Variability</rdfs:label>
+            <term:impliedBy rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#enso"/>
+</iridl:Phenomena>
 </rdf:RDF>
