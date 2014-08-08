@@ -20,7 +20,7 @@
 "links": [
 {"href": "/maproom/",
  "title": "Map Rooms"},
-{"href": "/ontologies/query2.pl?type=iridl%3Adataset&taxa=iridl%3ADataset_Search&showlevel=20&nestunder=facet&showcounts=on",
+{"href": "/docfind/facetedbrowser?itemClass=iridl%3Adataset_SearchItem&taxa=iridl%3ADataset_Search",
  "title": "Datasets"},
 {"href": "/dochelp/Documentation/funcindex.html",
  "title": "Functions"},
