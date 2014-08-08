@@ -114,11 +114,11 @@
     </owl:propertyChainAxiom>
 </rdf:Description>
 <owl:Class rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Language" />
-<iridl:Language rdf:id="en">
+<iridl:Language rdf:ID="en">
 <rdfs:label xml:lang="en">English</rdfs:label>
 <iridl:hasId>en</iridl:hasId>
 </iridl:Language>
-<iridl:Language rdf:id="es">
+<iridl:Language rdf:ID="es">
 <rdfs:label xml:lang="es">espa&#241;ol</rdfs:label>
 <iridl:hasId>es</iridl:hasId>
 </iridl:Language>
