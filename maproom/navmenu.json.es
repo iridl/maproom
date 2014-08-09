@@ -20,7 +20,7 @@
 "links": [
 {"href": "/maproom/",
  "title": "Map Rooms"},
-{"href": "/docfind/facetedbrowser?itemClass=iridl%3Adataset_SearchItem&taxa=iridl%3ADataset_Search",
+{"href": "/docfind/facetedbrowser.html?itemClass=iridl%3Adataset_SearchItem&taxa=iridl%3ADataset_Search",
  "title": "Datasets"},
 {"href": "/dochelp/Documentation/funcindex.html",
  "title": "Functions"},
