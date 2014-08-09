@@ -163,7 +163,7 @@ b) The 16 day estimates of NDVI and EVI for the current and five most recent yea
 <dl class="datasetdocumentation">
 <dt>NDVI</dt> <dd>The Normalized Difference Vegetation Index (NDVI) is the ratio between the difference of red and near-Infrared (NIR) divided by the sum of red and near-Infrared reflectances. The index provides some information on healthy vegetation by examining their difference in wavelength absorption and reflectance. Healthy vegetation growth, such as forests, will yield high NDVI values closer to 1 while low vegetation will yield values close to 0.2.</dd>
 
-<p><dt>EVI</dt> <dd> The Enhanced Vegetation Index is provided as a complimentary index to NDVI. EVI is an 'optimized' index designed to enhance the vegetation signal with improved sensitivity in high biomass regions and improved vegetation monitoring through a de-coupling of the canopy background signal and a reduction in atmosphere influences.  
+<p><dt>EVI</dt> <dd> The Enhanced Vegetation Index is provided as a complementary index to NDVI. EVI is an 'optimized' index designed to enhance the vegetation signal with improved sensitivity in high biomass regions and improved vegetation monitoring through a de-coupling of the canopy background signal and a reduction in atmosphere influences.  
 </dd></p>
 
 <p><dt>Reflectance</dt> <dd> Using simultaneous exploitation of MIR, NIR, and Red wavelengths in a Red-Green-Blue color space, reflectance images allow for a more robust and reliable qualitative discrimination between land surfaces with sparse vegetation and those without vegetation.  Land surfaces such as water bodies can also be accurately mapped. The user can follow the spatio-temporal dynamic of green vegetation and identify water bodies using the combination of MIR, NIR and Red channels.
@@ -176,7 +176,7 @@ Images are available for western Africa, eastern Africa and southern Africa.
 </dl>
 
 <h4>References:</h4>
-<p>Ceccato, P., et.al. (2007). <a href="http://portal.iri.columbia.edu/portal/server.pt/gateway/PTARGS_0_2_3864_0_0_18/AMJTMH.pdf">Malaria stratification, climate, and epidemic early warning in Eritrea.</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
+<p>Ceccato, P., et al. (2007). <a href="http://www.ajtmh.org/content/77/6_Suppl/61.full">Malaria stratification, climate, and epidemic early warning in Eritrea.</a>. International Geoscience and Remote Sensing Symposium (IGARSS) pp. 178-180
 
 <i>American Journal of Tropical Medicine and Hygiene</i>, 2007.
 </p>
