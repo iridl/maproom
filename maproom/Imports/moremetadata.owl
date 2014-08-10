@@ -103,7 +103,9 @@
     </owl:propertyChainAxiom>
   </rdf:Description>
     <iridl:HoldsMapRooms rdf:about="/maproom/index.html">
-      <xhtml:alternate><rdf:Description rdf:about="/maproom/"><xhtml:canonical rdf:resource="/maproom/index.html" /></rdf:Description></xhtml:alternate>
+      <xhtml:alternate><rdf:Description rdf:about="/maproom/"><xhtml:canonical rdf:resource="/maproom/index.html" />
+      <rdf:type rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#SearchItem" />
+</rdf:Description></xhtml:alternate>
       <rdf:type rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#SearchItem" />
 </iridl:HoldsMapRooms>
     <rdf:Description rdf:about="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#isDescribedBy">
