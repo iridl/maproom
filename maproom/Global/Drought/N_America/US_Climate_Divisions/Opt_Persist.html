@@ -67,7 +67,7 @@ display: none;
 <input class="dlimg share" name="layers" value="us_counties"  type="checkbox" />
 <input class="carry dlimg dlauximg share bodyClass" name="maptype" type="hidden" data-default="probmap" />
 <input class="dlimg share spisellead" name="SPIselect" type="hidden" data-default="spi3" />
-<input class="dlimg share leadtime" name="lead" type="hidden" data-default="1." />
+<input class="dlimg share leadtime" name="lead" type="hidden" data-default="1.0" />
 <input class="carry dlimg share" name="threshold" type="hidden" data-default="0.0" />
 <input class="carry dlimg share" name="margprob" type="hidden" data-default="0.5" />
 
@@ -93,7 +93,7 @@ display: none;
             <fieldset class="navitem valid"><legend>Lead Time</legend>
              <link class="leadtime spisellead" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/home/.mbell/.NCDC/.nClimDivCTB/.randomized/.v1/.seas_cycle_retained/.forecast%5B%28.%29%28spi3%29//SPIselect/parameter%5Dconcat/interp/.forecasttime/S/last/VALUE/info.json" />
              <select class="pageformcopy template" name="lead">
-              <option class="iridl:values L@value L"><span class="leadtime"></span></option> 
+                <option class="iridl:values L@value L"><span class="leadtime"></span></option> 
              </select> Month(s)</fieldset>
 
             <fieldset class="navitem valid" id="threshMenu"><legend>SPI Threshold</legend><span class="selectvalue"></span><select class="pageformcopy" name="threshold"><option>2.5</option><option>2.0</option><option>1.5</option><option>1.0</option><option>0.5</option><option>0.0</option><option>-0.5</option><option>-1.0</option><option>-1.5</option><option>-2.0</option><option>-2.5</option></select></fieldset>
@@ -145,7 +145,7 @@ margin: 0px;
 <h2 align="center"  property="term:title" >U.S. Climate Divisons Drought Prediction Tool:  SPI Persistence Forecast</h2>
 <p align="left" property="term:description">This tool displays maps of probabilistic forecasts of drought in U.S. Climate Divisions using a forecast of the Standardized Precipitation Index (SPI; 3, 6, 9, or 12-month accumulation periods) in future months based upon the SPI Persistence method.  These maps provide quantifiable, probabilistic drought predictions for the United States over the next few months.</p>
 <p align="left">Here, forecasts of SPI are based upon the correlation between SPI calculated for a future month (using recently-observed and historical observed mean precipitation) and the SPI calculated for the recently-observed months that overlap.  The forecast start time shown denotes the end of the last available month of observations.</p>
-<p align="left">Use the "Map Type" menu to choose a map of forecast probabilities or SPI.  The "Probability" map shows the probability (on a fractional scale between 0 and 1) that SPI in a future month will have a value equal to or less than the SPI value chosen in the "SPI Threshold" drop-down menu.  Alternatively, the "SPI Value" map shows the SPI value in a future month that is forecast not to be exceeded for the marginal probability chosen from the "Probability of Non-Exceedance" drop-down menu.  Other menus select the SPI accumulation period (3, 6, 9, or 12-month SPI) and forecast lead time (in months) of interest.  Click and drag on the map to zoom in.  To select which administrative boundaries to display on the map (including U.S. counties), mouse over the map and select the "Layers" icon.  Then use the check boxes that appear to select the corresponding administrative boundaries. </p>
+<p align="left">Use the "Map Type" menu to choose a map of forecast probabilities or SPI.  The "Probability" map shows the probability (on a fractional scale between 0 and 1) that SPI in a future month will have a value equal to or less than the SPI value chosen in the "SPI Threshold" drop-down menu.  Alternatively, the "SPI Value" map shows the SPI value in a future month that is forecast not to be exceeded for the marginal probability chosen from the "Probability of Non-Exceedance" drop-down menu.  Other menus select the SPI accumulation period (3, 6, 9, or 12-month SPI) and forecast lead time (in months) of interest.  Click and drag on the map to zoom in.  To select which administrative boundaries to display on the map (including U.S. counties), mouse over the map and select the "Layers" icon.  Then use the check boxes that appear above the map to select the corresponding administrative boundaries. </p>
 <p align="left"> The SPI maps provide an indication of short-term to longer-term wet (green, positive SPI) or dry (yellow to red, negative SPI) conditions based upon precipitation alone.  The negative half of the color scale uses the same colors and thresholds of SPI corresponding to the percentiles associated with the D0 (30%tile) to D4 (2%tile) drought intensity categories used in the U. S. Drought Monitor.</p>
 <h4>References</h4>
 <p>
