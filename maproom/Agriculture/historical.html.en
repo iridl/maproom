@@ -1,42 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE html
 >
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wms="http://www.opengis.net/wms#" xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#" xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#" xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#" xmlns:xs="http://www.w3.org/2001/XMLSchema#" version="XHTML+RDFa 1.0">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.0">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
       <title>Historical Climate Information</title>
       <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+      <link class="altLanguage" rel="alternate" hreflang="es"
+            href="historical.html?Set-Language=es" />
       <link rel="canonical" href="historical.html" />
       <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
-      <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
-      <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#enso" />
-      <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis" />
+      <link class="carryLanguage" rel="home alternate" type="application/json"
+            href="/maproom/navmenu.json" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#enso" />
+      <link rel="term:isDescribedBy"
+            href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Historical_Analysis" />
       <meta property="maproom:Sort_Id" content="a01" />
-      <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter%5B%28.%29%28tmax%29//var1/parameter%5Dconcat//var/parameter/interp/X/66.0/98.0/RANGEEDGES/Y/6.0/38.0/RANGEEDGES//season/get_parameter/30.0/1.0/%28seasonalfreqGT%29//freqGTLT/parameter/interp/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201969%29%28Dec%202005%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/NINO34//ENSO/renameGRID/aprod//Tercile/renameGRID/tercileclassesscale/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE//ENSO/removeGRID/Tercile/%28Cool%29//tercile/parameter/VALUE//Tercile/removeGRID/X/Y/fig-/colors/coasts_gaz/thin/countries_gaz/verythin/admin1_india/-fig//plotaxislength/220/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" /><script type="text/javascript" src="../../uicore/uicore.js" xml:space="preserve"></script><style xml:space="preserve">
+      <link rel="term:icon"
+            href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter%5B%28.%29%28tmax%29//var1/parameter%5Dconcat//var/parameter/interp/X/66.0/98.0/RANGEEDGES/Y/6.0/38.0/RANGEEDGES//season/get_parameter/30.0/1.0/%28seasonalfreqGT%29//freqGTLT/parameter/interp/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201969%29%28Dec%202005%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/NINO34//ENSO/renameGRID/aprod//Tercile/renameGRID/tercileclassesscale/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE//ENSO/removeGRID/Tercile/%28Cool%29//tercile/parameter/VALUE//Tercile/removeGRID/X/Y/fig-/colors/coasts_gaz/thin/countries_gaz/verythin/admin1_india/-fig//plotaxislength/220/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" /><script type="text/javascript" src="../../uicore/uicore.js" xml:space="preserve"></script><style xml:space="preserve">
 /* Asia bb */
 body[bbox="bb:40:-10:170:75:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
+body[bbox="bb:40:-10:170:75:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* South Asia bb */
 body[bbox="bb:65:6:98:38:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:65:6:98:38:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
 body[bbox="bb:65:6:98:38:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+body[bbox="bb:65:6:98:38:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* India bb */
 body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
 body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
 body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
 body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:66:6:98:38:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* Bangladesh bb */
 body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
 body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
 body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
 body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
+body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* Nepal bb */
 body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
 body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
 body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
 body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:79.5:26:88.5:31:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* Laos bb */
 body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
@@ -44,6 +60,7 @@ body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
 body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
 body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Asia_South_319_0"]{display: none;}
 body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* Philippines bb */
 body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
 body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
@@ -51,6 +68,7 @@ body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
 body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
 body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Asia_South_319_0"]{display: none;}
 body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:118:5:127:21:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
 /* Brazil bb */
 body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
 body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
@@ -58,11 +76,22 @@ body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
 body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Asia_South_319_0"]{display: none;}
 body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
 body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Honduras_65_1"]{display: none;}
+/* Honduras bb */
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:India_68_1"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Nepal_106_1"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Asia_South_319_0"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Philippines_119_1"]{display: none;}
+body[bbox="bb:-89.5:12.5:-83:17:bb"] .item[sem~="gaz:Brazil_19_1"]{display: none;}
+
 </style></head>
    <body xml:lang="en">
       
       
-      <form name="pageform" id="pageform" method="get" enctype="application/x-www-form-urlencoded">
+      <form name="pageform" id="pageform" method="get"
+            enctype="application/x-www-form-urlencoded">
          <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
          <input class="titleLink itemImage bodyAttribute" name="bbox" type="hidden" />
          
@@ -88,7 +117,8 @@ body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Philippines_119_1"]{display: no
          <fieldset class="navitem"> 
             
             <legend>Region</legend>
-            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/agrihistoregions.json" shape="rect"></a>
+            <a class="carryLanguage" rel="iridl:hasJSON" href="/maproom/agrihistoregions.json"
+               shape="rect"></a>
             		<select class="RegionMenu" name="bbox">
                <option value="">Global</option>
                <optgroup class="template" label="Region">
@@ -107,13 +137,18 @@ body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Philippines_119_1"]{display: no
             <h2 property="term:title">Historical Climate Information</h2>
             
             <p align="left" property="term:description">
-               A set of tailored analyses to describe historical daily precipitation and temperature
-               caracteristics variability and their relationship with ENSO.
+               A set of tailored analyses to describe historical daily precipitation and temperature caracteristics variability and their
+               relationship with ENSO.
             </p>
             
          </div>
          
-         <div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:maproomregistry="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#" xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#" class="rightcol">
+         <div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:maproomregistry="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
+              xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+              class="rightcol">
             <div class="ui-tabs">
                <ul class="ui-tabs-nav">
                   <li><a href="#tabs-1">Probabilistic ENSO Composites</a></li>
@@ -121,156 +156,221 @@ body[bbox="bb:-74:-35:-35:6:bb"] .item[sem~="gaz:Philippines_119_1"]{display: no
                </ul>
                <div id="tabs-1" class="ui-tabs-panel">
                   <div class="itemGroup">Probabilistic ENSO Composites</div>
-                  <div class="item" sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Asia_South iridl:Atmosphere iridl:Classification iridl:Gridded iridl:NearSurface iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:enso iridl:interactive iridl:mean iridl:seasonal iridl:station iridl:temperature iridl:z2m gaz:Asia_South_319_0 maproom:Agriculture_ENSO_Prob_Temperature_South_Asia_term maproom:Agriculture_ENSO_Prob_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="ENSO_Prob_Temperature/South_Asia/SeasonalAverageGSOD.html">Historical Probability of Seasonal Average Temperature Tercile Conditioned on ENSO:
-                           South Asia</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="ENSO_Prob_Temperature/South_Asia/SeasonalAverageGSOD.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.NCDC/.CPC_GSOD/.awr/lat/%286%29%2838%29masknotrange/SELECT/lon/%2866%29%2898%29masknotrange/SELECT/lon/lat%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter%28tmax%29//var/parameter/interp//name//temp/def/60/maskgt/T//season/get_parameter/0.75/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201979%29%28Dec%202011%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/tercileclassesscale/temp//Tercile/renameGRID/NINO34//ENSO/renameGRID/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE/Tercile/%28Cool%29//tercile/parameter/VALUE/nip/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/scattercolor/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/-fig//plotaxislength/220/psdef//antialias/true/psdef//fntsze/30/psdef//plotborder/0/psdef//XOVY/null/psdef//antialias/true/psdef//X/66/98/plotrange//Y/6/38/plotrange/+.gif" /></a></div>
-                     <div class="itemDescription">This map shows the historical probability (given in percentile) of seasonal average
-                        daily maximum, mean, or minimum temperature falling within the upper (warm), middle
-                        (normal), or bottom (cool) one-third ("tercile") of the 1979-2011 historical distribution
-                        in South Asia given the state of ENSO (El Niño, Neutral, La Niña) during that same
-                        season.
+                  <div class="item"
+                       sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Asia_South iridl:Atmosphere iridl:Classification iridl:Gridded iridl:NearSurface iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:enso iridl:interactive iridl:mean iridl:seasonal iridl:station iridl:temperature iridl:z2m gaz:Asia_South_319_0 maproom:Agriculture_ENSO_Prob_Temperature_South_Asia_term maproom:Agriculture_ENSO_Prob_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="ENSO_Prob_Temperature/South_Asia/SeasonalAverageGSOD.html">Historical Probability of Seasonal Average Temperature Tercile Conditioned on ENSO: South Asia</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="ENSO_Prob_Temperature/South_Asia/SeasonalAverageGSOD.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/home/.mbell/.NCDC/.CPC_GSOD/.awr/lat/%286%29%2838%29masknotrange/SELECT/lon/%2866%29%2898%29masknotrange/SELECT/lon/lat%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter%28tmax%29//var/parameter/interp//name//temp/def/60/maskgt/T//season/get_parameter/0.75/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201979%29%28Dec%202011%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/tercileclassesscale/temp//Tercile/renameGRID/NINO34//ENSO/renameGRID/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE/Tercile/%28Cool%29//tercile/parameter/VALUE/nip/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/scattercolor/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/-fig//plotaxislength/220/psdef//antialias/true/psdef//fntsze/30/psdef//plotborder/0/psdef//XOVY/null/psdef//antialias/true/psdef//X/66/98/plotrange//Y/6/38/plotrange/+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the historical probability (given in percentile) of seasonal average daily maximum, mean, or minimum temperature
+                        falling within the upper (warm), middle (normal), or bottom (cool) one-third ("tercile") of the 1979-2011 historical distribution
+                        in South Asia given the state of ENSO (El Niño, Neutral, La Niña) during that same season.
                      </div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Atmosphere iridl:Classification iridl:Gridded iridl:India iridl:NearSurface iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:deg1x1 iridl:enso iridl:interactive iridl:mean iridl:seasonal iridl:temperature iridl:z2m gaz:India_68_1 maproom:Agriculture_ENSO_Prob_Temperature_term maproom:Agriculture_ENSO_Prob_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="ENSO_Prob_Temperature/South_Asia/SeasonalAverageIMD.html">Historical Probability of Seasonal Average Temperature Tercile Conditioned on ENSO:
-                           India</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="ENSO_Prob_Temperature/South_Asia/SeasonalAverageIMD.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter%5B%28.%29%28tmax%29//var1/parameter%5Dconcat//var/parameter/interp/X/66.0/98.0/RANGEEDGES/Y/6.0/38.0/RANGEEDGES/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201969%29%28Dec%202005%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/tercileclassesscale/tmin//Tercile/renameGRID/tmean//Tercile/renameGRID/tmax//Tercile/renameGRID/NINO34//ENSO/renameGRID/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE/Tercile/%28Cool%29//tercile/parameter/VALUE/X/Y/fig-/colors/coasts_gaz/thin/countries_gaz/verythin/admin1_india/-fig//plotaxislength/220/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" /></a></div>
-                     <div class="itemDescription">This map shows the historical probability (given in percentile) of seasonal average
-                        daily maximum, mean, or minimum temperature falling within the upper (warm), middle
-                        (normal), or bottom (cool) one-third ("tercile") of the 1969-2005 historical distribution
+                  <div class="item"
+                       sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Atmosphere iridl:Classification iridl:Gridded iridl:India iridl:NearSurface iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:deg1x1 iridl:enso iridl:interactive iridl:mean iridl:seasonal iridl:temperature iridl:z2m gaz:India_68_1 maproom:Agriculture_ENSO_Prob_Temperature_term maproom:Agriculture_ENSO_Prob_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="ENSO_Prob_Temperature/South_Asia/SeasonalAverageIMD.html">Historical Probability of Seasonal Average Temperature Tercile Conditioned on ENSO: India</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="ENSO_Prob_Temperature/South_Asia/SeasonalAverageIMD.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter%5B%28.%29%28tmax%29//var1/parameter%5Dconcat//var/parameter/interp/X/66.0/98.0/RANGEEDGES/Y/6.0/38.0/RANGEEDGES/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201969%29%28Dec%202005%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/tercileclassesscale/tmin//Tercile/renameGRID/tmean//Tercile/renameGRID/tmax//Tercile/renameGRID/NINO34//ENSO/renameGRID/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE/Tercile/%28Cool%29//tercile/parameter/VALUE/X/Y/fig-/colors/coasts_gaz/thin/countries_gaz/verythin/admin1_india/-fig//plotaxislength/220/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the historical probability (given in percentile) of seasonal average daily maximum, mean, or minimum temperature
+                        falling within the upper (warm), middle (normal), or bottom (cool) one-third ("tercile") of the 1969-2005 historical distribution
                         in India given the state of ENSO (El Niño, Neutral, La Niña) during that same season.
                      </div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Asia_South iridl:Atmosphere iridl:Classification iridl:Gridded iridl:NearSurface iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:enso iridl:interactive iridl:seasonal iridl:station iridl:temperature iridl:z2m gaz:Asia_South_319_0 maproom:Agriculture_ENSO_Prob_Temperature_South_Asia_term maproom:Agriculture_ENSO_Prob_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="ENSO_Prob_Temperature/South_Asia/SeasonalFrequencyGSOD.html">Historical Tercile Probability of the Seasonal Frequency of Daily Temperature Conditioned
-                           on ENSO: South Asia</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="ENSO_Prob_Temperature/South_Asia/SeasonalFrequencyGSOD.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/home/.mbell/.NCDC/.CPC_GSOD/.awr/lat/%286%29%2838%29masknotrange/SELECT/lon/%2866%29%2898%29masknotrange/SELECT/lon/lat%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter/%28tmax%29//var/parameter/interp//name//temp/def/60/maskgt//season/get_parameter/%2830%29//thold/parameter/interp/0.75/%28seasonalfreqGT%29//freqGTLT/parameter/interp/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201979%29%28Dec%202011%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/NINO34//ENSO/renameGRID/aprod//Tercile/renameGRID/tercileclassesscale/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE/Tercile/%28Cool%29//tercile/parameter/VALUE/nip/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/scattercolor/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/-fig//X/66/98/plotrange//Y/6/38/plotrange//plotaxislength/220/psdef//antialias/true/psdef//fntsze/30/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" /></a></div>
-                     <div class="itemDescription">This map shows the historical probability (given in percentile) of the number of days
-                        in a season that daily maximum, mean, or minimum temperature values greater than or
-                        less than a user-defined daily threshold will fall within the upper (warm), middle
-                        (normal), or bottom (cool) one-third ("tercile") of the 1979-2011 historical frequency
-                        distribution in South Asia given the state of ENSO (El Niño, Neutral, La Niña) during
-                        that same season.
+                  <div class="item"
+                       sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Asia_South iridl:Atmosphere iridl:Classification iridl:Gridded iridl:NearSurface iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:enso iridl:interactive iridl:seasonal iridl:station iridl:temperature iridl:z2m gaz:Asia_South_319_0 maproom:Agriculture_ENSO_Prob_Temperature_South_Asia_term maproom:Agriculture_ENSO_Prob_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="ENSO_Prob_Temperature/South_Asia/SeasonalFrequencyGSOD.html">Historical Tercile Probability of the Seasonal Frequency of Daily Temperature Conditioned on ENSO: South Asia</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="ENSO_Prob_Temperature/South_Asia/SeasonalFrequencyGSOD.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/home/.mbell/.NCDC/.CPC_GSOD/.awr/lat/%286%29%2838%29masknotrange/SELECT/lon/%2866%29%2898%29masknotrange/SELECT/lon/lat%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter/%28tmax%29//var/parameter/interp//name//temp/def/60/maskgt//season/get_parameter/%2830%29//thold/parameter/interp/0.75/%28seasonalfreqGT%29//freqGTLT/parameter/interp/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201979%29%28Dec%202011%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/NINO34//ENSO/renameGRID/aprod//Tercile/renameGRID/tercileclassesscale/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE/Tercile/%28Cool%29//tercile/parameter/VALUE/nip/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/scattercolor/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/-fig//X/66/98/plotrange//Y/6/38/plotrange//plotaxislength/220/psdef//antialias/true/psdef//fntsze/30/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the historical probability (given in percentile) of the number of days in a season that daily maximum, mean,
+                        or minimum temperature values greater than or less than a user-defined daily threshold will fall within the upper (warm),
+                        middle (normal), or bottom (cool) one-third ("tercile") of the 1979-2011 historical frequency distribution in South Asia given
+                        the state of ENSO (El Niño, Neutral, La Niña) during that same season.
                      </div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Atmosphere iridl:Classification iridl:Gridded iridl:India iridl:NearSurface iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:deg1x1 iridl:enso iridl:interactive iridl:seasonal iridl:temperature iridl:z2m gaz:India_68_1 maproom:Agriculture_ENSO_Prob_Temperature_South_Asia_term maproom:Agriculture_ENSO_Prob_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="ENSO_Prob_Temperature/South_Asia/SeasonalFrequencyIMD.html">Historical Tercile Probability of the Seasonal Frequency of Daily Temperature Conditioned
-                           on ENSO: India</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="ENSO_Prob_Temperature/South_Asia/SeasonalFrequencyIMD.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter%5B%28.%29%28tmax%29//var1/parameter%5Dconcat//var/parameter/interp/X/66.0/98.0/RANGEEDGES/Y/6.0/38.0/RANGEEDGES//season/get_parameter/30.0/1.0/%28seasonalfreqGT%29//freqGTLT/parameter/interp/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201969%29%28Dec%202005%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/NINO34//ENSO/renameGRID/aprod//Tercile/renameGRID/tercileclassesscale/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE/Tercile/%28Cool%29//tercile/parameter/VALUE/X/Y/fig-/colors/coasts_gaz/thin/countries_gaz/verythin/admin1_india/-fig//plotaxislength/220/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" /></a></div>
-                     <div class="itemDescription">This map shows the historical probability (given in percentile) of the number of days
-                        in a season that daily maximum, mean, or minimum temperature values greater than or
-                        less than a user-defined daily threshold will fall within the upper (warm), middle
-                        (normal), or bottom (cool) one-third ("tercile") of the 1969-2005 historical frequency
-                        distribution in India given the state of ENSO (El Niño, Neutral, La Niña) during that
-                        same season.
+                  <div class="item"
+                       sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Atmosphere iridl:Classification iridl:Gridded iridl:India iridl:NearSurface iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:deg1x1 iridl:enso iridl:interactive iridl:seasonal iridl:temperature iridl:z2m gaz:India_68_1 maproom:Agriculture_ENSO_Prob_Temperature_South_Asia_term maproom:Agriculture_ENSO_Prob_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="ENSO_Prob_Temperature/South_Asia/SeasonalFrequencyIMD.html">Historical Tercile Probability of the Seasonal Frequency of Daily Temperature Conditioned on ENSO: India</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="ENSO_Prob_Temperature/South_Asia/SeasonalFrequencyIMD.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IMD/.HRDGT/.v1p0%5B%28Jan%29//seasonStart/parameter/%28-%29%28Mar%29//seasonEnd/parameter%5Dconcat//season/parameter%5B%28.%29%28tmax%29//var1/parameter%5Dconcat//var/parameter/interp/X/66.0/98.0/RANGEEDGES/Y/6.0/38.0/RANGEEDGES//season/get_parameter/30.0/1.0/%28seasonalfreqGT%29//freqGTLT/parameter/interp/T//season/get_parameter/VALUES%5BT%5D0.75/percentileover/%7BCool/0.33333/Normal/0.66667/Warm%7Dclassify/SOURCES/.Indices/.nino/.EXTENDED/.NINO34/T/%28Jan%201969%29%28Dec%202005%29RANGE/T//season/get_parameter/1.0/seasonalAverage/T//season/get_parameter/VALUES%5BT%5D0.0/percentileover/%7BLaNina/0.25/Neutral/0.75/ElNino%7Dclassify/1/masklt/mul%5BT%5Daverage/NINO34//ENSO/renameGRID/aprod//Tercile/renameGRID/tercileclassesscale/DATA/0/1/RANGE/ENSO/%28LaNina%29//ensoState/parameter/VALUE/Tercile/%28Cool%29//tercile/parameter/VALUE/X/Y/fig-/colors/coasts_gaz/thin/countries_gaz/verythin/admin1_india/-fig//plotaxislength/220/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" /></a></div>
+                     <div class="itemDescription">This map shows the historical probability (given in percentile) of the number of days in a season that daily maximum, mean,
+                        or minimum temperature values greater than or less than a user-defined daily threshold will fall within the upper (warm),
+                        middle (normal), or bottom (cool) one-third ("tercile") of the 1969-2005 historical frequency distribution in India given
+                        the state of ENSO (El Niño, Neutral, La Niña) during that same season.
                      </div>
                      <div class="itemFooter"></div>
                   </div>
                </div>
                <div id="tabs-2" class="ui-tabs-panel">
                   <div class="itemGroup">Historical Daily Seasonal Characteristics</div>
-                  <div class="item" sem="iridl:Asia_South iridl:Atmosphere iridl:Gridded iridl:Historical_Analysis iridl:Temperature iridl:ccafs iridl:climate iridl:daily iridl:interactive iridl:seasonal gaz:Asia_South_319_0 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/SouthAsia_Temp.html">Monsoon Asia Historical Temperature Monitoring</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/SouthAsia_Temp.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Monsoon_Asia/.temperature/.historical/X/Y/fig-/colors/solid/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                  <div class="item"
+                       sem="iridl:Atmosphere iridl:Bangladesh iridl:Count iridl:Gridded iridl:Historical_Analysis iridl:Precipitation iridl:Rate iridl:WetDayFrequency iridl:agriculture iridl:climate iridl:daily iridl:deg0.25x0.25 iridl:deg0.5x0.5 iridl:interactive iridl:mean iridl:precipitation_rate iridl:seasonal iridl:spatial_average iridl:spatial_average_resolution iridl:standard_deviation iridl:time_series gaz:Bangladesh_11_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Bangladesh_Precip.html">Bangladesh Historical Precipitation Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Bangladesh_Precip.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Bangladesh/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal statistics.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item"
+                       sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Atmosphere iridl:Bangladesh iridl:Count iridl:Historical_Analysis iridl:NearSurface iridl:Temperature iridl:agriculture iridl:climate iridl:daily iridl:interactive iridl:mean iridl:seasonal iridl:standard_deviation iridl:station iridl:temperature iridl:time_series iridl:z2m gaz:Bangladesh_11_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Bangladesh_Temp.html">Bangladesh Historical Temperature Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Bangladesh_Temp.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Bangladesh/.temperature/a:/.lon/:a:/.lat/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/scattercolor/-fig//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//plotborder+0+psdef//plotaxislength+150+psdef//X/88/93/plotrange//Y/20/27/plotrange/+.gif" /></a></div>
                      <div class="itemDescription">The Maproom explores historical daily temperature by calculating simple seasonal statistics.</div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:Asia_South iridl:Atmosphere iridl:Gridded iridl:Historical_Analysis iridl:Precipitation iridl:Rate iridl:ccafs iridl:climate iridl:daily iridl:interactive iridl:precipitation_rate iridl:seasonal gaz:Asia_South_319_0 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/SouthAsia_Precip.html">Monsoon Asia Historical Precipitation Monitoring</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/SouthAsia_Precip.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Monsoon_Asia/.precipitation/.historical/X/Y/fig-/colors/solid/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
-                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal
-                        statistics.
-                     </div>
+                  <div class="item"
+                       sem="iridl:Atmosphere iridl:Precipitation iridl:Rate iridl:climate iridl:daily iridl:interactive iridl:precipitation_rate iridl:seasonal gaz:Honduras_65_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Honduras_Precip.html">SMNH/IRI Honduras Historical Precipitation Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Honduras_Precip.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//plotaxislength/150/psdef//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//plotborder/0.0/psdef//X/-89.5/-83/plotrange//Y/12.5/17/plotrange/+.gif" /></a></div>
+                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal statistics.</div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Historical_Analysis iridl:Philippines iridl:Precipitation iridl:Rate iridl:climate iridl:daily iridl:interactive iridl:precipitation_rate iridl:seasonal iridl:station gaz:Philippines_119_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Philippines_Precip.html">PAGASA/IRI Philippines Historical Precipitation Monitoring</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Philippines_Precip.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/.PAGASA_precipitation/a:/.lon/:a:/.lat/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/solid/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/scattercolor/-fig//antialias/true/psdef//fntsze/15/psdef//plotborder/0/psdef//plotaxislength/150/psdef//X/118/127/plotrange//Y/5/21/plotrange/+.gif" /></a></div>
-                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal
-                        statistics.
-                     </div>
-                     <div class="itemFooter"></div>
-                  </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Gridded iridl:Historical_Analysis iridl:India iridl:Temperature iridl:ccafs iridl:climate iridl:daily iridl:interactive iridl:seasonal gaz:India_68_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/NorthernIndia_Temp.html">Northern India Historical Temperature Monitoring</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/NorthernIndia_Temp.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Northern_India/.temperature/.IMD_temperature/.historical/X/Y/fig-/colors/grey/verythin/solid/india_dist/thinnish/grey/admin1_india/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                  <div class="item"
+                       sem="iridl:Atmosphere iridl:Temperature iridl:climate iridl:daily iridl:interactive iridl:seasonal gaz:Honduras_65_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Honduras_Temp.html">SMNH/IRI Honduras Historical Temperature Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Honduras_Temp.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.temperature/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//plotaxislength/150/psdef//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//plotborder/0.0/psdef//X/-89.5/-83/plotrange//Y/12.5/17/plotrange/+.gif" /></a></div>
                      <div class="itemDescription">The Maproom explores historical daily temperature by calculating simple seasonal statistics.</div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Historical_Analysis iridl:India iridl:Temperature iridl:ccafs iridl:climate iridl:daily iridl:interactive iridl:seasonal iridl:station gaz:India_68_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/NorthernIndia_Temp_GSOD.html">Northern India Historical Temperature Monitoring -- GSOD</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/NorthernIndia_Temp_GSOD.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Northern_India/.temperature/.GSOD_temperature/a:/.lon/:a:/.lat/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/grey/verythin/solid/india_dist/thinnish/grey/admin1_india/black/countries_gaz/blue/thin/rivers_gaz/lakes/scattercolor/-fig//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//plotborder+0+psdef//plotaxislength+150+psdef//X/73/89/plotrange//Y/24/33/plotrange/+.gif" /></a></div>
+                  <div class="item"
+                       sem="iridl:Atmosphere iridl:Count iridl:Gridded iridl:Historical_Analysis iridl:Laos iridl:Precipitation iridl:Rate iridl:WetDayFrequency iridl:agriculture iridl:climate iridl:daily iridl:deg0.25x0.25 iridl:deg0.5x0.5 iridl:interactive iridl:mean iridl:precipitation_rate iridl:seasonal iridl:spatial_average iridl:spatial_average_resolution iridl:standard_deviation iridl:time_series gaz:Laos_85_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Lao_Precip.html">Lao Historical Precipitation Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Lao_Precip.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Lao/.aphroditeV1101/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal statistics.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item"
+                       sem="iridl:Atmosphere iridl:Count iridl:Historical_Analysis iridl:Laos iridl:Precipitation iridl:Rate iridl:WetDayFrequency iridl:agriculture iridl:climate iridl:daily iridl:interactive iridl:mean iridl:precipitation_rate iridl:seasonal iridl:standard_deviation iridl:station iridl:time_series gaz:Laos_85_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Lao_Precip_CCROM-ASEAN.html">Lao Historical Precipitation Monitoring -- CCROM-ASEAN</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Lao_Precip_CCROM-ASEAN.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/fig-/colors/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/-fig//plotaxislength/150/psdef//XOVY/null/psdef//antialias/true/psdef//plotborder/0.0/psdef//X/100/108/plotrange//Y/13.5/23/plotrange/+.gif" /></a></div>
+                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal statistics.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item"
+                       sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Atmosphere iridl:Count iridl:Historical_Analysis iridl:Laos iridl:NearSurface iridl:Temperature iridl:agriculture iridl:climate iridl:daily iridl:interactive iridl:mean iridl:seasonal iridl:standard_deviation iridl:station iridl:temperature iridl:time_series iridl:z2m gaz:Laos_85_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Lao_Temp_CCROM-ASEAN.html">Lao Historical Temperature Monitoring -- CCROM-ASEAN</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Lao_Temp_CCROM-ASEAN.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/fig-/colors/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/-fig//plotaxislength/150/psdef//XOVY/null/psdef//antialias/true/psdef//plotborder/0.0/psdef//X/100/108/plotrange//Y/13.5/23/plotrange/+.gif" /></a></div>
                      <div class="itemDescription">The Maproom explores historical daily temperature by calculating simple seasonal statistics.</div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Gridded iridl:Historical_Analysis iridl:India iridl:Precipitation iridl:Rate iridl:ccafs iridl:climate iridl:daily iridl:interactive iridl:precipitation_rate iridl:seasonal gaz:India_68_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/NorthernIndia_Precip.html">Northern India Historical Precipitation Monitoring</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/NorthernIndia_Precip.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Northern_India/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/india_dist/thinnish/grey/admin1_india/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
-                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal
-                        statistics.
-                     </div>
+                  <div class="item"
+                       sem="iridl:Atmosphere iridl:Brazil iridl:Count iridl:Historical_Analysis iridl:Precipitation iridl:Rate iridl:WetDayFrequency iridl:agriculture iridl:climate iridl:daily iridl:interactive iridl:mean iridl:precipitation_rate iridl:seasonal iridl:standard_deviation iridl:station iridl:time_series gaz:Brazil_19_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/NE_Brazil_Precip.html">Brazil Nordeste Historical Precipitation Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/NE_Brazil_Precip.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.NE_Brazil/.precipitation/a:/.lon/:a:/.lat/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/solid/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/streams/scattercolor/-fig//antialias/true/psdef//fntsze/15/psdef//plotborder/0/psdef//plotaxislength/150/psdef//X/-42/-37.5/plotrange//Y/-8/-2.5/plotrange/+.gif" /></a></div>
+                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal statistics.</div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Historical_Analysis iridl:Nepal iridl:Temperature iridl:ccafs iridl:climate iridl:daily iridl:interactive iridl:seasonal iridl:station gaz:Nepal_106_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Nepal_Temp.html">Nepal Historical Temperature Monitoring</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Nepal_Temp.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Nepal/.temperature/a:/.lon/:a:/.lat/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/grey/verythin/solid/nepal_dist/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/scattercolor/-fig//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//plotborder+0+psdef//plotaxislength+150+psdef+/X/79.8/88.5/plotrange//Y/26/31/plotrange/.gif" /></a></div>
+                  <div class="item"
+                       sem="iridl:Atmosphere iridl:Count iridl:Gridded iridl:Historical_Analysis iridl:Nepal iridl:Precipitation iridl:Rate iridl:WetDayFrequency iridl:agriculture iridl:climate iridl:daily iridl:deg0.25x0.25 iridl:deg0.5x0.5 iridl:interactive iridl:mean iridl:precipitation_rate iridl:seasonal iridl:spatial_average iridl:spatial_average_resolution iridl:standard_deviation iridl:time_series gaz:Nepal_106_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Nepal_Precip.html">Nepal Historical Precipitation Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Nepal_Precip.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Nepal/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/nepal_dist/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal statistics.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item"
+                       sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Atmosphere iridl:Count iridl:Historical_Analysis iridl:NearSurface iridl:Nepal iridl:Temperature iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:interactive iridl:mean iridl:seasonal iridl:standard_deviation iridl:station iridl:temperature iridl:time_series iridl:z2m gaz:Nepal_106_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Nepal_Temp.html">Nepal Historical Temperature Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Nepal_Temp.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Nepal/.temperature/a:/.lon/:a:/.lat/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/grey/verythin/solid/nepal_dist/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/scattercolor/-fig//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//plotborder+0+psdef//plotaxislength+150+psdef+/X/79.8/88.5/plotrange//Y/26/31/plotrange/.gif" /></a></div>
                      <div class="itemDescription">The Maproom explores historical daily temperature by calculating simple seasonal statistics.</div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Gridded iridl:Historical_Analysis iridl:Nepal iridl:Precipitation iridl:Rate iridl:climate iridl:daily iridl:interactive iridl:precipitation_rate iridl:seasonal gaz:Nepal_106_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Nepal_Precip.html">Nepal Historical Precipitation Monitoring</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Nepal_Precip.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Nepal/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/nepal_dist/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
-                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal
-                        statistics.
-                     </div>
+                  <div class="item"
+                       sem="iridl:Atmosphere iridl:Count iridl:Gridded iridl:Historical_Analysis iridl:India iridl:Precipitation iridl:Rate iridl:WetDayFrequency iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:deg0.25x0.25 iridl:deg0.5x0.5 iridl:interactive iridl:mean iridl:precipitation_rate iridl:seasonal iridl:spatial_average iridl:spatial_average_resolution iridl:standard_deviation iridl:time_series gaz:India_68_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/NorthernIndia_Precip.html">Northern India Historical Precipitation Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/NorthernIndia_Precip.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Northern_India/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/india_dist/thinnish/grey/admin1_india/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal statistics.</div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Brazil iridl:Historical_Analysis iridl:Precipitation iridl:Rate iridl:climate iridl:daily iridl:interactive iridl:precipitation_rate iridl:seasonal iridl:station gaz:Brazil_19_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/NE_Brazil_Precip.html">Brazil Nordeste Historical Precipitation Monitoring</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/NE_Brazil_Precip.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.NE_Brazil/.precipitation/a:/.lon/:a:/.lat/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/solid/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/streams/scattercolor/-fig//antialias/true/psdef//fntsze/15/psdef//plotborder/0/psdef//plotaxislength/150/psdef//X/-42/-37.5/plotrange//Y/-8/-2.5/plotrange/+.gif" /></a></div>
-                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal
-                        statistics.
-                     </div>
-                     <div class="itemFooter"></div>
-                  </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Historical_Analysis iridl:Laos iridl:Temperature iridl:climate iridl:daily iridl:interactive iridl:seasonal iridl:station gaz:Laos_85_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Lao_Temp_CCROM-ASEAN.html">Lao Historical Temperature Monitoring -- CCROM-ASEAN</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Lao_Temp_CCROM-ASEAN.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/Y/fig-/colors/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/-fig//plotaxislength/150/psdef//XOVY/null/psdef//antialias/true/psdef//plotborder/0.0/psdef//X/100/108/plotrange//Y/13.5/23/plotrange/+.gif" /></a></div>
+                  <div class="item"
+                       sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Atmosphere iridl:Count iridl:Gridded iridl:Historical_Analysis iridl:India iridl:NearSurface iridl:Temperature iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:deg1x1 iridl:interactive iridl:mean iridl:seasonal iridl:spatial_average iridl:spatial_average_resolution iridl:standard_deviation iridl:temperature iridl:time_series iridl:z2m gaz:India_68_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/NorthernIndia_Temp.html">Northern India Historical Temperature Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/NorthernIndia_Temp.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Northern_India/.temperature/.IMD_temperature/.historical/X/Y/fig-/colors/grey/verythin/solid/india_dist/thinnish/grey/admin1_india/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
                      <div class="itemDescription">The Maproom explores historical daily temperature by calculating simple seasonal statistics.</div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Gridded iridl:Historical_Analysis iridl:Laos iridl:Precipitation iridl:Rate iridl:climate iridl:daily iridl:interactive iridl:precipitation_rate iridl:seasonal gaz:Laos_85_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Lao_Precip.html">Lao Historical Precipitation Monitoring</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Lao_Precip.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Lao/.aphroditeV1101/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
-                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal
-                        statistics.
-                     </div>
-                     <div class="itemFooter"></div>
-                  </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Historical_Analysis iridl:Laos iridl:Precipitation iridl:Rate iridl:climate iridl:daily iridl:interactive iridl:precipitation_rate iridl:seasonal iridl:station gaz:Laos_85_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Lao_Precip_CCROM-ASEAN.html">Lao Historical Precipitation Monitoring -- CCROM-ASEAN</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Lao_Precip_CCROM-ASEAN.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/Y/fig-/colors/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/-fig//plotaxislength/150/psdef//XOVY/null/psdef//antialias/true/psdef//plotborder/0.0/psdef//X/100/108/plotrange//Y/13.5/23/plotrange/+.gif" /></a></div>
-                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal
-                        statistics.
-                     </div>
-                     <div class="itemFooter"></div>
-                  </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Bangladesh iridl:Historical_Analysis iridl:Temperature iridl:climate iridl:daily iridl:interactive iridl:seasonal iridl:station gaz:Bangladesh_11_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Bangladesh_Temp.html">Bangladesh Historical Temperature Monitoring</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Bangladesh_Temp.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Bangladesh/.temperature/a:/.lon/:a:/.lat/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/scattercolor/-fig//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//plotborder+0+psdef//plotaxislength+150+psdef//X/88/93/plotrange//Y/20/27/plotrange/+.gif" /></a></div>
+                  <div class="item"
+                       sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Atmosphere iridl:Count iridl:Historical_Analysis iridl:India iridl:NearSurface iridl:Temperature iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:interactive iridl:mean iridl:seasonal iridl:standard_deviation iridl:station iridl:temperature iridl:time_series iridl:z2m gaz:India_68_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/NorthernIndia_Temp_GSOD.html">Northern India Historical Temperature Monitoring -- GSOD</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/NorthernIndia_Temp_GSOD.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Northern_India/.temperature/.GSOD_temperature/a:/.lon/:a:/.lat/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/grey/verythin/solid/india_dist/thinnish/grey/admin1_india/black/countries_gaz/blue/thin/rivers_gaz/lakes/scattercolor/-fig//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//plotborder+0+psdef//plotaxislength+150+psdef//X/73/89/plotrange//Y/24/33/plotrange/+.gif" /></a></div>
                      <div class="itemDescription">The Maproom explores historical daily temperature by calculating simple seasonal statistics.</div>
                      <div class="itemFooter"></div>
                   </div>
-                  <div class="item" sem="iridl:Atmosphere iridl:Bangladesh iridl:Count iridl:Gridded iridl:Historical_Analysis iridl:Precipitation iridl:Rate iridl:WetDayFrequency iridl:agriculture iridl:climate iridl:daily iridl:deg0.25x0.25 iridl:deg0.5x0.5 iridl:interactive iridl:mean iridl:precipitation_rate iridl:seasonal iridl:spatial_average iridl:spatial_average_resolution iridl:standard_deviation gaz:Bangladesh_11_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
-                     <div class="itemTitle"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Bangladesh_Precip.html">Bangladesh Historical Precipitation Monitoring</a></div>
-                     <div class="itemIcon"><a class="carryLanguage carry titleLink" href="Historical_Monitoring/Bangladesh_Precip.html"><img class="itemImage" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Bangladesh/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
-                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal
-                        statistics.
-                     </div>
+                  <div class="item"
+                       sem="iridl:Atmosphere iridl:Count iridl:Historical_Analysis iridl:Philippines iridl:Precipitation iridl:Rate iridl:WetDayFrequency iridl:agriculture iridl:climate iridl:daily iridl:interactive iridl:mean iridl:precipitation_rate iridl:seasonal iridl:standard_deviation iridl:station iridl:time_series gaz:Philippines_119_1 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Philippines_Precip.html">PAGASA/IRI Philippines Historical Precipitation Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/Philippines_Precip.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Philippines/.precipitation/.PAGASA_precipitation/a:/.lon/:a:/.lat/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/4/-3/roll/X/Y/fig-/white/mask/solid/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/scattercolor/-fig//antialias/true/psdef//fntsze/15/psdef//plotborder/0/psdef//plotaxislength/150/psdef//X/118/127/plotrange//Y/5/21/plotrange/+.gif" /></a></div>
+                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal statistics.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item"
+                       sem="iridl:Asia_South iridl:Atmosphere iridl:Count iridl:Gridded iridl:Historical_Analysis iridl:Precipitation iridl:Rate iridl:WetDayFrequency iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:deg0.25x0.25 iridl:deg0.5x0.5 iridl:interactive iridl:mean iridl:percentile iridl:precipitation_rate iridl:seasonal iridl:standard_deviation iridl:time_series gaz:Asia_South_319_0 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/SouthAsia_Precip.html">Monsoon Asia Historical Precipitation Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/SouthAsia_Precip.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Monsoon_Asia/.precipitation/.historical/X/Y/fig-/colors/solid/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">The Maproom explores historical daily precipitation by calculating simple seasonal statistics.</div>
+                     <div class="itemFooter"></div>
+                  </div>
+                  <div class="item"
+                       sem="iridl:AirTemperature iridl:AirTemperature2m iridl:Asia_South iridl:Atmosphere iridl:Gridded iridl:Historical_Analysis iridl:NearSurface iridl:Temperature iridl:agriculture iridl:ccafs iridl:climate iridl:daily iridl:deg0.25x0.25 iridl:deg0.5x0.5 iridl:interactive iridl:mean iridl:percentile iridl:seasonal iridl:standard_deviation iridl:temperature iridl:time_series iridl:z2m gaz:Asia_South_319_0 maproom:Agriculture_Historical_term maproom:Agriculture_term maproom:maproom_term ">
+                     <div class="itemTitle"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/SouthAsia_Temp.html">Monsoon Asia Historical Temperature Monitoring</a></div>
+                     <div class="itemIcon"><a class="carryLanguage carry titleLink"
+                           href="Historical_Monitoring/SouthAsia_Temp.html"><img class="itemImage"
+                                src="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Tailored/.Monsoon_Asia/.temperature/.historical/X/Y/fig-/colors/solid/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" /></a></div>
+                     <div class="itemDescription">The Maproom explores historical daily temperature by calculating simple seasonal statistics.</div>
                      <div class="itemFooter"></div>
                   </div>
                </div>
