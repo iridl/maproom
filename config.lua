@@ -6,6 +6,7 @@ ServerName = "localhost"
 ServerAlias = "localhost"
 ProxyModule = true -- set to false if you would like to use rewrite rules
 ProxyURL = "http://iridl.ldeo.columbia.edu"
+MacSetup = false
 
 if ProxyModule then
 ProxyRules = [[
