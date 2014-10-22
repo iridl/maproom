@@ -86,6 +86,7 @@
 		<owl:allValuesFrom rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#map_room" />
 	      </owl:Restriction>
 	    </rdfs:subClassOf>
+	<rdfs:subClassOf rdf:resource="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#SearchItem" />
 	  </owl:Class>
 	</rdfs:subClassOf>
       </owl:Class>
