@@ -55,7 +55,7 @@ width: 95%;
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
 <input class="carryup carry dlimg share" name="bbox" type="hidden" />
 <input class="dlimg share" name="S" type="hidden" />
-<input class="dlimg dlauximg share" name="day" type="hidden" />
+<input class="dlimg dlauximg share" name="day" type="hidden" value=".day1" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">
