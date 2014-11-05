@@ -11,11 +11,12 @@
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<meta property="term:description" content="Daily versions of the six-day forecastsprecipitation maps" />
+<meta property="term:description" content="Daily versions of the six-day forecast precipitation maps" />
 <title>IFRC PIC: Daily Forecasts</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <!--<link class="altLanguage" rel="alternate" hreflang="es" href="dailforecast.html?Set-Language=es" />-->
+<link rev="section" href="index.html" />
 <link rel="canonical" href="dailyforecast.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -54,7 +55,7 @@ width: 95%;
 <input class="carryLanguage carryup carry" name="Set-Language" type="hidden" />
 <input class="carryup carry dlimg share" name="bbox" type="hidden" />
 <input class="dlimg share" name="S" type="hidden" />
-<input class="dlimg dlauximg share" name="day" type="hidden" />
+<input class="dlimg dlauximg share" name="day" type="hidden" value=".day1" />
 <input class="dlimg dlauximg" name="plotaxislength" type="hidden" />
 </form>
 <div class="controlBar">

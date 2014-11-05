@@ -8,6 +8,11 @@
    Alias /uicore  <<<RepoDir>>>/uicore
    Alias /pure    <<<RepoDir>>>/pure
    Alias /jsonld    <<<RepoDir>>>/jsonld.js/js
+=== if MacSetup then
+   <Directory "<<<RepoDir>>>">
+      Allow from <<<Host>>>
+   </Directory>
+=== end
    <Directory "<<<RepoDir>>>/maproom">
       Options Indexes FollowSymLinks MultiViews
       LanguagePriority en es de fr

@@ -22,12 +22,23 @@
 <link rel="term:icon"
 href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Lao/.aphroditeV1101/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <script type="text/javascript" src="../../uicore/uicore.js"></script>
+<style>
+/* Bangladesh bb */
+body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
+body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Indonesia_69_1"]{display: none;}
+/* Laos bb */
+body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+body[bbox="bb:100:13.5:108:23:bb"] .item[sem~="gaz:Indonesia_69_1"]{display: none;}
+/* Indonesia bb */
+body[bbox="bb:90:-10:165:14:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}
+body[bbox="bb:90:-10:165:14:bb"] .item[sem~="gaz:Bangladesh_11_1"]{display: none;}
+</style>
 </head>
 <body  xml:lang="en">
 
 <form name="pageform" id="pageform">
 <input class="carryLanguage carryup" name="Set-Language" type="hidden" />
-<input class="carry share" name="bbox" type="hidden" />
+<input class="titleLink itemImage bodyAttribute" name="bbox" type="hidden" />
 </form>
 <div class="controlBar">
            <fieldset class="navitem">
