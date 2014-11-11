@@ -6,6 +6,7 @@
       xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
       xmlns:wn30="http://purl.org/vocabularies/princeton/wn30/"
       xmlns:wn20schema="http://www.w3.org/2006/03/wn/wn20/schema/"
+      xmlns:wordnet-ontology="http://wordnet-rdf.princeton.edu/ontology#"
       xmlns:xs="http://www.w3.org/2001/XMLSchema#"
       version="XHTML+RDFa 1.1"
       >
@@ -204,8 +205,8 @@ Clicking on a point on the map will show the local culmulative distribution and 
 </div>
 <div id="tabs-3"  class="ui-tabs-panel">
 <h2  align="center">More Information</h2>
-<p align="left">
-This forecasting system acts to correct spatial biases in the medians of ensemble forecasts for individual models. The model calibration is performed using multi-variate regression based on EOF structures, thus allowing for spatial corrections. Penalized regression methods help forecast reliability and select predictors effectively. In particular, <a rel="wn20schema:containsWordSense" href="http://purl.org/vocabularies/princeton/wn30/wordsense-lasso_regression-noun-1"> Lasso regression </a>, similar to ridge regression, eliminates more agressively poor predictors and retains much of the skill improvements of EOF regression.
+<p align="left" rel="iridl:containsWordSample" resource="#lasso" id="lasso"><span property="wordnet-ontology:sample" >
+This forecasting system acts to correct spatial biases in the medians of ensemble forecasts for individual models. The model calibration is performed using multi-variate regression based on EOF structures, thus allowing for spatial corrections. Penalized regression methods help forecast reliability and select predictors effectively. In particular, <a property="wn20schema:lexicalForm" rel="wn20schema:containsWordSense" resource="[wn30:wordsense-lasso_regression-noun-1]"> Lasso regression </a>, similar to ridge regression, eliminates more agressively poor predictors and retains much of the skill improvements of EOF regression.</span>
 </p><p>
 This system has been based on several of the atmospheric general circulation models (AGCMs) that IRI uses in its “Net Assessment” seasonal forecast. The correction parameters in the system are estimated from retrospective forecasts that use forecast SST thereby explicitly incorporating SST forecast error and lead-time dependence.
 </p><p>
