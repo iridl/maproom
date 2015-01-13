@@ -5,33 +5,33 @@
 },
 "options": [
 {"href": "http://iri.columbia.edu/",
- "title": "IRI Home"}
+ "title": "МНИИ Главная"}
 ],
 "groups": [
 {
-"title": "IRI",
+"title": "МНИИ",
 "links": [
 {"href": "/",
- "title": "Data Library"}
+ "title": "Библиотека Данных"}
 ]
 },
 {
-"title": "Data Library",
+"title": "Библиотека Данных",
 "links": [
 {"href": "/maproom/",
- "title": "Map Rooms"},
+ "title": "Ситуационный Центр"},
 {"href": "/docfind/facetedbrowser.html?taxa=iridl%3ADataset_Search&itemClass=iridl%3Adataset",
- "title": "Datasets"},
+ "title": "Наборы данных"},
 {"href": "/dochelp/Documentation/funcindex.html",
- "title": "Functions"},
+ "title": "Функции"},
 {"href": "/dochelp/Tutorial/",
- "title": "Tutorial"},
+ "title": "Учебник"},
 {"href": "/dochelp/StatTutorial/",
-"title": "Statistics Tutorial"},
+"title": "Учебник по статистике"},
 {"href": "/dochelp/QA/",
-"title": "Q &amp; A"},
+"title": "Вопросы и ответы"},
 {"href": "/expert/",
- "title": "Expert Mode"}
+ "title": "Экспертный режим"}
 ]
 }
 ]
