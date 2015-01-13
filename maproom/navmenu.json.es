@@ -5,33 +5,33 @@
 },
 "options": [
 {"href": "http://iri.columbia.edu/",
- "title": "IRI Home"}
+ "title": "IRI - Inicio"}
 ],
 "groups": [
 {
 "title": "IRI",
 "links": [
 {"href": "/",
- "title": "Data Library"}
+ "title": "Bibliotecas de Datos"}
 ]
 },
 {
-"title": "Data Library",
+"title": "Biblioteca de Datos",
 "links": [
 {"href": "/maproom/",
  "title": "Map Rooms"},
 {"href": "/docfind/facetedbrowser.html?taxa=iridl%3ADataset_Search&itemClass=iridl%3Adataset",
- "title": "Datasets"},
+ "title": "Bases de Datos"},
 {"href": "/dochelp/Documentation/funcindex.html",
- "title": "Functions"},
+ "title": "Funciones"},
 {"href": "/dochelp/Tutorial/",
  "title": "Tutorial"},
 {"href": "/dochelp/StatTutorial/",
-"title": "Statistics Tutorial"},
+"title": "Tutorial - Estadísticas"},
 {"href": "/dochelp/QA/",
-"title": "Q &amp; A"},
+"title": "Preguntas y Respuestas"},
 {"href": "/expert/",
- "title": "Expert Mode"}
+ "title": "Modo Experto"}
 ]
 }
 ]
