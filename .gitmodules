@@ -10,3 +10,6 @@
 [submodule "jsonld.js"]
 	path = jsonld.js
 	url = git@bitbucket.org:iridl/jsonld.js.git
+[submodule "dldoc"]
+	path = dldoc
+	url = git@bitbucket.org:iridl/dldoc.git
