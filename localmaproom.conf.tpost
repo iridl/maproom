@@ -4,6 +4,18 @@
    ServerName <<<ServerName>>>
    ServerAlias <<<ServerAlias>>>
    # DL Maproom Configuration
+   DocumentRoot <<<RepoDir>>>/dldoc
+   <Directory "<<<RepoDir>>>/dldoc">
+      Options Indexes FollowSymLinks MultiViews
+      LanguagePriority en es de fr
+      ForceLanguagePriority Prefer Fallback
+   </Directory>
+   Alias /localconfig <<<RepoDir>>>/localconfig
+   <Directory "<<<RepoDir>>>/localconfig">
+      Options Indexes FollowSymLinks MultiViews
+      LanguagePriority en es de fr
+      ForceLanguagePriority Prefer Fallback
+   </Directory>
    Alias /maproom <<<RepoDir>>>/maproom
    Alias /uicore  <<<RepoDir>>>/uicore
    Alias /pure    <<<RepoDir>>>/pure
