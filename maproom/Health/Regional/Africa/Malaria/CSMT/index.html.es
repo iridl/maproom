@@ -57,7 +57,7 @@
 <div class="controlBar">
            <fieldset class="navitem" id="toSectionList">
                 <legend>Clima y Salud</legend>
-                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/">Malaria</a>
+                      <a rev="section" class="navlink carryup" href="/maproom/Health/Regional/Africa/Malaria/Historical.html">Malaria</a>
             </fieldset>
             <fieldset class="navitem" id="chooseSection">
                 <legend about="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Endemic_Malaria"><span property="term:label">Malaria Endémica</span></legend>
