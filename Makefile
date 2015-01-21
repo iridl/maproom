@@ -55,6 +55,7 @@ maproom/version.xml: .git
 clean:
 	rm -f build.tag utbuild.tag 
 	rm -rf $(BUILD)
+	rm $(maphtmlbld)
 	rm -rf maproom/newmaproomcache
 
 distclean: clean
