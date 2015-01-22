@@ -9,7 +9,7 @@
  xml:lang="es"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>IRI Map Room</title>
 <link rel="stylesheet" type="text/css" href="../uicore/uicore.css" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
