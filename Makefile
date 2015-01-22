@@ -64,7 +64,7 @@ dldoc/filelist.owl:	$(dldocsrc) maproomtools/sperl.pl Makefile
 	perl maproomtools/sperl.pl $(dldoclocalsrc) > $@
 
 dldoc/topindex.owl:	$(dlout) maproomtools/sperl.pl
-	perl sperl.pl $(dllocalout) > $@
+	perl maproomtools/sperl.pl $(dllocalout) > $@
 
 # merged maproom and dldoc install to BUILD dirs
 utbuild.tag: build.tag
