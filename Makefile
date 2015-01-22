@@ -9,30 +9,51 @@ BUILD = ___build
 VER = $(shell git-generate-version-info maproom tag)
 VER_ID = $(shell git-generate-version-info maproom id)
 TARBALL = $(VER)
-maphtmlbld = $(shell perl maproomtools/findsrc.pl bld maproom)
+# maproom source and build
 mapsrc = $(shell perl maproomtools/findsrc.pl src maproom)
+maphtmlbld = $(shell perl maproomtools/findsrc.pl bld maproom)
+# dldoc source and build
+dldocsrc = $(shell perl maproomtools/findsrc.pl src dldoc)
+dldoclocalsrc = $(shell cd dldoc; perl ../maproomtools/findsrc.pl src)
+dldochtmlbld = $(shell perl maproomtools/findsrc.pl bld dldoc)
+
+topdir = $(shell pwd)
 
 .PHONY: clean distclean tarball install build
 
 build: build.tag
-build.tag: maproom/version.xml localmaproom.conf maproom/maproomtop.owl $(maphtmlbld)
+build.tag: maproom/version.xml localmaproom.conf maproom/maproomtop.owl $(maphtmlbld) dldoc/topindex.owl $(dldochtmlbld)
 	touch build.tag
+
+builddl.tag: dldoc/topindex.owl $(dldochtmlbld)
+	touch builddl.tag
 
 localmaproom.conf:	localmaproom.conf.tpost config.lua
 	@echo "Generating local apache configuration file localmaproom.conf"
 	miconf -c config.lua -p '[.]tpost$$' -r .
 
 # really depends on maproom/newmaproomcache/owlimMaxRepository.nt
-# but tabs.xml is made at same time and we need it explicitly in this file
+# but tabs.nt is made at same time and we need it explicitly in this file
 maproom/maproomtop.owl:	Makefile config.lua maproom/tabs.xml
 	cd maproom; ../maproomtools/gen_maproomtop.pl $(RULESET);
 
-maproom/tabs.xml: 	Makefile config.lua maproom/maproomregistry.owl
+maproom/tabs.nt: 	Makefile config.lua maproom/maproomregistry.owl
 	cd maproom; ../maproomtools/runnewmaproom.pl $(RULESET);
 
 maproom/maproomregistry.owl:	$(mapsrc)
 	cd maproom; ../maproomtools/gen_registry.pl;
 
+# dldoc targets -- essentially the same as the dldoc Makefile,
+# except the tabs.xml is merged with the maproom
+
+dldoc/tabs.nt:	dldoc/filelist.owl maproomtools/ingridregistry.owl
+		@echo collecting dldoc info
+		cd dldoc; rm -rf doccache; rdfcache -cache=doccache -construct=tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/dldoc/filelist.owl > rdflogfile
+
+dldoc/filelist.owl:	$(dldocsrc) maproomtools/sperl.pl Makefile
+	perl maproomtools/sperl.pl $(dldoclocalsrc) > $@
+
+# maproom targets
 utbuild.tag: build.tag
 	install -d $(BUILD)
 	install -d $(BUILD)/maproom
@@ -77,30 +98,21 @@ text.xml:	text.nt
 		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' text.nt > text.xml
 
 text.nt:	maproom/newmaproomcache/owlimMaxRepository.nt textconstruct.serql
-		rdfcache -cache=maproom/newmaproomcache -construct=textconstruct.serql -constructoutput=./text.nt file:///`pwd`/maproom/maproomregistry.owl
+		rdfcache -cache=maproom/newmaproomcache -construct=textconstruct.serql -constructoutput=./text.nt file://`pwd`/maproom/maproomregistry.owl
 
 facetsearch:	facetcache/owlimMaxRepository.nt
 
 facetcache/owlimMaxRepository.nt:	maproom/maproomtop.owl
 		rm -rf facetcache
 		rdfcache -cache=facetcache http://iridl.ldeo.columbia.edu/maproom/maproomtop.owl
-tabs.xml:	maproom/tabs.xml
-		cp maproom/tabs.xml tabs.xml
+tabs.nt:	maproom/tabs.nt dldoc/tabs.nt
+	cat maproom/tabs.nt dldoc/tabs.nt > tabs.nt
 
-%.html.en:	%.xhtml.en tabs.xml maproomtools/tab.xslt
-	saxon_transform $< maproomtools/tab.xslt topdir="`pwd`" metadata="`pwd`/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+tabs.xml:	tabs.nt
+		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' tabs.nt > tabs.xml
 
-%.html.es:	%.xhtml.es tabs.xml maproomtools/tab.xslt
-	saxon_transform $< maproomtools/tab.xslt topdir="`pwd`"  metadata="`pwd`/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+$(maphtmlbld):	$(subst .html,.xhtml, $@) tabs.xml maproomtools/tab.xslt
+	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
 
-%.html.fr:	%.xhtml.fr tabs.xml maproomtools/tab.xslt
-	saxon_transform $< maproomtools/tab.xslt topdir="`pwd`"  metadata="`pwd`/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
-
-%.html.ru:	%.xhtml.ru tabs.xml maproomtools/tab.xslt
-	saxon_transform $< maproomtools/tab.xslt topdir="`pwd`"  metadata="`pwd`/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
-
-%.html.id:	%.xhtml.id tabs.xml maproomtools/tab.xslt
-	saxon_transform $< maproomtools/tab.xslt topdir="`pwd`"  metadata="`pwd`/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
-
-%.html:	%.xhtml tabs.xml maproomtools/tab.xslt
-	saxon_transform $< maproomtools/tab.xslt topdir="`pwd`"  metadata="`pwd`/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+$(dldochtmlbld):	$(subst .html,.xhtml, $@) tabs.xml maproomtools/tab.xslt
+	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  alttopdir="$(topdir)"  metadata="$(topdir)/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
