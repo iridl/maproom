@@ -21,6 +21,8 @@ dldoclocalsrc = $(shell cd dldoc; perl ../maproomtools/findsrc.pl src)
 dldochtmlbld = $(shell perl maproomtools/findsrc.pl bld dldoc)
 # dlcopy: html files built and source files not build from
 dlout = $(shell perl maproomtools/findsrc.pl out)
+# dlcopy: html files built and source files not build from
+dllocalout = $(shell cd dldoc; perl ../maproomtools/findsrc.pl out)
 # dlcopy: img files
 dlimgs = $(shell find -L dldoc -name '*png') $(shell find -L dldoc -name '*jpg') $(shell find -L dldoc -name '*gif')
 # dlcopy: css files
@@ -60,6 +62,9 @@ dldoc/tabs.nt:	dldoc/filelist.owl maproomtools/ingridregistry.owl
 
 dldoc/filelist.owl:	$(dldocsrc) maproomtools/sperl.pl Makefile
 	perl maproomtools/sperl.pl $(dldoclocalsrc) > $@
+
+dldoc/topindex.owl:	$(dlout) maproomtoolsperl.pl
+	perl sperl.pl $(dllocalout) > $@
 
 # merged maproom and dldoc install to BUILD dirs
 utbuild.tag: build.tag
