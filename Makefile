@@ -58,7 +58,7 @@ maproom/maproomregistry.owl:	$(mapsrc)
 
 dldoc/tabs.nt:	dldoc/filelist.owl maproomtools/ingridregistry.owl
 		@echo collecting dldoc info
-		cd dldoc; rm -rf doccache; mkdir doccache ; rdfcache -cache=doccache -construct=tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/dldoc/filelist.owl > doccache/rdflogfile
+		cd dldoc; rm -rf doccache; mkdir doccache ; rdfcache -cache=doccache -construct=../maproomtools/tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/dldoc/filelist.owl > doccache/rdflogfile
 
 dldoc/filelist.owl:	$(dldocsrc) maproomtools/sperl.pl Makefile
 	perl maproomtools/sperl.pl $(dldoclocalsrc) > $@
