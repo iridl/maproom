@@ -13,20 +13,28 @@ TARBALL = $(VER)
 mapsrc = $(shell perl maproomtools/findsrc.pl src maproom)
 maphtmlbld = $(shell perl maproomtools/findsrc.pl bld maproom)
 # dldoc source and build
+# source files
 dldocsrc = $(shell perl maproomtools/findsrc.pl src dldoc)
+# sources files without the /dldoc
 dldoclocalsrc = $(shell cd dldoc; perl ../maproomtools/findsrc.pl src)
+# html files built from xhtml
 dldochtmlbld = $(shell perl maproomtools/findsrc.pl bld dldoc)
+# dlcopy: html files built and source files not build from
+dlout = $(shell perl maproomtools/findsrc.pl out)
+# dlcopy: img files
+dlimgs = $(shell find -L dldoc -name '*png') $(shell find -L dldoc -name '*jpg') $(shell find -L dldoc -name '*gif')
+# dlcopy: css files
+dlcss = $(shell find -L dldoc -name '*css')
+
+# present directory used as server top for all but dldoc
+#  dldoc is server top for its files
 
 topdir = $(shell pwd)
-
 .PHONY: clean distclean tarball install build
 
 build: build.tag
 build.tag: maproom/version.xml localmaproom.conf maproom/maproomtop.owl $(maphtmlbld) dldoc/topindex.owl $(dldochtmlbld)
 	touch build.tag
-
-builddl.tag: dldoc/topindex.owl $(dldochtmlbld)
-	touch builddl.tag
 
 localmaproom.conf:	localmaproom.conf.tpost config.lua
 	@echo "Generating local apache configuration file localmaproom.conf"
@@ -48,18 +56,22 @@ maproom/maproomregistry.owl:	$(mapsrc)
 
 dldoc/tabs.nt:	dldoc/filelist.owl maproomtools/ingridregistry.owl
 		@echo collecting dldoc info
-		cd dldoc; rm -rf doccache; rdfcache -cache=doccache -construct=tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/dldoc/filelist.owl > rdflogfile
+		cd dldoc; rm -rf doccache; mkdir doccache ; rdfcache -cache=doccache -construct=tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/dldoc/filelist.owl > doccache/rdflogfile
 
 dldoc/filelist.owl:	$(dldocsrc) maproomtools/sperl.pl Makefile
 	perl maproomtools/sperl.pl $(dldoclocalsrc) > $@
 
-# maproom targets
+# merged maproom and dldoc install to BUILD dirs
 utbuild.tag: build.tag
 	install -d $(BUILD)
 	install -d $(BUILD)/maproom
 	tar cf - -C maproom . | tar xf - -C $(BUILD)/maproom
 	cd maproom; git-update-timestamp '$(VER_ID)' '*' $(abspath $(BUILD)/maproom)
 	cd $(BUILD)/maproom; rm -f tabs.xml top.xml *.xslt *.serql *.nt; rm -rf newmaproomcache logs;
+	install -d $(BUILD)/dldoc
+	tar cf - $(dlout) $(dlimgs) $(dlcss) dldoc/topindex.owl | tar xvf - -C $(BUILD)
+	install -d $(BUILD)/localconfig
+	tar cf - -C localconfig --exclude=.git . | tar xf - -C $(BUILD)/localconfig
 	install -d $(BUILD)/uicore
 	tar cf - -C uicore --exclude=.git . | tar xf - -C $(BUILD)/uicore
 	install -d $(BUILD)/pure
