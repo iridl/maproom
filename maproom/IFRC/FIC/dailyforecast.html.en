@@ -14,6 +14,7 @@
 <meta property="term:description" content="Daily versions of the six-day forecast precipitation maps" />
 <title>IFRC PIC: Daily Forecasts</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <!--<link class="altLanguage" rel="alternate" hreflang="es" href="dailforecast.html?Set-Language=es" />-->
 <link rev="section" href="index.html" />
@@ -37,6 +38,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomaly"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 <style>
 .dlimage, .dlimage.wide{
 float: none;

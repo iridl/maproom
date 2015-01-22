@@ -12,7 +12,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Anomalie Pondérée des Précipitations (CMAP) Standardisées (WASP) en Afrique, avec choix de la référence</title>
 <script type="text/javascript" src="../../../../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
 <link rel="canonical" href="index.html" />

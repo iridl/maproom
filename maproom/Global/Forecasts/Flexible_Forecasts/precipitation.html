@@ -16,6 +16,7 @@
 <meta xml:lang="" property="maproom:Sort_Id" content="d02" />
 <title>Precipitation Flexible Seasonal Forecast</title>
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link class="share" rel="canonical" href="precipitation.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
@@ -36,6 +37,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Flexible_Forecast/.precipitation/%28Percentile%29//var/parameter/%28Percentile%29eq/%7B%2850.%29//percentile/parameter/interp/100.0/div/2/mul/1/sub/erfinv/clim_stddev/mul/2/sqrt/mul/clim_mean/add/X/-180/180/RANGE/Y/-60/90/RANGE%7D%7B%281.%29//threshold2/parameter/interp/sqrt%7Difelse/fcst_mean/sub/fcst_stddev/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28exceeding%29//proba/parameter/%28exceeding%29ne/%7B-1/mul/1/add%7Dif//var/get_parameter/%28Percentile%29eq/%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//percentile/get_parameter/append/%28th%20%25-ile%29append/def/%28percentiles_colors_%29//proba/get_parameter/%28exceeding%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7D%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//threshold2/get_parameter/append/%28mm/day%29append/def/correlationcolorscale/DATA/0/1/RANGE/X/-180/180/RANGE/Y/-60/90/RANGE/dup/0/mul%7Difelse/X/Y/fig-/colors/black/coasts/lakes/-fig/%28antialias%29true/psdef//S/last/plotvalue//L/first/plotvalue//plotaxislength/220/psdef//plotborder/0/psdef/+.gif" />
 <script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 <style>
 sup { vertical-align:super; font-size:50%; }
 .varPrecipitation #percThresh {

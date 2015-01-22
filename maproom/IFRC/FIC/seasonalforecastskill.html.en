@@ -14,6 +14,7 @@
 <meta property="maproom:Sort_Id" content="b05" />
 <title>IFRC PIC: How well can we predict seasonal climate?</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="seasonalforecastskill.html?Set-Language=es" />
 <link rel="canonical" href="seasonalforecastskill.html" />
@@ -36,6 +37,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#IRI"/>
 <link rel="term:icon" href="skillmap-small.jpg" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body>
 <form name="pageform" id="pageform" class="carryLanguage carryup carry share">

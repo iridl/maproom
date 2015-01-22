@@ -12,6 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>IFRC Forecasts in Context</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="ifrc.css" />
 <link rel="canonical" href="index.html"/>
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
@@ -22,6 +23,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/.apcp/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/400/plotrange/S/last/plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//antialias/true/psdef//plotborder+0+psdef//plotaxislength+220+psdef+.gif" />
 <script type="text/javascript" src="../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body>
 

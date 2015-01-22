@@ -11,6 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IFRC PIC: Precipitation Forecast in Context Map Tool Instructions</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link rev="section" href="fic.html" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="instructions.html?Set-Language=es" />
@@ -34,6 +35,7 @@
     -->
     </STYLE>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000">
 <form name="pageform" id="pageform" class="carryLanguage carryup carry">

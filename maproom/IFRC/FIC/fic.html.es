@@ -12,6 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>IFRC Forecasts in Context</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="../index.html?Set-Language=en" />
 <link rev="section" href="http://iridl.ldeo.columbia.edu/maproom/" />
@@ -20,6 +21,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body>
 <form name="pageform" id="pageform" class="titleLink">

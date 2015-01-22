@@ -14,6 +14,7 @@
 <meta property="maproom:Sort_Id" content="c01" />
 <title>IFAD PIC: What Changes in Rainfall are Typical during El Niño and La Niña?</title>
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="../ifad.css" /> 
 <link rel="canonical" href="elninorain.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
@@ -33,6 +34,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#PlanetarySurface"/>
 <link rel="term:icon" href="/maproom/IFRC/FIC/ElNinoandRainfall220.png" />
 <script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body>
 <form name="pageform" id="pageform" class="carryLanguage carryup carry share">

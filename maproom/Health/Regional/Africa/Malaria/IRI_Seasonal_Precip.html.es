@@ -12,7 +12,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>IRI Seasonal Precipitation Forecast</title>
 <script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="IRI_Seasonal_Precip.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="IRI_Seasonal_Precip.html?Set-Language=fr" />
 <link rel="canonical" href="IRI_Seasonal_Precip.html" />
