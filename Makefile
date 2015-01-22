@@ -41,7 +41,7 @@ localmaproom.conf:	localmaproom.conf.tpost config.lua
 	miconf -c config.lua -p '[.]tpost$$' -r .
 
 # really depends on maproom/newmaproomcache/owlimMaxRepository.nt
-# but tabs.nt is made at same time and we need it explicitly in this file
+# but tabs.nt is made at same time and we need it explicitly in this Makefile
 maproom/maproomtop.owl:	Makefile config.lua maproom/tabs.nt
 	cd maproom; ../maproomtools/gen_maproomtop.pl $(RULESET);
 
