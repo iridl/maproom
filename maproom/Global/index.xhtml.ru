@@ -9,7 +9,7 @@
  xml:lang="ru"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Анализ и Мониторинг Климата</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />

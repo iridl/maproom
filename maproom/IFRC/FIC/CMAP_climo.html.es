@@ -8,7 +8,7 @@
       version="XHTML+RDFa 1.0"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Entry_Id" content="IFRC_FIC_CMAP_climo" />
 <title>IFRC PIC: ¿Cuánta lluvia cae normalmente en esta parte del año?</title>

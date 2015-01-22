@@ -8,7 +8,7 @@
  xml:lang="es"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IFRC PIC: Como Usar el Pronóstico de Precipitación en la Herramienta de Mapa de Contexto</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />

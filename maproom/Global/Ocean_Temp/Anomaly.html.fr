@@ -9,7 +9,7 @@
       >
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Anomalie de Température de Surface de la Mer (SST) Mondiale Mensuelle</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="Anomaly.html?Set-Language=en" />
