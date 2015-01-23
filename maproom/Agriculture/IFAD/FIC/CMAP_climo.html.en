@@ -8,12 +8,13 @@
       version="XHTML+RDFa 1.0"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Entry_Id" content="IFRC_FIC_CMAP_climo" />
 <meta property="maproom:Sort_Id" content="c03" />
 <title>IFAD PIC: How much rain normally falls at this time of year?</title>
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="../ifad.css" /> 
 <link class="share" rel="canonical" href="CMAP_climo.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
@@ -36,6 +37,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climatology"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.CPC/.Merged_Analysis/.monthly/.v1201/.prcp_est/X/88/165/RANGE/Y/-10/27/RANGE/X/Y/fig-+colors+black+thin+countries_gaz+-fig+//T/0.5/plotvalue/Y/-10/27/plotrange+//XOVY+null+psdef//color_smoothing+null+psdef//antialias+true+psdef//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
 <script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body  xml:lang="en">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg share">

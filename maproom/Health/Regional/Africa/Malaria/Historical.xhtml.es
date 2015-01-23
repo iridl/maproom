@@ -8,9 +8,10 @@
       version="XHTML+RDFa 1.0"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Clima y Salud</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="Historical.html?Set-Language=en" />
 <link class="altLanguage" rel="alternate" hreflang="fr" href="Historical.html?Set-Language=fr" />
 <link rel="canonical" href="Historical.html" />
@@ -21,6 +22,7 @@
 <link rel="term:icon"
 href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.CSMT/.Annual_Sum/X/Y/fig-+colors+grey+verythin+mews_prov+black+thin+countries_gaz+-fig//antialias+true+psdef///plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <script type="text/javascript" src="../../../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body  xml:lang="es">
 

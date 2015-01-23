@@ -8,9 +8,10 @@
       version="XHTML+RDFa 1.0"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>International Fund for Agricultural Development</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="IFAD/ifad.css" />
 <link rel="canonical" href="ifad.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
@@ -22,6 +23,7 @@
 <link rel="term:icon"
 href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.Analyses/.Tailored/.Lao/.aphroditeV1101/.precipitation/.historical/X/Y/fig-/colors/grey/verythin/solid/admin2_gaz/thinnish/grey/states_gaz/black/countries_gaz/blue/thin/rivers_gaz/lakes/-fig//antialias/true/psdef//plotborder+0+psdef//plotaxislength+150+psdef+.gif" />
 <script type="text/javascript" src="../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 <style>
 /* Bangladesh bb */
 body[bbox="bb:88:20.5:93:27:bb"] .item[sem~="gaz:Laos_85_1"]{display: none;}

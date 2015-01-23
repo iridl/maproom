@@ -13,6 +13,7 @@
 <meta property="maproom:Entry_Id" content="IFRC_FIC_dayexceptional" />
 <title>IFRC PIC: ¿Dónde se esperan lluvias inusualmente abundantes?</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
 <link rel="canonical" href="index.html" />
@@ -24,6 +25,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#forecast" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/.apcppctlenoseasonal/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/1/plotrange/S/last/plotvalue/X/178.75/538.75/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body  xml:lang="es">
 <form name="pageform" id="pageform" class="carryLanguage carryup carry dlimg dlauximg share">

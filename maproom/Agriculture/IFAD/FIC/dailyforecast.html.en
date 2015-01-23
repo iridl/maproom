@@ -9,10 +9,11 @@
  xml:lang="en"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <title>IFAD PIC: Daily Forecasts</title>
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="../ifad.css" /> 
 <link rel="canonical" href="dailyforecast.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
@@ -34,6 +35,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#anomaly"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
 <script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 <style>
 .dlimage, .dlimage.wide{
 float: none;

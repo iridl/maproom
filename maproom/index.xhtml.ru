@@ -9,9 +9,10 @@
  xml:lang="ru"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ситуационный Центр Международного Научно-Исследовательского Института по вопросам Климата и Общества, Институт Земли при Колумбийском университете, США</title>
 <link rel="stylesheet" type="text/css" href="../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
 <link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
@@ -23,6 +24,7 @@
 <link rel="apple-touch-icon" sizes="54x54" href="../uicore/icons/iriwh.png" />
 <link rel="icon" href="../uicore/icons/iriwh.svg" sizes="any" type="image/svg+xml" />
 <script type="text/javascript" src="../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body>
 

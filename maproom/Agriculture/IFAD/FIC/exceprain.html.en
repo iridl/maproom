@@ -8,12 +8,13 @@
       version="XHTML+RDFa 1.1"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta property="maproom:Entry_Id" content="IFRC_FIC_dayexceptional" />
 <meta property="maproom:Sort_Id" content="a01" />
 <title>IFAD PIC: Where is exceptionally heavy rainfall expected?</title>
 <link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="../ifad.css" /> 
 <link rel="canonical" href="exceprain.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
@@ -34,6 +35,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.MD/.IFRC/.ESRL/.PSD/.reforecast2/.ensemble_mean/.analyses/.tot6day/.apcppctlenoseasonal/X/88/165/RANGE/Y/-10/27/RANGE/X+Y+fig:+colors+thin+solid+countries_gaz+:fig+//apcp/0/1/plotrange/S/last/plotvalue/X/88/165/plotrange//color_smoothing+null+psdef//XOVY+null+psdef//plotborder+0+psdef//plotaxislength+220+psdef+.gif" />
 <script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body  xml:lang="en">
 <form name="pageform" id="pageform" class="carryLanguage carryup carry dlimg dlauximg share">

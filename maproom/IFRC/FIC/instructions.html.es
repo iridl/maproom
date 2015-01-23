@@ -8,9 +8,10 @@
  xml:lang="es"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IFRC PIC: Como Usar el Pronóstico de Precipitación en la Herramienta de Mapa de Contexto</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link rev="section" href="fic.html" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="instructions.html?Set-Language=en" />
@@ -34,6 +35,7 @@
     -->
     </STYLE>
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body bgcolor="#FFFFFF"  link="#993333" vlink="#993333" alink="#FF0000">
 <form name="pageform" id="pageform" class="carryLanguage carryup carry">

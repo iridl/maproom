@@ -9,10 +9,11 @@
  xml:lang="en"
       >
 <head>
-<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta property="maproom:Sort_Id" content="d02" />
 <title>IFRC PIC: Recent Climate Trends</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link rel="stylesheet" type="text/css" href="../ifrc.css" />
 <link rel="canonical" href="DecadalChange.html" />
 <link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
@@ -43,6 +44,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#time_series"/>
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.UEA/.CRU/.TS3p1/.r2p5%5B%28Jan%29//seasonStart/parameter/%28-%29%28Dec%29//seasonEnd/parameter/%28%201901-2009%29%5Dconcat//season/parameter/a:/%28.pre%29//var/parameter/interp/yearly-anomalies/T//season/get_parameter/seasonalAverage/:a:/.stn/%28.pre%29//var/parameter/interp/0/maskle/T//season/get_parameter/0.66/seasonalAverage/0/replaceNaN/0/flaggt/T/10.0/2.0/div/floor/12/mul/pad1/T/10.0/12/mul/runningAverage/0.5/masklt%5BT%5D0.5/average/0/mul/add/%28.pre%29//var/parameter/%28.pre%29eq/%7B:a:/.pre/T/%28season%29/get_parameter/seasonalAverage/T/differential_mul%5BT%5Daverage/30/masklt/0/mul/add%7Dif/:a/X/-20/180/-20/RANGEEDGES/Y/-60/80/RANGE/SOURCES/.IRI/.Analyses/.TS/.AR4/.tas%5BT%5D1.0/0.0/regridLinear/dup%5BT%5Dstandardize/exch/2/index%5BT%5Dcorrelate/mul/1/index%5BT%5Drmsaover/mul/1/index%5BT%5Daverage/add/1/index/1/index/sub/T/-1/1.0/10/div/butt_filter:/:butt_filter/.butt%5BX/Y%5DREORDER/2/index/2/index/sub/1/index/sub/4/-2/roll/pop/pop/2/%7Bexch%5BT%5Drmsaover/%28units%29%28mm/month%29def/dup/mul%7Drepeat/1/index/add/div/%7BLow/0.15/Medium/0.25/High/0.4/%28Extremely%20High%29%7D/%28DoI%29classify%5BDoI%5Ddominant_class/%28long_name%29%28Importance%20of%20decade-long%20shifts%29def/startcolormap/transparent/white/90/190/95/RGB/yellow/orange/red/white/endcolormap/X/Y/fig-/colors/countries_gaz/-fig/%28plotaxislength%29590/psdef/%28antialias%29true/psdef//plotborder/0/psdef//plotaxislength/200/psdef/+//plotborder+0+psdef//plotaxislength+200+psdef+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 <style>
 .val999 {
 visibility: hidden
