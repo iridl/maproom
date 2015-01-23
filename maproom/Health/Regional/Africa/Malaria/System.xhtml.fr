@@ -9,7 +9,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Climat et Santé</title>
+<title>Système d'Alerte Précoce Contre le Paludisme</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link class="altLanguage" rel="alternate" hreflang="es" href="System.html?Set-Language=es" />

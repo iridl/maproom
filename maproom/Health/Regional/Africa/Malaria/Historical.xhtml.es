@@ -9,7 +9,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Clima y Salud</title>
+<title>Analisis Historico de Malaria</title>
 <link rel="stylesheet" type="text/css" href="../../../../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="Historical.html?Set-Language=en" />
