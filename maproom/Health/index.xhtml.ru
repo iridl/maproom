@@ -10,7 +10,7 @@
       >
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ситуационный Центр Международного Научно-Исследовательского Института по вопросам Климата и Общества, Институт Земли при Колумбийском университете, США</title>
+<title>Климат и Здоровье Населения</title>
 <link rel="stylesheet" type="text/css" href="../../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
