@@ -18,7 +18,8 @@ dldocsrc = $(shell perl maproomtools/findsrc.pl src dldoc)
 # sources files without the /dldoc
 dldoclocalsrc = $(shell cd dldoc; perl ../maproomtools/findsrc.pl src)
 # html files built from xhtml
-dldochtmlbld = $(shell perl maproomtools/findsrc.pl bld dldoc)
+dldochtmlbld = $(shell perl maproomtools/findsrc.pl bld dldoc/docfind) $(shell perl maproomtools/findsrc.pl bld dldoc/dochelp) 
+jointhtmlbld = $(subst .xhtml,.html, $(shell ls dldoc/index.xhtml*))
 # dlcopy: html files built and source files not build from
 dlout = $(shell perl maproomtools/findsrc.pl out)
 # dlcopy: html files built and source files not build from
@@ -35,7 +36,7 @@ topdir = $(shell pwd)
 .PHONY: clean distclean tarball install build
 
 build: build.tag
-build.tag: maproom/version.xml localmaproom.conf maproom/maproomtop.owl $(maphtmlbld) dldoc/topindex.owl $(dldochtmlbld)
+build.tag: maproom/version.xml localmaproom.conf maproom/maproomtop.owl $(maphtmlbld) dldoc/topindex.owl $(dldochtmlbld) $(jointdochtmlbld)
 	touch build.tag
 
 localmaproom.conf:	localmaproom.conf.tpost config.lua
@@ -93,7 +94,9 @@ maproom/version.xml: .git
 clean:
 	rm -f build.tag utbuild.tag 
 	rm -rf $(BUILD)
-	rm $(maphtmlbld)
+	rm -f $(maphtmlbld)
+	rm -f $(dldochtmlbld)
+	rm -f $(jointhtmlbld)
 	rm -rf maproom/newmaproomcache
 
 distclean: clean
@@ -126,10 +129,19 @@ tabs.nt:	maproom/tabs.nt dldoc/tabs.nt
 	cat maproom/tabs.nt dldoc/tabs.nt > tabs.nt
 
 tabs.xml:	tabs.nt
-		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' tabs.nt > tabs.xml
+		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' $< > $@
 
-$(maphtmlbld):	$(subst .html,.xhtml, $@) tabs.xml maproomtools/tab.xslt
-	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+dldoc/tabs.xml:	dldoc/tabs.nt
+		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' $< > $@
 
-$(dldochtmlbld):	$(subst .html,.xhtml, $@) tabs.xml maproomtools/tab.xslt
+maproom/tabs.xml:	maproom/tabs.nt
+		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' $< > $@
+
+$(maphtmlbld):	$(subst .html,.xhtml, $@) maproom/tabs.xml maproomtools/tab.xslt
+	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/maproom/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+
+$(dldochtmlbld):	$(subst .html,.xhtml, $@) dldoc/tabs.xml maproomtools/tab.xslt
+	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/dldoc/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+
+$(jointhtmlbld):	$(subst .html,.xhtml, $@) tabs.xml maproomtools/tab.xslt
 	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  alttopdir="$(topdir)"  metadata="$(topdir)/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
