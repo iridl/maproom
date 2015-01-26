@@ -66,8 +66,8 @@ body[bbox="bb:-125:0:-50:28:bb"] .item[sem~="iridl:Asia_Indonesia"]{display: non
  </div>
 <div>
  <div id="content" class="searchDescription">
-<h2 property="og:title">IRI Climate and Society Map Room</h2>
-<p align="left" property="og:description">
+<h2 property="term:title">IRI Climate and Society Map Room</h2>
+<p align="left" property="term:description">
 The climate and society maproom is a collection of maps and other figures that monitor climate and societal conditions at present and in the recent past. The maps and figures can be manipulated and are linked to the original data. Even if you are primarily interested in data rather than figures, this is a good place to see which datasets are particularly useful for monitoring current conditions.</p>
 </div>
 
