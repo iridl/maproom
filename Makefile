@@ -57,9 +57,11 @@ maproom/maproomregistry.owl:	$(mapsrc)
 # dldoc targets -- essentially the same as the dldoc Makefile,
 # except the tabs.xml is merged with the maproom
 
-dldoc/tabs.nt:	dldoc/filelist.owl maproomtools/ingridregistry.owl
+dldoc/tabs.nt:	dldoc/filelist.owl maproomtools/ingridregistry.owl maproomtools/tabconstruct.serql
 		@echo collecting dldoc info
 		cd dldoc; rm -rf doccache; mkdir doccache ; rdfcache -cache=doccache -construct=../maproomtools/tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/dldoc/filelist.owl > doccache/rdflogfile
+	sort dldoc/tabs.nt > dldoc/hold.nt
+	mv dldoc/hold.nt dldoc/tabs.nt
 
 dldoc/filelist.owl:	$(dldocsrc) maproomtools/sperl.pl Makefile
 	perl maproomtools/sperl.pl $(dldoclocalsrc) > $@
@@ -126,7 +128,7 @@ facetcache/owlimMaxRepository.nt:	maproom/maproomtop.owl
 		rm -rf facetcache
 		rdfcache -cache=facetcache http://iridl.ldeo.columbia.edu/maproom/maproomtop.owl
 tabs.nt:	maproom/tabs.nt dldoc/tabs.nt
-	cat maproom/tabs.nt dldoc/tabs.nt > tabs.nt
+	sort maproom/tabs.nt dldoc/tabs.nt > tabs.nt
 
 tabs.xml:	tabs.nt
 		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' $< > $@
