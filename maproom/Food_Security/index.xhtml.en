@@ -22,7 +22,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_term"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FoodSecurity"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/black/thin/countries_gaz/-fig//T/3654.5/plotvalue//antialias/true/psdef//plotaxislength/200/psdef//plotborder/0/psdef/+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.CPC/.CMORPH/.daily_calculated/.mean/.morphed/.cmorph/24/mul//units/%28mm%29def/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_tool_colors/X/Y/fig-/colors/black/thin/countries_gaz/-fig//T/3654.5/plotvalue//antialias/true/psdef//plotborder/0/psdef/+.gif" />
 <script type="text/javascript" src="../../uicore/uicore.js"></script>
 <script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
