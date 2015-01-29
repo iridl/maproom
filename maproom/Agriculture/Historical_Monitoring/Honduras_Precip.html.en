@@ -33,7 +33,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Honduras_65_1"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#daily"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//plotaxislength/150/psdef//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//plotborder/0.0/psdef//X/-89.5/-83/plotrange//Y/12.5/17/plotrange/+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.SMNH/.SdC/.estacion/.Analyses/.Tailored/.precipitation/a:/.lon/:a:/.lat/2/copy/:a:/.historical/:a/SOURCES/.WORLDBATH/.bath/-1/min/6/-5/roll/X/Y/fig-/white/mask/black/coasts_gaz/thin/countries_gaz/grey/verythin/states_gaz/lightgrey/scatter/scattercolor/-fig//XOVY/null/psdef//antialias/true/psdef//fntsze/30/psdef//percentile/0.1/plotvalue//plotborder/0.0/psdef//X/-89.5/-83/plotrange//Y/12.5/17/plotrange/+.gif" />
 <style>
 .dlimgtsbox {
 width: 99%;

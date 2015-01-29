@@ -41,7 +41,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FireHazards"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Classification"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.monthlysum/prcp_0to1000_colors/X/90./155./RANGEEDGES/Y/-12.5/9.5/RANGEEDGES/X/Y/fig-+colors+grey+verythin+indonesia_prov+black+thin+countries_gaz+-fig+//antialias+true+psdef/+//monthlysum/0/1000/plotrange//T/last/plotvalue//plotaxislength+220+psdef//plotborder+0+psdef//XOVY+null+psdef+.jpg" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.Analyses/.Locust/.CMORPH/.monthlysum/prcp_0to1000_colors/X/90./155./RANGEEDGES/Y/-12.5/9.5/RANGEEDGES/X/Y/fig-+colors+grey+verythin+indonesia_prov+black+thin+countries_gaz+-fig+//antialias+true+psdef/+//monthlysum/0/1000/plotrange//T/last/plotvalue//plotborder+0+psdef//XOVY+null+psdef+.jpg" />
 <style>
 .dlimgtsbox { 
 width: 49%;

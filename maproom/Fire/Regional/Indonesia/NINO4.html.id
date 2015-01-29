@@ -46,7 +46,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Nino4"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FireHazards"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Count"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/correlationcolorscale/DATA/-2/2/RANGE/dup+T+fig-+colorbars2+-fig+T/466./last/plotrange//plotaxislength+220+psdef//plotborder+0+psdef//XOVY+null+psdef+.jpg" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.Indices/.nino/.NCEP_OIv2/.NINO4/correlationcolorscale/DATA/-2/2/RANGE/dup+T+fig-+colorbars2+-fig+T/466./last/plotrange//plotborder+0+psdef//XOVY+null+psdef+.jpg" />
 <style>
 .dlimgtsbox { 
 width: 49%;

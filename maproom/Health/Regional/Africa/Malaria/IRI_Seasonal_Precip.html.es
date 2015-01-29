@@ -42,7 +42,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
     <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Seasonal_Climate_Forecast"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Precipitation%20Forecast%20issued%20%25=%5BF%5D%29psdef//L/1.0/plotvalue//F/last/plotvalue+//plotaxislength+220+psdef//plotborder+0+psdef+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/Y/-85/85/RANGE/a:/.dominant/:a:/.target_date/:a/X/Y/fig-/colors/plotlabel/black/thin/coasts_gaz/thin/countries_gaz/-fig//L/1.0/plotvalue//F/last/plotvalue//antialias/true/psdef//framelabel/%28%25=%5Btarget_date%5D%20IRI%20Seasonal%20Precipitation%20Forecast%20issued%20%25=%5BF%5D%29psdef//L/1.0/plotvalue//F/last/plotvalue+//plotborder+0+psdef+.gif" />
 </head>
 <body xml:lang="es">
 <form name="pageform" id="pageform" class="carryup carry dlimg dlauximg dlimgts dlimgloc share starttime startleadtime">
