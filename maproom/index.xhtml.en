@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://ogp.me/ns#"
+      xmlns:twitter="http://dev.twitter.com/cards#"
       xmlns:wms="http://www.opengis.net/wms#"
       xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
       xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
@@ -12,6 +13,7 @@
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <meta name="twitter:site" content="@iridl" />
+ <meta property="twitter:site" content="@iridl" />
 <title>IRI Map Room</title>
 <link rel="stylesheet" type="text/css" href="../uicore/uicore.css" />
 <link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />

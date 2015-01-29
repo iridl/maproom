@@ -10,7 +10,8 @@ VER = $(shell git-generate-version-info maproom tag)
 VER_ID = $(shell git-generate-version-info maproom id)
 TARBALL = $(VER)
 # maproom source and build
-mapsrc = $(shell perl maproomtools/findsrc.pl src maproom)
+mapsrc = $(shell perl maproomtools/findsrc.pl src maproom) maproom/Imports/moremetadata.owl
+maplocalsrc = $(shell cd maproom ; perl ../maproomtools/findsrc.pl src) Imports/moremetadata.owl
 maphtmlbld = $(shell perl maproomtools/findsrc.pl bld maproom)
 # dldoc source and build
 # source files
@@ -48,11 +49,16 @@ localmaproom.conf:	localmaproom.conf.tpost config.lua
 maproom/maproomtop.owl:	Makefile config.lua maproom/tabs.nt
 	cd maproom; ../maproomtools/gen_maproomtop.pl $(RULESET);
 
-maproom/tabs.nt: 	Makefile config.lua maproom/maproomregistry.owl
-	cd maproom; ../maproomtools/runnewmaproom.pl $(RULESET);
+maproom/tabs.nt: 	Makefile config.lua maproomfilelist.owl
+#	cd maproom; ../maproomtools/runnewmaproom.pl $(RULESET);
+		@echo collecting maproom info
+		cd maproom; rm -rf newmaproomcache; mkdir newmaproomcache ; rdfcache -cache=newmaproomcache -construct=../maproomtools/tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/maproomfilelist.owl > newmaproomcache/rdfcachelogf.txt
+	sort maproom/tabs.nt > maproom/hold.nt
+	mv maproom/hold.nt maproom/tabs.nt
 
-maproom/maproomregistry.owl:	$(mapsrc)
-	cd maproom; ../maproomtools/gen_registry.pl;
+maproomfilelist.owl:	maproomtools/sperl.pl $(mapsrc)
+#	cd maproom; ../maproomtools/gen_registry.pl;
+	perl maproomtools/sperl.pl $(mapsrc) > $@
 
 # dldoc targets -- essentially the same as the dldoc Makefile,
 # except the tabs.xml is merged with the maproom
@@ -94,7 +100,7 @@ maproom/version.xml: .git
 	git-generate-version-info maproom xml >$@
 
 clean:
-	rm -f build.tag utbuild.tag 
+	rm -f build.tag utbuild.tag tabs.nt tabs.xml maproom/tabs.nt maproom/tabs.xml dldoc/tabs.nt dldoc/tabs.xml maproomfilelist.owl dldoc/filelist.owl
 	rm -rf $(BUILD)
 	rm -f $(maphtmlbld)
 	rm -f $(dldochtmlbld)
@@ -120,7 +126,7 @@ text.xml:	text.nt
 		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' text.nt > text.xml
 
 text.nt:	maproom/newmaproomcache/owlimMaxRepository.nt textconstruct.serql
-		rdfcache -cache=maproom/newmaproomcache -construct=textconstruct.serql -constructoutput=./text.nt file://`pwd`/maproom/maproomregistry.owl
+		rdfcache -cache=maproom/newmaproomcache -construct=textconstruct.serql -constructoutput=./text.nt file://`pwd`/maproomfilelist.owl
 
 facetsearch:	facetcache/owlimMaxRepository.nt
 
