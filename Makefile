@@ -47,12 +47,12 @@ localmaproom.conf:	localmaproom.conf.tpost config.lua
 # really depends on maproom/newmaproomcache/owlimMaxRepository.nt
 # but tabs.nt is made at same time and we need it explicitly in this Makefile
 maproom/maproomtop.owl:	Makefile config.lua maproom/tabs.nt
-	cd maproom; ../maproomtools/gen_maproomtop.pl $(RULESET);
+	cd maproom; ../maproomtools/gen_maproomtoptop.pl $(RULESET);
 
 maproom/tabs.nt: 	Makefile config.lua maproomfilelist.owl
 #	cd maproom; ../maproomtools/runnewmaproom.pl $(RULESET);
 		@echo collecting maproom info
-		cd maproom; rm -rf newmaproomcache; mkdir newmaproomcache ; rdfcache -cache=newmaproomcache -construct=../maproomtools/tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/maproomfilelist.owl > newmaproomcache/rdfcachelogf.txt
+		cd maproom; rm -rf newmaproomcache; mkdir newmaproomcache ; rdfcache -cache=newmaproomcache -construct=../maproomtools/tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/maproomfilelist.owl > newmaproomcache/rdfcachelog.txt
 	sort maproom/tabs.nt > maproom/hold.nt
 	mv maproom/hold.nt maproom/tabs.nt
 
