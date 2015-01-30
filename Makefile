@@ -9,15 +9,17 @@ BUILD = ___build
 VER = $(shell git-generate-version-info maproom tag)
 VER_ID = $(shell git-generate-version-info maproom id)
 TARBALL = $(VER)
+# rapper namespaces
+rapperns = -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' 
 # maproom source and build
-mapsrc = $(shell perl maproomtools/findsrc.pl src maproom) maproom/Imports/moremetadata.owl
-maplocalsrc = $(shell cd maproom ; perl ../maproomtools/findsrc.pl src) Imports/moremetadata.owl
+mapsrc = $(shell perl maproomtools/findsrc.pl src maproom) maproom/Imports/moremetadata.owl localconfig/ui.owl
+maplocalsrc = $(shell cd maproom ; perl ../maproomtools/findsrc.pl src) Imports/moremetadata.owl ../localconfig/ui.owl
 maphtmlbld = $(shell perl maproomtools/findsrc.pl bld maproom)
 # dldoc source and build
 # source files
-dldocsrc = $(shell perl maproomtools/findsrc.pl src dldoc)
+dldocsrc = $(shell perl maproomtools/findsrc.pl src dldoc) localconfig/ui.owl
 # sources files without the /dldoc
-dldoclocalsrc = $(shell cd dldoc; perl ../maproomtools/findsrc.pl src)
+dldoclocalsrc = $(shell cd dldoc; perl ../maproomtools/findsrc.pl src) ../localconfig/ui.owl
 # html files built from xhtml
 dldochtmlbld = $(shell perl maproomtools/findsrc.pl bld dldoc/docfind) $(shell perl maproomtools/findsrc.pl bld dldoc/dochelp) 
 jointhtmlbld = $(subst .xhtml,.html, $(shell ls dldoc/index.xhtml*))
@@ -47,12 +49,12 @@ localmaproom.conf:	localmaproom.conf.tpost config.lua
 # really depends on maproom/newmaproomcache/owlimMaxRepository.nt
 # but tabs.nt is made at same time and we need it explicitly in this Makefile
 maproom/maproomtop.owl:	Makefile config.lua maproom/tabs.nt
-	cd maproom; ../maproomtools/gen_maproomtoptop.pl $(RULESET);
+	cd maproom; ../maproomtools/gen_maproomtop.pl $(RULESET) file://$(topdir)/maproomfilelist.owl;
 
-maproom/tabs.nt: 	Makefile config.lua maproomfilelist.owl
+maproom/tabs.nt: 	Makefile config.lua maproomfilelist.owl maproomtools/ingridregistry.owl maproomtools/tabconstruct.serql
 #	cd maproom; ../maproomtools/runnewmaproom.pl $(RULESET);
 		@echo collecting maproom info
-		cd maproom; rm -rf newmaproomcache; mkdir newmaproomcache ; rdfcache -cache=newmaproomcache -construct=../maproomtools/tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/maproomfilelist.owl > newmaproomcache/rdfcachelog.txt
+		cd maproom; rm -rf newmaproomcache; mkdir newmaproomcache ; rdfcache -ruleset=$(RULESET)  -cache=newmaproomcache -construct=../maproomtools/tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/maproomfilelist.owl > newmaproomcache/rdfcachelog.txt
 	sort maproom/tabs.nt > maproom/hold.nt
 	mv maproom/hold.nt maproom/tabs.nt
 
@@ -65,7 +67,7 @@ maproomfilelist.owl:	maproomtools/sperl.pl $(mapsrc)
 
 dldoc/tabs.nt:	dldoc/filelist.owl maproomtools/ingridregistry.owl maproomtools/tabconstruct.serql
 		@echo collecting dldoc info
-		cd dldoc; rm -rf doccache; mkdir doccache ; rdfcache -cache=doccache -construct=../maproomtools/tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/dldoc/filelist.owl > doccache/rdflogfile
+		cd dldoc; rm -rf doccache; mkdir doccache ; rdfcache -ruleset=$(RULESET)  -cache=doccache -construct=../maproomtools/tabconstruct.serql -constructoutput=./tabs.nt  file://$(topdir)/maproomtools/ingridregistry.owl file://$(topdir)/dldoc/filelist.owl > doccache/rdflogfile
 	sort dldoc/tabs.nt > dldoc/hold.nt
 	mv dldoc/hold.nt dldoc/tabs.nt
 
@@ -126,24 +128,24 @@ text.xml:	text.nt
 		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' text.nt > text.xml
 
 text.nt:	maproom/newmaproomcache/owlimMaxRepository.nt textconstruct.serql
-		rdfcache -cache=maproom/newmaproomcache -construct=textconstruct.serql -constructoutput=./text.nt file://`pwd`/maproomfilelist.owl
+		rdfcache -ruleset=$(RULESET)  -cache=maproom/newmaproomcache -construct=textconstruct.serql -constructoutput=./text.nt file://`pwd`/maproomfilelist.owl
 
 facetsearch:	facetcache/owlimMaxRepository.nt
 
 facetcache/owlimMaxRepository.nt:	maproom/maproomtop.owl
 		rm -rf facetcache
-		rdfcache -cache=facetcache http://iridl.ldeo.columbia.edu/maproom/maproomtop.owl
+		rdfcache -ruleset=$(RULESET)  -cache=facetcache http://iridl.ldeo.columbia.edu/maproom/maproomtop.owl
 tabs.nt:	maproom/tabs.nt dldoc/tabs.nt
 	sort maproom/tabs.nt dldoc/tabs.nt > tabs.nt
 
 tabs.xml:	tabs.nt
-		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' $< > $@
+		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' -f 'xmlns:twitter="http://dev.twitter.com/cards#"' $(subst .xml,.nt, $@) > $@
 
 dldoc/tabs.xml:	dldoc/tabs.nt
-		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' $< > $@
+		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' -f 'xmlns:twitter="http://dev.twitter.com/cards#"' $(subst .xml,.nt, $@) > $@
 
 maproom/tabs.xml:	maproom/tabs.nt
-		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' $< > $@
+		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' -f 'xmlns:twitter="http://dev.twitter.com/cards#"' $(subst .xml,.nt, $@) > $@
 
 $(maphtmlbld):	$(subst .html,.xhtml, $@) maproom/tabs.xml maproomtools/tab.xslt
 	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/maproom/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
