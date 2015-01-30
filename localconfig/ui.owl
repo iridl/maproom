@@ -6,7 +6,10 @@
 <owl:Ontology rdf:about="">
 </owl:Ontology>
 <rdf:Description rdf:about="file:///">
+<!-- twitter:site is the site twitter userid -->
 <twitter:site>@iridl</twitter:site>
+<!-- og:urlbase is the string prepended to relative og: urls (og:image and og:url)
+  It should be the public url for the website (what twitter and facebook will use to pull files ) -->
 <og:urlbase>http://iridl.ldeo.columbia.edu</og:urlbase>
 </rdf:Description>
 </rdf:RDF>
