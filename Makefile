@@ -124,9 +124,6 @@ tarball: utbuild.tag
 text.txt:	text.xml text.xslt
 		saxon_transform $< text.xslt > $@
 
-text.xml:	text.nt
-		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:iriterms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' text.nt > text.xml
-
 text.nt:	maproom/newmaproomcache/owlimMaxRepository.nt textconstruct.serql
 		rdfcache -ruleset=$(RULESET)  -cache=maproom/newmaproomcache -construct=textconstruct.serql -constructoutput=./text.nt file://`pwd`/maproomfilelist.owl
 
@@ -138,14 +135,8 @@ facetcache/owlimMaxRepository.nt:	maproom/maproomtop.owl
 tabs.nt:	maproom/tabs.nt dldoc/tabs.nt
 	sort maproom/tabs.nt dldoc/tabs.nt > tabs.nt
 
-tabs.xml:	tabs.nt
-		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' -f 'xmlns:twitter="http://dev.twitter.com/cards#"' $(subst .xml,.nt, $@) > $@
-
-dldoc/tabs.xml:	dldoc/tabs.nt
-		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' -f 'xmlns:twitter="http://dev.twitter.com/cards#"' $(subst .xml,.nt, $@) > $@
-
-maproom/tabs.xml:	maproom/tabs.nt
-		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' -f 'xmlns:twitter="http://dev.twitter.com/cards#"' $(subst .xml,.nt, $@) > $@
+%.xml:	%.nt
+		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' -f 'xmlns:twitter="http://dev.twitter.com/cards#"' $<   > $@
 
 $(maphtmlbld):	$(subst .html,.xhtml, $@) maproom/tabs.xml maproomtools/tab.xslt
 	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/maproom/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
