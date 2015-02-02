@@ -9,8 +9,6 @@ BUILD = ___build
 VER = $(shell git-generate-version-info maproom tag)
 VER_ID = $(shell git-generate-version-info maproom id)
 TARBALL = $(VER)
-# rapper namespaces
-rapperns = -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' 
 # maproom source and build
 mapsrc = $(shell perl maproomtools/findsrc.pl src maproom) maproom/Imports/moremetadata.owl localconfig/ui.owl
 maplocalsrc = $(shell cd maproom ; perl ../maproomtools/findsrc.pl src) Imports/moremetadata.owl ../localconfig/ui.owl
@@ -24,7 +22,7 @@ dldoclocalsrc = $(shell cd dldoc; perl ../maproomtools/findsrc.pl src) ../localc
 dldochtmlbld = $(shell perl maproomtools/findsrc.pl bld dldoc/docfind) $(shell perl maproomtools/findsrc.pl bld dldoc/dochelp) 
 jointhtmlbld = $(subst .xhtml,.html, $(shell ls dldoc/index.xhtml*))
 # dlcopy: html files built and source files not build from
-dlout = $(shell perl maproomtools/findsrc.pl out)
+dlout = $(shell perl maproomtools/findsrc.pl out dldoc)
 # dlcopy: html files built and source files not build from
 dllocalout = $(shell cd dldoc; perl ../maproomtools/findsrc.pl out)
 # dlcopy: img files
@@ -32,17 +30,23 @@ dlimgs = $(shell find -L dldoc -name '*png') $(shell find -L dldoc -name '*jpg')
 # dlcopy: css files
 dlcss = $(shell find -L dldoc -name '*css')
 
+builddirdoc = $(subst dldoc,$(BUILD)/dldoc,$(dlout))
+
 # present directory used as server top for all but dldoc
 #  dldoc is server top for its files
 
 topdir = $(shell pwd)
-.PHONY: clean distclean tarball install build
+.PHONY: clean distclean tarball install build builddirs
 
 build: build.tag
 build.tag: maproom/version.xml localmaproom.conf maproom/maproomtop.owl $(maphtmlbld) dldoc/topindex.owl $(dldochtmlbld) $(jointdochtmlbld)
 	touch build.tag
 
 localmaproom.conf:	localmaproom.conf.tpost config.lua
+	@echo "Generating local apache configuration file localmaproom.conf"
+	miconf -c config.lua -p '[.]tpost$$' -r .
+
+localmaproombuild.conf:	localmaproombuild.conf.tpost config.lua
 	@echo "Generating local apache configuration file localmaproom.conf"
 	miconf -c config.lua -p '[.]tpost$$' -r .
 
@@ -77,25 +81,34 @@ dldoc/filelist.owl:	$(dldocsrc) maproomtools/sperl.pl Makefile
 dldoc/topindex.owl:	$(dlout) maproomtools/sperl.pl
 	perl maproomtools/sperl.pl $(dllocalout) > $@
 
+# copy to $BUILD with xslt processing
+$(builddirdoc):	$(BUILD) tabs.xml $(subst $(BUILD)/dldoc,dldoc,$@)
+	@echo  $(subst $(BUILD)/dldoc,dldoc,$@) to $@
+	mkdir -p `dirname $@`
+	saxon_transform $(subst $(BUILD)/dldoc,dldoc,$@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+
 # merged maproom and dldoc install to BUILD dirs
-utbuild.tag: build.tag
-	install -d $(BUILD)
+
+$(BUILD):	
+	install -d $@
+	install -d $(BUILD)/dldoc
+	install -d $(BUILD)/localconfig
 	install -d $(BUILD)/maproom
-	tar cf - -C maproom . | tar xf - -C $(BUILD)/maproom
+	install -d $(BUILD)/uicore
+	install -d $(BUILD)/pure
+	install -d $(BUILD)/jsonld.js
+	ln -sf $(BUILD)/jsonld.js $(BUILD)/jsonld
+	cp .htaccess $(BUILD)
+
+utbuild.tag: build.tag localmaproombuild.conf $(BUILD) $(builddirdoc)
+	tar cf - -C maproom  . | tar xf - -C $(BUILD)/maproom
 	cd maproom; git-update-timestamp '$(VER_ID)' '*' $(abspath $(BUILD)/maproom)
 	cd $(BUILD)/maproom; rm -f tabs.xml top.xml *.xslt *.serql *.nt; rm -rf newmaproomcache logs;
-	install -d $(BUILD)/dldoc
-	tar cf - $(dlout) $(dlimgs) $(dlcss) dldoc/topindex.owl | tar xvf - -C $(BUILD)
-	install -d $(BUILD)/localconfig
+	tar cf - $(dlimgs) $(dlcss) dldoc/topindex.owl | tar xvf - -C $(BUILD)
 	tar cf - -C localconfig --exclude=.git . | tar xf - -C $(BUILD)/localconfig
-	install -d $(BUILD)/uicore
 	tar cf - -C uicore --exclude=.git . | tar xf - -C $(BUILD)/uicore
-	install -d $(BUILD)/pure
 	tar cf - -C pure --exclude=.git . | tar xf - -C $(BUILD)/pure
-	install -d $(BUILD)/jsonld.js
 	tar cf - -C jsonld.js --exclude=.git . | tar xf - -C $(BUILD)/jsonld.js
-	ln -s jsonld.js/js $(BUILD)/jsonld
-	cp .htaccess $(BUILD)
 	touch utbuild.tag
 
 maproom/version.xml: .git
