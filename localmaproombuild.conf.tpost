@@ -1,0 +1,54 @@
+# Local maproom Apache configuration
+<VirtualHost <<<Host>>>:<<<Port>>>>
+   ServerAdmin <<<ServerAdmin>>>
+   ServerName <<<ServerName>>>
+   ServerAlias <<<ServerAlias>>>
+   # DL Maproom Configuration
+   DocumentRoot <<<RepoDir>>>/___build/dldoc
+   <Directory "<<<RepoDir>>>/___build/dldoc">
+      Options Indexes FollowSymLinks MultiViews
+      LanguagePriority en es de fr
+      ForceLanguagePriority Prefer Fallback
+   </Directory>
+   Alias /localconfig <<<RepoDir>>>/___build/localconfig
+   <Directory "<<<RepoDir>>>/___build/localconfig">
+      Options Indexes FollowSymLinks MultiViews
+      LanguagePriority en es de fr
+      ForceLanguagePriority Prefer Fallback
+   </Directory>
+   Alias /maproom <<<RepoDir>>>/___build/maproom
+   Alias /uicore  <<<RepoDir>>>/___build/uicore
+   Alias /pure    <<<RepoDir>>>/___build/pure
+   Alias /jsonld    <<<RepoDir>>>/___build/jsonld.js/js
+=== if MacSetup then
+   <Directory "<<<RepoDir>>>/___build">
+      Allow from <<<Host>>>
+   </Directory>
+=== end
+   <Directory "<<<RepoDir>>>/___build/maproom">
+      Options Indexes FollowSymLinks MultiViews
+      LanguagePriority en es de fr
+      ForceLanguagePriority Prefer Fallback
+   </Directory>
+   <Directory "<<<RepoDir>>>/___build/uicore/toolinfo">
+      Options Indexes FollowSymLinks MultiViews
+      LanguagePriority en es de fr
+      ForceLanguagePriority Prefer Fallback
+   </Directory>
+   # We use UTF-8 and want json to be a known type for language
+   AddType application/json .json
+   AddCharset UTF-8 .json
+   AddDefaultCharset UTF-8
+   # This sets the enviroment variable prefer-language
+   # so that Set-Language overrides the automatic language choice
+   RewriteEngine On
+   RewriteCond %{QUERY_STRING} Set-Language=([^&]+)
+   RewriteRule .? -  [E=prefer-language:%1]
+
+#Proxy or Rewrite rules to redirect requests of the apache server
+#to a local or remote ingrid -- means that apache serves the role of
+#squid, allowing simple setup of a prototype maproom
+
+<<<ProxyRules>>>
+
+</VirtualHost>

@@ -40,7 +40,7 @@
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Epidemic_Malaria"/>
     <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Monitoring_The_Environment"/>
   <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Africa"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/home/.benno/.USGS/.landdaac/.global/.LST_Night_1km/T/last/VALUE/X/-2223910/6671690/RANGEEDGES/Y/-5003778/5003772/RANGEEDGES/X+Y+fig-+colors+coasts+-fig//plotaxislength+100+psdef//plotborder+0+psdef+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/expert/home/.benno/.USGS/.landdaac/.global/.LST_Night_1km/T/last/VALUE/X/-2223910/6671690/RANGEEDGES/Y/-5003778/5003772/RANGEEDGES/X+Y+fig-+colors+coasts+-fig//plotborder+0+psdef+.gif" />
 <style>
 .dlimgtsbox { 
 width: 49%;
