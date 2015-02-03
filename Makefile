@@ -20,6 +20,9 @@ dldocsrc = $(shell perl maproomtools/findsrc.pl src dldoc) localconfig/ui.owl
 dldoclocalsrc = $(shell cd dldoc; perl ../maproomtools/findsrc.pl src) ../localconfig/ui.owl
 # html files built from xhtml
 dldochtmlbld = $(shell perl maproomtools/findsrc.pl bld dldoc/docfind) $(shell perl maproomtools/findsrc.pl bld dldoc/dochelp) 
+# html files not built from xhtml
+dldochtmlsrc = $(shell perl maproomtools/findsrc.pl srchtml dldoc) 
+# built using joint dldoc/maproom metdata
 jointhtmlbld = $(subst .xhtml,.html, $(shell ls dldoc/index.xhtml*))
 # dlcopy: html files built and source files not build from
 dlout = $(shell perl maproomtools/findsrc.pl out dldoc)
@@ -30,7 +33,9 @@ dlimgs = $(shell find -L dldoc -name '*png') $(shell find -L dldoc -name '*jpg')
 # dlcopy: css files
 dlcss = $(shell find -L dldoc -name '*css')
 
-builddirdoc = $(subst dldoc,$(BUILD)/dldoc,$(dlout))
+
+builddirdocsrc = $(subst dldoc,$(BUILD)/dldoc,$(dldochtmlsrc))
+builddirdocbld = $(subst dldoc,$(BUILD)/dldoc,$(dldochtmlbld)) $(subst dldoc,$(BUILD)/dldoc,$(jointhtmlbld))
 
 # present directory used as server top for all but dldoc
 #  dldoc is server top for its files
@@ -82,14 +87,22 @@ dldoc/topindex.owl:	$(dlout) maproomtools/sperl.pl
 	perl maproomtools/sperl.pl $(dllocalout) > $@
 
 # copy to $BUILD with xslt processing
-$(builddirdoc):	$(BUILD) tabs.xml $(subst $(BUILD)/dldoc,dldoc,$@)
-	@echo  $(subst $(BUILD)/dldoc,dldoc,$@) to $@
-	mkdir -p `dirname $@`
+$(builddirdocsrc):	$(subst $(BUILD)/dldoc,dldoc,$@) $(BUILD) tabs.xml build.tag
+	@echo  process $(subst $(BUILD)/dldoc,dldoc,$@) to $@
+	mkdir -p $(@D)
 	saxon_transform $(subst $(BUILD)/dldoc,dldoc,$@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+
+# copy to BUILD without xslt processing
+# build.tag is what is actually delaying the copy until after the pages are built
+# first preq does not work
+$(builddirdocbld):	$(subst $(BUILD)/dldoc,dldoc,$@) $(BUILD) build.tag
+	@echo  cp $(subst $(BUILD)/dldoc,dldoc,$@) to $@
+	mkdir -p $(@D)
+	cp $(subst $(BUILD)/dldoc,dldoc,$@) $@
 
 # merged maproom and dldoc install to BUILD dirs
 
-$(BUILD):	
+$(BUILD):	.htaccess
 	install -d $@
 	install -d $(BUILD)/dldoc
 	install -d $(BUILD)/localconfig
@@ -100,7 +113,7 @@ $(BUILD):
 	ln -sf $(BUILD)/jsonld.js $(BUILD)/jsonld
 	cp .htaccess $(BUILD)
 
-utbuild.tag: build.tag localmaproombuild.conf $(BUILD) $(builddirdoc)
+utbuild.tag: build.tag localmaproombuild.conf $(builddirdocbld) $(builddirdocsrc) | $(BUILD)
 	tar cf - -C maproom  . | tar xf - -C $(BUILD)/maproom
 	cd maproom; git-update-timestamp '$(VER_ID)' '*' $(abspath $(BUILD)/maproom)
 	cd $(BUILD)/maproom; rm -f tabs.xml top.xml *.xslt *.serql *.nt; rm -rf newmaproomcache logs;
@@ -151,11 +164,11 @@ tabs.nt:	maproom/tabs.nt dldoc/tabs.nt
 %.xml:	%.nt
 		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' -f 'xmlns:twitter="http://dev.twitter.com/cards#"' $<   > $@
 
-$(maphtmlbld):	$(subst .html,.xhtml, $@) maproom/tabs.xml maproomtools/tab.xslt
+$(maphtmlbld):	maproom/tabs.xml maproomtools/tab.xslt
 	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/maproom/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
 
-$(dldochtmlbld):	$(subst .html,.xhtml, $@) dldoc/tabs.xml maproomtools/tab.xslt
+$(dldochtmlbld):	dldoc/tabs.xml maproomtools/tab.xslt
 	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/dldoc/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
 
-$(jointhtmlbld):	$(subst .html,.xhtml, $@) tabs.xml maproomtools/tab.xslt
+$(jointhtmlbld):	tabs.xml maproomtools/tab.xslt
 	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  alttopdir="$(topdir)"  metadata="$(topdir)/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
