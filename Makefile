@@ -13,6 +13,7 @@ TARBALL = $(VER)
 mapsrc = $(shell perl maproomtools/findsrc.pl src maproom) maproom/Imports/moremetadata.owl localconfig/ui.owl
 maplocalsrc = $(shell cd maproom ; perl ../maproomtools/findsrc.pl src) Imports/moremetadata.owl ../localconfig/ui.owl
 maphtmlbld = $(shell perl maproomtools/findsrc.pl bld maproom)
+maphtmlsrc = $(shell perl maproomtools/findsrc.pl srchtml maproom)
 # dldoc source and build
 # source files
 dldocsrc = $(shell perl maproomtools/findsrc.pl src dldoc) localconfig/ui.owl
@@ -32,10 +33,14 @@ dllocalout = $(shell cd dldoc; perl ../maproomtools/findsrc.pl out)
 dlimgs = $(shell find -L dldoc -name '*png') $(shell find -L dldoc -name '*jpg') $(shell find -L dldoc -name '*gif')
 # dlcopy: css files
 dlcss = $(shell find -L dldoc -name '*css')
-
-
+# dldoc files that are postprocessed by saxon (utbuild.tag)
 builddirdocsrc = $(subst dldoc,$(BUILD)/dldoc,$(dldochtmlsrc))
+# dldoc files that are processed by saxon (build.tag) and copied on utbuild.tag
 builddirdocbld = $(subst dldoc,$(BUILD)/dldoc,$(dldochtmlbld)) $(subst dldoc,$(BUILD)/dldoc,$(jointhtmlbld))
+# maproom files that are postprocessed by saxon (utbuild.tag)
+builddirmapsrc = $(subst maproom,$(BUILD)/maproom,$(maphtmlsrc))
+# dldoc files that are processed by saxon (build.tag) and copied on utbuild.tag
+builddirmapbld = $(subst maproom,$(BUILD)/maproom,$(maphtmlbld))
 
 # present directory used as server top for all but dldoc
 #  dldoc is server top for its files
@@ -87,18 +92,24 @@ dldoc/topindex.owl:	$(dlout) maproomtools/sperl.pl
 	perl maproomtools/sperl.pl $(dllocalout) > $@
 
 # copy to $BUILD with xslt processing
-$(builddirdocsrc):	$(subst $(BUILD)/dldoc,dldoc,$@) $(BUILD) tabs.xml build.tag
-	@echo  process $(subst $(BUILD)/dldoc,dldoc,$@) to $@
+# tabs.xml is what is actually delaying the copy until after the pages are built
+# because I cannot generate the particular file prereq
+$(builddirdocsrc):	dldoc/tabs.xml | $(BUILD)
 	mkdir -p $(@D)
-	saxon_transform $(subst $(BUILD)/dldoc,dldoc,$@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+	saxon_transform $(subst $(BUILD)/dldoc,dldoc,$@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/dldoc/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+
+# tabs.xml is what is actually delaying the copy until after the pages are built
+# because I cannot generate the particular file prereq
+$(builddirmapsrc):	maproom/tabs.xml | $(BUILD)
+	mkdir -p $(@D)
+	saxon_transform $(subst $(BUILD)/,,$@) maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/maproom/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
 
 # copy to BUILD without xslt processing
 # build.tag is what is actually delaying the copy until after the pages are built
-# first preq does not work
-$(builddirdocbld):	$(subst $(BUILD)/dldoc,dldoc,$@) $(BUILD) build.tag
-	@echo  cp $(subst $(BUILD)/dldoc,dldoc,$@) to $@
+# because I cannot generate the particular file prereq
+$(builddirdocbld) $(builddirmapbld):	$(BUILD) build.tag
 	mkdir -p $(@D)
-	cp $(subst $(BUILD)/dldoc,dldoc,$@) $@
+	cp $(subst $(BUILD)/,,$@) $@
 
 # merged maproom and dldoc install to BUILD dirs
 
@@ -113,10 +124,10 @@ $(BUILD):	.htaccess
 	ln -sf $(BUILD)/jsonld.js $(BUILD)/jsonld
 	cp .htaccess $(BUILD)
 
-utbuild.tag: build.tag localmaproombuild.conf $(builddirdocbld) $(builddirdocsrc) | $(BUILD)
-	tar cf - -C maproom  . | tar xf - -C $(BUILD)/maproom
+utbuild.tag: build.tag localmaproombuild.conf $(builddirdocbld) $(builddirdocsrc) $(builddirmapbld) $(builddirmapsrc) | $(BUILD)
+	(cd maproom ; find . -type f ! -name '*.html*' ! -name '*.xhtml*' ) |  tar cf - -C maproom  --files-from=- --exclude=.git  | tar xf - -C $(BUILD)/maproom
 	cd maproom; git-update-timestamp '$(VER_ID)' '*' $(abspath $(BUILD)/maproom)
-	cd $(BUILD)/maproom; rm -f tabs.xml top.xml *.xslt *.serql *.nt; rm -rf newmaproomcache logs;
+	cd $(BUILD)/maproom; rm -f tabs.xml top.xml *.xhtml *.xslt *.serql *.nt; rm -rf newmaproomcache logs;
 	tar cf - $(dlimgs) $(dlcss) dldoc/topindex.owl | tar xvf - -C $(BUILD)
 	tar cf - -C localconfig --exclude=.git . | tar xf - -C $(BUILD)/localconfig
 	tar cf - -C uicore --exclude=.git . | tar xf - -C $(BUILD)/uicore
