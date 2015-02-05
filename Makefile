@@ -96,13 +96,15 @@ dldoc/topindex.owl:	$(dlout) maproomtools/sperl.pl
 # because I cannot generate the particular file prereq
 $(builddirdocsrc):	dldoc/tabs.xml | $(BUILD)
 	mkdir -p $(@D)
-	saxon_transform $(subst $(BUILD)/dldoc,dldoc,$@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/dldoc/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+	cp $(subst $(BUILD)/,,$@) $@
+#	saxon_transform $(subst $(BUILD)/dldoc,dldoc,$@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/dldoc/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
 
 # tabs.xml is what is actually delaying the copy until after the pages are built
 # because I cannot generate the particular file prereq
 $(builddirmapsrc):	maproom/tabs.xml | $(BUILD)
 	mkdir -p $(@D)
-	saxon_transform $(subst $(BUILD)/,,$@) maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/maproom/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+	cp $(subst $(BUILD)/,,$@) $@
+#	saxon_transform $(subst $(BUILD)/,,$@) maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/maproom/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
 
 # copy to BUILD without xslt processing
 # build.tag is what is actually delaying the copy until after the pages are built
