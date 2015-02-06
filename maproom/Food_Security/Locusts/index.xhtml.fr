@@ -20,7 +20,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_Locusts_term"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Food_Security_term"/>
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#FoodSecurity"/>
-<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/634.5/plotvalue//antialias/true/psdef//plotborder/0/psdef/+.gif" />
+<link rel="term:icon" href="http://iridl.ldeo.columbia.edu/home/.mbell/.IRI/.MD/.maproom/.Analyses/.CMORPH/.Locust/.monthlysum/X/-20.0/95.0/RANGEEDGES/Y/-4.0/40.0/RANGEEDGES/cmorph_dekad_colors/DATA/0/900/RANGE/X/Y/fig-/colors/grey/verythin/states_gaz/black/thin/countries_gaz/-fig//T/634.5/plotvalue//antialias/true/psdef//plotaxislength/660/psdef//plotborder/0/psdef/+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
 <script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
