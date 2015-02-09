@@ -97,14 +97,14 @@ dldoc/topindex.owl:	$(dlout) maproomtools/sperl.pl
 $(builddirdocsrc):	dldoc/tabs.xml | $(BUILD)
 	mkdir -p $(@D)
 #	cp $(subst $(BUILD)/,,$@) $@
-	saxon_transform $(subst $(BUILD)/dldoc,dldoc,$@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/dldoc/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+	saxon_transform -s:$(subst $(BUILD)/dldoc,dldoc,$@) -xsl:maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/dldoc/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
 
 # tabs.xml is what is actually delaying the copy until after the pages are built
 # because I cannot generate the particular file prereq
 $(builddirmapsrc):	maproom/tabs.xml | $(BUILD)
 	mkdir -p $(@D)
 #	cp $(subst $(BUILD)/,,$@) $@
-	saxon_transform $(subst $(BUILD)/,,$@) maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/maproom/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+	saxon_transform -s:$(subst $(BUILD)/,,$@) -xsl:maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/maproom/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
 
 # copy to BUILD without xslt processing
 # build.tag is what is actually delaying the copy until after the pages are built
@@ -123,7 +123,7 @@ $(BUILD):	.htaccess
 	install -d $(BUILD)/uicore
 	install -d $(BUILD)/pure
 	install -d $(BUILD)/jsonld.js
-	ln -sf $(BUILD)/jsonld.js $(BUILD)/jsonld
+	cd $(BUILD) ; ln -sf jsonld.js jsonld
 	cp .htaccess $(BUILD)
 
 utbuild.tag: build.tag localmaproombuild.conf $(builddirdocbld) $(builddirdocsrc) $(builddirmapbld) $(builddirmapsrc) | $(BUILD)
@@ -178,10 +178,10 @@ tabs.nt:	maproom/tabs.nt dldoc/tabs.nt
 		rapper -i ntriples -o rdfxml-abbrev -f 'xmlns:terms="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"' -f 'xmlns:reg="http://iridl.ldeo.columbia.edu/maproom/maproomregistry.owl#"' -f 'xmlns:map="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"' -f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' -f 'xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"' -f 'xmlns:twitter="http://dev.twitter.com/cards#"' $<   > $@
 
 $(maphtmlbld):	maproom/tabs.xml maproomtools/tab.xslt
-	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/maproom/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+	saxon_transform -s:$(subst .html,.xhtml,$@) -xsl:maproomtools/tab.xslt topdir="$(topdir)"  metadata="$(topdir)/maproom/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
 
 $(dldochtmlbld):	dldoc/tabs.xml maproomtools/tab.xslt
-	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/dldoc/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+	saxon_transform -s:$(subst .html,.xhtml,$@) -xsl:maproomtools/tab.xslt topdir="$(topdir)/dldoc"  metadata="$(topdir)/dldoc/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
 
 $(jointhtmlbld):	tabs.xml maproomtools/tab.xslt
-	saxon_transform $(subst .html,.xhtml, $@) maproomtools/tab.xslt topdir="$(topdir)/dldoc"  alttopdir="$(topdir)"  metadata="$(topdir)/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
+	saxon_transform -s:$(subst .html,.xhtml,$@) -xsl:maproomtools/tab.xslt topdir="$(topdir)/dldoc"  alttopdir="$(topdir)"  metadata="$(topdir)/tabs.xml" | sed -e '1 N;s/[\n]* *SYSTEM[^>]*//' > $@
