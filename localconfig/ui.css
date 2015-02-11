@@ -1,1 +1,14 @@
 /* overrides uicore.css choices */
+body[within='portaldl'] #irilink,
+body[within='portaldl'] #homelink,
+body[within='portaldl'] #homelink + .navitem,
+body[within='portaldl'] #toSectionList,
+body[within='portaldl'] #chooseSection select,
+body[within='portaldl'] #chooseSection .selectvalue:after
+{
+display: none
+}
+body[within='portaldl'] #chooseSection .selectvalue
+{ display: inline;
+color: black;
+ }
