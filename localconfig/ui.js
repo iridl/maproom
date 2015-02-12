@@ -1,3 +1,4 @@
+var uicoreConfig = uicoreConfig || {};
 /* set google Analytics Id */
 uicoreConfig.GoogleAnalyticsId='UA-432152-4';
 /* enable helpmail button */
