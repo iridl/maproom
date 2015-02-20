@@ -10,8 +10,10 @@
       >
 <head>
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+ <meta name="twitter:site" content="@iridl" />
 <title>Bicol Agri-Water Knowledge Portal</title>
 <link rel="stylesheet" type="text/css" href="../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
 <!-- <link rel="stylesheet" type="text/css" href="ifrc.css" /> -->
 <!-- <link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" /> -->
 <link rel="canonical" href="index.html" />
@@ -24,6 +26,7 @@
 <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Philippines" />
 <link rel="term:icon" href="http://iridl.ldeo.columbia.edu/SOURCES/.Features/.Agricultural/.Philippines/.Bicol/.soilType/a-/.SOURCES/.WORLDBATH/.bath/-1/min/-a-/.the_geom/-a-/.soilcode/-a/X/Y/fig:/white/mask/fillby/black/thinnish/solid/countries_gaz/:fig/X/122/125/plotrange/Y/11/15/plotrange//XOVY/null/psdef//plotaxislength/220/psdef//plotborder/0/psdef//antialias/true/psdef/+.gif" />
 <script type="text/javascript" src="../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
 </head>
 <body>
 
