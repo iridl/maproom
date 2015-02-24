@@ -1,0 +1,426 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      version="XHTML+RDFa 1.1"
+      >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<meta xml:lang="" property="maproom:Sort_Id" content="c1" />
+<title>Bicol Region Soil Water Balance Flexible Seasonal Forecast</title>
+<script type="text/javascript" src="../../../../uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
+<link class="share" rel="canonical" href="Bicol_SWBFcst_Dry.html" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/maproom/navmenu.json" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Agriculture_term" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#monthly"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate"/>
+<!--
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Honduras_65_1"/>
+  -->
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/irigaz.owl#Asia_3329_1"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#percentile"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#interactive"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Probability"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Precipitation"/>
+  <link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#Water_Balance"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#IRI"/>
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#maproom_term" />
+<link rel="term:icon"
+href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/122.0/124.8/RANGE/Y/11.3/15/RANGE/home/.remic/.Philippines/.Bicol/soilTypes/.the_geom/%28Percentile%29//var/parameter/%28Percentile%29eq/%7B%2850.%29//percentile/parameter/interp/100.0/div/2/mul/1/sub/erfinv/Historical_WB/.monthly/.DistribParam/.RICE_DRY/.SM_2_sigma/mul/2/sqrt/mul/Historical_WB/.monthly/.DistribParam/.RICE_DRY/.SM_2_mu/add%7D%7B%28120%29//probExcThresh1/parameter/interp/dup/mul%7Difelse/home/.remic/.WBfcst/.monthly/.DistribParam/.RICE_DRY/.SM_2_mu/-1.0/mul/exch/add/home/.remic/.WBfcst/.monthly/.DistribParam/.RICE_DRY/.SM_2_sigma/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28exceeding%29//proba/parameter/%28exceeding%29ne/%7B-1/mul/1/add%7Dif//var/get_parameter/%28Percentile%29eq/%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//percentile/get_parameter/append/%28th%20%25-ile%29append/def/%28percentiles_colors_%29//proba/get_parameter/%28exceeding%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7D%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//probExcThresh1/get_parameter/append/def/correlationcolorscale/DATA/0/1/RANGE%7Difelse/%28Infinity%29maskge//units//unitless/def//name//forecast/def/1/index/4/-1/roll/pop/T/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/.target_date/F/%28Jan%202014%29VALUE/F/removeGRID/L/1/2/RANGE%5BL%5Daverage//pointwidth/4.0/def/X/Y/fig-/white/mask/fillby/black/stroke/coasts/lakes/plotlabel/plotlabel/-fig//antialias/true/psdef//framelabel/%28%25=%5BT%5D%20fcst%20from%20%25=%5Btarget_date%5D%20Climate%20fcst%20issued%20Jan%202014%29psdef//plotaxislength/700/psdef//F/first/plotvalue//T/second/plotvalue+//plotaxislength+432+psdef//plotborder+0+psdef//antialias+true+psdef//color_smoothing+1+psdef//framelabel+%28%25=%5BT%5D%20fcst%20from%20%25=%5Btarget_date%5D%20Climate%20fcst%20issued%20Jan%202014%29+psdef+.gif" />
+<style>
+sup { vertical-align:super; font-size:50%; }
+
+.varSWBO #percThresh {
+display: none;
+}
+.var #physThresh {
+display: none;
+}
+
+.seasonalStatSM_2_ #pET2 {
+display: none;
+}
+.seasonalStatSM_2_ #pET3 {
+display: none;
+}
+.seasonalStatSM_2_ #pET4 {
+display: none;
+}
+.seasonalStatSM_2_ #pET5 {
+display: none;
+}
+.seasonalStatSM_2_ #pET6 {
+display: none;
+}
+.seasonalStatSM_2_ #pET7 {
+display: none;
+}
+.seasonalStatETcrop_red_2_ #pET1 {
+display: none;
+}
+.seasonalStatETcrop_red_2_ #pET3 {
+display: none;
+}
+.seasonalStatETcrop_red_2_ #pET4 {
+display: none;
+}
+.seasonalStatETcrop_red_2_ #pET5 {
+display: none;
+}
+.seasonalStatETcrop_red_2_ #pET6 {
+display: none;
+}
+.seasonalStatETcrop_red_2_ #pET7 {
+display: none;
+}
+.seasonalStatPeffective_ #pET1 {
+display: none;
+}
+.seasonalStatPeffective_ #pET2 {
+display: none;
+}
+.seasonalStatPeffective_ #pET4 {
+display: none;
+}
+.seasonalStatPeffective_ #pET5 {
+display: none;
+}
+.seasonalStatPeffective_ #pET6 {
+display: none;
+}
+.seasonalStatPeffective_ #pET7 {
+display: none;
+}
+.seasonalStatWS_till0998_ #pET1 {
+display: none;
+}
+.seasonalStatWS_till0998_ #pET2 {
+display: none;
+}
+.seasonalStatWS_till0998_ #pET3 {
+display: none;
+}
+.seasonalStatWS_till0998_ #pET4 {
+display: none;
+}
+.seasonalStatWS_till0998_ #pET5 {
+display: none;
+}
+.seasonalStatWS_till0998_ #pET6 {
+display: none;
+}
+.seasonalStatWS_till0998_ #pET7 {
+display: none;
+}
+.seasonalStatWS_till0998_ #paramDistrib {
+display: none;
+}
+.seasonalStatNumWS_cat #pET1 {
+display: none;
+}
+.seasonalStatNumWS_cat #pET2 {
+display: none;
+}
+.seasonalStatNumWS_cat #pET3 {
+display: none;
+}
+.seasonalStatNumWS_cat #pET4 {
+display: none;
+}
+.seasonalStatNumWS_cat #pET5 {
+display: none;
+}
+.seasonalStatNumWS_cat #pET6 {
+display: none;
+}
+.seasonalStatNumWS_cat #pET7 {
+display: none;
+}
+.seasonalStatNumWS_cat #paramDistrib {
+display: none;
+}
+.seasonalStatPAW_2_ #pET1 {
+display: none;
+}
+.seasonalStatPAW_2_ #pET2 {
+display: none;
+}
+.seasonalStatPAW_2_ #pET3 {
+display: none;
+}
+.seasonalStatPAW_2_ #pET4 {
+display: none;
+}
+.seasonalStatPAW_2_ #pET5 {
+display: none;
+}
+.seasonalStatPAW_2_ #pET7 {
+display: none;
+}
+.seasonalStatNumPAW_sym_ #pET1 {
+display: none;
+}
+.seasonalStatNumPAW_sym_ #pET2 {
+display: none;
+}
+.seasonalStatNumPAW_sym_ #pET3 {
+display: none;
+}
+.seasonalStatNumPAW_sym_ #pET4 {
+display: none;
+}
+.seasonalStatNumPAW_sym_ #pET5 {
+display: none;
+}
+.seasonalStatNumPAW_sym_ #pET6 {
+display: none;
+}
+.seasonalStat #pET2 {
+display: none;
+}
+.seasonalStat #pET3 {
+display: none;
+}
+.seasonalStat #pET4 {
+display: none;
+}
+.seasonalStat #pET5 {
+display: none;
+}
+.seasonalStat #pET6 {
+display: none;
+}
+.seasonalStat #pET7 {
+display: none;
+}
+
+<!-- .dlcontrol.L {display: none !important;} -->
+.dlimage.ver2 {
+        width: 29%;
+	float: right;
+}
+.dlimage.ver3 {
+	width: 99%;
+}
+@media only all and (max-width: 750px) {
+.dlimage.ver2 {
+        width: 95%;
+	float: right;
+}
+.dlimage.ver3 {
+        width: 49%;
+}
+}
+</style>
+</head>
+<body xml:lang="en">
+<form name="pageform" id="pageform">
+<input class="carryup carry" name="Set-Language" type="hidden" />
+<input class="carryup carry dlimg dlimgloc share" name="bbox" type="hidden" />
+<!--
+<input class="carry dlimg dlimgts share starttime startleadtime" name="F" type="hidden" />
+-->
+<input class="carry dlimg dlimgts share targettime" name="T" type="hidden" />
+<!-- <input class="carry dlimg dlimgts share startleadtime" name="L" type="hidden" data-default="2.5" /> -->
+<input class="carry dlimgts dlimgloc share" name="region" type="hidden" />
+<input class="dlimgnotuseddlauximg" name="plotaxislength" type="hidden" />
+<!--
+<input class="dlimg dlauximg share dlimgts pET bodyClass" name="seasonalStat" type="hidden" data-default=".SM_2_" />
+-->
+<input class="pickarea" name="resolution" type="hidden" data-default="irids:home:remic:Philippines:Bicol:soilTypes:ds" />
+<input class="carry dlimg dlauximg share" name="proba" type="hidden" />
+<input class="carry dlimg dlauximg share threshold bodyClass" name="var" type="hidden" />
+<input class="carry dlimg dlauximg share threshold" name="percentile" type="hidden" data-default="50.0" />
+<input class="dlimg share pET" name="probExcThresh1" type="hidden" data-default="120" />
+<input class="dlimg share pET" name="probExcThresh2" type="hidden" data-default="18" />
+<input class="dlimg share pET" name="probExcThresh3" type="hidden" data-default="5" />
+<input class="dlimg share pET" name="probExcThresh4" type="hidden" data-default="1.0" />
+<input class="dlimg share pET" name="probExcThresh5" type="hidden" data-default="10" />
+<input class="dlimg share pET" name="probExcThresh6" type="hidden" data-default="0.5" />
+<input class="dlimg share pET" name="probExcThresh7" type="hidden" data-default="10" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem" id="toSectionList">
+                <legend>Water Management</legend>
+                      <a rev="section" class="navlink carryup" href="/maproom/Water/BAWKP/">Bicol Agri-Water Knowledge Portal</a>
+            </fieldset>
+            <fieldset class="navitem" id="chooseSection">
+                <legend about="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#Bicol_Water_Agri_Agriculture_term"><span property="term:label">Agriculture</span></legend>
+            </fieldset>
+<!--
+            <fieldset class="navitem"><legend>Agronomical Quantity</legend><select class="pageformcopy" name="seasonalStat"><option value=".SM_2_">Soil Moisture</option><option value=".ETcrop_red_2_">Reduced ET Crop</option><option value=".Peffective_">Effective Precipitation</option><option value=".WS_till0998_">Water Stress</option><option value=".NumWS_cat">Persistent Water Stress</option><option value=".PAW_2_">Water Excess</option><option value=".NumPAW_sym_">Persistent Water Excess</option></select></fieldset>
+-->
+<span id="paramDistrib">
+           <fieldset class="navitem"><legend>Probability</legend><select class="pageformcopy" name="proba"><option value="">exceeding</option><option value="non-exceeding">non-exceeding</option></select>
+            <select class="pageformcopy" name="var"><option value="">Percentile</option><option value="SWBO">Agronomical Quantity</option></select>
+
+	<span id="percThresh">
+            <link class="threshold" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu//percentile//unitless/ordered/10/5/90/NewEvenGRID/0/add//name//threshold/def//long_name//threshold/def//fullname//threshold/def/info.json" />
+          <select class="pageformcopy containsAllValids" name="percentile">
+            <optgroup class="template">
+            <option class="iridl:values percentile@value threshold"></option>
+              </optgroup>
+            </select>%-ile
+	</span>
+
+<span id="physThresh">
+<span id="pET1"><input class="pageformcopy" name="probExcThresh1" type="text" value="120" size="3" maxlength="3"/>mm</span><span id="pET2"><input class="pageformcopy" name="probExcThresh2" type="text" value="18" size="3" maxlength="3"/>mm</span><span id="pET3"><input class="pageformcopy" name="probExcThresh3" type="text" value="5" size="2" maxlength="2"/>mm</span><span id="pET4"><input class="pageformcopy" name="probExcThresh4" type="text" value="1" size="2" maxlength="2"/></span><span id="pET5"><input class="pageformcopy" name="probExcThresh5" type="text" value="10" size="2" maxlength="2"/>days</span>
+<span id="pET6"><input class="pageformcopy" name="probExcThresh6" type="text" value="0.5" size="2" maxlength="2"/>%</span><span id="pET7"><input class="pageformcopy" name="probExcThresh7" type="text" value="10" size="2" maxlength="2"/>days</span>
+</span>
+
+<!--	<span id="physThresh">
+          <input class="pageformcopy" name="threshold2" type="text" value="100." size="4" maxlength="4"/>˚C
+	</span> -->
+</fieldset>
+</span>
+</div>
+
+<div class="ui-tabs">
+    <ul class="ui-tabs-nav">
+      <li><a href="#tabs-1" >Description</a></li>
+      <li><a href="#tabs-2" >Dataset Documentation</a></li>
+      <li><a href="#tabs-3" >More Information</a></li>
+      <li><a href="#tabs-4" >Instructions</a></li>
+      <li><a href="#tabs-5" >Contact Us</a></li>
+    </ul>
+
+<span>
+    <fieldset class="regionwithinbbox dlimage ver2" about="" >
+<p>
+<table>
+<tr>
+  <td rowspan="2"><img class="dlimgloc" src="http://iridl.ldeo.columbia.edu/SOURCES/.WORLDBATH/.bath/X/Y/%28bb:122%2C11.3%2C124.8%2C15%29//bbox/parameter/geoobject/geoboundingbox/BOXEDGES%28irids:SOURCES:IRI:Analyses:Tailored:Philippines:precipitation:PAGASA_precipitation:STNID%401:ds%29//region/parameter/geoobject/X/Y/fig-/lightgrey/mask/black/countries_gaz/red/fill/-fig//plotbordertop/8/psdef//antialias/true/psdef//plotaxislength/120/psdef//plotborder/0.1/psdef//plotborderleft/8/psdef//plotborderright/8/psdef//plotborderbottom/8/psdef/+gif" />
+  </td>
+  <td>
+    <span class="valid">
+       <a class="targettime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/home/.remic/.WBfcst/.monthly/.DistribParam/.RICE_DRY/.SM_2_mu/T//pointwidth/1.0/def/first/cvsunits//T/parameter/VALUE/.T/0.0/add//name//target_date/def//long_name/%28Target%20Date%29def//fullname//target_date/def/info.json"></a>
+     <span class="template">
+        <table bgcolor="f0f0f0">
+           <tr>
+              <td>Target Month</td>
+           </tr>
+           <tr>
+             <th class="iridl:value"></th>
+           </tr>
+         </table>
+       </span>
+     </span>
+   </td>
+ <td>
+    <span class="valid">
+       <a class="starttime" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/.target_date/F/%28Jan%202014%29VALUE/L/1/2/RANGE%5BL%5Daverage//pointwidth/4.0/def//name//ClimFcst/def/info.json"></a>
+     <span class="template">
+        <table bgcolor="f0f0f0">
+           <tr>
+              <td>Climate Forecast</td><td>Issued on</td><td>Lead Time</td>
+           </tr>
+           <tr>
+             <th class="iridl:value"></th>
+             <th class="iridl:hasIndependentVariables">
+               <span class="iridl:value"></span>
+             </th>
+           </tr>
+         </table>
+       </span>
+     </span>
+   </td>
+</tr>
+</table>
+<div style="float: left;">
+<div class="valid" style="display: inline-block; text-align: top;">
+<a class="station" rel="iridl:hasJSON" href="http://iridl.ldeo.columbia.edu/expert/(irids:home:remic:Philippines:Bicol:soilTypes:gid@135:ds)//region/parameter/geoobject/info.json"></a>
+<div class="template">
+Soil characteristics: <span class="bold iridl:long_name"></span>
+</div>
+</div>
+</div>
+   </p>
+      <h4>Probability of Exceedance</h4>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/grid://name/%28probability%29def/9.9999997E-05/0.9999/2/copy/exch/sub/500.0/div/exch/:grid/-1.0/mul/2/mul/1.0/add/erfinv/home/.remic/.Philippines/.Bicol/.Historical_WB/.monthly/.DistribParam/.RICE_DRY/a:/.SM_2_mu/:a:/.SM_2_sigma/:a/2/index/mul/2.0/sqrt/mul/add/sqrt/gid/%28irids:home:remic:Philippines:Bicol:soilTypes:gid%40135:ds%29//region/parameter/geoobject/dup/5/-4/roll/.gid/SAMPLE/gid/removeGRID/%28Infinity%29maskge/home/.remic/.WBfcst/.monthly/.DistribParam/.RICE_DRY/a:/.SM_2_mu/:a:/.SM_2_sigma/:a/3/index/mul/2.0/sqrt/mul/add/sqrt/gid/5/-1/roll/.gid/SAMPLE/gid/removeGRID/%28Infinity%29maskge/3/-1/roll/pop/T/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/.target_date/F/%28Jan%202014%29VALUE/F/removeGRID/L/1/2/RANGE%5BL%5Daverage//pointwidth/4.0/def/4/-2/roll//fullname/%28forecast%29def/exch//fullname/%28clim%29def/exch/4/-2/roll/3/index/probability/fig-/dotted/medium/black/profile/solid/medium/green/profile/plotlabel/plotlabel/dotted/verythin/white/profile/-fig//framelabel/%28%25=%5BT%5D%20fcst%20from%20%25=%5Btarget_date%5D%20Cl.%20fcst%20issued%20Jan%202014%29psdef//plotborder/72/psdef//XOVY/1.6/psdef/+.gif?region=irids%3Ahome%3Aremic%3APhilippines%3ABicol%3AsoilTypes%3Agid%40135%3Ads&T=Dec%202013" />
+</fieldset>
+        <h4>Probability Distribution</h4>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/grid://name/%28probability%29def/9.9999997E-05/0.9999/2/copy/exch/sub/500.0/div/exch/:grid/-1.0/mul/2/mul/1.0/add/erfinv/probability/0.0/add//name//myinv/def/exch/use_as_grid/probability//stdvar/renameGRID/-1/mul/1/add//long_name/%28proba%29def%5Bstdvar%5Dpartial/home/.remic/.WBfcst/.monthly/.DistribParam/.RICE_DRY/a:/.SM_2_mu/:a:/.SM_2_sigma/:a/stdvar/mul/2.0/sqrt/mul/add/sqrt/gid/%28irids:home:remic:Philippines:Bicol:soilTypes:gid%40135:ds%29//region/parameter/geoobject/dup/5/-4/roll/.gid/SAMPLE/T/first/cvsunits//T/parameter/VALUE//long_name/%28agronomical%20quantity%29def/home/.remic/.Philippines/.Bicol/.Historical_WB/.monthly/.DistribParam/.RICE_DRY/a:/.SM_2_mu/:a:/.SM_2_sigma/:a/stdvar/mul/2.0/sqrt/mul/add/sqrt/gid/5/-1/roll/.gid/SAMPLE/T/first/cvsunits//T/parameter/VALUE//long_name/%28agronomical%20quantity%29def/2/index//fullname/%28clim%29def/4/-2/roll/exch//fullname/%28forecast%29def//long_name/%28probability%29def/4/-2/roll/fig-/solid/medium/green/scatterline/dotted/medium/black/scatterline/-fig//XOVY/1.6/psdef//plotborder/72/psdef//plotaxislength/432/psdef//antialias/true/psdef//T/first/plotvalue/+.gif?region=irids%3Ahome%3Aremic%3APhilippines%3ABicol%3AsoilTypes%3Agid%40135%3Ads&T=Dec%202013" />
+  </fieldset>
+
+<fieldset class="dlimage">
+<a rel="iridl:hasFigure" href="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/122.0/124.8/RANGE/Y/11.3/15/RANGE/home/.remic/.Philippines/.Bicol/soilTypes/.the_geom/%28Percentile%29//var/parameter/%28Percentile%29eq/%7B%2850.%29//percentile/parameter/interp/100.0/div/2/mul/1/sub/erfinv/Historical_WB/.monthly/.DistribParam/.RICE_DRY/.SM_2_sigma/mul/2/sqrt/mul/Historical_WB/.monthly/.DistribParam/.RICE_DRY/.SM_2_mu/add%7D%7B%28120%29//probExcThresh1/parameter/interp/dup/mul%7Difelse/home/.remic/.WBfcst/.monthly/.DistribParam/.RICE_DRY/.SM_2_mu/-1.0/mul/exch/add/home/.remic/.WBfcst/.monthly/.DistribParam/.RICE_DRY/.SM_2_sigma/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28exceeding%29//proba/parameter/%28exceeding%29ne/%7B-1/mul/1/add%7Dif//var/get_parameter/%28Percentile%29eq/%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//percentile/get_parameter/append/%28th%20%25-ile%29append/def/%28percentiles_colors_%29//proba/get_parameter/%28exceeding%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7D%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//probExcThresh1/get_parameter/append/def/correlationcolorscale/DATA/0/1/RANGE%7Difelse/%28Infinity%29maskge//units//unitless/def//name//forecast/def/1/index/4/-1/roll/pop/T/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/.target_date/F/%28Jan%202014%29VALUE/F/removeGRID/L/1/2/RANGE%5BL%5Daverage//pointwidth/4.0/def/X/Y/fig-/white/mask/fillby/black/stroke/coasts/lakes/plotlabel/plotlabel/-fig//antialias/true/psdef//framelabel/%28%25=%5BT%5D%20fcst%20from%20%25=%5Btarget_date%5D%20Climate%20fcst%20issued%20Jan%202014%29psdef//plotaxislength/700/psdef//F/first/plotvalue//T/first/plotvalue/?var=Percentile&proba=exceeding&percentile=50.">visit site</a>
+<img class="dlimg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/122.0/124.8/RANGE/Y/11.3/15/RANGE/home/.remic/.Philippines/.Bicol/soilTypes/.the_geom/%28Percentile%29//var/parameter/%28Percentile%29eq/%7B%2850.%29//percentile/parameter/interp/100.0/div/2/mul/1/sub/erfinv/Historical_WB/.monthly/.DistribParam/.RICE_DRY/.SM_2_sigma/mul/2/sqrt/mul/Historical_WB/.monthly/.DistribParam/.RICE_DRY/.SM_2_mu/add%7D%7B%28120%29//probExcThresh1/parameter/interp/dup/mul%7Difelse/home/.remic/.WBfcst/.monthly/.DistribParam/.RICE_DRY/.SM_2_mu/-1.0/mul/exch/add/home/.remic/.WBfcst/.monthly/.DistribParam/.RICE_DRY/.SM_2_sigma/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28exceeding%29//proba/parameter/%28exceeding%29ne/%7B-1/mul/1/add%7Dif//var/get_parameter/%28Percentile%29eq/%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//percentile/get_parameter/append/%28th%20%25-ile%29append/def/%28percentiles_colors_%29//proba/get_parameter/%28exceeding%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7D%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//probExcThresh1/get_parameter/append/def/correlationcolorscale/DATA/0/1/RANGE%7Difelse/%28Infinity%29maskge//units//unitless/def//name//forecast/def/1/index/4/-1/roll/pop/T/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/.target_date/F/%28Jan%202014%29VALUE/F/removeGRID/L/1/2/RANGE%5BL%5Daverage//pointwidth/4.0/def/X/Y/fig-/white/mask/fillby/black/stroke/coasts/lakes/plotlabel/plotlabel/-fig//antialias/true/psdef//framelabel/%28%25=%5BT%5D%20fcst%20from%20%25=%5Btarget_date%5D%20Climate%20fcst%20issued%20Jan%202014%29psdef//plotaxislength/700/psdef//F/first/plotvalue//T/first/plotvalue/+.gif?var=Percentile&proba=exceeding&percentile=50.&T=Dec%202013" />
+<img class="dlauximg" src="http://iridl.ldeo.columbia.edu/expert/SOURCES/.WORLDBATH/.bath/X/122.0/124.8/RANGE/Y/11.3/15/RANGE/home/.remic/.Philippines/.Bicol/soilTypes/.the_geom/%28Percentile%29//var/parameter/%28Percentile%29eq/%7B%2850.%29//percentile/parameter/interp/100.0/div/2/mul/1/sub/erfinv/Historical_WB/.monthly/.DistribParam/.RICE_DRY/.SM_2_sigma/mul/2/sqrt/mul/Historical_WB/.monthly/.DistribParam/.RICE_DRY/.SM_2_mu/add%7D%7B%28120%29//probExcThresh1/parameter/interp/dup/mul%7Difelse/home/.remic/.WBfcst/.monthly/.DistribParam/.RICE_DRY/.SM_2_mu/-1.0/mul/exch/add/home/.remic/.WBfcst/.monthly/.DistribParam/.RICE_DRY/.SM_2_sigma/div/2/sqrt/div/erf/-1/mul/1/add/2/div/%28exceeding%29//proba/parameter/%28exceeding%29ne/%7B-1/mul/1/add%7Dif//var/get_parameter/%28Percentile%29eq/%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//percentile/get_parameter/append/%28th%20%25-ile%29append/def/%28percentiles_colors_%29//proba/get_parameter/%28exceeding%29eq/%7B//percentile/get_parameter/interp/cvi/s==%7D%7B//percentile/get_parameter/interp/-1/mul/100/add/cvi/s==%7Difelse/append/interp%7D%7B%28long_name%29%28Probability%20of%20%29//proba/get_parameter/append/%28%20%29append//probExcThresh1/get_parameter/append/def/correlationcolorscale/DATA/0/1/RANGE%7Difelse/%28Infinity%29maskge//units//unitless/def//name//forecast/def/1/index/4/-1/roll/pop/T/SOURCES/.IRI/.FD/.Seasonal_Forecast/.Precipitation/.target_date/F/%28Jan%202014%29VALUE/F/removeGRID/L/1/2/RANGE%5BL%5Daverage//pointwidth/4.0/def/X/Y/fig-/white/mask/fillby/black/stroke/coasts/lakes/plotlabel/plotlabel/-fig//antialias/true/psdef//framelabel/%28%25=%5BT%5D%20fcst%20from%20%25=%5Btarget_date%5D%20Climate%20fcst%20issued%20Jan%202014%29psdef//plotaxislength/700/psdef//F/first/plotvalue//T/first/plotvalue/.auxfig/+.gif?var=Percentile&proba=exceeding&percentile=50." />
+</fieldset>
+
+</span>
+ <div id="tabs-1" class="ui-tabs-panel" about="">
+<h2 align="center"  property="term:title" >Bicol Region Soil Water Balance Seasonal Forecast</h2>
+<p align="left" property="term:description">
+This is a monthly experimental forecast of soil moisture driven by probabilistic climate seasonal forecasts.
+</p><p>
+Such a forecast provides added value to the agricultural community, in comparison to the climate seasonal forecast. The soil water balance model includes non-linear agronomical processes that the driving climate information doesn't contain. It allows to provide agriculture-relevant information that speak directly to the community. The probabilistic nature of the forecast with full distribution of the quantities gives both the flexibility to deliver interactive maps and point-wise distributions that become relevant to user-determined needs, along with the characterization of the uncertainty of the forecast. The comparison with historical conditions put the current forecast in context of normal conditions.
+</p><p>
+The default map shows in Bicol soil type wise monthly averaged daily soil moisture probability (between 0 and 1) of exceeding the 50<sup>th</sup> percentile of the distribution from historical climatology. The forecast shown is the first month of the soil water balance simulation made with the latest climate forecast (e.g. Climate Forecast issued in January 2014 and SWB Simulation of Dec 2013). Note that the SWB is spinned up by 2 months of observed meteorological stations, therefore in the previous example: SWB is driven by observations in December 2013 and January 2014, a climate forecast was made in January 2014 to forecast February to May 2014, so the SWB is driven by the ensemble of resampled climate data starting February through May. One can then navigate through SWB simulation month. One can also take advantage of having the full distribution by specifying the historical percentile or a quantitative value for probability of exceedance or non-exceedance.
+</p><p>
+Clicking on a point on the map will show the local culmulative distribution and probability distribution fucntions of the forecast (green) together with the climatological distribution (black).
+</div>
+<div id="tabs-2" class="ui-tabs-panel">
+<h2  align="center">Dataset Documentation</h2>
+<p>
+<b>Soil Characteristics:</b> including texture and total available water derived from textures using Mualem-Van Genuchten (MVG) model from <a href="http://iridl.ldeo.columbia.edu/home/.remic/.Philippines/.Bicol/.soilTypes/">Bicol Department of Agriculture</a>.
+</p><p>
+<b>Precipitation Seasonal Forecast:</b> from <a href="http://iridl.ldeo.columbia.edu/maproom/Global/Forecasts/Precipitation.html">IRI Net Assessment</a>.
+</p>
+</div>
+<div id="tabs-3"  class="ui-tabs-panel">
+<h2  align="center">More Information</h2>
+<h3>Methodology</h3>
+<p align="left">
+The forecast is expressed through the full distribution of an ensemble of monthly soil moisture. The ensemble of monthly soil moisture is derived from an ensemble of daily outputs of a soil water balance model. Such a model depicts agriculture-relevant conditions of the soil or the crop. The soil water balance model is parameterized by rice crop cultivar for the drier season, and total available water in the soils. It is driven by an ensemble of daily climate data (precipitation, temperature mean and amplitude) from meteorological stations data or global gridded products. The ensemble is formed by randomly picking historical observed years with the constrain that the seasonal total precipitation distributions in the ensemble correspond to the seasonal probabilistic precipitation forecast distributions. The forecast distribution is compared to the historical distribution that is derived from running the soil water balance model for all historical data available.
+</p>
+<h3>Soil Water Balance Model</h3>
+<p>
+The water balance model is described <a href="http://iridl.ldeo.columbia.edu/dochelp/Documentation/details/index.html?func=%3AWater_Balance">in the IRI DL Function Documentation</a>. The water balance is run from two months prior to the climate forecast target season and through the season. For rice of the drier season, planting date is set up at January 7<sup>st</sup> and crop cultivar Kc parameters are also set up (see yearly cycle in image below -- Kc out of the growing season is set at 1 to reflect unknown use of the soil). Those 2 key parameters (planting date and Kc) are constant through all the years of the historical simulation. In this case, the model is driven by meteorological stations data and applied to soil shapes over which depends the total available water parameter. The simulation is run for each shape with all available stations, then a weighted-average based on the distance between a shape and the stations is performed for the closest stations.
+</p><p>
+<img src="http://iridl.ldeo.columbia.edu/expert/home/.remic/.Philippines/.Bicol/.Historical_WB/.WB_Rice_Dry_19612007/.Kc/T/%282007%29VALUES/DATA/0/1.2/RANGE/T/fig-/medium/blue/line/-fig//plotborderbottom/40/psdef/+.gif" />
+</p>
+<h3>Agronomical Quantities and their distribution</h3>
+<p>
+<br /><b>Soil Moisture</b>: average soil moisture (in mm/day) over the month. It indicates how satisfied were the crop needs in water for normal growth. Its square is considered a normal distribution.
+<!--
+<br /><b>Reduced Crop ET</b>: average daily reduced crop evapo-transpiration during the month. It is an indicator of how well the crop could use available water. Its square is considered a normal distribution.
+<br /><b>Effective Precipitation</b>: the average daily effective precipitation over the month. It indicates how much rainfall is effectively provided to the system. It is consider a normal distribution.<br />
+<b>Water Stress</b>: water stress is defined as the ratio of reduced ET crop and ET crop and is averaged over the month. A number between 0 and 1 indicating that the crop didn’t receive as much water as it would need for normal growth as it gets closer to 0. Water stress distribution can't be parameterized and is therefore distributed into 2 categories: greater or equal to 0.998 indicates absence of stress, and lesser then 0.998 indicates stress.
+<br />
+<b>Persistent Water Stress</b>: the number of water stressed days during the month. It indicates persistency is water stressed conditions. Persistent water stress distribution can't be parameterized and is therefore distributed into 3 categories: equal to 0 indicates never stress conditions during the month, greater then 0 and lesser than 28 indicates sometimes stress conditions during the month, and greater or equal to 28 indicates always stress conditions during the month.
+<br />
+<b>Water Excess</b>: water excess is defined as the percentage of available water, ie the ratio of soil moisture with total available water, then averaged over the month. It indicates a risk of agricultural flood when equal to 100%. Its square is considered a normal distribution.
+<br />
+<b>Persistent Water Excess</b>: the number of days when water excess is 100% during the month. It indicates a risk of persisting agricultural flooding and therefore damaging conditions. Its 4<sup>th</sup> power is considered the upper half or a normal distribution.
+-->
+<br /><br />
+</p>
+</div>
+<div id="tabs-4"  class="ui-tabs-panel">
+<h2  align="center">Instructions</h2>
+<div class="buttonInstructions"></div>
+</div>
+<div id="tabs-5"  class="ui-tabs-panel">
+<h2  align="center">Helpdesk</h2>
+<p>
+Contact <a href="mailto:help@iri.columbia.edu?subject=Flexible Forecast: Temperature">help@iri.columbia.edu</a> with any technical questions or problems with this Map Room.
+ </p>
+
+</div>
+</div>
+
+<div class="optionsBar">
+            <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+</div>
+ </body>
+ </html>
+
