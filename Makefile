@@ -60,6 +60,9 @@ localmaproombuild.conf:	localmaproombuild.conf.tpost config.lua
 	@echo "Generating local apache configuration file localmaproom.conf"
 	miconf -c config.lua -p '[.]tpost$$' -r .
 
+# index.xhtml in top directory of maproom overrides dldoc/index.xhtml
+dldoc/index.xhtml:	index.xhtml
+	cp index.xhtml dldoc/
 # really depends on maproom/newmaproomcache/owlimMaxRepository.nt
 # but tabs.nt is made at same time and we need it explicitly in this Makefile
 maproom/maproomtop.owl:	Makefile config.lua maproom/tabs.nt
