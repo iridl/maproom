@@ -24,7 +24,7 @@ dldochtmlbld = $(shell perl maproomtools/findsrc.pl bld dldoc/docfind) $(shell p
 # html files not built from xhtml
 dldochtmlsrc = $(shell perl maproomtools/findsrc.pl srchtml dldoc) 
 # built using joint dldoc/maproom metdata
-jointhtmlbld = $(subst .xhtml,.html, $(shell ls dldoc/index.xhtml*))
+jointhtmlbld = dldoc/index.html
 # dlcopy: html files built and source files not build from
 dlout = $(shell perl maproomtools/findsrc.pl out dldoc)
 # dlcopy: html files built and source files not build from
