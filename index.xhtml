@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:twitter="http://dev.twitter.com/cards#"
+      xmlns:wms="http://www.opengis.net/wms#"
+      xmlns:iridl="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#"
+      xmlns:maproom="http://iridl.ldeo.columbia.edu/ontologies/maproom.owl#"
+      xmlns:term="http://iridl.ldeo.columbia.edu/ontologies/iriterms.owl#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+      xmlns:gcse="http://google.com/search#"
+      version="XHTML+RDFa 1.0"
+      >
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="google-site-verification" content="gk0KG-W83PiWyExPc-Du9YtHlUCkvs_FJyGZQGVp3WI" />
+<title lang="en">IRI/LDEO Climate Data Library</title>
+<title lang="es">Biblioteca de Datos Climáticos del IRI/LDEO</title>
+<title lang="fr">Datathèque du Climat de l'IRI/LDEO</title>
+<link rel="stylesheet" type="text/css" href="/uicore/uicore.css" />
+<link rel="stylesheet" type="text/css" href="/localconfig/ui.css" />
+<link rel="canonical" href="index.html" />
+<link class="altLanguage" rel="alternate" hreflang="en" href="index.html?Set-Language=en" />
+<link class="altLanguage" rel="alternate" hreflang="es" href="index.html?Set-Language=es" />
+<link class="altLanguage" rel="alternate" hreflang="fr" href="index.html?Set-Language=fr" />
+<link class="altLanguage" rel="alternate" hreflang="id" href="index.html?Set-Language=id" />
+<link class="altLanguage" rel="alternate" hreflang="ru" href="index.html?Set-Language=ru" />
+<link class="carryLanguage" rel="home" href="http://iri.columbia.edu/" title="IRI" />
+<link class="carryLanguage" rel="home alternate" type="application/json" href="/localconfig/navmenu.json" />
+<link rel="shortcut icon" href="/uicore/icons/iri32.png" />
+<link rel="apple-touch-icon" sizes="54x54" href="/uicore/icons/iriwh.png" />
+<link rel="icon" href="/uicore/icons/iriwh.svg" sizes="any" type="image/svg+xml" />
+<link rel="term:isDescribedBy" href="http://iridl.ldeo.columbia.edu/ontologies/iridl.owl#climate" />
+<link rel="term:icon" href="docfind/maproomcloud250.png" />
+<script type="text/javascript" src="/uicore/uicore.js"></script>
+<script type="text/javascript" src="/localconfig/ui.js"></script>
+<style>
+#rssfeed img { width: 95%}
+#rssholder {
+border: 1pt;
+border-style: solid;
+border-radius: 10px;
+border-color: darkgrey;
+margin-bottom: 5pt;
+}
+.rssheader {
+text-align:center;
+font-weight: bold;
+font-size: 14pt;
+background-color: LightGrey;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.rsstitle {
+font-weight: bold;
+text-align: center;
+margin-top: 5pt;
+}
+.rsstag {
+display: inline-block;
+font-size: 80%;
+font-style: italic;
+background-color: LightGrey;
+border-radius: 5pt;
+padding-left: 2pt;
+padding-right: 2pt;
+}
+.date {
+font-size: 80%;
+font-style: italic;
+padding-left: 4pt;
+}
+</style>
+<script type="text/javascript">
+function processPosts(postasjson){
+var myout = document.getElementById('rssfeed');
+if(myout){
+var mypost=postasjson['posts'][0];
+if(mypost['type'] == 'regular'){
+myout.innerHTML='<div class="rsstitle">' + mypost['regular-title'] + '</div><div class="rssbody">' + mypost['regular-body']+'</div>';
+}
+if(mypost['type'] == 'link'){
+myout.innerHTML='<div class="rsstitle"><a href="' + mypost['link-url'] + '">' + mypost['link-text'] +'</a>' + mypost['link-description'] +  '</div>';
+}
+if(mypost['type'] == 'photo'){
+myout.innerHTML='<div class="rssbody">' + '<img src="' + mypost['photo-url-400'] + '"/>' + mypost['photo-caption'] + '<div><a class="carryLanguage share" href="' + mypost['photo-link-url'] + '">visit page</a></div>' +'</div>';
+}
+if(mypost['type'] == 'video'){
+myout.innerHTML='<div class="rssbody">' + mypost['video-source'] + mypost['video-caption'] +'</div>';
+}
+myout.innerHTML=myout.innerHTML + '<div class="rsstag">' +  mypost['tags'].join('</div> <div class="rsstag">') + '</div> ';
+myout.innerHTML += '<div class="date">' + mypost['date-gmt']+ '</div>';
+}
+}
+</script>
+</head>
+<body>
+
+<form name="pageform" id="pageform" action="">
+<input class="bodyAttribute" name="lang" type="hidden" />
+<input class="carryLanguage titleLink" name="Set-Language" type="hidden" />
+</form>
+<div class="controlBar">
+           <fieldset class="navitem">
+                <legend>IRI/LDEO</legend> 
+	    <span class="navtext langgroup">
+	      <span lang="en">Climate Data Library</span>
+	      <span lang="es">Biblioteca de Datos Climáticos</span>
+	      <span lang="fr">Datathèque du Climat</span>
+	      <span lang="ru">Библиотека Климатических Данных</span>
+	    </span>
+            </fieldset> 
+	   <fieldset class="navitem" id="GoogleSearch">
+	     </fieldset>
+ </div>
+ <div id="content" class="searchDescription">
+   <h2 class="langgroup">
+     <span property="term:title" xml:lang="en" lang="en">IRI/LDEO Climate Data Library</span>
+     <span property="term:title" xml:lang="es" lang="es">IRI/LDEO Biblioteca de Datos Climáticos</span>
+     <span property="term:title" xml:lang="fr" lang="fr">IRI/LDEO Datathèque du Climat</span>
+     <span property="term:title" xml:lang="ru" lang="ru">МНИИ/ОЗЛД Библиотека Климатических Данных</span>
+   </h2>
+   <span class="langgroup">
+<p align="left" property="term:description" xml:lang="en" lang="en">
+The IRI Data Library is a powerful and freely accessible online data repository and analysis tool that allows a user to view, analyze, and download hundreds of terabytes of climate-related data through a standard web browser.</p>
+<p align="left" property="term:description" xml:lang="es" lang="es">
+La Biblioteca de Datos del IRI es un poderoso almacén de datos disponible libremente en línea y una herramienta de análisis que permite visualizar, analizar, y bajar cientos de terabites de datos relacionados al clima, a través de un navegador estándar del internet.
+</p>
+<p align="left" property="term:description" xml:lang="fr" lang="fr">
+La Datathèque de l'IRI consiste en un puissant répertoire de données libre d'accès en ligne et en un outil d'analyse qui permet la visualisation, l'analyse et le téléchargement de centaines de térabits de données liées au climat via un navigateur internet standard.
+</p>
+</span>
+<span class="langgroup">
+<span lang="en">
+<p> It is a powerful tool that 
+offers the following capabilities at no cost to the user:
+</p>
+<ul><li>access any number of datasets;</li>
+<li>create analyses of data ranging from simple averaging to more advanced EOF analyses using the Ingrid Data Analysis Language;</li>
+<li>monitor present climate conditions with maps and analyses in the <a class="carryLanguage" href="/maproom/">Maproom</a>;</li>
+<li>create visual representations of data, including animations;</li>
+<li>download data in a variety of commonly-used <a class="carryLanguage" href="dochelp/Tutorial/MVD/Download/index.html#Formats">formats</a>, including 
+GIS-compatible formats.</li>
+</ul>
+</span>
+<span lang="es">
+<p>
+Es una herramienta poderosa que permite lo siguiente libre de costos :
+</p>
+<ul>
+<li>acceder a una gran cantidad de datos;</li>
+<li>crear analises de datos desde un promedio básico hasta analises más avanzados como la descomposición en las Funciones Empíricas Ortogonales al utilizar el Language de Análisis de Datos Ingrid;</li>
+<li>monitorear a las condiciones climáticas actuales a través de mapas y analises en el <a class="carryLanguage" href="/maproom/">Maproom</a>;</li>
+<li>crear representaciones visuales de los datos, incluyendo animaciones;</li>
+<li>bajar datos en diferentes generalizados <a class="carryLanguage" href="dochelp/Tutorial/MVD/Download/index.html#Formats">formatos</a>, incluyendo formatos compatibles con los SIG.</li>
+</ul>
+</span>
+<span lang="fr">
+<p>Il s'agit d'un outil puissant qui offre les fonctionnalités suivantes librement:
+</p>
+<ul><li>accéder à un grand nombre de données;</li>
+<li>faire de l'analyse de données depuis le calcul d'une simple moyenne jusqu'à des calculs plus avancés tels que la décomposition Orthogonale aux Valeurs Propres en utilisant le Langage d'Analyse de Données Ingrid;</li>
+<li>observer les conditions climatiques actuelles à travers des cartes et autres analyses dans la <a class="carryLanguage" href="/maproom/">Maproom</a>;</li>
+<li>créer des représentations visuelles des données, y compris des animations;</li>
+<li>télécharger les données dans une grande variété de <a class="carryLanguage" href="dochelp/Tutorial/MVD/Download/index.html#Formats">formats</a> usuels, y compris des formats compatibles avec les SIG.</li>
+</ul>
+</span>
+</span>
+<div>
+</div>
+<div id="rssholder">
+<div class="rssheader">Latest from our <a href="http://iridl.tumblr.com">What's New</a> blog</div>
+<div id="rssfeed"></div>
+</div>
+<script type="text/javascript" src="http://iridl.tumblr.com/api/read/json?num=1&amp;callback=processPosts" async="async"></script>
+</div>
+<div class="rightcol tabbedentries" about="/" >
+  <a rel="section" href="SOURCES/"></a>
+  <a rel="section" href="docfind/databrief/"></a>
+  <a rel="section" href="dochelp/Tutorial/index.xhtml.en"></a>
+  <a rel="section" href="dochelp/StatTutorial/index.xhtml.en"></a>
+  <a rel="section" href="dochelp/Documentation/funcindex.html"></a>
+<div about="http://iridl.tumblr.com/">
+  <a rel="canonical" href="http://iridl.tumblr.com/"></a>
+      <meta property="maproom:Sort_Id" content="a02" />
+<link rel="term:icon" href="dochelp/news200.jpg" />
+<h2 class="langgroup">
+<span property="term:title" xml:lang="en" lang="en">What's New</span>
+<span property="term:title" xml:lang="es" lang="es">Anuncios de la Biblioteca de Datos del IRI</span>
+<span property="term:title" xml:lang="fr" lang="fr">Annonces de la Datathèque de l'IRI</span>
+</h2>
+<span class="langgroup">
+<p property="term:description" xml:lang="en" lang="en">Data Library announcements about new datasets and capabilities are available on our tumblr blog</p>
+<p property="term:description" xml:lang="es" lang="es">Anuncios de la Biblioteca de Datos en cuanto a nuevas bases de datos y funcionalidad están disponibles en nuestro blog tumblr</p>
+<p property="term:description" xml:lang="fr" lang="fr">Les annonces de la Datathèque sur de nouvelles bases de données et fonctionnalités sont disponibles sur notre blog tumblr</p>
+</span>
+</div>
+<div about="SOURCES/">
+  <a rel="canonical" href="SOURCES/"></a>
+      <meta property="maproom:Sort_Id" content="a03" />
+<link rel="term:icon" href="dochelp/Flaticon_22588-64.png" />
+<h2 class="langgroup">
+<span property="term:title" xml:lang="en" lang="en">Data by Source</span>
+<span property="term:title" xml:lang="es" lang="es">Datos por Fuentes</span>
+<span property="term:title" xml:lang="fr" lang="fr">Données par Sources</span>
+</h2>
+<span class="langgroup">
+<p property="term:description" xml:lang="en" lang="en">Datasets organized by source, i.e. creator and/or provider.</p>
+<p property="term:description" xml:lang="es" lang="es">Bases de datos organizadas por fuente, i.e. por autor o proveedor.</p>
+<p property="term:description" xml:lang="fr" lang="fr">Bases de données organisés par source, i.e. par auteur ou fournisseur.</p>
+</span>
+</div>
+</div>
+<div class="optionsBar">
+            <fieldset class="navitem langgroup" id="share">
+            <legend lang="en">Share</legend>
+            <legend lang="es">Compartir</legend>
+            <legend lang="fr">Partager</legend>
+</fieldset>
+<fieldset class="navitem langgroup" id="contactus"></fieldset>
+</div>
+<div class="langgroup">
+<span lang="en">
+<i><font size="-1">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com/free-icon/mathematics-on-class-whiteboard_43378" title="Flaticon">www.flaticon.com</a></font></i>
+</span>
+<span lang="es">
+<i><font size="-1">Iconos realizados por <a href="http://www.freepik.com" title="Freepik">Freepik</a> desde <a href="http://www.flaticon.com/free-icon/mathematics-on-class-whiteboard_43378" title="Flaticon">www.flaticon.com</a></font></i>
+</span>
+<span lang="fr">
+<i><font size="-1">Icônes réalisés par <a href="http://www.freepik.com" title="Freepik">Freepik</a> sur <a href="http://www.flaticon.com/free-icon/mathematics-on-class-whiteboard_43378" title="Flaticon">www.flaticon.com</a></font></i>
+</span>
+</div>
+</body>
+</html>
