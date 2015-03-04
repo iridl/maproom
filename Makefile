@@ -16,9 +16,9 @@ maphtmlbld = $(shell perl maproomtools/findsrc.pl bld maproom)
 maphtmlsrc = $(shell perl maproomtools/findsrc.pl srchtml maproom)
 # dldoc source and build
 # source files
-dldocsrc = $(shell perl maproomtools/findsrc.pl src dldoc) localconfig/ui.owl
+dldocsrc = dldoc/index.xhtml $(shell perl maproomtools/findsrc.pl src dldoc) localconfig/ui.owl
 # sources files without the /dldoc
-dldoclocalsrc = $(shell cd dldoc; perl ../maproomtools/findsrc.pl src) ../localconfig/ui.owl
+dldoclocalsrc = index.xhtml $(shell cd dldoc; perl ../maproomtools/findsrc.pl src) ../localconfig/ui.owl
 # html files built from xhtml
 dldochtmlbld = $(shell perl maproomtools/findsrc.pl bld dldoc/docfind) $(shell perl maproomtools/findsrc.pl bld dldoc/dochelp) 
 # html files not built from xhtml
@@ -26,9 +26,9 @@ dldochtmlsrc = $(shell perl maproomtools/findsrc.pl srchtml dldoc)
 # built using joint dldoc/maproom metdata
 jointhtmlbld = dldoc/index.html
 # dlcopy: html files built and source files not build from
-dlout = $(shell perl maproomtools/findsrc.pl out dldoc)
+dlout = dldoc/index.html $(shell perl maproomtools/findsrc.pl out dldoc)
 # dlcopy: html files built and source files not build from
-dllocalout = $(shell cd dldoc; perl ../maproomtools/findsrc.pl out)
+dllocalout = index.html $(shell cd dldoc; perl ../maproomtools/findsrc.pl out)
 # dlcopy: img files
 dlimgs = $(shell find -L dldoc -name '*png') $(shell find -L dldoc -name '*jpg') $(shell find -L dldoc -name '*gif')
 # dlcopy: css files
