@@ -75,6 +75,7 @@
             <fieldset class="navitem" id="share"><legend>Поделиться</legend>
 
 </fieldset>
+<fieldset class="navitem langgroup" id="contactus"></fieldset>
 </div>
  </body>
 

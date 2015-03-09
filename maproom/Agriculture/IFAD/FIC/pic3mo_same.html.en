@@ -146,6 +146,7 @@ Forecasts are labeled by the month they were issued. You can find this label by 
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+<fieldset class="navitem langgroup" id="contactus"></fieldset>
 </div>
  </body>
  </html>

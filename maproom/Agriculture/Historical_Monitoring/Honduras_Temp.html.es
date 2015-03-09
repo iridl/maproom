@@ -343,6 +343,7 @@ Escriba a <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.columb
 
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Compartir</legend></fieldset>
+<fieldset class="navitem langgroup" id="contactus"></fieldset>
 </div>
 
 </body>

@@ -79,6 +79,7 @@ Esta colección de mapas provee información que puede ser utilizado para tomar 
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Compartir</legend>
 </fieldset>
+<fieldset class="navitem langgroup" id="contactus"></fieldset>
 </div>
  </body>
 

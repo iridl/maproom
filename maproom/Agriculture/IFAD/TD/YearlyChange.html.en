@@ -231,6 +231,7 @@ The trend, or more precisely the part of the regional signal which is linearly d
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+<fieldset class="navitem langgroup" id="contactus"></fieldset>
 </div>
  </body>
  </html>

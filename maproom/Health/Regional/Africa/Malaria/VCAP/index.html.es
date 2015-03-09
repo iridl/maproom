@@ -169,6 +169,7 @@ Para ayudar en la evaluación de riesgo potencial de brote de malaria, la interf
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+<fieldset class="navitem langgroup" id="contactus"></fieldset>
 </div>
  </body>
  </html>
