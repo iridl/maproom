@@ -234,6 +234,7 @@ La tendencia, o más precisamente la parte de la señal regional que es linealme
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+<fieldset class="navitem langgroup" id="contactus"></fieldset>
 </div>
  </body>
  </html>

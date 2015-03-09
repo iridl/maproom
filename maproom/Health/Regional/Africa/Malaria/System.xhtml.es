@@ -172,6 +172,7 @@ en regiones propensas a epidemias.
             <fieldset class="navitem" id="share"><legend>Share</legend>
 
 </fieldset>
+<fieldset class="navitem langgroup" id="contactus"></fieldset>
 </div>
  </body>
 

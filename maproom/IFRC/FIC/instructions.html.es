@@ -263,6 +263,7 @@ Por favor, no dude en <a href="mailto:mbell@iri.columbia.edu">enviarnos un corre
 </p>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+<fieldset class="navitem langgroup" id="contactus"></fieldset>
 </div>
 </body>
 </html>

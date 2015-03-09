@@ -156,6 +156,7 @@ Contáctenos <a href="mailto:help@iri.columbia.edu?subject=Maproom">help@iri.col
 </div>
 <div class="optionsBar">
             <fieldset class="navitem" id="share"><legend>Share</legend></fieldset>
+<fieldset class="navitem langgroup" id="contactus"></fieldset>
 </div>
  </body>
  </html>
