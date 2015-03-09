@@ -10,8 +10,9 @@ VER = $(shell git-generate-version-info maproom tag)
 VER_ID = $(shell git-generate-version-info maproom id)
 TARBALL = $(VER)
 # maproom source and build
-mapsrc = $(shell perl maproomtools/findsrc.pl src maproom) maproom/Imports/moremetadata.owl localconfig/ui.owl
-maplocalsrc = $(shell cd maproom ; perl ../maproomtools/findsrc.pl src) Imports/moremetadata.owl ../localconfig/ui.owl
+# to add additional metadata to a build, add an owl file in maproom/Imports
+mapsrc = $(shell perl maproomtools/findsrc.pl src maproom) $(shell find maproom -path 'maproom/Imports*' -name '*.owl') localconfig/ui.owl
+maplocalsrc = $(shell cd maproom ; perl ../maproomtools/findsrc.pl src) $(shell find Imports  -name '*.owl') ../localconfig/ui.owl
 maphtmlbld = $(shell perl maproomtools/findsrc.pl bld maproom)
 maphtmlsrc = $(shell perl maproomtools/findsrc.pl srchtml maproom)
 # dldoc source and build
